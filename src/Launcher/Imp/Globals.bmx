@@ -1,6 +1,6 @@
 Rem
-	The Fairy Tale REVAMPED!
-	Main file for the launcher
+	The Fairy Tale REVAMPED
+	Global definitions and declarations for the Launcher
 	
 	
 	
@@ -24,24 +24,25 @@ Version: 16.08.13
 End Rem
 Strict
 
-Framework tricky_units.MKL_Version ' Actually no module calls needed here, but only the main file accepts FrameWork, so here we are ;)
-
-' Here are the panel imports. The order in which they are placed is VERY important!!!
-Import "imp/Welcome.bmx"
-Import "imp/NewGame.bmx"
-Import "imp/Loadgame.bmx"
-Import "Imp/versions.bmx"
+Import tricky_units.MKL_Version
+Import jcr6.zlibdriver
 
 
+MKL_Version "The Fairy Tale - REVAMP - Globals.bmx","16.08.13"
+MKL_Lic     "The Fairy Tale - REVAMP - Globals.bmx","GNU General Public License 3"
 
-' This MUST always be last!!!
-Import "imp/run.bmx"
+AppTitle = StripAll(AppFile)
 
-MKL_Version "The Fairy Tale - REVAMP - The Fairy Tale REVAMPED.bmx","16.08.13"
-MKL_Lic     "The Fairy Tale - REVAMP - The Fairy Tale REVAMPED.bmx","GNU General Public License 3"
+?MacOS
+Global Resource$ = ExtractDir(ExtractDir(AppFile))+"/Resources/"
+?Not MacOS
+Const Resource$ = "./"
+?
+Print "My resouces are located in: "+Resource
 
- 
+Global JCRFIle$ = Resource + "TFT.jcr"
+Print "Reading: "+JCRFile
+If Not FileType(JCRFile) Notify "ERROR: I cannot access my datafile "+JCRFile End
+Global JCR:TJCRDir = JCR_Dir(JCRFile)
 
-
-
-run
+'For Local f$=EachIn MapKeys(JCR.Entries) Print f Next ' debug line. Must be disabled in "real" version.
