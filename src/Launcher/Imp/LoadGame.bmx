@@ -1,6 +1,6 @@
 Rem
 	The Fairy Tale REVAMPED!
-	Main file for the launcher
+	Load Game Tab
 	
 	
 	
@@ -24,24 +24,13 @@ Version: 16.08.12
 End Rem
 Strict
 
-Framework tricky_units.MKL_Version ' Actually no module calls needed here, but only the main file accepts FrameWork, so here we are ;)
+Import "FrameWork.bmx"
 
-' Here are the panel imports. The order in which they are placed is VERY important!!!
-Import "imp/Welcome.bmx"
-Import "imp/NewGame.bmx"
-Import "imp/Loadgame.bmx"
-Import "Imp/versions.bmx"
+Private
 
+MKL_Lic     "The Fairy Tale - REVAMP - LoadGame.bmx","GNU General Public License 3"
+MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.08.12"
 
-
-' This MUST always be last!!!
-Import "imp/run.bmx"
-
-MKL_Version "The Fairy Tale - REVAMP - The Fairy Tale REVAMPED.bmx","16.08.12"
-MKL_Lic     "The Fairy Tale - REVAMP - The Fairy Tale REVAMPED.bmx","GNU General Public License 3"
+Global mypan:mygadget = newtab("Load Game")
 
 
-
-
-
-run
