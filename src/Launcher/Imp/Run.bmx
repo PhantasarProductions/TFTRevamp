@@ -20,12 +20,12 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.08.12
+Version: 16.08.13
 End Rem
 Strict
 Import "Framework.bmx"
 
-MKL_Version "The Fairy Tale - REVAMP - Run.bmx","16.08.12"
+MKL_Version "The Fairy Tale - REVAMP - Run.bmx","16.08.13"
 MKL_Lic     "The Fairy Tale - REVAMP - Run.bmx","GNU General Public License 3"
 
 Function Run()

@@ -20,20 +20,37 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.08.12
+Version: 16.08.13
 End Rem
 Strict
+
+Import tricky_units.anna
 
 Import "FrameWork.bmx"
 
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - NewGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","16.08.12"
+MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","16.08.13"
+
+
+Function Anna:StringMap(q$)
+	Return Anna_Request(Q) ' If you are compiling a modified version, remove this line or put it on REM, as ANNA may ONLY be used on unmodified versions of the game. If you only enhanced the launcher and only allowed the launcher to create a new account or to check if an account exists (as that is all the launcher may do), I will allow you to keep it.
+End Function
+
+Function toph$(A$)
+	Local ret$
+	For Local i=0 Until Len(A)
+		ret :+ "%"+Right(Hex(a[i]),2)
+	Next
+	Return ret	
+End Function
+
+
 
 Global mypan:mygadget = newtab("New Game")
 Global panel:TGadget = mypan.g
-
+Global YourName:TGadget
 
 
 If PW>=750 Then
@@ -96,6 +113,19 @@ Function F_AnnaSecu(G:TGadget)
 End Function
 Function F_AnnaCreate(G:TGadget)	
 	If Proceed("The launcher will now try to contact Anna to create your account. If succesful a browser window will open where you can enter the last data Anna needs to verify your account. Anna can directly contact Game Jolt, meaning that if you enter your Game Jolt data into Anna you don't have to do it in this game any more, but this feature is entirely optional.~n~n~nDo you wish to create an Anna account?")<>1 Return
+	Local Secu$ = Left(MD5("TFT"+Rand(0,MilliSecs())),6)
+	Local result:StringMap = Anna("&HC=Game&A=BPC_Create&Secu="+Secu+"&name="+Toph(TextFieldText(Yourname)))
+	If result.value("REJECT")
+		Notify "Anna has rejected your account creation.~n~nThe reason stated is:~n"+result.value("REJECT")
+	ElseIf result.value("ID") And result.value("STATUS")="SUCCESS"
+		Notify "Anna has accepted your sign up.~nI will now open a browser window for you, so you can verify your account.~nThis is very important as Anna will delete all unverified accounts after 24 hours."
+		SetGadgetText Annaid,result.value("ID")
+		SetGadgetText annasecu,secu
+		OpenURL "http://utbbs.tbbs.nl/Game.php?HC=Game&A=BPC_Verify&id="+result.value("ID")+"&secu="+secu
+	Else
+		Notify "Unfortunately the creation of the Anna account failed. Possibly something wrong with the site or your internet connection."	
+		'Notify result.dump() ' debugline, must be put on 'rem' in release
+		EndIf
 End Function
 
 gadgets.cr AnnaID    , CGUIN, F_AnnaID
@@ -153,6 +183,12 @@ Function getlangs()
 	SelectGadgetItem gadgets.gadget("lang"),english
 	selectlanguage gadgets.gadget("lang")	
 End Function getlangs
+
+gadgets.make "you",CreatePanel(0,340,750,30,panel,panel_sunken)
+gadgets.cr         CreateLabel("What is your name?",0,0,300,25,gadgets.gadget("you"))
+YourName     =     CreateTextField(300,0,300,25,gadgets.gadget("you"))
+gadgets.cr         yourname,CGUIN
+SetGadgetText YourName,StripDir(Dirry("$Home$"))
 
 Function StartTheGame(G:TGadget)
 	Notify "Start game not yet present"
