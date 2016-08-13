@@ -24,9 +24,10 @@ Version: 16.08.13
 End Rem
 Strict
 
-Import tricky_units.MKL_Version
 Import jcr6.zlibdriver
 Import brl.pngloader
+Import tricky_units.initfile2
+Import tricky_units.Dirry
 
 
 MKL_Version "The Fairy Tale - REVAMP - Globals.bmx","16.08.13"
@@ -47,3 +48,6 @@ If Not FileType(JCRFile) Notify "ERROR: I cannot access my datafile "+JCRFile En
 Global JCR:TJCRDir = JCR_Dir(JCRFile)
 
 'For Local f$=EachIn MapKeys(JCR.Entries) Print f Next ' debug line. Must be disabled in "real" version.
+
+Global LAURA2StartFile$ = Dirry("$AppSupport$/PhantasarProductions/LAURA2/LAURA2run.ini")
+LAURA2StartFile = StripDir(LAURA2Startfile) ' Debug line. Must be disabled in finel verion!

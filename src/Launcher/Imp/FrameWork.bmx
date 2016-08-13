@@ -50,6 +50,7 @@ Type ColorGroup
 End Type
 
 Global CGWin:Colorgroup = ColorGroup.Make(0,255,0,0,27,0)
+Global CGUIN:Colorgroup = ColorGroup.Make(0,27,0,0,255,0)
 
 
 Type MyGadget
@@ -58,7 +59,8 @@ Type MyGadget
 	Field Action(G:TGadget)
 	Field Close(G:TGadget)
 	Field FSelect(G:TGadget)
-	Field Activate(G:TGadget)
+	Field Activate(G:TGadget) ' Only used on panels attached to the tabber
+	Field Flow() ' Only used on panels attached to the tabber
 End Type
 
 Type MapGadgets	Extends TMap
@@ -79,7 +81,7 @@ Type MapGadgets	Extends TMap
 		SetGadgetColor mg.G,MG.CG.BR,MG.CG.BG,MG.CG.BB,True
 	End Method
 	
-	Method Cr(G:TGadget,CG:colorgroup=Null,Action(G:TGadget)=null)
+	Method Cr(G:TGadget,CG:colorgroup=Null,Action(G:TGadget)=Null)
 		Make "AUTO",G,CG,Action
 	End Method
 	
@@ -95,6 +97,7 @@ End Type
 Global Gadgets:MapGadgets = New MapGadgets
 
 Global Panels
+Global CurrentPanel:MyGadget
 Function GoTab(Num)
 	panels = CountGadgetItems(gadgets.gadget("tabber"))
 	DebugLog "Let's dig though: "+panels+" panels"
@@ -104,6 +107,7 @@ Function GoTab(Num)
 	Next
 	Local G:MyGadget = Gadgets.get("Panel"+num)
 	If G.Activate G.Activate(G.G)
+	CurrentPanel = G
 End Function
 
 
