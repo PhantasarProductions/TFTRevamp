@@ -1,5 +1,5 @@
 --[[
-  AutoUse.lua
+  AAA_Algemeen.lua
   Version: 16.08.13
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,6 +34,4 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-
-
--- @USEDIR Script/Use/Anyway
+-- @USEDIR Script/Use/Available

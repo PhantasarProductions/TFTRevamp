@@ -57,6 +57,8 @@ Type MyGadget
 	Field CG:Colorgroup
 	Field Action(G:TGadget)
 	Field Close(G:TGadget)
+	Field FSelect(G:TGadget)
+	Field Activate(G:TGadget)
 End Type
 
 Type MapGadgets	Extends TMap
@@ -77,7 +79,7 @@ Type MapGadgets	Extends TMap
 		SetGadgetColor mg.G,MG.CG.BR,MG.CG.BG,MG.CG.BB,True
 	End Method
 	
-	Method Cr(G:TGadget,CG:colorgroup=Null,Action(G:TGadget))
+	Method Cr(G:TGadget,CG:colorgroup=Null,Action(G:TGadget)=null)
 		Make "AUTO",G,CG,Action
 	End Method
 	
@@ -92,9 +94,22 @@ End Type
 
 Global Gadgets:MapGadgets = New MapGadgets
 
+Global Panels
+Function GoTab(Num)
+	panels = CountGadgetItems(gadgets.gadget("tabber"))
+	DebugLog "Let's dig though: "+panels+" panels"
+	For Local i=0 Until panels
+		gadgets.gadget("Panel"+i).setshow i=num
+		DebugLog num+"> Show for Panel #"+i+" is "+Int(i=num)
+	Next
+	Local G:MyGadget = Gadgets.get("Panel"+num)
+	If G.Activate G.Activate(G.G)
+End Function
+
 
 
 Function DoTabber(G:TGadget)
+	GoTab SelectedGadgetItem(G)
 End Function
 
 Function ByeBye(G:TGadget)
@@ -106,7 +121,6 @@ gadgets.get("win").close = Byebye
 gadgets.make "tabber",CreateTabber(0,0,ClientWidth(gadgets.gadget("win")),ClientHeight(gadgets.gadget("win")),gadgets.Gadget("win")),CGWin,DoTabber
 
 Global PW,PH
-Global Panels
 Function NewTab:myGadget(Caption$,CG:Colorgroup=Null,Action(G:TGadget)=Null)
 	Local T:TGadget = gadgets.gadget("tabber")
 	Local i=CountGadgetItems(t)
@@ -118,6 +132,18 @@ Function NewTab:myGadget(Caption$,CG:Colorgroup=Null,Action(G:TGadget)=Null)
 	Return gadgets.get("panel"+i)
 	panels = i + 1
 End Function	
-	
 
-	
+Global ActionList:TList = New TList
+Global CloseList:TList = New TList		
+Global SelectList:TList = New TList
+
+Function ListOuts() ' This function can make performance during the running better
+	For Local G:MyGadget = EachIn MapValues(gadgets)
+		If g.action ListAddLast actionlist,G
+		If g.close ListAddLast closelist,G
+		If g.fselect ListAddLast selectlist,G
+	Next
+	Print "Action list now has "+CountList(Actionlist)+" entries"
+	Print " Close list now has "+CountList(closelist) +" entries"	
+	Print "Select list now has "+CountList(selectlist)+" entries"
+End Function	

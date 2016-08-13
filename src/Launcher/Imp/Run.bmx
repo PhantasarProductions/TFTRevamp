@@ -20,17 +20,36 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.08.12
+Version: 16.08.13
 End Rem
 Strict
 Import "Framework.bmx"
 
-MKL_Version "The Fairy Tale - REVAMP - Run.bmx","16.08.12"
+MKL_Version "The Fairy Tale - REVAMP - Run.bmx","16.08.13"
 MKL_Lic     "The Fairy Tale - REVAMP - Run.bmx","GNU General Public License 3"
 
 Function Run()
+	Local EID,ESource:TGadget,myg:mygadget
+	Listouts
+	GoTab(0)
 	ShowGadget gadgets.gadget("win")
 	Repeat
 		WaitEvent
+		eid = EventID()
+		esource = TGadget(EventSource())
+		Select eid
+			Case event_windowclose
+				For myg = EachIn closelist
+					If myg.g=esource myg.close myg.g
+				Next
+			Case event_gadgetaction
+				For myg = EachIn actionlist
+					If myg.g=esource myg.action myg.g
+				Next
+			Case event_gadgetselect
+				For myg = EachIn selectlist
+					If myg.g=esource myg.fselect myg.g
+				Next
+		End Select		
 	Forever
 End Function

@@ -26,6 +26,7 @@ Strict
 
 Import tricky_units.MKL_Version
 Import jcr6.zlibdriver
+Import brl.pngloader
 
 
 MKL_Version "The Fairy Tale - REVAMP - Globals.bmx","16.08.13"
