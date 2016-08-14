@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.08.13
+Version: 16.08.14
 End Rem
 Strict
 
@@ -29,7 +29,7 @@ Import brl.eventqueue
 
 Import "globals.bmx"
 
-MKL_Version "The Fairy Tale - REVAMP - FrameWork.bmx","16.08.13"
+MKL_Version "The Fairy Tale - REVAMP - FrameWork.bmx","16.08.14"
 MKL_Lic     "The Fairy Tale - REVAMP - FrameWork.bmx","GNU General Public License 3"
 
 
@@ -76,9 +76,10 @@ Type MapGadgets	Extends TMap
 				mt = Hex(Rand(0,MilliSecs()))
 			Until Not MapContains(Self,mt)
 		EndIf	
-		MapInsert Self,mt,mg
+		MapInsert Self,mt,mg		
 		SetGadgetColor mg.G,MG.CG.FR,MG.CG.FG,MG.CG.FB,False
 		SetGadgetColor mg.G,MG.CG.BR,MG.CG.BG,MG.CG.BB,True
+		DebugLog "Added gadget: "+mt
 	End Method
 	
 	Method Cr(G:TGadget,CG:colorgroup=Null,Action(G:TGadget)=Null)
@@ -92,6 +93,26 @@ Type MapGadgets	Extends TMap
 	Method Gadget:TGadget(Tag$)
 		Return Get(Tag).G
 	End Method
+	
+	Method Button(Capt$,X,Y,W,H,parent:TGadget,Action(G:TGadget)=Null)
+		Local MG:MyGadget = New MyGadget
+		MG.G      = CreateButton(capt,x,y,w,h,parent)
+		MG.CG     = Null
+		MG.Action = Action
+		'If Not CG MG.CG = CGWin
+		
+		Local mt$ '=Upper(tag)
+		'If mt="AUTO"
+			Repeat
+				mt = Hex(Rand(0,MilliSecs()))
+			Until Not MapContains(Self,mt)
+		'EndIf	
+		MapInsert Self,mt,mg
+		DebugLog "Added button: "+mt
+		'SetGadgetColor mg.G,MG.CG.FR,MG.CG.FG,MG.CG.FB,False
+		'SetGadgetColor mg.G,MG.CG.BR,MG.CG.BG,MG.CG.BB,True
+	End Method	
+	
 End Type
 
 Global Gadgets:MapGadgets = New MapGadgets

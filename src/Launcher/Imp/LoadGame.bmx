@@ -20,17 +20,96 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.08.12
+Version: 16.08.14
 End Rem
 Strict
 
 Import "FrameWork.bmx"
 
+
+Import tricky_units.advFileRequest
+Import tricky_Units.ListDir
+
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - LoadGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.08.12"
+MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.08.14"
+
+
+
+Function LoadGame(G:TGadget)
+End Function
+
+Function Synchronize(G:TGadget)
+End Function
+
+Function ImportGame(G:TGadget)
+End Function
+
+Function ExportGame(G:TGadget)
+End Function
 
 Global mypan:mygadget = newtab("Load Game")
+Global panel:TGadget = mypan.g
+
+
+Global bw = pw/4
+Global by = ph-25
+' Buttons first (even though they live at the bottom)
+gadgets.button "Load"       ,bw * 0,by,bw,25,panel,Loadgame
+gadgets.button "Synchronize",bw * 1,by,bw,25,panel,Synchronize
+gadgets.button "Import"     ,bw * 2,by,bw,25,panel,ImportGame
+gadgets.button "Export"     ,bw * 3,by,bw,25,panel,ExportGame
+
+Global MustHaveFile:TList = New TList
+For Local g:TGadget = EachIn panel.kids
+	If GadgetText(G)<>"Import" ListAddLast MustHaveFile,G
+Next
+
+Function CheckHave(MyBool:Byte)
+	For Local g:TGadget = EachIn MustHaveFile
+		g.setenabled MyBool
+	Next
+	Return myBool
+End Function
+CheckHave False
+
+
+' Marrilona
+Gadgets.make "Marrilona",CreatePanel(pw-bw,0,bw,by,Panel)
+SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona.png") ),PANELPIXMAP_CENTER
+
+
+' We have no savegame panel
+
+Global WeHaveNoSaveGames:TGadget = CreateLabel("There are no savegames, yet!~nPlease start a new game first and save your game~nbefore using this feature",0,0,pw-bw,by,panel,label_Center)
+Global WeDoHaveSaveGames:TGadget = CreatePanel(0,0,PW-BW,BY,Panel)
+Global SGPan:TGadget = WeDoHaveSaveGames
+gadgets.cr WeHaveNoSaveGames
+gadgets.cr WeDoHaveSaveGames
+Global ShowPans:TGadget[] = [WeHaveNoSaveGames,WeDoHaveSaveGames]
+
+' Load Game window features
+
+
+' Check what we got
+Function ShowCheck(MyBool)
+	For Local i=0 Until Len showpans
+		showpans[i].setshow i=MyBool
+	Next
+	If Not MyBool Return CheckHave(False)
+End Function
+
+Function Check()
+Local dirs:TList = ListDir(savedir,ListDir_DirOnly)
+If Not CountList(dirs) Return ShowCheck(False)
+End Function
+
+
+' Activation of this panel
+Function Activate(G:TGadget)
+	check
+End Function
+mypan.activate = activate
 
 

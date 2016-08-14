@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.08.12
+Version: 16.08.14
 End Rem
 Strict
 
@@ -29,9 +29,32 @@ Import "FrameWork.bmx"
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - Versions.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - Versions.bmx","16.08.12"
+MKL_Version "The Fairy Tale - REVAMP - Versions.bmx","16.08.14"
 
 Global mypan:mygadget = newtab("Version Info")
+Global Panel:TGadget = mypan.g
+
+Global bw = pw/4
+Global by = ph-25
+
+
+' Hando Stillor
+Gadgets.make "Hando Stillor",CreatePanel(pw-bw,0,bw,by,Panel)
+SetGadgetPixmap gadgets.gadget("Hando Stillor"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Hando Stillor.png") ),PANELPIXMAP_CENTER
 
 
 
+gadgets.cr CreateLabel(    "Game Version:",0,  0,300,25,panel,Label_right)
+gadgets.cr CreateLabel("LAURA II Version:",0, 25,300,25,Panel,Label_right)
+gadgets.cr CreateLabel("Launcher Version:",0, 50,300,25,Panel,Label_right)
+
+gadgets.make "GameVersion" , CreateLabel(ID.value("Version") ,305,  0,300,25,Panel,Label_Left)
+gadgets.Make "LAURAVersion", CreateLabel("LAURA II not found",305, 25,300,25,Panel,Label_Left)
+gadgets.make "MyVersion"   , CreateLabel("Retrieving"        ,305, 50,300,25,Panel,Label_left)
+
+Function GetAppVersions(G:TGadget)
+	SetGadgetText gadgets.gadget("MyVersion"),MKL_NewestVersion()
+End Function
+
+
+mypan.activate = getappversions

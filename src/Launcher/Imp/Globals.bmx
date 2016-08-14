@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.08.13
+Version: 16.08.14
 End Rem
 Strict
 
@@ -28,9 +28,10 @@ Import jcr6.zlibdriver
 Import brl.pngloader
 Import tricky_units.initfile2
 Import tricky_units.Dirry
+Import tricky_units.Listfile
 
 
-MKL_Version "The Fairy Tale - REVAMP - Globals.bmx","16.08.13"
+MKL_Version "The Fairy Tale - REVAMP - Globals.bmx","16.08.14"
 MKL_Lic     "The Fairy Tale - REVAMP - Globals.bmx","GNU General Public License 3"
 
 AppTitle = StripAll(AppFile)
@@ -42,6 +43,21 @@ Const Resource$ = "./"
 ?
 Print "My resouces are located in: "+Resource
 
+
+' How to call LAURA from each platform
+?MacOS
+Global LAURA2$ = Resource+"LAURA2.app"
+Global LAURA2Pure$ = LAURA2 + "/Contents/MacOS/LAURA2"
+?Win32
+Const LAURA2$ = "LAURA2.exe"
+Const LAURA2Pure$ = LAURA2
+?Linux
+Const LAURA2$ = "LAURA2"
+Const LAURA2Pure$ = LAURA2
+?
+
+
+
 Global JCRFIle$ = Resource + "TFT.jcr"
 Print "Reading: "+JCRFile
 If Not FileType(JCRFile) Notify "ERROR: I cannot access my datafile "+JCRFile End
@@ -51,3 +67,22 @@ Global JCR:TJCRDir = JCR_Dir(JCRFile)
 
 Global LAURA2StartFile$ = Dirry("$AppSupport$/PhantasarProductions/LAURA2/LAURA2run.ini")
 LAURA2StartFile = StripDir(LAURA2Startfile) ' Debug line. Must be disabled in finel verion!
+
+Global ID:StringMap
+Function GetID:StringMap()
+	id = New StringMap
+	Local c$[]
+	For Local  l$ = EachIn Listfile ( JCR_B( JCR,"ID/Identify" ))
+		If Trim(l) 
+			c=Trim(l).split("=")
+			If (Len c)<>2 
+				Notify "Meta definitions are not correct! You may have a corrupted version of the game" End
+			EndIf
+			MapInsert id,c[0],c[1]
+			DebugLog c[0]+" = ~q"+c[1]+"~q"
+		EndIf
+	Next		
+End Function GetID
+
+Global savedir$ = Dirry("$AppSupport$/Phantasar Productions/LAURA2/")+ID.value("ID")+"/Saved Games"
+If Not CreateDir(savedir,1) Notify "ERROR! I could not create the savegame folder!~n~n"+savedir End
