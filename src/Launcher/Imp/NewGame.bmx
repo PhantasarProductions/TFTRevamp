@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.08.13
+Version: 16.08.12
 End Rem
 Strict
 
@@ -31,7 +31,7 @@ Import "FrameWork.bmx"
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - NewGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","16.08.13"
+MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","16.08.12"
 
 
 Function Anna:StringMap(q$)
@@ -150,6 +150,21 @@ End Function
 gadgets.cr gamejoltuser,  CGUIN,F_GJUser
 gadgets.cr gamejolttoken, CGUIN,F_GJToken
 
+Function AccessNet(P:TGadget)
+	Local allownet = JCR_Exists(JCR,"AUTHENTICATE/GAMEJOLT")
+	allownet = allownet And JCR_Exists(JCR,"AUTHENTICATE/CHECK")
+	Local A$[] = ["DENIED!","ALLOWED!"]
+	Print "Network access is "+A[allownet]
+	If Not allownet
+		For Local G:TGadget = EachIn P.kids 
+			If GadgetClass(G)<>Gadget_Label Then 
+				G.setenabled False
+				Print "= Disabled a gadget due to lack of network access"
+			EndIf			
+		Next
+	EndIf	
+End Function
+
 
 Function SelectLanguage(G:TGadget)
 	Local i=SelectedGadgetItem(g:TGadget)
@@ -184,11 +199,19 @@ Function getlangs()
 	selectlanguage gadgets.gadget("lang")	
 End Function getlangs
 
+Function You(G:TGadget)
+	startgame.D "User",Trim(GadgetText(G))
+End Function
+	
+
 gadgets.make "you",CreatePanel(0,340,750,30,panel,panel_sunken)
 gadgets.cr         CreateLabel("What is your name?",0,0,300,25,gadgets.gadget("you"))
 YourName     =     CreateTextField(300,0,300,25,gadgets.gadget("you"))
-gadgets.cr         yourname,CGUIN
 SetGadgetText YourName,StripDir(Dirry("$Home$"))
+gadgets.make "YouAre", yourname,CGUIN,You; You YourName
+Global IllegalName:TGadget = CreateLabel("!ILLEGAL NAME!",630,0,300,25,gadgets.gadget("you"))
+SetGadgetColor IllegalName,255,0,0,True
+SetGadgetColor illegalname,255,255,0,False
 
 Function StartTheGame(G:TGadget)
 	Notify "Start game not yet present"
@@ -208,12 +231,20 @@ MapInsert gadgets,"StartTheGame",mstart
 
 Function MyFlow()
 	Local allow=True
-	Local checkvars$[] = [ "StartScript", "StartFunction", "Language", "Skill" ]
+	Local checkvars$[] = [ "StartScript", "StartFunction", "Language", "Skill", "User" ]
 	For Local v$=EachIn checkvars
 		allow = allow And Trim(startgame.c(v))<>""
 	Next
 	If startgame.c("GameJoltUser") And (Not startgame.c("GameJoltToken")) allow=False
 	If startgame.c("AnnaID")       And (Not startgame.c("AnnaSecu"     )) allow=False
+	Local AllowedUserNameChars$ = "qwertyuiopasdfghjklzxcvbnm1234567890 -_=+QWERTYUIOPASDFGHJKLZXCVBNM"
+	Local allowname=True
+	Local User$ = startgame.c("User")
+	For Local i=0 Until Len(User)
+		allowname = allowname And allowedusernamechars.find(Chr(user[i]))>=0
+	Next
+	Allow = allow And allowname
+	illegalname.setshow Not allowname
 	start.setenabled allow
 End Function
 
@@ -233,6 +264,8 @@ Function ActivateMe(G:TGadget)
 	'DisableGadget GameJoltToken	
 	F_AnnaID AnnaID
 	F_GJUser gamejoltuser
+	Accessnet AnnaPanel
+	Accessnet GameJoltPanel
 End Function
 MyPan.Activate = ActivateMe
 mypan.flow = myflow
