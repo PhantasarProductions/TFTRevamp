@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.08.14
+Version: 16.08.12
 End Rem
 Strict
 
@@ -31,7 +31,7 @@ Import "FrameWork.bmx"
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - NewGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","16.08.14"
+MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","16.08.12"
 
 
 Function Anna:StringMap(q$)
@@ -73,7 +73,7 @@ Function PressNewGamePlus(G:TGadget)
 	startgame.D("StartFunction","NewGamePlus")
 End Function	
 
-gadgets.cr CreateButton("New Game",300,0,300,25,gadgets.Gadget("PanNewGame"),button_radio),Null,PressNewGame
+SetButtonState gadgets.cr( CreateButton("New Game",300,0,300,25,gadgets.Gadget("PanNewGame"),button_radio),Null,PressNewGame ).g,1
 Global NewGamePlusButton:TGadget = CreateButton("New Game+",300,25,300,25,gadgets.Gadget("PanNewGame"),button_radio)
 
 
@@ -95,12 +95,17 @@ gadgets.cr CreateButton("Mommy!!! I'm scared! Don't hurt me! Pleeeease!",300,0,3
 gadgets.Make "SkillDefault",CreateButton("Let them come! I can handle it!",300,25,300,25,skillpanel,Button_radio),Null,skillnormal; SetButtonState gadgets.gadget("SkillDefault"),1; skillNormal Null
 gadgets.cr CreateButton("I am the reaper! None shall live when I'm around!",300,50,300,25,skillpanel,button_radio),Null,skillhard
 
+Function whatsthis(G:TGadget)
+	OpenURL "http://utbbs.tbbs.nl/Game.php?A=Read&C=Doc&Doc=Netwerk"
+End Function
+
 Global AnnaPanel:TGadget = CreatePanel(0,160,750,60,Panel,panel_sunken) gadgets.cr AnnaPanel
 gadgets.cr CreateLabel("Anna ID: (optional)",0,0,300,25,AnnaPanel)
 gadgets.cr CreateLabel("Anna Secu Code:",0,25,300,25,AnnaPanel)
 Global AnnaID:TGadget = CreateTextField(300,0,150,25,AnnaPanel)
-Global AnnaCreate:TGadget = CreateButton("Create Account",500,0,150,25,AnnaPanel)
+Global AnnaCreate:TGadget = CreateButton("Create Account",450,0,150,25,AnnaPanel)
 Global AnnaSecu:TGadget = CreateTextField(300,25,250,25,AnnaPanel)
+gadgets.button "What's this?",600,0,100,25,annapanel,Whatsthis
 Global AnnaCreateAction:mygadget = New mygadget
 Annacreateaction.g = AnnaCreate
 
@@ -128,6 +133,7 @@ Function F_AnnaCreate(G:TGadget)
 		EndIf
 End Function
 
+
 gadgets.cr AnnaID    , CGUIN, F_AnnaID
 gadgets.cr AnnaSecu  , CGUIN, F_AnnaSecu
 AnnaCreateAction.Action = F_AnnaCreate
@@ -147,8 +153,10 @@ Function F_GJToken(G:TGadget)
 End Function
 
 
+
 gadgets.cr gamejoltuser,  CGUIN,F_GJUser
 gadgets.cr gamejolttoken, CGUIN,F_GJToken
+gadgets.button "What's this?",600,0,100,25,gamejoltpanel,Whatsthis
 
 Function AccessNet(P:TGadget)
 	Local allownet = JCR_Exists(JCR,"AUTHENTICATE/GAMEJOLT")
@@ -243,6 +251,8 @@ Function MyFlow()
 	For Local i=0 Until Len(User)
 		allowname = allowname And allowedusernamechars.find(Chr(user[i]))>=0
 	Next
+	Local ForbiddenNames$[] = ["SYSTEM","DEBUG"]
+	
 	Allow = allow And allowname
 	illegalname.setshow Not allowname
 	start.setenabled allow

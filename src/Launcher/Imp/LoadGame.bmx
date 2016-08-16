@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.08.14
+Version: 16.08.12
 End Rem
 Strict
 
@@ -33,9 +33,10 @@ Import tricky_Units.ListDir
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - LoadGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.08.14"
+MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.08.12"
 
-
+afr_InpCol 0,27,0,0,155,0
+afr_WinCol 0,255,0,0,25,0
 
 Function LoadGame(G:TGadget)
 End Function
@@ -44,6 +45,11 @@ Function Synchronize(G:TGadget)
 End Function
 
 Function ImportGame(G:TGadget)
+	Notify "Import allows you to copy savegame files from your friends to be added to your savegame list.~n~nPlease note, if the imported savegame contains any data to allow it to contact Anna or Game Jolt or any other network, it will be disabled, meaning you can play the game from these files, but you cannot contact any achievements sites with them any more."
+	Local cd$ = CurrentDir()
+	ChangeDir Dirry("$Home$")
+	Local ifile$ = afr_RequestFile("Please choose your file:")
+	ChangeDir cd$
 End Function
 
 Function ExportGame(G:TGadget)

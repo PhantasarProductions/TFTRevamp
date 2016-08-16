@@ -53,6 +53,7 @@ Global CGWin:Colorgroup = ColorGroup.Make(0,255,0,0,27,0)
 Global CGUIN:Colorgroup = ColorGroup.Make(0,27,0,0,255,0)
 
 
+
 Type MyGadget
 	Field G:TGadget
 	Field CG:Colorgroup
@@ -64,7 +65,7 @@ Type MyGadget
 End Type
 
 Type MapGadgets	Extends TMap
-	Method Make(tag$,G:TGadget,CG:Colorgroup=Null,Action(G:TGadget)=Null)
+	Method Make:mygadget(tag$,G:TGadget,CG:Colorgroup=Null,Action(G:TGadget)=Null)
 		Local MG:MyGadget = New MyGadget
 		MG.G      = G
 		MG.CG     = CG
@@ -80,10 +81,11 @@ Type MapGadgets	Extends TMap
 		SetGadgetColor mg.G,MG.CG.FR,MG.CG.FG,MG.CG.FB,False
 		SetGadgetColor mg.G,MG.CG.BR,MG.CG.BG,MG.CG.BB,True
 		DebugLog "Added gadget: "+mt
+		Return MG
 	End Method
 	
-	Method Cr(G:TGadget,CG:colorgroup=Null,Action(G:TGadget)=Null)
-		Make "AUTO",G,CG,Action
+	Method Cr:mygadget(G:TGadget,CG:colorgroup=Null,Action(G:TGadget)=Null)
+		Return Make( "AUTO",G,CG,Action )
 	End Method
 	
 	Method Get:MyGadget(Tag$)
@@ -99,7 +101,9 @@ Type MapGadgets	Extends TMap
 		MG.G      = CreateButton(capt,x,y,w,h,parent)
 		MG.CG     = Null
 		MG.Action = Action
-		'If Not CG MG.CG = CGWin
+		?Win32
+		MG.CG = CGWin
+		?
 		
 		Local mt$ '=Upper(tag)
 		'If mt="AUTO"
@@ -109,8 +113,10 @@ Type MapGadgets	Extends TMap
 		'EndIf	
 		MapInsert Self,mt,mg
 		DebugLog "Added button: "+mt
-		'SetGadgetColor mg.G,MG.CG.FR,MG.CG.FG,MG.CG.FB,False
-		'SetGadgetColor mg.G,MG.CG.BR,MG.CG.BG,MG.CG.BB,True
+		?win32
+		SetGadgetColor mg.G,MG.CG.FR,MG.CG.FG,MG.CG.FB,False
+		SetGadgetColor mg.G,MG.CG.BR,MG.CG.BG,MG.CG.BB,True
+		?
 	End Method	
 	
 End Type
