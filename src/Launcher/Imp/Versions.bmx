@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.08.14
+Version: 16.08.18
 End Rem
 Strict
 
@@ -29,7 +29,7 @@ Import "FrameWork.bmx"
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - Versions.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - Versions.bmx","16.08.14"
+MKL_Version "The Fairy Tale - REVAMP - Versions.bmx","16.08.18"
 
 Global mypan:mygadget = newtab("Version Info")
 Global Panel:TGadget = mypan.g
@@ -52,9 +52,40 @@ gadgets.make "GameVersion" , CreateLabel(ID.value("Version") ,305,  0,300,25,Pan
 gadgets.Make "LAURAVersion", CreateLabel("LAURA II not found",305, 25,300,25,Panel,Label_Left)
 gadgets.make "MyVersion"   , CreateLabel("Retrieving"        ,305, 50,300,25,Panel,Label_left)
 
+
+?MacOS
+Global Laura$ = Resource+"/LAURA2.app/Contents/MacOS/LAURA2"
+?Linux
+Const Laura$ = "./LAURA2"
+?Win32
+Const LAURA$ = "LAURA.EXE"
+?
+
 Function GetAppVersions(G:TGadget)
 	SetGadgetText gadgets.gadget("MyVersion"),MKL_NewestVersion()
+	If FileType(Laura)
+		Local BT:TStream = WriteFile(Dirry("$AppSupport$/$LinuxDot$Phantasar Productions/LAURA2/LAURA2run.ini"))	
+		WriteLine BT,"Var:VersionOnly=Yes"
+		WriteLine Bt,"Var:CodeName=TFTREVAMP"
+		CloseFile BT
+		system_ Laura
+		Local vdumpfile$ = Dirry("$AppSupport$/$LinuxDot$Phantasar Productions/LAURA2/VersionDump.txt")
+		Local lauraversiondump$ = LoadString(vdumpfile)
+		Local lauraversion$ = "???"
+		Local vd$[] = lauraversiondump.split("~n")
+		Local ss$[]
+		For Local s$=EachIn vd
+			ss=s.split(":")
+			'Print s+" >>> "+ss[0]
+			If Trim(ss[0])="Version" And Len(ss)>=2
+				lauraversion = Trim(ss[1])
+			EndIf			
+		Next
+		SetGadgetText gadgets.gadget("LAURAVersion"),lauraversion				
+	EndIf	
 End Function
+
+
 
 
 mypan.activate = getappversions
