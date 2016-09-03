@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.08.14
+Version: 16.09.03
 End Rem
 Strict
 
@@ -29,9 +29,10 @@ Import brl.pngloader
 Import tricky_units.initfile2
 Import tricky_units.Dirry
 Import tricky_units.Listfile
+Import maxgui.maxgui
 
 
-MKL_Version "The Fairy Tale - REVAMP - Globals.bmx","16.08.14"
+MKL_Version "The Fairy Tale - REVAMP - Globals.bmx","16.09.03"
 MKL_Lic     "The Fairy Tale - REVAMP - Globals.bmx","GNU General Public License 3"
 
 AppTitle = StripAll(AppFile)
@@ -65,8 +66,8 @@ Global JCR:TJCRDir = JCR_Dir(JCRFile)
 
 'For Local f$=EachIn MapKeys(JCR.Entries) Print f Next ' debug line. Must be disabled in "real" version.
 
-Global LAURA2StartFile$ = Dirry("$AppSupport$/PhantasarProductions/LAURA2/LAURA2run.ini")
-LAURA2StartFile = StripDir(LAURA2Startfile) ' Debug line. Must be disabled in finel verion!
+Global LAURA2StartFile$ = Dirry("$AppSupport$/Phantasar Productions/LAURA2/LAURA2run.ini")
+' LAURA2StartFile = StripDir(LAURA2Startfile) ' Debug line. Must be disabled in finel verion!
 
 Global ID:StringMap
 Function GetID:StringMap()
@@ -94,4 +95,27 @@ CreateDir ExtractDir(launchercfile),1
 If Not FileType(LAUNCHERcFILE$) SaveString "[rem]~nInitial~n[vars]~nscreen.fullscreen=true~n~n",launchercfile
 LoadIni launchercfile,launcherconfig
 
-Function SaveLauncherConfig() SaveIni LauncherCFile,LauncherConfig End function
+Function SaveLauncherConfig() SaveIni LauncherCFile,LauncherConfig End Function
+
+
+' Required or this cannot go cross the imports (sigh)
+Global modes:TMap
+Global Modesgadget:TGadget
+Global custommode:tgraphicsmode
+Global custom:TGadget
+Global Windowed:TGadget
+Function GetMode:tgraphicsmode()
+	Local M:tgraphicsmode
+	If ButtonState(custom) m=custommode Else m = tgraphicsmode(MapValueForKey(modes,GadgetItemText(modesgadget,SelectedGadgetItem(modesgadget))))
+	Return m
+End Function
+
+Function Mode2Ini(I:TIni)
+
+	Local M:tgraphicsmode = GetMode()
+	Local d = m.depth
+	If ButtonState(Windowed) d=0
+	I.D "altscreenmode",m.width+","+m.height+","+d
+End Function	
+
+

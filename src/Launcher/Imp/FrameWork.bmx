@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.08.18
+Version: 16.09.03
 End Rem
 Strict
 
@@ -29,7 +29,7 @@ Import brl.eventqueue
 
 Import "globals.bmx"
 
-MKL_Version "The Fairy Tale - REVAMP - FrameWork.bmx","16.08.18"
+MKL_Version "The Fairy Tale - REVAMP - FrameWork.bmx","16.09.03"
 MKL_Lic     "The Fairy Tale - REVAMP - FrameWork.bmx","GNU General Public License 3"
 
 
@@ -134,6 +134,11 @@ Function GoTab(Num)
 	Local G:MyGadget = Gadgets.get("Panel"+num)
 	If G.Activate G.Activate(G.G)
 	CurrentPanel = G
+	If currentpanel.flow 
+		DebugLog "Gone to a panel with a flow"
+	Else
+		DebugLog "Gone to a panel without a flow"
+	EndIf
 End Function
 
 

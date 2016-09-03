@@ -34,7 +34,7 @@ Function Run()
 	GoTab(0)
 	ShowGadget gadgets.gadget("win")
 	Repeat
-		If currentpanel.flow Then currentpanel.flow()
+		If currentpanel.flow Then currentpanel.flow() Else DebugLog "This panel has no flow"
 		WaitEvent
 		eid = EventID()
 		esource = TGadget(EventSource())

@@ -222,13 +222,30 @@ SetGadgetColor IllegalName,255,0,0,True
 SetGadgetColor illegalname,255,255,0,False
 
 Function StartTheGame(G:TGadget)
-	Notify "Start game not yet present"
+	'Notify "Start game not yet present"
 	startgame.D "Resource",Resource+"TFT.jcr"
 	startgame.D "Title","The Fairy Tale REVAMPED"
+	startgame.D "CodeName","TFTREVAMP"
 	?MacOS
+	startgame.add "Resource",ExtractDir(ExtractDir(AppFile))+"/Resources/TFT.JCR"
 	startgame.D "MacReturn",ExtractDir(ExtractDir(ExtractDir(AppFile)))
+	?Not MacOS
+	startgame.add "Resource",AppDir+"/TFT.JCR"
 	?
+	Mode2Ini startgame
 	SaveIni LAURA2StartFile, startgame
+	gadgets.get("win").g.setshow False
+	?MacOS
+	Local app$ = ExtractDir(ExtractDir(AppFile))+"/Resources/LAURA2.app"
+	If Not FileType(app) Notify "Trouble launching LAURA II~n~n"+App
+	system_ "open ~q"+app+"~q"
+	End
+	?Win32
+	system_ "LAURA2.exe"
+	?Linux
+	system_ "./LAURA2"
+	?
+	gadgets.get("win").g.setshow True
 End Function
 
 Global Start:TGadget = CreateButton("Start the game",0,PH-25,750,25,Panel)
@@ -238,13 +255,15 @@ mstart.g = start
 MapInsert gadgets,"StartTheGame",mstart
 
 Function MyFlow()
+	DebugLog "New Game Flow"
 	Local allow=True
 	Local checkvars$[] = [ "StartScript", "StartFunction", "Language", "Skill", "User" ]
 	For Local v$=EachIn checkvars
 		allow = allow And Trim(startgame.c(v))<>""
+		DebugLog "Checked "+v+" > "+allow
 	Next
-	If startgame.c("GameJoltUser") And (Not startgame.c("GameJoltToken")) allow=False
-	If startgame.c("AnnaID")       And (Not startgame.c("AnnaSecu"     )) allow=False
+	If startgame.c("GameJoltUser") And (Not startgame.c("GameJoltToken")) allow=False; DebugLog "GJ user without token"
+	If startgame.c("AnnaID")       And (Not startgame.c("AnnaSecu"     )) allow=False; DebugLog "Anna ID without secu"
 	Local AllowedUserNameChars$ = "qwertyuiopasdfghjklzxcvbnm1234567890 -_=+QWERTYUIOPASDFGHJKLZXCVBNM"
 	Local allowname=True
 	Local User$ = startgame.c("User")
@@ -252,14 +271,19 @@ Function MyFlow()
 		allowname = allowname And allowedusernamechars.find(Chr(user[i]))>=0
 	Next
 	Local ForbiddenNames$[] = ["SYSTEM","DEBUG"]
-	
+	If Not allowname DebugLog "Forbiden name"
+	For Local FN$ = EachIn ForbiddenNames
+		allowname = allowname And Upper(user)<>FN
+	Next
 	Allow = allow And allowname
 	illegalname.setshow Not allowname
 	start.setenabled allow
+	DebugLog "Allow = "+allow
 End Function
 
 
 Function ActivateMe(G:TGadget)
+	pressnewgame Null
 	NewGamePlusButton.SetEnabled False ' The actual code for this comes later.	
 	Local gotanna = True ' the actual code comes later
 	Local gotgamejolt = True

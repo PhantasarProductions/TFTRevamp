@@ -1,3 +1,27 @@
+Rem
+	The Fairy Tale REVAMPED - LAUNCHER
+	Screen modes
+	
+	
+	
+	(c) Jeroen P. Broks, 2016, All rights reserved
+	
+		This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+		
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+		You should have received a copy of the GNU General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.
+		
+	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
+	to the project the exceptions are needed for.
+Version: 16.09.03
+End Rem
 Strict
 
 Import "FrameWork.bmx"
@@ -6,8 +30,8 @@ Import brl.glmax2d
 
 Private
 
-MKL_Lic     "The Fairy Tale - REVAMP - NewGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","16.08.18"
+MKL_Lic     "The Fairy Tale - REVAMP - Screen.bmx","GNU General Public License 3"
+MKL_Version "The Fairy Tale - REVAMP - Screen.bmx","16.09.03"
 
 
 
@@ -29,7 +53,7 @@ SetGadgetPixmap gadgets.gadget("Dandor"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Da
 
 
 
-Global modes:TMap = New TMap
+modes:TMap = New TMap
 For Local mode:TGraphicsMode=EachIn GraphicsModes()
 	Print mode.width+","+mode.height+","+mode.depth+","+mode.hertz
 	If mode.width>=minw And mode.width<=maxw And mode.height>=minh And mode.width<=maxh Then
@@ -40,11 +64,11 @@ Next
 	
 
 Global FullScreen:TGadget = CreateButton("Full Screen",bw+5, 0,bw,25,panel,button_radio) SetButtonState fullscreen,launcherconfig.c("screen.fullscreen")="true"
-Global Windowed:TGadget   = CreateButton("Windowed"   ,bw+5,25,bw,25,panel,button_radio) SetButtonState windowed,  Not ButtonState(fullscreen)
+Windowed:TGadget   = CreateButton("Windowed"   ,bw+5,25,bw,25,panel,button_radio) SetButtonState windowed,  Not ButtonState(fullscreen)
 
-Global Custom:TGadget = CreateButton("Custom",bw+5, 50,bw,25,panel,button_checkbox) SetButtonState Custom,launcherconfig.c("screen.custom")="true"
+Custom:TGadget = CreateButton("Custom",bw+5, 50,bw,25,panel,button_checkbox) SetButtonState Custom,launcherconfig.c("screen.custom")="true"
 
-Global CustomMode:TGraphicsmode = New TGraphicsMode
+CustomMode:TGraphicsmode = New TGraphicsMode
 CustomMode.width  = launcherconfig.c("SCREEN.CUSTOM.W").toint()
 CustomMode.height = launcherconfig.c("SCREEN.CUSTOM.H").toint()
 If Not custommode.width  custommode.width =minw
@@ -88,7 +112,7 @@ Function SetCustom(G:TGadget)
 	ToStatus
 End Function
 
-gadgets.cr Fullscreen,CGWIN,FullOrWindowed
+gadgets.make "Windowed",Fullscreen,CGWIN,FullOrWindowed
 gadgets.cr Windowed  ,CGWIN,FullOrWindowed
 gadgets.cr Custom    ,CGWin,SetCustom
 
@@ -111,7 +135,7 @@ Function ChangeMode(G:TGadget)
 	ToStatus
 End Function
 
-Global ModesGadget:TGadget = CreateListBox(0,0,bw,by,panel) 
+ModesGadget:TGadget = CreateListBox(0,0,bw,by,panel) 
 For Local m$=EachIn MapKeys(modes) AddGadgetItem Modesgadget,m Next
 For Local i=0 Until CountGadgetItems(modesgadget)
 	DebugLog "SELECTLINE="+launcherconfig.c("SCREEN.SELECTLINE")+"; GadgetItemText("+i+")="+GadgetItemText(modesgadget,i)
@@ -154,10 +178,4 @@ For Local mymargin$=EachIn Margins
 Next
 
 Public
-
-Function GetMode:tgraphicsmode()
-	Local M:tgraphicsmode
-	If ButtonState(custom) m=custommode Else m = tgraphicsmode(MapValueForKey(modes,GadgetItemText(modesgadget,SelectedGadgetItem(modesgadget))))
-	Return m
-End Function
 
