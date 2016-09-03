@@ -54,7 +54,7 @@ gadgets.make "MyVersion"   , CreateLabel("Retrieving"        ,305, 50,300,25,Pan
 
 
 ?MacOS
-Global Laura$ = Resource+"/LAURA2.app/Contents/MacOS/LAURA2"
+Global Laura$ = Resource+"LAURA2.app/Contents/MacOS/LAURA2"
 ?Linux
 Const Laura$ = "./LAURA2"
 ?Win32
@@ -68,8 +68,13 @@ Function GetAppVersions(G:TGadget)
 		WriteLine BT,"Var:VersionOnly=Yes"
 		WriteLine Bt,"Var:CodeName=TFTREVAMP"
 		CloseFile BT
-		system_ Laura
+		SaveString Laura,Dirry("$AppSupport$/$LinuxDot$Phantasar Productions/LAURA2/ReqFromTFTLauncher.txt")
+		system_ "~q"+Laura+"~q"
 		Local vdumpfile$ = Dirry("$AppSupport$/$LinuxDot$Phantasar Productions/LAURA2/VersionDump.txt")
+		If Not FileType(vdumpfile)
+			Notify "Failed to launch "+laura
+			Return
+		EndIf
 		Local lauraversiondump$ = LoadString(vdumpfile)
 		Local lauraversion$ = "???"
 		Local vd$[] = lauraversiondump.split("~n")
