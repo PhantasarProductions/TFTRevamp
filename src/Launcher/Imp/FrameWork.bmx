@@ -96,21 +96,20 @@ Type MapGadgets	Extends TMap
 		Return Get(Tag).G
 	End Method
 	
-	Method Button(Capt$,X,Y,W,H,parent:TGadget,Action(G:TGadget)=Null)
+	Method Button(Capt$,X,Y,W,H,parent:TGadget,Action(G:TGadget)=Null,flags=0,tag$="AUTO")
 		Local MG:MyGadget = New MyGadget
-		MG.G      = CreateButton(capt,x,y,w,h,parent)
+		MG.G      = CreateButton(capt,x,y,w,h,parent,flags)
 		MG.CG     = Null
 		MG.Action = Action
 		?Win32
 		MG.CG = CGWin
-		?
-		
-		Local mt$ '=Upper(tag)
-		'If mt="AUTO"
+		?		
+		Local mt$ =Upper(tag)
+		If mt="AUTO"
 			Repeat
 				mt = Hex(Rand(0,MilliSecs()))
 			Until Not MapContains(Self,mt)
-		'EndIf	
+		EndIf	
 		MapInsert Self,mt,mg
 		DebugLog "Added button: "+mt
 		?win32
@@ -147,7 +146,7 @@ Function ByeBye(G:TGadget)
 	End
 End Function
 
-gadgets.make "win",CreateWindow(StripAll(AppFile)+" -- Launcher",0,0,ClientWidth(Desktop())*.85,ClientHeight(Desktop())*.85,Null, Window_center | Window_titlebar | Window_clientcoords | Window_hidden )
+gadgets.make "win",CreateWindow(StripAll(AppFile)+" -- Launcher",0,0,ClientWidth(Desktop())*.85,ClientHeight(Desktop())*.85,Null, Window_center | Window_titlebar | Window_clientcoords | Window_hidden | Window_Status)
 gadgets.get("win").close = Byebye
 gadgets.make "tabber",CreateTabber(0,0,ClientWidth(gadgets.gadget("win")),ClientHeight(gadgets.gadget("win")),gadgets.Gadget("win")),CGWin,DoTabber
 

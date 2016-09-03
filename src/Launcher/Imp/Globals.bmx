@@ -86,3 +86,12 @@ End Function GetID
 
 Global savedir$ = Dirry("$AppSupport$/Phantasar Productions/LAURA2/")+ID.value("ID")+"/Saved Games"
 If Not CreateDir(savedir,1) Notify "ERROR! I could not create the savegame folder!~n~n"+savedir End
+
+
+Global LauncherConfig:TIni
+Global LauncherCFile$ = Dirry("$AppSupport$/Phantasar Productions/LAURA2/")+ID.value("ID")+"/Launcher/Config.ini"
+CreateDir ExtractDir(launchercfile),1
+If Not FileType(LAUNCHERcFILE$) SaveString "[rem]~nInitial~n[vars]~nscreen.fullscreen=true~n~n",launchercfile
+LoadIni launchercfile,launcherconfig
+
+Function SaveLauncherConfig() SaveIni LauncherCFile,LauncherConfig End function
