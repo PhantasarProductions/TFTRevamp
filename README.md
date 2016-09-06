@@ -14,3 +14,7 @@ The Lua Scripts may if stripped from all references to "The Fairy Tale", its cha
 
 The Launcher is a program on its own, the game itself is written in [LAURA II](https://github.com/TrickyGameTools/LAURA2) and you'll need that tool to get anys script to work. LAURA II has been licensed under the GNU GPL 3 and you can use it freely for your games (yes, even commercial games, as long as you refer to the free site of LAURA II and as long as modified versions remain open-source. The game itself counts as "the data" and is therefore not affected by the GNU GPL license).
 
+
+
+To see live what I am doing you can follow my [Live DevLog](http://tricky1975.github.io/tft/tft_Devlog_page1.html) here.
+You can also follow this project on [Game Jolt](http://gamejolt.com/games/the-fairy-tale-revamped/174735).

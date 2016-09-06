@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.08.18
+Version: 16.09.03
 End Rem
 Strict
 
@@ -29,7 +29,7 @@ Import "FrameWork.bmx"
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - Versions.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - Versions.bmx","16.08.18"
+MKL_Version "The Fairy Tale - REVAMP - Versions.bmx","16.09.03"
 
 Global mypan:mygadget = newtab("Version Info")
 Global Panel:TGadget = mypan.g
