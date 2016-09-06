@@ -1,6 +1,6 @@
 --[[
   NewGame.lua
-  Version: 16.08.12
+  Version: 16.09.06
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,3 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
+
+MS.Load("STARTGAME","Script/Events/StartGame.lua")
+LAURA.Flow("STARTGAME")
