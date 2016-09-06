@@ -37,18 +37,41 @@ version: 16.09.06
 function GALE_OnLoad()
   sterretjes = Image.Load("GFX/Algemeen/Sterretjes.png")
   aarde = Image.Load("GFX/Algemeen/Earth.png")
+  bos = Image.Load('GFX/Algemeen/Bushes.png')
   Image.HotCenter(aarde)
+  year = tonumber(Str.Right(Time.Date(),4))
+  spd = 0.00001
+  
 end
 
+
 function MAIN_FLOW()
-  -- Earth in space
+  -- Earth in space  
   Image.Tile(sterretjes)
   waarde = (waarde or 200) - .01
   if waarde>0 then
-    if waarde<100 then Image.AlphaPC(waarde) end
-    Image.Scale(waarde,waarde)
-    Image.Show(aarde,Center_X,CenterY)
+    if waarde<100 then Image.SetAlphaPC(waarde) end
+    Image.ScalePC(waarde,waarde)
+    Image.Show(aarde,Center_X,Center_Y)
   end    
+  Image.SetAlphaPC(100)
+  Image.ScalePC(100,100)
+  -- DarkText(waarde,0,0)
+  -- Time back
+  backtime = backtime or (-year) + math.floor(spd)
+  -- Image.NoFont() DarkText('year = '..year..'; backtime = '..backtime..'; spd = '..spd,0,0,0,0,255,180,0)
+  Image.Font("Fonts/master_of_break.ttf",50)
+  local showbacktime = backtime.." B.C."
+  if backtime<0 then showbacktime = tonumber(-backtime) end
+  if backtime<1000000000 then DarkText(showbacktime,Screen.Width()-30,30,1,0,255,255,255); backtime=backtime+math.floor(spd) end
+  spd = spd + (spd/100)
+  if spd>1000000 then spd = 100001 end  
+  -- Bushes
+  bushalpha = (bushalpha or -10000) + 1
+  if bushalpha > 0 then
+     Image.SetAlphaPC(bushalpha)
+     Image.Show(bos)
+  end   
   -- Flip
   Flip()
 end
