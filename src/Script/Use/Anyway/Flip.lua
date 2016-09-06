@@ -1,5 +1,5 @@
 --[[
-  AAA_Algemeen.lua
+  Flip.lua
   Version: 16.09.06
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,5 +34,21 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- @USEDIR Script/Use/Available
--- @USEDIR Script/Libs
+
+if Var.C("$OLDTIME") then Var.D("$OLDTIME",Time.Time()) end
+
+function Flip()
+    Image.Flip()
+    local t = Time.Time()
+    if t~=Var.C("$OLDTIME") then
+       inc("%GAMETIME.SECONDS")
+       if CVV('%GAMETIME.SECONDS')>=60 then
+          Var.D("%GAMETIME.SECONDS",0)
+          inc("%GAMETIME.MINUTES")
+       end
+       if CVV('%GAMETIME.MINUTES')>=60 then
+          Var.D("%GAMETIME.MINUTES",0)
+          inc("%GAMETIME.HOURS")
+       end             
+    end
+end

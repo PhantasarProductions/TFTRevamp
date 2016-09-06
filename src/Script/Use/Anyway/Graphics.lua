@@ -17,5 +17,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
+
 Center_X = Screen.Width()/2
 Center_Y = Screen.Height()/2

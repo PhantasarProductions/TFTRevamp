@@ -35,12 +35,20 @@
 version: 16.09.06
 ]]
 function GALE_OnLoad()
-sterretjes = Image.Load("GFX/Algemeen/Sterretjes.png")
-aarde = Image.Load("GFX/Algemeen/Earth.png")
-Image.HotCenter(aarde)
+  sterretjes = Image.Load("GFX/Algemeen/Sterretjes.png")
+  aarde = Image.Load("GFX/Algemeen/Earth.png")
+  Image.HotCenter(aarde)
 end
 
 function MAIN_FLOW()
--- Earth in space
-Image.Tile(sterretjes)
+  -- Earth in space
+  Image.Tile(sterretjes)
+  waarde = (waarde or 200) - .01
+  if waarde>0 then
+    if waarde<100 then Image.AlphaPC(waarde) end
+    Image.Scale(waarde,waarde)
+    Image.Show(aarde,Center_X,CenterY)
+  end    
+  -- Flip
+  Flip()
 end
