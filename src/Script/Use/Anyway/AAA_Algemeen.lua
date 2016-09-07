@@ -1,6 +1,6 @@
 --[[
   AAA_Algemeen.lua
-  Version: 16.09.06
+  Version: 16.09.07
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,5 +34,21 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
 -- @USEDIR Script/Use/Available
 -- @USEDIR Script/Libs
+
+
+
+
+-- Some definitions based on things
+
+--[[
+function bv(tag,condition)
+  local ar = { [true]='TRUE',[false]='FALSE'}
+  Var.D(tag,ar[condition])
+end
+]]
+
+vocals = JCR6.Exists('ID/ID.Vocal.Demo')==1
+  

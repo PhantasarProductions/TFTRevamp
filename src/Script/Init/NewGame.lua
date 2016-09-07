@@ -1,6 +1,6 @@
 --[[
   NewGame.lua
-  Version: 16.09.06
+  Version: 16.09.07
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -35,6 +35,10 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 
+function NewGame()
+  MS.Load("STARTGAME","Script/Events/StartGame.lua")
+  LAURA.Flow("STARTGAME")
+  -- Var.D("$LANG")
+end  
 
-MS.Load("STARTGAME","Script/Events/StartGame.lua")
-LAURA.Flow("STARTGAME")
+NewGame()

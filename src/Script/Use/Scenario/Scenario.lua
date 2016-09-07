@@ -1,7 +1,7 @@
 --[[
   Scenario.lua
   
-  version: 16.09.06
+  version: 16.09.07
   Copyright (C) 2016 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -17,6 +17,9 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
+portret = {}
+
 function ProcessBLine(Rec,Prefix,DLine)
 local Processes = {
     ["ERROR"] = function() Sys.Error("Unknown scenario prefix") end,  -- error
@@ -90,7 +93,12 @@ for k,tag in pairs(ret) do for i,rec in pairs(tag) do
      end end
 -- Auto Tie Sound Files
 for k,tag in pairs(ret) do for i,rec in pairs(tag) do
-    if JCR6.Exists("VOCALS/"..file.."/"..tag.."_"..i..".ogg")==1 then rec.SoundFile = file.."/"..tag.."_"..i..".ogg" end
+    if JCR6.Exists("VOCALS/"..file.."/"..k.."_"..i..".ogg")==1 then 
+      rec.SoundFile = "Vocals/"..file.."/"..k.."_"..i..".ogg" 
+      CSay("Got sound for "..k.." #"..i)
+    else
+      CSay("no sound for "..k.." #"..i.."   (VOCALS/"..file.."/"..k.."_"..i..".ogg)",255,0,0)  
+    end
 end end     
 -- closure
 btdata[loadas or file] = ret    
