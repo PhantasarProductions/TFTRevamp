@@ -49,7 +49,7 @@ function GALE_OnLoad()
   allowvoice = vocals and true -- Use vocals in this matter?
   if vocals then CSay("Vocals are available") else CSay("Vocals are NOT available",255,0,0) end
   if allowvoice then CSay("allowvoice = "..sval(allowvoice)) end
-  for t in each(mysplit(serialize("Story",stillorstory),"\n")) do CSay(t) end
+  -- for t in each(mysplit(serialize("Story",stillorstory),"\n")) do CSay(t) end
 end
 
 function DebugDump(var,x)
@@ -59,6 +59,15 @@ function DebugDump(var,x)
       DarkText(v,(x or 5),i*20)
   end
 end    
+
+function NextStage()
+  Image.Free(sterretjes)
+  Image.Free(aarde)
+  Image.Free(bos)
+  MS.Load("PROLOGUESELECTCHAR","Script/Flow/PrologueSelectchar.lua")
+  LAURA.Flow('PROLOGUESELECTCHAR')
+  MS.Destroy("STARTGAME")
+end
 
 function MAIN_FLOW()
   white()
