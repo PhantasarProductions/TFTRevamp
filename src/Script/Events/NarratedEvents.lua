@@ -32,5 +32,16 @@
   
  **********************************************
  
-version: 16.09.06
+version: 16.09.08
 ]]
+
+function Load(file)
+end
+
+
+function GALE_OnLoad()
+end
+
+function MAIN_FLOW()
+  Cls()
+end

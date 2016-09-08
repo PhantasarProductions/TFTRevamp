@@ -73,6 +73,12 @@ function GALE_OnLoad()
    until INP.MouseH(1)==0 
 end
 
+function SelChar()
+   MS.Load("EVENT","NarratedEvents.lua")
+   MS.RUN("EVENT","Init",chars[pos])
+   Done('&DONE.PROLOGUE['..pos..']')
+   LAURA.Flow("EVENT") 
+end
 
 function MAIN_FLOW()
    local x
@@ -102,7 +108,7 @@ function MAIN_FLOW()
    if (INP.KeyH(KEY_LEFT )==1 or joyhit(joy_left )) and pos>1     then pos = pos - 1 end   
    if INP.KeyH(KEY_SPACE)==1 or INP.KeyH(KEY_RETURN)==1  then SelChar() end
    for joy=0,15 do 
-       if INP.JoyH(joy)==1 then SecChar() end
+       if INP.JoyH(joy)==1 then SelChar() end
    end
    ShowMouse()
    Flip()
