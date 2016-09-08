@@ -1,5 +1,5 @@
 --[[
-  AutoUse.lua
+  Mouse.lua
   Version: 16.09.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,4 +34,22 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- @USEDIR Script/Use/Anyway
+Image.LoadNew("Mouse","GFX/Algemeen/Pointer.png")
+
+function GetMouse()
+  return INP.MouseX(),INP.MouseY()
+end
+MouseCoords = GetMouse
+
+
+
+function ShowMouse(altimg)
+  local x,y = GetMouse()
+  ShowImage(altimg or "Mouse",x,y)
+end  
+
+function MouseHit(button)
+  return INP.MouseH(button)==1
+end
+
+mousehit = MouseHit

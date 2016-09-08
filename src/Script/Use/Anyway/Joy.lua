@@ -1,5 +1,5 @@
 --[[
-  AutoUse.lua
+  Joy.lua
   Version: 16.09.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,4 +34,35 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- @USEDIR Script/Use/Anyway
+joy_left = -1
+joy_right = -2
+joy_up = -3
+joy_down = -4
+
+function joypos()
+  return INP.JoyX(),INP.JoyY()
+end
+
+function joyhit(code)
+  local x,y = joypos()
+  if code<0 then
+     --[[
+     if old_joy_x~=x and old_joy_y~=y then
+        old_joy_x=x
+        old_joy_y=y
+        if code==joy_up    and y==-1 then return true end
+        if code==joy_down  and y== 1 then return true end
+        if code==joy_left  and x==-1 then return true end
+        if code==joy_right and x== 1 then return true end        
+     end
+     ]]
+     local ret = false
+     while code==joy_up    and INP.JoyY()==-1 do ret=true end
+     while code==joy_down  and INP.JoyY()== 1 do ret=true end
+     while code==joy_left  and INP.JoyX()==-1 do ret=true end
+     while code==joy_right and INP.JoyX()== 1 do ret=true end
+     return ret
+  else
+     return INP.JoyH(code)~=1   
+  end   
+end

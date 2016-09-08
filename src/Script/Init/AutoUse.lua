@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.09.07
+  Version: 16.09.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -39,3 +39,17 @@
 -- @USEDIR Script/Use/Anyway
 
 
+RequiredVersion = "16.09.08"
+
+function GALE_OnLoad()
+   if not LAURA.Version then Sys.Error("I could not retrieve the LAURA II version") end
+   local rv = mysplit(RequiredVersion,".")
+   local lv = mysplit(LAURA.Version(),".")
+   local r,l   
+   for i=1,#rv do
+       r = tonumber(rv[i])
+       l = tonumber(lv[i])
+       if l>r then return end
+       if l<r then Sys.Error("You are using an outdated version of LAURA. This game requires version "..RequiredVersion,"CurrentVersion,"..LAURA.Version()) end
+   end
+end
