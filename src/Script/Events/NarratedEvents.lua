@@ -107,8 +107,8 @@ function MAIN_FLOW()
     if story.nexttime<0     and VoiceOver() then
        story.id = story.id + 1
        story.char = 1
-       story.line = 0
-       sory.nexttime = 1500
+       story.line = 1
+       story.nexttime = 1500
        if story.id>#story.data then return GoNext() end
        calc(story)  
     end
