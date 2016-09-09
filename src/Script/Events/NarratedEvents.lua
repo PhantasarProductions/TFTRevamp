@@ -69,6 +69,11 @@ function Load(file)
     timer = 25,
     nexttime = 1500}
   calc(story)  
+  if suffixed(upper(file)..".END") then 
+     GoNext = jinclude("Script/JINC/PrologueChains/End.lua")
+  else
+     GoNext = jinclude("Script/JINC/PrologueChains/"..file..".lua")
+  end      
 end
 
 
