@@ -1,6 +1,6 @@
 --[[
   Flip.lua
-  Version: 16.09.06
+  Version: 16.09.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -37,10 +37,21 @@
 
 if Var.C("$OLDTIME") then Var.D("$OLDTIME",Time.Time()) end
 
+function PlayTime()
+  local ret
+  local hours = CVVN("%GAMETIME.HOURS")
+  local minutes = CVVN("%GAMETIME.MINUTES")
+  local seconds = CVVN("%GAMETIME.SECONDS")
+  if hours then return hours..":"..right("0"..minutes,2)..":"..right("0"..seconds,2) end
+  if minutes then return minutes..":"..right("0"..seconds,2) end
+  return sval(seconds)
+end
+
 function Flip()
     Image.Flip()
     local t = Time.Time()
     if t~=Var.C("$OLDTIME") then
+       Var.C("$OLDTIME",t)
        inc("%GAMETIME.SECONDS")
        if CVV('%GAMETIME.SECONDS')>=60 then
           Var.D("%GAMETIME.SECONDS",0)

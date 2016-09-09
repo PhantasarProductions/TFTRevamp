@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 16.09.07
+  Version: 16.09.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -38,4 +38,5 @@ function SHOWTIME()
      CSay(CVV("%GAMETIME.SECONDS").." seconds")
      CSay(CVV("%GAMETIME.MINUTES").." Minutes")
      CSay(CVV("%GAMETIME.HOURS").." hours")
+     CSay(PlayTime())
 end     

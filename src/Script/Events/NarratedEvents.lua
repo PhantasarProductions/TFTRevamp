@@ -32,16 +32,87 @@
   
  **********************************************
  
-version: 16.09.08
+version: 16.09.09
 ]]
 
+function GoNext()
+    Sys.Error("GoNext not properly defined")
+end    
+
+function font()
+   Image.Font("Fonts/master_of_break.ttf",50)
+end
+
+function calc(d)
+  font()
+  --CSay(serialize("Niets aan de hand",d))
+  d.height=0
+  d.lines = d.data[d.id].Lines
+  --CSay(serialize("Nog steeds niets aan de hand",d.data[d.id]))
+  --CSay(serialize("CHECK 2: Niets aan de hand",d))
+  if not d.lines then CSay("Warning. Lines is nil") end
+  for l in each(d.lines) do d.height = d.height + Image.TextHeight(l) end
+  d.y = Center_Y - ((Image.TextHeight("0")*#d.lines)/2)
+end
+
 function Load(file)
+  CSay("Let's load all the stuff we need for: "..file)
+  local tempstory = LoadData("General/PROLOGUES",'PROLOGUES')
+  story = {
+    data = tempstory[upper(file)],
+    id = 1,
+    line = 1,
+    char = 0,
+    lines = {},
+    height = 0,
+    y = 0,
+    timer = 25,
+    nexttime = 1500}
+  calc(story)  
 end
 
 
 function GALE_OnLoad()
 end
 
+function VoiceOver()
+  return true
+end  
+
 function MAIN_FLOW()
+  -- Clear screen
   Cls()
+  -- Show Message
+  for i,line in ipairs(story.lines) do
+     if i<story.line then 
+        DarkText(line,Center_X,story.y+(i*Image.TextHeight("0")),2,2)
+     elseif i==story.line then
+        DarkText(left(line,story.char),Center_X,story.y+(i*Image.TextHeight("0")),2,2)
+     end      
+  end
+  -- Wait until time or end of vocal and go to the next event as soon as we're done.
+  if story.line<=#story.lines then
+     story.timer=story.timer-25
+     if story.timer<=0 then
+        story.timer=25
+        story.char = story.char + 1
+        if story.char>#story.lines[story.line] then 
+           story.line = story.line + 1
+           story.char = 0
+           calc(story)
+        end
+     end
+  else
+    story.nexttime = story.nexttime - 1
+    if story.nexttime<0     and VoiceOver() then
+       story.id = story.id + 1
+       story.char = 1
+       story.line = 0
+       sory.nexttime = 1500
+       if story.id>#story.data then return GoNext() end
+       calc(story)  
+    end
+  end     
+  -- Flip
+  Flip()
 end

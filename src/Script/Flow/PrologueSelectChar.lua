@@ -1,6 +1,6 @@
 --[[
   PrologueSelectChar.lua
-  Version: 16.09.08
+  Version: 16.09.09
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -74,8 +74,8 @@ function GALE_OnLoad()
 end
 
 function SelChar()
-   MS.Load("EVENT","NarratedEvents.lua")
-   MS.RUN("EVENT","Init",chars[pos])
+   MS.Load("EVENT","script/events/NarratedEvents.lua")
+   MS.RUN("EVENT","Load",chars[pos])
    Done('&DONE.PROLOGUE['..pos..']')
    LAURA.Flow("EVENT") 
 end

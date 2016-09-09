@@ -1,7 +1,7 @@
 --[[
   Graphics.lua
   
-  version: 16.09.06
+  version: 16.09.08
   Copyright (C) 2016 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -21,3 +21,7 @@
 
 Center_X = Screen.Width()/2
 Center_Y = Screen.Height()/2
+
+
+Cls = Image.Cls
+cls = Cls
