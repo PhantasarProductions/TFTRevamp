@@ -36,13 +36,6 @@
 ]]
 -- @USEDIR Script/Use/Anyway
 
-function EVASION(ch)
-  local spd = RPGChar.Stat(ch,"END_Speed")
-  local rate = 0.9 / skill
-  local eva = floor(spd * skill)
-  RPGChar.SetChar(ch,"BASE_Evasion",eva)
-end
-
 function NStat(ch,stat)
    local w = {'BASE','BUFF','EQP','POWERUP'}
    local rate = 1.01 - (0.01*(skill-1))
@@ -54,6 +47,15 @@ function NStat(ch,stat)
    return total
 end
 
+function EVASION(ch)
+  local spd = RPGChar.Stat(ch,"END_Speed")
+  local rate = 0.9 / skill
+  local eva = floor(spd * skill)
+  RPGChar.SetChar(ch,"BASE_Evasion",eva)
+  NStat(ch,"Evasion")
+end
+
+
 
 function POWER       (ch) NStat(ch,"Power")        end   
 function ENDURANCE   (ch) NStat(ch,"Endurance")    end   
@@ -63,3 +65,5 @@ function SPEED       (ch) NStat(ch,"Speed")        end
 function HP          (ch) NStat(ch,"HP")           end     
 function AP          (ch) NStat(ch,"AP")           end
 function ACCURACY    (ch) NStat(ch,"ACCURACY")     end    
+function CRITICAL    (ch) NStat(ch,"CRITICAL")     end    
+function COUNTER     (ch) NStat(ch,"COUNTER")      end    

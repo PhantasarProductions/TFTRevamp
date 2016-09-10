@@ -65,13 +65,16 @@ function ShowParty()
    ShowMargins()
 end
 
+function SyncLevel(ch)
+end
+
 function CreateChar(ch,name)
   -- Create
   RPGChar.CreateChar(ch)
   -- Name
   RPGChar.SetName(ch,name or ch)
   -- Stats  
-  local stats = {'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion','HP','AP'}
+  local stats = {'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion',"Counter","Critical",'HP','AP'}
   local works = {'BASE','BUFF','EQP','POWERUP','END'}
   for st in each(stats) do
       for w in each(works) do
@@ -86,5 +89,5 @@ function CreateChar(ch,name)
   -- Experience
   RPGChar.SetStat(ch,"Level",1)
   RPGChar.SetStat(ch,"EXP",1000)
-            
+  SyncLevel(ch)          
 end
