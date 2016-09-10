@@ -38,3 +38,9 @@ version: 16.09.10
 ShowParty = ShowParty or function() 
   MS.LN_Run('PARTY','Script/Subs/Party.lua','ShowParty')
 end  
+
+Party = Party or function(p)
+  MS.LN_Run('PARTY','Script/Subs/Party.lua','Party',p)
+end
+
+NewParty = Party

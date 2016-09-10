@@ -39,6 +39,7 @@ function GoNext()
    MS.Run('FIELD','LoadMap',"PRO_TOWN_VANDAR")
    Maps.GotoLayer('town')
    MS.Run('FIELD','Party',"Jake_Human")
+   RPGStat.SetName('Jake_Human','Jake')
    LAURA.Flow("FIELD")
    MS.Run('FIELD','SpawnPlayer',"Dojo")
 end

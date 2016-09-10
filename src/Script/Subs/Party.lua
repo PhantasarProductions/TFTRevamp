@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 16.09.10
+  Version: 16.09.11
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -59,14 +59,96 @@ end
 function ShowParty()
    local sy=(totalheight-100)+origin[2]
    local sx=origin[1]
+   local ch
+   local bsx 
+   -- yes 3 for loops are required. Otherwise stuff might overlap each other, taking its toll on the readablitiy of the most vital stats of an RPG Game.
+   
+   -- Draw the boxes
    for i=0,3 do
        Box(sx+(i*charentrywidth),sy,charentrywidth,100)
    end
+   -- Draw the portraits
+   for i=0,3 do if RPGStat.PartyTag(i)~="" then
+       ch = RPGStat.PartyTag(i)
+       bsx = sx+(i*charentrywidth)
+   end end
+   -- Draw the statbars and numbers
+   SetFont('Stats')
+   local sg,P,breuk,bar,barx,barwidth
+   for i=0,3 do if RPGStat.PartyTag(i)~="" then
+       ch = RPGStat.PartyTag(i)
+       bsx = sx+(i*charentrywidth)
+       barx = bsx + 100
+       barwidth = charentrywidth-110
+       -- HP
+       P = RPGChar.Points(ch,'HP')
+       breuk = P.Have / P.Maximum
+       sg = breuk * 255
+       bar = breuk * barwidth
+       Image.Color(50,50,50)
+       Image.Rect(barx,sy+25,barwidth,10)
+       Image.Color(255-sg,sg,0)       
+       Image.Rect(barx,sy+25,bar,10)
+       DarkText("HP",barx,sy+25,1,1,255-sg,sg,0)
+       DarkText(P.Have,barx+barwidth,sy+25,1,1,255-sg,sg,0)
+       -- AP
+       P = RPGChar.Points(ch,'AP')
+       breuk = P.Have / P.Maximum
+       --sg = breuk * 255
+       bar = breuk * barwidth
+       Image.Color(50,50,50)
+       Image.Rect(barx,sy+45,barwidth,10)
+       Image.Color(0,0,255)       
+       Image.Rect(barx,sy+45,bar,10)
+       DarkText("AP",barx,sy+45,1,1,180,255)
+       DarkText(P.Have,barx+barwidth,sy+45,1,1,255-sg,sg,0)
+       -- Vitality
+       P = RPGChar.Points(ch,'VIT')
+       breuk = P.Have / P.Maximum
+       bar = breuk * barwidth
+       Image.Color(50,50,50)
+       Image.Rect(barx,sy+65,barwidth,10)
+       Image.Color(255,100,0)       
+       Image.Rect(barx,sy+65,bar,10)
+       DarkText("VIT",barx,sy+65,1,1,255,180,0)
+       DarkText(P.Have.."%",barx+barwidth,sy+65,1,1,255,180,0)
+   end end
    ShowMargins()
 end
 
 function SyncLevel(ch)
+local linenumber,line,l
+local ls,cs,clv
+local lext = 0
+local t
+local lv=RPGStat.Stat(ch,"Level")
+--[[ No value here
+if lv>=100 then
+   t = ""..lv
+   lext = left(t,len(t)-2)
+   end   
+CSay("Getting stats for "..ch.." for "..lv.." from series "..lext)
+]]   
+for linenumber,line in ipairs(jcr6listfile("Data/CharStats/"..ch)) do
+    l = Str.Trim(line)    
+    ls = mysplit(l," ")
+    if l~="" and ls[1]~="REM" then
+       if #ls<2 then CSay("WARNING! Wrongly setup line in char "..ch.." file "..lext.." line #"..linenumber) return end
+       cs = mysplit(ls[1],".")
+       if ls[1]=="LEVEL" then clv = Sys.Val(ls[2])
+       elseif cs[1]=="STAT" and clv==lv then
+          RPGChar.DefStat(ch,"BASE_"..cs[2],Sys.Val(ls[2]))
+          CSay("Char "..ch.." BASE_"..cs[2].." is now "..Sys.Val(ls[2]))
+          end
+       end
+    end
 end
+
+function GrabLevel(ch,lv)
+  RPGChar.DefStat(ch,"Level",lv)
+  SyncLevel(ch)
+end      
+
 
 function CreateChar(ch,name)
   -- Create
@@ -78,9 +160,9 @@ function CreateChar(ch,name)
   local works = {'BASE','BUFF','EQP','POWERUP','END'}
   for st in each(stats) do
       for w in each(works) do
-          RPGChar.SetStat(ch,w.."_"..stat,0)
+          RPGChar.SetStat(ch,w.."_"..st,0)
       end
-      RPGChar.ScriptStat(ch,"END_"..stat,"Script/Char/Char.lua",upper(st))
+      RPGChar.ScriptStat(ch,"END_"..st,"Script/Char/Char.lua",upper(st))
   end
   -- Points
   RPGChar.Points(ch,"HP",1).MaxCopy="END_HP"
@@ -88,6 +170,27 @@ function CreateChar(ch,name)
   RPGChar.Points(ch,"VIT",1).Maximum=100
   -- Experience
   RPGChar.SetStat(ch,"Level",1)
-  RPGChar.SetStat(ch,"EXP",1000)
+  RPGChar.SetStat(ch,"EXP",1000*(skill/2))
   SyncLevel(ch)          
+  -- Maxout
+  local cp
+  for p in each({'HP','AP','VIT'}) do
+      cp = RPGChar.Points(ch,p,1)
+      cp.Have = cp.Maximum
+  end
+end
+
+
+function Party(...)
+RPGChar.NewParty(4)
+if #arg>6 then Sys.Error("Party too big "..#arg) end
+local ak,v
+CSay("Initiating party...")
+for ak,v in ipairs(arg) do
+    CSay("Position #"..ak..": "..v)
+    if RPGChar.CharExists(v)==0 then CreateChar(v) end
+    CSay("Updating party")
+    RPGChar.SetParty(ak-1,v) -- Remember for Lua everything starts at 1, but for nearly every other language (including BlitzMax) everything starts at 0.
+    CSay("All done... next") 
+    end    
 end

@@ -1,7 +1,7 @@
 --[[
-  AAA_Algemeen.lua
+  Fonts.lua
   Version: 16.09.11
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Copyright (C) 2016 2015
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -35,24 +35,30 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 
--- @USEDIR Script/Use/Available
--- @USEDIR Script/Libs
--- @USEDIR Script/Use/Linkers
 
 
+-----------------------------
+-- Definition of all fonts --
+-----------------------------
 
 
--- Some definitions based on things
+fonts = {
 
---[[
-function bv(tag,condition)
-  local ar = { [true]='TRUE',[false]='FALSE'}
-  Var.D(tag,ar[condition])
+    -- BoxText = {"SuperSoulFighter.ttf",20} -- Font unreadable, but I'll keep this line in case nothing better comes my way
+    BoxTextContent = {"Coolvetica.ttf",20},
+    BoxTextHeader= {'master_of_break',20},
+    Tutorial = {"Coolvetica.ttf",10},
+    Stats = {"Monof55.ttf",20},
+}
+
+
+--------------------------------------
+-- And the function to set the font --
+--------------------------------------
+function SetFont(font)
+if not fonts[font] then CSay("WARNING! Font "..sval(font).." does not exist in the list!") end
+if not fonts[font][1] then CSay("WARNING! Font "..sval(font).." does not refer to a file!") end
+Image.Font("Fonts/"..fonts[font][1],fonts[font][2])
 end
-]]
 
-RPG = RPGChar -- LAAAAAAAAZY!!!
-
-vocals = JCR6.Exists('ID/ID.Vocal.Demo')==1
-  
-skill = tonumber(Var.C("%SKILL")); Console.Write('Difficulty setting is: '..skill,0,180,255)
+setfont = SetFont
