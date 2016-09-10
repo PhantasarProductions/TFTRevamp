@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  PRO_TOWN_Vandar.lua
+  ShowParty.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -34,3 +34,7 @@
  
 version: 16.09.10
 ]]
+
+ShowParty = ShowParty or function() 
+  MS.LN_Run('PARTY','Script/Subs/Party.lua','ShowParty')
+end  

@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.09.08
+  Version: 16.09.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -40,6 +40,8 @@
 
 
 RequiredVersion = "16.09.08"
+
+MS.LoadNew("FIELD","Script/Flow/Field.lua")
 
 function GALE_OnLoad()
    if not LAURA.Version then Sys.Error("I could not retrieve the LAURA II version") end

@@ -1,5 +1,5 @@
 --[[
-  AAA_Algemeen.lua
+  Party.lua
   Version: 16.09.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,22 +34,27 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+LC = LAURA.LauraStartUp -- Quick reference to get the LAURA start up configuration. Yes, I know, I'm lazy!
 
--- @USEDIR Script/Use/Available
--- @USEDIR Script/Libs
--- @USEDIR Script/Use/Linkers
-
-
-
-
--- Some definitions based on things
-
---[[
-function bv(tag,condition)
-  local ar = { [true]='TRUE',[false]='FALSE'}
-  Var.D(tag,ar[condition])
+function GALE_OnLoad()
+    totalwidth  = SW
+    totalheight = SH
+    origin = {0,0}
+    if tonumber(LC('screen.margin.left')  )~=0 then origin[1] = 25; totalwidth=totalwidth -25 end
+    if tonumber(LC('screen.margin.top')   )~=0 then origin[2] = 25; totalwidth=totalheight-25 end
+    if tonumber(LC('screen.margin.right') )~=0 then                 totalwidth=totalwidth -25 end
+    if tonumber(LC('screen.margin.bottom'))~=0 then                 totalwidth=totalheight-25 end
+    charentrywidth = totalwidth / 4
 end
-]]
 
-vocals = JCR6.Exists('ID/ID.Vocal.Demo')==1
-  
+function ShowMargins()
+    black()
+    if tonumber(LC('screen.margin.left')  )~=0 then Image.Rect(    0,    0,25,SH) end
+    if tonumber(LC('screen.margin.top')   )~=0 then Image.Rect(    0,    0,SW,25) end
+    if tonumber(LC('screen.margin.right') )~=0 then Image.Rect(SW-25,    0,25,SH) end
+    if tonumber(LC('screen.margin.bottom'))~=0 then Image.Rect(    0,SH-25,SW,25) end  
+end
+
+function ShowParty()
+   ShowMargins()
+end

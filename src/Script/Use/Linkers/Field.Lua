@@ -34,7 +34,8 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-MS.LoadNew("FIELD","Script/Flow/Field.lua")
+
+-- MS.LoadNew("FIELD","Script/Flow/Field.lua")
 
 LoadMap = LoadMap or function(map)
   MS.Run('FIELD','LoadMap',map)

@@ -76,6 +76,7 @@ ScheduledExecution()
 --ControlFoes()
 --FindTreasures()
 --ResetChar()
+ShowParty()
 ShowMouse()
 Flip()
 end
