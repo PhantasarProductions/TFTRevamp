@@ -1,5 +1,5 @@
 --[[
-  AAA_Algemeen.lua
+  Field.lua
   Version: 16.09.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -35,21 +35,47 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 
--- @USEDIR Script/Use/Available
--- @USEDIR Script/Libs
--- @USEDIR Script/Linkers
+Scheduled = {}
 
-
-
-
--- Some definitions based on things
-
---[[
-function bv(tag,condition)
-  local ar = { [true]='TRUE',[false]='FALSE'}
-  Var.D(tag,ar[condition])
+function LoadMap(map)
+    -- Load the map itself
+    Maps.Load(map)
+    -- Lastly, load the music   
 end
-]]
 
-vocals = JCR6.Exists('ID/ID.Vocal.Demo')==1
+function ScheduledExecution()
+ local ev
+ for ev in each(Scheduled) do
+     CSay("Scheduled Execution: "..ev.MS.."."..ev.FN)
+     MS.Run(ev.MS,ev.FN) 
+ end
+ Scheduled = {}    
+end
+
+function Schedule(scr,func)
+  table.insert(Scheduled,{MS=scr,FN=func})
+  CSay("Scheduled: "..scr.."."..func)
+end
+
+function DrawScreen()
+   Maps.Draw()  
+end
   
+
+function MAIN_FLOW()
+Cls()
+DrawScreen()
+--ManWalk()
+ScheduledExecution()
+--Click()
+--AutoScroll()
+--ZoneAction()
+--WalkArrivalCheck()
+--Termination()
+--EmergencySave()
+--ControlFoes()
+--FindTreasures()
+--ResetChar()
+ShowMouse()
+Flip()
+end

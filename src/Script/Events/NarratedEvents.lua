@@ -53,6 +53,10 @@ function calc(d)
   if not d.lines then CSay("Warning. Lines is nil") end
   for l in each(d.lines) do d.height = d.height + Image.TextHeight(l) end
   d.y = Center_Y - ((Image.TextHeight("0")*#d.lines)/2)
+  if d.data[d.id].SoundFile then
+         Audio.Load(d.data[d.id].SoundFile,"PROLOGUE")
+         Audio.Play("PROLOGUE","PROLOGUECHANNEL")
+  end   
 end
 
 function Load(file)
@@ -69,10 +73,10 @@ function Load(file)
     timer = 25,
     nexttime = 1500}
   calc(story)  
-  if suffixed(upper(file)..".END") then 
-     GoNext = jinclude("Script/JINC/PrologueChains/End.lua")
+  if suffixed(upper(file),".END") then 
+     GoNext = JINC("Script/JINC/PrologueChains/End.lua")
   else
-     GoNext = jinclude("Script/JINC/PrologueChains/"..file..".lua")
+     GoNext = JINC("Script/JINC/PrologueChains/"..file..".lua")
   end      
 end
 
@@ -81,7 +85,8 @@ function GALE_OnLoad()
 end
 
 function VoiceOver()
-  return true
+  if not story.data[story.id].SoundFile then return true end
+  return Audio.Playing("PROLOGUECHANNEL")==0
 end  
 
 function MAIN_FLOW()
@@ -104,7 +109,7 @@ function MAIN_FLOW()
         if story.char>#story.lines[story.line] then 
            story.line = story.line + 1
            story.char = 0
-           calc(story)
+           --calc(story)
         end
      end
   else

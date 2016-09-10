@@ -32,14 +32,15 @@
   
  **********************************************
  
-version: 16.09.09
+version: 16.09.10
 ]]
 function GoNext()
    MS.LoadNew("FIELD","Script/Flow/Field.lua")
-   Party("Jake_Human")
-   LoadMap("PRO_TOWN_VANDAR")
+   MS.Run('FIELD','LoadMap',"PRO_TOWN_VANDAR")
+   Maps.GotoLayer('town')
+   MS.Run('FIELD','Party',"Jake_Human")
    LAURA.Flow("FIELD")
-   SpawnPlayer("Dojo")
+   MS.Run('FIELD','SpawnPlayer',"Dojo")
 end
 
 return GoNext

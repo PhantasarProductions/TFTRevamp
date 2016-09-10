@@ -1,6 +1,6 @@
 --[[
   Mouse.lua
-  Version: 16.09.08
+  Version: 16.09.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -45,6 +45,7 @@ MouseCoords = GetMouse
 
 function ShowMouse(altimg)
   local x,y = GetMouse()
+  white()
   ShowImage(altimg or "Mouse",x,y)
 end  
 

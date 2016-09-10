@@ -1,5 +1,5 @@
 --[[
-  AAA_Algemeen.lua
+  Field.Lua
   Version: 16.09.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,22 +34,12 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+MS.LoadNew("FIELD","Script/Flow/Field.lua")
 
--- @USEDIR Script/Use/Available
--- @USEDIR Script/Libs
--- @USEDIR Script/Linkers
-
-
-
-
--- Some definitions based on things
-
---[[
-function bv(tag,condition)
-  local ar = { [true]='TRUE',[false]='FALSE'}
-  Var.D(tag,ar[condition])
+LoadMap = LoadMap or function(map)
+  MS.Run('FIELD','LoadMap',map)
 end
-]]
 
-vocals = JCR6.Exists('ID/ID.Vocal.Demo')==1
-  
+Schedule = Schedule or function(ms,fn)
+  MS.Run("FIELD","Schedule",ms..";"..fn)
+end  

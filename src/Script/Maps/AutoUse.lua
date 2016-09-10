@@ -1,5 +1,5 @@
 --[[
-  AAA_Algemeen.lua
+  AutoUse.lua
   Version: 16.09.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -35,21 +35,10 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 
--- @USEDIR Script/Use/Available
--- @USEDIR Script/Libs
--- @USEDIR Script/Linkers
-
-
-
-
--- Some definitions based on things
-
---[[
-function bv(tag,condition)
-  local ar = { [true]='TRUE',[false]='FALSE'}
-  Var.D(tag,ar[condition])
+function OriMapMusic()
+   local mf = Maps.GetData("Music")
+   if not suffixed(upper(mf),".ogg") then mf = mf .. ".ogg" end
+   Music(mf)
 end
-]]
 
-vocals = JCR6.Exists('ID/ID.Vocal.Demo')==1
-  
+MapMusic = MapMusic or OriMapMusic 
