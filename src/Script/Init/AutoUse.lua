@@ -41,7 +41,6 @@
 
 RequiredVersion = "16.09.08"
 
-MS.LoadNew("FIELD","Script/Flow/Field.lua")
 
 function GALE_OnLoad()
    if not LAURA.Version then Sys.Error("I could not retrieve the LAURA II version") end
@@ -54,4 +53,6 @@ function GALE_OnLoad()
        if l>r then return end
        if l<r then Sys.Error("You are using an outdated version of LAURA. This game requires version "..RequiredVersion,"CurrentVersion,"..LAURA.Version()) end
    end
+   MS.LoadNew("FIELD","Script/Flow/Field.lua")
+   Image.LoadNew('PCS_BACK','GFX/System/Console.png')
 end

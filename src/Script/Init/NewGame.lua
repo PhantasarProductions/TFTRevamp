@@ -1,6 +1,6 @@
 --[[
   NewGame.lua
-  Version: 16.09.07
+  Version: 16.09.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -36,6 +36,7 @@
 ]]
 
 function NewGame()
+  Var.D("%SKILL",LAURA.LauraStartUp("SKILL"))
   MS.Load("STARTGAME","Script/Events/StartGame.lua")
   LAURA.Flow("STARTGAME")
   -- Var.D("$LANG")

@@ -1,5 +1,5 @@
 --[[
-  AAA_Algemeen.lua
+  Char.lua
   Version: 16.09.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,23 +34,32 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+-- @USEDIR Script/Use/Anyway
 
--- @USEDIR Script/Use/Available
--- @USEDIR Script/Libs
--- @USEDIR Script/Use/Linkers
-
-
-
-
--- Some definitions based on things
-
---[[
-function bv(tag,condition)
-  local ar = { [true]='TRUE',[false]='FALSE'}
-  Var.D(tag,ar[condition])
+function EVASION(ch)
+  local spd = RPGChar.Stat(ch,"END_Speed")
+  local rate = 0.9 / skill
+  local eva = floor(spd * skill)
+  RPGChar.SetChar(ch,"BASE_Evasion",eva)
 end
-]]
 
-vocals = JCR6.Exists('ID/ID.Vocal.Demo')==1
-  
-skill = tonumber(Var.C("%SKILL")); CSay('Difficulty setting is: '..skill)
+function NStat(ch,stat)
+   local w = {'BASE','BUFF','EQP','POWERUP'}
+   local rate = 1.01 - (0.01*(skill-1))
+   local total = 0
+   for wi in each(w) do
+       total = total + (RPGChar.Stat(ch,wi.."_"..stat)*rate)
+   end
+   RPG.DefStat(ch,"END_"..stat,w)
+   return total
+end
+
+
+function POWER       (ch) NStat(ch,"Power")        end   
+function ENDURANCE   (ch) NStat(ch,"Endurance")    end   
+function INTELLIGENCE(ch) NStat(ch,"Intelligence") end   
+function RESISTANCE  (ch) NStat(ch,"Resistance")   end
+function SPEED       (ch) NStat(ch,"Speed")        end
+function HP          (ch) NStat(ch,"HP")           end     
+function AP          (ch) NStat(ch,"AP")           end
+function ACCURACY    (ch) NStat(ch,"ACCURACY")     end    

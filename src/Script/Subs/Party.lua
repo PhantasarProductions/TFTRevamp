@@ -34,6 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
 LC = LAURA.LauraStartUp -- Quick reference to get the LAURA start up configuration. Yes, I know, I'm lazy!
 
 function GALE_OnLoad()
@@ -56,5 +57,34 @@ function ShowMargins()
 end
 
 function ShowParty()
+   local sy=(totalheight-100)+origin[2]
+   local sx=origin[1]
+   for i=0,3 do
+       Box(sx+(i*charentrywidth),sy,charentrywidth,100)
+   end
    ShowMargins()
+end
+
+function CreateChar(ch,name)
+  -- Create
+  RPGChar.CreateChar(ch)
+  -- Name
+  RPGChar.SetName(ch,name or ch)
+  -- Stats  
+  local stats = {'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion','HP','AP'}
+  local works = {'BASE','BUFF','EQP','POWERUP','END'}
+  for st in each(stats) do
+      for w in each(works) do
+          RPGChar.SetStat(ch,w.."_"..stat,0)
+      end
+      RPGChar.ScriptStat(ch,"END_"..stat,"Script/Char/Char.lua",upper(st))
+  end
+  -- Points
+  RPGChar.Points(ch,"HP",1).MaxCopy="END_HP"
+  RPGChar.Points(ch,"AP",1).MaxCopy="END_AP"
+  RPGChar.Points(ch,"VIT",1).Maximum=100
+  -- Experience
+  RPGChar.SetStat(ch,"Level",1)
+  RPGChar.SetStat(ch,"EXP",1000)
+            
 end

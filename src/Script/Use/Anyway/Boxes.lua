@@ -1,5 +1,5 @@
 --[[
-  AAA_Algemeen.lua
+  Boxes.lua
   Version: 16.09.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,23 +34,35 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-
--- @USEDIR Script/Use/Available
--- @USEDIR Script/Libs
--- @USEDIR Script/Use/Linkers
-
-
-
-
--- Some definitions based on things
-
---[[
-function bv(tag,condition)
-  local ar = { [true]='TRUE',[false]='FALSE'}
-  Var.D(tag,ar[condition])
+function BoxBorder(x,y,pw,ph)
+   local a = Image.GetAlphaPC()
+   local w = x + pw
+   local h = y + ph
+   Image.SetAlphaPC(50)   
+   for i=0,5 do
+       Image.Color(255,255,255)
+       Image.Line(x,y+i,w-i,y+i) -- top
+       Image.line(x+i,y+6,x+i,h-i) -- left
+       Image.Color(10,10,10)
+       Image.Line(x+i,h-i,w,h-i) -- bottom
+       Image.line(w-i,h-6,w-i,y+i) -- right
+   end
+   Image.SetAlphaPC(a)
+   -- DarkText("BoxBorder("..x..","..y..","..w..","..h..")",x,y,0,0,255,255,255) -- debug only!!!
+   -- CSay("BoxBorder("..x..","..y..","..w..","..h..")") -- debug only!!!)
+end   
+       
+function Box(x,y,w,h,picturetag)
+   local tag = picturetag or 'PCS_BACK'
+   local ox,oy,ow,oh = GetViewport()
+   white()
+   --CSay("Original Viewport "..ox..","..oy..","..ow..","..oh)
+   -- --[[
+   Image.ViewPort(x,y,w,h)
+   Image.Tile(tag)
+   Image.ViewPort(ox,oy,ow,oh)
+   -- ]]   
+   BoxBorder(x,y,w,h)
+   -- DarkText("Box("..x..","..y..","..w..","..h..",'"..tag.."')",x,y,0,0,255,255,255) -- debug only!!!
+   --CSay("Box("..x..","..y..","..w..","..h..",'"..tag.."')") -- debug only!!!
 end
-]]
-
-vocals = JCR6.Exists('ID/ID.Vocal.Demo')==1
-  
-skill = tonumber(Var.C("%SKILL")); CSay('Difficulty setting is: '..skill)

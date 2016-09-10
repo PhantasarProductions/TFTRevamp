@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.09
+version: 16.09.10
 ]]
 
 function GoNext()
@@ -90,6 +90,7 @@ function VoiceOver()
 end  
 
 function MAIN_FLOW()
+  GoNext() -- Skip intro. Only meant for debugging
   -- Clear screen
   Cls()
   -- Show Message
