@@ -56,3 +56,5 @@ RPG = RPGChar -- LAAAAAAAAZY!!!
 vocals = JCR6.Exists('ID/ID.Vocal.Demo')==1
   
 skill = tonumber(Var.C("%SKILL")); Console.Write('Difficulty setting is: '..skill,0,180,255)
+
+LC = LAURA.LauraStartUp -- Quick reference to get the LAURA start up configuration. Yes, I know, I'm lazy!

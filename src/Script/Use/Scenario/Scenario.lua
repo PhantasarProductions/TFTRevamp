@@ -20,7 +20,7 @@
 
 portret = {}
 
-function RemoveData(file) btdata[file] = nil end
+function RemoveData(file) btdata = btdata or {} btdata[file] = nil end
 
 function ProcessBLine(Rec,Prefix,DLine)
 local Processes = {

@@ -1,6 +1,6 @@
 --[[
   Field.Lua
-  Version: 16.09.10
+  Version: 16.09.11
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -44,3 +44,6 @@ end
 Schedule = Schedule or function(ms,fn)
   MS.Run("FIELD","Schedule",ms..";"..fn)
 end  
+
+GetActive = GetActive or function()
+end

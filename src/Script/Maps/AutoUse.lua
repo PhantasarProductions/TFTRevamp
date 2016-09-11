@@ -35,6 +35,8 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 
+-- @USEDIR Script/Use/Anyway
+
 function OriMapMusic()
    local mf = Maps.GetData("Music")
    if not suffixed(upper(mf),".ogg") then mf = mf .. ".ogg" end

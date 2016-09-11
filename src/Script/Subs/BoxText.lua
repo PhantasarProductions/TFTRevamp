@@ -34,7 +34,8 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- @USEDIR Script/Scenario 
+
+-- @USEDIR Script/use/Scenario 
 portret = {}
 
 boxtextroutine = true
@@ -67,7 +68,7 @@ local ret
 --DarkText("background: "..bb,10,400,2,0)
 -- @FI
 ]]
-Backgrounds[altbackground or LAURA.GetFlow()]()
+Backgrounds[altbackground or "FLOW_"..LAURA.GetFlow()]()
 setfont("BoxText")
 local fh = Image.TextHeight("TEST")
 local bh = (fh * #data.Lines) + (fh)

@@ -35,6 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 if not boxtextroutine then
+ Console.Write('BOXTEXT LINKING!',255)
  BoxTextBack = BoxTextBack or "BOXTEXT.KTHURA" -- Only place the standard value in if there are no other values yet. This is done to prevent bugs for scripts using this module having their own routines (like the battle engine for example).
 
 
@@ -51,7 +52,7 @@ if not boxtextroutine then
  end
 
  function SerialBoxText(f,tag,bck)
- MS.Run("BOXTEXT","SerialBoxText",f..";"..tag..";"..(bck or BoxTextBack))
+   MS.Run("BOXTEXT","SerialBoxText",f..";"..tag..";"..(bck or BoxTextBack))
  end
 
  function FreeBoxText(f)
