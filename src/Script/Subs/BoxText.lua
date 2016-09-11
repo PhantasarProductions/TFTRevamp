@@ -74,7 +74,7 @@ local fh = Image.TextHeight("TEST")
 local bh = (fh * #data.Lines) + (fh)
 local startx = SW-data.width
 local starty = SH-bh
-local bstarty = (starty - 20) - Image.Height(piccorner)
+local bstarty = (starty - 20) -- Image.Height(piccorner)
 local bheight = bstarty
 local bottom = bstarty + bheight
 local ak,av,ac
@@ -133,7 +133,7 @@ if data.AltTxtFont then
    -- @IF BOXTEXTDEBUG
    CSay("Setting font: "..data.AltTxtFont,fonts.BoxText[2])
    -- @FI
-   Image.Font(data.AltTxtFont,fonts.BoxText[2])
+   Image.Font(data.AltTxtFont,fonts.BoxTextConetnt[2])
    else
    setfont("BoxTextContent")
    end

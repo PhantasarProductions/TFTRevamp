@@ -46,10 +46,12 @@ fonts = {
 
     -- BoxText = {"SuperSoulFighter.ttf",20} -- Font unreadable, but I'll keep this line in case nothing better comes my way
     BoxTextContent = {"Coolvetica.ttf",20},
-    BoxTextHeader= {'master_of_break',20},
+    BoxTextHeader= {'master_of_break.ttf',20},
     Tutorial = {"Coolvetica.ttf",10},
     Stats = {"Monof55.ttf",20},
 }
+
+fonts.BoxText = fonts.BoxTextContent
 
 
 --------------------------------------

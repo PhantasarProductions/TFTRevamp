@@ -55,7 +55,7 @@ function calc(d)
   d.y = Center_Y - ((Image.TextHeight("0")*#d.lines)/2)
   if d.data[d.id].SoundFile then
          Audio.Load(d.data[d.id].SoundFile,"PROLOGUE")
-         Audio.Play("PROLOGUE","PROLOGUECHANNEL")
+         --Audio.Play("PROLOGUE","PROLOGUECHANNEL")
   end   
 end
 
