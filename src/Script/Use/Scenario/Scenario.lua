@@ -82,7 +82,7 @@ for LineNumber,Line in ipairs(crap) do
 local k,i,tag,rec
 local picfile,picref
 for k,tag in pairs(ret) do for i,rec in pairs(tag) do
-     picfile = "GFX/Portret/"..sval(rec.PicDir).."/"..sval(rec.PicSpc)..".png"
+     picfile = "GFX/Boxtext/Portret/"..sval(rec.PicDir).."/"..sval(rec.PicSpc)..".png"
      picref = upper(rec.PicDir).."."..upper(rec.PicSpc)
      if Image.Exist(picref)==0 and JCR6.Exists(picfile)==1 then 
         Image.AssignLoad(picref,picfile) 
