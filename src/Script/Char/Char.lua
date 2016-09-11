@@ -1,6 +1,6 @@
 --[[
   Char.lua
-  Version: 16.09.10
+  Version: 16.09.11
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -36,14 +36,18 @@
 ]]
 -- @USEDIR Script/Use/Anyway
 
+debug = {}
+
 function NStat(ch,stat)
+   -- debug[ch] = debug[ch] or {}
    local w = {'BASE','BUFF','EQP','POWERUP'}
    local rate = 1.01 - (0.01*(skill-1))
    local total = 0
    for wi in each(w) do
        total = total + (RPGChar.Stat(ch,wi.."_"..stat)*rate)
    end
-   RPG.DefStat(ch,"END_"..stat,w)
+   RPG.DefStat(ch,"END_"..stat,total)
+   -- if not debug[ch][stat] then CSay("First time calc for "..ch..","..stat.." > "..total) end
    return total
 end
 

@@ -88,7 +88,7 @@ function ShowParty()
        Image.Color(50,50,50)
        Image.Rect(barx,sy+25,barwidth,10)
        Image.Color(255-sg,sg,0)       
-       Image.Rect(barx,sy+35,bar,10)
+       Image.Rect(barx,sy+25,bar,10)
        DarkText("HP",barx,sy+35,1,1,255-sg,sg,0)
        DarkText(P.Have,barx+barwidth,sy+35,1,1,255-sg,sg,0)
        -- AP
