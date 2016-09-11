@@ -88,30 +88,29 @@ function ShowParty()
        Image.Color(50,50,50)
        Image.Rect(barx,sy+25,barwidth,10)
        Image.Color(255-sg,sg,0)       
-       Image.Rect(barx,sy+25,bar,10)
-       DarkText("HP",barx,sy+25,1,1,255-sg,sg,0)
-       DarkText(P.Have,barx+barwidth,sy+25,1,1,255-sg,sg,0)
+       Image.Rect(barx,sy+35,bar,10)
+       DarkText("HP",barx,sy+35,1,1,255-sg,sg,0)
+       DarkText(P.Have,barx+barwidth,sy+35,1,1,255-sg,sg,0)
        -- AP
        P = RPGChar.Points(ch,'AP')
        breuk = P.Have / P.Maximum
-       --sg = breuk * 255
        bar = breuk * barwidth
        Image.Color(50,50,50)
-       Image.Rect(barx,sy+45,barwidth,10)
+       Image.Rect(barx,sy+50,barwidth,10)
        Image.Color(0,0,255)       
-       Image.Rect(barx,sy+45,bar,10)
-       DarkText("AP",barx,sy+45,1,1,180,255)
-       DarkText(P.Have,barx+barwidth,sy+45,1,1,255-sg,sg,0)
+       Image.Rect(barx,sy+50,bar,10)
+       DarkText("AP",barx,sy+60,1,1,0,180,255)
+       DarkText(P.Have,barx+barwidth,sy+60,1,1,0,180,255)
        -- Vitality
        P = RPGChar.Points(ch,'VIT')
        breuk = P.Have / P.Maximum
        bar = breuk * barwidth
        Image.Color(50,50,50)
-       Image.Rect(barx,sy+65,barwidth,10)
+       Image.Rect(barx,sy+75,barwidth,10)
        Image.Color(255,100,0)       
-       Image.Rect(barx,sy+65,bar,10)
-       DarkText("VIT",barx,sy+65,1,1,255,180,0)
-       DarkText(P.Have.."%",barx+barwidth,sy+65,1,1,255,180,0)
+       Image.Rect(barx,sy+75,bar,10)
+       DarkText("VIT",barx,sy+85,1,1,255,180,0)
+       DarkText(P.Have.."%",barx+barwidth,sy+85,1,1,255,180,0)
    end end
    ShowMargins()
 end
