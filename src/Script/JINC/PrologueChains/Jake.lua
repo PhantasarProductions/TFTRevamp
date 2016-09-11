@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.10
+version: 16.09.11
 ]]
 function GoNext()
    MS.LoadNew("FIELD","Script/Flow/Field.lua")
@@ -40,6 +40,7 @@ function GoNext()
    Maps.GotoLayer('town')
    MS.Run('FIELD','Party',"Jake_Human")
    RPGStat.SetName('Jake_Human','Jake')
+   RPGStat.SetData('Jake_Human','Face','Jake')
    LAURA.Flow("FIELD")
    MS.Run('FIELD','SpawnPlayer',"Dojo")
 end

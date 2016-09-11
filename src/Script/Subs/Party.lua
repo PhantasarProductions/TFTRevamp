@@ -61,6 +61,7 @@ function ShowParty()
    local sx=origin[1]
    local ch
    local bsx 
+   local imgtag
    -- yes 3 for loops are required. Otherwise stuff might overlap each other, taking its toll on the readablitiy of the most vital stats of an RPG Game.
    
    -- Draw the boxes
@@ -71,6 +72,10 @@ function ShowParty()
    for i=0,3 do if RPGStat.PartyTag(i)~="" then
        ch = RPGStat.PartyTag(i)
        bsx = sx+(i*charentrywidth)
+       imgtag = RPGStat.GetData(ch,"Face")
+       white()
+       Image.LoadNew("CL_FACE_"..ch,"GFX/Boxtext/Portret/"..imgtag.."/General.png")
+       Image.Show("CL_FACE_"..ch,bsx,(totalheight-origin[2])-Image.Height("CL_FACE_"..ch))
    end end
    -- Draw the statbars and numbers
    SetFont('Stats')
@@ -177,6 +182,8 @@ function CreateChar(ch,name)
       cp = RPGChar.Points(ch,p,1)
       cp.Have = cp.Maximum
   end
+  -- Portrait
+  RPGStat.SetData('Jake_Human','Face','Jake')
 end
 
 
