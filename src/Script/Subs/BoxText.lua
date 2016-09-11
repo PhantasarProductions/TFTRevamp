@@ -176,7 +176,7 @@ local t = f[tag]
 if not t then Sys.Error("Boxtext file "..file.." has no tag called "..tag) end
 local rec = t[idx]
 if not rec then Sys.Error("Boxtext file "..file.." tag "..tag.." does not have a record #"..idx.." (max is "..#t..")") end
-local sb_data = { Header = rec.Header, PicDir = rec.PicDir, PicSpc = rec.PicSpc, Lines = {}, SL = 1, SP=1, AltTxtFont = rec.AltTxtFont }
+local sb_data = { Header = rec.Header, PicDir = rec.PicDir, PicSpc = rec.PicSpc, Lines = {}, SL = 1, SP=1, AltTxtFont = rec.AltTxtFont, Voice = rec.SoundFile   }
 local width=SW-100 -- standard width, this can be shortened by the portraits popping with the textbox. SW is the screen width, this need to be taken in order.
 local ak,txt,cline,spline
 local aw,word
@@ -207,12 +207,24 @@ sb_data.PicRef=rec.PicRef
 -- if tonumber(LC('screen.margin.top')   )~=0 then origin[2] = 25; totalwidth=totalheight-25 end
 if tonumber(LC('screen.margin.right') )~=0 then sb_data.width=sb_data.width-25 end
 if tonumber(LC('screen.margin.left') )~=0 then sb_data.width=sb_data.width-25 end
+-- Voice acting, if available
+if sb_data.Voice and JCR6.Exists(sb_data.Voice)~=0 then
+   if Audio.Playing('BOXTEXTCHANNEL')~=0 then Audio.Stop('BOXTEXTCHANNEL') end
+   Audio.Load(sb_data.Voice,'BOXTEXTVOICE')
+   Audio.Play("BOXTEXTVOICE","BOXTEXTCHANNEL")
+else
+   sb_data.Voice=nil
+end
+-- Wait for input
 INP.Grab()
 repeat
 INP.Grab()
 ShowBox(sb_data,boxback)
 Flip()
-if mousehit(1) then
+if sb_data.Voice then
+   continue = Audio.Playing('BOXTEXTCHANNEL')==0
+end   
+if mousehit(1) or INP.KeyH(KEY_SPACE)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_ENTER)==1 then
      if sb_data.SL>#sb_data.Lines then 
         continue=true
      else
