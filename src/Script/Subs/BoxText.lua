@@ -75,15 +75,15 @@ local bh = (fh * #data.Lines) + (fh)
 local startx = SW-data.width
 local starty = SH-bh
 local bstarty = (starty - 20) -- Image.Height(piccorner)
-local bheight = bstarty
-local bottom = bstarty + bheight
+local bottom = SH
+local bheight = bottom-bstarty -- 25
 local ak,av,ac
 local mx,my = MouseCoords()
 local bstartx,bwidth = 0,SW
 -- margin shit
     if tonumber(LC('screen.margin.left')  )~=0 then startx = startx + 25; bstartx = bstartx + 25; bwidth = bwidth - 25 end
     if tonumber(LC('screen.margin.right') )~=0 then bwidth = bwidth - 25 end
-    if tonumber(LC('screen.margin.bottom'))~=0 then starty = starty - 25; end
+    if tonumber(LC('screen.margin.bottom'))~=0 then starty = starty - 25; bottom=bottom-25 end
 -- @IF BOXTEXTDEBUG
 White()
 Image.NoFont()
@@ -113,7 +113,8 @@ Image.ViewPort(0,bstarty+19,19,600-bstarty)
 Image.Tile(picside,0,0)
 Image.ViewPort(0,0,800,600)
 ]]
-Box(bstartx,bstarty,bwidth,bheight)
+--DarkText('Box('..bstartx..','..math.ceil(bstarty-25)..','..bwidth..','..bheight..')',0,0)
+Box(bstartx,bstarty-25,bwidth,bheight+25)
 -- Portrait
 White();
 if data.PicRef then
