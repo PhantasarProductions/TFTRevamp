@@ -1,7 +1,7 @@
 --[[
   Scenario.lua
   
-  version: 16.09.07
+  version: 16.09.11
   Copyright (C) 2016 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -19,6 +19,8 @@
 ]]
 
 portret = {}
+
+function RemoveData(file) btdata[file] = nil end
 
 function ProcessBLine(Rec,Prefix,DLine)
 local Processes = {

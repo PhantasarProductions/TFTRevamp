@@ -43,6 +43,7 @@ function GoNext()
    RPGStat.SetData('Jake_Human','Face','Jake')
    LAURA.Flow("FIELD")
    MS.Run('FIELD','SpawnPlayer',"Dojo")
+   MS.Run('Schedule','MAP;John_Exam')
 end
 
 return GoNext

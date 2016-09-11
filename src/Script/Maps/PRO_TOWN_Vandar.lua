@@ -32,5 +32,12 @@
   
  **********************************************
  
-version: 16.09.10
+version: 16.09.11
 ]]
+
+
+
+
+function John_Exam()
+   MapText("John")
+end   

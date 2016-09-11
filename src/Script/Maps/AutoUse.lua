@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.09.10
+  Version: 16.09.11
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -42,3 +42,98 @@ function OriMapMusic()
 end
 
 MapMusic = MapMusic or OriMapMusic 
+
+
+
+ROOM_ME = Maps.CodeName
+
+ThisIsAMapScript = true
+
+-- Load the map scenario if available
+function InitMapText()
+MS.LoadNew("BOXTEXT","Script/SubRoutines/BoxText.lua")
+MS.Run("BOXTEXT","RemoveData","MAP")
+-- Well, we MUST avoid "if"s, eh? Well, let me show you what kind of dirty code that can create.
+local maptextfile = "Languages/"..Var.C("$LANG").."/Scenario/MAPS/"..Maps.CodeName
+local letsgo = { 
+  [0] = function() Console.Write("WARNING! No maptext found for map "..Maps.CodeName,255,180,0); Console.Write(">> "..maptextfile,0,180,255) end,
+  [1] = function() MS.Run("BOXTEXT","LoadData","MAPS/"..Maps.CodeName..";MAP"); Console.Write("MapText for "..Maps.CodeName.." loaded",0,255,180) end }
+local f = letsgo[JCR6.Exists(maptextfile)]
+f()
+-- Well, you gotta agree this could been done in a more efficient way :P
+-- Oh yeah, Lua does accept 0 for an array index, it's rather that ipairs doesn't pick that up, but we didn't need ipairs anyway here :P   
+-- I could not yet use the functions from BoxTextLinker, as they are not loaded on the moment this function is called, for the other functions, it doesn't matter.
+end; InitMapText()
+
+function MapText(tag,mapaltMS)
+SerialBoxText("MAP",tag,mapaltMS or "BOXTEXT.KTHURA")
+end
+
+
+-- The Zone Action routines
+ZA = { Enter = {}, Leave = {}, Flow = {} }
+ZAChkEnter = {}
+ZAChkLeave = {}
+
+function ZA_SetAction(Z,A,F,P)
+table.insert(ZA[A],{Z = Z, F = F, P = P})
+end
+
+function ZA_Enter(Z,PF,P)
+local F = PF
+if F=="ALB_EXE" then F = ALB_EXE end
+ZA_SetAction(Z,"Enter",F,P)
+end
+
+function ZA_Leave(Z,F,P)
+ZA_SetAction(Z,"Leave",F,P)
+end
+
+function ZA_Flow(Z,F,P)
+ZA_SetAction(Z,"Flow",F)
+end
+
+function ZA_Run(Z,A)
+local F
+for f in ipairs(ZA[Z][A]) do f() end
+end
+
+function ZA_CheckEnter(actor)
+local b
+local ZK,ZZ 
+for ZK,ZZ in pairs(ZA.Enter) do
+    if ROOM_ME==Maps.CodeName then
+       b = Maps.Obj.Exists(ZZ.Z)==1 and Maps.ActorInZone(actor,ZZ.Z)==1
+       if (not ZAChkEnter[ZZ.Z]) and b then 
+          KillWalkArrival() 
+          ZZ.F(ZZ.P) 
+          end
+       ZAChkEnter[ZZ.Z] = b
+       end 
+    end
+end
+
+function ZA_CheckLeave(actor)
+local b
+local ZK,ZZ 
+for ZK,ZZ in pairs(ZA.Leave) do
+    b = Maps.Obj.Exists(ZZ.Z)==1 and Maps.ActorInZone(actor,ZZ.Z)==1
+    if Maps.Obj.Exists(ZZ.Z)==1 and ZAChkLeave[ZZ.Z] and (not b) then 
+       KillWalkArrival() 
+       ZZ.F(ZZ.P) 
+       end
+    ZAChkLeave[ZZ.Z] = b 
+    end
+end
+
+function ZA_CheckFlow(actor)
+local b
+local ZK,ZZ 
+for ZK,ZZ in pairs(ZA.Flow) do
+    b = Maps.Obj.Exists(ZZ.Z)==1 and Maps.ActorInZone(actor,ZZ.Z)==1
+    if b then
+       KillWalkArrival() 
+       ZZ.F(ZZ.P) 
+       end
+    end
+end

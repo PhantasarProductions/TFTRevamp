@@ -1,7 +1,7 @@
 --[[
-  AutoUse.lua
+  BoxTextLinker.lua
   Version: 16.09.11
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Copyright (C) 2015, 2016 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,26 +34,44 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+if not boxtextroutine then
+ BoxTextBack = BoxTextBack or "BOXTEXT.KTHURA" -- Only place the standard value in if there are no other values yet. This is done to prevent bugs for scripts using this module having their own routines (like the battle engine for example).
 
 
--- @USEDIR Script/Use/Anyway
+ function SetBoxTextAlt(a)
+    MS.Run("BOXTEXT","SetBoxTextAlt",a)
+ end
+ 
+ function LoadBoxText(f)
+ MS.Run("BOXTEXT","LoadData",f)
+ end
 
+ function LoadBoxText2(f,a)
+ MS.Run("BOXTEXT","LoadData",f..";"..a)
+ end
 
-RequiredVersion = "16.09.08"
+ function SerialBoxText(f,tag,bck)
+ MS.Run("BOXTEXT","SerialBoxText",f..";"..tag..";"..(bck or BoxTextBack))
+ end
 
+ function FreeBoxText(f)
+ MS.Run("BOXTEXT","RemoveData",f)
+ end
 
-function GALE_OnLoad()
-   if not LAURA.Version then Sys.Error("I could not retrieve the LAURA II version") end
-   local rv = mysplit(RequiredVersion,".")
-   local lv = mysplit(LAURA.Version(),".")
-   local r,l   
-   for i=1,#rv do
-       r = tonumber(rv[i])
-       l = tonumber(lv[i])
-       if l>r then return end
-       if l<r then Sys.Error("You are using an outdated version of LAURA. This game requires version "..RequiredVersion,"CurrentVersion,"..LAURA.Version()) end
-   end
-   MS.LoadNew("BOXTEXT","Script/Subs/BoxText.lua")
-   MS.LoadNew("FIELD","Script/Flow/Field.lua")
-   Image.LoadNew('PCS_BACK','GFX/System/Console.png')
-end
+--[[ deprecated
+ function MapText(tag,bck)
+ SerialBoxText("MAP",tag)
+ end
+]]
+ 
+ function RunQuestion(file,tag,idx,boxback)
+ local param = file..";"..tag
+ if idx then param = param .. ";"..idx 
+    if boxback then param = param .. ";"..idx end
+    end
+ MS.Run("BOXTEXT","RunQuestion",param)
+ local ret =  CVV("%RET"); Var.Clear("%RET")
+ return ret   
+ end
+ 
+end 
