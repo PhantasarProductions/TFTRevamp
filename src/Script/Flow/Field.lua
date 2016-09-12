@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.09.10
+  Version: 16.09.11
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -35,7 +35,14 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 
+-- The Fairy Tale REVAMPED!!
+
 Scheduled = {}
+
+function GALE_OnLoad()
+  PartyBarY = SH - 100
+  if tonumber(LC('screen.margin.right') )~=0 then PartyBarY = SW - 125 end
+end  
 
 function LoadMap(map)
     -- Load the map itself
@@ -57,9 +64,101 @@ function Schedule(scr,func)
   CSay("Scheduled: "..scr.."."..func)
 end
 
+function CheckClickables()
+end
+
+function Click()
+local mx,my = MouseCoords()
+local ak,ch
+if mousehit(1) then -- Left Mouse button    
+   if my>PartyBarY then  -- must come prior to checks in the field
+      for ak=0,5 do
+          if ClickedChar(ak) then FGoToMenu(ak) end
+          end
+   --[[ Star Story only       
+   elseif IconClicked then -- Must come prior to checks in the field
+      IconFunction[IconClicked]()
+   ]]          
+   elseif CheckClickables() then
+     -- Nothing happens here, but this will take any other checks out.       
+      else -- If there's nothing else then perform then walk to
+      -- CSay(cplayer.." is going to walk to ("..mx..","..my..")")
+      Actors.WalkTo('PLAYER',mx+Maps.CamX,my+Maps.CamY)
+      WalkArrival = nil
+      -- Actors.MoveTo(cplayer,mx+Maps.CamX,my+Maps.CamY)
+      end
+   end
+--[[ Has no more use in TFTR
+if mousehit(2) then
+   if my>500 then  -- must come prior to checks in the field
+      for ak=0,5 do
+          if RightClickedChar(ak) and upper(Maps.CodeName)~="HAWK" then
+             ch = RPGChar.PartyTag(ak)
+             if ch~="" and ch~="UniWendicka" and ch~="UniCrystal" and ch~="Briggs" then activeplayer = ch end 
+             end
+          end
+      end
+   end
+      ]]
+end
+
+function AutoPlayerWind()
+ local cplayer = "PLAYER"
+ for i=0,3 do
+    if i~=0 then cplayer = "PLAYER"..i end
+    --if cplayer~="PLAYER" then return end
+    if RPG.PartyTag(i)~="" then
+      local x,y,w = GetCoords(cplayer)
+      Actors.ChoosePic(cplayer,upper(RPG.PartyTag(i).."."..w))
+    end
+ end  
+end
+
+
 function DrawScreen()
    Maps.Draw()  
+   AutoPlayerWind()
 end
+
+function TurnPlayer(dir,num)
+  local ch = RPG.PartyTag(num or 0)
+  Actors.ChoosePic("PLAYER"..(num or ""),upper(ch).."."..upper(dir))
+  Actors.Actor("PLAYER"..(num or "")).Wind = dir
+end
+
+function TurnPlayers(dir)
+  TurnPlayer(dir)
+  for i=1,3 do
+      if RPG.PartyTag(i)~="" then TurnPlayer(dir,i) end
+  end    
+end
+
+function SpawnPlayer(spot,dir)
+    local tag
+    local myobj,mytag
+    for i=0,3 do
+       tag = "PLAYER"..i
+       if i==0 then tag="PLAYER" end
+       if RPGChar.PartyTag(i)~="" then
+          myobj = Maps.Obj.Obj(spot)
+          mytag = RPGChar.PartyTag(i)
+          Actors.Spawn(spot,"GFX/Actors/Bundled/Player",tag)
+          if i==0 then
+             Maps.CamX = myobj.x-Center_X           
+             Maps.CamY = myobj.y-Center_Y
+          end                        
+       end
+    end
+TurnPlayers(dir or 'North')    
+Var.D("$LASTSPAWN",spot)
+end
+
+function AutoScroll()
+   myobj = Actors.Actor('PLAYER')
+   Maps.CamX = myobj.x-Center_X           
+   Maps.CamY = myobj.y-Center_Y   
+end
+
   
 
 function MAIN_FLOW()
@@ -67,8 +166,8 @@ Cls()
 DrawScreen()
 --ManWalk()
 ScheduledExecution()
---Click()
---AutoScroll()
+Click()
+AutoScroll()
 --ZoneAction()
 --WalkArrivalCheck()
 --Termination()

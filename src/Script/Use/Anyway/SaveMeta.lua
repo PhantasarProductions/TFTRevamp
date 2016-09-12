@@ -1,5 +1,5 @@
 --[[
-  Console.lua
+  SaveMeta.lua
   Version: 16.09.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,29 +34,19 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-
--- TFT REVAMPED
-
-function SHOWTIME()
-     CSay(CVV("%GAMETIME.SECONDS").." seconds")
-     CSay(CVV("%GAMETIME.MINUTES").." Minutes")
-     CSay(CVV("%GAMETIME.HOURS").." hours")
-     CSay(PlayTime())
-end     
-
-
-
-function SAVE(file)
-if LAURA.GetFlow()~="FIELD" then return CWrite("? You can only save in the field!",255,0,180) end
-SaveMeta()
-if (not file) or file=="" then
-    GotoSave()
-    CWrite("Leaving the console now will pop-up the save screen",0,180,255) 
-    return 
-    end
-local myfile=file
-local dir = mysplit(file,"/")
-if #dir==1 then myfile = "Debug/"..myfile; dir = mysplit(myfile,"/") end 
-if #dir~=2 then return CWrite("? I cannot save that file. Only one directory please!",255,0,0) end
-LAURA.Save(myfile)
-end
+function SaveMeta()
+  local metasave = "Location:"..Maps.GetData('Title').."\nTime:"..PlayTime().."\n"  local ch,lv
+  for i=0,3 do
+      ch = RPG.PartyTag(i)
+      
+      if i~="" then 
+        lv = RPGStat.Stat(ch,'Level')
+        metasave = metasave .. "CH"..i.."PIC:"..RPGStat.GetData(ch,"Face").."\n"
+        if lv<=CVV("%LVLCAP") then metasave = metasave .. "CH"..i.."LVL:"..lv.."\n" end  
+      end
+  end  
+  Map.Draw() -- No, we don't want to Flip(), that will only mess stuff up.
+  Image.GrabScreen('SAVESHOT')
+  LAURA.StringForSave('META',metadata)
+  LAURA.ImageForSave("SHOT",'SaveShot')
+end  

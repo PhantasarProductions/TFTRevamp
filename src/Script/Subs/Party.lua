@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 16.09.11
+  Version: 16.09.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -160,11 +160,12 @@ function CreateChar(ch,name)
   -- Name
   RPGChar.SetName(ch,name or ch)
   -- Stats  
-  local stats = {'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion',"Counter","Critical",'HP','AP'}
+  local stats = {'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion',"Counter","Critical",'HP','AP',"SR_Poison","SR_Disease","SR_Silence",'SR_Sleep','SR_Paralysis','SR_Death','SR_Destruction','SR_Curse','ER_None','ER_Flame','ER_Frost','ER_Water','ER_Wind','ER_Earth','ER_Thunder','ER_Darkness','ER_Light'}
   local works = {'BASE','BUFF','EQP','POWERUP','END'}
   for st in each(stats) do
       for w in each(works) do
           RPGChar.SetStat(ch,w.."_"..st,0)
+          if prefixed(st,"SR_") then RPGChar.SetStat(ch,w.."_"..st,100-(25*skill)) end
       end
       RPGChar.ScriptStat(ch,"END_"..st,"Script/Char/Char.lua",upper(st))
   end
@@ -183,7 +184,7 @@ function CreateChar(ch,name)
       cp.Have = cp.Maximum
   end
   -- Portrait
-  RPGStat.SetData('Jake_Human','Face','Jake')
+  RPGStat.SetData(ch,'Face',ch)
 end
 
 
