@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.07
+version: 16.09.12
 ]]
 
 
@@ -114,7 +114,7 @@ function MAIN_FLOW()
       if stillor.fragment>#stillorstory then return NextStage() end
       stillor.timer = 0
       stillor.text  = stillorstory[stillor.fragment].Lines
-      stillor.textheight = Image.TextHeight(t)
+      stillor.textheight = Image.TextHeight('t')
       stillor.height = 0
       for t in each(stillor.text) do 
           stillor.timer = stillor.timer + (25*#t)
@@ -133,7 +133,7 @@ function MAIN_FLOW()
       end    
   end 
   for i,t in ipairs(stillor.text) do
-      DarkText(t,Center_X,stillor.starty+(i*stillor.textheight),2,2,180,255,0)
+      DarkText(Var.S(t),Center_X,stillor.starty+(i*stillor.textheight),2,2,180,255,0)
   end  
   if INP.KeyH(KEY_ESCAPE)==1 or INP.MouseH(1)==1 then 
      if Audio.Playing("STILLORINTROCHANNEL")~=0 then Audio.Stop("STILLORINTROCHANNEL") end

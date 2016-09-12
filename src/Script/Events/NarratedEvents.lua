@@ -72,6 +72,7 @@ function Load(file)
     y = 0,
     timer = 25,
     nexttime = 1500}
+  for i,v in ipairs(story.lines) do story.lines[i] = Var.S(v) end  
   calc(story)  
   if suffixed(upper(file),".END") then 
      GoNext = JINC("Script/JINC/PrologueChains/End.lua")
