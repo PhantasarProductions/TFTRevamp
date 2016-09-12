@@ -37,9 +37,8 @@
 function SaveMeta()
   local metasave = "Location:"..Maps.GetData('Title').."\nTime:"..PlayTime().."\n"  local ch,lv
   for i=0,3 do
-      ch = RPG.PartyTag(i)
-      
-      if i~="" then 
+      ch = RPG.PartyTag(i)      
+      if ch~="" then 
         lv = RPGStat.Stat(ch,'Level')
         metasave = metasave .. "CH"..i.."PIC:"..RPGStat.GetData(ch,"Face").."\n"
         if lv<=CVV("%LVLCAP") then metasave = metasave .. "CH"..i.."LVL:"..lv.."\n" end  

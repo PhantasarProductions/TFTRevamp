@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.09.11
+  Version: 16.09.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -53,7 +53,7 @@ ThisIsAMapScript = true
 
 -- Load the map scenario if available
 function InitMapText()
-MS.LoadNew("BOXTEXT","Script/SubRoutines/BoxText.lua")
+MS.LoadNew("BOXTEXT","Script/Subs/BoxText.lua")
 MS.Run("BOXTEXT","RemoveData","MAP")
 -- Well, we MUST avoid "if"s, eh? Well, let me show you what kind of dirty code that can create.
 local maptextfile = "Languages/"..Var.C("$LANG").."/Scenario/MAPS/"..Maps.CodeName
