@@ -46,6 +46,6 @@ function SaveMeta()
   end  
   Maps.Draw() -- No, we don't want to Flip(), that will only mess stuff up.
   Image.GrabScreen('SAVESHOT')
-  LAURA.StringForSave('META',metadata)
+  LAURA.StringForSave('META',metasave)
   LAURA.ImageForSave("SHOT",'SaveShot')
 end  
