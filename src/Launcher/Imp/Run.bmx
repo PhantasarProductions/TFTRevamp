@@ -20,24 +20,26 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.09.03
+Version: 16.09.12
 End Rem
 Strict
 Import "Framework.bmx"
 
-MKL_Version "The Fairy Tale - REVAMP - Run.bmx","16.09.03"
+MKL_Version "The Fairy Tale - REVAMP - Run.bmx","16.09.12"
 MKL_Lic     "The Fairy Tale - REVAMP - Run.bmx","GNU General Public License 3"
 
 Function Run()
 	Local EID,ESource:TGadget,myg:mygadget
+	Local EExtra:TGadget
 	Listouts
 	GoTab(0)
 	ShowGadget gadgets.gadget("win")
 	Repeat
 		If currentpanel.flow Then currentpanel.flow() Else DebugLog "This panel has no flow"
-		WaitEvent
-		eid = EventID()
+		WaitEvent		
+		eid = EventID(); DebugLog "EventID "+eid+"    WC="+Event_windowclose+"  Act="+event_gadgetaction+" sel="+Event_gadgetselect
 		esource = TGadget(EventSource())
+		eextra = TGadget(EventExtra())
 		Select eid
 			Case event_windowclose
 				For myg = EachIn closelist
@@ -45,10 +47,18 @@ Function Run()
 				Next
 			Case event_gadgetaction
 				For myg = EachIn actionlist
+					If myg.extra 
+						myg.extra eextra
+						DebugLog "Extra feature called -- Action"
+					EndIf
 					If myg.g=esource myg.action myg.g
 				Next
 			Case event_gadgetselect
 				For myg = EachIn selectlist
+					If myg.extra 
+						myg.extra eextra
+						DebugLog "Extra feature called -- Select"
+					EndIf
 					If myg.g=esource myg.fselect myg.g
 				Next
 		End Select		

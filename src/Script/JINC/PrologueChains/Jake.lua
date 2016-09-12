@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.11
+version: 16.09.12
 ]]
 function GoNext()
    MS.LoadNew("FIELD","Script/Flow/Field.lua")
@@ -41,6 +41,9 @@ function GoNext()
    MS.Run('FIELD','Party',"Jake_Human")
    RPGStat.SetName('Jake_Human','Jake')
    RPGStat.SetData('Jake_Human','Face','Jake')
+   RPGStat.SetData('Jake_Human','EQP_Weapon',"EQP_JAKE_WP1")
+   RPGStat.SetData('Jake_Human','EQP_Armor' ,"EQP_JAKE_AR1")
+   RPGStat.SetData("Jake_Human","EQP_Acc"   ,"") -- This just makes sure the entry exists so no crashes can come bacause of it later.
    LAURA.Flow("FIELD")
    MS.Run('FIELD','SpawnPlayer',"Dojo")
    --MS.Run('FIELD','Schedule','MAP;John_Exam')

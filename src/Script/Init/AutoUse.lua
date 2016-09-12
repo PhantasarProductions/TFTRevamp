@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.09.11
+  Version: 16.09.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -43,17 +43,21 @@ RequiredVersion = "16.09.08"
 
 
 function GALE_OnLoad()
+   CSay("Checking LAURA II version")
    if not LAURA.Version then Sys.Error("I could not retrieve the LAURA II version") end
+   CSay("Supporting LAURA.Version in order!")
    local rv = mysplit(RequiredVersion,".")
    local lv = mysplit(LAURA.Version(),".")
    local r,l   
    for i=1,#rv do
        r = tonumber(rv[i])
        l = tonumber(lv[i])
-       if l>r then return end
+       CSay("Checking "..i.."  >> "..r.." must be "..l.." or higher")
+       if l>r then break end
        if l<r then Sys.Error("You are using an outdated version of LAURA. This game requires version "..RequiredVersion,"CurrentVersion,"..LAURA.Version()) end
    end
-   MS.LoadNew("BOXTEXT","Script/Subs/BoxText.lua")
-   MS.LoadNew("FIELD","Script/Flow/Field.lua")
-   Image.LoadNew('PCS_BACK','GFX/System/Console.png')
+   CSay("LAURA II version is in order!")
+   MS.LoadNew("BOXTEXT","Script/Subs/BoxText.lua"); CSay("BOXTEXT loaded!")
+   MS.LoadNew("FIELD","Script/Flow/Field.lua"); CSay("FIELD loaded!")
+   Image.LoadNew('PCS_BACK','GFX/System/Console.png'); CSay("General background loaded!")
 end

@@ -1,6 +1,6 @@
 --[[
   LoadGame.lua
-  Version: 16.08.12
+  Version: 16.09.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,3 +34,8 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
+
+function LoadGame()
+  CSay("Going to the game!")
+end

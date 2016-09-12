@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.09.03
+Version: 16.09.12
 End Rem
 Strict
 
@@ -29,7 +29,7 @@ Import brl.eventqueue
 
 Import "globals.bmx"
 
-MKL_Version "The Fairy Tale - REVAMP - FrameWork.bmx","16.09.03"
+MKL_Version "The Fairy Tale - REVAMP - FrameWork.bmx","16.09.12"
 MKL_Lic     "The Fairy Tale - REVAMP - FrameWork.bmx","GNU General Public License 3"
 
 
@@ -60,6 +60,7 @@ Type MyGadget
 	Field Action(G:TGadget)
 	Field Close(G:TGadget)
 	Field FSelect(G:TGadget)
+	Field Extra(G:TGadget)
 	Field Activate(G:TGadget) ' Only used on panels attached to the tabber
 	Field Flow() ' Only used on panels attached to the tabber
 End Type

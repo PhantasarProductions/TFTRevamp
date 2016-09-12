@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.08.18
+Version: 16.09.12
 End Rem
 Strict
 
@@ -33,12 +33,40 @@ Import tricky_Units.ListDir
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - LoadGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.08.18"
+MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.09.12"
 
 afr_InpCol 0,27,0,0,155,0
 afr_WinCol 0,255,0,0,25,0
 
 Function LoadGame(G:TGadget)
+	Local LGI:TIni = New TIni
+	lgi.D "Resource",Resource+"TFT.jcr"
+	lgi.D "Title","The Fairy Tale REVAMPED"
+	lgi.D "CodeName","TFTREVAMP"
+	?MacOS
+	lgi.add "Resource",ExtractDir(ExtractDir(AppFile))+"/Resources/TFT.JCR"
+	lgi.D "MacReturn",ExtractDir(ExtractDir(ExtractDir(AppFile)))
+	?Not MacOS
+	lgi.add "Resource",AppDir+"/TFT.JCR"
+	?
+	lgi.d "LoadGame",cursg.file
+	lgi.d "StartScript","LoadGame.lua"
+	lgi.d "StartFunction","LoadGame"
+	lgi.d "TITLE","The Fairy Tale REVAMPED"
+	Mode2Ini lgi
+	SaveIni LAURA2StartFile, lgi
+	gadgets.get("win").g.setshow False
+	?MacOS
+	Local app$ = ExtractDir(ExtractDir(AppFile))+"/Resources/LAURA2.app"
+	If Not FileType(app) Notify "Trouble launching LAURA II~n~n"+App
+	system_ "open ~q"+app+"~q"
+	End
+	?Win32
+	system_ "LAURA2.exe"
+	?Linux
+	system_ "./LAURA2"
+	?
+	gadgets.get("win").g.setshow True	
 End Function
 
 Function Synchronize(G:TGadget)
@@ -60,6 +88,7 @@ Global panel:TGadget = mypan.g
 
 
 Global bw = pw/4
+Global bh = ph/4
 Global by = ph-25
 ' Buttons first (even though they live at the bottom)
 gadgets.button "Load"       ,bw * 0,by,bw,25,panel,Loadgame
@@ -90,12 +119,41 @@ SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char
 
 Global WeHaveNoSaveGames:TGadget = CreateLabel("There are no savegames, yet!~nPlease start a new game first and save your game~nbefore using this feature",0,0,pw-bw,by,panel,label_Center)
 Global WeDoHaveSaveGames:TGadget = CreatePanel(0,0,PW-BW,BY,Panel)
+Global oph = ph
+by = ClientHeight(WeDoHaveSaveGames); ph = by; bh=ph/4
 Global SGPan:TGadget = WeDoHaveSaveGames
 gadgets.cr WeHaveNoSaveGames
 gadgets.cr WeDoHaveSaveGames
 Global ShowPans:TGadget[] = [WeHaveNoSaveGames,WeDoHaveSaveGames]
 
 ' Load Game window features
+
+Global ScreenShot:TGadget = CreatePanel(bw,ph-bh,bw,bh,WeDoHaveSaveGames)
+SetGadgetColor ScreenShot,0,0,0
+
+Global chpan:TGadget[4]
+Global portret:TGadget[4]
+Global Level:TGadget[4]
+Global chx[] = [0,bw/2,0,bw/2]
+Global chy[] = [ph-bh,ph-bh,ph-(bh/2),ph-(bh/2)]
+Global needgame:TList = New TList
+ListAddLast needgame,screenshot
+
+For Local i=0 Until 4
+	chpan[Int(i)] = CreatePanel(chx[i],chy[i],bw/2,bh/2,WeDoHaveSaveGames,Panel_Sunken) 'CreatePanel(Int(i-Floor(i/2))*(bw/2),(bh)+Floor(i/2),bw/2,bh/2,WeDoHaveSaveGames)
+	portret[Int(i)] = CreatePanel(0,0,ClientWidth(chpan[Int(i)])/2,ClientHeight(chpan[Int(i)]),chpan[Int(i)])
+	SetGadgetColor portret[Int(i)],0,0,0
+	level[Int(i)] = CreateLabel(" --",ClientWidth(chpan[Int(i)])/2,ClientHeight(chpan[Int(i)])-25,ClientHeight(chpan[Int(i)])/2,25,chpan[Int(i)])
+	?debug
+	SetGadgetText level[i],"id"+i
+	?
+	gadgets.cr level[Int(i)]
+	ListAddLast needgame,chpan[i]
+Next
+
+Global TreeView:TGadget = CreateTreeView(0,0,pw/2,bh*3,WeDoHaveSaveGames)
+Global Root:TGadget = TreeViewRoot(treeview)
+gadgets.make "LGTREE",treeview,CGUIN
 
 
 ' Check what we got
@@ -106,9 +164,127 @@ Function ShowCheck(MyBool)
 	If Not MyBool Return CheckHave(False)
 End Function
 
+
+
+Type tsg
+	Field file$ 
+	Field portret:TPixmap[4]
+	Field level[4]
+	Field Time$
+	Field Location$
+	Field shot:TPixmap
+	Field User$
+End Type
+Global mapsg:TMap = New TMap	
+Global cursg:tsg
+
+Function NoGame()
+	For Local G:TGadget = EachIn needgame
+		HideGadget g
+	Next
+End Function
+
+Function ShowGame()
+	For Local i=0 Until 4
+		SetGadgetPixmap portret[i],cursg.portret[i]
+		If cursg.level[i] SetGadgetText level[i],"Lv "+cursg.level[i] Else SetGadgetText level[i],""
+	Next
+	SetGadgetPixmap screenshot,cursg.shot,PANELPIXMAP_FIT2
+	For Local G:TGadget = EachIn needgame
+		ShowGadget g
+	Next
+End Function	
+	
+
+Function FindSaveFromTree(G:TGadget)
+	DebugLog "Find game from tree request"
+	If Not G cursg=Null Return NoGame()
+	cursg = Tsg(MapValueForKey(mapsg,G))
+	If Not cursg Return NoGame()
+	ShowGame	
+End Function
+gadgets.get("LGTREE").Extra = FindSaveFromTree
+
+Function FS(G:TGadget) End Function; gadgets.get("LGTREE").fselect = fs
+
+Function listsg(dir$,node:TGadget,u$)
+	Local J:TJCRDir
+	Local ff$
+	Local sg:tsg
+	Local lr$[]
+	Local Disp$
+	Local allow = True
+	For Local f$=EachIn ListDir(dir)
+		allow = True
+		ff = dir+"/"+f
+		?Win32
+		ff = Replace(ff,"/","\")
+		?
+		DebugLog "Scanning: "+ff
+		J = JCR_Dir(ff)
+		sg = New tsg
+		sg.User = u
+		If J
+			sg.file = ff
+			If Not(JCR_Exists(J,"SWAP/SAVEMETA/META") And JCR_Exists(J,"SWAP/SAVEMETA/SHOT.png"))
+				allow=False
+			Else
+				For Local L$=EachIn Listfile(JCR_B(j,"SWAP/SAVEMETA/META"))
+					lr = l.split(":")
+					If Len(lr)>=2
+						Select Trim(lr[0])
+							Case "Location"	sg.location=lr[1]
+							Case "Time"	
+								sg.Time=""
+								For Local li = 1 Until (Len lr)
+									If sg.Time sg.Time:+":"
+									sg.Time:+lr[li]
+								Next
+							Case "CH0PIC","CH1PIC","CH2PIC","CH3PIC"
+								sg.portret[lr[0][2]-48] = LoadPixmap(JCR_B(JCR,"GFX/Boxtext/Portret/"+lr[1]+"/General.png"))
+							Case "CH0LVL","CH1LVL","CH2LVL","CH3LVL"
+								sg.level[lr[0][2]-48] = lr[1].toint()
+							Default
+								DebugLog "Unknown command >> "+l
+						End Select
+					EndIf
+				Next
+				sg.shot = LoadPixmap(JCR_B(J,"SWAP/SAVEMETA/SHOT.png"))
+			EndIf
+		Else
+			allow=False	
+		EndIf
+		If allow
+			disp = sg.location+" ("+sg.Time+")   "
+			?Not debug
+			If Not Prefixed(f,"TFTSG_")
+			?
+				disp = "["+f+"]   "+disp
+			?Not debug
+			EndIf
+			?
+			DebugLog "Adding: "+disp+" >> "+sg.file
+			MapInsert mapsg,AddTreeViewNode(disp,node),sg
+		EndIf
+	Next
+End Function		
+
 Function Check()
-Local dirs:TList = ListDir(savedir,ListDir_DirOnly)
-If Not CountList(dirs) Return ShowCheck(False)
+	ClearMap mapsg
+	ClearTreeView treeview
+	NoGame
+	Print "Checking: "+Savedir
+	Local dirs:TList = ListDir(savedir,ListDir_DirOnly)
+	Local d$,tg:TGadget
+	If Not CountList(dirs) Return ShowCheck(False)
+	If CountList(dirs)=1 
+		ListSg savedir+"/"+String(dirs.valueatindex(0)),root,String(dirs.valueatindex(0))
+	Else
+		For d=EachIn(dirs)
+			tg = AddTreeViewNode(d,root)
+			listsg savedir+"/"+d,tg,d
+		Next
+	EndIf
 End Function
 
 
@@ -118,4 +294,14 @@ Function Activate(G:TGadget)
 End Function
 mypan.activate = activate
 
+Function Flow()
+	For Local g:TGadget = EachIn musthavefile
+		g.setenabled cursg<>Null
+	Next
+End Function
 
+mypan.flow = flow
+
+
+' Restore ph for the other imported stuff
+ph = oph

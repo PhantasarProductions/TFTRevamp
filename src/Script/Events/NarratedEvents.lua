@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.11
+version: 16.09.12
 ]]
 
 function GoNext()
@@ -55,7 +55,7 @@ function calc(d)
   d.y = Center_Y - ((Image.TextHeight("0")*#d.lines)/2)
   if d.data[d.id].SoundFile then
          Audio.Load(d.data[d.id].SoundFile,"PROLOGUE")
-         --Audio.Play("PROLOGUE","PROLOGUECHANNEL")
+         Audio.Play("PROLOGUE","PROLOGUECHANNEL")
   end   
 end
 
@@ -90,7 +90,7 @@ function VoiceOver()
 end  
 
 function MAIN_FLOW()
-  GoNext() -- Skip intro. Only meant for debugging
+  -- GoNext() -- Skip intro. Only meant for debugging
   -- Clear screen
   Cls()
   -- Show Message
