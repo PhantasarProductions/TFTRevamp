@@ -44,7 +44,7 @@ function SaveMeta()
         if lv<=CVV("%LVLCAP") then metasave = metasave .. "CH"..i.."LVL:"..lv.."\n" end  
       end
   end  
-  Map.Draw() -- No, we don't want to Flip(), that will only mess stuff up.
+  Maps.Draw() -- No, we don't want to Flip(), that will only mess stuff up.
   Image.GrabScreen('SAVESHOT')
   LAURA.StringForSave('META',metadata)
   LAURA.ImageForSave("SHOT",'SaveShot')
