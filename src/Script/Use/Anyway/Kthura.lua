@@ -1,7 +1,7 @@
 --[[
   Kthura.lua
   
-  version: 16.09.11
+  version: 16.09.12
   Copyright (C) 2016 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -21,3 +21,11 @@ function GetCoords(tag)
    local r = Actors.Actor(tag)
    return r.x,r.y,r.wind
 end   
+
+
+function MapSize()
+   --CSay("Mapsize = "..Maps.Kthura().BlockMapGridW..","..Maps.Kthura().BlockMapGridH)
+   local gw,gh = Maps.Kthura().BlockMapGridW,Maps.Kthura().BlockMapGridH
+   local mw,mh = Maps.Kthura().blockmapboundW , Maps.Kthura().blockmapboundW
+   return mw*gw,gh*mh
+end

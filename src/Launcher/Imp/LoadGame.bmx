@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.09.12
+Version: 16.08.18
 End Rem
 Strict
 
@@ -33,7 +33,7 @@ Import tricky_Units.ListDir
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - LoadGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.09.12"
+MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.08.18"
 
 afr_InpCol 0,27,0,0,155,0
 afr_WinCol 0,255,0,0,25,0
@@ -56,6 +56,9 @@ Function LoadGame(G:TGadget)
 	Mode2Ini lgi
 	SaveIni LAURA2StartFile, lgi
 	gadgets.get("win").g.setshow False
+	launcherconfig.D "LastSG.User",cursg.user
+	launcherconfig.D "LastSG.File",cursg.file
+	SaveLauncherConfig()
 	?MacOS
 	Local app$ = ExtractDir(ExtractDir(AppFile))+"/Resources/LAURA2.app"
 	If Not FileType(app) Notify "Trouble launching LAURA II~n~n"+App
@@ -66,7 +69,7 @@ Function LoadGame(G:TGadget)
 	?Linux
 	system_ "./LAURA2"
 	?
-	gadgets.get("win").g.setshow True	
+	gadgets.get("win").g.setshow True		
 End Function
 
 Function Synchronize(G:TGadget)
@@ -185,6 +188,7 @@ Function NoGame()
 End Function
 
 Function ShowGame()
+	If Not cursg Return
 	For Local i=0 Until 4
 		SetGadgetPixmap portret[i],cursg.portret[i]
 		If cursg.level[i] SetGadgetText level[i],"Lv "+cursg.level[i] Else SetGadgetText level[i],""
@@ -207,13 +211,14 @@ gadgets.get("LGTREE").Extra = FindSaveFromTree
 
 Function FS(G:TGadget) End Function; gadgets.get("LGTREE").fselect = fs
 
-Function listsg(dir$,node:TGadget,u$)
+Function listsg:TGadget(dir$,node:TGadget,u$)
 	Local J:TJCRDir
 	Local ff$
 	Local sg:tsg
 	Local lr$[]
 	Local Disp$
 	Local allow = True
+	Local Ret:TGadget,tn:TGadget
 	For Local f$=EachIn ListDir(dir)
 		allow = True
 		ff = dir+"/"+f
@@ -264,9 +269,12 @@ Function listsg(dir$,node:TGadget,u$)
 			EndIf
 			?
 			DebugLog "Adding: "+disp+" >> "+sg.file
-			MapInsert mapsg,AddTreeViewNode(disp,node),sg
+			tn = AddTreeViewNode(disp,node)
+			MapInsert mapsg,tn,sg
+			If sg.file = launcherconfig.c("LastSG.File") ret=tn; DebugLog "Selected node for: "+sg.file
 		EndIf
 	Next
+	Return ret
 End Function		
 
 Function Check()
@@ -276,15 +284,20 @@ Function Check()
 	Print "Checking: "+Savedir
 	Local dirs:TList = ListDir(savedir,ListDir_DirOnly)
 	Local d$,tg:TGadget
+	Local su:TGadget,sf:TGadget
 	If Not CountList(dirs) Return ShowCheck(False)
 	If CountList(dirs)=1 
-		ListSg savedir+"/"+String(dirs.valueatindex(0)),root,String(dirs.valueatindex(0))
+		sf = ListSg(savedir+"/"+String(dirs.valueatindex(0)),root,String(dirs.valueatindex(0)))
 	Else
 		For d=EachIn(dirs)
+			DebugLog "Scanning user: "+d
 			tg = AddTreeViewNode(d,root)
-			listsg savedir+"/"+d,tg,d
-		Next
+			If d=launcherconfig.c("LastSG.User") su = tg
+			If Not sf sf = listsg(savedir+"/"+d,tg,d) Else listsg(savedir+"/"+d,tg,d) 
+		Next			
 	EndIf
+	If su ExpandTreeViewNode su; DebugLog "User expanded"
+	If sf SelectTreeViewNode sf; DebugLog "File selected"; cursg=tsg(MapValueForKey(mapsg,sf)); showgame; Else nogame
 End Function
 
 

@@ -46,7 +46,7 @@ function GoNext()
    RPGStat.SetData("Jake_Human","EQP_Acc"   ,"") -- This just makes sure the entry exists so no crashes can come bacause of it later.
    LAURA.Flow("FIELD")
    MS.Run('FIELD','SpawnPlayer',"Dojo")
-   --MS.Run('FIELD','Schedule','MAP;John_Exam')
+   MS.Run('FIELD','Schedule','MAP;John_Exam')
 end
 
 return GoNext

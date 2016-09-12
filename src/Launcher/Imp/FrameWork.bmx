@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.09.12
+Version: 16.09.03
 End Rem
 Strict
 
@@ -29,7 +29,7 @@ Import brl.eventqueue
 
 Import "globals.bmx"
 
-MKL_Version "The Fairy Tale - REVAMP - FrameWork.bmx","16.09.12"
+MKL_Version "The Fairy Tale - REVAMP - FrameWork.bmx","16.09.03"
 MKL_Lic     "The Fairy Tale - REVAMP - FrameWork.bmx","GNU General Public License 3"
 
 

@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.09.11
+  Version: 16.09.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -36,6 +36,11 @@
 ]]
 
 -- The Fairy Tale REVAMPED!!
+
+-- @IF INGORE
+lasthit = "IGNORE" -- Just fooling my outliner, or else it won't show things right!
+-- @FI
+
 
 Scheduled = {}
 
@@ -83,8 +88,10 @@ if mousehit(1) then -- Left Mouse button
      -- Nothing happens here, but this will take any other checks out.       
       else -- If there's nothing else then perform then walk to
       -- CSay(cplayer.." is going to walk to ("..mx..","..my..")")
-      Actors.WalkTo('PLAYER',mx+Maps.CamX,my+Maps.CamY)
-      WalkArrival = nil
+      if not lasthit then 
+         Actors.WalkTo('PLAYER',mx+Maps.CamX,my+Maps.CamY)       
+         WalkArrival = nil
+      end   
       -- Actors.MoveTo(cplayer,mx+Maps.CamX,my+Maps.CamY)
       end
    end
@@ -159,6 +166,37 @@ function AutoScroll()
    Maps.CamY = myobj.y-Center_Y   
 end
 
+function ManualMove()
+local minx=0
+local miny=0
+local maxx,maxy = MapSize()
+local Actor = Actors.Actor("PLAYER")
+-- stop moving on key release
+if lasthit=="KEYUP" and (INP.KeyD(KEY_UP   )==0) then Actor.Moving=0 lasthit=nil return end
+if lasthit=="KEYDN" and (INP.KeyD(KEY_DOWN )==0) then Actor.Moving=0 lasthit=nil return end
+if lasthit=="KEYLF" and (INP.KeyD(KEY_LEFT )==0) then Actor.Moving=0 lasthit=nil return end
+if lasthit=="KEYRG" and (INP.KeyD(KEY_RIGHT)==0) then Actor.Moving=0 lasthit=nil return end
+-- stop moving on joypad release
+if lasthit=="JOYUP" and (INP.JoyY()~=-1)         then Actor.Moving=0 lasthit=nil return end
+if lasthit=="JOYDN" and (INP.JoyY()~= 1)         then Actor.Moving=0 lasthit=nil return end
+if lasthit=="JOYLF" and (INP.JoyX()~=-1)         then Actor.Moving=0 lasthit=nil return end
+if lasthit=="JOYRG" and (INP.JoyX()~= 1)         then Actor.Moving=0 lasthit=nil return end
+if lasthit then return end
+-- Ignore any new attempt to move is the character is already moving
+if Actor.Moving~=0 or Actor.Walking~=0 then return end
+-- Start moving by keyboard input
+if INP.KeyD(KEY_UP   )==1 then Actors.MoveTo("PLAYER",Actor.X,miny) lasthit="KEYUP" end
+if INP.KeyD(KEY_DOWN )==1 then Actors.MoveTo("PLAYER",Actor.X,maxy) lasthit="KEYDN" end
+if INP.KeyD(KEY_LEFT )==1 then Actors.MoveTo("PLAYER",minx,Actor.Y) lasthit="KEYLF" end
+if INP.KeyD(KEY_RIGHT)==1 then Actors.MoveTo("PLAYER",maxx,Actor.Y) lasthit="KEYRG" end
+-- Start moving by joypad input
+if INP.JoyY()==-1         then Actors.MoveTo("PLAYER",Actor.X,miny) lasthit="JOYUP" end
+if INP.JoyY()== 1         then Actors.MoveTo("PLAYER",Actor.X,maxy) lasthit="JOYDN" end
+if INP.JoyX()==-1         then Actors.MoveTo("PLAYER",minx,Actor.Y) lasthit="JOYLF" end
+if INP.JoyX()== 1         then Actors.MoveTo("PLAYER",maxx,Actor.Y) lasthit="JOYRG" end
+DarkText(INP.JoyX()..","..INP.JoyY(),0,0,0,0)
+end
+
   
 
 function MAIN_FLOW()
@@ -167,6 +205,7 @@ DrawScreen()
 --ManWalk()
 ScheduledExecution()
 Click()
+ManualMove()
 AutoScroll()
 --ZoneAction()
 --WalkArrivalCheck()
