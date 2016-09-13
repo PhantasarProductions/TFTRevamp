@@ -1,6 +1,6 @@
 --[[
   Flip.lua
-  Version: 16.09.08
+  Version: 16.09.13
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -51,7 +51,7 @@ function Flip()
     Image.Flip()
     local t = Time.Time()
     if t~=Var.C("$OLDTIME") then
-       Var.C("$OLDTIME",t)
+       Var.D("$OLDTIME",t)
        inc("%GAMETIME.SECONDS")
        if CVV('%GAMETIME.SECONDS')>=60 then
           Var.D("%GAMETIME.SECONDS",0)

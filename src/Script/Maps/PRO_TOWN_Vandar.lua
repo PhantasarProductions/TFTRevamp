@@ -32,12 +32,19 @@
   
  **********************************************
  
-version: 16.09.11
+version: 16.09.13
 ]]
 
 
-
+function MapMusic()
+   if not Done("&DONE.VANDAR.OPENING_JOHN") then 
+      CSay("Skip the music for now. Let John speak first.")
+   else
+      OriMapMusic()
+   end   
+end
 
 function John_Exam()
    MapText("John")
+   MapMusic()
 end   

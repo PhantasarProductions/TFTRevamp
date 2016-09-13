@@ -1,6 +1,6 @@
 --[[
   Fonts.lua
-  Version: 16.09.11
+  Version: 16.09.13
   Copyright (C) 2016 2015
   
   ===========================
@@ -49,6 +49,8 @@ fonts = {
     BoxTextHeader= {'master_of_break.ttf',20},
     Tutorial = {"Coolvetica.ttf",10},
     Stats = {"Monof55.ttf",20},
+    FieldInfo = {"Coolvetica.ttf",35},
+    FieldStat = {'Monof55.ttf',35}
 }
 
 fonts.BoxText = fonts.BoxTextContent

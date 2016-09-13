@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 16.09.12
+  Version: 16.09.13
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -44,7 +44,12 @@ function SHOWTIME()
      CSay(PlayTime())
 end     
 
-
+function RESETPLAYTIME()
+  Var.Clear("%GAMETIME.HOURS")
+  Var.Clear("%GAMETIME.MINUTES")
+  Var.Clear("%GAMETIME.SECONDS")
+  CSay("Play time reset")
+end
 
 function SAVE(file)
 if LAURA.GetFlow()~="FIELD" then return CWrite("? You can only save in the field!",255,0,180) end

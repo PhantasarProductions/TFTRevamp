@@ -195,9 +195,43 @@ if INP.JoyY()==-1         then Actors.MoveTo("PLAYER",Actor.X,miny) lasthit="JOY
 if INP.JoyY()== 1         then Actors.MoveTo("PLAYER",Actor.X,maxy) lasthit="JOYDN" end
 if INP.JoyX()==-1         then Actors.MoveTo("PLAYER",minx,Actor.Y) lasthit="JOYLF" end
 if INP.JoyX()== 1         then Actors.MoveTo("PLAYER",maxx,Actor.Y) lasthit="JOYRG" end
-DarkText(INP.JoyX()..","..INP.JoyY(),0,0,0,0)
+--DarkText(INP.JoyX()..","..INP.JoyY(),0,0,0,0)
 end
 
+function ResetChar()
+-- if not (CVVN("%LASTSPAWN.X") and CVVN("%LASTSPAN.Y")) then MINI("CANNOT DO THIS! LAST SPAWN WAS NOT COMPLETE!",255,0,0,true) end
+if INP.KeyD(KEY_LCONTROL)==1 and INP.KeyD(KEY_LALT)==1 and INP.KeyD(KEY_R)==1 then
+  if not CVVN("$LASTSPAWN") then MINI("CANNOT DO THIS! LAST SPAWN WAS NOT COMPLETE!",255,0,0,true) end
+  Maps.Obj.Kill("PLAYER")
+  SpawnPlayer(CVV('$LASTSPAWN'))
+  end
+end
+
+function FieldStats()
+    local p = Actors.Actor('PLAYER')
+    if p.Walking~=0 or p.Moving~=0 then FSTime = nil; return end
+    FSTime = FSTime or 500
+    if FSTime<=0 then
+       local stuff = {}
+       local layer
+       if Maps.Multi()==1 then layer = Maps.LayerCodeName end
+       stuff[1] = {'FSTIT',Maps.GetData('Title'),'FieldInfo'}
+       if layer and left(layer,1)=="#" then stuff[2]={'FSROM',layer} end
+       if CVVN("%CASH") then stuff[#stuff+1] = {'FSCSH',CVV("%CASH")} end
+       if CVVN("%ORBS") then stuff[#stuff+1] = {'FSORB',CVV("%ORBS")} end
+       stuff[#stuff+1] = {'FSTIM',PlayTime()}
+       for i,data in ipairs(stuff) do
+           white()
+           SetFont(data[3] or 'FieldStat')
+           Image.LoadNew(data[1],"GFX/Field Icons/"..data[1]..".png")
+           Image.Show(data[1],35,i*35)
+           DarkText(data[2],75,i*35,0,0,180,255,0)
+       end
+    else
+       FSTime=FSTime-1
+       DarkText(FSTime,0,0,0,0)
+    end
+end
   
 
 function MAIN_FLOW()
@@ -214,7 +248,8 @@ AutoScroll()
 --EmergencySave()
 --ControlFoes()
 --FindTreasures()
---ResetChar()
+FieldStats()
+ResetChar()
 ShowParty()
 ShowMouse()
 Flip()
