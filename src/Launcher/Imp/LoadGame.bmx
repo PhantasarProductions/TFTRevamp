@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.08.18
+Version: 16.09.13
 End Rem
 Strict
 
@@ -33,7 +33,7 @@ Import tricky_Units.ListDir
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - LoadGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.08.18"
+MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.09.13"
 
 afr_InpCol 0,27,0,0,155,0
 afr_WinCol 0,255,0,0,25,0
@@ -51,7 +51,7 @@ Function LoadGame(G:TGadget)
 	?
 	lgi.d "LoadGame",cursg.file
 	lgi.d "StartScript","LoadGame.lua"
-	lgi.d "StartFunction","LoadGame"
+	lgi.d "StartUpFunction","LoadGame"
 	lgi.d "TITLE","The Fairy Tale REVAMPED"
 	Mode2Ini lgi
 	SaveIni LAURA2StartFile, lgi

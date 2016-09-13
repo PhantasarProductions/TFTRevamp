@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.09.12
+  Version: 16.09.13
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -52,7 +52,8 @@ end
 function LoadMap(map)
     -- Load the map itself
     Maps.Load(map)
-    -- Lastly, load the music   
+    -- Lastly, load the music  
+    MS.Run("MAP","MapMusic") 
 end
 
 function ScheduledExecution()

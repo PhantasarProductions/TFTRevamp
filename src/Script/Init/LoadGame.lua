@@ -1,6 +1,6 @@
 --[[
   LoadGame.lua
-  Version: 16.09.12
+  Version: 16.09.13
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -37,5 +37,7 @@
 
 
 function LoadGame()
+  CSay("Setting up the map music")
+  MS.Run("MAP","MapMusic")
   CSay("Going to the game!")
 end
