@@ -140,6 +140,12 @@ for ZK,ZZ in pairs(ZA.Flow) do
     end
 end
 
+function NPC_MapText()
+  TurnPlayer("North")
+  MapText(upper(Var.C("$NPC_MAPTEXT")))
+end
+
+
 function MAPSAVE()
    MS.Run("FIELD","GotoSave") -- Dirty code straight from hell, but I was lazy :-P
 end

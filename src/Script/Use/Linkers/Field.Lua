@@ -1,6 +1,6 @@
 --[[
   Field.Lua
-  Version: 16.09.11
+  Version: 16.09.13
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -47,3 +47,7 @@ end
 
 GetActive = GetActive or function()
 end
+
+TurnPlayer = TurnPlayer or function(wind)
+   MS.Run('FIELD','TurnPlayer',wind)
+end   
