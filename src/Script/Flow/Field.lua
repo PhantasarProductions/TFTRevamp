@@ -55,7 +55,7 @@ function LoadMap(map)
     -- Load the map itself
     Maps.Load(map)
     local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()
-    if layer[1]~="SL:Map" then Maps.GotoLayer(layer[1]) end -- Does this prevent a crash?
+    if layers[1]~="SL:Map" then Maps.GotoLayer(layers[1]) end -- Does this prevent a crash?
     -- Lastly, load the music  
     MS.Run("MAP","MapMusic") 
     SetUpAutoClickables()
