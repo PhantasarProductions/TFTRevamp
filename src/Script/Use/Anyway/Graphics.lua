@@ -18,15 +18,16 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 
+Cls = Image.Cls
+cls = Cls
+Color = Image.Color
+color = Color
 
 function Graphics_Init()
   Center_X = Screen.Width()/2
   Center_Y = Screen.Height()/2
   SW = Screen.Width()
   SH = Screen.Height()
-
-  Cls = Image.Cls
-  cls = Cls
 end Graphics_Init()  
 
 function GetViewport()

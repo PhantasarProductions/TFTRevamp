@@ -1,6 +1,6 @@
 --[[
   Joy.lua
-  Version: 16.09.08
+  Version: 16.09.13
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -39,13 +39,24 @@ joy_right = -2
 joy_up = -3
 joy_down = -4
 
+Var.N("%JOY.CONFIRM",1)
+Var.N("%JOY.CANCEL",2)
+Var.N("%JOY.MENU",3)
+Var.N("%JOY.XTRA",4)
+Var.N("%JOY.L1",4)
+Var.N("%JOY.L2",6)
+Var.N("%JOY.R1",7)
+Var.N("%JOY.R2",5)
+Var.N("%JOY.START",8)
+Var.N("%JOY.SELECT",9)
+
 function joypos()
   return INP.JoyX(),INP.JoyY()
 end
 
 function joyhit(code)
   local x,y = joypos()
-  if code<0 then
+  if type(code)=='number' and code<0 then
      --[[
      if old_joy_x~=x and old_joy_y~=y then
         old_joy_x=x
@@ -62,6 +73,8 @@ function joyhit(code)
      while code==joy_left  and INP.JoyX()==-1 do ret=true end
      while code==joy_right and INP.JoyX()== 1 do ret=true end
      return ret
+  elseif type(code)=='string' then
+     return INP.JoyH(CVV('%JOY'..code))   == 1
   else
      return INP.JoyH(code)~=1   
   end   

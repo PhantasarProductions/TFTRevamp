@@ -275,7 +275,7 @@ function TurnOffClicks()
 end
 
 function SetUpAutoClickables()
-local prefixes = {"NPC_","SSG_","SRC_"}
+local prefixes = {"NPC_","PSG_","PRC_"}
 local p 
 local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()
 -- CSay(type(layers).."/"..type(each))
@@ -333,7 +333,7 @@ if mousehit(1) then
                WalkArrivalArg = nil
                ret=true
                end
-          elseif prefixed(c,"SSG") then
+          elseif prefixed(c,"PSG") then
             if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32)==1 then
                WalkArrival = 'MAPSAVE'
                WalkArrivalArg = nil
@@ -377,6 +377,15 @@ if WalkArrival and Actors.Walking(cplayer)==0 then
   -- @ENDSELECT
   WalkArrival = nil
   end      
+end
+
+function GotoSave()
+   Cls()
+   Maps.Draw()
+   -- Image.GrabScreenShot('SHOT')
+   -- LAURA.ImageForSave('Shot.png','SHOT')
+   MS.Load("SAVE","Script/Flow/Savegame.lua")
+   LAURA.Flow("SAVE")
 end
   
 

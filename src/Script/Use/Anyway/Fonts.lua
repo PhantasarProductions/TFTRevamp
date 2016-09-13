@@ -50,7 +50,8 @@ fonts = {
     Tutorial = {"Coolvetica.ttf",10},
     Stats = {"Monof55.ttf",20},
     FieldInfo = {"Coolvetica.ttf",35},
-    FieldStat = {'Monof55.ttf',35}
+    FieldStat = {'Monof55.ttf',35},
+    SaveGameLine = {"Coolvetica.ttf",25},
 }
 
 fonts.BoxText = fonts.BoxTextContent
