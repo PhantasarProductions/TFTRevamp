@@ -44,6 +44,10 @@ function MapMusic()
    end   
 end
 
+function NPC_MasterJohn()
+  MapText("N_John_Pro")
+end  
+
 function John_Exam()
    MapText("John")
    MapMusic()

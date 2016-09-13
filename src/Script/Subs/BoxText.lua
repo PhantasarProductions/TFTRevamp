@@ -1,6 +1,6 @@
 --[[
   BoxText.lua
-  Version: 16.09.11
+  Version: 16.09.13
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -42,7 +42,7 @@ boxtextroutine = true
 
 Backgrounds = {
 
-       FLOW_FIELD = function() Maps.Draw() end
+       FLOW_FIELD = function() Cls() Maps.Draw() end
 }
 
 
@@ -52,6 +52,10 @@ function SetBoxTextAlt(a)
   if a == 'nil' then altbackground=nil else  altbackground = a end 
   end
 
+
+function GALE_OnLoad()
+   CSay("BoxText found screen sizes "..SW.."x"..SH)
+end
 
 ----
 
@@ -169,6 +173,11 @@ end
 
 
 function RunBoxText(file,tag,idx,boxback)
+if not ReInit then 
+  Graphics_Init()  
+  ReInit = true
+  -- This prevents the Text Box to be drawn based on wrong settings.
+end  
 setfont("BoxTextContent")
 local f = btdata[file]
 if not f then Sys.Error("Boxtext file "..file.." has not yet been loaded!") end

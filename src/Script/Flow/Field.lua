@@ -50,10 +50,15 @@ function GALE_OnLoad()
 end  
 
 function LoadMap(map)
+    -- Reset some stuff prior to loading
+    ResetClickables()
     -- Load the map itself
     Maps.Load(map)
+    local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()
+    if layer[1]~="SL:Map" then Maps.GotoLayer(layer[1]) end -- Does this prevent a crash?
     -- Lastly, load the music  
     MS.Run("MAP","MapMusic") 
+    SetUpAutoClickables()
 end
 
 function ScheduledExecution()
@@ -70,8 +75,8 @@ function Schedule(scr,func)
   CSay("Scheduled: "..scr.."."..func)
 end
 
-function CheckClickables()
-end
+--function CheckClickables()
+--end
 
 function Click()
 local mx,my = MouseCoords()
@@ -210,7 +215,7 @@ end
 function FieldStats()
     local p = Actors.Actor('PLAYER')
     if p.Walking~=0 or p.Moving~=0 then FSTime = nil; return end
-    FSTime = FSTime or 500
+    FSTime = FSTime or 250
     if FSTime<=0 then
        local stuff = {}
        local layer
@@ -229,8 +234,149 @@ function FieldStats()
        end
     else
        FSTime=FSTime-1
-       DarkText(FSTime,0,0,0,0)
+       --DarkText(FSTime,0,0,0,0)
     end
+end
+
+-- Clickables
+function ResetClickables()
+Clickables = {}
+end
+
+function ListClickables()
+local i,k
+if #Clickables==0 then Console.Write("No clickables on this map",255,100,0) end
+for i,k in ipairs(Clickables) do CSay(serialize("Click #"..i,k)) end
+end 
+
+function AddClickable(c)
+if tablecontains(Clickables,c) then CSay('Duplicate clickable definiation '..c); return end
+CSay(serialize("AddingClickable",c))
+table.insert(Clickables,c)
+end
+
+function AddClickableScript(c)
+  local f,e = loadstring(c)
+  if not f then CSay("ERROR IN: "..c) Sys.Error("LoadString Error: "..e) end  
+  AddClickable(f())
+  end
+
+function RemoveClickable(c)
+local v,i,r
+for i,v in ipairs(Clickables) do
+    if v==c then r=i end
+    end
+table.remove(Clickables,r)
+end
+
+function TurnOffClicks() 
+  WalkArrival    = nil
+  WalkArrivalArg = nil
+end
+
+function SetUpAutoClickables()
+local prefixes = {"NPC_","SSG_","SRC_"}
+local p 
+local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()
+-- CSay(type(layers).."/"..type(each))
+for layer in each(layers) do
+    if Maps.Multi()==1 then Maps.GotoLayer(layer) end
+    for obj in KthuraEach() do
+        for p in each(prefixes) do 
+            if prefixed(obj.Tag,p) then AddClickable(obj.Tag) CSay(layer..": Autoclickable "..obj.Tag.." added") end
+            end
+        end
+    end
+if Maps.Multi()==1 then Maps.GotoLayer(orilayer) end    
+end
+
+function CheckClickables()
+local i,c
+local mx,my = TrueMouseCoords()
+local ret,ARMSpot,obj,succ
+local cplayer = "PLAYER"
+if not Clickables then return end
+if mousehit(1) then
+   for i,c in ipairs(Clickables) do
+     if type(c)=='table' then obj=c.obj else obj=c end
+     --Image.NoFont()
+     --CSay("#"..i.." Click: "..obj.." >> "..Maps.CoordsInObject(obj,mx,my)) -- Debug line!
+      
+       --[[
+       ({['string'] = function() 
+                      end,
+         ['table'] = function()
+                     end})[type(cd)]()
+         ]]                                
+       -- CSay("Clicked in object: "..c.." ("..mx..","..my..") ==> "..Maps.CoordsInObject(c,mx,my))
+       if Maps.Obj.Exists(obj) and Maps.CoordsInObject(obj,mx,my)==1 then
+          if type(c)=='table' then
+            CSay("Request from table")              
+            if c.spot then succ = Actors.WalkToSpot(cplayer,c.spot)==1 CSay("Walking To Spot: "..c.spot) end
+            if c.coords then succ = Actors.WalkTo(cplayer,c.coods.x,c.coords.y)==1 end
+            if succ then
+               WalkArrival = c.arrival   ; CSay("Execute: "..WalkArrival)   
+               WalkArrivalArg = c.arrivalarg
+               ret = true
+               end               
+          elseif prefixed(c,"NPC_MT_") then
+            if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32) == 1 then
+               WalkArrival = "NPC_MapText"
+               WalkArrivalArg = nil
+               Var.D("$NPC_MAPTEXT",c)
+               ret=true
+               end
+          elseif prefixed(c,"NPC_") then
+            if c=="NPC_MapText" then Sys.Error("Illegal NPC tag!") end
+            if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32)==1 then 
+               WalkArrival = c
+               WalkArrivalArg = nil
+               ret=true
+               end
+          elseif prefixed(c,"SSG") then
+            if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32)==1 then
+               WalkArrival = 'MAPSAVE'
+               WalkArrivalArg = nil
+               ret = true   
+            end      
+      else
+        if Maps.Obj.Exists("SPOT_"..c)==1 then
+           succ = Actors.WalkToSpot(cplayer,"SPOT_"..c) == 1
+           CSay("Walking to spot: SPOT_"..c)
+        else
+           succ = Actors.WalkToSpot(cplayer,c) == 1
+           CSay("SPOT not there, so walking to the object itself in stead")
+           end      
+           if succ then
+              WalkArrival = "CLICK_ARRIVAL_"..c
+              ret=true
+              end
+            end
+          end
+       end
+   end    
+return ret   
+end
+
+
+-- end clickables 
+
+function WalkArrivalCheck()
+local cplayer = "PLAYER"
+if WalkArrival and Actors.Walking(cplayer)==0 then
+  -- @SELECT type(WalkArrival)
+  -- @CASE "string"
+     MS.Run("MAP",WalkArrival,WalkArrivalArg)
+     CSay("Arrival>MAP>"..WalkArrival) -- Debug line
+  -- @CASE "function"
+     WalkArrival()
+  -- @CASE "table"
+     MS_Run(WalkArrival[1],WalkArrival[2],WalkArrival[3])
+  -- @DEFAULT
+     Sys.Error("Unknown walk arrival type ("..type(WalkArrival)..")")
+  -- @ENDSELECT
+  WalkArrival = nil
+  end      
 end
   
 
@@ -243,7 +389,7 @@ Click()
 ManualMove()
 AutoScroll()
 --ZoneAction()
---WalkArrivalCheck()
+WalkArrivalCheck()
 --Termination()
 --EmergencySave()
 --ControlFoes()

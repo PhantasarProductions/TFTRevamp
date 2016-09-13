@@ -39,5 +39,8 @@
 function LoadGame()
   CSay("Setting up the map music")
   MS.Run("MAP","MapMusic")
+  CSay("Re-Setup clickables")
+  MS.Run("FIELD","ResetClickables")
+  MS.Run("FIELD","SetUpAutoClickables")
   CSay("Going to the game!")
 end

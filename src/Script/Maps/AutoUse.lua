@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.09.12
+  Version: 16.09.13
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -138,4 +138,8 @@ for ZK,ZZ in pairs(ZA.Flow) do
        ZZ.F(ZZ.P) 
        end
     end
+end
+
+function MAPSAVE()
+   MS.Run("FIELD","GotoSave") -- Dirty code straight from hell, but I was lazy :-P
 end

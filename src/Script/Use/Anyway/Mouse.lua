@@ -1,6 +1,6 @@
 --[[
   Mouse.lua
-  Version: 16.09.10
+  Version: 16.09.13
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -54,3 +54,9 @@ function MouseHit(button)
 end
 
 mousehit = MouseHit
+
+
+function MouseTrueCoords()
+   local x,y = GetMouse()
+   return x + Maps.CamX,y + Maps.CamY
+end TrueMouseCoords = MouseTrueCoords   

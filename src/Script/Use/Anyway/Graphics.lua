@@ -1,7 +1,7 @@
 --[[
   Graphics.lua
   
-  version: 16.09.10
+  version: 16.09.13
   Copyright (C) 2016 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -19,14 +19,15 @@
 ]]
 
 
-Center_X = Screen.Width()/2
-Center_Y = Screen.Height()/2
-SW = Screen.Width()
-SH = Screen.Height()
+function Graphics_Init()
+  Center_X = Screen.Width()/2
+  Center_Y = Screen.Height()/2
+  SW = Screen.Width()
+  SH = Screen.Height()
 
-
-Cls = Image.Cls
-cls = Cls
+  Cls = Image.Cls
+  cls = Cls
+end Graphics_Init()  
 
 function GetViewport()
   Image.GetViewport()
