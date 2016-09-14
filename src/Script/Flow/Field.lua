@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.09.13
+  Version: 16.09.14
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -387,6 +387,18 @@ function GotoSave()
    MS.Load("SAVE","Script/Flow/Savegame.lua")
    LAURA.Flow("SAVE")
 end
+
+function ZoneAction()
+       MS.Run("MAP","ZA_CheckEnter",'PLAYER')
+       MS.Run("MAP","ZA_CheckLeave",'PLAYER')
+       MS.Run("MAP","ZA_CheckFlow" ,'PLAYER')    
+end
+
+function KillWalkArrival()
+  WalkArrival = nil
+end
+
+
   
 
 function MAIN_FLOW()
@@ -397,7 +409,7 @@ ScheduledExecution()
 Click()
 ManualMove()
 AutoScroll()
---ZoneAction()
+ZoneAction()
 WalkArrivalCheck()
 --Termination()
 --EmergencySave()

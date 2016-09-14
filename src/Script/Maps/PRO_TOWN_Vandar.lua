@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.13
+version: 16.09.14
 ]]
 
 
@@ -51,4 +51,53 @@ end
 function John_Exam()
    MapText("John")
    MapMusic()
+end   
+
+function Bye()
+   if not CVV("&DONE.JAKE.CHIEF.PROLOGUESPOKEN") then 
+      MapText("NOLEAVECHIEF")
+   elseif CVV("&DONE.JAKE.LITTLEJENNY.RESCUED") then
+      MapText("NOLEAVEJENNY")   
+   end   
+end
+
+
+function WalkLevel(dom,opbrug)
+  -- Player Correction
+  Actors.Actor('PLAYER').Dominance=dom
+  for i=1,3 do
+      if RPG.PartyTag(i)~='' then
+           Actors.Actor('PLAYER'..i).Dominance=30
+           Actors.Actor('PLAYER'..i).X = Actors.Actor('PLAYER').X
+           Actors.Actor('PLAYER'..i).Y = Actors.Actor('PLAYER').Y
+      end
+  end
+  -- What is blocked or not
+  Maps.Obj.Obj('OP_BRUG').ForcePassible = opbrug
+  Maps.Obj.Obj('HEK_OP').Impassible = opbrug
+  Maps.Obj.Obj('HEK_NEER').Impassible = opbrug
+  Maps.Remap()       
+end
+
+function Up()
+   WalkLevel(30,1)
+end
+
+function Down()
+   WalkLevel(20,0)
+end
+
+function Dragon()
+   if not CVV("&DONE.JAKE.CHIEF.PROLOGUESPOKEN") then
+      MapText('NODRAGON')
+      return
+   end    
+end
+
+function GALE_OnLoad()
+   ZA_Enter("Bye",Bye)
+   ZA_Enter('UP1',Up)
+   ZA_Enter('UP2',Up)
+   ZA_Enter('DOWN',Down)
+   ZA_Enter("Enter_Cave",Dragon)
 end   
