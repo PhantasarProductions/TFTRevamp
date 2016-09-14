@@ -233,7 +233,7 @@ Flip()
 if sb_data.Voice then
    continue = Audio.Playing('BOXTEXTCHANNEL')==0
 end   
-if mousehit(1) or INP.KeyH(KEY_SPACE)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_ENTER)==1 then
+if mousehit(1) or INP.KeyH(KEY_SPACE)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_ENTER)==1 or joyhit('CONFIRM') then
      if sb_data.SL>#sb_data.Lines then 
         continue=true
      else
