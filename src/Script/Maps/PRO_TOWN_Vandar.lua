@@ -100,4 +100,5 @@ function GALE_OnLoad()
    ZA_Enter('UP2',Up)
    ZA_Enter('DOWN',Down)
    ZA_Enter("Enter_Cave",Dragon)
+   if not CVV("&DONE.JAKE.LITTLEJENNY.RESCUED") then Maps.Obj.Kill("NPC_MT_Jenny") end -- Don't show Jenny until she's saved from the Dragon Cave. She won't be accessible until the final part of the game.
 end   

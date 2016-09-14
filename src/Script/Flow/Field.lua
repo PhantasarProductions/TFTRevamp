@@ -78,11 +78,15 @@ end
 --function CheckClickables()
 --end
 
-function Click()
+function Click(fakex,fakey)
 local mx,my = MouseCoords()
 local ak,ch
-if mousehit(1) then -- Left Mouse button    
-   if my>PartyBarY then  -- must come prior to checks in the field
+mx = fakex or mx
+my = fakey or my
+local ret
+if mousehit(1) or (fakex or fakey) then -- Left Mouse button    
+   -- CSay("Checking click ("..mx..","..my..")") -- debug
+   if my>PartyBarY and (not (fakex or fakey) )then  -- must come prior to checks in the field
       for ak=0,5 do
           if ClickedChar(ak) then FGoToMenu(ak) end
           end
@@ -90,11 +94,12 @@ if mousehit(1) then -- Left Mouse button
    elseif IconClicked then -- Must come prior to checks in the field
       IconFunction[IconClicked]()
    ]]          
-   elseif CheckClickables() then
-     -- Nothing happens here, but this will take any other checks out.       
-      else -- If there's nothing else then perform then walk to
+   elseif CheckClickables(fakex,fakey) then
+     -- Nothing happens here, but this will take any other checks out.
+      ret = true -- Only needed for the fake clicker.       
+   else -- If there's nothing else then perform then walk to
       -- CSay(cplayer.." is going to walk to ("..mx..","..my..")")
-      if not lasthit then 
+      if (not lasthit) and (not (fakex or fakey)) then 
          Actors.WalkTo('PLAYER',mx+Maps.CamX,my+Maps.CamY)       
          WalkArrival = nil
       end   
@@ -113,6 +118,24 @@ if mousehit(2) then
       end
    end
       ]]
+end
+
+function KeyClickables()
+  if (INP.KeyH(KEY_SPACE)==0) and (not joyhit('CONFIRM')) then return end
+  local me = Actors.Actor('PLAYER')
+  KeyClickArea =  
+  {
+        North = { me.x-32,me.y-64, me.x+32, me.y    },
+        South = { me.x-32,me.y   , me.x-32, me.y+64 },
+        East  = { me.x   ,me.y-32, me.x+64, me.y+32 },
+        West  = { me.x-64,me.y-32, me.x   , me.y+32 }
+  }  
+  local area = KeyClickArea[me.Wind]
+  for x = area[1],area[3] do for y=area[2],area[4] do
+  
+      -- local tx,ty = TrueMouseCoords(); CSay(x..","..y.." <KeyCheck    TrueMouse> "..tx..","..ty)
+      if CheckClickables(x,y) then return end -- When multiple clickables are in range, only the first one counts.
+  end end
 end
 
 function AutoPlayerWind()
@@ -290,13 +313,14 @@ for layer in each(layers) do
 if Maps.Multi()==1 then Maps.GotoLayer(orilayer) end    
 end
 
-function CheckClickables()
+function CheckClickables(fakex,fakey)
 local i,c
-local mx,my = TrueMouseCoords()
+local mx,my = fakex,fakey 
+if not fakex then mx,my = TrueMouseCoords() end
 local ret,ARMSpot,obj,succ
 local cplayer = "PLAYER"
 if not Clickables then return end
-if mousehit(1) then
+if mousehit(1) or fakex or fakey then
    for i,c in ipairs(Clickables) do
      if type(c)=='table' then obj=c.obj else obj=c end
      --Image.NoFont()
@@ -363,7 +387,7 @@ end
 
 function WalkArrivalCheck()
 local cplayer = "PLAYER"
-if WalkArrival and Actors.Walking(cplayer)==0 then
+if WalkArrival and (Actors.Walking(cplayer)==0) then
   -- @SELECT type(WalkArrival)
   -- @CASE "string"
      MS.Run("MAP",WalkArrival,WalkArrivalArg)
@@ -402,22 +426,23 @@ end
   
 
 function MAIN_FLOW()
-Cls()
-DrawScreen()
---ManWalk()
-ScheduledExecution()
-Click()
-ManualMove()
-AutoScroll()
-ZoneAction()
-WalkArrivalCheck()
---Termination()
---EmergencySave()
---ControlFoes()
---FindTreasures()
-FieldStats()
-ResetChar()
-ShowParty()
-ShowMouse()
-Flip()
+  Cls()
+  DrawScreen()
+  --ManWalk()
+  ScheduledExecution()
+  Click()
+  KeyClickables()
+  ManualMove()
+  AutoScroll()
+  ZoneAction()
+  WalkArrivalCheck()
+  --Termination()
+  --EmergencySave()
+  --ControlFoes()
+  --FindTreasures()
+  FieldStats()
+  ResetChar()
+  ShowParty()
+  ShowMouse()
+  Flip()
 end
