@@ -1,6 +1,6 @@
 --[[
   BoxText.lua
-  Version: 16.09.13
+  Version: 16.09.14
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
