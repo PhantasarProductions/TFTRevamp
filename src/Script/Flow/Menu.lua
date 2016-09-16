@@ -1,5 +1,5 @@
 --[[
-  Items.lua
+  Menu.lua
   Version: 16.09.16
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,31 +34,53 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-inventory = inventory or { ITM_APPLE = ({20,10,1})[tonumber(Var.C("%SKILL"))]}
+
+profiles = {
+                 Field = {
+                      Features = {'Items','Abilities','Config','Quit'},
+                      HalfScreen = {Items=true,Abilities=true},
+                      PartyBrowse = true
+                      }
+                      
+           }
 
 
-itemfilter = {
+function Menu_Init(LoadProfile)
+    profile = profiles[LoadProfile] or Sys.Error("Unknown Profile: "..sval(LoadProfile))
+    profile.HalfScreen = profile.HalfScreen or {} -- Crash prevention
+    profile.FeatureItem = profile.FeatureItem or 1
+    Screen = nil
+end
 
-                  All = function(i) return true end,
-                  Equip = function(i,char)
-                            if char=="Krandar" then return false end
-                          end,
-                  Combat = function(i)
-                            return i.ITM_Type=='Consumable' and i.ITM_Combat
-                           end,
-                  Field = function(i)
-                            return i.ITM_Type=='Consumable' and i.ITM_Field
-                          end,
-                  Key = function(i) return i.ITM_Type=="KeyItem" end       ,
-                  Sellable = function(i) return i.ITM_Type=="KeyItem" and i.ITM_Sellable end                  
-             }
-             
-function GALE_OnLoad()
-   LoadItemModule = nil
-end   
-             
-function ItemGet(I,s)
-     local f = JINC("Script/JINC/IA/"..I..".lua")   -- IA = Items/Ability (I hope that was obvious) :-P
-     local ret = f()
-     if s then Var.D("$ITEMGET",serialize("ret",ret).."\n\nreturn ret") end
+
+function Menu_GetScreen()
+    local ret
+    ret = {}
+    ret.SW = Screen.Width()
+    ret.SH = Screen.Height() - 100 -- (100 is the size of the party bar) ;)
+    ret.SX = 0
+    ret.SY = 0    
+    ret.mar = {
+                 L = tonumber(LC('screen.margin.left')  )~=0,
+                 R = tonumber(LC('screen.margin.right') )~=0,
+                 T = tonumber(LC('screen.margin.up')    )~=0,
+                 B = tonumber(LC('screen.margin.bottom') )~=0
+              }
+    if ret.mar.L then ret.SX = 25 ret.SW = ret.SW - 25 end
+    if ret.mar.T then ret.SY = 25 ret.SH = ret.SH - 25 end
+    if ret.mar.R then             ret.SW = ret.SW - 25 end
+    if ret.mar.B then             ret.SH = ret.SH - 25 end
+    if #profile.Features>1 then
+       ret.IB = {}
+       ret.IB.X = ret.SX
+       ret.IB.Y = ret.SY
+       ret.SY = ret.SY + 60
+       end    
+    ret.CX = Screen.Width()/2
+    ret.CY = Screen.Height()/2
+    return ret   
+end
+
+function DrawSceen()
+   Screen = Screen or Menu_GetScreen()
 end

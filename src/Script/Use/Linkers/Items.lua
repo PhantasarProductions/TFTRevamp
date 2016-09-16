@@ -34,31 +34,15 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-inventory = inventory or { ITM_APPLE = ({20,10,1})[tonumber(Var.C("%SKILL"))]}
-
-
-itemfilter = {
-
-                  All = function(i) return true end,
-                  Equip = function(i,char)
-                            if char=="Krandar" then return false end
-                          end,
-                  Combat = function(i)
-                            return i.ITM_Type=='Consumable' and i.ITM_Combat
-                           end,
-                  Field = function(i)
-                            return i.ITM_Type=='Consumable' and i.ITM_Field
-                          end,
-                  Key = function(i) return i.ITM_Type=="KeyItem" end       ,
-                  Sellable = function(i) return i.ITM_Type=="KeyItem" and i.ITM_Sellable end                  
-             }
-             
-function GALE_OnLoad()
-   LoadItemModule = nil
+function LoadItemModule()
+   MS.LoadNew("ITEMS","Script/Subs/Items.lua")
 end   
-             
-function ItemGet(I,s)
-     local f = JINC("Script/JINC/IA/"..I..".lua")   -- IA = Items/Ability (I hope that was obvious) :-P
-     local ret = f()
-     if s then Var.D("$ITEMGET",serialize("ret",ret).."\n\nreturn ret") end
+
+ItemGet = ItemGet or function(i)
+   LoadItemModule()
+   MS.Run("ITEMS","ItemGet",i..";DUMPIT")
+   local ret = Var.C('$ITEMGET')
+   Var.Clear('$ITEMGET')
+   return ret
 end
+         
