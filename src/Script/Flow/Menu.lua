@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 16.09.16
+  Version: 16.09.17
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -37,19 +37,21 @@
 
 profiles = {
                  Field = {
-                      Features = {'Items','Abilities','Config','Quit'},
+                      Features = {'Items','Abilities','Achievements', 'Config','Quit'},
                       HalfScreen = {Items=true,Abilities=true},
                       PartyBrowse = true
                       }
                       
            }
+           
+menu = menu or { chn = 1, fp = 1 }           
 
 
 function Menu_Init(LoadProfile)
     profile = profiles[LoadProfile] or Sys.Error("Unknown Profile: "..sval(LoadProfile))
     profile.HalfScreen = profile.HalfScreen or {} -- Crash prevention
     profile.FeatureItem = profile.FeatureItem or 1
-    Screen = nil
+    MyScreen = nil
 end
 
 
@@ -81,6 +83,25 @@ function Menu_GetScreen()
     return ret   
 end
 
-function DrawSceen()
-   Screen = Screen or Menu_GetScreen()
+function Menu_DrawScreen()
+   -- Configure screen if needed
+   MyScreen = MyScreen or Menu_GetScreen()
+   -- Top line if applicable
+   if #profile.Features>1 then
+      Box(MyScreen.SX,0,MyScreen.SW,60)
+   end
+   -- Split Screen if needed
+   -- Full Screen if it isn't a split screen
+   -- Party pointer
+   -- Party browsing if applicable
+   ShowParty()
+   -- Mouse pointer
+   ShowMouse()
+end
+
+function MAIN_FLOW()
+   Cls()   
+   Menu_DrawScreen()  
+   -- And show everything
+   Flip()   
 end

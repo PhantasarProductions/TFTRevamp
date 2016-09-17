@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.09.14
+  Version: 16.09.17
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -200,11 +200,16 @@ local minx=0
 local miny=0
 local maxx,maxy = MapSize()
 local Actor = Actors.Actor("PLAYER")
--- stop moving on key release
+-- stop moving on arrow key release
 if lasthit=="KEYUP" and (INP.KeyD(KEY_UP   )==0) then Actor.Moving=0 lasthit=nil return end
 if lasthit=="KEYDN" and (INP.KeyD(KEY_DOWN )==0) then Actor.Moving=0 lasthit=nil return end
 if lasthit=="KEYLF" and (INP.KeyD(KEY_LEFT )==0) then Actor.Moving=0 lasthit=nil return end
 if lasthit=="KEYRG" and (INP.KeyD(KEY_RIGHT)==0) then Actor.Moving=0 lasthit=nil return end
+-- stop moving on wasd key release
+if lasthit=="KEY_W" and (INP.KeyD(KEY_W    )==0) then Actor.Moving=0 lasthit=nil return end
+if lasthit=="KEY_S" and (INP.KeyD(KEY_S    )==0) then Actor.Moving=0 lasthit=nil return end
+if lasthit=="KEY_A" and (INP.KeyD(KEY_A    )==0) then Actor.Moving=0 lasthit=nil return end
+if lasthit=="KEY_D" and (INP.KeyD(KEY_D    )==0) then Actor.Moving=0 lasthit=nil return end
 -- stop moving on joypad release
 if lasthit=="JOYUP" and (INP.JoyY()~=-1)         then Actor.Moving=0 lasthit=nil return end
 if lasthit=="JOYDN" and (INP.JoyY()~= 1)         then Actor.Moving=0 lasthit=nil return end
@@ -213,11 +218,16 @@ if lasthit=="JOYRG" and (INP.JoyX()~= 1)         then Actor.Moving=0 lasthit=nil
 if lasthit then return end
 -- Ignore any new attempt to move is the character is already moving
 if Actor.Moving~=0 or Actor.Walking~=0 then return end
--- Start moving by keyboard input
+-- Start moving by keyboard input - arrows
 if INP.KeyD(KEY_UP   )==1 then Actors.MoveTo("PLAYER",Actor.X,miny) lasthit="KEYUP" end
 if INP.KeyD(KEY_DOWN )==1 then Actors.MoveTo("PLAYER",Actor.X,maxy) lasthit="KEYDN" end
 if INP.KeyD(KEY_LEFT )==1 then Actors.MoveTo("PLAYER",minx,Actor.Y) lasthit="KEYLF" end
 if INP.KeyD(KEY_RIGHT)==1 then Actors.MoveTo("PLAYER",maxx,Actor.Y) lasthit="KEYRG" end
+-- Start moving by keyboard input - wasd
+if INP.KeyD(KEY_W    )==1 then Actors.MoveTo("PLAYER",Actor.X,miny) lasthit="KEY_W" end
+if INP.KeyD(KEY_S    )==1 then Actors.MoveTo("PLAYER",Actor.X,maxy) lasthit="KEY_S" end
+if INP.KeyD(KEY_A    )==1 then Actors.MoveTo("PLAYER",minx,Actor.Y) lasthit="KEY_A" end
+if INP.KeyD(KEY_D    )==1 then Actors.MoveTo("PLAYER",maxx,Actor.Y) lasthit="KEY_D" end
 -- Start moving by joypad input
 if INP.JoyY()==-1         then Actors.MoveTo("PLAYER",Actor.X,miny) lasthit="JOYUP" end
 if INP.JoyY()== 1         then Actors.MoveTo("PLAYER",Actor.X,maxy) lasthit="JOYDN" end
@@ -422,7 +432,15 @@ function KillWalkArrival()
   WalkArrival = nil
 end
 
-
+function MenuCheck()   
+   -- Keyboard / Joypad
+   if INP.KeyH(KEY_TAB)~=0 or joyhit("%MENU") then
+      MS.LoadNew("MENU","Script/Flow/Menu.lua")
+      MS.Run("MENU","Menu_Init","Field")
+      LAURA.Flow("MENU")
+   end      
+   -- Mouse
+end
   
 
 function MAIN_FLOW()
@@ -436,6 +454,7 @@ function MAIN_FLOW()
   AutoScroll()
   ZoneAction()
   WalkArrivalCheck()
+  MenuCheck()
   --Termination()
   --EmergencySave()
   --ControlFoes()
