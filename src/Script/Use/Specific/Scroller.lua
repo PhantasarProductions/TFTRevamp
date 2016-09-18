@@ -1,5 +1,5 @@
 --[[
-  Items.lua
+  Scroller.lua
   Version: 16.09.17
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,28 +34,25 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+scrollers = scrollers or {}
 
--- CSay("Item Linkers")
 
-function LoadItemModule()
-   MS.LoadNew("ITEMS","Script/Subs/Items.lua")
-end   
-
-ItemGet = ItemGet or function(i)
-   LoadItemModule()
-   MS.Run("ITEMS","ItemGet",i..";DUMPIT")
-   local ret = Var.C('$ITEMGET')
-   Var.Clear('$ITEMGET')
-   return ret
-end
-         
-ItemFilterReset = ItemFilterReset or function()
-   LoadItemModule()
-   MS.Run("ITEMS","ItemFilterReset")
+function Scroller(tag,x,y,w,h)
+  -- CSay('Scroller("'..tag..'",'..x..','..y..','..w..','..h..")")
+  scrollers[tag] = scrollers[tag] or { x=x, y=y, w=w, h=h, down=0}
+  local myscroll = scrollers[tag]
+  myscroll.ori = myscroll.ori or {}
+  local ori=myscroll.ori
+  ori.x,ori.y,ori.w,ori.h = GetViewPort()
+  Image.ViewPort(myscroll.x,myscroll.y,myscroll.w,myscroll.h)
+  Image.Origin(myscroll.x,myscroll.y-myscroll.down)
 end
 
-ItemShowList = ItemShowList or function(showfilter,enablefilter,char,sizes)
-   LoadItemModule()
-   --CSay(serialize("Debug",sizes))
-   MS.Run("ITEMS","ItemShowList",showfilter..";"..enablefilter..";"..char..";"..sizes[1]..","..sizes[2]..","..sizes[3]..","..sizes[4])
-end
+function EndScroller(tag)
+  local myscroll = scrollers[tag]
+  assert(myscroll,"No scoller tagged: "..tag)
+  assert(myscroll.ori,"Original viewports not properly set")
+  local ori=myscroll.ori
+  Image.ViewPort(ori.x,ori.y,ori.w,ori.h)
+  Image.Origin(ori.x,ori.y)
+end    

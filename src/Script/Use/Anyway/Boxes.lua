@@ -1,6 +1,6 @@
 --[[
   Boxes.lua
-  Version: 16.09.10
+  Version: 16.09.17
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -37,12 +37,13 @@
 function BoxBorder(x,y,pw,ph)
    local a = Image.GetAlphaPC()
    local w = x + pw
-   local h = y + ph
-   Image.SetAlphaPC(50)   
+   local h = y + ph     
    for i=0,5 do
+       Image.SetAlphaPC(30)
        Image.Color(255,255,255)
        Image.Line(x,y+i,w-i,y+i) -- top
        Image.line(x+i,y+6,x+i,h-i) -- left
+       Image.SetAlphaPC(75)
        Image.Color(10,10,10)
        Image.Line(x+i,h-i,w,h-i) -- bottom
        Image.line(w-i,h-6,w-i,y+i) -- right

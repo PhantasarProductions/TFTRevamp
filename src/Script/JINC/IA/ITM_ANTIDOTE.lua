@@ -1,6 +1,6 @@
 --[[
-  Items.lua
-  Version: 16.09.17
+  ITM_ANTIDOTE.lua
+  Version: 16.09.18
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,28 +34,25 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+ret = {
+	["CurePoison"] = true,
+	["Desc"] = "Poison be gone",
+	["Heal"] = nil,
+	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 50,
+	["ITM_Type"] = "Consumable",
+	["Title"] = "Antidote",
+	["Type"] = "Item"}
 
--- CSay("Item Linkers")
+return ret
 
-function LoadItemModule()
-   MS.LoadNew("ITEMS","Script/Subs/Items.lua")
-end   
+-- This file is an automatically generated file!
 
-ItemGet = ItemGet or function(i)
-   LoadItemModule()
-   MS.Run("ITEMS","ItemGet",i..";DUMPIT")
-   local ret = Var.C('$ITEMGET')
-   Var.Clear('$ITEMGET')
-   return ret
-end
-         
-ItemFilterReset = ItemFilterReset or function()
-   LoadItemModule()
-   MS.Run("ITEMS","ItemFilterReset")
-end
-
-ItemShowList = ItemShowList or function(showfilter,enablefilter,char,sizes)
-   LoadItemModule()
-   --CSay(serialize("Debug",sizes))
-   MS.Run("ITEMS","ItemShowList",showfilter..";"..enablefilter..";"..char..";"..sizes[1]..","..sizes[2]..","..sizes[3]..","..sizes[4])
-end

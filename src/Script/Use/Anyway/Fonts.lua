@@ -1,6 +1,6 @@
 --[[
   Fonts.lua
-  Version: 16.09.13
+  Version: 16.09.17
   Copyright (C) 2016 2015
   
   ===========================
@@ -52,6 +52,10 @@ fonts = {
     FieldInfo = {"Coolvetica.ttf",35},
     FieldStat = {'Monof55.ttf',35},
     SaveGameLine = {"Coolvetica.ttf",25},
+    StatusName = {"CoolVetica.ttf",45},
+    StatusStat = {'Monof55.ttf',35},
+    ItemName = {"Coolvetica.ttf",25},
+    ItemAmm = {'Monof55.ttf',25}
 }
 
 fonts.BoxText = fonts.BoxTextContent

@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 16.09.13
+  Version: 16.09.17
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -69,3 +69,7 @@ end
 function LISTCLICKABLES()
   MS.Run("FIELD","ListClickables")
 end
+
+function RELOADCHAR(ch)
+  MS.Run("PARTY",'CreateChar',ch)
+end  

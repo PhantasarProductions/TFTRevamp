@@ -1,6 +1,6 @@
 --[[
   ITM_APPLE.lua
-  Version: 16.09.16
+  Version: 16.09.18
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -42,7 +42,7 @@ ret = {
 	["ITM_Combat"] = true,
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 5,
+	["ITM_ShopPrice"] = 25,
 	["ITM_Type"] = "Consumable",
 	["Title"] = "Apple",
 	["Type"] = "Item"}

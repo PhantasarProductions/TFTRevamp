@@ -1,7 +1,7 @@
 --[[
   Graphics.lua
   
-  version: 16.09.13
+  version: 16.09.17
   Copyright (C) 2016 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -33,4 +33,4 @@ end Graphics_Init()
 function GetViewport()
   Image.GetViewport()
   return Image.GVP_X,Image.GVP_Y,Image.GVP_W,Image.GVP_H
-end  
+end GetViewPort = GetViewport
