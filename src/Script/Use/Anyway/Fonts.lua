@@ -1,6 +1,6 @@
 --[[
   Fonts.lua
-  Version: 16.09.17
+  Version: 16.09.19
   Copyright (C) 2016 2015
   
   ===========================
@@ -45,6 +45,7 @@
 fonts = {
 
     -- BoxText = {"SuperSoulFighter.ttf",20} -- Font unreadable, but I'll keep this line in case nothing better comes my way
+    Compass = {"Coolvetica.ttf",20},
     BoxTextContent = {"Coolvetica.ttf",20},
     BoxTextHeader= {'master_of_break.ttf',20},
     Tutorial = {"Coolvetica.ttf",10},

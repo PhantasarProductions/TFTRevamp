@@ -1,6 +1,6 @@
 --[[
   LoadGame.lua
-  Version: 16.09.13
+  Version: 16.09.19
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -42,5 +42,6 @@ function LoadGame()
   CSay("Re-Setup clickables")
   MS.Run("FIELD","ResetClickables")
   MS.Run("FIELD","SetUpAutoClickables")
+  MS.Run("FIELD","SetUpCompassNeedles")
   CSay("Going to the game!")
 end

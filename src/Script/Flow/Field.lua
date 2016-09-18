@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.09.17
+  Version: 16.09.19
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -46,8 +46,32 @@ Scheduled = {}
 
 function GALE_OnLoad()
   PartyBarY = SH - 100
-  if tonumber(LC('screen.margin.right') )~=0 then PartyBarY = SW - 125 end
+  if tonumber(LC('screen.margin.bottom') )~=0 then PartyBarY = SW - 125 end
 end  
+
+function SetUpCompassNeedles()
+--local prefixes = {"NPC_","PSG_","PRC_"}
+local p 
+local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()
+Compass = {}
+-- CSay(type(layers).."/"..type(each))
+for layer in each(layers) do
+    CSay("Looking in layer "..layer.." for compass needles")
+    if Maps.Multi()==1 then Maps.GotoLayer(layer) end
+    for obj in KthuraEach('$Compass') do
+        Compass [ #Compass + 1 ] =
+        {
+             x = obj.X,
+             y = obj.Y,
+             name = obj.DataGet('Name')
+        }
+        CSay( "Added compass spot:" .. obj.DataGet('Name') )
+        end
+    end
+Image.LoadNew('NEEDLE','GFX/Algemeen/Needle.png'); Image.HotCenter('NEEDLE')    
+if Maps.Multi()==1 then Maps.GotoLayer(orilayer) end    
+end
+
 
 function LoadMap(map)
     -- Reset some stuff prior to loading
@@ -59,6 +83,7 @@ function LoadMap(map)
     -- Lastly, load the music  
     MS.Run("MAP","MapMusic") 
     SetUpAutoClickables()
+    SetUpCompassNeedles()
 end
 
 function ScheduledExecution()
@@ -151,9 +176,32 @@ function AutoPlayerWind()
 end
 
 
+function CompassSpots()
+   -- @IF IGNORE
+   Compass = {}
+   -- @FI
+   local player = Actors.Actor('PLAYER')
+   local px = player.x
+   local py = player.y
+   local d,c   
+   if not Compass then return end
+   SetFont('Compass')
+   for i,needle in ipairs(Compass) do
+       DarkText(needle.name,SW-100,50+(i*25),1,2)
+       d = Distance(px,py,needle.x,needle.y); if d>1000 then d=1000 end
+       c = (d/1000) * 255
+       color(c,255-c,0)
+       Image.Rotate(CoordsToAngle(px,py,needle.x,needle.y))
+       Image.Show('NEEDLE',SW-50,50+(i*25))
+       Image.Rotate(0)
+   end
+end
+
+
 function DrawScreen()
    Maps.Draw()  
    AutoPlayerWind()
+   CompassSpots()
 end
 
 function TurnPlayer(dir,num)
@@ -322,6 +370,8 @@ for layer in each(layers) do
     end
 if Maps.Multi()==1 then Maps.GotoLayer(orilayer) end    
 end
+
+
 
 function CheckClickables(fakex,fakey)
 local i,c
