@@ -65,7 +65,7 @@ for layer in each(layers) do
              y = obj.Y,
              name = obj.DataGet('Name')
         }
-        CSay( "Added compass spot:" .. obj.DataGet('Name') )
+        CSay( "Added compass spot:" .. obj.DataGet('Name') .. "   ("..obj.x..","..obj.y..")")
         end
     end
 Image.LoadNew('NEEDLE','GFX/Algemeen/Needle.png'); Image.HotCenter('NEEDLE')    
@@ -191,9 +191,12 @@ function CompassSpots()
        d = Distance(px,py,needle.x,needle.y); if d>1000 then d=1000 end
        c = (d/1000) * 255
        color(c,255-c,0)
-       Image.Rotate(CoordsToAngle(px,py,needle.x,needle.y))
+       local angle1,angle2 = CoordsToAngle(px,py,needle.x,needle.y)
+       angle1 = math.floor(angle1) -- BlitzMax is allergic for non-intergers sent by Lua.
+       Image.Rotate(angle1)
        Image.Show('NEEDLE',SW-50,50+(i*25))
        Image.Rotate(0)
+       -- DarkText(px..","..py..","..needle.x..","..needle.y.."/"..angle1.."/"..angle2,SW,50+(i*25),1,1)
    end
 end
 
