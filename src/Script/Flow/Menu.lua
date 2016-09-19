@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 16.09.17
+  Version: 16.09.19
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -41,7 +41,8 @@ profiles = {
                       HalfScreen = {Items={'Status','Items'},Abilities={'Status','Abilities'}},  
                       ItemShowFilters = {'All',"Field",'Equip','Key'},
                       ItemEnable = 'FieldUse',                    
-                      PartyBrowse = true
+                      PartyBrowse = true,
+                      EscReturn = 'FIELD'
                       }
                       
            }
@@ -184,6 +185,9 @@ function Menu_Keys()
       end
    if menu.fp<=0 then menu.fp = #profile.Features end
    if menu.fp> #profile.Features then menu.fp = 1 end    
+   if ( INP.KeyH(KEY_ESCAPE)==1 or joyhit('CANCEL')) and profile.EscReturn then
+      LAURA.Flow(profile.EscReturn)
+   end   
 end
 
 function MAIN_FLOW()

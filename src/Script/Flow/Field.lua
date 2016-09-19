@@ -359,7 +359,7 @@ function TurnOffClicks()
 end
 
 function SetUpAutoClickables()
-local prefixes = {"NPC_","PSG_","PRC_"}
+local prefixes = {"NPC_","PSG_","PRC_","CHEST_"}
 local p 
 local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()
 -- CSay(type(layers).."/"..type(each))
@@ -424,15 +424,23 @@ if mousehit(1) or fakex or fakey then
             if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32)==1 then
                WalkArrival = 'MAPSAVE'
                WalkArrivalArg = nil
-               ret = true   
-            end      
+               ret = true  
+            end    
+          elseif prefixed(c,"CHEST_") then
+               local chest = Maps.Obj.Obj(c) 
+               CSay('Clicked chest: '..c.." Frame:"..chest.Frame)
+               if chest.Frame==0 and Actors.WalkTo(cplayer,chest.X,chest.Y+32)==1 then
+                  WalkArrival = "TreasureChest"
+                  WalkArrivalArg = c
+                  ret = true
+               end       
       else
         if Maps.Obj.Exists("SPOT_"..c)==1 then
            succ = Actors.WalkToSpot(cplayer,"SPOT_"..c) == 1
            CSay("Walking to spot: SPOT_"..c)
         else
            succ = Actors.WalkToSpot(cplayer,c) == 1
-           CSay("SPOT not there, so walking to the object itself in stead")
+           CSay("SPOT not there, so walking to the object itself in stead ("..c..")")
            end      
            if succ then
               WalkArrival = "CLICK_ARRIVAL_"..c
@@ -487,7 +495,7 @@ end
 
 function MenuCheck()   
    -- Keyboard / Joypad
-   if INP.KeyH(KEY_TAB)~=0 or joyhit("%MENU") then
+   if INP.KeyH(KEY_TAB)~=0 or joyhit("MENU") then
       MS.LoadNew("MENU","Script/Flow/Menu.lua")
       MS.Run("MENU","Menu_Init","Field")
       LAURA.Flow("MENU")

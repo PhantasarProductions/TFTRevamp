@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.09.17
+  Version: 16.09.19
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -35,6 +35,9 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 -- @USE /Script/Use/Specific/Scroller.lua
+
+itemmax = ({50,25,10})[tonumber(Var.C("%SKILL"))]
+cashmax = ({1000000000,500000000,100000000})[tonumber(Var.C("%SKILL"))]
 
 inventory = inventory or { ITM_APPLE = ({20,10,1})[tonumber(Var.C("%SKILL"))]}
 
@@ -139,4 +142,46 @@ function ItemShowList(showfilter,enablefilter,char,psizes)
        DarkText(inventory[itm],sizes[3]-25,y,1,0,c[1],c[2],c[3])
    end
    EndScroller(scrollid)
+end
+
+function TreasureChest(tag)
+    local chest = Maps.Obj.Obj(tag)
+    if chest.Frame==1 then return end -- We don't deal with already open chests (this check is not needed at all, but rather an extra safety precaution).
+    local icode = upper(chest.DataGet("Item"))
+    local gotit
+    MS.LoadNew("BOXTEXT","Script/Subs/BoxText.lua")
+    MS.Run("BOXTEXT","LoadData","General/Items;ITEM")
+    if prefixed(icode,"CASH:") then
+       local wc = mysplit(icode,":")
+       local getcash = tonumber(wc[2])
+       if skill==1 then getcash = getcash * 2 elseif skill==3 then getcash = getcash * .25 end
+       Var.D("$ITEMNAME",getcash.." shilders")
+       if CVV("%CASH") >= cashmax then 
+          SerialBoxText("ITEM","FULL")
+       else
+          SerialBoxText("ITEM","GET")
+          inc('%CASH',getcash)
+          gotit = true
+       end   
+    else
+       if not prefixed(icode,"ITM_") then icode="ITM_"..icode end
+       items[icode] = items[icode] or ItemGet(icode)
+       local item = items[icode]
+       Var.D("$ITEMNAME",item.Title)
+       inventory[icode] = inventory[icode] or 0
+       if inventory[icode]<itemmax then
+          shownitems = {}; showitems=shownitems
+          enableditems  = {}
+          inventory[icode] = inventory[icode] + 1            
+          SerialBoxText("ITEM","GET")
+          gotit = true
+       else   
+          SerialBoxText("ITEM","FULL")
+       end
+    end
+    -- Adept the map      
+    if gotit then
+       chest.Frame = 1
+       Maps.PermaWrite(' Maps.Obj.Obj("'..tag..'").Frame = 1 -- It\'s open!')
+    end
 end

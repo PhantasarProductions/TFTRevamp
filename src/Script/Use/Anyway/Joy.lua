@@ -1,6 +1,6 @@
 --[[
   Joy.lua
-  Version: 16.09.13
+  Version: 16.09.19
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -74,8 +74,8 @@ function joyhit(code)
      while code==joy_right and INP.JoyX()== 1 do ret=true end
      return ret
   elseif type(code)=='string' then
-     return INP.JoyH(CVV('%JOY'..code))   == 1
+     return INP.JoyH(CVV('%JOY.'..code)) == 1
   else
-     return INP.JoyH(code)~=1   
+     return INP.JoyH(code)==1   
   end   
 end

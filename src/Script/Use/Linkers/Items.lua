@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.09.17
+  Version: 16.09.19
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -58,4 +58,9 @@ ItemShowList = ItemShowList or function(showfilter,enablefilter,char,sizes)
    LoadItemModule()
    --CSay(serialize("Debug",sizes))
    MS.Run("ITEMS","ItemShowList",showfilter..";"..enablefilter..";"..char..";"..sizes[1]..","..sizes[2]..","..sizes[3]..","..sizes[4])
+end
+
+TreasureChest = TreasureChest or function(tag)
+   LoadItemModule()
+   MS.Run("ITEMS","TreasureChest",tag)
 end
