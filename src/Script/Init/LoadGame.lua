@@ -1,6 +1,6 @@
 --[[
   LoadGame.lua
-  Version: 16.09.19
+  Version: 16.09.21
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -40,7 +40,7 @@ function LoadGame()
   CSay("Setting up the map music")
   MS.Run("MAP","MapMusic")
   CSay("Re-Setup clickables")
-  MS.Run("FIELD","ResetClickables")
+  -- MS.Run("FIELD","ResetClickables") -- Not needed here. This stuff is already empty.
   MS.Run("FIELD","SetUpAutoClickables")
   MS.Run("FIELD","SetUpCompassNeedles")
   CSay("Going to the game!")

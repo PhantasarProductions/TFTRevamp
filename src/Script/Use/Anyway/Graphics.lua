@@ -1,7 +1,7 @@
 --[[
   Graphics.lua
   
-  version: 16.09.17
+  version: 16.09.20
   Copyright (C) 2016 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -24,10 +24,18 @@ Color = Image.Color
 color = Color
 
 function Graphics_Init()
-  Center_X = Screen.Width()/2
-  Center_Y = Screen.Height()/2
-  SW = Screen.Width()
-  SH = Screen.Height()
+  LC = LAURA.LauraStartUp
+  local inputstr = LC('ALTSCREENMODE')
+  local t={} ; local i=1
+  for str in string.gmatch(inputstr, "([^"..','.."]+)") do
+      t[i] = str
+      i = i + 1
+  end
+  Graph_ASM = t  
+  SW = Graph_ASM[1] -- Screen.Width()
+  SH = Graph_ASM[2] -- Screen.Height()
+  Center_X = SW/2
+  Center_Y = SH/2
 end Graphics_Init()  
 
 function GetViewport()

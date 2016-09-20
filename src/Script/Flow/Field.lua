@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.09.19
+  Version: 16.09.20
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -84,6 +84,15 @@ function LoadMap(map)
     MS.Run("MAP","MapMusic") 
     SetUpAutoClickables()
     SetUpCompassNeedles()
+end
+
+function GoToLayer(lay,spot)
+    Maps.Obj.Kill('PLAYER')
+    for i=1,3 do
+        if RPG.PartyTag(i)~="" then Maps.Obj.Kill("PLAYER"..i) end
+    end
+    Maps.GoToLayer(lay)
+    SpawnPlayer(spot)
 end
 
 function ScheduledExecution()
@@ -324,7 +333,8 @@ end
 
 -- Clickables
 function ResetClickables()
-Clickables = {}
+  Clickables = {}
+  CSay("Clickables reset")
 end
 
 function ListClickables()
@@ -334,9 +344,11 @@ for i,k in ipairs(Clickables) do CSay(serialize("Click #"..i,k)) end
 end 
 
 function AddClickable(c)
-if tablecontains(Clickables,c) then CSay('Duplicate clickable definiation '..c); return end
-CSay(serialize("AddingClickable",c))
-table.insert(Clickables,c)
+  Clickables = Clickables or {}
+  if tablecontains(Clickables,c) then CSay('Duplicate clickable definiation '..c); return end
+  CSay(serialize("AddingClickable",c))
+  table.insert(Clickables,c)
+  CSay("Added Clickable: "..c)
 end
 
 function AddClickableScript(c)

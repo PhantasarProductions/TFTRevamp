@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.14
+version: 16.09.21
 ]]
 
 
@@ -94,11 +94,25 @@ function Dragon()
    end    
 end
 
+function HouseEnter(layer)
+   GoToLayer(layer,'Entrance')
+end
+
+function HouseExit()
+   GoToLayer('town','Exit_'..Maps.LayerCodeName)
+end      
+
 function GALE_OnLoad()
    ZA_Enter("Bye",Bye)
    ZA_Enter('UP1',Up)
    ZA_Enter('UP2',Up)
    ZA_Enter('DOWN',Down)
-   ZA_Enter("Enter_Cave",Dragon)
+   ZA_Enter("Enter_Cave",Dragon)   
    if not CVV("&DONE.JAKE.LITTLEJENNY.RESCUED") then Maps.Obj.Kill("NPC_MT_Jenny") end -- Don't show Jenny until she's saved from the Dragon Cave. She won't be accessible until the final part of the game.
+   -- Clickable for entering houses
+   AddClickable('HOUSECHIEF')
+   -- Zones for entering houses
+   ZA_Enter("Enter_Chief",HouseEnter,'chief')
+   -- Exits
+   ZA_Enter('Exit',HouseExit,Maps.LayerCodeName)
 end   

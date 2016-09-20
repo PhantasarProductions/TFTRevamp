@@ -1,6 +1,6 @@
 --[[
   Field.Lua
-  Version: 16.09.14
+  Version: 16.09.20
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -56,3 +56,11 @@ KillWalkArrival = KillWalkArrival or function()
    MS.Run('FIELD','KillWalkArrival')
 end   
    
+GoToLayer = GoToLayer or function(lay,spot)
+   MS.Run("FIELD","GoToLayer",lay..";"..spot)
+end   
+
+AddClickable = AddClickable or function(obj)
+  MS.LoadNew("FIELD","Script/Flow/Field.lua")
+  MS.Run("FIELD","AddClickable",obj)
+end  
