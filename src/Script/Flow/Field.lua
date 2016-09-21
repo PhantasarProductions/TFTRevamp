@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.09.20
+  Version: 16.09.21
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -63,7 +63,8 @@ for layer in each(layers) do
         {
              x = obj.X,
              y = obj.Y,
-             name = obj.DataGet('Name')
+             name = obj.DataGet('Name'),
+             layer = layer
         }
         CSay( "Added compass spot:" .. obj.DataGet('Name') .. "   ("..obj.x..","..obj.y..")")
         end
@@ -192,20 +193,23 @@ function CompassSpots()
    local player = Actors.Actor('PLAYER')
    local px = player.x
    local py = player.y
-   local d,c   
+   local d,c,li   
    if not Compass then return end
    SetFont('Compass')
    for i,needle in ipairs(Compass) do
-       DarkText(needle.name,SW-100,50+(i*25),1,2)
-       d = Distance(px,py,needle.x,needle.y); if d>1000 then d=1000 end
-       c = (d/1000) * 255
-       color(c,255-c,0)
-       local angle1,angle2 = CoordsToAngle(px,py,needle.x,needle.y)
-       angle1 = math.floor(angle1) -- BlitzMax is allergic for non-intergers sent by Lua.
-       Image.Rotate(angle1)
-       Image.Show('NEEDLE',SW-50,50+(i*25))
-       Image.Rotate(0)
-       -- DarkText(px..","..py..","..needle.x..","..needle.y.."/"..angle1.."/"..angle2,SW,50+(i*25),1,1)
+       if Maps.Multi()==0 or needle.layer==Maps.LayerCodeName then
+          li = (li or 0) + 1
+          DarkText(needle.name,SW-100,50+(li*25),1,2)
+          d = Distance(px,py,needle.x,needle.y); if d>1000 then d=1000 end
+          c = (d/1000) * 255
+          color(c,255-c,0)
+          local angle1,angle2 = CoordsToAngle(px,py,needle.x,needle.y)
+          angle1 = math.floor(angle1) -- BlitzMax is allergic for non-intergers sent by Lua.
+          Image.Rotate(angle1)
+          Image.Show('NEEDLE',SW-50,50+(li*25))
+          Image.Rotate(0)
+          -- DarkText(px..","..py..","..needle.x..","..needle.y.."/"..angle1.."/"..angle2,SW,50+(i*25),1,1)
+       end
    end
 end
 
