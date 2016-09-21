@@ -53,6 +53,13 @@ function John_Exam()
    MapMusic()
 end   
 
+function NPC_Chief()
+   if not Done("&DONE.JAKE.CHIEF.PROLOGUESPOKEN") then
+      MapText('CHIEF1')
+      Sys.Error("The rest of the content comes later.")
+   end
+end      
+
 function Bye()
    if not CVV("&DONE.JAKE.CHIEF.PROLOGUESPOKEN") then 
       MapText("NOLEAVECHIEF")
