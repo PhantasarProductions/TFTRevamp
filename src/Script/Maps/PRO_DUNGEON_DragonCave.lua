@@ -34,3 +34,31 @@
  
 version: 16.09.22
 ]]
+
+
+function NPC_Guard()
+   MapText('GUARD1')
+   local y = -Maps.CamY
+   for i=y,SH do
+       Maps.CamY=-i
+       Cls()
+       DrawScreen()
+       Flip()
+   end
+   Actors.Actor('PLAYER').Visible=0
+   Actors.Actor('PLAYER').Y=SW*100   
+   Maps.Remap()
+   MapText('GUARD2')
+   for i=SH,0,-1 do
+       Cls()
+       Maps.CamY=-i
+       DrawScreen()
+       Flip()
+   end
+   MapText('GUARD3')
+   Maps.Obj.Kill('NPC_Guard',1)
+   Maps.Obj.Kill('Guard_Block',1)
+   GoToLayer('#001','Start')
+   MapText('GUARD4')
+end      
+   

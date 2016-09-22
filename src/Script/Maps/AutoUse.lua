@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.09.21
+  Version: 16.09.22
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -36,6 +36,10 @@
 ]]
 
 -- @USEDIR Script/Use/Anyway
+
+function DrawScreen(flow)
+   MS.Run(flow or 'FIELD','DrawScreen')
+end   
 
 function OriMapMusic()
    local mf = Maps.GetData("Music")

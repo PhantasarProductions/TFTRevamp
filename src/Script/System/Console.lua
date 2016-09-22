@@ -74,3 +74,39 @@ end
 function RELOADCHAR(ch)
   MS.Run("PARTY",'CreateChar',ch)
 end  
+
+function SETCHARPOINTS(ch,points,newhave) -- This works on both enemies as heroes providing you know their CODENAME (not the screen name).
+  if RPGStat.CharExists(ch)==0 then return CSay("? That character does not exist! Try CharList to see what we have!") end
+  if RPGStat.PointsExists(ch,points)==0 then return CSay("? That character does not have those points, so I cannot modify them") end
+  RPGStat.Points(ch,points).Have = newhave
+end
+
+
+function KILLCH(ch)
+  SETCHARPOINTS(ch,"HP",0)
+end
+
+-- Test Battle (TB)
+function TB_SETUP()
+  CONSOLE_COMBAT = {}
+  CSay('How many foes are desired?')
+  local a = tonumber(LAURA.ConsoleInput())
+  if (not a) or a<1 then
+     Console.Write('?ERROR',255,0,0)
+     CONSOLE_COMBAT = nil
+     return
+  end   
+  CONSOLE_COMBAT.num = a   
+  for i=1,a do
+      CSay("Name foe #"..i)
+      CONSOLE_COMBAT['FOE'..i] = LAURA.ConsoleInput()
+  end    
+end  
+
+function TB_SHOWSETUP()
+  local a = mysplit(serialize("CONSOLE_COMBAT",CONSOLE_COMBAT),"\n")
+  local i,l
+  for i,l in ipairs(a) do
+    CSay(l)
+  end
+end
