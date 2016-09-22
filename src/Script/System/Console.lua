@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 16.09.17
+  Version: 16.09.22
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -55,7 +55,8 @@ function SAVE(file)
 if LAURA.GetFlow()~="FIELD" then return CWrite("? You can only save in the field!",255,0,180) end
 SaveMeta()
 if (not file) or file=="" then
-    GotoSave()
+    -- GotoSave()
+    MS.Run('FIELD','GotoSave')
     CWrite("Leaving the console now will pop-up the save screen",0,180,255) 
     return 
     end

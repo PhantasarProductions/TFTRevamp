@@ -1,6 +1,6 @@
 --[[
   SaveGame.lua
-  Version: 16.09.13
+  Version: 16.09.22
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -59,7 +59,7 @@ if Dir.DirExists(dir)>0 then
     if thisfile==LastFile then P=ak end
     end
   end  
-local newfile = 'TFTSG_'..DEC_HEX(highest+1)    
+local newfile = 'TFTSG_'..right("000000"..DEC_HEX(highest+1),6)    
 listout[newfile] = { file=newfile, newfile = true, name = "[[ New File ]]", nopic=true }
 files[#files+1] = newfile    
 Scrolled = false    
@@ -98,6 +98,7 @@ function Save(f)
   Image.Tile('PCS_BACK')
   Image.Show("SG_SAVING",Center_X,Center_Y)
   Flip()
+  LAURA.Flow("FIELD")
   SaveMeta()
   LAURA.Save(f)
   MS.Destroy("SAVE")

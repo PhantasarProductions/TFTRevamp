@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.21
+version: 16.09.22
 ]]
 
 
@@ -55,15 +55,25 @@ end
 
 function NPC_Chief()
    if not Done("&DONE.JAKE.CHIEF.PROLOGUESPOKEN") then
+      VocalMusicStop()
       MapText('CHIEF1')
-      Sys.Error("The rest of the content comes later.")
+      Actors.Spawn('Entrance','GFX/Actors/Single/Humans/Harry_Backside.png','IHARRY',1)
+      MapText('CHIEF2')
+      MapMusic()      
+      Maps.Obj.Kill('IHARRY')
+      Maps.GotoLayer('town')
+      Maps.Obj.Kill('NPC_MT_HarryOutside',1)
+      Maps.GotoLayer('chief')
+      -- Sys.Error("The rest of the content comes later.")
+   elseif not CVVN("&DONE.JAKE.LITTLEJENNY.RESCUED") then
+     MapText('CHIEF_NOJENNY')
    end
 end      
 
 function Bye()
    if not CVV("&DONE.JAKE.CHIEF.PROLOGUESPOKEN") then 
       MapText("NOLEAVECHIEF")
-   elseif CVV("&DONE.JAKE.LITTLEJENNY.RESCUED") then
+   elseif not CVV("&DONE.JAKE.LITTLEJENNY.RESCUED") then
       MapText("NOLEAVEJENNY")   
    end   
 end
@@ -99,6 +109,9 @@ function Dragon()
       MapText('NODRAGON')
       return
    end    
+   LoadMap('PRO_Dungeon_DragonCave')
+   GoToLayer('#000',"Start")
+   -- SpawnPlayer('Start')
 end
 
 function HouseEnter(layer)
@@ -115,7 +128,15 @@ function GALE_OnLoad()
    ZA_Enter('UP2',Up)
    ZA_Enter('DOWN',Down)
    ZA_Enter("Enter_Cave",Dragon)   
-   if not CVV("&DONE.JAKE.LITTLEJENNY.RESCUED") then Maps.Obj.Kill("NPC_MT_Jenny") end -- Don't show Jenny until she's saved from the Dragon Cave. She won't be accessible until the final part of the game.
+   if not CVVN("&DONE.JAKE.LITTLEJENNY.RESCUED") then 
+      local oldlay = Maps.LayerCodeName
+      Maps.GotoLayer('town')
+      Maps.Obj.Kill("NPC_MT_Jenny")
+      if oldlay and oldlay~="" then Maps.GotoLayer(oldlay) end
+      CSay("Jenny not yet in town!")
+   else
+      CSay('Janny is in town! '..Var.C("&DONE.JAKE.LITTLEJENNY.RESCUED")) 
+   end -- Don't show Jenny until she's saved from the Dragon Cave. She won't be accessible until the final part of the game.
    -- Clickable for entering houses
    AddClickable('HOUSECHIEF')
    -- Zones for entering houses

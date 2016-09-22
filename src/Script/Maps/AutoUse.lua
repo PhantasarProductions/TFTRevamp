@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.09.14
+  Version: 16.09.21
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -43,6 +43,11 @@ function OriMapMusic()
    Music(mf)
 end
 
+function VocalMusicStop()
+   if vocals then
+      Music('Sys/Silence.ogg')
+   end
+end
 MapMusic = MapMusic or OriMapMusic 
 
 
