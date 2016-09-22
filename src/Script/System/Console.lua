@@ -110,3 +110,7 @@ function TB_SHOWSETUP()
     CSay(l)
   end
 end
+
+function TB_RUN()
+  StartCombat()
+end  
