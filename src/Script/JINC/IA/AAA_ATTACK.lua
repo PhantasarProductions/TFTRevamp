@@ -1,5 +1,5 @@
 --[[
-  ITM_APPLE.lua
+  AAA_ATTACK.lua
   Version: 16.09.23
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -35,17 +35,12 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
-	["Desc"] = "An apple a day keeps the doctor away",
+	["Desc"] = "Attack the enemy",
 	["Heal"] = nil,
-	["Heal_StatPercent"] = "Power",
+	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
-	["ITM_Combat"] = true,
-	["ITM_Field"] = true,
-	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 25,
-	["ITM_Type"] = "Consumable",
-	["Title"] = "Apple",
-	["Type"] = "Item"}
+	["Title"] = "Attack",
+	["Type"] = "Ability"}
 
 return ret
 

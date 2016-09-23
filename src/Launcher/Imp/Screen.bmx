@@ -43,8 +43,8 @@ Global by = ph-25
 
 Const minw = 800
 Const minh = 600
-Const maxw = 1600
-Const maxh = 1200
+Const maxw = 1200
+Const maxh = 980
 
 
 ' Dandor
@@ -56,7 +56,7 @@ SetGadgetPixmap gadgets.gadget("Dandor"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Da
 modes:TMap = New TMap
 For Local mode:TGraphicsMode=EachIn GraphicsModes()
 	Print mode.width+","+mode.height+","+mode.depth+","+mode.hertz
-	If mode.width>=minw And mode.width<=maxw And mode.height>=minh And mode.width<=maxh Then
+	If mode.width>=minw And mode.width<=maxw And mode.height>=minh And mode.height<=maxh Then
 		MapInsert modes,Right("   "+mode.width,4)+" x "+Right("   "+mode.height,4)+"    "+Mode.depth+" bit",mode
 		Print "Adding"
 	EndIf
