@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 16.09.22
+  Version: 16.09.23
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -99,7 +99,7 @@ function TB_SETUP()
   CONSOLE_COMBAT.num = a   
   for i=1,a do
       CSay("Name foe #"..i)
-      CONSOLE_COMBAT['FOE'..i] = LAURA.ConsoleInput()
+      CONSOLE_COMBAT['FOE_'..i] = LAURA.ConsoleInput()
   end    
 end  
 
@@ -112,5 +112,11 @@ function TB_SHOWSETUP()
 end
 
 function TB_RUN()
+  ClearCombatData()
+  if not CONSOLE_COMBAT then Console.Write("? I need TB_SETUP data before I can start any battle") end
+  for k,v in spairs(CONSOLE_COMBAT) do
+      CSay(k.." = "..v)
+      Var.D(({ ['string']='$', ['number']='%', ['boolean']='&'})[type(v)].."COMBAT"..k,sval(v))
+  end    
   StartCombat()
 end  

@@ -1,5 +1,5 @@
 --[[
-  Char.lua
+  CDrawFighters.lua
   Version: 16.09.23
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,42 +34,24 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- @USEDIR Script/Use/Anyway
-
-debug = {}
-
-function NStat(ch,stat,max)
-   -- debug[ch] = debug[ch] or {}
-   local w = {'BASE','BUFF','EQP','POWERUP'}
-   local rate = 1.01 - (0.01*(skill-1))
-   local total = 0
-   if prefixed(ch,"FOE_") then w = {'BASE','BUFF'} end
-   for wi in each(w) do
-       total = total + (RPGChar.Stat(ch,wi.."_"..stat)*rate)
-   end
-   if max and total>max then total = max end
-   RPG.DefStat(ch,"END_"..stat,total)
-   -- if not debug[ch][stat] then CSay("First time calc for "..ch..","..stat.." > "..total) end
-   return total
+function DrawFoe(i)
+    local myfoe = Fighters.Foe[i]
+    local tag = myfoe.tag
+    color(myfoe.R or 255,myfoe.G or 255,myfoe.B or 255)
+    Image.Show("FIGHT_"..tag,myfoe.x,myfoe.y)
 end
 
-function EVASION(ch)
-  local spd = RPGChar.Stat(ch,"END_Speed")
-  local rate = 0.09 / skill
-  local eva = math.floor(spd * rate)
-  RPGChar.SetStat(ch,"BASE_Evasion",eva)
-  NStat(ch,"Evasion")
+function DrawHero(i)
 end
 
+function DrawFighter(g,i)
+     ({Foe=DrawFoe,Hero=DrawHero})[g](i)
+end
 
-
-function POWER       (ch) NStat(ch,"Power")        end   
-function ENDURANCE   (ch) NStat(ch,"Endurance")    end   
-function INTELLIGENCE(ch) NStat(ch,"Intelligence") end   
-function RESISTANCE  (ch) NStat(ch,"Resistance")   end
-function SPEED       (ch) NStat(ch,"Speed")        end
-function HP          (ch) NStat(ch,"HP")           end     
-function AP          (ch) NStat(ch,"AP")           end
-function ACCURACY    (ch) NStat(ch,"Accuracy",100) end    
-function CRITICAL    (ch) NStat(ch,"Critical",100) end    
-function COUNTER     (ch) NStat(ch,"Counter",100)  end    
+function DrawFighters()
+  for group,grouparray in pairs(Fighters) do
+      for idx,data in pairs(grouparray) do
+          DrawFighter(group,idx)
+      end 
+  end
+end

@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 16.09.22
+  Version: 16.09.23
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -39,6 +39,13 @@
 
 -- @USEDIR Script/Use/Combat
 
+-- @IF IGNORE
+combat={} -- Just a line to fool the outliner
+-- @FI
+
+fighters={ Foe={}, Hero={}}
+Fighters=fighters
+
 function SetUpCards()
     Cards = {}
 end    
@@ -51,10 +58,29 @@ function YCards()
     end
 end
 
+function SetupArena()
+    Image.Load("GFX/Combat/Arena/"..(CVVN("$COMBAT.ARENA") or "Caves.png"),"ARENA")
+    Image.HotCenter("ARENA")
+    CSay("Arena size: "..Image.Width("ARENA").."x"..Image.Height("ARENA"))
+end
+
+function LoadFoes()
+    CSay(serialize("combat",combat))
+    for key,foe in pairs(combat) do
+        CSay(key.." = "..foe)
+        local foefile = foe
+        local foefiledirsplit = mysplit(foefile)
+        if #foefiledirsplit<2 then foefile = "Reg/"..foefile end
+        if prefixed(key,"FOE_") then CompileFoe(key,JINC('Script/JINC/Foes/'..foefile..".lua")) end
+    end
+end
 
 function InitCombat()
+   combat = Var2Table("COMBAT",true)
    SetUpCards()
    YCards()
+   SetupArena()
+   LoadFoes()
 end
 
 

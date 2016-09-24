@@ -58,6 +58,12 @@ end
 function DrawScreen()
    -- Clear Screen
    Cls()
+   -- Arena
+   White()
+   Image.LoadNew("ARENA","GFX/Combat/Arena/"..(CVVN("$COMBAT.ARENA") or "Caves.png")) -- Crash prevention!
+   Image.Draw("ARENA",Center_X,Center_Y)
+   -- Fighters
+   DrawFighters()
    -- Cards
    ShowCards()
    -- Party

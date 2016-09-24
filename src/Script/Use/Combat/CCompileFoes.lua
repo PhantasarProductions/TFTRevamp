@@ -1,6 +1,6 @@
 --[[
-  Char.lua
-  Version: 16.09.23
+  CCompileFoes.lua
+  Version: 16.09.24
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,42 +34,23 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- @USEDIR Script/Use/Anyway
-
-debug = {}
-
-function NStat(ch,stat,max)
-   -- debug[ch] = debug[ch] or {}
-   local w = {'BASE','BUFF','EQP','POWERUP'}
-   local rate = 1.01 - (0.01*(skill-1))
-   local total = 0
-   if prefixed(ch,"FOE_") then w = {'BASE','BUFF'} end
-   for wi in each(w) do
-       total = total + (RPGChar.Stat(ch,wi.."_"..stat)*rate)
+function CompileFoe(tag,data,oversoul)
+   local id = oversoul or (#Fighters.Foe + 1)
+   local letter = string.char(id+64); if id>26 then letter="?" end
+   local myfoe = { tag = tag, R=255, G=255, B=255, letter=letter }
+   if oversoul then myfoe.R=200; myfoe.G=150 myfoe.B=255 end
+   Fighters.Foe[id] = myfoe    
+   RPG.CreateChar(tag)
+   local myname = letter..". "..data.Name; if oversoul then myname = myname .."  (Oversoul)" end
+   RPG.SetName(tag,myname); CSay("Compiling "..tag.." << "..RPG.GetName(tag))
+   for k,v in pairs(data) do
+       if     oversoul and prefixed(key,"oversoul_") then RPG.SetStat(tag,"BASE_"..right(key,#key-9),v) RPG.SetStat(tag,"BUFF_"..right(key,#key-9)) RPG.SetStat(tag,"END_"..right(key,#key-9)) RPGChar.ScriptStat(ch,"END_"..right(key,#key-9),"Script/Char/Char.lua",upper(right(key,#key-9))) end
+       if not oversoul and prefixed(key,"normal_") then RPG.SetStat(tag,"BASE_"..right(key,#key-7),v) RPG.SetStat(tag,"BUFF_"..right(key,#key-7)) RPG.SetStat(tag,"END_"..right(key,#key-7)) RPGChar.ScriptStat(ch,"END_"..right(key,#key-7),"Script/Char/Char.lua",upper(right(key,#key-7))) end
    end
-   if max and total>max then total = max end
-   RPG.DefStat(ch,"END_"..stat,total)
-   -- if not debug[ch][stat] then CSay("First time calc for "..ch..","..stat.." > "..total) end
-   return total
+   Image.Load(data.Image,"FIGHT_"..tag)
+   Image.Hot("FIGHT_"..tag,Image.Width("FIGHT_"..tag)/2,Image.Height("FIGHT_"..tag)) -- Hotspot bottom center
+   local x = math.ceil(id/3)
+   local y = id - x
+   myfoe.x = x * 100
+   myfoe.y = y * 50    
 end
-
-function EVASION(ch)
-  local spd = RPGChar.Stat(ch,"END_Speed")
-  local rate = 0.09 / skill
-  local eva = math.floor(spd * rate)
-  RPGChar.SetStat(ch,"BASE_Evasion",eva)
-  NStat(ch,"Evasion")
-end
-
-
-
-function POWER       (ch) NStat(ch,"Power")        end   
-function ENDURANCE   (ch) NStat(ch,"Endurance")    end   
-function INTELLIGENCE(ch) NStat(ch,"Intelligence") end   
-function RESISTANCE  (ch) NStat(ch,"Resistance")   end
-function SPEED       (ch) NStat(ch,"Speed")        end
-function HP          (ch) NStat(ch,"HP")           end     
-function AP          (ch) NStat(ch,"AP")           end
-function ACCURACY    (ch) NStat(ch,"Accuracy",100) end    
-function CRITICAL    (ch) NStat(ch,"Critical",100) end    
-function COUNTER     (ch) NStat(ch,"Counter",100)  end    
