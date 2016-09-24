@@ -45,6 +45,7 @@ combat={} -- Just a line to fool the outliner
 
 fighters={ Foe={}, Hero={}}
 Fighters=fighters
+order={} -- No this is not the British parliament.
 
 function SetUpCards()
     Cards = {}
@@ -96,6 +97,42 @@ function LoadHeros()
     end
 end
 
+function CreateOrder()
+     order = { speedtable = {}, tagorder = {}, iorder = {} }
+     local sid,strid
+     -- first set up a table easily usable by spairs.
+     for group,groupdata in pairs(Fighters) do
+         for idx,data in pairs(groupdata) do
+             sid = RPG.Stat(data.tag,"END_Speed")
+             strid = right("00000"..sid,5)
+             while order.speedtable[strid] do
+                sid = sid + 1 
+                strid = right("00000"..sid,5)
+             end
+             order.speedtable[strid] = {group=group,idx=idx,tag=data.tag}
+         end
+     end
+     -- And let us now set up the actual work order
+     local oid = 0
+     for key,fid in spairs(order.speedtable) do
+         oid = oid + 1
+         order.tagorder[fid.tag]=oid
+         order.iorder[oid] = fid
+         if fid.group=="Foe" then fid.letter=Fighter.Foe[fid.idx].letter end
+     end
+end
+
+function SetupInitialCards()
+   CreateOrder()
+   cards = cards or {}
+   local card
+   for i,data in pairs(order.iorder) do
+       cards[i*3] = cards[i*3] or {}
+       card = cards[i*3]
+       card.data=data
+   end
+end
+
 function InitCombat()
    combat = Var2Table("COMBAT",true)
    SetUpCards()
@@ -103,6 +140,7 @@ function InitCombat()
    SetupArena()
    LoadHeros()
    LoadFoes()
+   SetupInitialCards()
 end
 
 

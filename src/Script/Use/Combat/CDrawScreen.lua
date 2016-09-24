@@ -41,6 +41,8 @@ function ShowCards()
        local x=(SW-100)-(i*20)
        if i==1 then x=SW-40 end
        Cards[i] = Cards[i] or {}
+       Cards[i].x = Cards[i].x or x
+       Cards[i].y = Cards[i].y or 40
        if Cards[i].x< x then Cards[i].x = Cards[i].x + 2 elseif Cards[i].x> x then Cards[i].x= x end
        if Cards[i].y>40 then Cards[i].y = Cards[i].y - 4 elseif Cards[i].y<40 then Cards[i].y=40 end
        local show = "BACKSIDE"
