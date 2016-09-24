@@ -1,6 +1,6 @@
 # The Fairy Tale REVAMPED
 
-A project starting soon
+A WIP Fantasy RPG Game
 
 ![Marrilona](https://cloud.githubusercontent.com/assets/11202073/17628142/41d50f28-60b4-11e6-9cc6-beb8cd76e2fc.png)
 
