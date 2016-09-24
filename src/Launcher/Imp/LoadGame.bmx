@@ -182,13 +182,14 @@ Global mapsg:TMap = New TMap
 Global cursg:tsg
 
 Function NoGame()
+	DebugLog "No Game Selected"
 	For Local G:TGadget = EachIn needgame
 		HideGadget g
 	Next
 End Function
 
 Function ShowGame()
-	If Not cursg Return
+	If Not cursg Return DebugLog("No game for ShowGame()")
 	For Local i=0 Until 4
 		SetGadgetPixmap portret[i],cursg.portret[i]
 		If cursg.level[i] SetGadgetText level[i],"Lv "+cursg.level[i] Else SetGadgetText level[i],""
@@ -201,8 +202,13 @@ End Function
 	
 
 Function FindSaveFromTree(G:TGadget)
-	DebugLog "Find game from tree request"
-	If Not G cursg=Null Return NoGame()
+	DebugLog "Find game from tree request  ... "+GadgetClass(G)
+	If GadgetClass(G)<>16 Return DebugLog("Wrong kind of gadget type to work with")
+	If Not G 
+		cursg=Null 
+		DebugLog "No gadget given to findgame from tree"
+		Return NoGame()
+	EndIf	
 	cursg = Tsg(MapValueForKey(mapsg,G))
 	If Not cursg Return NoGame()
 	ShowGame	
@@ -297,17 +303,27 @@ Function Check()
 		Next			
 	EndIf
 	If su ExpandTreeViewNode su; DebugLog "User expanded"
-	If sf SelectTreeViewNode sf; DebugLog "File selected"; cursg=tsg(MapValueForKey(mapsg,sf)); showgame; Else nogame
+	If sf 
+		SelectTreeViewNode sf; 
+		DebugLog "File selected"; 
+		cursg=tsg(MapValueForKey(mapsg,sf)); 
+		'If Not cursg Notify "cursg is empty, but shouldn't be..."
+		showgame; 
+	Else 
+		nogame
+	EndIf	
 End Function
 
 
 ' Activation of this panel
 Function Activate(G:TGadget)
 	check
+	DebugLog "Activate:cursg has value > "+Int(cursg<>Null)
 End Function
 mypan.activate = activate
 
 Function Flow()
+	DebugLog "Flow:cursg has value > "+Int(cursg<>Null)
 	For Local g:TGadget = EachIn musthavefile
 		g.setenabled cursg<>Null
 	Next

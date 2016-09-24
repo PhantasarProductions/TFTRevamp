@@ -155,6 +155,7 @@ End Function
 gadgets.make "win",CreateWindow(StripAll(AppFile)+" -- Launcher",0,0,ClientWidth(Desktop())*.85,ClientHeight(Desktop())*.85,Null, Window_center | Window_titlebar | Window_clientcoords | Window_hidden | Window_Status)
 gadgets.get("win").close = Byebye
 gadgets.make "tabber",CreateTabber(0,0,ClientWidth(gadgets.gadget("win")),ClientHeight(gadgets.gadget("win")),gadgets.Gadget("win")),CGWin,DoTabber
+gadgets.get("tabber").fselect = DoTabber
 
 Global PW,PH
 Function NewTab:myGadget(Caption$,CG:Colorgroup=Null,Action(G:TGadget)=Null)
