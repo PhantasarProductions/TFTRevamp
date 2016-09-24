@@ -1,6 +1,6 @@
 --[[
   Gob.lua
-  Version: 16.09.23
+  Version: 16.09.25
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Fri 23 September 2016; 17:36:29
+-- File Generated: Sun 25 September 2016; 00:06:22
 
 
 local foe = {}
@@ -63,8 +63,8 @@ local foe = {}
 	foe["SKILL\51_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
 	foe["SKILL\51_ITM_ANTIDOTE"] = true
 	foe["SKILL\51_ITM_APPLE"] = true
-	foe["Desc"] = "\"Me King, you dead\"\nThat's basically their way of thinking.\nSmart, eh?"
-	foe["Image"] = "GFX/Combat/Fighters/Foe/reg/Gob.png"
+	foe["Desc"] = "\34Me King\44 you dead\34\10That\39s basically their way of thinking\46\10Smart\44 eh?"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47reg\47Gob\46png"
 	foe["Item Drop \49"] = "ITM_APPLE"
 	foe["Item Drop \50"] = "ITM_ANTIDOTE"
 	foe["Item Steal \49"] = "ITM_APPLE"
@@ -99,6 +99,7 @@ local foe = {}
 	foe["normal_Intelligence"] = 1
 	foe["normal_Power"] = 20
 	foe["normal_Resistance"] = 10
+	foe["normal_Speed"] = 6
 	foe["oversoul_Accuracy"] = 100
 	foe["oversoul_Endurance"] = 0
 	foe["oversoul_Evasion"] = 0
@@ -106,6 +107,7 @@ local foe = {}
 	foe["oversoul_Intelligence"] = 0
 	foe["oversoul_Power"] = 0
 	foe["oversoul_Resistance"] = 0
+	foe["oversoul_Speed"] = 0
 
 
 return foe

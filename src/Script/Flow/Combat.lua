@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 16.09.24
+  Version: 16.09.25
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -103,7 +103,7 @@ function CreateOrder()
      -- first set up a table easily usable by spairs.
      for group,groupdata in pairs(Fighters) do
          for idx,data in pairs(groupdata) do
-             sid = RPG.Stat(data.tag,"END_Speed")
+             sid = 10000 - RPG.Stat(data.tag,"END_Speed")
              strid = right("00000"..sid,5)
              while order.speedtable[strid] do
                 sid = sid + 1 
@@ -118,19 +118,22 @@ function CreateOrder()
          oid = oid + 1
          order.tagorder[fid.tag]=oid
          order.iorder[oid] = fid
-         if fid.group=="Foe" then fid.letter=Fighter.Foe[fid.idx].letter end
+         if fid.group=="Foe" then fid.letter=Fighters.Foe[fid.idx].letter end
      end
 end
 
 function SetupInitialCards()
    CreateOrder()
-   cards = cards or {}
-   local card
+   Cards = Cards or {}
+   local card,cidx
    for i,data in pairs(order.iorder) do
-       cards[i*3] = cards[i*3] or {}
-       card = cards[i*3]
+       cidx=i*3
+       Cards[cidx] = Cards[cidx] or {}
+       card = Cards[cidx]
        card.data=data
+       CSay("Defining card: "..cidx) CSay(serialize("card["..cidx.."]",card))
    end
+   CSay(serialize('Cards',Cards))
 end
 
 function InitCombat()

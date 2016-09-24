@@ -1,6 +1,6 @@
 --[[
   CDrawScreen.lua
-  Version: 16.09.23
+  Version: 16.09.24
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -46,6 +46,14 @@ function ShowCards()
        if Cards[i].x< x then Cards[i].x = Cards[i].x + 2 elseif Cards[i].x> x then Cards[i].x= x end
        if Cards[i].y>40 then Cards[i].y = Cards[i].y - 4 elseif Cards[i].y<40 then Cards[i].y=40 end
        local show = "BACKSIDE"
+       local data = Cards[i].data
+       if data then
+          if data.group=='Hero' then show="HERO_"..data.tag end
+          if data.group=="Foe"  then
+             show="FOE_"..(data.letter or 'UNKNOWN')
+             if data.boss then show="BOSS_"..(data.letter or 'UNKNOWN') end
+          end
+       end
        LoadedCardImage = LoadedCardImage or {}
        if not LoadedCardImage[show] then
           LoadedCardImage[show] = true 

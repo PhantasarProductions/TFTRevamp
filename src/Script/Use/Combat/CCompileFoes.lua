@@ -1,6 +1,6 @@
 --[[
   CCompileFoes.lua
-  Version: 16.09.24
+  Version: 16.09.25
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -43,9 +43,10 @@ function CompileFoe(tag,data,oversoul)
    RPG.CreateChar(tag)
    local myname = letter..". "..data.Name; if oversoul then myname = myname .."  (Oversoul)" end
    RPG.SetName(tag,myname); CSay("Compiling "..tag.." << "..RPG.GetName(tag))
-   for k,v in pairs(data) do
-       if     oversoul and prefixed(key,"oversoul_") then RPG.SetStat(tag,"BASE_"..right(key,#key-9),v) RPG.SetStat(tag,"BUFF_"..right(key,#key-9)) RPG.SetStat(tag,"END_"..right(key,#key-9)) RPGChar.ScriptStat(ch,"END_"..right(key,#key-9),"Script/Char/Char.lua",upper(right(key,#key-9))) end
-       if not oversoul and prefixed(key,"normal_") then RPG.SetStat(tag,"BASE_"..right(key,#key-7),v) RPG.SetStat(tag,"BUFF_"..right(key,#key-7)) RPG.SetStat(tag,"END_"..right(key,#key-7)) RPGChar.ScriptStat(ch,"END_"..right(key,#key-7),"Script/Char/Char.lua",upper(right(key,#key-7))) end
+   for key,v in pairs(data) do
+       local stat
+       if      oversoul and prefixed(key,"oversoul_") then stat=right(key,#key-9) CSay("Oversoul Stat: "..stat) RPG.SetStat(tag,"BASE_"..stat,v) RPG.SetStat(tag,"BUFF_"..stat) RPG.SetStat(tag,"END_"..stat) RPGChar.ScriptStat(tag,"END_"..stat,"Script/Char/Char.lua",upper(stat)) end
+       if (not oversoul) and prefixed(key,"normal_") then stat=right(key,#key-7) CSay("normal Stat:"..stat) RPG.SetStat(tag,"BASE_"..stat,v) RPG.SetStat(tag,"BUFF_"..stat) RPG.SetStat(tag,"END_"..stat) RPGChar.ScriptStat(tag,"END_"..stat,"Script/Char/Char.lua",upper(stat)) end
    end
    Image.Load(data.Image,"FIGHT_"..tag)
    Image.Hot("FIGHT_"..tag,Image.Width("FIGHT_"..tag)/2,Image.Height("FIGHT_"..tag)) -- Hotspot bottom center
