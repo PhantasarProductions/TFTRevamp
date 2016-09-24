@@ -41,6 +41,8 @@ Function Run()
 		esource = TGadget(EventSource())
 		eextra = TGadget(EventExtra())
 		Select eid
+			Case event_appterminate
+				Byebye null
 			Case event_windowclose
 				For myg = EachIn closelist
 					If myg.g=esource myg.close myg.g
