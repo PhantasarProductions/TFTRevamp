@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 16.09.23
+  Version: 16.09.24
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -65,7 +65,7 @@ function SetupArena()
 end
 
 function LoadFoes()
-    CSay(serialize("combat",combat))
+    -- CSay(serialize("combat",combat))
     for key,foe in pairs(combat) do
         CSay(key.." = "..foe)
         local foefile = foe
@@ -75,11 +75,33 @@ function LoadFoes()
     end
 end
 
+function LoadHeros()
+    local myhero
+    local count = 0
+    for i=0,3 do
+        if RPG.PartyTag(i)~="" then
+           count = count + 1
+           Fighters.Hero[i] = Fighters.Hero[i] or { R=255, G=255, B=255}
+           myhero = Fighters.Hero[i]
+           myhero.tag = RPG.PartyTag(i)
+           myhero.stance = "Idle"
+        end  
+    end
+    -- Set up coordinates (this is pending on the number of heroes, yes, so this must be done in a separate loop)
+    for i,hero in pairs(Fighters.Hero) do  -- ipairs certainly not!!!! The order doesn't matter index 0 is there that ipairs simply doesn't accept!
+        local x = SW - ((count-i)*((Center_X/2)/count))
+        local y = Center_Y + (((Center_Y-120)/4)*(i+1))
+        hero.x = x
+        hero.y = y
+    end
+end
+
 function InitCombat()
    combat = Var2Table("COMBAT",true)
    SetUpCards()
    YCards()
    SetupArena()
+   LoadHeros()
    LoadFoes()
 end
 
