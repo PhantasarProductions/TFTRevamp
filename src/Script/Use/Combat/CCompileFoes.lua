@@ -50,7 +50,7 @@ function CompileFoe(tag,data,oversoul)
    Image.Load(data.Image,"FIGHT_"..tag)
    Image.Hot("FIGHT_"..tag,Image.Width("FIGHT_"..tag)/2,Image.Height("FIGHT_"..tag)) -- Hotspot bottom center
    local x = math.ceil(id/3)
-   local y = id - x
-   myfoe.x = x * 100
-   myfoe.y = y * 50    
+   local y = (id - x)+1
+   myfoe.x = (x * (Center_X/100)) + 50
+   myfoe.y = (y * ((Center_Y-100)/4))+Center_Y    
 end
