@@ -1,5 +1,5 @@
 --[[
-  CDrawScreen.lua
+  PlayerInput.lua
   Version: 16.09.25
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,48 +34,30 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+-- @IF IGNORE
+fflow = {}
+-- @FI
 
-function ShowCards()
-   white()
-   for i=25,1,-1 do  -- Certainly NOT ipairs, tempting as it seems in this situation. It would not work considering the way this is set up.
-       local x=(SW-100)-(i*20)
-       if i==1 then x=SW-40 end
-       Cards[i] = Cards[i] or {}
-       Cards[i].x = Cards[i].x or x
-       Cards[i].y = Cards[i].y or 40
-       if Cards[i].x< x then Cards[i].x = Cards[i].x + 4 elseif Cards[i].x> x then Cards[i].x= x end
-       if Cards[i].y>40 then Cards[i].y = Cards[i].y - 8 elseif Cards[i].y<40 then Cards[i].y=40 end
-       local show = "BACKSIDE"
-       local data = Cards[i].data
-       if data then
-          if data.group=='Hero' then show="HERO_"..data.tag end
-          if data.group=="Foe"  then
-             show="FOE_"..(data.letter or 'UNKNOWN')
-             if data.boss then show="BOSS_"..(data.letter or 'UNKNOWN') end
-          end
-       end
-       LoadedCardImage = LoadedCardImage or {}
-       if not LoadedCardImage[show] then
-          LoadedCardImage[show] = true 
-          Image.LoadNew("CARD_"..show,"GFX/Combat/Cards/"..show..".png")
-          Image.Hot('CARD_'..show,21,0) -- Makes turning easier if I'm actually gonna do that.
-       end
-       Image.Show('CARD_'..show,Cards[i].x,Cards[i].y)    
-       -- Image.NoFont(); DarkText('Card #'..i.." must go to ("..x..",40) and is now on ("..Cards[i].x..","..Cards[i].y..")  Frmt: "..SW.."x"..SH,5,i*20,0,0,255,180,0) -- Debug
-   end
+function fflow.setplayerinput(ch)
+     SFX('Audio/Combat/Ready.ogg')
+     inputchar = {tag =  ch, name=RPG.GetName(ch), face="CL_FACE_"..ch, facewidth=Image.Width("CL_FACE_"..ch)-10, fc=0 }
+     flow = 'playerinput'
 end
 
-function DrawScreen()
-   -- Clear Screen
-   Cls()
-   -- Arena
-   White()
-   Image.LoadNew("ARENA","GFX/Combat/Arena/"..(CVVN("$COMBAT.ARENA") or "Caves.png")) -- Crash prevention!
-   Image.Draw("ARENA",Center_X,Center_Y)
-   -- Fighters
-   DrawFighters()
-   -- Cards
-   ShowCards()
-   -- Party
-   ShowParty()
+function fflow.playerinput()
+     assert ( inputchar, "I don't know which char I must receive input for!" )
+     local x = Center_X
+     local y = Center_Y-(Center_Y/5)
+     local c = inputchar.fc
+     SetFont('CombatName')
+     DarkText(inputchar.name,x,y-100,2,2,c,c,c)
+     color(c,c,c) if c<255 then c=c+1 inputchar.fc=c end
+     Image.Show(inputchar.face,x-inputchar.facewidth,y)
+     -- Showing the mouse comes last!
+     ShowMouse()
 end
+
+
+-- @IF IGNORE
+return fflow
+-- @FI

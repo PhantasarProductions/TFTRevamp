@@ -150,5 +150,6 @@ end
 
 function MAIN_FLOW()
     DrawScreen()
+    CombatFlow()
     Flip() -- Must be last
 end

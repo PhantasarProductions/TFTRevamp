@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 16.09.19
+  Version: 16.09.25
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -37,7 +37,7 @@
 
 profiles = {
                  Field = {
-                      Features = {'Items','Abilities','Achievements', 'Config','Quit'},
+                      Features = {'Status','Items','Abilities','Achievements', 'Config','Quit'},
                       HalfScreen = {Items={'Status','Items'},Abilities={'Status','Abilities'}},  
                       ItemShowFilters = {'All',"Field",'Equip','Key'},
                       ItemEnable = 'FieldUse',                    
@@ -62,7 +62,7 @@ DarkText("Feature "..sval(f),x+(w/2),y+10,2,0,255,c[fnpc],0)
 DarkText("NOT PRESENT!",x+(w/2),y+h,2,1,255,c[fnpc],0)
 end
 
-function features.Status(x,y,w,h)
+function features.Status(x,y,w,h,f)
     local chn = menu.chn
     local ch  = RPGStat.PartyTag(chn)
     local procent = {Accuracy=true,Evasion=true}
@@ -76,6 +76,7 @@ function features.Status(x,y,w,h)
         DarkText(s,x+25,y+100+(i*fonts.StatusStat[2]),0,0)
         DarkText(RPG.Stat(ch,"END_"..s)..procentteken[procent[s]==true],(x+w)-25,y+100+(i*fonts.StatusStat[2]),1,0,255,180,0)
     end
+    if f~="Status" then return end
 end
 
 
