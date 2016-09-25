@@ -100,7 +100,7 @@ function fflow.playerinput()
      local c = inputchar.fc
      local menuy = y + 50
      local menux = x + 50
-     local dy
+     -- local dy
      -- Heading
      SetFont('CombatName')
      DarkText(inputchar.name,x,y-100,2,2,c,c,c)
@@ -111,7 +111,7 @@ function fflow.playerinput()
      for key,data in pairs(inputicons) do
          Image.LoadNew("COMBAT_ICON_"..key,"GFX/Combat/Menu/"..key..".png")
          -- citem = 'attack' -- If nothing is chosen, attack will be the selected option.
-         dy = (dy or 0) + 20; Image.NoFont() DarkText('data.key='..sval(data.key)..' KeyDown('..sval(data.key)..')='..INP.KeyD(data.key).." ("..key..")",0,dy)
+         -- dy = (dy or 0) + 20; Image.NoFont() DarkText('data.key='..sval(data.key)..' KeyDown('..sval(data.key)..')='..INP.KeyD(data.key).." ("..key..")",0,dy)
          if (INP.KeyD(data.key)==1 or (INP.JoyX()==(data.joyx or INP.JoyX()) and INP.JoyY()==(data.joyy or INP.JoyY()))) and data.allow() then citem=key end 
          white()
          if citem==key then 
