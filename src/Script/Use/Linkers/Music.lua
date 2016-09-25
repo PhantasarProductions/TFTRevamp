@@ -1,7 +1,7 @@
 --[[
   Music.lua
   
-  version: 16.09.10
+  version: 16.09.25
   Copyright (C) 2015, 2016 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -23,7 +23,7 @@ musicavailable = JCR6.Exists("ID/ID.DEMO.MUSIC")==1;
 
 ({
 
-   [ false ] = function() Music = function(s) end; PushMusic = function() end; PullMusic = function() end; PlayMusic=function() end; StopMusic=function() end; DestroyPushedMusic = function() Console.Write("No music functionality present",255,0,0) end end,
+   [ false ] = function() Music = function(s) end; PushMusic = function() end; PullMusic = function() end; PlayMusic=function() end; StopMusic=function() end; DestroyPushedMusic = function() Console.Write("No music functionality present",255,0,0) end; RandomEncounterTune=function() end end,
    [ true ] = function()
    
        Console.Write("Adding music functionality",180,255,0)
@@ -68,6 +68,10 @@ musicavailable = JCR6.Exists("ID/ID.DEMO.MUSIC")==1;
        function DestroyPushedMusic()
        Var.D("%PUSHEDSONGS",0)
        end
+       
+       RandomEncounterTune = RandomEncounterTune or function()
+          MS.LN_Run("MUSIC","Script/Subs/Music.lua","RandomEncounterTune")
+       end   
        
        end
        

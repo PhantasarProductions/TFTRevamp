@@ -136,6 +136,13 @@ function SetupInitialCards()
    CSay(serialize('Cards',Cards))
 end
 
+function CombatMusic()
+    if CVVN("$COMBAT.MUSIC")=="*NOCHANGE*" then return end
+    PushMusic()
+    if not CVVN("$COMBAT.MUSIC") then RandomEncounterTune() return end
+    Music("$COMBAT.MUSIC")
+end
+
 function InitCombat()
    combat = Var2Table("COMBAT",true)
    SetUpCards()
@@ -144,6 +151,7 @@ function InitCombat()
    LoadHeros()
    LoadFoes()
    SetupInitialCards()
+   CombatMusic()
 end
 
 

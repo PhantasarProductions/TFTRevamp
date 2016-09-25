@@ -1,7 +1,7 @@
 --[[
   Music.lua
   Music routine for LAURA II
-  version: 16.09.10
+  version: 16.09.25
   Copyright (C) 2015, 2016 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -125,3 +125,20 @@ TrueMusic(PM)
 end
 ]]
 Console.Write("Music routines loaded!",255,255,255)
+
+randomencountertunes = {}
+
+function RandomEncounterTune()
+   local r=rand(#randomencountertunes)
+   Music(randomencountertunes[r])
+end
+
+function GALE_OnLoad()
+    CSay("Searching for random encounter tunes")
+    for file in iJCR6Dir(true) do
+        if prefixed(file,"MUSIC/RANDOMENCOUNTERS") and suffixed(file,".OGG") then
+           randomencountertunes[#randomencountertunes+1] = right(file,#file-6)
+           CSay("= Added: "..file)
+        end
+    end       
+end
