@@ -17,25 +17,6 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
---[[
-  TrueMusic.lua
-  
-  version: 16.08.11
-  Copyright (C) 2015, 2016 Jeroen P. Broks
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
-]]
 
 -- The 'real' music stuff will happen here.
 
@@ -129,14 +110,17 @@ Console.Write("Music routines loaded!",255,255,255)
 randomencountertunes = {}
 
 function RandomEncounterTune()
-   local r=rand(#randomencountertunes)
+   if not musicavailable then return end
+   local r=rand(1,#randomencountertunes)
+   CSay("Chosen song for this battle: "..randomencountertunes[r])
    Music(randomencountertunes[r])
 end
 
 function GALE_OnLoad()
+    if not musicavailable then CSay("Since there is no music available, are are also not gonna look up random encounter soungs") return end
     CSay("Searching for random encounter tunes")
     for file in iJCR6Dir(true) do
-        if prefixed(file,"MUSIC/RANDOMENCOUNTERS") and suffixed(file,".OGG") then
+        if prefixed(file,"MUSIC/RANDOMENCOUNTER/") and suffixed(file,".OGG") then
            randomencountertunes[#randomencountertunes+1] = right(file,#file-6)
            CSay("= Added: "..file)
         end
