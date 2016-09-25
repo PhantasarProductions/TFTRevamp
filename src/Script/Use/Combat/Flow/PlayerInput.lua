@@ -38,6 +38,52 @@
 fflow = {}
 -- @FI
 
+fflow.inputicons = { attack = {
+                            x = 0, y = 0,
+                            allow = function() return true end,
+                            key = nil,
+                            joyx = 100, -- These values are never given, and will as a result prevent conflicts.
+                            joyy = 100
+                        },
+                     ability = {
+                                 x = 0, y = -50,
+                                 allow = function()
+                                         -- Actual content comes later when abilities are actually possible.
+                                         end,
+                                 key = KEY_UP,
+                                 joyx = nil,
+                                 joyy = -1        
+                               }   ,
+                     spirata = {
+                                 x = 0, y = 50,
+                                 allow = function()
+                                           return CVV("&SPIRATA."..inputchar.tag)
+                                         end,
+                                 key = KEY_DOWN,
+                                 joyx = nil,
+                                 joyy = 1        
+                               } ,
+                     items = {
+                                 x = -50, y = 0,
+                                 allow = function()
+                                           return true
+                                         end,
+                                 key = KEY_LEFT,
+                                 joyx = -1,
+                                 joyy = nil        
+                               },
+                     guard = {
+                                 x = 50, y = 0,
+                                 allow = function()
+                                           return true
+                                         end,
+                                 key = KEY_RIGHT,
+                                 joyx = 1,
+                                 joyy = nil        
+                               }
+             }
+inputicons = fflow.inputicons             
+
 function fflow.setplayerinput(ch)
      SFX('Audio/Combat/Ready.ogg')
      inputchar = {tag =  ch, name=RPG.GetName(ch), face="CL_FACE_"..ch, facewidth=Image.Width("CL_FACE_"..ch)-10, fc=0 }
@@ -49,10 +95,25 @@ function fflow.playerinput()
      local x = Center_X
      local y = Center_Y-(Center_Y/5)
      local c = inputchar.fc
+     local menuy = y + 50
+     local menux = x + 50
+     -- Heading
      SetFont('CombatName')
      DarkText(inputchar.name,x,y-100,2,2,c,c,c)
      color(c,c,c) if c<255 then c=c+1 inputchar.fc=c end
      Image.Show(inputchar.face,x-inputchar.facewidth,y)
+     -- Menu
+     local citem = 'attack'
+     for key,data in pairs(inputicons) do
+         Image.LoadNew("COMBAT_ICON_"..key,"GFX/Combat/Menu/"..key..".png")
+         white()
+         if citem==key then 
+            local sinc = 200 + (sin(Time.MSecs()/250)*55)
+            color(sinc,sinc,sinc)
+         end
+         if not data.allow() then color(100,100,100) end
+         Image.Show("COMBAT_ICON_"..key,data.x+menux,data.y+menuy)
+     end     
      -- Showing the mouse comes last!
      ShowMouse()
 end
