@@ -36,6 +36,14 @@
 ]]
 
 function ShowCard(i,myx,myy)   
+       local show = "BACKSIDE"
+       local data = Cards[i].data
+       if data then
+          if data.group=='Hero' then show="HERO_"..data.tag end
+          if data.group=="Foe"  then
+             show="FOE_"..(data.letter or 'UNKNOWN')
+             if data.boss then show="BOSS_"..(data.letter or 'UNKNOWN') end
+          end
        LoadedCardImage = LoadedCardImage or {}
        if not LoadedCardImage[show] then
           LoadedCardImage[show] = true 
@@ -56,14 +64,6 @@ function ShowCards()
        Cards[i].y = Cards[i].y or 40
        if Cards[i].x< x then Cards[i].x = Cards[i].x + 4 elseif Cards[i].x> x then Cards[i].x= x end
        if Cards[i].y>40 then Cards[i].y = Cards[i].y - 8 elseif Cards[i].y<40 then Cards[i].y=40 end
-       local show = "BACKSIDE"
-       local data = Cards[i].data
-       if data then
-          if data.group=='Hero' then show="HERO_"..data.tag end
-          if data.group=="Foe"  then
-             show="FOE_"..(data.letter or 'UNKNOWN')
-             if data.boss then show="BOSS_"..(data.letter or 'UNKNOWN') end
-          end
        end
    ShowCard(i)    
    end
