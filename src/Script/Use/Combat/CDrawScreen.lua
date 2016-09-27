@@ -44,6 +44,7 @@ function ShowCard(i,myx,myy)
              show="FOE_"..(data.letter or 'UNKNOWN')
              if data.boss then show="BOSS_"..(data.letter or 'UNKNOWN') end
           end
+       end   
        LoadedCardImage = LoadedCardImage or {}
        if not LoadedCardImage[show] then
           LoadedCardImage[show] = true 
@@ -64,8 +65,7 @@ function ShowCards()
        Cards[i].y = Cards[i].y or 40
        if Cards[i].x< x then Cards[i].x = Cards[i].x + 4 elseif Cards[i].x> x then Cards[i].x= x end
        if Cards[i].y>40 then Cards[i].y = Cards[i].y - 8 elseif Cards[i].y<40 then Cards[i].y=40 end
-       end
-   ShowCard(i)    
+       ShowCard(i)    
    end
 end
 
@@ -81,11 +81,11 @@ function ShowBigMessage()
    if dataBigMessage.Image then
       white()   
       Image.Rotate(dataBigMessage.Rotate or -22)
-      Image.Show(dataBigMessage.Image,Center_X-Image.TextWdth(dataBigMessage.Text)-(Image.Width(data.BigMessage.Image)*.75))
+      Image.Show(dataBigMessage.Image,Center_X-Image.TextWidth(dataBigMessage.Text)-(Image.Width(data.BigMessage.Image)*.75))
    end
    if dataBigMessage.Card then   
       Image.Rotate(-22)
-      ShowCard(dataBigMessage.Card,Center_X-Image.TextWdth(dataBigMessage.Text)-40)
+      ShowCard(dataBigMessage.Card,Center_X-Image.TextWidth(dataBigMessage.Text)-40)
    end   
    DarkText(dataBigMessage.Text,Center_X,175,2,2,c,255,0)
    dataBigMessage.Timer = (dataBigMessage.Timer or 1000) - 1
