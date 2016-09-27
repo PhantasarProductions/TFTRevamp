@@ -48,6 +48,8 @@ function CompileFoe(tag,data,oversoul)
        if      oversoul and prefixed(key,"oversoul_") then stat=right(key,#key-9) CSay("Oversoul Stat: "..stat) RPG.SetStat(tag,"BASE_"..stat,v) RPG.SetStat(tag,"BUFF_"..stat) RPG.SetStat(tag,"END_"..stat) RPGChar.ScriptStat(tag,"END_"..stat,"Script/Char/Char.lua",upper(stat)) end
        if (not oversoul) and prefixed(key,"normal_") then stat=right(key,#key-7) CSay("normal Stat:"..stat) RPG.SetStat(tag,"BASE_"..stat,v) RPG.SetStat(tag,"BUFF_"..stat) RPG.SetStat(tag,"END_"..stat) RPGChar.ScriptStat(tag,"END_"..stat,"Script/Char/Char.lua",upper(stat)) end
    end
+   RPG.Points(tag,'HP',1).MaxCopy="END_HP"
+   RPG.Points(tag,'HP').Have = RPG.Points(tag,'HP').Maximum
    Image.Load(data.Image,"FIGHT_"..tag)
    Image.Hot("FIGHT_"..tag,Image.Width("FIGHT_"..tag)/2,Image.Height("FIGHT_"..tag)) -- Hotspot bottom center
    local x = math.ceil(id/3)

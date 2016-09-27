@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 16.09.23
+  Version: 16.09.27
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -113,10 +113,19 @@ end
 
 function TB_RUN()
   ClearCombatData()
-  if not CONSOLE_COMBAT then Console.Write("? I need TB_SETUP data before I can start any battle") end
+  if not CONSOLE_COMBAT then Console.Write("? I need TB_SETUP data before I can start any battle",255,0,0) end
   for k,v in spairs(CONSOLE_COMBAT) do
       CSay(k.." = "..v)
       Var.D(({ ['string']='$', ['number']='%', ['boolean']='&'})[type(v)].."COMBAT"..k,sval(v))
   end    
   StartCombat()
 end  
+
+function TB_CARDMESSAGE(message,card)
+  if MS.ContainsScript("COMBAT")==0 then
+      Console.Write("? Sorry, folks. Combat routine is not loaded!",255,0,0)
+      return
+  end 
+  MS.Run("CardMessage",message..";"..(card or 1))
+  CSay("Message "..message.." (card "..(card or 1))  
+end 

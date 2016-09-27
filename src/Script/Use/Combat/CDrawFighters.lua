@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 16.09.24
+  Version: 16.09.27
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -37,14 +37,14 @@
 function DrawFoe(i)
     local myfoe = Fighters.Foe[i]
     local tag = myfoe.tag
-    color(myfoe.R or 255,myfoe.G or 255,myfoe.B or 255)
+    --color(myfoe.R or 255,myfoe.G or 255,myfoe.B or 255)
     Image.Show("FIGHT_"..tag,myfoe.x,myfoe.y)
 end
 
 function DrawHero(i)
     local myhero = Fighters.Hero[i]
     local tag = myhero.tag
-    color(myhero.R or 255,myhero.G or 255,myhero.B or 255)
+    --color(myhero.R or 255,myhero.G or 255,myhero.B or 255)
     local itag = "FIGHT_HERO_"..tag.."_"..myhero.stance
     Image.LoadNew(itag,"GFX/Combat/Fighters/Hero/"..tag.."."..myhero.stance..".png"); Image.Hot(itag,Image.Width(itag),Image.height(itag))
     Image.Show(itag,myhero.x,myhero.y)
@@ -52,7 +52,36 @@ function DrawHero(i)
 end
 
 function DrawFighter(g,i)
+     local chdata = Fighters[g][i]
+     color ( chdata.R or 255, chdata.G or 255, chdata.B or 255)
+     local targetted = flow=='playerselectsingletarget' and nextact and nextact.group==g and nextact.targetidx==i
+     if targetted then
+        local c=200+(sin(Time.MSecs()/250)*55)
+        color(c,255-c,0)
+     end
      ({Foe=DrawFoe,Hero=DrawHero})[g](i)
+     if targetted then
+        Image.LoadNew("BAT_COLPOINT","GFX/Combat/Sys/Collision.png")
+        local name = RPG.GetName(chdata.tag)
+        local align = {Foe=0,Hero=1}
+        local col = {Foe = {255,0,0},Hero={180,255,0}}
+        local php = RPG.Points(chdata.tag,"HP")
+        local hp  = php.have
+        local hpm = php.Maximum
+        local bw  = Image.TextWidth(name)
+        local bx  = ({Foe=chdata.x,Hero=chdata.x-bw})[g] 
+        SetFont('Target')
+        DarkText(name,chdata.x,chdata.y-25,align[g],1,col[g][1],col[g][2],col[g][3])
+        color(50,50,50)
+        if skill~=3 then
+           Image.Rect(bx,chdata.y-25,bw,25)
+           color(180,255,0)
+           -- if skill==2 and (not bestiary[chdata.file]) then
+           -- else
+              Image.Rect(bx,chdata.y-25,(hp/hpm)*bw,25)    
+           -- end
+        end  
+     end
 end
 
 function DrawFighters()

@@ -1,6 +1,6 @@
 --[[
   CDrawScreen.lua
-  Version: 16.09.25
+  Version: 16.09.27
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -35,6 +35,17 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 
+function ShowCard(i,myx,myy)   
+       LoadedCardImage = LoadedCardImage or {}
+       if not LoadedCardImage[show] then
+          LoadedCardImage[show] = true 
+          Image.LoadNew("CARD_"..show,"GFX/Combat/Cards/"..show..".png")
+          Image.Hot('CARD_'..show,21,0) -- Makes turning easier if I'm actually gonna do that.
+       end
+       Image.Show('CARD_'..show,myx or Cards[i].x,myy or Cards[i].y)    
+       -- Image.NoFont(); DarkText('Card #'..i.." must go to ("..x..",40) and is now on ("..Cards[i].x..","..Cards[i].y..")  Frmt: "..SW.."x"..SH,5,i*20,0,0,255,180,0) -- Debug
+end
+
 function ShowCards()
    white()
    for i=25,1,-1 do  -- Certainly NOT ipairs, tempting as it seems in this situation. It would not work considering the way this is set up.
@@ -54,15 +65,31 @@ function ShowCards()
              if data.boss then show="BOSS_"..(data.letter or 'UNKNOWN') end
           end
        end
-       LoadedCardImage = LoadedCardImage or {}
-       if not LoadedCardImage[show] then
-          LoadedCardImage[show] = true 
-          Image.LoadNew("CARD_"..show,"GFX/Combat/Cards/"..show..".png")
-          Image.Hot('CARD_'..show,21,0) -- Makes turning easier if I'm actually gonna do that.
-       end
-       Image.Show('CARD_'..show,Cards[i].x,Cards[i].y)    
-       -- Image.NoFont(); DarkText('Card #'..i.." must go to ("..x..",40) and is now on ("..Cards[i].x..","..Cards[i].y..")  Frmt: "..SW.."x"..SH,5,i*20,0,0,255,180,0) -- Debug
+   ShowCard(i)    
    end
+end
+
+function CardMessage(txt,card)
+  dataBigMessage = { Text = Var.S(txt), Card = (card or 1) }
+end  
+
+
+function ShowBigMessage()
+   if not dataBigMessage then return end
+   local c = 225 - (math.sin(Time.MSecs()/200)*50)
+   Box(25,150,Screen.Width()-25,50)
+   if dataBigMessage.Image then
+      white()   
+      Image.Rotate(dataBigMessage.Rotate or -22)
+      Image.Show(dataBigMessage.Image,Center_X-Image.TextWdth(dataBigMessage.Text)-(Image.Width(data.BigMessage.Image)*.75))
+   end
+   if dataBigMessage.Card then   
+      Image.Rotate(-22)
+      ShowCard(dataBigMessage.Card,Center_X-Image.TextWdth(dataBigMessage.Text)-40)
+   end   
+   DarkText(dataBigMessage.Text,Center_X,175,2,2,c,255,0)
+   dataBigMessage.Timer = (dataBigMessage.Timer or 1000) - 1
+   if dataBigMessage.Timer<=0 then dataBigMessage = nil end 
 end
 
 function DrawScreen()
@@ -76,6 +103,8 @@ function DrawScreen()
    DrawFighters()
    -- Cards
    ShowCards()
+   -- Big Message
+   ShowBigMessage()
    -- Party
    ShowParty()
 end

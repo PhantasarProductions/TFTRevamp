@@ -46,6 +46,9 @@ combat={} -- Just a line to fool the outliner
 fighters={ Foe={}, Hero={}}
 Fighters=fighters
 order={} -- No this is not the British parliament.
+bestiary = bestiary or {}
+oversoul = oversoul or {}
+groupmax = 100
 
 function SetUpCards()
     Cards = {}

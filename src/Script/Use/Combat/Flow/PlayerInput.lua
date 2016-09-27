@@ -46,7 +46,10 @@ fflow.inputicons = { attack = {
                             allow = function() return true end,
                             key = nil,
                             joyx = 100, -- These values are never given, and will as a result prevent conflicts.
-                            joyy = 100
+                            joyy = 100,
+                            selected = function()
+                               nextact = { act = 'AAA_Attack', flow='playerselectsingletarget', group='Foe' }
+                            end
                         },
                      ability = {
                                  x = 0, y = -50,
@@ -113,6 +116,12 @@ function fflow.playerinput()
          Image.LoadNew("COMBAT_ICON_"..key,"GFX/Combat/Menu/"..key..".png")
          -- dy = (dy or 0) + 20; Image.NoFont() DarkText('data.key='..sval(data.key)..' KeyDown('..sval(data.key)..')='..INP.KeyD(data.key).." ("..key..")",0,dy)
          if (INP.KeyD(data.key)==1 or (INP.JoyX()==(data.joyx or INP.JoyX()) and INP.JoyY()==(data.joyy or INP.JoyY()))) and data.allow() then citem=key end 
+         if key==citem and (INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_SPACE)==1 or joyhit('CONFIRM') or (INP.MouseH(1)==1 and mousex>data.x+menux and mousex<data.x+menux+50 and mousey>data.y+menuy and mousey<data.y+menuy+50)) then
+            nextact = {}
+            data.selected()
+            nextact.executor = {group='Hero', tag=inputchar.ch }
+            flow = nextact.flow
+         end
          white()
          if citem==key then 
             local sinc = 200 + (sin(Time.MSecs()/250)*55)
@@ -125,6 +134,30 @@ function fflow.playerinput()
      ShowMouse()
 end
 
+function RedoTarget(modifier,comodifier)
+    local timeout = 1000
+    --CSay("RedoTarget("..sval(modifier)..","..sval(comodifier)..")")
+    nextact.targetidx = nextact.targetidx + (modifier or 1)
+    while not(Fighters[nextact.group][nextact.targetidx]) do
+        nextact.targetidx = nextact.targetidx + (comodifier or modifier or 1)
+        if nextact.targetidx<0 then nextact.targetidx=groupmax end
+        if nextact.targetidx>groupmax then nextact.targetidx=0 end 
+        timeout = timeout - 1
+        assert(timeout>=0,"RedoTarget: Timeout!")
+    end    
+    return true
+end
+
+function fflow.playerselectsingletarget()
+     nextact.targetidx = nextact.targetidx or ({Foe=1,Hero=0})[nextact.group]
+     nextact.targetinit = nextact.targetinit or RedoTarget(0,1)
+     -- Showing the mouse comes last!
+     ShowMouse()
+     -- User input
+     if INP.KeyH(KEY_ESCAPE)==1 or joyhit('CANCEL') or INP.MouseH(2)==1 then flow = nextact.inpcancel or 'playerinput' end
+     if INP.KeyH(KEY_DOWN)==1 or joyhit(joy_down) then RedoTarget( 1) end
+     if INP.KeyH(KEY_UP)==1   or joyhit(joy_up)   then RedoTarget(-1) end  
+end
 
 -- @IF IGNORE
 return fflow

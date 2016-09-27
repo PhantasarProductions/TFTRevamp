@@ -46,6 +46,7 @@ flow = "idle"
 
 
 function CombatFlow()
+   assert(fflow[flow],'Combat flow not found: '..sval(flow))
    fflow[flow]()
 end
 
