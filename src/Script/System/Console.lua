@@ -126,6 +126,6 @@ function TB_CARDMESSAGE(message,card)
       Console.Write("? Sorry, folks. Combat routine is not loaded!",255,0,0)
       return
   end 
-  MS.Run("CardMessage",message..";"..(card or 1))
+  MS.Run("COMBAT","CardMessage",message..";"..(card or 1))
   CSay("Message "..message.." (card "..(card or 1))  
 end 
