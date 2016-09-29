@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 16.09.27
+  Version: 16.09.29
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,6 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
 function DrawFoe(i)
     local myfoe = Fighters.Foe[i]
     local tag = myfoe.tag
@@ -52,6 +53,7 @@ function DrawHero(i)
 end
 
 function DrawFighter(g,i)
+     -- Drawing the char itself
      local chdata = Fighters[g][i]
      color ( chdata.R or 255, chdata.G or 255, chdata.B or 255)
      local targetted = flow=='playerselectsingletarget' and nextact and nextact.group==g and nextact.targetidx==i
@@ -59,7 +61,23 @@ function DrawFighter(g,i)
         local c=200+(sin(Time.MSecs()/250)*55)
         color(c,255-c,0)
      end
-     ({Foe=DrawFoe,Hero=DrawHero})[g](i)
+     ({Foe=DrawFoe,Hero=DrawHero})[g](i) -- Perhaps I need to do this otherwise, if there are serious performance issues.
+     -- Show damage or other messages if any
+     if array_charmessages and array_charmessages[chdata.Tag] and array_charmessages[chdata.Tag][1] then
+        local acma = array_charmessages[chdata.Tag]
+        local acm=acma[1]
+        SetFont('CombatCharMessage')
+        Image.ScalePC(acm.scale,acm.scale) 
+        DarkText(acm.msg,chdata.x,chdata.y-30,2,1,acm.r,acm.g,acm.b)
+        if acm.scale<100 then 
+           acm.scale = acm.scale + 1
+        elseif #acma>1 or acm.time<=0 then
+           table.remove(acma,1)
+        else
+           acm.time = acm.time - 1       
+        end
+     end
+     -- Targetted information
      if targetted then
         Image.LoadNew("BAT_COLPOINT","GFX/Combat/Sys/Collision.png")
         local name = RPG.GetName(chdata.tag)

@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 16.09.25
+  Version: 16.09.29
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -37,6 +37,9 @@
 
 -- The Fairy Tale REVAMPED
 
+-- @DEFINE COMBAT_FPS
+
+
 -- @USEDIR Script/Use/Combat
 
 -- @IF IGNORE
@@ -52,6 +55,7 @@ groupmax = 100
 
 function SetUpCards()
     Cards = {}
+    cards = Cards
 end    
 
 function YCards()
@@ -157,10 +161,22 @@ function InitCombat()
    CombatMusic()
 end
 
-
+function FPS()
+   -- @IF COMBAT_FPS
+   white()
+   FPS_Sec = FPS_Sec or 0
+   if Time.Time()~=FPS_Old then FPS_Sec=FPS_Sec+1; FPS_Old=Time.Time() end
+   FPS_Frames = (FPS_Frames or 0) + 1
+   local tfps = FPS_Frames/FPS_Sec
+   Image.Rotate(0)
+   Image.ScalePC(100,100)
+   Image.DText(FPS_Frames.." Frames /"..FPS_Sec.." Secs >> "..tfps.." FPS",100,100)
+   -- @FI 
+end
 
 function MAIN_FLOW()
     DrawScreen()
     CombatFlow()
+    FPS()
     Flip() -- Must be last
 end

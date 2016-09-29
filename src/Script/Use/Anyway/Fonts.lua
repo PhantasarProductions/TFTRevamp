@@ -1,6 +1,6 @@
 --[[
   Fonts.lua
-  Version: 16.09.27
+  Version: 16.09.29
   Copyright (C) 2016 2015
   
   ===========================
@@ -59,7 +59,8 @@ fonts = {
     ItemAmm = {'Monof55.ttf',25},
     CombatName = {"master_of_break.ttf",50},
     Target = {'Monof55.ttf',20},
-    CombatBigMessage = {'CoolVetica.TtF',45}
+    CombatBigMessage = {'CoolVetica.TtF',45},
+    CombatCharMessage = {'Monof55.ttf',20}
 }
 
 fonts.BoxText = fonts.BoxTextContent

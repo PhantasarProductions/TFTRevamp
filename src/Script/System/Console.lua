@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 16.09.27
+  Version: 16.09.29
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -36,6 +36,14 @@
 ]]
 
 -- TFT REVAMPED
+
+function ALLHP()
+  local foeid
+  for foeid in ICHARS() do
+    CSay("Character: "..foeid.." has "..RPGChar.Points(foeid,"HP").Have.."/"..RPGChar.Points(foeid,"HP").Maximum.." HP") 
+  end
+end
+
 
 function SHOWTIME()
      CSay(CVV("%GAMETIME.SECONDS").." seconds")
@@ -127,5 +135,5 @@ function TB_CARDMESSAGE(message,card)
       return
   end 
   MS.Run("COMBAT","CardMessage",message..";"..(card or 1))
-  CSay("Message "..message.." (card "..(card or 1))  
+  CSay("Message "..message.." (card "..(card or 1)..")")  
 end 

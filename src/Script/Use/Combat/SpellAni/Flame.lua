@@ -1,5 +1,5 @@
 --[[
-  ITM_ANTIDOTE.lua
+  Flame.lua
   Version: 16.09.29
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,29 +34,3 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-ret = {
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
-	["Attack_Element"] = "None",
-	["CurePoison"] = true,
-	["Desc"] = "Poison be gone",
-	["Heal"] = nil,
-	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
-	["ITM_ACC_Dandor"] = true,
-	["ITM_ACC_HandoStillor"] = true,
-	["ITM_ACC_Jake"] = true,
-	["ITM_ACC_Marrilona"] = true,
-	["ITM_Combat"] = true,
-	["ITM_Field"] = true,
-	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 50,
-	["ITM_Type"] = "Consumable",
-	["Target"] = "1A",
-	["Title"] = "Antidote",
-	["Type"] = "Item"}
-
-return ret
-
--- This file is an automatically generated file!
-

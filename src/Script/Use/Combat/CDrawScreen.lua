@@ -1,6 +1,6 @@
 --[[
   CDrawScreen.lua
-  Version: 16.09.27
+  Version: 16.09.29
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -36,6 +36,8 @@
 ]]
 
 function ShowCard(i,myx,myy)   
+       if not Cards then return CSay("ShowCard("..sval(i)..","..sval(myx)..","..sval(myy)..") called prior to card definition!") end
+       if not Cards[i] then return CSay("ShowCard("..sval(i)..","..sval(myx)..","..sval(myy)..") called to undefined card #"..i) end
        local show = "BACKSIDE"
        local data = Cards[i].data
        if data then
@@ -70,25 +72,29 @@ function ShowCards()
 end
 
 function CardMessage(txt,card)
-  dataBigMessage = { Text = Var.S(txt), Card = (card or 1) }
+  dataBigMessage = { Text = Var.S(txt), Card = tonumber(card or 1) }
+  return dataBigMessage
 end  
 
 
 function ShowBigMessage()
    if not dataBigMessage then return end
    local c = 225 - (math.sin(Time.MSecs()/200)*50)
-   Box(25,150,Screen.Width()-25,50)
+   SetFont('CombatBigMessage')
+   Box(25,150,Screen.Width()-50,50)
    if dataBigMessage.Image then
       white()   
       Image.Rotate(dataBigMessage.Rotate or -22)
-      Image.Show(dataBigMessage.Image,Center_X-Image.TextWidth(dataBigMessage.Text)-(Image.Width(data.BigMessage.Image)*.75))
+      Image.Show(dataBigMessage.Image,Center_X-(Image.TextWidth(dataBigMessage.Text)/2)-(Image.Width(data.BigMessage.Image)*.75),175-(Image.Height(dataBigMessage.Image)))
    end
-   if dataBigMessage.Card then   
+   if dataBigMessage.Card then
+      white()   
       Image.Rotate(-22)
-      ShowCard(dataBigMessage.Card,Center_X-Image.TextWidth(dataBigMessage.Text)-40)
+      ShowCard(dataBigMessage.Card,Center_X-(Image.TextWidth(dataBigMessage.Text)/2)-40,145)
    end   
+   Image.Rotate(0)
    DarkText(dataBigMessage.Text,Center_X,175,2,2,c,255,0)
-   dataBigMessage.Timer = (dataBigMessage.Timer or 1000) - 1
+   dataBigMessage.Timer = (dataBigMessage.Timer or 250) - 1
    if dataBigMessage.Timer<=0 then dataBigMessage = nil end 
 end
 

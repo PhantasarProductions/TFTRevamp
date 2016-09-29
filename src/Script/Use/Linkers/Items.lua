@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.09.19
+  Version: 16.09.29
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -44,9 +44,9 @@ end
 ItemGet = ItemGet or function(i)
    LoadItemModule()
    MS.Run("ITEMS","ItemGet",i..";DUMPIT")
-   local ret = Var.C('$ITEMGET')
+   local ret = loadstring(Var.C('$ITEMGET'))
    Var.Clear('$ITEMGET')
-   return ret
+   return ret()
 end
          
 ItemFilterReset = ItemFilterReset or function()

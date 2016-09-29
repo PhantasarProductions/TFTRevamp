@@ -1,6 +1,6 @@
 --[[
   AAA_ATTACK.lua
-  Version: 16.09.23
+  Version: 16.09.29
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -35,12 +35,24 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["Attack"] = 100,
+	["Attack_AccuracyRate"] = 100,
+	["Attack_AllowAccuracy"] = true,
+	["Attack_AllowCritical"] = true,
+	["Attack_AllowDodge"] = true,
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Element"] = "None",
 	["Desc"] = "Attack the enemy",
 	["Heal"] = nil,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
+	["Rew_GainAP"] = 6,
+	["Target"] = "1F",
 	["Title"] = "Attack",
-	["Type"] = "Ability"}
+	["Type"] = "Ability",
+	["rew_CreateSkill1"] = true,
+	["rew_GainSkill1"] = 6}
 
 return ret
 

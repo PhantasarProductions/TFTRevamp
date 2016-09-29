@@ -1,6 +1,6 @@
 --[[
   ITM_APPLE.lua
-  Version: 16.09.23
+  Version: 16.09.29
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -35,6 +35,9 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Power",
+	["Attack_Element"] = "None",
 	["Desc"] = "An apple a day keeps the doctor away",
 	["Heal"] = nil,
 	["Heal_StatPercent"] = "Power",
@@ -44,6 +47,7 @@ ret = {
 	["ITM_Sellable"] = true,
 	["ITM_ShopPrice"] = 25,
 	["ITM_Type"] = "Consumable",
+	["Target"] = "1A",
 	["Title"] = "Apple",
 	["Type"] = "Item"}
 

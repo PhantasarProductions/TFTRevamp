@@ -1,6 +1,6 @@
 --[[
   PlayerInput.lua
-  Version: 16.09.25
+  Version: 16.09.29
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -119,7 +119,9 @@ function fflow.playerinput()
          if key==citem and (INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_SPACE)==1 or joyhit('CONFIRM') or (INP.MouseH(1)==1 and mousex>data.x+menux and mousex<data.x+menux+50 and mousey>data.y+menuy and mousey<data.y+menuy+50)) then
             nextact = {}
             data.selected()
-            nextact.executor = {group='Hero', tag=inputchar.ch }
+            nextact.executor = {group='Hero', tag=inputchar.tag }
+            assert ( nextact.executor.tag, "Tagging the executor tag failed!")
+            --nextact.action = inputicons[citem].act -- Will be nil if not set, but that's not that bad, as it can be defined later in case of items or abilities.
             flow = nextact.flow
          end
          white()
@@ -157,6 +159,9 @@ function fflow.playerselectsingletarget()
      if INP.KeyH(KEY_ESCAPE)==1 or joyhit('CANCEL') or INP.MouseH(2)==1 then flow = nextact.inpcancel or 'playerinput' end
      if INP.KeyH(KEY_DOWN)==1 or joyhit(joy_down) then RedoTarget( 1) end
      if INP.KeyH(KEY_UP)==1   or joyhit(joy_up)   then RedoTarget(-1) end  
+     if INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_SPACE)==1 or INP.MouseH(1)==1 or joyhit('CONFIRM') then 
+           flow='Execution' 
+        end
 end
 
 -- @IF IGNORE
