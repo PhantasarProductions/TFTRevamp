@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 16.09.29
+  Version: 16.09.30
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -63,12 +63,13 @@ function DrawFighter(g,i)
      end
      ({Foe=DrawFoe,Hero=DrawHero})[g](i) -- Perhaps I need to do this otherwise, if there are serious performance issues.
      -- Show damage or other messages if any
-     if array_charmessages and array_charmessages[chdata.Tag] and array_charmessages[chdata.Tag][1] then
-        local acma = array_charmessages[chdata.Tag]
+     if array_charmessages and array_charmessages[chdata.tag] and array_charmessages[chdata.tag][1] then
+        local acma = array_charmessages[chdata.tag]
         local acm=acma[1]
         SetFont('CombatCharMessage')
         Image.ScalePC(acm.scale,acm.scale) 
         DarkText(acm.msg,chdata.x,chdata.y-30,2,1,acm.r,acm.g,acm.b)
+        Image.ScalePC(100,100)
         if acm.scale<100 then 
            acm.scale = acm.scale + 1
         elseif #acma>1 or acm.time<=0 then

@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 16.09.29
+  Version: 16.09.30
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -137,3 +137,11 @@ function TB_CARDMESSAGE(message,card)
   MS.Run("COMBAT","CardMessage",message..";"..(card or 1))
   CSay("Message "..message.." (card "..(card or 1)..")")  
 end 
+
+function TB_SHOWCHARMSG()
+  if MS.ContainsScript("COMBAT")==0 then
+      Console.Write("? Sorry, folks. Combat routine is not loaded!",255,0,0)
+      return
+  end 
+  MS.Run("COMBAT",'dbg_charmsg')
+end

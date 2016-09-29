@@ -1,6 +1,6 @@
 --[[
   CCharacterMessage.lua
-  Version: 16.09.29
+  Version: 16.09.30
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -40,4 +40,12 @@ function charmsg(ch,msg,r,g,b)
     array_charmessages[ch] = array_charmessages[ch] or {}
     local mychar = array_charmessages[ch]
     mychar[#mychar+1] = { tag=ch,msg=msg,r=r or 255,g=g or 255,b=b or 255,time=100,scale=0}
+    Console.Write("chmsg> "..sval(ch).." >>> "..sval(msg),r,g,b)
 end
+
+function dbg_charmsg()
+    local c = mysplit(serialize('array_charmessages',array_charmessages),"\n")
+    for l in each(c) do
+        Console.Write(l,rand(1,255),rand(1,255),rand(1,255))
+    end    
+end    
