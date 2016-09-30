@@ -62,7 +62,7 @@ function fflow.idle()
             for _,crd in pairs(Cards) do -- Looking for the card
                 k = k or (crd.data and crd.data.group==group and crd.data.tag==data.tag and (not crd.data.ability)) 
             end 
-            if not k then AddCard({group=group,tag=data.tag, letter=letter}) end
+            if not k then AddCard({group=group,tag=data.tag, letter=data.letter}) end
         end
     end
     -- Make the cards flow
