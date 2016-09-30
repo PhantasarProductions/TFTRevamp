@@ -42,6 +42,11 @@ function IDDQD()
    CSay("God mode is now "..({TRUE='On',FALSE='False'})[Var.C('&CHEAT.GOD')])
 end; GOD=IDDQD   
 
+-- @IF IGNORE
+function IDDQD()
+end
+-- @FI
+
 function ALLHP()
   local foeid
   for foeid in ICHARS() do

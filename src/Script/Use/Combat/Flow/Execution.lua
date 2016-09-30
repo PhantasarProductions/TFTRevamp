@@ -109,6 +109,11 @@ function fflow.Execution()
       end
    end     
    -- And now let's return to 'idle'
+   while (not ExeShowMsg.Timer) or (ExeShowMsg.Timer>0) do   
+         DrawScreen(); FPS()
+         DarkText(sval(ExeShowMsg.Timer),50,50,0,0,255,255,255) -- What the hell is wrong here?
+         Flip()
+   end   
    flow = nextact.afterperform or 'idle' 
    nextact = nil
    table.remove(cards,1)

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.30
+version: 16.10.01
 ]]
 CharacterMeta = {
 
@@ -120,26 +120,28 @@ function SetSkill(exp,lvl,level)
 end
    
 function CreateSkill(ch,num,level)
-   if RPG.PointsExists(ch,"EXP_"..num)==1 then return end -- Don't create if we already have it.
+   if RPG.PointsExists(ch,"SK_EXP_"..num)==1 then return false end -- Don't create if we already have it.
    local exp = RPG.Points(ch,"SK_EXP_"..num,1)
    local lvl = RPG.Points(ch,"SK_LVL_"..num,1)
    SetSkill(exp,lvl,level)
    return true
 end   
 
-function SetChSkill(ch,level)
-   if RPG.PointsExists(ch,"EXP_"..num)==0 then return end
+function SetChSkill(ch,num,level)
+   if RPG.PointsExists(ch,"EXP_"..num)==1 then return end
    local exp = RPG.Points(ch,"SK_EXP_"..num)
    local lvl = RPG.Points(ch,"SK_LVL_"..num)
-   Setskill(exp,lvl,level or lvl.Have)
+   SetSkill(exp,lvl,level or lvl.Have)
 end   
 
-function IncSkill(ch,skill,points)
-   RPG.Points(ch,"SK_EXP_"..skill).Inc(points)
-   if RPG.Points(ch,"SK_EXP_"..skill).Have>= RPG.Points(ch,"SK_EXP_"..skill).Maximum then
-      SetChSkill(ch,skill,RPG.Points(ch,"SK_LVL_"..skill)+1)
-      RPG.IncStat(ch,"POWERUP_"..CharacterMeta[ch]['askillup'..skill][1],CharacterMeta[ch]['askillup'..skill][2])
-      if charmsg then charmsg(ch,'skill'..skill,0,180,255) charmsg('Level up!',0,180,255) end
+function IncSkill(ch,num,points)
+   RPG.Points(ch,"SK_EXP_"..num).Inc(points)
+   if RPG.Points(ch,"SK_EXP_"..num).Have>= RPG.Points(ch,"SK_EXP_"..num).Maximum and RPG.Points(ch,"SK_EXP_"..num).Maximum>0 then
+      SetChSkill(ch,num,RPG.Points(ch,"SK_LVL_"..num).Have+1)
+      RPG.Points(ch,"SK_EXP_"..num).Have=0
+      if RPG.Points(ch,"SK_LVL_"..num).Have==RPG.Points(ch,"SK_LVL_"..num).Maximum then RPG.Points('SK_EXP_'..num).Maximum=0 end
+      RPG.IncStat(ch,"POWERUP_"..CharacterMeta[ch]['askillup'..num][1],CharacterMeta[ch]['askillup'..num][2])
+      if charmsg then charmsg(ch,CharacterMeta[ch]['skill'..num],0,180,255) charmsg(ch,'Level up!',0,180,255) end
    end   
 end
 -- @IF IGNORE
