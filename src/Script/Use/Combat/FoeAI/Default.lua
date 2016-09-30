@@ -40,18 +40,18 @@ FoeAI = {}
 
 FoeAI.Target = {}
 
-FoeAI.Target['1F'] = function(tag)
-     return 'Hero',rand(1,4)
+FoeAI.Target['1F'] = function(tag,abl)
+     return 'Hero',rand(0,3)
 end
 FoeAI.Target['AF'] = FoeAI.Target['1F']
 
 
 function FoeAI.default(tag)
     local timeout = 10000 
-    local foe = Fighters.Foe[tag]
-    do -- Inifinite loop
-       timeout = timeout - 1; assert(timeout>0,"FoeAI.default('"..tag.."'): Time-out!")
-       local dabl = foe.abilities[rand(1,#foe.abilities)]
+    local foe = fightersbytag[tag]
+    repeat -- Inifinite loop
+       timeout = timeout - 1; assert(timeout>0,"FoeAI.default('"..sval(tag).."'): Time-out!")
+       local dabl = foe.abilities[rand(1,#foe.abilities)]; assert ( dabl , "Nil returned from a array["..#foe.abilities.."]")
        local abl  = ItemGet(dabl.abl)
        local g,i  = ({
                         ['Random'] = function(t,a)
@@ -60,18 +60,19 @@ function FoeAI.default(tag)
                     })[dabl.target](tag,abl)
        local good = true
        good = good and Fighters[g][i]
-       good = good and RPG.Points(Fighters[g][i],'HP').Have>=1
+       good = good and RPG.Points(Fighters[g][i].tag,'HP').Have>=1
        if good then
-          nextaction = {
+          nextact   = {
                            executor = { group = 'Foe', tag=foe.tag },
-                           act = dabl, 
+                           act = dabl.abl, 
                            flow='Execution', 
                            group=g,
                            targetidx=i
                        }
-          return             
-       end             
-    end    
+          return nextact             
+       end
+       -- Cls() DarkText(timeout.."/"..sval(good).."/"..sval(g).."/"..sval(i).."/"..sval(Fighters[g][i]).."/"..dabl.abl.."/"..serialize('onmogelijk',Fighters[g])) Flip()             
+    until false    
 end
 
 -- @IF IGNORE

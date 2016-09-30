@@ -83,8 +83,9 @@ function fflow.Execution()
    assert ( act.Title,serialize("act",act))
    ExeShowMsg = ExeShowMsg or CardMessage(act.Title,1)
    -- if (not ExeShowMsg.Timer) or (ExeShowMsg.Timer>50) then return end
-   while (not ExeShowMsg.Timer) or (ExeShowMsg.Timer>50) do
+   while (not ExeShowMsg.Timer) or (ExeShowMsg.Timer>50) do   
          DrawScreen(); FPS()
+         DarkText(sval(ExeShowMsg.Timer),50,50,0,0,255,255,255) -- What the hell is wrong here?
          Flip()
    end
    -- SpellAni

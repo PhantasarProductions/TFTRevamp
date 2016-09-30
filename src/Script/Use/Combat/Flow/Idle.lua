@@ -66,7 +66,8 @@ function fflow.idle()
        table.remove(Cards,1)
        return
     end
-    if card.data.group == 'Hero' then fflow.setplayerinput(card.data.tag) end
+    if card.data.group == 'Foe' then flow = 'foeinput'
+    elseif card.data.group == 'Hero' then fflow.setplayerinput(card.data.tag) end
 end
 
 

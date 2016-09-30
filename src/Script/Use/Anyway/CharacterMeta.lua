@@ -136,7 +136,7 @@ end
 
 function IncSkill(ch,skill,points)
    RPG.Points(ch,"SK_EXP_"..skill).Inc(points)
-   if RPG.Points(ch,"SK_EXP_"..skill).Have>= RPG.Points(ch,"SK_EXP_Num"..skill).Maximum then
+   if RPG.Points(ch,"SK_EXP_"..skill).Have>= RPG.Points(ch,"SK_EXP_"..skill).Maximum then
       SetChSkill(ch,skill,RPG.Points(ch,"SK_LVL_"..skill)+1)
       RPG.IncStat(ch,"POWERUP_"..CharacterMeta[ch]['askillup'..skill][1],CharacterMeta[ch]['askillup'..skill][2])
       if charmsg then charmsg(ch,'skill'..skill,0,180,255) charmsg('Level up!',0,180,255) end

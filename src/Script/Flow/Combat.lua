@@ -37,7 +37,7 @@
 
 -- The Fairy Tale REVAMPED
 
--- @DEFINE COMBAT_FPS
+-- @UNDEF COMBAT_FPS
 
 
 -- @USEDIR Script/Use/Combat
@@ -48,7 +48,7 @@ combat={} -- Just a line to fool the outliner
 
 fighters={ Foe={}, Hero={}}
 Fighters=fighters
-fighterbytag = {}
+fighterbytag = {}; fightersbytag = fighterbytag
 order={} -- No this is not the British parliament.
 bestiary = bestiary or {}
 oversoul = oversoul or {}

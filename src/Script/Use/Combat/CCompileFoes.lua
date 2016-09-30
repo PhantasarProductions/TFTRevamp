@@ -34,7 +34,16 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
+-- @DEFINE CPF_DBG
+
+
 function CompileFoe(tag,data,oversoul)
+   local function dbg(t) 
+      -- @IF CPF_DBG
+      CSay("COMPILEFOE:>"..t)
+      -- @FI
+   end
    local id = oversoul or (#Fighters.Foe + 1)
    local letter = string.char(id+64); if id>26 then letter="?" end
    local myfoe = { tag = tag, R=255, G=255, B=255, letter=letter, id = id }
@@ -59,22 +68,23 @@ function CompileFoe(tag,data,oversoul)
    myfoe.x = (x * (Center_X/100)) + 50
    myfoe.y = (y * ((Center_Y-100)/4))+Center_Y    
    -- Compile ability list
+   myfoe.abilities = {}
    for k,i in pairs(data) do
-       myfoe.abilities = {}
        if prefixed(k,'RATE_') and i>0 then
           local abl = right(k,#k-5)
           local abldat = { abl = abl,
                            target = data['TARGET_'..abl],                           
                          }
           local alright = true
-          if (not oversoul) then alright = alright and data['NORMAL_'..abl] end
-          if (oversoul) then alright = alright and data['OVERSOUL_'..abl] end
-          alright = alright and data['SKILL'..skill.."_"..abl]
+          if (not oversoul) then alright = alright and data['NORMAL_'..abl] end dbg(sval(alright).." Normal check done")
+          if (oversoul) then alright = alright and data['OVERSOUL_'..abl] end dbg(sval(alright).." Oversoul check done")
+          alright = alright and data['SKILL'..skill.."_"..abl] dbg(sval(alright).." Skill "..skill.." check done")
           if alright then
              for j=1,i do
-                 myfoe.abilities[#myfoe.abilities+1] = abldat
-             end    
+                 myfoe.abilities[#myfoe.abilities+1] = abldat dbg("adding "..abldat.abl)
+             end                 
           end               
        end
    end
+   dbg("Result "..serialize('foe.'..tag,myfoe))
 end

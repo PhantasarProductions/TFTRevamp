@@ -39,13 +39,15 @@ fflow = {}
 -- @FI
 
 function fflow.foeinput()
-   local card = card[1] 
+   local card = cards[1] 
    local tag = card.data.tag
    local foe = fighterbytag[tag]
    assert(FoeAI,"Foe AI not defined at all") -- If this one EVERY happens then there's really something wrong!
    assert(FoeAI[foe.AI],"No AI information found for AIID '"..foe.AI.."'")
-   FoeAI[foe.AI]()
+   FoeAI[foe.AI](tag); assert(nextact,"nextact not define somehow???")
    flow = nextact.flow
+   assert(flow~="foeinput","Somehow the flow goes into repeat!")
+   -- assert(false,"Forced Crash")
 end
 
 
