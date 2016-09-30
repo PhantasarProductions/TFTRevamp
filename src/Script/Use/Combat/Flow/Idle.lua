@@ -1,6 +1,6 @@
 --[[
   Idle.lua
-  Version: 16.09.30
+  Version: 16.10.01
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -41,9 +41,16 @@ fflow = {}
 function AddCard(data,aspot)
     local card = { data=data }
     local ch   = data.tag    
-    local spot = aspot or ( 25 + order.tagorder[ch] + (math.floor(rand(1,order.tagorder[ch])/2)) )
+    local spot = aspot or ( 25 + (order.tagorder[ch] * 2)+ (math.floor(rand(1,order.tagorder[ch])/2)) )
     while cards[spot] and cards[spot].data do spot=spot+1 end -- If the spot is taken, move to the next one.
     cards[spot] = card
+end
+
+function RemoveFirstCard()
+    local max = 0
+    for i,_ in pairs(cards) do if i>max then max=i end end
+    for i=1,max do cards[i] = cards[i] or {} end
+    table.remove(cards,1)
 end
 
 function fflow.idle()
@@ -55,7 +62,7 @@ function fflow.idle()
             for _,crd in pairs(Cards) do -- Looking for the card
                 k = k or (crd.data and crd.data.group==group and crd.data.tag==data.tag and (not crd.data.ability)) 
             end 
-            if not k then AddCard({group=group,tag=data.tag}) end
+            if not k then AddCard({group=group,tag=data.tag, letter=letter}) end
         end
     end
     -- Make the cards flow
@@ -63,7 +70,8 @@ function fflow.idle()
     if card.y>40 then return end -- Card must be on top before we do anything at all!
     if not card.data then
        SFX('Audio/Combat/CardSlide.ogg')
-       table.remove(Cards,1)
+       -- table.remove(Cards,1)
+       RemoveFirstCard()
        return
     end
     if card.data.group == 'Foe' then flow = 'foeinput'
