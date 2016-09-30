@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 16.09.30
+  Version: 16.10.01
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -36,6 +36,11 @@
 ]]
 
 -- TFT REVAMPED
+
+function IDDQD()
+   Toggle('&CHEAT.GOD')
+   CSay("God mode is now "..({TRUE='On',FALSE='False'})[Var.C('&CHEAT.GOD')])
+end; GOD=IDDQD   
 
 function ALLHP()
   local foeid

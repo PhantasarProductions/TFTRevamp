@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 16.09.30
+  Version: 16.10.01
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -95,6 +95,7 @@ function LoadHeros()
            myhero.tag = RPG.PartyTag(i)
            myhero.stance = "Idle"
            myhero.id = i
+           myhero.group='Hero'
            fighterbytag[myhero.tag] = myhero
         end  
     end

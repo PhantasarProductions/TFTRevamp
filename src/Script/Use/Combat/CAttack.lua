@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.29
+version: 16.10.01
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
@@ -59,6 +59,7 @@ function Hurt(tag,damage,element)
       else  -- Absorb
          charmsg(math.abs(dmg),0,255,0)
       end
+      if fighterbytag[tag].group=='Hero' and CVV('&CHEAT.GOD') then dmg=0 end -- God Mode
       hp.Have = hp.Have - dmg -- Yeah that even works for absorb, as a negative value is then in dmg and two negatives make one positive. 
       CSay(sval(tag).." suffered "..dmg.." damage")                  
 end
