@@ -1,6 +1,6 @@
 --[[
   Idle.lua
-  Version: 16.09.25
+  Version: 16.09.30
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -38,7 +38,27 @@
 fflow = {}
 -- @FI
 
+function AddCard(data,aspot)
+    local card = { data=data }
+    local ch   = data.tag    
+    local spot = aspot or ( 25 + order.tagorder[ch] + (math.floor(rand(1,order.tagorder[ch])/2)) )
+    while cards[spot] and cards[spot].data do spot=spot+1 end -- If the spot is taken, move to the next one.
+    cards[spot] = card
+end
+
 function fflow.idle()
+    -- Are there any fighters who do not have a card yet?
+    local k
+    for group,grouparray in pairs(Fighters) do
+        for idx,data in pairs(grouparray) do
+            k = nil
+            for _,crd in pairs(Cards) do -- Looking for the card
+                k = k or (crd.data and crd.data.group==group and crd.data.tag==data.tag and (not crd.data.ability)) 
+            end 
+            if not k then AddCard({group=group,tag=data.tag}) end
+        end
+    end
+    -- Make the cards flow
     local card = Cards[1]
     if card.y>40 then return end -- Card must be on top before we do anything at all!
     if not card.data then
