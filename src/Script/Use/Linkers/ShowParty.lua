@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.10
+version: 16.09.30
 ]]
 
 ShowParty = ShowParty or function() 
@@ -42,5 +42,7 @@ end
 Party = Party or function(p)
   MS.LN_Run('PARTY','Script/Subs/Party.lua','Party',p)
 end
+
+
 
 NewParty = Party

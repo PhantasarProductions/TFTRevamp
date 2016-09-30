@@ -1,6 +1,6 @@
 --[[
   Gob.lua
-  Version: 16.09.25
+  Version: 16.09.30
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,11 +34,12 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sun 25 September 2016; 00:06:22
+-- File Generated: Fri 30 September 2016; 15:42:34
 
 
 local foe = {}
 
+	foe["AI"] = "default"
 	foe["NEWGAMEPLUS_AAA_ATTACK"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
 	foe["NEWGAMEPLUS_ITM_ANTIDOTE"] = true

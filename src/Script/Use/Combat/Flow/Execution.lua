@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 16.09.29
+  Version: 16.09.30
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -93,7 +93,20 @@ function fflow.Execution()
    end
    -- Perform the action
    fflow.Range[act.Target](act)
-   -- Any rewards due to this?   
+   -- Any rewards due to this? 
+   if nextact.executor.group=='Hero' then
+      for i=1,5 do
+           if act['rew_CreateSkill'..i] then 
+              if CreateSkill(nextact.executor.tag,i,1)  then
+                 charmsg(nextact.executor.tag,"Discovered new skill group",180,255,0) 
+                 charmsg(nextact.executor.tag,CharacterMeta[nextact.executor.tag]['skill'..i],180,255,0) 
+              end
+              if act['rew_GainSkill1'] and act['rew_GainSkill1']>0 then
+                 IncSkill(nextact.executor.tag,i, act['rew_GainSkill1'] )   
+              end   
+           end     
+      end
+   end     
    -- And now let's return to 'idle'
    flow = nextact.afterperform or 'idle' 
    nextact = nil

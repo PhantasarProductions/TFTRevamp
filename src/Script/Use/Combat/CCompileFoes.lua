@@ -1,6 +1,6 @@
 --[[
   CCompileFoes.lua
-  Version: 16.09.25
+  Version: 16.09.30
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -37,9 +37,11 @@
 function CompileFoe(tag,data,oversoul)
    local id = oversoul or (#Fighters.Foe + 1)
    local letter = string.char(id+64); if id>26 then letter="?" end
-   local myfoe = { tag = tag, R=255, G=255, B=255, letter=letter }
+   local myfoe = { tag = tag, R=255, G=255, B=255, letter=letter, id = id }
    if oversoul then myfoe.R=200; myfoe.G=150 myfoe.B=255 end
    Fighters.Foe[id] = myfoe    
+   fighterbytag[tag] = myfoe
+   myfoe.AI = data.AI
    RPG.CreateChar(tag)
    local myname = letter..". "..data.Name; if oversoul then myname = myname .."  (Oversoul)" end
    RPG.SetName(tag,myname); CSay("Compiling "..tag.." << "..RPG.GetName(tag))
@@ -56,4 +58,23 @@ function CompileFoe(tag,data,oversoul)
    local y = (id - x)+1
    myfoe.x = (x * (Center_X/100)) + 50
    myfoe.y = (y * ((Center_Y-100)/4))+Center_Y    
+   -- Compile ability list
+   for k,i in pairs(data) do
+       myfoe.abilities = {}
+       if prefixed(k,'RATE_') and i>0 then
+          local abl = right(k,#k-5)
+          local abldat = { abl = abl,
+                           target = data['TARGET_'..abl],                           
+                         }
+          local alright = true
+          if (not oversoul) then alright = alright and data['NORMAL_'..abl] end
+          if (oversoul) then alright = alright and data['OVERSOUL_'..abl] end
+          alright = alright and data['SKILL'..skill.."_"..abl]
+          if alright then
+             for j=1,i do
+                 myfoe.abilities[#myfoe.abilities+1] = abldat
+             end    
+          end               
+       end
+   end
 end

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.29
+version: 16.09.30
 ]]
 CharacterMeta = {
 
@@ -124,6 +124,7 @@ function CreateSkill(ch,num,level)
    local exp = RPG.Points(ch,"SK_EXP_"..num,1)
    local lvl = RPG.Points(ch,"SK_LVL_"..num,1)
    SetSkill(exp,lvl,level)
+   return true
 end   
 
 function SetChSkill(ch,level)
@@ -133,6 +134,14 @@ function SetChSkill(ch,level)
    Setskill(exp,lvl,level or lvl.Have)
 end   
 
+function IncSkill(ch,skill,points)
+   RPG.Points(ch,"SK_EXP_"..skill).Inc(points)
+   if RPG.Points(ch,"SK_EXP_"..skill).Have>= RPG.Points(ch,"SK_EXP_Num"..skill).Maximum then
+      SetChSkill(ch,skill,RPG.Points(ch,"SK_LVL_"..skill)+1)
+      RPG.IncStat(ch,"POWERUP_"..CharacterMeta[ch]['askillup'..skill][1],CharacterMeta[ch]['askillup'..skill][2])
+      if charmsg then charmsg(ch,'skill'..skill,0,180,255) charmsg('Level up!',0,180,255) end
+   end   
+end
 -- @IF IGNORE
 return CharacterMeta
 -- @FI

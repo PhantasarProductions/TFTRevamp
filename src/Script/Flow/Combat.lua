@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 16.09.29
+  Version: 16.09.30
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -48,6 +48,7 @@ combat={} -- Just a line to fool the outliner
 
 fighters={ Foe={}, Hero={}}
 Fighters=fighters
+fighterbytag = {}
 order={} -- No this is not the British parliament.
 bestiary = bestiary or {}
 oversoul = oversoul or {}
@@ -93,6 +94,8 @@ function LoadHeros()
            myhero = Fighters.Hero[i]
            myhero.tag = RPG.PartyTag(i)
            myhero.stance = "Idle"
+           myhero.id = i
+           fighterbytag[myhero.tag] = myhero
         end  
     end
     -- Set up coordinates (this is pending on the number of heroes, yes, so this must be done in a separate loop)
