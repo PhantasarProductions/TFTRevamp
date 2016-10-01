@@ -62,7 +62,7 @@ function DrawFighter(g,i)
         color(c,255-c,0)
      end
      local altdraw = false
-     for st,stdat in pairs(chdata) do
+     for st,stdat in pairs(chdata.StatusChanges or {}) do
          altdraw = altdraw or stdat.DrawReplace;
          (stdat.DrawFighter or Nothing)(chdata.tag)
      end    
