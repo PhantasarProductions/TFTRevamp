@@ -40,6 +40,8 @@ function Hurt(tag,damage,element)
       local mod = -(eleprot/100)
       local dmg = damage 
       dmg = round(dmg + round(dmg*mod))
+      fighterbytag[tag].statuschanges = fighterbytag[tag].statuschanges or {}
+
       -- alt damage routine
       -- default damage routine
       if eleprot<-200 then -- Fatal
@@ -57,10 +59,14 @@ function Hurt(tag,damage,element)
          dmg=0
          charmsg("NO EFFECT!",255,180,0)
       else  -- Absorb
+         for k,d in pairs(fighterbytag[tag].statuschanges ) do
+             if d.BlockHeal then dmg=0 end 
+         end        
          charmsg(math.abs(dmg),0,255,0)
       end
-      if fighterbytag[tag].group=='Hero' and CVV('&CHEAT.GOD') then dmg=0 end -- God Mode
-      hp.Have = hp.Have - dmg -- Yeah that even works for absorb, as a negative value is then in dmg and two negatives make one positive. 
+      if fighterbytag[tag].group=='Hero' and CVV('&CHEAT.GOD') then dmg=0 end -- God Mode      
+      hp.Have = hp.Have - dmg -- Yeah that even works for absorb, as a negative value is then in dmg and two negatives make one positive.
+      if hp.Have<=0 then SetStatus(tag,'Death',true) end 
       CSay(sval(tag).." suffered "..dmg.." damage")                  
 end
 

@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 16.09.30
+  Version: 16.10.01
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -61,7 +61,12 @@ function DrawFighter(g,i)
         local c=200+(sin(Time.MSecs()/250)*55)
         color(c,255-c,0)
      end
-     ({Foe=DrawFoe,Hero=DrawHero})[g](i) -- Perhaps I need to do this otherwise, if there are serious performance issues.
+     local altdraw = false
+     for st,stdat in pairs(chdata) do
+         altdraw = altdraw or stdat.DrawReplace;
+         (stdat.DrawFighter or Nothing)(chdata.tag)
+     end    
+     if not altdraw then ({Foe=DrawFoe,Hero=DrawHero})[g](i) end -- Perhaps I need to do this otherwise, if there are serious performance issues.
      -- Show damage or other messages if any
      if array_charmessages and array_charmessages[chdata.tag] and array_charmessages[chdata.tag][1] then
         local acma = array_charmessages[chdata.tag]

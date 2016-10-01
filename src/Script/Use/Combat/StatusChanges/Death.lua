@@ -1,5 +1,5 @@
 --[[
-  AAA_Algemeen.lua
+  Death.lua
   Version: 16.10.01
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,29 +34,47 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+-- @IF IGNORE
+StatusChanges = {}
+-- @FI
 
--- @USEDIR Script/Use/Available
--- @USEDIR Script/Libs
--- @USEDIR Script/Use/Linkers
+StatusChanges.Death = {
 
-
-
-
--- Some definitions based on things
-
---[[
-function bv(tag,condition)
-  local ar = { [true]='TRUE',[false]='FALSE'}
-  Var.D(tag,ar[condition])
-end
-]]
-
-RPG = RPGChar -- LAAAAAAAAZY!!!
-
-vocals = JCR6.Exists('ID/ID.Vocal.Demo')==1
-  
-skill = tonumber(Var.C("%SKILL")); Console.Write('Difficulty setting is: '..skill,0,180,255)
-
-LC = LAURA.LauraStartUp -- Quick reference to get the LAURA start up configuration. Yes, I know, I'm lazy!
-
-function Nothing() end -- This function does nothing at all, and can be used for several things ;)
+         IgnoreDeath = true,
+         OnCure = function(ch) 
+                      if RPG.Points(ch,"HP").Have<=0 then RPG.Points(ch,"HP").Have=1 end
+                  end,
+         OnGiven = function(ch) 
+                        RPG.Points(ch,"HP").Have=0
+                        local dat = fighterbytag[ch]
+                        local scl = dat.StatusChanges
+                        local remove = {}
+                        for s,d in pairs(scl) do
+                            if not d.IgnoreDeath then remove[#remove+1] = s end
+                        end 
+                        for s in each(remove) do
+                            scl[s] = nil
+                        end
+                   end, 
+         DrawFighter = function(ch)
+                         local mychar = fighterbytag[ch]
+                         if mychar.group=='Foe' then
+                            DeathScale = DeathScale or {}
+                            DeathScale[ch] = DeathScale[ch] or {100,100}
+                            local ds = DeathScale[ch]
+                            ds[1] = ds[1] - 1
+                            ds[2] = ds[2] + 1
+                            Image.ScalePC(ds[1],ds[2])
+                            DrawFoe(mychar.id)
+                            Image.ScalePC(100,100)
+                            if ds[1]<=0 then
+                               fighterbytag[ch] = nil
+                               fighters.Foe[mychar.id] = nil
+                            end   
+                         else
+                         end 
+                       end,   
+         DrawReplace = true,                                          
+         SkipTurn = true         
+         
+}

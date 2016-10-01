@@ -178,9 +178,43 @@ function FPS()
    -- @FI 
 end
 
+Defeated = {}
+
+function Defeated.Hero()
+     if CVV("&COMBAT.RANDOMENCOUNTER") then
+        -- Go back to the last inn or spawning point
+        Sys.Error("Respawn not scripted yet")
+     else
+        flow = "GameOver"
+     end   
+end
+
+function Defeated.Foe()
+     flow = "Victory"
+end
+
+function VicCheck()
+   local defeated,cntc,cnti
+   for group,ga in pairs(fighters) do
+       cntc = 0; cnti = 0
+       for i,dat in pairs(ga) do
+           dat.StatusChanges = dat.StatusChanges or {}
+           defeated = false
+           for s,d in pairs(dat.StatusChanges) do
+               defeated = defeated or (d.SkipTurn and (not d.ExpireRoll))
+           end
+           cntc = cntc + 1    
+           if defeated then cnti = cnti + 1 end
+       end
+       if cntc<=cnti then Defeated[group]() return end       
+   end
+end
+
+
 function MAIN_FLOW()
     DrawScreen()
     CombatFlow()
+    VicCheck()
     FPS()
     Flip() -- Must be last
 end

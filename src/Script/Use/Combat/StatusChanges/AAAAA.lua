@@ -1,5 +1,5 @@
 --[[
-  AAA_Algemeen.lua
+  AAAAA.lua
   Version: 16.10.01
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,29 +34,31 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+-----------------------------------------------------
+-- Fields
+-- function OnGiven       -- Activates when status is given
+-- int      ExpireRoll    -- 1 to ... chance the status expires at the beginning of character's turn (if nil, the status lingers till the end of the battle)
+-- boolean  SkipTurn      -- If character has this, his or her turns will be skipped.
+-- boolean  BlockHeal     -- If set healing is blocked
+-- funtion  OnCure        -- What to do if this status is cured
+-- boolean  IgnoreDeath   -- If set to true, this status will not go away simply by dying
+-- function DrawFigher    -- Used to set some alternate settings to drawing a character
+-- boolean  DrawReplace   -- If set the original DrawFighter routine will not be executed.
+-----------------------------------------------------
 
--- @USEDIR Script/Use/Available
--- @USEDIR Script/Libs
--- @USEDIR Script/Use/Linkers
+
+StatusChanges = {}
 
 
 
-
--- Some definitions based on things
-
---[[
-function bv(tag,condition)
-  local ar = { [true]='TRUE',[false]='FALSE'}
-  Var.D(tag,ar[condition])
+function SetStatus(ch,st,dontannounce)
+    fighterbytag[ch].statuschanges = fighterbytag[ch].statuschanges or {}
+    local sc = fighterbytag[ch].statuschanges
+    if sc[st] then return end --- If the character already go this status change, then let's get autta here.
+    sc[st] = StatusChanges[st]
+    if not sc[st] then CSay("WARNING! Character '"..ch.."' got a non-existing status change ("..st..")") return end
+    (sc[st].OnGiven or Nothing)(ch)
+    if not dontannounce then
+       charmsg(ch,"! "..st.." !",StatusChanges[st].AnnR,StatusChanges[st].AnnG,StatusChanges[st].AnnB)
+    end   
 end
-]]
-
-RPG = RPGChar -- LAAAAAAAAZY!!!
-
-vocals = JCR6.Exists('ID/ID.Vocal.Demo')==1
-  
-skill = tonumber(Var.C("%SKILL")); Console.Write('Difficulty setting is: '..skill,0,180,255)
-
-LC = LAURA.LauraStartUp -- Quick reference to get the LAURA start up configuration. Yes, I know, I'm lazy!
-
-function Nothing() end -- This function does nothing at all, and can be used for several things ;)
