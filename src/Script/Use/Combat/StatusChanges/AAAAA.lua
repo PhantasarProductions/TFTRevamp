@@ -34,6 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
 -----------------------------------------------------
 -- Fields
 -- function OnGiven       -- Activates when status is given
@@ -61,4 +62,5 @@ function SetStatus(ch,st,dontannounce)
     if not dontannounce then
        charmsg(ch,"! "..st.." !",StatusChanges[st].AnnR,StatusChanges[st].AnnG,StatusChanges[st].AnnB)
     end   
+    CSay(ch.." now has the status: "..st)
 end

@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.09.29
+  Version: 16.10.01
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -37,14 +37,18 @@
 
 -- CSay("Item Linkers")
 
+LoadedItems = {}
+
 function LoadItemModule()
    MS.LoadNew("ITEMS","Script/Subs/Items.lua")
 end   
 
 ItemGet = ItemGet or function(i)
    LoadItemModule()
+   if LoadedItems[i] then return LoadedItems[i] end -- Don't load again if it was loaded before.
    MS.Run("ITEMS","ItemGet",i..";DUMPIT")
    local ret = loadstring(Var.C('$ITEMGET'))
+   LoadedItems[i] = ret()
    Var.Clear('$ITEMGET')
    return ret()
 end
