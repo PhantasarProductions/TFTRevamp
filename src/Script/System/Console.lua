@@ -40,12 +40,13 @@
 function IDDQD()
    Toggle('&CHEAT.GOD')
    CSay("God mode is now "..({TRUE='On',FALSE='False'})[Var.C('&CHEAT.GOD')])
-end; GOD=IDDQD   
-
--- @IF IGNORE
-function IDDQD()
 end
--- @FI
+
+function GOD() 
+   IDDQD() 
+end 
+   
+
 
 function ALLHP()
   local foeid
@@ -154,4 +155,13 @@ function TB_SHOWCHARMSG()
       return
   end 
   MS.Run("COMBAT",'dbg_charmsg')
+end
+
+
+function TB_FIGHTERS()
+  if MS.ContainsScript("COMBAT")==0 then
+      Console.Write("? Sorry, folks. Combat routine is not loaded!",255,0,0)
+      return
+  end 
+  MS.Run("COMBAT",'DebugFighter')
 end

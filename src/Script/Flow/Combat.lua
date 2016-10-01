@@ -210,6 +210,11 @@ function VicCheck()
    end
 end
 
+function DebugFighter()
+   local a = mysplit(showserialize("fighters",fighters),"\n")
+   for l in each(a) do CSay(l) end
+end
+
 
 function MAIN_FLOW()
     DrawScreen()

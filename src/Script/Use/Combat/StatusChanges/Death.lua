@@ -54,6 +54,7 @@ StatusChanges.Death = {
                         end 
                         for s in each(remove) do
                             scl[s] = nil
+                            CSay("Death removed status"..s.." from "..ch)
                         end
                    end, 
          DrawFighter = function(ch)
