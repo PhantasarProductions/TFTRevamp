@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.09.21
+  Version: 16.10.03
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -312,10 +312,13 @@ end
 function FieldStats()
     local p = Actors.Actor('PLAYER')
     if p.Walking~=0 or p.Moving~=0 then FSTime = nil; return end
-    FSTime = FSTime or 250
+    FSTime = FSTime or 150
     if FSTime<=0 then
        local stuff = {}
        local layer
+       FieldStatsAlpha =  (FieldStatsAlpha or 0) + 1
+       if FieldStatsAlpha>100 then FieldStatsAlpha=100 end
+       Image.SetAlphaPC(FieldStatsAlpha)
        if Maps.Multi()==1 then layer = Maps.LayerCodeName end
        stuff[1] = {'FSTIT',Maps.GetData('Title'),'FieldInfo'}
        if layer and left(layer,1)=="#" then stuff[2]={'FSROM',layer} end
@@ -329,7 +332,9 @@ function FieldStats()
            Image.Show(data[1],35,i*35)
            DarkText(data[2],75,i*35,0,0,180,255,0)
        end
+       Image.SetAlphaPC(100)
     else
+       FieldStatsAlpha = 0
        FSTime=FSTime-1
        --DarkText(FSTime,0,0,0,0)
     end
