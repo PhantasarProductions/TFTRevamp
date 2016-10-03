@@ -64,3 +64,19 @@ function SetStatus(ch,st,dontannounce)
     end   
     CSay(ch.." now has the status: "..st)
 end
+
+function expireroll(ch,st)
+   return rand(1,fighterbytag[ch].statuschanges.Expireroll)==1 
+end
+
+function TurnSkip(ch,allowexpireroll)
+     local ret = false
+     local remove = {}
+     if not fighterbytag[ch] then CSay("No character on tag "..ch.." (anymore)")return true end
+     for s,d in pairs(fighterbytag[ch].statuschanges or {}) do
+         if allowexpireroll and d.ExpireRoll and  expireroll(ch,s) then remove[#remove+1] = s end
+         if d.SkipTurn then ret = true end
+     end
+     for s in each(remove) do fighterbytag[ch].statuschanges[s] = nil end
+     return ret
+end              

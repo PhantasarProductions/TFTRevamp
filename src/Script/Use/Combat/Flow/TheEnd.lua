@@ -1,5 +1,5 @@
 --[[
-  Idle.lua
+  TheEnd.lua
   Version: 16.10.01
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,50 +34,57 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
+
 -- @IF IGNORE
 fflow = {}
 -- @FI
 
-function AddCard(data,aspot)
-    local card = { data=data }
-    local ch   = data.tag    
-    local spot = aspot or ( 25 + (order.tagorder[ch] * 2)+ (math.floor(rand(1,order.tagorder[ch])/2)) )
-    while cards[spot] and cards[spot].data do spot=spot+1 end -- If the spot is taken, move to the next one.
-    cards[spot] = card
+function f_vicinit()
+   if musicavailable then
+      Music("Sys/Silence.ogg")
+      SFX("Music/Combat/Victory.ogg")
+   end   
+   return true
 end
 
-function RemoveFirstCard()
-    local max = 0
-    for i,_ in pairs(cards) do if i>max then max=i end end
-    for i=1,max do cards[i] = cards[i] or {} end
-    table.remove(cards,1)
+function fflow.Victory()
+   local altvic = CVVN("$COMBAT.ALT_VICTORY")
+   if altvic then
+      Sys.Error("No Altvitory routine yet.")
+      return
+   end
+   vicinit = vicinit or f_vicinit()
+   Image.LoadNew('YOUWIN',"GFX/Combat/End/YouWin.png"); Image.HotCenter("YOUWIN")
+   youwinvalue=(youwinvalue or 0)+1
+   if youwinvalue>100 then 
+      youwinvalue=100
+      youwintimer = (youwintimer or 250) - 1
+      if youwintimer then
+         PullMusic()
+         LAURA.Flow(CVVN("$COMBAT.BACKCHAIN") or "FIELD")    
+      end
+   end   
+   Image.ScalePC(youwinvalue,100)
+   white()
+   Image.Show("YOUWIN",Center_X,youwinvalue)
+   Image.ScalePC(100,100)
+   local vit,hp,tag
+   for i=0,3 do
+       tag=RPG.PartyTag(i)
+       if tag~="" then
+          vit = RPG.Points(tag,"VIT")
+          hp  = RPG.Points(tag,"HP")
+          if vit.Have>0 and hp.Have<hp.Maximum then 
+             hp.Have = hp.Have + math.ceil(hp.Maximum/(200/skill))
+             vit.Have = vit.Have - 1
+          end  
+       end
+   end          
 end
 
-function fflow.idle()
-    -- Are there any fighters who do not have a card yet?
-    local k
-    for group,grouparray in pairs(Fighters) do
-        for idx,data in pairs(grouparray) do
-            k = nil
-            for _,crd in pairs(Cards) do -- Looking for the card
-                k = k or (crd.data and crd.data.group==group and crd.data.tag==data.tag and (not crd.data.ability)) 
-            end 
-            if not k then AddCard({group=group,tag=data.tag, letter=data.letter}) end
-        end
-    end
-    -- Make the cards flow
-    local card = Cards[1]
-    if card.y>40 then return end -- Card must be on top before we do anything at all!
-    if not card.data then
-       SFX('Audio/Combat/CardSlide.ogg')
-       -- table.remove(Cards,1)
-       RemoveFirstCard()
-       return
-    end
-    if card.data.group == 'Foe' then if  (not TurnSkip(card.data.tag,true)) then flow = 'foeinput' else RemoveFirstCard() end 
-    elseif card.data.group == 'Hero' then if (not TurnSkip(card.data.tag,true)) then fflow.setplayerinput(card.data.tag) else RemoveFirstCard() end end
+function fflow.Defeat()
 end
-
 
 -- @IF IGNORE
 return fflow

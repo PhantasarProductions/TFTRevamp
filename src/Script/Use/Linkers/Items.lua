@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.10.01
+  Version: 16.10.03
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -68,3 +68,17 @@ TreasureChest = TreasureChest or function(tag)
    LoadItemModule()
    MS.Run("ITEMS","TreasureChest",tag)
 end
+
+RemoveItem = RemoveItem or function (item,num)
+   LoadItemModule()
+  
+   MS.Run("ITEMS","RemoveItem",item..";"..(num or 1))
+end   
+
+function SelectedItem() -- Returns the last selected item and kills the selected item afterward. If no item is selected 'nil' will be returened
+   local ret = CVV("$SELECTEDITEM")  
+   Var.Clear("$SELECTEDITEM")
+   if ret=="" then return nil end
+   CSay("Returning: "..sval(ret))
+   return ret
+end   

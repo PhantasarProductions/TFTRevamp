@@ -35,7 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 
--- @DEFINE CPF_DBG
+-- @UNDEF CPF_DBG
 
 
 function CompileFoe(tag,data,oversoul)

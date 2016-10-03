@@ -1,6 +1,6 @@
 --[[
   PlayerInput.lua
-  Version: 16.09.29
+  Version: 16.10.03
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -76,7 +76,10 @@ fflow.inputicons = { attack = {
                                          end,
                                  key = KEY_LEFT,
                                  joyx = -1,
-                                 joyy = nil        
+                                 joyy = nil     ,  
+                                 selected = function()
+                                               nextact = { flow='selectitem' }
+                                            end 
                                },
                      guard = {
                                  x = 50, y = 0,
@@ -160,8 +163,35 @@ function fflow.playerselectsingletarget()
      if INP.KeyH(KEY_DOWN)==1 or joyhit(joy_down) then RedoTarget( 1) end
      if INP.KeyH(KEY_UP)==1   or joyhit(joy_up)   then RedoTarget(-1) end  
      if INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_SPACE)==1 or INP.MouseH(1)==1 or joyhit('CONFIRM') then 
-           flow='Execution' 
+           flow= nextact.aftertarget or 'Execution' 
         end
+end
+
+function fflow.PrepareAction(myitem,aftertarget)
+nextact.aftertarget = aftertarget;
+({
+     ['1F'] = function() nextact.group='Foe'  flow='playerselectsingletarget' end,
+     ['1A'] = function() nextact.group='Hero' flow='playerselectsingletarget' end,
+     ['AF'] = function() nextact.group='Foe'  flow=aftertarget                end,
+     ['AA'] = function() nextact.group='Hero' flow=aftertarget                end,
+})[myitem.Target]()
+end
+
+function fflow.ItemMin()
+    RemoveItem(nextact.act,1)
+    flow = 'Execution'
+end
+
+function fflow.selectitem()
+   local bx = 100
+   local by = 100
+   local bw = SW-200
+   local bh = SH-300
+   Box(bx,by,bw,bh)
+   ItemShowList('Combat','Combat',inputchar.tag,{bx,by,bw,bh})
+   ShowMouse()
+   local myitem = SelectedItem()
+   if myitem then nextact.act=myitem fflow.PrepareAction(ItemGet(myitem),'ItemMin') end   
 end
 
 -- @IF IGNORE

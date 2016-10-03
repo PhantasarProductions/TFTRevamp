@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.09.19
+  Version: 16.10.03
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -114,7 +114,10 @@ function FilterEnabledItems(pfilter,char,force)
     end
 end
 
+
 function ItemShowList(showfilter,enablefilter,char,psizes)
+   local sizes = ({['table']=psizes, ['string']=mysplit(psizes,",") })[type(psizes)]
+   local mx,my = GetMouse(); mx=sizes[1]+mx; my=sizes[2]+my
    local scrollid = "I_"..showfilter.."_"..enablefilter.."_"..char
    local col = {[true] = {[true]={255,180,0},[false]={255,255,255}},
                          [false]={[true]={100,100,100},[false]={70,70,70}}}
@@ -125,15 +128,21 @@ function ItemShowList(showfilter,enablefilter,char,psizes)
    if pos[scrollid]>#showitems[showfilter..(char or "")] then pos[scrollid] = #showitems[filter..(char or "")] end
    if pos[scrollid]<1 then pos[scrollid]=1 end
    titm = showitems[showfilter..(char or "")][pos[scrollid]]
-   local sizes = ({['table']=psizes, ['string']=mysplit(psizes,",") })[type(psizes)]
    SetFont('ItemName') 
    local c = col[true][enableditems[titm]==true]
    DarkText(items[titm].Desc,sizes[1]+25,tonumber(sizes[2]),0,0,180,255,0)
    -- CSay(psizes.." -> "..serialize('sizes',sizes))
    Scroller(scrollid,tonumber(sizes[1] or '0'),tonumber(sizes[2] or '0')+30,tonumber(sizes[3] or SW),tonumber(sizes[4] or SH)-30)
    local y,c
-   for idx,itm in ipairs(showitems[showfilter..(char or "")]) do
+   for idx,itm in ipairs(showitems[showfilter..(char or "")]) do       
        y = idx*25
+       if mx>0 and mx<tonumber(sizes[3]) and my>=y and my<=y-24 and INP.MouseH(1)==1 then
+          if y==pos[scrollid] then
+             Var.C("$SELECTEDITEM",itm)
+          else
+             y=post[scrollid]
+          end      
+       end   
        c = col[enableditems[showfilter..(char or "")][itm]==true][pos[scrollid]==idx]
        --CSay(itm..">> Enabled:"..sval(enableditems[itm]).." pos:" .. pos[scrollid].. " idx:"..idx)
        SetFont('ItemName') 
@@ -142,6 +151,19 @@ function ItemShowList(showfilter,enablefilter,char,psizes)
        DarkText(inventory[itm],sizes[3]-25,y,1,0,c[1],c[2],c[3])
    end
    EndScroller(scrollid)
+   if (INP.KeyH(KEY_DOWN)==1 or joyhit(joydown)) and pos[scrollid]<#showitems[showfilter..(char or "")]  then pos[scrollid] = pos[scrollid] + 1 end 
+   if (INP.KeyH(KEY_UP  )==1 or joyhit(joyup  )) and pos[scrollid]>                                   1  then pos[scrollid] = pos[scrollid] - 1 end 
+   if (INP.KeyH(KEY_SPACE)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_ENTER)==1 or joyhit('CONFIRM')) then 
+      Var.D("$SELECTEDITEM",showitems[showfilter..(char or "")][pos[scrollid]])
+      CSay("Selected: "..Var.C('$SELECTEDITEM')) 
+   end
+end
+
+function RemoveItem(item,num)
+    local rn = tonumber(num) or 1
+    if not inventory[item] then return CSay("WARNING! I could not remove item "..item.." as it was not in the inventory") end
+    if inventory[item]<rn then inventory[item]=0 CSay("WARNING! More items were requested to be removed than I had: "..item) else inventory[item] = inventory[item] - rn end
+    if inventory[item]<=0 then inventory[item]=nil end
 end
 
 function TreasureChest(tag)

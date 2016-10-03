@@ -114,6 +114,7 @@ function fflow.Execution()
          DarkText(sval(ExeShowMsg.Timer),50,50,0,0,255,255,255) -- What the hell is wrong here?
          Flip()
    end   
+   if nextact.executor.group=='Hero' then LastAction=nextact.executor.tag end
    flow = nextact.afterperform or 'idle' 
    nextact = nil
    table.remove(cards,1)

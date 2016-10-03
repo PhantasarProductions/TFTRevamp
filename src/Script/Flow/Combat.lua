@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 16.10.01
+  Version: 16.10.02
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -53,6 +53,7 @@ order={} -- No this is not the British parliament.
 bestiary = bestiary or {}
 oversoul = oversoul or {}
 groupmax = 100
+learn = learn or { Jake_Human={}, Marrilona={}, Dandor={}, HandoStillor={} } -- In GALE_OnLoad Jake_Human and Jake_Fairy are linked
 
 function SetUpCards()
     Cards = {}
@@ -213,6 +214,10 @@ end
 function DebugFighter()
    local a = mysplit(showserialize("fighters",fighters),"\n")
    for l in each(a) do CSay(l) end
+end
+
+function GALE_OnLoad()
+   learn.Jake_Fairy = learn.Jake_Human
 end
 
 
