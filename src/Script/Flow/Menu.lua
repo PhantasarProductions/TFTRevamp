@@ -83,13 +83,17 @@ function features.Status(x,y,w,h)
     local chn = menu.chn
     local ch  = RPGStat.PartyTag(chn)
     local py  = fonts.StatusStat[2]
-    local y   = 0
+    local wy  = 0
+    local showlevel,showexp
     Image.Origin(x+5,y+5)
     SetFont('StatusStat')                                                       
     DarkText(CharacterMeta[ch].race.." "..CharacterMeta[ch].sex,0,0,0,0,255,255,255)
     DarkText("Experience",0,py,0,0,255,255,255)
     DarkText("Level",0,py*2,0,0,255,255,255)
-    -- if RPG.Stat(ch,Level)<
+    if RPG.Stat(ch,'Level')<=CVV("%LEVELCAP") then showlevel = RPG.Stat(ch,'Level')          else showlevel = "---" end
+    if RPG.Stat(ch,'Level')< CVV("%LEVELCAP") then showexp   = RPG.SafeStat(ch,'Experience') else showexp   = "---" end
+    DarkText(showlevel,w,py  ,1,0,255,255,255)
+    DarkText(showexp  ,w,py*2,1,0,255,255,255)
     Image.Origin(0,0)    
 end
 
