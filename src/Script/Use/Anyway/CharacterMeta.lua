@@ -32,11 +32,12 @@
   
  **********************************************
  
-version: 16.10.01
+version: 16.10.03
 ]]
 CharacterMeta = {
 
              Jake = {
+                   race = "Human",
                    sex = "Male",
                    pvnw = "He",
                    bvnw = "His",
@@ -53,8 +54,9 @@ CharacterMeta = {
                    askillup5 = {'Endurance',2}
              },
              Marrilona = {
+                   race = "Fairy",
                    sex = "Female",
-                   pvnw = "See",
+                   pvnw = "She",
                    bvnw = "Her",
                    avnw = "Her",
                    skill1 = "Wand Waving Wonders",
@@ -69,6 +71,7 @@ CharacterMeta = {
                    askillup5 = {'Endurance',1}
              },
              Dandor = {
+                   race = "Dwarf",
                    sex = "Male",
                    pvnw = "He",
                    bvnw = "His",
@@ -81,6 +84,7 @@ CharacterMeta = {
                    askillup3 = {'Resistance',2}
              },      
              HandoStillor = {
+                   race = "Elf",
                    sex = "Male",
                    pvnw = "He",
                    bvnw = "His",
@@ -91,6 +95,7 @@ CharacterMeta = {
                    askillup2 = {'Intelligence',2},
              },
              Krandar = {
+                   race = "Black Winged Fairy",
                    sex = "Male",
                    pvnw = "He",
                    bvnw = "His",

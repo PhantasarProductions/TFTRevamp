@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 16.10.02
+  Version: 16.10.03
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -79,6 +79,14 @@ function features.Stats(x,y,w,h,f)
     if f~="Status" then return end
 end
 
+function features.Status(x,y,w,h)
+    local chn = menu.chn
+    local ch  = RPGStat.PartyTag(chn)
+    Image.Origin(x,y)
+    SetFont('StatusStat')                                                       
+    DarkText(CharacterMeta[ch].race.." "..CharacterMeta[ch].sex,0,0,0,0,255,255,255)
+    Image.Origin(0,0)    
+end
 
 function features.Items(x,y,w,h)
     profile.ci_filter = profile.ci_filter or 1
