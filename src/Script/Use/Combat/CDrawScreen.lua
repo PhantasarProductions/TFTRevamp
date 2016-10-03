@@ -1,6 +1,6 @@
 --[[
   CDrawScreen.lua
-  Version: 16.09.29
+  Version: 16.10.03
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -43,8 +43,10 @@ function ShowCard(i,myx,myy)
        if data then
           if data.group=='Hero' then show="HERO_"..data.tag end
           if data.group=="Foe"  then
-             show="FOE_"..(data.letter or 'UNKNOWN')
-             if data.boss then show="BOSS_"..(data.letter or 'UNKNOWN') end
+             if RPG.Points(data.tag,'HP').Have>0 then 
+                show="FOE_"..(data.letter or 'UNKNOWN')
+                if data.boss then show="BOSS_"..(data.letter or 'UNKNOWN') end
+             end   
           end
        end   
        LoadedCardImage = LoadedCardImage or {}
