@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.03
+version: 16.10.05
 ]]
 CharacterMeta = {
 
@@ -135,7 +135,7 @@ function CreateSkill(ch,num,level)
 end   
 
 function SetChSkill(ch,num,level)
-   if RPG.PointsExists(ch,"EXP_"..num)==1 then return end
+   -- if RPG.PointsExists(ch,"EXP_"..num)==1 then return end
    local exp = RPG.Points(ch,"SK_EXP_"..num)
    local lvl = RPG.Points(ch,"SK_LVL_"..num)
    SetSkill(exp,lvl,level or lvl.Have)
