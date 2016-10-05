@@ -42,6 +42,14 @@ lasthit = "IGNORE" -- Just fooling my outliner, or else it won't show things rig
 -- @FI
 
 
+rencgaugex = SW+100
+Image.LoadNew("RENCGAUGE","GFX/Combat/RENC/Gauge.png")
+Image.Hot("RENCGAUGE",Image.Width("RENCGAUGE")/2,Image.Height('RENCGAUGE'))
+rencgaugecol = {{0,0,255},{0,255,0},{255,180,0},{255,0,0}}
+rencstepchange = ({1000,750,500})[Sys.Val(Var.C("%SKILL"))]
+rencchance = {0,10000,7500,5000,100}
+rencnumtable = {}
+
 Scheduled = {}
 
 function GALE_OnLoad()
@@ -73,6 +81,28 @@ Image.LoadNew('NEEDLE','GFX/Algemeen/Needle.png'); Image.HotCenter('NEEDLE')
 if Maps.Multi()==1 then Maps.GotoLayer(orilayer) end    
 end
 
+function SetUpRencTable(pnum)
+    -- Info
+       -- Renc = Random Encounter. 
+       -- Unless specifically stated otherwise in some definition files all layers will have 5 encounters.
+       -- Leaving the dungeon or using savespots will reset this.
+    -- Init
+    local num = tonumber(pnum) or 5; if num<=0 then num=5 end 
+    rencnumtable = {}
+    if not Maps.GetData('Foes1') then return nil end -- If no enemies are set, then let's ignore this entire shit!
+    local nolaystring = Maps.GetData('NoEncZones')
+    local nolay = {}
+    if nolaystring~="" then nolay = mysplit(nolaystring,";") end
+    local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()    
+    -- Num Tables
+    for layer in each(layer) do
+        rencnumtable[layer] = num
+    end
+    for layer in each(nolay) do -- No encounters in these layers
+        rencnumtable[Str.Trim(layer)] = nil 
+    end
+end
+
 
 function LoadMap(map)
     -- Reset some stuff prior to loading
@@ -85,6 +115,7 @@ function LoadMap(map)
     MS.Run("MAP","MapMusic") 
     SetUpAutoClickables()
     SetUpCompassNeedles()
+    SetUpRencTable()
 end
 
 function GoToLayer(lay,spot)

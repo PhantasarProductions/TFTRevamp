@@ -158,11 +158,12 @@ function ShowSpellList(ch,psizes)
    -- Origin
    Image.Origin(sizes[1],sizes[2])
    -- Show
-   local ck,ca
+   local ck,ca,sk,sa
    local has = SpellList(ch)
    local cnt
    for i,k,a in iSpell(ch,ablpage[ch][SSLPG]) do
        local y=(i+1)*fonts.Stats[2]
+       sa=a; sk=k
        if i==SSLP then        ck=k       ca=a        c = {255,180,0} else c = {255,255,255} end
        if heroabl[k] then
           -- show spell
