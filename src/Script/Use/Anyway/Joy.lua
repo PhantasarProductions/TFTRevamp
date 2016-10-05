@@ -95,3 +95,15 @@ function joydown(code)
      return INP.JoyD(code)==1   
   end   
 end
+
+
+
+getpress = {
+                up = function() return joyhit(joy_up) or INP.KeyH(KEY_UP)==1 end,
+                down = function() return joyhit(joy_down) or INP.KeyH(KEY_DOWN)==1 end,
+                left = function() return joyhit(joy_left) or INP.KeyH(KEY_LEFT)==1 end,
+                right = function() return joyhit(joy_right) or INP.KeyH(KEY_RIGHT)==1 end,
+                confirm = function() return joyhit('CONFIRM') or INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_SPACE) end,
+                cancel = function() return joyhit('CANCEL') or INP.KeyH(KEY_ESCAPE) end
+           }
+

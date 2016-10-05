@@ -160,17 +160,17 @@ function ShowSpellList(ch,psizes)
    -- Show
    local ck,ca
    local has = SpellList(ch)
+   local cnt
    for i,k,a in iSpell(ch,ablpage[ch][SSLPG]) do
-       ck=k
-       ca=a
        local y=(i+1)*fonts.Stats[2]
-       if i==SSLP then c = {255,180,0} else c = {255,255,255} end
+       if i==SSLP then        ck=k       ca=a        c = {255,180,0} else c = {255,255,255} end
        if heroabl[k] then
           -- show spell
        else
           DarkText('---',10,y,0,2,c[1],c[2],c[3])
           if i==SSLP then DarkText("Hold H to see unlock info",sizes[3]-25,y,1,2,255,180,0) end
        end
+       cnt=i
    end
    -- Help
    if joydown('XTRA') or INP.KeyD(KEY_H)==1 then
@@ -197,6 +197,9 @@ function ShowSpellList(ch,psizes)
    end 
    -- Restore origin
    Image.Origin()
+   -- Keyboard and joypad input
+   if getpress.up  () and SSLP>  1 then SSLP = SSLP - 1 end
+   if getpress.down() and SSLP<cnt then SSLP = SSLP + 1 end
 end
 
 function ItemShowList(showfilter,enablefilter,char,psizes)
