@@ -122,6 +122,8 @@ function SetSkill(exp,lvl,level)
    exp.Maximum = level * ({20,25,30})[skill]
    lvl.Maximum = skill * ({300,250,100})[skill]
    if level>=lvl.Maximum then exp.Maximum = 0 end
+   lvl.Have = level or 1
+   lvl.Minimum = 1
 end
    
 function CreateSkill(ch,num,level)
@@ -148,6 +150,10 @@ function IncSkill(ch,num,points)
       RPG.IncStat(ch,"POWERUP_"..CharacterMeta[ch]['askillup'..num][1],CharacterMeta[ch]['askillup'..num][2])
       if charmsg then charmsg(ch,CharacterMeta[ch]['skill'..num],0,180,255) charmsg(ch,'Level up!',0,180,255) end
    end   
+end
+
+function GetCharList()
+   return JINC('Script/JINC/CharAbilities/List.lua')
 end
 -- @IF IGNORE
 return CharacterMeta

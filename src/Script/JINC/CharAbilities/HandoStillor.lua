@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  ABL_HERO_HANDOSTILLOR_FIRSTAID.lua
+  HandoStillor.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -34,22 +34,3 @@
  
 version: 16.10.03
 ]]
-ret = {
-	["ABL_APCost"] = 25,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
-	["Attack_Element"] = "None",
-	["Desc"] = "Weniaria can heal small wounds",
-	["Heal"] = nil,
-	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "StatPercent",
-	["Target"] = "1A",
-	["Title"] = "First Aid",
-	["Type"] = "Ability",
-	["rew_CreateSkill2"] = true,
-	["rew_GainSkill2"] = 10}
-
-return ret
-
--- This file is an automatically generated file!
-

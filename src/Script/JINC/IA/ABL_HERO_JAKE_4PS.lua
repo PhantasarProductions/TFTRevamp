@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  ABL_HERO_HANDOSTILLOR_FIRSTAID.lua
+  ABL_HERO_JAKE_4PS.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -35,19 +35,20 @@
 version: 16.10.03
 ]]
 ret = {
-	["ABL_APCost"] = 25,
+	["ABL_APCost"] = 50,
+	["Attack"] = 400,
+	["Attack_AccuracyRate"] = 100,
+	["Attack_AllowCritical"] = true,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Weniaria can heal small wounds",
+	["Desc"] = "I got a little present FOUR you",
 	["Heal"] = nil,
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "StatPercent",
-	["Target"] = "1A",
-	["Title"] = "First Aid",
+	["Target"] = "1F",
+	["Title"] = "Quatro Power Strike",
 	["Type"] = "Ability",
-	["rew_CreateSkill2"] = true,
-	["rew_GainSkill2"] = 10}
+	["rew_GainSkill1"] = 50}
 
 return ret
 

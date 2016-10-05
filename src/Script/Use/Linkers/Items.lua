@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.10.03
+  Version: 16.10.05
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -82,3 +82,9 @@ function SelectedItem() -- Returns the last selected item and kills the selected
    CSay("Returning: "..sval(ret))
    return ret
 end   
+
+ShowSpellList = ShowSpellList or function (ch,sizes)
+   LoadItemModule()
+   --CSay(serialize("Debug",sizes))
+   MS.Run("ITEMS","ShowSpellList",ch..";"..sizes[1]..","..sizes[2]..","..sizes[3]..","..sizes[4])
+end

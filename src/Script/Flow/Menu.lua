@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 16.10.03
+  Version: 16.10.05
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -79,11 +79,12 @@ function features.Stats(x,y,w,h,f)
     if f~="Status" then return end
 end
 
-function features.Status(x,y,w,h)
+function features.Status(x,y,pw,h)
     local chn = menu.chn
     local ch  = RPGStat.PartyTag(chn)
     local py  = fonts.StatusStat[2]
     local wy  = 0
+    local w   = pw - 5
     local showlevel,showexp
     Image.Origin(x+5,y+5)
     SetFont('StatusStat')                                                       
@@ -92,8 +93,34 @@ function features.Status(x,y,w,h)
     DarkText("Level",0,py*2,0,0,255,255,255)
     if RPG.Stat(ch,'Level')<=CVV("%LEVELCAP") then showlevel = RPG.Stat(ch,'Level')          else showlevel = "---" end
     if RPG.Stat(ch,'Level')< CVV("%LEVELCAP") then showexp   = RPG.SafeStat(ch,'Experience') else showexp   = "---" end
-    DarkText(showlevel,w,py  ,1,0,255,255,255)
-    DarkText(showexp  ,w,py*2,1,0,255,255,255)
+    DarkText(showlevel,w,py  ,1,0,255,180,000)
+    DarkText(showexp  ,w,py*2,1,0,255,180,000)
+    local master = "None"
+    local masterc = {255,0,0}
+    if RPG.DataExists(ch,"Master")~=0 and RPG.GetData(ch,"Master")~="" then 
+       master = RPG.GetData(ch,"Master")
+       masterc = {255,255,255}
+    end   
+    DarkText("Master",0,py*3,0,0,masterc[1],masterc[2],masterc[3])
+    DarkText(master,w,py*3,1,0,masterc[1],(masterc[2]/masterc[2])*180,0)
+    wy = py*4
+    for i=1,5 do
+        wy = wy + py        
+        if RPG.PointsExists(ch,'SK_LVL_'..i)==1 then
+           local e = RPG.Points(ch,'SK_EXP_'..i)
+           local deling = e.Have / e.Maximum
+           local barw = math.floor((SW/1200) * 250)
+           color(100,100,100)
+           Image.Rect(w-barw,wy+(py-5),barw,5)
+           color(255,180,0)
+           Image.Rect(w-barw,wy+(py-5),math.ceil(deling*barw))
+           DarkText(CharacterMeta[ch]['skill'..i],0,wy,0,0,255,255,255)
+           DarkText(RPG.Points(ch,'SK_LVL_'..i).Have,w,wy,1,0,255,180,0)
+           RPG.Points(ch,'SK_LVL_'..i).Minimum=1
+        elseif CharacterMeta[ch]['skill'..i] then
+           DarkText('???',0,wy,0,0,255,0,0)   
+        end
+    end
     Image.Origin(0,0)    
 end
 
@@ -102,6 +129,9 @@ function features.Items(x,y,w,h)
     ItemShowList(profile.ItemShowFilters[profile.ci_filter],profile.ItemEnable,RPG.PartyTag(menu.chn),{x,y,w,h})
 end
 
+function features.Abilities(x,y,w,h)
+    ShowSpellList(RPGStat.PartyTag(menu.chn),{x,y,w,h})
+end
 
 
 

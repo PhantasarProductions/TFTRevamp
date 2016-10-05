@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.10.03
+  Version: 16.10.05
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -36,10 +36,14 @@
 ]]
 -- @USE /Script/Use/Specific/Scroller.lua
 
+
 itemmax = ({50,25,10})[tonumber(Var.C("%SKILL"))]
 cashmax = ({1000000000,500000000,100000000})[tonumber(Var.C("%SKILL"))]
 
 inventory = inventory or { ITM_APPLE = ({20,10,1})[tonumber(Var.C("%SKILL"))]}
+heroabl = heroabl or {}
+abllist = {}
+ablpage = {}
 
 itemfilter = {
 
@@ -74,6 +78,19 @@ pos = {}
              
 function GALE_OnLoad()
    LoadItemModule = nil
+   chars = GetCharList()
+   for c in each(chars) do
+       abllist[c] = JINC('Script/JINC/CharAbilities/'..c..".lua")
+       if abllist[c] then
+          for k,d in pairs(abllist[c]) do
+              if type(d)=="string" then abllist[c][k]=abllist[d][k] CSay("Linked abl list of character "..c.." with "..d) end
+              ablpage[c] = ablpage[c] or {}
+              ablpage[c][#ablpage[c]+1] = k 
+          end
+       else
+          CSay("WARNING! I cannot yet linkscan empty character: "..c)       
+       end       
+   end
 end   
              
 function ItemGet(I,s)
@@ -114,6 +131,73 @@ function FilterEnabledItems(pfilter,char,force)
     end
 end
 
+function SpellList(ch)
+    local cch=ch; if prefixed(ch,"Jake_") then cch="Jake" end -- Prevent conflicts in Fairy in human list. If Jake unlocked a spell as a Fairy so did he as a human, it is only that not all spells appear in his list, that's all.
+    heroabl[cch] = heroabl[cch] or {}
+    return heroabl[cch]
+end
+
+function iSpell(ch,page)
+    local cnt = 0
+    local lst = {}
+    for key,a in spairs(abllist[ch][page]) do lst [#lst+1] = {k=key,a=a} end
+    return function()
+         cnt = cnt + 1
+         if cnt>#lst then return nil,nil,nil end
+         return cnt,lst[cnt].k,lst[cnt].a
+    end
+end
+
+function ShowSpellList(ch,psizes)
+   -- Set up
+   local sizes = ({['table']=psizes, ['string']=mysplit(psizes,",") })[type(psizes)]
+   local c
+   for i=1,#sizes do sizes[i] = Sys.Val(sizes[i]) end
+   if oldsslch~=ch then SSLP=1 SSLPG=1 oldsslch=ch end  
+   SetFont('Stats')
+   -- Origin
+   Image.Origin(sizes[1],sizes[2])
+   -- Show
+   local ck,ca
+   local has = SpellList(ch)
+   for i,k,a in iSpell(ch,ablpage[ch][SSLPG]) do
+       ck=k
+       ca=a
+       local y=(i+1)*fonts.Stats[2]
+       if i==SSLP then c = {255,180,0} else c = {255,255,255} end
+       if heroabl[k] then
+          -- show spell
+       else
+          DarkText('---',10,y,0,2,c[1],c[2],c[3])
+          if i==SSLP then DarkText("Hold H to see unlock info",sizes[3]-25,y,1,2,255,180,0) end
+       end
+   end
+   -- Help
+   if joydown('XTRA') or INP.KeyD(KEY_H)==1 then
+      if not has[ck] then
+         local b = fonts.SpellUnlockBox[2]
+         local sy = (SSLP+1)*fonts.Stats[2]
+         local cy = sy
+         Image.SetAlphaPC(50) black() Image.Rect(0,sy,sizes[3],b*7) Image.SetAlphaPC(100)
+         SetFont('SpellUnlockBox')
+         DarkText("To unlock you need:",5,cy,0,0,180,255,0)
+         for i=1,5 do
+             cy = cy + b
+             if ca[i] then 
+                if RPG.PointsExists(ch,"SK_LVL_"..i)==1 then
+                   DarkText(CharacterMeta[ch]['skill'..i],5,cy,0,0,255,255,255)
+                   DarkText(ca[i],sizes[3]-25,cy,1,0,255,180,0)
+                else   
+                   DarkText('???',5,cy,0,0,255,255,255)
+                   DarkText('??',sizes[3]-25,cy,1,0,255,180,0)
+                end
+             end
+         end
+      end   
+   end 
+   -- Restore origin
+   Image.Origin()
+end
 
 function ItemShowList(showfilter,enablefilter,char,psizes)
    local sizes = ({['table']=psizes, ['string']=mysplit(psizes,",") })[type(psizes)]

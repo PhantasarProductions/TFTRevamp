@@ -1,7 +1,7 @@
 --[[
   Mac.x86.lua
   
-  version: 16.08.12
+  version: 16.10.03
   Copyright (C) 2016 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
