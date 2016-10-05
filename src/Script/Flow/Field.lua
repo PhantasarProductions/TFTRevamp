@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.10.03
+  Version: 16.10.06
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -42,17 +42,19 @@ lasthit = "IGNORE" -- Just fooling my outliner, or else it won't show things rig
 -- @FI
 
 
-rencgaugex = SW+100
 Image.LoadNew("RENCGAUGE","GFX/Combat/RENC/Gauge.png")
 Image.Hot("RENCGAUGE",Image.Width("RENCGAUGE")/2,Image.Height('RENCGAUGE'))
 rencgaugecol = {{0,0,255},{0,255,0},{255,180,0},{255,0,0}}
 rencstepchange = ({1000,750,500})[Sys.Val(Var.C("%SKILL"))]
 rencchance = {0,10000,7500,5000,100}
-rencnumtable = {}
+rencnumtable = nil
+rencstep = 1
+rencon = true
 
 Scheduled = {}
 
 function GALE_OnLoad()
+  rencgaugex = SW+100
   PartyBarY = SH - 100
   if tonumber(LC('screen.margin.bottom') )~=0 then PartyBarY = SW - 125 end
 end  
@@ -95,12 +97,14 @@ function SetUpRencTable(pnum)
     if nolaystring~="" then nolay = mysplit(nolaystring,";") end
     local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()    
     -- Num Tables
-    for layer in each(layer) do
+    rencmaxnum = ({[0]=-1,[1]=num})[Maps.Multi()]
+    for layer in each(layers) do
         rencnumtable[layer] = num
     end
     for layer in each(nolay) do -- No encounters in these layers
         rencnumtable[Str.Trim(layer)] = nil 
     end
+    rencstep = 1    
 end
 
 
@@ -116,6 +120,7 @@ function LoadMap(map)
     SetUpAutoClickables()
     SetUpCompassNeedles()
     SetUpRencTable()
+    rencon = true    
 end
 
 function GoToLayer(lay,spot)
@@ -555,10 +560,39 @@ function MenuCheck()
    -- Mouse
 end
   
+function MustRenc()
+    -- If the Renc table was not loaded (mostly because of coming in from a saved game), let's force our way in.
+    if not rencnumtable then SetUpRencTable() end
+    -- Get layer information
+    local layer
+    if Maps.Multi()==0 then layer='SL:MAP' else layer=Maps.LayerCodeName end
+    local encnum = rencnumtable[layer]
+    -- Set x position
+    if encnum and rencgaugex>SW-50 then rencgaugex = rencgaugex - 1 elseif (not encnum) and rencgaugex<SW+150 then rencgaugex=rencgaugex + 1 end
+    -- Bar length
+    local bar = 100
+    if encnum and rencmaxnum then
+       bar = math.ceil((encnum/rencmaxnum)*100)
+    end 
+    local col = rencgaugecol[rencstep]
+    black()
+    Image.Rect(rencgaugex-5,((SH-1)-200)-100,10,100)
+    if rencon then
+       for x=rencgaugex-5,rencgaugex+5 do
+           local cmod = math.abs(math.sin((Time.MSecs()/200)+(x*10)))
+           color(round(col[1]*cmod),round(col[2]*cmod),round(col[3]*cmod))
+           Image.Line(x,(SH-1)-200,x,((SH-1)-200)-bar)
+           -- CSay("Image.Line("..x..","..tonumber((SH-1)-200)..","..x..","..tonumber(((SH-1)-200)-bar)..")  -- "..cmod.." -- "..round(col[1]*cmod)..","..round(col[2]*cmod)..","..round(col[3]*cmod))
+       end 
+       white() 
+    else color(50,50,50) end
+    Image.Show('RENCGAUGE',rencgaugex,SH-200)
+end  
 
-function MAIN_FLOW()
+function MAIN_FLOW()  
   Cls()
   DrawScreen()
+  MustRenc()
   --ManWalk()
   ScheduledExecution()
   Click()
