@@ -1,7 +1,7 @@
 --[[
-  Field.Lua
-  Version: 16.10.07
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Loading.lua
+  Version: 16.10.06
+  Copyright (C) 2015, 2016 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -35,37 +35,18 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 
--- MS.LoadNew("FIELD","Script/Flow/Field.lua")
 
-LoadMap = LoadMap or function(map)
-  MS.Run('FIELD','LoadMap',map)
-end
+---------------------------------------
+-- This is just a quick loading icon --
+-- This script does NOT provide the  --
+-- "LOADING" banner at the loading   --
+-- of the game itself (as that's     --
+-- an engine thingy)                 --
+---------------------------------------
 
-Schedule = Schedule or function(ms,fn)
-  MS.Run("FIELD","Schedule",ms..";"..fn)
-end  
-
-GetActive = GetActive or function()
-end
-
-TurnPlayer = TurnPlayer or function(wind)
-   MS.Run('FIELD','TurnPlayer',wind)
-end
-
-KillWalkArrival = KillWalkArrival or function()
-   MS.Run('FIELD','KillWalkArrival')
-end   
-   
-GoToLayer = GoToLayer or function(lay,spot)
-   MS.Run("FIELD","GoToLayer",lay..";"..spot)
-end   
-
-AddClickable = AddClickable or function(obj)
-  MS.LoadNew("FIELD","Script/Flow/Field.lua")
-  MS.Run("FIELD","AddClickable",obj)
-end  
-
-GotoLayerAutoHide = GotoLayerAutoHide or function(label)
-  MS.LoadNew("FIELD","Script/Flow/Field.lua")
-  MS.Run("FIELD","GotoLayerAutoHide",label)  
+function Loading()
+if Image.Loaded("STICKY")==0 then Image.AssignLoad("STICKY","GFX/System/Quill.png") end
+White()
+Image.Show("STICKY",5,5)
+Flip()
 end

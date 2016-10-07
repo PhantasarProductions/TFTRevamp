@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.30
+version: 16.10.06
 ]]
 
 ShowParty = ShowParty or function() 
@@ -43,6 +43,13 @@ Party = Party or function(p)
   MS.LN_Run('PARTY','Script/Subs/Party.lua','Party',p)
 end
 
-
+function CountPartyMembers()
+  local ret = 0
+  for i=0,3 do
+      if RPG.PartyTag(i)~="" then ret = ret + 1 end
+  end
+  return ret
+end      
+     
 
 NewParty = Party

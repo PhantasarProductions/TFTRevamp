@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.09.22
+  Version: 16.10.07
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -159,3 +159,22 @@ end
 function MAPSAVE()
    MS.Run("FIELD","GotoSave") -- Dirty code straight from hell, but I was lazy :-P
 end
+
+function MapHide(label,tag)
+   GotoLayerAutoHide(label)
+   ZA_Enter(tag or label,Maps.ShowLabel ,label)
+   ZA_Leave(tag or label,Maps.HideLabels,label)
+end
+
+function Z_Go(v,spot)
+   local layer = Maps.LayerCodeName
+   local layn  = Sys.Val(right(layer,#layer-1))
+   local nlay  = layn + v
+   GoToLayer("#"..right('00'..nlay,3),spot)
+end
+
+function Z_Next() Z_Go( 1,"Start") end 
+function Z_Prev() Z_Go(-1,"Einde") end
+
+ZA_Enter("Next",Z_Next)
+ZA_Enter("Prev",Z_Prev)

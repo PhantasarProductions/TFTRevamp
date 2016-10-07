@@ -1,6 +1,6 @@
 --[[
   CombatLinker.lua
-  Version: 16.09.22
+  Version: 16.10.06
   Copyright (C) 2015, 2016 Jeroen Petrus Broks
   
   ===========================
@@ -46,7 +46,41 @@ function ClearCombatData()
   end
 end
 
+function StartCombatAnimation()
+  local w,h,d
+  Image.GrabScreen('COMBATSTARTANIM') w = Image.Width('COMBATSTARTANIM') h = Image.Height('COMBATSTARTANIM') 
+  Image.Image2Anim('COMBATSTARTANIM',1,h,0,w); Image.HotCenter("COMBATSTARTANIM")
+  --[[
+  for px=-100,w+100 do
+      for ax=0,w-1 do
+          d = math.abs(px-ax)
+          if d<100 then Image.ScalePC(200-d) end
+          Image.Show("COMBATSTARTANIM",ax,Center_Y,ax)
+          Image.ScalePC(100)
+      end
+      Flip()
+  end
+  --]]
+  local downunder -- No I'm not referring to Australia :-P
+  local y,s={},{}
+  white()  
+  repeat
+     downunder = true
+     Cls()
+     for x=0,w-1 do
+         y[x] = y[x] or Center_Y
+         s[x] = s[x] or rand(3,9)
+         y[x] = y[x] + s[x]         
+         downunder = downunder and y[x]>SH+50+(SH/2)
+         Image.Show('COMBATSTARTANIM',x,y[x],x)
+     end
+     Flip()
+  until downunder
+end
+
 function StartCombat()
+  StartCombatAnimation()
+  Loading()
   MS.Load("COMBAT","Script/Flow/Combat.lua") -- Make sure everything in the battle is properly reset!
   MS.Run("COMBAT","InitCombat")
   LAURA.Flow("COMBAT")

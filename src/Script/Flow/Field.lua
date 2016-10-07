@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.10.06
+  Version: 16.10.07
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -37,6 +37,9 @@
 
 -- The Fairy Tale REVAMPED!!
 
+
+-- @UNDEF RENCDEBUG
+
 -- @IF INGORE
 lasthit = "IGNORE" -- Just fooling my outliner, or else it won't show things right!
 -- @FI
@@ -45,13 +48,16 @@ lasthit = "IGNORE" -- Just fooling my outliner, or else it won't show things rig
 Image.LoadNew("RENCGAUGE","GFX/Combat/RENC/Gauge.png")
 Image.Hot("RENCGAUGE",Image.Width("RENCGAUGE")/2,Image.Height('RENCGAUGE'))
 rencgaugecol = {{0,0,255},{0,255,0},{255,180,0},{255,0,0}}
-rencstepchange = ({1000,750,500})[Sys.Val(Var.C("%SKILL"))]
-rencchance = {0,10000,7500,5000,100}
+rencstepchange = ({250,150,50})[Sys.Val(Var.C("%SKILL"))]
+rencchance = {0,10000,5000,100,1} -- The 1 at the end should never be needed, but it must prevent a crash. If it's called for whatever reason, combat will ALWAYS start if possible.
 rencnumtable = nil
 rencstep = 1
+rencstepleft = recstepchange
 rencon = true
 
 Scheduled = {}
+
+AUTOHIDE = {}
 
 function GALE_OnLoad()
   rencgaugex = SW+100
@@ -104,13 +110,27 @@ function SetUpRencTable(pnum)
     for layer in each(nolay) do -- No encounters in these layers
         rencnumtable[Str.Trim(layer)] = nil 
     end
-    rencstep = 1    
+    rencstep = 1   
+    rencstepleft = recstepchange 
 end
 
+function SetUpRandomEncounters()
+    monstertable = {}
+    for s=1,skill do
+        local gs = Maps.GetData('Foes'..s)
+        local ga = mysplit(gs,";")
+        for m in each(ga) do
+            local ma = mysplit(m,",")
+            ma[2]=ma[2] or 1 -- If not properly set 1 will be added.
+            for ak=1,ma[2] do monstertable[#monstertable+1]=ma[1] end
+        end    
+    end    
+end
 
 function LoadMap(map)
     -- Reset some stuff prior to loading
     ResetClickables()
+    AUTOHIDE = {}
     -- Load the map itself
     Maps.Load(map)
     local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()
@@ -120,7 +140,16 @@ function LoadMap(map)
     SetUpAutoClickables()
     SetUpCompassNeedles()
     SetUpRencTable()
+    SetUpRandomEncounters()
     rencon = true    
+end
+
+function GotoLayerAutoHide(layer)
+    AUTOHIDE[#AUTOHIDE+1]=layer
+end
+
+function AutoHideAction()
+   for label in each(AUTOHIDE) do Maps.HideLabels(label) end
 end
 
 function GoToLayer(lay,spot)
@@ -130,6 +159,7 @@ function GoToLayer(lay,spot)
     end
     Maps.GoToLayer(lay)
     SpawnPlayer(spot)
+    AutoHideAction()
 end
 
 function ScheduledExecution()
@@ -559,6 +589,24 @@ function MenuCheck()
    end      
    -- Mouse
 end
+
+
+
+function RandomEncounter()
+   local countparty = CountPartyMembers()
+   local max = ({{1,2,3,4},{2,3,6,9},{3,6,9,9}})[skill][countparty]
+   local tab = ({{1,1,1,2,2,3,1,1,2,3,4},{3,3,3,1,3,3,2,2,3,3,4,4,3,6,3,3,1,1,9},{3,3,3,6,6,9}})[skill]
+   local num = rand(1,#tab)
+   local arena = Maps.GetData("Arena"); if not suffixed(arena,".png") then arena = arena..".png" end
+   if num>max then num=max end
+   ClearCombatData()
+   Var.D("$COMBAT.ARENA",arena)
+   assert(#monstertable>0,"I cannot run a Random Encounter without any monsters set")
+   for i=1,num do
+       Var.D("$FOE"..num,monstertable[rand(1,#monstertable)]) 
+   end
+   StartCombat()
+end
   
 function MustRenc()
     -- If the Renc table was not loaded (mostly because of coming in from a saved game), let's force our way in.
@@ -587,6 +635,45 @@ function MustRenc()
        white() 
     else color(50,50,50) end
     Image.Show('RENCGAUGE',rencgaugex,SH-200)
+    
+    -- @IF RENCDEBUG
+    Image.NoFont()
+    DarkText('rencon = '..sval(rencon),5,20)
+    DarkText('encnum = '..sval(encnum),5,40)
+    -- @FI
+    
+    -- When not encounters are possible, let's get out of here.
+    if not monstertable then SetUpRandomEncounters() end
+    if not rencon then return end
+    if not encnum then return end
+    if encnum<=0 then return end
+    if #monstertable<=0 then return end
+    -- player data
+    local player = Actors.Actor('PLAYER')
+    local walking = player.Walking==1 or player.Moving==1
+    -- @IF RENCDEBUG
+    DarkText('walking = '..sval(walking),5,60)
+    DarkText('rencstep = '..sval(rencstep),5,80)
+    DarkText('rencstepchange = '..sval(rencstepchange),5,100)
+    DarkText('rencstepleft = '..sval(rencstepleft),5,120)
+    -- @FI
+    
+    -- Change chance for encounter while walking and call the encounter routine when an encounter takes place.
+    if walking then
+       if rencstep<4 then
+          rencstepleft = (rencstepleft or 150) - 1
+          if rencstepleft <= 0 then
+             rencstepleft = recstepchange
+             rencstep = rencstep + 1
+          end
+       end
+       if rencstep>1 and rand(1,rencchance[rencstep])==1 then -- In renc level 1 NEVER any encounters, on any higher level, let's come up with it.
+          RandomEncounter()
+          rencstep=1
+          rencnumtable[layer] = rencnumtable[layer] - 1
+          rencstepleft = recstepchange
+       end
+    end
 end  
 
 function MAIN_FLOW()  

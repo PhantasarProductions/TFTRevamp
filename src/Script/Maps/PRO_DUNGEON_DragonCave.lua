@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.22
+version: 16.10.07
 ]]
 
 
@@ -62,3 +62,6 @@ function NPC_Guard()
    MapText('GUARD4')
 end      
    
+function GALE_OnLoad()
+   MapHide('Secret')
+end    
