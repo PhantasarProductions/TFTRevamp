@@ -1,7 +1,7 @@
 --[[
-  Fonts.lua
+  MiniMsg.Linker.lua
   Version: 16.10.08
-  Copyright (C) 2016 2015
+  Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,47 +34,18 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-
-
-
------------------------------
--- Definition of all fonts --
------------------------------
-
-
-fonts = {
-
-    -- BoxText = {"SuperSoulFighter.ttf",20} -- Font unreadable, but I'll keep this line in case nothing better comes my way
-    Compass = {"Coolvetica.ttf",20},
-    BoxTextContent = {"Coolvetica.ttf",20},
-    BoxTextHeader= {'master_of_break.ttf',20},
-    Tutorial = {"Coolvetica.ttf",10},
-    Stats = {"Monof55.ttf",20},
-    FieldInfo = {"Coolvetica.ttf",35},
-    FieldStat = {'Monof55.ttf',35},
-    SaveGameLine = {"Coolvetica.ttf",25},
-    StatusName = {"CoolVetica.ttf",45},
-    StatusStat = {'Monof55.ttf',35},
-    ItemName = {"Coolvetica.ttf",25},
-    ItemAmm = {'Monof55.ttf',25},
-    CombatName = {"master_of_break.ttf",50},
-    Target = {'Monof55.ttf',20},
-    CombatBigMessage = {'CoolVetica.TtF',45},
-    CombatCharMessage = {'Monof55.ttf',20},
-    SpellUnlockBox = {'CoolVetica.ttf',10},
-    MiniMsg = {'Monof55.ttf',20}
-}
-
-fonts.BoxText = fonts.BoxTextContent
-
-
---------------------------------------
--- And the function to set the font --
---------------------------------------
-function SetFont(font)
-if not fonts[font] then CSay("WARNING! Font "..sval(font).." does not exist in the list!") end
-if not fonts[font][1] then CSay("WARNING! Font "..sval(font).." does not refer to a file!") end
-Image.Font("Fonts/"..fonts[font][1],fonts[font][2])
+MiniMsg = MiniMsg or function(msg,x,y,r,g,b)
+    MS.LoadNew('MINIMSG','Script/Subs/MiniMsg.lua')
+    MS.Run('MINIMSG','MiniMsg',msg..";"..x..";"..y..";"..r..";"..g..";"..b)    
 end
 
-setfont = SetFont
+function ChMiniMsg(ch,msg,r,g,b) -- Only works in combat. All other routines should ignore this.
+    if not fighterbytag then return end
+    local myfoe = fighterbytag[ch]
+    MiniMsg(msg,myfoe.x,myfoe.y,r,g,b)
+end
+
+ShowMiniMsg = ShowMiniMsg or function    ()
+    MS.LoadNew('MINIMSG','Script/Subs/MiniMsg.lua')
+    MS.Run("MINIMSG",'ShowMiniMsg')
+end    

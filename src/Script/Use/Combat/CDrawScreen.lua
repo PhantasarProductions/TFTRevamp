@@ -1,6 +1,6 @@
 --[[
   CDrawScreen.lua
-  Version: 16.10.03
+  Version: 16.10.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -57,6 +57,7 @@ function ShowCard(i,myx,myy)
        end
        Image.Show('CARD_'..show,myx or Cards[i].x,myy or Cards[i].y)    
        -- Image.NoFont(); DarkText('Card #'..i.." must go to ("..x..",40) and is now on ("..Cards[i].x..","..Cards[i].y..")  Frmt: "..SW.."x"..SH,5,i*20,0,0,255,180,0) -- Debug
+       --ShowMiniMsg()
 end
 
 function ShowCards()
@@ -82,8 +83,8 @@ end
 function ShowBigMessage()
    if not dataBigMessage then return end
    local c = 225 - (math.sin(Time.MSecs()/200)*50)
-   SetFont('CombatBigMessage')
    Box(25,150,Screen.Width()-50,50)
+   SetFont('CombatBigMessage')
    if dataBigMessage.Image then
       white()   
       Image.Rotate(dataBigMessage.Rotate or -22)
@@ -95,8 +96,9 @@ function ShowBigMessage()
       ShowCard(dataBigMessage.Card,Center_X-(Image.TextWidth(dataBigMessage.Text)/2)-40,145)
    end   
    Image.Rotate(0)
+   SetFont('CombatBigMessage')
    DarkText(dataBigMessage.Text,Center_X,175,2,2,c,255,0)
-   dataBigMessage.Timer = (dataBigMessage.Timer or 250) - 1
+   dataBigMessage.Timer = (dataBigMessage.Timer or 150) - 1
    if dataBigMessage.Timer<=0 then dataBigMessage = nil end 
 end
 
@@ -113,6 +115,8 @@ function DrawScreen()
    ShowCards()
    -- Big Message
    ShowBigMessage()
+   -- Mini Message
+   ShowMiniMsg()
    -- Party
    ShowParty()
 end

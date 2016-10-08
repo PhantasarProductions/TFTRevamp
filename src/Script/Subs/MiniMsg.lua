@@ -1,7 +1,7 @@
 --[[
-  Fonts.lua
+  MiniMsg.lua
   Version: 16.10.08
-  Copyright (C) 2016 2015
+  Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,47 +34,31 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+tminimsg = {}
 
-
-
------------------------------
--- Definition of all fonts --
------------------------------
-
-
-fonts = {
-
-    -- BoxText = {"SuperSoulFighter.ttf",20} -- Font unreadable, but I'll keep this line in case nothing better comes my way
-    Compass = {"Coolvetica.ttf",20},
-    BoxTextContent = {"Coolvetica.ttf",20},
-    BoxTextHeader= {'master_of_break.ttf',20},
-    Tutorial = {"Coolvetica.ttf",10},
-    Stats = {"Monof55.ttf",20},
-    FieldInfo = {"Coolvetica.ttf",35},
-    FieldStat = {'Monof55.ttf',35},
-    SaveGameLine = {"Coolvetica.ttf",25},
-    StatusName = {"CoolVetica.ttf",45},
-    StatusStat = {'Monof55.ttf',35},
-    ItemName = {"Coolvetica.ttf",25},
-    ItemAmm = {'Monof55.ttf',25},
-    CombatName = {"master_of_break.ttf",50},
-    Target = {'Monof55.ttf',20},
-    CombatBigMessage = {'CoolVetica.TtF',45},
-    CombatCharMessage = {'Monof55.ttf',20},
-    SpellUnlockBox = {'CoolVetica.ttf',10},
-    MiniMsg = {'Monof55.ttf',20}
-}
-
-fonts.BoxText = fonts.BoxTextContent
-
-
---------------------------------------
--- And the function to set the font --
---------------------------------------
-function SetFont(font)
-if not fonts[font] then CSay("WARNING! Font "..sval(font).." does not exist in the list!") end
-if not fonts[font][1] then CSay("WARNING! Font "..sval(font).." does not refer to a file!") end
-Image.Font("Fonts/"..fonts[font][1],fonts[font][2])
+function MiniMsg(msg,x,y,r,g,b)
+   local newmsg = {
+                        msg=msg,
+                        x=tonumber(x) or 25, 
+                        y=tonumber(y) or SW, 
+                        r=tonumber(r) or 255, 
+                        g=tonumber(g) or 255, 
+                        b=tonumber(b) or 255, 
+                        time=100
+                  }
+   tminimsg[#tminimsg+1] = newmsg
+   CSay("MiniMsg: "..msg)
 end
 
-setfont = SetFont
+function ShowMiniMsg()
+   if oldflow~=LAURA.GetFlow() then tminimsg = {} oldflow=LAURA.GetFlow() end
+   Image.Rotate(0)
+   SetFont('MiniMsg')
+   local s = (math.sin(Time.MSecs())/100)+.5
+   for i,d in pairs(tminimsg) do
+       if d.x<25   then d.x=d.x+1 elseif d.x>25   then d.x=math.floor(d.x-1) end
+       if d.y<i*25 then d.y=d.y+1 elseif d.y>25*i then d.y=math.floor(d.y-2) else d.time=d.time-1 end
+       DarkText(d.msg,d.x,d.y,0,0,d.r*s,d.g*s,d.b*s)
+   end
+   if tminimsg[1] and tminimsg[1].time<=0 then table.remove(tminimsg,1) end 
+end

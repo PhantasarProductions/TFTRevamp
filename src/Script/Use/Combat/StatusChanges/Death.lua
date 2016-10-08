@@ -43,13 +43,13 @@ function KillAward(myfoe)
     -- Drop items
     for i=1,3 do
         if rand(1,100)<myfoe.data["Rate Drop "..i] then
-           local item = myfoe.data["Item rate "..i]
+           local item = myfoe.data["Item Drop "..i]
            local idat = ItemGet(item)
            local have = ItemHave(item)
            local itemmax = ({50,25,10})[tonumber(Var.C("%SKILL"))]
            if have<itemmax then
               ItemGive(item,1)
-              charmsg(myfoe.tag,'Dropped '..item,0,180,255)
+              ChMiniMsg(myfoe.tag,'Dropped '..idat.Title,0,180,255)
               return
            end
         end
@@ -58,7 +58,7 @@ function KillAward(myfoe)
     if myfoe.data.cash and myfoe.data.cash>0 then
        local acash = math.ceil(myfoe.data.cash * ({2,1,.5})[skill])
        local shilders = "shilders"; if acash==1 then shilders='shilder' end
-       charmsg(myfoe.tag,"Dropped "..acash.." "..shilders)
+       ChMiniMsg(myfoe.tag,"Dropped "..acash.." "..shilders)
     end
 end
 
