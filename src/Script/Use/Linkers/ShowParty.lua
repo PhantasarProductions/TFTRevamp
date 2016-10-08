@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.06
+version: 16.10.08
 ]]
 
 ShowParty = ShowParty or function() 
@@ -50,6 +50,16 @@ function CountPartyMembers()
   end
   return ret
 end      
+
+function PartyTable(truenum)
+  local tn = { [true] = 0, [false]=1}
+  local plus = tn[truenum~=false and truenum~=nil]
+  local ret = {}  
+  for i=0,3 do
+      if RPG.PartyTag(i)~="" then ret[i+plus] = RPG.PartyTag(i) end
+  end
+  return ret  
+end
      
 
 NewParty = Party

@@ -1,6 +1,6 @@
 --[[
   TheEnd.lua
-  Version: 16.10.01
+  Version: 16.10.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -43,7 +43,16 @@ fflow = {}
 function f_vicinit()
    if musicavailable then
       Music("Sys/Silence.ogg")
-      SFX("Music/Combat/Victory.ogg")
+      -- SFX("Music/Combat/Victory.ogg")
+      Audio.Load('Music/Combat/Victory.ogg','CVIC',1)
+      Audio.Play('CVIC','CVICC')
+   end
+   if LastAction and vocals then
+      local stances = {LastAction}
+      if upper(VicQ)=='BOSS' then stances = PartyTable end
+      for tag in each(stances) do fighterbytag[tag].stance='Victory' end
+      if prefixed(LastAction,"Jake") then LastAction="Jake" end
+      SFX('VOCALS/Combat/Hero/'..LastAction.."/Victory/"..(VicQ or "General")..".ogg")
    end   
    return true
 end
@@ -59,8 +68,8 @@ function fflow.Victory()
    youwinvalue=(youwinvalue or 0)+1
    if youwinvalue>100 then 
       youwinvalue=100
-      youwintimer = (youwintimer or 250) - 1
-      if youwintimer then
+      youwintimer = (youwintimer or 150) - 1
+      if youwintimer<=0 and Audio.Playing('CVICC')==0 then
          PullMusic()
          LAURA.Flow(CVVN("$COMBAT.BACKCHAIN") or "FIELD")    
       end
