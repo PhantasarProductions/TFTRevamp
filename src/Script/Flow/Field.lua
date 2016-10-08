@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.10.07
+  Version: 16.10.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -100,7 +100,7 @@ function SetUpRencTable(pnum)
     if not Maps.GetData('Foes1') then return nil end -- If no enemies are set, then let's ignore this entire shit!
     local nolaystring = Maps.GetData('NoEncZones')
     local nolay = {}
-    if nolaystring~="" then nolay = mysplit(nolaystring,";") end
+    if nolaystring~="" then nolay = mysplit(nolaystring,",") end
     local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()    
     -- Num Tables
     rencmaxnum = ({[0]=-1,[1]=num})[Maps.Multi()]
@@ -109,6 +109,7 @@ function SetUpRencTable(pnum)
     end
     for layer in each(nolay) do -- No encounters in these layers
         rencnumtable[Str.Trim(layer)] = nil 
+        CSay("There should be no random encounters in layer: "..sval(layer))
     end
     rencstep = 1   
     rencstepleft = recstepchange 
