@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.10.06
+  Version: 16.10.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -98,6 +98,17 @@ function ItemGet(I,s)
      -- local ret = f()
      if s then Var.D("$ITEMGET",serialize("ret",ret).."\n\nreturn ret") end
      return ret
+end
+
+function ItemHave(i,d)
+   local r = Sys.Val(inventory[i])
+   if d then Var.D('%ITEMHAVE',r) end
+   return r
+end
+
+function ItemGive(i,n)
+   inventory[i] = inventory[i] + (tonumber(n) or 1)
+   if inventory[i]>itemmax then inventory[i]=itemmax end
 end
 
 function ItemFilterReset() filtereditems = {} end

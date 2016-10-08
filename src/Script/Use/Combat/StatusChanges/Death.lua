@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 16.10.01
+  Version: 16.10.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -38,6 +38,30 @@
 StatusChanges = {}
 -- @FI
 
+function KillAward(myfoe)
+    -- Experience
+    -- Drop items
+    for i=1,3 do
+        if rand(1,100)<myfoe.data["Drop rate "..i] then
+           local item = myfoe.data["Item rate "..i]
+           local idat = ItemGet(item)
+           local have = ItemHave(item)
+           local itemmax = ({50,25,10})[tonumber(Var.C("%SKILL"))]
+           if have<itemmax then
+              ItemGive(item,1)
+              charmsg(myfoe.tag,'Dropped '..item,0,180,255)
+              return
+           end
+        end
+    end
+    -- If no items are dropped, drop money in stead of this foe has it.
+    if myfoe.data.cash and myfoe.data.cash>0 then
+       local acash = math.ceil(myfoe.data.cash * ({2,1,.5})[skill])
+       local shilders = "shilders"; if acash==1 then shilders='shilder' end
+       charmsg(myfoe.tag,"Dropped "..acash.." "..shilders)
+    end
+end
+
 StatusChanges.Death = {
 
          IgnoreDeath = true,
@@ -69,6 +93,7 @@ StatusChanges.Death = {
                             DrawFoe(mychar.id)
                             Image.ScalePC(100,100)
                             if ds[1]<=0 then
+                               KillAward(fighterbytag[ch])
                                fighterbytag[ch] = nil
                                fighters.Foe[mychar.id] = nil
                             end   

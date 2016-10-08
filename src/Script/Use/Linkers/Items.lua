@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.10.05
+  Version: 16.10.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -52,6 +52,15 @@ ItemGet = ItemGet or function(i)
    Var.Clear('$ITEMGET')
    return ret()
 end
+
+ItemHave = ItemHave or function(i)
+   LoadItemModule()
+   MS.Run("ITEMS","ItemHave",i..";DUMPIT")
+   local ret = CVV('%ITEMHAVE')   
+   Var.Clear('%ITEMHAVE')
+   return ret
+end
+   
          
 ItemFilterReset = ItemFilterReset or function()
    LoadItemModule()
@@ -82,6 +91,11 @@ function SelectedItem() -- Returns the last selected item and kills the selected
    CSay("Returning: "..sval(ret))
    return ret
 end   
+
+ItemGive = ItemGive or function(i,n)
+   LoadItemModule()
+   MS.Run("ITEMS","ItemGive",i..";"..(n or 1))
+end
 
 ShowSpellList = ShowSpellList or function (ch,sizes)
    LoadItemModule()
