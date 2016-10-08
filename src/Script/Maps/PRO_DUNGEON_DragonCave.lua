@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.07
+version: 16.10.08
 ]]
 
 
@@ -61,7 +61,29 @@ function NPC_Guard()
    GoToLayer('#001','Start')
    MapText('GUARD4')
 end      
+
+function SetUpPuzzle()
+   if PuzzleData then return end   
+   PuzzleData = {}; Puzzle = PuzzleData
+   PuzzleData.Today = (Sys.Val(left(Time.Date(),2))); CSay("Today is "..PuzzleData.Today)
+   PuzzleData.Slots = {}; local slots = PuzzleData.Slots -- I love reference based stuff. You too?
+   for i= 1 , 3 do
+       repeat slots[i]=rand(1,31) until slots[i]~=PuzzleData.Today 
+   end
+   Puzzle.DontTouch = rand(1,3)
+   slots[Puzzle.DontTouch] = Puzzle.Today
+end
+
+function NTSign(num) 
+  Var.D("%NOTTODAYTAG",PuzzleData.Slots[num])
+  MapText('NOTTODAYTAG')
+end
+
+function NPC_S1() NTSign(1) end
+function NPC_S2() NTSign(2) end
+function NPC_S3() NTSign(3) end
    
 function GALE_OnLoad()
    MapHide('Secret')
+   ZA_Enter('StartPuzzle',SetUpPuzzle)
 end    
