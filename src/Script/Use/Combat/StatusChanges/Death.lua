@@ -42,7 +42,7 @@ function KillAward(myfoe)
     -- Experience
     -- Drop items
     for i=1,3 do
-        if rand(1,100)<myfoe.data["Drop rate "..i] then
+        if rand(1,100)<myfoe.data["Rate Drop "..i] then
            local item = myfoe.data["Item rate "..i]
            local idat = ItemGet(item)
            local have = ItemHave(item)
