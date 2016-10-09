@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.10.08
+  Version: 16.10.09
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -189,8 +189,14 @@ local ret
 if mousehit(1) or (fakex or fakey) then -- Left Mouse button    
    -- CSay("Checking click ("..mx..","..my..")") -- debug
    if my>PartyBarY and (not (fakex or fakey) )then  -- must come prior to checks in the field
-      for ak=0,5 do
-          if ClickedChar(ak) then FGoToMenu(ak) end
+      for ak=0,3 do
+          if ClickedChar(ak) then 
+             --FGoToMenu(ak)
+             MS.LoadNew("MENU","Script/Flow/Menu.lua")      
+             MS.Run("MENU","Menu_Init","Field")
+             MS.Run('MENU','Menu_SetChar',ak)      
+             LAURA.Flow("MENU")              
+             end
           end
    --[[ Star Story only       
    elseif IconClicked then -- Must come prior to checks in the field

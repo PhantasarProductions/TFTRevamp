@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.08
+version: 16.10.09
 ]]
 
 ShowParty = ShowParty or function() 

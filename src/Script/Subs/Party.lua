@@ -187,6 +187,19 @@ function CreateChar(ch,name)
   RPGStat.SetData(ch,'Face',ch)
 end
 
+function ClickedChar(ch,dump)
+   local sy=(totalheight-100)+origin[2]
+   local sx=origin[1]
+   local minx = sx+(ch*charentrywidth)
+   local miny = sy
+   local maxx = charentrywidth+sx
+   local maxy = miny+100
+   local muisx,muisy = GetMouse()
+   local ret = muisx>=minx and muisx<=maxx and muisy>=miny and muisy<=maxy
+   if dump then Var.D("&CLICKEDCHAR",upper(sval(ret))) end
+   return ret
+end
+
 
 function Party(...)
 RPGChar.NewParty(4)

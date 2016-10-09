@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 16.10.05
+  Version: 16.10.09
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -56,10 +56,10 @@ features = {}
 
 fnpc = false
 function features.notpresent(x,y,w,h,f)
-local c = {[false]=0, [true]=255}
-fnpc = not fnpc
-DarkText("Feature "..sval(f),x+(w/2),y+10,2,0,255,c[fnpc],0)
-DarkText("NOT PRESENT!",x+(w/2),y+h,2,1,255,c[fnpc],0)
+  local c = {[false]=0, [true]=255}
+  fnpc = not fnpc
+  DarkText("Feature "..sval(f),x+(w/2),y+10,2,0,255,c[fnpc],0)
+  DarkText("NOT PRESENT!",x+(w/2),y+h,2,1,255,c[fnpc],0)
 end
 
 function features.Stats(x,y,w,h,f)
@@ -236,6 +236,10 @@ function Menu_Keys()
    if ( INP.KeyH(KEY_ESCAPE)==1 or joyhit('CANCEL')) and profile.EscReturn then
       LAURA.Flow(profile.EscReturn)
    end   
+end
+
+function Menu_SetChar(ch)
+  menu.chn = Sys.Val(ch)
 end
 
 function MAIN_FLOW()
