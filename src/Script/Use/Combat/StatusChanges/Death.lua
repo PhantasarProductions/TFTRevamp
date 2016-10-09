@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 16.10.08
+  Version: 16.10.09
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -42,7 +42,7 @@ function KillAward(myfoe)
     -- Experience
     -- Drop items
     for i=1,3 do
-        if rand(1,100)<myfoe.data["Rate Drop "..i] then
+        if rand(1,100)<(myfoe.data["Rate Drop "..i] or 0) then
            local item = myfoe.data["Item Drop "..i]
            local idat = ItemGet(item)
            local have = ItemHave(item)

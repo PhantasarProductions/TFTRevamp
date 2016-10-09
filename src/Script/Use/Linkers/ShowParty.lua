@@ -60,6 +60,13 @@ function PartyTable(truenum)
   end
   return ret  
 end
+
+ClickedChar = ClickedChar or function(num)
+   MS.LN_Run('PARTY','Script/Subs/Party.lua','ClickedChar',num..";DUMP")
+   local ret = CVV("&CLICKEDCHAR")
+   Var.Clear("&CLICKEDCHAR")
+   return ret
+end
      
 
 NewParty = Party

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.08
+version: 16.10.09
 ]]
 
 
@@ -82,6 +82,39 @@ end
 function NPC_S1() NTSign(1) end
 function NPC_S2() NTSign(2) end
 function NPC_S3() NTSign(3) end
+
+puzzledone = "&DONE.PROLOGUE.DRAGONCAVE.NOTTODAY"
+
+function NTSwitch(num)
+    if CVV(puzzledone) then return MapText('STUCK') end
+    switched = switched or {false,false,false}
+    switched[num] = not switched[num]
+    local obj = Maps.Obj.Obj('NPC_SW'..num)
+    obj.TextureFile = "GFX/Textures/Switch/"..({[true]='Right',[false]='Left'})[switched[num]]..".png"
+    local goed = true
+    for i=1,3 do       
+        goed = goed and switched[i]==(PuzzleData.DontTouch~=i)
+        CSay("i = "..i.."; goed = "..sval(goed).."; switched["..i.."] = "..sval(switched[i]).."; condition = "..sval(PuzzleData.Today~=i))
+    end    
+    if goed then
+       Done(puzzledone)
+       Maps.CamY=0
+       local deuren = { {Maps.Obj.Obj('Puz_deur_links'),-1},{Maps.Obj.Obj('Puz_deur_rechts'),1}}
+       for i=0,40 do
+           for deur in each(deuren) do deur[1].X=deur[1].X+deur[2] end
+           Cls()
+           DrawScreen()
+           Flip()
+       end
+       Maps.Obj.Kill('Puz_deur_links' ,1)
+       Maps.Obj.Kill('Puz_deur_rechts',1)
+       Maps.Remap()
+    end
+end
+
+function NPC_SW1() NTSwitch(1) end
+function NPC_SW2() NTSwitch(2) end
+function NPC_SW3() NTSwitch(3) end
    
 function GALE_OnLoad()
    MapHide('Secret')
