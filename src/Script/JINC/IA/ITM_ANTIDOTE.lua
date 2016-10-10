@@ -1,6 +1,6 @@
 --[[
   ITM_ANTIDOTE.lua
-  Version: 16.10.03
+  Version: 16.10.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -40,7 +40,6 @@ ret = {
 	["Attack_Element"] = "None",
 	["CurePoison"] = true,
 	["Desc"] = "Poison be gone",
-	["Heal"] = nil,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,

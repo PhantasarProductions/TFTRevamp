@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 16.09.12
+  Version: 16.10.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -190,7 +190,7 @@ end
 function ClickedChar(ch,dump)
    local sy=(totalheight-100)+origin[2]
    local sx=origin[1]
-   local minx = sx+(ch*charentrywidth)
+   local minx = sx+(Sys.Val(ch)*charentrywidth)
    local miny = sy
    local maxx = charentrywidth+sx
    local maxy = miny+100

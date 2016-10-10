@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.10.08
+  Version: 16.10.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -101,4 +101,18 @@ ShowSpellList = ShowSpellList or function (ch,sizes)
    LoadItemModule()
    --CSay(serialize("Debug",sizes))
    MS.Run("ITEMS","ShowSpellList",ch..";"..sizes[1]..","..sizes[2]..","..sizes[3]..","..sizes[4])
+end
+
+HealTypes = {
+               Absolute    = function(ch,item) return item.Heal end,
+               Percent     = function(ch,item) return math.ceil((item.Heal/100)*RPG.Points(ch,"HP").Maximum) end,
+               StatPercent = function(ch,item,bytag) return meth.ceil((item.Heal/100)*RPG.Stat(bytag,item.Heal_StatPercent)) end
+            }
+
+function ItemHeal(ch,itemdata,retonly,bytag)
+    if (not itemdata.Heal) then return --[[CSay('Heal nil -- '..serialize('itemdata',itemdata))]] end
+    if (itemdata.Heal<=0) then return --[[CSay('Heal zero') ]] end
+    local ret = (HealTypes[itemdata.Heal_Type] or Sys.Error("I don't know Heal Type"..sval(itemdata.Heal_Type)))(ch,itemdata,bytag)
+    if not retonly then RPG.Points(ch,"HP").Inc(ret) end
+    return ret
 end

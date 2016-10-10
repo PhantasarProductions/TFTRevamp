@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.03
+version: 16.10.10
 ]]
 ret = {
 	["ABL_APCost"] = 25,
@@ -40,7 +40,7 @@ ret = {
 	["Attack_DefenseStat"] = "Power",
 	["Attack_Element"] = "None",
 	["Desc"] = "Weniaria can heal small wounds",
-	["Heal"] = nil,
+	["Heal"] = 75,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "StatPercent",
 	["Target"] = "1A",

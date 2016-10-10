@@ -1,6 +1,6 @@
 --[[
   ITM_APPLE.lua
-  Version: 16.10.03
+  Version: 16.10.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -39,7 +39,7 @@ ret = {
 	["Attack_DefenseStat"] = "Power",
 	["Attack_Element"] = "None",
 	["Desc"] = "An apple a day keeps the doctor away",
-	["Heal"] = nil,
+	["Heal"] = 65,
 	["Heal_StatPercent"] = "Power",
 	["Heal_Type"] = "Absolute",
 	["ITM_Combat"] = true,

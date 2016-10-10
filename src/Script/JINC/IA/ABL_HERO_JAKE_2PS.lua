@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.03
+version: 16.10.10
 ]]
 ret = {
 	["ABL_APCost"] = 20,
@@ -43,8 +43,8 @@ ret = {
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
 	["Desc"] = "Double-Double-Toil-And-Trouble",
-	["Heal"] = nil,
 	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
 	["Target"] = "1F",
 	["Title"] = "Double Power Strike",
 	["Type"] = "Ability",

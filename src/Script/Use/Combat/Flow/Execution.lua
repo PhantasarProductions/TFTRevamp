@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 16.10.01
+  Version: 16.10.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -47,17 +47,29 @@ fflow = {}
 
 fflow.SpellAni = {[true]=function(act) MS.Load("X_SPELLANI","Script/SpellAni/"..act.SpellAni..".lua") MS_Run("X_SPELLANI","SPELLANI",act.SpellAni_Args) end, [false]=function(act) SpellAni[act.SpellAni](act.SpellAni_Args) end}
 
+function AltHealing(group,i,Heal)
+end
 
 function PerformAction(act,group,i)
      local effect = nil
+     local myfighter = Fighters[group][i]
      -- Accuracy check if needed. If it fails, byebye
      -- Dodge check if needed. If it succeeds, byebye
      -- Cure status changes (this always comes first)
+     -- Dispell Buffs 
      -- Recover HP or AP
+     local heal = ItemHeal(myfighter.tag,act,true,nextact.executor.tag)
+     effect = effect or (heal and heal>0)
+     if heal and heal>0 then
+        if not AltHealing(group,i,heal) then RPG.Points(myfighter.tag,"HP").Inc(heal) charmsg(myfighter.tag,heal,0,255,0) end
+     end
      -- Attack
      if act.Attack and act.Attack>0 then effect=effect or Attack(act,group,i,nextact) end
+     -- Put on buffs
      -- Scripted stuff
      -- Cause status changes (this always comes last)
+     -- Throw "miss" if there is no effect (very last)
+     if not effect then charmsg(myfighter.tag,'miss',155,155,155) end
 end
 
 fflow.Range = { ['1F'] = function(act)

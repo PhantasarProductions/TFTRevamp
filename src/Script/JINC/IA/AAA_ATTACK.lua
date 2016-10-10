@@ -1,6 +1,6 @@
 --[[
   AAA_ATTACK.lua
-  Version: 16.10.03
+  Version: 16.10.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -44,7 +44,6 @@ ret = {
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
 	["Desc"] = "Attack the enemy",
-	["Heal"] = nil,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["Rew_GainAP"] = 6,
