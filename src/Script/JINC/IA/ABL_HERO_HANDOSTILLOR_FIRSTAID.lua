@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.10
+version: 16.10.12
 ]]
 ret = {
 	["ABL_APCost"] = 25,
@@ -43,6 +43,7 @@ ret = {
 	["Heal"] = 75,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "StatPercent",
+	["Stance"] = "Cast",
 	["Target"] = "1A",
 	["Title"] = "First Aid",
 	["Type"] = "Ability",

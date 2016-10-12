@@ -1,5 +1,5 @@
 --[[
-  Gob.lua
+  GobKing.lua
   Version: 16.10.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Wed 12 October 2016; 21:26:16
+-- File Generated: Wed 12 October 2016; 21:26:24
 
 
 local foe = {}
@@ -70,7 +70,7 @@ local foe = {}
 	foe["SKILL\49_ABL_HERO_JAKE_\51PS"] = true
 	foe["SKILL\49_ABL_HERO_JAKE_\52PS"] = true
 	foe["SKILL\49_ITM_ANTIDOTE"] = true
-	foe["SKILL\49_ITM_APPLE"] = true
+	foe["SKILL\49_ITM_APPLE"] = false
 	foe["SKILL\49_ITM_FLAMEORB"] = true
 	foe["SKILL\50_AAA_ATTACK"] = true
 	foe["SKILL\50_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
@@ -88,21 +88,21 @@ local foe = {}
 	foe["SKILL\51_ITM_ANTIDOTE"] = true
 	foe["SKILL\51_ITM_APPLE"] = true
 	foe["SKILL\51_ITM_FLAMEORB"] = true
-	foe["Desc"] = "\34Me King\44 you dead\34\10That\39s basically their way of thinking\46\10Smart\44 eh?"
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47reg\47Gob\46png"
+	foe["Desc"] = "Leader of the goblins\46\10Not smarter\44 only a bit stronger"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Boss\47GobKing\46png"
 	foe["Item Drop \49"] = "ITM_APPLE"
-	foe["Item Drop \50"] = "ITM_ANTIDOTE"
-	foe["Item Steal \49"] = "ITM_APPLE"
+	foe["Item Drop \50"] = "ITM_FLAMEORB"
+	foe["Item Steal \49"] = "ITM_ANTIDOTE"
 	foe["Item Steal \50"] = "ITM_ANTIDOTE"
 	foe["Item Steal \51"] = "ITM_ANTIDOTE"
-	foe["Name"] = "Goblin"
+	foe["Name"] = "Goblin King"
 	foe["RATE_AAA_ATTACK"] = 100
 	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = 0
 	foe["RATE_ABL_HERO_JAKE_\50PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\52PS"] = 0
 	foe["RATE_ITM_ANTIDOTE"] = 0
-	foe["RATE_ITM_APPLE"] = 0
+	foe["RATE_ITM_APPLE"] = 10
 	foe["RATE_ITM_FLAMEORB"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = "Random"
@@ -112,27 +112,27 @@ local foe = {}
 	foe["TARGET_ITM_ANTIDOTE"] = "Random"
 	foe["TARGET_ITM_APPLE"] = "Random"
 	foe["TARGET_ITM_FLAMEORB"] = "Random"
-	foe["Boss"] = false
+	foe["Boss"] = true
 	foe["Oversoul"] = false
 	foe["Oversoul Drop \49"] = false
 	foe["Oversoul Drop \50"] = false
 	foe["Oversoul Steal \49"] = false
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
-	foe["Cash"] = 2
-	foe["Rate Drop \49"] = 100
-	foe["Rate Drop \50"] = 0
-	foe["Rate Steal \49"] = 100
+	foe["Cash"] = 100
+	foe["Rate Drop \49"] = 50
+	foe["Rate Drop \50"] = 25
+	foe["Rate Steal \49"] = 0
 	foe["Rate Steal \50"] = 0
 	foe["Rate Steal \51"] = 0
-	foe["normal_Accuracy"] = 85
-	foe["normal_Endurance"] = 15
-	foe["normal_Evasion"] = 0
-	foe["normal_HP"] = 15
+	foe["normal_Accuracy"] = 100
+	foe["normal_Endurance"] = 14
+	foe["normal_Evasion"] = 2
+	foe["normal_HP"] = 100
 	foe["normal_Intelligence"] = 1
-	foe["normal_Power"] = 16
-	foe["normal_Resistance"] = 10
-	foe["normal_Speed"] = 6
+	foe["normal_Power"] = 18
+	foe["normal_Resistance"] = 5
+	foe["normal_Speed"] = 7
 	foe["oversoul_Accuracy"] = 100
 	foe["oversoul_Endurance"] = 0
 	foe["oversoul_Evasion"] = 0

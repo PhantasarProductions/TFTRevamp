@@ -1,5 +1,5 @@
 --[[
-  AAA_ATTACK.lua
+  ITM_FLAMEORB.lua
   Version: 16.10.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -42,17 +42,22 @@ ret = {
 	["Attack_AllowDodge"] = true,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "Attack the enemy",
+	["Attack_Element"] = "Flame",
+	["Desc"] = "We don't need no water, let the ###### burn!",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
-	["Rew_GainAP"] = 6,
-	["Stance"] = "Attack",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 50,
+	["ITM_Type"] = "Consumable",
+	["Stance"] = "Cast",
 	["Target"] = "1F",
-	["Title"] = "Attack",
-	["Type"] = "Ability",
-	["rew_CreateSkill1"] = true,
-	["rew_GainSkill1"] = 6}
+	["Title"] = "Flame Orb",
+	["Type"] = "Item"}
 
 return ret
 

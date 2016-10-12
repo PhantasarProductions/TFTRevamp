@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.10
+version: 16.10.12
 ]]
 ret = {
 	["ABL_APCost"] = 50,
@@ -45,6 +45,7 @@ ret = {
 	["Desc"] = "I got a little present FOUR you",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
+	["Stance"] = "Attack",
 	["Target"] = "1F",
 	["Title"] = "Quatro Power Strike",
 	["Type"] = "Ability",

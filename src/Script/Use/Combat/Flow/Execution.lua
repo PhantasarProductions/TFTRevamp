@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 16.10.10
+  Version: 16.10.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -89,6 +89,7 @@ function fflow.Execution()
    -- Init
    e_act = e_act or ItemGet(nextact.act); local act=e_act
    local acttag = nextact.act
+   local myactor = fighterbytag[nextact.executor.tag]
 --   Var.D('$EXE.EXECUTOR',"--")
 --   Var.D('$EXE.TARGET',"--")
    -- Show Box
@@ -126,7 +127,10 @@ function fflow.Execution()
          DarkText(sval(ExeShowMsg.Timer),50,50,0,0,255,255,255) -- What the hell is wrong here?
          Flip()
    end   
-   if nextact.executor.group=='Hero' then LastAction=nextact.executor.tag end
+   if nextact.executor.group=='Hero' then 
+      LastAction=nextact.executor.tag 
+      myactor.stace='idle'
+   end
    flow = nextact.afterperform or 'idle' 
    nextact = nil
    table.remove(cards,1)

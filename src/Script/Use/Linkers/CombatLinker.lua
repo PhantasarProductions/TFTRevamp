@@ -1,6 +1,6 @@
 --[[
   CombatLinker.lua
-  Version: 16.10.06
+  Version: 16.10.12
   Copyright (C) 2015, 2016 Jeroen Petrus Broks
   
   ===========================
@@ -42,6 +42,7 @@ function ClearCombatData()
     if left(k,8)=="$COMBAT." then table.insert(remove,k) end
   end
   for _,k in ipairs(remove) do
+    -- CSay("Clearing var: "..k)
     Var.Clear(k)
   end
 end
@@ -84,4 +85,40 @@ function StartCombat()
   MS.Load("COMBAT","Script/Flow/Combat.lua") -- Make sure everything in the battle is properly reset!
   MS.Run("COMBAT","InitCombat")
   LAURA.Flow("COMBAT")
+end
+
+
+function StartBoss(desc,boss)
+  StopMusic()
+  if musicavailable then SFX('Music/Boss/BossIntro.ogg') end
+  -- Base Setup
+  local w = {
+               { txt = desc, x=Center_X, y=Center_Y-50,  fontsize=20, alpha=-50  },
+               { txt = boss, x=Center_X, y=Center_Y+100, fontsize=65, alpha=-125 }
+            }
+  -- Font adaption
+  for fw in each(w) do
+      Image.Font('Fonts/Coolvetica.ttf',fw.fontsize)
+      while Image.TextWidth(fw.txt)>SW-100 do 
+            fw.fontsize=fw.fontsize-1
+            Image.Font('Fonts/Coolvetica.ttf',fw.fontsize)
+      end
+  end
+  -- Make this all appear
+  repeat
+     local cont = true
+     color(100,0,0)
+     Image.Rect(0,0,SW+50,SH+50) -- Ruling out any trouble with border settings, as they don't matter in this screen.
+     for fw in each(w) do
+         Image.Font('Fonts/Coolvetica.ttf',fw.fontsize)
+         if fw.alpha<100 then fw.alpha = fw.alpha + 1 end
+         if fw.alpha>=0  then
+            Image.SetAlphaPC(fw.alpha)
+            DarkText(fw.txt,fw.x,fw.y,2,2,255,255,255)
+         end
+         cont = cont and fw.alpha>=100
+     end
+     Flip()    
+  until cont
+  StartCombat()                                          
 end        

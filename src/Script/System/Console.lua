@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 16.10.01
+  Version: 16.10.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -165,3 +165,25 @@ function TB_FIGHTERS()
   end 
   MS.Run("COMBAT",'DebugFighter')
 end
+
+function EXPNEED(lvl)
+  local l=tonumber(lvl)
+  if l and l>EXP.minlevel then
+      CSay( l.." requires "..EXP:ByLvl(l).." experience points" )    
+  else
+      for i=EXP.minlevel,EXP.maxlevel do
+          CSay( i.." requires "..EXP:ByLvl(i).." experience points" )    
+      end
+  end    
+end  
+
+function TB_BOSS()
+  ClearCombatData()
+  if not CONSOLE_COMBAT then Console.Write("? I need TB_SETUP data before I can start any battle",255,0,0) end
+  for k,v in spairs(CONSOLE_COMBAT) do
+      CSay(k.." = "..v)
+      Var.D(({ ['string']='$', ['number']='%', ['boolean']='&'})[type(v)].."COMBAT"..k,sval(v))
+  end    
+  StartBoss('Ty ymor syrfa',"dal Aerya")
+end
+

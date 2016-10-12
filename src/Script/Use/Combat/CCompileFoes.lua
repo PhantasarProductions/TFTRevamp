@@ -1,6 +1,6 @@
 --[[
   CCompileFoes.lua
-  Version: 16.10.08
+  Version: 16.10.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -70,6 +70,11 @@ function CompileFoe(tag,data,oversoul)
    local y = (id - x)+1
    myfoe.x = (x * (Center_X/100)) + 50
    myfoe.y = (y * ((Center_Y-100)/4))+Center_Y    
+   local altcoords = CVVN('$COMBAT.POS'..tag)
+   if altcoords=='CENTER' then
+      myfoe.x = math.floor(Center_X/2)
+      myfoe.y = Center_Y+((Center_Y-100)/2)
+   end    
    -- Compile ability list
    myfoe.abilities = {}
    for k,i in pairs(data) do

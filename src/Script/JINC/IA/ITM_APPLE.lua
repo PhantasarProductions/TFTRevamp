@@ -1,6 +1,6 @@
 --[[
   ITM_APPLE.lua
-  Version: 16.10.10
+  Version: 16.10.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -47,6 +47,7 @@ ret = {
 	["ITM_Sellable"] = true,
 	["ITM_ShopPrice"] = 25,
 	["ITM_Type"] = "Consumable",
+	["Stance"] = "Cast",
 	["Target"] = "1A",
 	["Title"] = "Apple",
 	["Type"] = "Item"}

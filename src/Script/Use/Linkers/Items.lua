@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.10.10
+  Version: 16.10.11
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -112,7 +112,7 @@ HealTypes = {
 function ItemHeal(ch,itemdata,retonly,bytag)
     if (not itemdata.Heal) then return --[[CSay('Heal nil -- '..serialize('itemdata',itemdata))]] end
     if (itemdata.Heal<=0) then return --[[CSay('Heal zero') ]] end
-    local ret = (HealTypes[itemdata.Heal_Type] or Sys.Error("I don't know Heal Type"..sval(itemdata.Heal_Type)))(ch,itemdata,bytag)
+    local ret = (HealTypes[itemdata.Heal_Type] or Sys.Error("I don't know Heal Type "..sval(itemdata.Heal_Type)))(ch,itemdata,bytag)
     if not retonly then RPG.Points(ch,"HP").Inc(ret) end
     return ret
 end

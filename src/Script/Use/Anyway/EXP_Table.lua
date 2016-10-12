@@ -1,5 +1,5 @@
 --[[
-  AAA_ATTACK.lua
+  EXP_Table.lua
   Version: 16.10.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,27 +34,51 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-ret = {
-	["Attack"] = 100,
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowAccuracy"] = true,
-	["Attack_AllowCritical"] = true,
-	["Attack_AllowDodge"] = true,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "Attack the enemy",
-	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
-	["Rew_GainAP"] = 6,
-	["Stance"] = "Attack",
-	["Target"] = "1F",
-	["Title"] = "Attack",
-	["Type"] = "Ability",
-	["rew_CreateSkill1"] = true,
-	["rew_GainSkill1"] = 6}
+EXP = {
+      --[[ Not working the way I want. Too large numbers already on low levels.
+         minlevel = 2,
+         minexp   = 10,
+         maxlevel = 5000,
+         maxexp   = 1000000000
+      --]]
+         minlevel = 2,
+         maxlevel = 300,
+         startexp = 10   
+      }
+      
+function EXP.ByLvl(self,lvl)
+     --[[
+     local rng = self.maxlevel - self.minlevel
+     assert(rng>0,"Invalid exp settings")
+     if lvl==self.minlevel then return self.minexp end
+     if lvl==self.maxlevel then return self.maxexp end
+     local bexp = self.maxexp/rng
+     local ret  = math.ceil(bexp*lvl)
+     return ret
+     ]]
+     assert(lvl>=self.minlevel,"Invalid level")
+     local ret = self.startexp
+     for i=self.minlevel,lvl do
+         ret = ret + ret/7
+         if ret>2000000000 then return 2000000000 end -- Above 2 billion systems and underlying APIs will malfunction.
+     end     
+     return math.floor(ret)
+end    
+  
 
-return ret
 
--- This file is an automatically generated file!
+-- The code below is destinied to always be ignored iN GALE, but in a test in the Lua CLI tool, the pre-processor tags are ignored, and thus.... 
 
+-- @IF TEST_ON_CONSOLE
+
+for i=EXP.minlevel,EXP.maxlevel do
+
+    print( i.." requires "..EXP:ByLvl(i).." experience points" )
+    
+end
+
+os.exit()
+
+return EXP -- And this line is just to fool my outliner for "better" effect ;)
+
+-- @FI    

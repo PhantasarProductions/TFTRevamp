@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.10
+version: 16.10.12
 ]]
 ret = {
 	["ABL_APCost"] = 35,
@@ -45,6 +45,7 @@ ret = {
 	["Desc"] = "All good things come in three",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
+	["Stance"] = "Attack",
 	["Target"] = "1F",
 	["Title"] = "Triple Power Strike",
 	["Type"] = "Ability",

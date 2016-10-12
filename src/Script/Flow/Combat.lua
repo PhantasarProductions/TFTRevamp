@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 16.10.02
+  Version: 16.10.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -76,12 +76,14 @@ end
 
 function LoadFoes()
     -- CSay(serialize("combat",combat))
-    for key,foe in pairs(combat) do
+    for key,foe in spairs(combat) do
         CSay(key.." = "..foe)
         local foefile = foe
-        local foefiledirsplit = mysplit(foefile)
+        local foefiledirsplit = mysplit(foefile,"/")
         if #foefiledirsplit<2 then foefile = "Reg/"..foefile end
-        if prefixed(key,"FOE_") then CompileFoe(key,JINC('Script/JINC/Foes/'..foefile..".lua")) end
+        if prefixed(key,"FOE_") then 
+           CompileFoe(key,JINC('Script/JINC/Foes/'..foefile..".lua")) 
+        end
     end
 end
 
@@ -152,11 +154,11 @@ function CombatMusic()
     if CVVN("$COMBAT.MUSIC")=="*NOCHANGE*" then return end
     PushMusic()
     if not CVVN("$COMBAT.MUSIC") then RandomEncounterTune() return end
-    Music("$COMBAT.MUSIC")
+    Music(Var.C("$COMBAT.MUSIC"))
 end
 
 function InitCombat()
-   combat = Var2Table("COMBAT",true)
+   combat = Var2Table("COMBAT.",true)
    SetUpCards()
    YCards()
    SetupArena()

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.09
+version: 16.10.12
 ]]
 
 
@@ -115,6 +115,22 @@ end
 function NPC_SW1() NTSwitch(1) end
 function NPC_SW2() NTSwitch(2) end
 function NPC_SW3() NTSwitch(3) end
+
+
+function NPC_Jenny()
+  MapText("JENNY_PREBOSS")
+  Schedule("MAP","PostBoss_Jenny")
+  ClearCombatData()
+  Var.D("$COMBAT.FOE_1","Boss/GobKing")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
+  Var.D("$COMBAT.ARENA","Caves.png")
+  StartBoss("Leader of the Goblins","Goblin King")
+end
+
+function PostBoss_Jenny()
+  Sys.Error('The rest is not yet scripted')
+end  
    
 function GALE_OnLoad()
    MapHide('Secret')
