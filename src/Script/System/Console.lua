@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 16.10.12
+  Version: 16.10.13
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -54,6 +54,16 @@ function ALLHP()
     CSay("Character: "..foeid.." has "..RPGChar.Points(foeid,"HP").Have.."/"..RPGChar.Points(foeid,"HP").Maximum.." HP") 
   end
 end
+
+function MASSACRE()
+  local foeid
+  for foeid in ICHARS() do
+      if prefixed(foeid,"FOE") then
+         CSay(foeid..' is dead!!!!!')
+         RPG.Points(foeid,'HP').Have=0
+      end
+  end
+end  
 
 
 function SHOWTIME()

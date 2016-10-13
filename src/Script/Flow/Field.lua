@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.10.10
+  Version: 16.10.13
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -133,9 +133,14 @@ function LoadMap(map)
     ResetClickables()
     AUTOHIDE = {}
     -- Load the map itself
+    CSay("Loading Map!")
     Maps.Load(map)
-    local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()
-    if layers[1]~="SL:Map" then Maps.GotoLayer(layers[1]) end -- Does this prevent a crash?
+    CSay("Configuring Data!")
+    Maps.LayerCodeName = ""
+    local layers,multi = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),true end})[Maps.Multi()]()    
+    --if layers[1]~="SL:MAP" then Maps.GotoLayer(layers[1]) end -- Does this prevent a crash?
+    CSay(serialize('LAYERS',layers))
+    if multi then Maps.GotoLayer(layers[1]) end
     -- Lastly, load the music  
     MS.Run("MAP","MapMusic") 
     SetUpAutoClickables()
@@ -580,7 +585,8 @@ end
 function ZoneAction()
        MS.Run("MAP","ZA_CheckEnter",'PLAYER')
        MS.Run("MAP","ZA_CheckLeave",'PLAYER')
-       MS.Run("MAP","ZA_CheckFlow" ,'PLAYER')    
+       MS.Run("MAP","ZA_CheckFlow" ,'PLAYER') 
+       MS.Run("MAP","MAP_FLOW")   
 end
 
 function KillWalkArrival()

@@ -1,6 +1,6 @@
 --[[
   CombatLinker.lua
-  Version: 16.10.12
+  Version: 16.10.13
   Copyright (C) 2015, 2016 Jeroen Petrus Broks
   
   ===========================
@@ -72,6 +72,7 @@ function StartCombatAnimation()
          y[x] = y[x] or Center_Y
          s[x] = s[x] or rand(3,9)
          y[x] = y[x] + s[x]         
+         if s[x]<10 then s[x]=s[x]+1 end
          downunder = downunder and y[x]>SH+50+(SH/2)
          Image.Show('COMBATSTARTANIM',x,y[x],x)
      end

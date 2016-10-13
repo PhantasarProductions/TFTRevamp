@@ -32,9 +32,10 @@
   
  **********************************************
  
-version: 16.10.12
+version: 16.10.13
 ]]
 
+-- @USE /Script/Use/Specific/EndOfPrologue.lua
 
 function NPC_Guard()
    MapText('GUARD1')
@@ -129,7 +130,13 @@ function NPC_Jenny()
 end
 
 function PostBoss_Jenny()
-  Sys.Error('The rest is not yet scripted')
+  MapText('JENNY_POSTBOSS')
+  Maps.Obj.Kill("NPC_Jenny",1)
+  LoadMap('PRO_Town_Vandar')
+  GoToLayer('chief','PostBoss'); TurnPlayer('North')
+  MapText('POST_BOSS')
+  EndOfPrologue('Jake')
+  -- Sys.Error('The rest is not yet scripted')
 end  
    
 function GALE_OnLoad()

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.22
+version: 16.10.13
 ]]
 
 
@@ -132,7 +132,7 @@ function GALE_OnLoad()
       local oldlay = Maps.LayerCodeName
       Maps.GotoLayer('town')
       Maps.Obj.Kill("NPC_MT_Jenny")
-      if oldlay and oldlay~="" then Maps.GotoLayer(oldlay) end
+      -- if oldlay and oldlay~="" then Maps.GotoLayer(oldlay) end
       CSay("Jenny not yet in town!")
    else
       CSay('Janny is in town! '..Var.C("&DONE.JAKE.LITTLEJENNY.RESCUED")) 
