@@ -1,6 +1,6 @@
 --[[
   CCompileFoes.lua
-  Version: 16.10.12
+  Version: 16.10.13
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -75,6 +75,7 @@ function CompileFoe(tag,data,oversoul)
       myfoe.x = math.floor(Center_X/2)
       myfoe.y = Center_Y+((Center_Y-100)/2)
    end    
+   myfoe.boss = data.Boss
    -- Compile ability list
    myfoe.abilities = {}
    for k,i in pairs(data) do
