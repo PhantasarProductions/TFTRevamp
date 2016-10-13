@@ -1,6 +1,6 @@
 --[[
   Default.lua
-  Version: 16.09.30
+  Version: 16.10.13
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -45,6 +45,15 @@ FoeAI.Target['1F'] = function(tag,abl)
 end
 FoeAI.Target['AF'] = FoeAI.Target['1F']
 
+FoeAI.Target['1A'] = function(tab,abl)
+     local tgt = {}
+     for i,_ in pairs(fighters.Foe) do
+         tgt[#tgt+1]=i
+     end
+     return 'Foe',tgt[rand(1,#tgt)]
+end
+
+FoeAI.Target.AA = FoeAI.Target['1A']
 
 function FoeAI.default(tag)
     local timeout = 10000 

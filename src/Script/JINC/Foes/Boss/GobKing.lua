@@ -1,6 +1,6 @@
 --[[
   GobKing.lua
-  Version: 16.10.12
+  Version: 16.10.13
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Wed 12 October 2016; 21:26:24
+-- File Generated: Thu 13 October 2016; 17:19:06
 
 
 local foe = {}
@@ -96,7 +96,7 @@ local foe = {}
 	foe["Item Steal \50"] = "ITM_ANTIDOTE"
 	foe["Item Steal \51"] = "ITM_ANTIDOTE"
 	foe["Name"] = "Goblin King"
-	foe["RATE_AAA_ATTACK"] = 100
+	foe["RATE_AAA_ATTACK"] = 500
 	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = 0
 	foe["RATE_ABL_HERO_JAKE_\50PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
