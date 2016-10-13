@@ -1,6 +1,6 @@
 --[[
   PrologueSelectChar.lua
-  Version: 16.09.09
+  Version: 16.10.14
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -54,6 +54,7 @@ function Repos()
           x = x + 400
           newcard.char = chars[i]
           newcard.img  = icards[chars[i]]
+          newcard.pos  = i
           card[#card+1] = newcard
           CSay("REPOS: "..#card.."> "..chars[i])
        end
@@ -73,7 +74,12 @@ function GALE_OnLoad()
    until INP.MouseH(1)==0 
 end
 
-function SelChar()
+function SelChar(pos)
+   CSay('Pos received: '..sval(pos))
+   if not pos then
+      Console.Write(serialize('card',card),0,180,255)
+      Sys.Error('BUG!!! -- Pos received could never be "nil"!!!')
+   end   
    MS.Load("EVENT","script/events/NarratedEvents.lua")
    MS.RUN("EVENT","Load",chars[pos])
    Done('&DONE.PROLOGUE['..pos..']')
@@ -97,7 +103,7 @@ function MAIN_FLOW()
        if mh and mx>x-125 and mx<x+125 then
           mh = false
           if i==pos then
-             SelChar()
+             SelChar(card[i].pos)
           else
              pos=i
           end
@@ -106,9 +112,9 @@ function MAIN_FLOW()
    DarkText("Choose your character",Center_X,10,2,0)
    if (INP.KeyH(KEY_RIGHT)==1 or joyhit(joy_right)) and pos<#card then pos = pos + 1 end
    if (INP.KeyH(KEY_LEFT )==1 or joyhit(joy_left )) and pos>1     then pos = pos - 1 end   
-   if INP.KeyH(KEY_SPACE)==1 or INP.KeyH(KEY_RETURN)==1  then SelChar() end
+   if INP.KeyH(KEY_SPACE)==1 or INP.KeyH(KEY_RETURN)==1  then SelChar(card[pos].pos) end
    for joy=0,15 do 
-       if INP.JoyH(joy)==1 then SelChar() end
+       if INP.JoyH(joy)==1 then SelChar(card[pos].pos) end
    end
    ShowMouse()
    Flip()
