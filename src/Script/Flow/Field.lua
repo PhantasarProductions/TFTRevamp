@@ -629,7 +629,8 @@ function MustRenc()
     if Maps.Multi()==0 then layer='SL:MAP' else layer=Maps.LayerCodeName end
     local encnum = rencnumtable[layer]
     -- Set x position
-    if encnum and rencgaugex>SW-50 and (monstertable and #monstertable<=0) then rencgaugex = rencgaugex - 1 elseif (not encnum) and rencgaugex<SW+150 then rencgaugex=rencgaugex + 1 end
+    if (not monstertable) or #monstertable<=0 then encnum=nil end
+    if encnum and rencgaugex>SW-50  then rencgaugex = rencgaugex - 1 elseif (not encnum) and rencgaugex<SW+150 then rencgaugex=rencgaugex + 1 end
     -- Bar length
     local bar = 100
     if encnum and rencmaxnum then
