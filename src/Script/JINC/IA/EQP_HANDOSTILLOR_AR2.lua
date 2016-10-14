@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  ABL_HERO_JAKE_2PS.lua
+  EQP_HANDOSTILLOR_AR2.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -35,21 +35,18 @@
 version: 16.10.14
 ]]
 ret = {
-	["ABL_APCost"] = 20,
-	["Attack"] = 200,
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowCritical"] = true,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
+	["Attack_DefenseStat"] = "Power",
 	["Attack_Element"] = "None",
-	["Desc"] = "Double-Double-Toil-And-Trouble",
-	["Heal_StatPercent"] = "Intelligence",
+	["Desc"] = "Seems to be blessed",
+	["EQP_STAT_Endurance"] = 2,
+	["EQP_STAT_Resistance"] = 2,
+	["Heal_StatPercent"] = "Power",
 	["Heal_Type"] = "Absolute",
 	["Stance"] = "Attack",
-	["Target"] = "1F",
-	["Title"] = "Double Power Strike",
-	["Type"] = "Ability",
-	["rew_GainSkill1"] = 25}
+	["Target"] = "1A",
+	["Title"] = "Holy shirt",
+	["Type"] = "Item"}
 
 return ret
 

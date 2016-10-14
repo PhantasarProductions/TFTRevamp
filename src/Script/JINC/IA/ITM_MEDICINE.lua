@@ -1,5 +1,5 @@
 --[[
-  ITM_ANTIDOTE.lua
+  ITM_MEDICINE.lua
   Version: 16.10.14
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -35,13 +35,13 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["CurePoison"] = true,
-	["Desc"] = "Poison be gone",
+	["CureDisease"] = true,
+	["Desc"] = "Cures \"Disease\"",
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
@@ -49,11 +49,10 @@ ret = {
 	["ITM_Combat"] = true,
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 50,
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
 	["Target"] = "1A",
-	["Title"] = "Antidote",
+	["Title"] = "Medicine",
 	["Type"] = "Item"}
 
 return ret

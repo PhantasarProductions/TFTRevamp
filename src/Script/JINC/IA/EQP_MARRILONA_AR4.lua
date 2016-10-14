@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  ABL_HERO_JAKE_2PS.lua
+  EQP_MARRILONA_AR4.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -35,21 +35,12 @@
 version: 16.10.14
 ]]
 ret = {
-	["ABL_APCost"] = 20,
-	["Attack"] = 200,
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowCritical"] = true,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "Double-Double-Toil-And-Trouble",
-	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
-	["Stance"] = "Attack",
-	["Target"] = "1F",
-	["Title"] = "Double Power Strike",
-	["Type"] = "Ability",
-	["rew_GainSkill1"] = 25}
+	["Desc"] = "I'm too sexy for my love, love's going to leave me!",
+	["EQP_STAT_Endurance"] = 4,
+	["EQP_STAT_Intelligence"] = 4,
+	["EQP_STAT_Resistance"] = 12,
+	["Title"] = "Sexy Dress",
+	["Type"] = "Item"}
 
 return ret
 

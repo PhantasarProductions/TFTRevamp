@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  ABL_HERO_JAKE_2PS.lua
+  Marrilona.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -34,24 +34,19 @@
  
 version: 16.10.14
 ]]
-ret = {
-	["ABL_APCost"] = 20,
-	["Attack"] = 200,
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowCritical"] = true,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "Double-Double-Toil-And-Trouble",
-	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
-	["Stance"] = "Attack",
-	["Target"] = "1F",
-	["Title"] = "Double Power Strike",
-	["Type"] = "Ability",
-	["rew_GainSkill1"] = 25}
+local function GoNext()
+   MS.LoadNew("FIELD","Script/Flow/Field.lua")
+   MS.Run('FIELD','LoadMap',"PRO_TOWN_FRENDOR")
+   Maps.GotoLayer('marrilona')
+   MS.Run('FIELD','Party',"Marrilona")
+   RPGStat.SetName('Marrilona','Marrilona')
+   RPGStat.SetData('Marrilona','Face','Marrilona')
+   RPGStat.SetData('Marrilona','EQP_Weapon',"WAND_FLAME")
+   RPGStat.SetData('Marrilona','EQP_Armor' ,"EQP_MARRILONA_AR1")
+   RPGStat.SetData("Jake_Human","EQP_Acc"   ,"") -- This just makes sure the entry exists so no crashes can come bacause of it later.
+   LAURA.Flow("FIELD")
+   MS.Run('FIELD','SpawnPlayer',"Birthday")
+   MS.Run('FIELD','Schedule','MAP;HappyBirthday')
+end
 
-return ret
-
--- This file is an automatically generated file!
-
+return GoNext

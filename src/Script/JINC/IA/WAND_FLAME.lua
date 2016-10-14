@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  ABL_HERO_JAKE_2PS.lua
+  WAND_FLAME.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -35,21 +35,22 @@
 version: 16.10.14
 ]]
 ret = {
-	["ABL_APCost"] = 20,
-	["Attack"] = 200,
+	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
+	["Attack_AllowAccuracy"] = true,
 	["Attack_AllowCritical"] = true,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "Double-Double-Toil-And-Trouble",
+	["Attack_AllowDodge"] = true,
+	["Attack_AttackStat"] = "Intelligence",
+	["Attack_DefenseStat"] = "Resistance",
+	["Attack_Element"] = "Flame",
+	["Desc"] = "Burn, baby! Burn!",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
-	["Stance"] = "Attack",
+	["SpellAni"] = "Flame",
+	["Stance"] = "Cast",
 	["Target"] = "1F",
-	["Title"] = "Double Power Strike",
-	["Type"] = "Ability",
-	["rew_GainSkill1"] = 25}
+	["Title"] = "Flame Wand",
+	["Type"] = "Item"}
 
 return ret
 

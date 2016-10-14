@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  ABL_HERO_JAKE_2PS.lua
+  EQP_MARRILONA_AR1.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -35,21 +35,12 @@
 version: 16.10.14
 ]]
 ret = {
-	["ABL_APCost"] = 20,
-	["Attack"] = 200,
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowCritical"] = true,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "Double-Double-Toil-And-Trouble",
-	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
-	["Stance"] = "Attack",
-	["Target"] = "1F",
-	["Title"] = "Double Power Strike",
-	["Type"] = "Ability",
-	["rew_GainSkill1"] = 25}
+	["Desc"] = "Just the regular fairy fashion for young girls",
+	["EQP_STAT_Endurance"] = 1,
+	["EQP_STAT_Intelligence"] = 1,
+	["EQP_STAT_Resistance"] = 3,
+	["Title"] = "Simple dress",
+	["Type"] = "Item"}
 
 return ret
 
