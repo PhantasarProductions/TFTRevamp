@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.10.13
+  Version: 16.10.14
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -629,7 +629,7 @@ function MustRenc()
     if Maps.Multi()==0 then layer='SL:MAP' else layer=Maps.LayerCodeName end
     local encnum = rencnumtable[layer]
     -- Set x position
-    if encnum and rencgaugex>SW-50 then rencgaugex = rencgaugex - 1 elseif (not encnum) and rencgaugex<SW+150 then rencgaugex=rencgaugex + 1 end
+    if encnum and rencgaugex>SW-50 and monstertable and #monstertable<=0 then rencgaugex = rencgaugex - 1 elseif (not encnum) and rencgaugex<SW+150 then rencgaugex=rencgaugex + 1 end
     -- Bar length
     local bar = 100
     if encnum and rencmaxnum then
@@ -688,6 +688,15 @@ function MustRenc()
        end
     end
 end  
+
+function cons_monstertable()
+   local c
+   local d = mysplit(serialize('monstertable',monstertable),"\n")
+   for i,l in ipairs(d) do
+       c = 155 + (math.sin(i)*100)
+       Console.Write(l,c,255-c,0)
+   end
+end       
 
 function MAIN_FLOW()  
   Cls()

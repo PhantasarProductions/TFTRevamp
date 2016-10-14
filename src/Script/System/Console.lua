@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 16.10.13
+  Version: 16.10.14
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -46,6 +46,9 @@ function GOD()
    IDDQD() 
 end 
    
+function MONSTERTABLE()
+   MS.Run("FIELD","cons_monstertable")
+end      
 
 
 function ALLHP()
