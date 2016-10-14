@@ -43,7 +43,7 @@ local function GoNext()
    RPGStat.SetData('Marrilona','Face','Marrilona')
    RPGStat.SetData('Marrilona','EQP_Weapon',"WAND_FLAME")
    RPGStat.SetData('Marrilona','EQP_Armor' ,"EQP_MARRILONA_AR1")
-   RPGStat.SetData("Jake_Human","EQP_Acc"   ,"") -- This just makes sure the entry exists so no crashes can come bacause of it later.
+   RPGStat.SetData("Marrilona","EQP_Acc"   ,"") -- This just makes sure the entry exists so no crashes can come bacause of it later.
    LAURA.Flow("FIELD")
    MS.Run('FIELD','SpawnPlayer',"Birthday")
    MS.Run('FIELD','Schedule','MAP;HappyBirthday')
