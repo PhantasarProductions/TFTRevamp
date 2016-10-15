@@ -1,6 +1,6 @@
 --[[
   Flip.lua
-  Version: 16.09.13
+  Version: 16.10.15
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -48,7 +48,9 @@ function PlayTime()
 end
 
 function Flip()
-    Image.Flip()
+    MS.Run("ACH","AchFlip") -- Render any gotten achievements before we show the screen to the player!
+    Image.Flip() -- Show it!
+    -- And recalcute the game time.
     local t = Time.Time()
     if t~=Var.C("$OLDTIME") then
        Var.D("$OLDTIME",t)
@@ -60,6 +62,7 @@ function Flip()
        if CVV('%GAMETIME.MINUTES')>=60 then
           Var.D("%GAMETIME.MINUTES",0)
           inc("%GAMETIME.HOURS")
+          if CVV("%GAMETIME.HOURS")>=24 then Award("HOURS024") end
        end             
     end
 end

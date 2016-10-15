@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 16.10.14
+  Version: 16.10.15
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -50,6 +50,9 @@ function MONSTERTABLE()
    MS.Run("FIELD","cons_monstertable")
 end      
 
+function AWARD(tag)
+   Award(tag)
+end   
 
 function ALLHP()
   local foeid

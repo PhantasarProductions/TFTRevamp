@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  EndOfPrologue.lua
+  PRO_TOWN_Frendor.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -32,40 +32,26 @@
   
  **********************************************
  
-version: 16.10.15
+version: 16.10.14
 ]]
-
-chars = {'Jake','Marrilona','Dandor','Hando Stillor'}
-
-function EndOfPrologue(char)
-     LoadMap('PRO_TheEnd')
-     GoToLayer('Nothing','Start')
-     MapText(upper(char))
-     Maps.CamX = 500-Center_X
-     Maps.CamY = 500-Center_Y
-     GoToLayer(char,"Start")
-     for i=1,250 do
-         Cls()
-         Maps.Draw()
-         Flip()
-     end
-     local chari
-     for i,c in ipairs(chars) do if c==char then chari=i end end
-     assert(chari,'Unknown character: '..char)    
-     Done("&DONE.PROLOGUE["..chari.."]")
-     Award('SCEN_PROLOGUE_'..char)
-     MAPSAVE()     
+function MapMusic()
+   if not Done("&DONE.VANDAR.OPENING_Fandalora") then 
+      CSay("Skip the music for now. Let Fandalora speak first.")
+   else
+      OriMapMusic()
+   end   
 end
 
-function NextPrologue()
-     local alldone = true
-     for i=1,#chars do
-         alldone = alldone and CVV("&DONE.PROLOGUE["..i.."]")
-     end
-     if alldone then
-        Sys.Error('Chain to the maingame not yet possible')
-     else
-        MS.LoadNew("PROLOGUESELECTCHAR","Script/Flow/PrologueSelectchar.lua")
-        LAURA.Flow('PROLOGUESELECTCHAR')
-     end       
+function NPC_Fandalora()
+  if not CVV("&DONE.PATHOFMAGIC") then
+     MapText("FANDALORA_PROLOGUE")
+     return
+  end
 end
+
+
+
+function HappyBirthday()
+   MapText('JARIG')
+   MapMusic()
+end   

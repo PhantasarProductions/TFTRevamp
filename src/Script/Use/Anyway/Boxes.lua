@@ -1,6 +1,6 @@
 --[[
   Boxes.lua
-  Version: 16.09.17
+  Version: 16.10.15
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -53,14 +53,15 @@ function BoxBorder(x,y,pw,ph)
    -- CSay("BoxBorder("..x..","..y..","..w..","..h..")") -- debug only!!!)
 end   
        
-function Box(x,y,w,h,picturetag)
+function Box(x,y,w,h,picturetag,altdata)
    local tag = picturetag or 'PCS_BACK'
    local ox,oy,ow,oh = GetViewport()
+   local ad = altdata or { x=0, y=0 }
    white()
    --CSay("Original Viewport "..ox..","..oy..","..ow..","..oh)
    -- --[[
    Image.ViewPort(x,y,w,h)
-   Image.Tile(tag)
+   Image.Tile(tag,ad.x,ad.y)
    Image.ViewPort(ox,oy,ow,oh)
    -- ]]   
    BoxBorder(x,y,w,h)
