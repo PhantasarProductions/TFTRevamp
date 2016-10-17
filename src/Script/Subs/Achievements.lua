@@ -1,6 +1,6 @@
 --[[
   Achievements.lua
-  Version: 16.10.15
+  Version: 16.10.17
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -35,16 +35,48 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 -- @USEDIR Script/Netwerk
+-- @USE /SCRIPT/USE/SPECIFIC/SCROLLER.LUA
+
+-- @DEFINE ACH_VAL_DEBUG
 
 achievementscript = true
 
 achoutput = {}
 
+RatingByType = {Bronze=5,Silver=10,Gold=20,Platinum=50}
+
+iCheck = Image.Load('GFX/Achievements/Check.png')
+
+
+function Validate()   
+   valid = {}
+   rating = { total = 0, have = 0, procent = 0}
+   local show = { Always = function(k,a) return true end, Never = function(k,a) return false end, Achieved = function(k,a) return Achieved[k]~=nil end}
+   for k,a in pairs(achievements) do
+       local allow = true       
+       allow = allow and a['skill'..skill]
+       if CVV("&NEWGAMEPLUS") then allow = allow and a.NewGamePlus else allow = allow and a.NormalGame end
+       allow = allow and show[a.Show](k,a)
+       -- @IF ACH_VAL_DEBUG
+       CSay('- Validating '..k..' resulted into '..sval(allow))
+       CSay('  = Available for skill '..skill..' > '..sval(a['skill'..skill]))
+       CSay('  = New Game Plus > '..sval(CVV('&NEWGAMEPLUS')).."/"..sval(a.NewGamePlus))
+       CSay('  = Normal Game > '..sval(a.NormalGame))
+       -- @FI
+       if allow then 
+         valid[k] = a 
+         rating.total = rating.total + RatingByType[a.Type]
+         if achieved[k] then rating.total = rating.total + RatingByType[a.Type] end
+         end  
+   end
+   CSay("Achievements revalidated >> "..serialize('rating',rating))
+end
 
 
 function GALE_OnLoad()
-   achievements =  JINC("Script/JINC/Big/Achievements.lua")
+   achievements = JINC("Script/JINC/Big/Achievements.lua")
    Achieved = Achieved or {}
+   achieved = Achieved
    AchIcons = {}
    -- The next table will only work when the required networks are loaded. If not, nothing will be added to it.
    Netwerk = {}
@@ -54,6 +86,7 @@ function GALE_OnLoad()
    -- @IF *ANNA
    Netwerk.Anna     = { link = AnnaAchievements,     award = Anna.Award }
    -- @FI
+   Validate()
 end
 
 
@@ -81,7 +114,7 @@ function Award(tag)
                                    fnsh = 20,
                                    fnds = 10
                               }
-                                  
+    Validate()                              
 end
 
 function AchFlip() -- Will be called by the flipping routine
@@ -97,3 +130,37 @@ function AchFlip() -- Will be called by the flipping routine
     end
     for r in each(remove) do achoutput[r] = nil end -- For this reason NO ipairs, but pairs above!!!
 end
+
+function AchList(argstring)
+   local myargf = loadstring('return { '..argstring..' }')
+   local myarg  = myargf()
+   Scroller(myarg.tag,myarg.x,myarg.y,myarg.w,myarg.h)
+   local y = 5
+   local c = 200 + (math.sin(Time.MSecs()/100)*55)
+   local down = scrollers[myarg.tag].down
+   for k,data in spairs(valid) do
+       if Achieved[k] then
+          white()
+          if not data.icon then -- Load icon if we don't have one yet 
+             if y-down<myarg.h and y-down>-50 then -- (to save time, only load  and show icons if they are actually shown in the screen range)
+                data.icon = iCheck -- Use checkbox for default.
+                local f = 'GFX/achievements/'..k..".png"
+                if JCR6.Exists(f)==1 then data.icon = Image.Load(f) end 
+             end
+          else
+             Image.Show(data.icon,10,y)   
+          end
+          Image.Font('Fonts/Coolvetica.ttf',10)
+          DarkText(Achieved[k],myarg.w-10,y+42,1,1,180,255,0)
+       end
+       data.hfs = data.hfs or 20; Image.Font('Fonts/Coolvetica.ttf',data.hfs); if Image.TextWidth(data.Title      )>myarg.w-10 then data.hfs=data.hfs-1 end
+       DarkText(data.Title      ,45,y+00,0,0,255,255,255)
+       data.dfs = data.dfs or 10; Image.Font('Fonts/Coolvetica.ttf',data.dfs); if Image.TextWidth(data.Description)>myarg.w-10 then data.dfs=data.dfs-1 end
+       DarkText(data.Description,45,y+25,0,0,255,180,0)
+       color(c,c,c)
+       Image.Line(5,y+40,myarg.w-5,y+40)
+       y = y + 45
+       ScrollMax(myarg.tag,y)
+   end
+   EndScroller(myarg.tag)
+end 

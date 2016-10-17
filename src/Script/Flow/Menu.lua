@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 16.10.09
+  Version: 16.10.17
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -133,7 +133,9 @@ function features.Abilities(x,y,w,h)
     ShowSpellList(RPGStat.PartyTag(menu.chn),{x,y,w,h})
 end
 
-
+function features.Achievements(x,y,w,h)
+    MS.Run('ACH','AchList','tag="MenuScreen", x='..x..", y="..y..", w="..w..", h="..h)
+end
 
 function Menu_Init(LoadProfile)
     profile = profiles[LoadProfile] or Sys.Error("Unknown Profile: "..sval(LoadProfile))

@@ -32,8 +32,9 @@
   
  **********************************************
  
-version: 16.10.14
+version: 16.10.16
 ]]
+-- General
 function MapMusic()
    if not Done("&DONE.VANDAR.OPENING_Fandalora") then 
       CSay("Skip the music for now. Let Fandalora speak first.")
@@ -42,11 +43,17 @@ function MapMusic()
    end   
 end
 
+-- Inside Fandalora's house
+
 function NPC_Fandalora()
   if not CVV("&DONE.PATHOFMAGIC") then
      MapText("FANDALORA_PROLOGUE")
      return
   end
+end
+
+function NPC_YanneeInside()
+  if not Done("&DONE.YANNEE.PROLOGUE.SPOKEN") then MapText("YANNEE_PROLOGUE1") else MapText("YANNEE_PROLOGUE2") end
 end
 
 

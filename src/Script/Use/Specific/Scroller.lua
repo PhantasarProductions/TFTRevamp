@@ -1,6 +1,6 @@
 --[[
   Scroller.lua
-  Version: 16.09.17
+  Version: 16.10.17
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -36,6 +36,23 @@
 ]]
 scrollers = scrollers or {}
 
+Image.LoadNew('SCROLLUP','GFX/Scroll/Up.png')
+Image.LoadNew('SCROLLDN','GFX/Scroll/Down.png')
+
+scroll_imc = { [true]=255, [false]=100}
+scroll_d   = { UP = -1, DN = 1}
+
+function ScrollArrow(tag,itag,x,y)
+    local tmx,tmy = GetMouse()
+    local mx = tmx - scrollers[tag].x
+    local my = tmy - scrollers[tag].y
+    local inmouse = mx>x and mx<x+Image.Width ("SCROLL"..itag) and
+                    my>y and my<y+Image.Height("SCROLL"..itag)
+    color(scroll_imc[inmouse],scroll_imc[inmouse],scroll_imc[inmouse])                
+    Image.Draw('SCROLL'..itag,x,y+scrollers[tag].down)
+    if inmouse and INP.MouseD(1)==1 then scrollers[tag].down = scrollers[tag].down + scroll_d[itag] end
+end
+
 
 function Scroller(tag,x,y,w,h)
   -- CSay('Scroller("'..tag..'",'..x..','..y..','..w..','..h..")")
@@ -50,9 +67,18 @@ end
 
 function EndScroller(tag)
   local myscroll = scrollers[tag]
+  -- Checkstuff
   assert(myscroll,"No scoller tagged: "..tag)
   assert(myscroll.ori,"Original viewports not properly set")
+  -- Scroller arrows (if applicable)
+  if myscroll.down > 0 then ScrollArrow(tag,'UP',myscroll.w-50,5) end
+  if myscroll.max and myscroll.down+myscroll.h < myscroll.max then ScrollArrow(tag,'DN',myscroll.w-50,myscroll.h-55) end
+  -- Closure
   local ori=myscroll.ori
   Image.ViewPort(ori.x,ori.y,ori.w,ori.h)
   Image.Origin(ori.x,ori.y)
 end    
+
+function ScrollMax(tag,m)
+   scrollers[tag].max = m
+end   
