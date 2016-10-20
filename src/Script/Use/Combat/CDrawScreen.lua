@@ -1,6 +1,6 @@
 --[[
   CDrawScreen.lua
-  Version: 16.10.13
+  Version: 16.10.20
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -106,11 +106,15 @@ function DrawScreen()
    -- Clear Screen
    Cls()
    -- Arena
+   CurArena.Before()
    White()
    Image.LoadNew("ARENA","GFX/Combat/Arena/"..(CVVN("$COMBAT.ARENA") or "Caves.png")) -- Crash prevention!
    Image.Draw("ARENA",Center_X,Center_Y)
+   CurArena.After()
    -- Fighters
    DrawFighters()
+   -- Over effect
+   CurArena.Over()
    -- Cards
    ShowCards()
    -- Big Message

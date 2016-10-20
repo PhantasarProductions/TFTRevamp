@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.16
+version: 16.10.18
 ]]
 -- General
 function MapMusic()
@@ -41,6 +41,14 @@ function MapMusic()
    else
       OriMapMusic()
    end   
+end
+
+function ExitHouse()
+   if CVV("&DONE.PATHOFMAGIC") then
+      GoToLayer('town','exitfrom_'..Maps.LayerCodeName)
+      return
+   end
+   EH()
 end
 
 -- Inside Fandalora's house
@@ -62,3 +70,21 @@ function HappyBirthday()
    MapText('JARIG')
    MapMusic()
 end   
+
+-- Elder's house
+function EldersHouse()
+    MapText('OFF2ELDER')
+    GoToLayer('elder','Marrilona')
+    StopMusic()
+    DrawScreen(); Flip()
+    Time.Sleep(150)
+    MapText('ELDER_PROLOGUE')
+    LoadMap('PRO_DUNGEON_MAGIC')
+    GoToLayer('#001','Start')
+end EH = EldersHouse -- Needed for outline fooling.
+
+
+-- Init
+function GALE_OnLoad()
+   ZA_Enter('ExitHouse',ExitHouse)
+end

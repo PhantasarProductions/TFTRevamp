@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 16.10.12
+  Version: 16.10.20
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -72,6 +72,12 @@ function SetupArena()
     Image.Load("GFX/Combat/Arena/"..(CVVN("$COMBAT.ARENA") or "Caves.png"),"ARENA")
     Image.HotCenter("ARENA")
     CSay("Arena size: "..Image.Width("ARENA").."x"..Image.Height("ARENA"))
+    local a = lower(CVVN("$COMBAT.ARENA") or "Caves.png")
+    a = left(a,#a-4) -- remove .png
+    CurArena = AltArena[a] or {}
+    CurArena.Before = CurArena.Before or Nothing -- Before Arena
+    CurArena.After  = CurArena.After  or Nothing -- After Arena
+    CurArena.Over   = CurArena.Over   or Nothing -- Over everything except the party bar
 end
 
 function LoadFoes()
