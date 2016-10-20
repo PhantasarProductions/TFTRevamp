@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.10.14
+  Version: 16.10.20
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -616,7 +616,7 @@ function RandomEncounter()
    Var.D("$COMBAT.ARENA",arena)
    assert(#monstertable>0,"I cannot run a Random Encounter without any monsters set")
    for i=1,num do
-       Var.D("$FOE"..num,monstertable[rand(1,#monstertable)]) 
+       Var.D("$COMBAT.FOE_"..num,monstertable[rand(1,#monstertable)]) 
    end
    StartCombat()
 end
