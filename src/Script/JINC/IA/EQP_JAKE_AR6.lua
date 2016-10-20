@@ -32,11 +32,14 @@
   
  **********************************************
  
-version: 16.10.14
+version: 16.10.20
 ]]
 ret = {
 	["Desc"] = "it looks gross, but it protects its wearer well.",
 	["EQP_STAT_Endurance"] = 12,
+	["ITM_EQP_For"] = "Jake",
+	["ITM_ShopPrice"] = 3200,
+	["ITM_Type"] = "Armor",
 	["Title"] = "Manticoreskin Armor",
 	["Type"] = "Item"}
 

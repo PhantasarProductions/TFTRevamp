@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.14
+version: 16.10.20
 ]]
 ret = {
 	["Attack_AttackStat"] = "Power",
@@ -42,6 +42,9 @@ ret = {
 	["EQP_STAT_Endurance"] = 4,
 	["Heal_StatPercent"] = "Power",
 	["Heal_Type"] = "Absolute",
+	["ITM_EQP_For"] = "Jake",
+	["ITM_ShopPrice"] = 200,
+	["ITM_Type"] = "Armor",
 	["Stance"] = "Attack",
 	["Target"] = "1A",
 	["Title"] = "Goblin Armor",

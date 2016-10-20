@@ -32,13 +32,16 @@
   
  **********************************************
  
-version: 16.10.14
+version: 16.10.20
 ]]
 ret = {
 	["Desc"] = "I'm too sexy for my love, love's going to leave me!",
 	["EQP_STAT_Endurance"] = 4,
 	["EQP_STAT_Intelligence"] = 4,
 	["EQP_STAT_Resistance"] = 12,
+	["ITM_EQP_For"] = "Marrilona",
+	["ITM_ShopPrice"] = 1000,
+	["ITM_Type"] = "Armor",
 	["Title"] = "Sexy Dress",
 	["Type"] = "Item"}
 

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.14
+version: 16.10.20
 ]]
 ret = {
 	["Attack"] = 100,
@@ -44,8 +44,20 @@ ret = {
 	["Attack_DefenseStat"] = "Resistance",
 	["Attack_Element"] = "Flame",
 	["Desc"] = "Burn, baby! Burn!",
+	["EQP_STAT_Intelligence"] = 1,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Marrilona",
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 250,
+	["ITM_Type"] = "Weapon",
+	["ITM_WeaponAbility"] = true,
 	["SpellAni"] = "Flame",
 	["Stance"] = "Cast",
 	["Target"] = "1F",

@@ -1,6 +1,6 @@
 --[[
   PlayerInput.lua
-  Version: 16.10.03
+  Version: 16.10.20
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -47,8 +47,14 @@ fflow.inputicons = { attack = {
                             key = nil,
                             joyx = 100, -- These values are never given, and will as a result prevent conflicts.
                             joyy = 100,
-                            selected = function()
+                            selected = function(ch)
                                nextact = { act = 'AAA_Attack', flow='playerselectsingletarget', group='Foe' }
+                               -- If the player is wearing a weapon causing an alternate attack then let's get this onto the road
+                               local weaponname = RPG.GetData(ch,"EQP_Weapon")
+                               local weapon = ItemGet(weaponname)
+                               CSay(sval(weapon.ITM_WeaponAbility))
+                               if weapon.ITM_WeaponAbility then nextact.act = weaponname end
+                               -- If the player learns a new move, hey let's get the showon the road ;)   
                             end
                         },
                      ability = {
@@ -121,7 +127,7 @@ function fflow.playerinput()
          if (INP.KeyD(data.key)==1 or (INP.JoyX()==(data.joyx or INP.JoyX()) and INP.JoyY()==(data.joyy or INP.JoyY()))) and data.allow() then citem=key end 
          if key==citem and (INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_SPACE)==1 or joyhit('CONFIRM') or (INP.MouseH(1)==1 and mousex>data.x+menux and mousex<data.x+menux+50 and mousey>data.y+menuy and mousey<data.y+menuy+50)) then
             nextact = {}
-            data.selected()
+            data.selected(inputchar.tag)
             nextact.executor = {group='Hero', tag=inputchar.tag }
             assert ( nextact.executor.tag, "Tagging the executor tag failed!")
             --nextact.action = inputicons[citem].act -- Will be nil if not set, but that's not that bad, as it can be defined later in case of items or abilities.

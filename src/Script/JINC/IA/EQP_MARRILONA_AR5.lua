@@ -32,13 +32,16 @@
   
  **********************************************
  
-version: 16.10.14
+version: 16.10.20
 ]]
 ret = {
 	["Desc"] = "I'm a model, you know what I mean!",
 	["EQP_STAT_Endurance"] = 5,
 	["EQP_STAT_Intelligence"] = 5,
 	["EQP_STAT_Resistance"] = 15,
+	["ITM_EQP_For"] = "Marrilona",
+	["ITM_ShopPrice"] = 2000,
+	["ITM_Type"] = "Armor",
 	["Title"] = "Fashionable Dress",
 	["Type"] = "Item"}
 

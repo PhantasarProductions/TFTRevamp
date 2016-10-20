@@ -32,13 +32,16 @@
   
  **********************************************
  
-version: 16.10.14
+version: 16.10.20
 ]]
 ret = {
 	["Desc"] = "It's not easy being green.",
 	["EQP_STAT_Endurance"] = 2,
 	["EQP_STAT_Intelligence"] = 2,
 	["EQP_STAT_Resistance"] = 6,
+	["ITM_EQP_For"] = "Marrilona",
+	["ITM_ShopPrice"] = 250,
+	["ITM_Type"] = "Armor",
 	["Title"] = "Green Dress",
 	["Type"] = "Item"}
 

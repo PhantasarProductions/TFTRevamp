@@ -32,13 +32,16 @@
   
  **********************************************
  
-version: 16.10.14
+version: 16.10.20
 ]]
 ret = {
 	["Desc"] = "It fits nicely",
 	["EQP_STAT_Endurance"] = 3,
 	["EQP_STAT_Intelligence"] = 3,
 	["EQP_STAT_Resistance"] = 9,
+	["ITM_EQP_For"] = "Marrilona",
+	["ITM_ShopPrice"] = 500,
+	["ITM_Type"] = "Armor",
 	["Title"] = "Cotton Dress",
 	["Type"] = "Item"}
 

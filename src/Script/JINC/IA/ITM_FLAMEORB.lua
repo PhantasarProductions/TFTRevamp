@@ -1,6 +1,6 @@
 --[[
   ITM_FLAMEORB.lua
-  Version: 16.10.14
+  Version: 16.10.20
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -51,6 +51,7 @@ ret = {
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Sellable"] = true,
 	["ITM_ShopPrice"] = 50,
 	["ITM_Type"] = "Consumable",

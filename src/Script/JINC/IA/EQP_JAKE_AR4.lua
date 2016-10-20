@@ -32,11 +32,14 @@
   
  **********************************************
  
-version: 16.10.14
+version: 16.10.20
 ]]
 ret = {
 	["Desc"] = "Bright as the sun, or so they say",
 	["EQP_STAT_Endurance"] = 8,
+	["ITM_EQP_For"] = "Jake",
+	["ITM_ShopPrice"] = 800,
+	["ITM_Type"] = "Armor",
 	["Title"] = "Leather Armor \"Sunshine\"",
 	["Type"] = "Item"}
 

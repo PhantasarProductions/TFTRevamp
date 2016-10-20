@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.14
+version: 16.10.20
 ]]
 ret = {
 	["Attack_AttackStat"] = "Power",
@@ -43,6 +43,9 @@ ret = {
 	["EQP_STAT_Resistance"] = 5,
 	["Heal_StatPercent"] = "Power",
 	["Heal_Type"] = "Absolute",
+	["ITM_EQP_For"] = "HandoStillor",
+	["ITM_ShopPrice"] = 1792,
+	["ITM_Type"] = "Armor",
 	["Stance"] = "Attack",
 	["Target"] = "1A",
 	["Title"] = "Holy vest",

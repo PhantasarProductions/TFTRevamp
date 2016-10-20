@@ -32,11 +32,14 @@
   
  **********************************************
  
-version: 16.10.14
+version: 16.10.20
 ]]
 ret = {
 	["Desc"] = "Looks great, eh?",
 	["EQP_STAT_Endurance"] = 10,
+	["ITM_EQP_For"] = "Jake",
+	["ITM_ShopPrice"] = 1600,
+	["ITM_Type"] = "Armor",
 	["Title"] = "Brown Armor",
 	["Type"] = "Item"}
 

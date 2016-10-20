@@ -32,11 +32,14 @@
   
  **********************************************
  
-version: 16.10.14
+version: 16.10.20
 ]]
 ret = {
 	["Desc"] = "Just a little prick, but still leathal.",
 	["EQP_STAT_Power"] = 4,
+	["ITM_EQP_For"] = "Jake",
+	["ITM_ShopPrice"] = 500,
+	["ITM_Type"] = "Weapon",
 	["Title"] = "Rapier \"Needle\"",
 	["Type"] = "Item"}
 

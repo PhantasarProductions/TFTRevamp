@@ -32,11 +32,14 @@
   
  **********************************************
  
-version: 16.10.14
+version: 16.10.20
 ]]
 ret = {
 	["Desc"] = "A great sword for a great warrior",
 	["EQP_STAT_Power"] = 6,
+	["ITM_EQP_For"] = "Jake",
+	["ITM_ShopPrice"] = 1000,
+	["ITM_Type"] = "Weapon",
 	["Title"] = "Long Sword",
 	["Type"] = "Item"}
 

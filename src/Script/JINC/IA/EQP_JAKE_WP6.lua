@@ -32,11 +32,14 @@
   
  **********************************************
  
-version: 16.10.14
+version: 16.10.20
 ]]
 ret = {
 	["Desc"] = "Death is upon you!",
 	["EQP_STAT_Power"] = 12,
+	["ITM_EQP_For"] = "Jake",
+	["ITM_ShopPrice"] = 8000,
+	["ITM_Type"] = "Weapon",
 	["Title"] = "Great Sword",
 	["Type"] = "Item"}
 

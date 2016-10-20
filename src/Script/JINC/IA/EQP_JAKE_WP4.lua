@@ -32,11 +32,14 @@
   
  **********************************************
  
-version: 16.10.14
+version: 16.10.20
 ]]
 ret = {
 	["Desc"] = "No enemy would dare to approach you now!",
 	["EQP_STAT_Power"] = 8,
+	["ITM_EQP_For"] = "Jake",
+	["ITM_ShopPrice"] = 2000,
+	["ITM_Type"] = "Weapon",
 	["Title"] = "Claymore",
 	["Type"] = "Item"}
 

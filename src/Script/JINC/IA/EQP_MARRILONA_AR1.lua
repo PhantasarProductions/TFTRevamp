@@ -32,13 +32,16 @@
   
  **********************************************
  
-version: 16.10.14
+version: 16.10.20
 ]]
 ret = {
 	["Desc"] = "Just the regular fairy fashion for young girls",
 	["EQP_STAT_Endurance"] = 1,
 	["EQP_STAT_Intelligence"] = 1,
 	["EQP_STAT_Resistance"] = 3,
+	["ITM_EQP_For"] = "Marrilona",
+	["ITM_ShopPrice"] = 125,
+	["ITM_Type"] = "Armor",
 	["Title"] = "Simple dress",
 	["Type"] = "Item"}
 
