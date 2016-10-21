@@ -1,5 +1,5 @@
 --[[
-  AAA_ATTACK.lua
+  CVoice.lua
   Version: 16.10.21
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,36 +34,13 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-ret = {
-	["Attack"] = 100,
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowAccuracy"] = true,
-	["Attack_AllowCritical"] = true,
-	["Attack_AllowDodge"] = true,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "Attack the enemy",
-	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
-	["ITM_ACC_Dandor"] = true,
-	["ITM_ACC_HandoStillor"] = true,
-	["ITM_ACC_Jake"] = true,
-	["ITM_ACC_Marrilona"] = true,
-	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
-	["ITM_Field"] = true,
-	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Consumable",
-	["Rew_GainAP"] = 6,
-	["Stance"] = "Attack",
-	["Target"] = "1F",
-	["Title"] = "Attack",
-	["Type"] = "Ability",
-	["rew_CreateSkill1"] = true,
-	["rew_GainSkill1"] = 6}
-
-return ret
-
--- This file is an automatically generated file!
-
+function Voice(chartag,voice)
+   local mych = fightersbytag[chartag]
+   if not mych.voicetag then return end
+   local file = "Vocals/Combat/"..(mych.group or 'Foe')..'/'..mych.voicetag..'/Action/'..voice..".ogg"
+   if JCR6.Exists(file)==0 then
+      --CSay("COMBATVOICE: "..file.." not found -- ignoring!")
+      return 
+  end -- If file does not exist, let's ignore it!
+   SFX(file)
+end

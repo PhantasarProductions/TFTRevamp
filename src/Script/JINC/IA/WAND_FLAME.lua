@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.20
+version: 16.10.21
 ]]
 ret = {
 	["Attack"] = 100,
@@ -58,11 +58,15 @@ ret = {
 	["ITM_ShopPrice"] = 250,
 	["ITM_Type"] = "Weapon",
 	["ITM_WeaponAbility"] = true,
+	["Rew_GainAP"] = 5,
 	["SpellAni"] = "Flame",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
 	["Title"] = "Flame Wand",
-	["Type"] = "Item"}
+	["Type"] = "Item",
+	["Voice"] = "Fire",
+	["rew_CreateSkill1"] = true,
+	["rew_GainSkill1"] = 1}
 
 return ret
 

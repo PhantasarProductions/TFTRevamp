@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 16.10.12
+  Version: 16.10.21
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -45,7 +45,11 @@ fflow = {}
 -- @FI
 
 
-fflow.SpellAni = {[true]=function(act) MS.Load("X_SPELLANI","Script/SpellAni/"..act.SpellAni..".lua") MS_Run("X_SPELLANI","SPELLANI",act.SpellAni_Args) end, [false]=function(act) SpellAni[act.SpellAni](act.SpellAni_Args) end}
+fflow.SpellAni = {  [true]=function(ag,at,tg,ti,act) MS.Load("X_SPELLANI","Script/SpellAni/"..act.SpellAni..".lua") MS_Run("X_SPELLANI","SPELLANI",act.SpellAni_Args) end, 
+                    [false]=function(ag,at,tg,ti,act) 
+                              SpellAni[act.SpellAni](ag,at,tg,ti) 
+                              end
+                 }
 
 function AltHealing(group,i,Heal)
 end
@@ -90,8 +94,8 @@ function fflow.Execution()
    e_act = e_act or ItemGet(nextact.act); local act=e_act
    local acttag = nextact.act
    local myactor = fighterbytag[nextact.executor.tag]
---   Var.D('$EXE.EXECUTOR',"--")
---   Var.D('$EXE.TARGET',"--")
+   Var.D('$EXE.EXECUTOR',nextact.executor.tag)
+   -- Var.D('$EXE.TARGET',"--")
    -- Show Box
    assert ( act.Title,serialize("act",act))
    ExeShowMsg = ExeShowMsg or CardMessage(act.Title,1)
@@ -101,9 +105,13 @@ function fflow.Execution()
          DarkText(sval(ExeShowMsg.Timer),50,50,0,0,255,255,255) -- What the hell is wrong here?
          Flip()
    end
+   -- Stance
+   -- Voice
+   Voice(nextact.executor.tag,act.Voice or "NOTHING AT ALL") -- The latter is just to prevent "nil" crashes.   
    -- SpellAni
    if act.SpellAni then 
-      fflow[act.SpellAni_External==true](act)
+      white()
+      fflow.SpellAni[act.SpellAni_External==true](nextact.executor.group,nextact.executor.tag,nextact.group,nextact.targetidx,act)
    end
    -- Perform the action
    fflow.Range[act.Target](act)

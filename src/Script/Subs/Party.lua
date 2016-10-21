@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 16.10.10
+  Version: 16.10.21
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -118,6 +118,7 @@ function ShowParty()
        DarkText(P.Have.."%",barx+barwidth,sy+85,1,1,255,180,0)
    end end
    ShowMargins()
+   white()
 end
 
 function SyncLevel(ch)

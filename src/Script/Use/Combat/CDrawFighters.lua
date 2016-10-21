@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 16.10.01
+  Version: 16.10.21
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -51,6 +51,11 @@ function DrawHero(i)
     Image.Show(itag,myhero.x,myhero.y)
     -- Image.NoFont() DarkText("Hero #"..i..": ("..myhero.x..","..myhero.y..")  screen:"..SW.."x"..SH,5,i*20)
 end
+
+function FighterCoords(g,i)
+   if type(i)=='nil' then return fighterbytag[g].x,fighterbytag[g].y end
+   return Fighters[g][i].x,Fighters[g][i].y
+end   
 
 function DrawFighter(g,i)
      -- Drawing the char itself

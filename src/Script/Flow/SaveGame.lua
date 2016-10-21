@@ -1,6 +1,6 @@
 --[[
   SaveGame.lua
-  Version: 16.09.22
+  Version: 16.10.21
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -148,6 +148,7 @@ function MAIN_FLOW()
   Flip()
   -- Go
   if allowsave then 
+    LastFile = files[P]
     Save(LAURA.User() .. "/" .. files[P])
   elseif INP.KeyH(KEY_ESCAPE)==1 or joyhit('CONFIRM') or INP.MouseH(2)==1 then
     MS.Destroy("SAVE")

@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 16.10.20
+  Version: 16.10.21
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -105,7 +105,9 @@ function LoadHeros()
            myhero.stance = "Idle"
            myhero.id = i
            myhero.group='Hero'
+           myhero.voicetag = myhero.tag         
            fighterbytag[myhero.tag] = myhero
+           if prefixed(myhero.voicetag,'Jake') then myhero.voicetag='Jake' end
         end  
     end
     -- Set up coordinates (this is pending on the number of heroes, yes, so this must be done in a separate loop)

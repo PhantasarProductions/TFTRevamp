@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.18
+version: 16.10.21
 ]]
 
 
@@ -51,6 +51,41 @@ function MAP_FLOW()
    if e.Rotation>=360 then e.Rotation = e.Rotation - 360 end   
 end
 
-function GALE_OnLoad()
+scolor = { [true]={255,0,0}, [false]={0,0,255}}
 
+function PuzzlePlate(tag)
+   if puzzlesolved then return end
+   solved = solved or {Z5=true}
+   solved[tag] = not solved[tag]  
+   if tag=='Z5' then
+      for i=1,4 do solved['Z'..i] = not solved['Z'..i] end
+   else
+      solved.Z5 = not solved.Z5
+   end
+   puzzlesolved = true
+   for i=1,5 do 
+       puzzlesolved = puzzlesolved and solved['Z'..i]
+       local c = scolor[solved['Z'..i]==true]
+       local z = Maps.Obj.Obj('Z'..i) 
+       z.R = c[1]
+       z.G = c[2]
+       z.B = c[3]
+   end
+   if puzzlesolved then
+      local barrier = Maps.Obj.Obj('Barrier')
+      Maps.CamY = barrier.Y-100 -- Make sure this can be seen in all screen formats
+      repeat 
+         barrier.SetAlpha(barrier.GetAlpha()+5)
+         Cls()
+         DrawScreen()
+         Flip()
+      until barrier.GetAlpha()>=1000   
+      barrier.SetAlpha(1000)
+      barrier.ForcePassible=1
+      Maps.ReMap()
+   end   
+end
+
+function GALE_OnLoad()
+  for i=1,5 do ZA_Enter('Z'..i,PuzzlePlate,'Z'..i) end
 end   
