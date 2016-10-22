@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.01
+version: 16.10.22
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
@@ -99,4 +99,5 @@ function Attack(act,g,i,na)
     end
     -- And let's put it all through now... 
     Hurt(ttag,damage,act.Attack_Element)   
+    return true
 end

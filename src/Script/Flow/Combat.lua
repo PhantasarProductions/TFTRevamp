@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 16.10.21
+  Version: 16.10.22
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -165,6 +165,13 @@ function CombatMusic()
     Music(Var.C("$COMBAT.MUSIC"))
 end
 
+function CombatStartEvent()
+   local e = CVVN("$COMBAT.STARTEVENT")
+   if not e then return end
+   local a = mysplit(e,",")
+   MS.Run(a[1],a[2])
+end
+
 function InitCombat()
    combat = Var2Table("COMBAT.",true)
    SetUpCards()
@@ -174,6 +181,7 @@ function InitCombat()
    LoadFoes()
    SetupInitialCards()
    CombatMusic()
+   CombatStartEvent()
 end
 
 function FPS()

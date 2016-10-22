@@ -32,5 +32,37 @@
   
  **********************************************
  
-version: 16.10.03
+version: 16.10.22
 ]]
+
+-- abl_hero_jake_2ps = {5},abl_hero_jake_3ps={25},abl_hero_jake_4ps={50},abl_hero_jake_berserk={10,5}
+
+--[[
+                   skill1 = "Wand Waving Wonders",
+                   skill2 = "Fairy Fire Magic",
+                   skill3 = "Fairy Wind Magic",
+                   skill4 = "Fairy Water Magic",
+                   skill5 = "Fairy Earth Magic",
+]]
+
+local r = {
+                 ["1. Level 1"]  = { 
+                                       abl_hero_marrilona_fire = {[2]=1},          --  1
+                                       abl_hero_marrilona_speedup = {[3]=1},       --  2
+                                       abl_hero_marrilona_heal = {[4]=1},          --  3
+                                       abl_hero_marrilona_protect = {[5]=1},       --  4
+                                       abl_hero_marrilona_rock = {[5]=7},          --  5
+                                       abl_hero_marrilona_splash = {[4]=7},        --  6
+                                       abl_hero_marrilona_zap = {[2]=5,[3]=5},     --  7
+                                       abl_hero_marrilona_chill = {[3]=7, [4]=10}, --  8
+                                       abl_hero_marrilona_empower = {[2]=25},      --  9
+                                       abl_hero_marrilona_bio = { [5]=10, [4]=15}  -- 10                                                                              
+                 },
+          }
+          
+if fullveresion then -- That's right Marrilona will not get her level #2 and level #3 spells unless you have the full version of the game.          
+   r["2. Level 2"] = {}
+   r["3s. Level 3"] = {}
+end
+             
+return r

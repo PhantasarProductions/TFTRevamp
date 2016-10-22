@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.18
+version: 16.10.22
 ]]
 -- General
 function MapMusic()
@@ -83,8 +83,30 @@ function EldersHouse()
     GoToLayer('#001','Start')
 end EH = EldersHouse -- Needed for outline fooling.
 
+function Elder2Boss()
+    MapText('ELDER_WARNING')
+    Schedule("MAP","PostBoss_Marrilona")
+    ClearCombatData()
+    Var.D("$COMBAT.FOE_1","Boss/Dwarf")
+    Var.D("$COMBAT.POSFOE_1","CENTER")
+    Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
+    Var.D("$COMBAT.ARENA","Forest.png")
+    Var.D("$COMBAT.STARTEVENT","MAP,DwarfBossStart")
+    StartBoss("Hungry Fellow","Dwarf")    
+end    
+
+function DwarfBossStart()
+    RPG.Points('FOE_1','HP').Minimum = 1
+    MapText('STARTDWARFBOSS')
+end
+
+-- End prologue
+function PostBoss_Marrilona()
+    Sys.Error("End of prologue not yet done. Hang on, folks!")
+end
 
 -- Init
 function GALE_OnLoad()
    ZA_Enter('ExitHouse',ExitHouse)
+   ZA_Enter('Elder_Exit',Elder2Boss)
 end

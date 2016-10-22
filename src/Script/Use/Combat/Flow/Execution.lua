@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 16.10.21
+  Version: 16.10.22
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -57,8 +57,11 @@ end
 function PerformAction(act,group,i)
      local effect = nil
      local myfighter = Fighters[group][i]
+     local myexecutor = fighterbytag[nextact.executor.tag]
      -- Accuracy check if needed. If it fails, byebye
+     if act.Attack_AllowAccuracy and (rand(1,100)>RPG.Stat(myexecutor.tag,"END_Accuracy")) then charmsg(myfighter.tag,'miss',155,155,155) return end     
      -- Dodge check if needed. If it succeeds, byebye
+     if act.Attack_AllowDodge and (rand(1,100)<RPG.Stat(myfighter.tag,"END_Evasion")) then charmsg(myfighter.tag,'dodged',155,155,155) return end
      -- Cure status changes (this always comes first)
      -- Dispell Buffs 
      -- Recover HP or AP

@@ -1,6 +1,6 @@
 --[[
   AAA_Algemeen.lua
-  Version: 16.10.01
+  Version: 16.10.22
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -54,6 +54,7 @@ end
 RPG = RPGChar -- LAAAAAAAAZY!!!
 
 vocals = JCR6.Exists('ID/ID.Vocal.Demo')==1
+fullversion = JCR6.Exists('ID/ID.Data.Full')==1
   
 skill = tonumber(Var.C("%SKILL")); Console.Write('Difficulty setting is: '..skill,0,180,255)
 

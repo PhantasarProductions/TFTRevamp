@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.21
+version: 16.10.22
 ]]
 ret = {
 	["Desc"] = "No enemy would dare to approach you now!",

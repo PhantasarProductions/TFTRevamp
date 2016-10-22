@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.21
+version: 16.10.22
 ]]
 ret = {
 	["Desc"] = "Just a little prick, but still leathal.",

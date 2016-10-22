@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.21
+version: 16.10.22
 ]]
 
 
@@ -84,6 +84,18 @@ function PuzzlePlate(tag)
       barrier.ForcePassible=1
       Maps.ReMap()
    end   
+end
+
+function NPC_ManaOrb()
+  MapText("ORB")
+  LoadMap("PRO_TOWN_FRENDOR")
+  GoToLayer('elder','Marrilona')
+  MapText("ELDER_MANAORB")
+  local choice = RunQuestion('MAP','ELEMENTS')
+  MapText('ELDER_OVER')
+  MapText('MARRILONA_OVER'..choice)
+  CreateSkill('Marrilona',choice+1,1)
+  -- Sys.Error("Wait for the rest, folks!")
 end
 
 function GALE_OnLoad()

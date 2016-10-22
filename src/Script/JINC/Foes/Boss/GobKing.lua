@@ -1,6 +1,6 @@
 --[[
   GobKing.lua
-  Version: 16.10.20
+  Version: 16.10.22
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Thu 20 October 2016; 16:49:03
+-- File Generated: Sat 22 October 2016; 18:54:33
 
 
 local foe = {}
@@ -45,6 +45,8 @@ local foe = {}
 	foe["NEWGAMEPLUS_ABL_HERO_JAKE_\50PS"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_JAKE_\51PS"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_JAKE_\52PS"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_SPLASH"] = true
 	foe["NEWGAMEPLUS_ITM_ANTIDOTE"] = true
 	foe["NEWGAMEPLUS_ITM_APPLE"] = true
 	foe["NEWGAMEPLUS_ITM_FLAMEORB"] = true
@@ -55,6 +57,8 @@ local foe = {}
 	foe["NORMAL_ABL_HERO_JAKE_\50PS"] = true
 	foe["NORMAL_ABL_HERO_JAKE_\51PS"] = true
 	foe["NORMAL_ABL_HERO_JAKE_\52PS"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_SPLASH"] = true
 	foe["NORMAL_ITM_ANTIDOTE"] = true
 	foe["NORMAL_ITM_APPLE"] = true
 	foe["NORMAL_ITM_FLAMEORB"] = true
@@ -65,6 +69,8 @@ local foe = {}
 	foe["OVERSOUL_ABL_HERO_JAKE_\50PS"] = true
 	foe["OVERSOUL_ABL_HERO_JAKE_\51PS"] = true
 	foe["OVERSOUL_ABL_HERO_JAKE_\52PS"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_SPLASH"] = true
 	foe["OVERSOUL_ITM_ANTIDOTE"] = true
 	foe["OVERSOUL_ITM_APPLE"] = true
 	foe["OVERSOUL_ITM_FLAMEORB"] = true
@@ -75,6 +81,8 @@ local foe = {}
 	foe["SKILL\49_ABL_HERO_JAKE_\50PS"] = true
 	foe["SKILL\49_ABL_HERO_JAKE_\51PS"] = true
 	foe["SKILL\49_ABL_HERO_JAKE_\52PS"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_SPLASH"] = true
 	foe["SKILL\49_ITM_ANTIDOTE"] = true
 	foe["SKILL\49_ITM_APPLE"] = false
 	foe["SKILL\49_ITM_FLAMEORB"] = true
@@ -85,6 +93,8 @@ local foe = {}
 	foe["SKILL\50_ABL_HERO_JAKE_\50PS"] = true
 	foe["SKILL\50_ABL_HERO_JAKE_\51PS"] = true
 	foe["SKILL\50_ABL_HERO_JAKE_\52PS"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_SPLASH"] = true
 	foe["SKILL\50_ITM_ANTIDOTE"] = true
 	foe["SKILL\50_ITM_APPLE"] = true
 	foe["SKILL\50_ITM_FLAMEORB"] = true
@@ -95,6 +105,8 @@ local foe = {}
 	foe["SKILL\51_ABL_HERO_JAKE_\50PS"] = true
 	foe["SKILL\51_ABL_HERO_JAKE_\51PS"] = true
 	foe["SKILL\51_ABL_HERO_JAKE_\52PS"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_SPLASH"] = true
 	foe["SKILL\51_ITM_ANTIDOTE"] = true
 	foe["SKILL\51_ITM_APPLE"] = true
 	foe["SKILL\51_ITM_FLAMEORB"] = true
@@ -113,6 +125,8 @@ local foe = {}
 	foe["RATE_ABL_HERO_JAKE_\50PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\52PS"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 0
 	foe["RATE_ITM_ANTIDOTE"] = 0
 	foe["RATE_ITM_APPLE"] = 10
 	foe["RATE_ITM_FLAMEORB"] = 0
@@ -123,6 +137,8 @@ local foe = {}
 	foe["TARGET_ABL_HERO_JAKE_\50PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\51PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\52PS"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_HEAL"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_SPLASH"] = "Random"
 	foe["TARGET_ITM_ANTIDOTE"] = "Random"
 	foe["TARGET_ITM_APPLE"] = "Random"
 	foe["TARGET_ITM_FLAMEORB"] = "Random"
