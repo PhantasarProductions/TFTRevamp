@@ -97,7 +97,7 @@ end
 
 function DwarfBossStart()
     RPG.Points('FOE_1','HP').Minimum = 1
-    MapText('STARTDWARFBOSS')
+    MapText('STARTDWARFBOSS','FLOW_COMBAT')
 end
 
 -- End prologue

@@ -1,6 +1,6 @@
 --[[
   BoxText.lua
-  Version: 16.09.14
+  Version: 16.10.22
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -42,7 +42,8 @@ boxtextroutine = true
 
 Backgrounds = {
 
-       FLOW_FIELD = function() Cls() Maps.Draw() end
+       FLOW_FIELD = function() Cls() Maps.Draw() end,
+       FLOW_COMBAT = function() Cls() MS.Run('COMBAT','DrawScreen') end
 }
 
 
@@ -72,7 +73,7 @@ local ret
 --DarkText("background: "..bb,10,400,2,0)
 -- @FI
 ]]
-Backgrounds[altbackground or "FLOW_"..LAURA.GetFlow()]()
+;(Backgrounds[boxback or altbackground or "FLOW_"..upper(LAURA.GetFlow())] or function() Sys.Error("BoxText Background error","B,"..boxback or altbackground or "FLOW_"..upper(LAURA.GetFlow()))end)()
 setfont("BoxText")
 local fh = Image.TextHeight("TEST")
 local bh = (fh * #data.Lines) + (fh)
