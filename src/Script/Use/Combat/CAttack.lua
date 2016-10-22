@@ -67,6 +67,7 @@ function Hurt(tag,damage,element)
       if fighterbytag[tag].group=='Hero' and CVV('&CHEAT.GOD') then dmg=0 end -- God Mode      
       hp.Have = hp.Have - dmg -- Yeah that even works for absorb, as a negative value is then in dmg and two negatives make one positive.
       CSay(tag.." has "..hp.Have.." HP left")
+      RPG.Points(tag,'HP') -- Any minimums and maximums are now taken in order automatically.
       if hp.Have<=0 then SetStatus(tag,'Death',true) end 
       CSay(sval(tag).." suffered "..dmg.." damage")                  
 end
