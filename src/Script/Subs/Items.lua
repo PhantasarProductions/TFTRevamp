@@ -222,8 +222,10 @@ function Teach(ch,ability)
 end
 
 function MayTeach(ch)
-   for pagekey,pagedata in spairs(ablpage[ch]) do
-       for ablkey,ablreq in spairs(pagedata) do
+   for pagenum,pagekey in spairs(ablpage[ch]) do
+       CSay('Checking: '..pagekey)
+       --for ablkey,ablreq in spairs(pagedata) do
+       for ablkey,ablreq,a in iSpell(ch,ablpage[ch][pagenum]) do
            local al = not heroabl[ch][ablkey]
            for i,l in pairs(ablreq) do
                al = al and RPG.PointsExists(ch,"SK_LVL_"..i)==1 and RPG.PointsExists(ch,'SK_LVL_'..i).Have>=l               
