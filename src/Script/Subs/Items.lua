@@ -253,7 +253,7 @@ function CombatTeach(ch)
       end
    end
    MS.Run("BOXTEXT","LoadData","COMBAT/LEARN;COMBATLEARN")
-   RunBoxText('COMBATLEARN',upper(tag))
+   SerialBoxText('COMBATLEARN',upper(tag),'FLOW_COMBAT')
    MS.Run('COMBAT','AdeptNextAct',actstring)   
 end
 
