@@ -203,6 +203,7 @@ function fflow.selectitem()
    ShowMouse()
    local myitem = SelectedItem()
    if myitem then nextact.act=myitem fflow.PrepareAction(ItemGet(myitem),'ItemMin') end   
+   if getpress.cancel() then flow = 'playerinput' end
 end
 
 function fflow.selectability()
