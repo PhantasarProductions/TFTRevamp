@@ -99,7 +99,10 @@ function GALE_OnLoad()
 end   
              
 function ItemGet(I,s)
-     local ret = JINC("Script/JINC/IA/"..I..".lua")   -- IA = Items/Ability (I hope that was obvious) :-P
+     loadeditems = loadeditems or {}
+     local ui = upper(I)
+     loadeditems[ui] = loadeditems[ui] or JINC("Script/JINC/IA/"..I..".lua")
+     local ret = loadeditems[ui] --JINC("Script/JINC/IA/"..I..".lua")   -- IA = Items/Ability (I hope that was obvious) :-P
      -- local ret = f()
      if s then Var.D("$ITEMGET",serialize("ret",ret).."\n\nreturn ret") end
      return ret
@@ -177,15 +180,16 @@ function ShowSpellList(ch,psizes)
    local ck,ca,sk,sa
    local has = SpellList(ch)
    local cnt
+   heroabl[ch] = heroabl[ch] or {}
    for i,k,a in iSpell(ch,ablpage[ch][SSLPG]) do
        local y=(i+1)*fonts.Stats[2]
        sa=a; sk=k
        if i==SSLP then        ck=k       ca=a        c = {255,180,0} else c = {255,255,255} end
-       if heroabl[k] then
+       if heroabl[ch][k] then
           -- show spell
           local abl = ItemGet(k)
           DarkText(abl.Title,10,y,0,2,c[1],c[2],c[3])
-          DarkText(abl.ABL_APCost,sizes[3]-10,1,2,0,180,255)
+          DarkText(abl.ABL_APCost,sizes[3]-10,y,1,2,0,180,255)
        else
           DarkText('---',10,y,0,2,c[1],c[2],c[3])
           if i==SSLP then DarkText("Hold H to see unlock info",sizes[3]-25,y,1,2,255,180,0) end

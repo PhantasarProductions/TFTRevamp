@@ -1,6 +1,6 @@
 --[[
   Joy.lua
-  Version: 16.10.05
+  Version: 16.10.23
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
