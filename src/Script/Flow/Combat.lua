@@ -239,15 +239,17 @@ function GALE_OnLoad()
 end
 
 function AdeptNextAct(na)
+   CSay('AdeptNextAct --> '..sval(na))
    local nadf = loadstring('return { '..na..' }')
    if not nadf then CSay('Transferring data failed') CSay(na) return end
    local nad = nadf()
-   local aa = { [true]='Changing: ', 
-                [false]=' Adding: '}
+   local aa = { [true]= 'Changing: ', 
+                [false]='  Adding: '}
    for k,v in spairs(nad) do
        CSay(aa[nextact[k]~=nil]..k.." = "..sval(v).." ("..type(v)..")")
        nextact[k] = v
    end
+   CSay('Done')
 end
 
 

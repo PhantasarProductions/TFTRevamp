@@ -60,11 +60,15 @@ fflow.inputicons = { attack = {
                      ability = {
                                  x = 0, y = -50,
                                  allow = function()
-                                         -- Actual content comes later when abilities are actually possible.
+                                          -- Actual content comes later when abilities are actually possible.
+                                          return true
                                          end,
                                  key = KEY_UP,
                                  joyx = nil,
-                                 joyy = -1        
+                                 joyy = -1,
+                                 selected = function(ch)
+                                      nextact = {flow='selectability'}
+                                 end        
                                }   ,
                      spirata = {
                                  x = 0, y = 50,
@@ -82,7 +86,7 @@ fflow.inputicons = { attack = {
                                          end,
                                  key = KEY_LEFT,
                                  joyx = -1,
-                                 joyy = nil     ,  
+                                 joyy = nil,  
                                  selected = function()
                                                nextact = { flow='selectitem' }
                                             end 
@@ -97,6 +101,7 @@ fflow.inputicons = { attack = {
                                  joyy = nil        
                                }
              }
+             
 inputicons = fflow.inputicons             
 
 function fflow.setplayerinput(ch)
@@ -198,6 +203,19 @@ function fflow.selectitem()
    ShowMouse()
    local myitem = SelectedItem()
    if myitem then nextact.act=myitem fflow.PrepareAction(ItemGet(myitem),'ItemMin') end   
+end
+
+function fflow.selectability()
+   local bx = 100
+   local by = 100
+   local bw = SW-200
+   local bh = SH-300
+   Box(bx,by,bw,bh)
+   ShowSpellList(inputchar.tag,{bx,by,bw,bh})
+   ShowMouse()
+   local myitem = SelectedItem()
+   if myitem then nextact.act=myitem fflow.PrepareAction(ItemGet(myitem),'Execution') end   
+   if getpress.cancel() then flow = 'playerinput' end
 end
 
 -- @IF IGNORE

@@ -246,10 +246,10 @@ function CombatTeach(ch)
    local spell = MayTeach(ch); if not spell then return end
    heroabl[ch][spell] = true
    local spelldata = ItemGet(spell)
-   local actstring = 'act = "'..spell..'", aftermsg="'..RPG.GetName(ch)..' learned \''..spelldata.Title..'\', gratis=true'
+   local actstring = 'act = "'..spell..'", aftermsg="'..RPG.GetName(ch)..' learned \''..spelldata.Title..'\'", gratis=true'
    if spelldata.Target=="AA" or spelldata.Target=="1A" or spelldata.Target=="OS" then
       for i=0,3 do
-          if RPG.PartyTag(i)==ch then actstring = actstring ..", group='Hero', id="..i end
+          if RPG.PartyTag(i)==ch then actstring = actstring ..", group='Hero', targetidx="..i end
       end
    end
    MS.Run("BOXTEXT","LoadData","COMBAT/LEARN;COMBATLEARN")

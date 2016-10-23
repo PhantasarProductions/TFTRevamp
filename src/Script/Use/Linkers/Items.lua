@@ -106,7 +106,7 @@ end
 HealTypes = {
                Absolute    = function(ch,item) return item.Heal end,
                Percent     = function(ch,item) return math.ceil((item.Heal/100)*RPG.Points(ch,"HP").Maximum) end,
-               StatPercent = function(ch,item,bytag) return meth.ceil((item.Heal/100)*RPG.Stat(bytag,item.Heal_StatPercent)) end
+               StatPercent = function(ch,item,bytag) return math.ceil((item.Heal/100)*RPG.Stat(bytag,'END_'..item.Heal_StatPercent)) end
             }
 
 function ItemHeal(ch,itemdata,retonly,bytag)

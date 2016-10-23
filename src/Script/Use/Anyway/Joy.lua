@@ -104,6 +104,6 @@ getpress = {
                 left = function() return joyhit(joy_left) or INP.KeyH(KEY_LEFT)==1 end,
                 right = function() return joyhit(joy_right) or INP.KeyH(KEY_RIGHT)==1 end,
                 confirm = function() return joyhit('CONFIRM') or INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_SPACE) end,
-                cancel = function() return joyhit('CANCEL') or INP.KeyH(KEY_ESCAPE) end
+                cancel = function() return joyhit('CANCEL') or INP.KeyH(KEY_ESCAPE)==1 end
            }
 
