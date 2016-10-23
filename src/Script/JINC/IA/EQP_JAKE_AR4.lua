@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.22
+version: 16.10.23
 ]]
 ret = {
 	["Desc"] = "Bright as the sun, or so they say",

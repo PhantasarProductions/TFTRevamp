@@ -32,11 +32,12 @@
   
  **********************************************
  
-version: 16.10.22
+version: 16.10.23
 ]]
 ret = {
 	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
+	["Attack_AllowCritical"] = true,
 	["Attack_AttackStat"] = "Intelligence",
 	["Attack_DefenseStat"] = "Resistance",
 	["Attack_Element"] = "Water",

@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 16.10.22
+  Version: 16.10.23
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -236,6 +236,18 @@ end
 
 function GALE_OnLoad()
    learn.Jake_Fairy = learn.Jake_Human
+end
+
+function AdeptNextAct(na)
+   local nadf = loadstring('return { '..na..' }')
+   if not nadf then CSay('Transferring data failed') CSay(na) return end
+   local nad = nadf()
+   local aa = { [true]='Changing: ', 
+                [false]=' Adding: '}
+   for k,v in spairs(nad) do
+       CSay(aa[nextact[k]~=nil]..k.." = "..sval(v).." ("..type(v)..")")
+       nextact[k] = v
+   end
 end
 
 

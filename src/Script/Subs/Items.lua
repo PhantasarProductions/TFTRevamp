@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.10.08
+  Version: 16.10.23
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -178,6 +178,9 @@ function ShowSpellList(ch,psizes)
        if i==SSLP then        ck=k       ca=a        c = {255,180,0} else c = {255,255,255} end
        if heroabl[k] then
           -- show spell
+          local abl = ItemGet(k)
+          DarkText(abl.Title,10,y,0,2,c[1],c[2],c[3])
+          DarkText(abl.ABL_APCost,sizes[3]-10,1,2,0,180,255)
        else
           DarkText('---',10,y,0,2,c[1],c[2],c[3])
           if i==SSLP then DarkText("Hold H to see unlock info",sizes[3]-25,y,1,2,255,180,0) end
@@ -212,6 +215,38 @@ function ShowSpellList(ch,psizes)
    -- Keyboard and joypad input
    if getpress.up  () and SSLP>  1 then SSLP = SSLP - 1 end
    if getpress.down() and SSLP<cnt then SSLP = SSLP + 1 end
+end
+
+function Teach(ch,ability)
+   heroabl[ch][ability] = true
+end
+
+function MayTeach(ch)
+   for pagekey,pagedata in spairs(ablpage[ch]) do
+       for ablkey,ablreq in spairs(pagedata) do
+           local al = not heroabl[ch][ablkey]
+           for i,l in pairs(ablreq) do
+               al = al and RPG.PointsExists(ch,"SK_LVL_"..i)==1 and RPG.PointsExists(ch,'SK_LVL_'..i).Have>=l               
+           end
+           if al then return ablkey end
+       end
+   end
+end
+
+function CombatTeach(ch)
+   local tag = ch; if prefixed(tag,"Jake") then tag='Jake' end
+   local spell = MayTeach(ch); if not spell then return end
+   heroabl[ch][spell] = true
+   local spelldata = ItemGet(spell)
+   local actstring = 'act = "'..spell..'", aftermsg="'..RPG.GetName(ch)..' learned \''..spelldata.Title..'\', gratis=true'
+   if spelldata.Target=="AA" or spelldata.Target=="1A" or spelldata.Target=="OS" then
+      for i=0,3 do
+          if RPG.PartyTag(i)==ch then actstring = actstring ..", group='Hero', id="..i end
+      end
+   end
+   MS.Run("BOXTEXT","LoadData","COMBAT/LEARN;COMBATLEARN")
+   RunBoxText('COMBATLEARN',upper(tag))
+   MS.Run('COMBAT','AdeptNextAct',actstring)   
 end
 
 function ItemShowList(showfilter,enablefilter,char,psizes)

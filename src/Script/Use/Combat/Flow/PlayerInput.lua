@@ -1,6 +1,6 @@
 --[[
   PlayerInput.lua
-  Version: 16.10.20
+  Version: 16.10.23
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -48,7 +48,7 @@ fflow.inputicons = { attack = {
                             joyx = 100, -- These values are never given, and will as a result prevent conflicts.
                             joyy = 100,
                             selected = function(ch)
-                               nextact = { act = 'AAA_Attack', flow='playerselectsingletarget', group='Foe' }
+                               nextact = { act = 'AAA_Attack', flow='playerselectsingletarget', group='Foe', mayteach=true }
                                -- If the player is wearing a weapon causing an alternate attack then let's get this onto the road
                                local weaponname = RPG.GetData(ch,"EQP_Weapon")
                                local weapon = ItemGet(weaponname)

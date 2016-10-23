@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.22
+version: 16.10.23
 ]]
 ret = {
 	["Desc"] = "Just the regular fairy fashion for young girls",

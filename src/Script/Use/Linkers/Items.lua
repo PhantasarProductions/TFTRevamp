@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.10.11
+  Version: 16.10.23
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -115,4 +115,9 @@ function ItemHeal(ch,itemdata,retonly,bytag)
     local ret = (HealTypes[itemdata.Heal_Type] or Sys.Error("I don't know Heal Type "..sval(itemdata.Heal_Type)))(ch,itemdata,bytag)
     if not retonly then RPG.Points(ch,"HP").Inc(ret) end
     return ret
+end
+
+Teach = Teach or function(ch,ability)
+   LoadItemModule()
+   MS.Rur("ITEMS",'Teach',ch..";"..ability)
 end

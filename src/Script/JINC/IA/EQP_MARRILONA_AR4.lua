@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.22
+version: 16.10.23
 ]]
 ret = {
 	["Desc"] = "I'm too sexy for my love, love's going to leave me!",

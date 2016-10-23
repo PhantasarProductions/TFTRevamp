@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 16.10.22
+  Version: 16.10.23
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -55,6 +55,7 @@ function AltHealing(group,i,Heal)
 end
 
 function PerformAction(act,group,i)
+     -- Set up variables
      local effect = nil
      local myfighter = Fighters[group][i]
      local myexecutor = fighterbytag[nextact.executor.tag]
@@ -93,6 +94,11 @@ fflow.Range['1A'] = fflow.Range['1F']
 fflow.Range.AA = fflow.Range.AF                          
 
 function fflow.Execution()
+   -- Check the teacher. If set it may override the selected attack.
+   if nextact.executor.group=="Hero" and nextact.mayteach then
+      LoadItemModule() -- Loads the items module if this wasn't done before. 
+      MS.Run('ITEMS','CombatTeach',nextact.executor.tag)
+   end      
    -- Init
    e_act = e_act or ItemGet(nextact.act); local act=e_act
    local acttag = nextact.act
@@ -141,6 +147,10 @@ function fflow.Execution()
    if nextact.executor.group=='Hero' then 
       LastAction=nextact.executor.tag 
       myactor.stace='idle'
+   end
+   -- Is there a message? (Should only be used for learning new spells).
+   if nextact.aftermsg then
+      ChMiniMsg(nextact.executor.tag,nextact.aftermsg,0,180,255)
    end
    flow = nextact.afterperform or 'idle' 
    nextact = nil
