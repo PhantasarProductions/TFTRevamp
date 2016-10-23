@@ -45,6 +45,11 @@ heroabl = heroabl or {}
 abllist = {}
 ablpage = {}
 
+heroabl.Jake = heroabl.Jake or {}
+heroabl.Jake_Human = heroabl.Jake
+heroabl.Jake_Fairy = heroabl.Jake
+-- Should prevent conflicts in Jake's forms. Reference based objects, doncha just love 'em? ;)
+
 itemfilter = {
 
                   All = function(i) return true end,
@@ -222,13 +227,14 @@ function Teach(ch,ability)
 end
 
 function MayTeach(ch)
+   heroabl[ch] = heroabl[ch] or {}
    for pagenum,pagekey in spairs(ablpage[ch]) do
        CSay('Checking: '..pagekey)
        --for ablkey,ablreq in spairs(pagedata) do
-       for ablkey,ablreq,a in iSpell(ch,ablpage[ch][pagenum]) do
+       for ablindex,ablkey,ablreq in iSpell(ch,ablpage[ch][pagenum]) do
            local al = not heroabl[ch][ablkey]
            for i,l in pairs(ablreq) do
-               al = al and RPG.PointsExists(ch,"SK_LVL_"..i)==1 and RPG.PointsExists(ch,'SK_LVL_'..i).Have>=l               
+               al = al and RPG.PointsExists(ch,"SK_LVL_"..i)==1 and RPG.Points(ch,'SK_LVL_'..i).Have>=l               
            end
            if al then return ablkey end
        end
