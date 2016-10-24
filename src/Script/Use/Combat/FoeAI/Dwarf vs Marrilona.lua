@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  EQP_HANDOSTILLOR_WP4.lua
+  Dwarf vs Marrilona.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -34,24 +34,24 @@
  
 version: 16.10.24
 ]]
-ret = {
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
-	["Attack_Element"] = "None",
-	["Desc"] = "Were did people \"steel\" this? (Drum fill)",
-	["EQP_STAT_Intelligence"] = 8,
-	["EQP_STAT_Power"] = 4,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "HandoStillor",
-	["ITM_ShopPrice"] = 2400,
-	["ITM_Type"] = "Weapon",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Steel staff",
-	["Type"] = "Item"}
+-- @IF IGNORE
+FoeAI = {}
+-- @FI
 
-return ret
 
--- This file is an automatically generated file!
+function FoeAI.dwarfprologue(tag)
+    local foe = fightersbytag[tag]
+    if RPG.Points(tag,'HP').Have>1 then return FoeAI.default(tag) end
+    nextact =   {
+                           executor = { group = 'Foe', tag=foe.tag },
+                           act = 'SPECIAL_AXESMASH', 
+                           flow='Execution', 
+                           group='Hero',
+                           targetidx=0
+    }
+    return nextact
+end
 
+-- @IF IGNORE
+return FoeAI
+-- @FI

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.23
+version: 16.10.24
 ]]
 ret = {
 	["Desc"] = "A weapon for a warrior fresh on the field",

@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  EQP_HANDOSTILLOR_WP4.lua
+  SPECIAL_AXESMASH.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -35,21 +35,26 @@
 version: 16.10.24
 ]]
 ret = {
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Were did people \"steel\" this? (Drum fill)",
-	["EQP_STAT_Intelligence"] = 8,
-	["EQP_STAT_Power"] = 4,
-	["Heal_StatPercent"] = "Power",
+	["EffectScript"] = "prologueaxesmash",
+	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "HandoStillor",
-	["ITM_ShopPrice"] = 2400,
-	["ITM_Type"] = "Weapon",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_Type"] = "Consumable",
 	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Steel staff",
-	["Type"] = "Item"}
+	["Target"] = "1F",
+	["Title"] = "Axe Smash!",
+	["Type"] = "Ability"}
 
 return ret
 

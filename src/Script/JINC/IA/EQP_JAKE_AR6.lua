@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.23
+version: 16.10.24
 ]]
 ret = {
 	["Desc"] = "it looks gross, but it protects its wearer well.",
