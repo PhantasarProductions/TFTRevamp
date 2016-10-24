@@ -1,6 +1,6 @@
 --[[
   Slime.lua
-  Version: 16.10.22
+  Version: 16.10.24
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sat 22 October 2016; 18:53:16
+-- File Generated: Mon 24 October 2016; 23:10:07
 
 
 local foe = {}
@@ -51,6 +51,7 @@ local foe = {}
 	foe["NEWGAMEPLUS_ITM_APPLE"] = true
 	foe["NEWGAMEPLUS_ITM_FLAMEORB"] = true
 	foe["NEWGAMEPLUS_ITM_MEDICINE"] = true
+	foe["NEWGAMEPLUS_SPECIAL_AXESMASH"] = true
 	foe["NEWGAMEPLUS_WAND_FLAME"] = true
 	foe["NORMAL_AAA_ATTACK"] = true
 	foe["NORMAL_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
@@ -63,6 +64,7 @@ local foe = {}
 	foe["NORMAL_ITM_APPLE"] = true
 	foe["NORMAL_ITM_FLAMEORB"] = true
 	foe["NORMAL_ITM_MEDICINE"] = true
+	foe["NORMAL_SPECIAL_AXESMASH"] = true
 	foe["NORMAL_WAND_FLAME"] = true
 	foe["OVERSOUL_AAA_ATTACK"] = true
 	foe["OVERSOUL_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
@@ -75,6 +77,7 @@ local foe = {}
 	foe["OVERSOUL_ITM_APPLE"] = true
 	foe["OVERSOUL_ITM_FLAMEORB"] = true
 	foe["OVERSOUL_ITM_MEDICINE"] = true
+	foe["OVERSOUL_SPECIAL_AXESMASH"] = true
 	foe["OVERSOUL_WAND_FLAME"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
 	foe["SKILL\49_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
@@ -87,6 +90,7 @@ local foe = {}
 	foe["SKILL\49_ITM_APPLE"] = true
 	foe["SKILL\49_ITM_FLAMEORB"] = true
 	foe["SKILL\49_ITM_MEDICINE"] = true
+	foe["SKILL\49_SPECIAL_AXESMASH"] = true
 	foe["SKILL\49_WAND_FLAME"] = true
 	foe["SKILL\50_AAA_ATTACK"] = true
 	foe["SKILL\50_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
@@ -99,6 +103,7 @@ local foe = {}
 	foe["SKILL\50_ITM_APPLE"] = true
 	foe["SKILL\50_ITM_FLAMEORB"] = true
 	foe["SKILL\50_ITM_MEDICINE"] = true
+	foe["SKILL\50_SPECIAL_AXESMASH"] = true
 	foe["SKILL\50_WAND_FLAME"] = true
 	foe["SKILL\51_AAA_ATTACK"] = true
 	foe["SKILL\51_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
@@ -111,6 +116,7 @@ local foe = {}
 	foe["SKILL\51_ITM_APPLE"] = true
 	foe["SKILL\51_ITM_FLAMEORB"] = true
 	foe["SKILL\51_ITM_MEDICINE"] = true
+	foe["SKILL\51_SPECIAL_AXESMASH"] = true
 	foe["SKILL\51_WAND_FLAME"] = true
 	foe["Desc"] = "A miserable excuse for a monster\46\10Why are they there in every RPG world?"
 	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47reg\47Slime\46png"
@@ -131,6 +137,7 @@ local foe = {}
 	foe["RATE_ITM_APPLE"] = 0
 	foe["RATE_ITM_FLAMEORB"] = 0
 	foe["RATE_ITM_MEDICINE"] = 0
+	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_WAND_FLAME"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = "Random"
@@ -143,6 +150,7 @@ local foe = {}
 	foe["TARGET_ITM_APPLE"] = "Random"
 	foe["TARGET_ITM_FLAMEORB"] = "Random"
 	foe["TARGET_ITM_MEDICINE"] = "Random"
+	foe["TARGET_SPECIAL_AXESMASH"] = "Random"
 	foe["TARGET_WAND_FLAME"] = "Random"
 	foe["Boss"] = false
 	foe["Oversoul"] = false
