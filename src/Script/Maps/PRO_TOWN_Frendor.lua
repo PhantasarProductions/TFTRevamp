@@ -105,6 +105,7 @@ end
 
 -- End prologue
 function PostBoss_Marrilona()
+    Music('Sys/Silence.ogg')
     GoToLayer('black','Start')
     MapText('ELDER_OPENEYES')
     GoToLayer('marrilona','MarrilonaBed')
