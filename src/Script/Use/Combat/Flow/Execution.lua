@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 16.10.23
+  Version: 16.10.25
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -76,6 +76,13 @@ function PerformAction(act,group,i)
      if act.Attack and act.Attack>0 then effect=effect or Attack(act,group,i,nextact) end
      -- Put on buffs
      -- Scripted stuff
+     if act.EffectScript and act.EffectScript~="" then
+        if act.EffectScript_External then
+           Sys.Error("External effect scripts not yet scripted")
+        else
+           SpellScript[act.EffectScript](myfighter.tag,myexecutor.tag,act.EffectScript_Arg)
+        end   
+     end
      -- Cause status changes (this always comes last)
      -- Throw "miss" if there is no effect (very last)
      if not effect then charmsg(myfighter.tag,'miss',155,155,155) end

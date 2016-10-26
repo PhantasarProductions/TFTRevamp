@@ -32,8 +32,11 @@
   
  **********************************************
  
-version: 16.10.22
+version: 16.10.26
 ]]
+
+-- @USE /Script/Use/Specific/EndOfPrologue.lua
+
 -- General
 function MapMusic()
    if not Done("&DONE.VANDAR.OPENING_Fandalora") then 
@@ -102,7 +105,20 @@ end
 
 -- End prologue
 function PostBoss_Marrilona()
-    Sys.Error("End of prologue not yet done. Hang on, folks!")
+    GoToLayer('black','Start')
+    MapText('ELDER_OPENEYES')
+    GoToLayer('marrilona','MarrilonaBed')
+    local Nostramantu = Maps.Obj.Obj('Nostramantu')
+    local Marrilona   = Actors.Actor('PLAYER')
+    local NosSpot     = Maps.Obj.Obj('NosSpot')
+    Nostramantu.R = 255
+    Nostramantu.G = 255
+    Nostramantu.B = 255
+    Nostramantu.X = NosSpot.X
+    Nostramantu.X = NosSpot.Y
+    MapText('ELDER_ENDPROLOGUE')
+    EndOfPrologue('Marrilona')
+    --Sys.Error("End of prologue not yet done. Hang on, folks!")
 end
 
 -- Init
