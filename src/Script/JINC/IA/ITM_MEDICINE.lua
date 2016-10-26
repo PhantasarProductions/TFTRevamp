@@ -1,6 +1,6 @@
 --[[
   ITM_MEDICINE.lua
-  Version: 16.10.24
+  Version: 16.10.26
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -42,11 +42,13 @@ ret = {
 	["CureDisease"] = true,
 	["Desc"] = "Cures \"Disease\"",
 	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",

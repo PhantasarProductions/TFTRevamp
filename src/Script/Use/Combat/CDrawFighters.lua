@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 16.10.21
+  Version: 16.10.26
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -38,8 +38,9 @@
 function DrawFoe(i)
     local myfoe = Fighters.Foe[i]
     local tag = myfoe.tag
+    myfoe.negative = myfoe.negative == true -- Crash prevention
     --color(myfoe.R or 255,myfoe.G or 255,myfoe.B or 255)
-    Image.Show("FIGHT_"..tag,myfoe.x,myfoe.y)
+    Image.Show("FIGHT_"..tag..sval(myfoe.negative),myfoe.x,myfoe.y)
 end
 
 function DrawHero(i)
@@ -47,7 +48,7 @@ function DrawHero(i)
     local tag = myhero.tag
     --color(myhero.R or 255,myhero.G or 255,myhero.B or 255)
     local itag = "FIGHT_HERO_"..tag.."_"..myhero.stance
-    Image.LoadNew(itag,"GFX/Combat/Fighters/Hero/"..tag.."."..myhero.stance..".png"); Image.Hot(itag,Image.Width(itag),Image.height(itag))
+    Image.LoadNew(itag,"GFX/Combat/Fighters/Hero/"..tag.."."..myhero.stance..".png"); Image.Hot(itag,Image.Width(itag)/2,Image.height(itag))
     Image.Show(itag,myhero.x,myhero.y)
     -- Image.NoFont() DarkText("Hero #"..i..": ("..myhero.x..","..myhero.y..")  screen:"..SW.."x"..SH,5,i*20)
 end

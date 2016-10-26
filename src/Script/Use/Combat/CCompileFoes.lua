@@ -1,6 +1,6 @@
 --[[
   CCompileFoes.lua
-  Version: 16.10.13
+  Version: 16.10.26
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -64,8 +64,10 @@ function CompileFoe(tag,data,oversoul)
    end
    RPG.Points(tag,'HP',1).MaxCopy="END_HP"
    RPG.Points(tag,'HP').Have = RPG.Points(tag,'HP').Maximum
-   Image.Load(data.Image,"FIGHT_"..tag)
-   Image.Hot("FIGHT_"..tag,Image.Width("FIGHT_"..tag)/2,Image.Height("FIGHT_"..tag)) -- Hotspot bottom center
+   Image.Load(data.Image,"FIGHT_"..tag..upper(sval(false)))
+   Image.Negative("FIGHT_"..tag..upper(sval(false)),"FIGHT_"..tag..upper(sval(true)))
+   Image.Hot("FIGHT_"..tag.."FALSE",Image.Width("FIGHT_"..tag.."FALSE")/2,Image.Height("FIGHT_"..tag.."FALSE")) -- Hotspot bottom center
+   Image.Hot("FIGHT_"..tag.."TRUE" ,Image.Width("FIGHT_"..tag.."TRUE" )/2,Image.Height("FIGHT_"..tag.."TRUE" )) -- Hotspot bottom center
    local x = math.ceil(id/3)
    local y = (id - x)+1
    myfoe.x = (x * (Center_X/100)) + 50

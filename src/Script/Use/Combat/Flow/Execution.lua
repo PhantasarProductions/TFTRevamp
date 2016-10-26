@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 16.10.25
+  Version: 16.10.26
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -122,9 +122,33 @@ function fflow.Execution()
          DarkText(sval(ExeShowMsg.Timer),50,50,0,0,255,255,255) -- What the hell is wrong here?
          Flip()
    end
-   -- Stance
    -- Voice
    Voice(nextact.executor.tag,act.Voice or "NOTHING AT ALL") -- The latter is just to prevent "nil" crashes.   
+   -- Stance
+   ;({ Foe = function(a)
+                 local t = nextact.executor.tag
+                 local h = fighterbytag[t]
+                 for i = 1,5 do
+                     h.negative = not h.negative
+                     for f=1,5 do Cls() DrawScreen() Flip() end
+                 end
+                 h.negative = false
+             end,
+      Hero = function(a)
+                 local t = nextact.executor.tag
+                 local h = fighterbytag[t]
+                 if a.Stance=='Attack' then
+                    for i=1,2 do
+                        h.stance='Attack.'..i
+                        for f=1,25 do Cls() DrawScreen() Flip() end
+                    end                             
+                 else
+                    h.stance=a.Stance
+                    for f=1,25 do Cls() DrawScreen() Flip() end
+                 end
+                 h.stance='Idle'  
+             end 
+   })[nextact.executor.group](act)
    -- SpellAni
    if act.SpellAni then 
       white()

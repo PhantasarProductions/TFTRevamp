@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.24
+version: 16.10.26
 ]]
 ret = {
 	["Attack"] = 100,
@@ -60,7 +60,7 @@ ret = {
 	["ITM_WeaponAbility"] = true,
 	["Rew_GainAP"] = 5,
 	["SpellAni"] = "Flame",
-	["Stance"] = "Cast",
+	["Stance"] = "Attack",
 	["Target"] = "1F",
 	["Title"] = "Flame Wand",
 	["Type"] = "Item",

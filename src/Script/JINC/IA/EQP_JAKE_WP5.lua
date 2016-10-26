@@ -32,14 +32,21 @@
   
  **********************************************
  
-version: 16.10.24
+version: 16.10.26
 ]]
 ret = {
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Power",
+	["Attack_Element"] = "None",
 	["Desc"] = "Winter is coming",
 	["EQP_STAT_Power"] = 10,
+	["Heal_StatPercent"] = "Power",
+	["Heal_Type"] = "Absolute",
 	["ITM_EQP_For"] = "Jake",
 	["ITM_ShopPrice"] = 4000,
 	["ITM_Type"] = "Weapon",
+	["Stance"] = "Attack",
+	["Target"] = "1A",
 	["Title"] = "Frostbite",
 	["Type"] = "Item"}
 
