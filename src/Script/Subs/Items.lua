@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.10.23
+  Version: 16.10.26
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -325,9 +325,9 @@ function TreasureChest(tag)
        if skill==1 then getcash = getcash * 2 elseif skill==3 then getcash = getcash * .25 end
        Var.D("$ITEMNAME",getcash.." shilders")
        if CVV("%CASH") >= cashmax then 
-          SerialBoxText("ITEM","FULL")
+          SerialBoxText("ITEM","FULL","FLOW_FIELD")
        else
-          SerialBoxText("ITEM","GET")
+          SerialBoxText("ITEM","GET","FLOW_FIELD")
           inc('%CASH',getcash)
           gotit = true
        end   
@@ -341,10 +341,10 @@ function TreasureChest(tag)
           shownitems = {}; showitems=shownitems
           enableditems  = {}
           inventory[icode] = inventory[icode] + 1            
-          SerialBoxText("ITEM","GET")
+          SerialBoxText("ITEM","GET","FLOW_FIELD")
           gotit = true
        else   
-          SerialBoxText("ITEM","FULL")
+          SerialBoxText("ITEM","FULL","FLOW_FIELD")
        end
     end
     -- Adept the map      

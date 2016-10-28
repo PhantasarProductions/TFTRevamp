@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.10.22
+  Version: 16.10.26
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -77,7 +77,7 @@ f()
 end; InitMapText()
 
 function MapText(tag,mapaltMS)
-  SerialBoxText("MAP",tag,mapaltMS or "FLOW_FIELD" or "BOXTEXT.KTHURA") -- last string always ignored, but I need to make sure I can always fall back on that one.
+  SerialBoxText("MAP",tag,mapaltMS or "FLOW_FIELD") -- last string always ignored, but I need to make sure I can always fall back on that one.
 end
 
 

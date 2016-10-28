@@ -1,6 +1,6 @@
 --[[
   PrologueSelectChar.lua
-  Version: 16.10.14
+  Version: 16.10.27
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -83,6 +83,7 @@ function SelChar(pos)
    MS.Load("EVENT","script/events/NarratedEvents.lua")
    MS.RUN("EVENT","Load",chars[pos])
    Done('&DONE.PROLOGUE['..pos..']')
+   MS.Destroy("PROLOGUESELECTCHAR")
    LAURA.Flow("EVENT") 
 end
 

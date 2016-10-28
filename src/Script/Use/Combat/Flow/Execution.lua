@@ -119,7 +119,7 @@ function fflow.Execution()
    -- if (not ExeShowMsg.Timer) or (ExeShowMsg.Timer>50) then return end
    while (not ExeShowMsg.Timer) or (ExeShowMsg.Timer>50) do   
          DrawScreen(); FPS()
-         DarkText(sval(ExeShowMsg.Timer),50,50,0,0,255,255,255) -- What the hell is wrong here?
+         --DarkText(sval(ExeShowMsg.Timer),50,50,0,0,255,255,255) -- What the hell is wrong here?
          Flip()
    end
    -- Voice
@@ -173,7 +173,7 @@ function fflow.Execution()
    -- And now let's return to 'idle'
    while (not ExeShowMsg.Timer) or (ExeShowMsg.Timer>0) do   
          DrawScreen(); FPS()
-         DarkText(sval(ExeShowMsg.Timer),50,50,0,0,255,255,255) -- What the hell is wrong here?
+         --DarkText(sval(ExeShowMsg.Timer),50,50,0,0,255,255,255) -- What the hell is wrong here?
          Flip()
    end   
    if nextact.executor.group=='Hero' then 
