@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.10.20
+  Version: 16.10.28
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -522,6 +522,12 @@ if mousehit(1) or fakex or fakey then
           elseif prefixed(c,"PSG") then
             if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32)==1 then
                WalkArrival = 'MAPSAVE'
+               WalkArrivalArg = nil
+               ret = true  
+            end    
+          elseif prefixed(c,"PRC") then
+            if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32)==1 then
+               WalkArrival = 'RecoverySpot'
                WalkArrivalArg = nil
                ret = true  
             end    

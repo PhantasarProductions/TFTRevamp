@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.09
+version: 16.10.28
 ]]
 
 ShowParty = ShowParty or function() 
@@ -67,6 +67,26 @@ ClickedChar = ClickedChar or function(num)
    Var.Clear("&CLICKEDCHAR")
    return ret
 end
-     
 
+function Recover(ch,full)
+   RPG.Points(ch,"HP").Have = RPG.Points(ch,"HP").Maximum
+   if skill==1 or full then
+      RPG.Points(ch,"VIT").Have = RPG.Points(ch,"VIT").Maximum
+      RPG.Points(ch,"AP" ).Have = RPG.Points(ch,"AP" ).Maximum
+   end   
+   if skill==3 then
+      RPG.Points(ch,"AP").Have = 0
+   end      
+end
+
+function PartyRecover(full)
+   for i=0,3 do
+       local ch = RPG.PartyTag(i)
+       if ch~="" then Recover(ch,full) end
+   end    
+end
+
+function RecoverySpot()
+   PartyRecover(false)     
+end
 NewParty = Party
