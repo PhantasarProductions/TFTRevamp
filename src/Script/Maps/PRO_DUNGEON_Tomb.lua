@@ -10,6 +10,10 @@ function MapMusic()
 end
 
 
+function CreateDandorSkill()
+   CreateSkill('Dandor',1,30/skill)
+end
+
 function Sandra()
     Maps.CamX=0
     Maps.CamY=900

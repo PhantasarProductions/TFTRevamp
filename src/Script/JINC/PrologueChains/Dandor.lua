@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.27
+version: 16.10.28
 ]]
 local function GoNext()
    local skill = tonumber(Var.C('%SKILL')) or 2
@@ -46,6 +46,7 @@ local function GoNext()
    RPGStat.SetData('Dandor','EQP_Armor' ,"") -- Dandor has no armor prior to the optional bosses, but this field must exist as it will otherwise crash the game
    RPGStat.SetData("Dandor","EQP_Acc"   ,"") -- This just makes sure the entry exists so no crashes can come bacause of it later.
    RPGStat.SetStat("Dandor","Level",30-((skill-1)*5))
+   MS.Run("MAP",'CreateDandorSkill')
    LAURA.Flow("FIELD")
    MS.Run('FIELD','SpawnPlayer',"Start")
    MS.Run('FIELD','Schedule','MAP;Sandra')
