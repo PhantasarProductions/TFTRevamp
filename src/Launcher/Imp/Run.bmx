@@ -20,12 +20,12 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.09.24
+Version: 16.10.30
 End Rem
 Strict
 Import "Framework.bmx"
 
-MKL_Version "The Fairy Tale - REVAMP - Run.bmx","16.09.24"
+MKL_Version "The Fairy Tale - REVAMP - Run.bmx","16.10.30"
 MKL_Lic     "The Fairy Tale - REVAMP - Run.bmx","GNU General Public License 3"
 
 Function Run()
@@ -39,15 +39,16 @@ Function Run()
 		WaitEvent		
 		eid = EventID(); DebugLog "EventID "+eid+"    WC="+Event_windowclose+"  Act="+event_gadgetaction+" sel="+Event_gadgetselect
 		esource = TGadget(EventSource())
-		eextra = TGadget(EventExtra())
+		eextra = TGadget(EventExtra())		
 		Select eid
 			Case event_appterminate
-				Byebye null
+				Byebye Null
 			Case event_windowclose
 				For myg = EachIn closelist
 					If myg.g=esource myg.close myg.g
 				Next
 			Case event_gadgetaction
+			        If currentpanel.flowaction currentpanel.flowaction(esource)
 				For myg = EachIn actionlist
 					If myg.extra 
 						myg.extra eextra

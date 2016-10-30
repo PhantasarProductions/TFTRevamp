@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.09.24
+Version: 16.10.30
 End Rem
 Strict
 
@@ -33,12 +33,13 @@ Import tricky_Units.ListDir
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - LoadGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.09.24"
+MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.10.30"
 
 afr_InpCol 0,27,0,0,155,0
 afr_WinCol 0,255,0,0,25,0
 
 Function LoadGame(G:TGadget)
+        If Not cursg Return
 	Local LGI:TIni = New TIni
 	lgi.D "Resource",Resource+"TFT.jcr"
 	lgi.D "Title","The Fairy Tale REVAMPED"
@@ -156,7 +157,7 @@ Next
 
 Global TreeView:TGadget = CreateTreeView(0,0,pw/2,bh*3,WeDoHaveSaveGames)
 Global Root:TGadget = TreeViewRoot(treeview)
-gadgets.make "LGTREE",treeview,CGUIN
+gadgets.make "LGTREE",treeview,CGUIN ',LoadGame
 
 
 ' Check what we got
@@ -329,7 +330,12 @@ Function Flow()
 	Next
 End Function
 
+Function doubleclicktree(G:TGadget)
+	If cursg loadgame G
+End Function
+
 mypan.flow = flow
+mypan.flowaction = doubleclicktree
 
 
 ' Restore ph for the other imported stuff
