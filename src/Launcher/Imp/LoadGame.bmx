@@ -191,7 +191,7 @@ End Function
 Function ShowGame()
 	If Not cursg Return DebugLog("No game for ShowGame()")
 	For Local i=0 Until 4
-		SetGadgetPixmap portret[i],cursg.portret[i]
+		SetGadgetPixmap portret[i],cursg.portret[i],PANELPIXMAP_FIT2
 		If cursg.level[i] SetGadgetText level[i],"Lv "+cursg.level[i] Else SetGadgetText level[i],""
 	Next
 	SetGadgetPixmap screenshot,cursg.shot,PANELPIXMAP_FIT2
