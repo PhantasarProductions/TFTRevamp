@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.10.30
+Version: 16.10.31
 End Rem
 Strict
 
@@ -33,13 +33,13 @@ Import tricky_Units.ListDir
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - LoadGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.10.30"
+MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.10.31"
 
 afr_InpCol 0,27,0,0,155,0
 afr_WinCol 0,255,0,0,25,0
 
-Function LoadGame(G:TGadget)
-        If Not cursg Return
+Function TrueLoadGame(U$="",S$="")
+        If (Not cursg) And (Not (U And S))  Return
 	Local LGI:TIni = New TIni
 	lgi.D "Resource",Resource+"TFT.jcr"
 	lgi.D "Title","The Fairy Tale REVAMPED"
@@ -50,16 +50,24 @@ Function LoadGame(G:TGadget)
 	?Not MacOS
 	lgi.add "Resource",AppDir+"/TFT.JCR"
 	?
-	lgi.d "LoadGame",cursg.file
+	If u And S
+		lgi.d "LoadGame",savedir+"/"+U+"/"+S
+	Else
+		lgi.d "LoadGame",cursg.file
+	EndIf		
 	lgi.d "StartScript","LoadGame.lua"
 	lgi.d "StartUpFunction","LoadGame"
 	lgi.d "TITLE","The Fairy Tale REVAMPED"
 	Mode2Ini lgi
 	SaveIni LAURA2StartFile, lgi
 	gadgets.get("win").g.setshow False
-	launcherconfig.D "LastSG.User",cursg.user
-	launcherconfig.D "LastSG.File",cursg.file
-	SaveLauncherConfig()
+	If cursg
+		launcherconfig.D "LastSG.User",cursg.user
+		launcherconfig.D "LastSG.File",cursg.file
+		launcherconfig.D "LastSG.User",cursg.user
+		launcherconfig.D "LastSG.File",cursg.file
+		SaveLauncherConfig()
+	endif	
 	?MacOS
 	Local app$ = ExtractDir(ExtractDir(AppFile))+"/Resources/LAURA2.app"
 	If Not FileType(app) Notify "Trouble launching LAURA II~n~n"+App
@@ -72,6 +80,11 @@ Function LoadGame(G:TGadget)
 	?
 	gadgets.get("win").g.setshow True		
 End Function
+
+Function LoadGame(G:TGadget)
+	TrueLoadGame
+End Function
+	
 
 Function Synchronize(G:TGadget)
 End Function
@@ -315,9 +328,28 @@ Function Check()
 	EndIf	
 End Function
 
+Function QG_Check()
+	Local qg$ = savedir+"/System/Quit"
+	If FileType(qg)
+		Select Proceed("The quit game has been found! Do you want to load it?~n(If you click 'Cancel' this game will be deleted)")
+			Case 1
+				trueloadgame "System","Quit"
+			Case -1
+				If DeleteFile(qg)
+					Notify "This quit game has been deleted"
+				Else
+					Notify "Warning! Deleting the quit game failed."
+				EndIf
+		End Select
+	Else
+		Print qg+" not found, so let's not even talk about it ;)"	
+	EndIf	
+End Function
+
 
 ' Activation of this panel
 Function Activate(G:TGadget)
+        QG_Check
 	check
 	DebugLog "Activate:cursg has value > "+Int(cursg<>Null)
 End Function

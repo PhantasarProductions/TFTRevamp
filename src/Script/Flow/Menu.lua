@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 16.10.17
+  Version: 16.10.31
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -77,6 +77,45 @@ function features.Stats(x,y,w,h,f)
         DarkText(RPG.Stat(ch,"END_"..s)..procentteken[procent[s]==true],(x+w)-25,y+100+(i*fonts.StatusStat[2]),1,0,255,180,0)
     end
     if f~="Status" then return end
+end
+
+-- @IF ALLOW_QUITSAVE
+function SaveNQuit() 
+  Cls()
+  Image.LoadNew("SG_SAVING","GFX/Loading/Saving.png"); Image.HotCenter("SG_SAVING")
+  Cls()
+  Image.Tile('PCS_BACK')
+  Image.Show("SG_SAVING",Center_X,Center_Y)
+  Flip()
+  LAURA.Flow("FIELD")
+  SaveMeta()
+  LAURA.Save('System/Quit',1)
+  Sys.Bye()   
+end
+-- @FI
+
+function initquit()
+local quit
+quit = { Y = {t = 'Press Y to quit', f = Sys.Bye, k=KEY_Y, c={255,0,0}}}  
+-- @IF ALLOW_QUITSAVE
+quit.Y.t = "Press Y to quit without saving"
+quit.S = { t = "Press S to save and quit", f = SaveNQuit, k=KEY_S, c={0,255,0}}
+-- @FI
+quitcount = 0
+for k,v in pairs(quit) do quitcount = quitcount + 1 end
+return quit
+end    
+
+function features.Quit(x,y,w,h)
+  quit = quit or initquit()
+  local cx = x + (w/2)
+  local cy = y + (h/2)
+  local wy = cy - ((quitcount*fonts.Quit[2])/2)
+  for k,v in spairs(quit) do
+      DarkText(v.t,cx,wy,2,2,v.c[1],v.c[2],v.c[3])
+      if INP.KeyH(v.k)==1 then v.f() end
+      wy = wy + fonts.Quit[2]
+  end
 end
 
 function features.Status(x,y,pw,h)

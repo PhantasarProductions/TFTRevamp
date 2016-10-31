@@ -1,6 +1,6 @@
 --[[
   Fonts.lua
-  Version: 16.10.08
+  Version: 16.10.31
   Copyright (C) 2016 2015
   
   ===========================
@@ -62,7 +62,9 @@ fonts = {
     CombatBigMessage = {'CoolVetica.TtF',45},
     CombatCharMessage = {'Monof55.ttf',20},
     SpellUnlockBox = {'CoolVetica.ttf',10},
-    MiniMsg = {'Monof55.ttf',20}
+    MiniMsg = {'Monof55.ttf',20},
+    Quit = {"Coolvetica.ttf",20}
+    
 }
 
 fonts.BoxText = fonts.BoxTextContent
