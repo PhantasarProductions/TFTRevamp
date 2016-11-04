@@ -57,6 +57,7 @@ function InitPuzzle()
       same.ori = rand(1,16)
       same.tgt = rand(1,16)
    until same.ori~=same.tgt
+   Tiles[same.ori]=Tiles[same.tgt]
    for i=1,16 do
        Maps.Obj.Obj("Sym"..i).TextureFile = Tiles[i]
    end          
