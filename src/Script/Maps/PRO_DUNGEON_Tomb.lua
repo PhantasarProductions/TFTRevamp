@@ -26,3 +26,10 @@ function Sandra()
     end
     MapText("SANDRA_B")
 end
+
+function InitPuzzle()
+   Symbols = {}
+   for f in iJCR6Dir(true) do
+       if prefixed(f,'GFX/TEXTURES/SHAPES/') and suffixed(f,".PNG") then Symbols[#Symbols+1] = f end
+   end
+end

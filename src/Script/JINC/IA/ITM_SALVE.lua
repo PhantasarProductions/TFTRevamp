@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  EQP_MARRILONA_AR4.lua
+  ITM_SALVE.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -35,22 +35,29 @@
 version: 16.11.04
 ]]
 ret = {
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "I'm too sexy for my love, love's going to leave me!",
-	["EQP_STAT_Endurance"] = 4,
-	["EQP_STAT_Intelligence"] = 4,
-	["EQP_STAT_Resistance"] = 12,
-	["Heal_StatPercent"] = "Power",
+	["Desc"] = "A very ancient recipe for healing",
+	["Heal"] = 250,
+	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "Marrilona",
-	["ITM_ShopPrice"] = 1000,
-	["ITM_Type"] = "Armor",
-	["Stance"] = "Attack",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 120,
+	["ITM_Type"] = "Consumable",
+	["Stance"] = "Cast",
 	["Target"] = "1A",
-	["Title"] = "Sexy Dress",
-	["Type"] = "Item"}
+	["Title"] = "Salve",
+	["Type"] = "Item",
+	["Voice"] = "Heal"}
 
 return ret
 
