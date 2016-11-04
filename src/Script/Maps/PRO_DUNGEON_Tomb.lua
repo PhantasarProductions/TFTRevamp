@@ -32,6 +32,7 @@ end
 function InitPuzzle()
    if CVV(DonePuzzle) or Symbols then return end
    local r
+   Touched = {}
    Symbols = {}
    for f in iJCR6Dir(true) do
        if prefixed(f,'GFX/TEXTURES/SHAPES/') and suffixed(f,".PNG") then Symbols[#Symbols+1] = f end
@@ -60,9 +61,39 @@ function InitPuzzle()
    Tiles[same.ori]=Tiles[same.tgt]
    for i=1,16 do
        Maps.Obj.Obj("Sym"..i).TextureFile = Tiles[i]
+       Maps.Obj.Obj("Sym"..i).R=0
+       Maps.Obj.Obj("Sym"..i).G=0
+       Maps.Obj.Obj("Sym"..i).B=255       
+       Touched[i]=false
    end          
+end
+
+function TouchSymbol(idx)
+   local c = {[true]={r=0,g=180,b=255},[false]={r=0,g=0,b=255}}
+   local tile = Maps.Obj.Obj("Sym"..idx)
+   Touched[idx] = not Touched[idx]
+   local cc = c[Touched[idx]]
+   tile.R = cc.r
+   tile.G = cc.g
+   tile.B = cc.b
+   local solved = true
+   for i=1,16 do
+       CSay("idx="..sval(idx)..";Touched["..i.."]="..sval(Touched[i]).."; i="..sval(i).."; same.ori="..sval(same.ori).."; solved = "..sval(solved))
+       solved = solved and (Touched[i]==(i==same.ori or i==same.tgt))
+   end
+   if solved then
+      SFX("Audio/SFX/General/Solved.ogg")
+      for i=1,16 do
+          Maps.Obj.Kill('Sym'..i,1)
+      end
+      for i=1,4 do
+          Maps.Obj.Kill("Block"..i,1)
+      end
+      Done(DonePuzzle)    
+   end
 end
 
 function GALE_OnLoad()
    ZA_Enter('PuzzleField',InitPuzzle)
+   for i=1,16 do ZA_Enter("Sym"..i,TouchSymbol,i) end
 end
