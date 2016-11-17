@@ -189,5 +189,5 @@ function AutoBossStart()
     Boss()
 end
 
-ZA_Enter("StartBoss","AutoBossStart")
+ZA_Enter("StartBoss",AutoBossStart)
 
