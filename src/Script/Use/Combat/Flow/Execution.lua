@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 16.10.26
+  Version: 16.11.17
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -159,6 +159,7 @@ function fflow.Execution()
    -- Any rewards due to this? 
    if nextact.executor.group=='Hero' then
       for i=1,5 do
+           -- skill experience
            if act['rew_CreateSkill'..i] then 
               if CreateSkill(nextact.executor.tag,i,1)  then
                  charmsg(nextact.executor.tag,"Discovered new skill group",180,255,0) 
@@ -166,7 +167,11 @@ function fflow.Execution()
               end
               if act['rew_GainSkill1'] and act['rew_GainSkill1']>0 then
                  IncSkill(nextact.executor.tag,i, act['rew_GainSkill1'] )   
-              end   
+              end
+           end      
+           -- AP recovery
+           if act.rew_GainAP then
+              RPG.Points(nextact.executor.tag,"AP").Inc(act.rew_GainAP)
            end     
       end
    end     
