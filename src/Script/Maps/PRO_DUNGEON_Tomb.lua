@@ -97,6 +97,36 @@ end
 function To01() GoToLayer('#001','From007') end
 function To07() GoToLayer('#007','Einde') end  
 
+-- Operating switch bridges
+function NPC_Brug()
+    if Done('&DONE.FEENALARIASTOMB.SWITCH.BRIDGE.DANDOR.PROLOGUE') then return end
+    Maps.Obj.Obj('NPC_Brug').TextureFile = "GFX/Textures/Switch/Left.png"
+    Maps.PermaWrite('Maps.Obj.Obj("NPC_Brug").TextureFile = "GFX/Textures/Switch/Left.png"')
+    for i=0,1000 do
+        Cls()
+        for brug=1,2 do
+            Maps.Obj.Obj("BRUG"..brug).SetAlpha(i)
+        end
+        DrawScreen()
+        Flip()
+    end        
+    for brug=1,2 do
+        Maps.Obj.Obj("BRUG"..brug).SetAlpha(1000)
+        Maps.Obj.Obj("BRUG"..brug).ForcePassible=1
+        Maps.PermaWrite('Maps.Obj.Obj("BRUG'..brug..'").SetAlpha(1000)')
+        Maps.PermaWrite('Maps.Obj.Obj("BRUG'..brug..'").ForcePassible=1')
+    end
+    Maps.Remap()
+end
+
+function Boss()
+  Var.D("$COMBAT.FOE_1","Boss/ShadowSweeper")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
+  Var.D("$COMBAT.ARENA","Caves.png")
+  StartBoss("Master of Darkness","Shadow Sweeper")   
+end
+
 
 function GALE_OnLoad()
    ZA_Enter('PuzzleField',InitPuzzle)

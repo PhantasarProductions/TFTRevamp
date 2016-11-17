@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.10.26
+  Version: 16.11.17
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -178,3 +178,16 @@ function Z_Prev() Z_Go(-1,"Einde") end
 
 ZA_Enter("Next",Z_Next)
 ZA_Enter("Prev",Z_Prev)
+
+-- Autoboss
+function AutoBossStart()
+    if not Boss then return CSay("WARNING! No Boss function found in MapScript") end
+    if Maps.Multi()==0 and Done("&DONE.BOSS.AUTO['"..Maps.CodeName.."']") then return
+    elseif Maps.Multi()==1 and Done("&DONE.BOSS.AUTO['"..Maps.CodeName.."','"..Maps.LayerCodename.."']") then return end
+    Maps.Obj.Kill("Boss",1)
+    Maps.Remap()
+    Boss()
+end
+
+ZA_Enter("StartBoss","AutoBossStart")
+
