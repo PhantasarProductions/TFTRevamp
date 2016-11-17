@@ -1,6 +1,6 @@
 --[[
   Gob.lua
-  Version: 16.10.24
+  Version: 16.11.17
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,13 +34,15 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Mon 24 October 2016; 23:10:06
+-- File Generated: Thu 17 November 2016; 09:12:19
 
 
 local foe = {}
 
 	foe["AI"] = "default"
 	foe["NEWGAMEPLUS_AAA_ATTACK"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_DANDOR_AXESMASH"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_JAKE_\50PS"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_JAKE_\51PS"] = true
@@ -51,9 +53,12 @@ local foe = {}
 	foe["NEWGAMEPLUS_ITM_APPLE"] = true
 	foe["NEWGAMEPLUS_ITM_FLAMEORB"] = true
 	foe["NEWGAMEPLUS_ITM_MEDICINE"] = true
+	foe["NEWGAMEPLUS_ITM_SALVE"] = true
 	foe["NEWGAMEPLUS_SPECIAL_AXESMASH"] = true
 	foe["NEWGAMEPLUS_WAND_FLAME"] = true
 	foe["NORMAL_AAA_ATTACK"] = true
+	foe["NORMAL_ABL_HERO_DANDOR_AXESMASH"] = true
+	foe["NORMAL_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
 	foe["NORMAL_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
 	foe["NORMAL_ABL_HERO_JAKE_\50PS"] = true
 	foe["NORMAL_ABL_HERO_JAKE_\51PS"] = true
@@ -64,9 +69,12 @@ local foe = {}
 	foe["NORMAL_ITM_APPLE"] = true
 	foe["NORMAL_ITM_FLAMEORB"] = true
 	foe["NORMAL_ITM_MEDICINE"] = true
+	foe["NORMAL_ITM_SALVE"] = true
 	foe["NORMAL_SPECIAL_AXESMASH"] = true
 	foe["NORMAL_WAND_FLAME"] = true
 	foe["OVERSOUL_AAA_ATTACK"] = true
+	foe["OVERSOUL_ABL_HERO_DANDOR_AXESMASH"] = true
+	foe["OVERSOUL_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
 	foe["OVERSOUL_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
 	foe["OVERSOUL_ABL_HERO_JAKE_\50PS"] = true
 	foe["OVERSOUL_ABL_HERO_JAKE_\51PS"] = true
@@ -77,9 +85,12 @@ local foe = {}
 	foe["OVERSOUL_ITM_APPLE"] = true
 	foe["OVERSOUL_ITM_FLAMEORB"] = true
 	foe["OVERSOUL_ITM_MEDICINE"] = true
+	foe["OVERSOUL_ITM_SALVE"] = true
 	foe["OVERSOUL_SPECIAL_AXESMASH"] = true
 	foe["OVERSOUL_WAND_FLAME"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
+	foe["SKILL\49_ABL_HERO_DANDOR_AXESMASH"] = true
+	foe["SKILL\49_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
 	foe["SKILL\49_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
 	foe["SKILL\49_ABL_HERO_JAKE_\50PS"] = true
 	foe["SKILL\49_ABL_HERO_JAKE_\51PS"] = true
@@ -90,9 +101,12 @@ local foe = {}
 	foe["SKILL\49_ITM_APPLE"] = true
 	foe["SKILL\49_ITM_FLAMEORB"] = true
 	foe["SKILL\49_ITM_MEDICINE"] = true
+	foe["SKILL\49_ITM_SALVE"] = true
 	foe["SKILL\49_SPECIAL_AXESMASH"] = true
 	foe["SKILL\49_WAND_FLAME"] = true
 	foe["SKILL\50_AAA_ATTACK"] = true
+	foe["SKILL\50_ABL_HERO_DANDOR_AXESMASH"] = true
+	foe["SKILL\50_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
 	foe["SKILL\50_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
 	foe["SKILL\50_ABL_HERO_JAKE_\50PS"] = true
 	foe["SKILL\50_ABL_HERO_JAKE_\51PS"] = true
@@ -103,9 +117,12 @@ local foe = {}
 	foe["SKILL\50_ITM_APPLE"] = true
 	foe["SKILL\50_ITM_FLAMEORB"] = true
 	foe["SKILL\50_ITM_MEDICINE"] = true
+	foe["SKILL\50_ITM_SALVE"] = true
 	foe["SKILL\50_SPECIAL_AXESMASH"] = true
 	foe["SKILL\50_WAND_FLAME"] = true
 	foe["SKILL\51_AAA_ATTACK"] = true
+	foe["SKILL\51_ABL_HERO_DANDOR_AXESMASH"] = true
+	foe["SKILL\51_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
 	foe["SKILL\51_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
 	foe["SKILL\51_ABL_HERO_JAKE_\50PS"] = true
 	foe["SKILL\51_ABL_HERO_JAKE_\51PS"] = true
@@ -116,6 +133,7 @@ local foe = {}
 	foe["SKILL\51_ITM_APPLE"] = true
 	foe["SKILL\51_ITM_FLAMEORB"] = true
 	foe["SKILL\51_ITM_MEDICINE"] = true
+	foe["SKILL\51_ITM_SALVE"] = true
 	foe["SKILL\51_SPECIAL_AXESMASH"] = true
 	foe["SKILL\51_WAND_FLAME"] = true
 	foe["Desc"] = "\34Me King\44 you dead\34\10That\39s basically their way of thinking\46\10Smart\44 eh?"
@@ -127,6 +145,8 @@ local foe = {}
 	foe["Item Steal \51"] = "ITM_ANTIDOTE"
 	foe["Name"] = "Goblin"
 	foe["RATE_AAA_ATTACK"] = 100
+	foe["RATE_ABL_HERO_DANDOR_AXESMASH"] = 0
+	foe["RATE_ABL_HERO_DANDOR_SUPERAXESMASH"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = 0
 	foe["RATE_ABL_HERO_JAKE_\50PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
@@ -137,9 +157,12 @@ local foe = {}
 	foe["RATE_ITM_APPLE"] = 0
 	foe["RATE_ITM_FLAMEORB"] = 0
 	foe["RATE_ITM_MEDICINE"] = 0
+	foe["RATE_ITM_SALVE"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_WAND_FLAME"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
+	foe["TARGET_ABL_HERO_DANDOR_AXESMASH"] = "Random"
+	foe["TARGET_ABL_HERO_DANDOR_SUPERAXESMASH"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\50PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\51PS"] = "Random"
@@ -150,6 +173,7 @@ local foe = {}
 	foe["TARGET_ITM_APPLE"] = "Random"
 	foe["TARGET_ITM_FLAMEORB"] = "Random"
 	foe["TARGET_ITM_MEDICINE"] = "Random"
+	foe["TARGET_ITM_SALVE"] = "Random"
 	foe["TARGET_SPECIAL_AXESMASH"] = "Random"
 	foe["TARGET_WAND_FLAME"] = "Random"
 	foe["Boss"] = false

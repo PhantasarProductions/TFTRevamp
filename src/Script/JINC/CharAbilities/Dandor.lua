@@ -32,5 +32,18 @@
   
  **********************************************
  
-version: 16.10.03
+version: 16.11.17
 ]]
+
+
+local r = {
+                 ["Dandor's Abilities"]  = {
+                             abl_dandor_axesmash={16},
+                             abl_dandor_superexesmash={50},
+                             abl_dandor_shield={[2]=15},
+                             abl_dandor_barrier={[3]=15},
+                             abl_dandor_iddqd={[2]=100,[3]=100}
+                             },
+          }
+return r
+
