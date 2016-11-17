@@ -169,11 +169,11 @@ function fflow.Execution()
                  IncSkill(nextact.executor.tag,i, act['rew_GainSkill1'] )   
               end
            end      
-           -- AP recovery
-           if act.rew_GainAP then
-              RPG.Points(nextact.executor.tag,"AP").Inc(act.rew_GainAP)
-           end     
       end
+      -- AP recovery
+      if act.Rew_GainAP then
+         RPG.Points(nextact.executor.tag,"AP").Inc(act.Rew_GainAP)
+      end     
    end     
    -- And now let's return to 'idle'
    while (not ExeShowMsg.Timer) or (ExeShowMsg.Timer>0) do   
