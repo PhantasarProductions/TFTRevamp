@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.10.26
+  Version: 16.11.17
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -115,7 +115,7 @@ function ItemHave(i,d)
 end
 
 function ItemGive(i,n)
-   inventory[i] = inventory[i] + (tonumber(n) or 1)
+   inventory[i] = (inventory[i] or 0 ) + (tonumber(n) or 1)
    if inventory[i]>itemmax then inventory[i]=itemmax end
 end
 
