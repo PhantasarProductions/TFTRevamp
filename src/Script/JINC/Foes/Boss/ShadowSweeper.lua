@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Thu 17 November 2016; 16:56:19
+-- File Generated: Thu 17 November 2016; 17:02:10
 
 
 local foe = {}
@@ -207,7 +207,7 @@ local foe = {}
 	foe["normal_Accuracy"] = 100
 	foe["normal_Endurance"] = 20
 	foe["normal_Evasion"] = 0
-	foe["normal_HP"] = 10000
+	foe["normal_HP"] = 1000
 	foe["normal_Intelligence"] = 400
 	foe["normal_Power"] = 210
 	foe["normal_Resistance"] = 5000
