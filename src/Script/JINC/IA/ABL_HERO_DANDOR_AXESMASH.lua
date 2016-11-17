@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  EQP_JAKE_AR1.lua
+  ABL_HERO_DANDOR_AXESMASH.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -35,20 +35,30 @@
 version: 16.11.17
 ]]
 ret = {
+	["ABL_APCost"] = 40,
+	["Attack"] = 350,
+	["Attack_AccuracyRate"] = 100,
+	["Attack_AllowAccuracy"] = true,
+	["Attack_AllowCritical"] = true,
+	["Attack_AllowDodge"] = true,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "A good armor for a beginning warrior",
-	["EQP_STAT_Endurance"] = 2,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "Jake",
-	["ITM_ShopPrice"] = 100,
-	["ITM_Type"] = "Armor",
+	["Desc"] = "Strong attack vs. 1 target",
+	["Heal_StatPercent"] = "Intelligence",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_Type"] = "Consumable",
 	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Leather Armor",
-	["Type"] = "Item"}
+	["Target"] = "1F",
+	["Title"] = "Axe Smash",
+	["Type"] = "Ability",
+	["Voice"] = "AxeSmash"}
 
 return ret
 
