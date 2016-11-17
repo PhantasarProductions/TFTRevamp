@@ -120,6 +120,7 @@ function NPC_Brug()
 end
 
 function Boss()
+  ClearCombatData()
   Var.D("$COMBAT.FOE_1","Boss/ShadowSweeper")
   Var.D("$COMBAT.POSFOE_1","CENTER")
   Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
