@@ -1,6 +1,6 @@
 --[[
   SaveGame.lua
-  Version: 16.10.21
+  Version: 16.11.17
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -137,7 +137,7 @@ function MAIN_FLOW()
          if i==P then allowsave=true else P=i end
       end
       SetFont('SaveGameLine')
-      DarkText(myentry.name,50,100+i*25,0,0,200,255,200)
+      DarkText(myentry.name,50,(100+i*25)-PM,0,0,200,255,200)
   end
   while (100+P*25)-PM>SH-100 do PM=PM+2 end
   while (100+P*25)-PM<100    do PM=PM-1 end
