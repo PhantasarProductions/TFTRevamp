@@ -93,7 +93,15 @@ function TouchSymbol(idx)
    end
 end
 
+-- Chain 001 and 007
+function To01() GoToLayer('#001','From007') end
+function To07() GoToLayer('#007','Einde') end  
+
+
 function GALE_OnLoad()
    ZA_Enter('PuzzleField',InitPuzzle)
    for i=1,16 do ZA_Enter("Sym"..i,TouchSymbol,i) end
+   --ZA_Enter('BackTo01',To01)
+   ZA_Enter('To001',To01)
+   ZA_Enter('To007',To07)
 end

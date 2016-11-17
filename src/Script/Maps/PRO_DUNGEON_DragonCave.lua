@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.13
+version: 16.11.17
 ]]
 
 -- @USE /Script/Use/Specific/EndOfPrologue.lua
@@ -138,6 +138,7 @@ function PostBoss_Jenny()
   EndOfPrologue('Jake')
   -- Sys.Error('The rest is not yet scripted')
 end  
+
    
 function GALE_OnLoad()
    MapHide('Secret')
