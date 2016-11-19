@@ -1,11 +1,14 @@
 -- Property of Jeroen P. Broks
 -- May not be extracted from this game.
 
+-- @USE /Script/Use/Specific/EndOfPrologue.lua
+
+
 DonePuzzle = "&DONE.FEENALARIA.TOMB.PUZZLE.MATCH.SOLVED"
 
 function MapMusic()
    if not Done("&DONE.SANDRA.OPEN.DANDOR.PROLOGUE") then 
-      CSay("Skip the music for now. Let John speak first.")
+      CSay("Skip the music for now. Let Sandra speak first.")
    else
       OriMapMusic()
    end   
@@ -128,6 +131,34 @@ function Boss()
   StartBoss("Master of Darkness","Shadow Sweeper")   
 end
 
+-- Entering and leaving Feena's Grave
+function EnterGrave() GoToLayer('GRAVE','Start')    Music('Hub/Angevin.ogg')     end
+function ExitGrave()  GoToLayer('#001','FromGrave') Music("Dungeon/D'amour.ogg") end
+
+-- Feena's Tomb itself
+
+function Feena_Prologue()
+   local P = Actors.Actor('PLAYER')
+   P.Walking = 0
+   P.Moving = 0
+   Actors.WalkToSpot('PLAYER','Prologue_Dandor')
+   MapText('FEENA_PROLOGUE_1')
+   Music('Sys/Silence.ogg')
+   MapText('FEENA_PROLOGUE_2')
+   for i=2,3 do CreateSkill('Dandor',i,1) end
+   EndOfPrologue('Dandor')
+   -- Sys.Error('Rest not scripted yet, sorry!')
+end
+
+function Feena_Revival()
+   Sys.Error("Sorry, this event is not yet available")
+end   
+
+function Feena_Chain()
+    if not Done("&DONE.FEENATOMB.DANDOR.PROLOGUE.ENDING") then Feena_Prologue() return end
+    if not Done("&DONE.FEENATOMB.FULLGAME.REVIVAL.FEENA") then Feena_Revival()  return end
+end    
+
 
 function GALE_OnLoad()
    ZA_Enter('PuzzleField',InitPuzzle)
@@ -135,4 +166,7 @@ function GALE_OnLoad()
    --ZA_Enter('BackTo01',To01)
    ZA_Enter('To001',To01)
    ZA_Enter('To007',To07)
+   ZA_Enter('EnterGrave',EnterGrave)
+   ZA_Enter('ExitGrave',ExitGrave)
+   ZA_Enter("GrafEvent",Feena_Chain)
 end

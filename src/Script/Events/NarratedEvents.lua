@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.12
+version: 16.11.18
 ]]
 
 function GoNext()
@@ -59,7 +59,9 @@ function calc(d)
   end   
 end
 
-function Load(file)
+function Load(dfile)
+  local file=upper(dfile)
+  if file=="HANDO STILLOR" then file="HANDOSTILLOR" end
   CSay("Let's load all the stuff we need for: "..file)
   local tempstory = LoadData("General/PROLOGUES",'PROLOGUES')
   story = {
