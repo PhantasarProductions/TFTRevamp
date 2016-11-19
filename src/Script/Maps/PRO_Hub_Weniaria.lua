@@ -60,6 +60,6 @@ function SashaFunda()
    end
    MapText("SASHA_B")
    LoadMap("PRO_Dungeon_Crypt")
-   GoToLayer("#000")
+   GoToLayer("#000","Start")
    -- Sys.Error("Not scripted yet")
 end
