@@ -32,6 +32,9 @@
   
  **********************************************
  
-version: 16.11.19
+version: 16.11.20
 ]]
 
+function GALE_OnLoad()
+   Award("SCEN_AWARD_CRYPT")
+end   
