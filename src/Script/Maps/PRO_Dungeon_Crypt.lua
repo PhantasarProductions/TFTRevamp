@@ -36,5 +36,5 @@ version: 16.11.20
 ]]
 
 function GALE_OnLoad()
-   Award("SCEN_AWARD_CRYPT")
+   Award("SCEN_PROLOGUE_CRYPT")
 end   
