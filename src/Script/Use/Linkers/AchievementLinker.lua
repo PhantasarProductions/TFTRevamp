@@ -1,6 +1,6 @@
 --[[
   AchievementLinker.lua
-  Version: 16.10.15
+  Version: 16.11.20
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -35,5 +35,6 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 Award = Award or function (tag)
+   MS.LoadNew("ACH","Script/Subs/Achievements.lua")
    MS.Run("ACH","Award",upper(tag))
 end   
