@@ -1,6 +1,6 @@
 --[[
   ShadowSweeper.lua
-  Version: 16.11.17
+  Version: 16.11.20
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Thu 17 November 2016; 17:02:10
+-- File Generated: Sun 20 November 2016; 16:25:36
 
 
 local foe = {}

@@ -32,5 +32,28 @@
   
  **********************************************
  
-version: 16.10.03
+version: 16.11.20
 ]]
+
+local r = {
+                 ["1. Level 1"]  = {
+                         abl_hero_handostillor_firstaid = { [2] = 1 },           -- 1
+                         abl_hero_handostillor_neutralizepoison = { [2] = 7 },   -- 2
+                         abl_hero_handostillor_removeparalysis = { [2] = 9 },    -- 3
+                         abl_hero_handostillor_stickswing = { 20 },              -- 4
+                         abl_hero_handostillor_recover = { [2] = 12 },           -- 5
+                         abl_hero_handostillor_curedisease = { [2]=14 },         -- 6
+                         abl_hero_handostillor_holystrike = { 20,20 }   ,        -- 7
+                         abl_hero_handostillor_vitalize = { [2] = 25 }   ,       -- 8
+                         abl_hero_handostillor_removeparalysis = { [2] = 16 },   -- 9
+                         abl_hero_handostillor_purify = { [2] = 65 }             -- 10
+                         
+                 },
+          }
+          
+if fullveresion then -- That's right Hando Stillor will not get his level #2 and level #3 spells unless you have the full version of the game.          
+   r["2. Level 2"] = {}
+   r["3. Level 3"] = {}
+end
+             
+return r

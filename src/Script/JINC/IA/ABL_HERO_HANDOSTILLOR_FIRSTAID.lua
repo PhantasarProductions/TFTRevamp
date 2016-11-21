@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.11.17
+version: 16.11.20
 ]]
 ret = {
 	["ABL_APCost"] = 25,
@@ -50,6 +50,7 @@ ret = {
 	["Target"] = "1A",
 	["Title"] = "First Aid",
 	["Type"] = "Ability",
+	["Voice"] = "Weniaria",
 	["rew_CreateSkill2"] = true,
 	["rew_GainSkill2"] = 10}
 
