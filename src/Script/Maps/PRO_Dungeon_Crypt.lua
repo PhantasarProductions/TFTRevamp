@@ -37,6 +37,7 @@ version: 16.11.30
 
 bossvar = "&DONE.PROLOGUE.HANDOSTILLOR.CRYPT.BOSS"
 
+-- @USE /Script/Use/Specific/EndOfPrologue.lua
 
 function AllDark()
     local p = Actors.Actor("PLAYER")
@@ -109,6 +110,7 @@ end
 
 function GALE_OnLoad()
    Award("SCEN_PROLOGUE_CRYPT")
+   MapHide('Secret')
    ZA_Enter("AllDark",AllDark)
    for i=1,10 do ZA_Enter("ABZ"..i,LightUp,i) end
 end   

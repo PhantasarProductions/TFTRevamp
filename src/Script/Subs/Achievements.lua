@@ -94,6 +94,7 @@ function Award(tag)
     -- Does this achievement actually exist?
     assert(achievements[tag],"There is no achievement named '"..tag.."'")
     -- Achieve stuff
+    if Achieved[tag] then return end -- Let's not achieve again, what we already achieved.
     Achieved[tag] = Time.Date()..";  "..Time.Time()
     CSay("- Awarded: "..tag)
     CSay("  = "..Achieved[tag])
