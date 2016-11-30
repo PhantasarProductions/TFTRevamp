@@ -120,6 +120,7 @@ end
 
 function AchFlip() -- Will be called by the flipping routine
     local remove = {}
+    Image.SetAlphaPC(100)
     for i,a in pairs(achoutput) do
         a.y = a.y - 1
         if a.y<-200 then remove[#remove+1]=i end -- Removing immediately does not work very well during iteration in Lua.
