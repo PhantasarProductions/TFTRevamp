@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.28
+version: 16.11.30
 ]]
 
 ShowParty = ShowParty or function() 
@@ -71,8 +71,10 @@ end
 function Recover(ch,full)
    RPG.Points(ch,"HP").Have = RPG.Points(ch,"HP").Maximum
    if skill==1 or full then
-      RPG.Points(ch,"VIT").Have = RPG.Points(ch,"VIT").Maximum
       RPG.Points(ch,"AP" ).Have = RPG.Points(ch,"AP" ).Maximum
+   end   
+   if skill<=2 or full then
+      RPG.Points(ch,"VIT").Have = RPG.Points(ch,"VIT").Maximum
    end   
    if skill==3 then
       RPG.Points(ch,"AP").Have = 0
