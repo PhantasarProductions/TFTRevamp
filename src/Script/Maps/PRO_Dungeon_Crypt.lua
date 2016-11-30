@@ -32,9 +32,83 @@
   
  **********************************************
  
-version: 16.11.20
+version: 16.11.30
 ]]
+
+bossvar = "&DONE.PROLOGUE.HANDOSTILLOR.CRYPT.BOSS"
+
+
+function AllDark()
+    local p = Actors.Actor("PLAYER")
+    p.R = 255; p.G=255; p.G=255
+    if CVV(bossvar) or Lit then return end
+    DarkAllObj = {}
+    DarkAreaObj = {}
+    DarkCandles = {}    
+    for obj in KthuraEach() do
+        if obj.Tag~="PLAYER" and obj.Tag~="Start" then
+           DarkAllObj [ #DarkAllObj ] = obj
+           DarkAreaObj [ obj.Labels ] = DarkAreaObj[ obj.Labels ] or {}
+           DarkCandles [ obj.Labels ] = DarkCandles[ obj.Labels ] or {}        
+           local DAO = DarkAreaObj[ obj.Labels ]
+           DAO[ #DAO + 1 ] = obj
+           if suffixed(obj.TextureFile,"KAARS UIT.PNG") then 
+              local DCL = DarkCandles [ obj.Labels ]
+              DCL[ #DCL+1 ] = obj
+           end
+           obj.R = 0
+           obj.G = 0
+           obj.B = 2
+        end   
+    end 
+    DarkDone = true
+    Lit = {}
+end
+
+function LightUp(a)
+   if not DarkDone then AllDark() end
+   if Lit[a] then return end; Lit[a]=true 
+   local b = a + 1   
+   local c = b + 1
+   local d = a - 1
+   local thiszone = DarkAreaObj[ "BLZ" .. a]
+   local nextzone = DarkAreaObj[ "BLZ" .. b]
+   local farzone  = DarkAreaObj[ "BLZ" .. c]
+   local prevzone = DarkAreaObj[ "BLZ" .. d]; --CSay("d = "..d.." nil?("..sval(prevzone==nil)..")")
+   local workout = {
+                      { zone = prevzone, R=255, G=195, B = 0 },
+                      { zone = thiszone, R=255, G=180, B = 0 },
+                      { zone = nextzone, R=100, G=60,  B = 1 },
+                      { zone =  farzone, R= 50, G=10,  B = 2 }
+                   }
+   -- light up zone                   
+   for wz in each(workout) do
+       for obj in each(wz.zone or {}) do  
+           obj.R = wz.R
+           obj.G = wz.G
+           obj.B = wz.B           
+       end
+   end
+   -- lite the candles
+   for obj in each(DarkCandles["BLZ"..a] or {}) do
+       obj.TextureFile = "GFX/Textures/Objects/Kaars.png"
+       obj.FrameSpeed=rand(1,10)
+       obj.G=200
+   end                   
+end
+
+function Boss()
+  ClearCombatData()
+  Var.D("$COMBAT.FOE_1","Boss/SuperZombie")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
+  Var.D("$COMBAT.ARENA","GreyDung.png")
+  StartBoss("Undead Leader","Super Zombie")   
+end
+
 
 function GALE_OnLoad()
    Award("SCEN_PROLOGUE_CRYPT")
+   ZA_Enter("AllDark",AllDark)
+   for i=1,10 do ZA_Enter("ABZ"..i,LightUp,i) end
 end   
