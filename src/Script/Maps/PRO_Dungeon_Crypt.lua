@@ -108,9 +108,14 @@ function Boss()
 end
 
 
+function StartPuzzle()
+  InitStepsPuzzle({width=30,height=16,plusx=64,plusy=160,tilesize=32,tileprefix="YurgonTile_",correct="WENIARIA"})
+end  
+
 function GALE_OnLoad()
    Award("SCEN_PROLOGUE_CRYPT")
    MapHide('Secret')
    ZA_Enter("AllDark",AllDark)
    for i=1,10 do ZA_Enter("ABZ"..i,LightUp,i) end
+   ZA_Enter("StartPuzzle",StartPuzzle)
 end   
