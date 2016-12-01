@@ -131,6 +131,7 @@ function AchFlip() -- Will be called by the flipping routine
         DarkText(a.d.Description,125,a.y+30,0,0,255,180,0)        
     end
     for r in each(remove) do achoutput[r] = nil end -- For this reason NO ipairs, but pairs above!!!
+    white()
 end
 
 function AchList(argstring)
