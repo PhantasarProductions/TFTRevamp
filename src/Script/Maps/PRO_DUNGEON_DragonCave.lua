@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.11.17
+version: 16.12.02
 ]]
 
 -- @USE /Script/Use/Specific/EndOfPrologue.lua
@@ -130,6 +130,7 @@ function NPC_Jenny()
 end
 
 function PostBoss_Jenny()
+  TurnPlayer('North')
   MapText('JENNY_POSTBOSS')
   Maps.Obj.Kill("NPC_Jenny",1)
   LoadMap('PRO_Town_Vandar')
@@ -139,8 +140,22 @@ function PostBoss_Jenny()
   -- Sys.Error('The rest is not yet scripted')
 end  
 
+function Jenny_BackZone()
+  ({
+      [0] = function() GoToLayer('#008',"Start") end,
+      [1] = function() 
+              Actors.StopMoving('PLAYER')
+              Actors.StopWalking('PLAYER')
+              Actors.MoveToSpot("PLAYER","Einde")
+              TurnPlayer("North")
+              NPC_Jenny()
+            end  
+   })[Maps.Obj.Exists('NPC_Jenny')]()
+end
    
 function GALE_OnLoad()
    MapHide('Secret')
    ZA_Enter('StartPuzzle',SetUpPuzzle)
+   --ZA_Enter('REMAP',Maps.Remap)
+   ZA_Enter('Jenny_BackZone',Jenny_BackZone)
 end    
