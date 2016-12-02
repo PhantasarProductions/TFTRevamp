@@ -1,6 +1,6 @@
 --[[
   Fonts.lua
-  Version: 16.10.31
+  Version: 16.12.02
   Copyright (C) 2016 2015
   
   ===========================
@@ -63,6 +63,8 @@ fonts = {
     CombatCharMessage = {'Monof55.ttf',20},
     SpellUnlockBox = {'CoolVetica.ttf',10},
     MiniMsg = {'Monof55.ttf',20},
+    Lv1 = {'Monof55.ttf',15},
+    Lv2 = {'Monof55.ttf',40},
     Quit = {"Coolvetica.ttf",20}
     
 }

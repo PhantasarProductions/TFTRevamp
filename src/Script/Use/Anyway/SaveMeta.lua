@@ -1,6 +1,6 @@
 --[[
   SaveMeta.lua
-  Version: 16.09.12
+  Version: 16.12.02
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -41,7 +41,7 @@ function SaveMeta()
       if ch~="" then 
         lv = RPGStat.Stat(ch,'Level')
         metasave = metasave .. "CH"..i.."PIC:"..RPGStat.GetData(ch,"Face").."\n"
-        if lv<=CVV("%LVLCAP") then metasave = metasave .. "CH"..i.."LVL:"..lv.."\n" end  
+        if lv<=CVV("%LEVELCAP") then metasave = metasave .. "CH"..i.."LVL:"..lv.."\n" end  
       end
   end
   Cls()  

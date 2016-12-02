@@ -58,7 +58,7 @@ function EndOfPrologue(char)
 end
 
 function RandomJakeMarrilona()
-  local choices = {'Jake','Marrilona'}
+  local choices = {'Jake'} --,'Marrilona'}
   local chartag = { Jake = 'Jake_Human',Marrilona='Marrilona' }
   local chosen  = choices[rand(1,#choices)]
   Party(chartag[chosen])

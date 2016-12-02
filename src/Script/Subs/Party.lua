@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 16.10.21
+  Version: 16.12.02
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -77,6 +77,19 @@ function ShowParty()
        Image.LoadNew("CL_FACE_"..ch,"GFX/Boxtext/Portret/"..imgtag.."/General.png")
        Image.Show("CL_FACE_"..ch,bsx,(totalheight-origin[2])-Image.Height("CL_FACE_"..ch))
    end end
+   -- Draw the levels
+   for i=0,3 do if RPGStat.PartyTag(i)~="" then
+       ch = RPGStat.PartyTag(i)
+       local lv = RPGStat.Stat(ch,'Level')
+       local lvx,lvy = 3,sy+97
+       if lv<=CVV('%LEVELCAP') then
+          SetFont('Lv1')
+          DarkText("Lv",lvx,lvy,0,1,255,255,255)
+          lvx = lvx + Image.TextWidth("Lv")
+          SetFont('Lv2')
+          DarkText(lv,lvx,lvy,0,1,255,180,0)          
+       end
+   end end  
    -- Draw the statbars and numbers
    SetFont('Stats')
    local sg,P,breuk,bar,barx,barwidth
