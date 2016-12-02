@@ -1,6 +1,6 @@
 --[[
   ITM_FLAMEORB.lua
-  Version: 16.11.20
+  Version: 16.12.02
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -55,6 +55,7 @@ ret = {
 	["ITM_Sellable"] = true,
 	["ITM_ShopPrice"] = 50,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "Flame",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
 	["Title"] = "Flame Orb",
