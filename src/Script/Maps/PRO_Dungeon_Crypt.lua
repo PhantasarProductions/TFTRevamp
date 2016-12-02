@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.01
+version: 16.12.02
 ]]
 
 bossvar = "&DONE.PROLOGUE.HANDOSTILLOR.CRYPT.BOSS"
@@ -113,10 +113,30 @@ function StartPuzzle()
   if not StepsPuzzle then InitStepsPuzzle({width=30,height=16,plusx=64,plusy=160,tilesize=32,tileprefix="YurgonTile_",correct="WENIARIA"}) end
 end  
 
+function LeaveEnd()
+   Music("Dungeon/TheDread.ogg")
+   GoToLayer("#007","Einde")
+end   
+
+function TheEnd()
+   Actors.StopMoving("PLAYER")
+   Actors.StopWalking("PLAYER")
+   Time.Sleep(200)
+   Actors.MoveToSpot("PLAYER","EndOfDungeon")
+   StopMusic()
+   TurnPlayer("North")
+   MapText("THE_END")
+   EndOfPrologue('HandoStillor')
+end
+
+
 function GALE_OnLoad()
    Award("SCEN_PROLOGUE_CRYPT")
    MapHide('Secret')
    ZA_Enter("AllDark",AllDark)
    for i=1,10 do ZA_Enter("ABZ"..i,LightUp,i) end
    ZA_Enter("StartPuzzle",StartPuzzle)
+   ZA_Enter("Angevin",Music,"Hub/Angevin.ogg")
+   ZA_Enter("LeaveEnd",LeaveEnd)
+   ZA_Enter("InitEnd",TheEnd)
 end   

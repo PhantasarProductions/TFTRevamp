@@ -32,10 +32,10 @@
   
  **********************************************
  
-version: 16.10.15
+version: 16.12.02
 ]]
 
-chars = {'Jake','Marrilona','Dandor','Hando Stillor'}
+chars = {'Jake','Marrilona','Dandor','HandoStillor'}
 
 function EndOfPrologue(char)
      LoadMap('PRO_TheEnd')
@@ -43,7 +43,7 @@ function EndOfPrologue(char)
      MapText(upper(char))
      Maps.CamX = 500-Center_X
      Maps.CamY = 500-Center_Y
-     GoToLayer(char,"Start")
+     if char=="HandoStillor" then GoToLayer("Hando Stillor","Start") else GoToLayer(char,"Start") end
      for i=1,250 do
          Cls()
          Maps.Draw()
@@ -57,13 +57,29 @@ function EndOfPrologue(char)
      MAPSAVE()     
 end
 
+function RandomJakeMarrilona()
+  local choices = {'Jake','Marrilona'}
+  local chartag = { Jake = 'Jake_Human',Marrilona='Marrilona' }
+  local chosen  = choices[rand(1,#choices)]
+  Party(chartag[chosen])
+  LoadMap('CH1_DUNGEON_FRENDORBUSHES')
+  SpawnPlayer("Start_"..chosen)
+  MapText("START_"..upper(chosen))
+  
+end
+
 function NextPrologue()
      local alldone = true
      for i=1,#chars do
          alldone = alldone and CVV("&DONE.PROLOGUE["..i.."]")
      end
      if alldone then
-        Sys.Error('Chain to the maingame not yet possible')
+        Award("SCEN_PROLOGUE_ALL")
+        CapIncrease()
+        Done("&ALLOW.ENCOFF['PRO_DUNGEON_DRAGONCAVE']")
+        Done("&ALLOW.ENCOFF['PRO_DUNGEON_TOMB']")
+        RandomJakeMarrilona()
+        --Sys.Error('Chain to the maingame not yet possible')
      else
         MS.LoadNew("PROLOGUESELECTCHAR","Script/Flow/PrologueSelectchar.lua")
         LAURA.Flow('PROLOGUESELECTCHAR')

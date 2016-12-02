@@ -152,6 +152,7 @@ function Jenny_BackZone()
             end  
    })[Maps.Obj.Exists('NPC_Jenny')]()
 end
+
    
 function GALE_OnLoad()
    MapHide('Secret')

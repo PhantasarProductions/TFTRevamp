@@ -1,6 +1,6 @@
 --[[
   AAA_Algemeen.lua
-  Version: 16.10.22
+  Version: 16.12.02
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -61,3 +61,7 @@ skill = tonumber(Var.C("%SKILL")); Console.Write('Difficulty setting is: '..skil
 LC = LAURA.LauraStartUp -- Quick reference to get the LAURA start up configuration. Yes, I know, I'm lazy!
 
 function Nothing() end -- This function does nothing at all, and can be used for several things ;)
+
+
+CapModifier = {5,4,3}
+function CapIncrease() inc("%LEVELCAP",CapModifier[skill]) end

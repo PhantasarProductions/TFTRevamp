@@ -110,7 +110,8 @@ function InitStepsPuzzle(table)
                o.W = table.tilesize
                o.H = table.tilesize
                o.TextureFile = "GFX/Textures/AlphabetTiles/"..table.tileprefix..cell.letter..".png"
-               o.Impassible  = 0               
+               o.Impassible  = 0    
+               o.ForcePassible = 1           
             end
         end
     end
