@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 16.10.31
+  Version: 16.12.02
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -130,10 +130,10 @@ function features.Status(x,y,pw,h)
     DarkText(CharacterMeta[ch].race.." "..CharacterMeta[ch].sex,0,0,0,0,255,255,255)
     DarkText("Experience",0,py,0,0,255,255,255)
     DarkText("Level",0,py*2,0,0,255,255,255)
-    if RPG.Stat(ch,'Level')<=CVV("%LEVELCAP") then showlevel = RPG.Stat(ch,'Level')          else showlevel = "---" end
-    if RPG.Stat(ch,'Level')< CVV("%LEVELCAP") then showexp   = RPG.SafeStat(ch,'Experience') else showexp   = "---" end
-    DarkText(showlevel,w,py  ,1,0,255,180,000)
-    DarkText(showexp  ,w,py*2,1,0,255,180,000)
+    if RPG.Stat(ch,'Level')<=CVV("%LEVELCAP") then showlevel = RPG.Stat(ch,'Level')   else showlevel = "---" end
+    if RPG.Stat(ch,'Level')< CVV("%LEVELCAP") then showexp   = RPG.SafeStat(ch,'EXP') else showexp   = "---" end
+    DarkText(showlevel,w,py*2,1,0,255,180,000)
+    DarkText(showexp  ,w,py  ,1,0,255,180,000)
     local master = "None"
     local masterc = {255,0,0}
     if RPG.DataExists(ch,"Master")~=0 and RPG.GetData(ch,"Master")~="" then 
