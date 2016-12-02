@@ -1,6 +1,6 @@
 --[[
   Field.Lua
-  Version: 16.10.07
+  Version: 16.12.01
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -69,3 +69,8 @@ GotoLayerAutoHide = GotoLayerAutoHide or function(label)
   MS.LoadNew("FIELD","Script/Flow/Field.lua")
   MS.Run("FIELD","GotoLayerAutoHide",label)  
 end
+
+SpawnPlayer = SpawnPlayer or function(spot,dir)
+  MS.LoadNew("FIELD","Script/Flow/Field.lua")
+  MS.Run("FIELD","SpawnPlayer",spot..";"..(dir or "North"))  
+end  

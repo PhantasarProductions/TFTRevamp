@@ -32,12 +32,13 @@
   
  **********************************************
  
-version: 16.11.30
+version: 16.12.01
 ]]
 
 bossvar = "&DONE.PROLOGUE.HANDOSTILLOR.CRYPT.BOSS"
 
 -- @USE /Script/Use/Specific/EndOfPrologue.lua
+-- @USE /Script/Use/Specific/StepsPuzzle.lua
 
 function AllDark()
     local p = Actors.Actor("PLAYER")
@@ -109,7 +110,7 @@ end
 
 
 function StartPuzzle()
-  InitStepsPuzzle({width=30,height=16,plusx=64,plusy=160,tilesize=32,tileprefix="YurgonTile_",correct="WENIARIA"})
+  if not StepsPuzzle then InitStepsPuzzle({width=30,height=16,plusx=64,plusy=160,tilesize=32,tileprefix="YurgonTile_",correct="WENIARIA"}) end
 end  
 
 function GALE_OnLoad()
