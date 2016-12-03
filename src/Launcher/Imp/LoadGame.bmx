@@ -67,7 +67,7 @@ Function TrueLoadGame(U$="",S$="")
 		launcherconfig.D "LastSG.User",cursg.user
 		launcherconfig.D "LastSG.File",cursg.file
 		SaveLauncherConfig()
-	endif	
+	EndIf	
 	?MacOS
 	Local app$ = ExtractDir(ExtractDir(AppFile))+"/Resources/LAURA2.app"
 	If Not FileType(app) Notify "Trouble launching LAURA II~n~n"+App
@@ -129,8 +129,11 @@ CheckHave False
 
 ' Marrilona
 Gadgets.make "Marrilona",CreatePanel(pw-bw,0,bw,by,Panel)
-SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona.png") ),PANELPIXMAP_CENTER
-
+If Month()=12 Then
+	SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona_Christmas.png") ),PANELPIXMAP_CENTER
+Else	
+	SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona.png") ),PANELPIXMAP_CENTER
+EndIf
 
 ' We have no savegame panel
 
