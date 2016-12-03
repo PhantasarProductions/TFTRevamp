@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 16.12.02
+  Version: 16.12.03
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -37,6 +37,13 @@
 
 LC = LAURA.LauraStartUp -- Quick reference to get the LAURA start up configuration. Yes, I know, I'm lazy!
 
+lvani = {}
+lvmaxexp = {}
+lvupimg = Image.Load('GFX/Party/Level Up.png')
+lvupimgw = Image.Width(lvupimg)
+lvupimgh = Image.Height(lvupimg)
+Image.Hot(lvupimg,lvupimgw/2,lvupimgh)
+
 function GALE_OnLoad()
     totalwidth  = SW
     totalheight = SH
@@ -46,6 +53,7 @@ function GALE_OnLoad()
     if tonumber(LC('screen.margin.right') )~=0 then                 totalwidth=totalwidth -25 end
     if tonumber(LC('screen.margin.bottom'))~=0 then                 totalwidth=totalheight-25 end
     charentrywidth = totalwidth / 4
+
 end
 
 function ShowMargins()
@@ -54,6 +62,36 @@ function ShowMargins()
     if tonumber(LC('screen.margin.top')   )~=0 then Image.Rect(    0,    0,SW,25) end
     if tonumber(LC('screen.margin.right') )~=0 then Image.Rect(SW-25,    0,25,SH) end
     if tonumber(LC('screen.margin.bottom'))~=0 then Image.Rect(    0,SH-25,SW,25) end  
+end
+
+function ToLevel(ch,tolv)
+  RPG.DefStat(ch,tolv)
+  local exp = RPG.Stat(ch,"EXP")
+  local newexp
+  newexp = EXP:ByLvl(tolv) + exp -- I don't have to loop this, since EXP up will count instantly anyway. ;)
+  RPG.DefStat(ch,"Level",tolv)
+  RPG.DefStat(ch,"EXP",newexp)
+  SyncLevel(ch)   
+end
+
+function CheckEXP(ch)
+  local exp = RPG.Stat(ch,"EXP")
+  local lv  = RPG.Stat(ch,"Level")
+  local cap = CVV("%LEVELCAP")
+  if lv>=cap then return end -- Above the level cap? Then go away!
+  lvmaxexp[ch] = lvmaxexp[ch] or EXP:ByLvl(lv+1)
+  if exp<=0 then 
+     ToLevel(ch,lv+1) lvani[ch] = {scx=0, time=500}
+     local hp = RPG.Points(ch,"HP")
+     local ap = RPG.Points(ch,"AP")
+     local vt = RPG.Points(ch,"VIT")
+     if skill~=3 then hp.Have = hp.Maximum vt.Have=vt.Maximum end
+     if skill==1 then ap.Have = ap.Maximum end     
+     SFX('Audio/Party/Level Up.ogg')     
+     return 
+  elseif lvmaxexp[ch] and exp>lvmaxexp[ch] then
+     RPG.DefStat(ch,"EXP",lvmaxexp[ch])
+  end
 end
 
 function ShowParty()
@@ -77,19 +115,6 @@ function ShowParty()
        Image.LoadNew("CL_FACE_"..ch,"GFX/Boxtext/Portret/"..imgtag.."/General.png")
        Image.Show("CL_FACE_"..ch,bsx,(totalheight-origin[2])-Image.Height("CL_FACE_"..ch))
    end end
-   -- Draw the levels
-   for i=0,3 do if RPGStat.PartyTag(i)~="" then
-       ch = RPGStat.PartyTag(i)
-       local lv = RPGStat.Stat(ch,'Level')
-       local lvx,lvy = 3,sy+97
-       if lv<=CVV('%LEVELCAP') then
-          SetFont('Lv1')
-          DarkText("Lv",lvx,lvy,0,1,255,255,255)
-          lvx = lvx + Image.TextWidth("Lv")
-          SetFont('Lv2')
-          DarkText(lv,lvx,lvy,0,1,255,180,0)          
-       end
-   end end  
    -- Draw the statbars and numbers
    SetFont('Stats')
    local sg,P,breuk,bar,barx,barwidth
@@ -130,6 +155,30 @@ function ShowParty()
        DarkText("VIT",barx,sy+85,1,1,255,180,0)
        DarkText(P.Have.."%",barx+barwidth,sy+85,1,1,255,180,0)
    end end
+   -- Draw the levels
+   for i=0,3 do if RPGStat.PartyTag(i)~="" then
+       ch = RPGStat.PartyTag(i)
+       local lv = RPGStat.Stat(ch,'Level')
+       local lvx,lvy = 3,sy+97
+       if lv<=CVV('%LEVELCAP') then
+          SetFont('Lv1')
+          DarkText("Lv",lvx,lvy,0,1,255,255,255)
+          lvx = lvx + Image.TextWidth("Lv")
+          SetFont('Lv2')
+          DarkText(lv,lvx,lvy,0,1,255,180,0)   
+          CheckEXP(ch)
+          if lvani[ch] then
+             local ani = lvani[ch]
+             local tm  = ani.scx/100
+             local siz = lvupimgw * tm
+             if siz*tm<charentrywidth and ani.scx<100 then ani.scx = ani.scx + 1 end
+             white()
+             Image.ScalePC(ani.scx,100); Image.Show(lvupimg,bsx+(charentrywidth/2),sy-5); Image.ScalePC(100,100)
+             ani.time = ani.time - 1
+             if ani.time<0 then lvani[ch] = nil end
+          end       
+       end
+   end end     
    ShowMargins()
    white()
 end

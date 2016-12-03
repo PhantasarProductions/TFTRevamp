@@ -1,6 +1,6 @@
 --[[
   EXP_Table.lua
-  Version: 16.10.12
+  Version: 16.12.03
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -43,7 +43,7 @@ EXP = {
       --]]
          minlevel = 2,
          maxlevel = 300,
-         startexp = 10   
+         startexp = 15   
       }
       
 function EXP.ByLvl(self,lvl)
@@ -59,11 +59,12 @@ function EXP.ByLvl(self,lvl)
      assert(lvl>=self.minlevel,"Invalid level")
      local ret = self.startexp
      for i=self.minlevel,lvl do
-         ret = ret + ret/7
+         ret = ret + ret/7.5
          if ret>2000000000 then return 2000000000 end -- Above 2 billion systems and underlying APIs will malfunction.
      end     
      return math.floor(ret)
 end    
+
   
 
 

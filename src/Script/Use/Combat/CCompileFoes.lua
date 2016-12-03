@@ -1,6 +1,6 @@
 --[[
   CCompileFoes.lua
-  Version: 16.10.26
+  Version: 16.12.03
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -54,6 +54,10 @@ function CompileFoe(tag,data,oversoul)
    myfoe.id=id
    myfoe.AI = data.AI
    myfoe.data = data
+   myfoe.exp = data.normal_EXP
+   if oversoul then
+      if skill==3 then myfoe.exp = 0 else myfoe.exp = data.oversoul_EXP end
+   end
    RPG.CreateChar(tag)
    local myname = letter..". "..data.Name; if oversoul then myname = myname .."  (Oversoul)" end
    RPG.SetName(tag,myname); CSay("Compiling "..tag.." << "..RPG.GetName(tag))

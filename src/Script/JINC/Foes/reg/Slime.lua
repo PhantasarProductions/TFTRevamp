@@ -1,6 +1,6 @@
 --[[
   Slime.lua
-  Version: 16.12.02
+  Version: 16.12.03
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Fri 02 December 2016; 22:27:28
+-- File Generated: Sat 03 December 2016; 11:31:07
 
 
 local foe = {}
@@ -269,6 +269,7 @@ local foe = {}
 	foe["SR_Silence "] = 100
 	foe["SR_Undead "] = 100
 	foe["normal_Accuracy"] = 95
+	foe["normal_EXP"] = 1
 	foe["normal_Endurance"] = 1
 	foe["normal_Evasion"] = 1
 	foe["normal_HP"] = 5
@@ -277,6 +278,7 @@ local foe = {}
 	foe["normal_Resistance"] = 1
 	foe["normal_Speed"] = 1
 	foe["oversoul_Accuracy"] = 100
+	foe["oversoul_EXP"] = 0
 	foe["oversoul_Endurance"] = 0
 	foe["oversoul_Evasion"] = 0
 	foe["oversoul_HP"] = 0

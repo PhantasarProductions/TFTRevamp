@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  EQP_HANDOSTILLOR_WP2.lua
+  WAND_FROST.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -35,21 +35,37 @@
 version: 16.12.03
 ]]
 ret = {
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
-	["Attack_Element"] = "None",
-	["Desc"] = "It's longer, so what?",
-	["EQP_STAT_Intelligence"] = 4,
-	["EQP_STAT_Power"] = 2,
-	["Heal_StatPercent"] = "Power",
+	["Attack"] = 100,
+	["Attack_AccuracyRate"] = 100,
+	["Attack_AllowAccuracy"] = true,
+	["Attack_AllowCritical"] = true,
+	["Attack_AllowDodge"] = true,
+	["Attack_AttackStat"] = "Intelligence",
+	["Attack_DefenseStat"] = "Resistance",
+	["Attack_Element"] = "Frost",
+	["Desc"] = "Let it go! Let it go!",
+	["EQP_STAT_Intelligence"] = 1,
+	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "HandoStillor",
-	["ITM_ShopPrice"] = 600,
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Marrilona",
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 250,
 	["ITM_Type"] = "Weapon",
+	["ITM_WeaponAbility"] = true,
+	["Rew_GainAP"] = 5,
 	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Long staff",
-	["Type"] = "Item"}
+	["Target"] = "1F",
+	["Title"] = "Frost Wand",
+	["Type"] = "Item",
+	["Voice"] = "Frost",
+	["rew_CreateSkill1"] = true,
+	["rew_GainSkill1"] = 1}
 
 return ret
 

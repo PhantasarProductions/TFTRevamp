@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 16.12.02
+version: 16.12.03
 ]]
--- File Generated: Fri 02 December 2016; 22:27:27
+-- File Generated: Sat 03 December 2016; 11:31:14
 
 
 local foe = {}
@@ -269,6 +269,7 @@ local foe = {}
 	foe["SR_Silence "] = 100
 	foe["SR_Undead "] = 100
 	foe["normal_Accuracy"] = 75
+	foe["normal_EXP"] = 3
 	foe["normal_Endurance"] = 20
 	foe["normal_Evasion"] = 2
 	foe["normal_HP"] = 75
@@ -277,6 +278,7 @@ local foe = {}
 	foe["normal_Resistance"] = 1
 	foe["normal_Speed"] = 75
 	foe["oversoul_Accuracy"] = 100
+	foe["oversoul_EXP"] = 0
 	foe["oversoul_Endurance"] = 0
 	foe["oversoul_Evasion"] = 0
 	foe["oversoul_HP"] = 0

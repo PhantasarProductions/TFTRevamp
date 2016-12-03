@@ -1,6 +1,6 @@
 --[[
   RSpook.lua
-  Version: 16.12.02
+  Version: 16.12.03
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Fri 02 December 2016; 22:43:05
+-- File Generated: Sat 03 December 2016; 16:20:29
 
 
 local foe = {}
@@ -64,6 +64,7 @@ local foe = {}
 	foe["NEWGAMEPLUS_ITM_SALVE"] = true
 	foe["NEWGAMEPLUS_SPECIAL_AXESMASH"] = true
 	foe["NEWGAMEPLUS_WAND_FLAME"] = true
+	foe["NEWGAMEPLUS_WAND_FROST"] = true
 	foe["NORMAL_AAA_ATTACK"] = true
 	foe["NORMAL_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["NORMAL_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -88,6 +89,7 @@ local foe = {}
 	foe["NORMAL_ITM_SALVE"] = true
 	foe["NORMAL_SPECIAL_AXESMASH"] = true
 	foe["NORMAL_WAND_FLAME"] = true
+	foe["NORMAL_WAND_FROST"] = true
 	foe["OVERSOUL_AAA_ATTACK"] = true
 	foe["OVERSOUL_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["OVERSOUL_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -112,6 +114,7 @@ local foe = {}
 	foe["OVERSOUL_ITM_SALVE"] = true
 	foe["OVERSOUL_SPECIAL_AXESMASH"] = true
 	foe["OVERSOUL_WAND_FLAME"] = true
+	foe["OVERSOUL_WAND_FROST"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
 	foe["SKILL\49_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\49_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -136,6 +139,7 @@ local foe = {}
 	foe["SKILL\49_ITM_SALVE"] = true
 	foe["SKILL\49_SPECIAL_AXESMASH"] = true
 	foe["SKILL\49_WAND_FLAME"] = true
+	foe["SKILL\49_WAND_FROST"] = true
 	foe["SKILL\50_AAA_ATTACK"] = true
 	foe["SKILL\50_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\50_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -160,6 +164,7 @@ local foe = {}
 	foe["SKILL\50_ITM_SALVE"] = true
 	foe["SKILL\50_SPECIAL_AXESMASH"] = true
 	foe["SKILL\50_WAND_FLAME"] = true
+	foe["SKILL\50_WAND_FROST"] = true
 	foe["SKILL\51_AAA_ATTACK"] = true
 	foe["SKILL\51_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\51_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -184,6 +189,7 @@ local foe = {}
 	foe["SKILL\51_ITM_SALVE"] = true
 	foe["SKILL\51_SPECIAL_AXESMASH"] = true
 	foe["SKILL\51_WAND_FLAME"] = true
+	foe["SKILL\51_WAND_FROST"] = true
 	foe["Desc"] = "It\39s red and it\39s spooky"
 	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47reg\47RSpook\46png"
 	foe["Item Drop \49"] = "ITM_ANTIDOTE"
@@ -216,6 +222,7 @@ local foe = {}
 	foe["RATE_ITM_SALVE"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_WAND_FLAME"] = 0
+	foe["RATE_WAND_FROST"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
 	foe["TARGET_ABL_HERO_DANDOR_AXESMASH"] = "Random"
 	foe["TARGET_ABL_HERO_DANDOR_SUPERAXESMASH"] = "Random"
@@ -240,6 +247,7 @@ local foe = {}
 	foe["TARGET_ITM_SALVE"] = "Random"
 	foe["TARGET_SPECIAL_AXESMASH"] = "Random"
 	foe["TARGET_WAND_FLAME"] = "Random"
+	foe["TARGET_WAND_FROST"] = "Random"
 	foe["Boss"] = false
 	foe["Oversoul"] = true
 	foe["Oversoul Drop \49"] = false
@@ -269,19 +277,21 @@ local foe = {}
 	foe["SR_Silence "] = 100
 	foe["SR_Undead "] = 100
 	foe["normal_Accuracy"] = 100
+	foe["normal_EXP"] = 2
 	foe["normal_Endurance"] = 20
 	foe["normal_Evasion"] = 25
 	foe["normal_HP"] = 2
 	foe["normal_Intelligence"] = 35
-	foe["normal_Power"] = 35
+	foe["normal_Power"] = 15
 	foe["normal_Resistance"] = 100
 	foe["normal_Speed"] = 20
 	foe["oversoul_Accuracy"] = 100
+	foe["oversoul_EXP"] = 5
 	foe["oversoul_Endurance"] = 20
 	foe["oversoul_Evasion"] = 70
 	foe["oversoul_HP"] = 2
 	foe["oversoul_Intelligence"] = 60
-	foe["oversoul_Power"] = 60
+	foe["oversoul_Power"] = 20
 	foe["oversoul_Resistance"] = 100
 	foe["oversoul_Speed"] = 30
 

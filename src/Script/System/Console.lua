@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 16.10.15
+  Version: 16.12.03
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -203,3 +203,23 @@ function TB_BOSS()
   StartBoss('Ty ymor syrfa',"dal Aerya")
 end
 
+function LEVELUP(a)
+   local chrs
+   if not(a) or a=="" then 
+      chrs = {}
+      for id in ICHARS() do
+          if not prefixed(id,"FOE") then chrs[#chrs+1]=id end
+      end
+   else
+      chrs = mysplit(a,",")
+   end
+   for ch in each(chrs) do
+       if RPG.CharExists(ch)==0 then
+          CSay("Character "..ch.." does not exist")
+       else
+          CSay("Level up (if possible) for: "..ch)
+          RPG.SetStat(ch,"EXP",0)
+          MS.Run("PARTY","CheckEXP",ch)
+       end      
+   end          
+end

@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 16.10.09
+  Version: 16.12.03
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -40,6 +40,16 @@ StatusChanges = {}
 
 function KillAward(myfoe)
     -- Experience
+    for i=0,3 do  
+        local ch = RPG.PartyTag(i)
+        if ch~="" and RPG.Stat(ch,'Level')<CVV('%LEVELCAP') then
+           local rate = exprate[ch] or 1
+           local get = (myfoe.exp or 1)*(rate)
+           RPG.IncStat(ch,'EXP', -get) 
+           charmsg(ch,"EXP "..get,rand(0,255),rand(0,255),rand(0,255))
+           if RPG.Stat(ch,"EXP")<=0 then charmsg(ch,"LEVEL UP!",rand(0,255),rand(0,255),rand(0,255)) end
+        end
+    end
     -- Drop items
     for i=1,3 do
         if rand(1,100)<(myfoe.data["Rate Drop "..i] or 0) then

@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 16.10.23
+  Version: 16.12.03
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -55,6 +55,9 @@ oversoul = oversoul or {}
 groupmax = 100
 learn = learn or { Jake_Human={}, Marrilona={}, Dandor={}, HandoStillor={} } -- In GALE_OnLoad Jake_Human and Jake_Fairy are linked
 
+
+exprate = {}
+
 function SetUpCards()
     Cards = {}
     cards = Cards
@@ -108,6 +111,9 @@ function LoadHeros()
            myhero.voicetag = myhero.tag         
            fighterbytag[myhero.tag] = myhero
            if prefixed(myhero.voicetag,'Jake') then myhero.voicetag='Jake' end
+           exprate[myhero.tag] = 1
+           if     skill>1 and rand(1,4)==1 then exprate[myhero.tag] = .5 
+           elseif skill<3 and rand(1,4)==1 then exprate[myhero.tag] =  2 end
         end  
     end
     -- Set up coordinates (this is pending on the number of heroes, yes, so this must be done in a separate loop)

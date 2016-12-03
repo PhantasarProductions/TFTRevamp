@@ -1,6 +1,6 @@
 --[[
   ShadowSweeper.lua
-  Version: 16.11.30
+  Version: 16.12.03
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Wed 30 November 2016; 11:24:24
+-- File Generated: Sat 03 December 2016; 11:31:23
 
 
 local foe = {}
@@ -269,6 +269,7 @@ local foe = {}
 	foe["SR_Silence "] = 100
 	foe["SR_Undead "] = 100
 	foe["normal_Accuracy"] = 100
+	foe["normal_EXP"] = 30
 	foe["normal_Endurance"] = 20
 	foe["normal_Evasion"] = 0
 	foe["normal_HP"] = 1000
@@ -277,6 +278,7 @@ local foe = {}
 	foe["normal_Resistance"] = 5000
 	foe["normal_Speed"] = 20
 	foe["oversoul_Accuracy"] = 100
+	foe["oversoul_EXP"] = 0
 	foe["oversoul_Endurance"] = 0
 	foe["oversoul_Evasion"] = 0
 	foe["oversoul_HP"] = 0
