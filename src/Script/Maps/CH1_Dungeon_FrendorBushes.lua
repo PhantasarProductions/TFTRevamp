@@ -32,5 +32,11 @@
   
  **********************************************
  
-version: 16.12.02
+version: 16.12.03
 ]]
+
+
+
+function GALE_OnLoad()
+   if (not Done('&ANNOUNCED.CHAPTER.ONE')) or CVV('%CHAPTIME')>0 then Chapter('GFX/Chapters/1.png') end
+end   

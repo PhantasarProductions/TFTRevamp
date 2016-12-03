@@ -1,6 +1,6 @@
 --[[
   Flip.lua
-  Version: 16.10.15
+  Version: 16.12.03
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -47,8 +47,23 @@ function PlayTime()
   return sval(seconds)
 end
 
+function Chapter(file)
+   Image.Load(file,'CHAP')
+   Image.HotCenter('CHAP')
+   Var.D('%CHAPTIME',500)
+   CSay('Chapter picture: '..file)
+end      
+
 function Flip()
     MS.Run("ACH","AchFlip") -- Render any gotten achievements before we show the screen to the player!
+    if CVV('%CHAPTIME')>0 then
+       if CVV('%CHAPALPHA')<100 and CVV('%CHAPTIME')>100 then inc('%CHAPALPHA') end
+       if CVV('%CHAPTIME')<100 then Var.D('%CHAPALPHA',CVV('%CHAPTIME')) end
+       Image.SetAlphaPC(CVV('%CHAPALPHA'))
+       Image.Show('CHAP',Center_X,Center_Y)
+       Image.SetAlphaPC(100)
+       dec('%CHAPTIME')
+    end
     Image.Flip() -- Show it!
     -- And recalcute the game time.
     local t = Time.Time()
