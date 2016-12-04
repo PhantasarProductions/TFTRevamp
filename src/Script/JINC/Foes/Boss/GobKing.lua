@@ -1,40 +1,4 @@
---[[
-  GobKing.lua
-  Version: 16.12.03
-  Copyright (C) 2016 Jeroen Petrus Broks
-  
-  ===========================
-  This file is part of a project related to the Phantasar Chronicles or another
-  series or saga which is property of Jeroen P. Broks.
-  This means that it may contain references to a story-line plus characters
-  which are property of Jeroen Broks. These references may only be distributed
-  along with an unmodified version of the game. 
-  
-  As soon as you remove or replace ALL references to the storyline or character
-  references, or any termology specifically set up for the Phantasar universe,
-  or any other univers a story of Jeroen P. Broks is set up for,
-  the restrictions of this file are removed and will automatically become
-  zLib licensed (see below).
-  
-  Please note that doing so counts as a modification and must be marked as such
-  in accordance to the zLib license.
-  ===========================
-  zLib license terms:
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
-]]
--- File Generated: Sat 03 December 2016; 11:31:23
+-- File Generated: Sun 04 December 2016; 11:00:50
 
 
 local foe = {}
@@ -64,6 +28,7 @@ local foe = {}
 	foe["NEWGAMEPLUS_ITM_SALVE"] = true
 	foe["NEWGAMEPLUS_SPECIAL_AXESMASH"] = true
 	foe["NEWGAMEPLUS_WAND_FLAME"] = true
+	foe["NEWGAMEPLUS_WAND_FROST"] = true
 	foe["NORMAL_AAA_ATTACK"] = true
 	foe["NORMAL_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["NORMAL_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -88,6 +53,7 @@ local foe = {}
 	foe["NORMAL_ITM_SALVE"] = true
 	foe["NORMAL_SPECIAL_AXESMASH"] = true
 	foe["NORMAL_WAND_FLAME"] = true
+	foe["NORMAL_WAND_FROST"] = true
 	foe["OVERSOUL_AAA_ATTACK"] = true
 	foe["OVERSOUL_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["OVERSOUL_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -112,6 +78,7 @@ local foe = {}
 	foe["OVERSOUL_ITM_SALVE"] = true
 	foe["OVERSOUL_SPECIAL_AXESMASH"] = true
 	foe["OVERSOUL_WAND_FLAME"] = true
+	foe["OVERSOUL_WAND_FROST"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
 	foe["SKILL\49_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\49_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -136,6 +103,7 @@ local foe = {}
 	foe["SKILL\49_ITM_SALVE"] = true
 	foe["SKILL\49_SPECIAL_AXESMASH"] = true
 	foe["SKILL\49_WAND_FLAME"] = true
+	foe["SKILL\49_WAND_FROST"] = true
 	foe["SKILL\50_AAA_ATTACK"] = true
 	foe["SKILL\50_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\50_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -160,6 +128,7 @@ local foe = {}
 	foe["SKILL\50_ITM_SALVE"] = true
 	foe["SKILL\50_SPECIAL_AXESMASH"] = true
 	foe["SKILL\50_WAND_FLAME"] = true
+	foe["SKILL\50_WAND_FROST"] = true
 	foe["SKILL\51_AAA_ATTACK"] = true
 	foe["SKILL\51_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\51_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -184,6 +153,7 @@ local foe = {}
 	foe["SKILL\51_ITM_SALVE"] = true
 	foe["SKILL\51_SPECIAL_AXESMASH"] = true
 	foe["SKILL\51_WAND_FLAME"] = true
+	foe["SKILL\51_WAND_FROST"] = true
 	foe["Desc"] = "Leader of the goblins\46\10Not smarter\44 only a bit stronger"
 	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Boss\47GobKing\46png"
 	foe["Item Drop \49"] = "ITM_APPLE"
@@ -216,6 +186,7 @@ local foe = {}
 	foe["RATE_ITM_SALVE"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_WAND_FLAME"] = 0
+	foe["RATE_WAND_FROST"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
 	foe["TARGET_ABL_HERO_DANDOR_AXESMASH"] = "Random"
 	foe["TARGET_ABL_HERO_DANDOR_SUPERAXESMASH"] = "Random"
@@ -240,6 +211,7 @@ local foe = {}
 	foe["TARGET_ITM_SALVE"] = "Random"
 	foe["TARGET_SPECIAL_AXESMASH"] = "Random"
 	foe["TARGET_WAND_FLAME"] = "Random"
+	foe["TARGET_WAND_FROST"] = "Random"
 	foe["Boss"] = true
 	foe["Oversoul"] = false
 	foe["Oversoul Drop \49"] = false

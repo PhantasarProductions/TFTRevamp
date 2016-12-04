@@ -36,6 +36,25 @@ version: 16.12.03
 ]]
 
 
+function RemovePreBossObjects()
+   local toberemoved = { "Boss_Jake",
+                         "Boss_Marrilona",
+                         "PRC_Jake",
+                         "PRC_Marrilona",
+                         "SRC_Jake",
+                         "SRC_Marrilona"
+                       }
+   for kill_me in each(toberemoved) do
+       Maps.Obj.Kill(kill_me,1)
+   end                              
+end
+
+function Boss_Jake()
+end
+
+function Boss_Marrilona()
+end
+
 
 function GALE_OnLoad()
    if (not Done('&ANNOUNCED.CHAPTER.ONE')) or CVV('%CHAPTIME')>0 then Chapter('GFX/Chapters/1.png') end

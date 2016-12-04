@@ -1,40 +1,4 @@
---[[
-**********************************************
-  
-  Dwarf.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
-  
-  This file contains material that is related 
-  to a storyline that is which is strictly
-  copyrighted to Jeroen Broks.
-  
-  This file may only be used in an unmodified
-  form with an unmodified version of the 
-  software this file belongs to.
-  
-  You may use this file for your study to see
-  how I solved certain things in the creation
-  of this project to see if you find valuable
-  leads for the creation of your own.
-  
-  Mostly this file comes along with a project
-  that is for most part released under an
-  open source license and that means that if
-  you use that code with this file removed
-  from it, you can use it under that license.
-  Please check out the other files to find out
-  which license applies.
-  This file comes 'as-is' and in no possible
-  way the author can be held responsible of
-  any form of damages that may occur due to 
-  the usage of this file
-  
-  
- **********************************************
- 
-version: 16.12.03
-]]
--- File Generated: Sat 03 December 2016; 11:31:24
+-- File Generated: Sun 04 December 2016; 11:00:51
 
 
 local foe = {}
@@ -64,6 +28,7 @@ local foe = {}
 	foe["NEWGAMEPLUS_ITM_SALVE"] = true
 	foe["NEWGAMEPLUS_SPECIAL_AXESMASH"] = true
 	foe["NEWGAMEPLUS_WAND_FLAME"] = true
+	foe["NEWGAMEPLUS_WAND_FROST"] = true
 	foe["NORMAL_AAA_ATTACK"] = true
 	foe["NORMAL_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["NORMAL_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -88,6 +53,7 @@ local foe = {}
 	foe["NORMAL_ITM_SALVE"] = true
 	foe["NORMAL_SPECIAL_AXESMASH"] = true
 	foe["NORMAL_WAND_FLAME"] = true
+	foe["NORMAL_WAND_FROST"] = true
 	foe["OVERSOUL_AAA_ATTACK"] = true
 	foe["OVERSOUL_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["OVERSOUL_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -112,6 +78,7 @@ local foe = {}
 	foe["OVERSOUL_ITM_SALVE"] = true
 	foe["OVERSOUL_SPECIAL_AXESMASH"] = true
 	foe["OVERSOUL_WAND_FLAME"] = true
+	foe["OVERSOUL_WAND_FROST"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
 	foe["SKILL\49_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\49_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -136,6 +103,7 @@ local foe = {}
 	foe["SKILL\49_ITM_SALVE"] = true
 	foe["SKILL\49_SPECIAL_AXESMASH"] = true
 	foe["SKILL\49_WAND_FLAME"] = true
+	foe["SKILL\49_WAND_FROST"] = true
 	foe["SKILL\50_AAA_ATTACK"] = true
 	foe["SKILL\50_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\50_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -160,6 +128,7 @@ local foe = {}
 	foe["SKILL\50_ITM_SALVE"] = true
 	foe["SKILL\50_SPECIAL_AXESMASH"] = true
 	foe["SKILL\50_WAND_FLAME"] = true
+	foe["SKILL\50_WAND_FROST"] = true
 	foe["SKILL\51_AAA_ATTACK"] = true
 	foe["SKILL\51_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\51_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -184,6 +153,7 @@ local foe = {}
 	foe["SKILL\51_ITM_SALVE"] = true
 	foe["SKILL\51_SPECIAL_AXESMASH"] = true
 	foe["SKILL\51_WAND_FLAME"] = true
+	foe["SKILL\51_WAND_FROST"] = true
 	foe["Desc"] = "A hungry Dwarf on the road"
 	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Boss\47Dwarf\46png"
 	foe["Item Drop \49"] = "ITM_APPLE"
@@ -216,6 +186,7 @@ local foe = {}
 	foe["RATE_ITM_SALVE"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_WAND_FLAME"] = 0
+	foe["RATE_WAND_FROST"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
 	foe["TARGET_ABL_HERO_DANDOR_AXESMASH"] = "Random"
 	foe["TARGET_ABL_HERO_DANDOR_SUPERAXESMASH"] = "Random"
@@ -240,6 +211,7 @@ local foe = {}
 	foe["TARGET_ITM_SALVE"] = "Random"
 	foe["TARGET_SPECIAL_AXESMASH"] = "Random"
 	foe["TARGET_WAND_FLAME"] = "Random"
+	foe["TARGET_WAND_FROST"] = "Random"
 	foe["Boss"] = true
 	foe["Oversoul"] = false
 	foe["Oversoul Drop \49"] = false
@@ -269,7 +241,7 @@ local foe = {}
 	foe["SR_Silence "] = 0
 	foe["SR_Undead "] = 0
 	foe["normal_Accuracy"] = 75
-	foe["normal_EXP"] = 30
+	foe["normal_EXP"] = 15
 	foe["normal_Endurance"] = 2
 	foe["normal_Evasion"] = 0
 	foe["normal_HP"] = 100
