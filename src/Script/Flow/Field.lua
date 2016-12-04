@@ -55,6 +55,9 @@ rencstep = 1
 rencstepleft = recstepchange
 rencon = true
 
+
+RONOFF = { [false] = "Off", [true]="On" }
+
 Scheduled = {}
 
 AUTOHIDE = {}
@@ -400,8 +403,15 @@ function FieldStats()
        if Maps.Multi()==1 then layer = Maps.LayerCodeName end
        stuff[1] = {'FSTIT',Maps.GetData('Title'),'FieldInfo'}
        if layer and left(layer,1)=="#" then stuff[2]={'FSROM',layer} end
-       if CVVN("%CASH") then stuff[#stuff+1] = {'FSCSH',CVV("%CASH")} end
-       if CVVN("%ORBS") then stuff[#stuff+1] = {'FSORB',CVV("%ORBS")} end
+       if CVVN("%CASH")     then stuff[#stuff+1] = {'FSCSH',CVV("%CASH")}     end
+       if CVVN("%ORBS")     then stuff[#stuff+1] = {'FSORB',CVV("%ORBS")}     end
+       if CVVN("%LEVELCAP") then stuff[#stuff+1] = {'FSLVC',CVV("%LEVELCAP")} end
+       if CVVN("&ALLOW.ENCOFF['"..Maps.CodeName.."']") then
+          if INP.KeyH(KEY_E)==1 then rencon = not rencon end
+          stuff[#stuff+1] = {'FSREN',RONOFF[rencon],'FieldInfo'}
+       else
+          renc = true   
+       end
        stuff[#stuff+1] = {'FSTIM',PlayTime()}
        for i,data in ipairs(stuff) do
            white()
@@ -409,9 +419,11 @@ function FieldStats()
            Image.LoadNew(data[1],"GFX/Field Icons/"..data[1]..".png")
            Image.Show(data[1],35,i*35)
            DarkText(data[2],75,i*35,0,0,180,255,0)
-       end
+       end    
        Image.SetAlphaPC(100)
     else
+       if INP.KeyH(KEY_E)==1 and CVVN("&ALLOW.ENCOFF['"..Maps.CodeName.."']") then rencon = not rencon
+       elseif not CVVN("&ALLOW.ENCOFF['"..Maps.CodeName.."']") then rencon = true end
        FieldStatsAlpha = 0
        FSTime=FSTime-1
        --DarkText(FSTime,0,0,0,0)
