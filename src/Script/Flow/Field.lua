@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.10.28
+  Version: 16.12.04
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -418,6 +418,17 @@ function FieldStats()
     end
 end
 
+-- Traveler's Emblems
+function TravelersEmblem(tag)
+   if not TETXTLOADED then MS.Run("BOXTEXT","LoadData","GENERAL/TRAVELEMBLEM;TRAVEL"); Console.Write("MapText for "..Maps.CodeName.." loaded",0,255,180)  TETXTLOADED=true end
+   if not Done("&DONE.TUTORIAL.TRAVELEMBLEM") then SerialBoxText("TRAVEL","TUTORIAL","FLOW_FIELD") end
+   Var.D("$TRAVELEMBLEMSHOWSPOT",Maps.GetData('Title'))
+   CapIncrease()
+   Done("&ALLOW.ENCOFF['"..Maps.CodeName.."']")
+   SerialBoxText("TRAVEL","GET","FLOW_FIELD")
+   Maps.Obj.Kill(tag,1)
+end
+
 -- Clickables
 function ResetClickables()
   Clickables = {}
@@ -458,7 +469,7 @@ function TurnOffClicks()
 end
 
 function SetUpAutoClickables()
-local prefixes = {"NPC_","PSG_","PRC_","CHEST_"}
+local prefixes = {"NPC_","PSG_","PRC_","CHEST_","PTE_"}
 local p 
 local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()
 -- CSay(type(layers).."/"..type(each))
@@ -531,6 +542,12 @@ if mousehit(1) or fakex or fakey then
                WalkArrivalArg = nil
                ret = true  
             end    
+          elseif prefixed(c,"PTE") then
+            if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32)==1 then
+               WalkArrival = TravelersEmblem
+               WalkArrivalArg = c
+               ret = true  
+            end                
           elseif prefixed(c,"CHEST_") then
                local chest = Maps.Obj.Obj(c) 
                CSay('Clicked chest: '..c.." Frame:"..chest.Frame)
@@ -569,7 +586,7 @@ if WalkArrival and (Actors.Walking(cplayer)==0) then
      MS.Run("MAP",WalkArrival,WalkArrivalArg)
      CSay("Arrival>MAP>"..WalkArrival) -- Debug line
   -- @CASE "function"
-     WalkArrival()
+     WalkArrival(WalkArrivalArg)
   -- @CASE "table"
      MS_Run(WalkArrival[1],WalkArrival[2],WalkArrival[3])
   -- @DEFAULT
