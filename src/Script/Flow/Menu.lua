@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 16.12.02
+  Version: 16.12.04
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -147,12 +147,16 @@ function features.Status(x,y,pw,h)
         wy = wy + py        
         if RPG.PointsExists(ch,'SK_LVL_'..i)==1 then
            local e = RPG.Points(ch,'SK_EXP_'..i)
-           local deling = e.Have / e.Maximum
+           local Have = e.Have
+           local Maximum = e.Maximum
+           local deling = Have / Maximum
            local barw = math.floor((SW/1200) * 250)
+           local progress = math.ceil(deling*barw)
+           --DarkText(Have.." => "..Maximum.." D:"..deling.." ??? "..progress.."("..barw..")",0,i*20) -- Debug line
            color(100,100,100)
            Image.Rect(w-barw,wy+(py-5),barw,5)
            color(255,180,0)
-           Image.Rect(w-barw,wy+(py-5),math.ceil(deling*barw))
+           Image.Rect(w-barw,wy+(py-5),progress,5)
            DarkText(CharacterMeta[ch]['skill'..i],0,wy,0,0,255,255,255)
            DarkText(RPG.Points(ch,'SK_LVL_'..i).Have,w,wy,1,0,255,180,0)
            RPG.Points(ch,'SK_LVL_'..i).Minimum=1

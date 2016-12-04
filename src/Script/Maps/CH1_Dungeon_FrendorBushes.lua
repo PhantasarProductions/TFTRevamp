@@ -53,8 +53,16 @@ function RemovePreBossObjects()
 end
 
 function Boss_Jake()
-   RemovePreBossObjects()
-   MapText("BOSS_JAKE")
+    RemovePreBossObjects()
+    MapText("BOSS_JAKE")
+    Schedule("MAP","PostBoss_Jake")
+    ClearCombatData()
+    Var.D("$COMBAT.FOE_1","Boss/Dwarf_J") -- Needed to prevent the Axe Smash session Marrilona has to deal with.
+    Var.D("$COMBAT.POSFOE_1","CENTER")
+    Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
+    Var.D("$COMBAT.ARENA","Forest.png")
+    Var.D("$COMBAT.STARTEVENT","MAP,DwarfBossStart_Jake")
+    StartBoss("Berserk Fellow","Dwarf")    
 end
 
 function DwarfBossStart_Jake()
@@ -90,8 +98,19 @@ function PostBoss_Marrilona()
     Sys.Error("Cannot continue yet")
 end    
 
+function Leave(char)
+   if CVV('&DONE.THEYMET') then
+      WorldMap()
+   else
+      MapText("DONTGO_"..upper(char))
+      Actors.WalkToSpot('PLAYER','Start_'..char)
+   end      
+end
+
 function GALE_OnLoad()
    if (not Done('&ANNOUNCED.CHAPTER.ONE')) or CVV('%CHAPTIME')>0 then Chapter('GFX/Chapters/1.png') end
    ZA_Enter("Boss_Jake",Boss_Jake)
    ZA_Enter('Boss_Marrilona',Boss_Marrilona)
+   ZA_Enter('ExitSouthWest',Leave,'Jake')
+   ZA_Enter('ExitNorthEast',Leave,'Marrilona')
 end   
