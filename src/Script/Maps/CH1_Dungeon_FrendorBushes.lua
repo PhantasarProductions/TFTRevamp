@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.03
+version: 16.12.04
 ]]
 
 
@@ -40,22 +40,58 @@ function RemovePreBossObjects()
    local toberemoved = { "Boss_Jake",
                          "Boss_Marrilona",
                          "PRC_Jake",
-                         "PRC_Marrilona",
+                         "PRC_Marrilona"
+                         --[[
                          "SRC_Jake",
                          "SRC_Marrilona"
+                         ]]
                        }
    for kill_me in each(toberemoved) do
        Maps.Obj.Kill(kill_me,1)
+       CSay("Removed: "..kill_me)
    end                              
 end
 
 function Boss_Jake()
+   RemovePreBossObjects()
+   MapText("BOSS_JAKE")
 end
+
+function DwarfBossStart_Jake()
+    MapText('STARTBOSS_JAKE','FLOW_COMBAT')
+end
+
+
+function PostBoss_Jake()
+    Sys.Error("Cannot continue yet")
+end    
+
 
 function Boss_Marrilona()
+    RemovePreBossObjects()
+    MapText("BOSS_MARRILONA")
+    Schedule("MAP","PostBoss_Marrilona")
+    ClearCombatData()
+    Var.D("$COMBAT.FOE_1","Boss/Dwarf")
+    Var.D("$COMBAT.POSFOE_1","CENTER")
+    Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
+    Var.D("$COMBAT.ARENA","Forest.png")
+    Var.D("$COMBAT.STARTEVENT","MAP,DwarfBossStart_Marrilona")
+    StartBoss("Another","Dwarf")    
+end    
+
+function DwarfBossStart_Marrilona()
+    RPG.Points('FOE_1','HP').Minimum = 1
+    MapText('STARTBOSS_MARRILONA','FLOW_COMBAT')
 end
 
+function PostBoss_Marrilona()
+    RPG.IncStat('Marrilona','EXP',-15) -- As Marrilona always loses, I didn't want to keep the EXP away from her.
+    Sys.Error("Cannot continue yet")
+end    
 
 function GALE_OnLoad()
    if (not Done('&ANNOUNCED.CHAPTER.ONE')) or CVV('%CHAPTIME')>0 then Chapter('GFX/Chapters/1.png') end
+   ZA_Enter("Boss_Jake",Boss_Jake)
+   ZA_Enter('Boss_Marrilona',Boss_Marrilona)
 end   
