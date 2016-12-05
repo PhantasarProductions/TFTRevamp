@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.12.04
+  Version: 16.12.05
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -734,6 +734,27 @@ function cons_monstertable()
    end
 end       
 
+FTL = { South = {0,-32},North={0,32},East={-32,0},West={32,0}}
+FTL_OldWind = {}
+
+function FollowTheLeader()
+   local myactors = { [0] = Actors.Actor('PLAYER') }
+   if Maps.Obj.Exists("PLAYER1")==1 then myactors[#myactors+1] = Actors.Actor('PLAYER1') end
+   if Maps.Obj.Exists("PLAYER2")==1 then myactors[#myactors+1] = Actors.Actor('PLAYER2') end
+   if Maps.Obj.Exists("PLAYER3")==1 then myactors[#myactors+1] = Actors.Actor('PLAYER3') end
+   for i=1,#myactors do -- 0 is ignored by Lua, while it DOES exist... cool, huh?
+       local tara = myactors[i-1]
+       local cura = myactors[i]
+       if Distance(tara.X,tara.Y,cura.X,cura.Y)>64 and cura.Walking==0 then
+          Actors.WalkTo(cura.Tag,FTL[tara.Wind][1]+tara.X,FTL[tara.Wind][2]+tara.Y)
+       end
+       if FTL_OldWind[cura.Tag]~=cura.Wind then 
+          FTL_OldWind[cura.Tag]=cura.Wind
+          Actors.ChoosePic(cura.Tag,upper(RPG.PartyTag(i).."."..upper(cura.Wind)))
+       end   
+   end
+end
+
 function MAIN_FLOW()  
   Cls()
   DrawScreen()
@@ -751,6 +772,7 @@ function MAIN_FLOW()
   --EmergencySave()
   --ControlFoes()
   --FindTreasures()
+  FollowTheLeader()
   FieldStats()
   ResetChar()
   ShowParty()
