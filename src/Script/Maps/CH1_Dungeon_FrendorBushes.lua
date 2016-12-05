@@ -96,7 +96,7 @@ function PostBoss_Jake()
     local marx,mary = Maps.Obj.Obj('PostBossMarrilona').X,Maps.Obj.Obj('PostBossMarrilona').Y
     Maps.CreateObstacle(marx,mary,"GFX/Combat/Fighters/Hero/Marrilona.Dead.png","Fainted Marrilona",0)
     MapText("POSTBOSS_JAKE")
-    I_Love_You()        
+    I_Love_You('Marrilona')        
 end    
 
 
