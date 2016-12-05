@@ -55,13 +55,22 @@ function RemovePreBossObjects()
 end
 
 -- Jake and Marrilona will meet and fall in love. Oh, how romantic :P
-function I_Love_You()
+function I_Love_You(join)
     Party("Jake_Human;Marrilona")
     LoadMap("CH1_HUB_JAKEHUT")
     GoToLayer("Interior","LoveJake")
     TurnPlayers("East")
     ActorRepos("PLAYER1","LoveMarrilona","West","Marrilona")
-    Sys.Error("Cannot continue yet")
+    MapText('LOVE_1')
+    local stp = Maps.Obj.Obj('Start')
+    local harryx,harryy = stp.X,stp.Y
+    MapsCreateObstacle(harryx,harryy,'GFX/Actors/Single/Humans/Harry_BackSide.png','Harry')
+    MapText('LOVE_2')
+    Maps.Obj.Kill('Harry')
+    MapText('LOVE_3')
+    MapText('LOVE_JOIN_'..upper(join))
+    Run('MAP','CalmIndoors')
+    -- Sys.Error("Cannot continue yet")
 end
 
 function Boss_Jake()    
