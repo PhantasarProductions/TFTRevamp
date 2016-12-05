@@ -259,9 +259,10 @@ function AutoPlayerWind()
  for i=0,3 do
     if i~=0 then cplayer = "PLAYER"..i end
     --if cplayer~="PLAYER" then return end
+    ATW = ATW or {}
     if RPG.PartyTag(i)~="" then
       local x,y,w = GetCoords(cplayer)
-      Actors.ChoosePic(cplayer,upper(RPG.PartyTag(i).."."..w))
+      if ATW[i]~=w then Actors.ChoosePic(cplayer,upper(RPG.PartyTag(i).."."..w)) ATW[i]=w end 
     end
  end  
 end
@@ -750,7 +751,7 @@ function FollowTheLeader()
        end
        if FTL_OldWind[cura.Tag]~=cura.Wind then 
           FTL_OldWind[cura.Tag]=cura.Wind
-          Actors.ChoosePic(cura.Tag,upper(RPG.PartyTag(i).."."..upper(cura.Wind)))
+          --Actors.ChoosePic(cura.Tag,upper(RPG.PartyTag(i).."."..upper(cura.Wind)))
        end   
    end
 end
