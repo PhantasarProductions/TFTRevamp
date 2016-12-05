@@ -281,6 +281,14 @@ function Menu_Keys()
    if ( INP.KeyH(KEY_ESCAPE)==1 or joyhit('CANCEL')) and profile.EscReturn then
       LAURA.Flow(profile.EscReturn)
    end   
+   -- char select
+   for i=0,3 do
+       if RPG.PartyTag(i)~="" then
+          if INP.KeyH(i+49)==1 then menu.chn = i end
+          local clickme = ClickedChar(i) and mousehit(1)
+          if clickme and menu.chn == i then LAURA.Flow(profile.EscReturn) elseif clickme then menu.chn = i end
+       end 
+   end
 end
 
 function Menu_SetChar(ch)
