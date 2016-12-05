@@ -255,10 +255,10 @@ function ClickedChar(ch,dump)
    local sx=origin[1]
    local minx = sx+(Sys.Val(ch)*charentrywidth)
    local miny = sy
-   local maxx = charentrywidth+sx
+   local maxx = charentrywidth+minx
    local maxy = miny+100
    local muisx,muisy = GetMouse()
-   local ret = muisx>=minx and muisx<=maxx and muisy>=miny and muisy<=maxy
+   local ret = muisx>=minx and muisx<=maxx and muisy>=miny and muisy<=maxy and RPG.PartyTag(ch)~=""
    if dump then Var.D("&CLICKEDCHAR",upper(sval(ret))) end
    return ret
 end
