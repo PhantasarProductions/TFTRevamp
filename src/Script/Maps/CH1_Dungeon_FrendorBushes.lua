@@ -64,7 +64,7 @@ function I_Love_You(join)
     MapText('LOVE_1')
     local stp = Maps.Obj.Obj('Start')
     local harryx,harryy = stp.X,stp.Y
-    MapsCreateObstacle(harryx,harryy,'GFX/Actors/Single/Humans/Harry_BackSide.png','Harry')
+    Maps.CreateObstacle(harryx,harryy,'GFX/Actors/Single/Humans/Harry_BackSide.png','Harry')
     MapText('LOVE_2')
     Maps.Obj.Kill('Harry')
     MapText('LOVE_3')
