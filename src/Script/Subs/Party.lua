@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 16.12.03
+  Version: 16.12.05
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -159,7 +159,7 @@ function ShowParty()
    for i=0,3 do if RPGStat.PartyTag(i)~="" then
        ch = RPGStat.PartyTag(i)
        local lv = RPGStat.Stat(ch,'Level')
-       local lvx,lvy = 3,sy+97
+       local lvx,lvy = 3+(i*charentrywidth),sy+97
        if lv<=CVV('%LEVELCAP') then
           SetFont('Lv1')
           DarkText("Lv",lvx,lvy,0,1,255,255,255)
