@@ -37,7 +37,7 @@ version: 16.12.05
 
 function CalmIndoors()
    if not Done('&DONE.THEYMET') then return end
-   Music('Hub/CalmIndoors.ogg')
+   Music('Hub/Calm Indoors.ogg')
 end
 
 function TheStartToFantasy()

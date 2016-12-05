@@ -120,6 +120,9 @@ end
 
 function PostBoss_Marrilona()
     RPG.IncStat('Marrilona','EXP',-15) -- As Marrilona always loses, I didn't want to keep the EXP away from her.
+    local marhp = RPG.Points('Marrilona',"HP")
+    marhp.Have = 1
+    if skill~=3 then marhp.Have = marhp.Maximum end
     LoadMap('CH1_Hub_JakeHut')
     GoToLayer('Black','Yeah')
     MapText('LOVE_0')
