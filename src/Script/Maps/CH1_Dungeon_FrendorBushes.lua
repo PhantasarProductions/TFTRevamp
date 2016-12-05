@@ -69,7 +69,7 @@ function I_Love_You(join)
     Maps.Obj.Kill('Harry')
     MapText('LOVE_3')
     MapText('LOVE_JOIN_'..upper(join))
-    Run('MAP','CalmIndoors')
+    MS.Run('MAP','CalmIndoors')
     -- Sys.Error("Cannot continue yet")
 end
 
