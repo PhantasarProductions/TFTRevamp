@@ -120,7 +120,10 @@ end
 
 function PostBoss_Marrilona()
     RPG.IncStat('Marrilona','EXP',-15) -- As Marrilona always loses, I didn't want to keep the EXP away from her.
-    Sys.Error("Cannot continue yet")
+    LoadMap('CH1_Hub_JakeHut')
+    GoToLayer('Black','Yeah')
+    MapText('LOVE_0')
+    I_Love_You('Jake')
 end    
 
 function Leave(char)
