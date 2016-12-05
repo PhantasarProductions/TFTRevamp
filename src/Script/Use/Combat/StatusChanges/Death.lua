@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 16.12.03
+  Version: 16.12.05
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -45,6 +45,7 @@ function KillAward(myfoe)
         if ch~="" and RPG.Stat(ch,'Level')<CVV('%LEVELCAP') then
            local rate = exprate[ch] or 1
            local get = (myfoe.exp or 1)*(rate)
+           get = math.ceil(get)
            RPG.IncStat(ch,'EXP', -get) 
            charmsg(ch,"EXP "..get,rand(0,255),rand(0,255),rand(0,255))
            if RPG.Stat(ch,"EXP")<=0 then charmsg(ch,"LEVEL UP!",rand(0,255),rand(0,255),rand(0,255)) end

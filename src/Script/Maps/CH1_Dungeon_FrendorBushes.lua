@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.04
+version: 16.12.05
 ]]
 
 
@@ -40,7 +40,9 @@ function RemovePreBossObjects()
    local toberemoved = { "Boss_Jake",
                          "Boss_Marrilona",
                          "PRC_Jake",
-                         "PRC_Marrilona"
+                         "PRC_Marrilona",
+                         "BlockJake",
+                         "BlockMarrilona"
                          --[[
                          "SRC_Jake",
                          "SRC_Marrilona"
@@ -52,7 +54,17 @@ function RemovePreBossObjects()
    end                              
 end
 
-function Boss_Jake()
+-- Jake and Marrilona will meet and fall in love. Oh, how romantic :P
+function I_Love_You()
+    Party("Jake_Human;Marrilona")
+    LoadMap("CH1_HUB_JAKEHUT")
+    GoToLayer("Interior","LoveJake")
+    TurnPlayers("East")
+    ActorRepos("PLAYER1","LoveMarrilona","West","Marrilona")
+    Sys.Error("Cannot continue yet")
+end
+
+function Boss_Jake()    
     RemovePreBossObjects()
     MapText("BOSS_JAKE")
     Schedule("MAP","PostBoss_Jake")
@@ -71,7 +83,11 @@ end
 
 
 function PostBoss_Jake()
-    Sys.Error("Cannot continue yet")
+    Maps.Obj.Kill("PLAYER"); SpawnPlayer("PostBossJake") -- Sometimes it's easier THIS way ;P
+    local marx,mary = Maps.Obj.Obj('PostBossMarrilona').X,Maps.Obj.Obj('PostBossMarrilona').Y
+    Maps.CreateObstacle(marx,mary,"GFX/Combat/Fighters/Hero/Marrilona.Dead.png","Fainted Marrilona",0)
+    MapText("POSTBOSS_JAKE")
+    I_Love_You()        
 end    
 
 

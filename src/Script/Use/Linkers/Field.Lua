@@ -1,6 +1,6 @@
 --[[
   Field.Lua
-  Version: 16.12.01
+  Version: 16.12.05
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -48,8 +48,14 @@ end
 GetActive = GetActive or function()
 end
 
-TurnPlayer = TurnPlayer or function(wind)
-   MS.Run('FIELD','TurnPlayer',wind)
+TurnPlayer = TurnPlayer or function(wind,num)
+   local p = wind
+   if num then p = p ..";"..num end
+   MS.Run('FIELD','TurnPlayer',p)
+end
+
+TurnPlayers = TurnPlayers or function(wind)
+   MS.Run('FIELD','TurnPlayers',wind)
 end
 
 KillWalkArrival = KillWalkArrival or function()
@@ -74,3 +80,11 @@ SpawnPlayer = SpawnPlayer or function(spot,dir)
   MS.LoadNew("FIELD","Script/Flow/Field.lua")
   MS.Run("FIELD","SpawnPlayer",spot..";"..(dir or "North"))  
 end  
+
+function ActorRepos(Actor,spot,dir,ch)
+   local spotobj = Maps.Obj.Obj(spot)
+   local act = Actors.Actor(Actor)
+   act.X,act.Y = spotobj.X,spotobj.Y
+   if dir then act.Wind = dir end
+   if ch then Actors.ChoosePic(Actor,upper(ch).."."..upper(act.Wind)) end
+end   
