@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  CH1_Hub_JakeHut.lua
+  Rubine.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -35,27 +35,19 @@
 version: 16.12.06
 ]]
 
-function CalmIndoors()
-   if not Done('&DONE.THEYMET') then return end
-   Music('Hub/Calm Indoors.ogg')
+
+local Rubine = {}
+
+function Rubine.requirement() return true end
+
+function Rubine.teach(ch) -- Should return true if master actually decides to teach something
 end
 
-function TheStartToFantasy()
-   Music('Hub/StartToFantasyInstrumental.ogg')
-end   
-
-function ExitHut()
-   GoToLayer('Exterior','Hutspot') -- Fun fact. This means something completely different in Dutch, from what it's supposed to mean in English :P
+function Rubine.appoint(ch)
 end
 
-function NPC_Rubine()
-   Master('Rubine')
-end   
-
-function GALE_OnLoad()
-   ZA_Enter('MusicInt',CalmIndoors)
-   ZA_Enter('MusicOut',TheStartToFantasy)
-   ZA_Enter('ExitHut',ExitHut)
+function Rubine.dismiss(ch)
 end
 
-   
+
+return Rubine
