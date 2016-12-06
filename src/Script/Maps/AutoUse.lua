@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.11.17
+  Version: 16.12.06
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -190,4 +190,56 @@ function AutoBossStart()
 end
 
 ZA_Enter("StartBoss",AutoBossStart)
+
+
+-- Inn
+function RestRecover()
+  local chars,foe = {},{}
+  for t in ICHARS() do
+    if prefixed(t,'FOE') then foe[#foe+1]=t else chars[#chars+1]=t end    
+  end
+  for f in each(foe) do RPG.DelChar(f) end
+  for ch in each(chars) do
+      RPG.Points(ch,'HP').Have = RPG.Points(ch,"HP").Maximum
+      RPG.Points(ch,'VIT').Have = RPG.Points(ch,"VIT").Maximum
+      RPG.Points(ch,'AP').Have = ({RPG.Points(ch,"AP").Maximum,RPG.Points(ch,"AP").Have,0})[skill]
+  end
+end
+
+function Inn(free)
+  local innprice = 0
+  local baseprice = {30,0,100}
+  local multi = {0,5,10}
+  if not free then
+     innprice = baseprice[skill]
+     for i=0,3 do
+         if RPG.PartyTag(i)~="" then
+            innprice = innprice + (multi[skill]*RPG.Stat(RPG.PartyTag(i),"Level"))
+         end   
+     end
+  end
+  Var.D("%INNPRICE",innprice)
+  MapText('INN')
+  local t = "INN"
+  if free then t="INN_FREE" end
+  local Ja = RunQuestion("INN",t)==1
+  if Ja then     
+     for alpha=1,100 do
+         DrawScreen()
+         Image.SetAlphaPC(alpha)
+         Image.Rect(0,0,SW+100,SH+100)
+         Image.SetAlphaPC(100)
+         Flip()
+         if musicavailable then 
+            StopMusic()
+            SFX('Music/Gen/Sleep.ogg')
+         end
+         Time.Sleep(500)
+         RestRecover()
+         if musicavailable then
+            StartMusic()
+         end
+     end                  
+  end
+end
 

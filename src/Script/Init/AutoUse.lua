@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.10.18
+  Version: 16.12.06
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -62,6 +62,7 @@ function GALE_OnLoad()
    Image.LoadNew('PCS_BACK','GFX/System/Console.png'); CSay("General background loaded!")
    MS.LoadNew("ACH","Script/Subs/Achievements.lua")
    BlopPlasma.InitBlopPlasma(50,SW,SH,250)
+   MS.Run('BOXTEXT','LoadData','GENERAL/INN;INN')
 end
 
 
