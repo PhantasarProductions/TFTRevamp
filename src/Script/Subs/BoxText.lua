@@ -1,6 +1,6 @@
 --[[
   BoxText.lua
-  Version: 16.10.22
+  Version: 16.12.06
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -261,14 +261,18 @@ end
 
 function RunQuestion(file,tag,pidx,boxback)
 local chosen=nil
-local idx=pidx or 1
+local idx=tonumber(pidx or 1)
 local f = btdata[file]
 local width = 700
 if not f then Sys.Error("Boxtext file "..file.." has not yet been loaded!") end
 local t = f[tag]
 if not t then Sys.Error("Boxtext file "..file.." has no tag called "..tag) end
 local rec = t[idx]
-if not rec then Sys.Error("Boxtext file "..file.." tag "..tag.." does not have a record #"..idx.." (max is "..#t..")") end
+if not rec then
+     CSay(serialize("(non-exisent) rec",rec))
+     CSay(serialize("t",t)) 
+     Sys.Error("Boxtext file "..file.." tag "..tag.." does not have a record #"..idx.." (max is "..#t..")") 
+   end
 local sb_data = { Header = rec.Header, PicDir = rec.PicDir, PicSpc = rec.PicSpc, Lines = rec.Lines, SL = 1, SP=1, AltTxtFont = rec.AltTxtFont }
 if rec.AltTxtFont then
    CSay("Setting font: "..rec.AltTxtFont..","..fonts.BoxText[2])
@@ -284,7 +288,7 @@ sb_data.PicRef=rec.PicRef
 INP.Grab()
 repeat
 INP.Grab()
-chosen = ShowBox(sb_data,boxback or "BOXTEXT.KTHURA",true)
+chosen = ShowBox(sb_data,boxback or "FLOW_FIELD",true)
 ShowMouse()
 Flip()
 until mousehit(1) and chosen

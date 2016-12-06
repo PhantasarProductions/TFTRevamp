@@ -1,7 +1,7 @@
 --[[
   SFX.lua
   Sound Effects
-  version: 16.09.25
+  version: 16.12.06
   Copyright (C) 2015, 2016 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -29,9 +29,10 @@ return ret
 end
 
 -- Play sound effect
-function SFX(pfile,once) --,force)
+function SFX(pfile,channel,once) --,force)
 local file = Str.Upper(pfile)
 SFXBuffers = SFXBuffers or {}
+SFXChannels = SFXChannels or {}
 --[[
 -- force should ALWAYS be used from the title menu, otherwise... CRASH!!!!
 if GameScript and not config.sfx then Console.Write('Sound Effects are OFF, so request to play '..file..' has been ignored',255,0,0); return end -- if in a gamescript and the config is set to no sfx, then no sfx :)
@@ -42,11 +43,14 @@ if (not GameScript) and (not force) then
    end
 ]]   
 SFXBuffers[file] = SFXBuffers[file] or SFXLoad(file)
-Audio.Play(SFXBuffers[file])
+Audio.Play(SFXBuffers[file],channel)
 if once=="yes" then
    Audio.Free(SFXBuffers[file]) 
    SFXBuffers[file] = nil
    end
 end
 
-
+function WaitSFX(channel)
+   repeat until Audio.Playing(channel)==0
+end   
+   

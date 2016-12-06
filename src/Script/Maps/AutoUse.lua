@@ -224,22 +224,25 @@ function Inn(free)
   if free then t="INN_FREE" end
   local Ja = RunQuestion("INN",t)==1
   if Ja then     
+     if musicavailable then 
+        StopMusic()
+        SFX('Music/Gen/Sleep.ogg',"INN")
+     end
      for alpha=1,100 do
+         Cls()
          DrawScreen()
+         black()
          Image.SetAlphaPC(alpha)
          Image.Rect(0,0,SW+100,SH+100)
          Image.SetAlphaPC(100)
          Flip()
-         if musicavailable then 
-            StopMusic()
-            SFX('Music/Gen/Sleep.ogg')
-         end
-         Time.Sleep(500)
-         RestRecover()
-         if musicavailable then
-            StartMusic()
-         end
-     end                  
+     end    
+     -- Time.Sleep(2500)
+     SFXWait('INN')
+     RestRecover()
+     if musicavailable then
+        StartMusic()
+     end
   end
 end
 

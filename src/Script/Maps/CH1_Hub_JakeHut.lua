@@ -48,14 +48,28 @@ function ExitHut()
    GoToLayer('Exterior','Hutspot') -- Fun fact. This means something completely different in Dutch, from what it's supposed to mean in English :P
 end
 
+function NPC_Hut()
+   GoToLayer("Interior","Start")
+end   
+
 function NPC_Rubine()
    Master('Rubine')
-end   
+end
+
+function NPC_Leo()
+   MapText("LEO_"..({[false]="A",[true]="B"})[Done("&DONE.SPOKEN.JAKEHUT.CAMP.LEO")])
+end
+
+function NPC_Fanny()
+  Inn()
+end
 
 function GALE_OnLoad()
    ZA_Enter('MusicInt',CalmIndoors)
    ZA_Enter('MusicOut',TheStartToFantasy)
    ZA_Enter('ExitHut',ExitHut)
 end
+
+
 
    

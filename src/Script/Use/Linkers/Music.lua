@@ -1,7 +1,7 @@
 --[[
   Music.lua
   
-  version: 16.09.25
+  version: 16.12.06
   Copyright (C) 2015, 2016 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -23,7 +23,7 @@ musicavailable = JCR6.Exists("ID/ID.DEMO.MUSIC")==1;
 
 ({
 
-   [ false ] = function() Music = function(s) end; PushMusic = function() end; PullMusic = function() end; PlayMusic=function() end; StopMusic=function() end; DestroyPushedMusic = function() Console.Write("No music functionality present",255,0,0) end; RandomEncounterTune=function() end end,
+   [ false ] = function() Music = function(s) end; PushMusic = function() end; PullMusic = function() end; StartMusic=function() end; StopMusic=function() end; DestroyPushedMusic = function() Console.Write("No music functionality present",255,0,0) end; RandomEncounterTune=function() end end,
    [ true ] = function()
    
        Console.Write("Adding music functionality",180,255,0)
@@ -61,7 +61,11 @@ musicavailable = JCR6.Exists("ID/ID.DEMO.MUSIC")==1;
           Var.D("%PUSHEDSONGS",newpushidx)
           end
        end
-
+       
+       StartMusic = StartMusic or function()
+          MS.LN_Run("MUSIC","Script/Subs/Music.lua","StartMusic")
+       end
+       
        -- Just to have an alias :P
        PlayMusic = Music
 
