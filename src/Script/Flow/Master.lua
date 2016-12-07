@@ -69,7 +69,7 @@ end
 
 function MAIN_FLOW()
     Cls()
-    Box(stx,sty,SX,SY-200)
+    Box(stx,sty,SW,SH-200)
     ShowParty()
     Flip()
 end
