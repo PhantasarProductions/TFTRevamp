@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.11.30
+version: 16.12.07
 ]]
 
 ShowParty = ShowParty or function() 
@@ -87,6 +87,30 @@ function PartyRecover(full)
        if ch~="" then Recover(ch,full) end
    end    
 end
+
+
+function iParty()
+   local i=-1
+   return function()
+       i = i + 1
+       if i>3 then return end
+       local ret = RPG.PartyTag(i)
+       if ret=="" then return end
+       return i,ret        
+   end
+end
+
+function EachParty()
+   local i=-1
+   return function()
+       i = i + 1
+       if i>3 then return end
+       local ret = RPG.PartyTag(i)
+       if ret=="" then return end
+       return ret        
+   end
+end
+
 
 function RecoverySpot()
    PartyRecover(false)     

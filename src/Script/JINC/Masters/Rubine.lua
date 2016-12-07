@@ -32,9 +32,10 @@
   
  **********************************************
  
-version: 16.12.06
+version: 16.12.07
 ]]
 
+local RPG = RPGStat
 
 local Rubine = {}
 
@@ -44,9 +45,11 @@ function Rubine.teach(ch) -- Should return true if master actually decides to te
 end
 
 function Rubine.appoint(ch)
+      RPG.DefStat(ch,"RubinePoints",0)
 end
 
 function Rubine.dismiss(ch)
+     RPG.DelStat(ch,"RubinePoints")
 end
 
 Rubine.stats = {
@@ -55,7 +58,7 @@ Rubine.stats = {
                       Power = -10,
                       Endurance = -10,
                       Intelligence = -10,
-                      Resstance = -10,
+                      Resistance = -10,
                       Accuracy = 5,
                       Evasion = 5
                }
