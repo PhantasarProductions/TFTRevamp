@@ -67,7 +67,7 @@ function Master(id)
 end
 
 
-function MAIN_Flow()
+function MAIN_FLOW()
     Cls()
     Box(stx,sty,SX,SY-200)
     ShowParty()
