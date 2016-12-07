@@ -1,6 +1,6 @@
 --[[
   Fonts.lua
-  Version: 16.12.02
+  Version: 16.12.07
   Copyright (C) 2016 2015
   
   ===========================
@@ -65,7 +65,9 @@ fonts = {
     MiniMsg = {'Monof55.ttf',20},
     Lv1 = {'Monof55.ttf',15},
     Lv2 = {'Monof55.ttf',40},
-    Quit = {"Coolvetica.ttf",20}
+    Quit = {"Coolvetica.ttf",20},
+    MasterHeader = {'master_of_break.ttf',30},
+    MasterContent = {"Coolvetica.ttf",20}
     
 }
 

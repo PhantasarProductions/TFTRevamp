@@ -48,6 +48,7 @@ end
 function Master(id)
    cMaster = jinc('Script/JINC/Masters/'..id..".lua")
    cMaster.name = cMaster.name or id
+   cMaster.id = id
    if (not Unlocked[id]) and cMaster.requirement and (not cMaster.requirement()) then
       MapText(upper(id).."_NOTREADY")
       return
@@ -69,7 +70,11 @@ end
 
 function MAIN_FLOW()
     Cls()
-    Box(stx,sty,SW,SH-200)
+    Box(stx,sty,SW,SH)
+    SetFont('MasterHeader')
+    DarkText(cMaster.name,20,20,0,0,255,180,0)
+    SetFont("MasterContent")
+    DarkText("Click characters to appoint them to this master or to dismiss them",20,80)
     ShowParty()
     Flip()
 end
