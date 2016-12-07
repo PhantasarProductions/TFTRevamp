@@ -49,5 +49,16 @@ end
 function Rubine.dismiss(ch)
 end
 
+Rubine.stats = {
+                      -- Spd +25%, Atk -10%, End -5%, Int -10%, Res - 5%, Acc +5%, eva +5%
+                      Speed = 25,
+                      Power = -10,
+                      Endurance = -10,
+                      Intelligence = -10,
+                      Resstance = -10,
+                      Accuracy = 5,
+                      Evasion = 5
+               }
+
 
 return Rubine
