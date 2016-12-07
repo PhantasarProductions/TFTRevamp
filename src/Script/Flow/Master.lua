@@ -40,8 +40,10 @@ Unlocked = Unlocked or {}
 
 sptag = { [false]="INTRO",[true]="BACK"}
 
-stx = LC('screen.margin.left')
-sty = LC('screen.margin.top')
+function GALE_OnLoad()
+  stx = LC('screen.margin.left')
+  sty = LC('screen.margin.top')
+end  
 
 function Master(id)
    cMaster = jinc('Script/JINC/Masters/'..id..".lua")
