@@ -1,6 +1,6 @@
 --[[
   Master.lua
-  Version: 16.12.06
+  Version: 16.12.07
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,13 +34,18 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
 Unlocked = Unlocked or {}
 
 
 sptag = { [false]="INTRO",[true]="BACK"}
 
+stx = LC('screen.margin.left')
+sty = LC('screen.margin.top')
+
 function Master(id)
    cMaster = jinc('Script/JINC/Masters/'..id..".lua")
+   cMaster.name = cMaster.name or id
    if (not Unlocked[id]) and cMaster.requirement and (not cMaster.requirement()) then
       MapText(upper(id).."_NOTREADY")
       return
@@ -56,6 +61,14 @@ function Master(id)
        end
    end    
    Unlocked[id] = true
+   LAURA.Flow('MASTER')   
 end
 
+
+function MAIN_Flow()
+    Cls()
+    Box(stx,sty,SX,SY-200)
+    ShowParty()
+    Flip()
+end
 
