@@ -34,7 +34,7 @@ local file = Str.Upper(pfile)
 SFXBuffers = SFXBuffers or {}
 SFXChannels = SFXChannels or {}
 local channel = pchannel
-if pchannel = 'nil' then channel=nil end
+if pchannel == 'nil' then channel=nil end
 --[[
 -- force should ALWAYS be used from the title menu, otherwise... CRASH!!!!
 if GameScript and not config.sfx then Console.Write('Sound Effects are OFF, so request to play '..file..' has been ignored',255,0,0); return end -- if in a gamescript and the config is set to no sfx, then no sfx :)
