@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.12.07
+  Version: 16.12.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -206,6 +206,16 @@ function RestRecover()
   end
 end
 
+function SetRespawnSpot()
+   local res = {
+                   layer = Maps.LayerCodeName,
+                   map = Maps.CodeName,
+                   x = Actors.Actor('PLAYER').x,
+                   y = Actors.Actor('PLAYER').y
+               }
+   Var.D("$SYS.RESPAWN",serialize('local respawn',res).."\nreturn respawn")            
+end
+
 function Inn(free)
   local innprice = 0
   local baseprice = {30,0,100}
@@ -240,6 +250,7 @@ function Inn(free)
      -- Time.Sleep(2500)
      SFXWait('INN')
      RestRecover()
+     SetRespawnSpot()
      if musicavailable then
         StartMusic()
      end
