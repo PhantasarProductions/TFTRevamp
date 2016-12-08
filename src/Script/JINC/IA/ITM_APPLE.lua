@@ -1,6 +1,6 @@
 --[[
   ITM_APPLE.lua
-  Version: 16.12.03
+  Version: 16.12.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -51,7 +51,8 @@ ret = {
 	["Stance"] = "Cast",
 	["Target"] = "1A",
 	["Title"] = "Apple",
-	["Type"] = "Item"}
+	["Type"] = "Item",
+	["Voice"] = "Heal"}
 
 return ret
 

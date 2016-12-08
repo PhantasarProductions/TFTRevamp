@@ -1,5 +1,5 @@
 --[[
-  ITM_FLAMEORB.lua
+  ITM_MAGICDUST.lua
   Version: 16.12.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -35,15 +35,12 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
-	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowAccuracy"] = true,
-	["Attack_AllowCritical"] = true,
-	["Attack_AllowDodge"] = true,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "Flame",
-	["Desc"] = "We don't need no water, let the ###### burn!",
+	["Attack_Element"] = "None",
+	["CureParalysis"] = true,
+	["Desc"] = "Cures paralysis",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -52,14 +49,14 @@ ret = {
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
 	["ITM_EQP_For"] = "Jake",
+	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 50,
 	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "Flame",
 	["Stance"] = "Cast",
-	["Target"] = "1F",
-	["Title"] = "Flame Orb",
-	["Type"] = "Item"}
+	["Target"] = "1A",
+	["Title"] = "Magic Dust",
+	["Type"] = "Item",
+	["Voice"] = "Heal"}
 
 return ret
 
