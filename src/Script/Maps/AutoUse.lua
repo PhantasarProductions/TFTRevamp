@@ -262,3 +262,11 @@ function Inn(free)
   end
 end
 
+function Shop(tag,trade)
+   local feat = "Shop"
+   if trade then feat="ShopTrade" end
+   MS.LN_Run("MENU","Script/Flow/Menu.lua","Menu_Init",feat)
+   MS.Run("MENU","ShopLoad",tag)
+   LAURA.Flow("MENU")
+end
+

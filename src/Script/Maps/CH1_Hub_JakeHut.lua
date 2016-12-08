@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.06
+version: 16.12.08
 ]]
 
 function CalmIndoors()
@@ -62,6 +62,11 @@ end
 
 function NPC_Fanny()
   Inn()
+end
+
+function NPC_ShopHoer()
+   MapText('SHOPHOER')
+   Shop('ITEM_WANDA')
 end
 
 function GALE_OnLoad()

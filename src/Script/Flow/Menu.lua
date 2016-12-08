@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 16.12.05
+  Version: 16.12.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -43,9 +43,16 @@ profiles = {
                       ItemEnable = 'FieldUse',                    
                       PartyBrowse = true,
                       EscReturn = 'FIELD'
-                      }
-                      
+                      },
+                 Shop = {
+                          Features = {"Buy","Sell"},   
+                          EscReturn = "FIELD"
+                        },                           
+                 ShopTrade = {}     
            }
+
+for k,v in pairs(profiles.Shop) do profiles.ShopTrade[k]=profiles.Shop[k] end
+profiles.ShopTrade.Features = {"Buy","Sell","Trade"}
            
 menu = menu or { chn = 0, fp = 1 }        
 
@@ -54,6 +61,8 @@ mx,my = 0,0
 
 features = {}
 
+
+-- Menu features
 fnpc = false
 function features.notpresent(x,y,w,h,f)
   local c = {[false]=0, [true]=255}
@@ -180,6 +189,23 @@ function features.Achievements(x,y,w,h)
     MS.Run('ACH','AchList','tag="MenuScreen", x='..x..", y="..y..", w="..w..", h="..h)
 end
 
+-- Store / Merchant Features
+function Shop_Load(tag)
+   Shop = jinc('Script/JINC/Shops/'..tag..".lua")
+   assert(Shop,"Something went wrong loading the shop")
+end
+
+function features.Buy(x,y,w,h)
+   -- Start
+   local tmx,tmy = MouseCoords()
+   local mx,my   = tmx-x,tmy-y
+   Image.Origin(x,y)
+   -- Do
+   -- End
+   Image.Origin(0,0)
+end
+
+-- General Menu features
 function Menu_Init(LoadProfile)
     profile = profiles[LoadProfile] or Sys.Error("Unknown Profile: "..sval(LoadProfile))
     profile.HalfScreen = profile.HalfScreen or {} -- Crash prevention
