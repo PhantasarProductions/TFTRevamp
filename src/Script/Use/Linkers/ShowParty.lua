@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.07
+version: 16.12.08
 ]]
 
 ShowParty = ShowParty or function() 
@@ -113,6 +113,7 @@ end
 
 
 function RecoverySpot()
+   SFX('Audio/Sfx/SpellAni/Heal.ogg')
    PartyRecover(false)     
 end
 NewParty = Party

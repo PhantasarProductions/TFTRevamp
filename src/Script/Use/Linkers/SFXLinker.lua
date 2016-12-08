@@ -1,7 +1,7 @@
 --[[
   SFXLinker.lua
   Sound Effects - Linker
-  version: 16.12.06
+  version: 16.12.08
   Copyright (C) 2015, 2016 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -18,7 +18,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 SFX = SFX or function(sound,channel,once)
-   MS.LN_Run("SFX","Script/Subs/SFX.lua","SFX",sound..";"..channel..";"..boolyn[nonil(once)])
+   MS.LN_Run("SFX","Script/Subs/SFX.lua","SFX",sound..";"..(channel or 'nil')..";"..boolyn[nonil(once)])
 end
 
 
