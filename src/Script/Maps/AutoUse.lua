@@ -234,6 +234,11 @@ function Inn(free)
   if free then t="INN_FREE" end
   local Ja = RunQuestion("INN",t)==1
   if Ja then     
+     if CVV('%CASH')<innprice then
+        MapText("INN_NOMONEY")
+        return
+     end
+     dec('%CASH',innprice)
      if musicavailable then 
         StopMusic()
         SFX('Music/Gen/Sleep.ogg',"INN")
