@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 16.12.08
+  Version: 16.12.09
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -192,15 +192,30 @@ end
 -- Store / Merchant Features
 function Shop_Load(tag)
    Shop = jinc('Script/JINC/Shops/'..tag..".lua")
-   assert(Shop,"Something went wrong loading the shop")
+   assert(Shop,"Something went wrong loading the shop: "..tag)
+   Shop.itemdata = {}
 end
 
 function features.Buy(x,y,w,h)
    -- Start
    local tmx,tmy = MouseCoords()
    local mx,my   = tmx-x,tmy-y
+   local siz     = (h-40)/22
+   fonts.ShopItem[2] = siz
+   fonts.ShopNumber[2] = siz
    Image.Origin(x,y)
    -- Do
+   SetFont('MasterHeader')
+   DarkText(Shop.Title,15,15,0,0,255,180,0)   
+   for i= 1 , 20 do
+       if Shop['Slot'..i] and Shop['Slot'..i]~="" then
+          local iy = 40 + (i*siz)
+          Shop.itemdata[i] = Shop.itemdata[i] or ItemGet(Shop['Slot'..i])
+          local item = Shop.itemdata[i]
+          SetFont('ShopItem')
+          DarkText(item.Title,25,iy,0,0,255,255,255)
+       end   
+   end
    -- End
    Image.Origin(0,0)
 end
