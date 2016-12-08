@@ -1,6 +1,6 @@
 --[[
   Master.lua
-  Version: 16.12.07
+  Version: 16.12.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -76,7 +76,7 @@ function Master_Dismiss(ch,master)
    CSay("Dismiss master "..master.." from "..sval(ch))
    local stats = mysplit(RPG.StatFields(ch),";")
    for st in each(stats) do
-       if prefixed(st,"MASTER_") then RPG.DelStat(ch,st) end
+       if prefixed(st,"MASTER_") then RPG.DelStat(ch,st) CSay(' =  Flush Stat: '..st) else CSay(" = Ignore Stat: "..st) end
    end
    local tmaster = jinc('Script/JINC/Masters/'..master..".lua")
    ;(tmaster.dismiss or Nothing)(ch)

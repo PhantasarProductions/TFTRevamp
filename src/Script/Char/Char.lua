@@ -1,6 +1,6 @@
 --[[
   Char.lua
-  Version: 16.09.23
+  Version: 16.12.08
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -38,16 +38,29 @@
 
 debug = {}
 
-function NStat(ch,stat,max)
+function NStat(ch,stat,max,pmin)
    -- debug[ch] = debug[ch] or {}
+   -- Init stuff
+   local min = pmin or 1
    local w = {'BASE','BUFF','EQP','POWERUP'}
    local rate = 1.01 - (0.01*(skill-1))
    local total = 0
-   if prefixed(ch,"FOE_") then w = {'BASE','BUFF'} end
+   -- Foe correction
+   if prefixed(ch,"FOE_") then 
+      w = {'BASE','BUFF'}; 
+      rate = .75 + (.25*(skill-1)) 
+      end
+   -- Calc Regular stat
    for wi in each(w) do
        total = total + (RPGChar.Stat(ch,wi.."_"..stat)*rate)
    end
+   -- Masters
+   local ms = RPG.SafeStat(ch,"MASTER_"..stat)/100
+   local mscor = math.ceil(RPG.Stat(ch,"BASE_"..stat) * ms)
+   total = total + mscor
+   -- Overflow correction
    if max and total>max then total = max end
+   if total<min then total = min end
    RPG.DefStat(ch,"END_"..stat,total)
    -- if not debug[ch][stat] then CSay("First time calc for "..ch..","..stat.." > "..total) end
    return total
@@ -70,6 +83,6 @@ function RESISTANCE  (ch) NStat(ch,"Resistance")   end
 function SPEED       (ch) NStat(ch,"Speed")        end
 function HP          (ch) NStat(ch,"HP")           end     
 function AP          (ch) NStat(ch,"AP")           end
-function ACCURACY    (ch) NStat(ch,"Accuracy",100) end    
-function CRITICAL    (ch) NStat(ch,"Critical",100) end    
-function COUNTER     (ch) NStat(ch,"Counter",100)  end    
+function ACCURACY    (ch) NStat(ch,"Accuracy",100,0) end    
+function CRITICAL    (ch) NStat(ch,"Critical",100,0) end    
+function COUNTER     (ch) NStat(ch,"Counter",100,0)  end    
