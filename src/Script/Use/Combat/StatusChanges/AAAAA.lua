@@ -1,6 +1,6 @@
 --[[
   AAAAA.lua
-  Version: 16.10.01
+  Version: 16.12.09
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -53,8 +53,8 @@ StatusChanges = {}
 
 
 function SetStatus(ch,st,dontannounce)
-    fighterbytag[ch].statuschanges = fighterbytag[ch].statuschanges or {}
-    local sc = fighterbytag[ch].statuschanges
+    fighterbytag[ch].StatusChanges = fighterbytag[ch].StatusChanges or {}
+    local sc = fighterbytag[ch].StatusChanges
     if sc[st] then return end --- If the character already go this status change, then let's get autta here.
     sc[st] = StatusChanges[st]
     if not sc[st] then CSay("WARNING! Character '"..ch.."' got a non-existing status change ("..st..")") return end
@@ -66,17 +66,17 @@ function SetStatus(ch,st,dontannounce)
 end
 
 function expireroll(ch,st)
-   return rand(1,fighterbytag[ch].statuschanges.Expireroll)==1 
+   return rand(1,fighterbytag[ch].StatusChanges.Expireroll)==1 
 end
 
 function TurnSkip(ch,allowexpireroll)
      local ret = false
      local remove = {}
      if not fighterbytag[ch] then CSay("No character on tag "..ch.." (anymore)")return true end
-     for s,d in pairs(fighterbytag[ch].statuschanges or {}) do
+     for s,d in pairs(fighterbytag[ch].StatusChanges or {}) do
          if allowexpireroll and d.ExpireRoll and  expireroll(ch,s) then remove[#remove+1] = s end
          if d.SkipTurn then ret = true end
      end
-     for s in each(remove) do fighterbytag[ch].statuschanges[s] = nil end
+     for s in each(remove) do fighterbytag[ch].StatusChanges[s] = nil end
      return ret
 end              

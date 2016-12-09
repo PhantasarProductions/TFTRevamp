@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 16.12.03
+  Version: 16.12.09
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -226,6 +226,7 @@ function VicCheck()
            dat.StatusChanges = dat.StatusChanges or {}
            defeated = false
            for s,d in pairs(dat.StatusChanges) do
+               --CSay('Detected status change: '..s..' on '..dat.Tag)
                defeated = defeated or (d.SkipTurn and (not d.ExpireRoll))
            end
            cntc = cntc + 1    

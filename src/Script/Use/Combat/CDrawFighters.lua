@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 16.10.26
+  Version: 16.12.09
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -68,7 +68,7 @@ function DrawFighter(g,i)
         color(c,255-c,0)
      end
      local altdraw = false
-     for st,stdat in pairs(chdata.statuschanges or {}) do
+     for st,stdat in pairs(chdata.StatusChanges or {}) do
          -- CSay(st) -- Debugline. Slows the system down like crazy, so must be in comment form when not used.
          altdraw = altdraw or stdat.DrawReplace;
          (stdat.DrawFighter or Nothing)(chdata.tag)

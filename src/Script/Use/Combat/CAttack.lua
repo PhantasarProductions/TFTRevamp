@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.22
+version: 16.12.09
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
@@ -40,7 +40,7 @@ function Hurt(tag,damage,element)
       local mod = -(eleprot/100)
       local dmg = damage 
       dmg = round(dmg + round(dmg*mod))
-      fighterbytag[tag].statuschanges = fighterbytag[tag].statuschanges or {}
+      fighterbytag[tag].StatusChanges = fighterbytag[tag].StatusChanges or {}
 
       -- alt damage routine
       -- default damage routine
@@ -59,7 +59,7 @@ function Hurt(tag,damage,element)
          dmg=0
          charmsg("NO EFFECT!",255,180,0)
       else  -- Absorb
-         for k,d in pairs(fighterbytag[tag].statuschanges ) do
+         for k,d in pairs(fighterbytag[tag].StatusChanges ) do
              if d.BlockHeal then dmg=0 end 
          end        
          charmsg(math.abs(dmg),0,255,0)
