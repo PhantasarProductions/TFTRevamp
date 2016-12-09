@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 16.12.09
+  Version: 16.12.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -91,7 +91,11 @@ function features.Stats(x,y,w,h,f)
     Image.Show("CL_FACE_"..ch,(x+w)-(25+Image.Width("CL_FACE_"..ch)),y+25)
     SetFont('StatusName')
     DarkText(RPG.GetName(ch),x+25,y+25)
-    SetFont('StatusStat')                                                       
+    SetFont('StatusStat')
+    local HP = RPG.Points(ch,"HP")
+    local AP = RPG.Points(ch,"AP")
+    DarkText("HP "..HP.Have.." of "..HP.Maximum,x+25,y+75,0,0,180,255,0)                                                       
+    DarkText("AP "..AP.Have.." of "..AP.Maximum,x+25,y+95,0,0,0,180,255)                                                       
     for i,s in ipairs({'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion'}) do
         DarkText(s,x+25,y+100+(i*fonts.StatusStat[2]),0,0)
         DarkText(RPG.Stat(ch,"END_"..s)..procentteken[procent[s]==true],(x+w)-25,y+100+(i*fonts.StatusStat[2]),1,0,255,180,0)
