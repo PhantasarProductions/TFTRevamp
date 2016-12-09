@@ -71,6 +71,7 @@ function fflow.Victory()
       youwintimer = (youwintimer or 150) - 1
       if youwintimer<=0 and Audio.Playing('CVICC')==0 then
          PullMusic()
+         inc('%VICTORIES')
          LAURA.Flow(CVVN("$COMBAT.BACKCHAIN") or "FIELD")    
       end
    end   

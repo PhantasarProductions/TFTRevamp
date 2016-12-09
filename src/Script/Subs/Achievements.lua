@@ -178,3 +178,13 @@ function AchByKill()
        end  
   end
 end  
+
+function AchByVictories()
+  local num = CVV('%VICTORIES')
+  for k,data in spairs(valid) do
+      if prefixed(k,"VIC") then 
+         local kill = Sys.Val(right(k,#k-3))
+         if num>kill then Award(k) end
+       end  
+  end
+end  
