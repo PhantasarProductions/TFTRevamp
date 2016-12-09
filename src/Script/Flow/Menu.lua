@@ -273,7 +273,13 @@ end
 
 function features.Sell(x,y,w,h)
     ItemShowList('Sellable','Sellable','Marrilona',{x,y,w,h})
-    
+    DarkText(CVV('%CASH').." shilders",w-15,15,1,0,0,180,255)
+    local myitem = SelectedItem()
+    local mydata = ItemGet(myitem)
+    SFX('Audio/Shopping/ChaChing.ogg')
+    inc('%CASH',item.ITM_ShopPrice)
+    RemoveItem(myitem,1)
+    ItemFilterReset()
 end
 
 
