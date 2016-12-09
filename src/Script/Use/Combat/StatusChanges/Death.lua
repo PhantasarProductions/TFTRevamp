@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 16.12.05
+  Version: 16.12.09
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -71,6 +71,15 @@ function KillAward(myfoe)
        local shilders = "shilders"; if acash==1 then shilders='shilder' end
        ChMiniMsg(myfoe.tag,"Dropped "..acash.." "..shilders)
     end
+    -- Bodycount
+    inc('%KILLS')
+    --[[ This comes later
+    bestiary = bestiary or {}
+    oversoul = oversoul or {}
+    ]]
+    -- Achievements based on kills
+    MS.LoadNew("ACH","Script/Subs/Achievements.lua")
+    MS.Run('ACH','AchByKill')
 end
 
 StatusChanges.Death = {

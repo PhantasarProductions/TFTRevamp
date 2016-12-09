@@ -1,6 +1,6 @@
 --[[
   Achievements.lua
-  Version: 16.12.01
+  Version: 16.12.09
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -167,3 +167,14 @@ function AchList(argstring)
    end
    EndScroller(myarg.tag)
 end 
+
+
+function AchByKill()
+  local num = CVV('%KILLS')
+  for k,data in spairs(valid) do
+      if prefixed(k,"KILL") then 
+         local kill = Sys.Val(right(k,#k-4))
+         if num>kill then Award(k) end
+       end  
+  end
+end  
