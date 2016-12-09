@@ -101,7 +101,7 @@ function ItemGet(I,s)
      local ui = upper(I)
      loadeditems[ui] = loadeditems[ui] or JINC("Script/JINC/IA/"..I..".lua")
      local ret = loadeditems[ui] --JINC("Script/JINC/IA/"..I..".lua")   -- IA = Items/Ability (I hope that was obvious) :-P
-     ret.ITM_SellPrice = ret.ITM_SellPrice or math.ceil( ret.ITM_ShopPrice * ({.75,.50,.25})[skill])
+     if ret.ITM_ShopPrice then ret.ITM_SellPrice = ret.ITM_SellPrice or math.ceil( ret.ITM_ShopPrice * ({.75,.50,.25})[skill]) end
      -- local ret = f()
      if s then Var.D("$ITEMGET",serialize("ret",ret).."\n\nreturn ret") end
      return ret
