@@ -1,6 +1,6 @@
 --[[
   Fonts.lua
-  Version: 16.12.08
+  Version: 16.12.09
   Copyright (C) 2016 2015
   
   ===========================
@@ -69,7 +69,10 @@ fonts = {
     MasterHeader = {'master_of_break.ttf',30},
     MasterContent = {"Coolvetica.ttf",20},
     ShopItem = {'Coolvetica.ttf',0},  -- Shop item and number are in size dependent on the screensize.
-    ShopNumber = {'Monof55.ttf',0}
+    ShopNumber = {'Monof55.ttf',0},
+    WorldHeader = {'master_of_break.ttf',30},
+    WorldItem = {'Coolvetica.ttf',0},  -- Variable size based on screensize
+    
     
 }
 

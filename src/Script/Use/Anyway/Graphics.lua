@@ -1,7 +1,7 @@
 --[[
   Graphics.lua
   
-  version: 16.09.20
+  version: 16.12.09
   Copyright (C) 2016 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -42,3 +42,8 @@ function GetViewport()
   Image.GetViewport()
   return Image.GVP_X,Image.GVP_Y,Image.GVP_W,Image.GVP_H
 end GetViewPort = GetViewport
+
+
+function QScale(x,y) -- Quick Scale
+  Image.ScalePC(x or 100,y or x or 100)
+end  
