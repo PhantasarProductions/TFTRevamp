@@ -652,7 +652,7 @@ function RandomEncounter()
    Var.D("$COMBAT.ARENA",arena)
    assert(#monstertable>0,"I cannot run a Random Encounter without any monsters set")
    for i=1,num do
-       Var.D("$COMBAT.FOE_"..num,monstertable[rand(1,#monstertable)]) 
+       Var.D("$COMBAT.FOE_"..i,monstertable[rand(1,#monstertable)]) 
    end
    StartCombat()
 end
@@ -692,7 +692,7 @@ function MustRenc()
     DarkText('encnum = '..sval(encnum),5,40)
     -- @FI
     
-    -- When not encounters are possible, let's get out of here.
+    -- When no encounters are possible, let's get out of here.
     if not monstertable then SetUpRandomEncounters() end
     if not rencon then return end
     if not encnum then return end
