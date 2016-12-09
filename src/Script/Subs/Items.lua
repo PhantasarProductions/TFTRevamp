@@ -118,7 +118,7 @@ function ItemGive(i,n)
    if inventory[i]>itemmax then inventory[i]=itemmax end
 end
 
-function ItemFilterReset() filtereditems = {} end
+function ItemFilterReset() filtereditems = {} shownitems = {} enableditems = {} end
 
 function FilterShownItems(pfilter,char,force)
     local filter = pfilter .. (char or "") 
@@ -270,7 +270,12 @@ function ItemShowList(showfilter,enablefilter,char,psizes)
    pos[scrollid] = pos[scrollid] or 1
    FilterShownItems(showfilter,char)
    FilterEnabledItems(showfilter,char)
-   if pos[scrollid]>#showitems[showfilter..(char or "")] then pos[scrollid] = #showitems[filter..(char or "")] end
+   if #showitems[showfilter..(char or "")]==0 then
+         SetFont('ItemName')
+         DarkText('Your bags are empty',Sys.Val(sizes[1])+(Sys.Val(sizes[3])/2),Sys.Val(sizes[4])/2,2,2,255,0,0)
+         return 
+   end
+   if pos[scrollid]>#showitems[showfilter..(char or "")] then pos[scrollid] = #showitems[showfilter..(char or "")] end
    if pos[scrollid]<1 then pos[scrollid]=1 end
    titm = showitems[showfilter..(char or "")][pos[scrollid]]
    SetFont('ItemName') 
