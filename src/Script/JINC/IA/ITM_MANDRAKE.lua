@@ -1,5 +1,5 @@
 --[[
-  ITM_APPLE.lua
+  ITM_MANDRAKE.lua
   Version: 16.12.09
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -35,22 +35,27 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "An apple a day keeps the doctor away",
-	["Heal"] = 65,
-	["Heal_StatPercent"] = "Power",
+	["CurePetrification"] = true,
+	["Desc"] = "Cures Petrification",
+	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 25,
+	["ITM_ShopPrice"] = 100,
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
 	["Target"] = "1A",
-	["Title"] = "Apple",
+	["Title"] = "Mandrake",
 	["Type"] = "Item",
 	["Voice"] = "Heal"}
 

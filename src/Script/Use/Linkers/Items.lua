@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.10.23
+  Version: 16.12.09
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -36,6 +36,11 @@
 ]]
 
 -- CSay("Item Linkers")
+
+
+itemmax = ({50,25,10})[tonumber(Var.C("%SKILL"))]
+cashmax = ({1000000000,500000000,100000000})[tonumber(Var.C("%SKILL"))]
+
 
 LoadedItems = {}
 

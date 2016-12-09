@@ -1,6 +1,6 @@
 --[[
   ITM_MEDICINE.lua
-  Version: 16.12.08
+  Version: 16.12.09
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -51,6 +51,7 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 50,
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
 	["Target"] = "1A",

@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.12.03
+  Version: 16.12.09
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -37,8 +37,6 @@
 -- @USE /Script/Use/Specific/Scroller.lua
 
 
-itemmax = ({50,25,10})[tonumber(Var.C("%SKILL"))]
-cashmax = ({1000000000,500000000,100000000})[tonumber(Var.C("%SKILL"))]
 
 inventory = inventory or { ITM_APPLE = ({20,10,1})[tonumber(Var.C("%SKILL"))]}
 heroabl = heroabl or {}
@@ -70,7 +68,7 @@ itemfilter = {
                             return i.ITM_Type=='Consumable' and i.ITM_Field
                           end,
                   Key = function(i) return i.ITM_Type=="KeyItem" end       ,
-                  Sellable = function(i) return i.ITM_Type=="KeyItem" and i.ITM_Sellable end,
+                  Sellable = function(i) return i.ITM_Type~="KeyItem" and i.ITM_Sellable end,
                   FieldUse = function(i,ch)
                                 return itemfilter.Field(i) or itemfilter.Equip(i,ch)
                              end                  
@@ -103,6 +101,7 @@ function ItemGet(I,s)
      local ui = upper(I)
      loadeditems[ui] = loadeditems[ui] or JINC("Script/JINC/IA/"..I..".lua")
      local ret = loadeditems[ui] --JINC("Script/JINC/IA/"..I..".lua")   -- IA = Items/Ability (I hope that was obvious) :-P
+     ret.ITM_SellPrice = ret.ITM_SellPrice or math.ceil( ret.ITM_ShopPrice * ({.75,.50,.25})[skill])
      -- local ret = f()
      if s then Var.D("$ITEMGET",serialize("ret",ret).."\n\nreturn ret") end
      return ret
@@ -284,7 +283,7 @@ function ItemShowList(showfilter,enablefilter,char,psizes)
        y = idx*25
        if mx>0 and mx<tonumber(sizes[3]) and my>=y and my<=y-24 and INP.MouseH(1)==1 then
           if y==pos[scrollid] then
-             Var.C("$SELECTEDITEM",itm)
+             Var.D("$SELECTEDITEM",itm)
           else
              y=post[scrollid]
           end      
@@ -295,6 +294,7 @@ function ItemShowList(showfilter,enablefilter,char,psizes)
        DarkText(items[itm].Title,25,y,0,0,c[1],c[2],c[3])
        SetFont('ItemAmm')
        DarkText(inventory[itm],sizes[3]-25,y,1,0,c[1],c[2],c[3])
+       if showfilter=="Sellable" then DarkText(items[itm].ITM_SellPrice.." shilders",Sys.Val(sizes[3])*.75,y,1,0,0,180,255) end
    end
    EndScroller(scrollid)
    if (INP.KeyH(KEY_DOWN)==1 or joyhit(joydown)) and pos[scrollid]<#showitems[showfilter..(char or "")]  then pos[scrollid] = pos[scrollid] + 1 end 

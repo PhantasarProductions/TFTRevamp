@@ -194,6 +194,14 @@ function Shop_Load(tag)
    Shop = jinc('Script/JINC/Shops/'..tag..".lua")
    assert(Shop,"Something went wrong loading the shop: "..tag)
    Shop.itemdata = {}
+   Shop.P = 1
+   ItemFilterReset()
+end
+
+function Shop_Error(error)
+   Shop.Error = {}
+   Shop.Error.Msg = error
+   Shop.Error.Time = 175
 end
 
 function features.Buy(x,y,w,h)
@@ -201,24 +209,73 @@ function features.Buy(x,y,w,h)
    local tmx,tmy = MouseCoords()
    local mx,my   = tmx-x,tmy-y
    local siz     = (h-40)/22
+   local moved
+   if mx~= Shop.OldMX or my~= Shop.OldMY then moved = true Shop.OldMX=mx Shop.OldMY=my end 
    fonts.ShopItem[2] = siz
    fonts.ShopNumber[2] = siz
    Image.Origin(x,y)
    -- Do
    SetFont('MasterHeader')
    DarkText(Shop.Title,15,15,0,0,255,180,0)   
+   SetFont("FieldStat")
+   DarkText(CVV('%CASH').." shilders",w-15,15,1,0,0,180,255)
    for i= 1 , 20 do
        if Shop['Slot'..i] and Shop['Slot'..i]~="" then
           local iy = 40 + (i*siz)
           Shop.itemdata[i] = Shop.itemdata[i] or ItemGet(Shop['Slot'..i])
           local item = Shop.itemdata[i]
           SetFont('ShopItem')
-          DarkText(item.Title,25,iy,0,0,255,255,255)
+          local mix=30
+          if i==Shop.P then 
+             mix=20
+             DarkText(item.Desc,w/2,40,2,0,180,255,0) 
+          end
+          DarkText(item.Title,mix,iy,0,0,255,255,255)
+          SetFont('ShopNumber')
+          DarkText(item.ITM_ShopPrice.." shilders",w-50,iy,1,0,255,180,0)
+          DarkText(ItemHave(Shop['Slot'..i]),w/2,iy,1,0,0,180,255)
+          if moved and my>iy and my<iy+siz then Shop.P = i end
        end   
    end
+   if INP.KeyH(KEY_DOWN)==1 or joyhit(joy_down) then 
+      repeat 
+         Shop.P = Shop.P + 1
+         if Shop.P>20 then Shop.P=1 end
+      until Shop['Slot'..Shop.P] and Shop['Slot'..Shop.P]~=""
+   end   
+   if INP.KeyH(KEY_UP)==1 or joyhit(joy_up) then 
+      repeat 
+         Shop.P = Shop.P - 1
+         if Shop.P<1 then Shop.P=20 end
+      until Shop['Slot'..Shop.P] and Shop['Slot'..Shop.P]~=""
+   end
+   if mousehit(1) or INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_SPACE)==1 or INP.KEYH(KEY_RETURN)==1 or joyhit('CONFIRM') then
+      local item = Shop.itemdata[Shop.P]
+      if CVV('%CASH')<item.ITM_ShopPrice then Shop_Error("Not enough money")
+      elseif ItemHave(Shop['Slot'..Shop.P])>=itemmax then Shop_Error("Max number of that item reached")
+      else
+         SFX('Audio/Shopping/ChaChing.ogg')
+         dec('%CASH',item.ITM_ShopPrice)
+         ItemGive(Shop['Slot'..Shop.P],1)
+      end
+   end 
+   if mousehit(2) then LAURA.Flow('FIELD') end
+   -- error
+   if Shop.Error then
+      SetFont ( 'MasterHeader' )
+      DarkText( Shop.Error.Msg , w/2, h/2, 2, 2 , 255, 0, 0)
+      Shop.Error.Time = Shop.Error.Time - 1
+      if Shop.Error.Time <= 0 then Shop.Error = nil end
+   end   
    -- End
    Image.Origin(0,0)
 end
+
+function features.Sell(x,y,w,h)
+    ItemShowList('Sellable','Sellable','Marrilona',{x,y,w,h})
+    
+end
+
 
 -- General Menu features
 function Menu_Init(LoadProfile)
