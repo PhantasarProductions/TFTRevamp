@@ -1,6 +1,6 @@
 --[[
   TheEnd.lua
-  Version: 16.10.08
+  Version: 16.12.09
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -72,6 +72,8 @@ function fflow.Victory()
       if youwintimer<=0 and Audio.Playing('CVICC')==0 then
          PullMusic()
          inc('%VICTORIES')
+         MS.LoadNew("ACH","Script/Subs/Achievements.lua")
+         MS.Run('ACH','AchByVictory')
          LAURA.Flow(CVVN("$COMBAT.BACKCHAIN") or "FIELD")    
       end
    end   

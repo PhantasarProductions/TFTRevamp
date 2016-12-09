@@ -72,6 +72,7 @@ fonts = {
     ShopNumber = {'Monof55.ttf',0},
     WorldHeader = {'master_of_break.ttf',30},
     WorldItem = {'Coolvetica.ttf',0},  -- Variable size based on screensize
+    Equip = {'Coolvetica.ttf',20}
     
     
 }

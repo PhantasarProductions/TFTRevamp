@@ -61,6 +61,17 @@ mx,my = 0,0
 
 features = {}
 
+function eqIcon(tag,x,y)
+   Image.LoadNew('ico'..tag,"GFX/Equipment/"..tag..".png")
+   Image.Show('ico'..tag,x,y)
+end   
+
+function eqName(ch,eqtag,x,y)
+   local itcode = RPG.GetData(ch,'EQP_'..eqtag); if itcode=="" then DarkText("---",x,y,0,0,255,0,0) return end
+   local item = ItemGet(itcode) 
+   SetFont('Equip') 
+   DarkText(item.Title,x,y,0,0,255,255,255)
+end
 
 -- Menu features
 fnpc = false
@@ -85,6 +96,13 @@ function features.Stats(x,y,w,h,f)
         DarkText(s,x+25,y+100+(i*fonts.StatusStat[2]),0,0)
         DarkText(RPG.Stat(ch,"END_"..s)..procentteken[procent[s]==true],(x+w)-25,y+100+(i*fonts.StatusStat[2]),1,0,255,180,0)
     end
+    color(255,180,0)
+    eqIcon('Acc'   ,x+10,(y+h)-25)
+    eqIcon('Armor' ,x+10,(y+h)-50)
+    eqIcon('WP_'..ch,x+10,(y+h)-75)
+    eqName(ch,'Acc'   ,x+40,(y+h)-25)
+    eqName(ch,'Armor' ,x+40,(y+h)-50)
+    eqName(ch,'Weapon',x+40,(y+h)-75)
     if f~="Status" then return end
 end
 
