@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.08
+version: 16.12.09
 ]]
 
 function CalmIndoors()
@@ -69,10 +69,16 @@ function NPC_ShopHoer()
    Shop('ITEM_WANDA')
 end
 
+function Bye()
+   if not Done('&TUTORIAL.WORLDMAP') then MapText('TUTORIAL_WORLDMAP') end
+   WorldMap()
+end   
+
 function GALE_OnLoad()
    ZA_Enter('MusicInt',CalmIndoors)
    ZA_Enter('MusicOut',TheStartToFantasy)
    ZA_Enter('ExitHut',ExitHut)
+   ZA_Enter('Bye',Bye)
 end
 
 
