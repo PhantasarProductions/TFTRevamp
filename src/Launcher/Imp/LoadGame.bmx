@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.12.04
+Version: 16.12.10
 End Rem
 Strict
 
@@ -33,7 +33,7 @@ Import tricky_Units.ListDir
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - LoadGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.12.04"
+MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.12.10"
 
 afr_InpCol 0,27,0,0,155,0
 afr_WinCol 0,255,0,0,25,0
@@ -219,7 +219,10 @@ End Function
 	
 
 Function FindSaveFromTree(G:TGadget)
-	If Not G return
+	If Not G Return
+	Local tab:TGadget = gadgets.get("Tabber").G
+	Local IT$=GadgetItemText(tab,SelectedGadgetItem(tab))
+	If IT<>"Load Game" return
 	DebugLog "Find game from tree request  ... "+GadgetClass(G)
 	If GadgetClass(G)<>16 Return DebugLog("Wrong kind of gadget type to work with")
 	If Not G 
