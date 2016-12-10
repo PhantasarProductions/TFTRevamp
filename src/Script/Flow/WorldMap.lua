@@ -129,6 +129,14 @@ function MAIN_FLOW()
      Flip()
 end
 
+function R_WorldMap_Unlock(tag)
+    wm_unlocked[tag] = true
+end
+
+function R_WorlMap_Lock(tag)
+    wm_unlocked[tag] = false
+end
+
 function GALE_OnLoad()   
    fsiz = (SH-250)/25
    colx = (SW/cols)

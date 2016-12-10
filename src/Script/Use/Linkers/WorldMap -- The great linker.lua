@@ -41,3 +41,13 @@ function WorldMap(map)
    MS.Run('WORLD',"LoadWorld",map or "Delisto") -- Since most locations are on Delisto this was the easiest way to go. Yeah I know, I'm lazy, and I don't care!
    LAURA.Flow('WORLD')
 end   
+
+function WorldMap_Unlock(tag)
+   MS.LoadNew("WORLD","Script/Flow/WorldMap.lua")
+   MR.Run('WORLD','R_WorldMap_Unlock',tag)
+end   
+
+function WorldMap_lock(tag)
+   MS.LoadNew("WORLD","Script/Flow/WorldMap.lua")
+   MR.Run('WORLD','R_WorldMap_Lock',tag)
+end   
