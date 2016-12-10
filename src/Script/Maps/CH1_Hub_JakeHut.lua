@@ -32,12 +32,13 @@
   
  **********************************************
  
-version: 16.12.09
+version: 16.12.10
 ]]
 
 function CalmIndoors()
    if not Done('&DONE.THEYMET') then return end
    Music('Hub/Calm Indoors.ogg')
+   Award('SCEN_LOVE')
 end
 
 function TheStartToFantasy()
