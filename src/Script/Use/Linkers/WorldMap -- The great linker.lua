@@ -35,6 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 function WorldMap(map)
+   Music('Music/Hub/StartToFantasyInstrumental.ogg')
    MS.LoadNew("WORLD","Script/Flow/WorldMap.lua")
    if CVV("$WORLDTALK")=="" then Var.D("$WORLDTALK","TOALTAR") end
    MS.Run('WORLD',"LoadWorld",map or "Delisto") -- Since most locations are on Delisto this was the easiest way to go. Yeah I know, I'm lazy, and I don't care!

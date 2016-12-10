@@ -129,8 +129,7 @@ function MAIN_FLOW()
      Flip()
 end
 
-function GALE_OnLoad()
-   Music('Music/Hub/StartToFantasyInstrumental.ogg')
+function GALE_OnLoad()   
    fsiz = (SH-250)/25
    colx = (SW/cols)
    fonts.WorldItem[2] = fsiz
