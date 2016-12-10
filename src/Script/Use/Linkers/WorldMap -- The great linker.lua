@@ -45,10 +45,10 @@ end
 function WorldMap_Unlock(tag)
    CSay('WorldMap_Unlock("'..tag..'")')
    MS.LoadNew("WORLD","Script/Flow/WorldMap.lua")
-   MR.Run('WORLD','R_WorldMap_Unlock',tag)
+   MS.Run('WORLD','R_WorldMap_Unlock',tag)
 end   
 
 function WorldMap_Lock(tag)
    MS.LoadNew("WORLD","Script/Flow/WorldMap.lua")
-   MR.Run('WORLD','R_WorldMap_Lock',tag)
+   MS.Run('WORLD','R_WorldMap_Lock',tag)
 end   

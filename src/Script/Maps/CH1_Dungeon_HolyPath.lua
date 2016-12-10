@@ -37,7 +37,7 @@ version: 16.12.10
 
 
 function Bye(Unlock)
-   if unlock then WorldMap_Unlock('CH1ALTAR') end
+   if Unlock then WorldMap_Unlock('CH1ALTAR') end
    WorldMap()
 end   
 
