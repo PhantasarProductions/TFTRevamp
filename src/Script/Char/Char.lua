@@ -49,7 +49,7 @@ function EStat(ch)
     chstuff.Weapon = RPG.GetData(ch,'EQP_Weapon')
     chstuff.Armor  = RPG.GetData(ch,'EQP_Armor')
     chstuff.Acc    = RPG.GetData(ch,'EQP_Acc')
-    for s in each(stats) do RPG.DefStat(ch,s,0) end
+    for s in each(stats) do RPG.DefStat(ch,"EQP_"..s,0) end
     for k,v in pairs(chstuff) do
         CSay(ch.." equipment check: "..k.." >> "..v)
         if v~="" then
