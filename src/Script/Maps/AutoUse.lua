@@ -276,10 +276,10 @@ function BlackOrb(tag)
      MapText('TUTORIAL_BLACKORB')
      local barrier = Maps.Obj.Obj('ORB_BARRIER')
      barrier.Impassible=0
-     barrier.ForecePossible=1
+     barrier.ForcePassible=1
      Maps.PermaWrite([[local barrier = Maps.Obj.Obj('ORB_BARRIER')
      barrier.Impassible=0
-     barrier.ForecePossible=1
+     barrier.ForcePassible=1
      ]])
      Maps.Remap()
   elseif CVV('%ORBS')==255 then
@@ -288,6 +288,6 @@ function BlackOrb(tag)
      MS.Run("BOXTEXT","LoadData","General/Items;ITEM")
      SerialBoxText("ITEM","BLACKORB","FLOW_FIELD")
   end      
-  Maps.Kill(tag,1)    
+  Maps.Obj.Kill(tag,1)    
 end
 

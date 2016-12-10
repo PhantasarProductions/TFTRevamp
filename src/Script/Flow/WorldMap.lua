@@ -131,6 +131,7 @@ end
 
 function R_WorldMap_Unlock(tag)
     wm_unlocked[tag] = true
+    CSay(tag.." unlocked")
 end
 
 function R_WorlMap_Lock(tag)
