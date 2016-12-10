@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.12.09
+  Version: 16.12.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -482,7 +482,7 @@ function TurnOffClicks()
 end
 
 function SetUpAutoClickables()
-local prefixes = {"NPC_","PSG_","PRC_","CHEST_","PTE_"}
+local prefixes = {"NPC_","PSG_","PRC_","CHEST_","PTE_","BLACKORB_"}
 local p 
 local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()
 -- CSay(type(layers).."/"..type(each))
@@ -543,19 +543,25 @@ if mousehit(1) or fakex or fakey then
                WalkArrivalArg = nil
                ret=true
                end
-          elseif prefixed(c,"PSG") then
+          elseif prefixed(c,"PSG_") then
             if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32)==1 then
                WalkArrival = 'MAPSAVE'
                WalkArrivalArg = nil
                ret = true  
             end    
-          elseif prefixed(c,"PRC") then
+          elseif prefixed(c,"PRC_") then
             if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32)==1 then
                WalkArrival = 'RecoverySpot'
                WalkArrivalArg = nil
                ret = true  
             end    
-          elseif prefixed(c,"PTE") then
+          elseif prefixed(c,"BLACKORB_") then
+            if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32)==1 then
+               WalkArrival = 'BlackOrb'
+               WalkArrivalArg = c
+               ret = true  
+            end    
+          elseif prefixed(c,"PTE_") then
             if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32)==1 then
                WalkArrival = TravelersEmblem
                WalkArrivalArg = c

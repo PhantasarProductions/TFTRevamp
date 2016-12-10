@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.12.08
+  Version: 16.12.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -268,5 +268,26 @@ function Shop(tag,trade)
    MS.LN_Run("MENU","Script/Flow/Menu.lua","Menu_Init",feat)
    MS.Run("MENU","Shop_Load",tag)
    LAURA.Flow("MENU")
+end
+
+function BlackOrb(tag)
+  inc('%ORBS')
+  if CVV('%ORBS')==1 then
+     MapText('TUTORIAL_BLACKORB')
+     local barrier = Maps.Obj.Obj('ORB_BARRIER')
+     barrier.Impassible=0
+     barrier.ForecePossible=1
+     Maps.PermaWrite([[local barrier = Maps.Obj.Obj('ORB_BARRIER')
+     barrier.Impassible=0
+     barrier.ForecePossible=1
+     ]])
+     Maps.Remap()
+  elseif CVV('%ORBS')==255 then
+     Sys.Error('Juggernaut not coded yet')     
+  else
+     MS.Run("BOXTEXT","LoadData","General/Items;ITEM")
+     SerialBoxText("ITEM","BLACKORB","FLOW_FIELD")
+  end      
+  Maps.Kill(tag,1)    
 end
 

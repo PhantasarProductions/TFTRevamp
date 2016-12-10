@@ -219,6 +219,7 @@ End Function
 	
 
 Function FindSaveFromTree(G:TGadget)
+	If Not G return
 	DebugLog "Find game from tree request  ... "+GadgetClass(G)
 	If GadgetClass(G)<>16 Return DebugLog("Wrong kind of gadget type to work with")
 	If Not G 
