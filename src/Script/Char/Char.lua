@@ -1,6 +1,6 @@
 --[[
   Char.lua
-  Version: 16.12.08
+  Version: 16.12.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -38,7 +38,31 @@
 
 debug = {}
 
+oldstuff = {}
+
+stats = {'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion','Critical','Counter','HP','AP'}
+
+function EStat(ch)
+    oldstuff[ch] = oldstuff[ch] or {}
+    local chstuff = oldstuff[ch]
+    if chstuff.Weapon == RPG.GetData(ch,'EQP_Weapon') and chstuff.Armor == RPG.GetData(ch,'EQP_Armor') and chstuff.Acc == RPG.GetData(ch,'EQP_Acc') then return end
+    chstuff.Weapon = RPG.GetData(ch,'EQP_Weapon')
+    chstuff.Armor  = RPG.GetData(ch,'EQP_Armor')
+    chstuff.Acc    = RPG.GetData(ch,'EQP_Acc')
+    for s in each(stats) do RPG.DefStat(ch,s,0) end
+    for k,v in pairs(chstuff) do
+        CSay(ch.." equipment check: "..k.." >> "..v)
+        if v~="" then
+           local i = ItemGet(v)
+           for s in each(stats) do
+               RPG.IncStat(ch,'EQP_'..s,i['EQP_Stat_'..v])
+           end
+        end   
+    end    
+end
+
 function NStat(ch,stat,max,pmin)
+   EStat(ch)
    -- debug[ch] = debug[ch] or {}
    -- Init stuff
    local min = pmin or 1

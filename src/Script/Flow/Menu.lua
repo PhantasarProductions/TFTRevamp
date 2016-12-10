@@ -198,9 +198,42 @@ function features.Status(x,y,pw,h)
     Image.Origin(0,0)    
 end
 
+function eqChange(slot,itag,item)
+    local chn = menu.chn
+    local ch  = RPGStat.PartyTag(chn)
+    local ecode = RPG.GetData(ch,"EQP_"..slot)
+    local eitem
+    CSay('Equipment change request on: '..ch)
+    if ecode~="" and ItemHave(ecode)<itemmax then
+       ItemGive(ecode)
+    end
+    RPG.SetData(ch,"EQP_"..slot,itag)
+    RemoveItem(itag)   
+end
+
 function features.Items(x,y,w,h)
     profile.ci_filter = profile.ci_filter or 1
     ItemShowList(profile.ItemShowFilters[profile.ci_filter],profile.ItemEnable,RPG.PartyTag(menu.chn),{x,y,w,h})
+    local myitem = SelectedItem(); if not myitem then return end    
+    local item   = ItemGet(myitem)
+    local chn = menu.chn
+    local ch  = RPGStat.PartyTag(chn)
+    CSay("Player tries to use "..myitem.." ("..item.ITM_Type..") on "..ch)
+    ;(({
+          Weapon = function(ch,myitem,item)
+                     -- CSay('Iemand thuis?')
+                     -- CSay(ch.."\n "..serialize('item',item).." \n "..myitem)
+                     if prefixed(item.ITM_EQP_For,ch) or ch==item.ITM_EQP_For then eqChange("Weapon",myitem,item) end
+                   end,
+          Armor = function(ch,myitem,item)
+                     if prefixed(item.ITM_EQP_For,ch) or ch==item.ITM_EQP_For then eqChange("Armor",myitem,item) end
+                   end,
+          Accesoiry = function(ch,myitem,item)
+                        local pch = ch
+                        if prefixed(ch,"Jake") then pch="Jake" end
+                        if item['EQP_ACC_'..pch] then eqChange('Acc',myitem,item) end
+                      end                   
+    })[item.ITM_Type] or Nothing)(ch,myitem,item)
 end
 
 function features.Abilities(x,y,w,h)

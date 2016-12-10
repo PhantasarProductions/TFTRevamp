@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.12.09
+  Version: 16.12.10
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -107,6 +107,10 @@ function ItemGet(I,s)
      return ret
 end
 
+-- Resets all item filters
+function ItemFilterReset() filtereditems = {} shownitems = {} enableditems = {} end
+
+
 function ItemHave(i,d)
    local r = Sys.Val(inventory[i])
    if d then Var.D('%ITEMHAVE',r) end
@@ -116,9 +120,9 @@ end
 function ItemGive(i,n)
    inventory[i] = (inventory[i] or 0 ) + (tonumber(n) or 1)
    if inventory[i]>itemmax then inventory[i]=itemmax end
+   ItemFilterReset()
 end
 
-function ItemFilterReset() filtereditems = {} shownitems = {} enableditems = {} end
 
 function FilterShownItems(pfilter,char,force)
     local filter = pfilter .. (char or "") 
@@ -315,6 +319,7 @@ function RemoveItem(item,num)
     if not inventory[item] then return CSay("WARNING! I could not remove item "..item.." as it was not in the inventory") end
     if inventory[item]<rn then inventory[item]=0 CSay("WARNING! More items were requested to be removed than I had: "..item) else inventory[item] = inventory[item] - rn end
     if inventory[item]<=0 then inventory[item]=nil end
+    ItemFilterReset()
 end
 
 function TreasureChest(tag)
