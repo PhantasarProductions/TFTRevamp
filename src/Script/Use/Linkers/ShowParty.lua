@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.08
+version: 16.12.10
 ]]
 
 ShowParty = ShowParty or function() 
@@ -100,6 +100,7 @@ function iParty()
    end
 end
 
+
 function EachParty()
    local i=-1
    return function()
@@ -109,6 +110,15 @@ function EachParty()
        if ret=="" then return end
        return ret        
    end
+end
+
+function InParty(pch,pure)
+   local ret
+   for ich in EachParty() do
+       if prefixed(pch,"Jake") and prefixed(ich,"Jake") and (not pure) then return true end
+       ret = ret or pch==ich
+   end
+   return ret 
 end
 
 

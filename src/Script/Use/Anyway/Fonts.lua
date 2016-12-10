@@ -1,6 +1,6 @@
 --[[
   Fonts.lua
-  Version: 16.12.09
+  Version: 16.12.10
   Copyright (C) 2016 2015
   
   ===========================
@@ -72,7 +72,8 @@ fonts = {
     ShopNumber = {'Monof55.ttf',0},
     WorldHeader = {'master_of_break.ttf',30},
     WorldItem = {'Coolvetica.ttf',0},  -- Variable size based on screensize
-    Equip = {'Coolvetica.ttf',20}
+    Equip = {'Coolvetica.ttf',20},
+    TradeCompare = {'Monof55.ttf',20},
     
     
 }

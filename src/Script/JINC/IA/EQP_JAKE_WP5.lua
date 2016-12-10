@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.09
+version: 16.12.10
 ]]
 ret = {
 	["Attack_AttackStat"] = "Power",
@@ -43,6 +43,7 @@ ret = {
 	["Heal_StatPercent"] = "Power",
 	["Heal_Type"] = "Absolute",
 	["ITM_EQP_For"] = "Jake",
+	["ITM_Sellable"] = true,
 	["ITM_ShopPrice"] = 4000,
 	["ITM_Type"] = "Weapon",
 	["Stance"] = "Attack",

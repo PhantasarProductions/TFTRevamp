@@ -50,6 +50,16 @@ profiles = {
                         },                           
                  ShopTrade = {}     
            }
+           
+-- General Menu features
+function Menu_Init(LoadProfile)
+    profile = profiles[LoadProfile] or Sys.Error("Unknown Profile: "..sval(LoadProfile))
+    profile.HalfScreen = profile.HalfScreen or {} -- Crash prevention
+    profile.FeatureItem = profile.FeatureItem or 1
+    menu.loadedprofile = LoadProfile
+    MyScreen = nil
+end
+           
 
 for k,v in pairs(profiles.Shop) do profiles.ShopTrade[k]=profiles.Shop[k] end
 profiles.ShopTrade.Features = {"Buy","Sell","Trade"}
@@ -279,6 +289,7 @@ function features.Buy(x,y,w,h)
           local iy = 40 + (i*siz)
           Shop.itemdata[i] = Shop.itemdata[i] or ItemGet(Shop['Slot'..i])
           local item = Shop.itemdata[i]
+          if item.ITM_Type=='Weapon' or item.ITM_Type=='Armor' and menu.loadedprofile=="Shop" then Menu_Init('ShopTrade') end
           SetFont('ShopItem')
           local mix=30
           if i==Shop.P then 
@@ -339,14 +350,132 @@ function features.Sell(x,y,w,h)
     end
 end
 
-
--- General Menu features
-function Menu_Init(LoadProfile)
-    profile = profiles[LoadProfile] or Sys.Error("Unknown Profile: "..sval(LoadProfile))
-    profile.HalfScreen = profile.HalfScreen or {} -- Crash prevention
-    profile.FeatureItem = profile.FeatureItem or 1
-    MyScreen = nil
+function features.Trade(x,y,w,h)
+   local tmx,tmy = MouseCoords()
+   local mx,my   = tmx-x,tmy-y
+   local siz     = (h-40)/22
+   local moved
+   totalwidth  = SW
+   totalheight = SH
+   origin = {0,0}
+   if tonumber(LC('screen.margin.left')  )~=0 then origin[1] = 25; totalwidth=totalwidth -25 end
+   if tonumber(LC('screen.margin.top')   )~=0 then origin[2] = 25; totalwidth=totalheight-25 end
+   if tonumber(LC('screen.margin.right') )~=0 then                 totalwidth=totalwidth -25 end
+   if tonumber(LC('screen.margin.bottom'))~=0 then                 totalwidth=totalheight-25 end
+   charentrywidth = totalwidth / 4
+   Image.Origin(x,y)
+   SetFont('MasterHeader')
+   DarkText(Shop.Title,15,15,0,0,255,180,0)   
+   SetFont("FieldStat")
+   DarkText(CVV('%CASH').." shilders",w-15,15,1,0,0,180,255)
+   local allow = {}
+   for i= 1 , 20 do
+       if Shop['Slot'..i] and Shop['Slot'..i]~="" then
+          local iy = 40 + (i*siz)
+          Shop.itemdata[i] = Shop.itemdata[i] or ItemGet(Shop['Slot'..i])
+          local item = Shop.itemdata[i]
+          allow[i] = (item.ITM_Type=='Weapon' or item.ITM_Type=='Armor') -- and menu.loadedprofile=="Shop" 
+          SetFont('ShopItem')
+          local mix=30
+          if i==Shop.P then 
+             mix=20
+             DarkText(item.Desc,w/2,40,2,0,180,255,0) 
+          end
+          if allow[i] then 
+            DarkText(item.Title,mix,iy,0,0,255,255,255)
+            SetFont('ShopNumber')
+            --DarkText(item.ITM_ShopPrice.." shilders",w-50,iy,1,0,255,180,0)
+            --DarkText(ItemHave(Shop['Slot'..i]),w/2,iy,1,0,0,180,255)
+            local pch = item.ITM_EQP_For; if pch=="Jake" then pch="Jake_Human" end -- Jake Human always exists, and Jake_Fairy will be linked so they always carry the same ;)
+            local haveitem = RPG.GetData(pch,"EQP_"..item.ITM_Type)  -- CSay(pch.." has "..haveitem.. " on "..item.ITM_Type)
+            local have = ItemGet(haveitem)
+            local price = item.ITM_ShopPrice - have.ITM_SellPrice
+            if allow[i] then allow[i] = price end
+            if (not have.ITM_Sellable) or (not InParty(pch)) then
+               -- DarkText('Sellable: '..sval(have.ITM_Sellable).." InParty("..sval(pch).."): "..sval(InParty(pch)),w-50,iy,1,0,255,0,0) -- Debug line. MUST be REMMED in actual version
+               DarkText('CANNOT TRADE!',w-50,iy,1,0,255,0,0) -- Actual line, may not be REMMED in actual version
+               allow[i] = false
+            elseif haveitem == Shop['Slot'..i] then
+               DarkText('< Equipped >',w-50,iy,1,0,0,180,255)
+               allow[i] = nil   
+            elseif price<0 then 
+               DarkText("You'll get "..math.abs(price).." shilders",w-50,iy,1,0,255,180,0)
+            else   
+               DarkText(price.." shilders",w-50,iy,1,0,255,180,0)
+            end      
+         else   
+            DarkText(item.Title,mix,iy,0,0,55,55,55)
+          end  
+          if moved and my>iy and my<iy+siz then Shop.P = i end
+       end   
+   end
+   if INP.KeyH(KEY_DOWN)==1 or joyhit(joy_down) then 
+      repeat 
+         Shop.P = Shop.P + 1
+         if Shop.P>20 then Shop.P=1 end
+      until Shop['Slot'..Shop.P] and Shop['Slot'..Shop.P]~=""
+   end   
+   if INP.KeyH(KEY_UP)==1 or joyhit(joy_up) then 
+      repeat 
+         Shop.P = Shop.P - 1
+         if Shop.P<1 then Shop.P=20 end
+      until Shop['Slot'..Shop.P] and Shop['Slot'..Shop.P]~=""
+   end
+   if (mousehit(1) or INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_SPACE)==1 or INP.KEYH(KEY_RETURN)==1 or joyhit('CONFIRM')) and allow[Shop.P] then
+      local item = Shop.itemdata[Shop.P]
+      local price = allow[Shop.P]
+      if CVV('%CASH')<price then Shop_Error("Not enough money")
+      else
+         SFX('Audio/Shopping/ChaChing.ogg')
+         dec('%CASH',price)
+         -- ItemGive(Shop['Slot'..Shop.P],1)
+         local tch = item.ITM_EQP_For
+         if tch =="Jake" then tch = "Jake_Human" end
+         RPG.SetData(tch,"EQP_"..item.ITM_Type,Shop['Slot'..Shop.P])
+      end
+   end 
+   if mousehit(2) then LAURA.Flow('FIELD') end
+   if (joydown('XTRA') or INP.KeyD(KEY_H)==1) and allow[Shop.P] then
+      Image.Origin(0,0)
+      local stats = {'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion','Critical','Counter','HP','AP'}
+      local changes = {}
+      local itembuy  = ItemGet(Shop['Slot'..Shop.P])
+      local pch = itembuy.ITM_EQP_For; if pch=="Jake" then pch="Jake_Human" end
+      local itemhave = ItemGet(RPG.GetData(pch,"EQP_"..itembuy.ITM_Type))
+      local dp = {}
+      local upcol = {[true]={0,255,0},[false]={255,0,0}}
+      local plus = {[true]="+", [false]=""}
+      local iy = 40 + (Shop.P*siz)
+      for st in each(stats) do
+          changes[st] = (itembuy['EQP_STAT_'..st] or 0) - (itemhave['EQP_STAT_'..st] or 0)
+          if changes[st]~=0 then 
+             dp[#dp+1] = { st=st, diff=plus[changes[st]>0]..changes[st], col = upcol[changes[st]>0] }             
+          end   
+      end
+      if #dp==0 then dp[1] = {st = "No changes", diff="", col={255,180,0}} end
+      local imgtag = itembuy.ITM_EQP_For
+      Box(30,iy+y,w-60,20+(#dp*20))
+      white()
+      Image.LoadNew("CL_FACE_"..imgtag,"GFX/Boxtext/Portret/"..imgtag.."/General.png")
+      Image.Show("CL_FACE_"..imgtag,20,(iy+20+(#dp*20)+y)-Image.Height("CL_FACE_"..imgtag))
+      SetFont('TradeCompare')
+      for i,data in ipairs(dp) do
+          DarkText(left(data.st.."               ",15).." "..right("     "..data.diff,5),150,y+(i*20)+iy+(-10),0,0,data.col[1],data.col[2],data.col[3])
+      end      
+      Image.Origin(x,y)
+   end
+   -- error
+   if Shop.Error then
+      SetFont ( 'MasterHeader' )
+      DarkText( Shop.Error.Msg , w/2, h/2, 2, 2 , 255, 0, 0)
+      Shop.Error.Time = Shop.Error.Time - 1
+      if Shop.Error.Time <= 0 then Shop.Error = nil end
+   end   
+   -- End
+   Image.Origin(0,0)
+    
 end
+
 
 
 function Menu_GetScreen()
@@ -368,7 +497,7 @@ function Menu_GetScreen()
     if ret.mar.T then ret.SY = 25 ret.SH = ret.SH - 25 end
     if ret.mar.R then             ret.SW = ret.SW - 25 end
     if ret.mar.B then             ret.SH = ret.SH - 25 end
-    CSay('Initial Menu Screen size ('..ret.SX..","..ret.SY..')   ==== '..ret.SW.."x"..ret.SH)
+    -- CSay('Initial Menu Screen size ('..ret.SX..","..ret.SY..')   ==== '..ret.SW.."x"..ret.SH)
     if #profile.Features>1 then
        ret.IB = {}
        ret.IB.X = ret.SX

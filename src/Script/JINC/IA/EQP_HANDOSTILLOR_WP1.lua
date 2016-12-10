@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.09
+version: 16.12.10
 ]]
 ret = {
 	["Attack_AttackStat"] = "Power",
@@ -44,6 +44,7 @@ ret = {
 	["Heal_StatPercent"] = "Power",
 	["Heal_Type"] = "Absolute",
 	["ITM_EQP_For"] = "HandoStillor",
+	["ITM_Sellable"] = true,
 	["ITM_ShopPrice"] = 300,
 	["ITM_Type"] = "Weapon",
 	["Stance"] = "Attack",

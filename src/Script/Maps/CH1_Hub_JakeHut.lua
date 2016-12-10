@@ -70,6 +70,11 @@ function NPC_ShopHoer()
    Shop('ITEM_WANDA')
 end
 
+function NPC_Eric()
+   MapText('ERIC')
+   Shop('WEAPON_ERIC')
+end   
+
 function Bye()
    if not Done('&TUTORIAL.WORLDMAP') then MapText('TUTORIAL_WORLDMAP') end
    WorldMap()
