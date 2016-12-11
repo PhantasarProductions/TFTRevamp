@@ -1,5 +1,5 @@
 --[[
-  ITM_MAGICDUST.lua
+  ITM_PHOENIX.lua
   Version: 16.12.11
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -39,23 +39,20 @@ ret = {
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["CureParalysis"] = true,
-	["Desc"] = "Cures paralysis",
+	["Desc"] = "Revive fallen ally",
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 50,
 	["ITM_Type"] = "Consumable",
+	["Revive"] = true,
 	["Stance"] = "Cast",
 	["Target"] = "1A",
-	["Title"] = "Magic Dust",
+	["Title"] = "Poenix",
 	["Type"] = "Item",
 	["Voice"] = "Heal"}
 

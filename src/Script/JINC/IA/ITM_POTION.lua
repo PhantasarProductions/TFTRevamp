@@ -1,5 +1,5 @@
 --[[
-  ITM_MAGICDUST.lua
+  ITM_POTION.lua
   Version: 16.12.11
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -39,8 +39,8 @@ ret = {
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["CureParalysis"] = true,
-	["Desc"] = "Cures paralysis",
+	["Desc"] = "Now this is a nice healing item",
+	["Heal"] = 750,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -51,11 +51,11 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 50,
+	["ITM_ShopPrice"] = 120,
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
 	["Target"] = "1A",
-	["Title"] = "Magic Dust",
+	["Title"] = "Potion",
 	["Type"] = "Item",
 	["Voice"] = "Heal"}
 

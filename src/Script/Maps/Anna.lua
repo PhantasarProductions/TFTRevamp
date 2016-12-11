@@ -32,11 +32,13 @@
   
  **********************************************
  
-version: 16.12.10
+version: 16.12.11
 ]]
-assert(Anna,"What are you doing here without Anna's permission?")
+ 
 
 
 function GALE_OnLoad()
+   if not Anna then WorldMap() end
    ZA_Enter('Leave',WorldMap)
+   AnnaTemple()
 end

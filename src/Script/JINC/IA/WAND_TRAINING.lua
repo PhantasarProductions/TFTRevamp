@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  EQP_JAKE_AR4.lua
+  WAND_TRAINING.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -35,21 +35,41 @@
 version: 16.12.11
 ]]
 ret = {
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack"] = 20,
+	["Attack_AccuracyRate"] = 100,
+	["Attack_AllowAccuracy"] = true,
+	["Attack_AllowCritical"] = true,
+	["Attack_AllowDodge"] = true,
+	["Attack_AttackStat"] = "Intelligence",
+	["Attack_DefenseStat"] = "Resistance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Bright as the sun, or so they say",
-	["EQP_STAT_Endurance"] = 8,
-	["Heal_StatPercent"] = "Power",
+	["Desc"] = "Minimal damange, but ....",
+	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "Jake",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Marrilona",
+	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 800,
-	["ITM_Type"] = "Armor",
+	["ITM_ShopPrice"] = 2500,
+	["ITM_Type"] = "Weapon",
+	["ITM_WeaponAbility"] = true,
+	["Rew_GainAP"] = 50,
+	["SpellAni"] = "Flame",
 	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Leather Armor \"Sunshine\"",
-	["Type"] = "Item"}
+	["Target"] = "1F",
+	["Title"] = "Training Wand",
+	["Type"] = "Item",
+	["Voice"] = "Fire",
+	["rew_CreateSkill1"] = true,
+	["rew_GainSkill1"] = 5,
+	["rew_GainSkill2"] = 5,
+	["rew_GainSkill3"] = 5,
+	["rew_GainSkill4"] = 5,
+	["rew_GainSkill5"] = 5}
 
 return ret
 
