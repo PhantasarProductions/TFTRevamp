@@ -58,7 +58,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Harry/General.png
     1. Graphics: GFX/BoxText/Portret/Harry/Harry.piko
     1. Graphics: GFX/BoxText/Portret/Harry/Laugh.png
-    1. Graphics: GFX/BoxText/Portret/Fairy Elder/General.png < alias > GFX/BoxText/Portret/Nostramantu/General.png
+    1. Graphics: GFX/BoxText/Portret/Nostramantu/General.png
     1. Graphics: GFX/BoxText/Portret/Sandra/General.png
     1. Graphics: GFX/BoxText/Portret/Sasha Funda/General.png
     1. Graphics: GFX/Textures/Mural/Weniaria.png
@@ -77,7 +77,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/textures/wood/vloer.png
 - Jeroen P. Broks
     1. Game identification data: ID/ID.Vocal.Demo
-    1. Game identification data: ID/ID.DEMO.MUSIC < alias > ID/Identify
+    1. Game identification data: ID/Identify
     1. Game identification data: ID/Identify.txt
     1. Script: Script/Char/Char.lua
     1. Script: Script/Events/AutoUse.lua
@@ -302,10 +302,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Music: Music/Boss/BossIntro.ogg
@@ -354,7 +354,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Equipment/Equipment.piko
     1. Graphics: GFX/Equipment/WP_Dandor.png
     1. Graphics: GFX/Equipment/WP_HandoStillor.png
-    1. Graphics: GFX/Equipment/WP_Jake_Fairy.png < alias > GFX/Equipment/WP_Jake_Human.png < alias > GFX/Equipment/WP_Krandar.png < alias > GFX/Equipment/WP_Nostramantu_Human.png
+    1. Graphics: GFX/Equipment/WP_Nostramantu_Human.png
     1. Graphics: GFX/Equipment/WP_Marrilona.png
     1. Graphics: GFX/System/Console.piko
     1. Graphics: GFX/System/Console.png
@@ -445,7 +445,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Bundled/Player/Dandor.South.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Dandor.South.png
     1. Graphics: GFX/Actors/Bundled/Player/Dandor.West.Frames
-    1. Graphics: GFX/Actors/Bundled/Player/Dandor.West.png < alias > GFX/Combat/Fighters/Hero/Dandor.Idle.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Idle.png
     1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.Frames
     1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.piko
     1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.png
@@ -457,15 +457,24 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.South.png
     1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.West.Frames
     1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.West.piko
-    1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.West.png < alias > GFX/Combat/Fighters/Hero/HandoStillor.Idle.png
+    1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Idle.png
+    1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.East.piko
+    1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.East.png
+    1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.NS (Autosaved).piko
+    1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.NS.piko
+    1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.North.png
+    1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.South.png
+    1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.West.piko
+    1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Idle.png
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.East.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.East.png
+    1. ???: GFX/Actors/Bundled/Player/Jake_Human.North (Autosaved).piko-png
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.North.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.North.png
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.South.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.South.png
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.West.Frames
-    1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.West.png < alias > GFX/Combat/Fighters/Hero/Jake_Human.Idle.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Idle.png
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.png
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.NS.piko
@@ -475,7 +484,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.South.png
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.West.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.West.piko
-    1. Graphics: GFX/Actors/Bundled/Player/Marrilona.West.png < alias > GFX/Combat/Fighters/Hero/Marrilona.Idle.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Idle.png
     1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
     1. Graphics: GFX/Actors/Single/Elves/SashaFunda.NS.piko
     1. Graphics: GFX/Actors/Single/Elves/SashaFunda.North.png
