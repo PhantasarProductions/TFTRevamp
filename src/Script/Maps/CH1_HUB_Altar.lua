@@ -37,3 +37,26 @@ version: 16.12.12
 function GALE_OnLoad()
    ZA_Enter('Leave',WorldMap)
 end   
+
+
+-- Link all stats in Jake that should be linked
+function CreateJakeFairy()
+  local linkprefix = {'BUFF_','EQP_','POWERUP_',"MASTER_"}
+  local linkstat   = {'Level','EXP'}
+  local linkpoints = {'SK_EXP_1','SK_LVL_1','VIT'}
+  -- Link points
+  for p in each(linkpoints) do
+      RPG.LinkPoints('Jake_Human','Jake_Fairy',p)
+  end
+  -- Link stats
+  for p in each(mysplit(RPGChar.StatFields('Jake_Human'))) do
+      local link=false
+      for ls in each(linkstat)   do if p==ls          then link=true end end
+      for lp in each(linkprefix) do if prefixed(p,lp) then link=true end end
+      if link then RPG.LinkStat('Jake_Human','Jake_Fairy',p) end
+  end      
+  -- Link data
+  for p in each(mysplit(RPG.DataFields('Jake_Human'))) do
+      RPG.LinkData('Jake_Human','Jake_Fairy',p)
+  end
+end

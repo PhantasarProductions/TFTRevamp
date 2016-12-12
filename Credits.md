@@ -302,10 +302,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Music: Music/Boss/BossIntro.ogg
@@ -401,6 +401,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Path Of Magic/PureExit.png
     1. Graphics: GFX/Textures/Path Of Magic/ShadedExit.hot
     1. Graphics: GFX/Textures/Path Of Magic/ShadedExit.png
+    1. Graphics: GFX/Textures/Seal/Seal.Frames
+    1. Graphics: GFX/Textures/Seal/Seal.png
     1. Graphics: GFX/Textures/Shapes/Cirkel in een cirkel.png
     1. Graphics: GFX/Textures/Shapes/Cirkel.png
     1. Graphics: GFX/Textures/Shapes/Driehoek.png
@@ -684,6 +686,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/ZZZ_Test/Objects
     1. Map Design: Kthura/ZZZ_Test/Settings
     1. Scenario: Languages/Dutch/Scenario/COMBAT/LEARN
+    1. Scenario: Languages/Dutch/Scenario/GENERAL/BLUESEAL
     1. Scenario: Languages/Dutch/Scenario/GENERAL/INN
     1. Scenario: Languages/Dutch/Scenario/GENERAL/INTRODUCTION
     1. Scenario: Languages/Dutch/Scenario/GENERAL/ITEMS
@@ -703,6 +706,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_TOWN_VANDAR
     1. Scenario: Languages/Dutch/Scenario/TEST
     1. Scenario: Languages/English/Scenario/COMBAT/LEARN
+    1. Scenario: Languages/English/Scenario/GENERAL/BLUESEAL
     1. Scenario: Languages/English/Scenario/GENERAL/INN
     1. Scenario: Languages/English/Scenario/GENERAL/INTRODUCTION
     1. Scenario: Languages/English/Scenario/GENERAL/ITEMS
