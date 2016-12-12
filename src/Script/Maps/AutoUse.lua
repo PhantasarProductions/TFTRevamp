@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.12.10
+  Version: 16.12.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -291,3 +291,6 @@ function BlackOrb(tag)
   Maps.Obj.Kill(tag,1)    
 end
 
+function NPC_BlueSeal()
+   SerialBoxText("BLUESEAL",'SEAL',"FLOW_FIELD")
+ end

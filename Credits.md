@@ -206,6 +206,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/AutoUse.lua
     1. Script: Script/Maps/CH1_Dungeon_FrendorBushes.lua
     1. Script: Script/Maps/CH1_Dungeon_HolyPath.lua
+    1. Script: Script/Maps/CH1_HUB_Altar.lua
     1. Script: Script/Maps/CH1_Hub_JakeHut.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
     1. Script: Script/Maps/PRO_DUNGEON_Magic.lua
@@ -301,8 +302,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png
@@ -804,6 +805,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. General Data: GFX/Textures/Marble/Pillar - Broken
     1. Graphics: GFX/Textures/Marble/Pillar - Broken.png
     1. Graphics: GFX/Textures/Marble/Pillar.png
+    1. Graphics: GFX/Textures/Marble/Trap.png
     1. Graphics: GFX/Textures/Marble/Wall - N.png
     1. Graphics: GFX/Textures/Marble/Wall - NE.png
     1. Graphics: GFX/Textures/Marble/Wall - NW.png
