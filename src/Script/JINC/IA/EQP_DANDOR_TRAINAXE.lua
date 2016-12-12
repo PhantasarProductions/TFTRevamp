@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  EQP_MARRILONA_AR3.lua
+  EQP_DANDOR_TRAINAXE.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -35,23 +35,34 @@
 version: 16.12.12
 ]]
 ret = {
+	["Attack"] = 5,
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "It fits nicely",
-	["EQP_STAT_Endurance"] = 3,
-	["EQP_STAT_Intelligence"] = 3,
-	["EQP_STAT_Resistance"] = 9,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "Marrilona",
+	["Desc"] = "Useless or ...?",
+	["Heal_StatPercent"] = "Intelligence",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Dandor",
+	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 500,
-	["ITM_Type"] = "Armor",
+	["ITM_Type"] = "Weapon",
+	["ITM_WeaponAbility"] = true,
+	["Rew_GainAP"] = 25,
 	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Cotton Dress",
-	["Type"] = "Item"}
+	["Target"] = "1F",
+	["Title"] = "Training Axe",
+	["Type"] = "Item",
+	["rew_CreateSkill1"] = true,
+	["rew_GainSkill1"] = 10,
+	["rew_GainSkill2"] = 10,
+	["rew_GainSkill3"] = 10,
+	["rew_GainSkill4"] = 10,
+	["rew_GainSkill5"] = 10}
 
 return ret
 

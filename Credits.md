@@ -72,7 +72,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - GR-Sites
     1. Audio: Audio/Dungeon/FallingDown.ogg
     1. Graphics: gfx/Worldmap/back.png
-    1. ???: gfx/Worldmap/rock001.jpg
+    1. Graphics: gfx/Worldmap/rock001.jpg
     1. Graphics: gfx/textures/wood/muur.png
     1. Graphics: gfx/textures/wood/vloer.png
 - Jeroen P. Broks
@@ -101,6 +101,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Init/NewGame.lua
     1. Script: Script/Init/Synchronize.lua
     1. Script: Script/JINC/Big/Achievements.lua
+    1. Script: Script/JINC/Big/Credits.lua
     1. Script: Script/JINC/Big/WorldMap.lua
     1. Script: Script/JINC/CharAbilities/Dandor.lua
     1. Script: Script/JINC/CharAbilities/Elder.lua
@@ -142,6 +143,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_4PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HEAL.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_SPLASH.lua
+    1. Script: Script/JINC/IA/EQP_DANDOR_TRAINAXE.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP1.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP2.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP3.lua
@@ -154,6 +156,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_AR4.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_AR5.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_AR6.lua
+    1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_TRAINSTAFF.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP1.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP2.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP3.lua
@@ -166,6 +169,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_AR4.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR5.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR6.lua
+    1. Script: Script/JINC/IA/EQP_JAKE_TRAINSWORD.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP1.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP2.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP3.lua
@@ -630,6 +634,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH1_Dungeon_HolyPath/KME.TextureSettings
     1. Map Design: Kthura/CH1_Dungeon_HolyPath/Objects
     1. Map Design: Kthura/CH1_Dungeon_HolyPath/Settings
+    1. Map Design: Kthura/CH1_HUB_ALTAR/Data
+    1. Map Design: Kthura/CH1_HUB_ALTAR/KME.TextureSettings
+    1. Map Design: Kthura/CH1_HUB_ALTAR/Objects
+    1. Map Design: Kthura/CH1_HUB_ALTAR/Settings
     1. Map Design: Kthura/CH1_HUB_JakeHut/Data
     1. Map Design: Kthura/CH1_HUB_JakeHut/KME.TextureSettings
     1. Map Design: Kthura/CH1_HUB_JakeHut/Objects
@@ -788,6 +796,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Human Village/Well.png
     1. Graphics: GFX/Textures/Marble/Deur.png
     1. Graphics: GFX/Textures/Marble/Floor.png
+    1. Graphics: GFX/Textures/Marble/Hek - Hoek - E.png
+    1. Graphics: GFX/Textures/Marble/Hek - Hoek - W.png
+    1. General Data: GFX/Textures/Marble/Hek - Verticaal
+    1. Graphics: GFX/Textures/Marble/Hek - Verticaal.png
+    1. Graphics: GFX/Textures/Marble/Hek.png
     1. General Data: GFX/Textures/Marble/Pillar - Broken
     1. Graphics: GFX/Textures/Marble/Pillar - Broken.png
     1. Graphics: GFX/Textures/Marble/Pillar.png
