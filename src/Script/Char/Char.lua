@@ -110,3 +110,14 @@ function AP          (ch) NStat(ch,"AP")           end
 function ACCURACY    (ch) NStat(ch,"Accuracy",100,0) end    
 function CRITICAL    (ch) NStat(ch,"Critical",100,0) end    
 function COUNTER     (ch) NStat(ch,"Counter",100,0)  end    
+
+
+function ER_DARKNESS (ch) NStat(ch,"ER_Darkness")  end 
+function ER_EARTH    (ch) NStat(ch,"ER_Earth")     end
+function ER_FLAME    (ch) NStat(ch,"ER_Flame")     end
+function ER_FROST    (ch) NStat(ch,"ER_Frost")     end
+function ER_LIGHT    (ch) NStat(ch,"ER_Light")     end
+function ER_NONE     (ch) NStat(ch,"ER_None")      end
+function ER_THUNDER  (ch) NStat(ch,"ER_Thunder")   end
+function ER_WATER    (ch) NStat(ch,"ER_Water")     end
+function ER_WIND     (ch) NStat(ch,"ER_Wind")      end
