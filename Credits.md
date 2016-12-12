@@ -10,29 +10,27 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 
 
 
-- 1 Up-Nuke
-    1. <Game Testing>
 - Aeris
     1. Graphics: GFX/Big_Char/Dandor.png
     1. Graphics: GFX/Big_Char/Dandor.png.BK!
     1. Graphics: GFX/Big_Char/Hando Stillor.png
     1. Graphics: GFX/Big_Char/Jake.png
-    1. ???: GFX/Big_Char/JakeMarrilona.GIF
+    1. Graphics: GFX/Big_Char/JakeMarrilona.GIF
     1. Graphics: GFX/Big_Char/JakeMarrilona.png
-    1. ???: GFX/Big_Char/JakeMarrilona.xcf
+    1. Graphics: GFX/Big_Char/JakeMarrilona.xcf
     1. Graphics: GFX/Big_Char/Marrilona.png
     1. Graphics: GFX/Big_Char/Marrilona.png.BK!
     1. Graphics: GFX/Big_Char/Marrilona_Christmas.png
-    1. ???: GFX/Big_Char/Marrilona_Christmas.xcf
+    1. Graphics: GFX/Big_Char/Marrilona_Christmas.xcf
     1. Graphics: GFX/Big_Char/Negatief_Marrilona.Png
     1. Graphics: GFX/BoxText/Portret/Dandor/General.png
-    1. ???: GFX/BoxText/Portret/Dandor/General.xcf
+    1. Graphics: GFX/BoxText/Portret/Dandor/General.xcf
     1. Graphics: GFX/BoxText/Portret/Hando Stillor/General.png
-    1. ???: GFX/BoxText/Portret/Hando Stillor/General.xcf
+    1. Graphics: GFX/BoxText/Portret/Hando Stillor/General.xcf
     1. Graphics: GFX/BoxText/Portret/Jake/Angry.png
     1. Graphics: GFX/BoxText/Portret/Jake/Blush.png
     1. Graphics: GFX/BoxText/Portret/Jake/General.png
-    1. ???: GFX/BoxText/Portret/Jake/General.xcf
+    1. Graphics: GFX/BoxText/Portret/Jake/General.xcf
     1. Graphics: GFX/BoxText/Portret/Jake/NoEmo.png
     1. Graphics: GFX/BoxText/Portret/Jake/Smile.png
     1. Graphics: GFX/BoxText/Portret/Marrilona/All.png
@@ -69,20 +67,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - Benjamin Koehler
     1. ???: Fonts/Doc/monof_tt.txt
     1. Font: Fonts/monof55.ttf
-- DarkbloodBane
-    1. <Game Testing>
 - Eric Matyas
     1. Music: Music/Dungeon/Moonlit-Secrets_Looping.ogg
-- FB Projecten
-    1. <Game Testing>
 - GR-Sites
     1. Audio: Audio/Dungeon/FallingDown.ogg
     1. Graphics: gfx/Worldmap/back.png
     1. ???: gfx/Worldmap/rock001.jpg
     1. Graphics: gfx/textures/wood/muur.png
     1. Graphics: gfx/textures/wood/vloer.png
-- Honno
-    1. <Game Testing>
 - Jeroen P. Broks
     1. Game identification data: ID/ID.Vocal.Demo
     1. Game identification data: ID/ID.DEMO.MUSIC < alias > ID/Identify
@@ -248,7 +240,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Anyway/Mouse.lua
     1. Script: Script/Use/Anyway/SaveMeta.lua
     1. Script: Script/Use/Available/Demo.lua
-    1. ???: Script/Use/Available/Readme.md
+    1. Development documentation: Script/Use/Available/Readme.md
     1. Script: Script/Use/Combat/AltArena/AAA_Algemeen.lua
     1. Script: Script/Use/Combat/AltArena/PathOfMagic.lua
     1. Script: Script/Use/Combat/CAttack.lua
@@ -432,8 +424,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Stairs/Up.png
     1. Graphics: GFX/World/Dot.png
     1. Graphics: GFX/World/Dot.png.BK!
-    1. ???: GFX/World/UNTITLED.LBM
-    1. ???: GFX/World/UNTITLED.PCX
+    1. Graphics: GFX/World/UNTITLED.LBM
+    1. Graphics: GFX/World/UNTITLED.PCX
     1. General Data: Data/CharStats/Dandor
     1. General Data: Data/CharStats/HandoStillor
     1. General Data: Data/CharStats/Jake_Fairy
@@ -810,7 +802,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Tapijt/Blauw.png
     1. Graphics: GFX/Textures/Tapijt/Groen.frames
     1. Graphics: GFX/Textures/Tapijt/Groen.png
-    1. ???: GFX/Textures/Tapijt/Tapijt.xcf
+    1. Graphics: GFX/Textures/Tapijt/Tapijt.xcf
     1. Graphics: GFX/Textures/Trees/Spar.png
     1. Graphics: GFX/Textures/Trees/Struik.png
 - Merlin2525
