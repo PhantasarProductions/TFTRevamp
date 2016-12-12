@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.12.10
+  Version: 16.12.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -99,6 +99,8 @@ function SetUpRencTable(pnum)
        -- Leaving the dungeon or using savespots will reset this.
     -- Init
     local num = tonumber(pnum) or 5; if num<=0 then num=5 end 
+    local altnum = Sys.Val(Maps.GetData('MaxEnc'))
+    if altnum>5 then num=altnum end
     rencnumtable = {}
     if not Maps.GetData('Foes1') then return nil end -- If no enemies are set, then let's ignore this entire shit!
     local nolaystring = Maps.GetData('NoEncZones')

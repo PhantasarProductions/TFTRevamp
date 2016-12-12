@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 16.12.09
+  Version: 16.12.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -91,7 +91,7 @@ function LoadFoes()
         local foefiledirsplit = mysplit(foefile,"/")
         if #foefiledirsplit<2 then foefile = "Reg/"..foefile end
         if prefixed(key,"FOE_") then 
-           CompileFoe(key,JINC('Script/JINC/Foes/'..foefile..".lua")) 
+           CompileFoe(key,JINC('Script/JINC/Foes/'..foefile..".lua"),foefile) 
         end
     end
 end

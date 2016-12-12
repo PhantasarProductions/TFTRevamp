@@ -1,6 +1,6 @@
 --[[
   CCompileFoes.lua
-  Version: 16.12.03
+  Version: 16.12.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -38,7 +38,7 @@
 -- @UNDEF CPF_DBG
 
 
-function CompileFoe(tag,data,oversoul)
+function CompileFoe(tag,data,foefile,oversoul)
    local function dbg(t) 
       -- @IF CPF_DBG
       CSay("COMPILEFOE:>"..t)
@@ -46,7 +46,7 @@ function CompileFoe(tag,data,oversoul)
    end
    local id = oversoul or (#Fighters.Foe + 1)
    local letter = string.char(id+64); if id>26 then letter="?" end
-   local myfoe = { tag = tag, R=255, G=255, B=255, letter=letter, id = id }
+   local myfoe = { tag = tag, R=255, G=255, B=255, letter=letter, id = id, fidtag = upper(foefile) }
    if oversoul then myfoe.R=200; myfoe.G=150 myfoe.B=255 end
    Fighters.Foe[id] = myfoe    
    fighterbytag[tag] = myfoe

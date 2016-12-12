@@ -1,6 +1,6 @@
 --[[
   WorldMap.lua
-  Version: 16.12.10
+  Version: 16.12.11
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -35,6 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 wm_unlocked = wm_unlocked or {}
+wm_beenthere = wm_beenthere or {}
 
 dotcol = { nodung =   {  0,  0,255 },
            noemblem = {255,  0,  0 },
@@ -63,6 +64,7 @@ function LoadWorld(worldfolder)
        -- @FI
        if v.Folder==worldfolder and (wm_unlocked[k] or v.UnlockedFromStart) then
           world[v.LocationName] = v
+          wm_beenthere[k] = wm_beenthere[k] or v.UnlockedFromStart
           if v.Dungeon then
              if CVVN("&ALLOW.ENCOFF['"..v.Kthura.."']") then 
                 v.Dot = dotcol.emblem

@@ -1,5 +1,5 @@
 --[[
-  ITM_POTION.lua
+  ABL_FOE_VENOMBITE.lua
   Version: 16.12.11
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -35,29 +35,27 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
+	["Attack_AllowAccuracy"] = true,
+	["Attack_AllowDodge"] = true,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Now this is a nice healing item",
-	["Heal"] = 750,
+	["CausePoison"] = true,
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 300,
 	["ITM_Type"] = "Consumable",
-	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Potion",
-	["Type"] = "Item",
-	["Voice"] = "Heal"}
+	["Stance"] = "Attack",
+	["Target"] = "1F",
+	["Title"] = "Venom Bite",
+	["Type"] = "Ability"}
 
 return ret
 

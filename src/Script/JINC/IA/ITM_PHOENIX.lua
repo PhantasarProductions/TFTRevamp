@@ -48,6 +48,7 @@ ret = {
 	["ITM_Combat"] = true,
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 100,
 	["ITM_Type"] = "Consumable",
 	["Revive"] = true,
 	["Stance"] = "Cast",

@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 16.12.09
+  Version: 16.12.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -73,10 +73,8 @@ function KillAward(myfoe)
     end
     -- Bodycount
     inc('%KILLS')
-    --[[ This comes later
-    bestiary = bestiary or {}
-    oversoul = oversoul or {}
-    ]]
+    bestiary[myfoe.fidtag] = (bestiary[myfoe.fidtag] or 0) + 1
+    oversoul[myfoe.fidtag] = (oversoul[myfoe.fidtag] or 0) + 1
     -- Achievements based on kills
     MS.LoadNew("ACH","Script/Subs/Achievements.lua")
     MS.Run('ACH','AchByKill')

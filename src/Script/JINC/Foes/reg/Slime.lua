@@ -1,6 +1,6 @@
 --[[
   Slime.lua
-  Version: 16.12.04
+  Version: 16.12.11
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sun 04 December 2016; 11:00:48
+-- File Generated: Sun 11 December 2016; 21:55:54
 
 
 local foe = {}
@@ -60,11 +60,16 @@ local foe = {}
 	foe["NEWGAMEPLUS_ITM_ANTIDOTE"] = true
 	foe["NEWGAMEPLUS_ITM_APPLE"] = true
 	foe["NEWGAMEPLUS_ITM_FLAMEORB"] = true
+	foe["NEWGAMEPLUS_ITM_MAGICDUST"] = true
+	foe["NEWGAMEPLUS_ITM_MANDRAKE"] = true
 	foe["NEWGAMEPLUS_ITM_MEDICINE"] = true
+	foe["NEWGAMEPLUS_ITM_PHOENIX"] = true
+	foe["NEWGAMEPLUS_ITM_POTION"] = true
 	foe["NEWGAMEPLUS_ITM_SALVE"] = true
 	foe["NEWGAMEPLUS_SPECIAL_AXESMASH"] = true
 	foe["NEWGAMEPLUS_WAND_FLAME"] = true
 	foe["NEWGAMEPLUS_WAND_FROST"] = true
+	foe["NEWGAMEPLUS_WAND_TRAINING"] = true
 	foe["NORMAL_AAA_ATTACK"] = true
 	foe["NORMAL_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["NORMAL_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -85,11 +90,16 @@ local foe = {}
 	foe["NORMAL_ITM_ANTIDOTE"] = true
 	foe["NORMAL_ITM_APPLE"] = true
 	foe["NORMAL_ITM_FLAMEORB"] = true
+	foe["NORMAL_ITM_MAGICDUST"] = true
+	foe["NORMAL_ITM_MANDRAKE"] = true
 	foe["NORMAL_ITM_MEDICINE"] = true
+	foe["NORMAL_ITM_PHOENIX"] = true
+	foe["NORMAL_ITM_POTION"] = true
 	foe["NORMAL_ITM_SALVE"] = true
 	foe["NORMAL_SPECIAL_AXESMASH"] = true
 	foe["NORMAL_WAND_FLAME"] = true
 	foe["NORMAL_WAND_FROST"] = true
+	foe["NORMAL_WAND_TRAINING"] = true
 	foe["OVERSOUL_AAA_ATTACK"] = true
 	foe["OVERSOUL_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["OVERSOUL_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -110,11 +120,16 @@ local foe = {}
 	foe["OVERSOUL_ITM_ANTIDOTE"] = true
 	foe["OVERSOUL_ITM_APPLE"] = true
 	foe["OVERSOUL_ITM_FLAMEORB"] = true
+	foe["OVERSOUL_ITM_MAGICDUST"] = true
+	foe["OVERSOUL_ITM_MANDRAKE"] = true
 	foe["OVERSOUL_ITM_MEDICINE"] = true
+	foe["OVERSOUL_ITM_PHOENIX"] = true
+	foe["OVERSOUL_ITM_POTION"] = true
 	foe["OVERSOUL_ITM_SALVE"] = true
 	foe["OVERSOUL_SPECIAL_AXESMASH"] = true
 	foe["OVERSOUL_WAND_FLAME"] = true
 	foe["OVERSOUL_WAND_FROST"] = true
+	foe["OVERSOUL_WAND_TRAINING"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
 	foe["SKILL\49_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\49_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -135,11 +150,16 @@ local foe = {}
 	foe["SKILL\49_ITM_ANTIDOTE"] = true
 	foe["SKILL\49_ITM_APPLE"] = true
 	foe["SKILL\49_ITM_FLAMEORB"] = true
+	foe["SKILL\49_ITM_MAGICDUST"] = true
+	foe["SKILL\49_ITM_MANDRAKE"] = true
 	foe["SKILL\49_ITM_MEDICINE"] = true
+	foe["SKILL\49_ITM_PHOENIX"] = true
+	foe["SKILL\49_ITM_POTION"] = true
 	foe["SKILL\49_ITM_SALVE"] = true
 	foe["SKILL\49_SPECIAL_AXESMASH"] = true
 	foe["SKILL\49_WAND_FLAME"] = true
 	foe["SKILL\49_WAND_FROST"] = true
+	foe["SKILL\49_WAND_TRAINING"] = true
 	foe["SKILL\50_AAA_ATTACK"] = true
 	foe["SKILL\50_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\50_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -160,11 +180,16 @@ local foe = {}
 	foe["SKILL\50_ITM_ANTIDOTE"] = true
 	foe["SKILL\50_ITM_APPLE"] = true
 	foe["SKILL\50_ITM_FLAMEORB"] = true
+	foe["SKILL\50_ITM_MAGICDUST"] = true
+	foe["SKILL\50_ITM_MANDRAKE"] = true
 	foe["SKILL\50_ITM_MEDICINE"] = true
+	foe["SKILL\50_ITM_PHOENIX"] = true
+	foe["SKILL\50_ITM_POTION"] = true
 	foe["SKILL\50_ITM_SALVE"] = true
 	foe["SKILL\50_SPECIAL_AXESMASH"] = true
 	foe["SKILL\50_WAND_FLAME"] = true
 	foe["SKILL\50_WAND_FROST"] = true
+	foe["SKILL\50_WAND_TRAINING"] = true
 	foe["SKILL\51_AAA_ATTACK"] = true
 	foe["SKILL\51_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\51_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -185,11 +210,16 @@ local foe = {}
 	foe["SKILL\51_ITM_ANTIDOTE"] = true
 	foe["SKILL\51_ITM_APPLE"] = true
 	foe["SKILL\51_ITM_FLAMEORB"] = true
+	foe["SKILL\51_ITM_MAGICDUST"] = true
+	foe["SKILL\51_ITM_MANDRAKE"] = true
 	foe["SKILL\51_ITM_MEDICINE"] = true
+	foe["SKILL\51_ITM_PHOENIX"] = true
+	foe["SKILL\51_ITM_POTION"] = true
 	foe["SKILL\51_ITM_SALVE"] = true
 	foe["SKILL\51_SPECIAL_AXESMASH"] = true
 	foe["SKILL\51_WAND_FLAME"] = true
 	foe["SKILL\51_WAND_FROST"] = true
+	foe["SKILL\51_WAND_TRAINING"] = true
 	foe["Desc"] = "A miserable excuse for a monster\46\10Why are they there in every RPG world?"
 	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47reg\47Slime\46png"
 	foe["Item Drop \49"] = "ITM_APPLE"
@@ -218,11 +248,16 @@ local foe = {}
 	foe["RATE_ITM_ANTIDOTE"] = 0
 	foe["RATE_ITM_APPLE"] = 0
 	foe["RATE_ITM_FLAMEORB"] = 0
+	foe["RATE_ITM_MAGICDUST"] = 0
+	foe["RATE_ITM_MANDRAKE"] = 0
 	foe["RATE_ITM_MEDICINE"] = 0
+	foe["RATE_ITM_PHOENIX"] = 0
+	foe["RATE_ITM_POTION"] = 0
 	foe["RATE_ITM_SALVE"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_WAND_FLAME"] = 0
 	foe["RATE_WAND_FROST"] = 0
+	foe["RATE_WAND_TRAINING"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
 	foe["TARGET_ABL_HERO_DANDOR_AXESMASH"] = "Random"
 	foe["TARGET_ABL_HERO_DANDOR_SUPERAXESMASH"] = "Random"
@@ -243,11 +278,16 @@ local foe = {}
 	foe["TARGET_ITM_ANTIDOTE"] = "Random"
 	foe["TARGET_ITM_APPLE"] = "Random"
 	foe["TARGET_ITM_FLAMEORB"] = "Random"
+	foe["TARGET_ITM_MAGICDUST"] = "Random"
+	foe["TARGET_ITM_MANDRAKE"] = "Random"
 	foe["TARGET_ITM_MEDICINE"] = "Random"
+	foe["TARGET_ITM_PHOENIX"] = "Random"
+	foe["TARGET_ITM_POTION"] = "Random"
 	foe["TARGET_ITM_SALVE"] = "Random"
 	foe["TARGET_SPECIAL_AXESMASH"] = "Random"
 	foe["TARGET_WAND_FLAME"] = "Random"
 	foe["TARGET_WAND_FROST"] = "Random"
+	foe["TARGET_WAND_TRAINING"] = "Random"
 	foe["Boss"] = false
 	foe["Oversoul"] = false
 	foe["Oversoul Drop \49"] = false
