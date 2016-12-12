@@ -1,6 +1,6 @@
 --[[
   WorldMap.lua
-  Version: 16.12.11
+  Version: 16.12.12
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -64,6 +64,7 @@ function LoadWorld(worldfolder)
        -- @FI
        if v.Folder==worldfolder and (wm_unlocked[k] or v.UnlockedFromStart) then
           world[v.LocationName] = v
+          v.key = k
           wm_beenthere[k] = wm_beenthere[k] or v.UnlockedFromStart
           if v.Dungeon then
              if CVVN("&ALLOW.ENCOFF['"..v.Kthura.."']") then 
@@ -105,7 +106,9 @@ function MAIN_FLOW()
          Image.Color(data.Dot[1],data.Dot[2],data.Dot[3])
          Image.Show(doti,x,y)
          QScale()
-         DarkText(trim(data.LocationPrefix.." "..data.LocationName),x+fsiz,y,0,0,c[1],c[2],c[3])
+         local locshow = trim(data.LocationPrefix.." "..data.LocationName)
+         DarkText(locshow,x+fsiz,y,0,0,c[1],c[2],c[3])
+         if not wm_beenthere[data.key] then DarkText("<< NEW >>",x+fsiz+(fsiz/2)+Image.TextWidth(locshow),y,0,0,0,255,180) end
          if upper(Maps.CodeName)==upper(data.Kthura) then prij=prij or rij pcol=pcol or col end
          assert(col<cols,"Maximum number of collumns exceeded")
          maxrij[col] = maxrij[col] or 0
@@ -124,6 +127,7 @@ function MAIN_FLOW()
         LoadMap(cspot.Kthura)
         GoToLayer(cspot.Layer,cspot.Start)
         LAURA.Flow('FIELD')
+        wm_beenthere[cspot.key] = true
      end
      -- Other shit
      ShowParty()
