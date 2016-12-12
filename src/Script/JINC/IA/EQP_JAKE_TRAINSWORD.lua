@@ -49,7 +49,6 @@ ret = {
 	["ITM_Combat"] = true,
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
-	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Weapon",
 	["ITM_WeaponAbility"] = true,
 	["Rew_GainAP"] = 25,
