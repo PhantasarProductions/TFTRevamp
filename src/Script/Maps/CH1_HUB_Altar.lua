@@ -34,10 +34,6 @@
  
 version: 16.12.12
 ]]
-function GALE_OnLoad()
-   ZA_Enter('Leave',WorldMap)
-end   
-
 
 -- Link all stats in Jake that should be linked
 function CreateJakeFairy()
@@ -60,3 +56,13 @@ function CreateJakeFairy()
       RPG.LinkData('Jake_Human','Jake_Fairy',p)
   end
 end
+
+function Altar()
+  Sys.Error('Sorry, the rest is not coded yet')
+end
+
+function GALE_OnLoad()
+   ZA_Enter('Leave',WorldMap)
+   ZA_Enter('Altar',Altar)
+end   
+
