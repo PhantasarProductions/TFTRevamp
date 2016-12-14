@@ -132,6 +132,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Snake.lua
     1. Script: Script/JINC/Foes/reg/Zombie.lua
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
+    1. Script: Script/JINC/IA/ABL_FOE_SMITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMBITE.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_AXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_SUPERAXESMASH.lua
@@ -308,10 +309,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Music: Music/Boss/BossIntro.ogg
@@ -392,6 +393,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/AlphabetTiles/YurgonTile_Y.png
     1. Graphics: GFX/Textures/AlphabetTiles/YurgonTile_Z.png
     1. Graphics: GFX/Textures/Effects/North-Hole.png
+    1. Graphics: GFX/Textures/General Shapes/Circle.png
+    1. Graphics: GFX/Textures/General Shapes/Square.png
     1. Graphics: GFX/Textures/Muur Toorts/Brandend.frames
     1. Graphics: GFX/Textures/Muur Toorts/Brandend.png
     1. Graphics: GFX/Textures/Muur Toorts/Uit.png
@@ -464,11 +467,15 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.West.Frames
     1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.West.piko
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Idle.png
+    1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.East.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.East.piko
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.East.png
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.NS.piko
+    1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.North.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.North.png
+    1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.South.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.South.png
+    1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.West.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.West.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Idle.png
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.East.Frames
@@ -512,6 +519,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Chief Werrington/Chief.png
     1. Graphics: GFX/BoxText/Portret/Chief Werrington/General.png
     1. Graphics: GFX/BoxText/Portret/Chief Werrington/Smile.png
+    1. Graphics: GFX/Combat/Arena/Altar.png
     1. Graphics: GFX/Combat/Arena/Caves.png
     1. Graphics: GFX/Combat/Arena/Forest.png
     1. Graphics: GFX/Combat/Arena/GreyDung.png

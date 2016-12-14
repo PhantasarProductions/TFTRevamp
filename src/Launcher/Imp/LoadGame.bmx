@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.12.10
+Version: 16.12.14
 End Rem
 Strict
 
@@ -33,7 +33,7 @@ Import tricky_Units.ListDir
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - LoadGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.12.10"
+MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","16.12.14"
 
 afr_InpCol 0,27,0,0,155,0
 afr_WinCol 0,255,0,0,25,0
@@ -131,6 +131,8 @@ CheckHave False
 Gadgets.make "Marrilona",CreatePanel(pw-bw,0,bw,by,Panel)
 If Month()=12 Then
 	SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona_Christmas.png") ),PANELPIXMAP_CENTER
+ElseIf Month()=4 Or (Month()=3 And Day()>20)
+	SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona_Easter.png") ),PANELPIXMAP_CENTER
 Else	
 	SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona.png") ),PANELPIXMAP_CENTER
 EndIf
@@ -222,7 +224,7 @@ Function FindSaveFromTree(G:TGadget)
 	If Not G Return
 	Local tab:TGadget = gadgets.get("Tabber").G
 	Local IT$=GadgetItemText(tab,SelectedGadgetItem(tab))
-	If IT<>"Load Game" return
+	If IT<>"Load Game" Return
 	DebugLog "Find game from tree request  ... "+GadgetClass(G)
 	If GadgetClass(G)<>16 Return DebugLog("Wrong kind of gadget type to work with")
 	If Not G 
