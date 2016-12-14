@@ -1,6 +1,6 @@
 --[[
   BoxText.lua
-  Version: 16.12.06
+  Version: 16.12.15
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -43,7 +43,8 @@ boxtextroutine = true
 Backgrounds = {
 
        FLOW_FIELD = function() Cls() Maps.Draw() end,
-       FLOW_COMBAT = function() Cls() MS.Run('COMBAT','DrawScreen') end
+       FLOW_COMBAT = function() Cls() MS.Run('COMBAT','DrawScreen') end,
+       FLOW_WORLDMAP = function() MS.Run("WORLD","WorldBackFlow") end
 }
 
 

@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.12.12
+  Version: 16.12.15
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -64,6 +64,7 @@ function GALE_OnLoad()
    BlopPlasma.InitBlopPlasma(50,SW,SH,250)
    MS.Run('BOXTEXT','LoadData','GENERAL/INN;INN')
    MS.Run('BOXTEXT','LoadData','GENERAL/BLUESEAL;BLUESEAL')
+   MS.Run('BOXTEXT','LoadData','WORLDMAP;WMCHAT')
 end
 
 

@@ -1,6 +1,6 @@
 --[[
   WorldMap.lua
-  Version: 16.12.12
+  Version: 16.12.15
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -87,6 +87,13 @@ function WorldBackFlow()
      Image.Tile(backi,0,backy)
 end
 
+function WorldMapChat(pch)
+   local ch = pch
+   if prefixed(ch,"Jake_") then ch="Jake" end
+   SerialBoxText("WMCHAT",CVV('$WMTALK').."."..ch,"FLOW_WORLDMAP")
+end
+
+
 function MAIN_FLOW()
      WorldBackFlow()
      -- Header
@@ -133,6 +140,11 @@ function MAIN_FLOW()
      ShowParty()
      ShowMouse()
      Flip()
+     -- World Map Chat
+     for i,ch in iParty() do
+         if (mousehit(1) and ClickedChar(i)) or (INP.KeyH(i+49)==1) then WorldMapChat(ch) end
+     end    
+
 end
 
 function R_WorldMap_Unlock(tag)
@@ -144,9 +156,11 @@ function R_WorlMap_Lock(tag)
     wm_unlocked[tag] = false
 end
 
+
 function GALE_OnLoad()   
    fsiz = (SH-250)/25
    colx = (SW/cols)
    fonts.WorldItem[2] = fsiz
    dotscale = math.ceil((fsiz/20)*100)
+   if not CVVN('$WMTALK') then Var.D('$WMTALK','JUSTMET') end
 end   

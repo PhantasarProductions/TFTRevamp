@@ -311,10 +311,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/valstr.lua
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Chapters/1.png
@@ -736,6 +736,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_TOWN_FRENDOR
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_TOWN_VANDAR
     1. Scenario: Languages/Dutch/Scenario/TEST
+    1. Scenario: Languages/Dutch/Scenario/WORLDMAP
     1. Scenario: Languages/English/Scenario/COMBAT/LEARN
     1. Scenario: Languages/English/Scenario/GENERAL/BLUESEAL
     1. Scenario: Languages/English/Scenario/GENERAL/INN
@@ -757,6 +758,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_FRENDOR
     1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_VANDAR
     1. Scenario: Languages/English/Scenario/TEST
+    1. Scenario: Languages/English/Scenario/WORLDMAP
 - Kevin McLeod
     1. Music: Music/Dungeon/Chillin Hard.ogg
     1. Music: Music/Dungeon/Pippin the Hunchback.ogg
