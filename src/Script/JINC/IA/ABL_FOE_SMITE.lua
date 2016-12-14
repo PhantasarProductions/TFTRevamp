@@ -1,5 +1,5 @@
 --[[
-  ITM_MAGICDUST.lua
+  ABL_FOE_SMITE.lua
   Version: 16.12.14
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -35,29 +35,24 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["Attack"] = 15,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["CureParalysis"] = true,
-	["Desc"] = "Cures paralysis",
+	["Attack_Element"] = "Light",
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 50,
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Magic Dust",
-	["Type"] = "Item",
-	["Voice"] = "Heal"}
+	["Target"] = "1F",
+	["Title"] = "Smite",
+	["Type"] = "Ability"}
 
 return ret
 

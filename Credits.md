@@ -28,11 +28,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Hando Stillor/General.png
     1. Graphics: GFX/BoxText/Portret/Hando Stillor/General.xcf
     1. Graphics: GFX/BoxText/Portret/Jake/Angry.png
+    1. Graphics: GFX/BoxText/Portret/Jake/Angry_Fairy.png
     1. Graphics: GFX/BoxText/Portret/Jake/Blush.png
+    1. Graphics: GFX/BoxText/Portret/Jake/Blush_Fairy.png
     1. Graphics: GFX/BoxText/Portret/Jake/General.png
     1. Graphics: GFX/BoxText/Portret/Jake/General.xcf
+    1. Graphics: GFX/Boxtext/Portret/Jake_Fairy/General.png
+    1. Graphics: GFX/BoxText/Portret/Jake/Jake.piko
     1. Graphics: GFX/BoxText/Portret/Jake/NoEmo.png
+    1. Graphics: GFX/BoxText/Portret/Jake/NoEmo_Fairy.png
     1. Graphics: GFX/BoxText/Portret/Jake/Smile.png
+    1. Graphics: GFX/BoxText/Portret/Jake/Smile_Fairy.png
     1. Graphics: GFX/BoxText/Portret/Marrilona/All.png
     1. Graphics: GFX/BoxText/Portret/Marrilona/Angry.png
     1. Graphics: GFX/BoxText/Portret/Marrilona/Blown.png
@@ -302,17 +308,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/mysplit.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Chapters/3.png
-    1. Graphics: GFX/Chapters/4.png
     1. Music: Music/Sys/Silence.ogg
+    1. Graphics: GFX/Chapters/4.png
     1. Graphics: GFX/Combat/End/Game Over.png
     1. Graphics: GFX/Combat/End/YouWin.png
     1. Graphics: GFX/Loading/Graphic.png
@@ -460,7 +466,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Idle.png
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.East.piko
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.East.png
-    1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.NS (Autosaved).piko
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.NS.piko
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.North.png
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.South.png
@@ -468,7 +473,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Idle.png
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.East.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.East.png
-    1. ???: GFX/Actors/Bundled/Player/Jake_Human.North (Autosaved).piko-png
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.North.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.North.png
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.South.Frames
@@ -585,6 +589,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Idle.Frames
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Victory.png
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.piko
+    1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Attack.1.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Attack.2.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Cast.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Victory.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Attack.1.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Attack.2.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Cast.png
@@ -704,6 +712,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/ANNA
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_FRENDORBUSHES
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_HOLYPATH
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_JAKEHUT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
@@ -724,6 +733,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/ANNA
     1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_FRENDORBUSHES
     1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_HOLYPATH
+    1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_JAKEHUT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE

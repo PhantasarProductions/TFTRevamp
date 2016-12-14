@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 16.12.12
+  Version: 16.12.14
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -293,4 +293,21 @@ end
 
 function NPC_BlueSeal()
    SerialBoxText("BLUESEAL",'SEAL',"FLOW_FIELD")
- end
+end
+ 
+ 
+function PartyPop(spot,wind,methode)
+    local Walk = ({ Walk=Actors.WalkToSpot, Move=Actors.MoveToSpot})[methode or 'Walk']
+    local guys = {}
+    for i,guy in iParty() do        
+         local a = "PLAYER"..i; if i==0 then a="PLAYER" end
+         guys[#guys+1] = { ch = guy, actor=a, spot=spot.."_"..guy}
+         if prefixed(guy,"Jake") then guys[#guys].spot=spot.."_Jake" end
+    end
+    for guy in each(guys) do
+        Walk(guy.actor,guy.spot)
+        CSay(guy.actor.." ("..guy.ch..") should walk to "..guy.spot)
+    end
+    if wind then TurnPlayers(wind) end 
+    CSay(serialize('partypop.guys',guys))
+end

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.12
+version: 16.12.14
 ]]
 
 -- Link all stats in Jake that should be linked
@@ -45,19 +45,26 @@ function CreateJakeFairy()
       RPG.LinkPoints('Jake_Human','Jake_Fairy',p)
   end
   -- Link stats
-  for p in each(mysplit(RPGChar.StatFields('Jake_Human'))) do
+  for p in each(mysplit(RPGChar.StatFields('Jake_Human'),";")) do
       local link=false
       for ls in each(linkstat)   do if p==ls          then link=true end end
       for lp in each(linkprefix) do if prefixed(p,lp) then link=true end end
       if link then RPG.LinkStat('Jake_Human','Jake_Fairy',p) end
   end      
   -- Link data
-  for p in each(mysplit(RPG.DataFields('Jake_Human'))) do
+  for p in each(mysplit(RPG.DataFields('Jake_Human'),";")) do
       RPG.LinkData('Jake_Human','Jake_Fairy',p)
   end
 end
 
 function Altar()
+  PartyPop('Altar','South')
+  MapText('Altar1')
+  -- New Game Plus part goes here --
+  Party('Jake_Fairy','Marrilona')
+  CreateJakeFairy()
+  ActorRepos("PLAYER","Altar_Jake","South","Jake_Fairy")
+  MapText('Altar2')
   Sys.Error('Sorry, the rest is not coded yet')
 end
 
