@@ -61,7 +61,7 @@ function Altar()
     PartyPop('Altar','South')
     MapText('Altar1')
     -- New Game Plus part goes here --
-    Party('Jake_Fairy','Marrilona')
+    Party('Jake_Fairy;Marrilona')
     CreateJakeFairy()
     ActorRepos("PLAYER","Altar_Jake","South","Jake_Fairy")
     MapText('Altar2')
