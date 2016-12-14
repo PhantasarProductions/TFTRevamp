@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.11.18
+version: 16.12.14
 ]]
 local function GoNext()
    local skill = tonumber(Var.C('%SKILL')) or 2
@@ -50,7 +50,7 @@ local function GoNext()
    LAURA.Flow("FIELD")
    MS.Run('FIELD','SpawnPlayer',"Hando")
    MS.Run('FIELD','Schedule','MAP;SashaFunda')
-   MS.LN_Run('PARTY','Script/Subs/Party.lua','SyncLevel','HandoStillor') -- HandoStillor is the only main character who starts this high
+   MS.LN_Run('PARTY','Script/Subs/Party.lua','SyncLevel','HandoStillor') 
    RPGStat.Points("HandoStillor","HP").Have = RPGStat.Points("HandoStillor","HP").Maximum
    RPGStat.Points("HandoStillor","AP").Have = 0 
 end

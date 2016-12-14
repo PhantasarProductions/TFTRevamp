@@ -55,6 +55,10 @@ function CreateJakeFairy()
   for p in each(mysplit(RPG.DataFields('Jake_Human'),";")) do
       RPG.LinkData('Jake_Human','Jake_Fairy',p)
   end
+  -- Jake's name
+  RPGStat.SetName('Jake_Fairy','Jake')
+  -- Synchronize results
+  MS.LN_Run('PARTY','Script/Subs/Party.lua','SyncLevel','Jake_Fairy') 
 end
 
 function Altar()
