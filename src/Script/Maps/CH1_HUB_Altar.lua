@@ -58,14 +58,24 @@ function CreateJakeFairy()
 end
 
 function Altar()
-  PartyPop('Altar','South')
-  MapText('Altar1')
-  -- New Game Plus part goes here --
-  Party('Jake_Fairy','Marrilona')
-  CreateJakeFairy()
-  ActorRepos("PLAYER","Altar_Jake","South","Jake_Fairy")
-  MapText('Altar2')
-  Sys.Error('Sorry, the rest is not coded yet')
+    PartyPop('Altar','South')
+    MapText('Altar1')
+    -- New Game Plus part goes here --
+    Party('Jake_Fairy','Marrilona')
+    CreateJakeFairy()
+    ActorRepos("PLAYER","Altar_Jake","South","Jake_Fairy")
+    MapText('Altar2')
+    Schedule("MAP","PostBoss")
+    ClearCombatData()
+    Var.D("$COMBAT.FOE_1","Boss/GhostPriest") -- Needed to prevent the Axe Smash session Marrilona has to deal with.
+    Var.D("$COMBAT.POSFOE_1","CENTER")
+    Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
+    Var.D("$COMBAT.ARENA","Altar.png")
+    StartBoss("Restless Spirit","Ghost Priest")      
+end
+
+function PostBoss()  
+   Sys.Error('Sorry, the rest is not coded yet')
 end
 
 function GALE_OnLoad()

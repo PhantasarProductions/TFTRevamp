@@ -122,6 +122,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/CharAbilities/Nostramantu.lua
     1. Script: Script/JINC/Foes/Boss/Dwarf.lua
     1. Script: Script/JINC/Foes/Boss/Dwarf_J.lua
+    1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
     1. Script: Script/JINC/Foes/Boss/GobKing.lua
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
@@ -310,10 +311,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
     1. Music: Music/Boss/BossIntro.ogg
     1. Graphics: GFX/Chapters/1.png
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
