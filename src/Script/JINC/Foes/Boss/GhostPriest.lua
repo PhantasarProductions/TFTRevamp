@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  Dwarf.lua
+  GhostPriest.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -34,12 +34,12 @@
  
 version: 16.12.14
 ]]
--- File Generated: Wed 14 December 2016; 15:04:37
+-- File Generated: Wed 14 December 2016; 15:10:41
 
 
 local foe = {}
 
-	foe["AI"] = "dwarfprologue"
+	foe["AI"] = "default"
 	foe["NEWGAMEPLUS_AAA_ATTACK"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_SMITE"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_VENOMBITE"] = true
@@ -137,7 +137,7 @@ local foe = {}
 	foe["OVERSOUL_WAND_FROST"] = true
 	foe["OVERSOUL_WAND_TRAINING"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
-	foe["SKILL\49_ABL_FOE_SMITE"] = true
+	foe["SKILL\49_ABL_FOE_SMITE"] = false
 	foe["SKILL\49_ABL_FOE_VENOMBITE"] = true
 	foe["SKILL\49_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\49_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -200,7 +200,7 @@ local foe = {}
 	foe["SKILL\50_WAND_FLAME"] = true
 	foe["SKILL\50_WAND_FROST"] = true
 	foe["SKILL\50_WAND_TRAINING"] = true
-	foe["SKILL\51_AAA_ATTACK"] = true
+	foe["SKILL\51_AAA_ATTACK"] = false
 	foe["SKILL\51_ABL_FOE_SMITE"] = true
 	foe["SKILL\51_ABL_FOE_VENOMBITE"] = true
 	foe["SKILL\51_ABL_HERO_DANDOR_AXESMASH"] = true
@@ -232,22 +232,22 @@ local foe = {}
 	foe["SKILL\51_WAND_FLAME"] = true
 	foe["SKILL\51_WAND_FROST"] = true
 	foe["SKILL\51_WAND_TRAINING"] = true
-	foe["Desc"] = "A hungry Dwarf on the road"
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Boss\47Dwarf\46png"
-	foe["Item Drop \49"] = "ITM_APPLE"
-	foe["Item Drop \50"] = "ITM_MEDICINE"
-	foe["Item Steal \49"] = "ITM_ANTIDOTE"
-	foe["Item Steal \50"] = "ITM_ANTIDOTE"
-	foe["Item Steal \51"] = "ITM_ANTIDOTE"
-	foe["Name"] = "Dwarf"
-	foe["RATE_AAA_ATTACK"] = 100
-	foe["RATE_ABL_FOE_SMITE"] = 0
+	foe["Desc"] = "Nobody knows who he died\44 \10but his spirit could never find rest\10and due to its violent behavior it\10was sealed inside the altar ever since\46\10\10How did it get released?"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47boss\47GhostPriest\46png"
+	foe["Item Drop \49"] = "ITM_POTION"
+	foe["Item Drop \50"] = "ITM_FLAMEORB"
+	foe["Item Steal \49"] = "ITM_POTION"
+	foe["Item Steal \50"] = "ITM_MAGICDUST"
+	foe["Item Steal \51"] = "ITM_SALVE"
+	foe["Name"] = "Ghost Priest"
+	foe["RATE_AAA_ATTACK"] = 5
+	foe["RATE_ABL_FOE_SMITE"] = 15
 	foe["RATE_ABL_FOE_VENOMBITE"] = 0
 	foe["RATE_ABL_HERO_DANDOR_AXESMASH"] = 0
 	foe["RATE_ABL_HERO_DANDOR_SUPERAXESMASH"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = 0
-	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = 0
-	foe["RATE_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = 5
+	foe["RATE_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = 5
 	foe["RATE_ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_PURIFY"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_RECOVER"] = 0
@@ -311,36 +311,36 @@ local foe = {}
 	foe["Oversoul Steal \49"] = false
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
-	foe["Cash"] = 150
-	foe["ER_Darkness"] = -50
-	foe["ER_Earth"] = -50
-	foe["ER_Flame"] = -50
-	foe["ER_Frost"] = -50
-	foe["ER_Light"] = -50
-	foe["ER_Lightning"] = -50
-	foe["ER_Water"] = -50
-	foe["ER_Wind"] = -50
+	foe["Cash"] = 10000
+	foe["ER_Darkness"] = 500
+	foe["ER_Earth"] = 100
+	foe["ER_Flame"] = -95
+	foe["ER_Frost"] = 100
+	foe["ER_Light"] = -99999
+	foe["ER_Lightning"] = -98
+	foe["ER_Water"] = -70
+	foe["ER_Wind"] = 25
 	foe["Rate Drop \49"] = 100
-	foe["Rate Drop \50"] = 50
-	foe["Rate Steal \49"] = 0
-	foe["Rate Steal \50"] = 0
-	foe["Rate Steal \51"] = 0
-	foe["SR_Curse "] = 0
-	foe["SR_Disease "] = 0
-	foe["SR_Paralysis "] = 0
-	foe["SR_Petrification "] = 0
-	foe["SR_Poison "] = 0
-	foe["SR_Silence "] = 0
-	foe["SR_Undead "] = 0
-	foe["normal_Accuracy"] = 75
-	foe["normal_EXP"] = 15
-	foe["normal_Endurance"] = 2
-	foe["normal_Evasion"] = 0
-	foe["normal_HP"] = 100
-	foe["normal_Intelligence"] = 2
-	foe["normal_Power"] = 15
+	foe["Rate Drop \50"] = 100
+	foe["Rate Steal \49"] = 100
+	foe["Rate Steal \50"] = 70
+	foe["Rate Steal \51"] = 60
+	foe["SR_Curse "] = 100
+	foe["SR_Disease "] = 100
+	foe["SR_Paralysis "] = 100
+	foe["SR_Petrification "] = 100
+	foe["SR_Poison "] = 100
+	foe["SR_Silence "] = 100
+	foe["SR_Undead "] = 100
+	foe["normal_Accuracy"] = 100
+	foe["normal_EXP"] = 100
+	foe["normal_Endurance"] = 1
+	foe["normal_Evasion"] = 25
+	foe["normal_HP"] = 600
+	foe["normal_Intelligence"] = 70
+	foe["normal_Power"] = 70
 	foe["normal_Resistance"] = 1
-	foe["normal_Speed"] = 2
+	foe["normal_Speed"] = 42
 	foe["oversoul_Accuracy"] = 100
 	foe["oversoul_EXP"] = 0
 	foe["oversoul_Endurance"] = 0

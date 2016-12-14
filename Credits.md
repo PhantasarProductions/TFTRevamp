@@ -22,6 +22,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Big_Char/Marrilona.png.BK!
     1. Graphics: GFX/Big_Char/Marrilona_Christmas.png
     1. Graphics: GFX/Big_Char/Marrilona_Christmas.xcf
+    1. Graphics: GFX/Big_Char/Marrilona_Easter.png
     1. Graphics: GFX/Big_Char/Negatief_Marrilona.Png
     1. Graphics: GFX/BoxText/Portret/Dandor/General.png
     1. Graphics: GFX/BoxText/Portret/Dandor/General.xcf
@@ -309,16 +310,16 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
-    1. Graphics: GFX/Chapters/1.png
-    1. Graphics: GFX/Chapters/2.png
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
     1. Music: Music/Boss/BossIntro.ogg
+    1. Graphics: GFX/Chapters/1.png
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
-    1. Graphics: GFX/Chapters/3.png
+    1. Graphics: GFX/Chapters/2.png
     1. Music: Music/Sys/Silence.ogg
+    1. Graphics: GFX/Chapters/3.png
     1. Graphics: GFX/Chapters/4.png
     1. Graphics: GFX/Combat/End/Game Over.png
     1. Graphics: GFX/Combat/End/YouWin.png
@@ -582,6 +583,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Cards/HERO_HANDOSTILLOR.png
     1. Graphics: GFX/Combat/Cards/HERO_JAKE_HUMAN.png
     1. Graphics: GFX/Combat/Cards/HERO_MARRILONA.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/GhostPriest.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/SuperZombie.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Zombie.png
     1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Attack.1.png

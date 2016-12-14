@@ -32,15 +32,16 @@
   
  **********************************************
  
-version: 16.12.12
+version: 16.12.14
 ]]
--- File Generated: Mon 12 December 2016; 10:05:14
+-- File Generated: Wed 14 December 2016; 15:10:03
 
 
 local foe = {}
 
 	foe["AI"] = "default"
 	foe["NEWGAMEPLUS_AAA_ATTACK"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_SMITE"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_VENOMBITE"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -72,6 +73,7 @@ local foe = {}
 	foe["NEWGAMEPLUS_WAND_FROST"] = true
 	foe["NEWGAMEPLUS_WAND_TRAINING"] = true
 	foe["NORMAL_AAA_ATTACK"] = true
+	foe["NORMAL_ABL_FOE_SMITE"] = true
 	foe["NORMAL_ABL_FOE_VENOMBITE"] = true
 	foe["NORMAL_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["NORMAL_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -103,6 +105,7 @@ local foe = {}
 	foe["NORMAL_WAND_FROST"] = true
 	foe["NORMAL_WAND_TRAINING"] = true
 	foe["OVERSOUL_AAA_ATTACK"] = true
+	foe["OVERSOUL_ABL_FOE_SMITE"] = true
 	foe["OVERSOUL_ABL_FOE_VENOMBITE"] = true
 	foe["OVERSOUL_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["OVERSOUL_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -134,6 +137,7 @@ local foe = {}
 	foe["OVERSOUL_WAND_FROST"] = true
 	foe["OVERSOUL_WAND_TRAINING"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
+	foe["SKILL\49_ABL_FOE_SMITE"] = true
 	foe["SKILL\49_ABL_FOE_VENOMBITE"] = true
 	foe["SKILL\49_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\49_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -165,6 +169,7 @@ local foe = {}
 	foe["SKILL\49_WAND_FROST"] = true
 	foe["SKILL\49_WAND_TRAINING"] = true
 	foe["SKILL\50_AAA_ATTACK"] = true
+	foe["SKILL\50_ABL_FOE_SMITE"] = true
 	foe["SKILL\50_ABL_FOE_VENOMBITE"] = true
 	foe["SKILL\50_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\50_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -196,6 +201,7 @@ local foe = {}
 	foe["SKILL\50_WAND_FROST"] = true
 	foe["SKILL\50_WAND_TRAINING"] = true
 	foe["SKILL\51_AAA_ATTACK"] = true
+	foe["SKILL\51_ABL_FOE_SMITE"] = true
 	foe["SKILL\51_ABL_FOE_VENOMBITE"] = true
 	foe["SKILL\51_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\51_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
@@ -235,6 +241,7 @@ local foe = {}
 	foe["Item Steal \51"] = "ITM_ANTIDOTE"
 	foe["Name"] = "Zombie"
 	foe["RATE_AAA_ATTACK"] = 5
+	foe["RATE_ABL_FOE_SMITE"] = 0
 	foe["RATE_ABL_FOE_VENOMBITE"] = 0
 	foe["RATE_ABL_HERO_DANDOR_AXESMASH"] = 0
 	foe["RATE_ABL_HERO_DANDOR_SUPERAXESMASH"] = 0
@@ -266,6 +273,7 @@ local foe = {}
 	foe["RATE_WAND_FROST"] = 0
 	foe["RATE_WAND_TRAINING"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
+	foe["TARGET_ABL_FOE_SMITE"] = "Random"
 	foe["TARGET_ABL_FOE_VENOMBITE"] = "Random"
 	foe["TARGET_ABL_HERO_DANDOR_AXESMASH"] = "Random"
 	foe["TARGET_ABL_HERO_DANDOR_SUPERAXESMASH"] = "Random"
