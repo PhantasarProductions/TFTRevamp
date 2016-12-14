@@ -59,6 +59,9 @@ function CreateJakeFairy()
   RPGStat.SetName('Jake_Fairy','Jake')
   -- Synchronize results
   MS.LN_Run('PARTY','Script/Subs/Party.lua','SyncLevel','Jake_Fairy') 
+  local h = RPG.Points('Jake_Fairy','HP')
+  h.Have = h.Maximum
+  RPG.Points('Jake_Fairy','AP').Have=0
 end
 
 function Altar()
