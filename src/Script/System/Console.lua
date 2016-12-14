@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 16.12.03
+  Version: 16.12.14
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -222,4 +222,14 @@ function LEVELUP(a)
           MS.Run("PARTY","CheckEXP",ch)
        end      
    end          
+end
+
+function STATS(ch)
+  if RPG.CharExists(ch)==0 then
+     Console.Write("? Character does not exist",255,0,0)
+     return
+  end
+  for stat in each(mysplit(RPG.StatFields(ch),";")) do
+      CSay(right("                     "..stat,20)..": "..RPG.Stat(ch,stat))
+  end    
 end

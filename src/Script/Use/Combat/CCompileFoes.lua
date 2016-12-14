@@ -1,6 +1,6 @@
 --[[
   CCompileFoes.lua
-  Version: 16.12.12
+  Version: 16.12.14
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -63,8 +63,11 @@ function CompileFoe(tag,data,foefile,oversoul)
    RPG.SetName(tag,myname); CSay("Compiling "..tag.." << "..RPG.GetName(tag))
    for key,v in pairs(data) do
        local stat
-       if      oversoul and prefixed(key,"oversoul_") then stat=right(key,#key-9) CSay("Oversoul Stat: "..stat) RPG.SetStat(tag,"BASE_"..stat,v) RPG.SetStat(tag,"BUFF_"..stat) RPG.SetStat(tag,"END_"..stat) RPGChar.ScriptStat(tag,"END_"..stat,"Script/Char/Char.lua",upper(stat)) end
-       if (not oversoul) and prefixed(key,"normal_") then stat=right(key,#key-7) CSay("normal Stat:"..stat) RPG.SetStat(tag,"BASE_"..stat,v) RPG.SetStat(tag,"BUFF_"..stat) RPG.SetStat(tag,"END_"..stat) RPGChar.ScriptStat(tag,"END_"..stat,"Script/Char/Char.lua",upper(stat)) end
+       if not suffixed(key,'_EXP') then
+          if      oversoul and prefixed(key,"oversoul_") then stat=right(key,#key-9) CSay("Oversoul Stat: "..stat) RPG.SetStat(tag,"BASE_"..stat,v) RPG.SetStat(tag,"BUFF_"..stat) RPG.SetStat(tag,"END_"..stat) RPGChar.ScriptStat(tag,"END_"..stat,"Script/Char/Char.lua",upper(stat)) end
+          if (not oversoul) and prefixed(key,"normal_") then stat=right(key,#key-7) CSay("normal Stat:"..stat) RPG.SetStat(tag,"BASE_"..stat,v) RPG.SetStat(tag,"BUFF_"..stat) RPG.SetStat(tag,"END_"..stat) RPGChar.ScriptStat(tag,"END_"..stat,"Script/Char/Char.lua",upper(stat)) end
+          if prefixed(key,'ER_') or prefixed(key,'SR_') then stat=key CSay("ER/SR Stat:"..stat) RPG.SetStat(tag,"BASE_"..stat,v) RPG.SetStat(tag,"BUFF_"..stat) RPG.SetStat(tag,"END_"..stat) RPGChar.ScriptStat(tag,"END_"..stat,"Script/Char/Char.lua",upper(stat)) end
+       end   
    end
    RPG.Points(tag,'HP',1).MaxCopy="END_HP"
    RPG.Points(tag,'HP').Have = RPG.Points(tag,'HP').Maximum
