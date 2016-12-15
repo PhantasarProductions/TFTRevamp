@@ -121,6 +121,11 @@ function InParty(pch,pure)
    return ret 
 end
 
+function MarrilonaLow()
+   local H = RPG.Points("Marrilona",'HP')
+   local P = H.Have/H.Maximum
+   return P<1.5/skill
+end
 
 function RecoverySpot()
    SFX('Audio/Sfx/SpellAni/Heal.ogg')

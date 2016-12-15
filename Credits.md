@@ -284,7 +284,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Linkers/BoxTextLinker.lua
     1. Script: Script/Use/Linkers/CombatLinker.lua
     1. Script: Script/Use/Linkers/Field.Lua
-    1. Script: Script/Use/Linkers/Items.lua
+    1. Script: Script/Use/Linkers/Items -- Linker.lua
     1. Script: Script/Use/Linkers/MapLinker.lua
     1. Script: Script/Use/Linkers/MasterLinker.lua
     1. Script: Script/Use/Linkers/MiniMsg.Linker.lua

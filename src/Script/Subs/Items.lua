@@ -178,7 +178,7 @@ end
 function ShowSpellList(ch,psizes)
    -- Set up
    local sizes = ({['table']=psizes, ['string']=mysplit(psizes,",") })[type(psizes)]
-   local c
+   local c, allowcast
    for i=1,#sizes do sizes[i] = Sys.Val(sizes[i]) end
    if oldsslch~=ch then SSLP=1 SSLPG=1 oldsslch=ch end  
    SetFont('Stats')
@@ -198,7 +198,14 @@ function ShowSpellList(ch,psizes)
           -- show spell
           local abl = ItemGet(k)
           DarkText(abl.Title,10,y,0,2,c[1],c[2],c[3])
-          DarkText(abl.ABL_APCost,sizes[3]-10,y,1,2,0,180,255)
+          if ch=="Marrilona" and MarrilonaLow() then -- Marrilona's auto ability makes all her spell free when her HP is below a certain percentage based on the chosen skill.
+             DarkText("Free due to low HP",sizes[3]-10,y,1,2,180,0,255)
+             allowcast=true
+          else
+             DarkText(abl.ABL_APCost,sizes[3]-10,y,1,2,0,180,255)
+             allowcast=RPG.Points(ch,"AP").Have>Sys.Val(abl.ABL_APCost)
+          end   
+          if (INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_SPACE)==1 or joyhit(confirm)) and allowcast then Var.D('$SELECTEDABILITY',k) end  
        else
           DarkText('---',10,y,0,2,c[1],c[2],c[3])
           if i==SSLP then DarkText("Hold H to see unlock info",sizes[3]-25,y,1,2,255,180,0) end

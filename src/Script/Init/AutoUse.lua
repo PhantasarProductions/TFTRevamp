@@ -65,6 +65,7 @@ function GALE_OnLoad()
    MS.Run('BOXTEXT','LoadData','GENERAL/INN;INN')
    MS.Run('BOXTEXT','LoadData','GENERAL/BLUESEAL;BLUESEAL')
    MS.Run('BOXTEXT','LoadData','WORLDMAP;WMCHAT')
+   MS.Run("BOXTEXT","LoadData","COMBAT/LEARN;COMBATLEARN")
 end
 
 

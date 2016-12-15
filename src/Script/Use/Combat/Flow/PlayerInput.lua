@@ -1,6 +1,6 @@
 --[[
   PlayerInput.lua
-  Version: 16.10.23
+  Version: 16.12.15
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -193,6 +193,21 @@ function fflow.ItemMin()
     flow = 'Execution'
 end
 
+function fflow.APMin()
+      local ch = inputchar.tag
+      local myitem = nextact.act
+      local ig = ItemGet(myitem)
+      if ch=="Marrilona" and MarrilonaLow() then
+         if not Done('&TUTORIAL.AUTOMOVE.MARRILONA') then
+            Var.D('$TUT.MAR.PRC',({'15%','7.5%','5%'})[skill]) 
+            SerialBoxText('COMBATLEARN','AUTO_MARRILONA','FLOW_COMBAT') 
+         end
+      else
+         RPG.Points(ch,'AP').Dec(ig.ABL_APCost)
+      end    
+      flow = "Execution"
+end
+
 function fflow.selectitem()
    local bx = 100
    local by = 100
@@ -211,11 +226,16 @@ function fflow.selectability()
    local by = 100
    local bw = SW-200
    local bh = SH-300
+   local ch = inputchar.tag
    Box(bx,by,bw,bh)
    ShowSpellList(inputchar.tag,{bx,by,bw,bh})
    ShowMouse()
-   local myitem = SelectedItem()
-   if myitem then nextact.act=myitem fflow.PrepareAction(ItemGet(myitem),'Execution') end   
+   local myitem = SelectedAbility()
+   if myitem then 
+      nextact.act=myitem 
+      local ig = ItemGet(myitem)
+      fflow.PrepareAction(ig,'APMin')
+   end   
    if getpress.cancel() then flow = 'playerinput' end
 end
 

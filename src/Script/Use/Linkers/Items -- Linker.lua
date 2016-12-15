@@ -1,5 +1,5 @@
 --[[
-  Items.lua
+  Items -- Linker.lua
   Version: 16.12.15
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -96,6 +96,15 @@ function SelectedItem() -- Returns the last selected item and kills the selected
    CSay("Returning: "..sval(ret))
    return ret
 end   
+
+function SelectedAbility() -- Returns the last selected Ability and kills the selected Ability afterward. If no Ability is selected 'nil' will be returened
+   local ret = CVV("$SELECTEDABILITY")  
+   Var.Clear("$SELECTEDABILITY")
+   if ret=="" then return nil end
+   CSay("Returning: "..sval(ret))
+   return ret
+end   
+
 
 ItemGive = ItemGive or function(i,n)
    LoadItemModule()
