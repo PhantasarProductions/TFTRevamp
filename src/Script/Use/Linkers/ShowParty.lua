@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.10
+version: 16.12.15
 ]]
 
 ShowParty = ShowParty or function() 
@@ -127,3 +127,26 @@ function RecoverySpot()
    PartyRecover(false)     
 end
 NewParty = Party
+
+function Shift(pform)
+   local chi,current
+   local form = pform
+   for i,ch in iParty() do
+       if prefixed(ch,"Jake_") then chi=i current=right(ch,#ch-5) end
+   end
+   if current==pform then return end
+   if not form then if current=='Human' then form='Fairy' else form='Human' end end
+   if RPG.CharExists('Jake_'..form)==0 then return end
+   RPGChar.SetParty(chi,'Jake_'..form)
+   TurnPlayer('South')
+   MS.LN_Run('PARTY','Script/Subs/Party.lua','SyncLevel',"Jake_"..form)
+   local j_old = RPG.Points('Jake_'..current,'HP')
+   local j_new = RPG.Points('Jake_'..form   ,'HP')
+   local j_prc = j_old.Have / j_old.Maximum
+   j_new.Have = j_new.Maximum * j_prc
+   j_old = RPG.Points('Jake_'..current,'AP')
+   j_new = RPG.Points('Jake_'..form   ,'AP')
+   j_prc = j_old.Have / j_old.Maximum
+   j_new.Have = j_new.Maximum * j_prc
+   return true
+end

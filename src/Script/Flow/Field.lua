@@ -764,11 +764,15 @@ function FollowTheLeader()
    end
 end
 
+function ShiftCheck()
+    if joyhit('SELECT') or INP.KeyH(KEY_J)==1 then Shift() end
+end
+
 function MAIN_FLOW()  
   Cls()
   DrawScreen()
   MustRenc()
-  --ManWalk()
+  --ManWalk()    <-- Likely removed permanently
   ScheduledExecution()
   Click()
   KeyClickables()
@@ -777,10 +781,11 @@ function MAIN_FLOW()
   ZoneAction()
   WalkArrivalCheck()
   MenuCheck()
-  --Termination()
-  --EmergencySave()
-  --ControlFoes()
-  --FindTreasures()
+  --Termination()   <-- This comes later
+  --EmergencySave()   <-- Likely removed permanently 
+  --ControlFoes()     <-- Likely removed permanently
+  --FindTreasures()  <-- This is doubtful but likely removed permanently.
+  ShiftCheck()
   FollowTheLeader()
   FieldStats()
   ResetChar()
