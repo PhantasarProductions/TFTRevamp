@@ -65,6 +65,7 @@ function CreateJakeFairy()
 end
 
 function Altar()
+    if Done('&DONE.ALTAR.FAIRYJAKE') then return end 
     PartyPop('Altar','South')
     MapText('Altar1')
     -- New Game Plus part goes here --
@@ -89,6 +90,7 @@ function PostBoss()
    CreateSkill('Jake_Fairy',choice+1,1)
    MapText('POSTMANA')
    Var.D('$WMCHAT','FAIRYJAKE')
+   WorldMap_Unlock('CH1FRENDOR')
    -- Sys.Error('Sorry, the rest is not coded yet')
 end
 
