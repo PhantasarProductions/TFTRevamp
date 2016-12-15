@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.12.09
+  Version: 16.12.15
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -124,5 +124,5 @@ end
 
 Teach = Teach or function(ch,ability)
    LoadItemModule()
-   MS.Rur("ITEMS",'Teach',ch..";"..ability)
+   MS.Run("ITEMS",'Teach',ch..";"..ability)
 end
