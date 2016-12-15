@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 16.12.07
+  Version: 16.12.15
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -171,9 +171,10 @@ function ShowParty()
              local ani = lvani[ch]
              local tm  = ani.scx/100
              local siz = lvupimgw * tm
+             local isx = i * charentrywidth
              if siz*tm<charentrywidth and ani.scx<100 then ani.scx = ani.scx + 1 end
              white()
-             Image.ScalePC(ani.scx,100); Image.Show(lvupimg,bsx+(charentrywidth/2),sy-5); Image.ScalePC(100,100)
+             Image.ScalePC(ani.scx,100); Image.Show(lvupimg,isx+(charentrywidth/2),sy-5); Image.ScalePC(100,100)
              ani.time = ani.time - 1
              if ani.time<0 then lvani[ch] = nil end
           end       
