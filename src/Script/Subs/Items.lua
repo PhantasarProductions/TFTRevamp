@@ -43,6 +43,7 @@ heroabl = heroabl or {}
 skills = skills or {}
 abllist = {}
 ablpage = {}
+--ablpnme = {}
 
 heroabl.Jake = heroabl.Jake or {}
 heroabl.Jake_Human = heroabl.Jake
@@ -89,7 +90,7 @@ function GALE_OnLoad()
        if abllist[c] then
           skills[c] = skills[c] or {}
           abllist[c]['9. Skills'] = abllist[c]['9. Skills'] or skills[c] 
-          for k,d in pairs(abllist[c]) do
+          for k,d in spairs(abllist[c]) do
               if type(d)=="string" then abllist[c][k]=abllist[d][k] CSay("Linked abl list of character "..c.." with "..d) end
               ablpage[c] = ablpage[c] or {}
               ablpage[c][#ablpage[c]+1] = k 
@@ -184,7 +185,7 @@ function ShowSpellList(ch,psizes)
    -- Origin
    Image.Origin(sizes[1],sizes[2])
    -- Show
-   DarkText(sval(SSLPG),sizes[3]/2,sizes[4]-10,2,1,255,180,0)
+   DarkText(sval(ablpage[ch][SSLPG]),sizes[3]/2,sizes[4]-10,2,1,255,180,0)
    local ck,ca,sk,sa
    local has = SpellList(ch)
    local cnt
