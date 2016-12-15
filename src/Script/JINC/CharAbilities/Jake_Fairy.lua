@@ -35,8 +35,14 @@
 version: 16.10.03
 ]]
 local r = {
-               ["1. Fairy Magic"] = {},
-               ["2. Hybrid"] = "Jake_Human" -- This will cause Fairy Jake to "share" this list with human Jake, both in this list and in spell list.
+               ["1. Fairy Magic"] = {abl_hero_jake_shift_human={[2]=99,[3]=99,[4]=99,[5]=99},
+                                     abl_hero_marrilona_fire = {[2]=1},          -- 2
+                                     abl_hero_marrilona_speedup = {[3]=1},       -- 3
+                                     abl_hero_marrilona_heal = {[4]=1},          -- 4                                     
+                                     abl_hero_marrilona_protect = {[5]=1}                                     
+                                    },
+               ["2. Hybrid"] = "Jake_Human", -- This will cause Fairy Jake to "share" this list with human Jake, both in this list and in spell list.
+               ["9. Skills"] = "Jake_Human"
 }
 
 return r

@@ -82,9 +82,11 @@ pos = {}
 function GALE_OnLoad()
    LoadItemModule = nil
    chars = GetCharList()
-   for c in each(chars) do
+   local ichars = {'Jake_Human','Jake_Fairy','Marrilona','Dandor','HandoStillor'} -- Characters must ALWAYS be loaded in THIS order!
+   for c in each(ichars) do
        abllist[c] = JINC('Script/JINC/CharAbilities/'..c..".lua")
        if abllist[c] then
+          abllist[c]['9. Skills'] = abllist[c]['9. Skills'] or skills[c] 
           for k,d in pairs(abllist[c]) do
               if type(d)=="string" then abllist[c][k]=abllist[d][k] CSay("Linked abl list of character "..c.." with "..d) end
               ablpage[c] = ablpage[c] or {}

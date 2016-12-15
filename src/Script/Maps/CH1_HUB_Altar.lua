@@ -82,6 +82,8 @@ function Altar()
 end
 
 function PostBoss()  
+   Teach('Jake_Human','ABL_HERO_JAKE_SHIFT_FAIRY')
+   Teach('Jake_Fairy','ABL_HERO_JAKE_SHIFT_HUMAN')
    Sys.Error('Sorry, the rest is not coded yet')
 end
 
