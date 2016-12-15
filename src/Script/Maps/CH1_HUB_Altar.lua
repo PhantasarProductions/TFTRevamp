@@ -88,6 +88,7 @@ function PostBoss()
    local choice = RunQuestion('MAP','ELEMENTS')
    CreateSkill('Jake_Fairy',choice+1,1)
    MapText('POSTMANA')
+   Var.D('$WMCHAT','FAIRYJAKE')
    -- Sys.Error('Sorry, the rest is not coded yet')
 end
 
