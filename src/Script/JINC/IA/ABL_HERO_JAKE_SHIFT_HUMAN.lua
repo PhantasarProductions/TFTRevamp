@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  EQP_HANDOSTILLOR_AR4.lua
+  ABL_HERO_JAKE_SHIFT_HUMAN.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -35,22 +35,26 @@
 version: 16.12.15
 ]]
 ret = {
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "For some reason only a priest may wear this.",
-	["EQP_STAT_Endurance"] = 4,
-	["EQP_STAT_Resistance"] = 4,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "HandoStillor",
+	["Desc"] = "Become a Human",
+	["EffectScript"] = "Shift",
+	["EffectString_Arg"] = "Human",
+	["Heal_StatPercent"] = "Intelligence",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 896,
-	["ITM_Type"] = "Armor",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Priest's shirt",
-	["Type"] = "Item"}
+	["ITM_Type"] = "Consumable",
+	["Stance"] = "Cast",
+	["Target"] = "OS",
+	["Title"] = "Shift",
+	["Type"] = "Ability"}
 
 return ret
 

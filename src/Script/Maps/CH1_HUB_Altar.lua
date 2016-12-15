@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.14
+version: 16.12.15
 ]]
 
 -- Link all stats in Jake that should be linked
@@ -84,7 +84,11 @@ end
 function PostBoss()  
    Teach('Jake_Human','ABL_HERO_JAKE_SHIFT_FAIRY')
    Teach('Jake_Fairy','ABL_HERO_JAKE_SHIFT_HUMAN')
-   Sys.Error('Sorry, the rest is not coded yet')
+   MapText('POSTBOSS')
+   local choice = RunQuestion('MAP','ELEMENTS')
+   CreateSkill('Jake_Fairy',choice+1,1)
+   MapText('POSTMANA')
+   -- Sys.Error('Sorry, the rest is not coded yet')
 end
 
 function GALE_OnLoad()

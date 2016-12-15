@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.12.10
+  Version: 16.12.15
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -40,6 +40,7 @@
 
 inventory = inventory or { ITM_APPLE = ({20,10,1})[tonumber(Var.C("%SKILL"))]}
 heroabl = heroabl or {}
+skills = skills or {}
 abllist = {}
 ablpage = {}
 
@@ -86,6 +87,7 @@ function GALE_OnLoad()
    for c in each(ichars) do
        abllist[c] = JINC('Script/JINC/CharAbilities/'..c..".lua")
        if abllist[c] then
+          skills[c] = skills[c] or {}
           abllist[c]['9. Skills'] = abllist[c]['9. Skills'] or skills[c] 
           for k,d in pairs(abllist[c]) do
               if type(d)=="string" then abllist[c][k]=abllist[d][k] CSay("Linked abl list of character "..c.." with "..d) end
