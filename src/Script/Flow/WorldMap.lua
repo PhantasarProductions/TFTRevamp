@@ -90,7 +90,7 @@ end
 function WorldMapChat(pch)
    local ch = pch
    if prefixed(ch,"Jake_") then ch="Jake" end
-   SerialBoxText("WMCHAT",CVV('$WMTALK').."."..ch,"FLOW_WORLDMAP")
+   SerialBoxText("WMCHAT",CVV('$WMCHAT').."."..ch,"FLOW_WORLDMAP")
 end
 
 
@@ -162,5 +162,5 @@ function GALE_OnLoad()
    colx = (SW/cols)
    fonts.WorldItem[2] = fsiz
    dotscale = math.ceil((fsiz/20)*100)
-   if not CVVN('$WMTALK') then Var.D('$WMTALK','JUSTMET') end
+   if not CVVN('$WMCHAT') then Var.D('$WMCHAT','JUSTMET') end
 end   
