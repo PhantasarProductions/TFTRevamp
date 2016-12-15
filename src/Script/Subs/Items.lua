@@ -184,6 +184,7 @@ function ShowSpellList(ch,psizes)
    -- Origin
    Image.Origin(sizes[1],sizes[2])
    -- Show
+   DarkText(sval(SSLPG),sizes[3]/2,sizes[4]-10,2,1,255,180,0)
    local ck,ca,sk,sa
    local has = SpellList(ch)
    local cnt
