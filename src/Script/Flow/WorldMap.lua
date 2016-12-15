@@ -48,6 +48,9 @@ fsiz  = 0
 cols  = 2
 colx  = 0   
 doti  = Image.Load("GFX/World/Dot.png")
+
+oldmx = INP.MouseX()
+oldmy = INP.MouseY()
      
            
 function LoadWorld(worldfolder)
@@ -95,6 +98,9 @@ end
 
 
 function MAIN_FLOW()
+     local mx,my = MouseCoords()
+     local moved = mx~=oldmx or my~=oldmy
+     if moved then oldmx=mx oldmy=my end
      WorldBackFlow()
      -- Header
      SetFont('WorldHeader')
@@ -108,7 +114,8 @@ function MAIN_FLOW()
      for k,data in spairs(world) do
          local x,y = (col*colx)+5,100+(fsiz*rij)
          local sel = prij==rij and pcol==col
-         local c = scol[sel]         
+         local c = scol[sel]       
+         if moved and mx>x and mx<(((col+1)*colx)+5) and my>y and my<y+(fsiz) then pcol=col prij=rij end  
          QScale(dotscale)
          Image.Color(data.Dot[1],data.Dot[2],data.Dot[3])
          Image.Show(doti,x,y)
@@ -130,7 +137,7 @@ function MAIN_FLOW()
      if (INP.KeyH(KEY_UP   )==1 or joyhit(joyup))    and prij>           0 then  prij = prij - 1 end
      if (INP.KeyH(KEY_RIGHT)==1 or joyhit(joyright)) and    maxrij[pcol+1] then  pcol = pcol + 1 end
      if (INP.KeyH(KEY_LEFT )==1 or joyhit(joyleft))  and pcol>           0 then  pcol = pcol - 1 end
-     if (INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_SPACE)==1 or joyhit('CONFIRM')) and cspot then
+     if (INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_SPACE)==1 or joyhit('CONFIRM') or mousehit(1)) and cspot then
         LoadMap(cspot.Kthura)
         GoToLayer(cspot.Layer,cspot.Start)
         LAURA.Flow('FIELD')
