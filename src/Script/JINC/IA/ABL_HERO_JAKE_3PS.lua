@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.15
+version: 16.12.16
 ]]
 ret = {
 	["ABL_APCost"] = 35,
@@ -58,6 +58,7 @@ ret = {
 	["Target"] = "1F",
 	["Title"] = "Triple Power Strike",
 	["Type"] = "Ability",
+	["Voice"] = "3PS",
 	["rew_GainSkill1"] = 50}
 
 return ret

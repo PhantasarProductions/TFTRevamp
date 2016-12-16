@@ -1,6 +1,6 @@
 --[[
   AAA_ATTACK.lua
-  Version: 16.12.15
+  Version: 16.12.16
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -60,6 +60,7 @@ ret = {
 	["Target"] = "1F",
 	["Title"] = "Attack",
 	["Type"] = "Ability",
+	["Voice"] = "Attack",
 	["rew_CreateSkill1"] = true,
 	["rew_GainSkill1"] = 6}
 

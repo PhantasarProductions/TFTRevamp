@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  EQP_HANDOSTILLOR_AR6.lua
+  CH1_Dungeon_SubRiver.lua
   (c) Jeroen Broks, 2016, All Rights Reserved.
   
   This file contains material that is related 
@@ -34,25 +34,15 @@
  
 version: 16.12.16
 ]]
-ret = {
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
-	["Attack_Element"] = "None",
-	["Desc"] = "Is it really that strong, or is this overrated?",
-	["EQP_STAT_Endurance"] = 6,
-	["EQP_STAT_Resistance"] = 6,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "HandoStillor",
-	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 3584,
-	["ITM_Type"] = "Armor",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Mythril Shirt",
-	["Type"] = "Item"}
+function Bye()
+   LoadMap('CH1_DUngeon_HolyPath')
+   GoToLayer('Bos','FromSecret')
+end   
 
-return ret
+function Welcome()
+   if not(Done('&DONE.WELCOME.CH1.SUBRIVER')) then MapText('Welcome') end
+end
 
--- This file is an automatically generated file!
-
+function GALE_OnLoad()
+   ZA_Enter('Welcome',Welcome)
+end      

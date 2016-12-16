@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.10
+version: 16.12.16
 ]]
 
 
@@ -41,9 +41,15 @@ function Bye(Unlock)
    WorldMap()
 end   
 
+function SecretDungeon()
+  LoadMap('CH1_DUNGEON_SUBRIVER')
+  GoToLayer('#001','Start')
+end
+
 
 function GALE_OnLoad()
    ZA_Enter('ByeNorth',Bye,false)
    ZA_Enter('ByeSouth',Bye,true)
+   ZA_Enter('ToSecretDungeon',SecretDungeon)
    MapHide('Secret')
 end   

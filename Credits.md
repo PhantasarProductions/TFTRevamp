@@ -129,6 +129,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Bat.lua
     1. Script: Script/JINC/Foes/reg/Gob.lua
     1. Script: Script/JINC/Foes/reg/GobPriest.lua
+    1. Script: Script/JINC/Foes/reg/GobRogue.lua
     1. Script: Script/JINC/Foes/reg/RSpook.lua
     1. Script: Script/JINC/Foes/reg/Slime.lua
     1. Script: Script/JINC/Foes/reg/Snake.lua
@@ -136,6 +137,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
     1. Script: Script/JINC/IA/ABL_FOE_SMITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMBITE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_VENOMSTAB.lua
+    1. Script: Script/JINC/IA/ABL_FOE_VIRUSSTAB.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_AXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_SUPERAXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CUREDISEASE.lua
@@ -217,6 +220,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/AutoUse.lua
     1. Script: Script/Maps/CH1_Dungeon_FrendorBushes.lua
     1. Script: Script/Maps/CH1_Dungeon_HolyPath.lua
+    1. Script: Script/Maps/CH1_Dungeon_SubRiver.lua
     1. Script: Script/Maps/CH1_HUB_Altar.lua
     1. Script: Script/Maps/CH1_Hub_JakeHut.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
@@ -313,10 +317,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/valstr.lua
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Chapters/1.png
@@ -669,6 +673,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH1_Dungeon_HolyPath/KME.TextureSettings
     1. Map Design: Kthura/CH1_Dungeon_HolyPath/Objects
     1. Map Design: Kthura/CH1_Dungeon_HolyPath/Settings
+    1. Map Design: Kthura/CH1_Dungeon_SubRiver/Data
+    1. Map Design: Kthura/CH1_Dungeon_SubRiver/KME.TextureSettings
+    1. Map Design: Kthura/CH1_Dungeon_SubRiver/Objects
+    1. Map Design: Kthura/CH1_Dungeon_SubRiver/Settings
     1. Map Design: Kthura/CH1_HUB_ALTAR/Data
     1. Map Design: Kthura/CH1_HUB_ALTAR/KME.TextureSettings
     1. Map Design: Kthura/CH1_HUB_ALTAR/Objects
@@ -727,6 +735,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/ANNA
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_FRENDORBUSHES
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_HOLYPATH
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_SUBRIVER
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_JAKEHUT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
@@ -749,6 +758,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/ANNA
     1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_FRENDORBUSHES
     1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_HOLYPATH
+    1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_SUBRIVER
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_JAKEHUT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
@@ -879,6 +889,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/Dead.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/Perfect.ogg
+    1. Audio: Vocals/Combat/Hero/Jake/Action/2PS.ogg
+    1. Audio: Vocals/Combat/Hero/Jake/Action/3PS.ogg
+    1. Audio: Vocals/Combat/Hero/Jake/Action/4PS.ogg
+    1. Audio: Vocals/Combat/Hero/Jake/Action/Attack.ogg
+    1. Audio: Vocals/Combat/Hero/Jake/Action/Heal.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Victory/Boss.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Victory/Dead.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Victory/General.ogg
