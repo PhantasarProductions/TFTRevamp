@@ -45,4 +45,5 @@ end
 
 function GALE_OnLoad()
    ZA_Enter('Welcome',Welcome)
+   ZA_Enter('Bye',Bye)
 end      
