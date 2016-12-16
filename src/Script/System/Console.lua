@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 16.12.14
+  Version: 16.12.16
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -231,5 +231,16 @@ function STATS(ch)
   end
   for stat in each(mysplit(RPG.StatFields(ch),";")) do
       CSay(right("                     "..stat,20)..": "..RPG.Stat(ch,stat))
+  end    
+end
+
+function POINTS(ch)
+  if RPG.CharExists(ch)==0 then
+     Console.Write("? Character does not exist",255,0,0)
+     return
+  end
+  for stat in each(mysplit(RPG.PointsFields(ch),";")) do
+      local p = RPG.Points(ch,stat)
+      CSay(right("                     "..stat,20)..": "..p.Have.."/"..p.Maximum.." (min="..p.Minimum..")")
   end    
 end

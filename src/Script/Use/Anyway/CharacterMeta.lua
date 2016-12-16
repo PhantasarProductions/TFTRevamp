@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.05
+version: 16.12.16
 ]]
 CharacterMeta = {
 
@@ -142,6 +142,7 @@ function SetChSkill(ch,num,level)
 end   
 
 function IncSkill(ch,num,points)
+   CSay(ch.." gets "..points.." points in skill #"..num)
    RPG.Points(ch,"SK_EXP_"..num).Inc(points)
    if RPG.Points(ch,"SK_EXP_"..num).Have>= RPG.Points(ch,"SK_EXP_"..num).Maximum and RPG.Points(ch,"SK_EXP_"..num).Maximum>0 then
       SetChSkill(ch,num,RPG.Points(ch,"SK_LVL_"..num).Have+1)

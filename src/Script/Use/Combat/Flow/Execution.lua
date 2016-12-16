@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 16.11.17
+  Version: 16.12.16
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -165,10 +165,10 @@ function fflow.Execution()
                  charmsg(nextact.executor.tag,"Discovered new skill group",180,255,0) 
                  charmsg(nextact.executor.tag,CharacterMeta[nextact.executor.tag]['skill'..i],180,255,0) 
               end
-              if act['rew_GainSkill1'] and act['rew_GainSkill1']>0 then
-                 IncSkill(nextact.executor.tag,i, act['rew_GainSkill1'] )   
-              end
            end      
+           if act['rew_GainSkill'..i] and act['rew_GainSkill'..i]>0 and (RPG.PointsExists(nextact.executor.tag,'SK_EXP_'..i)==1) then
+              IncSkill(nextact.executor.tag,i, act['rew_GainSkill'..i] )   
+           end
       end
       -- AP recovery
       if act.Rew_GainAP then
