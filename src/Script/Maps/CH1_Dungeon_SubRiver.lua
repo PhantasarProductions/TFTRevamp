@@ -62,7 +62,7 @@ function InitRiverFlow()
               RiverHeight = RiverHeight or obj.TexHeight()
               RiverWidth  = RiverWidth  or obj.TexWidth ()
            end
-           if obj.Tag=="Brug" and (not CVV('&DONE.SUBRIVER.BRUG['..lay.."']")) then 
+           if obj.Tag=="Brug" and (not CVV('&DONE.SUBRIVER.BRUG['..lay..']')) then 
               obj.SetAlpha(0)
               obj.ForcePassible=0
               CSay("  = Hid unaccessed bridge: #"..obj.IDNum)
@@ -79,8 +79,69 @@ function MAP_FLOW()
    end
 end
 
+
+BrugHandleTex = { [true]='GFX/Textures/Switch/Left.png', [false]='GFX/Textures/Switch/Right.png' }
+
+function NPC_Brug()
+   if not Done('&DONE.SUBRIVER.BRUG['..Maps.LayerCodeName..']') then
+      local brug = Maps.Obj.Obj('Brug')
+      local handle 
+      local cam = Maps.Obj.Obj('BrugCam')
+      if Maps.LayerCodeName=="#005" then
+         for h = 1,6 do
+            handle = Maps.Obj.Obj('NPC_SW'..h)
+            handle.TextureFile = BrugHandleTex[upper(BrugHandleTex[true])==handle.TextureFile]
+          end  
+      else
+         handle = Maps.Obj.Obj('NPC_Brug')
+         handle.TextureFile = BrugHandleTex[upper(BrugHandleTex[true])==handle.TextureFile]
+      end
+      Maps.CamX = cam.X - Center_X
+      Maps.CamY = cam.Y - Center_Y
+      for i=0,1000,2 do
+          brug.SetAlpha(i)
+          Cls()
+          DrawScreen()
+          MAP_FLOW()
+          ShowParty()
+          Flip()
+      end
+      brug.ForcePassible =1
+      Maps.Remap()    
+   end 
+end
+
+function BackToStart()
+    GoToLayer('#001','Start')
+end
+
+
+
+function StartPuzzle()
+   if not CVV('&DONE.SUBRIVER.BRUG['..Maps.LayerCodeName..']') then
+      NPC_SW1 = BackToStart
+      NPC_SW2 = BackToStart
+      NPC_SW3 = BackToStart
+      NPC_SW4 = BackToStart
+      NPC_SW5 = BackToStart
+      NPC_SW6 = BackToStart
+      local r = rand(1,6)
+      for i=1,6 do
+          local obj = Maps.Obj.Obj('NPC_SW'..i)
+          obj.TextureFile = BrugHandleTex[i~=r]
+      end
+      if r==1 then NPC_SW1 = NPC_Brug end    
+      if r==2 then NPC_SW2 = NPC_Brug end    
+      if r==3 then NPC_SW3 = NPC_Brug end    
+      if r==4 then NPC_SW4 = NPC_Brug end    
+      if r==5 then NPC_SW5 = NPC_Brug end    
+      if r==6 then NPC_SW6 = NPC_Brug end    
+   end
+end
+
 function GALE_OnLoad()
    InitRiverFlow()
    ZA_Enter('Welcome',Welcome)
    ZA_Enter('Bye',Bye)
+   ZA_Enter('StartPuzzle',StartPuzzle)
 end      
