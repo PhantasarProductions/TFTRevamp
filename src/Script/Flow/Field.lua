@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.12.15
+  Version: 16.12.17
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -155,8 +155,8 @@ function LoadMap(map)
     rencon = true    
 end
 
-function GotoLayerAutoHide(layer)
-    AUTOHIDE[#AUTOHIDE+1]=layer
+function GotoLayerAutoHide(label)
+    AUTOHIDE[#AUTOHIDE+1]=label
 end
 
 function AutoHideAction()

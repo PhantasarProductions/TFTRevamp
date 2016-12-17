@@ -80,6 +80,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Audio/Dungeon/FallingDown.ogg
     1. Graphics: gfx/Worldmap/back.png
     1. Graphics: gfx/Worldmap/rock001.jpg
+    1. Graphics: gfx/textures/Water/water.png
     1. Graphics: gfx/textures/wood/muur.png
     1. Graphics: gfx/textures/wood/vloer.png
 - Jeroen P. Broks
@@ -317,10 +318,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Chapters/1.png
@@ -797,6 +799,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Caves/Grey + Alpha/S.png
     1. Graphics: GFX/Textures/Caves/Grey + Alpha/SE.png
     1. Graphics: GFX/Textures/Caves/Grey + Alpha/SW.png
+    1. Graphics: GFX/Textures/Caves/Grey + Alpha/Shore.png
     1. Graphics: GFX/Textures/Caves/Grey + Alpha/W.png
     1. Graphics: GFX/Textures/Caves/Grey/E.png
     1. Graphics: GFX/Textures/Caves/Grey/F.png

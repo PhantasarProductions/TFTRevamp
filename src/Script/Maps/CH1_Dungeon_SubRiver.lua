@@ -32,8 +32,13 @@
   
  **********************************************
  
-version: 16.12.16
+version: 16.12.17
 ]]
+
+RiverWidth = nil
+RiverHeight = nil
+RiverTiles = {}
+
 function Bye()
    LoadMap('CH1_DUngeon_HolyPath')
    GoToLayer('Bos','FromSecret')
@@ -43,7 +48,39 @@ function Welcome()
    if not(Done('&DONE.WELCOME.CH1.SUBRIVER')) then MapText('Welcome') end
 end
 
+function InitRiverFlow()
+   local layers = mysplit(Maps.Layers(),";")
+   cleartable(RiverTiles)
+   for lay in each(layers) do
+       CSay('- Scanning layer '..lay) 
+       Maps.GotoLayer(lay)
+       for obj in KthuraEach('TiledArea') do
+           if suffixed(obj.TextureFile,"WATER.PNG") then 
+              RiverTiles[#RiverTiles+1] = obj
+              obj.SetAlpha(456) -- Make sure all alpha values are equal. This was quite hard to guarantee inside the editor.
+              CSay("  = Added object #"..obj.IDNum) 
+              RiverHeight = RiverHeight or obj.TexHeight()
+              RiverWidth  = RiverWidth  or obj.TexWidth ()
+           end
+           if obj.Tag=="Brug" and (not CVV('&DONE.SUBRIVER.BRUG['..lay.."']")) then 
+              obj.SetAlpha(0)
+              obj.ForcePassible=0
+              CSay("  = Hid unaccessed bridge: #"..obj.IDNum)
+           end   
+       end
+   end
+   Maps.Remap()     
+end
+
+function MAP_FLOW()
+   for obj in each (RiverTiles) do
+       obj.InsertX = obj.InsertX - 2
+       if obj.InsertX<-RiverWidth then obj.InsertX = obj.InsertX+RiverWidth end
+   end
+end
+
 function GALE_OnLoad()
+   InitRiverFlow()
    ZA_Enter('Welcome',Welcome)
    ZA_Enter('Bye',Bye)
 end      
