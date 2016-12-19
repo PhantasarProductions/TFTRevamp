@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 16.12.16
+version: 16.12.19
 ]]
--- File Generated: Fri 16 December 2016; 12:42:10
+-- File Generated: Mon 19 December 2016; 19:39:31
 
 
 local foe = {}
@@ -43,6 +43,8 @@ local foe = {}
 	foe["NEWGAMEPLUS_AAA_ATTACK"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_SMITE"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_VENOMBITE"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_VENOMSTAB"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_VIRUSSTAB"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = true
@@ -77,6 +79,8 @@ local foe = {}
 	foe["NORMAL_AAA_ATTACK"] = true
 	foe["NORMAL_ABL_FOE_SMITE"] = true
 	foe["NORMAL_ABL_FOE_VENOMBITE"] = true
+	foe["NORMAL_ABL_FOE_VENOMSTAB"] = true
+	foe["NORMAL_ABL_FOE_VIRUSSTAB"] = true
 	foe["NORMAL_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["NORMAL_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
 	foe["NORMAL_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = true
@@ -111,6 +115,8 @@ local foe = {}
 	foe["OVERSOUL_AAA_ATTACK"] = true
 	foe["OVERSOUL_ABL_FOE_SMITE"] = true
 	foe["OVERSOUL_ABL_FOE_VENOMBITE"] = true
+	foe["OVERSOUL_ABL_FOE_VENOMSTAB"] = true
+	foe["OVERSOUL_ABL_FOE_VIRUSSTAB"] = true
 	foe["OVERSOUL_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["OVERSOUL_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
 	foe["OVERSOUL_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = true
@@ -145,6 +151,8 @@ local foe = {}
 	foe["SKILL\49_AAA_ATTACK"] = true
 	foe["SKILL\49_ABL_FOE_SMITE"] = true
 	foe["SKILL\49_ABL_FOE_VENOMBITE"] = true
+	foe["SKILL\49_ABL_FOE_VENOMSTAB"] = true
+	foe["SKILL\49_ABL_FOE_VIRUSSTAB"] = true
 	foe["SKILL\49_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\49_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
 	foe["SKILL\49_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = true
@@ -179,6 +187,8 @@ local foe = {}
 	foe["SKILL\50_AAA_ATTACK"] = true
 	foe["SKILL\50_ABL_FOE_SMITE"] = true
 	foe["SKILL\50_ABL_FOE_VENOMBITE"] = true
+	foe["SKILL\50_ABL_FOE_VENOMSTAB"] = true
+	foe["SKILL\50_ABL_FOE_VIRUSSTAB"] = true
 	foe["SKILL\50_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\50_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
 	foe["SKILL\50_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = true
@@ -213,6 +223,8 @@ local foe = {}
 	foe["SKILL\51_AAA_ATTACK"] = true
 	foe["SKILL\51_ABL_FOE_SMITE"] = true
 	foe["SKILL\51_ABL_FOE_VENOMBITE"] = true
+	foe["SKILL\51_ABL_FOE_VENOMSTAB"] = true
+	foe["SKILL\51_ABL_FOE_VIRUSSTAB"] = true
 	foe["SKILL\51_ABL_HERO_DANDOR_AXESMASH"] = true
 	foe["SKILL\51_ABL_HERO_DANDOR_SUPERAXESMASH"] = true
 	foe["SKILL\51_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = true
@@ -255,6 +267,8 @@ local foe = {}
 	foe["RATE_AAA_ATTACK"] = 100
 	foe["RATE_ABL_FOE_SMITE"] = 0
 	foe["RATE_ABL_FOE_VENOMBITE"] = 0
+	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
+	foe["RATE_ABL_FOE_VIRUSSTAB"] = 0
 	foe["RATE_ABL_HERO_DANDOR_AXESMASH"] = 0
 	foe["RATE_ABL_HERO_DANDOR_SUPERAXESMASH"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = 0
@@ -289,6 +303,8 @@ local foe = {}
 	foe["TARGET_AAA_ATTACK"] = "Random"
 	foe["TARGET_ABL_FOE_SMITE"] = "Random"
 	foe["TARGET_ABL_FOE_VENOMBITE"] = "Random"
+	foe["TARGET_ABL_FOE_VENOMSTAB"] = "Random"
+	foe["TARGET_ABL_FOE_VIRUSSTAB"] = "Random"
 	foe["TARGET_ABL_HERO_DANDOR_AXESMASH"] = "Random"
 	foe["TARGET_ABL_HERO_DANDOR_SUPERAXESMASH"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = "Random"

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.09
+version: 16.12.19
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
@@ -41,7 +41,6 @@ function Hurt(tag,damage,element)
       local dmg = damage 
       dmg = round(dmg + round(dmg*mod))
       fighterbytag[tag].StatusChanges = fighterbytag[tag].StatusChanges or {}
-
       -- alt damage routine
       -- default damage routine
       if eleprot<-200 then -- Fatal
@@ -61,8 +60,7 @@ function Hurt(tag,damage,element)
       else  -- Absorb
          for k,d in pairs(fighterbytag[tag].StatusChanges ) do
              if d.BlockHeal then dmg=0 end 
-         end        
-         charmsg(math.abs(dmg),0,255,0)
+         end                 
       end
       if fighterbytag[tag].group=='Hero' and CVV('&CHEAT.GOD') then dmg=0 end -- God Mode      
       hp.Have = hp.Have - dmg -- Yeah that even works for absorb, as a negative value is then in dmg and two negatives make one positive.
@@ -82,7 +80,7 @@ function Attack(act,g,i,na)
     local def = 0 
     if act.Attack_DefenseStat~="None" then def = RPG.Stat(ttag,"END_"..act.Attack_DefenseStat) end
     -- Defense modifier based on difficulty settings
-    local defmod = { Foe = {.25,.50,.75},Hero={.75,.50,.25}}
+    local defmod = { Foe = {.25,.50,.75},Hero={.50,.30,.15}}
     def = def * defmod[g][skill]
     -- Damage itself
     local rate = atk-def

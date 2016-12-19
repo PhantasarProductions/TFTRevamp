@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 16.12.16
+  Version: 16.12.19
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -84,6 +84,13 @@ function PerformAction(act,group,i)
         end   
      end
      -- Cause status changes (this always comes last)
+     for k,b in pairs(act) do
+         if prefixed(k,"Cause") then 
+            local s = right(k,#k-5)
+            local roll=rand(1,100)
+            if roll>RPG.Stat(myfighter.tag,"END_SR_"..s) then SetStatus(myfighter.tag,s) end
+         end   
+     end    
      -- Throw "miss" if there is no effect (very last)
      if not effect then charmsg(myfighter.tag,'miss',155,155,155) end
 end

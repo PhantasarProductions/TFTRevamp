@@ -1,5 +1,5 @@
 --[[
-  ABL_FOE_VENOMSTAB.lua
+  PlayWithPoints.lua
   Version: 16.12.19
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,30 +34,21 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-ret = {
-	["Attack"] = 100,
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["CausePoison"] = true,
-	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
-	["ITM_ACC_Dandor"] = true,
-	["ITM_ACC_HandoStillor"] = true,
-	["ITM_ACC_Jake"] = true,
-	["ITM_ACC_Marrilona"] = true,
-	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
-	["ITM_Field"] = true,
-	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Consumable",
-	["Stance"] = "Attack",
-	["Target"] = "1F",
-	["Title"] = "Venom Stab",
-	["Type"] = "Item"}
+-- @IF IGNORE
+SpellScript = {}
+-- @FI
 
-return ret
+function SpellScript.PointAlter(extag,tartag,param)
+    local sp = mysplit(param," ")
+    local p = RPG.Points(tartag,sp[1])
+    p.Have = (({ RAND = function (p) return rand(1,p.Maximum) end})[upper(sp[2])] or function(p,tp) return Sys.Val(tp) end)(p,sp[2])
+    
+end
 
--- This file is an automatically generated file!
+function SpellScript.MultiPointAlter(extag,tartag,paramsquence)
+   for seq in each(mysplit(paramsequence,";")) do SpellScript.PointAlter(extag,tartag,seq) end
+end   
 
+-- @IF INGORE
+return SpellScript 
+-- @FI

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.17
+version: 16.12.19
 ]]
 
 RiverWidth = nil
@@ -139,9 +139,23 @@ function StartPuzzle()
    end
 end
 
+function Boss_Start()
+  ClearCombatData()
+  Var.D("$COMBAT.FOE_1","Boss/KillerEscargot")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
+  Var.D("$COMBAT.ARENA","SubRiver.png")
+  Schedule('MAP','NPC_Brug')
+  StartBoss("Enormous Snail","Killer Escargot")
+  Maps.Obj.Kill('Boss_Actor',1)
+  Maps.Obj.Kill('Boss_Start',1)  
+end
+
 function GALE_OnLoad()
    InitRiverFlow()
    ZA_Enter('Welcome',Welcome)
    ZA_Enter('Bye',Bye)
    ZA_Enter('StartPuzzle',StartPuzzle)
+   ZA_Enter('Boss_Start',Boss_Start)
+   MapHide('Secret')
 end      

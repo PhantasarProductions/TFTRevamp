@@ -1,5 +1,5 @@
 --[[
-  ABL_FOE_VENOMSTAB.lua
+  ABL_FOE_CRUSH.lua
   Version: 16.12.19
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -35,12 +35,12 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
-	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["CausePoison"] = true,
+	["EffectScript"] = "PointAlter",
+	["EffectScript_Arg"] = "HP 1",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -52,9 +52,9 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
-	["Stance"] = "Attack",
+	["Stance"] = "Cast",
 	["Target"] = "1F",
-	["Title"] = "Venom Stab",
+	["Title"] = "Crush",
 	["Type"] = "Item"}
 
 return ret

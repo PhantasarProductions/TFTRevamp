@@ -1,6 +1,6 @@
 --[[
   AAAAAA_Alg.lua
-  Version: 16.10.25
+  Version: 16.12.19
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -37,3 +37,5 @@
 SpellScript = {}
 
 SpellScript[""] = Nothing
+
+-- functions must havce  the next parems (executor tag, target tag, additional code from ability)

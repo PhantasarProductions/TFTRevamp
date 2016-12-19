@@ -1,6 +1,6 @@
 --[[
   Idle.lua
-  Version: 16.10.01
+  Version: 16.12.19
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -74,8 +74,20 @@ function fflow.idle()
        RemoveFirstCard()
        return
     end
-    if card.data.group == 'Foe' then if  (not TurnSkip(card.data.tag,true)) then flow = 'foeinput' else RemoveFirstCard() end 
-    elseif card.data.group == 'Hero' then if (not TurnSkip(card.data.tag,true)) then fflow.setplayerinput(card.data.tag) else RemoveFirstCard() end end
+    if card.data.tag and (not card.data.extra) and fighterbytag[card.data.tag] then
+       assert(fighterbytag[card.data.tag],"There is no fighter tagged: "..card.data.tag) 
+       fighterbytag[card.data.tag].statuschanges = fighterbytag[card.data.tag].statuschanges or {}
+       for s,d in pairs(fighterbytag[card.data.tag].statuschanges) do
+           (d.preturn or Nothing)(card.data.tag)
+       end
+       if card.data.group == 'Foe' then if  (not TurnSkip(card.data.tag,true)) then flow = 'foeinput' else RemoveFirstCard() end 
+       elseif card.data.group == 'Hero' then if (not TurnSkip(card.data.tag,true)) then fflow.setplayerinput(card.data.tag) else RemoveFirstCard() end end
+    elseif card.data.extra then
+       Sys.Error('Stuff for extra cards not yet set up.')
+    else 
+       Cards[1].data=nil
+       CSay('Destroyed card that appears useless now ('..sval(Cards[1].tag))
+    end      
 end
 
 

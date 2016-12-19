@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.16
+version: 16.12.19
 ]]
 ret = {
 	["Attack_AccuracyRate"] = 100,
@@ -41,7 +41,7 @@ ret = {
 	["Attack_Element"] = "None",
 	["Desc"] = "Become a Human",
 	["EffectScript"] = "Shift",
-	["EffectString_Arg"] = "Human",
+	["EffectScript_Arg"] = "Human",
 	["Heal_StatPercent"] = "Intelligence",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,

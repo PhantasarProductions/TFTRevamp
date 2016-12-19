@@ -125,6 +125,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/Dwarf_J.lua
     1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
     1. Script: Script/JINC/Foes/Boss/GobKing.lua
+    1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
@@ -136,6 +137,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Snake.lua
     1. Script: Script/JINC/Foes/reg/Zombie.lua
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
+    1. Script: Script/JINC/IA/ABL_FOE_CRUSH.lua
     1. Script: Script/JINC/IA/ABL_FOE_SMITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMBITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMSTAB.lua
@@ -283,8 +285,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
+    1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
+    1. Script: Script/Use/Combat/StatusChanges/Poison and Disease.lua
     1. Script: Script/Use/Linkers/AchievementLinker.lua
     1. Script: Script/Use/Linkers/BoxTextLinker.lua
     1. Script: Script/Use/Linkers/CombatLinker.lua
@@ -365,6 +369,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/RENC/Gauge.piko
     1. Graphics: GFX/Combat/RENC/Gauge.png
     1. Graphics: GFX/Combat/SpellAni/Flame/Flame.png
+    1. General Data: GFX/Combat/StatusChanges/Disease/Rode Kruis
+    1. Graphics: GFX/Combat/StatusChanges/Disease/Rode Kruis.png
     1. Graphics: GFX/Combat/Sys/Collision.png
     1. Graphics: GFX/Equipment/Acc.png
     1. Graphics: GFX/Equipment/Armor.png
@@ -405,6 +411,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Effects/North-Hole.png
     1. Graphics: GFX/Textures/General Shapes/Circle.png
     1. Graphics: GFX/Textures/General Shapes/Square.png
+    1. Graphics: GFX/Textures/General Shapes/VLNW_Triangle.png
+    1. Graphics: GFX/Textures/General Shapes/VLSW_Triangle.png
     1. Graphics: GFX/Textures/Muur Toorts/Brandend.frames
     1. Graphics: GFX/Textures/Muur Toorts/Brandend.png
     1. Graphics: GFX/Textures/Muur Toorts/Uit.png
@@ -506,6 +514,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.West.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.West.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Idle.png
+    1. Graphics: GFX/Actors/Single/DarkElves/Melody.piko
+    1. Graphics: GFX/Actors/Single/DarkElves/Melody.png
     1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
     1. Graphics: GFX/Actors/Single/Elves/SashaFunda.NS.piko
     1. Graphics: GFX/Actors/Single/Elves/SashaFunda.North.png
@@ -529,11 +539,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Chief Werrington/Chief.png
     1. Graphics: GFX/BoxText/Portret/Chief Werrington/General.png
     1. Graphics: GFX/BoxText/Portret/Chief Werrington/Smile.png
+    1. Graphics: GFX/BoxText/Portret/Melody/General.png
+    1. Graphics: GFX/BoxText/Portret/Melody/Untitled.piko
     1. Graphics: GFX/Combat/Arena/Altar.png
     1. Graphics: GFX/Combat/Arena/Caves.png
     1. Graphics: GFX/Combat/Arena/Forest.png
     1. Graphics: GFX/Combat/Arena/GreyDung.png
     1. Graphics: GFX/Combat/Arena/Magic.png
+    1. Graphics: GFX/Combat/Arena/SubRiver.png
     1. Graphics: GFX/Combat/Cards/BOSS_A.png
     1. Graphics: GFX/Combat/Cards/BOSS_B.png
     1. Graphics: GFX/Combat/Cards/BOSS_C.png
@@ -1098,6 +1111,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/John_6.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/John_7.ogg
 - Unknown artist from the Public Domain
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/KillerEscargot.png
     1. Graphics: GFX/MapSpots/Travel.png
     1. Graphics: GFX/Textures/Anna/Girl_Head.png
     1. General Data: GFX/Textures/Objects/Hut
@@ -1119,6 +1133,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: audio/SFX/SpellAni/Fire.ogg
     1. Audio: audio/SFX/SpellAni/Heal.ogg
     1. Music: Music/Hub/Calm Indoors.ogg
+- William Boyd
+    1. Font: Fonts/carolingia.ttf
 - Yannee's artist
     1. Graphics: GFX/BoxText/Portret/Yannee/Cry.png
     1. Graphics: GFX/BoxText/Portret/Yannee/General.png
