@@ -1,6 +1,6 @@
 --[[
   AAA_ATTACK.lua
-  Version: 16.12.19
+  Version: 16.12.20
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================

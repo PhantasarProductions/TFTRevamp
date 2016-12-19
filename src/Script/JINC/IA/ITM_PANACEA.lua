@@ -1,5 +1,5 @@
 --[[
-  ABL_FOE_VIRUSSTAB.lua
+  ITM_PANACEA.lua
   Version: 16.12.20
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -35,12 +35,18 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
-	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["CauseDisease"] = true,
+	["CureCurse"] = true,
+	["CureDisease"] = true,
+	["CureParalysis"] = true,
+	["CurePetrification"] = true,
+	["CurePoison"] = true,
+	["CureSilence"] = true,
+	["CureUndead"] = true,
+	["Desc"] = "Cures all status changes",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -52,9 +58,9 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
-	["Stance"] = "Attack",
-	["Target"] = "1F",
-	["Title"] = "Virus Stab",
+	["Stance"] = "Cast",
+	["Target"] = "1A",
+	["Title"] = "Panacea",
 	["Type"] = "Item"}
 
 return ret

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.19
+version: 16.12.20
 ]]
 
 RiverWidth = nil
@@ -77,6 +77,9 @@ function MAP_FLOW()
        obj.InsertX = obj.InsertX - 2
        if obj.InsertX<-RiverWidth then obj.InsertX = obj.InsertX+RiverWidth end
    end
+   if Maps.LayerCodeName=="#010" then
+      Maps.Obj.Obj('Obstacle_TerugNaarStart').Rotation = Time.MSecs()/25
+   end   
 end
 
 
