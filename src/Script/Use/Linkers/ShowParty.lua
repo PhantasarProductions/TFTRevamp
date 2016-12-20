@@ -124,7 +124,7 @@ end
 function MarrilonaLow()
    local H = RPG.Points("Marrilona",'HP')
    local P = H.Have/H.Maximum
-   return P<1.5/skill
+   return P<.15/skill
 end
 
 function RecoverySpot()
