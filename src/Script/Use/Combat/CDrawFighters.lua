@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 16.12.09
+  Version: 16.12.21
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -93,6 +93,7 @@ function DrawFighter(g,i)
      -- Targetted information
      if targetted then
         Image.LoadNew("BAT_COLPOINT","GFX/Combat/Sys/Collision.png")
+        SetFont('Target')
         local name = RPG.GetName(chdata.tag)
         local align = {Foe=0,Hero=1}
         local col = {Foe = {255,0,0},Hero={180,255,0}}
@@ -101,7 +102,6 @@ function DrawFighter(g,i)
         local hpm = php.Maximum
         local bw  = Image.TextWidth(name)
         local bx  = ({Foe=chdata.x,Hero=chdata.x-bw})[g] 
-        SetFont('Target')
         DarkText(name,chdata.x,chdata.y-25,align[g],1,col[g][1],col[g][2],col[g][3])
         color(50,50,50)
         if skill~=3 then
