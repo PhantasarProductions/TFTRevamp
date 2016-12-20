@@ -12,7 +12,7 @@
 # own database under any license you wish when you remove all stuff below
 # the [RECORDS] heading.
 #
-# (c) Jeroen Petrus Broks, 2015
+# (c) Jeroen Petrus Broks, 2015, 2016, 2017
 
 [system]
 OutputLuaBase    = ../LAURA II/Design/The Fairy Tale - REVAMP/src/src/Script/JINC/Big/Achievements.lua
