@@ -1,0 +1,109 @@
+[system]
+License          = This file contains data from the Phantasar Universe and is therefore property of Jeroen Broks and may NOT be used for your own ends. 
+AutoOutput       = YES
+RemoveNonExistentFields = YES
+OutputLuaRec     = /Volumes/Scyndi/Projects/Applications/BlitzMax/JCR6+/LAURA II/Design/The Fairy Tale - REVAMP/src/src/script/JINC/Shops/
+
+[PAGE: General]
+string Title
+bool AllowTrade
+
+[PAGE: Stock]
+mc Slot1
+@db Fairy Tale - Items and abilities
+mc Slot2
+@db Fairy Tale - Items and Abilities
+mc Slot3
+@db Fairy Tale - Items and Abilities
+mc Slot4
+@db Fairy Tale - Items and Abilities
+mc Slot5
+@db Fairy Tale - Items and Abilities
+mc Slot6
+@db Fairy Tale - Items and Abilities
+mc Slot7
+@db Fairy Tale - Items and Abilities
+mc Slot8
+@db Fairy Tale - Items and Abilities
+mc Slot9
+@db Fairy Tale - Items and Abilities
+mc Slot10
+@db Fairy Tale - Items and Abilities
+mc Slot11
+@db Fairy Tale - Items and Abilities
+mc Slot12
+@db Fairy Tale - Items and Abilities
+mc Slot13
+@db Fairy Tale - Items and Abilities
+mc Slot14
+@db Fairy Tale - Items and Abilities
+mc Slot15
+@db Fairy Tale - Items and Abilities
+mc Slot16
+@db Fairy Tale - Items and Abilities
+mc Slot17
+@db Fairy Tale - Items and Abilities
+mc Slot18
+@db Fairy Tale - Items and Abilities
+mc Slot19
+@db Fairy Tale - Items and Abilities
+mc Slot20
+@db Fairy Tale - Items and Abilities
+
+[RECORDS]
+# Everything below this line is the data itself
+# It is updated by the MyData application
+# automatically. Only change this if you know
+# what you are doing. 
+# And placing comments here is pointless as
+# they will be removed by MyData when you 
+# update this file :)
+
+Rec: ITEM_WANDA
+	AllowTrade = FALSE
+	Slot1 = ITM_APPLE
+	Slot10 = 
+	Slot11 = 
+	Slot12 = 
+	Slot13 = 
+	Slot14 = 
+	Slot15 = 
+	Slot16 = 
+	Slot17 = 
+	Slot18 = 
+	Slot19 = 
+	Slot2 = ITM_SALVE
+	Slot20 = ITM_FLAMEORB
+	Slot3 = ITM_MEDICINE
+	Slot4 = ITM_ANTIDOTE
+	Slot5 = ITM_MAGICDUST
+	Slot6 = ITM_MANDRAKE
+	Slot7 = 
+	Slot8 = 
+	Slot9 = 
+	Title = Wanda's item shop
+
+Rec: WEAPON_ERIC
+	AllowTrade = FALSE
+	Slot1 = EQP_JAKE_WP2
+	Slot10 = 
+	Slot11 = 
+	Slot12 = 
+	Slot13 = 
+	Slot14 = 
+	Slot15 = 
+	Slot16 = 
+	Slot17 = 
+	Slot18 = 
+	Slot19 = 
+	Slot2 = EQP_DANDOR_WP2
+	Slot20 = 
+	Slot3 = EQP_HANDOSTILLOR_WP2
+	Slot4 = EQP_JAKE_AR2
+	Slot5 = EQP_MARRILONA_AR2
+	Slot6 = EQP_HANDOSTILLOR_WP2
+	Slot7 = ITM_SALVE
+	Slot8 = 
+	Slot9 = 
+	Title = Eric's weapon Shop
+

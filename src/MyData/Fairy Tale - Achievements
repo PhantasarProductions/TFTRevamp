@@ -1,0 +1,463 @@
+# This file was created in order to set up the spell database for 
+# Star Story.
+# Everything in [RECORDS] has been automatically put in by the database
+# program MyData itself. All data elsewhere was manually entered.
+#
+# Please note, that basically everything is case insensitive EXCEPT the 
+# field names, those are case sensitive. 
+#
+# This file is basically only for my own use, however....
+# As the best way to set up a new database for MyData is by cannibalizing
+# an existing project, I will allow you to use this file as a base for your
+# own database under any license you wish when you remove all stuff below
+# the [RECORDS] heading.
+#
+# (c) Jeroen Petrus Broks, 2015
+
+[system]
+OutputLuaBase    = ../LAURA II/Design/The Fairy Tale - REVAMP/src/src/Script/JINC/Big/Achievements.lua
+#OutputPythonBase = ../LAURA II/Design/Star Story/Dev/Ach2Sql/Achievements.py
+#OutputMySQLBase  = sqldump/FairyTaleAchievements.sql
+License          = This file contains data from the Phantasar Universe and is therefore property of Jeroen Broks and may NOT be used for your own ends. 
+AutoOutput       = YES
+RemoveNonExistentFields = YES
+
+
+[PAGE: General]
+string Title
+string Description
+mc Icon
+@i *DEFAULT*
+@extfilter png
+@dirfilter GFX/Achievements
+@f ../LAURA II/Design/Star Story/StarStory.JCR
+mc Type
+@i Bronze
+@i Silver
+@i Gold
+@i Platinum
+mc Show
+@i Always
+@i Achieved
+@i Never
+bool skill1
+bool skill2
+bool skill3
+bool NormalGame
+bool NewGamePlus
+
+[default]
+Icon=*DEFAULT*
+Type=Bronze
+skill1=TRUE
+skill2=TRUE
+skill3=TRUE
+NormalGame=TRUE
+NewGamePlus=TRUE
+Show=Always
+
+[RECORDS]
+# Everything below this line is the data itself
+# It is updated by the MyData application
+# automatically. Only change this if you know
+# what you are doing. 
+# And placing comments here is pointless as
+# they will be removed by MyData when you 
+# update this file :)
+
+Rec: ANNA
+	Description = Enter Anna's temple.
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Achieved
+	Title = Jag kaenner en bot. Hon heter Anna, Anna heter hon!
+	Type = Silver
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: BOSS_JUGGERNAUT
+	Description = Defeat Juggernaut
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Bright eyes
+	Type = Platinum
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: CHAPTER1
+	Description = Complete chapter 1
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Nice to meet you
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: CHAPTER2
+	Description = Complete chapter 2
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Ancient spirites of the forest, made him king of elves and trees
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: CHAPTER3
+	Description = Complete Chapter 3
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = I don't care if I lose my mind. I'm already cursed!
+	Type = Gold
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: CHAPTER4
+	Description = Complete the game
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = The Fairy Tale
+	Type = Platinum
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: CHAPTER4_NGP
+	Description = Complete the game in the New Game+ mode
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = FALSE
+	Show = Always
+	Title = The Fairy Tale REVAMPED
+	Type = Platinum
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: HOURS0024
+	Description = Play the game for at least 24 hours
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = They say time is the fire in which we burn
+	Type = Silver
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: KILL0100
+	Description = Have 100 kills
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Can I play, daddy?
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: KILL0200
+	Description = 200 kills
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Don't hurt me!
+	Type = Silver
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: KILL0400
+	Description = 400 kills
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Bring 'em on
+	Type = Gold
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: KILL1000
+	Description = 1000 kills
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = I am a DEATH incarnate
+	Type = Platinum
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: RATE025
+	Description = Achievement rating 25% or more
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Achieved
+	Title = The Night Fever
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: RATE050
+	Description = Achievement rating 50% or more
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Tragedy!
+	Type = Silver
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: RATE075
+	Description = Achievement rating 75% or more
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Stayin' Alive
+	Type = Gold
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: RATE100
+	Description = Achievement rating 100%
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = You win again!
+	Type = Platinum
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: SCEN_LOVE
+	Description = Jake and Marrilona met each other and fell in love
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Don't talk, just kiss!
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: SCEN_PROLOGUE_ALL
+	Description = Complete all personal prologue missions
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = I've only just begun
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: SCEN_PROLOGUE_CRYPT
+	Description = Arrive in the crypt
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Tales from the crypt
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: SCEN_PROLOGUE_DANDOR
+	Description = Complete Dandor's prologue
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = And my axe
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: SCEN_PROLOGUE_HANDOSTILLOR
+	Description = Complete Hando Stillor's prologue
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Godesses and zombies
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: SCEN_PROLOGUE_JAKE
+	Description = Complete Jake's prologue
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Swords and roses
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: SCEN_PROLOGUE_MARRILONA
+	Description = Complete Marrilona's prologue mission
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = It's a kind of magic
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: SECRETDUNGEON_SUBRIVER
+	Description = Complete the secret dungeon: Subterranean River
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Rollin' on a river
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: SKILL1
+	Description = Complete the game in the Easy Mode
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = I'm too young to die
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = FALSE
+	skill3 = FALSE
+
+Rec: SKILL2
+	Description = Complete teh game in medium mode
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Hurt me plenty!
+	Type = Gold
+	skill1 = FALSE
+	skill2 = TRUE
+	skill3 = FALSE
+
+Rec: SKILL3
+	Description = Complete the game on in the hard mode
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = NIGHTMARE!!!
+	Type = Platinum
+	skill1 = FALSE
+	skill2 = FALSE
+	skill3 = TRUE
+
+Rec: VIC0010
+	Description = 10 victories
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Portrayed by Sean Bean?
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: VIC0050
+	Description = 50 victories
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = "If"? "If" is good!
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: VIC0100
+	Description = 100 victories
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Are you not entertained
+	Type = Gold
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: VIC0500
+	Description = 500 combat victories
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = BUM-BUM-BUM-BUM-BUM-BUM-BUM-ARE YOU READY!?
+	Type = Platinum
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: WALDA1
+	Description = Find any of Walda's hiding spots
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Where's Walda?
+	Type = Silver
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: WALDA4
+	Description = Find ALL of Walda's hiding spots
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = You can run, but you can't hide
+	Type = Platinum
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+

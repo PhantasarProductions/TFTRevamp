@@ -1,0 +1,93 @@
+[system]
+#OutputLuaRec = ../LAURA II/Design/The Fairy Tale - REVAMP/src/src/Script/JINC/WorldMap
+OutputLuaBase = ../LAURA II/Design/The Fairy Tale - REVAMP/src/src/Script/JINC/Big/WorldMap.lua
+AutoOutput    = YES
+
+
+[PAGE: Location]
+string LocationName
+string LocationPrefix
+mc Kthura
+@f /Volumes/Scyndi/Projects/Applications/BlitzMax/JCR6+/LAURA II/design/The Fairy Tale - REVAMP/jcr/demo/data/Tricky Story/Kthura
+string Layer
+string Start
+bool Dungeon
+bool UnlockedFromStart
+#string UnlockCode
+string Folder
+
+[default]
+Layer=#001
+Start=Start
+Folder=Delisto
+Dungeon=true
+
+[RECORDS]
+# Everything below this line is the data itself
+# It is updated by the MyData application
+# automatically. Only change this if you know
+# what you are doing. 
+# And placing comments here is pointless as
+# they will be removed by MyData when you 
+# update this file :)
+
+Rec: ANNA
+	Dungeon = FALSE
+	Folder = Delisto
+	Kthura = Anna
+	Layer = #001
+	LocationName = Anna's Temple
+	LocationPrefix = 
+	Start = Start
+	UnlockedFromStart = FALSE
+
+Rec: CH1ALTAR
+	Dungeon = FALSE
+	Folder = Delisto
+	Kthura = CH1_HUB_ALTAR
+	Layer = Altar
+	LocationName = Ancient Fairy Altar
+	LocationPrefix = 
+	Start = Start
+	UnlockedFromStart = FALSE
+
+Rec: CH1FRENDOR
+	Dungeon = FALSE
+	Folder = Delisto
+	Kthura = PRO_Town_Frendor
+	Layer = town
+	LocationName = Frendor
+	LocationPrefix = The Fairy Village of
+	Start = Start
+	UnlockedFromStart = FALSE
+
+Rec: CH1FRENDORBUSHES
+	Dungeon = TRUE
+	Folder = Delisto
+	Kthura = CH1_Dungeon_FrendorBushes
+	Layer = FRENDORBUSHES
+	LocationName = Frendor Bushes
+	LocationPrefix = 
+	Start = Start
+	UnlockedFromStart = TRUE
+
+Rec: CH1HOLY
+	Dungeon = TRUE
+	Folder = Delisto
+	Kthura = CH1_Dungeon_HolyPath
+	Layer = Bos
+	LocationName = Holy Path
+	LocationPrefix = 
+	Start = Start
+	UnlockedFromStart = TRUE
+
+Rec: CH1JAKE
+	Dungeon = FALSE
+	Folder = Delisto
+	Kthura = CH1_HUB_JakeHut
+	Layer = Exterior
+	LocationName = Jake's Hut
+	LocationPrefix = 
+	Start = Start
+	UnlockedFromStart = TRUE
+
