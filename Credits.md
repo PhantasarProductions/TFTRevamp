@@ -65,7 +65,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Harry/General.png
     1. Graphics: GFX/BoxText/Portret/Harry/Harry.piko
     1. Graphics: GFX/BoxText/Portret/Harry/Laugh.png
+    1. Graphics: GFX/BoxText/Portret/Nostramantu/Angry.png
+    1. Graphics: GFX/BoxText/Portret/Nostramantu/EvilLaugh.png
     1. Graphics: GFX/BoxText/Portret/Nostramantu/General.png
+    1. Graphics: GFX/BoxText/Portret/Nostramantu/Nostramantu.piko
     1. Graphics: GFX/BoxText/Portret/Sandra/General.png
     1. Graphics: GFX/BoxText/Portret/Sasha Funda/General.png
     1. Graphics: GFX/Textures/Mural/Weniaria.png
@@ -325,16 +328,16 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/valstr.lua
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Chapters/1.png
-    1. Graphics: GFX/Chapters/2.png
     1. Music: Music/Sys/Silence.ogg
+    1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
     1. Graphics: GFX/Chapters/4.png
     1. Graphics: GFX/Combat/End/Game Over.png
@@ -382,6 +385,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Equipment/WP_HandoStillor.png
     1. Graphics: GFX/Equipment/WP_Nostramantu_Human.png
     1. Graphics: GFX/Equipment/WP_Marrilona.png
+    1. Graphics: GFX/JoyPad/Button.piko
+    1. Graphics: GFX/JoyPad/Steering.piko
+    1. Graphics: GFX/JoyPad/Steering_Base.png
+    1. Graphics: GFX/JoyPad/Steering_Down.png
+    1. Graphics: GFX/JoyPad/Steering_Left.png
+    1. Graphics: GFX/JoyPad/Steering_Right.png
+    1. Graphics: GFX/JoyPad/Steering_Up.png
     1. Graphics: GFX/System/Console.piko
     1. Graphics: GFX/System/Console.png
     1. Graphics: GFX/Textures/AlphabetTiles/YurgonTile.png
