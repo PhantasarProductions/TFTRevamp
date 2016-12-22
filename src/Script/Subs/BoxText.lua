@@ -1,6 +1,6 @@
 --[[
   BoxText.lua
-  Version: 16.12.15
+  Version: 16.12.21
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -140,7 +140,7 @@ if data.AltTxtFont then
    -- @IF BOXTEXTDEBUG
    CSay("Setting font: "..data.AltTxtFont,fonts.BoxText[2])
    -- @FI
-   Image.Font(data.AltTxtFont,fonts.BoxTextConetnt[2])
+   Image.Font(data.AltTxtFont,fonts.BoxTextContent[2])
    else
    setfont("BoxTextContent")
    end

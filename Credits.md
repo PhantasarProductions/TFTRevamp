@@ -325,11 +325,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Chapters/1.png
@@ -680,67 +680,51 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Treasure/Chest.png
     1. Graphics: GFX/Treasure/ManaOrb.png
     1. Map Design: Kthura/Anna/Data
-    1. Map Design: Kthura/Anna/KME.TextureSettings
     1. Map Design: Kthura/Anna/Objects
     1. Map Design: Kthura/Anna/Settings
     1. Map Design: Kthura/CH1_Dungeon_FrendorBushes/Data
-    1. Map Design: Kthura/CH1_Dungeon_FrendorBushes/KME.TextureSettings
     1. Map Design: Kthura/CH1_Dungeon_FrendorBushes/Objects
     1. Map Design: Kthura/CH1_Dungeon_FrendorBushes/Settings
     1. Map Design: Kthura/CH1_Dungeon_HolyPath/Data
-    1. Map Design: Kthura/CH1_Dungeon_HolyPath/KME.TextureSettings
     1. Map Design: Kthura/CH1_Dungeon_HolyPath/Objects
     1. Map Design: Kthura/CH1_Dungeon_HolyPath/Settings
     1. Map Design: Kthura/CH1_Dungeon_SubRiver/Data
-    1. Map Design: Kthura/CH1_Dungeon_SubRiver/KME.TextureSettings
     1. Map Design: Kthura/CH1_Dungeon_SubRiver/Objects
     1. Map Design: Kthura/CH1_Dungeon_SubRiver/Settings
     1. Map Design: Kthura/CH1_HUB_ALTAR/Data
-    1. Map Design: Kthura/CH1_HUB_ALTAR/KME.TextureSettings
     1. Map Design: Kthura/CH1_HUB_ALTAR/Objects
     1. Map Design: Kthura/CH1_HUB_ALTAR/Settings
     1. Map Design: Kthura/CH1_HUB_JakeHut/Data
-    1. Map Design: Kthura/CH1_HUB_JakeHut/KME.TextureSettings
     1. Map Design: Kthura/CH1_HUB_JakeHut/Objects
     1. Map Design: Kthura/CH1_HUB_JakeHut/Settings
     1. Map Design: Kthura/Egg_Walda/Data
-    1. Map Design: Kthura/Egg_Walda/KME.TextureSettings
     1. Map Design: Kthura/Egg_Walda/Objects
     1. Map Design: Kthura/Egg_Walda/Settings
     1. Map Design: Kthura/PRO_Dungeon_Crypt/Data
-    1. Map Design: Kthura/PRO_Dungeon_Crypt/KME.TextureSettings
     1. Map Design: Kthura/PRO_Dungeon_Crypt/Objects
     1. Map Design: Kthura/PRO_Dungeon_Crypt/Settings
     1. Map Design: Kthura/PRO_Dungeon_DragonCave/Data
-    1. Map Design: Kthura/PRO_Dungeon_DragonCave/KME.TextureSettings
     1. Map Design: Kthura/PRO_Dungeon_DragonCave/Objects
     1. Map Design: Kthura/PRO_Dungeon_DragonCave/Settings
     1. Map Design: Kthura/PRO_Dungeon_Magic/Data
-    1. Map Design: Kthura/PRO_Dungeon_Magic/KME.TextureSettings
     1. Map Design: Kthura/PRO_Dungeon_Magic/Objects
     1. Map Design: Kthura/PRO_Dungeon_Magic/Settings
     1. Map Design: Kthura/PRO_Dungeon_Tomb/Data
-    1. Map Design: Kthura/PRO_Dungeon_Tomb/KME.TextureSettings
     1. Map Design: Kthura/PRO_Dungeon_Tomb/Objects
     1. Map Design: Kthura/PRO_Dungeon_Tomb/Settings
     1. Map Design: Kthura/PRO_Hub_Weniaria/Data
-    1. Map Design: Kthura/PRO_Hub_Weniaria/KME.TextureSettings
     1. Map Design: Kthura/PRO_Hub_Weniaria/Objects
     1. Map Design: Kthura/PRO_Hub_Weniaria/Settings
     1. Map Design: Kthura/PRO_TheEnd/Data
-    1. Map Design: Kthura/PRO_TheEnd/KME.TextureSettings
     1. Map Design: Kthura/PRO_TheEnd/Objects
     1. Map Design: Kthura/PRO_TheEnd/Settings
     1. Map Design: Kthura/PRO_Town_Frendor/Data
-    1. Map Design: Kthura/PRO_Town_Frendor/KME.TextureSettings
     1. Map Design: Kthura/PRO_Town_Frendor/Objects
     1. Map Design: Kthura/PRO_Town_Frendor/Settings
     1. Map Design: Kthura/PRO_Town_Vandar/Data
-    1. Map Design: Kthura/PRO_Town_Vandar/KME.TextureSettings
     1. Map Design: Kthura/PRO_Town_Vandar/Objects
     1. Map Design: Kthura/PRO_Town_Vandar/Settings
     1. Map Design: Kthura/ZZZ_Test/Data
-    1. Map Design: Kthura/ZZZ_Test/KME.TextureSettings
     1. Map Design: Kthura/ZZZ_Test/Objects
     1. Map Design: Kthura/ZZZ_Test/Settings
     1. Scenario: Languages/Dutch/Scenario/COMBAT/LEARN

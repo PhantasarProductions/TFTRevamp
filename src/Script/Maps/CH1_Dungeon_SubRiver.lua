@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.20
+version: 16.12.21
 ]]
 
 RiverWidth = nil
@@ -154,11 +154,34 @@ function Boss_Start()
   Maps.Obj.Kill('Boss_Start',1)  
 end
 
+function NPC_Melody()
+    if Done("&DONE.SUBRIVER.MELODY") then
+       MapText('MELODYIDLE') 
+    else
+       MapText('MELODY1')
+       for ch in EachParty() do 
+           if ch=="HandoStillor" then MapText('MELODYSTILLOR') end
+           RPG.IncStat(ch,'EXP',12/skill) 
+       end
+       MapText('MELODY2')
+       Award('SECRETDUNGEON_SUBRIVER')
+       ItemGive('EQP_JEWEL_SMALLTOPAZ')
+       Maps.PermaWrite('Maps.Obj.Kill("NPC_Melody")')
+    end 
+end
+
+function TerugNaarStart()
+   GoToLayer('#001','Start')
+   TurnPlayer('South')
+end   
+
+
 function GALE_OnLoad()
    InitRiverFlow()
    ZA_Enter('Welcome',Welcome)
    ZA_Enter('Bye',Bye)
    ZA_Enter('StartPuzzle',StartPuzzle)
-   ZA_Enter('Boss_Start',Boss_Start)
+   ZA_Enter('Boss_Start',Boss_Start)   
+   ZA_Enter('TerugNaarStart',TerugNaarStart)
    MapHide('Secret')
 end      

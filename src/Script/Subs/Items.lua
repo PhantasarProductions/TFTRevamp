@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.12.15
+  Version: 16.12.21
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -125,6 +125,8 @@ end
 function ItemGive(i,n)
    inventory[i] = (inventory[i] or 0 ) + (tonumber(n) or 1)
    if inventory[i]>itemmax then inventory[i]=itemmax end
+   local item = ItemGet(i)
+   if item.ITM_BlackMarket then Done('&BLACKMARKET.HAS.'..i) end
    ItemFilterReset()
 end
 
