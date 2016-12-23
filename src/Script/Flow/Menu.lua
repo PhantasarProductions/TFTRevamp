@@ -184,7 +184,7 @@ features.ConfigFlowFunctions = {
      joytest=function(x,y,w,h,f)
                  White()
                  for i=0 , 15 do
-                     features.ConfigButton(x+(w/2),y+(i*20),i,INP.JoyD(i)==1)
+                     features.ConfigButton(x+(w/2),y+8+(i*20),i,INP.JoyD(i)==1)
                      local steer = "Base"
                      if round(INP.JoyX())== 1 then steer='Right' end
                      if round(INP.JoyX())==-1 then steer='Left' end
