@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 16.12.10
+  Version: 16.12.23
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -40,6 +40,7 @@ profiles = {
                       Features = {'Status','Items','Abilities','Achievements', 'Config','Quit'},
                       HalfScreen = {Status={'Stats','Status'},Items={'Stats','Items'},Abilities={'Stats','Abilities'}},  
                       ItemShowFilters = {'All',"Field",'Equip','Key'},
+                      BlockOut = {'Config'},
                       ItemEnable = 'FieldUse',                    
                       PartyBrowse = true,
                       EscReturn = 'FIELD'
@@ -118,6 +119,97 @@ function features.Stats(x,y,w,h,f)
     eqName(ch,'Armor' ,x+40,(y+h)-50)
     eqName(ch,'Weapon',x+40,(y+h)-75)
     if f~="Status" then return end
+end
+
+features.ConfigFunctions = {}
+
+function features.ConfigFunctions.ToTest(b)
+    features.ConfigFlow='joytest'
+    BlockTabSwitch=true
+end
+
+
+features.ConfigItems = {
+                  { name='Confirm Button', b='CONFIRM'},
+                  { name='Cancel Button', b='CANCEL'},
+                  { name='Menu Button', b='MENU'},
+                  { name='Menu Char Left',b='L1'},
+                  { name='Menu Char Right',b='R1'},
+                  { name='Ability Page Left',b='L2'},
+                  { name='Ability Page Right',b='R2'},
+                  
+                  { name='Test Joypard',f=features.ConfigFunctions.ToTest}
+                  
+              }
+
+
+
+function features.ConfigFunctions.JoyButton(b)
+end
+
+
+function features.ConfigButton(x,y,num,pushed)   
+   assert(num>=0 and num<=15,"Button not there!")
+   local tp = ({ [true]='Push',[false]='Unpush'})[pushed==true]
+   local b=num+1
+   Image.LoadNew('BUTTON_'..tp..b,'GFX/JoyPad/'..tp..right("0"..b,2)..".png")
+   Image.Show('BUTTON_'..tp..b,x,y)
+end   
+
+features.ConfigFlowFunctions = {
+
+     butselect=function(x,y,w,h,f)
+                  local dx=x+10
+                  local dy=y+10
+                  features.ConfigP = features.ConfigP or 1
+                  SetFont('JoyConfig')
+                  for i,item in ipairs(features.ConfigItems) do
+                      local iy = dy+(i*20)
+                      local c
+                      if features.ConfigP==i then c = {255,180,0} else c={255,255,255} end 
+                      DarkText(item.name,dx,iy,0,0,c[1],c[2],c[3])
+                      tabcol(c)
+                      if item.b then features.ConfigButton(dx+200,iy,CVV('%JOY.'..item.b)) end
+                      if features.ConfigP==i then
+                         if item.b then                             
+                            for bi=0,15 do if INP.JoyH(bi)==1 then Var.D('%JOY.'..item.b,bi) end end
+                         elseif INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_SPACE)==1 or joyhit('CONFIRM') or mousehit(1) then
+                            (item.f or Nothing)()
+                         end    
+                      end
+                  end
+                  if (INP.KeyH(KEY_UP  )==1 or joyhit(joy_up  )) and features.ConfigP>1                     then features.ConfigP = features.ConfigP - 1 end
+                  if (INP.KeyH(KEY_DOWN)==1 or joyhit(joy_down)) and features.ConfigP<#features.ConfigItems then features.ConfigP = features.ConfigP + 1 end                  
+               end,
+     joytest=function(x,y,w,h,f)
+                 White()
+                 for i=0 , 15 do
+                     features.ConfigButton(x+(w/2),y+(i*20),i,INP.JoyD(i)==1)
+                     local steer = "Base"
+                     if round(INP.JoyX())== 1 then steer='Right' end
+                     if round(INP.JoyX())==-1 then steer='Left' end
+                     if round(INP.JoyY())== 1 then steer='Down' end
+                     if round(INP.JoyY())==-1 then steer='Up' end
+                     Image.LoadNew("JOYSTEER."..steer,"GFX/Joypad/Steering_"..steer..".png")
+                     Image.Show("JOYSTEER."..steer,x+5,y+5)
+                 end
+                 SetFont('JoyConfig')
+                 DarkText('Press esc or right mouse button to go back to the config menu',x+(w/2),y+h,2,1)    
+                 if mousehit(2) or INP.KeyH(KEY_ESCAPE)==1 then
+                    BlockTabSwitch = false
+                    features.ConfigFlow = 'butselect'
+                 end   
+             end          
+
+}
+
+
+
+
+
+function features.Config(x,y,w,h,f)
+  features.ConfigFlow = features.ConfigFlow or 'butselect'
+  features.ConfigFlowFunctions[features.ConfigFlow](x,y,w,h,f)  
 end
 
 -- @IF ALLOW_QUITSAVE
@@ -558,18 +650,22 @@ function Menu_DrawScreen()
 end
 
 function Menu_Keys()
-   if ( INP.KeyH(KEY_RIGHT)==1 or INP.KeyH(KEY_D)==1 or INP.JoyX()==1) then 
-      menu.fp = menu.fp + 1 --CSay('R')
-      while INP.JoyX()==1 do end 
+   if not BlockTabSwitch then
+      if ( INP.KeyH(KEY_RIGHT)==1 or INP.KeyH(KEY_D)==1 or INP.JoyX()==1) then 
+         menu.fp = menu.fp + 1 --CSay('R')
+         while INP.JoyX()==1 do end 
       end 
    if ( INP.KeyH(KEY_LEFT )==1 or INP.KeyH(KEY_A)==1 or INP.JoyX()==-1) then 
-      menu.fp = menu.fp - 1 --CSay('L') 
-      while INP.JoyX()==-1 do end
+         menu.fp = menu.fp - 1 --CSay('L') 
+         while INP.JoyX()==-1 do end
       end
+   end   
    if menu.fp<=0 then menu.fp = #profile.Features end
    if menu.fp> #profile.Features then menu.fp = 1 end    
    if ( INP.KeyH(KEY_ESCAPE)==1 or joyhit('CANCEL')) and profile.EscReturn then
-      LAURA.Flow(profile.EscReturn)
+      if not(profile.BlockOut and tablecontains(profile.BlockOut,profile.Features[menu.fp])) then
+         LAURA.Flow(profile.EscReturn)
+      end   
    end   
    -- char select
    for i=0,3 do

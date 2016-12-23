@@ -1,7 +1,7 @@
 --[[
   Graphics.lua
   
-  version: 16.12.09
+  version: 16.12.23
   Copyright (C) 2016 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -22,6 +22,12 @@ Cls = Image.Cls
 cls = Cls
 Color = Image.Color
 color = Color
+
+function tabcol(tablevar)
+   color(tablevar[1],tablevar[2],tablevar[3])
+end
+
+   
 
 function Graphics_Init()
   LC = LAURA.LauraStartUp

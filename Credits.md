@@ -328,11 +328,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/valstr.lua
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Chapters/1.png
@@ -385,13 +385,47 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Equipment/WP_HandoStillor.png
     1. Graphics: GFX/Equipment/WP_Nostramantu_Human.png
     1. Graphics: GFX/Equipment/WP_Marrilona.png
+    1. Graphics: GFX/JoyPad/Button (Autosaved).piko
     1. Graphics: GFX/JoyPad/Button.piko
+    1. Graphics: GFX/JoyPad/Push01.png
+    1. Graphics: GFX/JoyPad/Push02.png
+    1. Graphics: GFX/JoyPad/Push03.png
+    1. Graphics: GFX/JoyPad/Push04.png
+    1. Graphics: GFX/JoyPad/Push05.png
+    1. Graphics: GFX/JoyPad/Push06.png
+    1. Graphics: GFX/JoyPad/Push07.png
+    1. Graphics: GFX/JoyPad/Push08.png
+    1. Graphics: GFX/JoyPad/Push09.png
+    1. Graphics: GFX/JoyPad/Push10.png
+    1. Graphics: GFX/JoyPad/Push11.png
+    1. Graphics: GFX/JoyPad/Push12.png
+    1. Graphics: GFX/JoyPad/Push13.png
+    1. Graphics: GFX/JoyPad/Push14.png
+    1. Graphics: GFX/JoyPad/Push15.png
+    1. Graphics: GFX/JoyPad/Push16.png
+    1. Graphics: GFX/JoyPad/Pushed16.png
     1. Graphics: GFX/JoyPad/Steering.piko
     1. Graphics: GFX/JoyPad/Steering_Base.png
     1. Graphics: GFX/JoyPad/Steering_Down.png
     1. Graphics: GFX/JoyPad/Steering_Left.png
     1. Graphics: GFX/JoyPad/Steering_Right.png
     1. Graphics: GFX/JoyPad/Steering_Up.png
+    1. Graphics: GFX/JoyPad/UnPush01.png
+    1. Graphics: GFX/JoyPad/UnPush02.png
+    1. Graphics: GFX/JoyPad/UnPush03.png
+    1. Graphics: GFX/JoyPad/UnPush04.png
+    1. Graphics: GFX/JoyPad/UnPush05.png
+    1. Graphics: GFX/JoyPad/UnPush06.png
+    1. Graphics: GFX/JoyPad/UnPush07.png
+    1. Graphics: GFX/JoyPad/UnPush08.png
+    1. Graphics: GFX/JoyPad/UnPush09.png
+    1. Graphics: GFX/JoyPad/UnPush10.png
+    1. Graphics: GFX/JoyPad/UnPush11.png
+    1. Graphics: GFX/JoyPad/UnPush12.png
+    1. Graphics: GFX/JoyPad/UnPush13.png
+    1. Graphics: GFX/JoyPad/UnPush14.png
+    1. Graphics: GFX/JoyPad/UnPush15.png
+    1. Graphics: GFX/JoyPad/UnPush16.png
     1. Graphics: GFX/System/Console.piko
     1. Graphics: GFX/System/Console.png
     1. Graphics: GFX/Textures/AlphabetTiles/YurgonTile.png

@@ -1,6 +1,6 @@
 --[[
   Joy.lua
-  Version: 16.10.23
+  Version: 16.12.23
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -45,8 +45,8 @@ Var.N("%JOY.MENU",3)
 Var.N("%JOY.XTRA",4)
 Var.N("%JOY.L1",4)
 Var.N("%JOY.L2",6)
-Var.N("%JOY.R1",7)
-Var.N("%JOY.R2",5)
+Var.N("%JOY.R1",5)
+Var.N("%JOY.R2",7)
 Var.N("%JOY.START",8)
 Var.N("%JOY.SELECT",9)
 
