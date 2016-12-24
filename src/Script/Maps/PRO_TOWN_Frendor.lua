@@ -32,14 +32,14 @@
   
  **********************************************
  
-version: 16.10.26
+version: 16.12.24
 ]]
 
 -- @USE /Script/Use/Specific/EndOfPrologue.lua
 
 -- General
 function MapMusic()
-   if not Done("&DONE.VANDAR.OPENING_Fandalora") then 
+   if not (Done("&DONE.VANDAR.OPENING_Fandalora") or CVV('$WMCHAT')=='FAIRYJAKE') then 
       CSay("Skip the music for now. Let Fandalora speak first.")
    else
       OriMapMusic()
@@ -122,8 +122,46 @@ function PostBoss_Marrilona()
     --Sys.Error("End of prologue not yet done. Hang on, folks!")
 end
 
+-- Treason
+function Treason()
+    Music('Scenario/We Got Trouble.ogg')
+    MapText('TREASON')
+    Maps.Obj.Kill('ELDER_OUTSIDE',1) -- We won't see him again... Byebye! ;) (Fandalora can remain here. We'll see him again on the next visit!)
+    GoToLayer('harryhub','Spot')
+    PartyPop('Harry','West')
+    Maps.CamX=96
+    MapText('HARRY1')
+    repeat
+      Cls()
+      Maps.CamX = Maps.CamX - 1
+      DrawScreen()
+      ShowParty()
+      Flip()
+    until Maps.CamX<=0
+    MapText('HARRY2') 
+    Var.D('$WMCHAT','HELL')
+    WorldMap_Unlock('CH1HELL')
+    WorldMap_Lock('CH1FRENDOR') -- This will now be locked until the Forbidden Library has been completed.
+    Schedule("MAP","Treason_PostBoss")
+    
+    -- Harry as a boss
+    ClearCombatData()
+    Var.D("$COMBAT.FOE_1","Boss/Harry1") -- Needed to prevent the Axe Smash session Marrilona has to deal with.
+    Var.D("$COMBAT.POSFOE_1","CENTER")
+    Var.D("$COMBAT.MUSIC","Music/Special Boss/Annoying Boy.ogg")
+    Var.D("$COMBAT.ARENA","Forest.png")
+    StartBoss("Annoying Warrior Wannabe","Harry McDummy")      
+    
+    -- Sys.Error('Script ends here')
+end
+
+function ComeInEvents()
+   return (({ FAIRYJAKE = Treason })[CVV('$WMCHAT')] or Nothing)()
+end
+
 -- Init
 function GALE_OnLoad()
    ZA_Enter('ExitHouse',ExitHouse)
    ZA_Enter('Elder_Exit',Elder2Boss)
+   ZA_Enter('ComeInEvents',ComeInEvents)
 end

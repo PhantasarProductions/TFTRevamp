@@ -71,6 +71,16 @@ Rec: CH1FRENDORBUSHES
 	Start = Start
 	UnlockedFromStart = TRUE
 
+Rec: CH1HELL
+	Dungeon = TRUE
+	Folder = Delisto
+	Kthura = CH1_Dungeon_Hell
+	Layer = #001
+	LocationName = Road to Hell
+	LocationPrefix = The
+	Start = Start
+	UnlockedFromStart = FALSE
+
 Rec: CH1HOLY
 	Dungeon = TRUE
 	Folder = Delisto

@@ -12,14 +12,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 
 - Aeris
     1. Graphics: GFX/Big_Char/Dandor.png
-    1. Graphics: GFX/Big_Char/Dandor.png.BK!
     1. Graphics: GFX/Big_Char/Hando Stillor.png
     1. Graphics: GFX/Big_Char/Jake.png
     1. Graphics: GFX/Big_Char/JakeMarrilona.GIF
     1. Graphics: GFX/Big_Char/JakeMarrilona.png
     1. Graphics: GFX/Big_Char/JakeMarrilona.xcf
     1. Graphics: GFX/Big_Char/Marrilona.png
-    1. Graphics: GFX/Big_Char/Marrilona.png.BK!
     1. Graphics: GFX/Big_Char/Marrilona_Christmas.png
     1. Graphics: GFX/Big_Char/Marrilona_Christmas.xcf
     1. Graphics: GFX/Big_Char/Marrilona_Easter.png
@@ -60,6 +58,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Audio/Combat/Ready.ogg
 - Angela Nagtzaam
     1. Graphics: GFX/BoxText/Portret/Fandalora/General.png
+    1. Graphics: GFX/BoxText/Portret/Fandalora/NoEmo.png
     1. Graphics: GFX/BoxText/Portret/Harry/Angry.png
     1. Graphics: GFX/BoxText/Portret/Harry/Furious.png
     1. Graphics: GFX/BoxText/Portret/Harry/General.png
@@ -78,6 +77,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. ???: Fonts/Doc/monof_tt.txt
     1. Font: Fonts/monof55.ttf
 - Eric Matyas
+    1. Music: Music/Dungeon/Invasion-of-the-Giant-Disco-Ants_Looping.ogg
     1. Music: Music/Dungeon/Moonlit-Secrets_Looping.ogg
 - GR-Sites
     1. Audio: Audio/Dungeon/FallingDown.ogg
@@ -278,6 +278,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/CDrawFighters.lua
     1. Script: Script/Use/Combat/CDrawScreen.lua
     1. Script: Script/Use/Combat/CVoice.lua
+    1. Script: Script/Use/Combat/DestroyAllFoes.lua
     1. Script: Script/Use/Combat/Flow/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.lua
     1. Script: Script/Use/Combat/Flow/Execution.lua
     1. Script: Script/Use/Combat/Flow/FoeInput.lua
@@ -333,10 +334,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
-    1. Music: Music/Boss/BossIntro.ogg
-    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Chapters/1.png
-    1. Music: Music/Sys/Silence.ogg
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
     1. Graphics: GFX/Chapters/4.png
@@ -347,12 +345,15 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Logo/End Of Prologue.hot
     1. Graphics: GFX/Logo/End Of Prologue.png
     1. Graphics: GFX/Logo/Phantasar Productions.png
+    1. Music: Music/Boss/BossIntro.ogg
     1. Graphics: GFX/Logo/The End.png
+    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Logo/Title.png
     1. Graphics: GFX/Menu Icons/Buy.png
     1. Graphics: GFX/Menu Icons/Sell.png
     1. Graphics: GFX/Menu Icons/Trade.png
     1. Graphics: GFX/Party/Level Up.png
+    1. Music: Music/Sys/Silence.ogg
     1. Audio: Audio/Combat/CardSlide.ogg
     1. Audio: Audio/Party/Level Up.ogg
     1. Audio: Audio/Party/Level Up.wav
@@ -385,7 +386,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Equipment/WP_HandoStillor.png
     1. Graphics: GFX/Equipment/WP_Nostramantu_Human.png
     1. Graphics: GFX/Equipment/WP_Marrilona.png
-    1. Graphics: GFX/JoyPad/Button (Autosaved).piko
     1. Graphics: GFX/JoyPad/Button.piko
     1. Graphics: GFX/JoyPad/Push01.png
     1. Graphics: GFX/JoyPad/Push02.png
@@ -504,7 +504,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Stairs/Down.png
     1. Graphics: GFX/Textures/Stairs/Up.png
     1. Graphics: GFX/World/Dot.png
-    1. Graphics: GFX/World/Dot.png.BK!
     1. Graphics: GFX/World/UNTITLED.LBM
     1. Graphics: GFX/World/UNTITLED.PCX
     1. General Data: Data/CharStats/Dandor
@@ -729,6 +728,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH1_Dungeon_FrendorBushes/Data
     1. Map Design: Kthura/CH1_Dungeon_FrendorBushes/Objects
     1. Map Design: Kthura/CH1_Dungeon_FrendorBushes/Settings
+    1. Map Design: Kthura/CH1_Dungeon_Hell/Data
+    1. Map Design: Kthura/CH1_Dungeon_Hell/Objects
+    1. Map Design: Kthura/CH1_Dungeon_Hell/Settings
     1. Map Design: Kthura/CH1_Dungeon_HolyPath/Data
     1. Map Design: Kthura/CH1_Dungeon_HolyPath/Objects
     1. Map Design: Kthura/CH1_Dungeon_HolyPath/Settings
@@ -822,6 +824,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Dungeon/Pippin the Hunchback.ogg
     1. Music: Music/Dungeon/TheDread.ogg
     1. Music: Music/Hub/Angevin.ogg
+    1. Music: Music/Scenario/We Got Trouble.ogg
     1. Music: Music/Town/Enchanted Valley.ogg
 - Man Of Steel
     1. Graphics: GFX/Actors/Single/Humans/RubineTheHood.png
