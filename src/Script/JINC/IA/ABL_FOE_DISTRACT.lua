@@ -1,5 +1,5 @@
 --[[
-  ITM_ANTIDOTE.lua
+  ABL_FOE_DISTRACT.lua
   Version: 16.12.25
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -35,27 +35,26 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["CurePoison"] = true,
-	["Desc"] = "Poison be gone",
+	["Desc"] = "Removes all cards of a specific foe",
+	["EffectScript"] = "RemoveAllUserCards",
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 50,
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Antidote",
-	["Type"] = "Item"}
+	["Target"] = "1F",
+	["Title"] = "Distract",
+	["Type"] = "Ability",
+	["Voice"] = "Distract"}
 
 return ret
 
