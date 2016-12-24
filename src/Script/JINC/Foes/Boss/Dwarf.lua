@@ -1,46 +1,11 @@
---[[
-**********************************************
-  
-  Dwarf.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
-  
-  This file contains material that is related 
-  to a storyline that is which is strictly
-  copyrighted to Jeroen Broks.
-  
-  This file may only be used in an unmodified
-  form with an unmodified version of the 
-  software this file belongs to.
-  
-  You may use this file for your study to see
-  how I solved certain things in the creation
-  of this project to see if you find valuable
-  leads for the creation of your own.
-  
-  Mostly this file comes along with a project
-  that is for most part released under an
-  open source license and that means that if
-  you use that code with this file removed
-  from it, you can use it under that license.
-  Please check out the other files to find out
-  which license applies.
-  This file comes 'as-is' and in no possible
-  way the author can be held responsible of
-  any form of damages that may occur due to 
-  the usage of this file
-  
-  
- **********************************************
- 
-version: 16.12.19
-]]
--- File Generated: Mon 19 December 2016; 19:39:31
+-- File Generated: Sat 24 December 2016; 23:23:10
 
 
 local foe = {}
 
 	foe["AI"] = "dwarfprologue"
 	foe["NEWGAMEPLUS_AAA_ATTACK"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_CRUSH"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_SMITE"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_VENOMBITE"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_VENOMSTAB"] = true
@@ -69,6 +34,7 @@ local foe = {}
 	foe["NEWGAMEPLUS_ITM_MAGICDUST"] = true
 	foe["NEWGAMEPLUS_ITM_MANDRAKE"] = true
 	foe["NEWGAMEPLUS_ITM_MEDICINE"] = true
+	foe["NEWGAMEPLUS_ITM_PANACEA"] = true
 	foe["NEWGAMEPLUS_ITM_PHOENIX"] = true
 	foe["NEWGAMEPLUS_ITM_POTION"] = true
 	foe["NEWGAMEPLUS_ITM_SALVE"] = true
@@ -77,6 +43,7 @@ local foe = {}
 	foe["NEWGAMEPLUS_WAND_FROST"] = true
 	foe["NEWGAMEPLUS_WAND_TRAINING"] = true
 	foe["NORMAL_AAA_ATTACK"] = true
+	foe["NORMAL_ABL_FOE_CRUSH"] = true
 	foe["NORMAL_ABL_FOE_SMITE"] = true
 	foe["NORMAL_ABL_FOE_VENOMBITE"] = true
 	foe["NORMAL_ABL_FOE_VENOMSTAB"] = true
@@ -105,6 +72,7 @@ local foe = {}
 	foe["NORMAL_ITM_MAGICDUST"] = true
 	foe["NORMAL_ITM_MANDRAKE"] = true
 	foe["NORMAL_ITM_MEDICINE"] = true
+	foe["NORMAL_ITM_PANACEA"] = true
 	foe["NORMAL_ITM_PHOENIX"] = true
 	foe["NORMAL_ITM_POTION"] = true
 	foe["NORMAL_ITM_SALVE"] = true
@@ -113,6 +81,7 @@ local foe = {}
 	foe["NORMAL_WAND_FROST"] = true
 	foe["NORMAL_WAND_TRAINING"] = true
 	foe["OVERSOUL_AAA_ATTACK"] = true
+	foe["OVERSOUL_ABL_FOE_CRUSH"] = true
 	foe["OVERSOUL_ABL_FOE_SMITE"] = true
 	foe["OVERSOUL_ABL_FOE_VENOMBITE"] = true
 	foe["OVERSOUL_ABL_FOE_VENOMSTAB"] = true
@@ -141,6 +110,7 @@ local foe = {}
 	foe["OVERSOUL_ITM_MAGICDUST"] = true
 	foe["OVERSOUL_ITM_MANDRAKE"] = true
 	foe["OVERSOUL_ITM_MEDICINE"] = true
+	foe["OVERSOUL_ITM_PANACEA"] = true
 	foe["OVERSOUL_ITM_PHOENIX"] = true
 	foe["OVERSOUL_ITM_POTION"] = true
 	foe["OVERSOUL_ITM_SALVE"] = true
@@ -149,6 +119,7 @@ local foe = {}
 	foe["OVERSOUL_WAND_FROST"] = true
 	foe["OVERSOUL_WAND_TRAINING"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
+	foe["SKILL\49_ABL_FOE_CRUSH"] = true
 	foe["SKILL\49_ABL_FOE_SMITE"] = true
 	foe["SKILL\49_ABL_FOE_VENOMBITE"] = true
 	foe["SKILL\49_ABL_FOE_VENOMSTAB"] = true
@@ -177,6 +148,7 @@ local foe = {}
 	foe["SKILL\49_ITM_MAGICDUST"] = true
 	foe["SKILL\49_ITM_MANDRAKE"] = true
 	foe["SKILL\49_ITM_MEDICINE"] = true
+	foe["SKILL\49_ITM_PANACEA"] = true
 	foe["SKILL\49_ITM_PHOENIX"] = true
 	foe["SKILL\49_ITM_POTION"] = true
 	foe["SKILL\49_ITM_SALVE"] = true
@@ -185,6 +157,7 @@ local foe = {}
 	foe["SKILL\49_WAND_FROST"] = true
 	foe["SKILL\49_WAND_TRAINING"] = true
 	foe["SKILL\50_AAA_ATTACK"] = true
+	foe["SKILL\50_ABL_FOE_CRUSH"] = true
 	foe["SKILL\50_ABL_FOE_SMITE"] = true
 	foe["SKILL\50_ABL_FOE_VENOMBITE"] = true
 	foe["SKILL\50_ABL_FOE_VENOMSTAB"] = true
@@ -213,6 +186,7 @@ local foe = {}
 	foe["SKILL\50_ITM_MAGICDUST"] = true
 	foe["SKILL\50_ITM_MANDRAKE"] = true
 	foe["SKILL\50_ITM_MEDICINE"] = true
+	foe["SKILL\50_ITM_PANACEA"] = true
 	foe["SKILL\50_ITM_PHOENIX"] = true
 	foe["SKILL\50_ITM_POTION"] = true
 	foe["SKILL\50_ITM_SALVE"] = true
@@ -221,6 +195,7 @@ local foe = {}
 	foe["SKILL\50_WAND_FROST"] = true
 	foe["SKILL\50_WAND_TRAINING"] = true
 	foe["SKILL\51_AAA_ATTACK"] = true
+	foe["SKILL\51_ABL_FOE_CRUSH"] = true
 	foe["SKILL\51_ABL_FOE_SMITE"] = true
 	foe["SKILL\51_ABL_FOE_VENOMBITE"] = true
 	foe["SKILL\51_ABL_FOE_VENOMSTAB"] = true
@@ -249,6 +224,7 @@ local foe = {}
 	foe["SKILL\51_ITM_MAGICDUST"] = true
 	foe["SKILL\51_ITM_MANDRAKE"] = true
 	foe["SKILL\51_ITM_MEDICINE"] = true
+	foe["SKILL\51_ITM_PANACEA"] = true
 	foe["SKILL\51_ITM_PHOENIX"] = true
 	foe["SKILL\51_ITM_POTION"] = true
 	foe["SKILL\51_ITM_SALVE"] = true
@@ -265,6 +241,7 @@ local foe = {}
 	foe["Item Steal \51"] = "ITM_ANTIDOTE"
 	foe["Name"] = "Dwarf"
 	foe["RATE_AAA_ATTACK"] = 100
+	foe["RATE_ABL_FOE_CRUSH"] = 0
 	foe["RATE_ABL_FOE_SMITE"] = 0
 	foe["RATE_ABL_FOE_VENOMBITE"] = 0
 	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
@@ -293,6 +270,7 @@ local foe = {}
 	foe["RATE_ITM_MAGICDUST"] = 0
 	foe["RATE_ITM_MANDRAKE"] = 0
 	foe["RATE_ITM_MEDICINE"] = 0
+	foe["RATE_ITM_PANACEA"] = 0
 	foe["RATE_ITM_PHOENIX"] = 0
 	foe["RATE_ITM_POTION"] = 0
 	foe["RATE_ITM_SALVE"] = 0
@@ -301,6 +279,7 @@ local foe = {}
 	foe["RATE_WAND_FROST"] = 0
 	foe["RATE_WAND_TRAINING"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
+	foe["TARGET_ABL_FOE_CRUSH"] = "Random"
 	foe["TARGET_ABL_FOE_SMITE"] = "Random"
 	foe["TARGET_ABL_FOE_VENOMBITE"] = "Random"
 	foe["TARGET_ABL_FOE_VENOMSTAB"] = "Random"
@@ -329,6 +308,7 @@ local foe = {}
 	foe["TARGET_ITM_MAGICDUST"] = "Random"
 	foe["TARGET_ITM_MANDRAKE"] = "Random"
 	foe["TARGET_ITM_MEDICINE"] = "Random"
+	foe["TARGET_ITM_PANACEA"] = "Random"
 	foe["TARGET_ITM_PHOENIX"] = "Random"
 	foe["TARGET_ITM_POTION"] = "Random"
 	foe["TARGET_ITM_SALVE"] = "Random"

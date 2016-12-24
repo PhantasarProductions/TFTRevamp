@@ -1,40 +1,4 @@
---[[
-  GobKing.lua
-  Version: 16.12.19
-  Copyright (C) 2016 Jeroen Petrus Broks
-  
-  ===========================
-  This file is part of a project related to the Phantasar Chronicles or another
-  series or saga which is property of Jeroen P. Broks.
-  This means that it may contain references to a story-line plus characters
-  which are property of Jeroen Broks. These references may only be distributed
-  along with an unmodified version of the game. 
-  
-  As soon as you remove or replace ALL references to the storyline or character
-  references, or any termology specifically set up for the Phantasar universe,
-  or any other univers a story of Jeroen P. Broks is set up for,
-  the restrictions of this file are removed and will automatically become
-  zLib licensed (see below).
-  
-  Please note that doing so counts as a modification and must be marked as such
-  in accordance to the zLib license.
-  ===========================
-  zLib license terms:
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
-]]
--- File Generated: Mon 19 December 2016; 20:11:15
+-- File Generated: Sat 24 December 2016; 23:26:48
 
 
 local foe = {}
@@ -70,6 +34,7 @@ local foe = {}
 	foe["NEWGAMEPLUS_ITM_MAGICDUST"] = true
 	foe["NEWGAMEPLUS_ITM_MANDRAKE"] = true
 	foe["NEWGAMEPLUS_ITM_MEDICINE"] = true
+	foe["NEWGAMEPLUS_ITM_PANACEA"] = true
 	foe["NEWGAMEPLUS_ITM_PHOENIX"] = true
 	foe["NEWGAMEPLUS_ITM_POTION"] = true
 	foe["NEWGAMEPLUS_ITM_SALVE"] = true
@@ -107,6 +72,7 @@ local foe = {}
 	foe["NORMAL_ITM_MAGICDUST"] = true
 	foe["NORMAL_ITM_MANDRAKE"] = true
 	foe["NORMAL_ITM_MEDICINE"] = true
+	foe["NORMAL_ITM_PANACEA"] = true
 	foe["NORMAL_ITM_PHOENIX"] = true
 	foe["NORMAL_ITM_POTION"] = true
 	foe["NORMAL_ITM_SALVE"] = true
@@ -144,6 +110,7 @@ local foe = {}
 	foe["OVERSOUL_ITM_MAGICDUST"] = true
 	foe["OVERSOUL_ITM_MANDRAKE"] = true
 	foe["OVERSOUL_ITM_MEDICINE"] = true
+	foe["OVERSOUL_ITM_PANACEA"] = true
 	foe["OVERSOUL_ITM_PHOENIX"] = true
 	foe["OVERSOUL_ITM_POTION"] = true
 	foe["OVERSOUL_ITM_SALVE"] = true
@@ -181,6 +148,7 @@ local foe = {}
 	foe["SKILL\49_ITM_MAGICDUST"] = true
 	foe["SKILL\49_ITM_MANDRAKE"] = true
 	foe["SKILL\49_ITM_MEDICINE"] = true
+	foe["SKILL\49_ITM_PANACEA"] = true
 	foe["SKILL\49_ITM_PHOENIX"] = true
 	foe["SKILL\49_ITM_POTION"] = true
 	foe["SKILL\49_ITM_SALVE"] = true
@@ -218,6 +186,7 @@ local foe = {}
 	foe["SKILL\50_ITM_MAGICDUST"] = true
 	foe["SKILL\50_ITM_MANDRAKE"] = true
 	foe["SKILL\50_ITM_MEDICINE"] = true
+	foe["SKILL\50_ITM_PANACEA"] = true
 	foe["SKILL\50_ITM_PHOENIX"] = true
 	foe["SKILL\50_ITM_POTION"] = true
 	foe["SKILL\50_ITM_SALVE"] = true
@@ -255,6 +224,7 @@ local foe = {}
 	foe["SKILL\51_ITM_MAGICDUST"] = true
 	foe["SKILL\51_ITM_MANDRAKE"] = true
 	foe["SKILL\51_ITM_MEDICINE"] = true
+	foe["SKILL\51_ITM_PANACEA"] = true
 	foe["SKILL\51_ITM_PHOENIX"] = true
 	foe["SKILL\51_ITM_POTION"] = true
 	foe["SKILL\51_ITM_SALVE"] = true
@@ -300,6 +270,7 @@ local foe = {}
 	foe["RATE_ITM_MAGICDUST"] = 0
 	foe["RATE_ITM_MANDRAKE"] = 0
 	foe["RATE_ITM_MEDICINE"] = 0
+	foe["RATE_ITM_PANACEA"] = 0
 	foe["RATE_ITM_PHOENIX"] = 0
 	foe["RATE_ITM_POTION"] = 0
 	foe["RATE_ITM_SALVE"] = 0
@@ -337,6 +308,7 @@ local foe = {}
 	foe["TARGET_ITM_MAGICDUST"] = "Random"
 	foe["TARGET_ITM_MANDRAKE"] = "Random"
 	foe["TARGET_ITM_MEDICINE"] = "Random"
+	foe["TARGET_ITM_PANACEA"] = "Random"
 	foe["TARGET_ITM_PHOENIX"] = "Random"
 	foe["TARGET_ITM_POTION"] = "Random"
 	foe["TARGET_ITM_SALVE"] = "Random"
