@@ -1,6 +1,6 @@
 --[[
   TheEnd.lua
-  Version: 16.12.09
+  Version: 16.12.24
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -75,6 +75,7 @@ function fflow.Victory()
          MS.LoadNew("ACH","Script/Subs/Achievements.lua")
          MS.Run('ACH','AchByVictory')
          LAURA.Flow(CVVN("$COMBAT.BACKCHAIN") or "FIELD")    
+         DestroyAllFoes()
       end
    end   
    Image.ScalePC(youwinvalue,100)
@@ -96,6 +97,7 @@ function fflow.Victory()
 end
 
 function fflow.Defeat()
+   DestroyAllFoes() -- Must be put in in a more proper way later. 
 end
 
 -- @IF IGNORE
