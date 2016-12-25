@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.24
+version: 16.12.25
 ]]
 
 -- @USE /Script/Use/Specific/EndOfPrologue.lua
@@ -125,6 +125,7 @@ end
 -- Treason
 function Treason()
     Music('Scenario/We Got Trouble.ogg')
+    Shift('Fairy')
     MapText('TREASON')
     Maps.Obj.Kill('ELDER_OUTSIDE',1) -- We won't see him again... Byebye! ;) (Fandalora can remain here. We'll see him again on the next visit!)
     GoToLayer('harryhub','Spot')
@@ -132,12 +133,14 @@ function Treason()
     Maps.CamX=96
     MapText('HARRY1')
     repeat
+      TurnPlayer('West')
       Cls()
       Maps.CamX = Maps.CamX - 1
       DrawScreen()
       ShowParty()
       Flip()
     until Maps.CamX<=0
+    TurnPlayer('West')
     MapText('HARRY2') 
     Var.D('$WMCHAT','HELL')
     WorldMap_Unlock('CH1HELL')
@@ -148,11 +151,18 @@ function Treason()
     ClearCombatData()
     Var.D("$COMBAT.FOE_1","Boss/Harry1") -- Needed to prevent the Axe Smash session Marrilona has to deal with.
     Var.D("$COMBAT.POSFOE_1","CENTER")
-    Var.D("$COMBAT.MUSIC","Music/Special Boss/Annoying Boy.ogg")
+    Var.D("$COMBAT.MUSIC","Music/Special Boss/AnnoyingBoy.ogg")
     Var.D("$COMBAT.ARENA","Forest.png")
     StartBoss("Annoying Warrior Wannabe","Harry McDummy")      
     
     -- Sys.Error('Script ends here')
+end
+
+function Treason_PostBoss()
+    MapText('HARRYPOST1')
+    Maps.Obj.Kill('Harry') -- No, not permanently. Since we'll never return to this spot there is no need for an extra "perma" file.
+    MapText('HARRYPOST2')
+    WorldMap()
 end
 
 function ComeInEvents()

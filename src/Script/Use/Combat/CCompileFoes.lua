@@ -1,6 +1,6 @@
 --[[
   CCompileFoes.lua
-  Version: 16.12.14
+  Version: 16.12.25
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -55,6 +55,7 @@ function CompileFoe(tag,data,foefile,oversoul)
    myfoe.AI = data.AI
    myfoe.data = data
    myfoe.exp = data.normal_EXP
+   myfoe.voicetag = data.VocalTag
    if oversoul then
       if skill==3 then myfoe.exp = 0 else myfoe.exp = data.oversoul_EXP end
    end

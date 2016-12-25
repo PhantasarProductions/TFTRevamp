@@ -1,5 +1,5 @@
 --[[
-  FoeInput.lua
+  Card Tricks.lua
   Version: 16.12.25
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -35,23 +35,24 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 -- @IF IGNORE
-fflow = {}
+SpellScript = {}
 -- @FI
 
-function fflow.foeinput()
-   local card = cards[1] 
-   local tag = card.data.tag
-   local foe = fighterbytag[tag]
-   assert(FoeAI,"Foe AI not defined at all") -- If this one EVERY happens then there's really something wrong!
-   assert(FoeAI[foe.AI],"No AI information found for AIID '"..foe.AI.."'")
-   FoeAI[foe.AI](tag); assert(nextact,"nextact not define somehow???")
-   flow = nextact.flow
-   assert(flow~="foeinput","Somehow the flow goes into repeat!")
-   -- assert(false,"Forced Crash")
+
+function SpellScript.RemoveAllUserCards(tartag,extag,param)
+  local remove = {}
+  CSay('SpellScript.RemoveAllUserCards('..extag..","..tartag..","..sval(param)..')')
+  for id,card in pairs(Cards) do
+      if card.data and card.data.tag==tartag then 
+           remove[#remove+1]=id
+           CSay("= Added card #"..id.." to the removal list (tag:"..card.data.tag.."/"..tartag..")") 
+         end
+  end 
+  for r in each(remove) do
+      Cards[r]=nil
+  end
 end
 
-
-
--- @IF IGNORE
-return fflow
+-- @IF INGORE
+return SpellScript 
 -- @FI

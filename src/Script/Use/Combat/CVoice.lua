@@ -1,6 +1,6 @@
 --[[
   CVoice.lua
-  Version: 16.10.21
+  Version: 16.12.25
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -38,6 +38,7 @@ function Voice(chartag,voice)
    local mych = fightersbytag[chartag]
    if not mych.voicetag then return end
    local file = "Vocals/Combat/"..(mych.group or 'Foe')..'/'..mych.voicetag..'/Action/'..voice..".ogg"
+   CSay("Voice file requested: "..file)
    if JCR6.Exists(file)==0 then
       --CSay("COMBATVOICE: "..file.." not found -- ignoring!")
       return 

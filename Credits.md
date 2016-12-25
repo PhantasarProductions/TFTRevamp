@@ -128,6 +128,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/Dwarf_J.lua
     1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
     1. Script: Script/JINC/Foes/Boss/GobKing.lua
+    1. Script: Script/JINC/Foes/Boss/Harry1.lua
     1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
@@ -141,6 +142,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Zombie.lua
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
     1. Script: Script/JINC/IA/ABL_FOE_CRUSH.lua
+    1. Script: Script/JINC/IA/ABL_FOE_DESPERATEATTACK.lua
+    1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
     1. Script: Script/JINC/IA/ABL_FOE_SMITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMBITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMSTAB.lua
@@ -291,6 +294,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
+    1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
@@ -575,6 +579,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Fairies/Nostramantu.png
     1. Graphics: GFX/Actors/Single/Fairies/Yanee.png
     1. Graphics: GFX/Actors/Single/Humans/ChiefWerrington.png
+    1. ???: GFX/Actors/Single/Humans/Harry (Autosaved).piko-png
     1. Graphics: GFX/Actors/Single/Humans/Harry.png
     1. Graphics: GFX/Actors/Single/Humans/Harry_BackSide.png
     1. Graphics: GFX/Actors/Single/Humans/Master John.png
@@ -653,6 +658,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Cards/HERO_JAKE_HUMAN.png
     1. Graphics: GFX/Combat/Cards/HERO_MARRILONA.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/GhostPriest.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/Harry.piko
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/Harry.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/SuperZombie.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Zombie.png
     1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Attack.1.png
@@ -930,9 +937,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - SterioType
     1. Font: Fonts/master_of_break.ttf
 - TFTCREW
-    1. Audio: Vocals/Combat/Foe/Harry/Attack.ogg
-    1. Audio: Vocals/Combat/Foe/Harry/Desperate.ogg
-    1. Audio: Vocals/Combat/Foe/Harry/Distract.ogg
+    1. Audio: Vocals/Combat/Foe/Harry/Action/Attack.ogg
+    1. Audio: Vocals/Combat/Foe/Harry/Action/Desperate.ogg
+    1. Audio: Vocals/Combat/Foe/Harry/Action/Distract.ogg
     1. Audio: Vocals/Combat/Hero/Dandor/Action/Attack.ogg
     1. Audio: Vocals/Combat/Hero/Dandor/Victory/Boss.ogg
     1. Audio: Vocals/Combat/Hero/Dandor/Victory/Dead.ogg

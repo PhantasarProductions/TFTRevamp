@@ -1,5 +1,5 @@
 --[[
-  FoeInput.lua
+  ABL_FOE_DESPERATEATTACK.lua
   Version: 16.12.25
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,24 +34,31 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- @IF IGNORE
-fflow = {}
--- @FI
+ret = {
+	["Attack"] = 120,
+	["Attack_AccuracyRate"] = 25,
+	["Attack_AllowAccuracy"] = true,
+	["Attack_AllowDodge"] = true,
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Desperate"] = true,
+	["Attack_Element"] = "None",
+	["Desc"] = "Critical hit if it hits",
+	["Heal_StatPercent"] = "Intelligence",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_Type"] = "Consumable",
+	["Stance"] = "Attack",
+	["Target"] = "1F",
+	["Title"] = "Desperate Attack",
+	["Type"] = "Ability"}
 
-function fflow.foeinput()
-   local card = cards[1] 
-   local tag = card.data.tag
-   local foe = fighterbytag[tag]
-   assert(FoeAI,"Foe AI not defined at all") -- If this one EVERY happens then there's really something wrong!
-   assert(FoeAI[foe.AI],"No AI information found for AIID '"..foe.AI.."'")
-   FoeAI[foe.AI](tag); assert(nextact,"nextact not define somehow???")
-   flow = nextact.flow
-   assert(flow~="foeinput","Somehow the flow goes into repeat!")
-   -- assert(false,"Forced Crash")
-end
+return ret
 
+-- This file is an automatically generated file!
 
-
--- @IF IGNORE
-return fflow
--- @FI
