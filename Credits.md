@@ -83,6 +83,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Audio/Dungeon/FallingDown.ogg
     1. Graphics: gfx/Worldmap/back.png
     1. Graphics: gfx/Worldmap/rock001.jpg
+    1. Graphics: gfx/textures/Lava/Lava.png
     1. Graphics: gfx/textures/Water/water.png
     1. Graphics: gfx/textures/wood/muur.png
     1. Graphics: gfx/textures/wood/vloer.png
@@ -231,6 +232,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/Anna.lua
     1. Script: Script/Maps/AutoUse.lua
     1. Script: Script/Maps/CH1_Dungeon_FrendorBushes.lua
+    1. Script: Script/Maps/CH1_Dungeon_Hell.lua
     1. Script: Script/Maps/CH1_Dungeon_HolyPath.lua
     1. Script: Script/Maps/CH1_Dungeon_SubRiver.lua
     1. Script: Script/Maps/CH1_HUB_Altar.lua
@@ -314,6 +316,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Linkers/WorldMap -- The great linker.lua
     1. Script: Script/Use/Scenario/Scenario.lua
     1. Script: Script/Use/Specific/EndOfPrologue.lua
+    1. Script: Script/Use/Specific/MoveTex.lua
     1. Script: Script/Use/Specific/Scroller.lua
     1. Script: Script/Use/Specific/StepsPuzzle.lua
     1. Script: Script/Libs/Coords2Rotation.lua
@@ -579,7 +582,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Fairies/Nostramantu.png
     1. Graphics: GFX/Actors/Single/Fairies/Yanee.png
     1. Graphics: GFX/Actors/Single/Humans/ChiefWerrington.png
-    1. ???: GFX/Actors/Single/Humans/Harry (Autosaved).piko-png
     1. Graphics: GFX/Actors/Single/Humans/Harry.png
     1. Graphics: GFX/Actors/Single/Humans/Harry_BackSide.png
     1. Graphics: GFX/Actors/Single/Humans/Master John.png
@@ -852,10 +854,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Caves/Grey + Alpha/NW.png
     1. Graphics: GFX/Textures/Caves/Grey + Alpha/S.png
     1. Graphics: GFX/Textures/Caves/Grey + Alpha/SE.png
+    1. Graphics: GFX/Textures/Caves/Grey + Alpha/SE_F.png
     1. Graphics: GFX/Textures/Caves/Grey + Alpha/SW.png
+    1. Graphics: GFX/Textures/Caves/Grey + Alpha/SW_F.png
     1. Graphics: GFX/Textures/Caves/Grey + Alpha/Shore.png
     1. Graphics: GFX/Textures/Caves/Grey + Alpha/W.png
     1. Graphics: GFX/Textures/Caves/Grey/E.png
+    1. ???: GFX/Textures/Caves/Grey/F (Autosaved).piko-png
     1. Graphics: GFX/Textures/Caves/Grey/F.png
     1. Graphics: GFX/Textures/Caves/Grey/F_Sea.png
     1. Graphics: GFX/Textures/Caves/Grey/F_Shore.png
