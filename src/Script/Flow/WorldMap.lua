@@ -1,6 +1,6 @@
 --[[
   WorldMap.lua
-  Version: 16.12.15
+  Version: 16.12.25
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -60,6 +60,7 @@ function LoadWorld(worldfolder)
    prij=nil
    pcol=nil
    for k,v in pairs(allwords) do
+        wm_unlocked.ANNA = nil -- If Anna is not loaded, then don't add it. This will also make the temple disappear if authentication failed later.
        -- @IF *ANNA
        if k=="ANNA" then
           wm_unlocked.ANNA = CallAnna('A=TFT_Anna_Temple&Request=OpenTemple')

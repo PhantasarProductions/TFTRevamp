@@ -515,7 +515,7 @@ Rec: ABL_FOE_DESPERATEATTACK
 	Title = Desperate Attack
 	Type = Ability
 	USE_Penalty = 0
-	Voice = 
+	Voice = Desperate
 	rew_CreateSkill1 = FALSE
 	rew_CreateSkill2 = FALSE
 	rew_CreateSkill3 = FALSE

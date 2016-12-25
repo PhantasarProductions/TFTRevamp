@@ -56,7 +56,8 @@ ret = {
 	["Stance"] = "Attack",
 	["Target"] = "1F",
 	["Title"] = "Desperate Attack",
-	["Type"] = "Ability"}
+	["Type"] = "Ability",
+	["Voice"] = "Desperate"}
 
 return ret
 
