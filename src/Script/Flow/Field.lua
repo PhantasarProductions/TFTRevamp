@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.12.17
+  Version: 16.12.25
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -61,6 +61,8 @@ RONOFF = { [false] = "Off", [true]="On" }
 Scheduled = {}
 
 AUTOHIDE = {}
+
+RandomTreasure = RandomTreasure or {}
 
 function GALE_OnLoad()
   rencgaugex = SW+100
@@ -484,19 +486,73 @@ function TurnOffClicks()
 end
 
 function SetUpAutoClickables()
-local prefixes = {"NPC_","PSG_","PRC_","CHEST_","PTE_","BLACKORB_"}
+local prefixes = {"NPC_","PSG_","PRC_","CHEST_","PTE_","BLACKORB_","RNDITEM_"}
 local p 
 local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()
 -- CSay(type(layers).."/"..type(each))
+local RandomItems = RandomTreasure
+RandomItems[Maps.CodeName] = RandomItems[Maps.CodeName] or {}
+
 for layer in each(layers) do
+    local got = RandomItems[Maps.CodeName][layer]
     if Maps.Multi()==1 then Maps.GotoLayer(layer) end
     for obj in KthuraEach() do
+        if prefixed(p,"RNDITEM_") and (not got) then
+           RandomItems[Maps.CodeName][layer] = true
+           if rand(1,9/skill)~=1 then Maps.Obj.Kill(p,1) end
+        end   
         for p in each(prefixes) do 
             if prefixed(obj.Tag,p) then AddClickable(obj.Tag) CSay(layer..": Autoclickable "..obj.Tag.." added") end
             end
         end
     end
 if Maps.Multi()==1 then Maps.GotoLayer(orilayer) end    
+end
+
+function RandomItem(tag)
+    CSay('Begin: Random Item')
+    LoadItemModule()
+    local div = ({5,25,625})[skill]
+    local qitems = mysplit(Maps.GetData("RandomItems"),";")
+    local items = {}
+    qitems[1] = qitems[1] or {"Cash:"..tonumber(9/skill)}
+    CSay("MakeList: Random Items")
+    for i in each(qitems) do 
+        local a=mysplit(i,",")
+        for i2=1,(a[2] or 1) do items[#items+1]=a[1] end
+    end
+    CSay("BoxText Init: Random Items")
+    MS.LoadNew("BOXTEXT","Script/Subs/BoxText.lua")
+    MS.Run("BOXTEXT","LoadData","General/Items;ITEM")
+    local item = "ITM_"..upper(items[rand(1,#items)])
+    local data
+    if prefixed (item,"ITM_CASH:") then
+       CSay("Give Cash: Random Items")
+       local si = mysplit(item,":")
+       local givecash = Sys.Val(si[2] or 1)
+       inc('%CASH',givecash)
+       Var.D("$ITEMNAME",givecash.." shilders")
+       if givecash==1 then Var.D("$ITEMNAME","1 shilder") end    
+    else
+       CSay("Can we give an item: Random Items")
+       data = ItemGet(item)
+       local itemvalue = math.ceil((data.ITM_SellPrice or 1)/div)
+       MS.Run('ITEMS','ItemFull')
+       if CVV('&ITEMFULL') then 
+          CSay("Full: Random Items")
+          inc('%CASH',itemvalue)
+          Var.D("$ITEMNAME",itemvalue.." shilders")
+          if itemvalue==1 then Var.D("$ITEMNAME","1 shilder") end
+       else
+          CSay('Give Item: Random Items')
+          Var.D("$ITEMNAME",data.Title)    
+          ItemGive(item,1)
+       end 
+    end
+    CSay("End it all: Random Items")
+    SerialBoxText("ITEM","GET","FLOW_FIELD")
+    Maps.Obj.Kill(tag,1)
+    CSay("Finished: Random Items")
 end
 
 
@@ -569,14 +625,14 @@ if mousehit(1) or fakex or fakey then
                WalkArrivalArg = c
                ret = true  
             end                
-          elseif prefixed(c,"CHEST_") then
-               local chest = Maps.Obj.Obj(c) 
-               CSay('Clicked chest: '..c.." Frame:"..chest.Frame)
-               if chest.Frame==0 and Actors.WalkTo(cplayer,chest.X,chest.Y+32)==1 then
-                  WalkArrival = "TreasureChest"
-                  WalkArrivalArg = c
-                  ret = true
-               end       
+          elseif prefixed(c,"RNDITEM_") then
+            if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32)==1 then
+               --local chest = Maps.Obj.Obj(c) 
+               --CSay('Clicked chest: '..c.." Frame:"..chest.Frame)
+               WalkArrival = RandomItem
+               WalkArrivalArg = c
+               ret = true
+            end   
       else
         if Maps.Obj.Exists("SPOT_"..c)==1 then
            succ = Actors.WalkToSpot(cplayer,"SPOT_"..c) == 1

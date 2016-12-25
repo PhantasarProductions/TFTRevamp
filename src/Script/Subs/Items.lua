@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.12.21
+  Version: 16.12.25
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -130,6 +130,9 @@ function ItemGive(i,n)
    ItemFilterReset()
 end
 
+function ItemFull(i)
+   Var.D("&ITEMFULL",upper(sval((inventory[i] or 0)>itemmax)))
+end
 
 function FilterShownItems(pfilter,char,force)
     local filter = pfilter .. (char or "") 
