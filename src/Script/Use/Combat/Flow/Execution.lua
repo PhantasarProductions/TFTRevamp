@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 16.12.19
+  Version: 16.12.25
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -65,6 +65,16 @@ function PerformAction(act,group,i)
      -- Dodge check if needed. If it succeeds, byebye
      if act.Attack_AllowDodge and (rand(1,100)<RPG.Stat(myfighter.tag,"END_Evasion")) then charmsg(myfighter.tag,'dodged',155,155,155) return end
      -- Cure status changes (this always comes first)
+     for k,b in pairs(act) do
+         if prefixed(k,"Cure") then 
+            local s = right(k,#k-4)
+            if myfighter.statuschanges and myfighter.statuschanges[s] then 
+               myfighter.statuschanges[s]=nil
+               effect = true
+               charmsg(myfighter.tag,'Cure:'..s,0,155,0)  
+            end
+         end   
+     end    
      -- Dispell Buffs 
      -- Recover HP or AP
      local heal = ItemHeal(myfighter.tag,act,true,nextact.executor.tag)
