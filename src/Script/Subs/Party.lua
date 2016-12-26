@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 16.12.15
+  Version: 16.12.26
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -229,8 +229,12 @@ function CreateChar(ch,name)
   for st in each(stats) do
       for w in each(works) do
           RPGChar.SetStat(ch,w.."_"..st,0)
-          if prefixed(st,"SR_") then RPGChar.SetStat(ch,w.."_"..st,100-(25*skill)) end
+          if prefixed(st,"SR_") and w=='BASE' then RPGChar.SetStat(ch,w.."_"..st,100-math.floor(33*skill)) end
       end
+      if ch=='Jake_Human' then RPGChar.SetStat('BASE_SR_Paralysis',90/skill) 
+      elseif ch=='Jake_Fairy' or ch=='Marrilona' then RPGChar.SetStat('BASE_SR_Curse',90/skill); RPGChar.SetStat('BASE_SR_Silence',72/skill)
+      elseif ch=='Dandor' then RPGChar.SetStat('BASE_SR_Poison',90/skill) RPGChar.SetStat('BASE_SR_Disease',90/skill) 
+      elseif ch=='HandoStillor' then RPGChar.SetStat('BASE_SR_Silence',90/skill) RPGChar.SetStat('BASE_SR_Undead',100) end
       RPGChar.ScriptStat(ch,"END_"..st,"Script/Char/Char.lua",upper(st))
   end
   -- Points

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.15
+version: 16.12.26
 ]]
 
 -- Link all stats in Jake that should be linked

@@ -1,6 +1,6 @@
 --[[
   Char.lua
-  Version: 16.12.14
+  Version: 16.12.26
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -42,6 +42,23 @@ oldstuff = {}
 
 stats = {'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion','Critical','Counter','HP','AP'}
 
+
+function FixSRStat(ch,stat)
+      CSay('Fixing broken stat: '..stat)
+      local w = {'BUFF','EQP','POWERUP'}
+      for wi in each(w) do 
+          RPG.SetStat(ch,wi.."_"..stat,0)
+          CSay("  = Resetting: "..wi.."_"..stat) 
+      end
+      RPGChar.SetStat(ch,"BASE_"..stat,100-math.floor(33*skill))
+      if ch=='Jake_Human' and stat=='SR_Paralysis' then RPGChar.SetStat(ch,'BASE_SR_Paralysis',90/skill) 
+      elseif (ch=='Jake_Fairy' or ch=='Marrilona') and stat=='SR_Curse' then RPGChar.SetStat(ch,'BASE_SR_Curse',90/skill); 
+      elseif (ch=='Jake_Fairy' or ch=='Marrilona') and stat=='SR_Silence' then RPGChar.SetStat(ch,'BASE_SR_Silence',72/skill)
+      elseif ch=='Dandor' and stat=='SR_Poison' then RPGChar.SetStat(ch,'BASE_SR_Poison',90/skill) RPGChar.SetStat('Dandor','BASE_SR_Disease',90/skill) 
+      elseif ch=='HandoStillor' and stat=='SR_Silence' then RPGChar.SetStat(ch,'BASE_SR_Silence',90/skill) 
+      elseif ch=='HandoStillor' and stat=='SR_Undead' then RPGChar.SetStat(ch,'BASE_SR_Undead',100) end 
+end
+
 function EStat(ch)
     oldstuff[ch] = oldstuff[ch] or {}
     local chstuff = oldstuff[ch]
@@ -63,6 +80,7 @@ end
 
 function NStat(ch,stat,max,pmin)
    EStat(ch)
+   if prefixed(stat,'SR_') and RPG.SafeStat(ch,'BASE_'..stat)==50 and (not prefixed(ch,"FOE_")) then FixSRStat(ch,stat) end
    -- debug[ch] = debug[ch] or {}
    -- Init stuff
    local min = pmin or 1
@@ -121,3 +139,17 @@ function ER_NONE     (ch) NStat(ch,"ER_None",nil,-1000)      end
 function ER_THUNDER  (ch) NStat(ch,"ER_Thunder",nil,-1000)   end
 function ER_WATER    (ch) NStat(ch,"ER_Water",nil,-1000)     end
 function ER_WIND     (ch) NStat(ch,"ER_Wind",nil,-1000)      end
+
+function SR_POISON   (ch) NStat(ch,"SR_Poison",100,0)    end
+function SR_DISEASE  (ch) NStat(ch,"SR_Disease",100,0)   end
+function SR_PARALYSIS(ch) NStat(ch,"SR_Paralysis",100,0) end
+function SR_CURSE    (ch) NStat(ch,"SR_Curse",100,0)     end
+function SR_SILENCE  (ch) NStat(ch,"SR_Silence",100,0)   end
+function SR_SLEEP    (ch) NStat(ch,"SR_Sleep",100,0)     end
+function SR_DEATH    (ch) NStat(ch,"SR_Death",100,0)     end
+function SR_DESTRUCTION
+                     (ch) NStat(ch,"SR_Destruction",100,0) 
+                                                         end
+function SR_UNDEAD   (ch) NStat(ch,"SR_Undead",100,0)    end
+
+
