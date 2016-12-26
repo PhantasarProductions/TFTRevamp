@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 16.12.25
+  Version: 16.12.27
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -184,14 +184,15 @@ end
 
 function TeachSkill(pch,pskill)
     local ch=pch
-    local skill=upper(pskill)
+    local myskill=upper(pskill)
     if prefixed(pch,'Jake') then ch='Jake' end
-    CSay('Request to teach: '..skill.."     to "..ch)
-    if heroabl[ch] then CSay('= Already has this skill') end
-    heroabl[ch][skill] = true
-    skills[ch][skill]={} -- Just must contain a table... Nothing more :P
-    Var.D('$MASTERABLCODE',skill)
+    CSay('Request to teach: '..myskill.."     to "..ch)
+    if heroabl[ch][myskill] then CSay('= Already has this myskill'); return end
+    heroabl[ch][myskill] = true
+    myskills[ch][myskill]={} -- Just must contain a table... Nothing more :P
+    Var.D('$MASTERABLCODE',myskill)
     Done('&TEACH.SKILL.OK')
+    return true
 end
 
 function ShowSpellList(ch,psizes)

@@ -1,6 +1,6 @@
 --[[
   Items -- Linker.lua
-  Version: 16.12.15
+  Version: 16.12.26
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -105,6 +105,13 @@ function SelectedAbility() -- Returns the last selected Ability and kills the se
    return ret
 end   
 
+TeachSkill = TeachSkill or function(ch,skill)
+   LoadItemModule()
+   MS.Run('ITEMS','TeachSkill',ch..";"..skill)
+   local ret = CVV('&TEACH.SKILL.OK')
+   Var.Clear('&TEACH.SKILL.OK')
+   return ret
+end   
 
 ItemGive = ItemGive or function(i,n)
    LoadItemModule()

@@ -168,6 +168,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_HUMAN.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HEAL.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_SPLASH.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_BACKSTAB.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_FOLLOWME.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_PICKPOCKET.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_POISONSTAB.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_TRAINAXE.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP1.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP2.lua

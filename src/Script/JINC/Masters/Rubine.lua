@@ -32,16 +32,61 @@
   
  **********************************************
  
-version: 16.12.26
+version: 16.12.27
 ]]
 
 local RPG = RPGStat
 
 local Rubine = {}
 
+local skill = Sys.Val(Var.C('%SKILL'))
+
+
+
+
+local function CVV(k)
+local CVF = {
+   ["%"] = function(k) return Sys.Val(Var.C(k)) end,
+   ["&"] = function(k) return string.upper(Var.C(k))=="TRUE" or string.upper(Var.C(k))=="YES" end,
+   ["$"] = function(k) return Var.C(k) end
+}
+local prefix = string.sub(k,1,1)
+local f = CVF[prefix] or CVF["$"]
+return f(k)
+end
+
+
+local function Done(k)
+ local r = CVV(k)
+ if not r then Var.D(k,"TRUE") end
+ return r
+end 
+
 function Rubine.requirement() return true end
 
+Rubine._abl = {
+                     [ 20] = 'abl_master_rubine_pickpocket',
+                     [ 40] = 'abl_master_rubine_poisonstab',
+                     [200] = 'abl_master_rubine_backstab',
+                     [400] = 'abl_master_rubine_followme'
+              }
+
+
 function Rubine.teach(ch) -- Should return true if master actually decides to teach something
+    local all = true
+    local maylearn = true
+    local rabl = false
+    for truereq,abl in pairs(Rubine._abl) do -- DEFINITELY NOT ipairs!!!!!
+        local req = truereq*(skill-1)
+        if maylearn and RPG.Stat(ch,"RubinePoints")>=req and (not Done('&MASTER.RUBINE.'..abl)) then
+           Console.Write(RPG.Stat(ch,"RubinePoints")..">="..req.." so let's teach!",180,255,0)
+           maylearn=false
+           rabl=abl
+        else
+           all = all and CVV('&MASTER.RUBINE.'..abl)   
+        end   
+    end
+    return rabl,all
 end
 
 function Rubine.appoint(ch)
@@ -52,6 +97,7 @@ end
 function Rubine.dismiss(ch)
      RPG.DelStat(ch,"RubinePoints")
 end
+
 
 Rubine.stats = {
                       -- Spd +25%, Atk -10%, End -5%, Int -10%, Res - 5%, Acc +5%, eva +5%

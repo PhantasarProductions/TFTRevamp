@@ -1,6 +1,6 @@
 --[[
   Master.lua
-  Version: 16.12.26
+  Version: 16.12.27
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -55,12 +55,21 @@ function Master(id)
    end   
    MapText(upper(id).."_"..sptag[Unlocked[id]==true])
    for i=0,3 do
-       local ch=RPG.PartyTag(i) 
-       if ch~="" and cMaster.teach(ch) then
-          local i = ItemGet(Var.C('$MASTERABLCODE'))
-          Var.D("$MASTERCHAR",RPG.GetName(ch))
-          Var.D("$MASTERMOVE",i.Title)
-          MapText(upper(id).."_LEARN")
+       local ch=RPG.PartyTag(i)
+       if ch~="" and RPG.GetData(ch,"Master")==id then 
+          local teach,allteach = cMaster.teach(ch) 
+          CSay("teach = "..sval(teach))
+          CSay("alltech = "..sval(allteach))
+          if teach and TeachSkill(ch,teach) then             
+             local i = ItemGet(teach) --Var.C('$MASTERABLCODE'))
+             Var.D("$MASTERCHAR",RPG.GetName(ch))
+             Var.D("$MASTERMOVE",i.Title)
+             MapText(upper(id).."_LEARN")
+          end
+          if allteach then 
+             MapText(upper(id).."_ALL")
+             Done("&MASTER.ALL."..id) 
+          end
        end
    end    
    Unlocked[id] = true
