@@ -80,7 +80,7 @@ end
 
 function NStat(ch,stat,max,pmin)
    EStat(ch)
-   if prefixed(stat,'SR_') and RPG.SafeStat(ch,'BASE_'..stat)==50 and (not prefixed(ch,"FOE_")) then FixSRStat(ch,stat) end
+   if prefixed(stat,'SR_') and (RPG.SafeStat(ch,'BASE_'..stat)==50 or RPG.SafeStat(ch,'BASE_'..stat)==0) and (not prefixed(ch,"FOE_")) then FixSRStat(ch,stat) end
    -- debug[ch] = debug[ch] or {}
    -- Init stuff
    local min = pmin or 1
