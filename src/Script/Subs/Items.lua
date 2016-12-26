@@ -88,8 +88,10 @@ function GALE_OnLoad()
    for c in each(ichars) do
        abllist[c] = JINC('Script/JINC/CharAbilities/'..c..".lua")
        if abllist[c] then
-          skills[c] = skills[c] or {}
-          abllist[c]['9. Skills'] = abllist[c]['9. Skills'] or skills[c] 
+          local ck=c
+          if prefixed(ck,"Jake") then ck='Jake' end
+          skills[ck] = skills[ck] or {}
+          abllist[c]['9. Skills'] = abllist[c]['9. Skills'] or skills[ck] 
           for k,d in spairs(abllist[c]) do
               if type(d)=="string" then abllist[c][k]=abllist[d][k] CSay("Linked abl list of character "..c.." with "..d) end
               ablpage[c] = ablpage[c] or {}
@@ -180,6 +182,18 @@ function iSpell(ch,page)
     end
 end
 
+function TeachSkill(pch,pskill)
+    local ch=pch
+    local skill=upper(pskill)
+    if prefixed(pch,'Jake') then ch='Jake' end
+    CSay('Request to teach: '..skill.."     to "..ch)
+    if heroabl[ch] then CSay('= Already has this skill') end
+    heroabl[ch][skill] = true
+    skills[ch][skill]={} -- Just must contain a table... Nothing more :P
+    Var.D('$MASTERABLCODE',skill)
+    Done('&TEACH.SKILL.OK')
+end
+
 function ShowSpellList(ch,psizes)
    -- Set up
    local sizes = ({['table']=psizes, ['string']=mysplit(psizes,",") })[type(psizes)]
@@ -189,8 +203,17 @@ function ShowSpellList(ch,psizes)
    SetFont('Stats')
    -- Origin
    Image.Origin(sizes[1],sizes[2])
-   -- Show
+   -- Pagination
    DarkText(sval(ablpage[ch][SSLPG]),sizes[3]/2,sizes[4]-10,2,1,255,180,0)
+   if (INP.KeyH(KEY_PAGEDOWN)==1 or joyhit('R2')) then 
+      SSLPG = SSLPG + 1
+      if #ablpage[ch]<SSLPG then SSLPG=1 end -- Go on
+   end 
+   if (INP.KeyH(KEY_PAGEUP)==1 or joyhit('L2')) then 
+      SSLPG = SSLPG - 1
+      if SSLPG<1 then SSLPG=#ablpage[ch] end -- Go on
+   end 
+   -- Show 
    local ck,ca,sk,sa
    local has = SpellList(ch)
    local cnt
