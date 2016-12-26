@@ -1,6 +1,6 @@
 --[[
   Master.lua
-  Version: 16.12.08
+  Version: 16.12.26
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -72,7 +72,7 @@ function Master(id)
    LAURA.Flow('MASTER')   
 end
 
-function Master_Dismiss(ch,master)
+function Master_Dismiss(ch,master,nomorejake)
    CSay("Dismiss master "..master.." from "..sval(ch))
    local stats = mysplit(RPG.StatFields(ch),";")
    for st in each(stats) do
@@ -81,13 +81,24 @@ function Master_Dismiss(ch,master)
    local tmaster = jinc('Script/JINC/Masters/'..master..".lua")
    ;(tmaster.dismiss or Nothing)(ch)
    RPG.SetData(ch,"Master","")
+   if not nomorejake then
+      if ch=="Jake_Human" and RPG.CharExists('Jake_Fairy')==1 then Master_Dismiss('Jake_Fairy',master,true) end
+      if ch=='Jake_Fairy' then Master_Dismiss('Jake_Human',master,true) end
+   end 
+end
+
+function Master_DefStat(ch,stat,value)
+    RPG.DefStat(ch,stat,Sys.Val(value))
+    if ch=='Jake_Human' and RPG.CharExists('Jake_Fairy')==1 then RPG.LinkStat('Jake_Human','Jake_Fairy',stat) end
+    if ch=='Jake_Fairy'                                     then RPG.LinkStat('Jake_Fairy','Jake_Human',stat) end
 end
 
 function Master_Appoint(ch,master)
     CSay("Appoint master "..master.." to "..sval(ch))
-    local tmaster = jinc('Script/JINC/Masters/'..master..".lua")
+    jincdebug = true -- Something went wrong here, and I need to investigate. Must be on 'rem' in release. ;)
+    local tmaster = jinc('Script/JINC/Masters/'..master..".lua","local function Master_DefStat(c,s,v) MS.Run('MASTER','Master_DefStat',c..';'..s..';'..v) end")
     for key,value in spairs(tmaster.stats) do
-        RPG.DefStat(ch,"MASTER_"..key,value)        
+        Master_DefStat(ch,"MASTER_"..key,value)        
     end
     (tmaster.appoint or Nothing)(ch)
    RPG.SetData(ch,"Master",master)

@@ -62,6 +62,7 @@ function CreateJakeFairy()
   local h = RPG.Points('Jake_Fairy','HP')
   h.Have = h.Maximum
   RPG.Points('Jake_Fairy','AP').Have=0
+  if RPG.GetData('Jake_Fairy','Master')=='Rubine' then RPG.LinkStat('Jake_Human','Jake_Fairy',"RubinePoints") end
 end
 
 function Altar()

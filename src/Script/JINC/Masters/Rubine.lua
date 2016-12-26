@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.07
+version: 16.12.26
 ]]
 
 local RPG = RPGStat
@@ -45,7 +45,8 @@ function Rubine.teach(ch) -- Should return true if master actually decides to te
 end
 
 function Rubine.appoint(ch)
-      RPG.DefStat(ch,"RubinePoints",0)
+      Console.Write('Creating point for Rubine on '..ch,255,255,255)
+      Master_DefStat(ch,"RubinePoints",0)
 end
 
 function Rubine.dismiss(ch)
