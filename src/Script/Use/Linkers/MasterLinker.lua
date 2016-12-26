@@ -42,4 +42,11 @@ end
 function MasterInc(ch,master,stat,value)
    if RPG.GetData(ch,'Master')~=master then return end
    RPG.IncStat(ch,stat,value or 1)
-end   
+end
+
+
+function MasterAllInc(master,stat,value)
+   for ch in EachChars() do
+        MasterInc(ch,master,stat,value)
+   end
+end              

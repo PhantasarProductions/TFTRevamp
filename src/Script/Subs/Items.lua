@@ -348,6 +348,7 @@ function TreasureChest(tag)
     MS.LoadNew("BOXTEXT","Script/Subs/BoxText.lua")
     MS.Run("BOXTEXT","LoadData","General/Items;ITEM")
     if prefixed(icode,"CASH:") then
+       MasterAllInc('Rubine','RubinePoints')
        local wc = mysplit(icode,":")
        local getcash = tonumber(wc[2])
        if skill==1 then getcash = getcash * 2 elseif skill==3 then getcash = getcash * .25 end

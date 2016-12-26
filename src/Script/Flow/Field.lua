@@ -527,6 +527,7 @@ function RandomItem(tag)
     local item = "ITM_"..upper(items[rand(1,#items)])
     local data
     if prefixed (item,"ITM_CASH:") then
+       MasterAllInc('Rubine','RubinePoints')
        CSay("Give Cash: Random Items")
        local si = mysplit(item,":")
        local givecash = Sys.Val(si[2] or 1)
@@ -539,6 +540,7 @@ function RandomItem(tag)
        local itemvalue = math.ceil((data.ITM_SellPrice or 1)/div)
        MS.Run('ITEMS','ItemFull')
        if CVV('&ITEMFULL') then 
+          MasterAllInc('Rubine','RubinePoints')
           CSay("Full: Random Items")
           inc('%CASH',itemvalue)
           Var.D("$ITEMNAME",itemvalue.." shilders")
