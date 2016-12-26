@@ -39,6 +39,7 @@ StatusChanges = {}
 -- @FI
 
 function KillAward(myfoe)
+    local itemgiven = false
     -- Experience
     for i=0,3 do  
         local ch = RPG.PartyTag(i)
@@ -61,12 +62,12 @@ function KillAward(myfoe)
            if have<itemmax then
               ItemGive(item,1)
               ChMiniMsg(myfoe.tag,'Dropped '..idat.Title,0,180,255)
-              return
+              itemgiven = true
            end
         end
     end
     -- If no items are dropped, drop money in stead of this foe has it.
-    if myfoe.data.cash and myfoe.data.cash>0 then
+    if myfoe.data.cash and myfoe.data.cash>0 and (not itemgiven) then
        local acash = math.ceil(myfoe.data.cash * ({2,1,.5})[skill])
        local shilders = "shilders"; if acash==1 then shilders='shilder' end
        ChMiniMsg(myfoe.tag,"Dropped "..acash.." "..shilders)

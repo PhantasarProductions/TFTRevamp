@@ -37,3 +37,9 @@
 Master = Master or function(masterid)
     MS.LN_Run("MASTER","Script/Flow/Master.lua","Master",masterid)
 end    
+
+
+function MasterInc(ch,master,stat,value)
+   if RPG.GetData(ch,'Master')~=master then return end
+   RPG.IncStat(ch,stat,value or 1)
+end   
