@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.12.26
+  Version: 16.12.27
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -627,6 +627,12 @@ if mousehit(1) or fakex or fakey then
                WalkArrivalArg = c
                ret = true  
             end                
+          elseif prefixed(c,"CHEST_") then
+            if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32)==1 then
+               WalkArrival = TreasureChest
+               WalkArrivalArg = c
+               ret = true  
+            end             
           elseif prefixed(c,"RNDITEM_") then
             if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32)==1 then
                --local chest = Maps.Obj.Obj(c) 
