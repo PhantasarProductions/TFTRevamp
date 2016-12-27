@@ -111,6 +111,7 @@ function EachParty()
        return ret        
    end
 end
+EachChars=EachParty
 
 function InParty(pch,pure)
    local ret
