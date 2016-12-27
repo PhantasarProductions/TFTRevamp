@@ -1,6 +1,6 @@
 --[[
   Default.lua
-  Version: 16.10.13
+  Version: 16.12.27
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -52,6 +52,8 @@ FoeAI.Target['1A'] = function(tab,abl)
      end
      return 'Foe',tgt[rand(1,#tgt)]
 end
+
+FoeAI.Target.OS = function(t,a) return "Foe",t end
 
 FoeAI.Target.AA = FoeAI.Target['1A']
 
