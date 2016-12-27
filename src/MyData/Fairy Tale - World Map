@@ -101,3 +101,13 @@ Rec: CH1JAKE
 	Start = Start
 	UnlockedFromStart = TRUE
 
+Rec: CH1LIBRARY
+	Dungeon = TRUE
+	Folder = Delisto
+	Kthura = CH1_Dungeon_Library
+	Layer = #001
+	LocationName = Forbidden Library
+	LocationPrefix = The
+	Start = Start
+	UnlockedFromStart = FALSE
+
