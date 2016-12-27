@@ -1,4 +1,40 @@
--- File Generated: Tue 27 December 2016; 17:38:53
+--[[
+**********************************************
+  
+  Lemming.lua
+  (c) Jeroen Broks, 2016, All Rights Reserved.
+  
+  This file contains material that is related 
+  to a storyline that is which is strictly
+  copyrighted to Jeroen Broks.
+  
+  This file may only be used in an unmodified
+  form with an unmodified version of the 
+  software this file belongs to.
+  
+  You may use this file for your study to see
+  how I solved certain things in the creation
+  of this project to see if you find valuable
+  leads for the creation of your own.
+  
+  Mostly this file comes along with a project
+  that is for most part released under an
+  open source license and that means that if
+  you use that code with this file removed
+  from it, you can use it under that license.
+  Please check out the other files to find out
+  which license applies.
+  This file comes 'as-is' and in no possible
+  way the author can be held responsible of
+  any form of damages that may occur due to 
+  the usage of this file
+  
+  
+ **********************************************
+ 
+version: 16.12.27
+]]
+-- File Generated: Tue 27 December 2016; 17:41:42
 
 
 local foe = {}
@@ -52,13 +88,13 @@ local foe = {}
 	foe["NEWGAMEPLUS_WAND_FROST"] = true
 	foe["NEWGAMEPLUS_WAND_TRAINING"] = true
 	foe["NORMAL_AAA_ATTACK"] = true
-	foe["NORMAL_ABL_FOE_CRUSH"] = true
+	foe["NORMAL_ABL_FOE_CRUSH"] = false
 	foe["NORMAL_ABL_FOE_DESPERATEATTACK"] = true
 	foe["NORMAL_ABL_FOE_DISTRACT"] = true
 	foe["NORMAL_ABL_FOE_FLAMESTRIKE"] = true
 	foe["NORMAL_ABL_FOE_SMITE"] = true
 	foe["NORMAL_ABL_FOE_SUICIDE"] = true
-	foe["NORMAL_ABL_FOE_VENOMBITE"] = true
+	foe["NORMAL_ABL_FOE_VENOMBITE"] = false
 	foe["NORMAL_ABL_FOE_VENOMSTAB"] = true
 	foe["NORMAL_ABL_FOE_VIRUSSTAB"] = true
 	foe["NORMAL_ABL_HERO_DANDOR_AXESMASH"] = true
@@ -147,7 +183,7 @@ local foe = {}
 	foe["OVERSOUL_WAND_TRAINING"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
 	foe["SKILL\49_ABL_FOE_CRUSH"] = true
-	foe["SKILL\49_ABL_FOE_DESPERATEATTACK"] = true
+	foe["SKILL\49_ABL_FOE_DESPERATEATTACK"] = false
 	foe["SKILL\49_ABL_FOE_DISTRACT"] = true
 	foe["SKILL\49_ABL_FOE_FLAMESTRIKE"] = true
 	foe["SKILL\49_ABL_FOE_SMITE"] = true
@@ -194,7 +230,7 @@ local foe = {}
 	foe["SKILL\49_WAND_TRAINING"] = true
 	foe["SKILL\50_AAA_ATTACK"] = true
 	foe["SKILL\50_ABL_FOE_CRUSH"] = true
-	foe["SKILL\50_ABL_FOE_DESPERATEATTACK"] = true
+	foe["SKILL\50_ABL_FOE_DESPERATEATTACK"] = false
 	foe["SKILL\50_ABL_FOE_DISTRACT"] = true
 	foe["SKILL\50_ABL_FOE_FLAMESTRIKE"] = true
 	foe["SKILL\50_ABL_FOE_SMITE"] = true
@@ -286,22 +322,22 @@ local foe = {}
 	foe["SKILL\51_WAND_FLAME"] = true
 	foe["SKILL\51_WAND_FROST"] = true
 	foe["SKILL\51_WAND_TRAINING"] = true
-	foe["Desc"] = ""
+	foe["Desc"] = "Is it true lemmings kill themselves?"
 	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47reg\47Lemming\46png"
-	foe["Item Drop \49"] = "ITM_ANTIDOTE"
-	foe["Item Drop \50"] = "ITM_ANTIDOTE"
+	foe["Item Drop \49"] = "ITM_SALVE"
+	foe["Item Drop \50"] = "ITM_PANACEA"
 	foe["Item Steal \49"] = "ITM_ANTIDOTE"
-	foe["Item Steal \50"] = "ITM_ANTIDOTE"
-	foe["Item Steal \51"] = "ITM_ANTIDOTE"
-	foe["Name"] = ""
-	foe["RATE_AAA_ATTACK"] = 0
-	foe["RATE_ABL_FOE_CRUSH"] = 0
-	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
+	foe["Item Steal \50"] = "ITM_APPLE"
+	foe["Item Steal \51"] = "ITM_MANDRAKE"
+	foe["Name"] = "Lemming"
+	foe["RATE_AAA_ATTACK"] = 25
+	foe["RATE_ABL_FOE_CRUSH"] = 5
+	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 1
 	foe["RATE_ABL_FOE_DISTRACT"] = 0
 	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 0
 	foe["RATE_ABL_FOE_SMITE"] = 0
-	foe["RATE_ABL_FOE_SUICIDE"] = 0
-	foe["RATE_ABL_FOE_VENOMBITE"] = 0
+	foe["RATE_ABL_FOE_SUICIDE"] = 5
+	foe["RATE_ABL_FOE_VENOMBITE"] = 1
 	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
 	foe["RATE_ABL_FOE_VIRUSSTAB"] = 0
 	foe["RATE_ABL_HERO_DANDOR_AXESMASH"] = 0
@@ -390,13 +426,13 @@ local foe = {}
 	foe["TARGET_WAND_TRAINING"] = "Random"
 	foe["VocalTag"] = "Lemming"
 	foe["Boss"] = false
-	foe["Oversoul"] = false
+	foe["Oversoul"] = true
 	foe["Oversoul Drop \49"] = false
-	foe["Oversoul Drop \50"] = false
+	foe["Oversoul Drop \50"] = true
 	foe["Oversoul Steal \49"] = false
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
-	foe["Cash"] = 0
+	foe["Cash"] = 5
 	foe["ER_Darkness"] = 0
 	foe["ER_Earth"] = 0
 	foe["ER_Flame"] = 0
@@ -405,36 +441,36 @@ local foe = {}
 	foe["ER_Lightning"] = 0
 	foe["ER_Water"] = 0
 	foe["ER_Wind"] = 0
-	foe["Rate Drop \49"] = 0
-	foe["Rate Drop \50"] = 0
-	foe["Rate Steal \49"] = 0
-	foe["Rate Steal \50"] = 0
-	foe["Rate Steal \51"] = 0
+	foe["Rate Drop \49"] = 2
+	foe["Rate Drop \50"] = 5
+	foe["Rate Steal \49"] = 2
+	foe["Rate Steal \50"] = 2
+	foe["Rate Steal \51"] = 1
 	foe["SR_Curse "] = 0
 	foe["SR_Disease "] = 0
 	foe["SR_Paralysis "] = 0
 	foe["SR_Petrification "] = 0
 	foe["SR_Poison "] = 0
-	foe["SR_Silence "] = 0
-	foe["SR_Undead "] = 0
+	foe["SR_Silence "] = 100
+	foe["SR_Undead "] = 100
 	foe["normal_Accuracy"] = 100
-	foe["normal_EXP"] = 0
-	foe["normal_Endurance"] = 0
-	foe["normal_Evasion"] = 0
-	foe["normal_HP"] = 0
-	foe["normal_Intelligence"] = 0
-	foe["normal_Power"] = 0
-	foe["normal_Resistance"] = 0
-	foe["normal_Speed"] = 0
+	foe["normal_EXP"] = 3
+	foe["normal_Endurance"] = 5
+	foe["normal_Evasion"] = 20
+	foe["normal_HP"] = 100
+	foe["normal_Intelligence"] = 50
+	foe["normal_Power"] = 100
+	foe["normal_Resistance"] = 100
+	foe["normal_Speed"] = 200
 	foe["oversoul_Accuracy"] = 100
-	foe["oversoul_EXP"] = 0
-	foe["oversoul_Endurance"] = 0
-	foe["oversoul_Evasion"] = 0
-	foe["oversoul_HP"] = 0
-	foe["oversoul_Intelligence"] = 0
-	foe["oversoul_Power"] = 0
-	foe["oversoul_Resistance"] = 0
-	foe["oversoul_Speed"] = 0
+	foe["oversoul_EXP"] = 1
+	foe["oversoul_Endurance"] = 5
+	foe["oversoul_Evasion"] = 100
+	foe["oversoul_HP"] = 150
+	foe["oversoul_Intelligence"] = 500
+	foe["oversoul_Power"] = 200
+	foe["oversoul_Resistance"] = 999
+	foe["oversoul_Speed"] = 500
 
 
 return foe

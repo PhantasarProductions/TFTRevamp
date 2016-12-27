@@ -150,6 +150,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
     1. Script: Script/JINC/IA/ABL_FOE_FLAMESTRIKE.lua
     1. Script: Script/JINC/IA/ABL_FOE_SMITE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_SUICIDE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMBITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMSTAB.lua
     1. Script: Script/JINC/IA/ABL_FOE_VIRUSSTAB.lua
@@ -345,11 +346,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
@@ -384,7 +385,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Algemeen/pointer.png
     1. Graphics: GFX/Combat/Cards/Backside.piko
     1. Graphics: GFX/Combat/Cards/Backside.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Lemming.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/RSpook.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Rat.piko
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Rat.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Slime.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Slime_Base.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Snake.piko
@@ -872,7 +876,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Caves/Grey + Alpha/Shore.png
     1. Graphics: GFX/Textures/Caves/Grey + Alpha/W.png
     1. Graphics: GFX/Textures/Caves/Grey/E.png
-    1. ???: GFX/Textures/Caves/Grey/F (Autosaved).piko-png
     1. Graphics: GFX/Textures/Caves/Grey/F.png
     1. Graphics: GFX/Textures/Caves/Grey/F_Sea.png
     1. Graphics: GFX/Textures/Caves/Grey/F_Shore.png
