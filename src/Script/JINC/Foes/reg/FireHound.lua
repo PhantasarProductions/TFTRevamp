@@ -1,5 +1,5 @@
 --[[
-  Bat.lua
+  FireHound.lua
   Version: 16.12.27
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Tue 27 December 2016; 17:25:21
+-- File Generated: Tue 27 December 2016; 17:25:25
 
 
 local foe = {}
@@ -106,7 +106,7 @@ local foe = {}
 	foe["NORMAL_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = true
 	foe["NORMAL_ABL_HERO_HANDOSTILLOR_STICKSWING"] = true
 	foe["NORMAL_ABL_HERO_HANDOSTILLOR_VITALIZE"] = true
-	foe["NORMAL_ABL_HERO_JAKE_\50PS"] = false
+	foe["NORMAL_ABL_HERO_JAKE_\50PS"] = true
 	foe["NORMAL_ABL_HERO_JAKE_\51PS"] = true
 	foe["NORMAL_ABL_HERO_JAKE_\52PS"] = true
 	foe["NORMAL_ABL_HERO_JAKE_SHIFT_FAIRY"] = true
@@ -198,7 +198,7 @@ local foe = {}
 	foe["SKILL\49_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = true
 	foe["SKILL\49_ABL_HERO_HANDOSTILLOR_STICKSWING"] = true
 	foe["SKILL\49_ABL_HERO_HANDOSTILLOR_VITALIZE"] = true
-	foe["SKILL\49_ABL_HERO_JAKE_\50PS"] = false
+	foe["SKILL\49_ABL_HERO_JAKE_\50PS"] = true
 	foe["SKILL\49_ABL_HERO_JAKE_\51PS"] = true
 	foe["SKILL\49_ABL_HERO_JAKE_\52PS"] = true
 	foe["SKILL\49_ABL_HERO_JAKE_SHIFT_FAIRY"] = true
@@ -244,7 +244,7 @@ local foe = {}
 	foe["SKILL\50_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = true
 	foe["SKILL\50_ABL_HERO_HANDOSTILLOR_STICKSWING"] = true
 	foe["SKILL\50_ABL_HERO_HANDOSTILLOR_VITALIZE"] = true
-	foe["SKILL\50_ABL_HERO_JAKE_\50PS"] = false
+	foe["SKILL\50_ABL_HERO_JAKE_\50PS"] = true
 	foe["SKILL\50_ABL_HERO_JAKE_\51PS"] = true
 	foe["SKILL\50_ABL_HERO_JAKE_\52PS"] = true
 	foe["SKILL\50_ABL_HERO_JAKE_SHIFT_FAIRY"] = true
@@ -316,19 +316,19 @@ local foe = {}
 	foe["SKILL\51_WAND_FLAME"] = true
 	foe["SKILL\51_WAND_FROST"] = true
 	foe["SKILL\51_WAND_TRAINING"] = true
-	foe["Desc"] = "Lives in caves\46\10Very weak to earth attacks\46"
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Reg\47Bat\46png"
-	foe["Item Drop \49"] = "ITM_SALVE"
-	foe["Item Drop \50"] = "ITM_MEDICINE"
-	foe["Item Steal \49"] = "ITM_SALVE"
-	foe["Item Steal \50"] = "ITM_ANTIDOTE"
-	foe["Item Steal \51"] = "ITM_ANTIDOTE"
-	foe["Name"] = "Bat"
-	foe["RATE_AAA_ATTACK"] = 100
+	foe["Desc"] = "It loves fire\46\10It hates the cold"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47reg\47HellHound\46png"
+	foe["Item Drop \49"] = "ITM_FLAMEORB"
+	foe["Item Drop \50"] = "ITM_APPLE"
+	foe["Item Steal \49"] = "ITM_FLAMEORB"
+	foe["Item Steal \50"] = "ITM_POTION"
+	foe["Item Steal \51"] = "ITM_PHOENIX"
+	foe["Name"] = "Fire Hound"
+	foe["RATE_AAA_ATTACK"] = 0
 	foe["RATE_ABL_FOE_CRUSH"] = 0
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
 	foe["RATE_ABL_FOE_DISTRACT"] = 0
-	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 0
+	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 11
 	foe["RATE_ABL_FOE_SMITE"] = 0
 	foe["RATE_ABL_FOE_VENOMBITE"] = 0
 	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
@@ -344,12 +344,12 @@ local foe = {}
 	foe["RATE_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_STICKSWING"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_VITALIZE"] = 0
-	foe["RATE_ABL_HERO_JAKE_\50PS"] = 2
+	foe["RATE_ABL_HERO_JAKE_\50PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\52PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_FAIRY"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_HUMAN"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_FLAME"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_FLAME"] = 3
 	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_BACKSTAB"] = 0
@@ -416,53 +416,53 @@ local foe = {}
 	foe["TARGET_WAND_FLAME"] = "Random"
 	foe["TARGET_WAND_FROST"] = "Random"
 	foe["TARGET_WAND_TRAINING"] = "Random"
-	foe["VocalTag"] = ""
+	foe["VocalTag"] = "FireHound"
 	foe["Boss"] = false
-	foe["Oversoul"] = false
+	foe["Oversoul"] = true
 	foe["Oversoul Drop \49"] = false
 	foe["Oversoul Drop \50"] = false
 	foe["Oversoul Steal \49"] = false
-	foe["Oversoul Steal \50"] = false
+	foe["Oversoul Steal \50"] = true
 	foe["Oversoul Steal \51"] = false
-	foe["Cash"] = 50
-	foe["ER_Darkness"] = 200
-	foe["ER_Earth"] = -500
-	foe["ER_Flame"] = -75
-	foe["ER_Frost"] = 100
-	foe["ER_Light"] = -100
-	foe["ER_Lightning"] = 100
-	foe["ER_Water"] = 100
-	foe["ER_Wind"] = -80
-	foe["Rate Drop \49"] = 100
-	foe["Rate Drop \50"] = 25
-	foe["Rate Steal \49"] = 100
-	foe["Rate Steal \50"] = 0
-	foe["Rate Steal \51"] = 0
+	foe["Cash"] = 6
+	foe["ER_Darkness"] = 100
+	foe["ER_Earth"] = 0
+	foe["ER_Flame"] = 500
+	foe["ER_Frost"] = -100
+	foe["ER_Light"] = 0
+	foe["ER_Lightning"] = 0
+	foe["ER_Water"] = -75
+	foe["ER_Wind"] = 0
+	foe["Rate Drop \49"] = 6
+	foe["Rate Drop \50"] = 2
+	foe["Rate Steal \49"] = 5
+	foe["Rate Steal \50"] = 2
+	foe["Rate Steal \51"] = 2
 	foe["SR_Curse "] = 100
-	foe["SR_Disease "] = 75
+	foe["SR_Disease "] = 100
 	foe["SR_Paralysis "] = 100
 	foe["SR_Petrification "] = 100
-	foe["SR_Poison "] = 95
-	foe["SR_Silence "] = 6
+	foe["SR_Poison "] = 20
+	foe["SR_Silence "] = 100
 	foe["SR_Undead "] = 100
 	foe["normal_Accuracy"] = 100
-	foe["normal_EXP"] = 20
-	foe["normal_Endurance"] = 50
-	foe["normal_Evasion"] = 5
-	foe["normal_HP"] = 300
-	foe["normal_Intelligence"] = 100
-	foe["normal_Power"] = 200
-	foe["normal_Resistance"] = 50
-	foe["normal_Speed"] = 30
+	foe["normal_EXP"] = 4
+	foe["normal_Endurance"] = 53
+	foe["normal_Evasion"] = 3
+	foe["normal_HP"] = 486
+	foe["normal_Intelligence"] = 120
+	foe["normal_Power"] = 103
+	foe["normal_Resistance"] = 35
+	foe["normal_Speed"] = 100
 	foe["oversoul_Accuracy"] = 100
-	foe["oversoul_EXP"] = 0
-	foe["oversoul_Endurance"] = 0
-	foe["oversoul_Evasion"] = 0
-	foe["oversoul_HP"] = 0
-	foe["oversoul_Intelligence"] = 0
-	foe["oversoul_Power"] = 0
-	foe["oversoul_Resistance"] = 0
-	foe["oversoul_Speed"] = 0
+	foe["oversoul_EXP"] = 2
+	foe["oversoul_Endurance"] = 100
+	foe["oversoul_Evasion"] = 6
+	foe["oversoul_HP"] = 1000
+	foe["oversoul_Intelligence"] = 240
+	foe["oversoul_Power"] = 200
+	foe["oversoul_Resistance"] = 60
+	foe["oversoul_Speed"] = 200
 
 
 return foe

@@ -1,5 +1,5 @@
 --[[
-  ABL_FOE_VENOMSTAB.lua
+  ABL_FOE_FLAMESTRIKE.lua
   Version: 16.12.27
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -37,10 +37,13 @@
 ret = {
 	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
+	["Attack_AllowAccuracy"] = true,
+	["Attack_AllowCritical"] = true,
+	["Attack_AllowDodge"] = true,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["CausePoison"] = true,
+	["Attack_Element"] = "Flame",
+	["Desc"] = "Attack the enemy",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -52,10 +55,14 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["Rew_GainAP"] = 6,
 	["Stance"] = "Attack",
 	["Target"] = "1F",
-	["Title"] = "Venom Stab",
-	["Type"] = "Item"}
+	["Title"] = "Flame Strike",
+	["Type"] = "Ability",
+	["Voice"] = "Attack",
+	["rew_CreateSkill1"] = true,
+	["rew_GainSkill1"] = 6}
 
 return ret
 

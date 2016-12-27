@@ -1,5 +1,5 @@
 --[[
-  ABL_FOE_VENOMSTAB.lua
+  ABL_HERO_MARRILONA_FLAME.lua
   Version: 16.12.27
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -37,10 +37,14 @@
 ret = {
 	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["CausePoison"] = true,
+	["Attack_AllowAccuracy"] = true,
+	["Attack_AllowCritical"] = true,
+	["Attack_AllowDodge"] = true,
+	["Attack_AttackStat"] = "Intelligence",
+	["Attack_DefenseStat"] = "Resistance",
+	["Attack_Element"] = "Flame",
+	["Desc"] = "We didn't start a fire!",
+	["EQP_STAT_Intelligence"] = 1,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -48,14 +52,21 @@ ret = {
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
+	["ITM_EQP_For"] = "Marrilona",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Consumable",
+	["ITM_ShopPrice"] = 250,
+	["ITM_Type"] = "Weapon",
+	["ITM_WeaponAbility"] = true,
+	["Rew_GainAP"] = 5,
+	["SpellAni"] = "Flame",
 	["Stance"] = "Attack",
 	["Target"] = "1F",
-	["Title"] = "Venom Stab",
-	["Type"] = "Item"}
+	["Title"] = "Flame",
+	["Type"] = "Item",
+	["Voice"] = "Fire",
+	["rew_CreateSkill1"] = true,
+	["rew_GainSkill1"] = 1}
 
 return ret
 

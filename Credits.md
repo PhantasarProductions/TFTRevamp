@@ -54,6 +54,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Marrilona/Wet.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Dwarf.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/ShadowSweeper.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/HellHound.png
 - Alexander
     1. Audio: Audio/Combat/Ready.ogg
 - Angela Nagtzaam
@@ -135,6 +136,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
+    1. Script: Script/JINC/Foes/reg/FireHound.lua
     1. Script: Script/JINC/Foes/reg/Gob.lua
     1. Script: Script/JINC/Foes/reg/GobPriest.lua
     1. Script: Script/JINC/Foes/reg/GobRogue.lua
@@ -146,6 +148,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_CRUSH.lua
     1. Script: Script/JINC/IA/ABL_FOE_DESPERATEATTACK.lua
     1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
+    1. Script: Script/JINC/IA/ABL_FOE_FLAMESTRIKE.lua
     1. Script: Script/JINC/IA/ABL_FOE_SMITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMBITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMSTAB.lua
@@ -166,6 +169,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_4PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_FAIRY.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_HUMAN.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FLAME.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HEAL.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_SPLASH.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_BACKSTAB.lua
@@ -342,8 +346,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png
