@@ -1,6 +1,6 @@
 --[[
   GobPriest.lua
-  Version: 16.12.27
+  Version: 16.12.28
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Tue 27 December 2016; 17:43:38
+-- File Generated: Wed 28 December 2016; 10:20:12
 
 
 local foe = {}
@@ -464,9 +464,9 @@ local foe = {}
 	foe["normal_Speed"] = 45
 	foe["oversoul_Accuracy"] = 100
 	foe["oversoul_EXP"] = 20
-	foe["oversoul_Endurance"] = 25
+	foe["oversoul_Endurance"] = 10
 	foe["oversoul_Evasion"] = 5
-	foe["oversoul_HP"] = 200
+	foe["oversoul_HP"] = 111
 	foe["oversoul_Intelligence"] = 100
 	foe["oversoul_Power"] = 5
 	foe["oversoul_Resistance"] = 900

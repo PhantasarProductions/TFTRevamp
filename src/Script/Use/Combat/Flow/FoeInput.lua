@@ -60,6 +60,7 @@ function GoOversoul(tag,foe)
     nextact = nil
     table.remove(cards,1)    
     oversoul[foe.fidtag] = nil
+    return true
 end
 
 function fflow.foeinput()
@@ -70,8 +71,8 @@ function fflow.foeinput()
    assert(FoeAI[foe.AI],"No AI information found for AIID '"..foe.AI.."'")
    if not GoOversoul(tag,foe) then
       FoeAI[foe.AI](tag); assert(nextact,"nextact not define somehow???")
-   end
-   flow = nextact.flow
+      flow = nextact.flow
+   end   
    assert(flow~="foeinput","Somehow the flow goes into repeat!")
    -- assert(false,"Forced Crash")
 end
