@@ -1,6 +1,6 @@
 --[[
   Items -- Linker.lua
-  Version: 16.12.26
+  Version: 16.12.28
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -101,7 +101,7 @@ function SelectedAbility() -- Returns the last selected Ability and kills the se
    local ret = CVV("$SELECTEDABILITY")  
    Var.Clear("$SELECTEDABILITY")
    if ret=="" then return nil end
-   CSay("Returning: "..sval(ret))
+   CSay("SelectedAbility(): Returning: "..sval(ret))
    return ret
 end   
 

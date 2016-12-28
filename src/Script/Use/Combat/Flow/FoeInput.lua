@@ -45,7 +45,7 @@ function GoOversoul(tag,foe)
     local os = {0,10,5}
     if oversoul[foe.fidtag]<os[skill] then return end -- Not enough kills for oversoul
     for t,mf in pairs(fighterbytag) do
-        if prefixed(t,"FOE_") and mf.statuschanges.Oversoul and mf.fidtag==foe.fidtag then return end -- Don't go oversoul if the same enemy is there already in oversoul state
+        if prefixed(t,"FOE_") and mf.statuschanges and mf.statuschanges.Oversoul and mf.fidtag==foe.fidtag then return end -- Don't go oversoul if the same enemy is there already in oversoul state
     end
     -- Everything is allright, let's go oversoul now then.
     local n = RPG.GetName(tag)

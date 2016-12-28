@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 16.12.25
+  Version: 16.12.28
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -112,7 +112,14 @@ fflow.Range = { ['1F'] = function(act)
                             for i,_ in pairs(Fighters[nextact.group]) do 
                                 PerformAction(act,nextact.group,i)
                             end    
-                         end         
+                         end,  
+                OS      = function(act)
+                            local ret
+                            for i,d in pairs(Fighters[nextact.executor.group]) do
+                                if d.tag == nextact.executor.tag then ret = i end
+                            end
+                            PerformAction(act,nextact.executor.group,ret)     
+                          end                
                          }
                          
 fflow.Range['1A'] = fflow.Range['1F']
@@ -172,7 +179,7 @@ function fflow.Execution()
       fflow.SpellAni[act.SpellAni_External==true](nextact.executor.group,nextact.executor.tag,nextact.group,nextact.targetidx,act)
    end
    -- Perform the action
-   fflow.Range[act.Target](act)
+   ;(fflow.Range[act.Target] or function() Sys.Crash('Unknown target type: '..act.Target) end)(act)
    -- Any rewards due to this? 
    if nextact.executor.group=='Hero' then
       for i=1,5 do

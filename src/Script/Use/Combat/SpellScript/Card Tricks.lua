@@ -1,6 +1,6 @@
 --[[
   Card Tricks.lua
-  Version: 16.12.25
+  Version: 16.12.28
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -51,6 +51,7 @@ function SpellScript.RemoveAllUserCards(tartag,extag,param)
   for r in each(remove) do
       Cards[r]=nil
   end
+  return true
 end
 
 -- @IF INGORE

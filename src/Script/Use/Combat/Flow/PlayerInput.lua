@@ -1,6 +1,6 @@
 --[[
   PlayerInput.lua
-  Version: 16.12.15
+  Version: 16.12.28
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -185,6 +185,7 @@ nextact.aftertarget = aftertarget;
      ['1A'] = function() nextact.group='Hero' flow='playerselectsingletarget' end,
      ['AF'] = function() nextact.group='Foe'  flow=aftertarget                end,
      ['AA'] = function() nextact.group='Hero' flow=aftertarget                end,
+     ['OS'] = function() nextact.group='Hero' flow=aftertarget                end
 })[myitem.Target]()
 end
 
