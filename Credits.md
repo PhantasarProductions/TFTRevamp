@@ -312,6 +312,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
+    1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
     1. Script: Script/Use/Combat/StatusChanges/Poison and Disease.lua
     1. Script: Script/Use/Linkers/AchievementLinker.lua
     1. Script: Script/Use/Linkers/BoxTextLinker.lua
@@ -347,11 +348,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
@@ -364,8 +365,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Logo/End Of Prologue.png
     1. Graphics: GFX/Logo/Phantasar Productions.png
     1. Music: Music/Boss/BossIntro.ogg
-    1. Graphics: GFX/Logo/The End.png
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
+    1. Graphics: GFX/Logo/The End.png
     1. Graphics: GFX/Logo/Title.png
     1. Graphics: GFX/Menu Icons/Buy.png
     1. Graphics: GFX/Menu Icons/Sell.png
@@ -984,7 +985,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Combat/Hero/Krandar/Victory/Dead.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Victory/Perfect.ogg
+    1. Audio: Vocals/Combat/Hero/Marrilona/Action/Attack.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Fire.ogg
+    1. Audio: Vocals/Combat/Hero/Marrilona/Action/Frost.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Heal.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/Boss.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/Dead.ogg

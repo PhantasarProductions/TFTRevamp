@@ -1,5 +1,5 @@
 --[[
-  FoeInput.lua
+  Oversoul.lua
   Version: 16.12.28
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -35,49 +35,26 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 -- @IF IGNORE
-fflow = {}
+StatusChanges = {}
 -- @FI
 
-function GoOversoul(tag,foe)
-    if skill==1 then oversoul={} return end -- No oversouls in the easy mode
-    if not oversoul[foe.fidtag] then return end -- No oversouls counted yet
-    if not foe.data.Oversoul then return end -- Just don't check this if a foe cannot go oversoul at all (which is the case with prologue enemies and bosses).
-    local os = {0,10,5}
-    if oversoul[foe.fidtag]<os[skill] then return end -- Not enough kills for oversoul
-    for t,mf in pairs(fighterbytag) do
-        if prefixed(t,"FOE_") and mf.statuschanges.Oversoul and mf.fidtag==foe.fidtag then return end -- Don't go oversoul if the same enemy is there already in oversoul state
-    end
-    -- Everything is allright, let's go oversoul now then.
-    local n = RPG.GetName(tag)
-    local id
-    for i,f in pairs(fighters.Foe) do if f==foe then id=i end end
-    if not id then CSay('WARNING! Finding oversoul id has failed!') return end
-    CardMessage(n.." goes oversoul",1)
-    CompileFoe(tag,foe.data,foe.fidtag,id)
-    local newfoe = fighterbytag[tag]
-    newfoe.statuschanges = { Oversoul = StatusChanges.Oversoul }
-    flow = 'idle' 
-    nextact = nil
-    table.remove(cards,1)    
-    oversoul[foe.fidtag] = nil
-end
 
-function fflow.foeinput()
-   local card = cards[1] 
-   local tag = card.data.tag
-   local foe = fighterbytag[tag]
-   assert(FoeAI,"Foe AI not defined at all") -- If this one EVERY happens then there's really something wrong!
-   assert(FoeAI[foe.AI],"No AI information found for AIID '"..foe.AI.."'")
-   if not GoOversoul(tag,foe) then
-      FoeAI[foe.AI](tag); assert(nextact,"nextact not define somehow???")
-   end
-   flow = nextact.flow
-   assert(flow~="foeinput","Somehow the flow goes into repeat!")
-   -- assert(false,"Forced Crash")
-end
 
+-- The routine that makes an enemy oversoul is in FoeInput.lua
+
+StatusChanges.Oversoul = {
+
+      IgnoreDeath = true,
+
+      DrawFighter = function(ch)
+         local n = math.abs(math.sin(Time.MSecs()/10))
+         color(255-(n*75),255-(n*255),255)
+      end   ,
+      
+
+}
 
 
 -- @IF IGNORE
-return fflow
+return StatusChanges
 -- @FI
