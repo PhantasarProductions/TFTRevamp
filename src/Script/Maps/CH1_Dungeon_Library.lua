@@ -32,5 +32,19 @@
   
  **********************************************
  
-version: 16.12.28
+version: 16.12.29
 ]]
+
+
+-- @USE /Script/Use/Specific/Walda.lua
+
+function ToRoom(room)
+     GoToLayer(room,'Start')
+end     
+
+function GALE_OnLoad()
+    InitWalda('Library')
+    for i=3,5 do
+        ZA_Enter('To00'..i,ToRoom,"#00"..i)
+    end    
+end    

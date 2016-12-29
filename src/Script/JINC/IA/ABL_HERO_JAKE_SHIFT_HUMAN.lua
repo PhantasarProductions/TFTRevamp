@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.28
+version: 16.12.29
 ]]
 ret = {
 	["Attack_AccuracyRate"] = 100,
@@ -43,11 +43,13 @@ ret = {
 	["EffectScript"] = "Shift",
 	["EffectScript_Arg"] = "Human",
 	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",

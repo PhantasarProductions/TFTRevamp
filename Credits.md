@@ -245,6 +245,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH1_Dungeon_FrendorBushes.lua
     1. Script: Script/Maps/CH1_Dungeon_Hell.lua
     1. Script: Script/Maps/CH1_Dungeon_HolyPath.lua
+    1. Script: Script/Maps/CH1_Dungeon_Library.lua
     1. Script: Script/Maps/CH1_Dungeon_SubRiver.lua
     1. Script: Script/Maps/CH1_HUB_Altar.lua
     1. Script: Script/Maps/CH1_Hub_JakeHut.lua
@@ -332,6 +333,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Specific/MoveTex.lua
     1. Script: Script/Use/Specific/Scroller.lua
     1. Script: Script/Use/Specific/StepsPuzzle.lua
+    1. Script: Script/Use/Specific/Walda.lua
     1. Script: Script/Libs/Coords2Rotation.lua
     1. Script: Script/Libs/ShowSerialize.lua
     1. Script: Script/Libs/KeyCodes_BlitzMax.lua
@@ -350,8 +352,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png
@@ -478,11 +480,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/AlphabetTiles/YurgonTile_X.png
     1. Graphics: GFX/Textures/AlphabetTiles/YurgonTile_Y.png
     1. Graphics: GFX/Textures/AlphabetTiles/YurgonTile_Z.png
+    1. Graphics: GFX/Textures/Deur/Deur Hout 64x64.png
+    1. Graphics: GFX/Textures/Deur/Deur Hout 96x96.png
     1. Graphics: GFX/Textures/Effects/North-Hole.png
     1. Graphics: GFX/Textures/General Shapes/Circle.png
     1. Graphics: GFX/Textures/General Shapes/Square.png
     1. Graphics: GFX/Textures/General Shapes/VLNW_Triangle.png
     1. Graphics: GFX/Textures/General Shapes/VLSW_Triangle.png
+    1. Graphics: GFX/Textures/Marble/Deur.png
     1. Graphics: GFX/Textures/Muur Toorts/Brandend.frames
     1. Graphics: GFX/Textures/Muur Toorts/Brandend.png
     1. Graphics: GFX/Textures/Muur Toorts/Uit.png
@@ -812,6 +817,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/ANNA
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_FRENDORBUSHES
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_HOLYPATH
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_LIBRARY
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_SUBRIVER
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_JAKEHUT
@@ -835,6 +841,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/ANNA
     1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_FRENDORBUSHES
     1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_HOLYPATH
+    1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_LIBRARY
     1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_SUBRIVER
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_JAKEHUT
@@ -905,6 +912,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Grass/Campfire.png
     1. Graphics: GFX/Textures/Grass/Flower.png
     1. Graphics: GFX/Textures/Grass/Grass (Green).png
+    1. Graphics: GFX/Textures/HalfHoutMuur/Raam.png
+    1. Graphics: GFX/Textures/HalfHoutMuur/Rood.png
+    1. Graphics: GFX/Textures/HalfHoutMuur/Rood_LV.png
+    1. Graphics: GFX/Textures/HalfHoutMuur/Rood_RV.png
+    1. Graphics: GFX/Textures/HalfHoutMuur/Vaal Groen.png
+    1. Graphics: GFX/Textures/HalfHoutMuur/Vaal Groen.xcf
     1. Graphics: GFX/Textures/Human Village/House.png
     1. Graphics: GFX/Textures/Human Village/Inside/Bed.png
     1. Graphics: GFX/Textures/Human Village/Inside/Houten Rand - Horizontaal.png
@@ -926,7 +939,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Human Village/Stenen Muur - Midden.png
     1. Graphics: GFX/Textures/Human Village/Stenen Muur - Paal.png
     1. Graphics: GFX/Textures/Human Village/Well.png
-    1. Graphics: GFX/Textures/Marble/Deur.png
     1. Graphics: GFX/Textures/Marble/Floor.png
     1. Graphics: GFX/Textures/Marble/Hek - Hoek - E.png
     1. Graphics: GFX/Textures/Marble/Hek - Hoek - W.png

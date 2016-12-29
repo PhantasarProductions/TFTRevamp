@@ -1,5 +1,5 @@
 --[[
-  ABL_MASTER_RUBINE_POISONSTAB.lua
+  ITM_PURELITERATURE.lua
   Version: 16.12.29
   Copyright (C) 2016 Jeroen Petrus Broks
   
@@ -35,29 +35,29 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
-	["ABL_APCost"] = 30,
-	["Attack"] = 75,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowAccuracy"] = true,
-	["Attack_AllowDodge"] = true,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["CausePoison"] = true,
+	["CauseSleep"] = true,
+	["Desc"] = "Boring stories you can use to bore your enemies to sleep.",
 	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 200,
 	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "Poison Stab",
-	["SpellAni_Arg"] = "Strike the enemy, less damage, but can do poison.",
-	["Stance"] = "Attack",
-	["Target"] = "1F",
-	["Type"] = "Ability"}
+	["Stance"] = "Cast",
+	["Target"] = "AF",
+	["Title"] = "Pure Literature",
+	["Type"] = "Item",
+	["Voice"] = "Attack"}
 
 return ret
 

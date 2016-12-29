@@ -208,6 +208,7 @@ bool CauseCurse
 bool CauseSilence
 bool CausePetrification
 bool CauseDisease
+bool CauseSleep
 bool CauseUndead
 bool CauseDeath
 
@@ -294,6 +295,7 @@ Rec: AAA_ATTACK
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -378,6 +380,7 @@ Rec: ABL_FOE_CRUSH
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -462,6 +465,7 @@ Rec: ABL_FOE_DESPERATEATTACK
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -546,6 +550,7 @@ Rec: ABL_FOE_DISTRACT
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -630,6 +635,7 @@ Rec: ABL_FOE_FLAMESTRIKE
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -714,6 +720,7 @@ Rec: ABL_FOE_SMITE
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -798,6 +805,7 @@ Rec: ABL_FOE_SUICIDE
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -882,6 +890,7 @@ Rec: ABL_FOE_VENOMBITE
 	CausePetrification = FALSE
 	CausePoison = TRUE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -966,6 +975,7 @@ Rec: ABL_FOE_VENOMSTAB
 	CausePetrification = FALSE
 	CausePoison = TRUE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -1050,6 +1060,7 @@ Rec: ABL_FOE_VIRUSSTAB
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -1134,6 +1145,7 @@ Rec: ABL_HERO_DANDOR_AXESMASH
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -1218,6 +1230,7 @@ Rec: ABL_HERO_DANDOR_SUPERAXESMASH
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -1302,6 +1315,7 @@ Rec: ABL_HERO_HANDOSTILLOR_CUREDISEASE
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = TRUE
@@ -1386,6 +1400,7 @@ Rec: ABL_HERO_HANDOSTILLOR_FIRSTAID
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -1470,6 +1485,7 @@ Rec: ABL_HERO_HANDOSTILLOR_HOLYSTRIKE
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -1554,6 +1570,7 @@ Rec: ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -1638,6 +1655,7 @@ Rec: ABL_HERO_HANDOSTILLOR_PURIFY
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = TRUE
 	CureDisease = TRUE
@@ -1722,6 +1740,7 @@ Rec: ABL_HERO_HANDOSTILLOR_RECOVER
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -1806,6 +1825,7 @@ Rec: ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -1890,6 +1910,7 @@ Rec: ABL_HERO_HANDOSTILLOR_STICKSWING
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -1974,6 +1995,7 @@ Rec: ABL_HERO_HANDOSTILLOR_VITALIZE
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -2058,6 +2080,7 @@ Rec: ABL_HERO_JAKE_2PS
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -2142,6 +2165,7 @@ Rec: ABL_HERO_JAKE_3PS
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -2226,6 +2250,7 @@ Rec: ABL_HERO_JAKE_4PS
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -2310,6 +2335,7 @@ Rec: ABL_HERO_JAKE_SHIFT_FAIRY
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -2325,16 +2351,16 @@ Rec: ABL_HERO_JAKE_SHIFT_FAIRY
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
-	EQP_STAT_SR_Curse = 
-	EQP_STAT_SR_Death = 
-	EQP_STAT_SR_Destruction = 
-	EQP_STAT_SR_Disease = 
-	EQP_STAT_SR_Paralysis = 
-	EQP_STAT_SR_Petrification = 
-	EQP_STAT_SR_Poison = 
-	EQP_STAT_SR_Silence = 
-	EQP_STAT_SR_Sleep = 
-	EQP_STAT_SR_Undead = 
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
 	EffectScript = Shift
 	EffectScript_Arg = Fairy
 	EffectScript_External = FALSE
@@ -2345,7 +2371,7 @@ Rec: ABL_HERO_JAKE_SHIFT_FAIRY
 	ITM_ACC_HandoStillor = TRUE
 	ITM_ACC_Jake = TRUE
 	ITM_ACC_Marrilona = TRUE
-	ITM_BlackMarket = 
+	ITM_BlackMarket = FALSE
 	ITM_Combat = TRUE
 	ITM_EQP_For = Jake
 	ITM_Field = TRUE
@@ -2394,6 +2420,7 @@ Rec: ABL_HERO_JAKE_SHIFT_HUMAN
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -2409,29 +2436,29 @@ Rec: ABL_HERO_JAKE_SHIFT_HUMAN
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
-	EQP_STAT_SR_Curse = 
-	EQP_STAT_SR_Death = 
-	EQP_STAT_SR_Destruction = 
-	EQP_STAT_SR_Disease = 
-	EQP_STAT_SR_Paralysis = 
-	EQP_STAT_SR_Petrification = 
-	EQP_STAT_SR_Poison = 
-	EQP_STAT_SR_Silence = 
-	EQP_STAT_SR_Sleep = 
-	EQP_STAT_SR_Undead = 
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
 	EffectScript = Shift
 	EffectScript_Arg = Human
 	EffectScript_External = FALSE
 	Heal = 0
 	Heal_StatPercent = Intelligence
-	Heal_Type = 
+	Heal_Type = Absolute
 	ITM_ACC_Dandor = TRUE
 	ITM_ACC_HandoStillor = TRUE
 	ITM_ACC_Jake = TRUE
 	ITM_ACC_Marrilona = TRUE
-	ITM_BlackMarket = 
+	ITM_BlackMarket = FALSE
 	ITM_Combat = TRUE
-	ITM_EQP_For = 
+	ITM_EQP_For = Jake
 	ITM_Field = TRUE
 	ITM_Sellable = TRUE
 	ITM_ShopPrice = 0
@@ -2478,6 +2505,7 @@ Rec: ABL_HERO_MARRILONA_FLAME
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -2562,6 +2590,7 @@ Rec: ABL_HERO_MARRILONA_HEAL
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -2646,6 +2675,7 @@ Rec: ABL_HERO_MARRILONA_SPLASH
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -2730,6 +2760,7 @@ Rec: ABL_MASTER_RUBINE_BACKSTAB
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -2814,6 +2845,7 @@ Rec: ABL_MASTER_RUBINE_FOLLOWME
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -2898,6 +2930,7 @@ Rec: ABL_MASTER_RUBINE_PICKPOCKET
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -2982,6 +3015,7 @@ Rec: ABL_MASTER_RUBINE_POISONSTAB
 	CausePetrification = FALSE
 	CausePoison = TRUE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -3066,6 +3100,7 @@ Rec: EQP_DANDOR_TRAINAXE
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -3150,6 +3185,7 @@ Rec: EQP_DANDOR_WP1
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -3234,6 +3270,7 @@ Rec: EQP_DANDOR_WP2
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -3318,6 +3355,7 @@ Rec: EQP_DANDOR_WP3
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -3402,6 +3440,7 @@ Rec: EQP_DANDOR_WP4
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -3486,6 +3525,7 @@ Rec: EQP_DANDOR_WP5
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -3570,6 +3610,7 @@ Rec: EQP_DANDOR_WP6
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -3654,6 +3695,7 @@ Rec: EQP_HANDOSTILLOR_AR1
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -3738,6 +3780,7 @@ Rec: EQP_HANDOSTILLOR_AR2
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -3822,6 +3865,7 @@ Rec: EQP_HANDOSTILLOR_AR3
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -3906,6 +3950,7 @@ Rec: EQP_HANDOSTILLOR_AR4
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -3990,6 +4035,7 @@ Rec: EQP_HANDOSTILLOR_AR5
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -4074,6 +4120,7 @@ Rec: EQP_HANDOSTILLOR_AR6
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -4158,6 +4205,7 @@ Rec: EQP_HANDOSTILLOR_TRAINSTAFF
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -4242,6 +4290,7 @@ Rec: EQP_HANDOSTILLOR_WP1
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -4326,6 +4375,7 @@ Rec: EQP_HANDOSTILLOR_WP2
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -4410,6 +4460,7 @@ Rec: EQP_HANDOSTILLOR_WP3
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -4494,6 +4545,7 @@ Rec: EQP_HANDOSTILLOR_WP4
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -4578,6 +4630,7 @@ Rec: EQP_HANDOSTILLOR_WP5
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -4662,6 +4715,7 @@ Rec: EQP_HANDOSTILLOR_WP6
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -4746,6 +4800,7 @@ Rec: EQP_JAKE_AR1
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -4830,6 +4885,7 @@ Rec: EQP_JAKE_AR2
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -4914,6 +4970,7 @@ Rec: EQP_JAKE_AR3
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -4998,6 +5055,7 @@ Rec: EQP_JAKE_AR4
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -5082,6 +5140,7 @@ Rec: EQP_JAKE_AR5
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -5166,6 +5225,7 @@ Rec: EQP_JAKE_AR6
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -5250,6 +5310,7 @@ Rec: EQP_JAKE_TRAINSWORD
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -5334,6 +5395,7 @@ Rec: EQP_JAKE_WP1
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -5418,6 +5480,7 @@ Rec: EQP_JAKE_WP2
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -5502,6 +5565,7 @@ Rec: EQP_JAKE_WP3
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -5586,6 +5650,7 @@ Rec: EQP_JAKE_WP4
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -5670,6 +5735,7 @@ Rec: EQP_JAKE_WP5
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -5754,6 +5820,7 @@ Rec: EQP_JAKE_WP6
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -5838,6 +5905,7 @@ Rec: EQP_JEWEL_SMALLTOPAZ
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -5922,6 +5990,7 @@ Rec: EQP_JEWEL_TOPAZ
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -6006,6 +6075,7 @@ Rec: EQP_MARRILONA_AR1
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -6090,6 +6160,7 @@ Rec: EQP_MARRILONA_AR2
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -6174,6 +6245,7 @@ Rec: EQP_MARRILONA_AR3
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -6258,6 +6330,7 @@ Rec: EQP_MARRILONA_AR4
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -6342,6 +6415,7 @@ Rec: EQP_MARRILONA_AR5
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -6426,6 +6500,7 @@ Rec: EQP_MARRILONA_AR6
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -6510,6 +6585,7 @@ Rec: ITM_ANTIDOTE
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -6594,6 +6670,7 @@ Rec: ITM_APPLE
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -6678,6 +6755,7 @@ Rec: ITM_FLAMEORB
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -6762,6 +6840,7 @@ Rec: ITM_MAGICDUST
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -6846,6 +6925,7 @@ Rec: ITM_MANDRAKE
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -6930,6 +7010,7 @@ Rec: ITM_MEDICINE
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = TRUE
@@ -7014,6 +7095,7 @@ Rec: ITM_PANACEA
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = TRUE
 	CureDisease = TRUE
@@ -7098,6 +7180,7 @@ Rec: ITM_PHOENIX
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -7182,6 +7265,7 @@ Rec: ITM_POTION
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -7247,6 +7331,91 @@ Rec: ITM_POTION
 	rew_GainSkill4 = 0
 	rew_GainSkill5 = 0
 
+Rec: ITM_PURELITERATURE
+	ABL_APCost = 0
+	ABL_HPCost = 0
+	Attack = 0
+	Attack_AccuracyRate = 100
+	Attack_AllowAccuracy = FALSE
+	Attack_AllowCritical = FALSE
+	Attack_AllowDodge = FALSE
+	Attack_AttackStat = Power
+	Attack_DefenseStat = Endurance
+	Attack_Desperate = FALSE
+	Attack_Element = None
+	CauseCurse = FALSE
+	CauseDeath = FALSE
+	CauseDisease = FALSE
+	CauseParalysis = FALSE
+	CausePetrification = FALSE
+	CausePoison = FALSE
+	CauseSilence = FALSE
+	CauseSleep = TRUE
+	CauseUndead = FALSE
+	CureCurse = FALSE
+	CureDisease = FALSE
+	CureParalysis = FALSE
+	CurePetrification = FALSE
+	CurePoison = FALSE
+	CureSilence = FALSE
+	CureUndead = FALSE
+	Desc = Boring stories you can use to bore your enemies to sleep.
+	EQP_STAT_Accuracy = 0
+	EQP_STAT_Endurance = 0
+	EQP_STAT_Evasion = 0
+	EQP_STAT_Intelligence = 0
+	EQP_STAT_Power = 0
+	EQP_STAT_Resistance = 0
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
+	EffectScript = 
+	EffectScript_Arg = 
+	EffectScript_External = FALSE
+	Heal = 0
+	Heal_StatPercent = Intelligence
+	Heal_Type = Absolute
+	ITM_ACC_Dandor = TRUE
+	ITM_ACC_HandoStillor = TRUE
+	ITM_ACC_Jake = TRUE
+	ITM_ACC_Marrilona = TRUE
+	ITM_BlackMarket = FALSE
+	ITM_Combat = TRUE
+	ITM_EQP_For = Jake
+	ITM_Field = TRUE
+	ITM_Sellable = TRUE
+	ITM_ShopPrice = 200
+	ITM_Type = Consumable
+	ITM_WeaponAbility = FALSE
+	Revive = FALSE
+	Rew_GainAP = 0
+	SpellAni = 
+	SpellAni_Arg = 
+	SpellAni_External = FALSE
+	Stance = Cast
+	Target = AF
+	Title = Pure Literature
+	Type = Item
+	USE_Penalty = 0
+	Voice = Attack
+	rew_CreateSkill1 = FALSE
+	rew_CreateSkill2 = FALSE
+	rew_CreateSkill3 = FALSE
+	rew_CreateSkill4 = FALSE
+	rew_CreateSkill5 = FALSE
+	rew_GainSkill1 = 0
+	rew_GainSkill2 = 0
+	rew_GainSkill3 = 0
+	rew_GainSkill4 = 0
+	rew_GainSkill5 = 0
+
 Rec: ITM_SALVE
 	ABL_APCost = 0
 	ABL_HPCost = 0
@@ -7266,6 +7435,7 @@ Rec: ITM_SALVE
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -7350,6 +7520,7 @@ Rec: SPECIAL_AXESMASH
 	CausePetrification = 
 	CausePoison = 
 	CauseSilence = 
+	CauseSleep = 
 	CauseUndead = 
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -7434,6 +7605,7 @@ Rec: WAND_FLAME
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -7518,6 +7690,7 @@ Rec: WAND_FROST
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -7602,6 +7775,7 @@ Rec: WAND_TRAINING
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
+	CauseSleep = 
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
