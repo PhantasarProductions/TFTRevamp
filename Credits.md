@@ -228,6 +228,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_PANACEA.lua
     1. Script: Script/JINC/IA/ITM_PHOENIX.lua
     1. Script: Script/JINC/IA/ITM_POTION.lua
+    1. Script: Script/JINC/IA/ITM_PURELITERATURE.lua
     1. Script: Script/JINC/IA/ITM_SALVE.lua
     1. Script: Script/JINC/IA/SPECIAL_AXESMASH.lua
     1. Script: Script/JINC/IA/WAND_FLAME.lua
@@ -480,6 +481,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/AlphabetTiles/YurgonTile_X.png
     1. Graphics: GFX/Textures/AlphabetTiles/YurgonTile_Y.png
     1. Graphics: GFX/Textures/AlphabetTiles/YurgonTile_Z.png
+    1. Graphics: GFX/Textures/Bookcase/Boekenkast.piko
+    1. Graphics: GFX/Textures/Bookcase/Boekenkast.png
     1. Graphics: GFX/Textures/Deur/Deur Hout 64x64.png
     1. Graphics: GFX/Textures/Deur/Deur Hout 96x96.png
     1. Graphics: GFX/Textures/Effects/North-Hole.png

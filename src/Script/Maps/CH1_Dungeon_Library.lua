@@ -42,9 +42,17 @@ function ToRoom(room)
      GoToLayer(room,'Start')
 end     
 
+function ExitRoom()
+     local l = Maps.LayerCodeName
+     local te = "From"..right(l,3)
+     GoToLayer("#002",te)
+     TurnPlayer('South')
+end
+
 function GALE_OnLoad()
     InitWalda('Library')
     for i=3,5 do
         ZA_Enter('To00'..i,ToRoom,"#00"..i)
     end    
+    ZA_Enter('Exit',ExitRoom)
 end    
