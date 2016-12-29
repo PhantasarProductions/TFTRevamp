@@ -1,6 +1,6 @@
 --[[
   LoadGame.lua
-  Version: 16.10.07
+  Version: 16.12.29
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -41,6 +41,7 @@ function LoadGame()
   -- MS.Run("FIELD","ResetClickables") -- Not needed here. This stuff is already empty.
   MS.Run("FIELD","SetUpAutoClickables")
   MS.Run("FIELD","SetUpCompassNeedles")
+  MS.Run('FIELD','SetUpRoomNames')
   MS.Run("FIELD","AutoHideAction")
   CSay("Setting up the map music")
   MS.Run("MAP","MapMusic")

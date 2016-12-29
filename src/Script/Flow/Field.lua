@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 16.12.27
+  Version: 16.12.29
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -55,6 +55,7 @@ rencstep = 1
 rencstepleft = recstepchange
 rencon = true
 
+RoomNames = {}
 
 RONOFF = { [false] = "Off", [true]="On" }
 
@@ -135,6 +136,21 @@ function SetUpRandomEncounters()
     end    
 end
 
+function SetUpRoomNames()
+    ClearTable(RoomNames)
+    if Maps.GetData('NamedZones')=="" then
+       CSay('No Zone Names Here') 
+       return 
+    end
+    local maintable = mysplit(Maps.GetData('NamedZones'),";")
+    for s in each(maintable) do
+        local di = mysplit(s,"=")
+        RoomNames[di[1]] = di[2]
+        CSay("RoomNames: "..di[1].." = "..di[2])
+    end
+end
+
+
 function LoadMap(map)
     -- Reset some stuff prior to loading
     ResetClickables()
@@ -154,6 +170,7 @@ function LoadMap(map)
     SetUpCompassNeedles()
     SetUpRencTable()
     SetUpRandomEncounters()
+    SetUpRoomNames()
     rencon = true    
 end
 
@@ -408,6 +425,7 @@ function FieldStats()
        if Maps.Multi()==1 then layer = Maps.LayerCodeName end
        stuff[1] = {'FSTIT',Maps.GetData('Title'),'FieldInfo'}
        if layer and left(layer,1)=="#" then stuff[2]={'FSROM',layer} end
+       if RoomNames[Maps.LayerCodeName] then stuff[#stuff+1]={'FSRMN',RoomNames[Maps.LayerCodeName],'FieldInfo'} end
        if CVVN("%CASH")     then stuff[#stuff+1] = {'FSCSH',CVV("%CASH")}     end
        if CVVN("%ORBS")     then stuff[#stuff+1] = {'FSORB',CVV("%ORBS")}     end
        if CVVN("%LEVELCAP") then stuff[#stuff+1] = {'FSLVC',CVV("%LEVELCAP")} end
