@@ -84,7 +84,7 @@ end
 function LeaveMe()
    Var.D("$INPUT.RETURN",myvalue)
    LAURA.Flow(LeaveMeFlow)
-   MS.Kill('ALTINPUT')
+   MS.Destroy('ALTINPUT')
 end   
 
 function GALE_OnLoad()
@@ -102,6 +102,10 @@ end
 
 function MAIN_FLOW()
    local mx,my = MouseCoords()
+   local r = {[true]=255,[false]=255}
+   local g = {[true]=180,[false]=255}
+   local b = {[true]=  0,[false]=255}
+   local hl
    Box(0,0,SW,SH)
    SetFont('AltInputHead')
    DarkText(myinputtext,20,20)
@@ -110,17 +114,35 @@ function MAIN_FLOW()
    SetFont('AltInputInput')
    DarkText(myvalue..c,40,100)
    SetFont('AltInputKeys')
+   --[[
+   if round(JoyX())~=0 or round(JoyY())~=0 then INP.MoveMouse(mx+round(JoyX()),my+round(JoyY()))
+   elseif INP.KeyD(KEY_RIGHT)~=0 or INP.KeyD(KEY_DOWN) then INP.MoveMouse(mx+INP.KeyD(KEY_RIGHT),my+INP.KeyD(KEY_DOWN))
+   else INP.MoveMouse(mx-INP.KeyD(KEY_LEFT ),my-INP.KeyD(KEY_UP  )) end
+   ]]
+   local movex = ((round(joyx()) + INP.KeyD(KEY_RIGHT)) - INP.KeyD(KEY_LEFT))*2 
+   local movey = ((round(joyy()) + INP.KeyD(KEY_DOWN )) - INP.KeyD(KEY_UP  ))*2
+   if movex~=0 or movey~=0 then INP.MoveMouse(mx+movex,my+movey) end 
    for kc,data in pairs(keys) do
        if allow[data.group] then
           Box(data.x+startx,data.y+starty,38,38)
-          DarkText(kc,startx+data.x+20,starty+data.y+20,2,2)
           if INP.KeyH(string.byte(kc))==1 then GetLetter(kc) end
+          hl = mx>data.x+startx and mx<data.x+startx+40
+          and  my>data.y+starty and my<data.y+starty+40
+          DarkText(kc,startx+data.x+20,starty+data.y+20,2,2,r[hl],g[hl],b[hl])
+          if (mousehit(1) or joyhit('CONFIRM')) and hl then GetLetter(kc) end 
        else   
           Box(data.x+startx,data.y+starty,38,38)
           DarkText(kc,startx+data.x+20,starty+data.y+20,2,2,50,50,50)
        end
     end   
     if (INP.KeyH(KEY_BACKSPACE)==1 or joyhit('CANCEL') or mousehit(2)) and #myvalue>0 then myvalue=left(myvalue,string.len(myvalue)-1) end 
+    local enterx = SW-200
+    local entery = SH-60
+    local enterhl = mx>enterx and mx<enterx+180 and my>entery and my<entery+40
+    Box (enterx,entery,180,40)
+    DarkText('Confirm',enterx+90,entery+20,2,2,r[enterhl],g[enterhl],b[enterhl])
+    if (INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_RETURN)==1) and #myvalue>0 then LeaveMe() end
+    if enterhl and #myvalue>0 and (joyhit('CONFIRM') or mousehit(1)) then LeaveMe() end 
     ShowMouse()
     Flip()
 end   

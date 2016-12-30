@@ -1,6 +1,6 @@
 --[[
   Joy.lua
-  Version: 16.12.23
+  Version: 16.12.30
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -34,6 +34,12 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
+joyx = INP.JoyX
+joyy = INP.JoyY
+JoyX = INP.JoyX
+JoyY = INP.JoyY
+
 joy_left = -1
 joy_right = -2
 joy_up = -3

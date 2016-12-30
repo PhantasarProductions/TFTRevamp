@@ -98,7 +98,28 @@ function NPC_PEDDESTAL()
     AltInput('Please enter the unlocking code:','','num')
 end
 
+function OpenCorridor(d,p)
+   local l = Maps.LayerCodeName
+   Maps.GotoLayer('#002')
+   Maps.Obj.Kill(d,p)
+   Maps.GotoLayer(l)
+   MapText('SLOTYES')
+end
+
+PEDNEXT = { ['#003']={f = OpenCorridor, p='Door4'},
+            ['#004']={f = OpenCorridor, p='Door5'},
+            ['#005']={f = Maps.Obj.Kill, p='Door6'}
+          }
+
 function POST_PEDDESTAL()
+   local v = AltInputResult()
+   local iv = Sys.Val(v)
+   local pNext = PEDNEXT[Maps.LayerCodeName]
+   if iv==total then
+      pNext.f(pNext.p,1)
+   else
+      MapText('SLOTNO')
+   end
 end
 
 function GALE_OnLoad()
