@@ -43,7 +43,7 @@ function Init()
  -- Init numbers
  --keys[1] = {}
  for i=0,9 do
-     keys={ [c(i+48)] = {x=i*40, y=0, group='num'} }
+     keys [c(i+48)] = {x=i*40, y=0, group='num'} 
  end
 
  -- Init letters
@@ -51,8 +51,8 @@ function Init()
  local y=40
  --local r=2
  local k=0
- for i=65,90 do
-    keys = { [c(i)] = { x=x, y=y, group='alpha' } }
+ for i=65,90 do   
+    keys  [c(i)] = { x=x, y=y, group='alpha' } 
     k = k + 1
     x = x + 40
     if k>=10 then
@@ -61,19 +61,24 @@ function Init()
        y=y+40
     end
  end   
+ 
+ -- End checkup
+ CSay('Serialize:')
+ CSay(serialize('keys',keys)) 
 end  
 
 
 
 function ComeToMe(InputText,defaultvalue,whattoallow)
-   LeaveMeFlow = LAURA.GetFlow()
-   LAURA.Flow("ALTINPUT")
-   if (not whattoallow) or whattoallow=="" then allow =       { num = true, alpha=true } return end
-   local wta = splitwhattoallow
-   allow.num = tablecontains(wta,"num")
-   allow.alpha = tablecontains(wta,"alpha")
    myvalue = defaultvalue
    myinputtext = InputText
+   LeaveMeFlow = LAURA.GetFlow()
+   LAURA.Flow("ALTINPUT")
+   if (not whattoallow) or whattoallow=="" then allow = { num = true, alpha=true } return end
+   local wta = mysplit(whattoallow)
+   allow.num = tablecontains(wta,"num")
+   allow.alpha = tablecontains(wta,"alpha")
+   CSay(serialize('allow',allow))
 end   
 
 function LeaveMe()
@@ -90,20 +95,23 @@ function GALE_OnLoad()
 end  
 
 
-function MAIN_Flow()
+function MAIN_FLOW()
    local mx,my = MouseCoords()
-   Box(0,0,SW,WH)
-   SetFont('AltInputHeader')
+   Box(0,0,SW,SH)
+   SetFont('AltInputHead')
    DarkText(myinputtext,20,20)
-   Box(20,90,WH-40,70)
+   Box(20,90,SW-40,70)
    local c = cursor[Sys.Val(right(Time.MSecs(),1))>=5]
    SetFont('AltInputInput')
    DarkText(myvalue..c,40,100)
    SetFont('AltInputKeys')
    for kc,data in pairs(keys) do
        if allow[data.group] then
-          Box(data.x,data.y,38,38)
-          DarkText(kc,data.x+20,data.y+20,2,2)
+          Box(data.x+startx,data.y+starty,38,38)
+          DarkText(kc,startx+data.x+20,starty+data.y+20,2,2)
+       else   
+          Box(data.x+startx,data.y+starty,38,38)
+          DarkText(kc,startx+data.x+20,starty+data.y+20,2,2,50,50,50)
        end
     end   
     ShowMouse()
