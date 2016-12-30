@@ -66,8 +66,8 @@ end
 
 
 function ComeToMe(InputText,defaultvalue,whattoallow)
-   LeaveMeFlow = LAURA.Flow
-   LAURA.Flow="ALTINPUT"
+   LeaveMeFlow = LAURA.GetFlow()
+   LAURA.Flow("ALTINPUT")
    if (not whattoallow) or whattoallow=="" then allow =       { num = true, alpha=true } return end
    local wta = splitwhattoallow
    allow.num = tablecontains(wta,"num")
@@ -78,7 +78,7 @@ end
 
 function LeaveMe()
    Var.D("$INPUT.RETURN",myvalue)
-   LAURA.Flow=LeaveMeFlow
+   LAURA.Flow(LeaveMeFlow)
    MS.Kill('ALTINPUT')
 end   
 
