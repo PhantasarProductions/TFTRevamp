@@ -76,7 +76,7 @@ fonts = {
     TradeCompare = {'Monof55.ttf',20},
     JoyConfig = {"Coolvetica.ttf",20},    
     AltInputHead = {"Coolvetica.ttf",60},
-    AltInputInput = {'Monof55.ttf',60},
+    AltInputInput = {'Monof55.ttf',50},
     AltInputKeys = {'Monof55.ttf',30}    
     
 }

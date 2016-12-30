@@ -94,6 +94,11 @@ function GALE_OnLoad()
   startx = Center_X - 200
 end  
 
+function GetLetter(LETTER)
+   if (#myvalue/50)<SW-60 then
+      myvalue = myvalue .. LETTER
+   end
+end   
 
 function MAIN_FLOW()
    local mx,my = MouseCoords()
@@ -101,7 +106,7 @@ function MAIN_FLOW()
    SetFont('AltInputHead')
    DarkText(myinputtext,20,20)
    Box(20,90,SW-40,70)
-   local c = cursor[Sys.Val(right(Time.MSecs(),1))>=5]
+   local c = cursor[Sys.Val(right(math.floor(Time.MSecs()/2),1))>=5]
    SetFont('AltInputInput')
    DarkText(myvalue..c,40,100)
    SetFont('AltInputKeys')
@@ -109,11 +114,13 @@ function MAIN_FLOW()
        if allow[data.group] then
           Box(data.x+startx,data.y+starty,38,38)
           DarkText(kc,startx+data.x+20,starty+data.y+20,2,2)
+          if INP.KeyH(string.byte(kc))==1 then GetLetter(kc) end
        else   
           Box(data.x+startx,data.y+starty,38,38)
           DarkText(kc,startx+data.x+20,starty+data.y+20,2,2,50,50,50)
        end
     end   
+    if (INP.KeyH(KEY_BACKSPACE)==1 or joyhit('CANCEL') or mousehit(2)) and #myvalue>0 then myvalue=left(myvalue,string.len(myvalue)-1) end 
     ShowMouse()
     Flip()
 end   
