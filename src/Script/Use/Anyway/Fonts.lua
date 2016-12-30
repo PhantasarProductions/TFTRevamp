@@ -1,6 +1,6 @@
 --[[
   Fonts.lua
-  Version: 16.12.23
+  Version: 16.12.30
   Copyright (C) 2016 2015
   
   ===========================
@@ -74,7 +74,10 @@ fonts = {
     WorldItem = {'Coolvetica.ttf',0},  -- Variable size based on screensize
     Equip = {'Coolvetica.ttf',20},
     TradeCompare = {'Monof55.ttf',20},
-    JoyConfig = {"Coolvetica.ttf",20}    
+    JoyConfig = {"Coolvetica.ttf",20},    
+    AltInputHead = {"Coolvetica.ttf",60},
+    AltInputInput = {'Monof55.ttf',60},
+    AltInputKeys = {'Monof55.ttf',30}    
     
 }
 

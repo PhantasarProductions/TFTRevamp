@@ -352,11 +352,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
@@ -731,6 +731,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Field Icons/FSLVC.png
     1. Graphics: GFX/Field Icons/FSORB.png
     1. Graphics: GFX/Field Icons/FSREN.png
+    1. Graphics: GFX/Field Icons/FSRMN.png
     1. Graphics: GFX/Field Icons/FSROM.png
     1. Graphics: GFX/Field Icons/FSTIM.png
     1. Graphics: GFX/Field Icons/FSTIT.png
