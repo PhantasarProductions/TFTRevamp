@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.29
+version: 16.12.30
 ]]
 
 
@@ -91,6 +91,15 @@ function NPC_Kast3() kast(3) end
 function NPC_Kast4() kast(4) end
 function NPC_Kast5() kast(5) end
 function NPC_Kast6() kast(6) end
+
+function NPC_PEDDESTAL()
+    MapText('SLOT')
+    Schedule('MAP','POST_PEDDESTAL')
+    AltInput('Please enter the unlocking code:','','num')
+end
+
+function POST_PEDDESTAL()
+end
 
 function GALE_OnLoad()
     InitWalda('Library')

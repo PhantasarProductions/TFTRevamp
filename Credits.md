@@ -96,6 +96,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Events/AutoUse.lua
     1. Script: Script/Events/NarratedEvents.lua
     1. Script: Script/Events/StartGame.lua
+    1. Script: Script/Flow/AltInput.lua
     1. Script: Script/Flow/AutoUse.lua
     1. Script: Script/Flow/Combat.lsv
     1. Script: Script/Flow/Combat.lua
@@ -318,6 +319,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
     1. Script: Script/Use/Combat/StatusChanges/Poison and Disease.lua
     1. Script: Script/Use/Linkers/AchievementLinker.lua
+    1. Script: Script/Use/Linkers/AlternateInputLinker.lua
     1. Script: Script/Use/Linkers/BoxTextLinker.lua
     1. Script: Script/Use/Linkers/CombatLinker.lua
     1. Script: Script/Use/Linkers/Field.Lua
@@ -352,11 +354,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
@@ -497,6 +499,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Objects/Kaars Uit.png
     1. Graphics: GFX/Textures/Objects/Kaars.Frames
     1. Graphics: GFX/Textures/Objects/Kaars.png
+    1. Graphics: GFX/Textures/Objects/Peddestal.png
     1. Graphics: GFX/Textures/Objects/Woonwagen.piko
     1. Graphics: GFX/Textures/Objects/Woonwagen.png
     1. Graphics: GFX/Textures/Path Of Magic/Bottom.png
