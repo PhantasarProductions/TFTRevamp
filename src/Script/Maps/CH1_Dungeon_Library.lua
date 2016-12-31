@@ -94,7 +94,7 @@ function NPC_Kast5() kast(5) end
 function NPC_Kast6() kast(6) end
 
 function NPC_PEDDESTAL()
-    if CVV('&DONE.LIBRARY.PUZZLE['..right(Map.LayerCodeName,3)..']') then return end
+    if CVV('&DONE.LIBRARY.PUZZLE['..right(Maps.LayerCodeName,3)..']') then return end
     MapText('SLOT')
     Schedule('MAP','POST_PEDDESTAL')
     AltInput('Please enter the unlocking code:','','num')    
