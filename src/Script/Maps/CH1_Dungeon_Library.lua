@@ -131,4 +131,5 @@ function GALE_OnLoad()
         ZA_Enter('To00'..i,ToRoom,"#00"..i)
     end    
     ZA_Enter('Exit',ExitRoom)
+    MapHide('Secret')
 end    
