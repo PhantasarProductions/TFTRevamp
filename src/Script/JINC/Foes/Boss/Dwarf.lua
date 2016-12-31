@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 16.12.27
+version: 16.12.31
 ]]
--- File Generated: Tue 27 December 2016; 17:38:56
+-- File Generated: Sat 31 December 2016; 17:28:56
 
 
 local foe = {}
@@ -82,6 +82,7 @@ local foe = {}
 	foe["NEWGAMEPLUS_ITM_PANACEA"] = true
 	foe["NEWGAMEPLUS_ITM_PHOENIX"] = true
 	foe["NEWGAMEPLUS_ITM_POTION"] = true
+	foe["NEWGAMEPLUS_ITM_PURELITERATURE"] = true
 	foe["NEWGAMEPLUS_ITM_SALVE"] = true
 	foe["NEWGAMEPLUS_SPECIAL_AXESMASH"] = true
 	foe["NEWGAMEPLUS_WAND_FLAME"] = true
@@ -129,6 +130,7 @@ local foe = {}
 	foe["NORMAL_ITM_PANACEA"] = true
 	foe["NORMAL_ITM_PHOENIX"] = true
 	foe["NORMAL_ITM_POTION"] = true
+	foe["NORMAL_ITM_PURELITERATURE"] = true
 	foe["NORMAL_ITM_SALVE"] = true
 	foe["NORMAL_SPECIAL_AXESMASH"] = true
 	foe["NORMAL_WAND_FLAME"] = true
@@ -176,6 +178,7 @@ local foe = {}
 	foe["OVERSOUL_ITM_PANACEA"] = true
 	foe["OVERSOUL_ITM_PHOENIX"] = true
 	foe["OVERSOUL_ITM_POTION"] = true
+	foe["OVERSOUL_ITM_PURELITERATURE"] = true
 	foe["OVERSOUL_ITM_SALVE"] = true
 	foe["OVERSOUL_SPECIAL_AXESMASH"] = true
 	foe["OVERSOUL_WAND_FLAME"] = true
@@ -223,6 +226,7 @@ local foe = {}
 	foe["SKILL\49_ITM_PANACEA"] = true
 	foe["SKILL\49_ITM_PHOENIX"] = true
 	foe["SKILL\49_ITM_POTION"] = true
+	foe["SKILL\49_ITM_PURELITERATURE"] = true
 	foe["SKILL\49_ITM_SALVE"] = true
 	foe["SKILL\49_SPECIAL_AXESMASH"] = true
 	foe["SKILL\49_WAND_FLAME"] = true
@@ -270,6 +274,7 @@ local foe = {}
 	foe["SKILL\50_ITM_PANACEA"] = true
 	foe["SKILL\50_ITM_PHOENIX"] = true
 	foe["SKILL\50_ITM_POTION"] = true
+	foe["SKILL\50_ITM_PURELITERATURE"] = true
 	foe["SKILL\50_ITM_SALVE"] = true
 	foe["SKILL\50_SPECIAL_AXESMASH"] = true
 	foe["SKILL\50_WAND_FLAME"] = true
@@ -317,6 +322,7 @@ local foe = {}
 	foe["SKILL\51_ITM_PANACEA"] = true
 	foe["SKILL\51_ITM_PHOENIX"] = true
 	foe["SKILL\51_ITM_POTION"] = true
+	foe["SKILL\51_ITM_PURELITERATURE"] = true
 	foe["SKILL\51_ITM_SALVE"] = true
 	foe["SKILL\51_SPECIAL_AXESMASH"] = true
 	foe["SKILL\51_WAND_FLAME"] = true
@@ -372,6 +378,7 @@ local foe = {}
 	foe["RATE_ITM_PANACEA"] = 0
 	foe["RATE_ITM_PHOENIX"] = 0
 	foe["RATE_ITM_POTION"] = 0
+	foe["RATE_ITM_PURELITERATURE"] = 0
 	foe["RATE_ITM_SALVE"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_WAND_FLAME"] = 0
@@ -419,6 +426,7 @@ local foe = {}
 	foe["TARGET_ITM_PANACEA"] = "Random"
 	foe["TARGET_ITM_PHOENIX"] = "Random"
 	foe["TARGET_ITM_POTION"] = "Random"
+	foe["TARGET_ITM_PURELITERATURE"] = "Random"
 	foe["TARGET_ITM_SALVE"] = "Random"
 	foe["TARGET_SPECIAL_AXESMASH"] = "Random"
 	foe["TARGET_WAND_FLAME"] = "Random"

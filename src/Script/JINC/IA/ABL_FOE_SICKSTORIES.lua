@@ -3,7 +3,7 @@ ret = {
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Revive fallen ally",
+	["CauseParalysis"] = true,
 	["Heal_StatPercent"] = "Intelligence",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
@@ -12,14 +12,11 @@ ret = {
 	["ITM_Combat"] = true,
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 100,
 	["ITM_Type"] = "Consumable",
-	["Revive"] = true,
 	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Poenix",
-	["Type"] = "Item",
-	["Voice"] = "Heal"}
+	["Target"] = "1F",
+	["Title"] = "Sick Stories",
+	["Type"] = "Item"}
 
 return ret
 

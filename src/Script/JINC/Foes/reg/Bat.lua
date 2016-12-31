@@ -1,40 +1,4 @@
---[[
-  Bat.lua
-  Version: 16.12.27
-  Copyright (C) 2016 Jeroen Petrus Broks
-  
-  ===========================
-  This file is part of a project related to the Phantasar Chronicles or another
-  series or saga which is property of Jeroen P. Broks.
-  This means that it may contain references to a story-line plus characters
-  which are property of Jeroen Broks. These references may only be distributed
-  along with an unmodified version of the game. 
-  
-  As soon as you remove or replace ALL references to the storyline or character
-  references, or any termology specifically set up for the Phantasar universe,
-  or any other univers a story of Jeroen P. Broks is set up for,
-  the restrictions of this file are removed and will automatically become
-  zLib licensed (see below).
-  
-  Please note that doing so counts as a modification and must be marked as such
-  in accordance to the zLib license.
-  ===========================
-  zLib license terms:
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
-]]
--- File Generated: Tue 27 December 2016; 17:25:21
+-- File Generated: Sat 31 December 2016; 17:36:01
 
 
 local foe = {}
@@ -45,7 +9,11 @@ local foe = {}
 	foe["NEWGAMEPLUS_ABL_FOE_DESPERATEATTACK"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_DISTRACT"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_FLAMESTRIKE"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_SHOCKINGSTORIES"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_SICKSTORIES"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_SMITE"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_SOULCRUSHINGSTORY"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_SUICIDE"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_VENOMBITE"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_VENOMSTAB"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_VIRUSSTAB"] = true
@@ -81,6 +49,7 @@ local foe = {}
 	foe["NEWGAMEPLUS_ITM_PANACEA"] = true
 	foe["NEWGAMEPLUS_ITM_PHOENIX"] = true
 	foe["NEWGAMEPLUS_ITM_POTION"] = true
+	foe["NEWGAMEPLUS_ITM_PURELITERATURE"] = true
 	foe["NEWGAMEPLUS_ITM_SALVE"] = true
 	foe["NEWGAMEPLUS_SPECIAL_AXESMASH"] = true
 	foe["NEWGAMEPLUS_WAND_FLAME"] = true
@@ -91,7 +60,11 @@ local foe = {}
 	foe["NORMAL_ABL_FOE_DESPERATEATTACK"] = true
 	foe["NORMAL_ABL_FOE_DISTRACT"] = true
 	foe["NORMAL_ABL_FOE_FLAMESTRIKE"] = true
+	foe["NORMAL_ABL_FOE_SHOCKINGSTORIES"] = true
+	foe["NORMAL_ABL_FOE_SICKSTORIES"] = true
 	foe["NORMAL_ABL_FOE_SMITE"] = true
+	foe["NORMAL_ABL_FOE_SOULCRUSHINGSTORY"] = true
+	foe["NORMAL_ABL_FOE_SUICIDE"] = true
 	foe["NORMAL_ABL_FOE_VENOMBITE"] = true
 	foe["NORMAL_ABL_FOE_VENOMSTAB"] = true
 	foe["NORMAL_ABL_FOE_VIRUSSTAB"] = true
@@ -127,6 +100,7 @@ local foe = {}
 	foe["NORMAL_ITM_PANACEA"] = true
 	foe["NORMAL_ITM_PHOENIX"] = true
 	foe["NORMAL_ITM_POTION"] = true
+	foe["NORMAL_ITM_PURELITERATURE"] = true
 	foe["NORMAL_ITM_SALVE"] = true
 	foe["NORMAL_SPECIAL_AXESMASH"] = true
 	foe["NORMAL_WAND_FLAME"] = true
@@ -137,7 +111,11 @@ local foe = {}
 	foe["OVERSOUL_ABL_FOE_DESPERATEATTACK"] = true
 	foe["OVERSOUL_ABL_FOE_DISTRACT"] = true
 	foe["OVERSOUL_ABL_FOE_FLAMESTRIKE"] = true
+	foe["OVERSOUL_ABL_FOE_SHOCKINGSTORIES"] = true
+	foe["OVERSOUL_ABL_FOE_SICKSTORIES"] = true
 	foe["OVERSOUL_ABL_FOE_SMITE"] = true
+	foe["OVERSOUL_ABL_FOE_SOULCRUSHINGSTORY"] = true
+	foe["OVERSOUL_ABL_FOE_SUICIDE"] = true
 	foe["OVERSOUL_ABL_FOE_VENOMBITE"] = true
 	foe["OVERSOUL_ABL_FOE_VENOMSTAB"] = true
 	foe["OVERSOUL_ABL_FOE_VIRUSSTAB"] = true
@@ -173,6 +151,7 @@ local foe = {}
 	foe["OVERSOUL_ITM_PANACEA"] = true
 	foe["OVERSOUL_ITM_PHOENIX"] = true
 	foe["OVERSOUL_ITM_POTION"] = true
+	foe["OVERSOUL_ITM_PURELITERATURE"] = true
 	foe["OVERSOUL_ITM_SALVE"] = true
 	foe["OVERSOUL_SPECIAL_AXESMASH"] = true
 	foe["OVERSOUL_WAND_FLAME"] = true
@@ -183,7 +162,11 @@ local foe = {}
 	foe["SKILL\49_ABL_FOE_DESPERATEATTACK"] = true
 	foe["SKILL\49_ABL_FOE_DISTRACT"] = true
 	foe["SKILL\49_ABL_FOE_FLAMESTRIKE"] = true
+	foe["SKILL\49_ABL_FOE_SHOCKINGSTORIES"] = true
+	foe["SKILL\49_ABL_FOE_SICKSTORIES"] = true
 	foe["SKILL\49_ABL_FOE_SMITE"] = true
+	foe["SKILL\49_ABL_FOE_SOULCRUSHINGSTORY"] = true
+	foe["SKILL\49_ABL_FOE_SUICIDE"] = true
 	foe["SKILL\49_ABL_FOE_VENOMBITE"] = true
 	foe["SKILL\49_ABL_FOE_VENOMSTAB"] = true
 	foe["SKILL\49_ABL_FOE_VIRUSSTAB"] = true
@@ -219,6 +202,7 @@ local foe = {}
 	foe["SKILL\49_ITM_PANACEA"] = true
 	foe["SKILL\49_ITM_PHOENIX"] = true
 	foe["SKILL\49_ITM_POTION"] = true
+	foe["SKILL\49_ITM_PURELITERATURE"] = true
 	foe["SKILL\49_ITM_SALVE"] = true
 	foe["SKILL\49_SPECIAL_AXESMASH"] = true
 	foe["SKILL\49_WAND_FLAME"] = true
@@ -229,7 +213,11 @@ local foe = {}
 	foe["SKILL\50_ABL_FOE_DESPERATEATTACK"] = true
 	foe["SKILL\50_ABL_FOE_DISTRACT"] = true
 	foe["SKILL\50_ABL_FOE_FLAMESTRIKE"] = true
+	foe["SKILL\50_ABL_FOE_SHOCKINGSTORIES"] = true
+	foe["SKILL\50_ABL_FOE_SICKSTORIES"] = true
 	foe["SKILL\50_ABL_FOE_SMITE"] = true
+	foe["SKILL\50_ABL_FOE_SOULCRUSHINGSTORY"] = true
+	foe["SKILL\50_ABL_FOE_SUICIDE"] = true
 	foe["SKILL\50_ABL_FOE_VENOMBITE"] = true
 	foe["SKILL\50_ABL_FOE_VENOMSTAB"] = true
 	foe["SKILL\50_ABL_FOE_VIRUSSTAB"] = true
@@ -265,6 +253,7 @@ local foe = {}
 	foe["SKILL\50_ITM_PANACEA"] = true
 	foe["SKILL\50_ITM_PHOENIX"] = true
 	foe["SKILL\50_ITM_POTION"] = true
+	foe["SKILL\50_ITM_PURELITERATURE"] = true
 	foe["SKILL\50_ITM_SALVE"] = true
 	foe["SKILL\50_SPECIAL_AXESMASH"] = true
 	foe["SKILL\50_WAND_FLAME"] = true
@@ -275,7 +264,11 @@ local foe = {}
 	foe["SKILL\51_ABL_FOE_DESPERATEATTACK"] = true
 	foe["SKILL\51_ABL_FOE_DISTRACT"] = true
 	foe["SKILL\51_ABL_FOE_FLAMESTRIKE"] = true
+	foe["SKILL\51_ABL_FOE_SHOCKINGSTORIES"] = true
+	foe["SKILL\51_ABL_FOE_SICKSTORIES"] = true
 	foe["SKILL\51_ABL_FOE_SMITE"] = true
+	foe["SKILL\51_ABL_FOE_SOULCRUSHINGSTORY"] = true
+	foe["SKILL\51_ABL_FOE_SUICIDE"] = true
 	foe["SKILL\51_ABL_FOE_VENOMBITE"] = true
 	foe["SKILL\51_ABL_FOE_VENOMSTAB"] = true
 	foe["SKILL\51_ABL_FOE_VIRUSSTAB"] = true
@@ -311,6 +304,7 @@ local foe = {}
 	foe["SKILL\51_ITM_PANACEA"] = true
 	foe["SKILL\51_ITM_PHOENIX"] = true
 	foe["SKILL\51_ITM_POTION"] = true
+	foe["SKILL\51_ITM_PURELITERATURE"] = true
 	foe["SKILL\51_ITM_SALVE"] = true
 	foe["SKILL\51_SPECIAL_AXESMASH"] = true
 	foe["SKILL\51_WAND_FLAME"] = true
@@ -329,7 +323,11 @@ local foe = {}
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
 	foe["RATE_ABL_FOE_DISTRACT"] = 0
 	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 0
+	foe["RATE_ABL_FOE_SHOCKINGSTORIES"] = 0
+	foe["RATE_ABL_FOE_SICKSTORIES"] = 0
 	foe["RATE_ABL_FOE_SMITE"] = 0
+	foe["RATE_ABL_FOE_SOULCRUSHINGSTORY"] = 0
+	foe["RATE_ABL_FOE_SUICIDE"] = 0
 	foe["RATE_ABL_FOE_VENOMBITE"] = 0
 	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
 	foe["RATE_ABL_FOE_VIRUSSTAB"] = 0
@@ -365,6 +363,7 @@ local foe = {}
 	foe["RATE_ITM_PANACEA"] = 0
 	foe["RATE_ITM_PHOENIX"] = 0
 	foe["RATE_ITM_POTION"] = 0
+	foe["RATE_ITM_PURELITERATURE"] = 0
 	foe["RATE_ITM_SALVE"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_WAND_FLAME"] = 0
@@ -375,7 +374,11 @@ local foe = {}
 	foe["TARGET_ABL_FOE_DESPERATEATTACK"] = "Random"
 	foe["TARGET_ABL_FOE_DISTRACT"] = "Random"
 	foe["TARGET_ABL_FOE_FLAMESTRIKE"] = "Random"
+	foe["TARGET_ABL_FOE_SHOCKINGSTORIES"] = "Random"
+	foe["TARGET_ABL_FOE_SICKSTORIES"] = "Random"
 	foe["TARGET_ABL_FOE_SMITE"] = "Random"
+	foe["TARGET_ABL_FOE_SOULCRUSHINGSTORY"] = "Random"
+	foe["TARGET_ABL_FOE_SUICIDE"] = "Random"
 	foe["TARGET_ABL_FOE_VENOMBITE"] = "Random"
 	foe["TARGET_ABL_FOE_VENOMSTAB"] = "Random"
 	foe["TARGET_ABL_FOE_VIRUSSTAB"] = "Random"
@@ -411,6 +414,7 @@ local foe = {}
 	foe["TARGET_ITM_PANACEA"] = "Random"
 	foe["TARGET_ITM_PHOENIX"] = "Random"
 	foe["TARGET_ITM_POTION"] = "Random"
+	foe["TARGET_ITM_PURELITERATURE"] = "Random"
 	foe["TARGET_ITM_SALVE"] = "Random"
 	foe["TARGET_SPECIAL_AXESMASH"] = "Random"
 	foe["TARGET_WAND_FLAME"] = "Random"
