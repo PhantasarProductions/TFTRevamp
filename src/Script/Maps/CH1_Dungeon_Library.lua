@@ -119,7 +119,7 @@ function POST_PEDDESTAL()
    local pNext = PEDNEXT[Maps.LayerCodeName]
    if iv==total then
       pNext.f(pNext.p,1)
-      Done('&DONE.LIBRARY.PUZZLE['..right(Map.LayerCodeName,3)..']')
+      Done('&DONE.LIBRARY.PUZZLE['..right(Maps.LayerCodeName,3)..']')
    else
       MapText('SLOTNO')
    end
