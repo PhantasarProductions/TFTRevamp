@@ -1,6 +1,6 @@
 --[[
   AAAAA.lua
-  Version: 16.12.19
+  Version: 16.12.31
   Copyright (C) 2016 Jeroen Petrus Broks
   
   ===========================
@@ -46,7 +46,8 @@
 -- function DrawFigher    -- Used to set some alternate settings to drawing a character
 -- boolean  DrawReplace   -- If set the original DrawFighter routine will not be executed.
 -- function PreTurn       -- If set the game will check this function to see if something has to happen prior to the input of the next turn (Poison and Curse will use this).
--- table    mydat         -- Ignored by the Status Change routine itself. Status changes may use this var to store extra data about themselves they may need themselves. 
+-- table    mydat         -- Ignored by the Status Change routine itself. Status changes may use this var to store extra data about themselves they may need themselves.
+-- boolean  AttackExpire  -- Expire as soon as character is attacked 
 -----------------------------------------------------
 
 

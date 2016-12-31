@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.19
+version: 16.12.31
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
@@ -97,6 +97,12 @@ function Attack(act,g,i,na)
        charmsg('Critical!',255,0,0) 
     end
     -- And let's put it all through now... 
-    Hurt(ttag,damage,act.Attack_Element)   
+    Hurt(ttag,damage,act.Attack_Element)
+    local mychar = fighterbytag[ttag]
+    if mychar.statuschanges then
+       for s,d in pairs(mychar.statuschanges) do
+           if d.AttackExpire then mychar.statuschanges[s] = nil end
+       end
+    end       
     return true
 end

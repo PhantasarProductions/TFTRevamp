@@ -137,6 +137,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
+    1. Script: Script/JINC/Foes/reg/Boekenworm.lua
     1. Script: Script/JINC/Foes/reg/FireHound.lua
     1. Script: Script/JINC/Foes/reg/Gob.lua
     1. Script: Script/JINC/Foes/reg/GobPriest.lua
@@ -151,7 +152,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_DESPERATEATTACK.lua
     1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
     1. Script: Script/JINC/IA/ABL_FOE_FLAMESTRIKE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_SHOCKINGSTORIES.lua
+    1. Script: Script/JINC/IA/ABL_FOE_SICKSTORIES.lua
     1. Script: Script/JINC/IA/ABL_FOE_SMITE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_SOULCRUSHINGSTORY.lua
     1. Script: Script/JINC/IA/ABL_FOE_SUICIDE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMBITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMSTAB.lua
@@ -313,6 +317,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
+    1. Script: Script/Use/Combat/SpellScript/Paralysis and Sleep.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
@@ -356,8 +361,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/ClearTable.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
@@ -406,6 +411,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/SpellAni/Flame/Flame.png
     1. General Data: GFX/Combat/StatusChanges/Disease/Rode Kruis
     1. Graphics: GFX/Combat/StatusChanges/Disease/Rode Kruis.png
+    1. Graphics: GFX/Combat/StatusChanges/Paralysis/Bliksem.png
+    1. Graphics: GFX/Combat/StatusChanges/Sleep/Z.png
     1. Graphics: GFX/Combat/Sys/Collision.png
     1. Graphics: GFX/Equipment/Acc.png
     1. Graphics: GFX/Equipment/Armor.png
@@ -496,9 +503,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Muur Toorts/Brandend.frames
     1. Graphics: GFX/Textures/Muur Toorts/Brandend.png
     1. Graphics: GFX/Textures/Muur Toorts/Uit.png
+    1. Graphics: GFX/Textures/Objects/Boek.piko
+    1. Graphics: GFX/Textures/Objects/Boek.png
     1. Graphics: GFX/Textures/Objects/Kaars Uit.png
     1. Graphics: GFX/Textures/Objects/Kaars.Frames
     1. Graphics: GFX/Textures/Objects/Kaars.png
+    1. Graphics: GFX/Textures/Objects/Mirror of Insanity - Kapot.png
+    1. Graphics: GFX/Textures/Objects/Mirror of Insanity.piko
+    1. Graphics: GFX/Textures/Objects/Mirror of Insanity.png
     1. Graphics: GFX/Textures/Objects/Peddestal.png
     1. Graphics: GFX/Textures/Objects/Woonwagen.piko
     1. Graphics: GFX/Textures/Objects/Woonwagen.png
@@ -626,6 +638,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Arena/Forest.png
     1. Graphics: GFX/Combat/Arena/GreyDung.png
     1. Graphics: GFX/Combat/Arena/Hell.png
+    1. Graphics: GFX/Combat/Arena/Library.png
     1. Graphics: GFX/Combat/Arena/Magic.png
     1. Graphics: GFX/Combat/Arena/SubRiver.png
     1. Graphics: GFX/Combat/Cards/BOSS_A.png
@@ -1201,6 +1214,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/John_7.ogg
 - Unknown artist from the Public Domain
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/KillerEscargot.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Boekenworm.png
     1. Graphics: GFX/MapSpots/Travel.png
     1. Graphics: GFX/Textures/Anna/Girl_Head.png
     1. General Data: GFX/Textures/Objects/Hut
