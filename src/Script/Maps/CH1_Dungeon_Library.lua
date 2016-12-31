@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.30
+version: 16.12.31
 ]]
 
 
@@ -52,6 +52,7 @@ InitPuzzle = {
                 
                 ['#004'] = function()
                                puzzle = {}
+                               total = 1
                                repeat
                                    for i=1,3 do
                                        puzzle[i] = {value=rand(1,9),variant=rand(1,4)}
@@ -93,9 +94,10 @@ function NPC_Kast5() kast(5) end
 function NPC_Kast6() kast(6) end
 
 function NPC_PEDDESTAL()
+    if CVV('&DONE.LIBRARY.PUZZLE['..right(Map.LayerCodeName,3)..']') then return end
     MapText('SLOT')
     Schedule('MAP','POST_PEDDESTAL')
-    AltInput('Please enter the unlocking code:','','num')
+    AltInput('Please enter the unlocking code:','','num')    
 end
 
 function OpenCorridor(d,p)
@@ -117,6 +119,7 @@ function POST_PEDDESTAL()
    local pNext = PEDNEXT[Maps.LayerCodeName]
    if iv==total then
       pNext.f(pNext.p,1)
+      Done('&DONE.LIBRARY.PUZZLE['..right(Map.LayerCodeName,3)..']')
    else
       MapText('SLOTNO')
    end
