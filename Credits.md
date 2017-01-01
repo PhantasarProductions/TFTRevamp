@@ -17,10 +17,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Big_Char/JakeMarrilona.GIF
     1. Graphics: GFX/Big_Char/JakeMarrilona.png
     1. Graphics: GFX/Big_Char/JakeMarrilona.xcf
+    1. Graphics: GFX/Big_Char/Marrilona.piko
     1. Graphics: GFX/Big_Char/Marrilona.png
     1. Graphics: GFX/Big_Char/Marrilona_Christmas.png
     1. Graphics: GFX/Big_Char/Marrilona_Christmas.xcf
     1. Graphics: GFX/Big_Char/Marrilona_Easter.png
+    1. Graphics: GFX/Big_Char/Marrilona_NewYear.png
     1. Graphics: GFX/Big_Char/Negatief_Marrilona.Png
     1. Graphics: GFX/BoxText/Portret/Dandor/General.png
     1. Graphics: GFX/BoxText/Portret/Dandor/General.xcf
@@ -134,6 +136,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/GobKing.lua
     1. Script: Script/JINC/Foes/Boss/Harry1.lua
     1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
+    1. Script: Script/JINC/Foes/Boss/Librarian.lua
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
@@ -238,6 +241,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/SPECIAL_AXESMASH.lua
     1. Script: Script/JINC/IA/WAND_FLAME.lua
     1. Script: Script/JINC/IA/WAND_FROST.lua
+    1. Script: Script/JINC/IA/WAND_THUNDER.lua
     1. Script: Script/JINC/IA/WAND_TRAINING.lua
     1. Script: Script/JINC/Masters/Rubine.lua
     1. Script: Script/JINC/PrologueChains/Dandor.lua
@@ -360,13 +364,16 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png
+    1. Music: Music/Boss/BossIntro.ogg
     1. Graphics: GFX/Chapters/2.png
+    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Chapters/3.png
+    1. Music: Music/Sys/Silence.ogg
     1. Graphics: GFX/Chapters/4.png
     1. Graphics: GFX/Combat/End/Game Over.png
     1. Graphics: GFX/Combat/End/YouWin.png
@@ -375,15 +382,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Logo/End Of Prologue.hot
     1. Graphics: GFX/Logo/End Of Prologue.png
     1. Graphics: GFX/Logo/Phantasar Productions.png
-    1. Music: Music/Boss/BossIntro.ogg
-    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Logo/The End.png
     1. Graphics: GFX/Logo/Title.png
     1. Graphics: GFX/Menu Icons/Buy.png
     1. Graphics: GFX/Menu Icons/Sell.png
     1. Graphics: GFX/Menu Icons/Trade.png
     1. Graphics: GFX/Party/Level Up.png
-    1. Music: Music/Sys/Silence.ogg
     1. Audio: Audio/Combat/CardSlide.ogg
     1. Audio: Audio/Party/Level Up.ogg
     1. Audio: Audio/Party/Level Up.wav
@@ -598,7 +602,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Idle.png
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.png
-    1. Graphics: GFX/Actors/Bundled/Player/Marrilona.NS (Autosaved).piko
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.NS.piko
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.North.frames
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.North.png
@@ -1024,6 +1027,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Fire.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Frost.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Heal.ogg
+    1. Audio: Vocals/Combat/Hero/Marrilona/Action/Lightning.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/Boss.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/Dead.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/General.ogg

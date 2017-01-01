@@ -2,7 +2,7 @@
 **********************************************
   
   CH1_Dungeon_Library.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.31
+version: 17.01.01
 ]]
 
 
@@ -123,6 +123,25 @@ function POST_PEDDESTAL()
    else
       MapText('SLOTNO')
    end
+end
+
+function NPC_EndTable()
+  PartyPop('Boek','North')
+  MapText('BOOK_PRE_BOSS')
+  Schedule("MAP","PostBoss")
+  ClearCombatData()
+  Var.D("$COMBAT.FOE_1","Boss/Librarian")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
+  Var.D("$COMBAT.ARENA","Library.png")
+  StartBoss("Guardian of the forbidden knowledge","Librarian")
+end   
+
+function PostBoss()
+   MapText('BOOK_POST_BOSS')
+   ManaOrb() -- 3
+   WorldMap_UnLock('CH1FRENDOR')
+   Var.D("$WMCHAT",'LIBDONE')
 end
 
 function GALE_OnLoad()

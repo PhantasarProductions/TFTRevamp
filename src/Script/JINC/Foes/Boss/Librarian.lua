@@ -1,40 +1,40 @@
 --[[
-  KillerEscargot.lua
-  Version: 17.01.01
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+**********************************************
   
-  ===========================
-  This file is part of a project related to the Phantasar Chronicles or another
-  series or saga which is property of Jeroen P. Broks.
-  This means that it may contain references to a story-line plus characters
-  which are property of Jeroen Broks. These references may only be distributed
-  along with an unmodified version of the game. 
+  Librarian.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
-  As soon as you remove or replace ALL references to the storyline or character
-  references, or any termology specifically set up for the Phantasar universe,
-  or any other univers a story of Jeroen P. Broks is set up for,
-  the restrictions of this file are removed and will automatically become
-  zLib licensed (see below).
+  This file contains material that is related 
+  to a storyline that is which is strictly
+  copyrighted to Jeroen Broks.
   
-  Please note that doing so counts as a modification and must be marked as such
-  in accordance to the zLib license.
-  ===========================
-  zLib license terms:
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
+  This file may only be used in an unmodified
+  form with an unmodified version of the 
+  software this file belongs to.
+  
+  You may use this file for your study to see
+  how I solved certain things in the creation
+  of this project to see if you find valuable
+  leads for the creation of your own.
+  
+  Mostly this file comes along with a project
+  that is for most part released under an
+  open source license and that means that if
+  you use that code with this file removed
+  from it, you can use it under that license.
+  Please check out the other files to find out
+  which license applies.
+  This file comes 'as-is' and in no possible
+  way the author can be held responsible of
+  any form of damages that may occur due to 
+  the usage of this file
+  
+  
+ **********************************************
+ 
+version: 17.01.01
 ]]
--- File Generated: Sun 01 January 2017; 15:06:18
+-- File Generated: Sun 01 January 2017; 15:06:17
 
 
 local foe = {}
@@ -197,7 +197,7 @@ local foe = {}
 	foe["OVERSOUL_WAND_THUNDER"] = true
 	foe["OVERSOUL_WAND_TRAINING"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
-	foe["SKILL\49_ABL_FOE_CRUSH"] = false
+	foe["SKILL\49_ABL_FOE_CRUSH"] = true
 	foe["SKILL\49_ABL_FOE_DESPERATEATTACK"] = true
 	foe["SKILL\49_ABL_FOE_DISTRACT"] = true
 	foe["SKILL\49_ABL_FOE_FLAMESTRIKE"] = true
@@ -220,7 +220,7 @@ local foe = {}
 	foe["SKILL\49_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = true
 	foe["SKILL\49_ABL_HERO_HANDOSTILLOR_STICKSWING"] = true
 	foe["SKILL\49_ABL_HERO_HANDOSTILLOR_VITALIZE"] = true
-	foe["SKILL\49_ABL_HERO_JAKE_\50PS"] = true
+	foe["SKILL\49_ABL_HERO_JAKE_\50PS"] = false
 	foe["SKILL\49_ABL_HERO_JAKE_\51PS"] = true
 	foe["SKILL\49_ABL_HERO_JAKE_\52PS"] = true
 	foe["SKILL\49_ABL_HERO_JAKE_SHIFT_FAIRY"] = true
@@ -272,7 +272,7 @@ local foe = {}
 	foe["SKILL\50_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = true
 	foe["SKILL\50_ABL_HERO_HANDOSTILLOR_STICKSWING"] = true
 	foe["SKILL\50_ABL_HERO_HANDOSTILLOR_VITALIZE"] = true
-	foe["SKILL\50_ABL_HERO_JAKE_\50PS"] = true
+	foe["SKILL\50_ABL_HERO_JAKE_\50PS"] = false
 	foe["SKILL\50_ABL_HERO_JAKE_\51PS"] = true
 	foe["SKILL\50_ABL_HERO_JAKE_\52PS"] = true
 	foe["SKILL\50_ABL_HERO_JAKE_SHIFT_FAIRY"] = true
@@ -352,25 +352,25 @@ local foe = {}
 	foe["SKILL\51_WAND_FROST"] = true
 	foe["SKILL\51_WAND_THUNDER"] = true
 	foe["SKILL\51_WAND_TRAINING"] = true
-	foe["Desc"] = "Slow but strong\46\10It likes to live underground preferably\10when there is a lot of moisture\46"
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47boss\47KillerEscargot\46png"
-	foe["Item Drop \49"] = "ITM_POTION"
-	foe["Item Drop \50"] = "ITM_ANTIDOTE"
-	foe["Item Steal \49"] = "ITM_SALVE"
-	foe["Item Steal \50"] = "ITM_ANTIDOTE"
-	foe["Item Steal \51"] = "ITM_MANDRAKE"
-	foe["Name"] = "Killer Escargot"
+	foe["Desc"] = "Guardian of the Forbidden Library\46\10Don\39t get on his bad side\33\10In fact don\39t enter the library at all\44 \10and he\39ll let you live\46"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Boss\47Librarian\46png"
+	foe["Item Drop \49"] = "WAND_THUNDER"
+	foe["Item Drop \50"] = "ITM_APPLE"
+	foe["Item Steal \49"] = "WAND_THUNDER"
+	foe["Item Steal \50"] = "WAND_THUNDER"
+	foe["Item Steal \51"] = "WAND_THUNDER"
+	foe["Name"] = "Librarian"
 	foe["RATE_AAA_ATTACK"] = 25
-	foe["RATE_ABL_FOE_CRUSH"] = 3
-	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
-	foe["RATE_ABL_FOE_DISTRACT"] = 0
-	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 0
-	foe["RATE_ABL_FOE_SHOCKINGSTORIES"] = 0
-	foe["RATE_ABL_FOE_SICKSTORIES"] = 0
+	foe["RATE_ABL_FOE_CRUSH"] = 5
+	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 1
+	foe["RATE_ABL_FOE_DISTRACT"] = 3
+	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 5
+	foe["RATE_ABL_FOE_SHOCKINGSTORIES"] = 10
+	foe["RATE_ABL_FOE_SICKSTORIES"] = 10
 	foe["RATE_ABL_FOE_SMITE"] = 0
-	foe["RATE_ABL_FOE_SOULCRUSHINGSTORY"] = 0
+	foe["RATE_ABL_FOE_SOULCRUSHINGSTORY"] = 5
 	foe["RATE_ABL_FOE_SUICIDE"] = 0
-	foe["RATE_ABL_FOE_VENOMBITE"] = 1
+	foe["RATE_ABL_FOE_VENOMBITE"] = 0
 	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
 	foe["RATE_ABL_FOE_VIRUSSTAB"] = 0
 	foe["RATE_ABL_HERO_DANDOR_AXESMASH"] = 0
@@ -380,18 +380,18 @@ local foe = {}
 	foe["RATE_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_PURIFY"] = 0
-	foe["RATE_ABL_HERO_HANDOSTILLOR_RECOVER"] = 5
+	foe["RATE_ABL_HERO_HANDOSTILLOR_RECOVER"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_STICKSWING"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_VITALIZE"] = 0
-	foe["RATE_ABL_HERO_JAKE_\50PS"] = 0
+	foe["RATE_ABL_HERO_JAKE_\50PS"] = 1
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\52PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_FAIRY"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_HUMAN"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_FLAME"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_FLAME"] = 5
+	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 5
+	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 5
 	foe["RATE_ABL_MASTER_RUBINE_BACKSTAB"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_FOLLOWME"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_PICKPOCKET"] = 0
@@ -406,7 +406,7 @@ local foe = {}
 	foe["RATE_ITM_PHOENIX"] = 0
 	foe["RATE_ITM_POTION"] = 0
 	foe["RATE_ITM_PURELITERATURE"] = 0
-	foe["RATE_ITM_SALVE"] = 0
+	foe["RATE_ITM_SALVE"] = 3
 	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_WAND_FLAME"] = 0
 	foe["RATE_WAND_FROST"] = 0
@@ -464,44 +464,44 @@ local foe = {}
 	foe["TARGET_WAND_FROST"] = "Random"
 	foe["TARGET_WAND_THUNDER"] = "Random"
 	foe["TARGET_WAND_TRAINING"] = "Random"
-	foe["VocalTag"] = ""
-	foe["Boss"] = false
+	foe["VocalTag"] = "Librarian"
+	foe["Boss"] = true
 	foe["Oversoul"] = false
 	foe["Oversoul Drop \49"] = false
 	foe["Oversoul Drop \50"] = false
 	foe["Oversoul Steal \49"] = false
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
-	foe["Cash"] = 250
-	foe["ER_Darkness"] = 123
-	foe["ER_Earth"] = 100
-	foe["ER_Flame"] = -150
-	foe["ER_Frost"] = 100
-	foe["ER_Light"] = -75
-	foe["ER_Lightning"] = -300
-	foe["ER_Water"] = 500
-	foe["ER_Wind"] = 10
+	foe["Cash"] = 1
+	foe["ER_Darkness"] = 50
+	foe["ER_Earth"] = 50
+	foe["ER_Flame"] = 50
+	foe["ER_Frost"] = 50
+	foe["ER_Light"] = 50
+	foe["ER_Lightning"] = 50
+	foe["ER_Water"] = 50
+	foe["ER_Wind"] = 50
 	foe["Rate Drop \49"] = 100
-	foe["Rate Drop \50"] = 25
+	foe["Rate Drop \50"] = 1
 	foe["Rate Steal \49"] = 100
-	foe["Rate Steal \50"] = 75
-	foe["Rate Steal \51"] = 1
+	foe["Rate Steal \50"] = 0
+	foe["Rate Steal \51"] = 0
 	foe["SR_Curse "] = 100
-	foe["SR_Disease "] = 100
+	foe["SR_Disease "] = 25
 	foe["SR_Paralysis "] = 100
 	foe["SR_Petrification "] = 100
-	foe["SR_Poison "] = 100
+	foe["SR_Poison "] = 40
 	foe["SR_Silence "] = 100
 	foe["SR_Undead "] = 100
 	foe["normal_Accuracy"] = 100
-	foe["normal_EXP"] = 100
-	foe["normal_Endurance"] = 40
+	foe["normal_EXP"] = 50
+	foe["normal_Endurance"] = 2
 	foe["normal_Evasion"] = 0
-	foe["normal_HP"] = 2000
-	foe["normal_Intelligence"] = 70
+	foe["normal_HP"] = 1200
+	foe["normal_Intelligence"] = 160
 	foe["normal_Power"] = 100
-	foe["normal_Resistance"] = 20
-	foe["normal_Speed"] = 1
+	foe["normal_Resistance"] = 100
+	foe["normal_Speed"] = 100
 	foe["oversoul_Accuracy"] = 100
 	foe["oversoul_EXP"] = 0
 	foe["oversoul_Endurance"] = 0

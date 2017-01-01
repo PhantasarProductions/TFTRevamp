@@ -2,7 +2,7 @@
 **********************************************
   
   Boekenworm.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 16.12.31
+version: 17.01.01
 ]]
--- File Generated: Sat 31 December 2016; 17:36:05
+-- File Generated: Sun 01 January 2017; 14:02:09
 
 
 local foe = {}
