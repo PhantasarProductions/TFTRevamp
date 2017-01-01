@@ -2,7 +2,7 @@
 **********************************************
   
   PRO_TOWN_Frendor.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.25
+version: 17.01.01
 ]]
 
 -- @USE /Script/Use/Specific/EndOfPrologue.lua
@@ -165,8 +165,16 @@ function Treason_PostBoss()
     WorldMap()
 end
 
+function PleaseGo()
+    MapText('PLEASEGO')
+    WorldMap_Lock('CH1FRENDOR')
+    WorldMap_UnLock('CH2ELFROAD')
+    Var.D("$WMCHAT","ELDERGONE")
+    WorldMap()
+end    
+
 function ComeInEvents()
-   return (({ FAIRYJAKE = Treason })[CVV('$WMCHAT')] or Nothing)()
+   return (({ FAIRYJAKE = Treason, LIBDONE=PleaseGo })[CVV('$WMCHAT')] or Nothing)()
 end
 
 -- Init

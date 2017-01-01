@@ -1,7 +1,7 @@
 --[[
   WorldMap -- The great linker.lua
-  Version: 16.12.10
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.01
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -47,6 +47,7 @@ function WorldMap_Unlock(tag)
    MS.LoadNew("WORLD","Script/Flow/WorldMap.lua")
    MS.Run('WORLD','R_WorldMap_Unlock',tag)
 end   
+WorldMap_UnLock = WorldMap_Unlock
 
 function WorldMap_Lock(tag)
    MS.LoadNew("WORLD","Script/Flow/WorldMap.lua")

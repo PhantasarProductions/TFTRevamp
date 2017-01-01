@@ -1,7 +1,7 @@
 --[[
   Items.lua
-  Version: 16.12.28
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.01
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -232,7 +232,7 @@ function ShowSpellList(ch,psizes)
              allowcast=true
           else
              DarkText(abl.ABL_APCost,sizes[3]-10,y,1,2,0,180,255)
-             allowcast=RPG.Points(ch,"AP").Have>Sys.Val(abl.ABL_APCost)
+             allowcast=RPG.Points(ch,"AP").Have>=Sys.Val(abl.ABL_APCost)
           end   
           if (INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_SPACE)==1 or joyhit(confirm)) and allowcast and i==SSLP then Var.D('$SELECTEDABILITY',k) end  
        else

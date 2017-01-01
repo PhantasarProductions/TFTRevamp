@@ -126,6 +126,7 @@ function POST_PEDDESTAL()
 end
 
 function NPC_EndTable()
+  if Done("&DONE.LIBRARY.ENDBOOK") then return end
   PartyPop('Boek','North')
   MapText('BOOK_PRE_BOSS')
   Schedule("MAP","PostBoss")
@@ -140,8 +141,9 @@ end
 function PostBoss()
    MapText('BOOK_POST_BOSS')
    ManaOrb() -- 3
-   WorldMap_UnLock('CH1FRENDOR')
+   WorldMap_Unlock('CH1FRENDOR')
    Var.D("$WMCHAT",'LIBDONE')
+   WorldMap()
 end
 
 function GALE_OnLoad()

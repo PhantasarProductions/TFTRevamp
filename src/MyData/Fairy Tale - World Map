@@ -111,3 +111,13 @@ Rec: CH1LIBRARY
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: CH2ELFROAD
+	Dungeon = TRUE
+	Folder = Delisto
+	Kthura = CH2_DUNGEON_ElfRoad
+	Layer = #001
+	LocationName = Elven Road
+	LocationPrefix = The
+	Start = Start
+	UnlockedFromStart = FALSE
+

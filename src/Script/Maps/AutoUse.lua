@@ -1,7 +1,7 @@
 --[[
   AutoUse.lua
-  Version: 16.12.14
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.01
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -310,4 +310,52 @@ function PartyPop(spot,wind,methode)
     end
     if wind then TurnPlayers(wind) end 
     CSay(serialize('partypop.guys',guys))
+end
+
+
+FManaOrbRespond = { DONE = Nothing }
+
+function FManaOrbRespond.WHO(a,ch)
+    CSay("WHO: "..a)
+    return ({'JAKE','MARRILONA'})[a],false
+end
+
+function FManaOrbRespond.JAKE(a,ch)
+     local w = ({JAKE="Jake_Fairy",MARRILONA="Marrilona"})[ch]
+     local e = a + 1
+     local exp = "SK_EXP_"..e
+     local lvl = "SK_LVL_"..e
+     CSay("Activating "..exp.." and "..lvl)
+     if e == 6 then
+        FManaOrbDo="WHO"
+        return nil,nil
+     end
+     if RPG.PointsExists(w,exp)==1 then
+        CSay('Hey, you already have that one')
+        SerialBoxText('MANAORB',ch.."_HAVE","FLOW_FIELD")
+        FManaOrbDo="WHO"
+        return nil,nil
+     end
+     RPG.Points(w,exp,1).Maximum=10
+     RPG.Points(w,lvl,1).Maximum=1000/skill
+     for i=1,5 do
+         if RPG.PointsExists("Jake_Fairy","SK_EXP_"..i)==1 then RPG.LinkPoints('Jake_Fairy','Jake_Human','SK_EXP_'..i) end
+         if RPG.PointsExists("Jake_Fairy","SK_LVL_"..i)==1 then RPG.LinkPoints('Jake_Fairy','Jake_Human','SK_LVL_'..i) end
+     end
+     return "DONE",true   
+end   
+
+FManaOrbRespond.MARRILONA = FManaOrbRespond.JAKE
+
+
+function ManaOrb()
+  FManaOrbDo="WHO"
+  local next
+  local ch
+   SerialBoxText('MANAORB',"FOUND","FLOW_FIELD")
+  repeat
+     local answer = RunQuestion("MANAORB",FManaOrbDo) --,"FLOW_FIELD")
+     ch,next = FManaOrbRespond[FManaOrbDo](answer,ch)
+     FManaOrbDo = ch or FManaOrbDo 
+  until next
 end

@@ -1,7 +1,7 @@
 --[[
   AutoUse.lua
-  Version: 16.12.15
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.01
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -66,6 +66,7 @@ function GALE_OnLoad()
    MS.Run('BOXTEXT','LoadData','GENERAL/BLUESEAL;BLUESEAL')
    MS.Run('BOXTEXT','LoadData','WORLDMAP;WMCHAT')
    MS.Run("BOXTEXT","LoadData","COMBAT/LEARN;COMBATLEARN")
+   MS.Run("BOXTEXT","LoadData","GENERAL/MANAORB;MANAORB")
 end
 
 

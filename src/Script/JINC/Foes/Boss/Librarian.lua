@@ -34,7 +34,7 @@
  
 version: 17.01.01
 ]]
--- File Generated: Sun 01 January 2017; 15:06:17
+-- File Generated: Sun 01 January 2017; 17:54:36
 
 
 local foe = {}
@@ -497,7 +497,7 @@ local foe = {}
 	foe["normal_EXP"] = 50
 	foe["normal_Endurance"] = 2
 	foe["normal_Evasion"] = 0
-	foe["normal_HP"] = 1200
+	foe["normal_HP"] = 2000
 	foe["normal_Intelligence"] = 160
 	foe["normal_Power"] = 100
 	foe["normal_Resistance"] = 100

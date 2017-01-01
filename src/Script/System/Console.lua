@@ -1,7 +1,7 @@
 --[[
   Console.lua
-  Version: 16.12.16
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.01
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -243,4 +243,21 @@ function POINTS(ch)
       local p = RPG.Points(ch,stat)
       CSay(right("                     "..stat,20)..": "..p.Have.."/"..p.Maximum.." (min="..p.Minimum..")")
   end    
+end
+
+function SETCHARPOINTS(ch,points,value)
+  if RPG.CharExists(ch)==0 then
+     Console.Write("? Character does not exist",255,0,0)
+     return
+  end
+  if RPG.PointsExists(ch,points)==0 then   
+     Console.Write("? Character does not a points-field called: "..sval(points),255,0,0)
+     return
+  end
+  RPG.Points(ch,points).Have=value
+  CSay(ch.." has now on "..points.." value: "..RPG.Points(ch,points).Have)
+end
+
+function SETHP(ch,value)
+  SETCHARPOINTS(ch,"HP",value)
 end

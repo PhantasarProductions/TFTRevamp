@@ -259,6 +259,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH1_Dungeon_SubRiver.lua
     1. Script: Script/Maps/CH1_HUB_Altar.lua
     1. Script: Script/Maps/CH1_Hub_JakeHut.lua
+    1. Script: Script/Maps/CH2_Dungeon_ElfRoad.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
     1. Script: Script/Maps/PRO_DUNGEON_Magic.lua
     1. Script: Script/Maps/PRO_DUNGEON_Tomb.lua
@@ -363,11 +364,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: GFX/Chapters/1.png
     1. Music: Music/Boss/BossIntro.ogg
     1. Graphics: GFX/Chapters/2.png
@@ -396,6 +397,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Anna/Anna Monk Female Elf.png
     1. Graphics: GFX/Actors/Single/Anna/Anna Monk Female Fairy.png
     1. Graphics: GFX/Actors/Single/Anna/Anna Monk Female Human.png
+    1. Graphics: GFX/Actors/Single/Demo/Bouwvakker.png
     1. Graphics: GFX/Algemeen/CharPointer.png
     1. Graphics: GFX/Algemeen/Earth.png
     1. Graphics: GFX/Algemeen/Sterretjes.png
@@ -496,6 +498,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/AlphabetTiles/YurgonTile_Z.png
     1. Graphics: GFX/Textures/Bookcase/Boekenkast.piko
     1. Graphics: GFX/Textures/Bookcase/Boekenkast.png
+    1. Graphics: GFX/Textures/Demo/Barrier.piko
+    1. Graphics: GFX/Textures/Demo/Barrier.png
     1. Graphics: GFX/Textures/Deur/Deur Hout 64x64.png
     1. Graphics: GFX/Textures/Deur/Deur Hout 96x96.png
     1. Graphics: GFX/Textures/Effects/North-Hole.png
@@ -803,6 +807,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH1_HUB_JakeHut/Data
     1. Map Design: Kthura/CH1_HUB_JakeHut/Objects
     1. Map Design: Kthura/CH1_HUB_JakeHut/Settings
+    1. Map Design: Kthura/CH2_DUNGEON_ElfRoad/Data
+    1. Map Design: Kthura/CH2_DUNGEON_ElfRoad/Objects
+    1. Map Design: Kthura/CH2_DUNGEON_ElfRoad/Settings
     1. Map Design: Kthura/Egg_Walda/Data
     1. Map Design: Kthura/Egg_Walda/Objects
     1. Map Design: Kthura/Egg_Walda/Settings
@@ -838,6 +845,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/GENERAL/INN
     1. Scenario: Languages/Dutch/Scenario/GENERAL/INTRODUCTION
     1. Scenario: Languages/Dutch/Scenario/GENERAL/ITEMS
+    1. Scenario: Languages/Dutch/Scenario/GENERAL/MANAORB
     1. Scenario: Languages/Dutch/Scenario/GENERAL/PROLOGUES
     1. Scenario: Languages/Dutch/Scenario/GENERAL/TRAVELEMBLEM
     1. Scenario: Languages/Dutch/Scenario/MAPS/ANNA
@@ -847,6 +855,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_SUBRIVER
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_JAKEHUT
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_ELFROAD
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_MAGIC
@@ -862,6 +871,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/GENERAL/INN
     1. Scenario: Languages/English/Scenario/GENERAL/INTRODUCTION
     1. Scenario: Languages/English/Scenario/GENERAL/ITEMS
+    1. Scenario: Languages/English/Scenario/GENERAL/MANAORB
     1. Scenario: Languages/English/Scenario/GENERAL/PROLOGUES
     1. Scenario: Languages/English/Scenario/GENERAL/TRAVELEMBLEM
     1. Scenario: Languages/English/Scenario/MAPS/ANNA
@@ -871,6 +881,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_SUBRIVER
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_JAKEHUT
+    1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_ELFROAD
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_MAGIC
