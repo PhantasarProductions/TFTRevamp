@@ -375,11 +375,11 @@ Function Flow()
 End Function
 
 Function doubleclicktree(G:TGadget)
-	If cursg loadgame G
+	' If cursg loadgame G
 End Function
 
 mypan.flow = flow
-mypan.flowaction = doubleclicktree
+' mypan.flowaction = doubleclicktree ' this cannot be correct...
 
 
 ' Restore ph for the other imported stuff
