@@ -1,7 +1,7 @@
 --[[
   Idle.lua
-  Version: 16.12.19
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.01
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -78,7 +78,7 @@ function fflow.idle()
        assert(fighterbytag[card.data.tag],"There is no fighter tagged: "..card.data.tag) 
        fighterbytag[card.data.tag].statuschanges = fighterbytag[card.data.tag].statuschanges or {}
        for s,d in pairs(fighterbytag[card.data.tag].statuschanges) do
-           (d.preturn or Nothing)(card.data.tag)
+           (d.preturn or d.PreTurn or Nothing)(card.data.tag)
        end
        if card.data.group == 'Foe' then if  (not TurnSkip(card.data.tag,true)) then flow = 'foeinput' else RemoveFirstCard() end 
        elseif card.data.group == 'Hero' then if (not TurnSkip(card.data.tag,true)) then fflow.setplayerinput(card.data.tag) else RemoveFirstCard() end end

@@ -1,7 +1,7 @@
 --[[
   Char.lua
-  Version: 16.12.26
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.01
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -109,11 +109,13 @@ function NStat(ch,stat,max,pmin)
 end
 
 function EVASION(ch)
-  local spd = RPGChar.Stat(ch,"END_Speed")
-  local rate = 0.09 / skill
-  local eva = math.floor(spd * rate)
-  RPGChar.SetStat(ch,"BASE_Evasion",eva)
-  NStat(ch,"Evasion")
+  if not prefixed(ch,"FOE") then
+     local spd = RPGChar.Stat(ch,"END_Speed")
+     local rate = 0.09 / skill
+     local eva = math.floor(spd * rate)
+     RPGChar.SetStat(ch,"BASE_Evasion",eva)
+  end   
+  NStat(ch,"Evasion",100,0)
 end
 
 
@@ -151,5 +153,7 @@ function SR_DESTRUCTION
                      (ch) NStat(ch,"SR_Destruction",100,0) 
                                                          end
 function SR_UNDEAD   (ch) NStat(ch,"SR_Undead",100,0)    end
+
+
 
 

@@ -1,7 +1,7 @@
 --[[
   Flip.lua
-  Version: 16.12.03
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.01
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -80,4 +80,5 @@ function Flip()
           if CVV("%GAMETIME.HOURS")>=24 then Award("HOURS024") end
        end             
     end
+    LAURA.TerminateBye() -- This function will terminate the game, if a user request was done to it by either clicking the close icon of the window, or on mac using the "Quit LAURA2" menu option.
 end

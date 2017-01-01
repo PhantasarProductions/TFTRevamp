@@ -1,7 +1,7 @@
 --[[
   CCompileFoes.lua
-  Version: 16.12.25
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.01
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -72,10 +72,12 @@ function CompileFoe(tag,data,foefile,oversoul)
    end
    RPG.Points(tag,'HP',1).MaxCopy="END_HP"
    RPG.Points(tag,'HP').Have = RPG.Points(tag,'HP').Maximum
-   Image.Load(data.Image,"FIGHT_"..tag..upper(sval(false)))
-   Image.Negative("FIGHT_"..tag..upper(sval(false)),"FIGHT_"..tag..upper(sval(true)))
-   Image.Hot("FIGHT_"..tag.."FALSE",Image.Width("FIGHT_"..tag.."FALSE")/2,Image.Height("FIGHT_"..tag.."FALSE")) -- Hotspot bottom center
-   Image.Hot("FIGHT_"..tag.."TRUE" ,Image.Width("FIGHT_"..tag.."TRUE" )/2,Image.Height("FIGHT_"..tag.."TRUE" )) -- Hotspot bottom center
+   if not oversoul then
+      Image.Load(data.Image,"FIGHT_"..tag..upper(sval(false)))
+      Image.Negative("FIGHT_"..tag..upper(sval(false)),"FIGHT_"..tag..upper(sval(true)))
+      Image.Hot("FIGHT_"..tag.."FALSE",Image.Width("FIGHT_"..tag.."FALSE")/2,Image.Height("FIGHT_"..tag.."FALSE")) -- Hotspot bottom center
+      Image.Hot("FIGHT_"..tag.."TRUE" ,Image.Width("FIGHT_"..tag.."TRUE" )/2,Image.Height("FIGHT_"..tag.."TRUE" )) -- Hotspot bottom center
+   end   
    local x = math.ceil(id/3)
    local y = (id - x)+1
    myfoe.x = (x * (Center_X/100)) + 50
@@ -105,5 +107,5 @@ function CompileFoe(tag,data,foefile,oversoul)
           end               
        end
    end
-   dbg("Result "..serialize('foe.'..tag,myfoe))
+   ---dbg("Result "..serialize('foe.'..tag,myfoe))
 end
