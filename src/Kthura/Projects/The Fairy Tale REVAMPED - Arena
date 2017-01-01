@@ -1,0 +1,19 @@
+[rem]
+This file just contains the references I used for Kthura to create Arenas.
+As long as you can't find anything that relates to the Phantasar universe or its characters in it, use it as you see fit.
+
+[vars]
+MAPS=../LAURA II/Design/The Fairy Tale - REVAMP/Arena_Kthura
+SHOTDIR=../LAURA II/Design/The Fairy Tale - REVAMP/jcr/demo/data/tricky story/gfx/combat/Arena
+SHOTHEIGHT=980
+SHOTWIDTH=1200
+
+[List:LINES]
+0:960:1200:960
+1200:0:1200:960
+600:430:600:530
+650:480:550:480
+
+[List:TEXTURESGRABFOLDERSMERGE]
+../LAURA II/Design/The Fairy Tale - REVAMP/jcr/demo/data
+

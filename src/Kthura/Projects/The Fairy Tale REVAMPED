@@ -1,0 +1,46 @@
+[rem]
+This file just contains the references I used for Kthura to create dungeons towns and other maps for The Fairy Tale REVAMPED.
+As long as you can't find anything that relates to the Phantasar universe or its characters in it, use it as you see fit.
+
+
+[vars]
+MAPS=../LAURA II/Design/The Fairy Tale - REVAMP/JCR/Demo/data/Tricky Story/Kthura/
+
+[List:CSPOTS]
+$SaveSpot
+$RecoverySpot
+$TravelEmblem
+$Chest
+$RandomItem
+$Compass
+$MExit
+$BlackOrb
+$BlueSeal
+
+[List:GENERALDATA]
+Title
+*strike*
+Foes1
+Foes2
+Foes3
+Arena
+AltEncounterTune
+MaxEnc
+*strike*
+NamedZones
+NoEncZones
+NoSaveZones
+*strike*
+Music
+RandomItems
+*strike*
+Foes_NG+
+RandomItems_NG+
+
+[List:LINES]
+0:600:800:600
+800:0:800:600
+
+[List:TEXTURESGRABFOLDERSMERGE]
+../LAURA II/Design/The Fairy Tale - REVAMP/JCR/Demo/data
+
