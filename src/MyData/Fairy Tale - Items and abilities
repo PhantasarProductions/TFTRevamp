@@ -800,8 +800,8 @@ Rec: ABL_FOE_SICKSTORIES
 	Attack_Element = None
 	CauseCurse = FALSE
 	CauseDeath = FALSE
-	CauseDisease = FALSE
-	CauseParalysis = TRUE
+	CauseDisease = TRUE
+	CauseParalysis = FALSE
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
