@@ -317,11 +317,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
-    1. Script: Script/Use/Combat/SpellScript/Paralysis and Sleep.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
     1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
+    1. Script: Script/Use/Combat/StatusChanges/Paralysis and Sleep.lua
     1. Script: Script/Use/Combat/StatusChanges/Poison and Disease.lua
     1. Script: Script/Use/Linkers/AchievementLinker.lua
     1. Script: Script/Use/Linkers/AlternateInputLinker.lua
@@ -361,8 +361,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/ClearTable.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
@@ -598,6 +598,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Idle.png
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.png
+    1. Graphics: GFX/Actors/Bundled/Player/Marrilona.NS (Autosaved).piko
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.NS.piko
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.North.frames
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.North.png
@@ -703,6 +704,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/GhostPriest.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Harry.piko
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Harry.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/Librarian.piko
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/SuperZombie.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Zombie.png
     1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Attack.1.png

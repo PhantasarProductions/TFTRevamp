@@ -1,7 +1,7 @@
 --[[
   Paralysis and Sleep.lua
-  Version: 16.12.31
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.01
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -40,12 +40,14 @@
 StatusChanges = {}
 -- @FI
 
+skill = Sys.Val(Var.C('%SKILL')) -- A repeat of this routin is needed, unfortunately.
+
 StatusChanges.Sleep = {
     mydat = { zzz = {} },
 
     DrawFighter = function(ch)
 
-       local zzz = StatusChanges.Disease.mydat.zzz
+       local zzz = StatusChanges.Sleep.mydat.zzz
        local chx,chy = FighterCoords(ch)
        Image.LoadNew('ST_SLEEP','GFX/Combat/StatusChanges/Sleep/Z.png'); Image.HotCenter('ST_SLEEP')
        if rand(1,10)==1 then 
@@ -70,13 +72,13 @@ StatusChanges.Sleep = {
 
 
 StatusChanges.Paralysis = {
-    mydat = { zzz = {} },
+    mydat = { bliksem = {} },
 
     DrawFighter = function(ch)
 
-       local bliksem = StatusChanges.Disease.mydat.bliksem
+       local bliksem = StatusChanges.Paralysis.mydat.bliksem
        local chx,chy = FighterCoords(ch)
-       Image.LoadNew('ST_SLEEP','GFX/Combat/StatusChanges/Paralysis/Bliksem.png'); Image.HotCenter('ST_PARALYSIS')
+       Image.LoadNew('ST_PARALYSIS','GFX/Combat/StatusChanges/Paralysis/Bliksem.png'); Image.HotCenter('ST_PARALYSIS')
        if rand(1,10)==1 then 
            bliksem[#bliksem+1] = { 
                      x = rand(chx-16, chx+16),

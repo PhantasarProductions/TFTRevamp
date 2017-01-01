@@ -1,7 +1,7 @@
 --[[
   AAAAA.lua
-  Version: 16.12.31
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.01
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -69,7 +69,7 @@ function SetStatus(ch,st,dontannounce)
 end
 
 function expireroll(ch,st)
-   return rand(1,fighterbytag[ch].StatusChanges.Expireroll)==1 
+   return rand(1,fighterbytag[ch].StatusChanges.ExpireRoll)==1 
 end
 
 function TurnSkip(ch,allowexpireroll)
