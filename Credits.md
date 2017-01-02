@@ -182,6 +182,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FLAME.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HEAL.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_SPLASH.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FREYA_REJUVENATE.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FREYA_ULTRAHEAL.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FREYA_VIGOR.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_BACKSTAB.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_FOLLOWME.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_PICKPOCKET.lua
@@ -365,11 +368,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: GFX/Chapters/1.png
     1. Music: Music/Boss/BossIntro.ogg
     1. Graphics: GFX/Chapters/2.png

@@ -1,7 +1,7 @@
 --[[
   Menu.lua
-  Version: 16.12.23
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.02
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -333,7 +333,7 @@ function features.Items(x,y,w,h)
           Accesoiry = function(ch,myitem,item)
                         local pch = ch
                         if prefixed(ch,"Jake") then pch="Jake" end
-                        if item['EQP_ACC_'..pch] then eqChange('Acc',myitem,item) end
+                        if item['ITM_ACC_'..pch] then eqChange('Acc',myitem,item) end
                       end                   
     })[item.ITM_Type] or Nothing)(ch,myitem,item)
 end
