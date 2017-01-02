@@ -425,7 +425,7 @@ function features.Buy(x,y,w,h)
          if Shop.P<1 then Shop.P=20 end
       until Shop['Slot'..Shop.P] and Shop['Slot'..Shop.P]~=""
    end
-   if mousehit(1) or INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_SPACE)==1 or INP.KEYH(KEY_RETURN)==1 or joyhit('CONFIRM') then
+   if (mousehit(1) or INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_SPACE)==1 or INP.KEYH(KEY_RETURN)==1 or joyhit('CONFIRM')) and tmy>y then
       local item = Shop.itemdata[Shop.P]
       if CVV('%CASH')<item.ITM_ShopPrice then Shop_Error("Not enough money")
       elseif ItemHave(Shop['Slot'..Shop.P])>=itemmax then Shop_Error("Max number of that item reached")
@@ -435,7 +435,7 @@ function features.Buy(x,y,w,h)
          ItemGive(Shop['Slot'..Shop.P],1)
       end
    end 
-   if mousehit(2) then LAURA.Flow('FIELD') end
+   if mousehit(2) or joyhit('CANCEL') or INP.KeyH(KEY_ESCAPE)==1 then LAURA.Flow('FIELD') end
    -- error
    if Shop.Error then
       SetFont ( 'MasterHeader' )
@@ -531,7 +531,7 @@ function features.Trade(x,y,w,h)
          if Shop.P<1 then Shop.P=20 end
       until Shop['Slot'..Shop.P] and Shop['Slot'..Shop.P]~=""
    end
-   if (mousehit(1) or INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_SPACE)==1 or INP.KEYH(KEY_RETURN)==1 or joyhit('CONFIRM')) and allow[Shop.P] then
+   if (mousehit(1) or INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_SPACE)==1 or INP.KEYH(KEY_RETURN)==1 or joyhit('CONFIRM')) and allow[Shop.P] and tmy>y then
       local item = Shop.itemdata[Shop.P]
       local price = allow[Shop.P]
       if CVV('%CASH')<price then Shop_Error("Not enough money")
