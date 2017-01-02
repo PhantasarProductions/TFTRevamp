@@ -4,7 +4,7 @@ Rem
 	
 	
 	
-	(c) Jeroen P. Broks, 2016, All rights reserved
+	(c) Jeroen P. Broks, 2016, 2017, All rights reserved
 	
 		This program is free software: you can redistribute it and/or modify
 		it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.09.03
+Version: 17.01.02
 End Rem
 Strict
 
@@ -31,7 +31,7 @@ Import "FrameWork.bmx"
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - NewGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","16.09.03"
+MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","17.01.02"
 
 
 Function Anna:StringMap(q$)
@@ -270,7 +270,7 @@ Function MyFlow()
 	For Local i=0 Until Len(User)
 		allowname = allowname And allowedusernamechars.find(Chr(user[i]))>=0
 	Next
-	Local ForbiddenNames$[] = ["SYSTEM","DEBUG"]
+	Local ForbiddenNames$[] = ["SYSTEM","DEBUG","IMPORTED"]
 	If Not allowname DebugLog "Forbiden name"
 	For Local FN$ = EachIn ForbiddenNames
 		allowname = allowname And Upper(user)<>FN

@@ -1,7 +1,7 @@
 --[[
   SaveMeta.lua
-  Version: 16.12.02
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.02
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -35,7 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 function SaveMeta()
-  local metasave = "Location:"..Maps.GetData('Title').."\nTime:"..PlayTime().."\n"  local ch,lv
+  local metasave = "Game:TFTREVAMP\nLocation:"..Maps.GetData('Title').."\nTime:"..PlayTime().."\n"  local ch,lv
   for i=0,3 do
       ch = RPG.PartyTag(i)      
       if ch~="" then 

@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 17.01.01
+Version: 17.01.02
 End Rem
 
 Strict
@@ -34,7 +34,7 @@ Import tricky_Units.ListDir
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - LoadGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","17.01.01"
+MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","17.01.02"
 
 afr_InpCol 0,27,0,0,155,0
 afr_WinCol 0,255,0,0,25,0
@@ -94,11 +94,71 @@ Function ImportGame(G:TGadget)
 	Notify "Import allows you to copy savegame files from your friends to be added to your savegame list.~n~nPlease note, if the imported savegame contains any data to allow it to contact Anna or Game Jolt or any other network, it will be disabled, meaning you can play the game from these files, but you cannot contact any achievements sites with them any more."
 	Local cd$ = CurrentDir()
 	ChangeDir Dirry("$Home$")
-	Local ifile$ = afr_RequestFile("Please choose your file:")
+	'Local ifile$ = afr_RequestFile("Please choose your file:","","Fairy Tale Save Game:TFTRSG")
+	Local ifile$ = RequestFile("Please choose your file:","Fairy Tale Save Game:TFTRSG")
 	ChangeDir cd$
+	Local j:TJCRDir = JCR_Dir(ifile)
+	If Not j Return Notify("JCR6 did not recognize the file. It's either corrupted or not a valid file to be imported")
+	Local b:TBank = JCR_B(j,"SWAP/SAVEMETA/META")
+	If Not b Then Return Notify("This file's META header could not be read, meaning this file is very likely not a valid file to be imported")
+	Local valid = False
+	For Local l$=EachIn Listfile(b)
+		valid = valid Or Trim(l)="Game:TFTREVAMP"
+	Next
+	If Not valid Return Notify("This file appears to be for a different production. Whatever production it is, it's at least not a Fairy Tale REVAMPED saved game file")
+	If Not CreateDir(savedir+"/Imported",1) Return Notify("I could not created the imported folder in your saved game system")
+	Local i = -1
+	Local ofile$
+	Repeat
+		i:+1
+		ofile = savedir+"/Imported/TFTSG_IMPORTED_"+Hex(i)
+	Until Not FileType(ofile)
+	Local o:TJCRCreate = JCR_Create(ofile)
+	If Not o
+		?debug
+			Notify "I could not create: "+ofile
+		?Not debug
+			Notify "I could not import the file. Imported file could not be created"
+		?
+		Return
+	EndIf
+	Local je:TJCREntry
+	For je = EachIn MapValues(j.entries)
+		If je.filename.toupper()="LAURA/SYSTEM"
+			Local s$=LoadString(JCR_B(j,je.filename))
+			s = Replace(s,"User = ","User = Imported~nOldUser = ")
+			o.AddString(s,"LAURA/System","zlib")
+		ElseIf je.Storage<>"STRONT" And ExtractDir(je.filename.toupper())<>"NET"
+			o.addentry JCR_B(j,je.filename),je.filename,"zlib"
+			Print "Exported: "+je.filename	
+		EndIf
+	Next
+	o.close "zlib"
+	Notify "Import complete. ~nI now need to rescan your savegame system"
+	Check
+	Notify "Rescanning done"
 End Function
 
 Function ExportGame(G:TGadget)
+	Notify "Export allows you to copy savegame files to any device so you can sharethem with your friends~n~nPlease note, if the exported savegame contains any data to allow it to contact Anna or Game Jolt or any other network, it will be disabled, meaning you can play the game from these files, but you cannot contact any achievements sites with them any more.~n~n(Don't worry, the original files you have will still be able to)."
+	Local cd$ = CurrentDir()
+	ChangeDir Dirry("$Home$")
+	'Local efile$ = afr_RequestFile("Please name your file:","","Fairy Tale Save Game:TFTRSG",True)
+	Local efile$ = RequestFile("Please name your file:","Fairy Tale Save Game:TFTRSG",True)
+	ChangeDir cd$
+	If Not efile Return
+	Local j:TJCRDir = JCR_Dir(cursg.file)
+	If Not j Return Notify("Something went wrong with reading the original file")
+	Local O:TJCRCreate = JCR_Create(efile)
+	Local je:TJCREntry
+	For je = EachIn MapValues(j.entries)
+		If je.Storage<>"STRONT" And ExtractDir(je.filename.toupper())<>"NET"
+			o.addentry JCR_B(j,je.filename),je.filename,"zlib"
+			Print "Exported: "+je.filename	
+		EndIf
+	Next
+	o.close "zlib"
+	Notify "File exported as: "+efile	
 End Function
 
 Global mypan:mygadget = newtab("Load Game")
@@ -270,6 +330,8 @@ Function listsg:TGadget(dir$,node:TGadget,u$)
 					lr = l.split(":")
 					If Len(lr)>=2
 						Select Trim(lr[0])
+							Case "Game"
+								If lr[1]<>"TFTREVAMP" DebugLog "Invalid savegame found." 
 							Case "Location"	sg.location=lr[1]
 							Case "Time"	
 								sg.Time=""
@@ -322,10 +384,14 @@ Function Check()
 		sf = ListSg(savedir+"/"+String(dirs.valueatindex(0)),root,String(dirs.valueatindex(0)))
 	Else
 		For d=EachIn(dirs)
-			DebugLog "Scanning user: "+d
-			tg = AddTreeViewNode(d,root)
-			If d=launcherconfig.c("LastSG.User") su = tg
-			If Not sf sf = listsg(savedir+"/"+d,tg,d) Else listsg(savedir+"/"+d,tg,d) 
+			If Upper(d)<>"SYSTEM"
+				DebugLog "Scanning user: "+d
+				tg = AddTreeViewNode(d,root)
+				If d=launcherconfig.c("LastSG.User") su = tg
+				If Not sf sf = listsg(savedir+"/"+d,tg,d) Else listsg(savedir+"/"+d,tg,d) 
+			Else
+				DebugLog "Ignored: "+D
+			EndIf
 		Next			
 	EndIf
 	If su ExpandTreeViewNode su; DebugLog "User expanded"
