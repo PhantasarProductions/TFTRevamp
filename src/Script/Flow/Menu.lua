@@ -227,23 +227,41 @@ function SaveNQuit()
 end
 -- @FI
 
-function initquit()
-local quit
-quit = { Y = {t = 'Press Y to quit', f = Sys.Bye, k=KEY_Y, c={255,0,0}}}  
 -- @IF ALLOW_QUITSAVE
-quit.Y.t = "Press Y to quit without saving"
-quit.S = { t = "Press S to save and quit", f = SaveNQuit, k=KEY_S, c={0,255,0}}
+allowquitsave = false
+qsaveroomdata = {}
 -- @FI
-quitcount = 0
-for k,v in pairs(quit) do quitcount = quitcount + 1 end
-return quit
+
+function initquit()
+ local quit
+ quit = { Y = {t = 'Press Y to quit', f = Sys.Bye, k=KEY_Y, c={255,0,0}}}
+ -- @IF ALLOW_QUITSAVE
+ if qsaveroomdata.map ~= Maps.CodeName or qsaveroomdata.layer ~= Maps.LayerCodeName then
+    if Maps.GetData('NoSaveZones')~="" then
+       qsaveroomdata.nosavezones = mysplit(Maps.GetData('NoSaveZones'))
+    else
+       qsaveroomdata.nosavezones = {}   
+    end  
+ end
+ --CSay(serialize('initquit',qsaveroomdata))    
+ if not tablecontains(qsaveroomdata.nosavezones,Maps.LayerCodeName) then   
+    quit.Y.t = "Press Y to quit without saving"
+    quit.S = { t = "Press S to save and quit", f = SaveNQuit, k=KEY_S, c={0,255,0}}
+ end   
+ -- @FI
+ quitcount = 0
+ for k,v in pairs(quit) do quitcount = quitcount + 1 end
+ qsaveroomdata.map = Maps.CodeName
+ qsaveroomdata.layer = Maps.LayerCodeName
+ return quit
 end    
 
 function features.Quit(x,y,w,h)
+  if qsaveroomdata.map ~= Maps.CodeName or qsaveroomdata.layer ~= Maps.LayerCodeName then quit=nil end
   quit = quit or initquit()
   local cx = x + (w/2)
   local cy = y + (h/2)
-  local wy = cy - ((quitcount*fonts.Quit[2])/2)
+  local wy = cy - ((quitcount*fonts.Quit[2]))
   for k,v in spairs(quit) do
       DarkText(v.t,cx,wy,2,2,v.c[1],v.c[2],v.c[3])
       if INP.KeyH(v.k)==1 then v.f() end
