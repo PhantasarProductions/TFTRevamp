@@ -70,7 +70,7 @@ itemfilter = {
                             return i.ITM_Type=='Consumable' and i.ITM_Field
                           end,
                   Key = function(i) return i.ITM_Type=="KeyItem" end       ,
-                  Sellable = function(i) return i.ITM_Type~="KeyItem" and i.ITM_Sellable end,
+                  Sellable = function(i) return i.ITM_Type~="KeyItem" and i.ITM_Sellable and i.ITM_SellPrice and i.ITM_SellPrice>0 end,
                   FieldUse = function(i,ch)
                                 return itemfilter.Field(i) or itemfilter.Equip(i,ch)
                              end                  

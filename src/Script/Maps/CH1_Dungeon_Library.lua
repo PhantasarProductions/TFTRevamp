@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.01
+version: 17.01.02
 ]]
 
 
@@ -153,4 +153,5 @@ function GALE_OnLoad()
     end    
     ZA_Enter('Exit',ExitRoom)
     MapHide('Secret')
+    ZA_Enter('Bye',WorldMap)
 end    
