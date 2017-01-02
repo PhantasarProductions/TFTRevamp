@@ -4,7 +4,7 @@ Rem
 	
 	
 	
-	(c) Jeroen P. Broks, 2016, All rights reserved
+	(c) Jeroen P. Broks, 2016, 2017, All rights reserved
 	
 		This program is free software: you can redistribute it and/or modify
 		it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.09.10
+Version: 17.01.02
 End Rem
 Strict
 
@@ -32,7 +32,7 @@ Import tricky_units.Listfile
 Import maxgui.maxgui
 
 
-MKL_Version "The Fairy Tale - REVAMP - Globals.bmx","16.09.10"
+MKL_Version "The Fairy Tale - REVAMP - Globals.bmx","17.01.02"
 MKL_Lic     "The Fairy Tale - REVAMP - Globals.bmx","GNU General Public License 3"
 
 AppTitle = StripAll(AppFile)
@@ -82,7 +82,14 @@ Function GetID:StringMap()
 			MapInsert id,c[0],c[1]
 			DebugLog c[0]+" = ~q"+c[1]+"~q"
 		EndIf
-	Next		
+	Next
+	If id.Value("Dev")="Yes"
+		If Not FileType("/Volumes/Scyndi/Projects/Applications/BlitzMax/JCR6+/LAURA II/Design/The Fairy Tale - REVAMP/Jeroen")
+			Notify "Something went wrong with some internal settings. Please notify Jeroen to set this right!"
+			End
+		EndIf
+		Notify "Development version! You have be recognized"
+	EndIf		
 End Function GetID
 
 Global savedir$ = Dirry("$AppSupport$/Phantasar Productions/LAURA2/")+ID.value("ID")+"/Saved Games"
