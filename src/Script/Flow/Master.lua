@@ -1,7 +1,7 @@
 --[[
   Master.lua
-  Version: 16.12.27
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.02
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -119,7 +119,7 @@ function Master_EndSession()
        CSay("Checking: "..i.."; "..sval(ch))
        local oldmaster = ""
        if RPG.DataExists(ch,"Master")~=0 then oldmaster = RPG.GetData(ch,"Master") end
-       if oldmaster~="" and oldmaster~=id then Master_Dismiss(ch,oldmaster) end
+       if oldmaster~="" and oldmaster~=id and AppSet[i] then Master_Dismiss(ch,oldmaster) end
        if (not AppSet[i]) and oldmaster==id then Master_Dismiss(ch,id) end
        if AppSet[i] and oldmaster~=id then Master_Appoint(ch,id) end
    end
