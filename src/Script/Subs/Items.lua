@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.01.01
+  Version: 17.01.02
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -363,6 +363,20 @@ function RemoveItem(item,num)
     if inventory[item]<=0 then inventory[item]=nil end
     ItemFilterReset()
 end
+
+function RemoveAllItemQuery(items,svar)
+    local ia = mysplit(items,",")
+    local yeah = true
+    for item in each(ia) do
+        yeah = yeah and inventory[item] and inventory[item]>0 
+    end
+    if not yeah then Var.Clear(svar); return end
+    for item in each(ia) do
+        inventory[item]=nil
+    end
+    Done(svar)
+end    
+    
 
 function TreasureChest(tag)
     local chest = Maps.Obj.Obj(tag)

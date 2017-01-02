@@ -1,7 +1,7 @@
 --[[
-  ITM_ANTIDOTE.lua
+  ABL_MASTER_FREYA_ULTRAHEAL.lua
   Version: 17.01.02
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -35,27 +35,40 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ABL_APCost"] = 150,
+	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 10,
+	["ADDCARD_Action_Number"] = 3,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
+	["CureCurse"] = true,
+	["CureDisease"] = true,
+	["CureParalysis"] = true,
+	["CurePetrification"] = true,
 	["CurePoison"] = true,
-	["Desc"] = "Poison be gone",
+	["CureSilence"] = true,
+	["CureUndead"] = true,
+	["Desc"] = "A good healt is your best asset",
+	["Heal"] = 10,
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
+	["Heal_Type"] = "Percent",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 50,
 	["ITM_Type"] = "Consumable",
+	["Revive"] = true,
 	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Antidote",
-	["Type"] = "Item"}
+	["Target"] = "AA",
+	["Title"] = "Ultra-Heal",
+	["Type"] = "Ability",
+	["Voice"] = "Heal"}
 
 return ret
 
