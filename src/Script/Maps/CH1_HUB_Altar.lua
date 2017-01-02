@@ -2,7 +2,7 @@
 **********************************************
   
   CH1_HUB_Altar.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.26
+version: 17.01.02
 ]]
 
 -- Link all stats in Jake that should be linked
@@ -42,6 +42,7 @@ function CreateJakeFairy()
   local linkpoints = {'SK_EXP_1','SK_LVL_1','VIT'}
   -- Link points
   for p in each(linkpoints) do
+      CSay("Linking Points: "..p)
       RPG.LinkPoints('Jake_Human','Jake_Fairy',p)
   end
   -- Link stats
@@ -49,20 +50,22 @@ function CreateJakeFairy()
       local link=false
       for ls in each(linkstat)   do if p==ls          then link=true end end
       for lp in each(linkprefix) do if prefixed(p,lp) then link=true end end
-      if link then RPG.LinkStat('Jake_Human','Jake_Fairy',p) end
+      if link then RPG.LinkStat('Jake_Human','Jake_Fairy',p) CSay("Linking Stat: "..p) end
   end      
   -- Link data
   for p in each(mysplit(RPG.DataFields('Jake_Human'),";")) do
-      RPG.LinkData('Jake_Human','Jake_Fairy',p)
+      RPG.LinkData('Jake_Human','Jake_Fairy',p) CSay("Linking Data: "..p)
   end
   -- Jake's name
   RPGStat.SetName('Jake_Fairy','Jake')
   -- Synchronize results
+  CSay("Level Sync")
   MS.LN_Run('PARTY','Script/Subs/Party.lua','SyncLevel','Jake_Fairy') 
   local h = RPG.Points('Jake_Fairy','HP')
   h.Have = h.Maximum
   RPG.Points('Jake_Fairy','AP').Have=0
   if RPG.GetData('Jake_Fairy','Master')=='Rubine' then RPG.LinkStat('Jake_Human','Jake_Fairy',"RubinePoints") end
+  CSay("Creation complete")
 end
 
 function Altar()
@@ -89,6 +92,9 @@ function PostBoss()
    MapText('POSTBOSS')
    local choice = RunQuestion('MAP','ELEMENTS')
    CreateSkill('Jake_Fairy',choice+1,1)
+   local c = choice+1
+   RPG.LinkPoints('Jake_Fairy','Jake_Human','SK_EXP_'..c)
+   RPG.LinkPoints('Jake_Fairy','Jake_Human','SK_LVL_'..c)
    MapText('POSTMANA')
    Var.D('$WMCHAT','FAIRYJAKE')
    WorldMap_Unlock('CH1FRENDOR')
