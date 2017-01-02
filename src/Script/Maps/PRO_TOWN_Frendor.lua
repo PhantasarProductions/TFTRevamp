@@ -174,7 +174,8 @@ function PleaseGo()
 end    
 
 function ComeInEvents()
-   return (({ FAIRYJAKE = Treason, LIBDONE=PleaseGo })[CVV('$WMCHAT')] or Nothing)()
+   local ret = (({ FAIRYJAKE = Treason, LIBDONE=PleaseGo })[CVV('$WMCHAT')] or Nothing)()
+   if ret==Nothing and (not CVV('&ALLOW2STAY')) then MapText('ACCESSDENIED') WorldMap() end
 end
 
 -- Init
