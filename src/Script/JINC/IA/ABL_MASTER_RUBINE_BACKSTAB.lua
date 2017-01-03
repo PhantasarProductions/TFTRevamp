@@ -54,7 +54,7 @@ ret = {
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Attack",
 	["Target"] = "1F",
-	["Title"] = "Distract",
+	["Title"] = "Backstab",
 	["Type"] = "Ability",
 	["Voice"] = "attack"}
 

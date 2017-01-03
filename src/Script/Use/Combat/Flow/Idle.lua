@@ -1,6 +1,6 @@
 --[[
   Idle.lua
-  Version: 17.01.01
+  Version: 17.01.03
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -42,7 +42,7 @@ function AddCard(data,aspot)
     local card = { data=data }
     local ch   = data.tag    
     local spot = aspot or ( 25 + (order.tagorder[ch] * 2)+ (math.floor(rand(1,order.tagorder[ch])/2)) )
-    while cards[spot] and cards[spot].data do spot=spot+1 end -- If the spot is taken, move to the next one.
+    while cards[spot] and cards[spot].data do spot=spot+1 end -- If the spot is taken, move to the next one, and keep doing this until an empty spot has been found.
     cards[spot] = card
 end
 

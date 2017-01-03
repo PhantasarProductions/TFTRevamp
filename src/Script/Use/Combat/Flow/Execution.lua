@@ -1,7 +1,7 @@
 --[[
   Execution.lua
-  Version: 16.12.28
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.03
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -92,6 +92,13 @@ function PerformAction(act,group,i)
         else
            SpellScript[act.EffectScript](myfighter.tag,myexecutor.tag,act.EffectScript_Arg)
         end   
+     end
+     -- Target Card Addition
+     local card2add = { group = group, tag=myfighter.tag, letter=myfighter.letter }
+     if act.ADDCARD_Char_Number then
+        for ak=1,act.ADDCARD_Char_Number do
+            AddCard(card2add,ak*(act.ADDCARD_Char_Interval or 2))
+        end
      end
      -- Cause status changes (this always comes last)
      for k,b in pairs(act) do

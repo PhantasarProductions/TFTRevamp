@@ -36,6 +36,7 @@
 ]]
 ret = {
 	["ABL_APCost"] = 30,
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack"] = 75,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AllowAccuracy"] = true,
@@ -44,6 +45,7 @@ ret = {
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
 	["CausePoison"] = true,
+	["Desc"] = "I wanna taste you but your lips so venomous, POISON!",
 	["Heal_StatPercent"] = "Intelligence",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
@@ -57,6 +59,7 @@ ret = {
 	["SpellAni_Arg"] = "Strike the enemy, less damage, but can do poison.",
 	["Stance"] = "Attack",
 	["Target"] = "1F",
+	["Title"] = "Poison Stab",
 	["Type"] = "Ability"}
 
 return ret

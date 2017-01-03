@@ -3576,10 +3576,10 @@ Rec: ABL_MASTER_RUBINE_BACKSTAB
 	ABL_APCost = 100
 	ABL_HPCost = 0
 	ADDCARD_Action_Act = 
-	ADDCARD_Action_Interval = 
-	ADDCARD_Action_Number = 
-	ADDCARD_Char_Interval = 
-	ADDCARD_Char_Number = 
+	ADDCARD_Action_Interval = 0
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 0
+	ADDCARD_Char_Number = 0
 	Attack = 25
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -3596,7 +3596,7 @@ Rec: ABL_MASTER_RUBINE_BACKSTAB
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
-	CauseSleep = 
+	CauseSleep = FALSE
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -3604,7 +3604,7 @@ Rec: ABL_MASTER_RUBINE_BACKSTAB
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
-	CureSleep = 
+	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Removes all cards of a specific foe
 	EQP_STAT_Accuracy = 0
@@ -3648,7 +3648,7 @@ Rec: ABL_MASTER_RUBINE_BACKSTAB
 	SpellAni_External = FALSE
 	Stance = Attack
 	Target = 1F
-	Title = Distract
+	Title = Backstab
 	Type = Ability
 	USE_Penalty = 0
 	Voice = attack
@@ -3667,10 +3667,10 @@ Rec: ABL_MASTER_RUBINE_FOLLOWME
 	ABL_APCost = 150
 	ABL_HPCost = 0
 	ADDCARD_Action_Act = 
-	ADDCARD_Action_Interval = 
-	ADDCARD_Action_Number = 
-	ADDCARD_Char_Interval = 
-	ADDCARD_Char_Number = 
+	ADDCARD_Action_Interval = 0
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 0
+	ADDCARD_Char_Number = 0
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -3687,7 +3687,7 @@ Rec: ABL_MASTER_RUBINE_FOLLOWME
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
-	CauseSleep = 
+	CauseSleep = FALSE
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -3695,7 +3695,7 @@ Rec: ABL_MASTER_RUBINE_FOLLOWME
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
-	CureSleep = 
+	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = All allies get an extra card at the first free available spot
 	EQP_STAT_Accuracy = 0
@@ -3848,11 +3848,11 @@ Rec: ABL_MASTER_RUBINE_INVADE
 Rec: ABL_MASTER_RUBINE_PICKPOCKET
 	ABL_APCost = 15
 	ABL_HPCost = 0
-	ADDCARD_Action_Act = 
-	ADDCARD_Action_Interval = 
-	ADDCARD_Action_Number = 
-	ADDCARD_Char_Interval = 
-	ADDCARD_Char_Number = 
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 0
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 0
+	ADDCARD_Char_Number = 0
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -3869,7 +3869,7 @@ Rec: ABL_MASTER_RUBINE_PICKPOCKET
 	CausePetrification = FALSE
 	CausePoison = FALSE
 	CauseSilence = FALSE
-	CauseSleep = 
+	CauseSleep = FALSE
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -3877,7 +3877,7 @@ Rec: ABL_MASTER_RUBINE_PICKPOCKET
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
-	CureSleep = 
+	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Steal items from your enemy
 	EQP_STAT_Accuracy = 0
@@ -3939,11 +3939,11 @@ Rec: ABL_MASTER_RUBINE_PICKPOCKET
 Rec: ABL_MASTER_RUBINE_POISONSTAB
 	ABL_APCost = 30
 	ABL_HPCost = 0
-	ADDCARD_Action_Act = 
-	ADDCARD_Action_Interval = 
-	ADDCARD_Action_Number = 
-	ADDCARD_Char_Interval = 
-	ADDCARD_Char_Number = 
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 0
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 0
+	ADDCARD_Char_Number = 0
 	Attack = 75
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -3960,7 +3960,7 @@ Rec: ABL_MASTER_RUBINE_POISONSTAB
 	CausePetrification = FALSE
 	CausePoison = TRUE
 	CauseSilence = FALSE
-	CauseSleep = 
+	CauseSleep = FALSE
 	CauseUndead = FALSE
 	CureCurse = FALSE
 	CureDisease = FALSE
@@ -3968,9 +3968,9 @@ Rec: ABL_MASTER_RUBINE_POISONSTAB
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
-	CureSleep = 
+	CureSleep = FALSE
 	CureUndead = FALSE
-	Desc = 
+	Desc = I wanna taste you but your lips so venomous, POISON!
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
@@ -4012,7 +4012,7 @@ Rec: ABL_MASTER_RUBINE_POISONSTAB
 	SpellAni_External = FALSE
 	Stance = Attack
 	Target = 1F
-	Title = 
+	Title = Poison Stab
 	Type = Ability
 	USE_Penalty = 0
 	Voice = 

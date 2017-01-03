@@ -36,6 +36,7 @@
 ]]
 ret = {
 	["ABL_APCost"] = 15,
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
