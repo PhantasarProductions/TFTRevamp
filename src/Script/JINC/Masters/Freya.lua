@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.02
+version: 17.01.03
 ]]
 
 local RPG = RPGStat
@@ -72,10 +72,10 @@ end
 
 function Freya.requirement() return true end -- Map script already handles this part.
 
-Freya._abl = {
+Freya.abl = {
          [ 75] = 'abl_master_freya_rejuvenate',
          [150] = 'abl_master_freya_vigor',
-         [200] = 'alb_master_freya_ultraheal'
+         [200] = 'abl_master_freya_ultraheal'
 }         
 
 function Freya.teach(ch) -- Should return true if master actually decides to teach something
@@ -85,12 +85,12 @@ function Freya.teach(ch) -- Should return true if master actually decides to tea
    local maylearn = true
    local rabl     = nil
    -- for i,a in pairs(Freya._abl) do all = all and CVV('&MASTER.FREYA.'..abl) end 
-   for i,a in pairs(Freya._abl) do
-       if (i<=lv or i<=verschil*((4-skill)*3)) and maylearn and (not Done('&MASTER.FREYA.'..abl)) then 
+   for i,a in pairs(Freya.abl) do
+       if (i<=lv or i<=verschil*((4-skill)*3)) and maylearn and (not Done('&MASTER.FREYA.'..a)) then 
            maylearn=false
            rabl=a
        else
-           all = all and CVV('&MASTER.FREYA.'..abl)
+           all = all and CVV('&MASTER.FREYA.'..a)
        end
    end
    return rabl,all           
@@ -120,5 +120,12 @@ Freya.stats = {
                       AP = 25
                }
 
+Freya.Desc = {'Freya is a Fairy Healer','One of the best of her race',"She'll teach you powerful spells if you","practice water magic, or","your powers to healing gods","","Dandor cannot learn new spells here"}
+
+function Freya.ShowScore(ch)
+   if ch=="Dandor" then return "Cannot Learn" elseif ch=='HandoStillor' then return "Weniaria" else return "Water" end
+end   
+
+Freya.HideRates = true
 
 return Freya

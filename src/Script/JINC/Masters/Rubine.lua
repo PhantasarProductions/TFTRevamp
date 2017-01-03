@@ -43,7 +43,6 @@ local skill = Sys.Val(Var.C('%SKILL'))
 
 
 
-
 local function CVV(k)
 local CVF = {
    ["%"] = function(k) return Sys.Val(Var.C(k)) end,
@@ -64,7 +63,7 @@ end
 
 function Rubine.requirement() return true end
 
-Rubine._abl = {
+Rubine.abl = {
                      [ 20] = 'abl_master_rubine_pickpocket',
                      [ 40] = 'abl_master_rubine_poisonstab',
                      [ 60] = 'abl_master_rubine_invade',
@@ -77,7 +76,7 @@ function Rubine.teach(ch) -- Should return true if master actually decides to te
     local all = true
     local maylearn = true
     local rabl = false
-    for truereq,abl in pairs(Rubine._abl) do -- DEFINITELY NOT ipairs!!!!!
+    for truereq,abl in pairs(Rubine.abl) do -- DEFINITELY NOT ipairs!!!!!
         local req = truereq*(skill-1)
         if maylearn and RPG.Stat(ch,"RubinePoints")>=req and (not Done('&MASTER.RUBINE.'..abl)) then
            Console.Write(RPG.Stat(ch,"RubinePoints")..">="..req.." so let's teach!",180,255,0)
@@ -111,5 +110,10 @@ Rubine.stats = {
                       Evasion = 5
                }
 
+Rubine.Desc = {"Rubine is a female thief","She rewards the ability to find money","You score a point each time you find money","Score enough points to learn new skills"}
+
+function Rubine.ShowScore(ch)
+     return RPGStat.Stat(ch,"RubinePoints")
+end
 
 return Rubine

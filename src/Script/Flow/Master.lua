@@ -1,6 +1,6 @@
 --[[
   Master.lua
-  Version: 17.01.02
+  Version: 17.01.03
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -49,6 +49,7 @@ function Master(id)
    cMaster = jinc('Script/JINC/Masters/'..id..".lua")
    cMaster.name = cMaster.name or id
    cMaster.id = id
+   cMaster.id = id
    if (not Unlocked[id]) and cMaster.requirement and (not cMaster.requirement()) then
       MapText(upper(id).."_NOTREADY")
       return
@@ -80,6 +81,32 @@ function Master(id)
    end     
    LAURA.Flow('MASTER')   
 end
+
+function MasterEyes(mid,mdata,x,y)
+    SetFont("MasterContent")
+    for i,ch in iParty() do
+        if RPG.GetData(ch,'Master')==mid then
+           white()
+           Eyes(ch,x-100,y+(i*21))
+           DarkText(mdata.ShowScore(ch),x-110,y+(i*21)+20,2,1,0,180,255)
+        end
+    end
+end
+
+
+function MasterAbl(mid,mdata,x,py)
+       SetFont("MasterContent")
+       local y = py
+       local item
+       for i,a in pairs(mdata.abl) do
+           y = y+20
+           if not mdata.HideRates then DarkText(i,x+100,y,1,0,0,180,255) end
+           item = ItemGet(a)
+           DarkText(item.Title,x+110,y,0,0,255,255,255)
+       end    
+end
+
+
 
 function Master_Dismiss(ch,master,nomorejake)
    CSay("Dismiss master "..master.." from "..sval(ch))
@@ -146,6 +173,11 @@ function MAIN_FLOW()
         DarkText(value.."%",gx[rij][2],gy[rij],1,0,col[rij][1],col[rij][2],col[rij][3])
         gy[rij]=gy[rij]+20
     end
+    for i,l in ipairs(cMaster.Desc or {}) do
+        DarkText(l,20,gy[1]+20+(i*20))
+    end    
+    MasterEyes(cMaster.id,cMaster,SW-40,40)
+    MasterAbl(cMaster.id,cMaster,gx[2][1],gy[2]+20)
     CHW = CHW or (SW/4)
     for i=0,3 do
         if AppSet[i]~=nil then
@@ -163,3 +195,48 @@ function MAIN_FLOW()
     Flip()
 end
 
+-- Menu overview functions
+omd = nil
+function MasterData(id,sizes)
+     if omd~=id then OverViewMaster = jinc('Script/JINC/Masters/'..id..".lua") omd = id end
+     local mymaster = OverViewMaster -- I am LAZY!!!
+     SetFont('MasterHeader')
+     DarkText(mymaster.name,20,20,0,0,255,180,0)
+     SetFont("MasterContent")
+     local gy={sizes.y+20,sizes.y+20}
+     local col={{180,255,0},{255,0,0}}
+     local gx = {{Center_X/2,Center_X-10},{Center_X+20,(Center_X+20)+(Center_X/2)}}
+     for key,value in spairs(mymaster.stats or {}) do
+         local rij=1
+         if value<0 then rij=2 end
+         DarkText(key,gx[rij][1],gy[rij])
+         DarkText(value.."%",gx[rij][2],gy[rij],1,0,col[rij][1],col[rij][2],col[rij][3])
+         gy[rij]=gy[rij]+20
+     end
+     for i,l in ipairs(mymaster.Desc or {}) do
+        DarkText(l,100,gy[1]+20+(i*20))
+     end    
+     MasterAbl(id,mymaster,gx[2][1],gy[2]+20)
+     MasterEyes(id,mymaster,sizes.w-20,sizes.y+20)
+end
+
+function MasterOverview(ssizes)
+    local fsizes = loadstring('return '..ssizes); if not fsizes then Sys.Crash('Sizes wrong!','Sizes,',ssizes) end
+    local sizes = fsizes()
+    MasterPos = MasterPos or 1
+    local i=0
+    local c = {[true]={255,180,0},[false]={255,255,255}}
+    local count = 0    
+    local mx,my = MouseCoords()
+    for masterid,_ in spairs(Unlocked) do
+        i = i + 1
+        SetFont('MastersList')
+        DarkText(masterid,sizes.x+10,sizes.y+(i*15),0,0,c[i==MasterPos][1],c[i==MasterPos][2],c[i==MasterPos][3])
+        if i==MasterPos then MasterData(masterid,sizes) end
+        count=i
+        if mx<200 and my>sizes.y+(i*15) and my<sizes.y+(i*15)+15 and mousehit(1) then MasterPos=i end
+    end
+    if (INP.KeyH(KEY_DOWN)==1 or joyhit(joy_down)) and MasterPos<count then MasterPos = MasterPos + 1 end
+    if (INP.KeyH(KEY_UP  )==1 or joyhit(joy_up  )) and MasterPos>    1 then MasterPos = MasterPos - 1 end
+    local count=1  
+end    

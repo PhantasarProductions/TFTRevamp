@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 17.01.02
+  Version: 17.01.03
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -37,7 +37,7 @@
 
 profiles = {
                  Field = {
-                      Features = {'Status','Items','Abilities','Achievements', 'Config','Quit'},
+                      Features = {'Status','Items','Abilities','Master','Achievements','Config','Quit'},
                       HalfScreen = {Status={'Stats','Status'},Items={'Stats','Items'},Abilities={'Stats','Abilities'}},  
                       ItemShowFilters = {'All',"Field",'Equip','Key'},
                       BlockOut = {'Config'},
@@ -119,6 +119,11 @@ function features.Stats(x,y,w,h,f)
     eqName(ch,'Armor' ,x+40,(y+h)-50)
     eqName(ch,'Weapon',x+40,(y+h)-75)
     if f~="Status" then return end
+end
+
+
+function features.Master(x,y,w,h,f)
+      MS.LN_Run("MASTER","Script/Flow/Master.lua","MasterOverview","{x="..x..",y="..y..",h="..h..",w="..w.."}")
 end
 
 features.ConfigFunctions = {}

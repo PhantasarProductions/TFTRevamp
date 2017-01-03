@@ -57,6 +57,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Dwarf.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/ShadowSweeper.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/HellHound.png
+    1. Graphics: GFX/Eyes/Dandor.png
+    1. Graphics: GFX/Eyes/HandoStillor.png
+    1. Graphics: GFX/Eyes/Jake.png
+    1. Graphics: GFX/Eyes/Marrilona.piko
+    1. Graphics: GFX/Eyes/Marrilona.png
 - Alexander
     1. Audio: Audio/Combat/Ready.ogg
 - Angela Nagtzaam
@@ -375,8 +380,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/ClearTable.lua
     1. Graphics: GFX/Chapters/1.png
     1. Music: Music/Boss/BossIntro.ogg
@@ -618,7 +623,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Idle.png
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.png
-    1. Graphics: GFX/Actors/Bundled/Player/Marrilona.NS (Autosaved).piko
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.NS.piko
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.North.frames
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.North.png
@@ -783,6 +787,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Menu Icons/Achievements.png
     1. Graphics: GFX/Menu Icons/Config.png
     1. Graphics: GFX/Menu Icons/Items.png
+    1. Graphics: GFX/Menu Icons/Master.png
     1. Graphics: GFX/Menu Icons/Quit.png
     1. Graphics: GFX/Menu Icons/Status.png
     1. Graphics: GFX/Prologue_CharSelect/Dandor.png

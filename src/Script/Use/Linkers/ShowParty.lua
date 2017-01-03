@@ -2,7 +2,7 @@
 **********************************************
   
   ShowParty.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.27
+version: 17.01.03
 ]]
 
 ShowParty = ShowParty or function() 
@@ -156,3 +156,11 @@ function Shift(pform)
    j_new.Have = j_new.Maximum * j_prc
    return true
 end
+
+
+function Eyes(pch,x,y)
+    local ch = pch
+    if prefixed(ch,"Jake") then ch="Jake" end 
+    Image.LoadNew('EYES_'..ch,"GFX/EYES/"..ch..".png")
+    Image.Show('EYES_'..ch,x,y)
+end    

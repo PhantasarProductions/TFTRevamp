@@ -1,7 +1,7 @@
 --[[
   Fonts.lua
-  Version: 16.12.30
-  Copyright (C) 2016 2015
+  Version: 17.01.03
+  Copyright (C) 2016, 2017 2015
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -77,7 +77,8 @@ fonts = {
     JoyConfig = {"Coolvetica.ttf",20},    
     AltInputHead = {"Coolvetica.ttf",60},
     AltInputInput = {'Monof55.ttf',50},
-    AltInputKeys = {'Monof55.ttf',30}    
+    AltInputKeys = {'Monof55.ttf',30},
+    MastersList = {'Coolvetica.ttf',15}    
     
 }
 
