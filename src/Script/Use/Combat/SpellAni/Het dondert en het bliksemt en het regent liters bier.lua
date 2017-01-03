@@ -1,7 +1,7 @@
 --[[
-  ABL_FOE_FLAMESTRIKE.lua
+  Het dondert en het bliksemt en het regent liters bier.lua
   Version: 17.01.03
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,37 +34,66 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-ret = {
-	["Attack"] = 100,
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowAccuracy"] = true,
-	["Attack_AllowCritical"] = true,
-	["Attack_AllowDodge"] = true,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "Flame",
-	["Desc"] = "Attack the enemy",
-	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
-	["ITM_ACC_Dandor"] = true,
-	["ITM_ACC_HandoStillor"] = true,
-	["ITM_ACC_Jake"] = true,
-	["ITM_ACC_Marrilona"] = true,
-	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
-	["ITM_Field"] = true,
-	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Consumable",
-	["Rew_GainAP"] = 6,
-	["Stance"] = "Attack",
-	["Target"] = "1F",
-	["Title"] = "Flame Strike",
-	["Type"] = "Ability",
-	["Voice"] = "Attack",
-	["rew_CreateSkill1"] = true,
-	["rew_GainSkill1"] = 6}
+-- @IF IGNORE
+SpellAni = {}
+-- @FI
 
-return ret
+function SpellAni.Spark(ActG,ActT,TarG,TarT)
+local sx,sy = FighterCoords(TarG,TarT)
+local ak,x,y
+Image.LoadNew("SA_SPARK","GFX/COMBAT/SPELLANI/THUNDER/SPARK.PNG")
+SFX('Audio/SpellAni/Thunder/Spark.ogg')
+for ak=1,50 do
+    DrawScreen()    
+    White()
+    for al=1,25 do
+        x = rand(sx-16,sx+16)
+        y = rand(sy-64,sy)
+        Image.Rotate(rand(0,360))
+        Image.Draw('SA_SPARK',x,y)
+        Image.Rotate(0)
+        end
+    Flip()
+    end
+end
 
--- This file is an automatically generated file!
+function SpellAni.Jolt(ActG,ActT,TarG,TarT)
+local ak,x,y
+local sx,sy
+Image.LoadNew("SA_SPARK","GFX/COMBAT/SPELLANI/THUNDER/SPARK.PNG")
+SFX('Audio/SpellAni/Thunder/Spark.ogg')
+for ak=1,50 do
+    DrawScreen()    
+    White()
+    for i,v in pairs(Fighters[TarG]) do -- Certainly NOT ipairs() even though i will only contain numbers. This array does not always have all numbers present which is a requirement for ipairs().
+        sx,sy = FighterCoords(TarG,i)
+        for al=1,25 do
+            x = rand(sx-16,sx+16)
+            y = rand(sy-64,sy)
+            Image.Rotate(rand(0,360))
+            Image.Draw('SA_SPARK',x,y)
+            Image.Rotate(0)
+            end
+        end
+    Flip()
+    end
+end
 
+function SpellAni.Mjolnir(ActG,ActT,TarG,TarT)
+local sx,sy = FighterCoords(TarG,TarT)
+local scl = 1
+Image.LoadNew("SA_LIGHTNING","GFX/COMBAT/SPELLANI/THUNDER/LIGHTNING.PNG")
+SFX("Audio/SpellAni/Thunder/ThunderStrike.ogg")        
+for ak=1,20 do
+    DrawScreen()
+    White()
+    Image.Scale(scl,1); scl=scl*-1
+    Image.Show("SA_LIGHTNING",sx,sy)
+    Image.Scale(1,1)
+    Flip()
+    end
+end    
+
+-- @IF IGNORE
+return SpellAni
+-- @FI

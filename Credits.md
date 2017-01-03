@@ -181,6 +181,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_HUMAN.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FLAME.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HEAL.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PROTECT.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_SPLASH.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_REJUVENATE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_ULTRAHEAL.lua
@@ -322,6 +323,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
+    1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
@@ -368,11 +370,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: GFX/Chapters/1.png
     1. Music: Music/Boss/BossIntro.ogg
     1. Graphics: GFX/Chapters/2.png
@@ -419,6 +421,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/RENC/Gauge.piko
     1. Graphics: GFX/Combat/RENC/Gauge.png
     1. Graphics: GFX/Combat/SpellAni/Flame/Flame.png
+    1. Graphics: GFX/Combat/SpellAni/Thunder/Lightning.hot
+    1. Graphics: GFX/Combat/SpellAni/Thunder/Lightning.png
+    1. Graphics: GFX/Combat/SpellAni/Thunder/Spark.png
     1. General Data: GFX/Combat/StatusChanges/Disease/Rode Kruis
     1. Graphics: GFX/Combat/StatusChanges/Disease/Rode Kruis.png
     1. Graphics: GFX/Combat/StatusChanges/Paralysis/Bliksem.png

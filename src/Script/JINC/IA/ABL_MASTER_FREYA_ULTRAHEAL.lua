@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_FREYA_ULTRAHEAL.lua
-  Version: 17.01.02
+  Version: 17.01.03
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

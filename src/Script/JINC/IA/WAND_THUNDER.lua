@@ -1,6 +1,6 @@
 --[[
   WAND_THUNDER.lua
-  Version: 17.01.02
+  Version: 17.01.03
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -59,7 +59,7 @@ ret = {
 	["ITM_Type"] = "Weapon",
 	["ITM_WeaponAbility"] = true,
 	["Rew_GainAP"] = 5,
-	["SpellAni"] = "Flame",
+	["SpellAni"] = "Spark",
 	["Stance"] = "Attack",
 	["Target"] = "1F",
 	["Title"] = "Thunder Wand",
