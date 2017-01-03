@@ -1,7 +1,7 @@
 --[[
   Card Tricks.lua
-  Version: 16.12.28
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.03
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -52,6 +52,15 @@ function SpellScript.RemoveAllUserCards(tartag,extag,param)
       Cards[r]=nil
   end
   return true
+end
+
+function SpellScript.FollowMe(tartag,extag,param)
+   local c = fighterbytag[tartag]
+   if extag~=tartag then
+      local g = "Hero"
+      if prefixed(tartag,"FOE") then g="Foe" end
+      AddCard({ group=g, tag=tartag, letter=c.letter },1)
+   end
 end
 
 -- @IF INGORE
