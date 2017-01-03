@@ -2,7 +2,7 @@
 **********************************************
   
   Rubine.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.27
+version: 17.01.03
 ]]
 
 local RPG = RPGStat
@@ -67,6 +67,7 @@ function Rubine.requirement() return true end
 Rubine._abl = {
                      [ 20] = 'abl_master_rubine_pickpocket',
                      [ 40] = 'abl_master_rubine_poisonstab',
+                     [ 60] = 'abl_master_rubine_invade',
                      [200] = 'abl_master_rubine_backstab',
                      [400] = 'abl_master_rubine_followme'
               }
