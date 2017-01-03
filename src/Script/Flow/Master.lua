@@ -157,6 +157,9 @@ end
 
 A_Col = { [true]={255,180,0},[false]={50,50,50}}
 function MAIN_FLOW()   
+    local jl,jr = joyhit(joy_left),joyhit(joy_right)
+    local jp = 0
+    local mx,my = MouseCoords()
     Cls()
     Box(stx,sty,SW,SH-100)
     SetFont('MasterHeader')
@@ -185,10 +188,15 @@ function MAIN_FLOW()
            Image.Color(C[1],C[2],C[3])
            local CHX = (CHW*i)+(CHW/2)
            Image.Show(pointer,CHX,(SH-sty)-120)
-           -- DarkText(CHW..";"..i..";"..sval(CHW*i)..";"..sval((SH-sty)-10),0,i*25)
-           if mousehit(1) and ClickedChar(i) then AppSet[i]=not AppSet[i] end
+           -- DarkText(CHW..";"..i..";"..sval(CHW*i)..";"..sval((SH-sty)-10),0,i*25)           
+           if (mousehit(1) or joyhit('CONFIRM')) and ClickedChar(i) then AppSet[i]=not AppSet[i] end
+           if (INP.KeyH(i+49)==1) then AppSet[i]=not AppSet[i] end
+           --if mx>=CHW*i and mx<=CHW*(i+1) then jp=i end 
         end
     end
+    jp = math.floor(mx/CHW)
+    if      jl and jp>0 then INP.MoveMouse(((jp-1)*CHW)+(CHW/2),SH-25)
+    elseif  jr and jp<3 then INP.MoveMouse(((jp+1)*CHW)+(CHW/2),SH-25) end
     if mousehit(2) or joyhit('CANCEL') or INP.KeyH(KEY_ESCAPE)==1 then Master_EndSession() end
     ShowParty()
     ShowMouse()
