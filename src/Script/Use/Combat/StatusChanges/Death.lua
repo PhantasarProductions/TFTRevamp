@@ -1,7 +1,7 @@
 --[[
   Death.lua
-  Version: 16.12.26
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.03
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -76,7 +76,7 @@ function KillAward(myfoe)
     -- Bodycount
     inc('%KILLS')
     bestiary[myfoe.fidtag] = (bestiary[myfoe.fidtag] or 0) + 1
-    oversoul[myfoe.fidtag] = (oversoul[myfoe.fidtag] or 0) + 1
+    oversoul[myfoe.fidtag] = (oversoul[myfoe.fidtag] or 0) + 1    
     -- Achievements based on kills
     MS.LoadNew("ACH","Script/Subs/Achievements.lua")
     MS.Run('ACH','AchByKill')
@@ -89,6 +89,14 @@ StatusChanges.Death = {
                       if RPG.Points(ch,"HP").Have<=0 then RPG.Points(ch,"HP").Have=1 end
                   end,
          OnGiven = function(ch) 
+                        -- Boss vocal?
+                        if prefixed(ch,"FOE") then
+                           local myfoe=fighterbytag[ch]
+                           if myfoe.data.Boss then VicQ="BOSS" end
+                        elseif VicQ~="BOSS" then
+                            VicQ="DEAD"   
+                        end   
+                        -- Kill him!
                         RPG.Points(ch,"HP").Have=0
                         local dat = fighterbytag[ch]
                         local scl = dat.StatusChanges

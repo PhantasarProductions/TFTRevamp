@@ -2,7 +2,7 @@
 **********************************************
   
   CAttack.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.31
+version: 17.01.03
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
@@ -67,7 +67,8 @@ function Hurt(tag,damage,element)
       CSay(tag.." has "..hp.Have.." HP left")
       RPG.Points(tag,'HP') -- Any minimums and maximums are now taken in order automatically.
       if hp.Have<=0 then SetStatus(tag,'Death',true) end 
-      CSay(sval(tag).." suffered "..dmg.." damage")                  
+      CSay(sval(tag).." suffered "..dmg.." damage")
+      if (not prefixed(tag,"FOE")) and ((not VicQ) or upper(VicQ)=="PERFECT") then VicQ="General" end                  
 end
 
 

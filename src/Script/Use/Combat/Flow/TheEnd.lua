@@ -1,7 +1,7 @@
 --[[
   TheEnd.lua
-  Version: 16.12.24
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.03
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -49,10 +49,13 @@ function f_vicinit()
    end
    if LastAction and vocals then
       local stances = {LastAction}
-      if upper(VicQ)=='BOSS' then stances = PartyTable end
+      if upper(VicQ)=='BOSS' then 
+         stances = {} -- PartyTable
+         for i=0,3 do if RPG.PartyTag(i)~="" then stances[#stances+1]=RPG.PartyTag(i) end end 
+      end
       for tag in each(stances) do fighterbytag[tag].stance='Victory' end
       if prefixed(LastAction,"Jake") then LastAction="Jake" end
-      SFX('VOCALS/Combat/Hero/'..LastAction.."/Victory/"..(VicQ or "General")..".ogg")
+      SFX('VOCALS/Combat/Hero/'..LastAction.."/Victory/"..(VicQ or "Perfect")..".ogg")
    end   
    return true
 end
