@@ -182,6 +182,7 @@ bool CureSilence
 bool CurePetrification
 bool CureDisease
 bool CureUndead
+bool CureSleep
 bool Revive
 
 [allow: Heal_Type == StatPercent]
@@ -327,6 +328,7 @@ Rec: AAA_ATTACK
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Attack the enemy
 	EQP_STAT_Accuracy = 0
@@ -417,6 +419,7 @@ Rec: ABL_FOE_CRUSH
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = 
 	EQP_STAT_Accuracy = 0
@@ -507,6 +510,7 @@ Rec: ABL_FOE_DESPERATEATTACK
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Critical hit if it hits
 	EQP_STAT_Accuracy = 0
@@ -597,6 +601,7 @@ Rec: ABL_FOE_DISTRACT
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Removes all cards of a specific foe
 	EQP_STAT_Accuracy = 0
@@ -687,6 +692,7 @@ Rec: ABL_FOE_FLAMESTRIKE
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Attack the enemy
 	EQP_STAT_Accuracy = 0
@@ -777,6 +783,7 @@ Rec: ABL_FOE_SHOCKINGSTORIES
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = 
 	EQP_STAT_Accuracy = 0
@@ -867,6 +874,7 @@ Rec: ABL_FOE_SICKSTORIES
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = 
 	EQP_STAT_Accuracy = 0
@@ -957,6 +965,7 @@ Rec: ABL_FOE_SMITE
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = 
 	EQP_STAT_Accuracy = 0
@@ -1047,6 +1056,7 @@ Rec: ABL_FOE_SOULCRUSHINGSTORY
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = 
 	EQP_STAT_Accuracy = 0
@@ -1137,6 +1147,7 @@ Rec: ABL_FOE_SUICIDE
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Kill yourself
 	EQP_STAT_Accuracy = 0
@@ -1227,6 +1238,7 @@ Rec: ABL_FOE_VENOMBITE
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = 
 	EQP_STAT_Accuracy = 0
@@ -1317,6 +1329,7 @@ Rec: ABL_FOE_VENOMSTAB
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = 
 	EQP_STAT_Accuracy = 0
@@ -1407,6 +1420,7 @@ Rec: ABL_FOE_VIRUSSTAB
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = 
 	EQP_STAT_Accuracy = 0
@@ -1497,6 +1511,7 @@ Rec: ABL_HERO_DANDOR_AXESMASH
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Strong attack vs. 1 target
 	EQP_STAT_Accuracy = 0
@@ -1587,6 +1602,7 @@ Rec: ABL_HERO_DANDOR_SUPERAXESMASH
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Strong attack vs. 1 target
 	EQP_STAT_Accuracy = 0
@@ -1677,6 +1693,7 @@ Rec: ABL_HERO_HANDOSTILLOR_CUREDISEASE
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Guess....
 	EQP_STAT_Accuracy = 0
@@ -1767,6 +1784,7 @@ Rec: ABL_HERO_HANDOSTILLOR_FIRSTAID
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Weniaria can heal small wounds
 	EQP_STAT_Accuracy = 0
@@ -1857,6 +1875,7 @@ Rec: ABL_HERO_HANDOSTILLOR_HOLYSTRIKE
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Strike with holy light!
 	EQP_STAT_Accuracy = 0
@@ -1947,6 +1966,7 @@ Rec: ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON
 	CurePetrification = FALSE
 	CurePoison = TRUE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Like the name suggests, eh?
 	EQP_STAT_Accuracy = 0
@@ -2037,6 +2057,7 @@ Rec: ABL_HERO_HANDOSTILLOR_PURIFY
 	CurePetrification = TRUE
 	CurePoison = TRUE
 	CureSilence = TRUE
+	CureSleep = 
 	CureUndead = TRUE
 	Desc = Cure all status changes
 	EQP_STAT_Accuracy = 0
@@ -2127,6 +2148,7 @@ Rec: ABL_HERO_HANDOSTILLOR_RECOVER
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Strong healing spell
 	EQP_STAT_Accuracy = 0
@@ -2217,6 +2239,7 @@ Rec: ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Remove paralysis on the entire party
 	EQP_STAT_Accuracy = 0
@@ -2307,6 +2330,7 @@ Rec: ABL_HERO_HANDOSTILLOR_STICKSWING
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Attacks one enemy
 	EQP_STAT_Accuracy = 0
@@ -2397,6 +2421,7 @@ Rec: ABL_HERO_HANDOSTILLOR_VITALIZE
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Strong healing spell on the entire party
 	EQP_STAT_Accuracy = 0
@@ -2487,6 +2512,7 @@ Rec: ABL_HERO_JAKE_2PS
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Double-Double-Toil-And-Trouble
 	EQP_STAT_Accuracy = 0
@@ -2577,6 +2603,7 @@ Rec: ABL_HERO_JAKE_3PS
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = All good things come in three
 	EQP_STAT_Accuracy = 0
@@ -2667,6 +2694,7 @@ Rec: ABL_HERO_JAKE_4PS
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = I got a little present FOUR you
 	EQP_STAT_Accuracy = 0
@@ -2757,6 +2785,7 @@ Rec: ABL_HERO_JAKE_SHIFT_FAIRY
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Become a Fairy
 	EQP_STAT_Accuracy = 0
@@ -2847,6 +2876,7 @@ Rec: ABL_HERO_JAKE_SHIFT_HUMAN
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Become a Human
 	EQP_STAT_Accuracy = 0
@@ -2937,6 +2967,7 @@ Rec: ABL_HERO_MARRILONA_FLAME
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = We didn't start a fire!
 	EQP_STAT_Accuracy = 0
@@ -3027,6 +3058,7 @@ Rec: ABL_HERO_MARRILONA_HEAL
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Nurse Marrilona ready
 	EQP_STAT_Accuracy = 0
@@ -3117,6 +3149,7 @@ Rec: ABL_HERO_MARRILONA_PROTECT
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Raises endurance a little
 	EQP_STAT_Accuracy = 0
@@ -3207,6 +3240,7 @@ Rec: ABL_HERO_MARRILONA_SPLASH
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Water is coming
 	EQP_STAT_Accuracy = 0
@@ -3297,6 +3331,7 @@ Rec: ABL_MASTER_FREYA_REJUVENATE
 	CurePetrification = FALSE
 	CurePoison = TRUE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = See me, feel me, touch me, heal me.
 	EQP_STAT_Accuracy = 0
@@ -3387,6 +3422,7 @@ Rec: ABL_MASTER_FREYA_ULTRAHEAL
 	CurePetrification = TRUE
 	CurePoison = TRUE
 	CureSilence = TRUE
+	CureSleep = 
 	CureUndead = TRUE
 	Desc = A good healt is your best asset
 	EQP_STAT_Accuracy = 0
@@ -3477,6 +3513,7 @@ Rec: ABL_MASTER_FREYA_VIGOR
 	CurePetrification = FALSE
 	CurePoison = TRUE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Heal, boy! Heal!
 	EQP_STAT_Accuracy = 0
@@ -3567,6 +3604,7 @@ Rec: ABL_MASTER_RUBINE_BACKSTAB
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Removes all cards of a specific foe
 	EQP_STAT_Accuracy = 0
@@ -3657,6 +3695,7 @@ Rec: ABL_MASTER_RUBINE_FOLLOWME
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = All allies get an extra card at the first free available spot
 	EQP_STAT_Accuracy = 0
@@ -3747,6 +3786,7 @@ Rec: ABL_MASTER_RUBINE_PICKPOCKET
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Steal items from your enemy
 	EQP_STAT_Accuracy = 0
@@ -3837,6 +3877,7 @@ Rec: ABL_MASTER_RUBINE_POISONSTAB
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = 
 	EQP_STAT_Accuracy = 0
@@ -3927,6 +3968,7 @@ Rec: EQP_DANDOR_TRAINAXE
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Useless or ...?
 	EQP_STAT_Accuracy = 0
@@ -4017,6 +4059,7 @@ Rec: EQP_DANDOR_WP1
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Just an axe
 	EQP_STAT_Accuracy = 0
@@ -4107,6 +4150,7 @@ Rec: EQP_DANDOR_WP2
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Just a battleax
 	EQP_STAT_Accuracy = 0
@@ -4197,6 +4241,7 @@ Rec: EQP_DANDOR_WP3
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = It's big!
 	EQP_STAT_Accuracy = 0
@@ -4287,6 +4332,7 @@ Rec: EQP_DANDOR_WP4
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Yeah... great
 	EQP_STAT_Accuracy = 0
@@ -4377,6 +4423,7 @@ Rec: EQP_DANDOR_WP5
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Oh my!
 	EQP_STAT_Accuracy = 0
@@ -4467,6 +4514,7 @@ Rec: EQP_DANDOR_WP6
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Really a dangerous toy
 	EQP_STAT_Accuracy = 0
@@ -4557,6 +4605,7 @@ Rec: EQP_HANDOSTILLOR_AR1
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Never seen a shirt before?
 	EQP_STAT_Accuracy = 0
@@ -4647,6 +4696,7 @@ Rec: EQP_HANDOSTILLOR_AR2
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Seems to be blessed
 	EQP_STAT_Accuracy = 0
@@ -4737,6 +4787,7 @@ Rec: EQP_HANDOSTILLOR_AR3
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Is green really the color of nature?
 	EQP_STAT_Accuracy = 0
@@ -4827,6 +4878,7 @@ Rec: EQP_HANDOSTILLOR_AR4
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = For some reason only a priest may wear this.
 	EQP_STAT_Accuracy = 0
@@ -4917,6 +4969,7 @@ Rec: EQP_HANDOSTILLOR_AR5
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Protects you, right?
 	EQP_STAT_Accuracy = 0
@@ -5007,6 +5060,7 @@ Rec: EQP_HANDOSTILLOR_AR6
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Is it really that strong, or is this overrated?
 	EQP_STAT_Accuracy = 0
@@ -5097,6 +5151,7 @@ Rec: EQP_HANDOSTILLOR_TRAINSTAFF
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Useless or ...?
 	EQP_STAT_Accuracy = 0
@@ -5187,6 +5242,7 @@ Rec: EQP_HANDOSTILLOR_WP1
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Just a fighting stick
 	EQP_STAT_Accuracy = 0
@@ -5277,6 +5333,7 @@ Rec: EQP_HANDOSTILLOR_WP2
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = It's longer, so what?
 	EQP_STAT_Accuracy = 0
@@ -5367,6 +5424,7 @@ Rec: EQP_HANDOSTILLOR_WP3
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = I see a priest's staff and I want it painted black!
 	EQP_STAT_Accuracy = 0
@@ -5457,6 +5515,7 @@ Rec: EQP_HANDOSTILLOR_WP4
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Were did people "steel" this? (Drum fill)
 	EQP_STAT_Accuracy = 0
@@ -5547,6 +5606,7 @@ Rec: EQP_HANDOSTILLOR_WP5
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Holy name. Does it live up to it?
 	EQP_STAT_Accuracy = 0
@@ -5637,6 +5697,7 @@ Rec: EQP_HANDOSTILLOR_WP6
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Strong, right?
 	EQP_STAT_Accuracy = 0
@@ -5727,6 +5788,7 @@ Rec: EQP_JAKE_AR1
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = A good armor for a beginning warrior
 	EQP_STAT_Accuracy = 0
@@ -5817,6 +5879,7 @@ Rec: EQP_JAKE_AR2
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Goblins may be dumb, but they do know how to tan leather
 	EQP_STAT_Accuracy = 0
@@ -5907,6 +5970,7 @@ Rec: EQP_JAKE_AR3
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Works quite well when worn
 	EQP_STAT_Accuracy = 0
@@ -5997,6 +6061,7 @@ Rec: EQP_JAKE_AR4
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Bright as the sun, or so they say
 	EQP_STAT_Accuracy = 0
@@ -6087,6 +6152,7 @@ Rec: EQP_JAKE_AR5
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Looks great, eh?
 	EQP_STAT_Accuracy = 0
@@ -6177,6 +6243,7 @@ Rec: EQP_JAKE_AR6
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = it looks gross, but it protects its wearer well.
 	EQP_STAT_Accuracy = 0
@@ -6267,6 +6334,7 @@ Rec: EQP_JAKE_TRAINSWORD
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Useless or ...?
 	EQP_STAT_Accuracy = 0
@@ -6357,6 +6425,7 @@ Rec: EQP_JAKE_WP1
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = A weapon for a warrior fresh on the field
 	EQP_STAT_Accuracy = 0
@@ -6447,6 +6516,7 @@ Rec: EQP_JAKE_WP2
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Just a little prick, but still leathal.
 	EQP_STAT_Accuracy = 0
@@ -6537,6 +6607,7 @@ Rec: EQP_JAKE_WP3
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = A great sword for a great warrior
 	EQP_STAT_Accuracy = 0
@@ -6627,6 +6698,7 @@ Rec: EQP_JAKE_WP4
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = No enemy would dare to approach you now!
 	EQP_STAT_Accuracy = 0
@@ -6717,6 +6789,7 @@ Rec: EQP_JAKE_WP5
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Winter is coming
 	EQP_STAT_Accuracy = 0
@@ -6807,6 +6880,7 @@ Rec: EQP_JAKE_WP6
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Death is upon you!
 	EQP_STAT_Accuracy = 0
@@ -6897,6 +6971,7 @@ Rec: EQP_JEWEL_SMALLTOPAZ
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Raises protection against silence
 	EQP_STAT_Accuracy = 0
@@ -6987,6 +7062,7 @@ Rec: EQP_JEWEL_TOPAZ
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Raises protection against silence
 	EQP_STAT_Accuracy = 0
@@ -7077,6 +7153,7 @@ Rec: EQP_MARRILONA_AR1
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Just the regular fairy fashion for young girls
 	EQP_STAT_Accuracy = 0
@@ -7167,6 +7244,7 @@ Rec: EQP_MARRILONA_AR2
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = It's not easy being green.
 	EQP_STAT_Accuracy = 0
@@ -7257,6 +7335,7 @@ Rec: EQP_MARRILONA_AR3
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = It fits nicely
 	EQP_STAT_Accuracy = 0
@@ -7347,6 +7426,7 @@ Rec: EQP_MARRILONA_AR4
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = I'm too sexy for my love, love's going to leave me!
 	EQP_STAT_Accuracy = 0
@@ -7437,6 +7517,7 @@ Rec: EQP_MARRILONA_AR5
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = I'm a model, you know what I mean!
 	EQP_STAT_Accuracy = 0
@@ -7527,6 +7608,7 @@ Rec: EQP_MARRILONA_AR6
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = And I do my little turn on the catwalk!
 	EQP_STAT_Accuracy = 0
@@ -7617,6 +7699,7 @@ Rec: ITM_ANTIDOTE
 	CurePetrification = FALSE
 	CurePoison = TRUE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Poison be gone
 	EQP_STAT_Accuracy = 0
@@ -7707,6 +7790,7 @@ Rec: ITM_APPLE
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = An apple a day keeps the doctor away
 	EQP_STAT_Accuracy = 0
@@ -7765,6 +7849,97 @@ Rec: ITM_APPLE
 	rew_GainSkill4 = 0
 	rew_GainSkill5 = 0
 
+Rec: ITM_BELL
+	ABL_APCost = 0
+	ABL_HPCost = 0
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 5
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 5
+	ADDCARD_Char_Number = 0
+	Attack = 0
+	Attack_AccuracyRate = 100
+	Attack_AllowAccuracy = FALSE
+	Attack_AllowCritical = FALSE
+	Attack_AllowDodge = FALSE
+	Attack_AttackStat = Power
+	Attack_DefenseStat = Endurance
+	Attack_Desperate = FALSE
+	Attack_Element = None
+	CauseCurse = FALSE
+	CauseDeath = FALSE
+	CauseDisease = FALSE
+	CauseParalysis = FALSE
+	CausePetrification = FALSE
+	CausePoison = FALSE
+	CauseSilence = FALSE
+	CauseSleep = FALSE
+	CauseUndead = FALSE
+	CureCurse = FALSE
+	CureDisease = FALSE
+	CureParalysis = FALSE
+	CurePetrification = FALSE
+	CurePoison = FALSE
+	CureSilence = FALSE
+	CureSleep = TRUE
+	CureUndead = FALSE
+	Desc = Wake somebody up
+	EQP_STAT_Accuracy = 0
+	EQP_STAT_Endurance = 0
+	EQP_STAT_Evasion = 0
+	EQP_STAT_Intelligence = 0
+	EQP_STAT_Power = 0
+	EQP_STAT_Resistance = 0
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
+	EffectScript = 
+	EffectScript_Arg = 
+	EffectScript_External = FALSE
+	Heal = 0
+	Heal_StatPercent = Intelligence
+	Heal_Type = 
+	ITM_ACC_Dandor = TRUE
+	ITM_ACC_HandoStillor = TRUE
+	ITM_ACC_Jake = TRUE
+	ITM_ACC_Marrilona = TRUE
+	ITM_BlackMarket = FALSE
+	ITM_Combat = TRUE
+	ITM_EQP_For = 
+	ITM_Field = TRUE
+	ITM_Sellable = TRUE
+	ITM_ShopPrice = 10
+	ITM_Type = Consumable
+	ITM_WeaponAbility = FALSE
+	Revive = FALSE
+	Rew_GainAP = 0
+	SpellAni = 
+	SpellAni_Arg = 
+	SpellAni_External = FALSE
+	Stance = Cast
+	Target = 1A
+	Title = Bell
+	Type = Item
+	USE_Penalty = 0
+	Voice = 
+	rew_CreateSkill1 = FALSE
+	rew_CreateSkill2 = FALSE
+	rew_CreateSkill3 = FALSE
+	rew_CreateSkill4 = FALSE
+	rew_CreateSkill5 = FALSE
+	rew_GainSkill1 = 0
+	rew_GainSkill2 = 0
+	rew_GainSkill3 = 0
+	rew_GainSkill4 = 0
+	rew_GainSkill5 = 0
+
 Rec: ITM_FLAMEORB
 	ABL_APCost = 0
 	ABL_HPCost = 0
@@ -7797,6 +7972,7 @@ Rec: ITM_FLAMEORB
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = We don't need no water, let the ###### burn!
 	EQP_STAT_Accuracy = 0
@@ -7887,6 +8063,7 @@ Rec: ITM_MAGICDUST
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Cures paralysis
 	EQP_STAT_Accuracy = 0
@@ -7977,6 +8154,7 @@ Rec: ITM_MANDRAKE
 	CurePetrification = TRUE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Cures Petrification
 	EQP_STAT_Accuracy = 0
@@ -8067,6 +8245,7 @@ Rec: ITM_MEDICINE
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Cures "Disease"
 	EQP_STAT_Accuracy = 0
@@ -8157,6 +8336,7 @@ Rec: ITM_PANACEA
 	CurePetrification = TRUE
 	CurePoison = TRUE
 	CureSilence = TRUE
+	CureSleep = 
 	CureUndead = TRUE
 	Desc = Cures all status changes
 	EQP_STAT_Accuracy = 0
@@ -8247,6 +8427,7 @@ Rec: ITM_PHOENIX
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Revive fallen ally
 	EQP_STAT_Accuracy = 0
@@ -8337,6 +8518,7 @@ Rec: ITM_POTION
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Now this is a nice healing item
 	EQP_STAT_Accuracy = 0
@@ -8427,6 +8609,7 @@ Rec: ITM_PURELITERATURE
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Boring stories you can use to bore your enemies to sleep.
 	EQP_STAT_Accuracy = 0
@@ -8517,6 +8700,7 @@ Rec: ITM_SALVE
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = A very ancient recipe for healing
 	EQP_STAT_Accuracy = 0
@@ -8607,6 +8791,7 @@ Rec: SPECIAL_AXESMASH
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = 
 	EQP_STAT_Accuracy = 0
@@ -8697,6 +8882,7 @@ Rec: WAND_FLAME
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Burn, baby! Burn!
 	EQP_STAT_Accuracy = 0
@@ -8787,6 +8973,7 @@ Rec: WAND_FROST
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Let it go! Let it go!
 	EQP_STAT_Accuracy = 0
@@ -8877,6 +9064,7 @@ Rec: WAND_THUNDER
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Have a seat in ol' Sparkey
 	EQP_STAT_Accuracy = 0
@@ -8967,6 +9155,7 @@ Rec: WAND_TRAINING
 	CurePetrification = FALSE
 	CurePoison = FALSE
 	CureSilence = FALSE
+	CureSleep = 
 	CureUndead = FALSE
 	Desc = Minimal damange, but ....
 	EQP_STAT_Accuracy = 0

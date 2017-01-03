@@ -78,7 +78,7 @@ Rec: ITEM_WANDA
 	Slot4 = ITM_ANTIDOTE
 	Slot5 = ITM_MAGICDUST
 	Slot6 = ITM_MANDRAKE
-	Slot7 = 
+	Slot7 = ITM_BELL
 	Slot8 = 
 	Slot9 = 
 	Title = Wanda's item shop

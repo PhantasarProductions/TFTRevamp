@@ -370,11 +370,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png
     1. Music: Music/Boss/BossIntro.ogg
     1. Graphics: GFX/Chapters/2.png
@@ -1273,6 +1273,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Yannee/Cry.png
     1. Graphics: GFX/BoxText/Portret/Yannee/General.png
     1. Graphics: GFX/BoxText/Portret/Yannee/Tears.png
+- http://www.freesfx.co.uk
+    1. Audio: Audio/SpellAni/Thunder/Spark.ogg
+    1. Audio: Audio/SpellAni/Thunder/ThunderStrike.ogg
 
 
 The LAURA II engine is licensed under the terms of the GNU GPL 3
