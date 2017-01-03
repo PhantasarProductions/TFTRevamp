@@ -199,6 +199,10 @@ function ShowSpellList(ch,psizes)
    -- Set up
    local sizes = ({['table']=psizes, ['string']=mysplit(psizes,",") })[type(psizes)]
    local c, allowcast
+   local mx,my = MouseCoords()
+   local moved = oldsslmx~=mx or oldsslmy~=my
+   oldsslmx = mx
+   oldsslmy = my
    for i=1,#sizes do sizes[i] = Sys.Val(sizes[i]) end
    if oldsslch~=ch then SSLP=1 SSLPG=1 oldsslch=ch end  
    SetFont('Stats')
@@ -222,6 +226,7 @@ function ShowSpellList(ch,psizes)
    for i,k,a in iSpell(ch,ablpage[ch][SSLPG]) do
        local y=(i+1)*fonts.Stats[2]
        sa=a; sk=k
+       if moved and my-sizes[2]>y and my-sizes[2]<y+fonts.Stats[2] then SSLP=i end
        if i==SSLP then        ck=k       ca=a        c = {255,180,0} else c = {255,255,255} end
        if heroabl[ch][k] then
           -- show spell
@@ -234,7 +239,7 @@ function ShowSpellList(ch,psizes)
              DarkText(abl.ABL_APCost,sizes[3]-10,y,1,2,0,180,255)
              allowcast=RPG.Points(ch,"AP").Have>=Sys.Val(abl.ABL_APCost)
           end   
-          if (INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_SPACE)==1 or joyhit(confirm)) and allowcast and i==SSLP then Var.D('$SELECTEDABILITY',k) end  
+          if (INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_SPACE)==1 or joyhit(confirm) or mousehit(1)) and allowcast and i==SSLP then Var.D('$SELECTEDABILITY',k) end  
        else
           DarkText('---',10,y,0,2,c[1],c[2],c[3])
           if i==SSLP then DarkText("Hold H to see unlock info",sizes[3]-25,y,1,2,255,180,0) end
@@ -308,11 +313,14 @@ end
 
 function ItemShowList(showfilter,enablefilter,char,psizes)
    local sizes = ({['table']=psizes, ['string']=mysplit(psizes,",") })[type(psizes)]
-   local mx,my = GetMouse(); mx=sizes[1]+mx; my=sizes[2]+my
+   local mx,my = GetMouse(); my=my-sizes[2]-30 -- mx=sizes[1]+mx; 
    local scrollid = "I_"..showfilter.."_"..enablefilter.."_"..char
    local col = {[true] = {[true]={255,180,0},[false]={255,255,255}},
                          [false]={[true]={100,100,100},[false]={70,70,70}}}
    local titm
+   local moved = oldsslmx~=mx or oldsslmy~=my
+   oldsslmx = mx
+   oldsslmy = my
    pos[scrollid] = pos[scrollid] or 1
    FilterShownItems(showfilter,char)
    FilterEnabledItems(showfilter,char)
@@ -332,11 +340,12 @@ function ItemShowList(showfilter,enablefilter,char,psizes)
    local y,c
    for idx,itm in ipairs(showitems[showfilter..(char or "")]) do       
        y = idx*25
+       if moved and mx>Sys.Val(sizes[1]) and mx<Sys.Val(sizes[3])+Sys.Val(sizes[1]) and my>y and my<y+25 then pos[scrollid]=idx end
        if mx>0 and mx<tonumber(sizes[3]) and my>=y and my<=y-24 and INP.MouseH(1)==1 then
           if y==pos[scrollid] then
              Var.D("$SELECTEDITEM",itm)
           else
-             y=post[scrollid]
+             y=pos[scrollid]
           end      
        end   
        c = col[enableditems[showfilter..(char or "")][itm]==true][pos[scrollid]==idx]
@@ -348,8 +357,8 @@ function ItemShowList(showfilter,enablefilter,char,psizes)
        if showfilter=="Sellable" then DarkText(items[itm].ITM_SellPrice.." shilders",Sys.Val(sizes[3])*.75,y,1,0,0,180,255) end
    end
    EndScroller(scrollid)
-   if (INP.KeyH(KEY_DOWN)==1 or joyhit(joydown)) and pos[scrollid]<#showitems[showfilter..(char or "")]  then pos[scrollid] = pos[scrollid] + 1 end 
-   if (INP.KeyH(KEY_UP  )==1 or joyhit(joyup  )) and pos[scrollid]>                                   1  then pos[scrollid] = pos[scrollid] - 1 end 
+   if (INP.KeyH(KEY_DOWN)==1 or joyhit(joydown) or mousehit(1)) and pos[scrollid]<#showitems[showfilter..(char or "")]  then pos[scrollid] = pos[scrollid] + 1 end 
+   if (INP.KeyH(KEY_UP  )==1 or joyhit(joyup  ) or mousehit(1)) and pos[scrollid]>                                   1  then pos[scrollid] = pos[scrollid] - 1 end 
    if (INP.KeyH(KEY_SPACE)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_ENTER)==1 or joyhit('CONFIRM')) then 
       Var.D("$SELECTEDITEM",showitems[showfilter..(char or "")][pos[scrollid]])
       CSay("Selected: "..Var.C('$SELECTEDITEM')) 
