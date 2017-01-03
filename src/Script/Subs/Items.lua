@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.01.02
+  Version: 17.01.03
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -189,7 +189,7 @@ function TeachSkill(pch,pskill)
     CSay('Request to teach: '..myskill.."     to "..ch)
     if heroabl[ch][myskill] then CSay('= Already has this myskill'); return end
     heroabl[ch][myskill] = true
-    myskills[ch][myskill]={} -- Just must contain a table... Nothing more :P
+    skills[ch][myskill]={} -- Just must contain a table... Nothing more :P
     Var.D('$MASTERABLCODE',myskill)
     Done('&TEACH.SKILL.OK')
     return true

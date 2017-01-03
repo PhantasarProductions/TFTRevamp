@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 17.01.01
+  Version: 17.01.03
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -260,4 +260,13 @@ end
 
 function SETHP(ch,value)
   SETCHARPOINTS(ch,"HP",value)
+end
+
+function SETSTAT(ch,stat,value)
+  if RPG.CharExists(ch)==0 then
+     Console.Write("? Character does not exist",255,0,0)
+     return
+  end
+  RPG.DefStat(ch,stat,Sys.Val(value))
+  CSay(ch.."."..stat.."=\""..Sys.Val(value).."\"")   
 end
