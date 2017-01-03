@@ -70,7 +70,7 @@ function KillAward(myfoe)
     if myfoe.data.cash and myfoe.data.cash>0 and (not itemgiven) then
        local acash = math.ceil(myfoe.data.cash * ({2,1,.5})[skill])
        local shilders = "shilders"; if acash==1 then shilders='shilder' end
-       ChMiniMsg(myfoe.tag,"Dropped "..acash.." "..shilders)
+       ChMiniMsg(myfoe.tag,"Dropped "..acash.." "..shilders,0,180,255)
        MasterAllInc('Rubine','RubinePoints')
     end
     -- Bodycount
