@@ -1,6 +1,6 @@
 --[[
   TheEnd.lua
-  Version: 17.01.04
+  Version: 17.01.05
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -92,6 +92,10 @@ function fflow.Victory()
        if tag~="" then
           vit = RPG.Points(tag,"VIT")
           hp  = RPG.Points(tag,"HP")
+          if hp.Have==0 then 
+             hp.Have=1
+             exprate[tag] = 0 
+          end
           if vit.Have>0 and hp.Have<hp.Maximum then 
              hp.Have = hp.Have + math.ceil(hp.Maximum/(200/skill))
              vit.Have = vit.Have - 1
@@ -102,6 +106,9 @@ end
 
 function fflow.Defeat()
    DestroyAllFoes() -- Must be put in in a more proper way later. 
+   NeutralAllBuffs()
+   local defact = CVVN("$COMBAT.LOSE") or "GameOver";
+   (Defeat[defact] or function() Sys.Error("I do not not defeat act '"..defact.."'") end)()
 end
 
 -- @IF IGNORE

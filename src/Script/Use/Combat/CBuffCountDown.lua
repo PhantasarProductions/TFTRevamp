@@ -1,6 +1,6 @@
 --[[
   CBuffCountDown.lua
-  Version: 17.01.04
+  Version: 17.01.05
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -59,7 +59,7 @@ function BuffCountDown()
 end
 
 function NeutralAllBuffs()
-     for ch in iParty() do
+     for ch in EachParty() do
          local stats = mysplit(RPGStat.StatFields(ch),";")
          for stat in each(stats) do
              if prefixed(stat,"BUFF_") then

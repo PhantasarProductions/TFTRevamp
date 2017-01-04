@@ -1,5 +1,5 @@
 --[[
-  Game Over.lua
+  AAA_Default.lua
   Version: 17.01.05
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -34,30 +34,31 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+Defeat = {
 
--- Reminder to self
--- Music Music/Game Over/Going-Different-Ways.ogg
+       GameOver = function() MS.Load('GO','Script/Flow/Game Over.lua'); LAURA.Flow('GO') end,
+       
+       Respawn = function ()
+                      if not CVVN("$SYS.RESPAWN") then return Defeat.GameOver() end
+                      if CVV('$SYS.RESPAWN')=='' then return Defeat.GameOver() end
+                      local resfunction = loadstring(CVV('$SYS.RESPAWN'))
+                      local respawn = resfunction()
+                      if not respawn then CSay(serialize('respawn',respawn)) Sys.Error('Illegal respawn data') end
+                      LoadMap(respawn.map)
+                      GoToLayer(respawn.layer,'Respawn')
+                      MapText('RESPAWN')
+                      LAURA.Flow('FIELD')
+                      for ch in EachParty() do
+                          local hp = RPG.Points(ch,'HP')
+                          if skill==1 then hp.Have=hp.Maximum else hp.Have=1 end
+                          if skill==3 then RPG.Points(ch,'AP').Have=0 end
+                      end
+                      if skill==2 then
+                         Var.D('%CASH',CVV('%CASH')/2)
+                      elseif skill==3 then
+                         Var.D('%CASH',CVV('%CASH')/6)
+                      end   
+                 end
 
-function GALE_OnLoad()
-   ori = Image.GrabScreen()
-   Music('Game Over/Going-Different-Ways.ogg')
-   gameover = Image.Load('GFX/Logo/Game Over.png')
-   Image.HotCenter(gameover)
-   alpha = 0
-end   
 
-function MAIN_FLOW()
-   white()
-   Image.SetAlphaPC(100)
-   Image.Show(ori)
-   Image.SetAlphaPC(alpha)
-   Image.Tile('PCS_BACK')
-   Image.Show(gameover,Center_X,Center_Y)
-   if alpha<100 then alpha = alpha + .1 end
-   for i=1,255 do
-       if INP.KeyH(i)==1 or (i<3 and mousehit(i)) or (i<16 and joyhit(i)) then Sys.Bye() end
-   end
-   Flip()
-end   
-   
-   
+}

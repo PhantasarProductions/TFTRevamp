@@ -110,6 +110,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Flow/Combat.lua
     1. Script: Script/Flow/Field.lsv
     1. Script: Script/Flow/Field.lua
+    1. Script: Script/Flow/Game Over.lua
     1. Script: Script/Flow/Master.lsv
     1. Script: Script/Flow/Master.lua
     1. Script: Script/Flow/Menu.lsv
@@ -321,6 +322,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/CDrawFighters.lua
     1. Script: Script/Use/Combat/CDrawScreen.lua
     1. Script: Script/Use/Combat/CVoice.lua
+    1. Script: Script/Use/Combat/Defeat/AAA_Default.lua
     1. Script: Script/Use/Combat/DestroyAllFoes.lua
     1. Script: Script/Use/Combat/Flow/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.lua
     1. Script: Script/Use/Combat/Flow/Execution.lua
@@ -383,8 +385,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png
@@ -399,8 +401,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Logo/End Of Prologue.hot
     1. Graphics: GFX/Logo/End Of Prologue.png
-    1. Graphics: GFX/Logo/Phantasar Productions.png
+    1. Graphics: GFX/Logo/Game Over.png
     1. Music: Music/Sys/Silence.ogg
+    1. Graphics: GFX/Logo/Phantasar Productions.png
     1. Graphics: GFX/Logo/The End.png
     1. Graphics: GFX/Logo/Title.png
     1. Graphics: GFX/Menu Icons/Buy.png

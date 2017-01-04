@@ -1,7 +1,7 @@
 --[[
   Field.lua
-  Version: 16.12.29
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.04
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -740,6 +740,7 @@ function RandomEncounter()
    if num>max then num=max end
    ClearCombatData()
    Var.D("$COMBAT.ARENA",arena)
+   Var.D("$COMBAT.LOSE","Respawn")
    assert(#monstertable>0,"I cannot run a Random Encounter without any monsters set")
    for i=1,num do
        Var.D("$COMBAT.FOE_"..i,monstertable[rand(1,#monstertable)]) 

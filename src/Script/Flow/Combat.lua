@@ -1,7 +1,7 @@
 --[[
   Combat.lua
-  Version: 16.12.12
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.05
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -206,12 +206,12 @@ end
 Defeated = {}
 
 function Defeated.Hero()
-     if CVV("&COMBAT.RANDOMENCOUNTER") then
+     --if CVV("&COMBAT.RANDOMENCOUNTER") then
         -- Go back to the last inn or spawning point
-        Sys.Error("Respawn not scripted yet")
-     else
-        flow = "GameOver"
-     end   
+        --Sys.Error("Respawn not scripted yet")
+     --else
+        flow = "Defeat"
+     --end   
 end
 
 function Defeated.Foe()

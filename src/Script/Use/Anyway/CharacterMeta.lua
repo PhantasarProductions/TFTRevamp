@@ -2,7 +2,7 @@
 **********************************************
   
   CharacterMeta.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.16
+version: 17.01.05
 ]]
 CharacterMeta = {
 
@@ -150,6 +150,7 @@ function IncSkill(ch,num,points)
       if RPG.Points(ch,"SK_LVL_"..num).Have==RPG.Points(ch,"SK_LVL_"..num).Maximum then RPG.Points('SK_EXP_'..num).Maximum=0 end
       RPG.IncStat(ch,"POWERUP_"..CharacterMeta[ch]['askillup'..num][1],CharacterMeta[ch]['askillup'..num][2])
       if charmsg then charmsg(ch,CharacterMeta[ch]['skill'..num],0,180,255) charmsg(ch,'Level up!',0,180,255) end
+      if exprate then exprate[ch] = exprat[ch] + (RPG.Points(ch,"SK_LVL_"..num).Have/(100*skill)) end
    end   
 end
 

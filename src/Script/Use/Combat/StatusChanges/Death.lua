@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 17.01.04
+  Version: 17.01.05
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -43,7 +43,7 @@ function KillAward(myfoe)
     -- Experience
     for i=0,3 do  
         local ch = RPG.PartyTag(i)
-        if ch~="" and RPG.Stat(ch,'Level')<CVV('%LEVELCAP') then
+        if ch~="" and RPG.Stat(ch,'Level')<CVV('%LEVELCAP') and RPG.Points(ch,'HP').Have>0 then
            local rate = exprate[ch] or 1
            local get = (myfoe.exp or 1)*(rate)
            get = math.ceil(get)
