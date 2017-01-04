@@ -2,7 +2,7 @@
 **********************************************
   
   Marrilona.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.11.20
+version: 17.01.04
 ]]
 
 -- abl_hero_jake_2ps = {5},abl_hero_jake_3ps={25},abl_hero_jake_4ps={50},abl_hero_jake_berserk={10,5}
@@ -44,6 +44,8 @@ version: 16.11.20
                    skill4 = "Fairy Water Magic",
                    skill5 = "Fairy Earth Magic",
 ]]
+
+local fullversion = JCR6.Exists('ID/ID.Data.Full')==1
 
 local r = {
                  ["1. Level 1"]  = { 
@@ -61,7 +63,9 @@ local r = {
           }
           
 if fullveresion then -- That's right Marrilona will not get her level #2 and level #3 spells unless you have the full version of the game.          
-   r["2. Level 2"] = {}
+   r["2. Level 2"] = {
+                                       abl_hero_marrilona_permanence = {25,25,25,25,25}
+                     }
    r["3. Level 3"] = {}
 end
              

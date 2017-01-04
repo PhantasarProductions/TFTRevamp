@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.03
+version: 17.01.04
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
@@ -42,6 +42,7 @@ ret = {
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
+	["BUFF_Endurance"] = 25,
 	["Desc"] = "Raises endurance a little",
 	["Heal_StatPercent"] = "Intelligence",
 	["ITM_ACC_Dandor"] = true,

@@ -1,7 +1,7 @@
 --[[
-  EQP_JEWEL_TOPAZ.lua
+  CBuffCountDown.lua
   Version: 17.01.04
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,28 +34,26 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-ret = {
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "Raises protection against silence",
-	["EQP_STAT_SR_Silence"] = 50,
-	["Heal_StatPercent"] = "Intelligence",
-	["ITM_ACC_HandoStillor"] = true,
-	["ITM_ACC_Jake"] = true,
-	["ITM_ACC_Marrilona"] = true,
-	["ITM_BlackMarket"] = true,
-	["ITM_Combat"] = true,
-	["ITM_Field"] = true,
-	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Accesoiry",
-	["Stance"] = "Cast",
-	["Target"] = "1F",
-	["Title"] = "Topaz",
-	["Type"] = "Item"}
+function BuffCountDownDefault(ch)
+         local stats = mysplit(RPGStat.StatFields(ch),";")
+         for stat in each(stats) do
+             if prefixed(stat,"BUFF_") then
+                if     RPG.Stat(ch,stat)>0 then RPG.IncStat(ch,stat,-1)
+                elseif RPG.Stat(ch,stat)<0 then RPG.IncStat(ch,stat, 1) end
+             end
+         end    
+end
 
-return ret
-
--- This file is an automatically generated file!
-
+function BuffCountDown()
+     for tag,char in pairs(fighterbytag) do
+         local altquery     
+         for st,stdata in pairs(char.statuschanges or {}) do
+             if stdata.AltBuffCountDown then
+                altquery = altquery or {}
+                altquery[#altquery+1]=stdata.AltBuffCountDown
+             end
+         end
+         altquery = altquery or {BuffCountDownDefault}
+         for cd in each(altquery) do cd(tag) end
+     end      
+end

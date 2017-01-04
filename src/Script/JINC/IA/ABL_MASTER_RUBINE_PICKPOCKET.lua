@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_RUBINE_PICKPOCKET.lua
-  Version: 17.01.03
+  Version: 17.01.04
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================

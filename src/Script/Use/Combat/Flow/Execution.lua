@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.01.03
+  Version: 17.01.04
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -85,6 +85,24 @@ function PerformAction(act,group,i)
      -- Attack
      if act.Attack and act.Attack>0 then effect=effect or Attack(act,group,i,nextact) end
      -- Put on buffs
+     for sn,value in pairs(act) do
+         if prefixed(sn,"BUFF_") then
+            CSay('Buff request found! '..sn..' '..value.."%")
+            local cval = RPG.SafeStat(myfighter.tag,sn)
+            local oval = RPG.SafeStat(myfighter.tag,"BASE_"..right(sn,#sn-5))
+            local nval = oval * (value/100)
+            local ok
+            ok = (nval<0 and cval>0) or (cval<0 and nval>0) or (cval<=0 and nval<0 and cval>nval) or (cval>=0 and nval>0 and cval<nval)         
+            -- CSay(serialize('ok',ok)..serialize('nval',nval)..serialize('cval',cval))   
+            if ok then 
+               RPG.SetStat(myfighter.tag,sn,nval)
+               local d=value.."%"
+               if value > 0 then d = "+"..d end
+               charmsg(myfighter.tag,right(sn,#sn-5).." "..d,255*bool2int(value<0),255*bool2int(value>0),0)
+               effect=true
+            end     
+         end
+     end
      -- Scripted stuff
      if act.EffectScript and act.EffectScript~="" then
         if act.EffectScript_External then

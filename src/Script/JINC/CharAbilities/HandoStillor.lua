@@ -2,7 +2,7 @@
 **********************************************
   
   HandoStillor.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,8 +32,10 @@
   
  **********************************************
  
-version: 16.11.20
+version: 17.01.04
 ]]
+
+local fullversion = JCR6.Exists('ID/ID.Data.Full')==1
 
 local r = {
                  ["1. Level 1"]  = {

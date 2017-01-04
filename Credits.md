@@ -186,6 +186,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_HUMAN.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FLAME.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HEAL.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PERMANENCE.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PROTECT.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_SPLASH.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_REJUVENATE.lua
@@ -313,6 +314,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/AltArena/AAA_Algemeen.lua
     1. Script: Script/Use/Combat/AltArena/PathOfMagic.lua
     1. Script: Script/Use/Combat/CAttack.lua
+    1. Script: Script/Use/Combat/CBuffCountDown.lua
     1. Script: Script/Use/Combat/CCharacterMessage.lua
     1. Script: Script/Use/Combat/CCompileFoes.lua
     1. Script: Script/Use/Combat/CDrawFighters.lua
@@ -341,6 +343,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
     1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
     1. Script: Script/Use/Combat/StatusChanges/Paralysis and Sleep.lua
+    1. Script: Script/Use/Combat/StatusChanges/Permanence.lua
     1. Script: Script/Use/Combat/StatusChanges/Poison and Disease.lua
     1. Script: Script/Use/Linkers/AchievementLinker.lua
     1. Script: Script/Use/Linkers/AlternateInputLinker.lua
@@ -379,8 +382,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png

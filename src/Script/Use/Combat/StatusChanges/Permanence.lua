@@ -1,7 +1,7 @@
 --[[
-  EQP_JEWEL_TOPAZ.lua
+  Permanence.lua
   Version: 17.01.04
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,28 +34,35 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-ret = {
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "Raises protection against silence",
-	["EQP_STAT_SR_Silence"] = 50,
-	["Heal_StatPercent"] = "Intelligence",
-	["ITM_ACC_HandoStillor"] = true,
-	["ITM_ACC_Jake"] = true,
-	["ITM_ACC_Marrilona"] = true,
-	["ITM_BlackMarket"] = true,
-	["ITM_Combat"] = true,
-	["ITM_Field"] = true,
-	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Accesoiry",
-	["Stance"] = "Cast",
-	["Target"] = "1F",
-	["Title"] = "Topaz",
-	["Type"] = "Item"}
+-- @IF IGNORE
+local StatusChanges = {}
+-- @FI
 
-return ret
 
--- This file is an automatically generated file!
 
+-- The routine that makes an enemy oversoul is in FoeInput.lua
+
+StatusChanges.Permanence = {
+
+      
+
+      DrawFighter = function(ch)
+      end   ,
+
+      AltBuffCountDown = function(ch)
+         local stats = mysplit(RPGStat.StatFields(ch),";")
+         for stat in each(stats) do
+             if prefixed(stat,"BUFF_") then
+                local s = RPGStat.Stat(ch,stat)
+                if s<0 and (not prefixed(ch,"FOE_")) and skill==1 then RPGStat.IncStat(ch,stat,1) 
+                elseif s<0 and (not prefixed(ch,"FOE_")) and skill==2 and rand(1,5)==1 then RPGStat.IncStat(ch,stat,1) end                  
+             end
+         end
+      end      
+
+}
+
+
+-- @IF IGNORE
+return StatusChanges
+-- @FI

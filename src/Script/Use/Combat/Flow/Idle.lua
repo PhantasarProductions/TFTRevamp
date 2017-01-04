@@ -1,6 +1,6 @@
 --[[
   Idle.lua
-  Version: 17.01.03
+  Version: 17.01.04
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -51,6 +51,7 @@ function RemoveFirstCard()
     for i,_ in pairs(cards) do if i>max then max=i end end
     for i=1,max do cards[i] = cards[i] or {} end
     table.remove(cards,1)
+    BuffCountDown()
 end
 
 function fflow.idle()
