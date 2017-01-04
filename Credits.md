@@ -87,6 +87,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - Eric Matyas
     1. Music: Music/Dungeon/Invasion-of-the-Giant-Disco-Ants_Looping.ogg
     1. Music: Music/Dungeon/Moonlit-Secrets_Looping.ogg
+    1. Music: Music/Game Over/Going-Different-Ways.ogg
 - GR-Sites
     1. Audio: Audio/Dungeon/FallingDown.ogg
     1. Graphics: gfx/Worldmap/back.png
@@ -381,25 +382,25 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png
-    1. Music: Music/Boss/BossIntro.ogg
-    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
-    1. Music: Music/Sys/Silence.ogg
     1. Graphics: GFX/Chapters/4.png
     1. Graphics: GFX/Combat/End/Game Over.png
     1. Graphics: GFX/Combat/End/YouWin.png
     1. Graphics: GFX/Loading/Graphic.png
     1. Graphics: GFX/Loading/Saving.png
+    1. Music: Music/Boss/BossIntro.ogg
+    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Logo/End Of Prologue.hot
     1. Graphics: GFX/Logo/End Of Prologue.png
     1. Graphics: GFX/Logo/Phantasar Productions.png
+    1. Music: Music/Sys/Silence.ogg
     1. Graphics: GFX/Logo/The End.png
     1. Graphics: GFX/Logo/Title.png
     1. Graphics: GFX/Menu Icons/Buy.png
