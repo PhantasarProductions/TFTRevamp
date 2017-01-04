@@ -1,7 +1,7 @@
 --[[
   CDrawFighters.lua
-  Version: 16.12.21
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.04
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -107,10 +107,11 @@ function DrawFighter(g,i)
         if skill~=3 then
            Image.Rect(bx,chdata.y-25,bw,25)
            color(180,255,0)
-           -- if skill==2 and (not bestiary[chdata.file]) then
-           -- else
+            if skill==2 and (not bestiary[upper(chdata.fidtag)]) and prefixed(chdata.tag,'FOE_') then
+              DarkText('?',bx+(bw/2),chdata.y-12,2,2,rand(0,255),rand(0,255),rand(0,255))
+            else
               Image.Rect(bx,chdata.y-25,(hp/hpm)*bw,25)    
-           -- end
+            end
         end  
      end
 end
