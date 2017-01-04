@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.03
+version: 17.01.04
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
@@ -77,7 +77,7 @@ function Attack(act,g,i,na)
     -- Init
     local ttag = Fighters[g][i].tag
     local atag = na.executor.tag
-    local atk = RPG.Stat(atag,"END_"..act.Attack_AttackStat)
+    local atk = RPG.Stat(atag,"END_"..act.Attack_AttackStat) * ((act.Attack or 100)/100)
     local def = 0 
     if act.Attack_DefenseStat~="None" then def = RPG.Stat(ttag,"END_"..act.Attack_DefenseStat) end
     -- Defense modifier based on difficulty settings
