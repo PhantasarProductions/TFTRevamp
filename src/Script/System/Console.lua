@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 17.01.03
+  Version: 17.01.04
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -270,3 +270,16 @@ function SETSTAT(ch,stat,value)
   RPG.DefStat(ch,stat,Sys.Val(value))
   CSay(ch.."."..stat.."=\""..Sys.Val(value).."\"")   
 end
+
+function GIVESTATUS(ch,status)
+   -- SetStatus(ch,st,dontannounce)
+  if RPG.CharExists(ch)==0 then
+     Console.Write("? Character does not exist",255,0,0)
+     return
+  end
+  if upper(LAURA.GetFlow())~="COMBAT" then     
+     Console.Write("? This routine can only be used in combat",255,0,0)
+     return
+  end   
+  MS.Run('COMBAT','SetStatus',ch..";"..status)
+end  

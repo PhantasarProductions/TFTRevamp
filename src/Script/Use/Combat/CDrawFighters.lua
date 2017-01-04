@@ -112,6 +112,10 @@ function DrawFighter(g,i)
             else
               Image.Rect(bx,chdata.y-25,(hp/hpm)*bw,25)    
             end
+            local ty = chdata.y
+            for st,_ in spairs(chdata.statuschanges or {}) do
+                if st~="Oversoul" then DarkText(st,bx,ty); ty=ty+25 end
+            end           
         end  
      end
 end

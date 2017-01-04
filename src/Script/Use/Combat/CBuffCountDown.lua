@@ -57,3 +57,14 @@ function BuffCountDown()
          for cd in each(altquery) do cd(tag) end
      end      
 end
+
+function NeutralAllBuffs()
+     for ch in iParty() do
+         local stats = mysplit(RPGStat.StatFields(ch),";")
+         for stat in each(stats) do
+             if prefixed(stat,"BUFF_") then
+               RPG.DefStat(ch,stat,0)
+             end
+         end
+     end    
+end

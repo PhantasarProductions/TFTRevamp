@@ -1,6 +1,6 @@
 --[[
   TheEnd.lua
-  Version: 17.01.03
+  Version: 17.01.04
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -79,6 +79,7 @@ function fflow.Victory()
          MS.Run('ACH','AchByVictory')
          LAURA.Flow(CVVN("$COMBAT.BACKCHAIN") or "FIELD")    
          DestroyAllFoes()
+         NeutralAllBuffs()
       end
    end   
    Image.ScalePC(youwinvalue,100)

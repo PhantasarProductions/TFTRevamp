@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 17.01.03
+  Version: 17.01.04
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -126,6 +126,9 @@ StatusChanges.Death = {
                                fighters.Foe[mychar.id] = nil
                             end   
                          else
+                           local itag = "DEATH TO "..ch                           
+                           Image.LoadNew(itag,"GFX/Combat/Fighters/Hero/"..ch..".dead.png"); Image.Hot(itag,Image.Width(itag)/2,Image.height(itag))
+                           Image.Show(itag,mychar.x,mychar.y)                            
                          end 
                        end,   
          DrawReplace = true,                                          

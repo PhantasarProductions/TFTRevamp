@@ -381,11 +381,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: GFX/Chapters/1.png
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
@@ -741,6 +741,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Attack.1.png
     1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Attack.2.png
     1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Cast.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Dead.png
     1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Idle.Frames
     1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Victory.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Victory.png
@@ -748,19 +749,27 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Attack.1.png
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Attack.2.png
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Cast.png
+    1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Dead.png
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Idle.Frames
+    1. ???: GFX/Combat/Fighters/Hero/HandoStillor.Victory (Autosaved).piko-png
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Victory.png
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.piko
+    1. Graphics: GFX/Combat/Fighters/Hero/Jake.dead.piko
+    1. Graphics: GFX/Combat/Fighters/Hero/Jake.dead.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Attack.1.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Attack.2.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Cast.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Idle.Frames
+    1. ???: GFX/Combat/Fighters/Hero/Jake_Fairy.Victory (Autosaved).piko-png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Victory.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.dead.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human (Autosaved).piko
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Attack.1.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Attack.2.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Cast.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Idle.Frames
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Victory.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.dead.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Attack.1.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Attack.2.png
