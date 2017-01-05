@@ -1,7 +1,7 @@
 --[[
   Synchronize.lua
-  Version: 16.08.12
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.05
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,4 +34,9 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
---[[ Future Synchronize Script ]]
+
+
+function Synchronize()
+   MS.Load("SYNC",'Script/Subs/Achievements.lua')
+   MS.Run('SYNC','Synchronize')
+end   

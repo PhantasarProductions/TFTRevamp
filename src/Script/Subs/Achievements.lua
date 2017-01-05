@@ -1,7 +1,7 @@
 --[[
   Achievements.lua
-  Version: 16.12.09
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.05
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -81,12 +81,34 @@ function GALE_OnLoad()
    -- The next table will only work when the required networks are loaded. If not, nothing will be added to it.
    Netwerk = {}
    -- @IF *GAMEJOLT
-   Netwerk.GameJolt = { link = GameJoltAchievements, award =   GJ.Award }
+   Netwerk['Game Jolt'] = { link = GameJoltAchievements, award =   GJ.Award }
    -- @FI
    -- @IF *ANNA
-   Netwerk.Anna     = { link = AnnaAchievements,     award = Anna.Award }
+   Netwerk.Anna         = { link = AnnaAchievements,     award = Anna.Award }
    -- @FI
    Validate()
+end
+
+
+
+function Synchronize()
+    for t,_ in spairs(Achieved) do
+        for key,dat in spairs(Netwerk) do
+            CSay(" = Synchronzing '"..achievements[t].Title.."' on "..key)
+            Console.Show()
+            Console.Flip()
+            dat.award(dat.link[tag])
+        end
+    end
+    CSay('All Done - Hit any key to close this program')
+    Console.Show()
+    Console.Flip()
+    repeat
+        INP.Grab()
+        for i=1,255 do 
+            if INP.KeyH(i)==1 then os.exit() end
+        end
+    until false        -- Dirty code straight from hell this line, but it works... OK?          
 end
 
 

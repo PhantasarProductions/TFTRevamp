@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 17.01.02
+Version: 17.01.05
 End Rem
 
 Strict
@@ -34,7 +34,7 @@ Import tricky_Units.ListDir
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - LoadGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","17.01.02"
+MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","17.01.05"
 
 afr_InpCol 0,27,0,0,155,0
 afr_WinCol 0,255,0,0,25,0
@@ -87,8 +87,47 @@ Function LoadGame(G:TGadget)
 End Function
 	
 
-Function Synchronize(G:TGadget)
+Function TrueSynchronize(U$="",S$="")
+	If (Not cursg) And (Not (U And S))  Return
+	Local lgi:TIni = New TIni
+	lgi.D "Resource",Resource+"TFT.jcr"
+	lgi.D "Title","The Fairy Tale REVAMPED"
+	lgi.D "CodeName","TFTREVAMP"
+	?MacOS
+	lgi.add "Resource",ExtractDir(ExtractDir(AppFile))+"/Resources/TFT.JCR"
+	lgi.D "MacReturn",ExtractDir(ExtractDir(ExtractDir(AppFile)))
+	?Not MacOS
+	lgi.add "Resource",AppDir+"/TFT.JCR"
+	?
+	If u And S
+		lgi.d "LoadGame",savedir+"/"+U+"/"+S
+	Else
+		lgi.d "LoadGame",cursg.file
+	EndIf		
+	lgi.d "StartScript","Synchronize.lua"
+	lgi.d "StartUpFunction","Synchronize"
+	lgi.d "TITLE","The Fairy Tale REVAMPED"
+	Mode2Ini lgi
+	lgi.d "screen.fullscreen","false"
+	SaveIni LAURA2StartFile, lgi
+	?Not MacOS
+	gadgets.get("win").g.setshow False
+	?
+	?MacOS
+	Local app$ = ExtractDir(ExtractDir(AppFile))+"/Resources/LAURA2.app"
+	If Not FileType(app) Notify "Trouble launching LAURA II~n~n"+App
+	system_ "open ~q"+app+"~q"
+	?Win32
+	system_ "LAURA2.exe"
+	?Linux
+	system_ "./LAURA2"
+	?
+	gadgets.get("win").g.setshow True			
 End Function
+
+Function Synchronize(G:TGadget)
+	TrueSynchronize
+endfunction	
 
 Function ImportGame(G:TGadget)
 	Notify "Import allows you to copy savegame files from your friends to be added to your savegame list.~n~nPlease note, if the imported savegame contains any data to allow it to contact Anna or Game Jolt or any other network, it will be disabled, meaning you can play the game from these files, but you cannot contact any achievements sites with them any more."
