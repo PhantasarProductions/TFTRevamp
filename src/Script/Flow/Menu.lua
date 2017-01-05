@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 17.01.03
+  Version: 17.01.05
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -357,7 +357,18 @@ function features.Items(x,y,w,h)
                         local pch = ch
                         if prefixed(ch,"Jake") then pch="Jake" end
                         if item['ITM_ACC_'..pch] then eqChange('Acc',myitem,item) end
-                      end                   
+                      end,
+          Consumable = function(ch,myitem,item)
+                          if not item.ITM_Field then return end
+                          local effect
+                          local hp = RPG.Points(ch,'HP')
+                          if hp.Have<hp.Maximum then
+                             local heal = ItemHeal(ch,item); effect = effect or heal>0
+                          end   
+                          if effect then
+                             RemoveItem(myitem,1)
+                          end                             
+                       end                               
     })[item.ITM_Type] or Nothing)(ch,myitem,item)
 end
 
