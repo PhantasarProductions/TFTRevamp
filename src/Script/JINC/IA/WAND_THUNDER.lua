@@ -1,6 +1,6 @@
 --[[
   WAND_THUNDER.lua
-  Version: 17.01.04
+  Version: 17.01.05
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -35,6 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AllowAccuracy"] = true,
@@ -66,7 +67,7 @@ ret = {
 	["Type"] = "Item",
 	["Voice"] = "Lightning",
 	["rew_CreateSkill1"] = true,
-	["rew_GainSkill1"] = 1}
+	["rew_GainSkill1"] = 5}
 
 return ret
 

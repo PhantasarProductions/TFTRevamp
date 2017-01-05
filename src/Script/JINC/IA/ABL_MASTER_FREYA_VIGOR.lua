@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_FREYA_VIGOR.lua
-  Version: 17.01.04
+  Version: 17.01.05
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

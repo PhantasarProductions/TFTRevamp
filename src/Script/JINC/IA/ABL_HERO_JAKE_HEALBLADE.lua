@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  EQP_HANDOSTILLOR_WP5.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  ABL_HERO_JAKE_HEALBLADE.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -35,22 +35,43 @@
 version: 17.01.05
 ]]
 ret = {
+	["ABL_APCost"] = 75,
+	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 50,
+	["ADDCARD_Action_Number"] = 3,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Holy name. Does it live up to it?",
-	["EQP_STAT_Intelligence"] = 10,
-	["EQP_STAT_Power"] = 5,
+	["CureCurse"] = true,
+	["CureDisease"] = true,
+	["CureParalysis"] = true,
+	["CurePetrification"] = true,
+	["CurePoison"] = true,
+	["CureSilence"] = true,
+	["CureSleep"] = true,
+	["CureUndead"] = true,
+	["Desc"] = "Heals HP and cures status changes",
+	["Heal"] = 200,
 	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "HandoStillor",
+	["Heal_Type"] = "StatPercent",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 4800,
-	["ITM_Type"] = "Weapon",
-	["Stance"] = "Attack",
+	["ITM_Type"] = "Consumable",
+	["Stance"] = "Cast",
 	["Target"] = "1A",
-	["Title"] = "Saint's staff",
-	["Type"] = "Item"}
+	["Title"] = "Heal Blade",
+	["Type"] = "Ability",
+	["Voice"] = "Heal",
+	["rew_GainSkill1"] = 5,
+	["rew_GainSkill4"] = 5,
+	["rew_GainSkill5"] = 5}
 
 return ret
 

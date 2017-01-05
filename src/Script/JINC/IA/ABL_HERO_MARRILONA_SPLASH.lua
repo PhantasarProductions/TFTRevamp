@@ -32,9 +32,10 @@
   
  **********************************************
  
-version: 17.01.04
+version: 17.01.05
 ]]
 ret = {
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AllowCritical"] = true,

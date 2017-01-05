@@ -32,9 +32,10 @@
   
  **********************************************
  
-version: 17.01.04
+version: 17.01.05
 ]]
 ret = {
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AllowAccuracy"] = true,
@@ -66,7 +67,7 @@ ret = {
 	["Type"] = "Item",
 	["Voice"] = "Fire",
 	["rew_CreateSkill1"] = true,
-	["rew_GainSkill1"] = 1}
+	["rew_GainSkill1"] = 5}
 
 return ret
 

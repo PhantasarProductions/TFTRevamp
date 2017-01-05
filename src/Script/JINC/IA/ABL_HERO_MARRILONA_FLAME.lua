@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_FLAME.lua
-  Version: 17.01.04
+  Version: 17.01.05
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -35,6 +35,8 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ABL_APCost"] = 15,
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AllowAccuracy"] = true,
@@ -63,7 +65,7 @@ ret = {
 	["Stance"] = "Attack",
 	["Target"] = "1F",
 	["Title"] = "Flame",
-	["Type"] = "Item",
+	["Type"] = "Ability",
 	["Voice"] = "Fire",
 	["rew_CreateSkill1"] = true,
 	["rew_GainSkill1"] = 1}
