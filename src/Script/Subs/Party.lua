@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 17.01.02
+  Version: 17.01.05
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -48,10 +48,10 @@ function GALE_OnLoad()
     totalwidth  = SW
     totalheight = SH
     origin = {0,0}
-    if tonumber(LC('screen.margin.left')  )~=0 then origin[1] = 25; totalwidth=totalwidth -25 end
-    if tonumber(LC('screen.margin.top')   )~=0 then origin[2] = 25; totalwidth=totalheight-25 end
-    if tonumber(LC('screen.margin.right') )~=0 then                 totalwidth=totalwidth -25 end
-    if tonumber(LC('screen.margin.bottom'))~=0 then                 totalwidth=totalheight-25 end
+    if tonumber(LC('screen.margin.left')  )~=0 then origin[1] = 25; totalwidth =totalwidth -25 end
+    if tonumber(LC('screen.margin.top')   )~=0 then origin[2] = 25; totalheight=totalheight-25 end
+    if tonumber(LC('screen.margin.right') )~=0 then                 totalwidth =totalwidth -25 end
+    if tonumber(LC('screen.margin.bottom'))~=0 then                 totalheight=totalheight-25 end
     charentrywidth = totalwidth / 4
 
 end
@@ -100,6 +100,8 @@ function ShowParty()
    local ch
    local bsx 
    local imgtag
+   black()
+   Image.Rect(0,sy,SW,SH-sy)
    -- yes 3 for loops are required. Otherwise stuff might overlap each other, taking its toll on the readablitiy of the most vital stats of an RPG Game.
    
    -- Draw the boxes
@@ -113,7 +115,7 @@ function ShowParty()
        imgtag = RPGStat.GetData(ch,"Face")
        white()
        Image.LoadNew("CL_FACE_"..ch,"GFX/Boxtext/Portret/"..imgtag.."/General.png")
-       Image.Show("CL_FACE_"..ch,bsx,(totalheight-origin[2])-Image.Height("CL_FACE_"..ch))
+       Image.Show("CL_FACE_"..ch,bsx,(totalheight+origin[2])-Image.Height("CL_FACE_"..ch))
    end end
    -- Draw the statbars and numbers
    SetFont('Stats')
