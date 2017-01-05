@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.01.04
+  Version: 17.01.05
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -76,10 +76,18 @@ function PerformAction(act,group,i)
          end   
      end    
      -- Dispell Buffs 
-     -- Recover HP or AP
+     -- Recover HP or AP     
      local heal = ItemHeal(myfighter.tag,act,true,nextact.executor.tag)
+     local block = false
+     --CSay(serialize('target',myfighter.statuschanges))
+     CSay('Target recheck:'..myfighter.tag)
+     for st,data in pairs(myfighter.statuschanges or {}) do
+         block = block or data.BlockHeal 
+         --CSay(serialize(st,data)); CSay('block='..sval(block)) 
+     end
      effect = effect or (heal and heal>0)
      if heal and heal>0 then
+        if block then heal=0 end
         if not AltHealing(group,i,heal) then RPG.Points(myfighter.tag,"HP").Inc(heal) charmsg(myfighter.tag,heal,0,255,0) end
      end
      -- Attack

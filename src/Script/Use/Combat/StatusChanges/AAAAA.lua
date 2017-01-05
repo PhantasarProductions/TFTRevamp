@@ -1,6 +1,6 @@
 --[[
   AAAAA.lua
-  Version: 17.01.01
+  Version: 17.01.05
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -57,6 +57,7 @@ StatusChanges = {}
 
 function SetStatus(ch,st,dontannounce)
     fighterbytag[ch].StatusChanges = fighterbytag[ch].StatusChanges or {}
+    fighterbytag[ch].statuschanges = fighterbytag[ch].StatusChanges
     local sc = fighterbytag[ch].StatusChanges
     if sc[st] then return end --- If the character already go this status change, then let's get autta here.
     sc[st] = StatusChanges[st]
