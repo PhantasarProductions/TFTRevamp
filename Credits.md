@@ -184,13 +184,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_2PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_3PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_4PS.lua
+    1. Script: Script/JINC/IA/ABL_HERO_JAKE_HEALBLADE.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_FAIRY.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_HUMAN.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_CHILL.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FLAME.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HEAL.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PERMANENCE.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PROTECT.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ROCK.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_SPLASH.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ZAP.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_REJUVENATE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_ULTRAHEAL.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_VIGOR.lua
@@ -384,11 +388,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png

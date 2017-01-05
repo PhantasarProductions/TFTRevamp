@@ -715,11 +715,17 @@ function Menu_SetChar(ch)
   menu.chn = Sys.Val(ch)
 end
 
+function Menu_JoyCharBrowse(ch)
+    if joyhit('L1') and menu.chn>0 then Menu_SetChar(menu.chn-1) 
+    elseif joyhit('R1') and menu.chn<3 and RPG.PartyTag(menu.chn+1)~="" then Menu_SetChar(menu.chn+1) end
+end    
+
 function MAIN_FLOW()
    mx,my = GetMouse()
    Cls()   
    Menu_DrawScreen() 
    Menu_Keys() 
+   Menu_JoyCharBrowse()
    -- And show everything
    Flip()   
 end
