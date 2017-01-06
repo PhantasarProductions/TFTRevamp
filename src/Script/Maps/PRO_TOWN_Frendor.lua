@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.02
+version: 17.01.06
 ]]
 
 -- @USE /Script/Use/Specific/EndOfPrologue.lua
@@ -116,7 +116,7 @@ function PostBoss_Marrilona()
     Nostramantu.G = 255
     Nostramantu.B = 255
     Nostramantu.X = NosSpot.X
-    Nostramantu.X = NosSpot.Y
+    Nostramantu.Y = NosSpot.Y
     MapText('ELDER_ENDPROLOGUE')
     EndOfPrologue('Marrilona')
     --Sys.Error("End of prologue not yet done. Hang on, folks!")
