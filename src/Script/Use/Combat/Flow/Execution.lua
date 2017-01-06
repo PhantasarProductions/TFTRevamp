@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.01.05
+  Version: 17.01.06
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -131,7 +131,7 @@ function PerformAction(act,group,i)
          if prefixed(k,"Cause") then 
             local s = right(k,#k-5)
             local roll=rand(1,100)
-            if roll>RPG.Stat(myfighter.tag,"END_SR_"..s) then SetStatus(myfighter.tag,s) end
+            if roll>RPG.SafeStat(myfighter.tag,"END_SR_"..s) then SetStatus(myfighter.tag,s) end
          end   
      end    
      -- Throw "miss" if there is no effect (very last)
