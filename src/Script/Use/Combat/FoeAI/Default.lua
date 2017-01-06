@@ -1,7 +1,7 @@
 --[[
   Default.lua
-  Version: 16.12.27
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.06
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -53,7 +53,7 @@ FoeAI.Target['1A'] = function(tab,abl)
      return 'Foe',tgt[rand(1,#tgt)]
 end
 
-FoeAI.Target.OS = function(t,a) return "Foe",t end
+FoeAI.Target.OS = FoeAI.Target['1A'] -- function(t,a) return "Foe",t end
 
 FoeAI.Target.AA = FoeAI.Target['1A']
 
@@ -66,7 +66,7 @@ function FoeAI.default(tag)
        local abl  = ItemGet(dabl.abl)
        local g,i  = ({
                         ['Random'] = function(t,a)
-                                        return FoeAI.Target[a.Target](t)
+                                        return FoeAI.Target[a.Target](t,a)
                                      end
                     })[dabl.target](tag,abl)
        local good = true
