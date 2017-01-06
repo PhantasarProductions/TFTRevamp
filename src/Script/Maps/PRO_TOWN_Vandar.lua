@@ -2,7 +2,7 @@
 **********************************************
   
   PRO_TOWN_Vandar.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.10.13
+version: 17.01.06
 ]]
 
 
@@ -122,6 +122,38 @@ function HouseExit()
    GoToLayer('town','Exit_'..Maps.LayerCodeName)
 end      
 
+function NPC_InnKeeper()
+    if not CVV('&DONE.BLACKDRAGON') then
+       MapText("INN_NOTTODAY")
+       return
+    end
+    Inn()
+end    
+
+function NPC_Fred()
+    -- --[[  (easy way to turn this off in order to test this).
+    if not CVV('&DONE.BLACKDRAGON') then
+       MapText("FRED_NOSELL")
+       return
+    end
+   --]]
+   MapText('FRED')
+   Shop('CLONE_FRED')
+end   
+
+
+function NPC_George()
+    -- --[[  (easy way to turn this off in order to test this).
+    if not CVV('&DONE.BLACKDRAGON') then
+       MapText("GEORGE_NOSELL")
+       return
+    end
+   --]]
+   MapText('GEORGE')
+   Shop('CLONE_GEORGE')
+end   
+
+
 function GALE_OnLoad()
    ZA_Enter("Bye",Bye)
    ZA_Enter('UP1',Up)
@@ -141,6 +173,9 @@ function GALE_OnLoad()
    AddClickable('HOUSECHIEF')
    -- Zones for entering houses
    ZA_Enter("Enter_Chief",HouseEnter,'chief')
+   ZA_Enter("Enter_Inn",HouseEnter,'inn')
+   ZA_Enter('Enter_Items',HouseEnter,'items')
+   ZA_Enter('Enter_Weapons',HouseEnter,'weapons')
    -- Exits
-   ZA_Enter('Exit',HouseExit,Maps.LayerCodeName)
+   ZA_Enter('Exit',HouseExit)
 end   

@@ -267,6 +267,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/PrologueChains/HandoStillor.lua
     1. Script: Script/JINC/PrologueChains/Jake.lua
     1. Script: Script/JINC/PrologueChains/Marrilona.lua
+    1. Script: Script/JINC/Shops/CLONE_Fred.lua
     1. Script: Script/JINC/Shops/ITEM_WANDA.lua
     1. Script: Script/JINC/Shops/WEAPON_ERIC.lua
     1. Script: Script/Maps/Anna.lua
@@ -389,11 +390,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
@@ -440,6 +441,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Slime_Base.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Snake.piko
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Snake.png
+    1. Graphics: GFX/Combat/RENC/Gauge (Autosaved).piko
     1. Graphics: GFX/Combat/RENC/Gauge.piko
     1. Graphics: GFX/Combat/RENC/Gauge.png
     1. Graphics: GFX/Combat/SpellAni/Flame/Flame.png
@@ -540,6 +542,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/General Shapes/Square.png
     1. Graphics: GFX/Textures/General Shapes/VLNW_Triangle.png
     1. Graphics: GFX/Textures/General Shapes/VLSW_Triangle.png
+    1. Graphics: GFX/Textures/Kast/Pottenkast.png
     1. Graphics: GFX/Textures/Marble/Deur.png
     1. Graphics: GFX/Textures/Muur Toorts/Brandend.frames
     1. Graphics: GFX/Textures/Muur Toorts/Brandend.png
@@ -590,6 +593,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Signs/Weapon Shop.png
     1. Graphics: GFX/Textures/Stairs/Down.png
     1. Graphics: GFX/Textures/Stairs/Up.png
+    1. Graphics: GFX/Textures/Swords/Combined.png
+    1. Graphics: GFX/Textures/Swords/Left 2 Right.png
+    1. Graphics: GFX/Textures/Swords/Right 2 Left.png
+    1. Graphics: GFX/Textures/Swords/Swords.piko
     1. Graphics: GFX/World/Dot.png
     1. Graphics: GFX/World/UNTITLED.LBM
     1. Graphics: GFX/World/UNTITLED.PCX
@@ -1040,6 +1047,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Tapijt/Blauw.png
     1. Graphics: GFX/Textures/Tapijt/Groen.frames
     1. Graphics: GFX/Textures/Tapijt/Groen.png
+    1. Graphics: GFX/Textures/Tapijt/Paars.frames
+    1. Graphics: GFX/Textures/Tapijt/Paars.png
     1. Graphics: GFX/Textures/Tapijt/Tapijt.xcf
     1. Graphics: GFX/Textures/Trees/Spar.png
     1. Graphics: GFX/Textures/Trees/Struik.png
