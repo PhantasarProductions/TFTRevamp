@@ -98,8 +98,11 @@ fflow.inputicons = { attack = {
                                          end,
                                  key = KEY_RIGHT,
                                  joyx = 1,
-                                 joyy = nil        
-                               }
+                                 joyy = nil,        
+                                 selected = function(ch)
+                                   nextact = { act = 'AAA_Guard', flow='Execution', group='Hero', mayteach=false }
+                                 end
+                                 }
              }
              
 inputicons = fflow.inputicons             
