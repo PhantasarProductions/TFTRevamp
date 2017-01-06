@@ -2,7 +2,7 @@
 **********************************************
   
   PRO_DUNGEON_DragonCave.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,10 +32,15 @@
   
  **********************************************
  
-version: 16.12.02
+version: 17.01.06
 ]]
 
 -- @USE /Script/Use/Specific/EndOfPrologue.lua
+
+function BackToTown()
+   LoadMap('PRO_TOWN_VANDAR')
+   GoToLayer('town','FromCave')
+end
 
 function NPC_Guard()
    MapText('GUARD1')
@@ -159,4 +164,5 @@ function GALE_OnLoad()
    ZA_Enter('StartPuzzle',SetUpPuzzle)
    --ZA_Enter('REMAP',Maps.Remap)
    ZA_Enter('Jenny_BackZone',Jenny_BackZone)
+   ZA_Enter('BackToTown',BackToTown)
 end    
