@@ -388,11 +388,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
@@ -425,6 +425,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Demo/Bouwvakker.png
     1. Graphics: GFX/Algemeen/CharPointer.png
     1. Graphics: GFX/Algemeen/Earth.png
+    1. Graphics: GFX/Algemeen/Next.png
+    1. Graphics: GFX/Algemeen/Prev.png
     1. Graphics: GFX/Algemeen/Sterretjes.png
     1. Graphics: GFX/Algemeen/pointer.png
     1. Graphics: GFX/Combat/Cards/Backside.piko
@@ -759,7 +761,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Cast.png
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Dead.png
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Idle.Frames
-    1. ???: GFX/Combat/Fighters/Hero/HandoStillor.Victory (Autosaved).piko-png
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Victory.png
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Jake.dead.piko
@@ -768,10 +769,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Attack.2.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Cast.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Idle.Frames
-    1. ???: GFX/Combat/Fighters/Hero/Jake_Fairy.Victory (Autosaved).piko-png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Victory.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.dead.png
-    1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human (Autosaved).piko
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Attack.1.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Attack.2.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Cast.png

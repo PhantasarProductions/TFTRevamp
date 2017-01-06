@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.01.03
+  Version: 17.01.06
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -209,12 +209,19 @@ function ShowSpellList(ch,psizes)
    -- Origin
    Image.Origin(sizes[1],sizes[2])
    -- Pagination
+   local knipper = Sys.Val(right(math.ceil(Time.MSecs()/25),1))<5
    DarkText(sval(ablpage[ch][SSLPG]),sizes[3]/2,sizes[4]-10,2,1,255,180,0)
-   if (INP.KeyH(KEY_PAGEDOWN)==1 or joyhit('R2')) then 
+   Image.LoadNew('NEXT','gfx/Algemeen/Next.png')
+   Image.LoadNew('PREV','gfx/Algemeen/Prev.png')
+   if knipper then 
+      Image.Show('PREV',5,sizes[4]-20)
+      Image.Show('NEXT',sizes[3]-20,sizes[4]-20)
+   end   
+   if (INP.KeyH(KEY_PAGEDOWN)==1 or joyhit('R2') or (mousehit(1) and mx<10 and my>sizes[4]-20)) then 
       SSLPG = SSLPG + 1
       if #ablpage[ch]<SSLPG then SSLPG=1 end -- Go on
    end 
-   if (INP.KeyH(KEY_PAGEUP)==1 or joyhit('L2')) then 
+   if (INP.KeyH(KEY_PAGEUP)==1 or joyhit('L2') or (mousehit(1) and mx>sizes[3]-20 and my>sizes[4]-20)) then 
       SSLPG = SSLPG - 1
       if SSLPG<1 then SSLPG=#ablpage[ch] end -- Go on
    end 

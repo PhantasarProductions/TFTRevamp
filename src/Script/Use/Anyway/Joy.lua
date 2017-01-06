@@ -1,7 +1,7 @@
 --[[
   Joy.lua
-  Version: 16.12.30
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.06
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -48,7 +48,7 @@ joy_down = -4
 Var.N("%JOY.CONFIRM",1)
 Var.N("%JOY.CANCEL",2)
 Var.N("%JOY.MENU",3)
-Var.N("%JOY.XTRA",4)
+Var.N("%JOY.XTRA",0)
 Var.N("%JOY.L1",4)
 Var.N("%JOY.L2",6)
 Var.N("%JOY.R1",5)
