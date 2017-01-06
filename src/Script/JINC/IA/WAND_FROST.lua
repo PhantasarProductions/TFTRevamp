@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.05
+version: 17.01.06
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
@@ -60,6 +60,7 @@ ret = {
 	["ITM_Type"] = "Weapon",
 	["ITM_WeaponAbility"] = true,
 	["Rew_GainAP"] = 5,
+	["SpellAni"] = "Frost",
 	["Stance"] = "Attack",
 	["Target"] = "1F",
 	["Title"] = "Frost Wand",

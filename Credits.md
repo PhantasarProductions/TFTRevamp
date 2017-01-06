@@ -339,6 +339,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
+    1. Script: Script/Use/Combat/SpellAni/Frost.lua
     1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
@@ -388,11 +389,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
@@ -442,6 +443,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/RENC/Gauge.piko
     1. Graphics: GFX/Combat/RENC/Gauge.png
     1. Graphics: GFX/Combat/SpellAni/Flame/Flame.png
+    1. Graphics: GFX/Combat/SpellAni/Frost/Crystals.piko
+    1. Graphics: GFX/Combat/SpellAni/Frost/Crystals.png
     1. Graphics: GFX/Combat/SpellAni/Thunder/Lightning.hot
     1. Graphics: GFX/Combat/SpellAni/Thunder/Lightning.png
     1. Graphics: GFX/Combat/SpellAni/Thunder/Spark.png

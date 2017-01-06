@@ -1,7 +1,7 @@
 --[[
-  ITM_PHOENIX.lua
+  Frost.lua
   Version: 17.01.06
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,30 +34,27 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-ret = {
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "Revive fallen ally",
-	["Heal_StatPercent"] = "Intelligence",
-	["ITM_ACC_Dandor"] = true,
-	["ITM_ACC_HandoStillor"] = true,
-	["ITM_ACC_Jake"] = true,
-	["ITM_ACC_Marrilona"] = true,
-	["ITM_Combat"] = true,
-	["ITM_Field"] = true,
-	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 100,
-	["ITM_Type"] = "Consumable",
-	["Revive"] = true,
-	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Poenix",
-	["Type"] = "Item",
-	["Voice"] = "Heal"}
+-- @IF IGNORE
+SpellAni = {}
+-- @FI
 
-return ret
 
--- This file is an automatically generated file!
 
+function SpellAni.Frost(ActG,ActT,TarG,TarT)
+  local x,y = FighterCoords(TarG,TarT)
+  Image.LoadNew('ICE_CRYSTAL','GFX/Combat/SpellAni/Frost/Crystals.png')
+  Image.Hot('ICE_CRYSTAL',Image.Width('ICE_CRYSTAL')/2,Image.Height('ICE_CRYSTAL'))
+  for i=0,100 do
+      DrawScreen()
+      QScale(i)
+      Image.Show('ICE_CRYSTAL',x,y)
+      QScale()
+      Flip()
+      Time.Sleep(25)
+  end
+end
+
+
+-- @IF IGNORE
+return SpellAni
+-- @FI

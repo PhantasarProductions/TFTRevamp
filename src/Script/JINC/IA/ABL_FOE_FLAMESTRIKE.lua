@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_FLAMESTRIKE.lua
-  Version: 17.01.05
+  Version: 17.01.06
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================

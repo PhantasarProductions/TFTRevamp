@@ -3362,7 +3362,7 @@ Rec: ABL_HERO_MARRILONA_CHILL
 	ITM_WeaponAbility = TRUE
 	Revive = FALSE
 	Rew_GainAP = 5
-	SpellAni = 
+	SpellAni = Frost
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Attack
@@ -10391,7 +10391,7 @@ Rec: WAND_FROST
 	ITM_WeaponAbility = TRUE
 	Revive = FALSE
 	Rew_GainAP = 5
-	SpellAni = 
+	SpellAni = Frost
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Attack

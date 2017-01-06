@@ -25,6 +25,7 @@ ret = {
 	["ITM_Type"] = "Weapon",
 	["ITM_WeaponAbility"] = true,
 	["Rew_GainAP"] = 5,
+	["SpellAni"] = "Frost",
 	["Stance"] = "Attack",
 	["Target"] = "1F",
 	["Title"] = "Frost Wand",
