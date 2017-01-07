@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sat 07 January 2017; 10:22:57
+-- File Generated: Sat 07 January 2017; 13:44:38
 
 
 local foe = {}
@@ -568,7 +568,7 @@ local foe = {}
 	foe["Oversoul Steal \49"] = false
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
-	foe["Cash"] = 50
+	foe["Cash"] = 6
 	foe["ER_Darkness"] = 200
 	foe["ER_Earth"] = -500
 	foe["ER_Flame"] = -75

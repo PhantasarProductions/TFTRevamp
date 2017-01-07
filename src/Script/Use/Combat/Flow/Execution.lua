@@ -65,7 +65,7 @@ function PerformAction(act,group,i)
      -- Dodge check if needed. If it succeeds, byebye
      if act.Attack_AllowDodge and (rand(1,100)<RPG.Stat(myfighter.tag,"END_Evasion")) then 
         charmsg(myfighter.tag,'dodged',155,155,155)
-        if myfighter.group=='Hero' then RPG.Points('AP',20-(5*skill)) end 
+        if myfighter.group=='Hero' then RPG.Points(myfighter.tag,'AP',20-(5*skill)) end 
         return 
     end
      -- Cure status changes (this always comes first)

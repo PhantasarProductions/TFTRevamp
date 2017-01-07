@@ -34,7 +34,7 @@
  
 version: 17.01.07
 ]]
--- File Generated: Sat 07 January 2017; 11:12:51
+-- File Generated: Sat 07 January 2017; 13:44:05
 
 
 local foe = {}
@@ -568,7 +568,7 @@ local foe = {}
 	foe["Oversoul Steal \49"] = false
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
-	foe["Cash"] = 25
+	foe["Cash"] = 5
 	foe["ER_Darkness"] = 500
 	foe["ER_Earth"] = 75
 	foe["ER_Flame"] = -100
