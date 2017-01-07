@@ -1,7 +1,7 @@
 --[[
   PrologueSelectChar.lua
-  Version: 16.11.18
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.07
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -40,7 +40,8 @@ icards = {}
 card  = {}
 
 function PrologueOver()
-    Sys.Error("The post-prologue stuff is not yet done")
+    -- Sys.Error("The post-prologue stuff is not yet done")
+    -- Was no longer in use.... I'll leave it here to prevent crashes.
 end
 
 function Repos()

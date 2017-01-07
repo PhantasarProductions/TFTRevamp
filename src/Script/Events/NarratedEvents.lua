@@ -2,7 +2,7 @@
 **********************************************
   
   NarratedEvents.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.11.18
+version: 17.01.07
 ]]
 
 function GoNext()
@@ -96,6 +96,7 @@ function MAIN_FLOW()
   -- GoNext() -- Skip intro. Only meant for debugging
   -- Clear screen
   Cls()
+  font()
   -- Show Message
   for i,line in ipairs(story.lines) do
      if i<story.line then 

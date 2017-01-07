@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.03
+version: 17.01.07
 ]]
 
 local RPG = RPGStat
@@ -78,7 +78,7 @@ function Rubine.teach(ch) -- Should return true if master actually decides to te
     local rabl = false
     for truereq,abl in pairs(Rubine.abl) do -- DEFINITELY NOT ipairs!!!!!
         local req = truereq*(skill-1)
-        if maylearn and RPG.Stat(ch,"RubinePoints")>=req and (not Done('&MASTER.RUBINE.'..abl)) then
+        if maylearn and RPG.Stat(ch,"RubinePoints")>=req and (not Done('&MASTER.RUBINE.'..ch.."."..abl)) then
            Console.Write(RPG.Stat(ch,"RubinePoints")..">="..req.." so let's teach!",180,255,0)
            maylearn=false
            rabl=abl

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.03
+version: 17.01.07
 ]]
 
 local RPG = RPGStat
@@ -86,7 +86,7 @@ function Freya.teach(ch) -- Should return true if master actually decides to tea
    local rabl     = nil
    -- for i,a in pairs(Freya._abl) do all = all and CVV('&MASTER.FREYA.'..abl) end 
    for i,a in pairs(Freya.abl) do
-       if (i<=lv or i<=verschil*((4-skill)*3)) and maylearn and (not Done('&MASTER.FREYA.'..a)) then 
+       if (i<=lv or i<=verschil*((4-skill)*3)) and maylearn and (not Done('&MASTER.FREYA.'..ch.."."..a)) then 
            maylearn=false
            rabl=a
        else
