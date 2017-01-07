@@ -1,6 +1,6 @@
 --[[
   Achievements.lua
-  Version: 17.01.05
+  Version: 17.01.07
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -128,7 +128,7 @@ function Award(tag)
     -- Creating the output!    
     local high = SH + 500
     for ao in each(achoutput) do
-        if ao>high - 100 then high = ao + 100 end
+        if ao.y>high - 100 then high = ao.y + 100 end
     end
     achoutput[#achoutput+1] = {
                                    tag  = tag,
