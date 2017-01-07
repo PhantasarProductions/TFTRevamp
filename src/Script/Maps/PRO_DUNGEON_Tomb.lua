@@ -30,6 +30,7 @@ function Sandra()
         Flip()
     end
     MapText("SANDRA_B")
+    MapMusic()
 end
 
 function InitPuzzle()
