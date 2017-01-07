@@ -35,16 +35,17 @@
 version: 17.01.07
 ]]
 ret = {
-	["ABL_APCost"] = 40,
-	["Attack"] = 350,
+	["ABL_APCost"] = 25,
+	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack"] = 250,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowAccuracy"] = true,
-	["Attack_AllowCritical"] = true,
-	["Attack_AllowDodge"] = true,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Strong attack vs. 1 target",
+	["BUFF_Endurance"] = 5,
+	["Desc"] = "BAM! You're dead!",
 	["Heal_StatPercent"] = "Intelligence",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
