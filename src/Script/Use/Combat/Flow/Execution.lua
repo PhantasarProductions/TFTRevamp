@@ -63,7 +63,11 @@ function PerformAction(act,group,i)
      -- Accuracy check if needed. If it fails, byebye
      if act.Attack_AllowAccuracy and (rand(1,100)>RPG.Stat(myexecutor.tag,"END_Accuracy")) then charmsg(myfighter.tag,'miss',155,155,155) return end     
      -- Dodge check if needed. If it succeeds, byebye
-     if act.Attack_AllowDodge and (rand(1,100)<RPG.Stat(myfighter.tag,"END_Evasion")) then charmsg(myfighter.tag,'dodged',155,155,155) return end
+     if act.Attack_AllowDodge and (rand(1,100)<RPG.Stat(myfighter.tag,"END_Evasion")) then 
+        charmsg(myfighter.tag,'dodged',155,155,155)
+        if myfighter.group=='Hero' then RPG.Points('AP',20-(5*skill)) end 
+        return 
+    end
      -- Cure status changes (this always comes first)
      for k,b in pairs(act) do
          if prefixed(k,"Cure") then 

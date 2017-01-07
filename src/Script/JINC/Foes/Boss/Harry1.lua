@@ -34,7 +34,7 @@
  
 version: 17.01.07
 ]]
--- File Generated: Sat 07 January 2017; 12:49:50
+-- File Generated: Sat 07 January 2017; 13:07:00
 
 
 local foe = {}
@@ -432,11 +432,11 @@ local foe = {}
 	foe["Item Steal \50"] = "ITM_ANTIDOTE"
 	foe["Item Steal \51"] = "ITM_ANTIDOTE"
 	foe["Name"] = "Harry"
-	foe["RATE_AAA_ATTACK"] = 15
-	foe["RATE_AAA_GUARD"] = 5
+	foe["RATE_AAA_ATTACK"] = 16
+	foe["RATE_AAA_GUARD"] = 7
 	foe["RATE_ABL_FOE_CRUSH"] = 0
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 1
-	foe["RATE_ABL_FOE_DISTRACT"] = 2
+	foe["RATE_ABL_FOE_DISTRACT"] = 3
 	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 0
 	foe["RATE_ABL_FOE_SHOCKINGSTORIES"] = 0
 	foe["RATE_ABL_FOE_SICKSTORIES"] = 0
@@ -593,7 +593,7 @@ local foe = {}
 	foe["normal_EXP"] = 25
 	foe["normal_Endurance"] = 80
 	foe["normal_Evasion"] = 5
-	foe["normal_HP"] = 2000
+	foe["normal_HP"] = 1500
 	foe["normal_Intelligence"] = 65
 	foe["normal_Power"] = 95
 	foe["normal_Resistance"] = 35
