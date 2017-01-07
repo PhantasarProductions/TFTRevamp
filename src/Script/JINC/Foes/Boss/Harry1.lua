@@ -1,40 +1,4 @@
---[[
-**********************************************
-  
-  Harry1.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
-  
-  This file contains material that is related 
-  to a storyline that is which is strictly
-  copyrighted to Jeroen Broks.
-  
-  This file may only be used in an unmodified
-  form with an unmodified version of the 
-  software this file belongs to.
-  
-  You may use this file for your study to see
-  how I solved certain things in the creation
-  of this project to see if you find valuable
-  leads for the creation of your own.
-  
-  Mostly this file comes along with a project
-  that is for most part released under an
-  open source license and that means that if
-  you use that code with this file removed
-  from it, you can use it under that license.
-  Please check out the other files to find out
-  which license applies.
-  This file comes 'as-is' and in no possible
-  way the author can be held responsible of
-  any form of damages that may occur due to 
-  the usage of this file
-  
-  
- **********************************************
- 
-version: 17.01.07
-]]
--- File Generated: Sat 07 January 2017; 13:07:00
+-- File Generated: Sat 07 January 2017; 13:19:48
 
 
 local foe = {}
@@ -433,7 +397,7 @@ local foe = {}
 	foe["Item Steal \51"] = "ITM_ANTIDOTE"
 	foe["Name"] = "Harry"
 	foe["RATE_AAA_ATTACK"] = 16
-	foe["RATE_AAA_GUARD"] = 7
+	foe["RATE_AAA_GUARD"] = 8
 	foe["RATE_ABL_FOE_CRUSH"] = 0
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 1
 	foe["RATE_ABL_FOE_DISTRACT"] = 3
@@ -480,7 +444,7 @@ local foe = {}
 	foe["RATE_ABL_MASTER_RUBINE_PICKPOCKET"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_POISONSTAB"] = 0
 	foe["RATE_ITM_ANTIDOTE"] = 0
-	foe["RATE_ITM_APPLE"] = 0
+	foe["RATE_ITM_APPLE"] = 5
 	foe["RATE_ITM_BELL"] = 0
 	foe["RATE_ITM_FLAMEORB"] = 0
 	foe["RATE_ITM_MAGICDUST"] = 0
@@ -591,11 +555,11 @@ local foe = {}
 	foe["SR_Undead "] = 100
 	foe["normal_Accuracy"] = 98
 	foe["normal_EXP"] = 25
-	foe["normal_Endurance"] = 80
+	foe["normal_Endurance"] = 60
 	foe["normal_Evasion"] = 5
-	foe["normal_HP"] = 1500
+	foe["normal_HP"] = 1200
 	foe["normal_Intelligence"] = 65
-	foe["normal_Power"] = 95
+	foe["normal_Power"] = 85
 	foe["normal_Resistance"] = 35
 	foe["normal_Speed"] = 65
 	foe["oversoul_Accuracy"] = 100

@@ -1,46 +1,11 @@
---[[
-  KillerEscargot.lua
-  Version: 17.01.01
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
-  
-  ===========================
-  This file is part of a project related to the Phantasar Chronicles or another
-  series or saga which is property of Jeroen P. Broks.
-  This means that it may contain references to a story-line plus characters
-  which are property of Jeroen Broks. These references may only be distributed
-  along with an unmodified version of the game. 
-  
-  As soon as you remove or replace ALL references to the storyline or character
-  references, or any termology specifically set up for the Phantasar universe,
-  or any other univers a story of Jeroen P. Broks is set up for,
-  the restrictions of this file are removed and will automatically become
-  zLib licensed (see below).
-  
-  Please note that doing so counts as a modification and must be marked as such
-  in accordance to the zLib license.
-  ===========================
-  zLib license terms:
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
-]]
--- File Generated: Sun 01 January 2017; 17:54:34
+-- File Generated: Sat 07 January 2017; 13:19:47
 
 
 local foe = {}
 
 	foe["AI"] = "default"
 	foe["NEWGAMEPLUS_AAA_ATTACK"] = true
+	foe["NEWGAMEPLUS_AAA_GUARD"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_CRUSH"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_DESPERATEATTACK"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_DISTRACT"] = true
@@ -67,17 +32,28 @@ local foe = {}
 	foe["NEWGAMEPLUS_ABL_HERO_JAKE_\50PS"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_JAKE_\51PS"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_JAKE_\52PS"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_JAKE_HEALBLADE"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_JAKE_SHIFT_FAIRY"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_JAKE_SHIFT_HUMAN"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_CHILL"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_FLAME"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_PERMANENCE"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_PROTECT"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_ROCK"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_ZAP"] = true
+	foe["NEWGAMEPLUS_ABL_MASTER_FREYA_REJUVENATE"] = true
+	foe["NEWGAMEPLUS_ABL_MASTER_FREYA_ULTRAHEAL"] = true
+	foe["NEWGAMEPLUS_ABL_MASTER_FREYA_VIGOR"] = true
 	foe["NEWGAMEPLUS_ABL_MASTER_RUBINE_BACKSTAB"] = true
 	foe["NEWGAMEPLUS_ABL_MASTER_RUBINE_FOLLOWME"] = true
+	foe["NEWGAMEPLUS_ABL_MASTER_RUBINE_INVADE"] = true
 	foe["NEWGAMEPLUS_ABL_MASTER_RUBINE_PICKPOCKET"] = true
 	foe["NEWGAMEPLUS_ABL_MASTER_RUBINE_POISONSTAB"] = true
 	foe["NEWGAMEPLUS_ITM_ANTIDOTE"] = true
 	foe["NEWGAMEPLUS_ITM_APPLE"] = true
+	foe["NEWGAMEPLUS_ITM_BELL"] = true
 	foe["NEWGAMEPLUS_ITM_FLAMEORB"] = true
 	foe["NEWGAMEPLUS_ITM_MAGICDUST"] = true
 	foe["NEWGAMEPLUS_ITM_MANDRAKE"] = true
@@ -93,6 +69,7 @@ local foe = {}
 	foe["NEWGAMEPLUS_WAND_THUNDER"] = true
 	foe["NEWGAMEPLUS_WAND_TRAINING"] = true
 	foe["NORMAL_AAA_ATTACK"] = true
+	foe["NORMAL_AAA_GUARD"] = true
 	foe["NORMAL_ABL_FOE_CRUSH"] = true
 	foe["NORMAL_ABL_FOE_DESPERATEATTACK"] = true
 	foe["NORMAL_ABL_FOE_DISTRACT"] = true
@@ -119,17 +96,28 @@ local foe = {}
 	foe["NORMAL_ABL_HERO_JAKE_\50PS"] = true
 	foe["NORMAL_ABL_HERO_JAKE_\51PS"] = true
 	foe["NORMAL_ABL_HERO_JAKE_\52PS"] = true
+	foe["NORMAL_ABL_HERO_JAKE_HEALBLADE"] = true
 	foe["NORMAL_ABL_HERO_JAKE_SHIFT_FAIRY"] = true
 	foe["NORMAL_ABL_HERO_JAKE_SHIFT_HUMAN"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_CHILL"] = true
 	foe["NORMAL_ABL_HERO_MARRILONA_FLAME"] = true
 	foe["NORMAL_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_PERMANENCE"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_PROTECT"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_ROCK"] = true
 	foe["NORMAL_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_ZAP"] = true
+	foe["NORMAL_ABL_MASTER_FREYA_REJUVENATE"] = true
+	foe["NORMAL_ABL_MASTER_FREYA_ULTRAHEAL"] = true
+	foe["NORMAL_ABL_MASTER_FREYA_VIGOR"] = true
 	foe["NORMAL_ABL_MASTER_RUBINE_BACKSTAB"] = true
 	foe["NORMAL_ABL_MASTER_RUBINE_FOLLOWME"] = true
+	foe["NORMAL_ABL_MASTER_RUBINE_INVADE"] = true
 	foe["NORMAL_ABL_MASTER_RUBINE_PICKPOCKET"] = true
 	foe["NORMAL_ABL_MASTER_RUBINE_POISONSTAB"] = true
 	foe["NORMAL_ITM_ANTIDOTE"] = true
 	foe["NORMAL_ITM_APPLE"] = true
+	foe["NORMAL_ITM_BELL"] = true
 	foe["NORMAL_ITM_FLAMEORB"] = true
 	foe["NORMAL_ITM_MAGICDUST"] = true
 	foe["NORMAL_ITM_MANDRAKE"] = true
@@ -145,6 +133,7 @@ local foe = {}
 	foe["NORMAL_WAND_THUNDER"] = true
 	foe["NORMAL_WAND_TRAINING"] = true
 	foe["OVERSOUL_AAA_ATTACK"] = true
+	foe["OVERSOUL_AAA_GUARD"] = true
 	foe["OVERSOUL_ABL_FOE_CRUSH"] = true
 	foe["OVERSOUL_ABL_FOE_DESPERATEATTACK"] = true
 	foe["OVERSOUL_ABL_FOE_DISTRACT"] = true
@@ -171,17 +160,28 @@ local foe = {}
 	foe["OVERSOUL_ABL_HERO_JAKE_\50PS"] = true
 	foe["OVERSOUL_ABL_HERO_JAKE_\51PS"] = true
 	foe["OVERSOUL_ABL_HERO_JAKE_\52PS"] = true
+	foe["OVERSOUL_ABL_HERO_JAKE_HEALBLADE"] = true
 	foe["OVERSOUL_ABL_HERO_JAKE_SHIFT_FAIRY"] = true
 	foe["OVERSOUL_ABL_HERO_JAKE_SHIFT_HUMAN"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_CHILL"] = true
 	foe["OVERSOUL_ABL_HERO_MARRILONA_FLAME"] = true
 	foe["OVERSOUL_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_PERMANENCE"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_PROTECT"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_ROCK"] = true
 	foe["OVERSOUL_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_ZAP"] = true
+	foe["OVERSOUL_ABL_MASTER_FREYA_REJUVENATE"] = true
+	foe["OVERSOUL_ABL_MASTER_FREYA_ULTRAHEAL"] = true
+	foe["OVERSOUL_ABL_MASTER_FREYA_VIGOR"] = true
 	foe["OVERSOUL_ABL_MASTER_RUBINE_BACKSTAB"] = true
 	foe["OVERSOUL_ABL_MASTER_RUBINE_FOLLOWME"] = true
+	foe["OVERSOUL_ABL_MASTER_RUBINE_INVADE"] = true
 	foe["OVERSOUL_ABL_MASTER_RUBINE_PICKPOCKET"] = true
 	foe["OVERSOUL_ABL_MASTER_RUBINE_POISONSTAB"] = true
 	foe["OVERSOUL_ITM_ANTIDOTE"] = true
 	foe["OVERSOUL_ITM_APPLE"] = true
+	foe["OVERSOUL_ITM_BELL"] = true
 	foe["OVERSOUL_ITM_FLAMEORB"] = true
 	foe["OVERSOUL_ITM_MAGICDUST"] = true
 	foe["OVERSOUL_ITM_MANDRAKE"] = true
@@ -197,6 +197,7 @@ local foe = {}
 	foe["OVERSOUL_WAND_THUNDER"] = true
 	foe["OVERSOUL_WAND_TRAINING"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
+	foe["SKILL\49_AAA_GUARD"] = true
 	foe["SKILL\49_ABL_FOE_CRUSH"] = false
 	foe["SKILL\49_ABL_FOE_DESPERATEATTACK"] = true
 	foe["SKILL\49_ABL_FOE_DISTRACT"] = true
@@ -223,17 +224,28 @@ local foe = {}
 	foe["SKILL\49_ABL_HERO_JAKE_\50PS"] = true
 	foe["SKILL\49_ABL_HERO_JAKE_\51PS"] = true
 	foe["SKILL\49_ABL_HERO_JAKE_\52PS"] = true
+	foe["SKILL\49_ABL_HERO_JAKE_HEALBLADE"] = true
 	foe["SKILL\49_ABL_HERO_JAKE_SHIFT_FAIRY"] = true
 	foe["SKILL\49_ABL_HERO_JAKE_SHIFT_HUMAN"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_CHILL"] = true
 	foe["SKILL\49_ABL_HERO_MARRILONA_FLAME"] = true
 	foe["SKILL\49_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_PERMANENCE"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_PROTECT"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_ROCK"] = true
 	foe["SKILL\49_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_ZAP"] = true
+	foe["SKILL\49_ABL_MASTER_FREYA_REJUVENATE"] = true
+	foe["SKILL\49_ABL_MASTER_FREYA_ULTRAHEAL"] = true
+	foe["SKILL\49_ABL_MASTER_FREYA_VIGOR"] = true
 	foe["SKILL\49_ABL_MASTER_RUBINE_BACKSTAB"] = true
 	foe["SKILL\49_ABL_MASTER_RUBINE_FOLLOWME"] = true
+	foe["SKILL\49_ABL_MASTER_RUBINE_INVADE"] = true
 	foe["SKILL\49_ABL_MASTER_RUBINE_PICKPOCKET"] = true
 	foe["SKILL\49_ABL_MASTER_RUBINE_POISONSTAB"] = true
 	foe["SKILL\49_ITM_ANTIDOTE"] = true
 	foe["SKILL\49_ITM_APPLE"] = true
+	foe["SKILL\49_ITM_BELL"] = true
 	foe["SKILL\49_ITM_FLAMEORB"] = true
 	foe["SKILL\49_ITM_MAGICDUST"] = true
 	foe["SKILL\49_ITM_MANDRAKE"] = true
@@ -249,6 +261,7 @@ local foe = {}
 	foe["SKILL\49_WAND_THUNDER"] = true
 	foe["SKILL\49_WAND_TRAINING"] = true
 	foe["SKILL\50_AAA_ATTACK"] = true
+	foe["SKILL\50_AAA_GUARD"] = true
 	foe["SKILL\50_ABL_FOE_CRUSH"] = true
 	foe["SKILL\50_ABL_FOE_DESPERATEATTACK"] = true
 	foe["SKILL\50_ABL_FOE_DISTRACT"] = true
@@ -275,17 +288,28 @@ local foe = {}
 	foe["SKILL\50_ABL_HERO_JAKE_\50PS"] = true
 	foe["SKILL\50_ABL_HERO_JAKE_\51PS"] = true
 	foe["SKILL\50_ABL_HERO_JAKE_\52PS"] = true
+	foe["SKILL\50_ABL_HERO_JAKE_HEALBLADE"] = true
 	foe["SKILL\50_ABL_HERO_JAKE_SHIFT_FAIRY"] = true
 	foe["SKILL\50_ABL_HERO_JAKE_SHIFT_HUMAN"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_CHILL"] = true
 	foe["SKILL\50_ABL_HERO_MARRILONA_FLAME"] = true
 	foe["SKILL\50_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_PERMANENCE"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_PROTECT"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_ROCK"] = true
 	foe["SKILL\50_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_ZAP"] = true
+	foe["SKILL\50_ABL_MASTER_FREYA_REJUVENATE"] = true
+	foe["SKILL\50_ABL_MASTER_FREYA_ULTRAHEAL"] = true
+	foe["SKILL\50_ABL_MASTER_FREYA_VIGOR"] = true
 	foe["SKILL\50_ABL_MASTER_RUBINE_BACKSTAB"] = true
 	foe["SKILL\50_ABL_MASTER_RUBINE_FOLLOWME"] = true
+	foe["SKILL\50_ABL_MASTER_RUBINE_INVADE"] = true
 	foe["SKILL\50_ABL_MASTER_RUBINE_PICKPOCKET"] = true
 	foe["SKILL\50_ABL_MASTER_RUBINE_POISONSTAB"] = true
 	foe["SKILL\50_ITM_ANTIDOTE"] = true
 	foe["SKILL\50_ITM_APPLE"] = true
+	foe["SKILL\50_ITM_BELL"] = true
 	foe["SKILL\50_ITM_FLAMEORB"] = true
 	foe["SKILL\50_ITM_MAGICDUST"] = true
 	foe["SKILL\50_ITM_MANDRAKE"] = true
@@ -301,6 +325,7 @@ local foe = {}
 	foe["SKILL\50_WAND_THUNDER"] = true
 	foe["SKILL\50_WAND_TRAINING"] = true
 	foe["SKILL\51_AAA_ATTACK"] = true
+	foe["SKILL\51_AAA_GUARD"] = true
 	foe["SKILL\51_ABL_FOE_CRUSH"] = true
 	foe["SKILL\51_ABL_FOE_DESPERATEATTACK"] = true
 	foe["SKILL\51_ABL_FOE_DISTRACT"] = true
@@ -327,17 +352,28 @@ local foe = {}
 	foe["SKILL\51_ABL_HERO_JAKE_\50PS"] = true
 	foe["SKILL\51_ABL_HERO_JAKE_\51PS"] = true
 	foe["SKILL\51_ABL_HERO_JAKE_\52PS"] = true
+	foe["SKILL\51_ABL_HERO_JAKE_HEALBLADE"] = true
 	foe["SKILL\51_ABL_HERO_JAKE_SHIFT_FAIRY"] = true
 	foe["SKILL\51_ABL_HERO_JAKE_SHIFT_HUMAN"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_CHILL"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_FLAME"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_PERMANENCE"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_PROTECT"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_ROCK"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_ZAP"] = true
+	foe["SKILL\51_ABL_MASTER_FREYA_REJUVENATE"] = true
+	foe["SKILL\51_ABL_MASTER_FREYA_ULTRAHEAL"] = true
+	foe["SKILL\51_ABL_MASTER_FREYA_VIGOR"] = true
 	foe["SKILL\51_ABL_MASTER_RUBINE_BACKSTAB"] = true
 	foe["SKILL\51_ABL_MASTER_RUBINE_FOLLOWME"] = true
+	foe["SKILL\51_ABL_MASTER_RUBINE_INVADE"] = true
 	foe["SKILL\51_ABL_MASTER_RUBINE_PICKPOCKET"] = true
 	foe["SKILL\51_ABL_MASTER_RUBINE_POISONSTAB"] = true
 	foe["SKILL\51_ITM_ANTIDOTE"] = true
 	foe["SKILL\51_ITM_APPLE"] = true
+	foe["SKILL\51_ITM_BELL"] = true
 	foe["SKILL\51_ITM_FLAMEORB"] = true
 	foe["SKILL\51_ITM_MAGICDUST"] = true
 	foe["SKILL\51_ITM_MANDRAKE"] = true
@@ -361,6 +397,7 @@ local foe = {}
 	foe["Item Steal \51"] = "ITM_MANDRAKE"
 	foe["Name"] = "Killer Escargot"
 	foe["RATE_AAA_ATTACK"] = 25
+	foe["RATE_AAA_GUARD"] = 0
 	foe["RATE_ABL_FOE_CRUSH"] = 3
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
 	foe["RATE_ABL_FOE_DISTRACT"] = 0
@@ -387,17 +424,28 @@ local foe = {}
 	foe["RATE_ABL_HERO_JAKE_\50PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\52PS"] = 0
+	foe["RATE_ABL_HERO_JAKE_HEALBLADE"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_FAIRY"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_HUMAN"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_CHILL"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_FLAME"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_PERMANENCE"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_PROTECT"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_ROCK"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_ZAP"] = 0
+	foe["RATE_ABL_MASTER_FREYA_REJUVENATE"] = 0
+	foe["RATE_ABL_MASTER_FREYA_ULTRAHEAL"] = 0
+	foe["RATE_ABL_MASTER_FREYA_VIGOR"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_BACKSTAB"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_FOLLOWME"] = 0
+	foe["RATE_ABL_MASTER_RUBINE_INVADE"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_PICKPOCKET"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_POISONSTAB"] = 0
 	foe["RATE_ITM_ANTIDOTE"] = 0
 	foe["RATE_ITM_APPLE"] = 0
+	foe["RATE_ITM_BELL"] = 0
 	foe["RATE_ITM_FLAMEORB"] = 0
 	foe["RATE_ITM_MAGICDUST"] = 0
 	foe["RATE_ITM_MANDRAKE"] = 0
@@ -413,6 +461,7 @@ local foe = {}
 	foe["RATE_WAND_THUNDER"] = 0
 	foe["RATE_WAND_TRAINING"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
+	foe["TARGET_AAA_GUARD"] = "Random"
 	foe["TARGET_ABL_FOE_CRUSH"] = "Random"
 	foe["TARGET_ABL_FOE_DESPERATEATTACK"] = "Random"
 	foe["TARGET_ABL_FOE_DISTRACT"] = "Random"
@@ -439,17 +488,28 @@ local foe = {}
 	foe["TARGET_ABL_HERO_JAKE_\50PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\51PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\52PS"] = "Random"
+	foe["TARGET_ABL_HERO_JAKE_HEALBLADE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_SHIFT_FAIRY"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_SHIFT_HUMAN"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_CHILL"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_FLAME"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_HEAL"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_PERMANENCE"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_PROTECT"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_ROCK"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_SPLASH"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_ZAP"] = "Random"
+	foe["TARGET_ABL_MASTER_FREYA_REJUVENATE"] = "Random"
+	foe["TARGET_ABL_MASTER_FREYA_ULTRAHEAL"] = "Random"
+	foe["TARGET_ABL_MASTER_FREYA_VIGOR"] = "Random"
 	foe["TARGET_ABL_MASTER_RUBINE_BACKSTAB"] = "Random"
 	foe["TARGET_ABL_MASTER_RUBINE_FOLLOWME"] = "Random"
+	foe["TARGET_ABL_MASTER_RUBINE_INVADE"] = "Random"
 	foe["TARGET_ABL_MASTER_RUBINE_PICKPOCKET"] = "Random"
 	foe["TARGET_ABL_MASTER_RUBINE_POISONSTAB"] = "Random"
 	foe["TARGET_ITM_ANTIDOTE"] = "Random"
 	foe["TARGET_ITM_APPLE"] = "Random"
+	foe["TARGET_ITM_BELL"] = "Random"
 	foe["TARGET_ITM_FLAMEORB"] = "Random"
 	foe["TARGET_ITM_MAGICDUST"] = "Random"
 	foe["TARGET_ITM_MANDRAKE"] = "Random"
