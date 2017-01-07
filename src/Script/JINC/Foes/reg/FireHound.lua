@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sat 07 January 2017; 13:44:29
+-- File Generated: Sat 07 January 2017; 15:46:42
 
 
 local foe = {}
@@ -433,7 +433,7 @@ local foe = {}
 	foe["Item Steal \51"] = "ITM_PHOENIX"
 	foe["Name"] = "Fire Hound"
 	foe["RATE_AAA_ATTACK"] = 0
-	foe["RATE_AAA_GUARD"] = 0
+	foe["RATE_AAA_GUARD"] = 4
 	foe["RATE_ABL_FOE_CRUSH"] = 0
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
 	foe["RATE_ABL_FOE_DISTRACT"] = 0
@@ -593,16 +593,16 @@ local foe = {}
 	foe["normal_EXP"] = 4
 	foe["normal_Endurance"] = 53
 	foe["normal_Evasion"] = 3
-	foe["normal_HP"] = 486
+	foe["normal_HP"] = 286
 	foe["normal_Intelligence"] = 120
-	foe["normal_Power"] = 103
+	foe["normal_Power"] = 100
 	foe["normal_Resistance"] = 35
 	foe["normal_Speed"] = 100
 	foe["oversoul_Accuracy"] = 100
 	foe["oversoul_EXP"] = 2
 	foe["oversoul_Endurance"] = 100
 	foe["oversoul_Evasion"] = 6
-	foe["oversoul_HP"] = 1000
+	foe["oversoul_HP"] = 500
 	foe["oversoul_Intelligence"] = 240
 	foe["oversoul_Power"] = 200
 	foe["oversoul_Resistance"] = 60

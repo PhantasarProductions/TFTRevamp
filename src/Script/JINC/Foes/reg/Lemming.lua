@@ -34,7 +34,7 @@
  
 version: 17.01.07
 ]]
--- File Generated: Sat 07 January 2017; 13:44:12
+-- File Generated: Sat 07 January 2017; 15:46:58
 
 
 local foe = {}
@@ -433,7 +433,7 @@ local foe = {}
 	foe["Item Steal \51"] = "ITM_MANDRAKE"
 	foe["Name"] = "Lemming"
 	foe["RATE_AAA_ATTACK"] = 25
-	foe["RATE_AAA_GUARD"] = 0
+	foe["RATE_AAA_GUARD"] = 4
 	foe["RATE_ABL_FOE_CRUSH"] = 5
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 1
 	foe["RATE_ABL_FOE_DISTRACT"] = 0
@@ -442,7 +442,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_SICKSTORIES"] = 0
 	foe["RATE_ABL_FOE_SMITE"] = 0
 	foe["RATE_ABL_FOE_SOULCRUSHINGSTORY"] = 0
-	foe["RATE_ABL_FOE_SUICIDE"] = 5
+	foe["RATE_ABL_FOE_SUICIDE"] = 10
 	foe["RATE_ABL_FOE_VENOMBITE"] = 1
 	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
 	foe["RATE_ABL_FOE_VIRUSSTAB"] = 0

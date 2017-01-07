@@ -1,6 +1,6 @@
 --[[
   PlayerInput.lua
-  Version: 17.01.06
+  Version: 17.01.07
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -227,6 +227,8 @@ function fflow.selectitem()
 end
 
 function fflow.selectability()
+   --selcd = selcd or 250
+   -- if selcd>0 then selcd = selcd - 1 return end
    local bx = 100
    local by = 100
    local bw = SW-200
@@ -240,8 +242,12 @@ function fflow.selectability()
       nextact.act=myitem 
       local ig = ItemGet(myitem)
       fflow.PrepareAction(ig,'APMin')
+      -- selcd=nil
    end   
-   if getpress.cancel() or mousehit(2) then flow = 'playerinput' end
+   if getpress.cancel() or mousehit(2) then 
+      flow = 'playerinput' 
+      -- selcd=nil 
+   end
 end
 
 -- @IF IGNORE

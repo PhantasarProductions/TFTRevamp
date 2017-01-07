@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.01.06
+  Version: 17.01.07
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -246,7 +246,7 @@ function ShowSpellList(ch,psizes)
              DarkText(abl.ABL_APCost,sizes[3]-10,y,1,2,0,180,255)
              allowcast=RPG.Points(ch,"AP").Have>=Sys.Val(abl.ABL_APCost)
           end   
-          if (INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_SPACE)==1 or joyhit(confirm) or mousehit(1)) and allowcast and i==SSLP then Var.D('$SELECTEDABILITY',k) end  
+          if (INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_SPACE)==1 or joyhit('CONFIRM') or (mousehit(1) and my<sizes[4]-20)) and allowcast and i==SSLP then Var.D('$SELECTEDABILITY',k) end  
        else
           DarkText('---',10,y,0,2,c[1],c[2],c[3])
           if i==SSLP then DarkText("Hold H to see unlock info",sizes[3]-25,y,1,2,255,180,0) end
