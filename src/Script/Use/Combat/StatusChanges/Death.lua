@@ -67,8 +67,8 @@ function KillAward(myfoe)
         end
     end
     -- If no items are dropped, drop money in stead of this foe has it.
-    if myfoe.data.cash and myfoe.data.cash>0 and (not itemgiven) then
-       local acash = math.ceil(myfoe.data.cash * ({2,1,.5})[skill])
+    if myfoe.data.Cash and myfoe.data.Cash>0 and (not itemgiven) then
+       local acash = math.ceil(myfoe.data.Cash * ({2,1,.5})[skill])
        local shilders = "shilders"; if acash==1 then shilders='shilder' end
        ChMiniMsg(myfoe.tag,"Dropped "..acash.." "..shilders,0,180,255)
        MasterAllInc('Rubine','RubinePoints')
