@@ -138,7 +138,7 @@ function MAIN_FLOW()
      if (INP.KeyH(KEY_UP   )==1 or joyhit(joyup))    and prij>           0 then  prij = prij - 1 end
      if (INP.KeyH(KEY_RIGHT)==1 or joyhit(joyright)) and    maxrij[pcol+1] then  pcol = pcol + 1 end
      if (INP.KeyH(KEY_LEFT )==1 or joyhit(joyleft))  and pcol>           0 then  pcol = pcol - 1 end
-     if (INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_SPACE)==1 or joyhit('CONFIRM') or mousehit(1)) and cspot then
+     if (INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_SPACE)==1 or joyhit('CONFIRM') or (mousehit(1) and my<SH-100)) and cspot then
         LoadMap(cspot.Kthura)
         GoToLayer(cspot.Layer,cspot.Start)
         LAURA.Flow('FIELD')
