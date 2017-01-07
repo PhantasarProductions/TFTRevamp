@@ -2,7 +2,7 @@
 **********************************************
   
   HandoStillor.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.14
+version: 17.01.07
 ]]
 local function GoNext()
    local skill = tonumber(Var.C('%SKILL')) or 2
@@ -45,7 +45,7 @@ local function GoNext()
    RPGStat.SetData('HandoStillor','EQP_Weapon',"EQP_HandoStillor_WP1")
    RPGStat.SetData('HandoStillor','EQP_Armor' ,"EQP_HandoStillor_AR1") -- HandoStillor has no armor prior to the optional bosses, but this field must exist as it will otherwise crash the game
    RPGStat.SetData("HandoStillor","EQP_Acc"   ,"") -- This just makes sure the entry exists so no crashes can come bacause of it later.
-   RPGStat.SetStat("HandoStillor","Level",12/skill)
+   RPGStat.SetStat("HandoStillor","Level",18/skill)
    MS.Run("MAP","InitHandoSkill")
    LAURA.Flow("FIELD")
    MS.Run('FIELD','SpawnPlayer',"Hando")

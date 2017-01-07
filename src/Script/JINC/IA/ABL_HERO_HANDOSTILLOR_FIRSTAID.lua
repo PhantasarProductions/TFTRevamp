@@ -35,7 +35,7 @@
 version: 17.01.07
 ]]
 ret = {
-	["ABL_APCost"] = 25,
+	["ABL_APCost"] = 17,
 	["ADDCARD_Action_Act"] = "Self",
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Power",
