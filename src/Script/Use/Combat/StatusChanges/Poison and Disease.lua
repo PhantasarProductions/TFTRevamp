@@ -56,7 +56,7 @@ StatusChanges.Poison = {
           local forf = 'Hero' -- Friend or foe?
           if prefixed(ch,'FOE') then forf='Foe' end
           charmsg(ch,"Poison Damage",100,255,0)
-          Hurt(ch,HP.Maximum*StatusChanges.Poison.mydat[forf])
+          Hurt(ch,HP.Maximum*StatusChanges.Poison.mydat.rate[forf])
       end 
 
 }
