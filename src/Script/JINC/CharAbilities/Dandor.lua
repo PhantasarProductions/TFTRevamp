@@ -2,7 +2,7 @@
 **********************************************
   
   Dandor.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,17 +32,17 @@
   
  **********************************************
  
-version: 16.11.17
+version: 17.01.07
 ]]
 
 
 local r = {
                  ["Dandor's Abilities"]  = {
-                             abl_dandor_axesmash={16},
-                             abl_dandor_superexesmash={50},
-                             abl_dandor_shield={[2]=15},
-                             abl_dandor_barrier={[3]=15},
-                             abl_dandor_iddqd={[2]=100,[3]=100}
+                             abl_hero_dandor_axesmash={16},
+                             abl_hero_dandor_superexesmash={50},
+                             abl_hero_dandor_shield={[2]=15},
+                             abl_hero_dandor_barrier={[3]=15},
+                             abl_hero_dandor_iddqd={[2]=100,[3]=100}
                              },
           }
 return r
