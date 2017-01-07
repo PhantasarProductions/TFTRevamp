@@ -32,15 +32,16 @@
   
  **********************************************
  
-version: 17.01.06
+version: 17.01.07
 ]]
 ret = {
 	["ABL_APCost"] = 25,
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Power",
 	["Attack_Element"] = "None",
 	["Desc"] = "Weniaria can heal small wounds",
-	["Heal"] = 75,
+	["Heal"] = 100,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "StatPercent",
 	["ITM_EQP_For"] = "Jake",

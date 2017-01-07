@@ -393,8 +393,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png
@@ -1072,6 +1072,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Combat/Hero/Dandor/Victory/Dead.ogg
     1. Audio: Vocals/Combat/Hero/Dandor/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/Dandor/Victory/Perfect.ogg
+    1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Attack.ogg
+    1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Critical.ogg
+    1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Heal.ogg
+    1. Audio: Vocals/Combat/Hero/HandoStillor/Action/HolyStrike.ogg
+    1. Audio: Vocals/Combat/Hero/HandoStillor/Action/NeutralizePoison.ogg
+    1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Revive.ogg
+    1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Weniaria.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/Boss.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/Dead.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/General.ogg

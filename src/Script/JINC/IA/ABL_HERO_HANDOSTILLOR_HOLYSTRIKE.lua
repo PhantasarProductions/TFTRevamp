@@ -32,10 +32,11 @@
   
  **********************************************
  
-version: 17.01.06
+version: 17.01.07
 ]]
 ret = {
 	["ABL_APCost"] = 55,
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack"] = 150,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
@@ -57,6 +58,7 @@ ret = {
 	["Target"] = "1F",
 	["Title"] = "Holy Strike",
 	["Type"] = "Ability",
+	["Voice"] = "HolyStrike",
 	["rew_GainSkill1"] = 10,
 	["rew_GainSkill2"] = 10}
 

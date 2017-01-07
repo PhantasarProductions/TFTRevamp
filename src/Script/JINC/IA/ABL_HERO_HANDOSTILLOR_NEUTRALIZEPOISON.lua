@@ -32,10 +32,11 @@
   
  **********************************************
  
-version: 17.01.06
+version: 17.01.07
 ]]
 ret = {
 	["ABL_APCost"] = 15,
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
@@ -57,7 +58,7 @@ ret = {
 	["Target"] = "1A",
 	["Title"] = "Neutralize Poison",
 	["Type"] = "Ability",
-	["Voice"] = "Weniaria",
+	["Voice"] = "NeutralizePoison",
 	["rew_GainSkill1"] = 5,
 	["rew_GainSkill2"] = 5}
 

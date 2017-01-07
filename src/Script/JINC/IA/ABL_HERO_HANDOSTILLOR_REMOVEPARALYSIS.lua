@@ -32,10 +32,11 @@
   
  **********************************************
  
-version: 17.01.06
+version: 17.01.07
 ]]
 ret = {
 	["ABL_APCost"] = 30,
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",

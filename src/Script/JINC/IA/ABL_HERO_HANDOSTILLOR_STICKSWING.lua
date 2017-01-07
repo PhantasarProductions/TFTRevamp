@@ -32,10 +32,11 @@
   
  **********************************************
  
-version: 17.01.06
+version: 17.01.07
 ]]
 ret = {
 	["ABL_APCost"] = 45,
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack"] = 120,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
@@ -57,6 +58,7 @@ ret = {
 	["Target"] = "1F",
 	["Title"] = "Stick Swing",
 	["Type"] = "Ability",
+	["Voice"] = "Attack",
 	["rew_GainSkill1"] = 5}
 
 return ret
