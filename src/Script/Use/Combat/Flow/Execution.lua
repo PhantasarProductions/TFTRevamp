@@ -131,7 +131,7 @@ function PerformAction(act,group,i)
          if prefixed(k,"Cause") then 
             local s = right(k,#k-5)
             local roll=rand(1,100)
-            if roll>RPG.SafeStat(myfighter.tag,"END_SR_"..s) then SetStatus(myfighter.tag,s) end
+            if roll>RPG.SafeStat(myfighter.tag,"END_SR_"..s) then SetStatus(myfighter.tag,s) effect = true end
          end   
      end    
      -- Throw "miss" if there is no effect (very last)
