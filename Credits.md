@@ -85,7 +85,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. ???: Fonts/Doc/monof_tt.txt
     1. Font: Fonts/monof55.ttf
 - Eric Matyas
-    1. Music: Music/Dungeon/Invasion-of-the-Giant-Disco-Ants_Looping.ogg
+    1. Music: Music/RandomEncounter/RPG-Battle-Climax_v001.ogg
+    1. Music: Music/Town/Chamber-of-Jewels.ogg
     1. Music: Music/Dungeon/Moonlit-Secrets_Looping.ogg
     1. Music: Music/Game Over/Going-Different-Ways.ogg
 - GR-Sites
@@ -96,15 +97,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/textures/Water/water.png
     1. Graphics: gfx/textures/wood/muur.png
     1. Graphics: gfx/textures/wood/vloer.png
+- Holly
+    1. Graphics: GFX/combat/fighters/foe/Reg/Hawk.png
 - Jeroen P. Broks
-    1. Game identification data: ID/ID.Vocal.Demo
+    1. Game identification data: ID/ID.Vocal.Full
     1. Game identification data: ID/Identify
     1. Game identification data: ID/ID.Data.Full
     1. Game identification data: ID/Identify.txt
-    1. Game identification data: ID/Test
-    1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
-    1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
-    1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Script: Script/Char/Char.lua
     1. Script: Script/Events/AutoUse.lua
     1. Script: Script/Events/NarratedEvents.lua
@@ -113,6 +112,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Flow/AutoUse.lua
     1. Script: Script/Flow/Combat.lsv
     1. Script: Script/Flow/Combat.lua
+    1. Game identification data: ID/Test
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Script: Script/Flow/Field.lsv
     1. Script: Script/Flow/Field.lua
     1. Script: Script/Flow/Game Over.lua
@@ -168,6 +171,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_DESPERATEATTACK.lua
     1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
     1. Script: Script/JINC/IA/ABL_FOE_FLAMESTRIKE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_PARADIVE.lua
     1. Script: Script/JINC/IA/ABL_FOE_SHOCKINGSTORIES.lua
     1. Script: Script/JINC/IA/ABL_FOE_SICKSTORIES.lua
     1. Script: Script/JINC/IA/ABL_FOE_SMITE.lua
@@ -253,6 +257,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_ANTIDOTE.lua
     1. Script: Script/JINC/IA/ITM_APPLE.lua
     1. Script: Script/JINC/IA/ITM_BELL.lua
+    1. Script: Script/JINC/IA/ITM_CARROT.lua
     1. Script: Script/JINC/IA/ITM_FLAMEORB.lua
     1. Script: Script/JINC/IA/ITM_MAGICDUST.lua
     1. Script: Script/JINC/IA/ITM_MANDRAKE.lua
@@ -397,11 +402,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
@@ -950,7 +955,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/TEST
     1. Scenario: Languages/English/Scenario/WORLDMAP
 - Kevin McLeod
+    1. Music: Music/Dreshka/Hero Down.ogg
     1. Music: Music/Dungeon/Chillin Hard.ogg
+    1. Music: Music/Dreshka/Water Prelude.ogg
     1. Music: Music/Dungeon/Pippin the Hunchback.ogg
     1. Music: Music/Dungeon/TheDread.ogg
     1. Music: Music/Hub/Angevin.ogg
@@ -1059,6 +1066,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Tapijt/Tapijt.xcf
     1. Graphics: GFX/Textures/Trees/Spar.png
     1. Graphics: GFX/Textures/Trees/Struik.png
+- Matt McFarland
+    1. Music: Music/Dungeon/Strangled.ogg
 - Merlin2525
     1. Graphics: Gfx/Combat/Fighters/Foe/Reg/Bat.png
 - Ray Larabie
@@ -1069,14 +1078,24 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - SterioType
     1. Font: Fonts/master_of_break.ttf
 - TFTCREW
-    1. Audio: Vocals/Combat/Foe/Harry/Action/Attack.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_1_6.ogg
     1. Audio: Vocals/Combat/Foe/Harry/Action/Desperate.ogg
     1. Audio: Vocals/Combat/Foe/Harry/Action/Distract.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_1.ogg
     1. Audio: Vocals/Combat/Hero/Dandor/Action/Attack.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_10.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_11.ogg
     1. Audio: Vocals/Combat/Hero/Dandor/Victory/Boss.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_12.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_13.ogg
     1. Audio: Vocals/Combat/Hero/Dandor/Victory/Dead.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_14.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_15.ogg
     1. Audio: Vocals/Combat/Hero/Dandor/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/Dandor/Victory/Perfect.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_16.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_17.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_18.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Attack.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Critical.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Heal.ogg
@@ -1086,11 +1105,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Weniaria.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/Boss.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/Dead.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_19.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/Perfect.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Action/2PS.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_2.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Action/3PS.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Action/4PS.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_20.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Action/Attack.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Action/Heal.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Victory/Boss.ogg
@@ -1099,23 +1121,35 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Combat/Hero/Jake/Victory/Perfect.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Victory/Boss.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Victory/Dead.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_21.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Victory/General.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_22.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Victory/Perfect.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Attack.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Fire.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Frost.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Heal.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_23.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Lightning.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/Boss.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_24.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/Dead.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/Perfect.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_25.ogg
     1. Audio: Vocals/Combat/Hero/Nostramantu/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/Nostramantu/Victory/Perfect.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_3.ogg
     1. Audio: Vocals/Combat/Learn/Dandor_1.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_4.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_5.ogg
     1. Audio: Vocals/Combat/Learn/Jake_1.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_6.ogg
     1. Audio: Vocals/Combat/Learn/Marrilona_1.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_1.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_7.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_8.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_9.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_10.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_11.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_12.ogg
@@ -1306,6 +1340,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - Varazuvi(TM)
     1. Audio: Audio/sfx/General/Solved.ogg
 - Wicky77
+    1. Music: Music/Town/Happy.ogg
     1. Music: Music/Combat/Victory.ogg
     1. Music: Music/Dungeon/Beethoven.ogg
     1. Music: Music/Dungeon/Chanson d'eglise.ogg

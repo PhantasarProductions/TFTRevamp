@@ -47,12 +47,51 @@ function NPC_Freya()
    Master('Freya')   
 end
 
+function HandoStillor()
+   if Done('&DONE.ELFROAD.JOIN.HANDOSTILLOR') then return end
+   local elf = Maps.Obj.Obj('HandoStillor')
+   Maps.CamX = (-SW)+(elf.X-30)
+   Shift('Human')
+   PartyPop('Stil1',"East")
+   MapText('STILLOR_1')
+   PartyPop('Stil2','East')
+   Music('Sys/Silence.ogg')
+   for i=1,70 do
+       Maps.CamX = Maps.CamX + 1
+       Cls()
+       DrawScreen()
+       Flip()
+   end    
+   MapText('STILLOR_2')
+   Party('Jake_Human;Marrilona;HandoStillor')
+   Maps.Obj.Kill('HandoStillor',1)
+   Chapter('GFX/Chapters/2.png')
+   GoToLayer('#002','Stil2_Jake')
+   Var.D('$WMCHAT','STILLORJOIN')
+   MapMusic()
+end
 
-function GALE_OnLoad()
-   ZA_Enter('ExitWest',WorldMap)
-   -- If you are in the full version, the barrier and construction worker Mark will vanish.
+function FullRemove()
+   -- If you are in the full version, the barrier and construction worker David will vanish.
    if fullversion then 
       Maps.Obj.Kill('Demo_Barrier')
       Maps.Obj.Kill('NPC_MT_Bouwvakker')
+      Maps.Remap()
+   else
+      CSay('This is the demo, so we\'ll let them be')
    end   
+end
+
+function ExitNorth()
+   WorldMap_UnLock('CH2ISKARDERIU')
+   WorldMap()
+end
+
+function GALE_OnLoad()
+   ZA_Enter('ExitWest',WorldMap)
+   ZA_Enter('HandoStillorEvent',HandoStillor)
+   ZA_Enter('FullRemove',FullRemove)
+   ZA_Enter('North',ExitNorth)
+   MapHide('Secret')
+   Award('CHAPTER1')
 end   

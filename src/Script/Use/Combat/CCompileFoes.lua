@@ -1,6 +1,6 @@
 --[[
   CCompileFoes.lua
-  Version: 17.01.01
+  Version: 17.01.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -78,9 +78,12 @@ function CompileFoe(tag,data,foefile,oversoul)
       Image.Hot("FIGHT_"..tag.."FALSE",Image.Width("FIGHT_"..tag.."FALSE")/2,Image.Height("FIGHT_"..tag.."FALSE")) -- Hotspot bottom center
       Image.Hot("FIGHT_"..tag.."TRUE" ,Image.Width("FIGHT_"..tag.."TRUE" )/2,Image.Height("FIGHT_"..tag.."TRUE" )) -- Hotspot bottom center
    end   
-   local x = math.ceil(id/3)
-   local y = (id - x)+1
-   myfoe.x = (x * (Center_X/100)) + 50
+   local x --= math.ceil(id/3)
+   local y --= (id - x)+1
+   if id<4 then x=1; y=id
+   elseif id<7 then x=2; y=id-3
+   else x=3;y=id-6 end
+   myfoe.x = (x * (Center_X/10)) + 50
    myfoe.y = (y * ((Center_Y-100)/4))+Center_Y    
    local altcoords = CVVN('$COMBAT.POS'..tag)
    if altcoords=='CENTER' then

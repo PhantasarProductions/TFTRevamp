@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.04
+version: 17.01.08
 ]]
 
 -- abl_hero_jake_2ps = {5},abl_hero_jake_3ps={25},abl_hero_jake_4ps={50},abl_hero_jake_berserk={10,5}
@@ -62,7 +62,7 @@ local r = {
                  },
           }
           
-if fullveresion then -- That's right Marrilona will not get her level #2 and level #3 spells unless you have the full version of the game.          
+if fullversion then -- That's right Marrilona will not get her level #2 and level #3 spells unless you have the full version of the game.          
    r["2. Level 2"] = {
                                        abl_hero_marrilona_permanence = {25,25,25,25,25}
                      }

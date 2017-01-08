@@ -8,7 +8,8 @@ AutoOutput    = YES
 string LocationName
 string LocationPrefix
 mc Kthura
-@f /Volumes/Scyndi/Projects/Applications/BlitzMax/JCR6+/LAURA II/design/The Fairy Tale - REVAMP/jcr/demo/data/Tricky Story/Kthura
+@f /Volumes/Scyndi/Projects/Applications/BlitzMax/JCR6+/LAURA II/design/The Fairy Tale - REVAMP/jcr/Demo/data/Tricky Story/Kthura
+@f /Volumes/Scyndi/Projects/Applications/BlitzMax/JCR6+/LAURA II/design/The Fairy Tale - REVAMP/jcr/Full/data/Tricky Story/Kthura
 string Layer
 string Start
 bool Dungeon
@@ -118,6 +119,16 @@ Rec: CH2ELFROAD
 	Layer = #001
 	LocationName = Elven Road
 	LocationPrefix = The
+	Start = Start
+	UnlockedFromStart = FALSE
+
+Rec: CH2ISKARDERIU
+	Dungeon = FALSE
+	Folder = Delisto
+	Kthura = CH2_Town_Iskarderiu
+	Layer = town
+	LocationName = Iskarderiu
+	LocationPrefix = The Elfish City of
 	Start = Start
 	UnlockedFromStart = FALSE
 
