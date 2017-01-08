@@ -35,6 +35,8 @@
 version: 17.01.08
 ]]
 
+-- @USE /Script/Use/Specific/Walda.lua
+
 
 function NPC_Freya()
    if not CVV('&MASTER.FREYA') then 
