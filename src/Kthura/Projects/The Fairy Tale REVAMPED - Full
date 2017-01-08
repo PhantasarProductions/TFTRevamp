@@ -1,0 +1,8 @@
+[sys]
+include The Fairy Tale REVAMPED
+
+[old]
+Add:TexturesGrabFoldersMerge,../LAURA II/Design/The Fairy Tale - REVAMP/JCR/Full/data
+
+[vars]
+MAPS=../LAURA II/Design/The Fairy Tale - REVAMP/JCR/Full/data/Tricky Story/Kthura/
