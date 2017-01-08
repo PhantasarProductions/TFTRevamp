@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 17.01.04
+  Version: 17.01.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -120,6 +120,19 @@ end
 function KILLCH(ch)
   SETCHARPOINTS(ch,"HP",0)
 end
+
+
+function DIR()
+  local f
+  local hue = 0
+  for f in iJCR6Dir() do
+    hue = hue + 1
+    if hue>=344 then hue=0 end
+    Image.ColorHSV(hue,255,255)
+    Console.Write(f,Image.CurrentRed,Image.CurrentGreen,Image.CurrentBlue)
+  end
+end
+
 
 -- Test Battle (TB)
 function TB_SETUP()

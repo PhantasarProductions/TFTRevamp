@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.02
+version: 17.01.08
 ]]
 
 
@@ -51,7 +51,7 @@ end
 function GALE_OnLoad()
    ZA_Enter('ExitWest',WorldMap)
    -- If you are in the full version, the barrier and construction worker Mark will vanish.
-   if fullveresion then 
+   if fullversion then 
       Maps.Obj.Kill('Demo_Barrier')
       Maps.Obj.Kill('NPC_MT_Bouwvakker')
    end   

@@ -99,7 +99,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - Jeroen P. Broks
     1. Game identification data: ID/ID.Vocal.Demo
     1. Game identification data: ID/Identify
+    1. Game identification data: ID/ID.Data.Full
     1. Game identification data: ID/Identify.txt
+    1. Game identification data: ID/Test
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Script: Script/Char/Char.lua
     1. Script: Script/Events/AutoUse.lua
     1. Script: Script/Events/NarratedEvents.lua
@@ -392,11 +397,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
