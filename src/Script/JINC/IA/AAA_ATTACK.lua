@@ -1,6 +1,6 @@
 --[[
   AAA_ATTACK.lua
-  Version: 17.01.08
+  Version: 17.01.09
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -35,6 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AllowAccuracy"] = true,

@@ -32,10 +32,11 @@
   
  **********************************************
  
-version: 17.01.08
+version: 17.01.09
 ]]
 ret = {
 	["ABL_APCost"] = 6,
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
@@ -58,7 +59,7 @@ ret = {
 	["Title"] = "Heal",
 	["Type"] = "Ability",
 	["Voice"] = "Heal",
-	["rew_GainSkill4"] = 4}
+	["rew_GainSkill4"] = 8}
 
 return ret
 

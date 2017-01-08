@@ -1,7 +1,7 @@
 --[[
-  ITM_MEDICINE.lua
+  ABL_FOE_TUSK.lua
   Version: 17.01.09
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -35,12 +35,16 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ADDCARD_Action_Act"] = "Self",
+	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
+	["Attack_AllowAccuracy"] = true,
+	["Attack_AllowCritical"] = true,
+	["Attack_AllowDodge"] = true,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["CureDisease"] = true,
-	["Desc"] = "Cures \"Disease\"",
+	["Desc"] = "Attack the enemy",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -51,13 +55,15 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 50,
 	["ITM_Type"] = "Consumable",
-	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Medicine",
-	["Type"] = "Item",
-	["Voice"] = "Heal"}
+	["Rew_GainAP"] = 6,
+	["Stance"] = "Attack",
+	["Target"] = "1F",
+	["Title"] = "Tusk",
+	["Type"] = "Ability",
+	["Voice"] = "Attack",
+	["rew_CreateSkill1"] = true,
+	["rew_GainSkill1"] = 6}
 
 return ret
 

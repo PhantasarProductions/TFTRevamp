@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.08
+version: 17.01.09
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
@@ -56,7 +56,8 @@ ret = {
 	["Stance"] = "Cast",
 	["Target"] = "1A",
 	["Title"] = "Protect",
-	["Type"] = "Ability"}
+	["Type"] = "Ability",
+	["rew_GainSkill5"] = 15}
 
 return ret
 

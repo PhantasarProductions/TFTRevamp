@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 17.01.04
+  Version: 17.01.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -735,7 +735,7 @@ function RandomEncounter()
    local countparty = CountPartyMembers()
    local max = ({{1,2,3,4},{2,3,6,9},{3,6,9,9}})[skill][countparty]
    local tab = ({{1,1,1,2,2,3,1,1,2,3,4},{3,3,3,1,3,3,2,2,3,3,4,4,3,6,3,3,1,1,9},{3,3,3,6,6,9}})[skill]
-   local num = rand(1,#tab)
+   local num = tab[rand(1,#tab)]
    local arena = Maps.GetData("Arena"); if not suffixed(arena,".png") then arena = arena..".png" end
    if num>max then num=max end
    ClearCombatData()
