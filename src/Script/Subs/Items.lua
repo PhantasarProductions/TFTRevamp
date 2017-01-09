@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.01.07
+  Version: 17.01.09
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -254,7 +254,7 @@ function ShowSpellList(ch,psizes)
        cnt=i
    end
    -- Help
-   if joydown('XTRA') or INP.KeyD(KEY_H)==1 then
+   if (joydown('XTRA') or INP.KeyD(KEY_H)==1) and ca then
       if not has[ck] then
          local b = fonts.SpellUnlockBox[2]
          local sy = (SSLP+1)*fonts.Stats[2]

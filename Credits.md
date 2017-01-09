@@ -114,10 +114,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Flow/Combat.lua
     1. Script: Script/Flow/Field.lsv
     1. Script: Script/Flow/Field.lua
-    1. Game identification data: ID/Test
-    1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
-    1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
-    1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Script: Script/Flow/Game Over.lua
     1. Script: Script/Flow/Master.lsv
     1. Script: Script/Flow/Master.lua
@@ -140,15 +136,23 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/CharAbilities/Feenalaria.lua
     1. Script: Script/JINC/CharAbilities/HandoStillor.lua
     1. Script: Script/JINC/CharAbilities/Jake_Fairy.lua
+    1. General Data: gfx/Textures/Town/Elves/Bench
+    1. Graphics: gfx/Textures/Town/Elves/Bench.png
     1. Script: Script/JINC/CharAbilities/Jake_Human.lua
+    1. Graphics: gfx/Textures/Town/Elves/Fence.png
+    1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
     1. Script: Script/JINC/CharAbilities/Krandar.lua
     1. Script: Script/JINC/CharAbilities/List.lua
+    1. Game identification data: ID/Test
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
     1. Script: Script/JINC/CharAbilities/Marrilona.lua
     1. Script: Script/JINC/CharAbilities/Nostramantu.lua
     1. Script: Script/JINC/Foes/Boss/Dwarf.lua
     1. Script: Script/JINC/Foes/Boss/Dwarf_J.lua
     1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
     1. Script: Script/JINC/Foes/Boss/GobKing.lua
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Script: Script/JINC/Foes/Boss/Harry1.lua
     1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
     1. Script: Script/JINC/Foes/Boss/Librarian.lua
@@ -190,6 +194,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_FIRSTAID.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_HOLYSTRIKE.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON.lua
+    1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_PRAY.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_PURIFY.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_RECOVER.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS.lua
@@ -212,6 +217,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_REJUVENATE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_ULTRAHEAL.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_VIGOR.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_MIDAS_HARDFORTHEMONEY.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_MIDAS_STEALMONEY.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_BACKSTAB.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_FOLLOWME.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_INVADE.lua
@@ -277,6 +284,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/WAND_THUNDER.lua
     1. Script: Script/JINC/IA/WAND_TRAINING.lua
     1. Script: Script/JINC/Masters/Freya.lua
+    1. Script: Script/JINC/Masters/Midas.lua
     1. Script: Script/JINC/Masters/Rubine.lua
     1. Script: Script/JINC/PrologueChains/Dandor.lua
     1. Script: Script/JINC/PrologueChains/HandoStillor.lua
@@ -295,6 +303,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH1_HUB_Altar.lua
     1. Script: Script/Maps/CH1_Hub_JakeHut.lua
     1. Script: Script/Maps/CH2_Dungeon_ElfRoad.lua
+    1. Script: Script/Maps/CH2_Town_Iskarderiu.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
     1. Script: Script/Maps/PRO_DUNGEON_Magic.lua
     1. Script: Script/Maps/PRO_DUNGEON_Tomb.lua
@@ -406,11 +415,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
@@ -672,7 +681,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Idle.png
     1. Graphics: GFX/Actors/Single/DarkElves/Melody.piko
     1. Graphics: GFX/Actors/Single/DarkElves/Melody.png
-    1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
     1. Graphics: GFX/Actors/Single/Elves/SashaFunda.NS.piko
     1. Graphics: GFX/Actors/Single/Elves/SashaFunda.North.png
     1. Graphics: GFX/Actors/Single/Elves/SashaFunda.South.png
@@ -922,6 +930,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_JAKEHUT
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_ELFROAD
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_ISKARDERIU
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_MAGIC
@@ -948,6 +957,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_JAKEHUT
     1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_ELFROAD
+    1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_ISKARDERIU
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_MAGIC
@@ -968,6 +978,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Scenario/We Got Trouble.ogg
     1. Music: Music/Town/Enchanted Valley.ogg
 - Man Of Steel
+    1. Graphics: GFX/Actors/Single/Elves/RandomElfFemale.png
+    1. Graphics: GFX/Actors/Single/Elves/RandomElfFemale2.png
+    1. Graphics: GFX/Actors/Single/Elves/RandomElfMale.png
+    1. Graphics: GFX/Actors/Single/Elves/RandomElfMale2.png
+    1. Graphics: GFX/Textures/Town/Elves/House.png
     1. Graphics: GFX/Actors/Single/Humans/RubineTheHood.png
     1. Graphics: GFX/Actors/Single/Humans/Thief.png
     1. Graphics: GFX/Actors/Single/Humans/Female.png

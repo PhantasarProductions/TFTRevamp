@@ -34,6 +34,28 @@
  
 version: 17.01.09
 ]]
+
+function Welcome()
+    if Done('&DONE.ISKARDERIU.WELCOME') then return end
+    PartyPop('W','North')
+    MapText('Welcome')
+end    
+
+function Master_Midas()
+   Master('Midas')
+end   
+
+function NPC_Midas()
+   if CVV('&MASTER.MIDAS.HAVE') then return Master_Midas() end
+   MapText('MIDAS_FIRST'); Done('&DONE.RUBINE.MENTIONED.BY.MIDAS')
+   if RunQuestion('MAP','MIDAS_CONFIRM')==2 then MapText('MIDAS_REJECT') return end
+   if CVV('%CASH')<250 then return MapText('MIDAS_NOTENOUGH') end
+   Var.Clear('%CASH')
+   Done('&MASTER.MIDAS.HAVE')
+   Master_Midas() 
+end
+
 function GALE_OnLoad()
    ZA_Enter('Exit',WorldMap)
+   ZA_Enter('Welcome',Welcome)
 end   
