@@ -112,12 +112,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Flow/AutoUse.lua
     1. Script: Script/Flow/Combat.lsv
     1. Script: Script/Flow/Combat.lua
+    1. Script: Script/Flow/Field.lsv
+    1. Script: Script/Flow/Field.lua
     1. Game identification data: ID/Test
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
-    1. Script: Script/Flow/Field.lsv
-    1. Script: Script/Flow/Field.lua
     1. Script: Script/Flow/Game Over.lua
     1. Script: Script/Flow/Master.lsv
     1. Script: Script/Flow/Master.lua
@@ -406,11 +406,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
@@ -1074,6 +1074,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Dungeon/Strangled.ogg
 - Merlin2525
     1. Graphics: Gfx/Combat/Fighters/Foe/Reg/Bat.png
+- Papapishu
+    1. Graphics: gfx/combat/fighters/foe/reg/boar.png
 - Ray Larabie
     1. Font: Fonts/Coolvetica.ttf
 - Solar Granulation

@@ -32,10 +32,12 @@
   
  **********************************************
  
-version: 17.01.08
+version: 17.01.09
 ]]
 
 -- @USE /Script/Use/Specific/Walda.lua
+
+
 
 
 function NPC_Freya()
@@ -96,4 +98,5 @@ function GALE_OnLoad()
    ZA_Enter('North',ExitNorth)
    MapHide('Secret')
    Award('CHAPTER1')
+   InitWalda('ElfRoad')
 end   

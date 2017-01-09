@@ -1,7 +1,7 @@
 --[[
-  PlayWithPoints.lua
+  ABL_HERO_HANDOSTILLOR_PRAY.lua
   Version: 17.01.09
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,26 +34,39 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- @IF IGNORE
-SpellScript = {}
--- @FI
+ret = {
+	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack_AccuracyRate"] = 100,
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Element"] = "None",
+	["BUFF_Accuracy"] = -20,
+	["BUFF_Endurance"] = -5,
+	["BUFF_Evasion"] = -100,
+	["BUFF_Intelligence"] = 5,
+	["BUFF_Power"] = -1,
+	["BUFF_Resistance"] = 5,
+	["BUFF_Speed"] = -100,
+	["EffectScript"] = "RecoverAP",
+	["EffectScript_Arg"] = "100",
+	["Heal_StatPercent"] = "Intelligence",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_Type"] = "Consumable",
+	["Stance"] = "Cast",
+	["Target"] = "1A",
+	["Type"] = "Ability",
+	["Voice"] = "Weniaria",
+	["rew_GainSkill2"] = -1}
 
-function SpellScript.PointAlter(tartag,extag,param)
-    local sp = mysplit(param," ")
-    local p = RPG.Points(tartag,sp[1])
-    p.Have = (({ RAND = function (p) return rand(1,p.Maximum) end})[upper(sp[2])] or function(p,tp) return Sys.Val(tp) end)(p,sp[2])
-    
-end
+return ret
 
-function SpellScript.MultiPointAlter(tartag,extag,paramsquence)
-   for seq in each(mysplit(paramsequence,";")) do SpellScript.PointAlter(extag,tartag,seq) end
-end   
+-- This file is an automatically generated file!
 
-function SpellScript.RecoverAP(tartag,extag,param)
-   local n = Sys.Val(param)
-   RPG.Points(tartag,'AP').Inc(n)
-end   
-
--- @IF INGORE
-return SpellScript 
--- @FI

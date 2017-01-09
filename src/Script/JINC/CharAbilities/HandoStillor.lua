@@ -32,10 +32,11 @@
   
  **********************************************
  
-version: 17.01.08
+version: 17.01.09
 ]]
 
 local fullversion = JCR6.Exists('ID/ID.Data.Full')==1
+local skill = Sys.Val(Var.C('%SKILL'))
 
 local r = {
                  ["1. Level 1"]  = {
@@ -55,7 +56,8 @@ local r = {
           
 if fullversion then -- That's right Hando Stillor will not get his level #2 and level #3 spells unless you have the full version of the game.          
    r["2. Level 2"] = {}
-   r["3. Level 3"] = {}
+   r["3. Level 3"] = { abl_hero_handostillor_pray = { 5*skill, math.ceil(3^skill) } -- 1
+                     }
 end
              
 return r
