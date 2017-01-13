@@ -2,7 +2,7 @@
 **********************************************
   
   PRO_Hub_Weniaria.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.11.19
+version: 17.01.13
 ]]
 function InitHandoSkill()
    CreateSkill('HandoStillor',1,6/skill)
@@ -62,4 +62,17 @@ function SashaFunda()
    LoadMap("PRO_Dungeon_Crypt")
    GoToLayer("#000","Start")
    -- Sys.Error("Not scripted yet")
+end
+
+function ToHall() GoToLayer('HALL','Start') end
+function Leave() GoToLayer('lobby','ComeOut') end
+
+function GALE_OnLoad()
+   if CVV("&DONE.SASHA_FUNDA.OPEN.HANDO_STILLOR.PROLOGUE") then 
+      Maps.GoToLayer('HALL')
+      Maps.Obj.Kill('SashaFunda')
+   end   
+   ZA_Enter('ToHall',ToHall)
+   ZA_Enter('Leave',Leave)
+   ZA_Enter('Bye',WorldMap)
 end
