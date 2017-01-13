@@ -78,6 +78,7 @@ function NPC_Keizer()
        PartyPop('K','North')
        MapText("EMPEROR1")
        WorldMap_Unlock('CH2DRESHKA')
+       Var.D('$WMCHAT','KEIZER')
     end
 end
 
