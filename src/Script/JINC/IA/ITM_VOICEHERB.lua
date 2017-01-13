@@ -1,7 +1,7 @@
 --[[
-  ITM_MAGICDUST.lua
+  ITM_VOICEHERB.lua
   Version: 17.01.12
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -35,12 +35,15 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["CureParalysis"] = true,
-	["Desc"] = "Cures paralysis",
+	["CureSilence"] = true,
+	["Desc"] = "Cures \"Silence\"",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -48,14 +51,13 @@ ret = {
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_ShopPrice"] = 50,
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
 	["Target"] = "1A",
-	["Title"] = "Magic Dust",
+	["Title"] = "Voice Herb",
 	["Type"] = "Item",
 	["Voice"] = "Heal"}
 

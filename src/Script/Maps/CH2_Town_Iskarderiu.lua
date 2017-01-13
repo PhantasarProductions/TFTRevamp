@@ -32,10 +32,12 @@
   
  **********************************************
  
-version: 17.01.09
+version: 17.01.13
 ]]
 
 function Welcome()
+    Award('SCEN_CH2_ELVES')
+    WorldMap_Unlock('CH2WENIARIA')
     if Done('&DONE.ISKARDERIU.WELCOME') then return end
     PartyPop('W','North')
     MapText('Welcome')
@@ -55,7 +57,49 @@ function NPC_Midas()
    Master_Midas() 
 end
 
-function GALE_OnLoad()
-   ZA_Enter('Exit',WorldMap)
+function NPC_Weapons    ()
+    MapText('MYRA')
+    Shop('WEAPON_MYRAREMEMBO')
+end    
+
+function NPC_Emor()
+    MapText('EMOR')
+    Shop('ITEM_ISKARDERIU')
+end    
+
+function NPC_Inn()
+    Inn()
+end
+
+function NPC_Keizer()
+    if Done('&DONE.ISKARDERIU.KEIZER') then
+       MapText('EMPEROR2')
+    else
+       PartyPop('K','North')
+       MapText("EMPEROR1")
+       WorldMap_Unlock('CH2DRESHKA')
+    end
+end
+
+
+function Enter(z)
+    GoToLayer(z,"Start")
+end    
+
+
+
+
+function GoExit()
+    local l = Maps.LayerCodeName
+    if l=="town" then return WorldMap() end
+    GoToLayer('town','from'..l)
+end
+
+function GALE_OnLoad()   
+   ZA_Enter('Exit',GoExit)
    ZA_Enter('Welcome',Welcome)
+   Maps.GotoLayer('town')
+   for obj in KthuraEach('Zone') do
+       if prefixed(obj.tag,"Enter_") then ZA_Enter(obj.tag,Enter,lower(right(obj.tag,#obj.tag-6))) end
+   end
 end   

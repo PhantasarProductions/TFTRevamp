@@ -1,6 +1,6 @@
 --[[
   ITM_CARROT.lua
-  Version: 17.01.09
+  Version: 17.01.12
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -52,6 +52,7 @@ ret = {
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
 	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 1200,
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
 	["Target"] = "1A",

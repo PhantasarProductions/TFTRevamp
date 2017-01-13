@@ -65,6 +65,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - Alexander
     1. Audio: Audio/Combat/Ready.ogg
 - Angela Nagtzaam
+    1. Graphics: GFX/BoxText/Portret/Gedrio Fulla/General.png
     1. Graphics: GFX/BoxText/Portret/Fandalora/General.png
     1. Graphics: GFX/BoxText/Portret/Fandalora/NoEmo.png
     1. Graphics: GFX/BoxText/Portret/Harry/Angry.png
@@ -136,25 +137,32 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/CharAbilities/Feenalaria.lua
     1. Script: Script/JINC/CharAbilities/HandoStillor.lua
     1. Script: Script/JINC/CharAbilities/Jake_Fairy.lua
-    1. General Data: gfx/Textures/Town/Elves/Bench
-    1. Graphics: gfx/Textures/Town/Elves/Bench.png
     1. Script: Script/JINC/CharAbilities/Jake_Human.lua
-    1. Graphics: gfx/Textures/Town/Elves/Fence.png
-    1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
     1. Script: Script/JINC/CharAbilities/Krandar.lua
     1. Script: Script/JINC/CharAbilities/List.lua
-    1. Game identification data: ID/Test
-    1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
-    1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
     1. Script: Script/JINC/CharAbilities/Marrilona.lua
     1. Script: Script/JINC/CharAbilities/Nostramantu.lua
     1. Script: Script/JINC/Foes/Boss/Dwarf.lua
+    1. General Data: gfx/Textures/Town/Elves/Bench
+    1. Graphics: gfx/Textures/Town/Elves/Bench.png
+    1. Graphics: gfx/Textures/Town/Elves/Fence.png
+    1. Graphics: GFX/Actors/Single/Elves/GedrioFulla.png
+    1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
     1. Script: Script/JINC/Foes/Boss/Dwarf_J.lua
+    1. Game identification data: ID/Test
+    1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Data
+    1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Objects
+    1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Settings
+    1. Map Design: Kthura/CH2_Town_Dreshka/Data
+    1. Map Design: Kthura/CH2_Town_Dreshka/Objects
+    1. Map Design: Kthura/CH2_Town_Dreshka/Settings
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
     1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
     1. Script: Script/JINC/Foes/Boss/GobKing.lua
-    1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Script: Script/JINC/Foes/Boss/Harry1.lua
     1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Script: Script/JINC/Foes/Boss/Librarian.lua
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
@@ -270,6 +278,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_BELL.lua
     1. Script: Script/JINC/IA/ITM_CARROT.lua
     1. Script: Script/JINC/IA/ITM_FLAMEORB.lua
+    1. Script: Script/JINC/IA/ITM_HEALINGHERB.lua
     1. Script: Script/JINC/IA/ITM_MAGICDUST.lua
     1. Script: Script/JINC/IA/ITM_MANDRAKE.lua
     1. Script: Script/JINC/IA/ITM_MEDICINE.lua
@@ -278,6 +287,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_POTION.lua
     1. Script: Script/JINC/IA/ITM_PURELITERATURE.lua
     1. Script: Script/JINC/IA/ITM_SALVE.lua
+    1. Script: Script/JINC/IA/ITM_VOICEHERB.lua
     1. Script: Script/JINC/IA/SPECIAL_AXESMASH.lua
     1. Script: Script/JINC/IA/WAND_FLAME.lua
     1. Script: Script/JINC/IA/WAND_FROST.lua
@@ -291,8 +301,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/PrologueChains/Jake.lua
     1. Script: Script/JINC/PrologueChains/Marrilona.lua
     1. Script: Script/JINC/Shops/CLONE_Fred.lua
+    1. Script: Script/JINC/Shops/ITEM_ISKARDERIU.lua
     1. Script: Script/JINC/Shops/ITEM_WANDA.lua
     1. Script: Script/JINC/Shops/WEAPON_ERIC.lua
+    1. Script: Script/JINC/Shops/WEAPON_MYRAREMEMBO.lua
     1. Script: Script/Maps/Anna.lua
     1. Script: Script/Maps/AutoUse.lua
     1. Script: Script/Maps/CH1_Dungeon_FrendorBushes.lua
@@ -417,8 +429,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/ClearTable.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
@@ -466,7 +478,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Slime_Base.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Snake.piko
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Snake.png
-    1. Graphics: GFX/Combat/RENC/Gauge (Autosaved).piko
     1. Graphics: GFX/Combat/RENC/Gauge.piko
     1. Graphics: GFX/Combat/RENC/Gauge.png
     1. Graphics: GFX/Combat/SpellAni/Flame/Flame.png
@@ -716,6 +727,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Arena/Library.png
     1. Graphics: GFX/Combat/Arena/Magic.png
     1. Graphics: GFX/Combat/Arena/SubRiver.png
+    1. Graphics: GFX/Combat/Cards/Ability.png
     1. Graphics: GFX/Combat/Cards/BOSS_A.png
     1. Graphics: GFX/Combat/Cards/BOSS_B.png
     1. Graphics: GFX/Combat/Cards/BOSS_C.png

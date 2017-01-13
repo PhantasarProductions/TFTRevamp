@@ -1,6 +1,6 @@
 --[[
   ITM_PANACEA.lua
-  Version: 17.01.09
+  Version: 17.01.12
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -57,6 +57,7 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 5000,
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
 	["Target"] = "1A",

@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_RUBINE_BACKSTAB.lua
-  Version: 17.01.09
+  Version: 17.01.12
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================

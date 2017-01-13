@@ -112,6 +112,16 @@ Rec: CH1LIBRARY
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: CH2DRESHKA
+	Dungeon = FALSE
+	Folder = Delisto
+	Kthura = CH2_Town_Dreshka
+	Layer = #001
+	LocationName = Dreshka
+	LocationPrefix = The Fairy Village of
+	Start = Start
+	UnlockedFromStart = FALSE
+
 Rec: CH2ELFROAD
 	Dungeon = TRUE
 	Folder = Delisto
@@ -129,6 +139,26 @@ Rec: CH2ISKARDERIU
 	Layer = town
 	LocationName = Iskarderiu
 	LocationPrefix = The Elfish City of
+	Start = Start
+	UnlockedFromStart = FALSE
+
+Rec: CH2WATERSPIRATA
+	Dungeon = TRUE
+	Folder = Delisto
+	Kthura = CH2_Dungeon_SpirataWater
+	Layer = outside
+	LocationName = Bandafar's Temple
+	LocationPrefix = 
+	Start = Start
+	UnlockedFromStart = FALSE
+
+Rec: CH2WENIARIA
+	Dungeon = FALSE
+	Folder = Delisto
+	Kthura = PRO_Hub_Weniaria
+	Layer = lobby
+	LocationName = Weniaria's Temple
+	LocationPrefix = 
 	Start = Start
 	UnlockedFromStart = FALSE
 

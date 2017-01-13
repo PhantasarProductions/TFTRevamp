@@ -1,6 +1,6 @@
 --[[
   Idle.lua
-  Version: 17.01.04
+  Version: 17.01.13
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -81,7 +81,8 @@ function fflow.idle()
        for s,d in pairs(fighterbytag[card.data.tag].statuschanges) do
            (d.preturn or d.PreTurn or Nothing)(card.data.tag)
        end
-       if card.data.group == 'Foe' then if  (not TurnSkip(card.data.tag,true)) then flow = 'foeinput' else RemoveFirstCard() end 
+       if card.data.nextact then nextact=card.data.nextact  nextact.auto = true flow = 'Execution'
+       elseif card.data.group == 'Foe' then if  (not TurnSkip(card.data.tag,true)) then flow = 'foeinput' else RemoveFirstCard() end 
        elseif card.data.group == 'Hero' then if (not TurnSkip(card.data.tag,true)) then fflow.setplayerinput(card.data.tag) else RemoveFirstCard() end end
     elseif card.data.extra then
        Sys.Error('Stuff for extra cards not yet set up.')

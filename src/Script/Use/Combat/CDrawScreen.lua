@@ -1,7 +1,7 @@
 --[[
   CDrawScreen.lua
-  Version: 16.10.20
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.13
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -41,8 +41,9 @@ function ShowCard(i,myx,myy)
        local show = "BACKSIDE"
        local data = Cards[i].data
        if data then
-          if data.group=='Hero' then show="HERO_"..data.tag end
-          if data.group=="Foe"  then
+          if data.nextact then show="Ability"           
+          elseif data.group=='Hero' then show="HERO_"..data.tag 
+          elseif data.group=="Foe"  then
              if RPG.Points(data.tag,'HP').Have>0 then 
                 show="FOE_"..(data.letter or 'UNKNOWN')                
                 if data.boss or fighterbytag[data.tag].boss then show="BOSS_"..(data.letter or 'UNKNOWN') end

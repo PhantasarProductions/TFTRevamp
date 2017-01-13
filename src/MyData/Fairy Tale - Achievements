@@ -257,6 +257,18 @@ Rec: RATE100
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: SCEN_CH2_ELVES
+	Description = Visit the Elven Village of Iskarderiu
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = We're going to see the Elves
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: SCEN_LOVE
 	Description = Jake and Marrilona met each other and fell in love
 	Icon = *DEFAULT*

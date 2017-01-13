@@ -59,6 +59,30 @@ mc Slot20
 # they will be removed by MyData when you 
 # update this file :)
 
+Rec: ITEM_ISKARDERIU
+	AllowTrade = FALSE
+	Slot1 = ITM_APPLE
+	Slot10 = ITM_CARROT
+	Slot11 = ITM_PANACEA
+	Slot12 = 
+	Slot13 = 
+	Slot14 = 
+	Slot15 = 
+	Slot16 = 
+	Slot17 = 
+	Slot18 = 
+	Slot19 = 
+	Slot2 = ITM_SALVE
+	Slot20 = 
+	Slot3 = ITM_POTION
+	Slot4 = ITM_HEALINGHERB
+	Slot5 = ITM_ANTIDOTE
+	Slot6 = ITM_MEDICINE
+	Slot7 = ITM_MAGICDUST
+	Slot8 = ITM_VOICEHERB
+	Slot9 = ITM_MANDRAKE
+	Title = Emor Shylah's item shop
+
 Rec: ITEM_WANDA
 	AllowTrade = FALSE
 	Slot1 = ITM_APPLE
@@ -106,4 +130,28 @@ Rec: WEAPON_ERIC
 	Slot8 = 
 	Slot9 = 
 	Title = Eric's weapon Shop
+
+Rec: WEAPON_MYRAREMEMBO
+	AllowTrade = TRUE
+	Slot1 = EQP_JAKE_WP2
+	Slot10 = EQP_DANDOR_WP2
+	Slot11 = EQP_DANDOR_WP3
+	Slot12 = EQP_DANDOR_WP4
+	Slot13 = EQP_HANDOSTILLOR_WP2
+	Slot14 = EQP_HANDOSTILLOR_WP3
+	Slot15 = EQP_HANDOSTILLOR_WP4
+	Slot16 = EQP_HANDOSTILLOR_AR2
+	Slot17 = EQP_HANDOSTILLOR_AR3
+	Slot18 = EQP_HANDOSTILLOR_AR4
+	Slot19 = ITM_PHOENIX
+	Slot2 = EQP_JAKE_WP3
+	Slot20 = ITM_SALVE
+	Slot3 = EQP_JAKE_WP4
+	Slot4 = EQP_JAKE_AR2
+	Slot5 = EQP_JAKE_AR3
+	Slot6 = EQP_JAKE_AR4
+	Slot7 = EQP_MARRILONA_AR2
+	Slot8 = EQP_MARRILONA_AR3
+	Slot9 = EQP_MARRILONA_AR4
+	Title = Myra Remembo's weapon shop
 

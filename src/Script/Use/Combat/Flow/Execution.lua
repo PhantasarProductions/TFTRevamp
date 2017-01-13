@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.01.07
+  Version: 17.01.13
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -125,9 +125,19 @@ function PerformAction(act,group,i)
      end
      -- Target Card Addition
      local card2add = { group = group, tag=myfighter.tag, letter=myfighter.letter }
-     if act.ADDCARD_Char_Number then
+     if act.ADDCARD_Char_Numberthen then
         for ak=1,act.ADDCARD_Char_Number do
             AddCard(card2add,ak*(act.ADDCARD_Char_Interval or 2))
+        end
+     end
+     -- Ability Card Addition
+     if act.ADDCARD_Action_Number and (not nextact.auto) then
+        card2add = { group = group, tag=myfighter.tag, letter=myfighter.letter, auto=true }
+        card2add.nextact = {}
+        for f,i in pairs(nextact) do card2add.nextact[f]=i; CSay("Added to new card: "..f) end
+        if act.ADDCARD_Action_Act~="Self" then card2add.nextact.act=act.ADDCARD_Action_Act end
+        for ak=1,act.ADDCARD_Action_Number do
+            AddCard(card2add,ak*(act.ADDCARD_Action_Interval or 2))            
         end
      end
      -- Cause status changes (this always comes last)
@@ -164,7 +174,7 @@ fflow.Range.AA = fflow.Range.AF
 
 function fflow.Execution()
    -- Check the teacher. If set it may override the selected attack.
-   if nextact.executor.group=="Hero" and nextact.mayteach then
+   if nextact.executor.group=="Hero" and nextact.mayteach and (not nextact.auto) then
       LoadItemModule() -- Loads the items module if this wasn't done before. 
       MS.Run('ITEMS','CombatTeach',nextact.executor.tag)
    end      
@@ -184,9 +194,10 @@ function fflow.Execution()
          Flip()
    end
    -- Voice
-   Voice(nextact.executor.tag,act.Voice or "NOTHING AT ALL") -- The latter is just to prevent "nil" crashes.   
-   -- Stance
-   ;({ Foe = function(a)
+   if not nextact.auto then 
+       Voice(nextact.executor.tag,act.Voice or "NOTHING AT ALL")  -- The latter is just to prevent "nil" crashes.   
+       -- Stance
+       ;({ Foe = function(a)
                  local t = nextact.executor.tag
                  local h = fighterbytag[t]
                  for i = 1,5 do
@@ -195,7 +206,7 @@ function fflow.Execution()
                  end
                  h.negative = false
              end,
-      Hero = function(a)
+          Hero = function(a)
                  local t = nextact.executor.tag
                  local h = fighterbytag[t]
                  if a.Stance=='Attack' then
@@ -209,7 +220,8 @@ function fflow.Execution()
                  end
                  h.stance='Idle'  
              end 
-   })[nextact.executor.group](act)
+          })[nextact.executor.group](act)
+   end       
    -- SpellAni
    if act.SpellAni then 
       white()
@@ -218,7 +230,7 @@ function fflow.Execution()
    -- Perform the action
    ;(fflow.Range[act.Target] or function() Sys.Crash('Unknown target type: '..act.Target) end)(act)
    -- Any rewards due to this? 
-   if nextact.executor.group=='Hero' then
+   if nextact.executor.group=='Hero' and (not nextact.auto) then
       for i=1,5 do
            -- skill experience
            if act['rew_CreateSkill'..i] then 
@@ -242,9 +254,9 @@ function fflow.Execution()
          --DarkText(sval(ExeShowMsg.Timer),50,50,0,0,255,255,255) -- What the hell is wrong here?
          Flip()
    end   
-   if nextact.executor.group=='Hero' then 
+   if nextact.executor.group=='Hero' then -- no anti-autocheck here. The hero may still claim victory of a by him or her cast repeating spell. I will block the stance change to make special stances like death not getting bugged. 
       LastAction=nextact.executor.tag 
-      myactor.stace='idle'
+      if not nextact.auto then myactor.stace='idle' end
    end
    -- Is there a message? (Should only be used for learning new spells).
    if nextact.aftermsg then
