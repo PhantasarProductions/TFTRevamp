@@ -62,22 +62,23 @@ ret = {
         ['0000058C'] = { txt = 'Holly', r=0,g=180,b=255, y=1420 },
         ['000005A0'] = { txt = 'Man Of Steel', r=0,g=180,b=255, y=1440 },
         ['000005B4'] = { txt = 'Merlin2525', r=0,g=180,b=255, y=1460 },
-        ['000005C8'] = { txt = 'Papapishu', r=0,g=180,b=255, y=1480 },
-        ['000005DC'] = { txt = 'Solar Granulation', r=0,g=180,b=255, y=1500 },
-        ['000005F0'] = { txt = 'Unknown artist from the Public Domain', r=0,g=180,b=255, y=1520 },
-        ['00000604'] = { txt = 'Yannee\'s artist', r=0,g=180,b=255, y=1540 },
-        ['0000062C'] = { txt = 'Map Design', r=255,g=0,b=0, y=1580 }, -- Map Design
-        ['00000654'] = { txt = 'Music', r=255,g=0,b=0, y=1620 }, -- Music
-        ['00000668'] = { txt = 'Eric Matyas', r=0,g=180,b=255, y=1640 },
-        ['0000067C'] = { txt = 'Kevin McLeod', r=0,g=180,b=255, y=1660 },
-        ['00000690'] = { txt = 'Matt McFarland', r=0,g=180,b=255, y=1680 },
-        ['000006A4'] = { txt = 'Wicky77', r=0,g=180,b=255, y=1700 },
-        ['000006B8'] = { txt = 'Wicky77 & Wout66', r=0,g=180,b=255, y=1720 },
-        ['000006CC'] = { txt = 'Widzy', r=0,g=180,b=255, y=1740 },
-        ['000006F4'] = { txt = 'Scenario', r=255,g=0,b=0, y=1780 }, -- Scenario
-        ['0000071C'] = { txt = 'Script', r=255,g=0,b=0, y=1820 }, -- Script
-        ['00000974'] = { txt = '(c) Copyright 2016', r=255, g=180,b=0,y=2420},
-        ['0000098D'] = { txt = 'Jeroen Petrus Broks', r=255, g=180,b=0,y=2445}
+        ['000005C8'] = { txt = 'Michael Frank', r=0,g=180,b=255, y=1480 },
+        ['000005DC'] = { txt = 'Papapishu', r=0,g=180,b=255, y=1500 },
+        ['000005F0'] = { txt = 'Solar Granulation', r=0,g=180,b=255, y=1520 },
+        ['00000604'] = { txt = 'Unknown artist from the Public Domain', r=0,g=180,b=255, y=1540 },
+        ['00000618'] = { txt = 'Yannee\'s artist', r=0,g=180,b=255, y=1560 },
+        ['00000640'] = { txt = 'Map Design', r=255,g=0,b=0, y=1600 }, -- Map Design
+        ['00000668'] = { txt = 'Music', r=255,g=0,b=0, y=1640 }, -- Music
+        ['0000067C'] = { txt = 'Eric Matyas', r=0,g=180,b=255, y=1660 },
+        ['00000690'] = { txt = 'Kevin McLeod', r=0,g=180,b=255, y=1680 },
+        ['000006A4'] = { txt = 'Matt McFarland', r=0,g=180,b=255, y=1700 },
+        ['000006B8'] = { txt = 'Wicky77', r=0,g=180,b=255, y=1720 },
+        ['000006CC'] = { txt = 'Wicky77 & Wout66', r=0,g=180,b=255, y=1740 },
+        ['000006E0'] = { txt = 'Widzy', r=0,g=180,b=255, y=1760 },
+        ['00000708'] = { txt = 'Scenario', r=255,g=0,b=0, y=1800 }, -- Scenario
+        ['00000730'] = { txt = 'Script', r=255,g=0,b=0, y=1840 }, -- Script
+        ['00000988'] = { txt = '(c) Copyright 2016', r=255, g=180,b=0,y=2440},
+        ['000009A1'] = { txt = 'Jeroen Petrus Broks', r=255, g=180,b=0,y=2465}
 }
 
 return ret

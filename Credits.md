@@ -65,6 +65,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - Alexander
     1. Audio: Audio/Combat/Ready.ogg
 - Angela Nagtzaam
+    1. Graphics: GFX/BoxText/Portret/Dreshka/General.png
     1. Graphics: GFX/BoxText/Portret/Gedrio Fulla/General.png
     1. Graphics: GFX/BoxText/Portret/Fandalora/General.png
     1. Graphics: GFX/BoxText/Portret/Fandalora/NoEmo.png
@@ -145,39 +146,44 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/Dwarf.lua
     1. Script: Script/JINC/Foes/Boss/Dwarf_J.lua
     1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
+    1. Script: Script/JINC/Foes/Boss/GobKing.lua
+    1. Script: Script/JINC/Foes/Boss/Harry1.lua
+    1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
+    1. Graphics: gfx/Textures/Random/AshFloor.piko
+    1. Script: Script/JINC/Foes/Boss/Librarian.lua
+    1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
+    1. Graphics: gfx/Textures/Random/AshFloor.png
+    1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. General Data: gfx/Textures/Town/Elves/Bench
     1. Graphics: gfx/Textures/Town/Elves/Bench.png
     1. Graphics: gfx/Textures/Town/Elves/Fence.png
     1. Graphics: GFX/Actors/Single/Elves/GedrioFulla.png
-    1. Script: Script/JINC/Foes/Boss/GobKing.lua
     1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
+    1. Script: Script/JINC/Foes/reg/Bat.lua
+    1. Graphics: GFX/Actors/Single/Fairies/Dreshka.piko
+    1. Script: Script/JINC/Foes/reg/Boar.lua
+    1. Script: Script/JINC/Foes/reg/Boekenworm.lua
+    1. Graphics: GFX/Actors/Single/Fairies/Dreshka.png
+    1. Graphics: GFX/BoxText/Portret/Rosetta/General.png
+    1. Script: Script/JINC/Foes/reg/FireHound.lua
+    1. Script: Script/JINC/Foes/reg/Gob.lua
     1. Game identification data: ID/Test
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Data
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Objects
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Settings
     1. Map Design: Kthura/CH2_Town_Dreshka/Data
     1. Map Design: Kthura/CH2_Town_Dreshka/Objects
-    1. Script: Script/JINC/Foes/Boss/Harry1.lua
-    1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
-    1. Script: Script/JINC/Foes/Boss/Librarian.lua
-    1. Map Design: Kthura/CH2_Town_Dreshka/Settings
-    1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
-    1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
-    1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
-    1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
-    1. Script: Script/JINC/Foes/reg/Bat.lua
-    1. Script: Script/JINC/Foes/reg/Boar.lua
-    1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
-    1. Script: Script/JINC/Foes/reg/Boekenworm.lua
-    1. Script: Script/JINC/Foes/reg/FireHound.lua
-    1. Script: Script/JINC/Foes/reg/Gob.lua
     1. Script: Script/JINC/Foes/reg/GobPriest.lua
     1. Script: Script/JINC/Foes/reg/GobRogue.lua
     1. Script: Script/JINC/Foes/reg/Hawk.lua
+    1. Map Design: Kthura/CH2_Town_Dreshka/Settings
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
     1. Script: Script/JINC/Foes/reg/Lemming.lua
     1. Script: Script/JINC/Foes/reg/RSpook.lua
     1. Script: Script/JINC/Foes/reg/Slime.lua
     1. Script: Script/JINC/Foes/reg/Snake.lua
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Script: Script/JINC/Foes/reg/Zombie.lua
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
     1. Script: Script/JINC/IA/AAA_GUARD.lua
@@ -943,6 +949,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_JAKEHUT
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_ELFROAD
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_DRESHKA
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_ISKARDERIU
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
@@ -970,6 +977,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_JAKEHUT
     1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_ELFROAD
+    1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_DRESHKA
     1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_ISKARDERIU
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
@@ -1104,6 +1112,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Dungeon/Strangled.ogg
 - Merlin2525
     1. Graphics: Gfx/Combat/Fighters/Foe/Reg/Bat.png
+- Michael Frank
+    1. Graphics: GFX/textures/objects/Houten Plank.png
 - Papapishu
     1. Graphics: gfx/combat/fighters/foe/reg/boar.png
 - Ray Larabie

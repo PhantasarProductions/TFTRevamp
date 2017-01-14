@@ -116,7 +116,7 @@ Rec: CH2DRESHKA
 	Dungeon = FALSE
 	Folder = Delisto
 	Kthura = CH2_Town_Dreshka
-	Layer = #001
+	Layer = entry
 	LocationName = Dreshka
 	LocationPrefix = The Fairy Village of
 	Start = Start

@@ -1,7 +1,7 @@
 --[[
   SaveGame.lua
-  Version: 16.11.17
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.01.14
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -90,7 +90,7 @@ end
 
 function GetName(f)
    local meta = GetMeta(f)
-   return meta.Location .. "   ("..meta.Time..")   "
+   return (meta.Location or "??? Name Error???").. "   ("..(meta.Time or "??? Time Error ???")..")   "
 end   
 
 function Save(f)

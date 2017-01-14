@@ -35,9 +35,21 @@
 version: 17.01.14
 ]]
 
-function MapMusic() end
+function NPC_Rosetta()
+         if not Done('&DONE.DRESHKA.ROSETTA') then
+            MapText('ROSETTA1')
+            Maps.PermaWrite('Maps.Obj.Kill(\'NPC_Rosetta\')')
+         else
+            MapText('ROSETTA2')
+         end   
+end
+
+function MapMusic()
+         local d=CVV('&DONE.SPIRATA.WATER')==true
+         Music(({[true]='Dreshka/Water Prelude.ogg', [false]='Town/Happy.ogg'})[d])        
+end
 
 function GALE_OnLoad()
-   ZA_Enter('EnterTown',function() local d=CVV('&DONE.SPIRATA.WATER')==true GoToLayer(({ [true]='destroyed', [false]='town'})[d],'Start') Music(({[true]='Dreshka/Water Prelude.ogg', [false]='Town/Happy.ogg'})[d]) end)
+   ZA_Enter('EnterTown',function() local d=CVV('&DONE.SPIRATA.WATER')==true GoToLayer(({ [true]='destroyed', [false]='town'})[d],'Start') end)
    ZA_Enter('Leave',WorldMap)
 end     
