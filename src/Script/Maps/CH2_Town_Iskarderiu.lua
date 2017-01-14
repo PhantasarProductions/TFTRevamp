@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.13
+version: 17.01.15
 ]]
 
 function Welcome()
@@ -75,6 +75,7 @@ function NPC_Keizer()
     if Done('&DONE.ISKARDERIU.KEIZER') then
        MapText('EMPEROR2')
     else
+       Shift('Human')
        PartyPop('K','North')
        MapText("EMPEROR1")
        WorldMap_Unlock('CH2DRESHKA')

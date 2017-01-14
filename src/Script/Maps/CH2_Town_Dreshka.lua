@@ -44,6 +44,11 @@ function NPC_Rosetta()
          end   
 end
 
+function NPC_Monique()
+        MapText("MONIQUE")
+        Shop("WAND_MONIQUE")
+end        
+
 function MapMusic()
          local d=CVV('&DONE.SPIRATA.WATER')==true
          Music(({[true]='Dreshka/Water Prelude.ogg', [false]='Town/Happy.ogg'})[d])        

@@ -1,5 +1,5 @@
 --[[
-  ITM_HEALINGHERB.lua
+  WAND_DARK.lua
   Version: 17.01.15
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -36,17 +36,16 @@
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 50,
-	["ADDCARD_Action_Number"] = 5,
-	["ADDCARD_Char_Interval"] = 5,
+	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["CureDisease"] = true,
-	["CurePoison"] = true,
-	["Desc"] = "The knowlege of herbs can be good for your heath",
-	["Heal"] = 500,
+	["Attack_AllowAccuracy"] = true,
+	["Attack_AllowCritical"] = true,
+	["Attack_AllowDodge"] = true,
+	["Attack_AttackStat"] = "Intelligence",
+	["Attack_DefenseStat"] = "Resistance",
+	["Attack_Element"] = "Darkness",
+	["Desc"] = "Beware of the powers of evil!",
+	["EQP_STAT_Intelligence"] = 1,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -54,15 +53,19 @@ ret = {
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Marrilona",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 750,
-	["ITM_Type"] = "Consumable",
-	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Healing Herb",
+	["ITM_ShopPrice"] = 250,
+	["ITM_Type"] = "Weapon",
+	["ITM_WeaponAbility"] = true,
+	["Rew_GainAP"] = 5,
+	["Stance"] = "Attack",
+	["Target"] = "1F",
+	["Title"] = "Evil Wand",
 	["Type"] = "Item",
-	["Voice"] = "Heal"}
+	["rew_CreateSkill1"] = true,
+	["rew_GainSkill1"] = 5}
 
 return ret
 

@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_TUSK.lua
-  Version: 17.01.12
+  Version: 17.01.15
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

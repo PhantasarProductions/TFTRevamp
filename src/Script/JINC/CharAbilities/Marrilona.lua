@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.08
+version: 17.01.15
 ]]
 
 -- abl_hero_jake_2ps = {5},abl_hero_jake_3ps={25},abl_hero_jake_4ps={50},abl_hero_jake_berserk={10,5}
@@ -46,6 +46,7 @@ version: 17.01.08
 ]]
 
 local fullversion = JCR6.Exists('ID/ID.Data.Full')==1
+local skill = Sys.Val(Var.C('%SKILL'))
 
 local r = {
                  ["1. Level 1"]  = { 
@@ -64,7 +65,8 @@ local r = {
           
 if fullversion then -- That's right Marrilona will not get her level #2 and level #3 spells unless you have the full version of the game.          
    r["2. Level 2"] = {
-                                       abl_hero_marrilona_permanence = {25,25,25,25,25}
+                                       abl_hero_marrilona_permanence = {25,25,25,25,25}, -- 1
+                                       abl_hero_marrilona_eternalflame = {[2]=4^skill}
                      }
    r["3. Level 3"] = {}
 end

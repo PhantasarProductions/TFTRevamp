@@ -107,6 +107,30 @@ Rec: ITEM_WANDA
 	Slot9 = 
 	Title = Wanda's item shop
 
+Rec: WAND_MONIQUE
+	AllowTrade = TRUE
+	Slot1 = WAND_WIND
+	Slot10 = EQP_MARRILONA_AR1
+	Slot11 = EQP_MARRILONA_AR2
+	Slot12 = EQP_MARRILONA_AR3
+	Slot13 = EQP_MARRILONA_AR4
+	Slot14 = 
+	Slot15 = 
+	Slot16 = 
+	Slot17 = 
+	Slot18 = 
+	Slot19 = 
+	Slot2 = WAND_THUNDER
+	Slot20 = 
+	Slot3 = WAND_SPLASH
+	Slot4 = WAND_HOLY
+	Slot5 = WAND_GAIA
+	Slot6 = WAND_FROST
+	Slot7 = WAND_FLAME
+	Slot8 = WAND_DARK
+	Slot9 = WAND_BIO
+	Title = Monique's Wand shop
+
 Rec: WEAPON_ERIC
 	AllowTrade = FALSE
 	Slot1 = EQP_JAKE_WP2

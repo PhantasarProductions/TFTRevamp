@@ -295,10 +295,16 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_SALVE.lua
     1. Script: Script/JINC/IA/ITM_VOICEHERB.lua
     1. Script: Script/JINC/IA/SPECIAL_AXESMASH.lua
+    1. Script: Script/JINC/IA/WAND_BIO.lua
+    1. Script: Script/JINC/IA/WAND_DARK.lua
     1. Script: Script/JINC/IA/WAND_FLAME.lua
     1. Script: Script/JINC/IA/WAND_FROST.lua
+    1. Script: Script/JINC/IA/WAND_GAIA.lua
+    1. Script: Script/JINC/IA/WAND_HOLY.lua
+    1. Script: Script/JINC/IA/WAND_SPLASH.lua
     1. Script: Script/JINC/IA/WAND_THUNDER.lua
     1. Script: Script/JINC/IA/WAND_TRAINING.lua
+    1. Script: Script/JINC/IA/WAND_WIND.lua
     1. Script: Script/JINC/Masters/Freya.lua
     1. Script: Script/JINC/Masters/Midas.lua
     1. Script: Script/JINC/Masters/Rubine.lua
@@ -309,6 +315,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Shops/CLONE_Fred.lua
     1. Script: Script/JINC/Shops/ITEM_ISKARDERIU.lua
     1. Script: Script/JINC/Shops/ITEM_WANDA.lua
+    1. Script: Script/JINC/Shops/WAND_MONIQUE.lua
     1. Script: Script/JINC/Shops/WEAPON_ERIC.lua
     1. Script: Script/JINC/Shops/WEAPON_MYRAREMEMBO.lua
     1. Script: Script/Maps/Anna.lua
@@ -434,11 +441,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/valstr.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
