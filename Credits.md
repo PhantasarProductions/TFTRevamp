@@ -143,31 +143,31 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/CharAbilities/Marrilona.lua
     1. Script: Script/JINC/CharAbilities/Nostramantu.lua
     1. Script: Script/JINC/Foes/Boss/Dwarf.lua
+    1. Script: Script/JINC/Foes/Boss/Dwarf_J.lua
+    1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
     1. General Data: gfx/Textures/Town/Elves/Bench
     1. Graphics: gfx/Textures/Town/Elves/Bench.png
     1. Graphics: gfx/Textures/Town/Elves/Fence.png
     1. Graphics: GFX/Actors/Single/Elves/GedrioFulla.png
+    1. Script: Script/JINC/Foes/Boss/GobKing.lua
     1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
-    1. Script: Script/JINC/Foes/Boss/Dwarf_J.lua
     1. Game identification data: ID/Test
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Data
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Objects
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Settings
     1. Map Design: Kthura/CH2_Town_Dreshka/Data
     1. Map Design: Kthura/CH2_Town_Dreshka/Objects
+    1. Script: Script/JINC/Foes/Boss/Harry1.lua
+    1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
+    1. Script: Script/JINC/Foes/Boss/Librarian.lua
     1. Map Design: Kthura/CH2_Town_Dreshka/Settings
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
-    1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
-    1. Script: Script/JINC/Foes/Boss/GobKing.lua
-    1. Script: Script/JINC/Foes/Boss/Harry1.lua
-    1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
-    1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
-    1. Script: Script/JINC/Foes/Boss/Librarian.lua
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
     1. Script: Script/JINC/Foes/reg/Boar.lua
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Script: Script/JINC/Foes/reg/Boekenworm.lua
     1. Script: Script/JINC/Foes/reg/FireHound.lua
     1. Script: Script/JINC/Foes/reg/Gob.lua
@@ -315,6 +315,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH1_HUB_Altar.lua
     1. Script: Script/Maps/CH1_Hub_JakeHut.lua
     1. Script: Script/Maps/CH2_Dungeon_ElfRoad.lua
+    1. Script: Script/Maps/CH2_Town_Dreshka.lua
     1. Script: Script/Maps/CH2_Town_Iskarderiu.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
     1. Script: Script/Maps/PRO_DUNGEON_Magic.lua
@@ -995,6 +996,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Elves/RandomElfMale.png
     1. Graphics: GFX/Actors/Single/Elves/RandomElfMale2.png
     1. Graphics: GFX/Textures/Town/Elves/House.png
+    1. Graphics: GFX/Actors/Single/Fairies/Female.png
+    1. Graphics: GFX/Actors/Single/Fairies/Male.png
     1. Graphics: GFX/Actors/Single/Humans/RubineTheHood.png
     1. Graphics: GFX/Actors/Single/Humans/Thief.png
     1. Graphics: GFX/Actors/Single/Humans/Female.png
@@ -1364,6 +1367,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/John_6.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/John_7.ogg
 - Unknown artist from the Public Domain
+    1. Graphics: GFX/Textures/Trees/Loofboom.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/KillerEscargot.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Boekenworm.png
     1. Graphics: GFX/MapSpots/Travel.png

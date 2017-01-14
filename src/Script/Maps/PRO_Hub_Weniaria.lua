@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.13
+version: 17.01.14
 ]]
 function InitHandoSkill()
    CreateSkill('HandoStillor',1,6/skill)
@@ -66,6 +66,16 @@ end
 
 function ToHall() GoToLayer('HALL','Start') end
 function Leave() GoToLayer('lobby','ComeOut') end
+
+function NPC_Mural()
+   if not Done('&DONE.WENIARIA.MURAL') then
+      PartyPop('Mural',"North")
+      MapText('MURAL')
+      RPG.Points('HandoStillor','SK_LVL_2').Inc(9/skill)
+      if RPG.PointsExists('Marrilona','SK_LVL_4')==1 then RPG.Points('Marrilona','SK_LVL_4').Inc(math.ceil(9-(skill^2))) end
+      if RPG.PointsExists('Jake_Fairy','SK_LVL_4')==1 then RPG.Points('Jake_Fairy','SK_LVL_4').Inc(math.ceil(9-(skill^2))) end
+   end
+end      
 
 function GALE_OnLoad()
    if CVV("&DONE.SASHA_FUNDA.OPEN.HANDO_STILLOR.PROLOGUE") then 
