@@ -87,9 +87,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. ???: Fonts/Doc/monof_tt.txt
     1. Font: Fonts/monof55.ttf
 - Eric Matyas
+    1. Music: Music/Dungeon/Sewer-Monsters-Town-Hall-Meeting_Looping.ogg
+    1. Music: Music/Dungeon/Moonlit-Secrets_Looping.ogg
     1. Music: Music/RandomEncounter/RPG-Battle-Climax_v001.ogg
     1. Music: Music/Town/Chamber-of-Jewels.ogg
-    1. Music: Music/Dungeon/Moonlit-Secrets_Looping.ogg
     1. Music: Music/Game Over/Going-Different-Ways.ogg
 - GR-Sites
     1. Audio: Audio/Dungeon/FallingDown.ogg
@@ -168,6 +169,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/FireHound.lua
     1. Script: Script/JINC/Foes/reg/Gob.lua
     1. Game identification data: ID/Test
+    1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Data
+    1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Objects
+    1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Settings
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Data
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Objects
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Settings
@@ -183,8 +187,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/RSpook.lua
     1. Script: Script/JINC/Foes/reg/Slime.lua
     1. Script: Script/JINC/Foes/reg/Snake.lua
-    1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Script: Script/JINC/Foes/reg/Zombie.lua
+    1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
     1. Script: Script/JINC/IA/AAA_GUARD.lua
     1. Script: Script/JINC/IA/ABL_FOE_BACTERIATUSK.lua
@@ -445,8 +449,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/ClearTable.lua
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
@@ -999,11 +1003,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/TEST
     1. Scenario: Languages/English/Scenario/WORLDMAP
 - Kevin McLeod
-    1. Music: Music/Dreshka/Hero Down.ogg
+    1. Music: Music/AltEncounter/Tempting Secrets.ogg
     1. Music: Music/Dungeon/Chillin Hard.ogg
-    1. Music: Music/Dreshka/Water Prelude.ogg
     1. Music: Music/Dungeon/Pippin the Hunchback.ogg
+    1. Music: Music/Dreshka/Hero Down.ogg
     1. Music: Music/Dungeon/TheDread.ogg
+    1. Music: Music/Dreshka/Water Prelude.ogg
     1. Music: Music/Hub/Angevin.ogg
     1. Music: Music/Scenario/We Got Trouble.ogg
     1. Music: Music/Town/Enchanted Valley.ogg

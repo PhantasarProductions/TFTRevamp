@@ -112,6 +112,16 @@ Rec: CH1LIBRARY
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: CH2DRAGONCASTLE
+	Dungeon = FALSE
+	Folder = Delisto
+	Kthura = CH2_Dungeon_DragonCastle
+	Layer = #000
+	LocationName = Dragon Castle
+	LocationPrefix = 
+	Start = Start
+	UnlockedFromStart = FALSE
+
 Rec: CH2DRESHKA
 	Dungeon = FALSE
 	Folder = Delisto
