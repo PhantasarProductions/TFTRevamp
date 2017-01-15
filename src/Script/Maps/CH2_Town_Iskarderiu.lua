@@ -71,6 +71,11 @@ function NPC_Inn()
     Inn()
 end
 
+function NPC_ThalaDigoh()
+   MapText('THALA')
+   WorldMap_Unlock('CH2DRAGONCASTLE')
+end
+
 function NPC_Keizer()
     if Done('&DONE.ISKARDERIU.KEIZER') then
        MapText('EMPEROR2')
@@ -100,6 +105,7 @@ function GALE_OnLoad()
    ZA_Enter('Exit',GoExit)
    ZA_Enter('Welcome',Welcome)
    Maps.GotoLayer('town')
+   if not CVV('&DONE.DRESHKA.DRESHKA') then Maps.Obj.Kill('NPC_ThalaDigoh') end
    for obj in KthuraEach('Zone') do
        if prefixed(obj.tag,"Enter_") then ZA_Enter(obj.tag,Enter,lower(right(obj.tag,#obj.tag-6))) end
    end

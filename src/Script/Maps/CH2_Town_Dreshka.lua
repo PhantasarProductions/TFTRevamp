@@ -56,7 +56,7 @@ function NPC_Dreshka()
        PartyPop('DR','North')
        MapText('DRESHKA')
        ItemGive('ZZKEY_KEYWATER')
-       WorldMap_Unlock('CH2WATERSPIRTA')
+       WorldMap_Unlock('CH2WATERSPIRATA')
        Var.D('$WMCHAT','WATER')
        -- New Game+
    end       
