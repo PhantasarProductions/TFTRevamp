@@ -83,7 +83,6 @@ function NPC_Keizer()
     end
 end
 
-
 function Enter(z)
     GoToLayer(z,"Start")
 end    

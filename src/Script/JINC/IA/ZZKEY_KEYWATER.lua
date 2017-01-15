@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  CH2_Town_Dreshka.lua
+  ZZKEY_KEYWATER.lua
   (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
@@ -34,42 +34,30 @@
  
 version: 17.01.15
 ]]
+ret = {
+	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack_AccuracyRate"] = 100,
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Element"] = "None",
+	["Desc"] = "Grants access to temple of the Water Spirata",
+	["Heal_StatPercent"] = "Intelligence",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_Type"] = "KeyItem",
+	["Stance"] = "Cast",
+	["Target"] = "1F",
+	["Title"] = "Aqua Key",
+	["Type"] = "Item"}
 
-function NPC_Rosetta()
-         if not Done('&DONE.DRESHKA.ROSETTA') then
-            MapText('ROSETTA1')
-            Maps.PermaWrite('Maps.Obj.Kill(\'NPC_Rosetta\')')
-         else
-            MapText('ROSETTA2')
-         end   
-end
+return ret
 
-function NPC_Monique()
-        MapText("MONIQUE")
-        Shop("WAND_MONIQUE")
-end
+-- This file is an automatically generated file!
 
-function NPC_Dreshka()
-   if Done('&DONE.DRESHKA.DRESHKA') then
-       MapText('DRESHKA_AFTER')
-   else
-       PartyPop('DR','North')
-       MapText('DRESHKA')
-       ItemGive('ZZKEY_KEYWATER')
-       WorldMap_Unlock('CH2WATERSPIRTA')
-       Var.D('$WMCHAT','WATER')
-       -- New Game+
-   end       
-end
-
-        
-
-function MapMusic()
-         local d=CVV('&DONE.SPIRATA.WATER')==true
-         Music(({[true]='Dreshka/Water Prelude.ogg', [false]='Town/Happy.ogg'})[d])        
-end
-
-function GALE_OnLoad()
-   ZA_Enter('EnterTown',function() local d=CVV('&DONE.SPIRATA.WATER')==true GoToLayer(({ [true]='destroyed', [false]='town'})[d],'Start') end)
-   ZA_Enter('Leave',WorldMap)
-end     

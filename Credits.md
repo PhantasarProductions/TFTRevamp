@@ -221,6 +221,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_FAIRY.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_HUMAN.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_CHILL.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ETERNALFLAME.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FLAME.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HEAL.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PERMANENCE.lua
@@ -305,6 +306,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/WAND_THUNDER.lua
     1. Script: Script/JINC/IA/WAND_TRAINING.lua
     1. Script: Script/JINC/IA/WAND_WIND.lua
+    1. Script: Script/JINC/IA/ZZKEY_KEYWATER.lua
     1. Script: Script/JINC/Masters/Freya.lua
     1. Script: Script/JINC/Masters/Midas.lua
     1. Script: Script/JINC/Masters/Rubine.lua
