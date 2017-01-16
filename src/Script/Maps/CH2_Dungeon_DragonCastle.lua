@@ -32,5 +32,33 @@
   
  **********************************************
  
-version: 17.01.15
+version: 17.01.16
 ]]
+
+NoDarkness = {}
+
+function MAP_FLOW()
+   local dark = Maps.Obj.Obj("Darkness")
+   local play = Actors.Actor('PLAYER')
+   dark.X = play.X
+   dark.Y = play.Y
+end   
+
+function GALE_OnLoad()
+   local layers = mysplit(Maps.Layers(),";")
+   local dark
+   local scx = math.ceil((SW/3000)*1000); if scx>1000 then scx=1000 end
+   local scy = math.ceil((SH/3000)*1000); if scy>1000 then scy=1000 end
+   CSay('Darkness scale: '..scx..","..scy)
+   for lay in each(layers) do
+       Maps.GoToLayer(lay)
+       Maps.CreateObstacle(0,0,'GFX/Effects/Darkness.png',"Darkness",0)
+       dark = Maps.Obj.Obj("Darkness")
+       if tablecontains(NoDarkness,lay) then dark.Visible=0 end
+       dark.Impassible=0
+       dark.Dominance=50000
+       dark.ScaleX = scx
+       dark.ScaleY = scy
+   end
+   Maps.ReMap()
+end
