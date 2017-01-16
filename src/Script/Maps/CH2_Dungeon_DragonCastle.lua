@@ -71,6 +71,15 @@ function MakeDarkness()
    Maps.ReMap()
 end
 
+function NPC_SwitchNext()
+   local d = "&DONE.DRAGONCASTLE.NEXT["..Maps.LayerCodeName.."]"
+   if Done(d) then return end
+   Maps.Obj.Obj("NPC_SwitchNext").TextureFile = "GFX/Textures/Switch/Right.png"
+   Maps.PermaWrite('Maps.Obj.Obj("NPC_SwitchNext").TextureFile = "GFX/Textures/Switch/Right.png"')
+   Maps.Obj.Kill('DoorNext',1)
+end   
+   
+
 function GALE_OnLoad()
    MakeDarkness()
    ZA_Enter('E_Courtyard',Courtyard,'E')
