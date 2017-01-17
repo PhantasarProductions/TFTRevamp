@@ -1016,12 +1016,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/TEST
     1. Scenario: Languages/English/Scenario/WORLDMAP
 - Kevin McLeod
+    1. Music: Music/Dreshka/Hero Down.ogg
+    1. Music: Music/AltBoss/Day of Chaos.ogg
+    1. Music: Music/Dreshka/Water Prelude.ogg
     1. Music: Music/AltEncounter/Tempting Secrets.ogg
     1. Music: Music/Dungeon/Chillin Hard.ogg
     1. Music: Music/Dungeon/Pippin the Hunchback.ogg
-    1. Music: Music/Dreshka/Hero Down.ogg
     1. Music: Music/Dungeon/TheDread.ogg
-    1. Music: Music/Dreshka/Water Prelude.ogg
     1. Music: Music/Hub/Angevin.ogg
     1. Music: Music/Scenario/We Got Trouble.ogg
     1. Music: Music/Town/Enchanted Valley.ogg

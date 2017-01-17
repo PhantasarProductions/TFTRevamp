@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 17.01.08
+  Version: 17.01.17
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -741,6 +741,11 @@ function RandomEncounter()
    ClearCombatData()
    Var.D("$COMBAT.ARENA",arena)
    Var.D("$COMBAT.LOSE","Respawn")
+   local aet = Maps.GetData('AltEncounterTune')
+   if aet and aet~="" then
+      if not suffixed(lower(aet),".ogg") then aet = aet .. ".ogg" end 
+      Var.D('$COMBAT.MUSIC',aet)
+   end   
    assert(#monstertable>0,"I cannot run a Random Encounter without any monsters set")
    for i=1,num do
        Var.D("$COMBAT.FOE_"..i,monstertable[rand(1,#monstertable)]) 

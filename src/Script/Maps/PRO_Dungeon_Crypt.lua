@@ -2,7 +2,7 @@
 **********************************************
   
   PRO_Dungeon_Crypt.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.02
+version: 17.01.17
 ]]
 
 bossvar = "&DONE.PROLOGUE.HANDOSTILLOR.CRYPT.BOSS"
@@ -103,7 +103,7 @@ function Boss()
   ClearCombatData()
   Var.D("$COMBAT.FOE_1","Boss/SuperZombie")
   Var.D("$COMBAT.POSFOE_1","CENTER")
-  Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
+  Var.D("$COMBAT.MUSIC","Music/AltBoss/Day Of Chaos.ogg")
   Var.D("$COMBAT.ARENA","GreyDung.png")
   StartBoss("Undead Leader","Super Zombie")   
 end
