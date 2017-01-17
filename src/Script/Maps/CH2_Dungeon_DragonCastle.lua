@@ -86,4 +86,6 @@ function GALE_OnLoad()
    ZA_Enter('W_Courtyard',Courtyard,'W')
    ZA_Enter('CYUW',LeaveCourtyard,"W")
    ZA_Enter('CYUO',LeaveCourtyard,"E")
+   MapHide('Seya')
+   MapHide('Travel')
 end   
