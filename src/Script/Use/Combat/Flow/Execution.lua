@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.01.13
+  Version: 17.01.17
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -70,12 +70,14 @@ function PerformAction(act,group,i)
     end
      -- Cure status changes (this always comes first)
      for k,b in pairs(act) do
-         if prefixed(k,"Cure") then 
-            local s = right(k,#k-4)
-            if myfighter.statuschanges and myfighter.statuschanges[s] then 
-               myfighter.statuschanges[s]=nil
-               effect = true
-               charmsg(myfighter.tag,'Cure:'..s,0,155,0)  
+         if prefixed(k,"Cure") then
+            if not ( dontcure[myfighter.tag] and dontcure[myfighter.tag][right(k,#k-4)] ) then  
+               local s = right(k,#k-4)
+               if myfighter.statuschanges and myfighter.statuschanges[s] then 
+                  myfighter.statuschanges[s]=nil
+                  effect = true
+                  charmsg(myfighter.tag,'Cure:'..s,0,155,0)
+               end  
             end
          end   
      end    

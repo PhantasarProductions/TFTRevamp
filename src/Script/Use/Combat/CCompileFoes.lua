@@ -1,6 +1,6 @@
 --[[
   CCompileFoes.lua
-  Version: 17.01.08
+  Version: 17.01.17
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -44,6 +44,7 @@ function CompileFoe(tag,data,foefile,oversoul)
       CSay("COMPILEFOE:>"..t)
       -- @FI
    end
+   dontcure[tag] = dontcure[tag] or {}
    local id = oversoul or (#Fighters.Foe + 1)
    local letter = string.char(id+64); if id>26 then letter="?" end
    local myfoe = { tag = tag, R=255, G=255, B=255, letter=letter, id = id, fidtag = upper(foefile) }
@@ -68,12 +69,35 @@ function CompileFoe(tag,data,foefile,oversoul)
           if      oversoul and prefixed(key,"oversoul_") then stat=right(key,#key-9) CSay("Oversoul Stat: "..stat) RPG.SetStat(tag,"BASE_"..stat,v) RPG.SetStat(tag,"BUFF_"..stat) RPG.SetStat(tag,"END_"..stat) RPGChar.ScriptStat(tag,"END_"..stat,"Script/Char/Char.lua",upper(stat)) end
           if (not oversoul) and prefixed(key,"normal_") then stat=right(key,#key-7) CSay("normal Stat:"..stat) RPG.SetStat(tag,"BASE_"..stat,v) RPG.SetStat(tag,"BUFF_"..stat) RPG.SetStat(tag,"END_"..stat) RPGChar.ScriptStat(tag,"END_"..stat,"Script/Char/Char.lua",upper(stat)) end
           if prefixed(key,'ER_') or prefixed(key,'SR_') then stat=key CSay("ER/SR Stat:"..stat) RPG.SetStat(tag,"BASE_"..stat,v) RPG.SetStat(tag,"BUFF_"..stat) RPG.SetStat(tag,"END_"..stat) RPGChar.ScriptStat(tag,"END_"..stat,"Script/Char/Char.lua",upper(stat)) end
+          if prefixed(key,'STSTART_') and v then  
+             local sk = right(key,#key-8)
+             CSay("= Attaching status: "..sk)
+             myfoe.StatusChanges = myfoe.StatusChanges or {}
+             myfoe.statuschanges = myfoe.StatusChanges
+             myfoe.statuschanges[sk] = StatusChanges[sk]
+             CSay("Status exist: "..sval(StatusChanges[sk]~=nil))
+             for k,vl in spairs(myfoe.statuschanges) do CSay('We now got: '..k) end
+             for k,vl in spairs(StatusChanges) do CSay('Defined: '..k.."      "..sval(k==sk)) end
+             dontcure[tag][sk] = true
+          end   
        end   
    end
    RPG.Points(tag,'HP',1).MaxCopy="END_HP"
    RPG.Points(tag,'HP').Have = RPG.Points(tag,'HP').Maximum
    if not oversoul then
-      Image.Load(data.Image,"FIGHT_"..tag..upper(sval(false)))
+      if suffixed(data.Image,"/") then
+         local list = {}
+         CSay('Searching for random pics in: '..data.Image)
+         for file in iJCR6Dir(true) do
+           if prefixed(upper(file),upper(data.Image)) and suffixed(upper(file),".PNG") then
+              list[#list+1] = file
+              CSay("= Added: "..file)
+           end   
+         end
+         Image.Load(list[rand(1,#list)],"FIGHT_"..tag..upper(sval(false)))
+      else
+         Image.Load(data.Image,"FIGHT_"..tag..upper(sval(false)))
+      end   
       Image.Negative("FIGHT_"..tag..upper(sval(false)),"FIGHT_"..tag..upper(sval(true)))
       Image.Hot("FIGHT_"..tag.."FALSE",Image.Width("FIGHT_"..tag.."FALSE")/2,Image.Height("FIGHT_"..tag.."FALSE")) -- Hotspot bottom center
       Image.Hot("FIGHT_"..tag.."TRUE" ,Image.Width("FIGHT_"..tag.."TRUE" )/2,Image.Height("FIGHT_"..tag.."TRUE" )) -- Hotspot bottom center

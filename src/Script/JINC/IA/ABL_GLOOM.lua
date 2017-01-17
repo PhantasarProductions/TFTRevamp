@@ -1,5 +1,5 @@
 --[[
-  ITM_BELL.lua
+  ABL_GLOOM.lua
   Version: 17.01.17
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -37,13 +37,21 @@
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
 	["ADDCARD_Action_Interval"] = 5,
-	["ADDCARD_Char_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 50,
+	["ADDCARD_Char_Number"] = 1,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["CureSleep"] = true,
-	["Desc"] = "Wake somebody up",
+	["BUFF_Accuracy"] = -5,
+	["BUFF_Endurance"] = -5,
+	["BUFF_Evasion"] = -5,
+	["BUFF_Intelligence"] = -5,
+	["BUFF_Power"] = -5,
+	["BUFF_Resistance"] = -5,
+	["BUFF_Speed"] = -5,
+	["CauseUndead"] = true,
+	["Desc"] = "You will become udead now",
 	["Heal_StatPercent"] = "Intelligence",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
@@ -52,11 +60,10 @@ ret = {
 	["ITM_Combat"] = true,
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 10,
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Bell",
+	["Target"] = "1F",
+	["Title"] = "Gloom",
 	["Type"] = "Item"}
 
 return ret

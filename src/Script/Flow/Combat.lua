@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 17.01.07
+  Version: 17.01.17
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -84,6 +84,7 @@ function SetupArena()
 end
 
 function LoadFoes()
+    dontcure = {}    
     -- CSay(serialize("combat",combat))
     for key,foe in spairs(combat) do
         CSay(key.." = "..foe)

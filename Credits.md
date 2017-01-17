@@ -153,14 +153,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/MegaGhost.png
     1. Script: Script/JINC/Foes/Boss/Librarian.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/DragonKeeper/Female.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/DragonKeeper/Male.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/MEDUSA.PNG
+    1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Skeleton.png
     1. Graphics: gfx/Effects/Darkness II.png
-    1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
     1. Script: Script/JINC/Foes/reg/Boar.lua
     1. Script: Script/JINC/Foes/reg/Boekenworm.lua
+    1. Script: Script/JINC/Foes/reg/DragonKeeper.lua
     1. Script: Script/JINC/Foes/reg/FireHound.lua
     1. Script: Script/JINC/Foes/reg/Gob.lua
     1. Script: Script/JINC/Foes/reg/GobPriest.lua
@@ -168,6 +171,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Hawk.lua
     1. Script: Script/JINC/Foes/reg/Lemming.lua
     1. Script: Script/JINC/Foes/reg/RSpook.lua
+    1. Script: Script/JINC/Foes/reg/Skeleton.lua
     1. Script: Script/JINC/Foes/reg/Slime.lua
     1. Script: Script/JINC/Foes/reg/Snake.lua
     1. Script: Script/JINC/Foes/reg/Zombie.lua
@@ -188,6 +192,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_VENOMBITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMSTAB.lua
     1. Script: Script/JINC/IA/ABL_FOE_VIRUSSTAB.lua
+    1. Script: Script/JINC/IA/ABL_GLOOM.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_AXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_SUPERAXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CUREDISEASE.lua
@@ -385,11 +390,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
     1. Script: Script/Use/Combat/SpellScript/Steal.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
     1. Script: Script/Use/Combat/StatusChanges/Guard.lua
@@ -397,6 +402,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/StatusChanges/Paralysis and Sleep.lua
     1. Script: Script/Use/Combat/StatusChanges/Permanence.lua
     1. Script: Script/Use/Combat/StatusChanges/Poison and Disease.lua
+    1. Script: Script/Use/Combat/StatusChanges/Zombie.lua
     1. Script: Script/Use/Linkers/AchievementLinker.lua
     1. Script: Script/Use/Linkers/AlternateInputLinker.lua
     1. Script: Script/Use/Linkers/BoxTextLinker.lua
@@ -433,11 +439,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
     1. General Data: gfx/Textures/Town/Elves/Bench
