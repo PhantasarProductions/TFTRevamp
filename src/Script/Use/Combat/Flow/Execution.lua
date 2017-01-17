@@ -83,16 +83,19 @@ function PerformAction(act,group,i)
      -- Recover HP or AP     
      local heal = ItemHeal(myfighter.tag,act,true,nextact.executor.tag)
      local block = false
+     local hurt = false
      --CSay(serialize('target',myfighter.statuschanges))
      CSay('Target recheck:'..myfighter.tag)
      for st,data in pairs(myfighter.statuschanges or {}) do
          block = block or data.BlockHeal 
+         hurt = hurt or data.HurtHeal
          --CSay(serialize(st,data)); CSay('block='..sval(block)) 
      end
      effect = effect or (heal and heal>0)
      if heal and heal>0 then
         if block then heal=0 end
-        if not AltHealing(group,i,heal) then RPG.Points(myfighter.tag,"HP").Inc(heal) charmsg(myfighter.tag,heal,0,255,0) end
+        if hurt then RPG.Points(myfighter.tag,"HP").Inc(-heal) charmsg(myfighter.tag,heal,255,180,0)
+        elseif not AltHealing(group,i,heal) then RPG.Points(myfighter.tag,"HP").Inc(heal) charmsg(myfighter.tag,heal,0,255,0) end
      end
      -- Attack
      if act.Attack and act.Attack>0 then effect=effect or Attack(act,group,i,nextact) end
