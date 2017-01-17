@@ -42,7 +42,7 @@ AltArena.spookydung = {
                       Over    = function()
                                    spookydung_scx = spookydung_scx or math.ceil((SW/3000)*100); if spookydung_scx>100 then spookydung_scx=100 end
                                    spookydung_scy = spookydung_scy or math.ceil((SH/3000)*100); if spookydung_scy>100 then spookydung_scy=100 end
-                                   Image.ScalePC(spookydung_scy,spookydung_scy)
+                                   Image.ScalePC(spookydung_scx,spookydung_scy)
                                    Image.LoadNew("DARKNESS",'GFX/Effects/Darkness.png'); Image.HotCenter('DARKNESS')
                                    Image.Show('DARKNESS',Center_X,Center_Y)
                                    Image.ScalePC(100,100) 

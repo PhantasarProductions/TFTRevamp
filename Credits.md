@@ -17,7 +17,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Big_Char/JakeMarrilona.GIF
     1. Graphics: GFX/Big_Char/JakeMarrilona.png
     1. Graphics: GFX/Big_Char/JakeMarrilona.xcf
-    1. Graphics: GFX/Big_Char/Marrilona (Autosaved).piko
     1. Graphics: GFX/Big_Char/Marrilona.piko
     1. Graphics: GFX/Big_Char/Marrilona.png
     1. Graphics: GFX/Big_Char/Marrilona_Christmas.png
@@ -34,7 +33,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Jake/Angry_Fairy.png
     1. Graphics: GFX/BoxText/Portret/Jake/Blush.png
     1. Graphics: GFX/BoxText/Portret/Jake/Blush_Fairy.png
-    1. ???: GFX/BoxText/Portret/Jake/General (Autosaved).piko-png
     1. Graphics: GFX/BoxText/Portret/Jake/General.png
     1. Graphics: GFX/BoxText/Portret/Jake/General.xcf
     1. Graphics: GFX/Boxtext/Portret/Jake_Fairy/General.png
@@ -46,7 +44,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Marrilona/All.png
     1. Graphics: GFX/BoxText/Portret/Marrilona/Angry.png
     1. Graphics: GFX/BoxText/Portret/Marrilona/Blown.png
-    1. ???: GFX/BoxText/Portret/Marrilona/Blush (Autosaved).piko-png
     1. Graphics: GFX/BoxText/Portret/Marrilona/Blush.png
     1. Graphics: GFX/BoxText/Portret/Marrilona/Burned.png
     1. Graphics: GFX/BoxText/Portret/Marrilona/Cry.png
@@ -154,8 +151,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/GobKing.lua
     1. Script: Script/JINC/Foes/Boss/Harry1.lua
     1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
-    1. Graphics: gfx/Effects/Darkness II.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/MegaGhost.png
     1. Script: Script/JINC/Foes/Boss/Librarian.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/MEDUSA.PNG
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Skeleton.png
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
@@ -359,6 +359,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Development documentation: Script/Use/Available/Readme.md
     1. Script: Script/Use/Combat/AltArena/AAA_Algemeen.lua
     1. Script: Script/Use/Combat/AltArena/PathOfMagic.lua
+    1. Script: Script/Use/Combat/AltArena/SpookyDung.lua
     1. Script: Script/Use/Combat/CAttack.lua
     1. Script: Script/Use/Combat/CBuffCountDown.lua
     1. Script: Script/Use/Combat/CCharacterMessage.lua
@@ -383,12 +384,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
     1. Script: Script/Use/Combat/SpellScript/Steal.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
     1. Script: Script/Use/Combat/StatusChanges/Guard.lua
@@ -432,11 +433,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/valstr.lua
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
     1. General Data: gfx/Textures/Town/Elves/Bench
@@ -463,17 +464,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
-    1. Music: Music/Boss/BossIntro.ogg
-    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
-    1. Music: Music/Sys/Silence.ogg
     1. Graphics: GFX/Chapters/3.png
     1. Graphics: GFX/Chapters/4.png
+    1. Music: Music/Boss/BossIntro.ogg
+    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Combat/End/Game Over.png
     1. Graphics: GFX/Combat/End/YouWin.png
     1. Graphics: GFX/Loading/Graphic.png
     1. Graphics: GFX/Loading/Saving.png
+    1. Music: Music/Sys/Silence.ogg
     1. Graphics: GFX/Logo/End Of Prologue.hot
     1. Graphics: GFX/Logo/End Of Prologue.png
     1. Graphics: GFX/Logo/Game Over.png
@@ -757,6 +758,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Arena/Hell.png
     1. Graphics: GFX/Combat/Arena/Library.png
     1. Graphics: GFX/Combat/Arena/Magic.png
+    1. Graphics: GFX/Combat/Arena/SpookyDung.png
     1. Graphics: GFX/Combat/Arena/SubRiver.png
     1. Graphics: GFX/Combat/Cards/Ability.png
     1. Graphics: GFX/Combat/Cards/BOSS_A.png
