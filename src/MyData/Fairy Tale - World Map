@@ -156,7 +156,7 @@ Rec: CH2WATERSPIRATA
 	Dungeon = TRUE
 	Folder = Delisto
 	Kthura = CH2_Dungeon_SpirataWater
-	Layer = outside
+	Layer = #000
 	LocationName = Bandafar's Temple
 	LocationPrefix = 
 	Start = Start

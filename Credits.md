@@ -329,6 +329,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH1_Hub_JakeHut.lua
     1. Script: Script/Maps/CH2_Dungeon_DragonCastle.lua
     1. Script: Script/Maps/CH2_Dungeon_ElfRoad.lua
+    1. Script: Script/Maps/CH2_Dungeon_SpirataWater.lua
     1. Script: Script/Maps/CH2_Town_Dreshka.lua
     1. Script: Script/Maps/CH2_Town_Iskarderiu.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
@@ -426,6 +427,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Scenario/Scenario.lua
     1. Script: Script/Use/Specific/EndOfPrologue.lua
     1. Script: Script/Use/Specific/MoveTex.lua
+    1. Script: Script/Use/Specific/PlasmaFloor.lua
     1. Script: Script/Use/Specific/Scroller.lua
     1. Script: Script/Use/Specific/StepsPuzzle.lua
     1. Script: Script/Use/Specific/Walda.lua
@@ -446,16 +448,27 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
     1. General Data: gfx/Textures/Town/Elves/Bench
     1. Graphics: gfx/Textures/Town/Elves/Bench.png
     1. Graphics: gfx/Textures/Town/Elves/Fence.png
+    1. Graphics: gfx/Textures/blops/Blop1.png
+    1. Graphics: gfx/Textures/blops/Blop1.png.BK!
+    1. Graphics: gfx/Textures/blops/Blop2.png
+    1. Graphics: gfx/Textures/blops/Blop2.png.BK!
+    1. Graphics: gfx/Textures/blops/Blop3.png
+    1. Graphics: gfx/Textures/blops/Blop3.png.BK!
+    1. Graphics: gfx/Textures/blops/Blop4.png
+    1. Graphics: gfx/Textures/blops/Blop4.png.BK!
+    1. Graphics: gfx/Textures/blops/Blop5.png
+    1. Graphics: gfx/Textures/blops/Blop5.png.BK!
+    1. ???: gfx/Textures/blops/PCX.7z
     1. Graphics: GFX/Actors/Single/Elves/GedrioFulla.png
     1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.piko

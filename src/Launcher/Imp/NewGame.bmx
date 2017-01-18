@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 17.01.02
+Version: 17.01.18
 End Rem
 Strict
 
@@ -31,7 +31,7 @@ Import "FrameWork.bmx"
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - NewGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","17.01.02"
+MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","17.01.18"
 
 
 Function Anna:StringMap(q$)
@@ -191,7 +191,7 @@ Function getlangs()
 	Local f$[]
 	For Local E:TJCREntry = EachIn MapValues(jcr.entries)
 		f = e.filename.split("/")
-		DebugLog e.filename+" >> "+f[0]+" ("+Upper(f[0])+")  >>> "+f[1]+"   Lang<"+Int(Upper(f[0])="LANGUAGES")+">  Inlist<"+ListContains(L,f[1])+">"
+		'DebugLog e.filename+" >> "+f[0]+" ("+Upper(f[0])+")  >>> "+f[1]+"   Lang<"+Int(Upper(f[0])="LANGUAGES")+">  Inlist<"+ListContains(L,f[1])+">"
 		If Upper(f[0])="LANGUAGES" And (Not ListContains(L,f[1])) 
 			ListAddLast l,f[1]
 			c:+1
