@@ -151,15 +151,16 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/GobKing.lua
     1. Script: Script/JINC/Foes/Boss/Harry1.lua
     1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/MegaGhost.png
     1. Script: Script/JINC/Foes/Boss/Librarian.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/MegaGhost.png
+    1. Script: Script/JINC/Foes/Boss/Mega Ghost.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/DragonKeeper/Female.png
+    1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/DragonKeeper/Male.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/MEDUSA.PNG
-    1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Skeleton.png
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/Foes/reg/Bat.lua
     1. Script: Script/JINC/Foes/reg/Boar.lua
     1. Script: Script/JINC/Foes/reg/Boekenworm.lua
@@ -188,6 +189,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_SMITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_SOULCRUSHINGSTORY.lua
     1. Script: Script/JINC/IA/ABL_FOE_SUICIDE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_TAKEOVER.lua
+    1. Script: Script/JINC/IA/ABL_FOE_TAKEOVER2.lua
     1. Script: Script/JINC/IA/ABL_FOE_TUSK.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMBITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMSTAB.lua
@@ -263,6 +266,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_WP4.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP5.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP6.lua
+    1. Script: Script/JINC/IA/EQP_JEWEL_EMERALD.lua
+    1. Script: Script/JINC/IA/EQP_JEWEL_SMALLEMERALD.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLTOPAZ.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_TOPAZ.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR1.lua
@@ -441,8 +446,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
@@ -473,8 +478,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
-    1. Graphics: GFX/Chapters/4.png
     1. Music: Music/Boss/BossIntro.ogg
+    1. Graphics: GFX/Chapters/4.png
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Combat/End/Game Over.png
     1. Graphics: GFX/Combat/End/YouWin.png
@@ -1037,6 +1042,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Elves/RandomElfFemale2.png
     1. Graphics: GFX/Actors/Single/Elves/RandomElfMale.png
     1. Graphics: GFX/Actors/Single/Elves/RandomElfMale2.png
+    1. Graphics: GFX/Textures/Kapot Mubilair/Bank.png
+    1. Graphics: GFX/Textures/Kapot Mubilair/Hemelbed.png
     1. Graphics: GFX/Textures/Town/Elves/House.png
     1. Graphics: GFX/Actors/Single/Fairies/Female.png
     1. Graphics: GFX/Actors/Single/Fairies/Male.png

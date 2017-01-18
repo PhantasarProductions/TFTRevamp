@@ -1,7 +1,7 @@
 --[[
-  AAA_ATTACK.lua
+  EQP_JEWEL_EMERALD.lua
   Version: 17.01.18
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -36,34 +36,27 @@
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
-	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowAccuracy"] = true,
-	["Attack_AllowCritical"] = true,
-	["Attack_AllowDodge"] = true,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Attack the enemy",
+	["Desc"] = "Raises protection against silence",
+	["EQP_STAT_SR_Silence"] = 50,
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
+	["ITM_BlackMarket"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Consumable",
-	["Rew_GainAP"] = 6,
-	["Stance"] = "Attack",
+	["ITM_ShopPrice"] = 6000,
+	["ITM_Type"] = "Accesoiry",
+	["Stance"] = "Cast",
 	["Target"] = "1F",
-	["Title"] = "Attack",
-	["Type"] = "Ability",
-	["Voice"] = "Attack",
-	["rew_CreateSkill1"] = true,
-	["rew_GainSkill1"] = 6}
+	["Title"] = "Topaz",
+	["Type"] = "Item"}
 
 return ret
 

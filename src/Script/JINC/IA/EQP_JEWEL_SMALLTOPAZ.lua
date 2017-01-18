@@ -1,6 +1,6 @@
 --[[
   EQP_JEWEL_SMALLTOPAZ.lua
-  Version: 17.01.17
+  Version: 17.01.18
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -35,6 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
@@ -49,6 +50,7 @@ ret = {
 	["ITM_Combat"] = true,
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 2500,
 	["ITM_Type"] = "Accesoiry",
 	["Stance"] = "Cast",
 	["Target"] = "1F",

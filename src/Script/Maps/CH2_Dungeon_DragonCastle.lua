@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.16
+version: 17.01.18
 ]]
 
 NoDarkness = {'courtyard'}
@@ -78,6 +78,16 @@ function NPC_SwitchNext()
    Maps.PermaWrite('Maps.Obj.Obj("NPC_SwitchNext").TextureFile = "GFX/Textures/Switch/Right.png"')
    Maps.Obj.Kill('DoorNext',1)
 end   
+
+function Boss()
+  if Done('&DONE.DRAGONCASTLE.BOSS') then return end
+  ClearCombatData()
+  Var.D("$COMBAT.FOE_1","Boss/Mega Ghost")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  Var.D("$COMBAT.MUSIC","Music/AltBoss/Day Of Chaos.ogg")
+  Var.D("$COMBAT.ARENA","SpookyDung.png")
+  StartBoss("Souls of the angry undead","Mega Ghost")
+end
    
 
 function GALE_OnLoad()
@@ -86,6 +96,8 @@ function GALE_OnLoad()
    ZA_Enter('W_Courtyard',Courtyard,'W')
    ZA_Enter('CYUW',LeaveCourtyard,"W")
    ZA_Enter('CYUO',LeaveCourtyard,"E")
+   ZA_Enter('EndOfDung',Award,"SECRETDUNGEON_DRAGON")
+   ZA_Enter('Boss',Boss)
    MapHide('Seya')
    MapHide('Travel')
 end   

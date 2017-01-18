@@ -353,6 +353,18 @@ Rec: SCEN_PROLOGUE_MARRILONA
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: SECRETDUNGEON_DRAGON
+	Description = Complete the secret dungeon "Dragon Castle"
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = Dragonheart
+	Type = Silver
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: SECRETDUNGEON_SUBRIVER
 	Description = Complete the secret dungeon: Subterranean River
 	Icon = *DEFAULT*
