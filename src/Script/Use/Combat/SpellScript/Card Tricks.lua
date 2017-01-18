@@ -1,6 +1,6 @@
 --[[
   Card Tricks.lua
-  Version: 17.01.03
+  Version: 17.01.18
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -61,6 +61,23 @@ function SpellScript.FollowMe(tartag,extag,param)
       if prefixed(tartag,"FOE") then g="Foe" end
       AddCard({ group=g, tag=tartag, letter=c.letter },1)
    end
+end
+
+function SpellScript.TakeOver(tartag,extag,param)
+  local remove = {}
+  CSay('SpellScript.RemoveAllUserCards('..extag..","..tartag..","..sval(param)..')')
+  for id,card in pairs(Cards) do
+      if card.data and card.data.tag==tartag then 
+           remove[#remove+1]=id
+           CSay("= Added card #"..id.." to the replacement list (tag:"..card.data.tag.."/"..tartag..")") 
+         end
+  end 
+  local g = { [true]='Foe',[false]='Hero'}
+  for r in each(remove) do
+      Cards[r]={ data = {group = g[prefixed(extag,'FOE_')], letter=fighterbytag[extag].letter, tag=extag}  }
+  end
+  return true
+
 end
 
 -- @IF INGORE

@@ -98,6 +98,7 @@ function GALE_OnLoad()
    ZA_Enter('CYUO',LeaveCourtyard,"E")
    ZA_Enter('EndOfDung',Award,"SECRETDUNGEON_DRAGON")
    ZA_Enter('Boss',Boss)
+   ZA_Enter('Leave',WorldMap)
    MapHide('Seya')
-   MapHide('Travel')
+   MapHide('Travel')   
 end   

@@ -198,6 +198,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_GLOOM.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_AXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_SUPERAXESMASH.lua
+    1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CLEANSE.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CUREDISEASE.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_FIRSTAID.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_HOLYSTRIKE.lua
@@ -207,6 +208,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_RECOVER.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_STICKSWING.lua
+    1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_TREATMENT.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_VITALIZE.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_2PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_3PS.lua
@@ -393,10 +395,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellAni/Frost.lua
     1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
-    1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
-    1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
+    1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
+    1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
     1. Script: Script/Use/Combat/SpellScript/Steal.lua
@@ -444,11 +446,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/valstr.lua
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
     1. General Data: gfx/Textures/Town/Elves/Bench
