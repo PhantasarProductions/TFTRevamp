@@ -1,7 +1,7 @@
 --[[
   PlasmaFloor.lua
   
-  version: 17.01.18
+  version: 17.01.19
   Copyright (C) 2017 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -22,7 +22,7 @@
 
 function InitBlops(data)
      blops = {}
-     for i=1,5 do
+     for i=1,6 do
          local cx,cy = rand(-3,3),rand(-3,3)
          blops[i] = { 
               change = { x = cx,y=cy},
@@ -33,7 +33,7 @@ function InitBlops(data)
 end
 
 function FlowBlops()
-   for i=1,5 do
+   for i=1,6 do
        FlowMoveTex(blops[i].blops)
    end
 end       

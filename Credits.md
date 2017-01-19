@@ -152,15 +152,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/Harry1.lua
     1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
     1. Script: Script/JINC/Foes/Boss/Librarian.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/MegaGhost.png
-    1. Script: Script/JINC/Foes/Boss/Mega Ghost.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/DragonKeeper/Female.png
-    1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/DragonKeeper/Male.png
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/MEDUSA.PNG
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Skeleton.png
-    1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Graphics: gfx/Effects/Darkness II.png
+    1. Script: Script/JINC/Foes/Boss/Mega Ghost.lua
+    1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
+    1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
     1. Script: Script/JINC/Foes/reg/Boar.lua
     1. Script: Script/JINC/Foes/reg/Boekenworm.lua
@@ -389,6 +384,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/Flow/Idle.lua
     1. Script: Script/Use/Combat/Flow/PlayerInput.lua
     1. Script: Script/Use/Combat/Flow/TheEnd.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/FoeAI/AAAAA.lua
     1. Script: Script/Use/Combat/FoeAI/Default.lua
     1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
@@ -396,8 +393,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
     1. Script: Script/Use/Combat/SpellAni/Frost.lua
     1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
@@ -449,32 +444,38 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
     1. General Data: gfx/Textures/Town/Elves/Bench
     1. Graphics: gfx/Textures/Town/Elves/Bench.png
     1. Graphics: gfx/Textures/Town/Elves/Fence.png
+    1. Graphics: gfx/Textures/Water Tubes/Back.png
+    1. Graphics: gfx/Textures/Water Tubes/Front.png
+    1. Graphics: gfx/Textures/Water Tubes/Project File (Autosaved).piko
+    1. Graphics: gfx/Textures/Water Tubes/Project File.piko
+    1. Graphics: gfx/Textures/Water Tubes/Vloeistof.png
     1. Graphics: gfx/Textures/blops/Blop1.png
-    1. Graphics: gfx/Textures/blops/Blop1.png.BK!
     1. Graphics: gfx/Textures/blops/Blop2.png
-    1. Graphics: gfx/Textures/blops/Blop2.png.BK!
     1. Graphics: gfx/Textures/blops/Blop3.png
-    1. Graphics: gfx/Textures/blops/Blop3.png.BK!
     1. Graphics: gfx/Textures/blops/Blop4.png
-    1. Graphics: gfx/Textures/blops/Blop4.png.BK!
     1. Graphics: gfx/Textures/blops/Blop5.png
-    1. Graphics: gfx/Textures/blops/Blop5.png.BK!
+    1. Graphics: gfx/Textures/blops/Blop6.png
     1. ???: gfx/Textures/blops/PCX.7z
     1. Graphics: GFX/Actors/Single/Elves/GedrioFulla.png
     1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.piko
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.png
     1. Graphics: GFX/BoxText/Portret/Rosetta/General.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/MegaGhost.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/DragonKeeper/Female.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/DragonKeeper/Male.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/MEDUSA.PNG
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Skeleton.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.Action.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.png
@@ -1002,6 +1003,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_JAKEHUT
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_ELFROAD
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_SPIRATAWATER
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_DRESHKA
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_ISKARDERIU
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
@@ -1030,6 +1032,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_JAKEHUT
     1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_ELFROAD
+    1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_SPIRATAWATER
     1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_DRESHKA
     1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_ISKARDERIU
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
