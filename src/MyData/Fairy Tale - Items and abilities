@@ -1196,7 +1196,7 @@ Rec: ABL_FOE_MERMAID_TEMPATION
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = Tempation
+	SpellAni = Temptation
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast

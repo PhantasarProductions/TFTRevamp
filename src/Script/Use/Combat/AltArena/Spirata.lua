@@ -42,7 +42,10 @@ AltArena = {}
 -- @FI
 
 AltArena.spiratawater = {
-                      Before = function() BlopPlasma.DrawCol(0,40,100) end
+                      Before = function() 
+                         BlopPlasma.DrawCol(0,40,100,80)
+                         --Sys.Error('This does happen, so nothing is ignored.') 
+                      end
                  }
 
 

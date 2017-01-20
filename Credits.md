@@ -501,9 +501,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Data
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Objects
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Settings
-    1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Data
-    1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Objects
-    1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Settings
+    1. Map Design: Kthura/CH2_Dungeon_SpirataWater/DATA
+    1. Map Design: Kthura/CH2_Dungeon_SpirataWater/OBJECTS
+    1. Map Design: Kthura/CH2_Dungeon_SpirataWater/SETTINGS
     1. Map Design: Kthura/CH2_Town_Dreshka/Data
     1. Map Design: Kthura/CH2_Town_Dreshka/Objects
     1. Map Design: Kthura/CH2_Town_Dreshka/Settings
