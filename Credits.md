@@ -158,16 +158,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
     1. Script: Script/JINC/Foes/reg/Boar.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/Foes/reg/Boekenworm.lua
     1. Script: Script/JINC/Foes/reg/DragonKeeper.lua
     1. Script: Script/JINC/Foes/reg/FireHound.lua
     1. Script: Script/JINC/Foes/reg/Gob.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/Foes/reg/GobPriest.lua
     1. Script: Script/JINC/Foes/reg/GobRogue.lua
     1. Script: Script/JINC/Foes/reg/Hawk.lua
     1. Script: Script/JINC/Foes/reg/Lemming.lua
     1. Script: Script/JINC/Foes/reg/Medusa.lua
+    1. Script: Script/JINC/Foes/reg/Mermaid.lua
     1. Script: Script/JINC/Foes/reg/RSpook.lua
     1. Script: Script/JINC/Foes/reg/Skeleton.lua
     1. Script: Script/JINC/Foes/reg/Slime.lua
@@ -394,8 +395,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/FoeAI/Default.lua
     1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
     1. Script: Script/Use/Combat/SpellAni/Frost.lua
     1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
@@ -409,6 +408,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/Temptation.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
     1. Script: Script/Use/Combat/StatusChanges/Charm&Confusion.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
     1. Script: Script/Use/Combat/StatusChanges/Guard.lua
     1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
@@ -456,8 +457,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
@@ -466,7 +467,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/Town/Elves/Fence.png
     1. Graphics: gfx/Textures/Water Tubes/Back.png
     1. Graphics: gfx/Textures/Water Tubes/Front.png
-    1. Graphics: gfx/Textures/Water Tubes/Project File (Autosaved).piko
     1. Graphics: gfx/Textures/Water Tubes/Project File.piko
     1. Graphics: gfx/Textures/Water Tubes/Vloeistof.png
     1. Graphics: gfx/Textures/blops/Blop1.png
@@ -485,6 +485,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/DragonKeeper/Female.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/DragonKeeper/Male.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/MEDUSA.PNG
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Mermaid.piko
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant01.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant02.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant03.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant05.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant06.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant07.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant08.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Skeleton.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.Action.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.piko
@@ -1453,6 +1461,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/John_6.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/John_7.ogg
 - Unknown artist from the Public Domain
+    1. Graphics: GFX/Combat/Spellani/Temptation/Heart.png
     1. Graphics: GFX/Textures/Trees/Loofboom.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/KillerEscargot.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Boekenworm.png

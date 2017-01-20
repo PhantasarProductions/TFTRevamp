@@ -38,7 +38,7 @@
 SpellAni = {}
 -- @FI
 
-function SpellAni.Spark(ActG,ActT,TarG,TarT)
+function SpellAni.Temptation(ActG,ActT,TarG,TarT)
   local sx,sy = FighterCoords(ActG,ActT)
   local count = 0
   local hearts = {}
