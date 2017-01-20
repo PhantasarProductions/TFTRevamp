@@ -11,6 +11,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 
 
 - Aeris
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/Aqua.png
     1. Graphics: GFX/Big_Char/Dandor.png
     1. Graphics: GFX/Big_Char/Hando Stillor.png
     1. Graphics: GFX/Big_Char/Jake.png
@@ -152,12 +153,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/Harry1.lua
     1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
     1. Script: Script/JINC/Foes/Boss/Librarian.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/Foes/Boss/Mega Ghost.lua
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
     1. Script: Script/JINC/Foes/reg/Boar.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/Foes/reg/Boekenworm.lua
     1. Script: Script/JINC/Foes/reg/DragonKeeper.lua
     1. Script: Script/JINC/Foes/reg/FireHound.lua
@@ -166,6 +167,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/GobRogue.lua
     1. Script: Script/JINC/Foes/reg/Hawk.lua
     1. Script: Script/JINC/Foes/reg/Lemming.lua
+    1. Script: Script/JINC/Foes/reg/Medusa.lua
     1. Script: Script/JINC/Foes/reg/RSpook.lua
     1. Script: Script/JINC/Foes/reg/Skeleton.lua
     1. Script: Script/JINC/Foes/reg/Slime.lua
@@ -178,6 +180,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_DESPERATEATTACK.lua
     1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
     1. Script: Script/JINC/IA/ABL_FOE_FLAMESTRIKE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_GAZE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_MERMAID_TEMPATION.lua
     1. Script: Script/JINC/IA/ABL_FOE_PARADIVE.lua
     1. Script: Script/JINC/IA/ABL_FOE_SHOCKINGSTORIES.lua
     1. Script: Script/JINC/IA/ABL_FOE_SICKSTORIES.lua
@@ -283,6 +287,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_MAGICDUST.lua
     1. Script: Script/JINC/IA/ITM_MANDRAKE.lua
     1. Script: Script/JINC/IA/ITM_MEDICINE.lua
+    1. Script: Script/JINC/IA/ITM_MIRROR.lua
     1. Script: Script/JINC/IA/ITM_PANACEA.lua
     1. Script: Script/JINC/IA/ITM_PHOENIX.lua
     1. Script: Script/JINC/IA/ITM_POTION.lua
@@ -368,6 +373,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Development documentation: Script/Use/Available/Readme.md
     1. Script: Script/Use/Combat/AltArena/AAA_Algemeen.lua
     1. Script: Script/Use/Combat/AltArena/PathOfMagic.lua
+    1. Script: Script/Use/Combat/AltArena/Spirata.lua
     1. Script: Script/Use/Combat/AltArena/SpookyDung.lua
     1. Script: Script/Use/Combat/CAttack.lua
     1. Script: Script/Use/Combat/CBuffCountDown.lua
@@ -384,27 +390,31 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/Flow/Idle.lua
     1. Script: Script/Use/Combat/Flow/PlayerInput.lua
     1. Script: Script/Use/Combat/Flow/TheEnd.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/FoeAI/AAAAA.lua
     1. Script: Script/Use/Combat/FoeAI/Default.lua
     1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
     1. Script: Script/Use/Combat/SpellAni/Frost.lua
     1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
+    1. Script: Script/Use/Combat/SpellAni/Temptation.lua
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
     1. Script: Script/Use/Combat/SpellScript/Steal.lua
+    1. Script: Script/Use/Combat/SpellScript/Temptation.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
+    1. Script: Script/Use/Combat/StatusChanges/Charm&Confusion.lua
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
     1. Script: Script/Use/Combat/StatusChanges/Guard.lua
     1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
     1. Script: Script/Use/Combat/StatusChanges/Paralysis and Sleep.lua
     1. Script: Script/Use/Combat/StatusChanges/Permanence.lua
+    1. Script: Script/Use/Combat/StatusChanges/Petrification.lua
     1. Script: Script/Use/Combat/StatusChanges/Poison and Disease.lua
     1. Script: Script/Use/Combat/StatusChanges/Zombie.lua
     1. Script: Script/Use/Linkers/AchievementLinker.lua
@@ -446,8 +456,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
@@ -501,8 +511,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/End/Game Over.png
     1. Graphics: GFX/Combat/End/YouWin.png
     1. Graphics: GFX/Loading/Graphic.png
-    1. Graphics: GFX/Loading/Saving.png
     1. Music: Music/Sys/Silence.ogg
+    1. Graphics: GFX/Loading/Saving.png
     1. Graphics: GFX/Logo/End Of Prologue.hot
     1. Graphics: GFX/Logo/End Of Prologue.png
     1. Graphics: GFX/Logo/Game Over.png
@@ -868,20 +878,24 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Cast.png
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Dead.png
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Idle.Frames
+    1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Petrified.png
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Victory.png
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.piko
+    1. Graphics: GFX/Combat/Fighters/Hero/Jake.Petrified.xcf
     1. Graphics: GFX/Combat/Fighters/Hero/Jake.dead.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Jake.dead.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Attack.1.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Attack.2.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Cast.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Idle.Frames
+    1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Petrified.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Victory.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.dead.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Attack.1.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Attack.2.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Cast.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Idle.Frames
+    1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Petrified.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Victory.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.dead.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.piko
@@ -891,6 +905,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Dead.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Dead.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Idle.Frames
+    1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Petrified.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Victory.png
     1. Graphics: GFX/Combat/Menu/Ability.png
     1. Graphics: GFX/Combat/Menu/Attack.png
@@ -1159,6 +1174,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Objects/Torch Post.png
     1. Graphics: GFX/Textures/Switch/Left.png
     1. Graphics: GFX/Textures/Switch/Right.png
+    1. Graphics: GFX/Textures/Tapijt/Amber.png
     1. Graphics: GFX/Textures/Tapijt/Blauw.frames
     1. Graphics: GFX/Textures/Tapijt/Blauw.png
     1. Graphics: GFX/Textures/Tapijt/Groen.frames

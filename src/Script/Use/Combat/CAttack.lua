@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.07
+version: 17.01.20
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
@@ -44,10 +44,11 @@ function Hurt(tag,damage,element)
       -- alt damage routine
       for s,d in pairs(fighterbytag[tag].StatusChanges) do
           if d.HalfDamage then dmg=math.ceil(dmg/2) end
+          if d.BlockHurt then dmg=0 end
       end
       -- default damage routine
       if eleprot<-200 then -- Fatal
-         dmg = hp.Have
+         if dmg>0 then dmg = hp.Have end
          charmsg(tag,"DEATH!",255,0,0)
       elseif eleprot<-100 then -- Very weak
          charmsg(tag,dmg,255,0,0)
