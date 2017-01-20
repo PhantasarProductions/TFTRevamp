@@ -457,8 +457,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
@@ -804,6 +804,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Arena/Hell.png
     1. Graphics: GFX/Combat/Arena/Library.png
     1. Graphics: GFX/Combat/Arena/Magic.png
+    1. Graphics: GFX/Combat/Arena/SpirataWater.png
     1. Graphics: GFX/Combat/Arena/SpookyDung.png
     1. Graphics: GFX/Combat/Arena/SubRiver.png
     1. Graphics: GFX/Combat/Cards/Ability.png

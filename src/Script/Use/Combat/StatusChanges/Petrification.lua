@@ -59,7 +59,7 @@ StatusChanges.Petrification = {
                             end   
                          else
                            local itag = "DEATH TO "..ch                           
-                           Image.LoadNew(itag,"GFX/Combat/Fighters/Hero/"..ch..".petrifie.png"); Image.Hot(itag,Image.Width(itag)/2,Image.height(itag))
+                           Image.LoadNew(itag,"GFX/Combat/Fighters/Hero/"..ch..".petrified.png"); Image.Hot(itag,Image.Width(itag)/2,Image.height(itag))
                            Image.Show(itag,mychar.x,mychar.y)                            
                          end 
                        end,   
