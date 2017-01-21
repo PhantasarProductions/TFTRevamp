@@ -146,6 +146,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/CharAbilities/List.lua
     1. Script: Script/JINC/CharAbilities/Marrilona.lua
     1. Script: Script/JINC/CharAbilities/Nostramantu.lua
+    1. Script: Script/JINC/Foes/Boss/Aqua.lua
     1. Script: Script/JINC/Foes/Boss/Dwarf.lua
     1. Script: Script/JINC/Foes/Boss/Dwarf_J.lua
     1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
@@ -224,6 +225,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PROTECT.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ROCK.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_SPLASH.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_STONE2FLESH.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_TSUNAMI.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ZAP.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_REJUVENATE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_ULTRAHEAL.lua
@@ -404,12 +407,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellScript/Steal.lua
     1. Script: Script/Use/Combat/SpellScript/Temptation.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
     1. Script: Script/Use/Combat/StatusChanges/Charm&Confusion.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
     1. Script: Script/Use/Combat/StatusChanges/Guard.lua
     1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
@@ -457,8 +460,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
@@ -501,9 +504,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Data
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Objects
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Settings
-    1. Map Design: Kthura/CH2_Dungeon_SpirataWater/DATA
-    1. Map Design: Kthura/CH2_Dungeon_SpirataWater/OBJECTS
-    1. Map Design: Kthura/CH2_Dungeon_SpirataWater/SETTINGS
+    1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Data
+    1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Objects
+    1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Settings
     1. Map Design: Kthura/CH2_Town_Dreshka/Data
     1. Map Design: Kthura/CH2_Town_Dreshka/Objects
     1. Map Design: Kthura/CH2_Town_Dreshka/Settings
@@ -1075,6 +1078,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Dreshka/Water Prelude.ogg
     1. Music: Music/AltEncounter/Tempting Secrets.ogg
     1. Music: Music/Dungeon/Chillin Hard.ogg
+    1. Music: Music/SpecialBoss/Summon the Rawk.ogg
     1. Music: Music/Dungeon/Pippin the Hunchback.ogg
     1. Music: Music/Dungeon/TheDread.ogg
     1. Music: Music/Hub/Angevin.ogg

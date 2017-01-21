@@ -1,51 +1,87 @@
 --[[
-  RSpook.lua
-  Version: 17.01.20
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+**********************************************
   
-  ===========================
-  This file is part of a project related to the Phantasar Chronicles or another
-  series or saga which is property of Jeroen P. Broks.
-  This means that it may contain references to a story-line plus characters
-  which are property of Jeroen Broks. These references may only be distributed
-  along with an unmodified version of the game. 
+  Aqua.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
-  As soon as you remove or replace ALL references to the storyline or character
-  references, or any termology specifically set up for the Phantasar universe,
-  or any other univers a story of Jeroen P. Broks is set up for,
-  the restrictions of this file are removed and will automatically become
-  zLib licensed (see below).
+  This file contains material that is related 
+  to a storyline that is which is strictly
+  copyrighted to Jeroen Broks.
   
-  Please note that doing so counts as a modification and must be marked as such
-  in accordance to the zLib license.
-  ===========================
-  zLib license terms:
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
+  This file may only be used in an unmodified
+  form with an unmodified version of the 
+  software this file belongs to.
+  
+  You may use this file for your study to see
+  how I solved certain things in the creation
+  of this project to see if you find valuable
+  leads for the creation of your own.
+  
+  Mostly this file comes along with a project
+  that is for most part released under an
+  open source license and that means that if
+  you use that code with this file removed
+  from it, you can use it under that license.
+  Please check out the other files to find out
+  which license applies.
+  This file comes 'as-is' and in no possible
+  way the author can be held responsible of
+  any form of damages that may occur due to 
+  the usage of this file
+  
+  
+ **********************************************
+ 
+version: 17.01.21
 ]]
--- File Generated: Fri 20 January 2017; 16:42:50
+-- File Generated: Sat 21 January 2017; 12:27:24
 
 
 local foe = {}
 
 	foe["AI"] = "default"
 	foe["NEWGAMEPLUS_AAA_ATTACK"] = true
+	foe["NEWGAMEPLUS_AAA_GUARD"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_CRUSH"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_DISTRACT"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_TSUNAMI"] = true
 	foe["NORMAL_AAA_ATTACK"] = true
+	foe["NORMAL_AAA_GUARD"] = true
+	foe["NORMAL_ABL_FOE_CRUSH"] = true
+	foe["NORMAL_ABL_FOE_DISTRACT"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_TSUNAMI"] = true
 	foe["OVERSOUL_AAA_ATTACK"] = true
+	foe["OVERSOUL_AAA_GUARD"] = true
+	foe["OVERSOUL_ABL_FOE_CRUSH"] = true
+	foe["OVERSOUL_ABL_FOE_DISTRACT"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_TSUNAMI"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
+	foe["SKILL\49_AAA_GUARD"] = true
+	foe["SKILL\49_ABL_FOE_CRUSH"] = true
+	foe["SKILL\49_ABL_FOE_DISTRACT"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_TSUNAMI"] = false
 	foe["SKILL\50_AAA_ATTACK"] = true
+	foe["SKILL\50_AAA_GUARD"] = true
+	foe["SKILL\50_ABL_FOE_CRUSH"] = true
+	foe["SKILL\50_ABL_FOE_DISTRACT"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_TSUNAMI"] = true
 	foe["SKILL\51_AAA_ATTACK"] = true
+	foe["SKILL\51_AAA_GUARD"] = false
+	foe["SKILL\51_ABL_FOE_CRUSH"] = true
+	foe["SKILL\51_ABL_FOE_DISTRACT"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_TSUNAMI"] = true
 	foe["STSTART_Curse"] = false
 	foe["STSTART_Disease"] = false
 	foe["STSTART_Paralysis"] = false
@@ -53,20 +89,20 @@ local foe = {}
 	foe["STSTART_Poison"] = false
 	foe["STSTART_Silence"] = false
 	foe["STSTART_Undead"] = false
-	foe["Desc"] = "It\39s red and it\39s spooky"
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47reg\47RSpook\46png"
-	foe["Item Drop \49"] = "ITM_ANTIDOTE"
-	foe["Item Drop \50"] = "ITM_FLAMEORB"
-	foe["Item Steal \49"] = "ITM_SALVE"
-	foe["Item Steal \50"] = "ITM_APPLE"
-	foe["Item Steal \51"] = "ITM_FLAMEORB"
-	foe["Name"] = "Red Spook"
-	foe["RATE_AAA_ATTACK"] = 2
-	foe["RATE_AAA_GUARD"] = 0
+	foe["Desc"] = "Protector of the Water Spirata"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47boss\47Aqua\46png"
+	foe["Item Drop \49"] = "ITM_HEALSHOWER"
+	foe["Item Drop \50"] = "ITM_APPLE"
+	foe["Item Steal \49"] = "ITM_ANTIDOTE"
+	foe["Item Steal \50"] = "ITM_ANTIDOTE"
+	foe["Item Steal \51"] = "ITM_ANTIDOTE"
+	foe["Name"] = "Aqua"
+	foe["RATE_AAA_ATTACK"] = 10
+	foe["RATE_AAA_GUARD"] = 5
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
-	foe["RATE_ABL_FOE_CRUSH"] = 0
+	foe["RATE_ABL_FOE_CRUSH"] = 1
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
-	foe["RATE_ABL_FOE_DISTRACT"] = 0
+	foe["RATE_ABL_FOE_DISTRACT"] = 4
 	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 0
 	foe["RATE_ABL_FOE_GAZE"] = 0
 	foe["RATE_ABL_FOE_MERMAID_TEMPATION"] = 0
@@ -106,11 +142,13 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_CHILL"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ETERNALFLAME"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_FLAME"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 2
 	foe["RATE_ABL_HERO_MARRILONA_PERMANENCE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PROTECT"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ROCK"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 10
+	foe["RATE_ABL_HERO_MARRILONA_STONE\50FLESH"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_TSUNAMI"] = 2
 	foe["RATE_ABL_HERO_MARRILONA_ZAP"] = 0
 	foe["RATE_ABL_MASTER_FREYA_REJUVENATE"] = 0
 	foe["RATE_ABL_MASTER_FREYA_ULTRAHEAL"] = 0
@@ -201,6 +239,8 @@ local foe = {}
 	foe["TARGET_ABL_HERO_MARRILONA_PROTECT"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ROCK"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_SPLASH"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_STONE\50FLESH"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_TSUNAMI"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ZAP"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_REJUVENATE"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_ULTRAHEAL"] = "Random"
@@ -241,28 +281,28 @@ local foe = {}
 	foe["TARGET_WAND_TRAINING"] = "Random"
 	foe["TARGET_WAND_WIND"] = "Random"
 	foe["TARGET_ZZKEY_KEYWATER"] = "Random"
-	foe["VocalTag"] = ""
-	foe["Boss"] = false
-	foe["Oversoul"] = true
+	foe["VocalTag"] = "Aqua"
+	foe["Boss"] = true
+	foe["Oversoul"] = false
 	foe["Oversoul Drop \49"] = false
 	foe["Oversoul Drop \50"] = false
-	foe["Oversoul Steal \49"] = true
+	foe["Oversoul Steal \49"] = false
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
-	foe["Cash"] = 3
-	foe["ER_Darkness"] = 75
-	foe["ER_Earth"] = 75
-	foe["ER_Flame"] = 75
-	foe["ER_Frost"] = 75
-	foe["ER_Light"] = 75
-	foe["ER_Lightning"] = 75
-	foe["ER_Water"] = 75
-	foe["ER_Wind"] = 75
-	foe["Rate Drop \49"] = 10
+	foe["Cash"] = 100
+	foe["ER_Darkness"] = 0
+	foe["ER_Earth"] = 0
+	foe["ER_Flame"] = 100
+	foe["ER_Frost"] = -50
+	foe["ER_Light"] = 0
+	foe["ER_Lightning"] = -150
+	foe["ER_Water"] = 200
+	foe["ER_Wind"] = 0
+	foe["Rate Drop \49"] = 100
 	foe["Rate Drop \50"] = 1
-	foe["Rate Steal \49"] = 5
-	foe["Rate Steal \50"] = 1
-	foe["Rate Steal \51"] = 3
+	foe["Rate Steal \49"] = 0
+	foe["Rate Steal \50"] = 0
+	foe["Rate Steal \51"] = 0
 	foe["SR_Curse "] = 100
 	foe["SR_Disease "] = 100
 	foe["SR_Paralysis "] = 100
@@ -270,24 +310,24 @@ local foe = {}
 	foe["SR_Poison "] = 100
 	foe["SR_Silence "] = 100
 	foe["SR_Undead "] = 100
-	foe["normal_Accuracy"] = 100
-	foe["normal_EXP"] = 2
-	foe["normal_Endurance"] = 20
-	foe["normal_Evasion"] = 25
-	foe["normal_HP"] = 2
-	foe["normal_Intelligence"] = 35
-	foe["normal_Power"] = 15
-	foe["normal_Resistance"] = 100
-	foe["normal_Speed"] = 20
+	foe["normal_Accuracy"] = 89
+	foe["normal_EXP"] = 100
+	foe["normal_Endurance"] = 80
+	foe["normal_Evasion"] = 10
+	foe["normal_HP"] = 5000
+	foe["normal_Intelligence"] = 160
+	foe["normal_Power"] = 90
+	foe["normal_Resistance"] = 140
+	foe["normal_Speed"] = 120
 	foe["oversoul_Accuracy"] = 100
-	foe["oversoul_EXP"] = 5
-	foe["oversoul_Endurance"] = 20
-	foe["oversoul_Evasion"] = 70
-	foe["oversoul_HP"] = 2
-	foe["oversoul_Intelligence"] = 60
-	foe["oversoul_Power"] = 20
-	foe["oversoul_Resistance"] = 100
-	foe["oversoul_Speed"] = 30
+	foe["oversoul_EXP"] = 0
+	foe["oversoul_Endurance"] = 0
+	foe["oversoul_Evasion"] = 0
+	foe["oversoul_HP"] = 0
+	foe["oversoul_Intelligence"] = 0
+	foe["oversoul_Power"] = 0
+	foe["oversoul_Resistance"] = 0
+	foe["oversoul_Speed"] = 0
 
 
 return foe

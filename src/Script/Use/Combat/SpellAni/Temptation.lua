@@ -39,6 +39,7 @@ SpellAni = {}
 -- @FI
 
 function SpellAni.Temptation(ActG,ActT,TarG,TarT)
+  CSay('Actor: '..sval(ActG).."/"..sval(ActT))
   local sx,sy = FighterCoords(ActG,ActT)
   local count = 0
   local hearts = {}
@@ -48,7 +49,6 @@ function SpellAni.Temptation(ActG,ActT,TarG,TarT)
         hearts[#hearts+1] = { deg=rand(0,360), size=rand(10,30), cd=1000, rad = 0}
      end
      DrawScreen()
-     ClearTable(remove)
      for h in each(hearts) do
          QScale(h.size)
          Image.LoadNew('TEMPTATION','GFX/Combat/SpellAni/Temptation/Heart.png'); Image.HotCenter('TEMPTATION')

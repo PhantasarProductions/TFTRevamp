@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 17.01.20
+version: 17.01.21
 ]]
--- File Generated: Fri 20 January 2017; 15:23:30
+-- File Generated: Sat 21 January 2017; 12:27:26
 
 
 local foe = {}
@@ -111,6 +111,8 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_PROTECT"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ROCK"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_STONE\50FLESH"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_TSUNAMI"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ZAP"] = 0
 	foe["RATE_ABL_MASTER_FREYA_REJUVENATE"] = 0
 	foe["RATE_ABL_MASTER_FREYA_ULTRAHEAL"] = 0
@@ -201,6 +203,8 @@ local foe = {}
 	foe["TARGET_ABL_HERO_MARRILONA_PROTECT"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ROCK"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_SPLASH"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_STONE\50FLESH"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_TSUNAMI"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ZAP"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_REJUVENATE"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_ULTRAHEAL"] = "Random"

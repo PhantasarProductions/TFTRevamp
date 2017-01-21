@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.19
+version: 17.01.21
 ]]
 -- @USE /script/use/specific/plasmafloor.lua
 
@@ -115,6 +115,17 @@ function NPC_5() Tube(5) end
 function NPC_6() Tube(6) end    
 function NPC_7() Tube(7) end    
 function NPC_8() Tube(8) end    
+
+function Boss()
+  ClearCombatData()
+  Schedule('MAP','ManaOrb')
+  Var.D("$COMBAT.FOE_1","Boss/Aqua")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  Var.D("$COMBAT.MUSIC","Music/SpecialBoss/Summon the Rawk.ogg")
+  Var.D("$COMBAT.ARENA","spiratawater.png")
+  StartBoss("Protector of the Water Spirata","Aqua")    
+end
+
 
 function MAP_FLOW()
    FlowBlops()

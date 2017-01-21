@@ -1,5 +1,5 @@
 --[[
-  ABL_MASTER_FREYA_REJUVENATE.lua
+  ABL_HERO_MARRILONA_STONE2FLESH.lua
   Version: 17.01.21
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -35,33 +35,35 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
-	["ABL_APCost"] = 25,
+	["ABL_APCost"] = 45,
 	["ADDCARD_Action_Act"] = "Self",
 	["ADDCARD_Action_Interval"] = 5,
-	["ADDCARD_Action_Number"] = 2,
 	["ADDCARD_Char_Interval"] = 5,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["CurePoison"] = true,
-	["Desc"] = "See me, feel me, touch me, heal me.",
-	["Heal"] = 200,
+	["CurePetrification"] = true,
+	["Desc"] = "Cures \"Petrification\"",
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "StatPercent",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
 	["Target"] = "1A",
-	["Title"] = "Rejuvenate",
+	["Title"] = "Stone to Flesh",
 	["Type"] = "Ability",
-	["Voice"] = "Heal"}
+	["Voice"] = "Heal",
+	["rew_GainSkill1"] = 1,
+	["rew_GainSkill3"] = 5,
+	["rew_GainSkill4"] = 5}
 
 return ret
 

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.15
+version: 17.01.21
 ]]
 
 -- abl_hero_jake_2ps = {5},abl_hero_jake_3ps={25},abl_hero_jake_4ps={50},abl_hero_jake_berserk={10,5}
@@ -65,10 +65,11 @@ local r = {
           
 if fullversion then -- That's right Marrilona will not get her level #2 and level #3 spells unless you have the full version of the game.          
    r["2. Level 2"] = {
-                                       abl_hero_marrilona_permanence = {25,25,25,25,25}, -- 1
-                                       abl_hero_marrilona_eternalflame = {[2]=4^skill}
+                                       abl_hero_marrilona_permanence = {25,25,25,25,25}, --  1
+                                       abl_hero_marrilona_eternalflame = {[2]=4^skill},  --  2
+                                       abl_hero_marrilona_tsunami = {[1]=10, [4]=25}     --  3
                      }
-   r["3. Level 3"] = {}
+   r["3. Level 3"] = {                 abl_hero_marrilona_stone2flesh = {[3]=10,[4]=65}} --  1
 end
              
 return r

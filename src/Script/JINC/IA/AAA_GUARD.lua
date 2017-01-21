@@ -1,6 +1,6 @@
 --[[
   AAA_GUARD.lua
-  Version: 17.01.20
+  Version: 17.01.21
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

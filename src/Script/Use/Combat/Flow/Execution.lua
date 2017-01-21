@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.01.17
+  Version: 17.01.20
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -230,7 +230,9 @@ function fflow.Execution()
    -- SpellAni
    if act.SpellAni then 
       white()
-      fflow.SpellAni[act.SpellAni_External==true](nextact.executor.group,nextact.executor.tag,nextact.group,nextact.targetidx,act)
+      local idx
+      for i,d in pairs(Fighters[nextact.executor.group]) do if d.tag == nextact.executor.tag then idx=i end end -- Leftover from the past... Oh well...
+      fflow.SpellAni[act.SpellAni_External==true](nextact.executor.group,idx,nextact.group,nextact.targetidx,act)
    end
    -- Perform the action
    ;(fflow.Range[act.Target] or function() Sys.Crash('Unknown target type: '..act.Target) end)(act)
