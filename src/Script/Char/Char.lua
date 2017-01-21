@@ -138,7 +138,7 @@ function ER_FLAME    (ch) NStat(ch,"ER_Flame",nil,-1000)     end
 function ER_FROST    (ch) NStat(ch,"ER_Frost",nil,-1000)     end
 function ER_LIGHT    (ch) NStat(ch,"ER_Light",nil,-1000)     end
 function ER_NONE     (ch) NStat(ch,"ER_None",nil,-1000)      end
-function ER_THUNDER  (ch) NStat(ch,"ER_Thunder",nil,-1000)   end
+function ER_LIGHTNING(ch) NStat(ch,"ER_Lightning",nil,-1000) end
 function ER_WATER    (ch) NStat(ch,"ER_Water",nil,-1000)     end
 function ER_WIND     (ch) NStat(ch,"ER_Wind",nil,-1000)      end
 
