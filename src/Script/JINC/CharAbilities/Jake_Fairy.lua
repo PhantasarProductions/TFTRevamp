@@ -2,7 +2,7 @@
 **********************************************
   
   Jake_Fairy.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,11 +32,11 @@
   
  **********************************************
  
-version: 16.12.15
+version: 17.01.21
 ]]
 local r = {
                ["1. Fairy Magic"] = {ABL_HERO_JAKE_SHIFT_HUMAN={[2]=99,[3]=99,[4]=99,[5]=99},
-                                     abl_hero_marrilona_fire = {[2]=1},          -- 2
+                                     abl_hero_marrilona_flame = {[2]=1},          -- 2
                                      abl_hero_marrilona_speedup = {[3]=1},       -- 3
                                      abl_hero_marrilona_heal = {[4]=1},          -- 4                                     
                                      abl_hero_marrilona_protect = {[5]=1}                                     

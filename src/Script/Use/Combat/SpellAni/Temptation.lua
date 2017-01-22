@@ -1,6 +1,6 @@
 --[[
   Temptation.lua
-  Version: 17.01.20
+  Version: 17.01.21
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -52,7 +52,7 @@ function SpellAni.Temptation(ActG,ActT,TarG,TarT)
      for h in each(hearts) do
          QScale(h.size)
          Image.LoadNew('TEMPTATION','GFX/Combat/SpellAni/Temptation/Heart.png'); Image.HotCenter('TEMPTATION')
-         Image.Show(sx+(sin(h.deg)*rad),sy+(cos(h.deg)*rad))
+         Image.Show(sx+(sin(h.deg)*h.rad),sy+(cos(h.deg)*h.rad))
          h.rad = h.rad + 1
          h.cd  = h.cd  - 1          
      end

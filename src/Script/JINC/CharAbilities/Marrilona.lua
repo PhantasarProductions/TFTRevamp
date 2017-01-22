@@ -50,7 +50,7 @@ local skill = Sys.Val(Var.C('%SKILL'))
 
 local r = {
                  ["1. Level 1"]  = { 
-                                       abl_hero_marrilona_fire = {[2]=1},          --  1
+                                       abl_hero_marrilona_flame = {[2]=1},         --  1
                                        abl_hero_marrilona_speedup = {[3]=1},       --  2
                                        abl_hero_marrilona_heal = {[4]=1},          --  3
                                        abl_hero_marrilona_protect = {[5]=1},       --  4

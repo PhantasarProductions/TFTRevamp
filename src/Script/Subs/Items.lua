@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.01.09
+  Version: 17.01.21
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -289,6 +289,7 @@ end
 
 function MayTeach(ch)
    heroabl[ch] = heroabl[ch] or {}
+   CSay("Can "..ch.." learn a new ability?")
    for pagenum,pagekey in spairs(ablpage[ch]) do
        CSay('Checking: '..pagekey)
        --for ablkey,ablreq in spairs(pagedata) do
@@ -297,9 +298,13 @@ function MayTeach(ch)
            for i,l in pairs(ablreq) do
                al = al and RPG.PointsExists(ch,"SK_LVL_"..i)==1 and RPG.Points(ch,'SK_LVL_'..i).Have>=l               
            end
-           if al then return ablkey end
+           if al then
+              CSay('= Yeah '..ablkey.." will be learned") 
+              return ablkey 
+           end
        end
    end
+   CSay("Apparently not")
 end
 
 function CombatTeach(ch)
