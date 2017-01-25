@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.21
+version: 17.01.22
 ]]
 -- @USE /script/use/specific/plasmafloor.lua
 
@@ -46,7 +46,7 @@ function GeneratePuzzle(num)
        for i=1,num do subniveau[i]=CVV(tag) end
     end
     niveau = rand(1,4)
-    local total = niveau*4
+    local total = niveau*num
     Var.D("%WATER.NIVEAU.TOTAL",total)
     ClearTable(subniveau)
     for i=1,num do
@@ -78,6 +78,8 @@ function PTube(n)
     if v<1 and v>4 then return end
     subniveau[n] = v
     local goed = true
+    CSay(serialize('level changed -- subniveau',subniveau))
+    CSay(serialize('level changed -- niveau',niveau))
     for i=1,#subniveau do
         goed = goed and subniveau[i]==niveau
     end
@@ -104,7 +106,7 @@ function Tube(n)
     local tag = '%WATER.NIVEAU['..Maps.LayerCodeName..']'
     if CVVN(tag) then return end
     Schedule('Map','PT_'..n)
-    AltInput('Tube #'..n.." -- current level:"..sval(subniveau[n])..":",'','num')
+    AltInput('Tube #'..n.." -- current level: "..sval(subniveau[n]).." ",'','num')
 end
     
 function NPC_1() Tube(1) end    
@@ -137,4 +139,7 @@ function GALE_OnLoad()
    InitBlops()
    ZA_Enter('GenPuz2',GeneratePuzzle,4)
    ZA_Enter('GenPuz8',GeneratePuzzle,8)
+   ZA_Enter('SpirataRoom',Music,'Hub/Angevin.ogg')
+   ZA_Enter('Kerk'       ,Music,"Dungeon/Chanson d'eglise.ogg")
+   MapHide('Secret')
 end

@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_FLAME.lua
-  Version: 17.01.21
+  Version: 17.01.22
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -68,7 +68,8 @@ ret = {
 	["Type"] = "Ability",
 	["Voice"] = "Fire",
 	["rew_CreateSkill1"] = true,
-	["rew_GainSkill1"] = 1}
+	["rew_GainSkill1"] = 1,
+	["rew_GainSkill2"] = 15}
 
 return ret
 

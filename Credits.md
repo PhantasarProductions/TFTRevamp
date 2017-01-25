@@ -500,6 +500,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.Action.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.png
+    1. Graphics: GFX/Textures/Spirata/Spirata.piko
+    1. Graphics: GFX/Textures/Spirata/Spirata.png
     1. Game identification data: ID/Test
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Data
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Objects

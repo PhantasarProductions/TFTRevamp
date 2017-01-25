@@ -1,6 +1,6 @@
 --[[
   AAA_GUARD.lua
-  Version: 17.01.21
+  Version: 17.01.22
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -45,14 +45,17 @@ ret = {
 	["CauseGuarding"] = true,
 	["Desc"] = "Skip turn and half damage",
 	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["Rew_GainAP"] = 10,
 	["Stance"] = "Cast",
 	["Target"] = "OS",
 	["Title"] = "Guard",

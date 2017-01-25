@@ -1,6 +1,6 @@
 --[[
   ITM_HEALINGHERB.lua
-  Version: 17.01.21
+  Version: 17.01.22
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
