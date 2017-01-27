@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.22
+version: 17.01.26
 ]]
 -- @USE /script/use/specific/plasmafloor.lua
 
@@ -128,6 +128,34 @@ function Boss()
   StartBoss("Protector of the Water Spirata","Aqua")    
 end
 
+-- Meet the Spirata
+function Spirata()
+    if Done('&DONE.SPIRATA.WATER') then return end
+    Shift('Human')
+    PartyPop('Spirata','North')
+    MapText('SPIRATA')
+    Done('&SPIRATA.MARRILONA')
+    if skill~=3 then
+       RPG.SetStat('Marrilona','EXP',0)
+       for i=skill,5 do
+           if RPG.PointsExists('Marrilona','SK_LVL_'..i)==1 then RPG.Points('Marrilona','SK_LVL_'..i).Inc(2/skill) end
+       end
+    end
+    local spirscript = [[ -- Spirata Wall changes
+      local spirata = Maps.Obj.Obj('SpirataWall')
+      spirata.AltBlend=0
+      spirata.TextureFile='GFX/Textures/Marble/Wall - N.png'
+      -- All done
+    ]]
+    Maps.PermaWrite(spirscript)
+    local spirscriptcompiled = loadstring(spirscript)
+    local ok,error = pcall(spirscriptcompiled)
+    if not ok then Sys.Error(error,'Note,This is from an attempt to remove the Spirata wall.') end
+    MapText('SPIRATAPOST')
+    Var.D('$WMCHAT','BACK2DRESHKA')
+    WorldMap()
+end
+
 
 function MAP_FLOW()
    FlowBlops()
@@ -141,5 +169,6 @@ function GALE_OnLoad()
    ZA_Enter('GenPuz8',GeneratePuzzle,8)
    ZA_Enter('SpirataRoom',Music,'Hub/Angevin.ogg')
    ZA_Enter('Kerk'       ,Music,"Dungeon/Chanson d'eglise.ogg")
+   ZA_Enter('Spirata',Spirata)
    MapHide('Secret')
 end

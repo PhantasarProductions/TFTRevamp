@@ -88,6 +88,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - Benjamin Koehler
     1. ???: Fonts/Doc/monof_tt.txt
     1. Font: Fonts/monof55.ttf
+- Dieter Steffmann
+    1. Font: Fonts/CloisterBlack.ttf
 - Eric Matyas
     1. Music: Music/Dungeon/Sewer-Monsters-Town-Hall-Meeting_Looping.ogg
     1. Music: Music/Dungeon/Moonlit-Secrets_Looping.ogg
@@ -163,7 +165,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/DragonKeeper.lua
     1. Script: Script/JINC/Foes/reg/FireHound.lua
     1. Script: Script/JINC/Foes/reg/Gob.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/Foes/reg/GobPriest.lua
     1. Script: Script/JINC/Foes/reg/GobRogue.lua
     1. Script: Script/JINC/Foes/reg/Hawk.lua
@@ -174,6 +175,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Skeleton.lua
     1. Script: Script/JINC/Foes/reg/Slime.lua
     1. Script: Script/JINC/Foes/reg/Snake.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/Foes/reg/Zombie.lua
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
     1. Script: Script/JINC/IA/AAA_GUARD.lua
@@ -407,8 +409,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellScript/Steal.lua
     1. Script: Script/Use/Combat/SpellScript/Temptation.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
@@ -436,6 +436,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Linkers/WorldMap -- The great linker.lua
     1. Script: Script/Use/Scenario/Scenario.lua
     1. Script: Script/Use/Specific/EndOfPrologue.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Specific/MoveTex.lua
     1. Script: Script/Use/Specific/PlasmaFloor.lua
     1. Script: Script/Use/Specific/Scroller.lua

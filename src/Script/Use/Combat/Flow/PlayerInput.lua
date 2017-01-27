@@ -1,6 +1,6 @@
 --[[
   PlayerInput.lua
-  Version: 17.01.07
+  Version: 17.01.26
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -73,11 +73,14 @@ fflow.inputicons = { attack = {
                      spirata = {
                                  x = 0, y = 50,
                                  allow = function()
-                                           return CVV("&SPIRATA."..inputchar.tag)
+                                           return CVV("&SPIRATA."..upper(inputchar.tag))
                                          end,
                                  key = KEY_DOWN,
-                                 joyx = nil,
-                                 joyy = 1        
+                                 joyx = nil,                                 
+                                 joyy = 1,
+                                 selected = function(ch)
+                                               Sys.Error('There is no way to transform into a Spirata yet. Please come back later.')
+                                            end        
                                } ,
                      items = {
                                  x = -50, y = 0,
