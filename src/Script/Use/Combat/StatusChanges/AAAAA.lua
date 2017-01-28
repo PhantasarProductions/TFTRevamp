@@ -1,6 +1,6 @@
 --[[
   AAAAA.lua
-  Version: 17.01.05
+  Version: 17.01.28
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -68,6 +68,7 @@ function SetStatus(ch,st,dontannounce)
     end   
     CSay(ch.." now has the status: "..st)
 end
+GiveStatus = SetStatus
 
 function expireroll(ch,st)
    return rand(1,fighterbytag[ch].StatusChanges.ExpireRoll)==1 

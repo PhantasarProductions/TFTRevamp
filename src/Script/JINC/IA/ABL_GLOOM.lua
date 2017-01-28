@@ -1,6 +1,6 @@
 --[[
   ABL_GLOOM.lua
-  Version: 17.01.22
+  Version: 17.01.27
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

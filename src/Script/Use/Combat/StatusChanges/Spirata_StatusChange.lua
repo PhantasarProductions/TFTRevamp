@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  ZZKEY_KEYWATER.lua
+  Spirata_StatusChange.lua
   (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
@@ -32,32 +32,36 @@
   
  **********************************************
  
-version: 17.01.27
+version: 17.01.28
 ]]
-ret = {
-	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 5,
-	["ADDCARD_Char_Interval"] = 5,
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "Grants access to temple of the Water Spirata",
-	["Heal_StatPercent"] = "Intelligence",
-	["ITM_ACC_Dandor"] = true,
-	["ITM_ACC_HandoStillor"] = true,
-	["ITM_ACC_Jake"] = true,
-	["ITM_ACC_Marrilona"] = true,
-	["ITM_Combat"] = true,
-	["ITM_Field"] = true,
-	["ITM_Sellable"] = true,
-	["ITM_Type"] = "KeyItem",
-	["Stance"] = "Cast",
-	["Target"] = "1F",
-	["Title"] = "Aqua Key",
-	["Type"] = "Item"}
+-- @IF IGNORE
+local StatusChanges = {}
+-- @FI
 
-return ret
 
--- This file is an automatically generated file!
 
+StatusChanges.Spirata = {
+    
+    AltMove = function(me)
+                 Sys.Crash("Spirata attack comes later") 
+              end,
+
+    DrawReplace = true,                                          
+    
+    
+    DrawFighter = function(ch)
+                         local mychar = fighterbytag[ch]
+                         if mychar.group=='Foe' then
+                            Sys.Error("Yeah, right a Foe as Spirata. Your mother was a hamster and your father smelt of elderberries!")
+                         else
+                           local itag = "SPIRATA "..ch                           
+                           Image.LoadNew(itag,"GFX/Combat/Fighters/Hero/"..ch..".Spirata.png"); Image.Hot(itag,Image.Width(itag)/2,Image.height(itag))
+                           Image.Show(itag,mychar.x,mychar.y)                            
+                         end 
+                       end   
+    
+}
+
+
+-- @IF IGNORE
+return StatusChanges

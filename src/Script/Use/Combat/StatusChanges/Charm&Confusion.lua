@@ -1,6 +1,6 @@
 --[[
   Charm&Confusion.lua
-  Version: 17.01.20
+  Version: 17.01.27
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -80,3 +80,4 @@ StatusChanges.Charmed = {
 
 -- @IF IGNORE
 return StatusChanges
+-- @FI

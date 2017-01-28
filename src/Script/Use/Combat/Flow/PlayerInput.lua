@@ -1,6 +1,6 @@
 --[[
   PlayerInput.lua
-  Version: 17.01.26
+  Version: 17.01.27
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -79,7 +79,8 @@ fflow.inputicons = { attack = {
                                  joyx = nil,                                 
                                  joyy = 1,
                                  selected = function(ch)
-                                               Sys.Error('There is no way to transform into a Spirata yet. Please come back later.')
+                                               -- Sys.Error('There is no way to transform into a Spirata yet. Please come back later.')
+                                               nextact = { act = "SPIRATATRANSFORM", flow='Execution', group='Hero', tag=ch}
                                             end        
                                } ,
                      items = {

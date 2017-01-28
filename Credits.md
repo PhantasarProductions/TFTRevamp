@@ -301,6 +301,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_SALVE.lua
     1. Script: Script/JINC/IA/ITM_VOICEHERB.lua
     1. Script: Script/JINC/IA/SPECIAL_AXESMASH.lua
+    1. Script: Script/JINC/IA/SPIRATATRANSFORM.lua
     1. Script: Script/JINC/IA/WAND_BIO.lua
     1. Script: Script/JINC/IA/WAND_DARK.lua
     1. Script: Script/JINC/IA/WAND_FLAME.lua
@@ -409,6 +410,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
+    1. Script: Script/Use/Combat/SpellScript/Spirata.lua
     1. Script: Script/Use/Combat/SpellScript/Steal.lua
     1. Script: Script/Use/Combat/SpellScript/Temptation.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
@@ -420,6 +422,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/StatusChanges/Permanence.lua
     1. Script: Script/Use/Combat/StatusChanges/Petrification.lua
     1. Script: Script/Use/Combat/StatusChanges/Poison and Disease.lua
+    1. Script: Script/Use/Combat/StatusChanges/Spirata_StatusChange.lua
     1. Script: Script/Use/Combat/StatusChanges/Zombie.lua
     1. Script: Script/Use/Linkers/AchievementLinker.lua
     1. Script: Script/Use/Linkers/AlternateInputLinker.lua
@@ -434,10 +437,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Linkers/SFXLinker.lua
     1. Script: Script/Use/Linkers/ShowParty.lua
     1. Script: Script/Use/Linkers/WorldMap -- The great linker.lua
-    1. Script: Script/Use/Scenario/Scenario.lua
-    1. Script: Script/Use/Specific/EndOfPrologue.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
+    1. Script: Script/Use/Scenario/Scenario.lua
+    1. Script: Script/Use/Specific/EndOfPrologue.lua
     1. Script: Script/Use/Specific/MoveTex.lua
     1. Script: Script/Use/Specific/PlasmaFloor.lua
     1. Script: Script/Use/Specific/Scroller.lua
@@ -460,10 +463,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/Blends.lua
     1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
@@ -502,6 +506,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.Action.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.png
+    1. Graphics: GFX/Combat/Spirata/Text.Dandor.png
+    1. Graphics: GFX/Combat/Spirata/Text.HandoStillor.png
+    1. Graphics: GFX/Combat/Spirata/Text.Jake.png
+    1. Graphics: GFX/Combat/Spirata/Text.Marrilona.png
     1. Graphics: GFX/Textures/Spirata/Spirata.piko
     1. Graphics: GFX/Textures/Spirata/Spirata.png
     1. Game identification data: ID/Test
@@ -1290,13 +1298,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_8.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_9.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_10.ogg
+    1. Audio: Vocals/Spirata/Dandor.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_11.ogg
+    1. Audio: Vocals/Spirata/HandoStillor.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_12.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_13.ogg
+    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_14.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_15.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_16.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_17.ogg
+    1. Audio: Vocals/Spirata/Marrilona.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_18.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_19.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_2.ogg
