@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  EQP_JAKE_AR1.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  SPIRATA_ATTACK_DANDOR.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -35,21 +35,40 @@
 version: 17.01.28
 ]]
 ret = {
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
-	["Attack_Element"] = "None",
-	["Desc"] = "A good armor for a beginning warrior",
-	["EQP_STAT_Endurance"] = 2,
-	["Heal_StatPercent"] = "Power",
+	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 10,
+	["ADDCARD_Char_Number"] = 1,
+	["Attack"] = 200,
+	["Attack_AccuracyRate"] = 100,
+	["Attack_AttackStat"] = "SpirataRate",
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Element"] = "Earth",
+	["BUFF_Accuracy"] = -15,
+	["BUFF_Evasion"] = -15,
+	["Desc"] = "Spirata Earth attack",
+	["EffectScript"] = "SpirataRestore",
+	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
 	["ITM_EQP_For"] = "Jake",
+	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 100,
-	["ITM_Type"] = "Armor",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Leather Armor",
-	["Type"] = "Item"}
+	["ITM_Type"] = "Consumable",
+	["Stance"] = "Cast",
+	["Target"] = "AF",
+	["Title"] = "Richter",
+	["Type"] = "Ability",
+	["Voice"] = "Water",
+	["rew_GainSkill1"] = 5,
+	["rew_GainSkill2"] = 5,
+	["rew_GainSkill3"] = 5,
+	["rew_GainSkill4"] = 8,
+	["rew_GainSkill5"] = 5}
 
 return ret
 

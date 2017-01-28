@@ -43,7 +43,17 @@ local StatusChanges = {}
 StatusChanges.Spirata = {
     
     AltMove = function(me)
-                 Sys.Crash("Spirata attack comes later") 
+                 --Sys.Crash("Spirata attack comes later")
+                 local ch=me
+                 if prefixed(ch,"Jake") then ch="Jake" end 
+                 nextact   = {
+                           executor = { group = "Hero", tag=me },
+                           act = 'SPIRATA_ATTACK_'..upper(ch), 
+                           flow='Execution', 
+                           group='Foe',
+                           --targetidx=i
+                       }
+                 flow='Execution'      
               end,
 
     DrawReplace = true,                                          

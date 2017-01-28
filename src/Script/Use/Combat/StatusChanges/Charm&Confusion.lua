@@ -1,6 +1,6 @@
 --[[
   Charm&Confusion.lua
-  Version: 17.01.27
+  Version: 17.01.28
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -47,7 +47,7 @@ function ConfuSetMove(me,groups)
                            group=groups[rand(1,#groups)],
                            --targetidx=i
                        }
-                       
+          flow='Execution'                             
           local myg = nextact.executor.group
           local chg = {}
           for i,_ in pairs(fighters[g]) do chg[#chg+1]=i end

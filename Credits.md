@@ -302,6 +302,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_VOICEHERB.lua
     1. Script: Script/JINC/IA/SPECIAL_AXESMASH.lua
     1. Script: Script/JINC/IA/SPIRATATRANSFORM.lua
+    1. Script: Script/JINC/IA/SPIRATA_ATTACK_DANDOR.lua
+    1. Script: Script/JINC/IA/SPIRATA_ATTACK_HANDOSTILLOR.lua
+    1. Script: Script/JINC/IA/SPIRATA_ATTACK_JAKE.lua
+    1. Script: Script/JINC/IA/SPIRATA_ATTACK_MARRILONA.lua
     1. Script: Script/JINC/IA/WAND_BIO.lua
     1. Script: Script/JINC/IA/WAND_DARK.lua
     1. Script: Script/JINC/IA/WAND_FLAME.lua
@@ -433,12 +437,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Linkers/MapLinker.lua
     1. Script: Script/Use/Linkers/MasterLinker.lua
     1. Script: Script/Use/Linkers/MiniMsg.Linker.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Linkers/Music.lua
     1. Script: Script/Use/Linkers/SFXLinker.lua
     1. Script: Script/Use/Linkers/ShowParty.lua
     1. Script: Script/Use/Linkers/WorldMap -- The great linker.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Scenario/Scenario.lua
     1. Script: Script/Use/Specific/EndOfPrologue.lua
     1. Script: Script/Use/Specific/MoveTex.lua
@@ -463,12 +467,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
     1. General Data: gfx/Textures/Town/Elves/Bench

@@ -90,7 +90,7 @@ function AltMove(ch)
     for s,d in spairs(fighterbytag[ch].StatusChanges or {}) do
         local f = d.AltMove
         if f then 
-           f()
+           f(ch)
            return true
         end 
     end

@@ -89,6 +89,11 @@ function SpellScript.SpirataTransform(tartag,extag,param)
 end
 -- SpellAni.SpirataTransform = SpellScript.SpirataTransform
 
+function SpellScript.SpirataRestore(tartag,extag,param)
+   local dt = fighterbytag[extag]
+   ClearTable(dt.StatusChanges)
+end   
+
 -- @IF IGNORE
 return SpellScript
 -- @FI    
