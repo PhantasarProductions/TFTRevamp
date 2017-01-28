@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.15
+version: 17.01.28
 ]]
 
 function NPC_Rosetta()
@@ -69,7 +69,23 @@ function MapMusic()
          Music(({[true]='Dreshka/Water Prelude.ogg', [false]='Town/Happy.ogg'})[d])        
 end
 
+function SeeDamage()
+   if Done('&DONE.DRESHKA.HARRY') then return end
+   PartyPop('A',"North")
+   Music('Sys/Silence.ogg')
+   MapText('HARRY1')
+   PartyPop('B','South')
+   local start = Maps.Obj.Obj('Start')
+   local harry = Maps.Obj.CreateObject('Obstacle','Harry',0)
+   harry.X = start.X
+   harry.Y = start.Y
+   harry.TextureFile = "GFX/Actors/Single/Humans/Harry_BackSide.png"
+   MapText('HARRY2')
+   Sys.Error("Boss fight not there yet!")
+end   
+
 function GALE_OnLoad()
    ZA_Enter('EnterTown',function() local d=CVV('&DONE.SPIRATA.WATER')==true GoToLayer(({ [true]='destroyed', [false]='town'})[d],'Start') end)
+   ZA_Enter('SeeDamage',SeeDamage)
    ZA_Enter('Leave',WorldMap)
 end     
