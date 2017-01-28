@@ -56,7 +56,7 @@ function SpellScript.SpirataTransform(tartag,extag,param)
     -- let's do it!
     repeat
         Cls()
-        Image.SetBlend(2)
+        Image.SetBlend(AlphaBlend)
         Image.Show(screen,0,0)
         Image.SetAlphaPC(alpha)
         for ly=0,SH do
