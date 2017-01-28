@@ -1,6 +1,6 @@
 --[[
   Idle.lua
-  Version: 17.01.13
+  Version: 17.01.28
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -82,6 +82,7 @@ function fflow.idle()
            (d.preturn or d.PreTurn or Nothing)(card.data.tag)
        end
        if card.data.nextact then nextact=card.data.nextact  nextact.auto = true flow = 'Execution'
+       elseif AltMove(card.data.tag) then CSay("Alternate move executed")
        elseif card.data.group == 'Foe' then if  (not TurnSkip(card.data.tag,true)) then flow = 'foeinput' else RemoveFirstCard() end 
        elseif card.data.group == 'Hero' then if (not TurnSkip(card.data.tag,true)) then fflow.setplayerinput(card.data.tag) else RemoveFirstCard() end end
     elseif card.data.extra then

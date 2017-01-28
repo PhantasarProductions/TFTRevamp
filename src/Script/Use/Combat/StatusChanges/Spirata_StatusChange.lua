@@ -51,6 +51,8 @@ StatusChanges.Spirata = {
     
     DrawFighter = function(ch)
                          local mychar = fighterbytag[ch]
+                         mychar.StatusChanges = { Spirata = StatusChanges.Spirata }
+                         mychar.statuschanges = mychar.StatusChanges -- Rule out all other status changes.
                          if mychar.group=='Foe' then
                             Sys.Error("Yeah, right a Foe as Spirata. Your mother was a hamster and your father smelt of elderberries!")
                          else
