@@ -84,4 +84,15 @@ function TurnSkip(ch,allowexpireroll)
      end
      for s in each(remove) do fighterbytag[ch].StatusChanges[s] = nil end
      return ret
-end              
+end      
+
+function AltMove(ch)
+    for s,d in spairs(fighterbytag[ch].StatusChanges or {}) do
+        local f = d.AltMove
+        if f then 
+           f()
+           return true
+        end 
+    end
+    return false
+end        
