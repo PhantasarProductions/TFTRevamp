@@ -524,6 +524,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Data
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Objects
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Settings
+    1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Data
+    1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Objects
+    1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Settings
     1. Map Design: Kthura/CH2_Town_Dreshka/Data
     1. Map Design: Kthura/CH2_Town_Dreshka/Objects
     1. Map Design: Kthura/CH2_Town_Dreshka/Settings
@@ -1313,9 +1316,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_15.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_2.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_3.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_11.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_4.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_5.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_11.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_6.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_7.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_8.ogg
@@ -1325,15 +1328,15 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/General/Introduction/STILLOR_13.ogg
     1. Audio: Vocals/Spirata/HandoStillor.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_14.ogg
-    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_15.ogg
+    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_16.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_17.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_18.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_19.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_2.ogg
-    1. Audio: Vocals/Spirata/Marrilona.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_20.ogg
+    1. Audio: Vocals/Spirata/Marrilona.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_21.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_22.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_23.ogg

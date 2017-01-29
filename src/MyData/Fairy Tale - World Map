@@ -155,7 +155,7 @@ Rec: CH2ISKARDERIU
 Rec: CH2VANDARROAD
 	Dungeon = TRUE
 	Folder = Delisto
-	Kthura = CH1_Dungeon_FrendorBushes
+	Kthura = CH2_Dungeon_VandarRoad
 	Layer = road
 	LocationName = Vandar Road
 	LocationPrefix = 

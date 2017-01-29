@@ -4527,9 +4527,9 @@ Rec: ABL_HERO_MARRILONA_CHILL
 	ADDCARD_Char_Number = 0
 	Attack = 100
 	Attack_AccuracyRate = 100
-	Attack_AllowAccuracy = TRUE
+	Attack_AllowAccuracy = FALSE
 	Attack_AllowCritical = TRUE
-	Attack_AllowDodge = TRUE
+	Attack_AllowDodge = FALSE
 	Attack_AttackStat = Intelligence
 	Attack_DefenseStat = Resistance
 	Attack_Desperate = FALSE
@@ -4544,7 +4544,7 @@ Rec: ABL_HERO_MARRILONA_CHILL
 	CauseCurse = FALSE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
-	CauseGuarding = 
+	CauseGuarding = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -4627,9 +4627,9 @@ Rec: ABL_HERO_MARRILONA_ETERNALFLAME
 	ADDCARD_Char_Number = 0
 	Attack = 100
 	Attack_AccuracyRate = 100
-	Attack_AllowAccuracy = TRUE
+	Attack_AllowAccuracy = FALSE
 	Attack_AllowCritical = TRUE
-	Attack_AllowDodge = TRUE
+	Attack_AllowDodge = FALSE
 	Attack_AttackStat = Intelligence
 	Attack_DefenseStat = Resistance
 	Attack_Desperate = FALSE
@@ -4727,9 +4727,9 @@ Rec: ABL_HERO_MARRILONA_FLAME
 	ADDCARD_Char_Number = 0
 	Attack = 100
 	Attack_AccuracyRate = 100
-	Attack_AllowAccuracy = TRUE
+	Attack_AllowAccuracy = FALSE
 	Attack_AllowCritical = TRUE
-	Attack_AllowDodge = TRUE
+	Attack_AllowDodge = FALSE
 	Attack_AttackStat = Intelligence
 	Attack_DefenseStat = Resistance
 	Attack_Desperate = FALSE
@@ -5144,7 +5144,7 @@ Rec: ABL_HERO_MARRILONA_ROCK
 	CauseCurse = FALSE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
-	CauseGuarding = 
+	CauseGuarding = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -5527,9 +5527,9 @@ Rec: ABL_HERO_MARRILONA_ZAP
 	ADDCARD_Char_Number = 0
 	Attack = 100
 	Attack_AccuracyRate = 100
-	Attack_AllowAccuracy = TRUE
+	Attack_AllowAccuracy = FALSE
 	Attack_AllowCritical = TRUE
-	Attack_AllowDodge = TRUE
+	Attack_AllowDodge = FALSE
 	Attack_AttackStat = Intelligence
 	Attack_DefenseStat = Resistance
 	Attack_Desperate = FALSE
@@ -5544,7 +5544,7 @@ Rec: ABL_HERO_MARRILONA_ZAP
 	CauseCurse = FALSE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
-	CauseGuarding = 
+	CauseGuarding = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
