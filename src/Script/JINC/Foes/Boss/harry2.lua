@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  Harry1.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  harry2.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -34,42 +34,42 @@
  
 version: 17.01.29
 ]]
--- File Generated: Sun 29 January 2017; 01:05:51
+-- File Generated: Sun 29 January 2017; 01:08:13
 
 
 local foe = {}
 
 	foe["AI"] = "default"
 	foe["NEWGAMEPLUS_AAA_ATTACK"] = true
-	foe["NEWGAMEPLUS_AAA_GUARD"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_DESPERATEATTACK"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_DISTRACT"] = true
-	foe["NEWGAMEPLUS_ITM_APPLE"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_VENOMSTAB"] = true
+	foe["NEWGAMEPLUS_ITM_SALVE"] = true
 	foe["NORMAL_AAA_ATTACK"] = true
-	foe["NORMAL_AAA_GUARD"] = true
 	foe["NORMAL_ABL_FOE_DESPERATEATTACK"] = true
 	foe["NORMAL_ABL_FOE_DISTRACT"] = true
-	foe["NORMAL_ITM_APPLE"] = true
+	foe["NORMAL_ABL_FOE_VENOMSTAB"] = true
+	foe["NORMAL_ITM_SALVE"] = true
 	foe["OVERSOUL_AAA_ATTACK"] = true
-	foe["OVERSOUL_AAA_GUARD"] = true
 	foe["OVERSOUL_ABL_FOE_DESPERATEATTACK"] = true
 	foe["OVERSOUL_ABL_FOE_DISTRACT"] = true
-	foe["OVERSOUL_ITM_APPLE"] = true
+	foe["OVERSOUL_ABL_FOE_VENOMSTAB"] = true
+	foe["OVERSOUL_ITM_SALVE"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
-	foe["SKILL\49_AAA_GUARD"] = true
 	foe["SKILL\49_ABL_FOE_DESPERATEATTACK"] = true
 	foe["SKILL\49_ABL_FOE_DISTRACT"] = true
-	foe["SKILL\49_ITM_APPLE"] = true
+	foe["SKILL\49_ABL_FOE_VENOMSTAB"] = true
+	foe["SKILL\49_ITM_SALVE"] = true
 	foe["SKILL\50_AAA_ATTACK"] = true
-	foe["SKILL\50_AAA_GUARD"] = true
 	foe["SKILL\50_ABL_FOE_DESPERATEATTACK"] = true
 	foe["SKILL\50_ABL_FOE_DISTRACT"] = true
-	foe["SKILL\50_ITM_APPLE"] = true
+	foe["SKILL\50_ABL_FOE_VENOMSTAB"] = true
+	foe["SKILL\50_ITM_SALVE"] = true
 	foe["SKILL\51_AAA_ATTACK"] = true
-	foe["SKILL\51_AAA_GUARD"] = true
 	foe["SKILL\51_ABL_FOE_DESPERATEATTACK"] = true
 	foe["SKILL\51_ABL_FOE_DISTRACT"] = true
-	foe["SKILL\51_ITM_APPLE"] = true
+	foe["SKILL\51_ABL_FOE_VENOMSTAB"] = true
+	foe["SKILL\51_ITM_SALVE"] = true
 	foe["STSTART_Curse"] = false
 	foe["STSTART_Disease"] = false
 	foe["STSTART_Paralysis"] = false
@@ -77,20 +77,20 @@ local foe = {}
 	foe["STSTART_Poison"] = false
 	foe["STSTART_Silence"] = false
 	foe["STSTART_Undead"] = false
-	foe["Desc"] = "Jake\39s rival\46\10Desperately tries to prove himself\10to be a better warrior\46"
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47boss\47Harry\46png"
+	foe["Desc"] = "He still hasn\39t learned his lesson"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47boss\47harry\46png"
 	foe["Item Drop \49"] = "ITM_ANTIDOTE"
-	foe["Item Drop \50"] = "ITM_ANTIDOTE"
+	foe["Item Drop \50"] = "ITM_HEALINGHERB"
 	foe["Item Steal \49"] = "ITM_ANTIDOTE"
-	foe["Item Steal \50"] = "ITM_ANTIDOTE"
-	foe["Item Steal \51"] = "ITM_ANTIDOTE"
+	foe["Item Steal \50"] = "ITM_APPLE"
+	foe["Item Steal \51"] = "ITM_FLAMEORB"
 	foe["Name"] = "Harry"
-	foe["RATE_AAA_ATTACK"] = 16
-	foe["RATE_AAA_GUARD"] = 8
+	foe["RATE_AAA_ATTACK"] = 50
+	foe["RATE_AAA_GUARD"] = 0
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
 	foe["RATE_ABL_FOE_CRUSH"] = 0
-	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 1
-	foe["RATE_ABL_FOE_DISTRACT"] = 3
+	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 5
+	foe["RATE_ABL_FOE_DISTRACT"] = 10
 	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 0
 	foe["RATE_ABL_FOE_GAZE"] = 0
 	foe["RATE_ABL_FOE_MERMAID_TEMPATION"] = 0
@@ -104,7 +104,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_TAKEOVER\50"] = 0
 	foe["RATE_ABL_FOE_TUSK"] = 0
 	foe["RATE_ABL_FOE_VENOMBITE"] = 0
-	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
+	foe["RATE_ABL_FOE_VENOMSTAB"] = 5
 	foe["RATE_ABL_FOE_VIRUSSTAB"] = 0
 	foe["RATE_ABL_GLOOM"] = 0
 	foe["RATE_ABL_HERO_DANDOR_AXESMASH"] = 0
@@ -149,7 +149,7 @@ local foe = {}
 	foe["RATE_ABL_MASTER_RUBINE_PICKPOCKET"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_POISONSTAB"] = 0
 	foe["RATE_ITM_ANTIDOTE"] = 0
-	foe["RATE_ITM_APPLE"] = 5
+	foe["RATE_ITM_APPLE"] = 0
 	foe["RATE_ITM_BELL"] = 0
 	foe["RATE_ITM_CARROT"] = 0
 	foe["RATE_ITM_FLAMEORB"] = 0
@@ -163,7 +163,7 @@ local foe = {}
 	foe["RATE_ITM_PHOENIX"] = 0
 	foe["RATE_ITM_POTION"] = 0
 	foe["RATE_ITM_PURELITERATURE"] = 0
-	foe["RATE_ITM_SALVE"] = 0
+	foe["RATE_ITM_SALVE"] = 3
 	foe["RATE_ITM_VOICEHERB"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_SPIRATATRANSFORM"] = 0
@@ -279,7 +279,7 @@ local foe = {}
 	foe["TARGET_WAND_TRAINING"] = "Random"
 	foe["TARGET_WAND_WIND"] = "Random"
 	foe["TARGET_ZZKEY_KEYWATER"] = "Random"
-	foe["VocalTag"] = "Harry"
+	foe["VocalTag"] = "harry\50"
 	foe["Boss"] = true
 	foe["Oversoul"] = false
 	foe["Oversoul Drop \49"] = false
@@ -287,36 +287,36 @@ local foe = {}
 	foe["Oversoul Steal \49"] = false
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
-	foe["Cash"] = 100
-	foe["ER_Darkness"] = 0
-	foe["ER_Earth"] = 0
-	foe["ER_Flame"] = 0
-	foe["ER_Frost"] = 0
-	foe["ER_Light"] = 0
-	foe["ER_Lightning"] = 0
-	foe["ER_Water"] = 0
-	foe["ER_Wind"] = 0
-	foe["Rate Drop \49"] = 0
-	foe["Rate Drop \50"] = 0
-	foe["Rate Steal \49"] = 0
-	foe["Rate Steal \50"] = 0
-	foe["Rate Steal \51"] = 0
-	foe["SR_Curse "] = 100
-	foe["SR_Disease "] = 25
-	foe["SR_Paralysis "] = 75
-	foe["SR_Petrification "] = 100
-	foe["SR_Poison "] = 50
-	foe["SR_Silence "] = 200
-	foe["SR_Undead "] = 100
-	foe["normal_Accuracy"] = 98
-	foe["normal_EXP"] = 25
-	foe["normal_Endurance"] = 60
-	foe["normal_Evasion"] = 5
-	foe["normal_HP"] = 1200
-	foe["normal_Intelligence"] = 65
-	foe["normal_Power"] = 85
-	foe["normal_Resistance"] = 35
-	foe["normal_Speed"] = 65
+	foe["Cash"] = 10
+	foe["ER_Darkness"] = -1
+	foe["ER_Earth"] = -1
+	foe["ER_Flame"] = -1
+	foe["ER_Frost"] = -1
+	foe["ER_Light"] = -1
+	foe["ER_Lightning"] = -1
+	foe["ER_Water"] = -1
+	foe["ER_Wind"] = -1
+	foe["Rate Drop \49"] = 80
+	foe["Rate Drop \50"] = 3
+	foe["Rate Steal \49"] = 5
+	foe["Rate Steal \50"] = 10
+	foe["Rate Steal \51"] = 3
+	foe["SR_Curse "] = 0
+	foe["SR_Disease "] = 0
+	foe["SR_Paralysis "] = 0
+	foe["SR_Petrification "] = 0
+	foe["SR_Poison "] = 0
+	foe["SR_Silence "] = 0
+	foe["SR_Undead "] = 0
+	foe["normal_Accuracy"] = 90
+	foe["normal_EXP"] = 50
+	foe["normal_Endurance"] = 20
+	foe["normal_Evasion"] = 0
+	foe["normal_HP"] = 2500
+	foe["normal_Intelligence"] = 20
+	foe["normal_Power"] = 20
+	foe["normal_Resistance"] = 20
+	foe["normal_Speed"] = 20
 	foe["oversoul_Accuracy"] = 100
 	foe["oversoul_EXP"] = 0
 	foe["oversoul_Endurance"] = 0

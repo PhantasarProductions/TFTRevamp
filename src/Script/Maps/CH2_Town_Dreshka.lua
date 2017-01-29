@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.28
+version: 17.01.29
 ]]
 
 function NPC_Rosetta()
@@ -69,6 +69,26 @@ function MapMusic()
          Music(({[true]='Dreshka/Water Prelude.ogg', [false]='Town/Happy.ogg'})[d])        
 end
 
+function HarryStart()
+    RPG.LinkStat('Jake_Human','FOE_1','BASE_Power')
+    RPG.LinkStat('Jake_Fairy','FOE_1','BASE_Endurance')
+    RPG.LinkStat('Marrilona','FOE_1','BASE_Intelligence')
+    RPG.LinkStat('Marrilona','FOE_1','BASE_Resistance')
+    RPG.LinkStat('HandoStillor','FOE_1','BASE_Speed')
+    CSay('All Links Established')
+end
+
+function PostHarry()
+    MapText('HARRY3')
+    harry.Visible=0
+    Maps.Obj.Kill('Harry')
+    MapText('HARRY4')
+    Var.D('$WMCHAT','TOVANDAR')
+    WorldMap_Unlock('CH2VANDARROAD')
+    WorldMap()
+    --Sys.Error('Rest not scripted yet')
+end
+
 function SeeDamage()
    if Done('&DONE.DRESHKA.HARRY') then return end
    PartyPop('A',"North")
@@ -76,13 +96,23 @@ function SeeDamage()
    MapText('HARRY1')
    PartyPop('B','South')
    local start = Maps.Obj.Obj('Start')
-   local harry = Maps.Obj.CreateObject('Obstacle','Harry',0)
+   harry = Maps.Obj.CreateObject('Obstacle','Harry',0)
    harry.X = start.X
    harry.Y = start.Y
    harry.TextureFile = "GFX/Actors/Single/Humans/Harry_BackSide.png"
    MapText('HARRY2')
-   Sys.Error("Boss fight not there yet!")
+   Schedule("MAP","PostHarry")
+   ClearCombatData()
+   Var.D("$COMBAT.FOE_1","Boss/Harry2")
+   Var.D("$COMBAT.POSFOE_1","CENTER")
+   Var.D("$COMBAT.MUSIC","Music/Special Boss/AnnoyingBoy.ogg")
+   Var.D("$COMBAT.ARENA","Forest.png")
+   Var.D("$COMBAT.STARTEVENT","MAP,HarryStart")
+   StartBoss("He's Back",'Harry McDummy')    
+   
+   -- Sys.Error("Boss fight not there yet!")
 end   
+
 
 function GALE_OnLoad()
    ZA_Enter('EnterTown',function() local d=CVV('&DONE.SPIRATA.WATER')==true GoToLayer(({ [true]='destroyed', [false]='town'})[d],'Start') end)

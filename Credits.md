@@ -159,6 +159,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/Mega Ghost.lua
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
+    1. Script: Script/JINC/Foes/Boss/harry2.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
     1. Script: Script/JINC/Foes/reg/Boar.lua
     1. Script: Script/JINC/Foes/reg/Boekenworm.lua
@@ -435,10 +436,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Linkers/Field.Lua
     1. Script: Script/Use/Linkers/Items -- Linker.lua
     1. Script: Script/Use/Linkers/MapLinker.lua
-    1. Script: Script/Use/Linkers/MasterLinker.lua
-    1. Script: Script/Use/Linkers/MiniMsg.Linker.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
+    1. Script: Script/Use/Linkers/MasterLinker.lua
+    1. Script: Script/Use/Linkers/MiniMsg.Linker.lua
     1. Script: Script/Use/Linkers/Music.lua
     1. Script: Script/Use/Linkers/SFXLinker.lua
     1. Script: Script/Use/Linkers/ShowParty.lua
@@ -533,8 +534,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
     1. Music: Music/Boss/BossIntro.ogg
-    1. Graphics: GFX/Chapters/4.png
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
+    1. Graphics: GFX/Chapters/4.png
     1. Graphics: GFX/Combat/End/Game Over.png
     1. Graphics: GFX/Combat/End/YouWin.png
     1. Graphics: GFX/Loading/Graphic.png
@@ -1303,20 +1304,35 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_9.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_10.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry1_9.ogg
-    1. Audio: Vocals/Spirata/Dandor.ogg
+    1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_1.ogg
+    1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_10.ogg
+    1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_11.ogg
+    1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_12.ogg
+    1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_13.ogg
+    1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_14.ogg
+    1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_15.ogg
+    1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_2.ogg
+    1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_3.ogg
+    1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_4.ogg
+    1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_5.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_11.ogg
-    1. Audio: Vocals/Spirata/HandoStillor.ogg
+    1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_6.ogg
+    1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_7.ogg
+    1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_8.ogg
+    1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_9.ogg
+    1. Audio: Vocals/Spirata/Dandor.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_12.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_13.ogg
-    1. Audio: Vocals/Spirata/Jake.ogg
+    1. Audio: Vocals/Spirata/HandoStillor.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_14.ogg
+    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_15.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_16.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_17.ogg
-    1. Audio: Vocals/Spirata/Marrilona.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_18.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_19.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_2.ogg
+    1. Audio: Vocals/Spirata/Marrilona.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_20.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_21.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_22.ogg

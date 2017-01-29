@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_SICKSTORIES.lua
-  Version: 17.01.28
+  Version: 17.01.29
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================

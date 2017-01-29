@@ -152,6 +152,16 @@ Rec: CH2ISKARDERIU
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: CH2VANDARROAD
+	Dungeon = TRUE
+	Folder = Delisto
+	Kthura = CH1_Dungeon_FrendorBushes
+	Layer = road
+	LocationName = Vandar Road
+	LocationPrefix = 
+	Start = Start
+	UnlockedFromStart = FALSE
+
 Rec: CH2WATERSPIRATA
 	Dungeon = TRUE
 	Folder = Delisto

@@ -1,6 +1,6 @@
 --[[
   WAND_WIND.lua
-  Version: 17.01.28
+  Version: 17.01.29
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

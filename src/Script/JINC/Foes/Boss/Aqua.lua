@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 17.01.21
+version: 17.01.29
 ]]
--- File Generated: Sat 21 January 2017; 12:27:24
+-- File Generated: Sun 29 January 2017; 01:05:49
 
 
 local foe = {}
@@ -178,6 +178,11 @@ local foe = {}
 	foe["RATE_ITM_SALVE"] = 0
 	foe["RATE_ITM_VOICEHERB"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
+	foe["RATE_SPIRATATRANSFORM"] = 0
+	foe["RATE_SPIRATA_ATTACK_DANDOR"] = 0
+	foe["RATE_SPIRATA_ATTACK_HANDOSTILLOR"] = 0
+	foe["RATE_SPIRATA_ATTACK_JAKE"] = 0
+	foe["RATE_SPIRATA_ATTACK_MARRILONA"] = 0
 	foe["RATE_WAND_BIO"] = 0
 	foe["RATE_WAND_DARK"] = 0
 	foe["RATE_WAND_FLAME"] = 0
@@ -270,6 +275,11 @@ local foe = {}
 	foe["TARGET_ITM_SALVE"] = "Random"
 	foe["TARGET_ITM_VOICEHERB"] = "Random"
 	foe["TARGET_SPECIAL_AXESMASH"] = "Random"
+	foe["TARGET_SPIRATATRANSFORM"] = "Random"
+	foe["TARGET_SPIRATA_ATTACK_DANDOR"] = "Random"
+	foe["TARGET_SPIRATA_ATTACK_HANDOSTILLOR"] = "Random"
+	foe["TARGET_SPIRATA_ATTACK_JAKE"] = "Random"
+	foe["TARGET_SPIRATA_ATTACK_MARRILONA"] = "Random"
 	foe["TARGET_WAND_BIO"] = "Random"
 	foe["TARGET_WAND_DARK"] = "Random"
 	foe["TARGET_WAND_FLAME"] = "Random"
