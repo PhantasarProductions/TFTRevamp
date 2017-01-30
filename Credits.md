@@ -343,6 +343,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH2_Dungeon_DragonCastle.lua
     1. Script: Script/Maps/CH2_Dungeon_ElfRoad.lua
     1. Script: Script/Maps/CH2_Dungeon_SpirataWater.lua
+    1. Script: Script/Maps/CH2_Dungeon_VandarRoad.lua
     1. Script: Script/Maps/CH2_Town_Dreshka.lua
     1. Script: Script/Maps/CH2_Town_Iskarderiu.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
@@ -533,9 +534,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
+    1. Music: Music/Dungeon/JustASong.ogg
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
+    1. Music: Music/Dungeon/Scary Song.ogg
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Chapters/4.png
@@ -1093,13 +1096,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/TEST
     1. Scenario: Languages/English/Scenario/WORLDMAP
 - Kevin McLeod
-    1. Music: Music/Dreshka/Hero Down.ogg
     1. Music: Music/AltBoss/Day of Chaos.ogg
+    1. Music: Music/Dreshka/Hero Down.ogg
     1. Music: Music/Dreshka/Water Prelude.ogg
     1. Music: Music/AltEncounter/Tempting Secrets.ogg
     1. Music: Music/Dungeon/Chillin Hard.ogg
-    1. Music: Music/SpecialBoss/Summon the Rawk.ogg
     1. Music: Music/Dungeon/Pippin the Hunchback.ogg
+    1. Music: Music/SpecialBoss/Summon the Rawk.ogg
     1. Music: Music/Dungeon/TheDread.ogg
     1. Music: Music/Hub/Angevin.ogg
     1. Music: Music/Scenario/We Got Trouble.ogg
@@ -1516,6 +1519,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Objects/Hut.png
 - Varazuvi(TM)
     1. Audio: Audio/sfx/General/Solved.ogg
+- W.K. Chan & Wouter Wershkull
+    1. Music: Music/Special Boss/PlayTillDeath_(Nostramantu).ogg
 - Wicky77
     1. Music: Music/Town/Happy.ogg
     1. Music: Music/Combat/Victory.ogg
