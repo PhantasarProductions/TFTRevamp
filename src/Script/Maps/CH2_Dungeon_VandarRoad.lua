@@ -34,3 +34,24 @@
  
 version: 17.01.30
 ]]
+
+
+function Dandor()    
+    MapText("PREDANDOR")
+    Schedule("MAP","PostDandor")
+    ClearCombatData()
+    Var.D("$COMBAT.FOE_1","Boss/Dandor") -- Needed to prevent the Axe Smash session Marrilona has to deal with.
+    Var.D("$COMBAT.POSFOE_1","CENTER")
+    Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
+    Var.D("$COMBAT.ARENA","Forest.png")
+    --Var.D("$COMBAT.STARTEVENT","MAP,DwarfBossStart_Jake")
+    StartBoss("Berserk Dwarf","Dandor")    
+end
+
+function PostDandor()
+   Sys.Error('No Post Boss Script')
+end   
+
+function GALE_OnLoad()
+   ZA_Enter('ZoneDandor',Dandor)
+end   

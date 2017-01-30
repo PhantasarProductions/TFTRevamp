@@ -26,6 +26,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Big_Char/Marrilona_NewYear.png
     1. Graphics: GFX/Big_Char/Marrilona_Valentine.png
     1. Graphics: GFX/Big_Char/Negatief_Marrilona.Png
+    1. Graphics: GFX/BoxText/Portret/Dandor/Cursed.png
     1. Graphics: GFX/BoxText/Portret/Dandor/General.png
     1. Graphics: GFX/BoxText/Portret/Dandor/General.xcf
     1. Graphics: GFX/BoxText/Portret/Hando Stillor/General.png
@@ -149,6 +150,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/CharAbilities/Marrilona.lua
     1. Script: Script/JINC/CharAbilities/Nostramantu.lua
     1. Script: Script/JINC/Foes/Boss/Aqua.lua
+    1. Script: Script/JINC/Foes/Boss/Dandor.lua
     1. Script: Script/JINC/Foes/Boss/Dwarf.lua
     1. Script: Script/JINC/Foes/Boss/Dwarf_J.lua
     1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
@@ -176,11 +178,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Skeleton.lua
     1. Script: Script/JINC/Foes/reg/Slime.lua
     1. Script: Script/JINC/Foes/reg/Snake.lua
-    1. Graphics: gfx/Effects/Darkness II.png
+    1. Script: Script/JINC/Foes/reg/Thief.lua
     1. Script: Script/JINC/Foes/reg/Zombie.lua
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
     1. Script: Script/JINC/IA/AAA_GUARD.lua
     1. Script: Script/JINC/IA/ABL_FOE_BACTERIATUSK.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_FOE_CRUSH.lua
     1. Script: Script/JINC/IA/ABL_FOE_DESPERATEATTACK.lua
     1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
@@ -437,8 +440,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Linkers/Field.Lua
     1. Script: Script/Use/Linkers/Items -- Linker.lua
     1. Script: Script/Use/Linkers/MapLinker.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Linkers/MasterLinker.lua
     1. Script: Script/Use/Linkers/MiniMsg.Linker.lua
     1. Script: Script/Use/Linkers/Music.lua
@@ -446,6 +447,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Linkers/ShowParty.lua
     1. Script: Script/Use/Linkers/WorldMap -- The great linker.lua
     1. Script: Script/Use/Scenario/Scenario.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Specific/EndOfPrologue.lua
     1. Script: Script/Use/Specific/MoveTex.lua
     1. Script: Script/Use/Specific/PlasmaFloor.lua
@@ -508,6 +511,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant06.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant07.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant08.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant09.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant10.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Skeleton.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.Action.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.piko
@@ -544,8 +549,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Chapters/4.png
     1. Graphics: GFX/Combat/End/Game Over.png
     1. Graphics: GFX/Combat/End/YouWin.png
-    1. Graphics: GFX/Loading/Graphic.png
     1. Music: Music/Sys/Silence.ogg
+    1. Graphics: GFX/Loading/Graphic.png
     1. Graphics: GFX/Loading/Saving.png
     1. Graphics: GFX/Logo/End Of Prologue.hot
     1. Graphics: GFX/Logo/End Of Prologue.png
@@ -1054,6 +1059,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_JAKEHUT
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_ELFROAD
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_SPIRATAWATER
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_VANDARROAD
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_DRESHKA
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_ISKARDERIU
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
@@ -1083,6 +1089,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_JAKEHUT
     1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_ELFROAD
     1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_SPIRATAWATER
+    1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_VANDARROAD
     1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_DRESHKA
     1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_ISKARDERIU
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
@@ -1108,6 +1115,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Scenario/We Got Trouble.ogg
     1. Music: Music/Town/Enchanted Valley.ogg
 - Man Of Steel
+    1. Graphics: gfx/Combat/Fighters/Reg/Thief/Thief.piko
+    1. Graphics: gfx/Combat/Fighters/Reg/Thief/Variant01.png
+    1. Graphics: gfx/Combat/Fighters/Reg/Thief/Variant02.png
+    1. Graphics: gfx/Combat/Fighters/Reg/Thief/Variant03.png
+    1. Graphics: gfx/Combat/Fighters/Reg/Thief/Variant04.png
     1. Graphics: GFX/Actors/Single/Elves/RandomElfFemale.png
     1. Graphics: GFX/Actors/Single/Elves/RandomElfFemale2.png
     1. Graphics: GFX/Actors/Single/Elves/RandomElfMale.png
