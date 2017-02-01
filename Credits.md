@@ -107,6 +107,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/textures/wood/vloer.png
 - Holly
     1. Graphics: GFX/combat/fighters/foe/Reg/Hawk.png
+- Hung Kee Chan
+    1. Music: Music/Special Boss/Juggernaut.ogg
 - Jeroen P. Broks
     1. Game identification data: ID/ID.Vocal.Full
     1. Game identification data: ID/Identify
@@ -246,47 +248,71 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_POISONSTAB.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_TRAINAXE.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP1.lua
+    1. Script: Script/JINC/IA/EQP_DANDOR_WP10.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP2.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP3.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP4.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP5.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP6.lua
+    1. Script: Script/JINC/IA/EQP_DANDOR_WP7.lua
+    1. Script: Script/JINC/IA/EQP_DANDOR_WP8.lua
+    1. Script: Script/JINC/IA/EQP_DANDOR_WP9.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_AR1.lua
+    1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_AR10.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_AR2.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_AR3.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_AR4.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_AR5.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_AR6.lua
+    1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_AR7.lua
+    1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_AR8.lua
+    1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_AR9.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_TRAINSTAFF.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP1.lua
+    1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP10.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP2.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP3.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP4.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP5.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP6.lua
+    1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP7.lua
+    1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP8.lua
+    1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP9.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR1.lua
+    1. Script: Script/JINC/IA/EQP_JAKE_AR10.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR2.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR3.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR4.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR5.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR6.lua
+    1. Script: Script/JINC/IA/EQP_JAKE_AR7.lua
+    1. Script: Script/JINC/IA/EQP_JAKE_AR8.lua
+    1. Script: Script/JINC/IA/EQP_JAKE_AR9.lua
     1. Script: Script/JINC/IA/EQP_JAKE_TRAINSWORD.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP1.lua
+    1. Script: Script/JINC/IA/EQP_JAKE_WP10.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP2.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP3.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP4.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP5.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP6.lua
+    1. Script: Script/JINC/IA/EQP_JAKE_WP7.lua
+    1. Script: Script/JINC/IA/EQP_JAKE_WP8.lua
+    1. Script: Script/JINC/IA/EQP_JAKE_WP9.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_EMERALD.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLEMERALD.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLTOPAZ.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_TOPAZ.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR1.lua
+    1. Script: Script/JINC/IA/EQP_MARRILONA_AR10.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR2.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR3.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR4.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR5.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR6.lua
+    1. Script: Script/JINC/IA/EQP_MARRILONA_AR7.lua
+    1. Script: Script/JINC/IA/EQP_MARRILONA_AR8.lua
+    1. Script: Script/JINC/IA/EQP_MARRILONA_AR9.lua
     1. Script: Script/JINC/IA/ITM_ANTIDOTE.lua
     1. Script: Script/JINC/IA/ITM_APPLE.lua
     1. Script: Script/JINC/IA/ITM_BELL.lua
@@ -426,6 +452,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/StatusChanges/Charm&Confusion.lua
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
     1. Script: Script/Use/Combat/StatusChanges/Guard.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
     1. Script: Script/Use/Combat/StatusChanges/Paralysis and Sleep.lua
     1. Script: Script/Use/Combat/StatusChanges/Permanence.lua
@@ -447,8 +475,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Linkers/ShowParty.lua
     1. Script: Script/Use/Linkers/WorldMap -- The great linker.lua
     1. Script: Script/Use/Scenario/Scenario.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Specific/EndOfPrologue.lua
     1. Script: Script/Use/Specific/MoveTex.lua
     1. Script: Script/Use/Specific/PlasmaFloor.lua
@@ -539,29 +565,29 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
-    1. Music: Music/Dungeon/JustASong.ogg
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
-    1. Music: Music/Dungeon/Scary Song.ogg
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Chapters/4.png
     1. Graphics: GFX/Combat/End/Game Over.png
-    1. Graphics: GFX/Combat/End/YouWin.png
     1. Music: Music/Sys/Silence.ogg
+    1. Graphics: GFX/Combat/End/YouWin.png
     1. Graphics: GFX/Loading/Graphic.png
     1. Graphics: GFX/Loading/Saving.png
     1. Graphics: GFX/Logo/End Of Prologue.hot
     1. Graphics: GFX/Logo/End Of Prologue.png
     1. Graphics: GFX/Logo/Game Over.png
     1. Graphics: GFX/Logo/Phantasar Productions.png
+    1. Music: Music/Dungeon/JustASong.ogg
     1. Graphics: GFX/Logo/The End.png
     1. Graphics: GFX/Logo/Title.png
     1. Graphics: GFX/Menu Icons/Buy.png
     1. Graphics: GFX/Menu Icons/Sell.png
     1. Graphics: GFX/Menu Icons/Trade.png
     1. Graphics: GFX/Party/Level Up.png
+    1. Music: Music/Dungeon/Scary Song.ogg
     1. Audio: Audio/Combat/CardSlide.ogg
     1. Audio: Audio/Party/Level Up.ogg
     1. Audio: Audio/Party/Level Up.wav
@@ -729,11 +755,15 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Shapes/Schuin Kruis.png
     1. Graphics: GFX/Textures/Shapes/Shapes.piko
     1. Graphics: GFX/Textures/Shapes/Vierkant.png
+    1. Graphics: GFX/Textures/Signs/Blanco.png
     1. Graphics: GFX/Textures/Signs/DungSign_Plaque.png
     1. Graphics: GFX/Textures/Signs/Inn.png
     1. Graphics: GFX/Textures/Signs/Item Shop.png
+    1. Graphics: GFX/Textures/Signs/Signs (Autosaved).piko
     1. Graphics: GFX/Textures/Signs/Signs.piko
     1. Graphics: GFX/Textures/Signs/Signs.png
+    1. Graphics: GFX/Textures/Signs/Wand.piko
+    1. Graphics: GFX/Textures/Signs/Wand.png
     1. Graphics: GFX/Textures/Signs/Weapon Shop.piko
     1. Graphics: GFX/Textures/Signs/Weapon Shop.png
     1. Graphics: GFX/Textures/Stairs/Down.png

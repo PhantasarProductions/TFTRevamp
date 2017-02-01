@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.06
+version: 17.02.01
 ]]
 
 -- @USE /Script/Use/Specific/EndOfPrologue.lua
@@ -175,11 +175,27 @@ end
 
 
 function AccessDenied()
-  if (not CVV('&ALLOW2STAY')) then MapText('ACCESSDENIED') WorldMap() end
+  if (not CVV('&FRENDOR.ALLOW2STAY')) then MapText('ACCESSDENIED') WorldMap() elseif Map.Obj.Exists('FANDALORA_ENTRANCE')==1 then Maps.Obj.Kill('FANDALORA_ENTRANCE',1) end
 end
   
 function ComeInEvents()
    local ret = (({ FAIRYJAKE = Treason, LIBDONE=PleaseGo })[CVV('$WMCHAT')] or AccessDenied)()   
+end
+
+
+function MasterFandalora()
+  local need = 5 * skill
+  local jake = 0
+  local marrilona = 0
+  for i=1,5 do
+      if i>1 and RPG.PointsExists("Jake_Human","SK_LVL_"..i)==1 then jake      = jake      + RPG.Points("Jake_Human","SK_LVL_"..i).Have end
+      if         RPG.PointsExists("Marrilona" ,"SK_LVL_"..i)==1 then marrilona = marrilona + RPG.Points("marrilona","SK_LVL_"..i).Have end      
+  end 
+  local amarrilona = marrilona / 5
+  local ajake      = jake      / 4
+  CSay("Fandalora requires: "..need)
+  CSay("Marrilona has:      "..amarrilona)
+  CSay("Jake has:           "..ajake)
 end
 
 -- Init

@@ -32,11 +32,12 @@
   
  **********************************************
  
-version: 17.01.30
+version: 17.01.31
 ]]
 
 
 function Dandor()    
+    if Done('&DONE.VANDARROAD.DANDOR') then return end
     MapText("PREDANDOR")
     Schedule("MAP","PostDandor")
     ClearCombatData()
@@ -49,9 +50,23 @@ function Dandor()
 end
 
 function PostDandor()
-   Sys.Error('No Post Boss Script')
+   local dandor = Maps.Obj.Obj('Dandor')
+   dandor.TextureFile="GFX/Combat/Fighters/Hero/Dandor.Dead.png"
+   Var.D('$WMCHAT','DANDORCAUGHT')
+   Done('&FRENDOR.ALLOW2STAY')
+   MapText('POSTDANDOR')
+   LoadMap('PRO_Town_Frendor')
+   GoToLayer('town','from_marrilona')
+   Maps.Obj.Kill('FANDALORA_ENTRANCE',1)
+   PartyPop('Dan','North')
+   MapText('FRENDORDANDOR')
+   -- Sys.Error('No Post Boss Script')
 end   
 
 function GALE_OnLoad()
    ZA_Enter('ZoneDandor',Dandor)
+   if CVV('&DONE.VANDARROAD.DANDOR') then
+      Maps.GoToLayer('road')
+      Maps.Obj.Kill('Dandor')
+   end
 end   

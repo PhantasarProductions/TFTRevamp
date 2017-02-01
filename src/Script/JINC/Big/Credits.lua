@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.30
+version: 17.02.01
 ]]
 local
 ret = {
@@ -71,16 +71,17 @@ ret = {
         ['00000654'] = { txt = 'Map Design', r=255,g=0,b=0, y=1620 }, -- Map Design
         ['0000067C'] = { txt = 'Music', r=255,g=0,b=0, y=1660 }, -- Music
         ['00000690'] = { txt = 'Eric Matyas', r=0,g=180,b=255, y=1680 },
-        ['000006A4'] = { txt = 'Kevin McLeod', r=0,g=180,b=255, y=1700 },
-        ['000006B8'] = { txt = 'Matt McFarland', r=0,g=180,b=255, y=1720 },
-        ['000006CC'] = { txt = 'W.K. Chan & Wouter Wershkull', r=0,g=180,b=255, y=1740 },
-        ['000006E0'] = { txt = 'Wicky77', r=0,g=180,b=255, y=1760 },
-        ['000006F4'] = { txt = 'Wicky77 & Wout66', r=0,g=180,b=255, y=1780 },
-        ['00000708'] = { txt = 'Widzy', r=0,g=180,b=255, y=1800 },
-        ['00000730'] = { txt = 'Scenario', r=255,g=0,b=0, y=1840 }, -- Scenario
-        ['00000758'] = { txt = 'Script', r=255,g=0,b=0, y=1880 }, -- Script
-        ['000009B0'] = { txt = '(c) Copyright 2016', r=255, g=180,b=0,y=2480},
-        ['000009C9'] = { txt = 'Jeroen Petrus Broks', r=255, g=180,b=0,y=2505}
+        ['000006A4'] = { txt = 'Hung Kee Chan', r=0,g=180,b=255, y=1700 },
+        ['000006B8'] = { txt = 'Kevin McLeod', r=0,g=180,b=255, y=1720 },
+        ['000006CC'] = { txt = 'Matt McFarland', r=0,g=180,b=255, y=1740 },
+        ['000006E0'] = { txt = 'W.K. Chan & Wouter Wershkull', r=0,g=180,b=255, y=1760 },
+        ['000006F4'] = { txt = 'Wicky77', r=0,g=180,b=255, y=1780 },
+        ['00000708'] = { txt = 'Wicky77 & Wout66', r=0,g=180,b=255, y=1800 },
+        ['0000071C'] = { txt = 'Widzy', r=0,g=180,b=255, y=1820 },
+        ['00000744'] = { txt = 'Scenario', r=255,g=0,b=0, y=1860 }, -- Scenario
+        ['0000076C'] = { txt = 'Script', r=255,g=0,b=0, y=1900 }, -- Script
+        ['000009C4'] = { txt = '(c) Copyright 2016', r=255, g=180,b=0,y=2500},
+        ['000009DD'] = { txt = 'Jeroen Petrus Broks', r=255, g=180,b=0,y=2525}
 }
 
 return ret
