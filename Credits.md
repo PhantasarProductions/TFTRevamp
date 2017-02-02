@@ -370,6 +370,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Shops/ITEM_WANDA.lua
     1. Script: Script/JINC/Shops/WAND_MONIQUE.lua
     1. Script: Script/JINC/Shops/WEAPON_ERIC.lua
+    1. Script: Script/JINC/Shops/WEAPON_MICHIEL.lua
     1. Script: Script/JINC/Shops/WEAPON_MYRAREMEMBO.lua
     1. Script: Script/Maps/Anna.lua
     1. Script: Script/Maps/AutoUse.lua
@@ -452,10 +453,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
     1. Script: Script/Use/Combat/SpellAni/Temptation.lua
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
     1. Script: Script/Use/Combat/SpellScript/Spirata.lua
@@ -1073,9 +1074,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/PRO_TheEnd/Data
     1. Map Design: Kthura/PRO_TheEnd/Objects
     1. Map Design: Kthura/PRO_TheEnd/Settings
-    1. Map Design: Kthura/PRO_Town_Frendor/DATA
-    1. Map Design: Kthura/PRO_Town_Frendor/OBJECTS
-    1. Map Design: Kthura/PRO_Town_Frendor/SETTINGS
+    1. Map Design: Kthura/PRO_Town_Frendor/Data
+    1. Map Design: Kthura/PRO_Town_Frendor/Objects
+    1. Map Design: Kthura/PRO_Town_Frendor/Settings
     1. Map Design: Kthura/PRO_Town_Vandar/Data
     1. Map Design: Kthura/PRO_Town_Vandar/Objects
     1. Map Design: Kthura/PRO_Town_Vandar/Settings

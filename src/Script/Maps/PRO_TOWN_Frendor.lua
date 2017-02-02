@@ -228,6 +228,11 @@ function NPC_Alberta()
     Shop('ITEM_ALBERTA')
 end
 
+function NPC_Michiel()
+    MapText('MICHIEL')
+    Shop('WEAPON_MICHIEL')
+end    
+
 -- Init
 function GALE_OnLoad()
    ZA_Enter('ExitHouse',ExitHouse)

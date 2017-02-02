@@ -1,7 +1,7 @@
 --[[
-  ITEM_WANDA.lua
+  WEAPON_MICHIEL.lua
   Version: 17.02.02
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -39,26 +39,26 @@
 -- License: This file contains data from the Phantasar Universe and is therefore property of Jeroen Broks and may NOT be used for your own ends.
 	ret = {
 		["AllowTrade"] = false,
-		["Slot1"] = "ITM_APPLE",
-		["Slot10"] = "",
-		["Slot11"] = "",
-		["Slot12"] = "",
-		["Slot13"] = "",
-		["Slot14"] = "",
-		["Slot15"] = "",
-		["Slot16"] = "",
-		["Slot17"] = "",
-		["Slot18"] = "",
-		["Slot19"] = "",
-		["Slot2"] = "ITM_SALVE",
-		["Slot20"] = "ITM_FLAMEORB",
-		["Slot3"] = "ITM_MEDICINE",
-		["Slot4"] = "ITM_ANTIDOTE",
-		["Slot5"] = "ITM_MAGICDUST",
-		["Slot6"] = "ITM_MANDRAKE",
-		["Slot7"] = "ITM_BELL",
-		["Slot8"] = "",
-		["Slot9"] = "",
-		["Title"] = "Wanda's item shop"}
+		["Slot1"] = "EQP_JAKE_WP3",
+		["Slot10"] = "EQP_JAKE_AR3",
+		["Slot11"] = "EQP_JAKE_AR4",
+		["Slot12"] = "EQP_JAKE_AR5",
+		["Slot13"] = "EQP_MARRILONA_AR3",
+		["Slot14"] = "EQP_MARRILONA_AR4",
+		["Slot15"] = "EQP_MARRILONA_AR5",
+		["Slot16"] = "EQP_HANDOSTILLOR_AR3",
+		["Slot17"] = "EQP_HANDOSTILLOR_AR4",
+		["Slot18"] = "EQP_HANDOSTILLOR_AR5",
+		["Slot19"] = "ITM_BELL",
+		["Slot2"] = "EQP_JAKE_WP4",
+		["Slot20"] = "ITM_PURELITERATURE",
+		["Slot3"] = "EQP_JAKE_WP5",
+		["Slot4"] = "EQP_DANDOR_WP3",
+		["Slot5"] = "EQP_DANDOR_WP4",
+		["Slot6"] = "EQP_DANDOR_WP5",
+		["Slot7"] = "EQP_HANDOSTILLOR_WP3",
+		["Slot8"] = "EQP_HANDOSTILLOR_WP4",
+		["Slot9"] = "EQP_HANDOSTILLOR_WP5",
+		["Title"] = ""}
 
 return ret
