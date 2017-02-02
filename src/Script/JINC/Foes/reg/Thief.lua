@@ -1,40 +1,4 @@
---[[
-  Thief.lua
-  Version: 17.01.30
-  Copyright (C) 2017 Jeroen Petrus Broks
-  
-  ===========================
-  This file is part of a project related to the Phantasar Chronicles or another
-  series or saga which is property of Jeroen P. Broks.
-  This means that it may contain references to a story-line plus characters
-  which are property of Jeroen Broks. These references may only be distributed
-  along with an unmodified version of the game. 
-  
-  As soon as you remove or replace ALL references to the storyline or character
-  references, or any termology specifically set up for the Phantasar universe,
-  or any other univers a story of Jeroen P. Broks is set up for,
-  the restrictions of this file are removed and will automatically become
-  zLib licensed (see below).
-  
-  Please note that doing so counts as a modification and must be marked as such
-  in accordance to the zLib license.
-  ===========================
-  zLib license terms:
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
-]]
--- File Generated: Mon 30 January 2017; 21:51:03
+-- File Generated: Thu 02 February 2017; 23:15:09
 
 
 local foe = {}
@@ -162,6 +126,13 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_STONE\50FLESH"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_TSUNAMI"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ZAP"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_CURSE"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_DARKNESS"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_DARKVISION"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_DEATH"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_PHANTOM"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_REMOVECURSE"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_VOID"] = 0
 	foe["RATE_ABL_MASTER_FREYA_REJUVENATE"] = 0
 	foe["RATE_ABL_MASTER_FREYA_ULTRAHEAL"] = 0
 	foe["RATE_ABL_MASTER_FREYA_VIGOR"] = 0
@@ -179,6 +150,7 @@ local foe = {}
 	foe["RATE_ITM_FLAMEORB"] = 0
 	foe["RATE_ITM_HEALINGHERB"] = 1
 	foe["RATE_ITM_HEALSHOWER"] = 1
+	foe["RATE_ITM_HOLYSCROLL"] = 0
 	foe["RATE_ITM_MAGICDUST"] = 0
 	foe["RATE_ITM_MANDRAKE"] = 0
 	foe["RATE_ITM_MEDICINE"] = 0
@@ -188,6 +160,7 @@ local foe = {}
 	foe["RATE_ITM_POTION"] = 1
 	foe["RATE_ITM_PURELITERATURE"] = 0
 	foe["RATE_ITM_SALVE"] = 0
+	foe["RATE_ITM_TRUMPCARD"] = 0
 	foe["RATE_ITM_VOICEHERB"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_SPIRATATRANSFORM"] = 0
@@ -259,6 +232,13 @@ local foe = {}
 	foe["TARGET_ABL_HERO_MARRILONA_STONE\50FLESH"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_TSUNAMI"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ZAP"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_CURSE"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_DARKNESS"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_DARKVISION"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_DEATH"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_PHANTOM"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_REMOVECURSE"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_VOID"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_REJUVENATE"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_ULTRAHEAL"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_VIGOR"] = "Random"
@@ -276,6 +256,7 @@ local foe = {}
 	foe["TARGET_ITM_FLAMEORB"] = "Random"
 	foe["TARGET_ITM_HEALINGHERB"] = "Random"
 	foe["TARGET_ITM_HEALSHOWER"] = "Random"
+	foe["TARGET_ITM_HOLYSCROLL"] = "Random"
 	foe["TARGET_ITM_MAGICDUST"] = "Random"
 	foe["TARGET_ITM_MANDRAKE"] = "Random"
 	foe["TARGET_ITM_MEDICINE"] = "Random"
@@ -285,6 +266,7 @@ local foe = {}
 	foe["TARGET_ITM_POTION"] = "Random"
 	foe["TARGET_ITM_PURELITERATURE"] = "Random"
 	foe["TARGET_ITM_SALVE"] = "Random"
+	foe["TARGET_ITM_TRUMPCARD"] = "Random"
 	foe["TARGET_ITM_VOICEHERB"] = "Random"
 	foe["TARGET_SPECIAL_AXESMASH"] = "Random"
 	foe["TARGET_SPIRATATRANSFORM"] = "Random"

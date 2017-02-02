@@ -1,40 +1,4 @@
---[[
-**********************************************
-  
-  Zombie.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
-  
-  This file contains material that is related 
-  to a storyline that is which is strictly
-  copyrighted to Jeroen Broks.
-  
-  This file may only be used in an unmodified
-  form with an unmodified version of the 
-  software this file belongs to.
-  
-  You may use this file for your study to see
-  how I solved certain things in the creation
-  of this project to see if you find valuable
-  leads for the creation of your own.
-  
-  Mostly this file comes along with a project
-  that is for most part released under an
-  open source license and that means that if
-  you use that code with this file removed
-  from it, you can use it under that license.
-  Please check out the other files to find out
-  which license applies.
-  This file comes 'as-is' and in no possible
-  way the author can be held responsible of
-  any form of damages that may occur due to 
-  the usage of this file
-  
-  
- **********************************************
- 
-version: 17.01.17
-]]
--- File Generated: Tue 17 January 2017; 20:26:39
+-- File Generated: Thu 02 February 2017; 23:15:09
 
 
 local foe = {}
@@ -68,12 +32,16 @@ local foe = {}
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
 	foe["RATE_ABL_FOE_DISTRACT"] = 0
 	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 0
+	foe["RATE_ABL_FOE_GAZE"] = 0
+	foe["RATE_ABL_FOE_MERMAID_TEMPATION"] = 0
 	foe["RATE_ABL_FOE_PARADIVE"] = 0
 	foe["RATE_ABL_FOE_SHOCKINGSTORIES"] = 0
 	foe["RATE_ABL_FOE_SICKSTORIES"] = 0
 	foe["RATE_ABL_FOE_SMITE"] = 0
 	foe["RATE_ABL_FOE_SOULCRUSHINGSTORY"] = 0
 	foe["RATE_ABL_FOE_SUICIDE"] = 0
+	foe["RATE_ABL_FOE_TAKEOVER"] = 0
+	foe["RATE_ABL_FOE_TAKEOVER\50"] = 0
 	foe["RATE_ABL_FOE_TUSK"] = 0
 	foe["RATE_ABL_FOE_VENOMBITE"] = 0
 	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
@@ -81,6 +49,7 @@ local foe = {}
 	foe["RATE_ABL_GLOOM"] = 0
 	foe["RATE_ABL_HERO_DANDOR_AXESMASH"] = 0
 	foe["RATE_ABL_HERO_DANDOR_SUPERAXESMASH"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_CLEANSE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = 0
@@ -90,6 +59,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_HANDOSTILLOR_RECOVER"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_STICKSWING"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_TREATMENT"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_VITALIZE"] = 0
 	foe["RATE_ABL_HERO_JAKE_\50PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
@@ -105,7 +75,16 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_PROTECT"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ROCK"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_STONE\50FLESH"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_TSUNAMI"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ZAP"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_CURSE"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_DARKNESS"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_DARKVISION"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_DEATH"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_PHANTOM"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_REMOVECURSE"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_VOID"] = 0
 	foe["RATE_ABL_MASTER_FREYA_REJUVENATE"] = 0
 	foe["RATE_ABL_MASTER_FREYA_ULTRAHEAL"] = 0
 	foe["RATE_ABL_MASTER_FREYA_VIGOR"] = 0
@@ -122,16 +101,25 @@ local foe = {}
 	foe["RATE_ITM_CARROT"] = 0
 	foe["RATE_ITM_FLAMEORB"] = 0
 	foe["RATE_ITM_HEALINGHERB"] = 0
+	foe["RATE_ITM_HEALSHOWER"] = 0
+	foe["RATE_ITM_HOLYSCROLL"] = 0
 	foe["RATE_ITM_MAGICDUST"] = 0
 	foe["RATE_ITM_MANDRAKE"] = 0
 	foe["RATE_ITM_MEDICINE"] = 0
+	foe["RATE_ITM_MIRROR"] = 0
 	foe["RATE_ITM_PANACEA"] = 0
 	foe["RATE_ITM_PHOENIX"] = 0
 	foe["RATE_ITM_POTION"] = 0
 	foe["RATE_ITM_PURELITERATURE"] = 0
 	foe["RATE_ITM_SALVE"] = 0
+	foe["RATE_ITM_TRUMPCARD"] = 0
 	foe["RATE_ITM_VOICEHERB"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
+	foe["RATE_SPIRATATRANSFORM"] = 0
+	foe["RATE_SPIRATA_ATTACK_DANDOR"] = 0
+	foe["RATE_SPIRATA_ATTACK_HANDOSTILLOR"] = 0
+	foe["RATE_SPIRATA_ATTACK_JAKE"] = 0
+	foe["RATE_SPIRATA_ATTACK_MARRILONA"] = 0
 	foe["RATE_WAND_BIO"] = 0
 	foe["RATE_WAND_DARK"] = 0
 	foe["RATE_WAND_FLAME"] = 0
@@ -150,12 +138,16 @@ local foe = {}
 	foe["TARGET_ABL_FOE_DESPERATEATTACK"] = "Random"
 	foe["TARGET_ABL_FOE_DISTRACT"] = "Random"
 	foe["TARGET_ABL_FOE_FLAMESTRIKE"] = "Random"
+	foe["TARGET_ABL_FOE_GAZE"] = "Random"
+	foe["TARGET_ABL_FOE_MERMAID_TEMPATION"] = "Random"
 	foe["TARGET_ABL_FOE_PARADIVE"] = "Random"
 	foe["TARGET_ABL_FOE_SHOCKINGSTORIES"] = "Random"
 	foe["TARGET_ABL_FOE_SICKSTORIES"] = "Random"
 	foe["TARGET_ABL_FOE_SMITE"] = "Random"
 	foe["TARGET_ABL_FOE_SOULCRUSHINGSTORY"] = "Random"
 	foe["TARGET_ABL_FOE_SUICIDE"] = "Random"
+	foe["TARGET_ABL_FOE_TAKEOVER"] = "Random"
+	foe["TARGET_ABL_FOE_TAKEOVER\50"] = "Random"
 	foe["TARGET_ABL_FOE_TUSK"] = "Random"
 	foe["TARGET_ABL_FOE_VENOMBITE"] = "Random"
 	foe["TARGET_ABL_FOE_VENOMSTAB"] = "Random"
@@ -163,6 +155,7 @@ local foe = {}
 	foe["TARGET_ABL_GLOOM"] = "Random"
 	foe["TARGET_ABL_HERO_DANDOR_AXESMASH"] = "Random"
 	foe["TARGET_ABL_HERO_DANDOR_SUPERAXESMASH"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_CLEANSE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = "Random"
@@ -172,6 +165,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_RECOVER"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_STICKSWING"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_TREATMENT"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_VITALIZE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\50PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\51PS"] = "Random"
@@ -187,7 +181,16 @@ local foe = {}
 	foe["TARGET_ABL_HERO_MARRILONA_PROTECT"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ROCK"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_SPLASH"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_STONE\50FLESH"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_TSUNAMI"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ZAP"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_CURSE"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_DARKNESS"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_DARKVISION"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_DEATH"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_PHANTOM"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_REMOVECURSE"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_VOID"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_REJUVENATE"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_ULTRAHEAL"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_VIGOR"] = "Random"
@@ -204,16 +207,25 @@ local foe = {}
 	foe["TARGET_ITM_CARROT"] = "Random"
 	foe["TARGET_ITM_FLAMEORB"] = "Random"
 	foe["TARGET_ITM_HEALINGHERB"] = "Random"
+	foe["TARGET_ITM_HEALSHOWER"] = "Random"
+	foe["TARGET_ITM_HOLYSCROLL"] = "Random"
 	foe["TARGET_ITM_MAGICDUST"] = "Random"
 	foe["TARGET_ITM_MANDRAKE"] = "Random"
 	foe["TARGET_ITM_MEDICINE"] = "Random"
+	foe["TARGET_ITM_MIRROR"] = "Random"
 	foe["TARGET_ITM_PANACEA"] = "Random"
 	foe["TARGET_ITM_PHOENIX"] = "Random"
 	foe["TARGET_ITM_POTION"] = "Random"
 	foe["TARGET_ITM_PURELITERATURE"] = "Random"
 	foe["TARGET_ITM_SALVE"] = "Random"
+	foe["TARGET_ITM_TRUMPCARD"] = "Random"
 	foe["TARGET_ITM_VOICEHERB"] = "Random"
 	foe["TARGET_SPECIAL_AXESMASH"] = "Random"
+	foe["TARGET_SPIRATATRANSFORM"] = "Random"
+	foe["TARGET_SPIRATA_ATTACK_DANDOR"] = "Random"
+	foe["TARGET_SPIRATA_ATTACK_HANDOSTILLOR"] = "Random"
+	foe["TARGET_SPIRATA_ATTACK_JAKE"] = "Random"
+	foe["TARGET_SPIRATA_ATTACK_MARRILONA"] = "Random"
 	foe["TARGET_WAND_BIO"] = "Random"
 	foe["TARGET_WAND_DARK"] = "Random"
 	foe["TARGET_WAND_FLAME"] = "Random"

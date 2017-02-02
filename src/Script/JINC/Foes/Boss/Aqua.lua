@@ -1,40 +1,4 @@
---[[
-**********************************************
-  
-  Aqua.lua
-  (c) Jeroen Broks, 2017, All Rights Reserved.
-  
-  This file contains material that is related 
-  to a storyline that is which is strictly
-  copyrighted to Jeroen Broks.
-  
-  This file may only be used in an unmodified
-  form with an unmodified version of the 
-  software this file belongs to.
-  
-  You may use this file for your study to see
-  how I solved certain things in the creation
-  of this project to see if you find valuable
-  leads for the creation of your own.
-  
-  Mostly this file comes along with a project
-  that is for most part released under an
-  open source license and that means that if
-  you use that code with this file removed
-  from it, you can use it under that license.
-  Please check out the other files to find out
-  which license applies.
-  This file comes 'as-is' and in no possible
-  way the author can be held responsible of
-  any form of damages that may occur due to 
-  the usage of this file
-  
-  
- **********************************************
- 
-version: 17.01.30
-]]
--- File Generated: Mon 30 January 2017; 21:47:42
+-- File Generated: Thu 02 February 2017; 23:12:55
 
 
 local foe = {}
@@ -150,6 +114,13 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_STONE\50FLESH"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_TSUNAMI"] = 2
 	foe["RATE_ABL_HERO_MARRILONA_ZAP"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_CURSE"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_DARKNESS"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_DARKVISION"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_DEATH"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_PHANTOM"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_REMOVECURSE"] = 0
+	foe["RATE_ABL_MASTER_FANDALORA_VOID"] = 0
 	foe["RATE_ABL_MASTER_FREYA_REJUVENATE"] = 0
 	foe["RATE_ABL_MASTER_FREYA_ULTRAHEAL"] = 0
 	foe["RATE_ABL_MASTER_FREYA_VIGOR"] = 0
@@ -167,6 +138,7 @@ local foe = {}
 	foe["RATE_ITM_FLAMEORB"] = 0
 	foe["RATE_ITM_HEALINGHERB"] = 0
 	foe["RATE_ITM_HEALSHOWER"] = 0
+	foe["RATE_ITM_HOLYSCROLL"] = 0
 	foe["RATE_ITM_MAGICDUST"] = 0
 	foe["RATE_ITM_MANDRAKE"] = 0
 	foe["RATE_ITM_MEDICINE"] = 0
@@ -176,6 +148,7 @@ local foe = {}
 	foe["RATE_ITM_POTION"] = 0
 	foe["RATE_ITM_PURELITERATURE"] = 0
 	foe["RATE_ITM_SALVE"] = 0
+	foe["RATE_ITM_TRUMPCARD"] = 0
 	foe["RATE_ITM_VOICEHERB"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_SPIRATATRANSFORM"] = 0
@@ -247,6 +220,13 @@ local foe = {}
 	foe["TARGET_ABL_HERO_MARRILONA_STONE\50FLESH"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_TSUNAMI"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ZAP"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_CURSE"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_DARKNESS"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_DARKVISION"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_DEATH"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_PHANTOM"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_REMOVECURSE"] = "Random"
+	foe["TARGET_ABL_MASTER_FANDALORA_VOID"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_REJUVENATE"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_ULTRAHEAL"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_VIGOR"] = "Random"
@@ -264,6 +244,7 @@ local foe = {}
 	foe["TARGET_ITM_FLAMEORB"] = "Random"
 	foe["TARGET_ITM_HEALINGHERB"] = "Random"
 	foe["TARGET_ITM_HEALSHOWER"] = "Random"
+	foe["TARGET_ITM_HOLYSCROLL"] = "Random"
 	foe["TARGET_ITM_MAGICDUST"] = "Random"
 	foe["TARGET_ITM_MANDRAKE"] = "Random"
 	foe["TARGET_ITM_MEDICINE"] = "Random"
@@ -273,6 +254,7 @@ local foe = {}
 	foe["TARGET_ITM_POTION"] = "Random"
 	foe["TARGET_ITM_PURELITERATURE"] = "Random"
 	foe["TARGET_ITM_SALVE"] = "Random"
+	foe["TARGET_ITM_TRUMPCARD"] = "Random"
 	foe["TARGET_ITM_VOICEHERB"] = "Random"
 	foe["TARGET_SPECIAL_AXESMASH"] = "Random"
 	foe["TARGET_SPIRATATRANSFORM"] = "Random"

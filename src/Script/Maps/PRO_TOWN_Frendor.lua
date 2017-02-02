@@ -41,6 +41,7 @@ version: 17.02.02
       Item Shop:    Alberta
       Wand Shop:    Aelvindor
       Weapon Shop:  Michiel
+      Inn:          Yrromani
 ]]
 
 -- General
@@ -238,6 +239,20 @@ function NPC_Inn()
     Inn()
 end
 
+function NPC_Wand()
+    MapText('WAND')
+    Shop('CLONE_AELVINDOR')
+end    
+
+function NPC_YanneeOutside()
+    local wm = CVV('$WMCHAT')
+    local say = {
+                   DANDORCAUGHT = 'DANDORCURSED',
+                   SPIRATAFIRE  = 'DANDORCURED'
+                }
+    MapText('YANNEE_'..(say[wm] or 'OUTSIDE'))            
+end
+
 -- Init
 function GALE_OnLoad()
    ZA_Enter('ExitHouse',ExitHouse)
@@ -247,4 +262,5 @@ function GALE_OnLoad()
        ZA_Enter('enter_'..z,Enter,z)
    end    
    ZA_Enter('B_Exit',B_Exit)
+   ZA_Enter('Byebye',WorldMap)
 end
