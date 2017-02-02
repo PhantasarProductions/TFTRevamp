@@ -32,10 +32,16 @@
   
  **********************************************
  
-version: 17.02.01
+version: 17.02.02
 ]]
 
 -- @USE /Script/Use/Specific/EndOfPrologue.lua
+
+--[[
+      Item Shop:    Alberta
+      Wand Shop:    Aelvindor
+      Weapon Shop:  Michiel
+]]
 
 -- General
 function MapMusic()
@@ -175,7 +181,7 @@ end
 
 
 function AccessDenied()
-  if (not CVV('&FRENDOR.ALLOW2STAY')) then MapText('ACCESSDENIED') WorldMap() elseif Map.Obj.Exists('FANDALORA_ENTRANCE')==1 then Maps.Obj.Kill('FANDALORA_ENTRANCE',1) end
+  if (not CVV('&FRENDOR.ALLOW2STAY')) then MapText('ACCESSDENIED') WorldMap() elseif Maps.Obj.Exists('FANDALORA_ENTRANCE')==1 then Maps.Obj.Kill('FANDALORA_ENTRANCE',1) end
 end
   
 function ComeInEvents()
@@ -189,13 +195,37 @@ function MasterFandalora()
   local marrilona = 0
   for i=1,5 do
       if i>1 and RPG.PointsExists("Jake_Human","SK_LVL_"..i)==1 then jake      = jake      + RPG.Points("Jake_Human","SK_LVL_"..i).Have end
-      if         RPG.PointsExists("Marrilona" ,"SK_LVL_"..i)==1 then marrilona = marrilona + RPG.Points("marrilona","SK_LVL_"..i).Have end      
+      if         RPG.PointsExists("Marrilona" ,"SK_LVL_"..i)==1 then marrilona = marrilona + RPG.Points("Marrilona","SK_LVL_"..i).Have end      
   end 
   local amarrilona = marrilona / 5
   local ajake      = jake      / 4
   CSay("Fandalora requires: "..need)
   CSay("Marrilona has:      "..amarrilona)
   CSay("Jake has:           "..ajake)
+  if not CVV("&MASTER.FANDALORA") then
+     MapText('FANDALORAMASTERNOMASTERYET')
+     if need>amarrilona and need>ajake then MapText('FANDALORAMASTERNOTREADY') return end
+  end
+  Master('Fandalora')
+end
+
+function NPC_FandaloraOutside()
+   MapText('FANDALORA_OUTSIDE')
+   MasterFandalora()
+end   
+
+function Enter(z)
+    GoToLayer(z,'Start')
+end
+
+function B_Exit()    
+    local z = Maps.LayerCodeName
+    GoToLayer('town','exit_'..z)
+end
+
+function NPC_Alberta()
+    MapText('ALBERTA')
+    Shop('ITEM_ALBERTA')
 end
 
 -- Init
@@ -203,4 +233,8 @@ function GALE_OnLoad()
    ZA_Enter('ExitHouse',ExitHouse)
    ZA_Enter('Elder_Exit',Elder2Boss)
    ZA_Enter('ComeInEvents',ComeInEvents)
+   for z in each({'items','weapons','wands','inn'}) do
+       ZA_Enter('enter_'..z,Enter,z)
+   end    
+   ZA_Enter('B_Exit',B_Exit)
 end

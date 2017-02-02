@@ -1,5 +1,5 @@
 --[[
-  ITM_HEALINGHERB.lua
+  ITM_TRUMPCARD.lua
   Version: 17.02.02
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -36,33 +36,41 @@
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 50,
-	["ADDCARD_Action_Number"] = 5,
+	["ADDCARD_Action_Interval"] = 5,
 	["ADDCARD_Char_Interval"] = 5,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["CureDisease"] = true,
-	["CurePoison"] = true,
-	["Desc"] = "The knowlege of herbs can be good for your heath",
-	["Heal"] = 500,
+	["BUFF_Accuracy"] = -100,
+	["BUFF_Evasion"] = -100,
+	["BUFF_Power"] = -100,
+	["CauseCurse"] = true,
+	["Desc"] = "This Trump curses the enemy.",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
+	["ITM_BlackMarket"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 750,
+	["ITM_ShopPrice"] = 666,
 	["ITM_Type"] = "Consumable",
+	["Rew_GainAP"] = 1,
 	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Healing Herb",
+	["Target"] = "1F",
+	["Title"] = "Trump Card",
 	["Type"] = "Item",
-	["Voice"] = "Heal"}
+	["Voice"] = "Critical",
+	["rew_GainSkill1"] = 1,
+	["rew_GainSkill2"] = 1,
+	["rew_GainSkill3"] = 1,
+	["rew_GainSkill4"] = 1,
+	["rew_GainSkill5"] = 1}
 
 return ret
 

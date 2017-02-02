@@ -236,6 +236,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_STONE2FLESH.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_TSUNAMI.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ZAP.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_CURSE.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_DARKNESS.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_DARKVISION.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_DEATH.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_PHANTOM.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_REMOVECURSE.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_VOID.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_REJUVENATE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_ULTRAHEAL.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_VIGOR.lua
@@ -320,6 +327,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_FLAMEORB.lua
     1. Script: Script/JINC/IA/ITM_HEALINGHERB.lua
     1. Script: Script/JINC/IA/ITM_HEALSHOWER.lua
+    1. Script: Script/JINC/IA/ITM_HOLYSCROLL.lua
     1. Script: Script/JINC/IA/ITM_MAGICDUST.lua
     1. Script: Script/JINC/IA/ITM_MANDRAKE.lua
     1. Script: Script/JINC/IA/ITM_MEDICINE.lua
@@ -329,6 +337,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_POTION.lua
     1. Script: Script/JINC/IA/ITM_PURELITERATURE.lua
     1. Script: Script/JINC/IA/ITM_SALVE.lua
+    1. Script: Script/JINC/IA/ITM_TRUMPCARD.lua
     1. Script: Script/JINC/IA/ITM_VOICEHERB.lua
     1. Script: Script/JINC/IA/SPECIAL_AXESMASH.lua
     1. Script: Script/JINC/IA/SPIRATATRANSFORM.lua
@@ -347,6 +356,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/WAND_TRAINING.lua
     1. Script: Script/JINC/IA/WAND_WIND.lua
     1. Script: Script/JINC/IA/ZZKEY_KEYWATER.lua
+    1. Script: Script/JINC/Masters/Fandalora.lua
     1. Script: Script/JINC/Masters/Freya.lua
     1. Script: Script/JINC/Masters/Midas.lua
     1. Script: Script/JINC/Masters/Rubine.lua
@@ -355,6 +365,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/PrologueChains/Jake.lua
     1. Script: Script/JINC/PrologueChains/Marrilona.lua
     1. Script: Script/JINC/Shops/CLONE_Fred.lua
+    1. Script: Script/JINC/Shops/ITEM_ALBERTA.lua
     1. Script: Script/JINC/Shops/ITEM_ISKARDERIU.lua
     1. Script: Script/JINC/Shops/ITEM_WANDA.lua
     1. Script: Script/JINC/Shops/WAND_MONIQUE.lua
@@ -441,6 +452,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
     1. Script: Script/Use/Combat/SpellAni/Temptation.lua
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
@@ -452,8 +465,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/StatusChanges/Charm&Confusion.lua
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
     1. Script: Script/Use/Combat/StatusChanges/Guard.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
     1. Script: Script/Use/Combat/StatusChanges/Paralysis and Sleep.lua
     1. Script: Script/Use/Combat/StatusChanges/Permanence.lua
@@ -498,12 +509,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
     1. General Data: gfx/Textures/Town/Elves/Bench
@@ -579,8 +590,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Logo/End Of Prologue.hot
     1. Graphics: GFX/Logo/End Of Prologue.png
     1. Graphics: GFX/Logo/Game Over.png
-    1. Graphics: GFX/Logo/Phantasar Productions.png
     1. Music: Music/Dungeon/JustASong.ogg
+    1. Graphics: GFX/Logo/Phantasar Productions.png
     1. Graphics: GFX/Logo/The End.png
     1. Graphics: GFX/Logo/Title.png
     1. Graphics: GFX/Menu Icons/Buy.png
@@ -759,7 +770,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Signs/DungSign_Plaque.png
     1. Graphics: GFX/Textures/Signs/Inn.png
     1. Graphics: GFX/Textures/Signs/Item Shop.png
-    1. Graphics: GFX/Textures/Signs/Signs (Autosaved).piko
     1. Graphics: GFX/Textures/Signs/Signs.piko
     1. Graphics: GFX/Textures/Signs/Signs.png
     1. Graphics: GFX/Textures/Signs/Wand.piko
@@ -1063,9 +1073,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/PRO_TheEnd/Data
     1. Map Design: Kthura/PRO_TheEnd/Objects
     1. Map Design: Kthura/PRO_TheEnd/Settings
-    1. Map Design: Kthura/PRO_Town_Frendor/Data
-    1. Map Design: Kthura/PRO_Town_Frendor/Objects
-    1. Map Design: Kthura/PRO_Town_Frendor/Settings
+    1. Map Design: Kthura/PRO_Town_Frendor/DATA
+    1. Map Design: Kthura/PRO_Town_Frendor/OBJECTS
+    1. Map Design: Kthura/PRO_Town_Frendor/SETTINGS
     1. Map Design: Kthura/PRO_Town_Vandar/Data
     1. Map Design: Kthura/PRO_Town_Vandar/Objects
     1. Map Design: Kthura/PRO_Town_Vandar/Settings
@@ -1157,8 +1167,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Kapot Mubilair/Bank.png
     1. Graphics: GFX/Textures/Kapot Mubilair/Hemelbed.png
     1. Graphics: GFX/Textures/Town/Elves/House.png
+    1. Graphics: GFX/Actors/Single/Fairies/Female.piko
     1. Graphics: GFX/Actors/Single/Fairies/Female.png
+    1. Graphics: GFX/Actors/Single/Fairies/Female2.png
+    1. Graphics: GFX/Actors/Single/Fairies/Female3.png
     1. Graphics: GFX/Actors/Single/Fairies/Male.png
+    1. Graphics: GFX/Actors/Single/Fairies/Male2.png
     1. Graphics: GFX/Actors/Single/Humans/RubineTheHood.png
     1. Graphics: GFX/Actors/Single/Humans/Thief.png
     1. Graphics: GFX/Actors/Single/Humans/Female.png

@@ -59,6 +59,30 @@ mc Slot20
 # they will be removed by MyData when you 
 # update this file :)
 
+Rec: ITEM_ALBERTA
+	AllowTrade = FALSE
+	Slot1 = ITM_APPLE
+	Slot10 = ITM_MAGICDUST
+	Slot11 = 
+	Slot12 = 
+	Slot13 = 
+	Slot14 = 
+	Slot15 = 
+	Slot16 = 
+	Slot17 = 
+	Slot18 = 
+	Slot19 = 
+	Slot2 = ITM_SALVE
+	Slot20 = 
+	Slot3 = ITM_POTION
+	Slot4 = ITM_PHOENIX
+	Slot5 = ITM_CARROT
+	Slot6 = ITM_MANDRAKE
+	Slot7 = ITM_PURELITERATURE
+	Slot8 = ITM_TRUMPCARD
+	Slot9 = ITM_HOLYSCROLL
+	Title = Alberta's item store
+
 Rec: ITEM_ISKARDERIU
 	AllowTrade = FALSE
 	Slot1 = ITM_APPLE

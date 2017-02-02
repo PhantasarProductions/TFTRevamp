@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_STONE2FLESH.lua
-  Version: 17.02.01
+  Version: 17.02.02
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

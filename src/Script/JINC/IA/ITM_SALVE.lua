@@ -32,9 +32,10 @@
   
  **********************************************
  
-version: 17.02.01
+version: 17.02.02
 ]]
 ret = {
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
