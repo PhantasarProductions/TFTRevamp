@@ -231,7 +231,12 @@ end
 function NPC_Michiel()
     MapText('MICHIEL')
     Shop('WEAPON_MICHIEL')
-end    
+end
+
+function NPC_Inn()
+    -- MapText('INN')
+    Inn()
+end
 
 -- Init
 function GALE_OnLoad()
