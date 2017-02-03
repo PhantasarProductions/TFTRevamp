@@ -164,6 +164,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/Boss/harry2.lua
+    1. Script: Script/JINC/Foes/reg/Bandit.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
     1. Script: Script/JINC/Foes/reg/Boar.lua
     1. Script: Script/JINC/Foes/reg/Boekenworm.lua
@@ -182,10 +183,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Snake.lua
     1. Script: Script/JINC/Foes/reg/Thief.lua
     1. Script: Script/JINC/Foes/reg/Zombie.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
     1. Script: Script/JINC/IA/AAA_GUARD.lua
     1. Script: Script/JINC/IA/ABL_FOE_BACTERIATUSK.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_FOE_CRUSH.lua
     1. Script: Script/JINC/IA/ABL_FOE_DESPERATEATTACK.lua
     1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
@@ -449,11 +450,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/FoeAI/Default.lua
     1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
     1. Script: Script/Use/Combat/SpellAni/Frost.lua
     1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellAni/Temptation.lua
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
@@ -1157,11 +1158,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Scenario/We Got Trouble.ogg
     1. Music: Music/Town/Enchanted Valley.ogg
 - Man Of Steel
-    1. Graphics: gfx/Combat/Fighters/Reg/Thief/Thief.piko
-    1. Graphics: gfx/Combat/Fighters/Reg/Thief/Variant01.png
-    1. Graphics: gfx/Combat/Fighters/Reg/Thief/Variant02.png
-    1. Graphics: gfx/Combat/Fighters/Reg/Thief/Variant03.png
-    1. Graphics: gfx/Combat/Fighters/Reg/Thief/Variant04.png
+    1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Thief.piko
+    1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Variant01.png
+    1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Variant02.png
+    1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Variant03.png
+    1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Variant04.png
     1. Graphics: GFX/Actors/Single/Elves/RandomElfFemale.png
     1. Graphics: GFX/Actors/Single/Elves/RandomElfFemale2.png
     1. Graphics: GFX/Actors/Single/Elves/RandomElfMale.png

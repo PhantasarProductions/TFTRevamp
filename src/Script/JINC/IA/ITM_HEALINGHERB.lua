@@ -1,6 +1,6 @@
 --[[
   ITM_HEALINGHERB.lua
-  Version: 17.02.02
+  Version: 17.02.03
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -56,7 +56,7 @@ ret = {
 	["ITM_Combat"] = true,
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 750,
+	["ITM_ShopPrice"] = 1750,
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
 	["Target"] = "1A",

@@ -14684,7 +14684,7 @@ Rec: ITM_HEALINGHERB
 	BUFF_Power = 0
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
-	CauseConfusion = 
+	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
@@ -14736,7 +14736,7 @@ Rec: ITM_HEALINGHERB
 	ITM_EQP_For = 
 	ITM_Field = TRUE
 	ITM_Sellable = TRUE
-	ITM_ShopPrice = 750
+	ITM_ShopPrice = 1750
 	ITM_Type = Consumable
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
@@ -14785,7 +14785,7 @@ Rec: ITM_HEALSHOWER
 	BUFF_Power = 0
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
-	CauseConfusion = 
+	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
 	CauseDisease = FALSE

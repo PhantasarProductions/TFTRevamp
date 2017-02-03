@@ -1,4 +1,40 @@
--- File Generated: Thu 02 February 2017; 23:15:09
+--[[
+  Bandit.lua
+  Version: 17.02.03
+  Copyright (C) 2017 Jeroen Petrus Broks
+  
+  ===========================
+  This file is part of a project related to the Phantasar Chronicles or another
+  series or saga which is property of Jeroen P. Broks.
+  This means that it may contain references to a story-line plus characters
+  which are property of Jeroen Broks. These references may only be distributed
+  along with an unmodified version of the game. 
+  
+  As soon as you remove or replace ALL references to the storyline or character
+  references, or any termology specifically set up for the Phantasar universe,
+  or any other univers a story of Jeroen P. Broks is set up for,
+  the restrictions of this file are removed and will automatically become
+  zLib licensed (see below).
+  
+  Please note that doing so counts as a modification and must be marked as such
+  in accordance to the zLib license.
+  ===========================
+  zLib license terms:
+  This software is provided 'as-is', without any express or implied
+  warranty.  In no event will the authors be held liable for any damages
+  arising from the use of this software.
+  Permission is granted to anyone to use this software for any purpose,
+  including commercial applications, and to alter it and redistribute it
+  freely, subject to the following restrictions:
+  1. The origin of this software must not be misrepresented; you must not
+     claim that you wrote the original software. If you use this software
+     in a product, an acknowledgment in the product documentation would be
+     appreciated but is not required.
+  2. Altered source versions must be plainly marked as such, and must not be
+     misrepresented as being the original software.
+  3. This notice may not be removed or altered from any source distribution.
+]]
+-- File Generated: Fri 03 February 2017; 09:31:20
 
 
 local foe = {}
@@ -91,8 +127,8 @@ local foe = {}
 	foe["Item Steal \50"] = "ITM_ANTIDOTE"
 	foe["Item Steal \51"] = "ITM_ANTIDOTE"
 	foe["Name"] = "Bandit"
-	foe["RATE_AAA_ATTACK"] = 5
-	foe["RATE_AAA_GUARD"] = 1
+	foe["RATE_AAA_ATTACK"] = 10
+	foe["RATE_AAA_GUARD"] = 5
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
 	foe["RATE_ABL_FOE_CRUSH"] = 1
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
@@ -336,7 +372,7 @@ local foe = {}
 	foe["normal_EXP"] = 8
 	foe["normal_Endurance"] = 180
 	foe["normal_Evasion"] = 20
-	foe["normal_HP"] = 1000
+	foe["normal_HP"] = 500
 	foe["normal_Intelligence"] = 100
 	foe["normal_Power"] = 300
 	foe["normal_Resistance"] = 100
@@ -345,7 +381,7 @@ local foe = {}
 	foe["oversoul_EXP"] = 15
 	foe["oversoul_Endurance"] = 200
 	foe["oversoul_Evasion"] = 75
-	foe["oversoul_HP"] = 2000
+	foe["oversoul_HP"] = 1200
 	foe["oversoul_Intelligence"] = 100
 	foe["oversoul_Power"] = 600
 	foe["oversoul_Resistance"] = 100

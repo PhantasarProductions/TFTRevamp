@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_RUBINE_FOLLOWME.lua
-  Version: 17.02.02
+  Version: 17.02.03
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
