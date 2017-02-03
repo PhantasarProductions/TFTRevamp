@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 17.01.07
+  Version: 17.02.03
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -50,6 +50,7 @@ function KillAward(myfoe)
            RPG.IncStat(ch,'EXP', -get) 
            charmsg(ch,"EXP "..get,rand(0,255),rand(0,255),rand(0,255))
            if RPG.Stat(ch,"EXP")<=0 then charmsg(ch,"LEVEL UP!",rand(0,255),rand(0,255),rand(0,255)) end
+           RPG.Points(ch,'AP').Inc(30-(skill*10))
         end
     end
     -- Drop items
