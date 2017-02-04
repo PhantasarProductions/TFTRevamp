@@ -54,6 +54,7 @@ ret = {
 	["ITM_Sellable"] = true,
 	["ITM_ShopPrice"] = 120,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "Heal",
 	["Stance"] = "Cast",
 	["Target"] = "1A",
 	["Title"] = "Salve",

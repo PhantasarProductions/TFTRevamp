@@ -61,6 +61,7 @@ ret = {
 	["ITM_ShopPrice"] = 666,
 	["ITM_Type"] = "Consumable",
 	["Rew_GainAP"] = 1,
+	["SpellAni"] = "Heal",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
 	["Title"] = "Trump Card",

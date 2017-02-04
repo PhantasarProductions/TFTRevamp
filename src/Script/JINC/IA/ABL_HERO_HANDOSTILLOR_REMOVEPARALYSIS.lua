@@ -54,6 +54,7 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "AllHeal",
 	["Stance"] = "Cast",
 	["Target"] = "AA",
 	["Title"] = "Remove Paralysis",
