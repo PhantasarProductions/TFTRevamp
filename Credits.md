@@ -456,6 +456,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
     1. Script: Script/Use/Combat/SpellAni/Frost.lua
+    1. Script: Script/Use/Combat/SpellAni/Heal.lua
     1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
     1. Script: Script/Use/Combat/SpellAni/Temptation.lua
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
@@ -514,12 +515,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
     1. General Data: gfx/Textures/Town/Elves/Bench
@@ -637,6 +638,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/SpellAni/Flame/Flame.png
     1. Graphics: GFX/Combat/SpellAni/Frost/Crystals.piko
     1. Graphics: GFX/Combat/SpellAni/Frost/Crystals.png
+    1. Graphics: GFX/Combat/SpellAni/Glitter/Base.png
     1. Graphics: GFX/Combat/SpellAni/Thunder/Lightning.hot
     1. Graphics: GFX/Combat/SpellAni/Thunder/Lightning.png
     1. Graphics: GFX/Combat/SpellAni/Thunder/Spark.png
