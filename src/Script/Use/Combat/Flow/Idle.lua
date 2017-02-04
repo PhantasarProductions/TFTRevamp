@@ -1,6 +1,6 @@
 --[[
   Idle.lua
-  Version: 17.01.28
+  Version: 17.02.04
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -61,7 +61,7 @@ function fflow.idle()
         for idx,data in pairs(grouparray) do
             k = nil
             for _,crd in pairs(Cards) do -- Looking for the card
-                k = k or (crd.data and crd.data.group==group and crd.data.tag==data.tag and (not crd.data.ability)) 
+                k = k or (crd.data and crd.data.group==group and crd.data.tag==data.tag and (not crd.data.nextact)) 
             end 
             if not k then AddCard({group=group,tag=data.tag, letter=data.letter}) end
         end
