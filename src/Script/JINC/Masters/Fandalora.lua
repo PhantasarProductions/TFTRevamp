@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.01
+version: 17.02.03
 ]]
 local RPG = RPGStat
 
@@ -65,7 +65,7 @@ function Fandalora.AllPoints(ch)
    local totaal = 0
    local chcheck = {Jake_Human={2,3,4,5},Marrilona={1,2,3,4,5},HandoStillor={2}}
    for tch,skills in pairs(chcheck) do     
-       for d in each(skills) do
+       for _,d in ipairs(skills) do
            local keer = 1
            if tch == ch then keer = keer + 1 end
            for i=1,keer do 
@@ -77,9 +77,10 @@ function Fandalora.AllPoints(ch)
    if deler==0 then deler=1 end -- Should prevent errors, although deler being 0 should be impossible.
    local gemiddelde = math.floor(totaal/deler)
    local gained = 0
-   if RPG.GetData(ch,"Master")=="Fandalora" then
+   if ch and RPG.GetData(ch,"Master")=="Fandalora" then
       local gained = gemiddelde - RPG.SafeStat(ch,"StartFandalora")
    end
+   return totaal,gemiddelde
 end
 
 function Fandalora.requirement() return true end
@@ -104,7 +105,7 @@ end
 
 function Fandalora.appoint(ch)
       Console.Write('Creating point for Fandalora on '..ch,255,255,255)
-      local start = Fandalora.AllPoints()
+      local start,troep = Fandalora.AllPoints()
       Master_DefStat(ch,"StartFandalora",start)
 end
 
@@ -125,7 +126,7 @@ Fandalora.Desc = {"Marrilona's father","Expert on dark magic and defense against
 
 function Fandalora.ShowScore(ch)
      if ch=="Dandor" then return "N/A" end
-     local ret=AllScore(ch)
+     local tot,ret=Fandalora.AllPoints(ch)
      return ret
 end
 

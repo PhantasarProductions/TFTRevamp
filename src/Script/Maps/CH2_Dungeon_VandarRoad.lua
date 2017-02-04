@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.31
+version: 17.02.03
 ]]
 
 
@@ -63,10 +63,21 @@ function PostDandor()
    -- Sys.Error('No Post Boss Script')
 end   
 
+function E_West()
+    if not Done('&DONE.VANDARROAD.COMPLETE') then
+      Var.D('$VANDAR.STATUS','ANGRYCHIEF')
+      WorldMap_Unlock('CH2VANDAR')
+    end
+    WorldMap()
+end    
+
 function GALE_OnLoad()
    ZA_Enter('ZoneDandor',Dandor)
    if CVV('&DONE.VANDARROAD.DANDOR') then
       Maps.GoToLayer('road')
       Maps.Obj.Kill('Dandor')
    end
+   ZA_Enter('E_West',E_West)
+   ZA_Enter('E_East',WorldMap)
+   
 end   

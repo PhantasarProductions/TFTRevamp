@@ -142,6 +142,16 @@ Rec: CH2ELFROAD
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: CH2FIRESPIRATA
+	Dungeon = TRUE
+	Folder = Delisto
+	Kthura = CH2_Dungeon_SpirataFire
+	Layer = #000
+	LocationName = Bandafir's temple
+	LocationPrefix = 
+	Start = Start
+	UnlockedFromStart = FALSE
+
 Rec: CH2ISKARDERIU
 	Dungeon = FALSE
 	Folder = Delisto
@@ -149,6 +159,16 @@ Rec: CH2ISKARDERIU
 	Layer = town
 	LocationName = Iskarderiu
 	LocationPrefix = The Elfish City of
+	Start = Start
+	UnlockedFromStart = FALSE
+
+Rec: CH2VANDAR
+	Dungeon = FALSE
+	Folder = Delisto
+	Kthura = PRO_Town_Vandar
+	Layer = town
+	LocationName = Vandar
+	LocationPrefix = The Human Village of
 	Start = Start
 	UnlockedFromStart = FALSE
 

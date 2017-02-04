@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.06
+version: 17.02.03
 ]]
 
 
@@ -153,6 +153,35 @@ function NPC_George()
    Shop('CLONE_GEORGE')
 end   
 
+KickTown = {
+       JUSTLEAVE = function() MapText('JUSTLEAVE') WorldMap() end,
+       ANGRYCHIEF = function()
+                         local xchars = {'ChiefWerrington','Harry'}
+                         local xcd = {}
+                         local x,s
+                         for xc in each(xchars) do
+                             xcd[xc] = Maps.Obj.CreateObject('Obstacle','ch_'..xc)
+                             x = xcd[xc]
+                             s = Maps.Obj.Obj('Spot_'..xc)
+                             x.X = s.X
+                             x.Y = s.Y
+                             x.Dominance=40
+                             x.Visible=1
+                             x.TextureFile="GFX/Actors/Single/Humans/"..xc..".png"
+                             CSay('Created actor for: '..xc)                             
+                         end
+                         Maps.Remap()
+                         Music('Sys/Silence.ogg')
+                         PartyPop('Kick')
+                         MapText('ANGRYCHIEF')
+                         ItemGive('ZZKEY_FIRE')
+                         Var.D('$VANDAR.STATUS','JUSTLEAVE')
+                         Var.D("$WMCHAT","ANGRYCHIEF")
+                         WorldMap_Unlock('CH2FIRESPIRATA')
+                         WorldMap()
+                    end
+}
+
 
 function GALE_OnLoad()
    ZA_Enter("Bye",Bye)
@@ -178,4 +207,6 @@ function GALE_OnLoad()
    ZA_Enter('Enter_Weapons',HouseEnter,'weapons')
    -- Exits
    ZA_Enter('Exit',HouseExit)
+   -- Scenario Entrance
+   ZA_Enter('KickTown',KickTown[CVV('$VANDAR.STATUS')] or Nothing)
 end   

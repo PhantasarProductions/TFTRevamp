@@ -356,6 +356,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/WAND_THUNDER.lua
     1. Script: Script/JINC/IA/WAND_TRAINING.lua
     1. Script: Script/JINC/IA/WAND_WIND.lua
+    1. Script: Script/JINC/IA/ZZKEY_FIRE.lua
     1. Script: Script/JINC/IA/ZZKEY_KEYWATER.lua
     1. Script: Script/JINC/Masters/Fandalora.lua
     1. Script: Script/JINC/Masters/Freya.lua
@@ -448,10 +449,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/Flow/TheEnd.lua
     1. Script: Script/Use/Combat/FoeAI/AAAAA.lua
     1. Script: Script/Use/Combat/FoeAI/Default.lua
-    1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
-    1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
+    1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
+    1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
     1. Script: Script/Use/Combat/SpellAni/Frost.lua
     1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
@@ -512,12 +513,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
     1. General Data: gfx/Textures/Town/Elves/Bench
@@ -567,6 +568,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Data
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Objects
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Settings
+    1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Data
+    1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Objects
+    1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Settings
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Data
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Objects
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Settings
@@ -1385,22 +1389,39 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_7.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_8.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_9.ogg
-    1. Audio: Vocals/Spirata/Dandor.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_1.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_10.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_11.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_12.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_12.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_13.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_14.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_15.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_16.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_17.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_13.ogg
-    1. Audio: Vocals/Spirata/HandoStillor.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_2.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_3.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_4.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_5.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_6.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_7.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_8.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_9.ogg
+    1. Audio: Vocals/Spirata/Dandor.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_14.ogg
+    1. Audio: Vocals/Spirata/HandoStillor.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_15.ogg
-    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_16.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_17.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_18.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_19.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_2.ogg
+    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_20.ogg
-    1. Audio: Vocals/Spirata/Marrilona.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_21.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_22.ogg
+    1. Audio: Vocals/Spirata/Marrilona.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_23.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_24.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_25.ogg
