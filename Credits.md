@@ -341,6 +341,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_SALVE.lua
     1. Script: Script/JINC/IA/ITM_TRUMPCARD.lua
     1. Script: Script/JINC/IA/ITM_VOICEHERB.lua
+    1. Script: Script/JINC/IA/ITM_VOLTABALL.lua
     1. Script: Script/JINC/IA/SPECIAL_AXESMASH.lua
     1. Script: Script/JINC/IA/SPIRATATRANSFORM.lua
     1. Script: Script/JINC/IA/SPIRATA_ATTACK_DANDOR.lua
@@ -387,6 +388,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH1_Hub_JakeHut.lua
     1. Script: Script/Maps/CH2_Dungeon_DragonCastle.lua
     1. Script: Script/Maps/CH2_Dungeon_ElfRoad.lua
+    1. Script: Script/Maps/CH2_Dungeon_SpirataFire.lua
     1. Script: Script/Maps/CH2_Dungeon_SpirataWater.lua
     1. Script: Script/Maps/CH2_Dungeon_VandarRoad.lua
     1. Script: Script/Maps/CH2_Town_Dreshka.lua
@@ -447,10 +449,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/Flow/FoeInput.lua
     1. Script: Script/Use/Combat/Flow/Idle.lua
     1. Script: Script/Use/Combat/Flow/PlayerInput.lua
-    1. Script: Script/Use/Combat/Flow/TheEnd.lua
-    1. Script: Script/Use/Combat/FoeAI/AAAAA.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
+    1. Script: Script/Use/Combat/Flow/TheEnd.lua
+    1. Script: Script/Use/Combat/FoeAI/AAAAA.lua
     1. Script: Script/Use/Combat/FoeAI/Default.lua
     1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
@@ -521,6 +523,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Graphics: gfx/Textures/Blops2/Blop1.png
+    1. Graphics: gfx/Textures/Blops2/Blop2.png
+    1. Graphics: gfx/Textures/Blops2/Blop3.png
+    1. Graphics: gfx/Textures/Blops2/Blop4.png
+    1. Graphics: gfx/Textures/Blops2/Blop5.png
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
     1. General Data: gfx/Textures/Town/Elves/Bench
@@ -536,7 +543,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/blops/Blop4.png
     1. Graphics: gfx/Textures/blops/Blop5.png
     1. Graphics: gfx/Textures/blops/Blop6.png
-    1. ???: gfx/Textures/blops/PCX.7z
     1. Graphics: GFX/Actors/Single/Elves/GedrioFulla.png
     1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.piko
@@ -1108,6 +1114,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_JAKEHUT
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_ELFROAD
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_SPIRATAFIRE
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_SPIRATAWATER
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_VANDARROAD
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_DRESHKA
@@ -1138,6 +1145,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_JAKEHUT
     1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_ELFROAD
+    1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_SPIRATAFIRE
     1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_SPIRATAWATER
     1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_VANDARROAD
     1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_DRESHKA
@@ -1276,6 +1284,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Objects/Torch Post.png
     1. Graphics: GFX/Textures/Switch/Left.png
     1. Graphics: GFX/Textures/Switch/Right.png
+    1. Graphics: GFX/Textures/Tapijt/Amber.frames
     1. Graphics: GFX/Textures/Tapijt/Amber.png
     1. Graphics: GFX/Textures/Tapijt/Blauw.frames
     1. Graphics: GFX/Textures/Tapijt/Blauw.png
