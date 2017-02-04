@@ -1,5 +1,5 @@
 --[[
-  EQP_JEWEL_EMERALD.lua
+  ABL_HERO_MARRILONA_BIO.lua
   Version: 17.02.04
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -35,28 +35,29 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ABL_APCost"] = 10,
 	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Raises protection against silence",
-	["EQP_STAT_SR_Silence"] = 50,
+	["CausePoison"] = true,
+	["Desc"] = "Poisons the enemy",
 	["Heal_StatPercent"] = "Intelligence",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
-	["ITM_BlackMarket"] = true,
 	["ITM_Combat"] = true,
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 6000,
-	["ITM_Type"] = "Accesoiry",
+	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
-	["Title"] = "Topaz",
-	["Type"] = "Item"}
+	["Title"] = "Bio",
+	["Type"] = "Ability"}
 
 return ret
 
