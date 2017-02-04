@@ -4,7 +4,7 @@ Rem
 	
 	
 	
-	(c) Jeroen P. Broks, 2016, All rights reserved
+	(c) Jeroen P. Broks, 2016, 2017, All rights reserved
 	
 		This program is free software: you can redistribute it and/or modify
 		it under the terms of the GNU General Public License as published by
@@ -20,11 +20,16 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 16.09.03
+Version: 17.02.04
 End Rem
 Strict
 
 Framework tricky_units.MKL_Version ' Actually no module calls needed here, but only the main file accepts FrameWork, so here we are ;)
+
+' Icon for Windows
+?win32
+import "Marrilona_Windows_Icon.o"
+?
 
 ' Here are the panel imports. The order in which they are placed is VERY important!!!
 Import "imp/Welcome.bmx"
@@ -35,10 +40,11 @@ Import "Imp/versions.bmx"
 
 
 
+
 ' This MUST always be last!!!
 Import "imp/run.bmx"
 
-MKL_Version "The Fairy Tale - REVAMP - The Fairy Tale REVAMPED.bmx","16.09.03"
+MKL_Version "The Fairy Tale - REVAMP - The Fairy Tale REVAMPED.bmx","17.02.04"
 MKL_Lic     "The Fairy Tale - REVAMP - The Fairy Tale REVAMPED.bmx","GNU General Public License 3"
 
  

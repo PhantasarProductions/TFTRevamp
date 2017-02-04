@@ -1,6 +1,6 @@
 --[[
   Master.lua
-  Version: 17.01.03
+  Version: 17.02.04
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -79,6 +79,8 @@ function Master(id)
        local ch = RPG.PartyTag(i)
        if ch~="" then AppSet[i] = RPG.DataExists(ch,"Master")~=0 and RPG.GetData(ch,"Master")==id end
    end     
+   Cls()
+   Loading()
    LAURA.Flow('MASTER')   
 end
 

@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 17.01.01
+  Version: 17.02.04
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -263,6 +263,8 @@ function Inn(free)
 end
 
 function Shop(tag,trade)
+   Cls()
+   Loading()
    local feat = "Shop"
    if trade then feat="ShopTrade" end
    MS.LN_Run("MENU","Script/Flow/Menu.lua","Menu_Init",feat)

@@ -1,7 +1,7 @@
 --[[
   MasterLinker.lua
-  Version: 16.12.26
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.02.04
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another

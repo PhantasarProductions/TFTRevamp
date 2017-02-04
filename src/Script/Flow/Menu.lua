@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 17.01.05
+  Version: 17.02.04
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -382,6 +382,8 @@ end
 
 -- Store / Merchant Features
 function Shop_Load(tag)
+   Cls()
+   Loading()
    Shop = jinc('Script/JINC/Shops/'..tag..".lua")
    assert(Shop,"Something went wrong loading the shop: "..tag)
    Shop.itemdata = {}
