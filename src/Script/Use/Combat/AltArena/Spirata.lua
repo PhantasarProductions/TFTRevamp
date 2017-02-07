@@ -1,6 +1,6 @@
 --[[
   Spirata.lua
-  Version: 17.01.20
+  Version: 17.02.07
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -43,11 +43,16 @@ AltArena = {}
 
 AltArena.spiratawater = {
                       Before = function() 
-                         BlopPlasma.DrawCol(0,40,100,80)
-                         --Sys.Error('This does happen, so nothing is ignored.') 
+                         BlopPlasma.DrawCol(0,40,100)
                       end
                  }
 
+
+AltArena.spiratafire = {
+                      Before = function() 
+                         BlopPlasma.DrawCol(180,60,0)
+                      end
+                 }
 
 -- @IF IGNORE
 return AltArena

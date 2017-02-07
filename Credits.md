@@ -232,6 +232,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FIREBLAST.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FLAME.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HEAL.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_INFERNO.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PERMANENCE.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PROTECT.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ROCK.lua
@@ -518,12 +519,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png
