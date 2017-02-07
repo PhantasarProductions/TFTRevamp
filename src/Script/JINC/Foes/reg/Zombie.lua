@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 17.02.03
+version: 17.02.07
 ]]
--- File Generated: Thu 02 February 2017; 23:15:09
+-- File Generated: Tue 07 February 2017; 23:27:35
 
 
 local foe = {}
@@ -47,6 +47,7 @@ local foe = {}
 	foe["SKILL\50_AAA_ATTACK"] = true
 	foe["SKILL\51_AAA_ATTACK"] = true
 	foe["STSTART_Curse"] = false
+	foe["STSTART_Death"] = false
 	foe["STSTART_Disease"] = false
 	foe["STSTART_Paralysis"] = false
 	foe["STSTART_Petrification"] = false
@@ -103,10 +104,13 @@ local foe = {}
 	foe["RATE_ABL_HERO_JAKE_HEALBLADE"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_FAIRY"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_HUMAN"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_BIO"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_CHILL"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ETERNALFLAME"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_FIREBLAST"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_FLAME"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_INFERNO"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PERMANENCE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PROTECT"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ROCK"] = 0
@@ -139,6 +143,7 @@ local foe = {}
 	foe["RATE_ITM_HEALINGHERB"] = 0
 	foe["RATE_ITM_HEALSHOWER"] = 0
 	foe["RATE_ITM_HOLYSCROLL"] = 0
+	foe["RATE_ITM_INFERNOORB"] = 0
 	foe["RATE_ITM_MAGICDUST"] = 0
 	foe["RATE_ITM_MANDRAKE"] = 0
 	foe["RATE_ITM_MEDICINE"] = 0
@@ -150,6 +155,7 @@ local foe = {}
 	foe["RATE_ITM_SALVE"] = 0
 	foe["RATE_ITM_TRUMPCARD"] = 0
 	foe["RATE_ITM_VOICEHERB"] = 0
+	foe["RATE_ITM_VOLTABALL"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_SPIRATATRANSFORM"] = 0
 	foe["RATE_SPIRATA_ATTACK_DANDOR"] = 0
@@ -166,6 +172,7 @@ local foe = {}
 	foe["RATE_WAND_THUNDER"] = 0
 	foe["RATE_WAND_TRAINING"] = 0
 	foe["RATE_WAND_WIND"] = 0
+	foe["RATE_ZZKEY_FIRE"] = 0
 	foe["RATE_ZZKEY_KEYWATER"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
 	foe["TARGET_AAA_GUARD"] = "Random"
@@ -209,10 +216,13 @@ local foe = {}
 	foe["TARGET_ABL_HERO_JAKE_HEALBLADE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_SHIFT_FAIRY"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_SHIFT_HUMAN"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_BIO"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_CHILL"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ETERNALFLAME"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_FIREBLAST"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_FLAME"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_HEAL"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_INFERNO"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_PERMANENCE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_PROTECT"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ROCK"] = "Random"
@@ -245,6 +255,7 @@ local foe = {}
 	foe["TARGET_ITM_HEALINGHERB"] = "Random"
 	foe["TARGET_ITM_HEALSHOWER"] = "Random"
 	foe["TARGET_ITM_HOLYSCROLL"] = "Random"
+	foe["TARGET_ITM_INFERNOORB"] = "Random"
 	foe["TARGET_ITM_MAGICDUST"] = "Random"
 	foe["TARGET_ITM_MANDRAKE"] = "Random"
 	foe["TARGET_ITM_MEDICINE"] = "Random"
@@ -256,6 +267,7 @@ local foe = {}
 	foe["TARGET_ITM_SALVE"] = "Random"
 	foe["TARGET_ITM_TRUMPCARD"] = "Random"
 	foe["TARGET_ITM_VOICEHERB"] = "Random"
+	foe["TARGET_ITM_VOLTABALL"] = "Random"
 	foe["TARGET_SPECIAL_AXESMASH"] = "Random"
 	foe["TARGET_SPIRATATRANSFORM"] = "Random"
 	foe["TARGET_SPIRATA_ATTACK_DANDOR"] = "Random"
@@ -272,6 +284,7 @@ local foe = {}
 	foe["TARGET_WAND_THUNDER"] = "Random"
 	foe["TARGET_WAND_TRAINING"] = "Random"
 	foe["TARGET_WAND_WIND"] = "Random"
+	foe["TARGET_ZZKEY_FIRE"] = "Random"
 	foe["TARGET_ZZKEY_KEYWATER"] = "Random"
 	foe["VocalTag"] = ""
 	foe["Boss"] = false
@@ -296,6 +309,7 @@ local foe = {}
 	foe["Rate Steal \50"] = 0
 	foe["Rate Steal \51"] = 0
 	foe["SR_Curse "] = 100
+	foe["SR_Death"] = 100
 	foe["SR_Disease "] = 100
 	foe["SR_Paralysis "] = 100
 	foe["SR_Petrification "] = 100

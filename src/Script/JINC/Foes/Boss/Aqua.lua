@@ -34,7 +34,7 @@
  
 version: 17.02.07
 ]]
--- File Generated: Tue 07 February 2017; 09:41:58
+-- File Generated: Tue 07 February 2017; 23:25:12
 
 
 local foe = {}
@@ -83,6 +83,7 @@ local foe = {}
 	foe["SKILL\51_ABL_HERO_MARRILONA_SPLASH"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_TSUNAMI"] = true
 	foe["STSTART_Curse"] = false
+	foe["STSTART_Death"] = false
 	foe["STSTART_Disease"] = false
 	foe["STSTART_Paralysis"] = false
 	foe["STSTART_Petrification"] = false
@@ -178,6 +179,7 @@ local foe = {}
 	foe["RATE_ITM_HEALINGHERB"] = 0
 	foe["RATE_ITM_HEALSHOWER"] = 0
 	foe["RATE_ITM_HOLYSCROLL"] = 0
+	foe["RATE_ITM_INFERNOORB"] = 0
 	foe["RATE_ITM_MAGICDUST"] = 0
 	foe["RATE_ITM_MANDRAKE"] = 0
 	foe["RATE_ITM_MEDICINE"] = 0
@@ -289,6 +291,7 @@ local foe = {}
 	foe["TARGET_ITM_HEALINGHERB"] = "Random"
 	foe["TARGET_ITM_HEALSHOWER"] = "Random"
 	foe["TARGET_ITM_HOLYSCROLL"] = "Random"
+	foe["TARGET_ITM_INFERNOORB"] = "Random"
 	foe["TARGET_ITM_MAGICDUST"] = "Random"
 	foe["TARGET_ITM_MANDRAKE"] = "Random"
 	foe["TARGET_ITM_MEDICINE"] = "Random"
@@ -342,6 +345,7 @@ local foe = {}
 	foe["Rate Steal \50"] = 0
 	foe["Rate Steal \51"] = 0
 	foe["SR_Curse "] = 100
+	foe["SR_Death"] = 100
 	foe["SR_Disease "] = 100
 	foe["SR_Paralysis "] = 100
 	foe["SR_Petrification "] = 100

@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Tue 07 February 2017; 11:35:46
+-- File Generated: Tue 07 February 2017; 23:26:42
 
 
 local foe = {}
@@ -59,6 +59,7 @@ local foe = {}
 	foe["SKILL\51_AAA_GUARD"] = true
 	foe["SKILL\51_ABL_FOE_PARADIVE"] = true
 	foe["STSTART_Curse"] = false
+	foe["STSTART_Death"] = false
 	foe["STSTART_Disease"] = false
 	foe["STSTART_Paralysis"] = false
 	foe["STSTART_Petrification"] = false
@@ -154,6 +155,7 @@ local foe = {}
 	foe["RATE_ITM_HEALINGHERB"] = 0
 	foe["RATE_ITM_HEALSHOWER"] = 0
 	foe["RATE_ITM_HOLYSCROLL"] = 0
+	foe["RATE_ITM_INFERNOORB"] = 0
 	foe["RATE_ITM_MAGICDUST"] = 0
 	foe["RATE_ITM_MANDRAKE"] = 0
 	foe["RATE_ITM_MEDICINE"] = 0
@@ -265,6 +267,7 @@ local foe = {}
 	foe["TARGET_ITM_HEALINGHERB"] = "Random"
 	foe["TARGET_ITM_HEALSHOWER"] = "Random"
 	foe["TARGET_ITM_HOLYSCROLL"] = "Random"
+	foe["TARGET_ITM_INFERNOORB"] = "Random"
 	foe["TARGET_ITM_MAGICDUST"] = "Random"
 	foe["TARGET_ITM_MANDRAKE"] = "Random"
 	foe["TARGET_ITM_MEDICINE"] = "Random"
@@ -318,6 +321,7 @@ local foe = {}
 	foe["Rate Steal \50"] = 3
 	foe["Rate Steal \51"] = 10
 	foe["SR_Curse "] = 0
+	foe["SR_Death"] = 60
 	foe["SR_Disease "] = 0
 	foe["SR_Paralysis "] = 0
 	foe["SR_Petrification "] = 0
