@@ -32,12 +32,15 @@
   
  **********************************************
  
-version: 17.02.04
+version: 17.02.07
 ]]
 
 -- @USE /script/use/specific/plasmafloor.lua
 
 function genpuzzle()
+  local counton  
+  repeat
+     counton=0
      local tf = {[0]=false,[1]=true}
      local tt = {[0]='gfx/textures/objects/kaars uit.png',[1]='gfx/textures/objects/kaars.png'}
      puzzletag = "&DONE.SOLVED.SPIRATA.FIRE["..Maps.LayerCodeName.."]"
@@ -48,11 +51,13 @@ function genpuzzle()
          local r=rand(0,1)
          local v=Maps.Obj.Obj('Voorbeeld'..i)
          local p=Maps.Obj.Obj('NPC_K'..i)
+         if tf[r] then counton=counton+1 end
          puzzle[i] = tf[r]
          skaars[i] = false
          v.TextureFile=tt[r]
          if solved then p.TextureFile=tt[r] else p.TextureFile=tt[0] end
      end
+  until counton>01   
 end
 
 function Kaars(i)
