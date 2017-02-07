@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.21
+version: 17.02.07
 ]]
 
 -- abl_hero_jake_2ps = {5},abl_hero_jake_3ps={25},abl_hero_jake_4ps={50},abl_hero_jake_berserk={10,5}
@@ -54,8 +54,8 @@ local r = {
                                        abl_hero_marrilona_speedup = {[3]=1},       --  2
                                        abl_hero_marrilona_heal = {[4]=1},          --  3
                                        abl_hero_marrilona_protect = {[5]=1},       --  4
-                                       abl_hero_marrilona_rock = {[5]=7},          --  5
-                                       abl_hero_marrilona_splash = {[4]=7},        --  6
+                                       abl_hero_marrilona_rock = {[5]=3+skill},    --  5
+                                       abl_hero_marrilona_splash = {[4]=3+skill},  --  6
                                        abl_hero_marrilona_zap = {[2]=5,[3]=5},     --  7
                                        abl_hero_marrilona_chill = {[3]=7, [4]=10}, --  8
                                        abl_hero_marrilona_empower = {[2]=25},      --  9
@@ -67,9 +67,12 @@ if fullversion then -- That's right Marrilona will not get her level #2 and leve
    r["2. Level 2"] = {
                                        abl_hero_marrilona_permanence = {25,25,25,25,25}, --  1
                                        abl_hero_marrilona_eternalflame = {[2]=4^skill},  --  2
-                                       abl_hero_marrilona_tsunami = {[1]=10, [4]=25}     --  3
+                                       abl_hero_marrilona_tsunami = {[1]=10, [4]=25},    --  3
+                                       abl_hero_marrilona_fireblast = {[1]=5, [2]=15}    --  4
                      }
-   r["3. Level 3"] = {                 abl_hero_marrilona_stone2flesh = {[3]=10,[4]=65}} --  1
+   r["3. Level 3"] = {                 abl_hero_marrilona_stone2flesh = {[3]=10,[4]=65}, --  1
+                                       abl_hero_marrilona_inferno = {[1]=5*skill,[2]=15*skill} -- 2
+                     }                  
 end
              
 return r

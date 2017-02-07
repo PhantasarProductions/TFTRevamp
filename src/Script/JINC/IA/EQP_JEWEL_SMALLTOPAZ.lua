@@ -1,6 +1,6 @@
 --[[
   EQP_JEWEL_SMALLTOPAZ.lua
-  Version: 17.02.04
+  Version: 17.02.07
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================

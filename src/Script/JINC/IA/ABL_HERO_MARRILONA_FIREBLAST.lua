@@ -1,7 +1,7 @@
 --[[
-  ITM_POTION.lua
+  ABL_HERO_MARRILONA_FIREBLAST.lua
   Version: 17.02.07
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -35,13 +35,18 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ABL_APCost"] = 50,
 	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 75,
+	["ADDCARD_Action_Number"] = 3,
+	["Attack"] = 150,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "Now this is a nice healing item",
-	["Heal"] = 750,
+	["Attack_AllowCritical"] = true,
+	["Attack_AttackStat"] = "Intelligence",
+	["Attack_DefenseStat"] = "Resistance",
+	["Attack_Element"] = "Flame",
+	["Desc"] = "Burn, baby, burn!",
+	["EQP_STAT_Intelligence"] = 1,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -49,17 +54,22 @@ ret = {
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
+	["ITM_EQP_For"] = "Marrilona",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 300,
-	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "Heal",
-	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Potion",
-	["Type"] = "Item",
-	["Voice"] = "Heal"}
+	["ITM_ShopPrice"] = 250,
+	["ITM_Type"] = "Weapon",
+	["ITM_WeaponAbility"] = true,
+	["Rew_GainAP"] = 5,
+	["SpellAni"] = "BurnAll",
+	["Stance"] = "Attack",
+	["Target"] = "AF",
+	["Title"] = "Fireblast",
+	["Type"] = "Ability",
+	["Voice"] = "Fire",
+	["rew_CreateSkill1"] = true,
+	["rew_GainSkill1"] = 1,
+	["rew_GainSkill2"] = 15}
 
 return ret
 

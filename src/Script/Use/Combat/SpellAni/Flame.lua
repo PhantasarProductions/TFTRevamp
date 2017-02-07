@@ -1,7 +1,7 @@
 --[[
   Flame.lua
-  Version: 16.10.21
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.02.07
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -116,8 +116,8 @@ function SpellAni.Inferno()
     Time.Sleep(100)        
   end    
   CSay("Creating Flames")   
-  for y = 10,600,10 do
-    for x=1,5 do table.insert(fl,{x=rand(0,800),y=y}) end
+  for y = 10,SH,10 do
+    for x=1,5 do table.insert(fl,{x=rand(0,SW),y=y}) end
   end
   SFX('Audio/SFX/SpellAni/Fire.ogg')    
   for ak=0,9 do
