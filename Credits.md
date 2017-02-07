@@ -184,12 +184,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Snake.lua
     1. Script: Script/JINC/Foes/reg/Thief.lua
     1. Script: Script/JINC/Foes/reg/Zombie.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
     1. Script: Script/JINC/IA/AAA_GUARD.lua
     1. Script: Script/JINC/IA/ABL_FOE_BACTERIATUSK.lua
     1. Script: Script/JINC/IA/ABL_FOE_CRUSH.lua
     1. Script: Script/JINC/IA/ABL_FOE_DESPERATEATTACK.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
     1. Script: Script/JINC/IA/ABL_FOE_FLAMESTRIKE.lua
     1. Script: Script/JINC/IA/ABL_FOE_GAZE.lua
@@ -452,11 +452,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/Flow/Execution.lua
     1. Script: Script/Use/Combat/Flow/FoeInput.lua
     1. Script: Script/Use/Combat/Flow/Idle.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/Flow/PlayerInput.lua
     1. Script: Script/Use/Combat/Flow/TheEnd.lua
     1. Script: Script/Use/Combat/FoeAI/AAAAA.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/FoeAI/Default.lua
     1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
@@ -521,12 +521,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png
