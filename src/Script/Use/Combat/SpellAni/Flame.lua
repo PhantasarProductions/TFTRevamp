@@ -69,12 +69,12 @@ function SpellAni.BurnAll(ActG,ActT,TarG,TarT)
   -- @CASE "Hero"
   for ak=1,4 do
     x,y = FighterCoords(TarG,ak)
-    if RPGStat.PartyTag(ak)~="" and RPGStat.Points(RPGStat.PartyTag(ak),"HP")>0 then table.insert(tlist,{x=x,y=y}) end
+    if RPGStat.PartyTag(ak)~="" and RPGStat.Points(RPGStat.PartyTag(ak),"HP").Have>0 then table.insert(tlist,{x=x,y=y}) end
   end
   -- @CASE "Foe"
   for ak=1,9 do
     x,y = FighterCoords(TarG,ak)
-    if Fighters.Foe[ak] and RPGStat.Points(Fighters.Foe[ak].Tag,"HP")>0 then table.insert(tlist,{x=x,y=y}) end
+    if Fighters.Foe[ak] and RPGStat.Points(Fighters.Foe[ak].Tag,"HP").Have>0 then table.insert(tlist,{x=x,y=y}) end
   end       
   -- @ENDSELECT       
   Load_SAP_Flame()

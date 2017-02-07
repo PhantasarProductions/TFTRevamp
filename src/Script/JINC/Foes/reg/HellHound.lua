@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Tue 07 February 2017; 09:45:18
+-- File Generated: Tue 07 February 2017; 11:35:47
 
 
 local foe = {}
@@ -45,37 +45,31 @@ local foe = {}
 	foe["NEWGAMEPLUS_ABL_FOE_FLAMESTRIKE"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_FIREBLAST"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_FLAME"] = true
-	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_INFERNO"] = true
 	foe["NORMAL_AAA_ATTACK"] = true
 	foe["NORMAL_AAA_GUARD"] = true
 	foe["NORMAL_ABL_FOE_FLAMESTRIKE"] = true
 	foe["NORMAL_ABL_HERO_MARRILONA_FIREBLAST"] = true
 	foe["NORMAL_ABL_HERO_MARRILONA_FLAME"] = true
-	foe["NORMAL_ABL_HERO_MARRILONA_INFERNO"] = true
 	foe["OVERSOUL_AAA_ATTACK"] = true
 	foe["OVERSOUL_AAA_GUARD"] = true
 	foe["OVERSOUL_ABL_FOE_FLAMESTRIKE"] = true
 	foe["OVERSOUL_ABL_HERO_MARRILONA_FIREBLAST"] = true
 	foe["OVERSOUL_ABL_HERO_MARRILONA_FLAME"] = true
-	foe["OVERSOUL_ABL_HERO_MARRILONA_INFERNO"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
 	foe["SKILL\49_AAA_GUARD"] = true
 	foe["SKILL\49_ABL_FOE_FLAMESTRIKE"] = true
 	foe["SKILL\49_ABL_HERO_MARRILONA_FIREBLAST"] = true
 	foe["SKILL\49_ABL_HERO_MARRILONA_FLAME"] = true
-	foe["SKILL\49_ABL_HERO_MARRILONA_INFERNO"] = false
 	foe["SKILL\50_AAA_ATTACK"] = true
 	foe["SKILL\50_AAA_GUARD"] = true
 	foe["SKILL\50_ABL_FOE_FLAMESTRIKE"] = true
 	foe["SKILL\50_ABL_HERO_MARRILONA_FIREBLAST"] = true
 	foe["SKILL\50_ABL_HERO_MARRILONA_FLAME"] = true
-	foe["SKILL\50_ABL_HERO_MARRILONA_INFERNO"] = true
 	foe["SKILL\51_AAA_ATTACK"] = true
 	foe["SKILL\51_AAA_GUARD"] = true
 	foe["SKILL\51_ABL_FOE_FLAMESTRIKE"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_FIREBLAST"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_FLAME"] = true
-	foe["SKILL\51_ABL_HERO_MARRILONA_INFERNO"] = true
 	foe["STSTART_Curse"] = false
 	foe["STSTART_Disease"] = false
 	foe["STSTART_Paralysis"] = false
@@ -139,7 +133,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_FIREBLAST"] = 5
 	foe["RATE_ABL_HERO_MARRILONA_FLAME"] = 25
 	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_INFERNO"] = 1
+	foe["RATE_ABL_HERO_MARRILONA_INFERNO"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PERMANENCE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PROTECT"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ROCK"] = 0

@@ -333,6 +333,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_HEALINGHERB.lua
     1. Script: Script/JINC/IA/ITM_HEALSHOWER.lua
     1. Script: Script/JINC/IA/ITM_HOLYSCROLL.lua
+    1. Script: Script/JINC/IA/ITM_INFERNOORB.lua
     1. Script: Script/JINC/IA/ITM_MAGICDUST.lua
     1. Script: Script/JINC/IA/ITM_MANDRAKE.lua
     1. Script: Script/JINC/IA/ITM_MEDICINE.lua
@@ -451,9 +452,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/Flow/Execution.lua
     1. Script: Script/Use/Combat/Flow/FoeInput.lua
     1. Script: Script/Use/Combat/Flow/Idle.lua
-    1. Script: Script/Use/Combat/Flow/PlayerInput.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
+    1. Script: Script/Use/Combat/Flow/PlayerInput.lua
     1. Script: Script/Use/Combat/Flow/TheEnd.lua
     1. Script: Script/Use/Combat/FoeAI/AAAAA.lua
     1. Script: Script/Use/Combat/FoeAI/Default.lua
