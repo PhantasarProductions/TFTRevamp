@@ -1,5 +1,5 @@
 --[[
-  ABL_FOE_TAKEOVER.lua
+  ABL_HERO_MARRILONA_SPEEDUP.lua
   Version: 17.02.08
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -35,14 +35,16 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ABL_APCost"] = 25,
 	["ADDCARD_Action_Act"] = "Self",
 	["ADDCARD_Action_Interval"] = 5,
-	["ADDCARD_Char_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 10,
+	["ADDCARD_Char_Number"] = 3,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["EffectScript"] = "Takeover",
+	["Desc"] = "Adds 3 cards of the targeted ally",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -54,11 +56,12 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "Heal",
 	["Stance"] = "Cast",
-	["Target"] = "1F",
-	["Title"] = "Takeover",
-	["Type"] = "Item"}
+	["Target"] = "1A",
+	["Title"] = "Accelerator",
+	["Type"] = "Ability",
+	["Voice"] = "Speed",
+	["rew_GainSkill3"] = 15}
 
 return ret
 
