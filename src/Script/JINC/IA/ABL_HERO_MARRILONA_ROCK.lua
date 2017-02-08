@@ -1,4 +1,5 @@
 ret = {
+	["ABL_APCost"] = 15,
 	["ADDCARD_Action_Act"] = "Self",
 	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
@@ -21,7 +22,7 @@ ret = {
 	["Stance"] = "Cast",
 	["Target"] = "1F",
 	["Title"] = "Rock",
-	["Type"] = "Item",
+	["Type"] = "Ability",
 	["rew_GainSkill5"] = 5}
 
 return ret
