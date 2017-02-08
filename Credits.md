@@ -241,6 +241,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_STONE2FLESH.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_TSUNAMI.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ZAP.lua
+    1. Script: Script/JINC/IA/ABL_HERO_SPEEDUP.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_CURSE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_DARKNESS.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_DARKVISION.lua
@@ -454,9 +455,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/Flow/Idle.lua
     1. Script: Script/Use/Combat/Flow/PlayerInput.lua
     1. Script: Script/Use/Combat/Flow/TheEnd.lua
-    1. Script: Script/Use/Combat/FoeAI/AAAAA.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
+    1. Script: Script/Use/Combat/FoeAI/AAAAA.lua
     1. Script: Script/Use/Combat/FoeAI/Default.lua
     1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
@@ -521,12 +522,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png
