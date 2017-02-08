@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.01.21
+  Version: 17.02.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -295,8 +295,14 @@ function MayTeach(ch)
        --for ablkey,ablreq in spairs(pagedata) do
        for ablindex,ablkey,ablreq in iSpell(ch,ablpage[ch][pagenum]) do
            local al = not heroabl[ch][ablkey]
+           -- CSay("- ability "..ablkey.." >> "..sval(al).." << "..sval(heroabl[ch][ablkey]))
            for i,l in pairs(ablreq) do
-               al = al and RPG.PointsExists(ch,"SK_LVL_"..i)==1 and RPG.Points(ch,'SK_LVL_'..i).Have>=l               
+               al = al and RPG.PointsExists(ch,"SK_LVL_"..i)~=0 and RPG.Points(ch,'SK_LVL_'..i).Have>=l
+               --[[
+               CSay(" = "..i.." exists "..RPG.PointsExists(ch,"SK_LVL_"..i).." in skill list of "..ch)
+               if RPG.PointsExists(ch,"SK_LVL_"..i)~=0 then CSay(" = " ..ch.." has level "..RPG.Points(ch,'SK_LVL_'..i).Have) end
+               CSay(" = "..i.." requires "..l.."   learning is now: "..sval(al))
+               --]]               
            end
            if al then
               CSay('= Yeah '..ablkey.." will be learned") 

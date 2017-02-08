@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 17.02.04
+  Version: 17.02.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -340,6 +340,8 @@ function FManaOrbRespond.JAKE(a,ch)
      end
      RPG.Points(w,exp,1).Maximum=10
      RPG.Points(w,lvl,1).Maximum=1000/skill
+     RPG.Points(w,lvl).Minimum=1
+     RPG.Points(w,lvl).Have=1
      for i=1,5 do
          if RPG.PointsExists("Jake_Fairy","SK_EXP_"..i)==1 then RPG.LinkPoints('Jake_Fairy','Jake_Human','SK_EXP_'..i) end
          if RPG.PointsExists("Jake_Fairy","SK_LVL_"..i)==1 then RPG.LinkPoints('Jake_Fairy','Jake_Human','SK_LVL_'..i) end
