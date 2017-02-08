@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 17.02.07
+version: 17.02.08
 ]]
--- File Generated: Tue 07 February 2017; 23:25:12
+-- File Generated: Wed 08 February 2017; 09:04:55
 
 
 local foe = {}
@@ -154,6 +154,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_STONE\50FLESH"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_TSUNAMI"] = 2
 	foe["RATE_ABL_HERO_MARRILONA_ZAP"] = 0
+	foe["RATE_ABL_HERO_SPEEDUP"] = 0
 	foe["RATE_ABL_MASTER_FANDALORA_CURSE"] = 0
 	foe["RATE_ABL_MASTER_FANDALORA_DARKNESS"] = 0
 	foe["RATE_ABL_MASTER_FANDALORA_DARKVISION"] = 0
@@ -266,6 +267,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_MARRILONA_STONE\50FLESH"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_TSUNAMI"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ZAP"] = "Random"
+	foe["TARGET_ABL_HERO_SPEEDUP"] = "Random"
 	foe["TARGET_ABL_MASTER_FANDALORA_CURSE"] = "Random"
 	foe["TARGET_ABL_MASTER_FANDALORA_DARKNESS"] = "Random"
 	foe["TARGET_ABL_MASTER_FANDALORA_DARKVISION"] = "Random"

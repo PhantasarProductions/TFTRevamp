@@ -11,7 +11,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 
 
 - Aeris
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/Aer.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Aqua.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/Ignis.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/Terra.png
     1. Graphics: GFX/Big_Char/Dandor.png
     1. Graphics: GFX/Big_Char/Hando Stillor.png
     1. Graphics: GFX/Big_Char/Jake.png
@@ -158,6 +161,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
     1. Script: Script/JINC/Foes/Boss/GobKing.lua
     1. Script: Script/JINC/Foes/Boss/Harry1.lua
+    1. Script: Script/JINC/Foes/Boss/Ignis.lua
     1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
     1. Script: Script/JINC/Foes/Boss/Librarian.lua
     1. Script: Script/JINC/Foes/Boss/Mega Ghost.lua
@@ -189,7 +193,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_BACTERIATUSK.lua
     1. Script: Script/JINC/IA/ABL_FOE_CRUSH.lua
     1. Script: Script/JINC/IA/ABL_FOE_DESPERATEATTACK.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
     1. Script: Script/JINC/IA/ABL_FOE_FLAMESTRIKE.lua
     1. Script: Script/JINC/IA/ABL_FOE_GAZE.lua
@@ -221,6 +224,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_STICKSWING.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_TREATMENT.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_VITALIZE.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_2PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_3PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_4PS.lua
@@ -455,8 +459,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/Flow/Idle.lua
     1. Script: Script/Use/Combat/Flow/PlayerInput.lua
     1. Script: Script/Use/Combat/Flow/TheEnd.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/FoeAI/AAAAA.lua
     1. Script: Script/Use/Combat/FoeAI/Default.lua
     1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
@@ -482,6 +484,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/StatusChanges/Paralysis and Sleep.lua
     1. Script: Script/Use/Combat/StatusChanges/Permanence.lua
     1. Script: Script/Use/Combat/StatusChanges/Petrification.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/StatusChanges/Poison and Disease.lua
     1. Script: Script/Use/Combat/StatusChanges/Spirata_StatusChange.lua
     1. Script: Script/Use/Combat/StatusChanges/Zombie.lua
@@ -522,12 +526,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png

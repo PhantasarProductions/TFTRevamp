@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.07
+version: 17.02.08
 ]]
 
 -- @USE /script/use/specific/plasmafloor.lua
@@ -87,6 +87,17 @@ function NPC_K6() Kaars(6) end
 function NPC_K7() Kaars(7) end
 function NPC_K8() Kaars(8) end
 function NPC_K9() Kaars(9) end
+
+function Boss()
+  ClearCombatData()
+  Schedule('MAP','ManaOrb')
+  Var.D("$COMBAT.FOE_1","Boss/Ignis")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  Var.D("$COMBAT.MUSIC","Music/SpecialBoss/Summon the Rawk.ogg")
+  Var.D("$COMBAT.ARENA","spiratafire.png")
+  StartBoss("Protector of the Fire Spirata","Ignis")    
+end
+
 
 function MAP_FLOW()
    FlowBlops()

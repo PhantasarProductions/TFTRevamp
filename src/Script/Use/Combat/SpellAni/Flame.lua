@@ -1,6 +1,6 @@
 --[[
   Flame.lua
-  Version: 17.02.07
+  Version: 17.02.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -68,13 +68,17 @@ function SpellAni.BurnAll(ActG,ActT,TarG,TarT)
   -- @SELECT TarG
   -- @CASE "Hero"
   for ak=1,4 do
-    x,y = FighterCoords(TarG,ak)
-    if RPGStat.PartyTag(ak)~="" and RPGStat.Points(RPGStat.PartyTag(ak),"HP").Have>0 then table.insert(tlist,{x=x,y=y}) end
+    if RPGStat.PartyTag(ak)~="" then
+       x,y = FighterCoords(TarG,ak)
+       if RPGStat.Points(RPGStat.PartyTag(ak),"HP").Have>0 then table.insert(tlist,{x=x,y=y}) end
+    end   
   end
   -- @CASE "Foe"
   for ak=1,9 do
-    x,y = FighterCoords(TarG,ak)
-    if Fighters.Foe[ak] and RPGStat.Points(Fighters.Foe[ak].Tag,"HP").Have>0 then table.insert(tlist,{x=x,y=y}) end
+    if Fighters.Foe[ak] then
+       x,y = FighterCoords(TarG,ak)
+       if RPGStat.Points(Fighters.Foe[ak].Tag,"HP").Have>0 then table.insert(tlist,{x=x,y=y}) end
+    end   
   end       
   -- @ENDSELECT       
   Load_SAP_Flame()
