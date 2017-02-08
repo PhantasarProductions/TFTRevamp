@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.01.20
+  Version: 17.02.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -130,19 +130,9 @@ function PerformAction(act,group,i)
      end
      -- Target Card Addition
      local card2add = { group = group, tag=myfighter.tag, letter=myfighter.letter }
-     if act.ADDCARD_Char_Numberthen then
+     if act.ADDCARD_Char_Number then
         for ak=1,act.ADDCARD_Char_Number do
             AddCard(card2add,ak*(act.ADDCARD_Char_Interval or 2))
-        end
-     end
-     -- Ability Card Addition
-     if act.ADDCARD_Action_Number and (not nextact.auto) then
-        card2add = { group = group, tag=myfighter.tag, letter=myfighter.letter, auto=true }
-        card2add.nextact = {}
-        for f,i in pairs(nextact) do card2add.nextact[f]=i; CSay("Added to new card: "..f) end
-        if act.ADDCARD_Action_Act~="Self" then card2add.nextact.act=act.ADDCARD_Action_Act end
-        for ak=1,act.ADDCARD_Action_Number do
-            AddCard(card2add,ak*(act.ADDCARD_Action_Interval or 2))            
         end
      end
      -- Cause status changes (this always comes last)
@@ -264,6 +254,16 @@ function fflow.Execution()
    if nextact.executor.group=='Hero' then -- no anti-autocheck here. The hero may still claim victory of a by him or her cast repeating spell. I will block the stance change to make special stances like death not getting bugged. 
       LastAction=nextact.executor.tag 
       if not nextact.auto then myactor.stace='idle' end
+   end
+   -- Ability Card Addition
+   if act.ADDCARD_Action_Number and (not nextact.auto) then
+        local card2add = { group = nextact.group, tag=nextact.tag, letter=nextact.letter, auto=true }
+        card2add.nextact = {}
+        for f,i in pairs(nextact) do card2add.nextact[f]=i; CSay("Added to new card: "..f) end
+        if act.ADDCARD_Action_Act~="Self" then card2add.nextact.act=act.ADDCARD_Action_Act end
+        for ak=1,act.ADDCARD_Action_Number do
+            AddCard(card2add,ak*(act.ADDCARD_Action_Interval or 2))            
+        end
    end
    -- Is there a message? (Should only be used for learning new spells).
    if nextact.aftermsg then

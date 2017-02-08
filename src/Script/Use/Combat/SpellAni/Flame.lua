@@ -82,7 +82,7 @@ function SpellAni.BurnAll(ActG,ActT,TarG,TarT)
   end       
   -- @ENDSELECT       
   Load_SAP_Flame()
-  SFX('Audi/SFX/SpellAni/Fire.ogg') 
+  SFX('Audio/SFX/SpellAni/Fire.ogg') 
   for ak=0,9 do
     DrawScreen()
     for t in each(tlist) do
