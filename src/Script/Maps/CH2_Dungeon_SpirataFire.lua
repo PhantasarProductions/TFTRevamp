@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.08
+version: 17.02.09
 ]]
 
 -- @USE /script/use/specific/plasmafloor.lua
@@ -98,6 +98,40 @@ function Boss()
   StartBoss("Protector of the Fire Spirata","Ignis")    
 end
 
+-- Meet the Spirata
+function Spirata()
+    if Done('&DONE.SPIRATA.Fire') then return end
+    Shift('Human')
+    PartyPop('Spirata','North')
+    MapText('SPIRATA')
+    Done('&SPIRATA.JAKE')
+    Done('&SPIRATA.JAKE_HUMAN')
+    Done('&SPIRATA.JAKE_FIRY')
+    if skill~=3 then
+       RPG.SetStat('Jake_Human','EXP',0)
+       for i=skill,5 do
+           if RPG.PointsExists('Jake_Human','SK_LVL_'..i)==1 then RPG.Points('Jake_Human','SK_LVL_'..i).Inc(6/skill) end
+       end
+    end
+    local spirscript = [[ -- Spirata Wall changes
+      local spirata = Maps.Obj.Obj('SpirataWall')
+      spirata.AltBlend=0
+      spirata.TextureFile='GFX/Textures/Marble/Wall - N.png'
+      spirata.R=180
+      spirata.G=60
+      spirata.B=0
+      -- All done
+    ]]
+    Maps.PermaWrite(spirscript)
+    local spirscriptcompiled = loadstring(spirscript)
+    local ok,error = pcall(spirscriptcompiled)
+    if not ok then Sys.Error(error,'Note,This is from an attempt to remove the Spirata wall.') end
+    MapText('SPIRATAPOST')
+    Var.D('$WMCHAT','SPIRATAFIRE')
+    WorldMap()
+end
+
+
 
 function MAP_FLOW()
    FlowBlops()
@@ -109,4 +143,6 @@ function GALE_OnLoad()
    InitBlops()
    ZA_Enter('Bye',WorldMap)
    ZA_Enter('genpuzzle',genpuzzle)
+   ZA_Enter('SpirataMusic',Music,"Hub/Angevin.ogg")
+   ZA_Enter("MapMusic",MapMusic)
  end
