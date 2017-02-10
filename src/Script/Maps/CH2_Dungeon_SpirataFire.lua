@@ -145,4 +145,5 @@ function GALE_OnLoad()
    ZA_Enter('genpuzzle',genpuzzle)
    ZA_Enter('SpirataMusic',Music,"Hub/Angevin.ogg")
    ZA_Enter("MapMusic",MapMusic)
+   ZA_Enter("StartSpirataEvent",Spirata)
  end
