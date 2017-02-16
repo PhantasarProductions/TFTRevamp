@@ -32,8 +32,11 @@
   
  **********************************************
  
-version: 17.02.16
+version: 17.02.17
 ]]
+
+-- @USE /script/use/specific/plasmafloor.lua
+
 function MAP_FLOW()
    --FlowBlops()
    FlowMoveTex(hsin)

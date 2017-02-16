@@ -403,6 +403,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH2_Dungeon_ElfRoad.lua
     1. Script: Script/Maps/CH2_Dungeon_SpirataFire.lua
     1. Script: Script/Maps/CH2_Dungeon_SpirataWater.lua
+    1. Script: Script/Maps/CH2_Dungeon_SpirataWind.lua
     1. Script: Script/Maps/CH2_Dungeon_VandarRoad.lua
     1. Script: Script/Maps/CH2_Town_Dreshka.lua
     1. Script: Script/Maps/CH2_Town_Iskarderiu.lua
@@ -485,9 +486,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
     1. Script: Script/Use/Combat/StatusChanges/Guard.lua
     1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
-    1. Script: Script/Use/Combat/StatusChanges/Paralysis and Sleep.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
+    1. Script: Script/Use/Combat/StatusChanges/Paralysis and Sleep.lua
     1. Script: Script/Use/Combat/StatusChanges/Permanence.lua
     1. Script: Script/Use/Combat/StatusChanges/Petrification.lua
     1. Script: Script/Use/Combat/StatusChanges/Poison and Disease.lua
@@ -530,12 +531,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png
