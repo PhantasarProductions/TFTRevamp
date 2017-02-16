@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_VIRUSSTAB.lua
-  Version: 17.01.15
+  Version: 17.01.16
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================

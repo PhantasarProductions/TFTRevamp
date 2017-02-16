@@ -17,12 +17,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Big_Char/JakeMarrilona.GIF
     1. Graphics: GFX/Big_Char/JakeMarrilona.png
     1. Graphics: GFX/Big_Char/JakeMarrilona.xcf
+    1. Graphics: GFX/Big_Char/Marrilona (Autosaved).piko
     1. Graphics: GFX/Big_Char/Marrilona.piko
     1. Graphics: GFX/Big_Char/Marrilona.png
     1. Graphics: GFX/Big_Char/Marrilona_Christmas.png
     1. Graphics: GFX/Big_Char/Marrilona_Christmas.xcf
     1. Graphics: GFX/Big_Char/Marrilona_Easter.png
     1. Graphics: GFX/Big_Char/Marrilona_NewYear.png
+    1. Graphics: GFX/Big_Char/Marrilona_Valentine.png
     1. Graphics: GFX/Big_Char/Negatief_Marrilona.Png
     1. Graphics: GFX/BoxText/Portret/Dandor/General.png
     1. Graphics: GFX/BoxText/Portret/Dandor/General.xcf
@@ -32,6 +34,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Jake/Angry_Fairy.png
     1. Graphics: GFX/BoxText/Portret/Jake/Blush.png
     1. Graphics: GFX/BoxText/Portret/Jake/Blush_Fairy.png
+    1. ???: GFX/BoxText/Portret/Jake/General (Autosaved).piko-png
     1. Graphics: GFX/BoxText/Portret/Jake/General.png
     1. Graphics: GFX/BoxText/Portret/Jake/General.xcf
     1. Graphics: GFX/Boxtext/Portret/Jake_Fairy/General.png
@@ -43,6 +46,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Marrilona/All.png
     1. Graphics: GFX/BoxText/Portret/Marrilona/Angry.png
     1. Graphics: GFX/BoxText/Portret/Marrilona/Blown.png
+    1. ???: GFX/BoxText/Portret/Marrilona/Blush (Autosaved).piko-png
     1. Graphics: GFX/BoxText/Portret/Marrilona/Blush.png
     1. Graphics: GFX/BoxText/Portret/Marrilona/Burned.png
     1. Graphics: GFX/BoxText/Portret/Marrilona/Cry.png
@@ -428,11 +432,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/valstr.lua
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
     1. General Data: gfx/Textures/Town/Elves/Bench
@@ -443,6 +447,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.piko
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.png
     1. Graphics: GFX/BoxText/Portret/Rosetta/General.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.Action.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.piko
+    1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.png
     1. Game identification data: ID/Test
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Data
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Objects
@@ -456,20 +463,20 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
+    1. Music: Music/Boss/BossIntro.ogg
+    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
+    1. Music: Music/Sys/Silence.ogg
     1. Graphics: GFX/Chapters/3.png
     1. Graphics: GFX/Chapters/4.png
     1. Graphics: GFX/Combat/End/Game Over.png
     1. Graphics: GFX/Combat/End/YouWin.png
     1. Graphics: GFX/Loading/Graphic.png
-    1. Music: Music/Boss/BossIntro.ogg
     1. Graphics: GFX/Loading/Saving.png
-    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Graphics: GFX/Logo/End Of Prologue.hot
     1. Graphics: GFX/Logo/End Of Prologue.png
     1. Graphics: GFX/Logo/Game Over.png
-    1. Music: Music/Sys/Silence.ogg
     1. Graphics: GFX/Logo/Phantasar Productions.png
     1. Graphics: GFX/Logo/The End.png
     1. Graphics: GFX/Logo/Title.png

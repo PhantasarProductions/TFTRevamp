@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 17.01.05
+Version: 17.01.16
 End Rem
 
 Strict
@@ -34,7 +34,7 @@ Import tricky_Units.ListDir
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - LoadGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","17.01.05"
+MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","17.01.16"
 
 afr_InpCol 0,27,0,0,155,0
 afr_WinCol 0,255,0,0,25,0
@@ -233,6 +233,8 @@ If Month()=12 Then
 	SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona_Christmas.png") ),PANELPIXMAP_CENTER
 ElseIf Month()=1 And Day()<=6 	
 	SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona_NewYear.png") ),PANELPIXMAP_CENTER
+ElseIf Month()=2 And Day()<=18 and Day()>=10 	
+	SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona_Valentine.png") ),PANELPIXMAP_CENTER
 ElseIf Month()=4 Or (Month()=3 And Day()>20)
 	SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona_Easter.png") ),PANELPIXMAP_CENTER
 Else	

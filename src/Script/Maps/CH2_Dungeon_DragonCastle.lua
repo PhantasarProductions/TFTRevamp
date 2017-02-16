@@ -35,16 +35,24 @@
 version: 17.01.16
 ]]
 
-NoDarkness = {}
+NoDarkness = {'courtyard'}
 
 function MAP_FLOW()
    local dark = Maps.Obj.Obj("Darkness")
    local play = Actors.Actor('PLAYER')
    dark.X = play.X
    dark.Y = play.Y
+end
+
+function Courtyard(spot)
+   GoToLayer('courtyard','Start'..spot)
+end
+
+function LeaveCourtyard(spot)
+   GoToLayer('#001','FCY'..spot)
 end   
 
-function GALE_OnLoad()
+function MakeDarkness()
    local layers = mysplit(Maps.Layers(),";")
    local dark
    local scx = math.ceil((SW/3000)*1000); if scx>1000 then scx=1000 end
@@ -62,3 +70,11 @@ function GALE_OnLoad()
    end
    Maps.ReMap()
 end
+
+function GALE_OnLoad()
+   MakeDarkness()
+   ZA_Enter('E_Courtyard',Courtyard,'E')
+   ZA_Enter('W_Courtyard',Courtyard,'W')
+   ZA_Enter('CYUW',LeaveCourtyard,"W")
+   ZA_Enter('CYUO',LeaveCourtyard,"E")
+end   

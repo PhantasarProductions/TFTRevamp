@@ -1,6 +1,6 @@
 --[[
   WAND_THUNDER.lua
-  Version: 17.01.15
+  Version: 17.01.16
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

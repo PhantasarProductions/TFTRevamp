@@ -45,6 +45,7 @@ mc Target
 mc Stance
 @i Attack
 @i Cast
+@i Spirata.Action
 
 string Voice
 
