@@ -1,7 +1,7 @@
 --[[
   MoveTex.lua
-  Version: 16.12.25
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.02.16
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -44,7 +44,7 @@ function InitMoveTex(data)
        CSay('- Scanning layer '..lay) 
        Maps.GotoLayer(lay)
        for obj in KthuraEach('TiledArea') do
-           if suffixed(obj.TextureFile,data.suffix or "WATER.PNG") then 
+           if (data.suffix and suffixed(obj.TextureFile,data.suffix or "WATER.PNG")) or (data.tag and obj.Tag==data.tag) then 
               ret.tiles[#ret.tiles+1] = obj
               obj.SetAlpha(data.alpha or 1000) 
               CSay("  = Added object #"..obj.IDNum) 

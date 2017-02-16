@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_BACTERIATUSK.lua
-  Version: 17.02.09
+  Version: 17.02.10
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

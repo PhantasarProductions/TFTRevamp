@@ -25,6 +25,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Big_Char/Marrilona.png
     1. Graphics: GFX/Big_Char/Marrilona_Christmas.png
     1. Graphics: GFX/Big_Char/Marrilona_Christmas.xcf
+    1. Graphics: GFX/Big_Char/Marrilona_Clown.png
+    1. Graphics: GFX/Big_Char/Marrilona_Clown.xcf
     1. Graphics: GFX/Big_Char/Marrilona_Easter.png
     1. Graphics: GFX/Big_Char/Marrilona_NewYear.png
     1. Graphics: GFX/Big_Char/Marrilona_Valentine.png
@@ -370,6 +372,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/WAND_WIND.lua
     1. Script: Script/JINC/IA/ZZKEY_FIRE.lua
     1. Script: Script/JINC/IA/ZZKEY_KEYWATER.lua
+    1. Script: Script/JINC/IA/ZZKEY_WIND.lua
     1. Script: Script/JINC/Masters/Fandalora.lua
     1. Script: Script/JINC/Masters/Freya.lua
     1. Script: Script/JINC/Masters/Midas.lua
@@ -483,9 +486,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/StatusChanges/Guard.lua
     1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
     1. Script: Script/Use/Combat/StatusChanges/Paralysis and Sleep.lua
-    1. Script: Script/Use/Combat/StatusChanges/Permanence.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
+    1. Script: Script/Use/Combat/StatusChanges/Permanence.lua
     1. Script: Script/Use/Combat/StatusChanges/Petrification.lua
     1. Script: Script/Use/Combat/StatusChanges/Poison and Disease.lua
     1. Script: Script/Use/Combat/StatusChanges/Spirata_StatusChange.lua
@@ -540,6 +543,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/Blops2/Blop5.png
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
+    1. Graphics: gfx/Textures/Sinus/Dark Sinus/HSinus.png
+    1. Graphics: gfx/Textures/Sinus/Dark Sinus/VSinus.png
+    1. Graphics: gfx/Textures/Sinus/Light Sinus/HSinus.png
+    1. Graphics: gfx/Textures/Sinus/Light Sinus/VSinus.png
     1. General Data: gfx/Textures/Town/Elves/Bench
     1. Graphics: gfx/Textures/Town/Elves/Bench.png
     1. Graphics: gfx/Textures/Town/Elves/Fence.png
@@ -573,9 +580,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant09.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant10.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Skeleton.png
-    1. Graphics: GFX/Combat/Fighters/Hero/Jake.Spirata.Action.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Spirata.Action.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake.Spirata.piko
-    1. Graphics: GFX/Combat/Fighters/Hero/Jake.Spirata.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Spirata.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.Action.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.png
@@ -592,9 +599,18 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Data
     1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Objects
     1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Settings
+    1. Map Design: Kthura/CH2_Dungeon_SpirataFirer_BACKUP/Data
+    1. Map Design: Kthura/CH2_Dungeon_SpirataFirer_BACKUP/Objects
+    1. Map Design: Kthura/CH2_Dungeon_SpirataFirer_BACKUP/Settings
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Data
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Objects
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Settings
+    1. Map Design: Kthura/CH2_Dungeon_SpirataWater_BACKUP/Data
+    1. Map Design: Kthura/CH2_Dungeon_SpirataWater_BACKUP/Objects
+    1. Map Design: Kthura/CH2_Dungeon_SpirataWater_BACKUP/Settings
+    1. Map Design: Kthura/CH2_Dungeon_SpirataWind/Data
+    1. Map Design: Kthura/CH2_Dungeon_SpirataWind/Objects
+    1. Map Design: Kthura/CH2_Dungeon_SpirataWind/Settings
     1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Data
     1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Objects
     1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Settings
@@ -604,29 +620,29 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
+    1. Music: Music/Boss/BossIntro.ogg
+    1. Music: Music/Special Boss/AnnoyingBoy.ogg
+    1. Music: Music/Sys/Silence.ogg
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
-    1. Music: Music/Boss/BossIntro.ogg
-    1. Music: Music/Special Boss/AnnoyingBoy.ogg
+    1. Music: Music/Dungeon/JustASong.ogg
     1. Graphics: GFX/Chapters/4.png
     1. Graphics: GFX/Combat/End/Game Over.png
-    1. Music: Music/Sys/Silence.ogg
     1. Graphics: GFX/Combat/End/YouWin.png
     1. Graphics: GFX/Loading/Graphic.png
     1. Graphics: GFX/Loading/Saving.png
     1. Graphics: GFX/Logo/End Of Prologue.hot
     1. Graphics: GFX/Logo/End Of Prologue.png
     1. Graphics: GFX/Logo/Game Over.png
-    1. Music: Music/Dungeon/JustASong.ogg
     1. Graphics: GFX/Logo/Phantasar Productions.png
+    1. Music: Music/Dungeon/Scary Song.ogg
     1. Graphics: GFX/Logo/The End.png
     1. Graphics: GFX/Logo/Title.png
     1. Graphics: GFX/Menu Icons/Buy.png
     1. Graphics: GFX/Menu Icons/Sell.png
     1. Graphics: GFX/Menu Icons/Trade.png
     1. Graphics: GFX/Party/Level Up.png
-    1. Music: Music/Dungeon/Scary Song.ogg
     1. Audio: Audio/Combat/CardSlide.ogg
     1. Audio: Audio/Party/Level Up.ogg
     1. Audio: Audio/Party/Level Up.wav

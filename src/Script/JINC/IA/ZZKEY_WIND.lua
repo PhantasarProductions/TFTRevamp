@@ -1,7 +1,7 @@
 --[[
-  ABL_FOE_SOULCRUSHINGSTORY.lua
+  ZZKEY_WIND.lua
   Version: 17.02.10
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -35,12 +35,14 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["EffectScript"] = "PointAlter",
-	["EffectScript_Arg"] = "HP 1",
+	["Desc"] = "Grants access to temple of the Wind Spirata",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -51,10 +53,10 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Consumable",
+	["ITM_Type"] = "KeyItem",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
-	["Title"] = "Soul Crushing Story",
+	["Title"] = "Aer Key",
 	["Type"] = "Item"}
 
 return ret

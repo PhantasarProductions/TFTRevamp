@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.28
+version: 17.02.10
 ]]
 -- @IF IGNORE
 local SpellScript = {}
@@ -48,7 +48,7 @@ function SpellScript.SpirataTransform(tartag,extag,param)
     local ctext     = ({ Jake = {  0,180,0}, Marrilona = {0,180,0}, Dandor = {  0,  0,0}, HandoStillor={180,0,0}})[ch]
     local alpha     = 0
     local countdown = 1000
-    local ap        = RPG.Points(ch,"AP")
+    local ap        = RPG.Points(extag,"AP")
     local screen    = Image.GrabScreen()
     local apbreuk   = ap.Have/ap.Maximum
     RPG.DefStat(extag,"END_SpirataRate",apbreuk*(RPG.Stat(extag,'Level')*(9/skill)))

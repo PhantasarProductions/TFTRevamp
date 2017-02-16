@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.03
+version: 17.02.10
 ]]
 local RPG = RPGStat
 
@@ -100,6 +100,15 @@ function Fandalora.teach(ch) -- Should return true if master actually decides to
     local maylearn = true
     local rabl = false
     if ch=='Dandor' then return false,false end
+    local points = Fandalora.ShowScore(ch)
+    for i,a in pairs(Fandalora.abl) do
+        if points>=i and (not rabl) then 
+           if not Done('&MASTERLEARNING.FANDALORA['..a..']') then rabl=a 
+           else all = all and CVV('&MASTERLEARNING.FANDALORA['..a..']') end
+        else 
+           all=false    
+        end
+    end
     return rabl,all
 end
 

@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  EQP_HANDOSTILLOR_WP3.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  CH2_Dungeon_SpirataWind.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,27 +32,28 @@
   
  **********************************************
  
-version: 17.02.10
+version: 17.02.16
 ]]
-ret = {
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
-	["Attack_Element"] = "None",
-	["Desc"] = "I see a priest's staff and I want it painted black!",
-	["EQP_STAT_Intelligence"] = 6,
-	["EQP_STAT_Power"] = 3,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "HandoStillor",
-	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 1200,
-	["ITM_Type"] = "Weapon",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Black Staff",
-	["Type"] = "Item"}
+function MAP_FLOW()
+   --FlowBlops()
+   FlowMoveTex(hsin)
+   FlowMoveTex(vsin)
+   FlowMoveTex(wind)
+   local lay = Maps.LayerCodeName;
+   (SubFlow[lay] or Nothing)()
+end
 
-return ret
-
--- This file is an automatically generated file!
-
+function GALE_OnLoad()
+   --InitBlops()
+   hsin = InitMoveTex({X=-1,Y=0,suffix='HSINUS.PNG'})
+   vsin = InitMoveTex({X= 0,Y=1,suffix='VSINUS.PNG'})
+   wind = InitMoveTex({X=-4,Y=0,tag='WindLeft'})
+   --[[
+   ZA_Enter('GenPuz2',GeneratePuzzle,4)
+   ZA_Enter('GenPuz8',GeneratePuzzle,8)
+   ZA_Enter('SpirataRoom',Music,'Hub/Angevin.ogg')
+   ZA_Enter('Kerk'       ,Music,"Dungeon/Chanson d'eglise.ogg")
+   ZA_Enter('Spirata',Spirata)
+   ]]
+   MapHide('Secret')
+end

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.02
+version: 17.02.10
 ]]
 
 -- @USE /Script/Use/Specific/EndOfPrologue.lua
@@ -53,8 +53,30 @@ function MapMusic()
    end   
 end
 
+
+function MasterFandalora()
+  local need = 5 * skill
+  local jake = 0
+  local marrilona = 0
+  for i=1,5 do
+      if i>1 and RPG.PointsExists("Jake_Human","SK_LVL_"..i)==1 then jake      = jake      + RPG.Points("Jake_Human","SK_LVL_"..i).Have end
+      if         RPG.PointsExists("Marrilona" ,"SK_LVL_"..i)==1 then marrilona = marrilona + RPG.Points("Marrilona","SK_LVL_"..i).Have end      
+  end 
+  local amarrilona = marrilona / 5
+  local ajake      = jake      / 4
+  CSay("Fandalora requires: "..need)
+  CSay("Marrilona has:      "..amarrilona)
+  CSay("Jake has:           "..ajake)
+  if not CVV("&MASTER.FANDALORA") then
+     MapText('FANDALORAMASTERNOMASTERYET')
+     if need>amarrilona and need>ajake then MapText('FANDALORAMASTERNOTREADY') return end
+  end
+  Master('Fandalora')
+end
+
+
 function ExitHouse()
-   if CVV("&DONE.PATHOFMAGIC") then
+   if CVV("&DONE.PARTY.DANDORJOINED") then
       GoToLayer('town','exitfrom_'..Maps.LayerCodeName)
       return
    end
@@ -64,10 +86,11 @@ end
 -- Inside Fandalora's house
 
 function NPC_Fandalora()
-  if not CVV("&DONE.PATHOFMAGIC") then
+  if (not CVV("&DONE.PARTY.DANDORJOINED")) then
      MapText("FANDALORA_PROLOGUE")
      return
   end
+  MasterFandalora()
 end
 
 function NPC_YanneeInside()
@@ -190,29 +213,26 @@ function ComeInEvents()
 end
 
 
-function MasterFandalora()
-  local need = 5 * skill
-  local jake = 0
-  local marrilona = 0
-  for i=1,5 do
-      if i>1 and RPG.PointsExists("Jake_Human","SK_LVL_"..i)==1 then jake      = jake      + RPG.Points("Jake_Human","SK_LVL_"..i).Have end
-      if         RPG.PointsExists("Marrilona" ,"SK_LVL_"..i)==1 then marrilona = marrilona + RPG.Points("Marrilona","SK_LVL_"..i).Have end      
-  end 
-  local amarrilona = marrilona / 5
-  local ajake      = jake      / 4
-  CSay("Fandalora requires: "..need)
-  CSay("Marrilona has:      "..amarrilona)
-  CSay("Jake has:           "..ajake)
-  if not CVV("&MASTER.FANDALORA") then
-     MapText('FANDALORAMASTERNOMASTERYET')
-     if need>amarrilona and need>ajake then MapText('FANDALORAMASTERNOTREADY') return end
-  end
-  Master('Fandalora')
-end
 
 function NPC_FandaloraOutside()
-   MapText('FANDALORA_OUTSIDE')
-   MasterFandalora()
+   if CVV("$WMCHAT")=="SPIRATAFIRE" then
+     Shift('Human')
+     MapText('FANDALORA_DANDORCURE1')
+     Maps.Obj.Kill('NPC_FandaloraOutside',1)
+     Party('Jake_Human;Marrilona;Dandor;HandoStillor') 
+     GoToLayer('marrilona','Entry')
+     Maps.Obj.Kill('NPC_YanneeInside',1) -- From now on Yannee will only be found outside in the city itself.
+     PartyPop('Dandor','North')
+     ActorRepos("PLAYER2","Dandor_Dandor","South","Dandor")
+     MapText("FANDALORA_DANDORCURE2")
+     ItemGive('ZZKEY_WIND')
+     Var.D("$WMCHAT","DANDORJOINED")
+     WorldMap_Unlock("CH2WINDSPIRATA")
+     Done("&DONE.PARTY.DANDORJOINED")
+   else
+     MapText('FANDALORA_OUTSIDE')
+     MasterFandalora()
+  end   
 end   
 
 function Enter(z)
@@ -253,6 +273,10 @@ function NPC_YanneeOutside()
     MapText('YANNEE_'..(say[wm] or 'OUTSIDE'))            
 end
 
+function FandaloraEnter()
+   GoToLayer('marrilona',Entry)
+end   
+
 -- Init
 function GALE_OnLoad()
    ZA_Enter('ExitHouse',ExitHouse)
@@ -263,4 +287,5 @@ function GALE_OnLoad()
    end    
    ZA_Enter('B_Exit',B_Exit)
    ZA_Enter('Byebye',WorldMap)
+   ZA_Enter('FandaloraEnter',FandaloraEnter)
 end
