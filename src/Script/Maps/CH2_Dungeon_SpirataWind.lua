@@ -43,7 +43,7 @@ function MAP_FLOW()
    FlowMoveTex(vsin)
    FlowMoveTex(wind)
    local lay = Maps.LayerCodeName;
-   (SubFlow[lay] or Nothing)()
+   -- (SubFlow[lay] or Nothing)()
 end
 
 function GALE_OnLoad()
