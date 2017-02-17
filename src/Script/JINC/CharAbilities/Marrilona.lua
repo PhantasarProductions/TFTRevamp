@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.07
+version: 17.02.17
 ]]
 
 -- abl_hero_jake_2ps = {5},abl_hero_jake_3ps={25},abl_hero_jake_4ps={50},abl_hero_jake_berserk={10,5}
@@ -58,7 +58,7 @@ local r = {
                                        abl_hero_marrilona_splash = {[4]=3+skill},  --  6
                                        abl_hero_marrilona_zap = {[2]=5,[3]=5},     --  7
                                        abl_hero_marrilona_chill = {[3]=7, [4]=10}, --  8
-                                       abl_hero_marrilona_empower = {[2]=25},      --  9
+                                       abl_hero_marrilona_breeze = {[3]=3},        --  9
                                        abl_hero_marrilona_bio = { [5]=10, [4]=15}  -- 10                                                                              
                  },
           }
@@ -71,7 +71,8 @@ if fullversion then -- That's right Marrilona will not get her level #2 and leve
                                        abl_hero_marrilona_fireblast = {[1]=5, [2]=15}    --  4
                      }
    r["3. Level 3"] = {                 abl_hero_marrilona_stone2flesh = {[3]=10,[4]=65}, --  1
-                                       abl_hero_marrilona_inferno = {[1]=5*skill,[2]=15*skill} -- 2
+                                       abl_hero_marrilona_empower = {[2]=25},      --  2
+                                       abl_hero_marrilona_inferno = {[1]=5*skill,[2]=15*skill} -- 3
                      }                  
 end
              

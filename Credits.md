@@ -333,6 +333,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR7.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR8.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR9.lua
+    1. Script: Script/JINC/IA/ITM_ANABOLINEA.lua
     1. Script: Script/JINC/IA/ITM_ANTIDOTE.lua
     1. Script: Script/JINC/IA/ITM_APPLE.lua
     1. Script: Script/JINC/IA/ITM_BELL.lua
@@ -485,9 +486,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/StatusChanges/Charm&Confusion.lua
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
     1. Script: Script/Use/Combat/StatusChanges/Guard.lua
-    1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
+    1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
     1. Script: Script/Use/Combat/StatusChanges/Paralysis and Sleep.lua
     1. Script: Script/Use/Combat/StatusChanges/Permanence.lua
     1. Script: Script/Use/Combat/StatusChanges/Petrification.lua
@@ -531,12 +532,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png
@@ -600,15 +601,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Data
     1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Objects
     1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Settings
-    1. Map Design: Kthura/CH2_Dungeon_SpirataFirer_BACKUP/Data
-    1. Map Design: Kthura/CH2_Dungeon_SpirataFirer_BACKUP/Objects
-    1. Map Design: Kthura/CH2_Dungeon_SpirataFirer_BACKUP/Settings
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Data
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Objects
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Settings
-    1. Map Design: Kthura/CH2_Dungeon_SpirataWater_BACKUP/Data
-    1. Map Design: Kthura/CH2_Dungeon_SpirataWater_BACKUP/Objects
-    1. Map Design: Kthura/CH2_Dungeon_SpirataWater_BACKUP/Settings
     1. Map Design: Kthura/CH2_Dungeon_SpirataWind/Data
     1. Map Design: Kthura/CH2_Dungeon_SpirataWind/Objects
     1. Map Design: Kthura/CH2_Dungeon_SpirataWind/Settings

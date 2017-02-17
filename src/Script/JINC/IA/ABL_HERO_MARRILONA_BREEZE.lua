@@ -1,5 +1,5 @@
 --[[
-  ITM_ANABOLINEA.lua
+  ABL_HERO_MARRILONA_BREEZE.lua
   Version: 17.02.17
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -35,34 +35,38 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ABL_APCost"] = 20,
 	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 2,
-	["ADDCARD_Char_Interval"] = 2,
-	["ADDCARD_Char_Number"] = 50,
+	["ADDCARD_Action_Interval"] = 100,
+	["ADDCARD_Action_Number"] = 1,
+	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "Adds 50 extra cards with a short interval",
+	["Attack_AllowCritical"] = true,
+	["Attack_AttackStat"] = "Intelligence",
+	["Attack_DefenseStat"] = "Resistance",
+	["Attack_Element"] = "Wind",
+	["Desc"] = "Blow, storm! Blow!",
+	["EQP_STAT_Intelligence"] = 1,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
-	["ITM_BlackMarket"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
+	["ITM_EQP_For"] = "Marrilona",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 1000000,
-	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "SingleHeal",
-	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Anabolinia",
-	["Type"] = "Item",
-	["Voice"] = "SpeedUp"}
+	["ITM_ShopPrice"] = 250,
+	["ITM_Type"] = "Weapon",
+	["ITM_WeaponAbility"] = true,
+	["Stance"] = "Attack",
+	["Target"] = "1F",
+	["Title"] = "Breeze",
+	["Type"] = "Ability",
+	["Voice"] = "Wind",
+	["rew_CreateSkill1"] = true,
+	["rew_GainSkill3"] = 10}
 
 return ret
 
