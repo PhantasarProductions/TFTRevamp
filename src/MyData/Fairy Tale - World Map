@@ -203,7 +203,7 @@ Rec: CH2WENIARIA
 	UnlockedFromStart = FALSE
 
 Rec: CH2WINDSPIRATA
-	Dungeon = FALSE
+	Dungeon = TRUE
 	Folder = Delisto
 	Kthura = CH2_Dungeon_SpirataWind
 	Layer = #000
