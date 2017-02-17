@@ -234,6 +234,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_FAIRY.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_HUMAN.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_BIO.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_BREEZE.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_CHILL.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ETERNALFLAME.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FIREBLAST.lua
@@ -352,6 +353,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_POTION.lua
     1. Script: Script/JINC/IA/ITM_PURELITERATURE.lua
     1. Script: Script/JINC/IA/ITM_SALVE.lua
+    1. Script: Script/JINC/IA/ITM_STORMBOTTLE.lua
     1. Script: Script/JINC/IA/ITM_TRUMPCARD.lua
     1. Script: Script/JINC/IA/ITM_VOICEHERB.lua
     1. Script: Script/JINC/IA/ITM_VOLTABALL.lua
@@ -485,9 +487,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
     1. Script: Script/Use/Combat/StatusChanges/Charm&Confusion.lua
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
-    1. Script: Script/Use/Combat/StatusChanges/Guard.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
+    1. Script: Script/Use/Combat/StatusChanges/Guard.lua
     1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
     1. Script: Script/Use/Combat/StatusChanges/Paralysis and Sleep.lua
     1. Script: Script/Use/Combat/StatusChanges/Permanence.lua
@@ -532,12 +534,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png
