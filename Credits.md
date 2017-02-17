@@ -1391,32 +1391,37 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_22.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Victory/Perfect.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Attack.ogg
+    1. Audio: Vocals/Combat/Hero/Marrilona/Action/DefUp.ogg
+    1. Audio: Vocals/Combat/Hero/Marrilona/Action/Earth.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Fire.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_23.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Frost.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Heal.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_23.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Lightning.ogg
-    1. Audio: Vocals/Combat/Hero/Marrilona/Victory/Boss.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_24.ogg
+    1. Audio: Vocals/Combat/Hero/Marrilona/Action/SpeedUp.ogg
+    1. Audio: Vocals/Combat/Hero/Marrilona/Action/Water.ogg
+    1. Audio: Vocals/Combat/Hero/Marrilona/Action/Wind.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_25.ogg
+    1. Audio: Vocals/Combat/Hero/Marrilona/Victory/Boss.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/Dead.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_3.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/Perfect.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_25.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_4.ogg
     1. Audio: Vocals/Combat/Hero/Nostramantu/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/Nostramantu/Victory/Perfect.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_3.ogg
     1. Audio: Vocals/Combat/Learn/Dandor_1.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_4.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_5.ogg
-    1. Audio: Vocals/Combat/Learn/Jake_1.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_6.ogg
-    1. Audio: Vocals/Combat/Learn/Marrilona_1.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_1.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_7.ogg
+    1. Audio: Vocals/Combat/Learn/Jake_1.ogg
+    1. Audio: Vocals/Combat/Learn/Marrilona_1.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_8.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_1.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_9.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_10.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry1_9.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_10.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_1.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_10.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_11.ogg
@@ -1426,10 +1431,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_15.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_2.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_3.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_11.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_4.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_5.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_6.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_11.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_7.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_8.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_9.ogg
@@ -1437,17 +1442,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_10.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_11.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_12.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_12.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_13.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_14.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_12.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_15.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_16.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_17.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_13.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_2.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_3.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_4.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_5.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_13.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_6.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_7.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_8.ogg
@@ -1464,8 +1469,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_20.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_21.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_22.ogg
     1. Audio: Vocals/Spirata/Marrilona.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_22.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_23.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_24.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_25.ogg
