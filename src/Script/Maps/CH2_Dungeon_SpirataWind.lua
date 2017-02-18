@@ -32,16 +32,17 @@
   
  **********************************************
  
-version: 17.02.17
+version: 17.02.18
 ]]
 
 -- @USE /script/use/specific/plasmafloor.lua
 
 function GenPuzzle()
+   if puzdata then return end
    local l=Maps.LayerCodeName
-   local v="&DONE.SPIRATA.WIND.PUZZLE["..l.."]"
+   local vt="&DONE.SPIRATA.WIND.PUZZLE["..l.."]"
    local c={[true]={180,0,0},[false]={0,180,0}}
-   if CVV(v) then return end
+   if CVV(vt) then return end
    local v=rand(3,12)
    for i=1,12 do      
          for let in each({"A","B"}) do
@@ -56,7 +57,8 @@ function GenPuzzle()
      goedeantwoord=v,
      meter=-3,
      balletje=Maps.Obj.Obj('Balletje').Y,
-     ondergrens=Maps.Obj.Obj("A1").Y+32
+     ondergrens=Maps.Obj.Obj("A1").Y+32,
+     tag=vt
    }
    CSay("Correct answer is "..v)
    CSay(serialize("Generated data ",puzdata))
@@ -82,14 +84,16 @@ end
 
 function NPC_Controls()
     if not puzdata then return end
+    if puzdata.meter>12 then return end -- Too high == DEATH!!! sorry!
     Schedule('MAP','POST_Controls')
     AltInput('Desired Wind Force:','','num')
 end
 
 function PuzRoom()
-   if not puzdata then return end
-   local balletje = Maps.Obj.Obj("Balletje")
    TurnDone()
+   if not puzdata then return end
+   if CVV(puzdata.tag) then return end
+   local balletje = Maps.Obj.Obj("Balletje")
    balletje.R=rand(0,255)
    balletje.G=rand(0,255)
    balletje.B=rand(0,255)
@@ -98,6 +102,68 @@ function PuzRoom()
    y = y + (math.sin(Time.MSecs()/2)*4)
    if     balletje.Y<y then balletje.Y = balletje.Y + 2 
    elseif balletje.Y>y then balletje.Y = balletje.Y - 2 end
+   if balletje.Y<-10 then 
+      for i=1,100 do
+          Cls()
+          Color(rand(1,255),rand(1,255),rand(1,255))
+          Image.Rect(0,0,SW,SH)
+          Flip()
+      end
+      local lay = Maps.LayerCodeName
+      GoToLayer("oops","Start")
+      MapText("OOPS")
+      balletje.Y = puzdata.ondergrens+128
+      puzdata=nil
+      GoToLayer(lay,"Start")
+   end
+   if balletje.Y>y-5 and balletje.Y<y+5 and puzdata.meter==puzdata.goedeantwoord then
+      subscript = [[
+           DDZ = Maps.Obj.Obj("Done")
+           DDO = Maps.Obj.Obj("Obstacle_Done")
+           DDP = Maps.Obj.Obj("Point_Done")
+           DDZ.X = DDP.X-32
+           DDZ.Y = DDP.Y-32
+           DDO.X = DDP.X
+           DDO.Y = DDP.Y
+      ]]
+      Maps.PermaWrite(subscript)
+      subfunction = loadstring(subscript)
+      subfunction()
+      for ch in EachParty() do RPG.IncStat(ch,"EXP",-math.ceil((900/(skill^2)))) end
+      SFX('Audio/sfx/General/Solved.ogg')
+      Done(puzdata.tag)       
+   end
+end
+
+function ToBoss()
+    CSay("To the boss (providing it's still there :P")
+    GoToLayer('#002','BossSpot')
+    local opengate = true
+    for l in each({'#004','#006'}) do opengate = opengate and CVV("&DONE.SPIRATA.WIND.PUZZLE["..l.."]") end
+    if opengate then
+      subscript = [[
+           DDZ = Maps.Obj.Obj("Done")
+           DDO = Maps.Obj.Obj("Obstacle_Done")
+           DDP = Maps.Obj.Obj("Point_Done")
+           DDZ.X = DDP.X-32
+           DDZ.Y = DDP.Y-32
+           DDO.X = DDP.X
+           DDO.Y = DDP.Y
+      ]]
+      Maps.PermaWrite(subscript)
+      subfunction = loadstring(subscript)
+      subfunction()
+      Maps.Remap()
+    end        
+end
+
+function TDone()
+CSay('Teleporter "Done" activated');
+({
+   ['#004']=ToBoss,
+   ['#006']=ToBoss,
+   ['#002']=ToSpirata
+})[Maps.LayerCodeName]()
 end
 
 
@@ -123,5 +189,6 @@ function GALE_OnLoad()
    ZA_Enter('Spirata',Spirata)
    ]]
    ZA_Enter('GenPuzzle',GenPuzzle)
+   ZA_Enter("Done",TDone)
    MapHide('Secret')
 end

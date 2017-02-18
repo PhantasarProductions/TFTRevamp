@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 17.01.08
+  Version: 17.02.18
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -296,3 +296,11 @@ function GIVESTATUS(ch,status)
   end   
   MS.Run('COMBAT','SetStatus',ch..";"..status)
 end  
+
+
+function TAGGEDOBJECTS()
+  CSay('Layer: '..Maps.LayerCodeName)
+  for o in KthuraEach() do
+      if o.Tag~="" then CSay(o.Tag..": "..o.Kind.."  ("..o.X..","..o.Y..")") end
+  end
+end      
