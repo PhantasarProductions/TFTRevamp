@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_SPEEDUP.lua
-  Version: 17.02.17
+  Version: 17.02.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -61,7 +61,7 @@ ret = {
 	["Title"] = "Accelerator",
 	["Type"] = "Ability",
 	["Voice"] = "Speed",
-	["rew_GainSkill3"] = 15}
+	["rew_GainSkill3"] = 25}
 
 return ret
 

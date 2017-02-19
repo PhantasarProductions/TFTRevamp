@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_BREEZE.lua
-  Version: 17.02.17
+  Version: 17.02.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -66,7 +66,7 @@ ret = {
 	["Type"] = "Ability",
 	["Voice"] = "Wind",
 	["rew_CreateSkill1"] = true,
-	["rew_GainSkill3"] = 10}
+	["rew_GainSkill3"] = 25}
 
 return ret
 

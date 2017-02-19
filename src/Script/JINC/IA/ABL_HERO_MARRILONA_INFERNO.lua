@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_INFERNO.lua
-  Version: 17.02.17
+  Version: 17.02.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -69,7 +69,7 @@ ret = {
 	["Voice"] = "Fire",
 	["rew_CreateSkill1"] = true,
 	["rew_GainSkill1"] = 1,
-	["rew_GainSkill2"] = 15}
+	["rew_GainSkill2"] = 150}
 
 return ret
 

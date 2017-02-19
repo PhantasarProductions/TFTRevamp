@@ -31,8 +31,8 @@ ret = {
 	["Voice"] = "Lightning",
 	["rew_CreateSkill1"] = true,
 	["rew_GainSkill1"] = 5,
-	["rew_GainSkill2"] = 4,
-	["rew_GainSkill3"] = 4}
+	["rew_GainSkill2"] = 14,
+	["rew_GainSkill3"] = 14}
 
 return ret
 

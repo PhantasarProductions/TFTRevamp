@@ -23,7 +23,7 @@ ret = {
 	["Target"] = "1F",
 	["Title"] = "Rock",
 	["Type"] = "Ability",
-	["rew_GainSkill5"] = 5}
+	["rew_GainSkill5"] = 25}
 
 return ret
 

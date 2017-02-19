@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_PERMANENCE.lua
-  Version: 17.02.17
+  Version: 17.02.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -61,7 +61,12 @@ ret = {
 	["Target"] = "1A",
 	["Title"] = "Permanence",
 	["Type"] = "Ability",
-	["Voice"] = "Attack"}
+	["Voice"] = "Attack",
+	["rew_GainSkill1"] = 1,
+	["rew_GainSkill2"] = 1,
+	["rew_GainSkill3"] = 1,
+	["rew_GainSkill4"] = 1,
+	["rew_GainSkill5"] = 1}
 
 return ret
 

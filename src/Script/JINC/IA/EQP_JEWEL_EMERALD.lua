@@ -1,6 +1,6 @@
 --[[
   EQP_JEWEL_EMERALD.lua
-  Version: 17.02.17
+  Version: 17.02.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

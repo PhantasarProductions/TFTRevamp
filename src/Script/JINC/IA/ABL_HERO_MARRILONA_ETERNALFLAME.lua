@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_ETERNALFLAME.lua
-  Version: 17.02.17
+  Version: 17.02.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -60,7 +60,6 @@ ret = {
 	["ITM_ShopPrice"] = 250,
 	["ITM_Type"] = "Weapon",
 	["ITM_WeaponAbility"] = true,
-	["Rew_GainAP"] = 5,
 	["SpellAni"] = "Flame",
 	["Stance"] = "Attack",
 	["Target"] = "1F",
@@ -68,7 +67,8 @@ ret = {
 	["Type"] = "Ability",
 	["Voice"] = "Fire",
 	["rew_CreateSkill1"] = true,
-	["rew_GainSkill1"] = 1}
+	["rew_GainSkill1"] = 1,
+	["rew_GainSkill2"] = 50}
 
 return ret
 

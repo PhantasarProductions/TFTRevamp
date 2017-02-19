@@ -3848,7 +3848,7 @@ Rec: ABL_HERO_HANDOSTILLOR_TREATMENT
 	rew_CreateSkill4 = FALSE
 	rew_CreateSkill5 = FALSE
 	rew_GainSkill1 = 0
-	rew_GainSkill2 = 15
+	rew_GainSkill2 = 30
 	rew_GainSkill3 = 0
 	rew_GainSkill4 = 0
 	rew_GainSkill5 = 0
@@ -4626,14 +4626,14 @@ Rec: ABL_HERO_MARRILONA_BIO
 	EffectScript_External = FALSE
 	Heal = 0
 	Heal_StatPercent = Intelligence
-	Heal_Type = 
+	Heal_Type = Absolute
 	ITM_ACC_Dandor = TRUE
 	ITM_ACC_HandoStillor = TRUE
 	ITM_ACC_Jake = TRUE
 	ITM_ACC_Marrilona = TRUE
 	ITM_BlackMarket = FALSE
 	ITM_Combat = TRUE
-	ITM_EQP_For = 
+	ITM_EQP_For = Jake
 	ITM_Field = TRUE
 	ITM_Sellable = TRUE
 	ITM_ShopPrice = 0
@@ -4657,9 +4657,9 @@ Rec: ABL_HERO_MARRILONA_BIO
 	rew_CreateSkill5 = FALSE
 	rew_GainSkill1 = 0
 	rew_GainSkill2 = 0
-	rew_GainSkill3 = 0
+	rew_GainSkill3 = 25
 	rew_GainSkill4 = 0
-	rew_GainSkill5 = 0
+	rew_GainSkill5 = 25
 
 Rec: ABL_HERO_MARRILONA_BREEZE
 	ABL_APCost = 20
@@ -4758,7 +4758,7 @@ Rec: ABL_HERO_MARRILONA_BREEZE
 	rew_CreateSkill5 = FALSE
 	rew_GainSkill1 = 0
 	rew_GainSkill2 = 0
-	rew_GainSkill3 = 10
+	rew_GainSkill3 = 25
 	rew_GainSkill4 = 0
 	rew_GainSkill5 = 0
 
@@ -4887,7 +4887,7 @@ Rec: ABL_HERO_MARRILONA_ETERNALFLAME
 	BUFF_Power = 0
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
-	CauseConfusion = 
+	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
@@ -4943,7 +4943,7 @@ Rec: ABL_HERO_MARRILONA_ETERNALFLAME
 	ITM_Type = Weapon
 	ITM_WeaponAbility = TRUE
 	Revive = FALSE
-	Rew_GainAP = 5
+	Rew_GainAP = 0
 	SpellAni = Flame
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
@@ -4959,7 +4959,7 @@ Rec: ABL_HERO_MARRILONA_ETERNALFLAME
 	rew_CreateSkill4 = FALSE
 	rew_CreateSkill5 = FALSE
 	rew_GainSkill1 = 1
-	rew_GainSkill2 = 0
+	rew_GainSkill2 = 50
 	rew_GainSkill3 = 0
 	rew_GainSkill4 = 0
 	rew_GainSkill5 = 0
@@ -5060,7 +5060,7 @@ Rec: ABL_HERO_MARRILONA_FIREBLAST
 	rew_CreateSkill4 = FALSE
 	rew_CreateSkill5 = FALSE
 	rew_GainSkill1 = 1
-	rew_GainSkill2 = 15
+	rew_GainSkill2 = 50
 	rew_GainSkill3 = 0
 	rew_GainSkill4 = 0
 	rew_GainSkill5 = 0
@@ -5161,7 +5161,7 @@ Rec: ABL_HERO_MARRILONA_FLAME
 	rew_CreateSkill4 = FALSE
 	rew_CreateSkill5 = FALSE
 	rew_GainSkill1 = 1
-	rew_GainSkill2 = 15
+	rew_GainSkill2 = 25
 	rew_GainSkill3 = 0
 	rew_GainSkill4 = 0
 	rew_GainSkill5 = 0
@@ -5264,7 +5264,7 @@ Rec: ABL_HERO_MARRILONA_HEAL
 	rew_GainSkill1 = 0
 	rew_GainSkill2 = 0
 	rew_GainSkill3 = 0
-	rew_GainSkill4 = 8
+	rew_GainSkill4 = 18
 	rew_GainSkill5 = 0
 
 Rec: ABL_HERO_MARRILONA_INFERNO
@@ -5363,7 +5363,7 @@ Rec: ABL_HERO_MARRILONA_INFERNO
 	rew_CreateSkill4 = FALSE
 	rew_CreateSkill5 = FALSE
 	rew_GainSkill1 = 1
-	rew_GainSkill2 = 15
+	rew_GainSkill2 = 150
 	rew_GainSkill3 = 0
 	rew_GainSkill4 = 0
 	rew_GainSkill5 = 0
@@ -5463,11 +5463,11 @@ Rec: ABL_HERO_MARRILONA_PERMANENCE
 	rew_CreateSkill3 = FALSE
 	rew_CreateSkill4 = FALSE
 	rew_CreateSkill5 = FALSE
-	rew_GainSkill1 = 0
-	rew_GainSkill2 = 0
-	rew_GainSkill3 = 0
-	rew_GainSkill4 = 0
-	rew_GainSkill5 = 0
+	rew_GainSkill1 = 1
+	rew_GainSkill2 = 1
+	rew_GainSkill3 = 1
+	rew_GainSkill4 = 1
+	rew_GainSkill5 = 1
 
 Rec: ABL_HERO_MARRILONA_PROTECT
 	ABL_APCost = 25
@@ -5568,7 +5568,7 @@ Rec: ABL_HERO_MARRILONA_PROTECT
 	rew_GainSkill2 = 0
 	rew_GainSkill3 = 0
 	rew_GainSkill4 = 0
-	rew_GainSkill5 = 15
+	rew_GainSkill5 = 25
 
 Rec: ABL_HERO_MARRILONA_ROCK
 	ABL_APCost = 15
@@ -5669,7 +5669,7 @@ Rec: ABL_HERO_MARRILONA_ROCK
 	rew_GainSkill2 = 0
 	rew_GainSkill3 = 0
 	rew_GainSkill4 = 0
-	rew_GainSkill5 = 5
+	rew_GainSkill5 = 25
 
 Rec: ABL_HERO_MARRILONA_SPEEDUP
 	ABL_APCost = 95
@@ -5768,7 +5768,7 @@ Rec: ABL_HERO_MARRILONA_SPEEDUP
 	rew_CreateSkill5 = FALSE
 	rew_GainSkill1 = 0
 	rew_GainSkill2 = 0
-	rew_GainSkill3 = 15
+	rew_GainSkill3 = 25
 	rew_GainSkill4 = 0
 	rew_GainSkill5 = 0
 
@@ -5796,7 +5796,7 @@ Rec: ABL_HERO_MARRILONA_SPLASH
 	BUFF_Power = 0
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
-	CauseConfusion = 
+	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
@@ -5870,7 +5870,7 @@ Rec: ABL_HERO_MARRILONA_SPLASH
 	rew_GainSkill1 = 0
 	rew_GainSkill2 = 0
 	rew_GainSkill3 = 0
-	rew_GainSkill4 = 6
+	rew_GainSkill4 = 26
 	rew_GainSkill5 = 0
 
 Rec: ABL_HERO_MARRILONA_STONE2FLESH
@@ -5998,7 +5998,7 @@ Rec: ABL_HERO_MARRILONA_TSUNAMI
 	BUFF_Power = 0
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
-	CauseConfusion = 
+	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
@@ -6072,7 +6072,7 @@ Rec: ABL_HERO_MARRILONA_TSUNAMI
 	rew_GainSkill1 = 0
 	rew_GainSkill2 = 0
 	rew_GainSkill3 = 0
-	rew_GainSkill4 = 25
+	rew_GainSkill4 = 150
 	rew_GainSkill5 = 0
 
 Rec: ABL_HERO_MARRILONA_ZAP
@@ -6099,7 +6099,7 @@ Rec: ABL_HERO_MARRILONA_ZAP
 	BUFF_Power = 0
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
-	CauseConfusion = 
+	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
@@ -6171,8 +6171,8 @@ Rec: ABL_HERO_MARRILONA_ZAP
 	rew_CreateSkill4 = FALSE
 	rew_CreateSkill5 = FALSE
 	rew_GainSkill1 = 5
-	rew_GainSkill2 = 4
-	rew_GainSkill3 = 4
+	rew_GainSkill2 = 14
+	rew_GainSkill3 = 14
 	rew_GainSkill4 = 0
 	rew_GainSkill5 = 0
 
@@ -15175,9 +15175,9 @@ Rec: ITM_FLAMEORB
 	ADDCARD_Char_Number = 0
 	Attack = 100
 	Attack_AccuracyRate = 100
-	Attack_AllowAccuracy = TRUE
+	Attack_AllowAccuracy = FALSE
 	Attack_AllowCritical = TRUE
-	Attack_AllowDodge = TRUE
+	Attack_AllowDodge = FALSE
 	Attack_AttackStat = Power
 	Attack_DefenseStat = Endurance
 	Attack_Desperate = FALSE
@@ -16892,9 +16892,9 @@ Rec: ITM_VOLTABALL
 	ADDCARD_Char_Number = 0
 	Attack = 100
 	Attack_AccuracyRate = 100
-	Attack_AllowAccuracy = TRUE
+	Attack_AllowAccuracy = FALSE
 	Attack_AllowCritical = TRUE
-	Attack_AllowDodge = TRUE
+	Attack_AllowDodge = FALSE
 	Attack_AttackStat = Intelligence
 	Attack_DefenseStat = Resistance
 	Attack_Desperate = FALSE

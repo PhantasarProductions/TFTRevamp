@@ -1,6 +1,6 @@
 --[[
   ITM_FLAMEORB.lua
-  Version: 17.02.17
+  Version: 17.02.19
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -38,9 +38,7 @@ ret = {
 	["ADDCARD_Action_Act"] = "Self",
 	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowAccuracy"] = true,
 	["Attack_AllowCritical"] = true,
-	["Attack_AllowDodge"] = true,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "Flame",

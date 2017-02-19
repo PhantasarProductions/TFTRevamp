@@ -1,6 +1,6 @@
 --[[
   ITM_VOLTABALL.lua
-  Version: 17.02.17
+  Version: 17.02.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -40,9 +40,7 @@ ret = {
 	["ADDCARD_Action_Number"] = 5,
 	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowAccuracy"] = true,
 	["Attack_AllowCritical"] = true,
-	["Attack_AllowDodge"] = true,
 	["Attack_AttackStat"] = "Intelligence",
 	["Attack_DefenseStat"] = "Resistance",
 	["Attack_Element"] = "Lightning",

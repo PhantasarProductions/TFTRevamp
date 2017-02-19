@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.17
+version: 17.02.19
 ]]
 ret = {
 	["ABL_APCost"] = 25,
@@ -62,7 +62,7 @@ ret = {
 	["Target"] = "1A",
 	["Title"] = "Protect",
 	["Type"] = "Ability",
-	["rew_GainSkill5"] = 15}
+	["rew_GainSkill5"] = 25}
 
 return ret
 
