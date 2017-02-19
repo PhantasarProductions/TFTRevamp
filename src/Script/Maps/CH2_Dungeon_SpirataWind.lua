@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.18
+version: 17.02.20
 ]]
 
 -- @USE /script/use/specific/plasmafloor.lua
@@ -164,6 +164,18 @@ CSay('Teleporter "Done" activated');
    ['#006']=ToBoss,
    ['#002']=ToSpirata
 })[Maps.LayerCodeName]()
+end
+
+
+function Boss()
+  Maps.Obj.Kill("Hek",1)
+  ClearCombatData()
+  Schedule('MAP','ManaOrb')
+  Var.D("$COMBAT.FOE_1","Boss/Aer")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  Var.D("$COMBAT.MUSIC","Music/SpecialBoss/Summon the Rawk.ogg")
+  Var.D("$COMBAT.ARENA","spiratawind.png")
+  StartBoss("Protector of the Wind Spirata","Aer")    
 end
 
 

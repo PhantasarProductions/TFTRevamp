@@ -156,6 +156,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/CharAbilities/List.lua
     1. Script: Script/JINC/CharAbilities/Marrilona.lua
     1. Script: Script/JINC/CharAbilities/Nostramantu.lua
+    1. Script: Script/JINC/Foes/Boss/Aer.lua
     1. Script: Script/JINC/Foes/Boss/Aqua.lua
     1. Script: Script/JINC/Foes/Boss/Dandor.lua
     1. Script: Script/JINC/Foes/Boss/Dwarf.lua
@@ -218,11 +219,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_SUPERAXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CLEANSE.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CUREDISEASE.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_FIRSTAID.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_HOLYSTRIKE.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_PRAY.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_PURIFY.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_RECOVER.lua
@@ -471,6 +472,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/Flow/PlayerInput.lua
     1. Script: Script/Use/Combat/Flow/TheEnd.lua
     1. Script: Script/Use/Combat/FoeAI/AAAAA.lua
+    1. Script: Script/Use/Combat/FoeAI/Aer.lua
     1. Script: Script/Use/Combat/FoeAI/Default.lua
     1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
@@ -480,12 +482,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
     1. Script: Script/Use/Combat/SpellAni/Temptation.lua
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellScript/Spirata.lua
     1. Script: Script/Use/Combat/SpellScript/Steal.lua
     1. Script: Script/Use/Combat/SpellScript/Temptation.lua
