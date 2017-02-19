@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 17.02.08
+version: 17.02.19
 ]]
--- File Generated: Wed 08 February 2017; 09:04:55
+-- File Generated: Sun 19 February 2017; 10:52:34
 
 
 local foe = {}
@@ -141,6 +141,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_JAKE_SHIFT_FAIRY"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_HUMAN"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_BIO"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_BREEZE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_CHILL"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ETERNALFLAME"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_FIREBLAST"] = 0
@@ -150,6 +151,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_PERMANENCE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PROTECT"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ROCK"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_SPEEDUP"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 10
 	foe["RATE_ABL_HERO_MARRILONA_STONE\50FLESH"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_TSUNAMI"] = 2
@@ -172,6 +174,7 @@ local foe = {}
 	foe["RATE_ABL_MASTER_RUBINE_INVADE"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_PICKPOCKET"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_POISONSTAB"] = 0
+	foe["RATE_ITM_ANABOLINEA"] = 0
 	foe["RATE_ITM_ANTIDOTE"] = 0
 	foe["RATE_ITM_APPLE"] = 0
 	foe["RATE_ITM_BELL"] = 0
@@ -190,6 +193,7 @@ local foe = {}
 	foe["RATE_ITM_POTION"] = 0
 	foe["RATE_ITM_PURELITERATURE"] = 0
 	foe["RATE_ITM_SALVE"] = 0
+	foe["RATE_ITM_STORMBOTTLE"] = 0
 	foe["RATE_ITM_TRUMPCARD"] = 0
 	foe["RATE_ITM_VOICEHERB"] = 0
 	foe["RATE_ITM_VOLTABALL"] = 0
@@ -211,6 +215,7 @@ local foe = {}
 	foe["RATE_WAND_WIND"] = 0
 	foe["RATE_ZZKEY_FIRE"] = 0
 	foe["RATE_ZZKEY_KEYWATER"] = 0
+	foe["RATE_ZZKEY_WIND"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
 	foe["TARGET_AAA_GUARD"] = "Random"
 	foe["TARGET_ABL_FOE_BACTERIATUSK"] = "Random"
@@ -254,6 +259,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_JAKE_SHIFT_FAIRY"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_SHIFT_HUMAN"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_BIO"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_BREEZE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_CHILL"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ETERNALFLAME"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_FIREBLAST"] = "Random"
@@ -263,6 +269,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_MARRILONA_PERMANENCE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_PROTECT"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ROCK"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_SPEEDUP"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_SPLASH"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_STONE\50FLESH"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_TSUNAMI"] = "Random"
@@ -285,6 +292,7 @@ local foe = {}
 	foe["TARGET_ABL_MASTER_RUBINE_INVADE"] = "Random"
 	foe["TARGET_ABL_MASTER_RUBINE_PICKPOCKET"] = "Random"
 	foe["TARGET_ABL_MASTER_RUBINE_POISONSTAB"] = "Random"
+	foe["TARGET_ITM_ANABOLINEA"] = "Random"
 	foe["TARGET_ITM_ANTIDOTE"] = "Random"
 	foe["TARGET_ITM_APPLE"] = "Random"
 	foe["TARGET_ITM_BELL"] = "Random"
@@ -303,6 +311,7 @@ local foe = {}
 	foe["TARGET_ITM_POTION"] = "Random"
 	foe["TARGET_ITM_PURELITERATURE"] = "Random"
 	foe["TARGET_ITM_SALVE"] = "Random"
+	foe["TARGET_ITM_STORMBOTTLE"] = "Random"
 	foe["TARGET_ITM_TRUMPCARD"] = "Random"
 	foe["TARGET_ITM_VOICEHERB"] = "Random"
 	foe["TARGET_ITM_VOLTABALL"] = "Random"
@@ -324,6 +333,7 @@ local foe = {}
 	foe["TARGET_WAND_WIND"] = "Random"
 	foe["TARGET_ZZKEY_FIRE"] = "Random"
 	foe["TARGET_ZZKEY_KEYWATER"] = "Random"
+	foe["TARGET_ZZKEY_WIND"] = "Random"
 	foe["VocalTag"] = "Aqua"
 	foe["Boss"] = true
 	foe["Oversoul"] = false

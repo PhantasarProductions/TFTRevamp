@@ -170,6 +170,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/Boss/harry2.lua
+    1. Script: Script/JINC/Foes/reg/ArcaneSlime.lua
     1. Script: Script/JINC/Foes/reg/Bandit.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
     1. Script: Script/JINC/Foes/reg/Boar.lua
@@ -181,6 +182,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/GobRogue.lua
     1. Script: Script/JINC/Foes/reg/Hawk.lua
     1. Script: Script/JINC/Foes/reg/HellHound.lua
+    1. Script: Script/JINC/Foes/reg/InvisibleMan.lua
     1. Script: Script/JINC/Foes/reg/Lemming.lua
     1. Script: Script/JINC/Foes/reg/Medusa.lua
     1. Script: Script/JINC/Foes/reg/Mermaid.lua
@@ -219,6 +221,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_FIRSTAID.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_HOLYSTRIKE.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_PRAY.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_PURIFY.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_RECOVER.lua
@@ -226,7 +230,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_STICKSWING.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_TREATMENT.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_VITALIZE.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_2PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_3PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_4PS.lua
@@ -481,13 +484,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellScript/Spirata.lua
     1. Script: Script/Use/Combat/SpellScript/Steal.lua
     1. Script: Script/Use/Combat/SpellScript/Temptation.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
     1. Script: Script/Use/Combat/StatusChanges/Charm&Confusion.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
     1. Script: Script/Use/Combat/StatusChanges/Guard.lua
     1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
@@ -572,6 +575,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/MegaGhost.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/DragonKeeper/Female.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/DragonKeeper/Male.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/InvisibleMan.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/MEDUSA.PNG
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Mermaid.piko
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant01.png
@@ -921,6 +925,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Arena/SpirataFire.png
     1. Graphics: GFX/Combat/Arena/SpirataFire.png.BK!
     1. Graphics: GFX/Combat/Arena/SpirataWater.png
+    1. Graphics: GFX/Combat/Arena/SpirataWind.png
+    1. Graphics: GFX/Combat/Arena/SpirataWind.png.BK!
     1. Graphics: GFX/Combat/Arena/SpookyDung.png
     1. Graphics: GFX/Combat/Arena/SubRiver.png
     1. Graphics: GFX/Combat/Cards/Ability.png
