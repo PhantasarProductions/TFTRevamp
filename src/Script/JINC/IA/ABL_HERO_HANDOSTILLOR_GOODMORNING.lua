@@ -1,7 +1,7 @@
 --[[
-  ITM_POTION.lua
+  ABL_HERO_HANDOSTILLOR_GOODMORNING.lua
   Version: 17.02.20
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -35,13 +35,16 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ABL_APCost"] = 50,
 	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Now this is a nice healing item",
-	["Heal"] = 750,
+	["CureSleep"] = true,
+	["Desc"] = "Wakes up all sleeping allies",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -52,14 +55,12 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 300,
 	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "Heal",
 	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Potion",
-	["Type"] = "Item",
-	["Voice"] = "Heal"}
+	["Target"] = "AA",
+	["Title"] = "Good Morning!",
+	["Type"] = "Ability",
+	["Voice"] = "Weniaria"}
 
 return ret
 

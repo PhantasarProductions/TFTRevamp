@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_HANDOSTILLOR_PRAY.lua
-  Version: 17.02.19
+  Version: 17.02.20
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -49,6 +49,7 @@ ret = {
 	["BUFF_Power"] = -1,
 	["BUFF_Resistance"] = 5,
 	["BUFF_Speed"] = -100,
+	["Desc"] = "Gain extra AP",
 	["EffectScript"] = "RecoverAP",
 	["EffectScript_Arg"] = "100",
 	["Heal_StatPercent"] = "Intelligence",
@@ -65,6 +66,7 @@ ret = {
 	["SpellAni"] = "Heal",
 	["Stance"] = "Cast",
 	["Target"] = "1A",
+	["Title"] = "Pray",
 	["Type"] = "Ability",
 	["Voice"] = "Weniaria",
 	["rew_GainSkill2"] = -1}

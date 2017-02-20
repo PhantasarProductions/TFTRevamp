@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_TAKEOVER2.lua
-  Version: 17.02.19
+  Version: 17.02.20
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
