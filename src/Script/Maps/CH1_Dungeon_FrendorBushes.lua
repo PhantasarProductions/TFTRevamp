@@ -2,7 +2,7 @@
 **********************************************
   
   CH1_Dungeon_FrendorBushes.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.05
+version: 17.02.20
 ]]
 
 
@@ -137,6 +137,7 @@ function Leave(char)
       Actors.WalkToSpot('PLAYER','Start_'..char)
    end      
 end
+
 
 function GALE_OnLoad()
    if (not Done('&ANNOUNCED.CHAPTER.ONE')) or CVV('%CHAPTIME')>0 then Chapter('GFX/Chapters/1.png') end

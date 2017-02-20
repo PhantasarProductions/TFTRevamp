@@ -190,6 +190,10 @@ function MAP_FLOW()
    (SubFlow[lay] or Nothing)()
 end
 
+function Next2() GoToLayer('#005','Start') end
+function Prev2() GoToLayer('#002','Einde2') end
+
+
 function GALE_OnLoad()
    --InitBlops()
    hsin = InitMoveTex({X=-1,Y=0,suffix='HSINUS.PNG'})
@@ -202,5 +206,7 @@ function GALE_OnLoad()
    ]]
    ZA_Enter('GenPuzzle',GenPuzzle)
    ZA_Enter("Done",TDone)
+   ZA_Enter('Next2',Next2)
+   ZA_Enter('Prev2',Prev2)   
    MapHide('Secret')
 end
