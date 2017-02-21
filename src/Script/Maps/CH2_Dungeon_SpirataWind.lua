@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.20
+version: 17.02.21
 ]]
 
 -- @USE /script/use/specific/plasmafloor.lua
@@ -136,6 +136,7 @@ function PuzRoom()
 end
 
 function ToBoss()
+    puzdata=nil
     CSay("To the boss (providing it's still there :P")
     GoToLayer('#002','BossSpot')
     local opengate = true
@@ -179,7 +180,7 @@ function Boss()
 end
 
 
-SubFlow = { ['#004']=PuzRoom}
+SubFlow = { ['#004']=PuzRoom, ['#006']=PuzRoom, ['#002']=TurnDone}
 
 function MAP_FLOW()
    --FlowBlops()
