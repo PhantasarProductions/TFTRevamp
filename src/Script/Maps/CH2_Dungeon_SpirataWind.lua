@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.21
+version: 17.02.22
 ]]
 
 -- @USE /script/use/specific/plasmafloor.lua
@@ -156,6 +156,13 @@ function ToBoss()
       subfunction()
       Maps.Remap()
     end        
+end
+
+function ToSpirata()
+   Maps.Obj.Kill("Done",1)
+   GoToLayer("#001","SpirataStart")
+   Maps.Obj.Kill("WaaitLinks",1)
+   
 end
 
 function TDone()

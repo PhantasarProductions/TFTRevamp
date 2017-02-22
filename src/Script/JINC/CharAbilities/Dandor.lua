@@ -32,12 +32,12 @@
   
  **********************************************
  
-version: 17.01.07
+version: 17.02.22
 ]]
 
 
 local r = {
-                 ["Dandor's Abilities"]  = {
+                 ["1. Dandor's Abilities"]  = {
                              abl_hero_dandor_axesmash={16},
                              abl_hero_dandor_superexesmash={50},
                              abl_hero_dandor_shield={[2]=15},
