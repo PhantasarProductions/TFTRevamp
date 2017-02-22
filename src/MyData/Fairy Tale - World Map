@@ -112,6 +112,16 @@ Rec: CH1LIBRARY
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: CH2DOUBLINEBAY
+	Dungeon = TRUE
+	Folder = Delisto
+	Kthura = ch2_Dungeon_DoublineBayForest
+	Layer = forest
+	LocationName = Doubline Bay Forest
+	LocationPrefix = 
+	Start = Start
+	UnlockedFromStart = FALSE
+
 Rec: CH2DRAGONCASTLE
 	Dungeon = TRUE
 	Folder = Delisto

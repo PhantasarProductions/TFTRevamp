@@ -218,8 +218,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_AXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_SUPERAXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CLEANSE.lua
-    1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CUREDISEASE.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CUREDISEASE.lua
     1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_FIRSTAID.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_GOODMORNING.lua
@@ -604,6 +604,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Spirata/Spirata.piko
     1. Graphics: GFX/Textures/Spirata/Spirata.png
     1. Game identification data: ID/Test
+    1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/Data
+    1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/Objects
+    1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/Settings
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Data
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Objects
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Settings

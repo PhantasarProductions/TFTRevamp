@@ -158,11 +158,45 @@ function ToBoss()
     end        
 end
 
+
+-- Meet the Spirata
+function Spirata()
+    if Done('&DONE.SPIRATA.WIND') then return end
+    Shift('Human')
+    PartyPop('S','North')
+    MapText('SPIRATA')
+    Done('&SPIRATA.HANDOSTILLOR')
+    if skill~=3 then
+       RPG.SetStat('HandoStillor','EXP',0)
+       for i=skill,5 do
+           if RPG.PointsExists('HandoStillor','SK_LVL_'..i)==1 then RPG.Points('HandoStillor','SK_LVL_'..i).Inc(2/skill) end
+       end
+    end
+    local spirscript = [[ -- Spirata Wall changes
+      local spirata = Maps.Obj.Obj('SpirataWall')
+      spirata.AltBlend=0
+      spirata.TextureFile='GFX/Textures/Marble/Wall - N.png'
+      spirata.G=100
+      -- All done
+    ]]
+    Maps.PermaWrite(spirscript)
+    local spirscriptcompiled = loadstring(spirscript)
+    local ok,error = pcall(spirscriptcompiled)
+    if not ok then Sys.Error(error,'Note,This is from an attempt to remove the Spirata wall.') end
+    MapText('SPIRATAPOST')
+    Var.D('$WMCHAT','WINDSPIRATADONE')
+    WorldMap_Unlock('CH2DOUBLINEBAY')
+    WorldMap()
+end
+
+
 function ToSpirata()
    Maps.Obj.Kill("Done",1)
    GoToLayer("#001","SpirataStart")
-   Maps.Obj.Kill("WaaitLinks",1)
-   
+   Maps.Obj.Kill("WaaiLinks",1)
+   Maps.Remap()
+   Spirata()
+   Maps.Obj.Kill('WindLeft',1)
 end
 
 function TDone()
@@ -216,5 +250,6 @@ function GALE_OnLoad()
    ZA_Enter("Done",TDone)
    ZA_Enter('Next2',Next2)
    ZA_Enter('Prev2',Prev2)   
+   ZA_Enter("Bye",WorldMap)
    MapHide('Secret')
 end
