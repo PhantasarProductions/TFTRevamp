@@ -1,6 +1,6 @@
 --[[
   Achievements.lua
-  Version: 17.01.07
+  Version: 17.02.22
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -66,7 +66,7 @@ function Validate()
        if allow then 
          valid[k] = a 
          rating.total = rating.total + RatingByType[a.Type]
-         if achieved[k] then rating.total = rating.total + RatingByType[a.Type] end
+         if achieved[k] then rating.have = rating.have + RatingByType[a.Type] end
          end  
    end
    CSay("Achievements revalidated >> "..serialize('rating',rating))
@@ -110,6 +110,7 @@ function Synchronize()
         end
     until false        -- Dirty code straight from hell this line, but it works... OK?          
 end
+
 
 
 function Award(tag)
