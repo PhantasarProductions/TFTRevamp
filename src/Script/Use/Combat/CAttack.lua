@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.20
+version: 17.02.22
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
@@ -60,11 +60,12 @@ function Hurt(tag,damage,element)
          charmsg(tag,dmg,140,140,140)
       elseif eleprot==100 then -- Immune
          dmg=0
-         charmsg("NO EFFECT!",255,180,0)
+         charmsg(tag,"NO EFFECT!",255,180,0)
       else  -- Absorb
          for k,d in pairs(fighterbytag[tag].StatusChanges ) do
              if d.BlockHeal then dmg=0 end 
-         end                 
+         end 
+         charmsg(tag,math.abs(dmg),180,255,0)                
       end
       if fighterbytag[tag].group=='Hero' then
          if  CVV('&CHEAT.GOD') then dmg=0 end -- God Mode
@@ -102,7 +103,7 @@ function Attack(act,g,i,na)
     critical = critical or act.Attack_Desperate -- Must be last (and most be "or" in stead of "and" or this doesn't work).
     if critical then 
        damage = rand(damage,damage*2)
-       charmsg('Critical!',255,0,0) 
+       charmsg(ttag,'Critical!',255,0,0) 
     end
     -- And let's put it all through now... 
     Hurt(ttag,damage,act.Attack_Element)

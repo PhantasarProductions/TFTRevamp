@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 17.01.04
+  Version: 17.02.22
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -78,12 +78,17 @@ function DrawFighter(g,i)
      if array_charmessages and array_charmessages[chdata.tag] and array_charmessages[chdata.tag][1] then
         local acma = array_charmessages[chdata.tag]
         local acm=acma[1]
-        SetFont('CombatCharMessage')
-        Image.ScalePC(acm.scale,acm.scale) 
+        --SetFont('CombatCharMessage')
+        local fn = fonts['CombatCharMessage'][1]
+        acm.fs = acm.fs or 1 -- fonts['CombatCharMessage'][2] * (acm.scale/100); fs = math.ceil(fs)
+        --Image.ScalePC(acm.scale,acm.scale)
+        Image.Font("fonts/"..fn,acm.fs) 
         DarkText(acm.msg,chdata.x,chdata.y-30,2,1,acm.r,acm.g,acm.b)
-        Image.ScalePC(100,100)
-        if acm.scale<100 then 
-           acm.scale = acm.scale + 1
+        -- Image.ScalePC(100,100)
+        --if acm.scale<100 then 
+        --   acm.scale = acm.scale + 1
+        if acm.fs<fonts['CombatCharMessage'][2] then
+           acm.fs = acm.fs + 1
         elseif #acma>1 or acm.time<=0 then
            table.remove(acma,1)
         else
