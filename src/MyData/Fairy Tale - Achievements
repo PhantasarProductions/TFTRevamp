@@ -89,6 +89,18 @@ Rec: BOSS_JUGGERNAUT
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: BOSS_RUSSEL
+	Description = Defeat Russel Veenboer
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = A pirate's life for me
+	Type = Silver
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: CHAPTER1
 	Description = Complete chapter 1
 	Icon = *DEFAULT*

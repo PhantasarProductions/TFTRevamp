@@ -65,9 +65,15 @@ function Validate()
        -- @FI
        if allow then 
          valid[k] = a 
-         rating.total = rating.total + RatingByType[a.Type]
-         if achieved[k] then rating.have = rating.have + RatingByType[a.Type] end
-         end  
+         if not prefixed(k,"RATE") then
+           rating.total = rating.total + RatingByType[a.Type]
+           if achieved[k] then rating.have = rating.have + RatingByType[a.Type] end
+         end
+       end  
+   end
+   rating.procent = math.floor((rating.have/rating.total)*100)
+   for i=25,100,25 do
+       if rating.procent>=i and fullversion then Award('RATE'..right("0"..i,3)) end
    end
    CSay("Achievements revalidated >> "..serialize('rating',rating))
 end
