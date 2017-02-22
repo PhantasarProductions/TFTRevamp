@@ -65,6 +65,7 @@ function GenPuzzle()
 end
 
 function TurnDone()
+     if Maps.Obj.Exists("Obstacle_Done")==0 then return end
      local d=Maps.Obj.Obj("Obstacle_Done")
      d.Rotation = d.Rotation + 1
      if d.Rotation>=360 then d.Rotation = d.Rotation - 360 end 
@@ -192,11 +193,13 @@ end
 
 function ToSpirata()
    Maps.Obj.Kill("Done",1)
+   Maps.Obj.Kill("Obstacle_Done",1)
+   Music("Hub/Angevin.ogg")
    GoToLayer("#001","SpirataStart")
    Maps.Obj.Kill("WaaiLinks",1)
+   Maps.Obj.Kill('WindLeft',1)
    Maps.Remap()
    Spirata()
-   Maps.Obj.Kill('WindLeft',1)
 end
 
 function TDone()
