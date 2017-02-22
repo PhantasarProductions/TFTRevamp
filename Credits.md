@@ -97,6 +97,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - Dieter Steffmann
     1. Font: Fonts/CloisterBlack.ttf
 - Eric Matyas
+    1. Music: Music/Dungeon/Magic-Clock-Shop_Looping.ogg
     1. Music: Music/Dungeon/Sewer-Monsters-Town-Hall-Meeting_Looping.ogg
     1. Music: Music/Dungeon/Moonlit-Secrets_Looping.ogg
     1. Music: Music/RandomEncounter/RPG-Battle-Climax_v001.ogg
@@ -634,23 +635,23 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
-    1. Music: Music/Dungeon/JustASong.ogg
     1. Graphics: GFX/Chapters/4.png
     1. Graphics: GFX/Combat/End/Game Over.png
     1. Graphics: GFX/Combat/End/YouWin.png
+    1. Music: Music/Dungeon/JustASong.ogg
     1. Graphics: GFX/Loading/Graphic.png
     1. Graphics: GFX/Loading/Saving.png
     1. Graphics: GFX/Logo/End Of Prologue.hot
     1. Graphics: GFX/Logo/End Of Prologue.png
     1. Graphics: GFX/Logo/Game Over.png
     1. Graphics: GFX/Logo/Phantasar Productions.png
-    1. Music: Music/Dungeon/Scary Song.ogg
     1. Graphics: GFX/Logo/The End.png
     1. Graphics: GFX/Logo/Title.png
     1. Graphics: GFX/Menu Icons/Buy.png
     1. Graphics: GFX/Menu Icons/Sell.png
     1. Graphics: GFX/Menu Icons/Trade.png
     1. Graphics: GFX/Party/Level Up.png
+    1. Music: Music/Dungeon/Scary Song.ogg
     1. Audio: Audio/Combat/CardSlide.ogg
     1. Audio: Audio/Party/Level Up.ogg
     1. Audio: Audio/Party/Level Up.wav
