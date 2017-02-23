@@ -44,4 +44,5 @@ end
 function GALE_OnLoad()
     ZA_Enter("StartZone",GoToCorrectStart)
     for i=1,2 do ZA_Enter("Bye"..i,WorldMap) end
+    MapHide("Secret")
 end

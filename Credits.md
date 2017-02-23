@@ -15,6 +15,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Aqua.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Ignis.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Terra.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Wolf.png
     1. Graphics: GFX/Big_Char/Dandor.png
     1. Graphics: GFX/Big_Char/Hando Stillor.png
     1. Graphics: GFX/Big_Char/Jake.png
@@ -182,6 +183,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Gob.lua
     1. Script: Script/JINC/Foes/reg/GobPriest.lua
     1. Script: Script/JINC/Foes/reg/GobRogue.lua
+    1. Script: Script/JINC/Foes/reg/Hag.lua
     1. Script: Script/JINC/Foes/reg/Hawk.lua
     1. Script: Script/JINC/Foes/reg/HellHound.lua
     1. Script: Script/JINC/Foes/reg/Highwayman.lua
@@ -194,6 +196,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Slime.lua
     1. Script: Script/JINC/Foes/reg/Snake.lua
     1. Script: Script/JINC/Foes/reg/Thief.lua
+    1. Script: Script/JINC/Foes/reg/Wolf.lua
     1. Script: Script/JINC/Foes/reg/Zombie.lua
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
     1. Script: Script/JINC/IA/AAA_GUARD.lua
@@ -222,12 +225,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_AXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_SUPERAXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CLEANSE.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CUREDISEASE.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_FIRSTAID.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_GOODMORNING.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_HOLYSTRIKE.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_PRAY.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_PURIFY.lua
@@ -486,11 +489,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellAni/Frost.lua
     1. Script: Script/Use/Combat/SpellAni/Heal.lua
     1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellAni/Temptation.lua
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
@@ -548,12 +551,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png
@@ -932,6 +935,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Arena/Altar.png
     1. Graphics: GFX/Combat/Arena/Caves.png
     1. Graphics: GFX/Combat/Arena/Forest.png
+    1. Graphics: GFX/Combat/Arena/ForestLoof.png
     1. Graphics: GFX/Combat/Arena/GreyDung.png
     1. Graphics: GFX/Combat/Arena/Hell.png
     1. Graphics: GFX/Combat/Arena/Library.png
