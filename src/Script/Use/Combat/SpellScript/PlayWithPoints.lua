@@ -1,6 +1,6 @@
 --[[
   PlayWithPoints.lua
-  Version: 17.01.09
+  Version: 17.02.23
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -45,13 +45,20 @@ function SpellScript.PointAlter(tartag,extag,param)
     
 end
 
-function SpellScript.MultiPointAlter(tartag,extag,paramsquence)
+function SpellScript.MultiPointAlter(tartag,extag,paramsequence)
    for seq in each(mysplit(paramsequence,";")) do SpellScript.PointAlter(extag,tartag,seq) end
 end   
 
 function SpellScript.RecoverAP(tartag,extag,param)
    local n = Sys.Val(param)
    RPG.Points(tartag,'AP').Inc(n)
+end   
+
+function SpellScript.APNUL(tartag,extag,param)
+   RPG.Points(tartag,'AP').Have=0
+   if param and param~="" then
+      charmsg(tartag,param,255,0,0)
+   end
 end   
 
 -- @IF INGORE

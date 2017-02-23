@@ -1,40 +1,4 @@
---[[
-  Thief.lua
-  Version: 17.02.07
-  Copyright (C) 2017 Jeroen Petrus Broks
-  
-  ===========================
-  This file is part of a project related to the Phantasar Chronicles or another
-  series or saga which is property of Jeroen P. Broks.
-  This means that it may contain references to a story-line plus characters
-  which are property of Jeroen Broks. These references may only be distributed
-  along with an unmodified version of the game. 
-  
-  As soon as you remove or replace ALL references to the storyline or character
-  references, or any termology specifically set up for the Phantasar universe,
-  or any other univers a story of Jeroen P. Broks is set up for,
-  the restrictions of this file are removed and will automatically become
-  zLib licensed (see below).
-  
-  Please note that doing so counts as a modification and must be marked as such
-  in accordance to the zLib license.
-  ===========================
-  zLib license terms:
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
-]]
--- File Generated: Tue 07 February 2017; 23:27:33
+-- File Generated: Thu 23 February 2017; 17:30:53
 
 
 local foe = {}
@@ -116,8 +80,10 @@ local foe = {}
 	foe["RATE_ABL_FOE_CRUSH"] = 0
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
 	foe["RATE_ABL_FOE_DISTRACT"] = 5
+	foe["RATE_ABL_FOE_EXHAUST"] = 0
 	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 0
 	foe["RATE_ABL_FOE_GAZE"] = 0
+	foe["RATE_ABL_FOE_HOLDPERSON"] = 0
 	foe["RATE_ABL_FOE_MERMAID_TEMPATION"] = 0
 	foe["RATE_ABL_FOE_PARADIVE"] = 0
 	foe["RATE_ABL_FOE_SHOCKINGSTORIES"] = 0
@@ -137,6 +103,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_HANDOSTILLOR_CLEANSE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_PRAY"] = 0
@@ -153,6 +120,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_JAKE_SHIFT_FAIRY"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_HUMAN"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_BIO"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_BREEZE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_CHILL"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ETERNALFLAME"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_FIREBLAST"] = 0
@@ -162,10 +130,12 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_PERMANENCE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PROTECT"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ROCK"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_SPEEDUP"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_STONE\50FLESH"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_TSUNAMI"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ZAP"] = 0
+	foe["RATE_ABL_HERO_SPEEDUP"] = 0
 	foe["RATE_ABL_MASTER_FANDALORA_CURSE"] = 0
 	foe["RATE_ABL_MASTER_FANDALORA_DARKNESS"] = 0
 	foe["RATE_ABL_MASTER_FANDALORA_DARKVISION"] = 0
@@ -183,10 +153,12 @@ local foe = {}
 	foe["RATE_ABL_MASTER_RUBINE_INVADE"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_PICKPOCKET"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_POISONSTAB"] = 0
+	foe["RATE_ITM_ANABOLINEA"] = 0
 	foe["RATE_ITM_ANTIDOTE"] = 0
 	foe["RATE_ITM_APPLE"] = 0
 	foe["RATE_ITM_BELL"] = 0
 	foe["RATE_ITM_CARROT"] = 0
+	foe["RATE_ITM_DEATHCUBE"] = 0
 	foe["RATE_ITM_FLAMEORB"] = 0
 	foe["RATE_ITM_HEALINGHERB"] = 1
 	foe["RATE_ITM_HEALSHOWER"] = 1
@@ -201,6 +173,8 @@ local foe = {}
 	foe["RATE_ITM_POTION"] = 1
 	foe["RATE_ITM_PURELITERATURE"] = 0
 	foe["RATE_ITM_SALVE"] = 0
+	foe["RATE_ITM_STORMBOTTLE"] = 0
+	foe["RATE_ITM_TOTALEXHAUSTION"] = 0
 	foe["RATE_ITM_TRUMPCARD"] = 0
 	foe["RATE_ITM_VOICEHERB"] = 0
 	foe["RATE_ITM_VOLTABALL"] = 0
@@ -222,14 +196,17 @@ local foe = {}
 	foe["RATE_WAND_WIND"] = 0
 	foe["RATE_ZZKEY_FIRE"] = 0
 	foe["RATE_ZZKEY_KEYWATER"] = 0
+	foe["RATE_ZZKEY_WIND"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
 	foe["TARGET_AAA_GUARD"] = "Random"
 	foe["TARGET_ABL_FOE_BACTERIATUSK"] = "Random"
 	foe["TARGET_ABL_FOE_CRUSH"] = "Random"
 	foe["TARGET_ABL_FOE_DESPERATEATTACK"] = "Random"
 	foe["TARGET_ABL_FOE_DISTRACT"] = "Random"
+	foe["TARGET_ABL_FOE_EXHAUST"] = "Random"
 	foe["TARGET_ABL_FOE_FLAMESTRIKE"] = "Random"
 	foe["TARGET_ABL_FOE_GAZE"] = "Random"
+	foe["TARGET_ABL_FOE_HOLDPERSON"] = "Random"
 	foe["TARGET_ABL_FOE_MERMAID_TEMPATION"] = "Random"
 	foe["TARGET_ABL_FOE_PARADIVE"] = "Random"
 	foe["TARGET_ABL_FOE_SHOCKINGSTORIES"] = "Random"
@@ -249,6 +226,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_CLEANSE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_PRAY"] = "Random"
@@ -265,6 +243,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_JAKE_SHIFT_FAIRY"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_SHIFT_HUMAN"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_BIO"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_BREEZE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_CHILL"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ETERNALFLAME"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_FIREBLAST"] = "Random"
@@ -274,10 +253,12 @@ local foe = {}
 	foe["TARGET_ABL_HERO_MARRILONA_PERMANENCE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_PROTECT"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ROCK"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_SPEEDUP"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_SPLASH"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_STONE\50FLESH"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_TSUNAMI"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ZAP"] = "Random"
+	foe["TARGET_ABL_HERO_SPEEDUP"] = "Random"
 	foe["TARGET_ABL_MASTER_FANDALORA_CURSE"] = "Random"
 	foe["TARGET_ABL_MASTER_FANDALORA_DARKNESS"] = "Random"
 	foe["TARGET_ABL_MASTER_FANDALORA_DARKVISION"] = "Random"
@@ -295,10 +276,12 @@ local foe = {}
 	foe["TARGET_ABL_MASTER_RUBINE_INVADE"] = "Random"
 	foe["TARGET_ABL_MASTER_RUBINE_PICKPOCKET"] = "Random"
 	foe["TARGET_ABL_MASTER_RUBINE_POISONSTAB"] = "Random"
+	foe["TARGET_ITM_ANABOLINEA"] = "Random"
 	foe["TARGET_ITM_ANTIDOTE"] = "Random"
 	foe["TARGET_ITM_APPLE"] = "Random"
 	foe["TARGET_ITM_BELL"] = "Random"
 	foe["TARGET_ITM_CARROT"] = "Random"
+	foe["TARGET_ITM_DEATHCUBE"] = "Random"
 	foe["TARGET_ITM_FLAMEORB"] = "Random"
 	foe["TARGET_ITM_HEALINGHERB"] = "Random"
 	foe["TARGET_ITM_HEALSHOWER"] = "Random"
@@ -313,6 +296,8 @@ local foe = {}
 	foe["TARGET_ITM_POTION"] = "Random"
 	foe["TARGET_ITM_PURELITERATURE"] = "Random"
 	foe["TARGET_ITM_SALVE"] = "Random"
+	foe["TARGET_ITM_STORMBOTTLE"] = "Random"
+	foe["TARGET_ITM_TOTALEXHAUSTION"] = "Random"
 	foe["TARGET_ITM_TRUMPCARD"] = "Random"
 	foe["TARGET_ITM_VOICEHERB"] = "Random"
 	foe["TARGET_ITM_VOLTABALL"] = "Random"
@@ -334,6 +319,7 @@ local foe = {}
 	foe["TARGET_WAND_WIND"] = "Random"
 	foe["TARGET_ZZKEY_FIRE"] = "Random"
 	foe["TARGET_ZZKEY_KEYWATER"] = "Random"
+	foe["TARGET_ZZKEY_WIND"] = "Random"
 	foe["VocalTag"] = "Thief"
 	foe["Boss"] = false
 	foe["Oversoul"] = true

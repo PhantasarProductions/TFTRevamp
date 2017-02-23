@@ -1,40 +1,4 @@
---[[
-**********************************************
-  
-  Aer.lua
-  (c) Jeroen Broks, 2017, All Rights Reserved.
-  
-  This file contains material that is related 
-  to a storyline that is which is strictly
-  copyrighted to Jeroen Broks.
-  
-  This file may only be used in an unmodified
-  form with an unmodified version of the 
-  software this file belongs to.
-  
-  You may use this file for your study to see
-  how I solved certain things in the creation
-  of this project to see if you find valuable
-  leads for the creation of your own.
-  
-  Mostly this file comes along with a project
-  that is for most part released under an
-  open source license and that means that if
-  you use that code with this file removed
-  from it, you can use it under that license.
-  Please check out the other files to find out
-  which license applies.
-  This file comes 'as-is' and in no possible
-  way the author can be held responsible of
-  any form of damages that may occur due to 
-  the usage of this file
-  
-  
- **********************************************
- 
-version: 17.02.20
-]]
--- File Generated: Mon 20 February 2017; 00:20:52
+-- File Generated: Thu 23 February 2017; 17:25:40
 
 
 local foe = {}
@@ -122,8 +86,10 @@ local foe = {}
 	foe["RATE_ABL_FOE_CRUSH"] = 0
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
 	foe["RATE_ABL_FOE_DISTRACT"] = 0
+	foe["RATE_ABL_FOE_EXHAUST"] = 0
 	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 0
 	foe["RATE_ABL_FOE_GAZE"] = 0
+	foe["RATE_ABL_FOE_HOLDPERSON"] = 0
 	foe["RATE_ABL_FOE_MERMAID_TEMPATION"] = 0
 	foe["RATE_ABL_FOE_PARADIVE"] = 0
 	foe["RATE_ABL_FOE_SHOCKINGSTORIES"] = 0
@@ -143,6 +109,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_HANDOSTILLOR_CLEANSE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = 10
+	foe["RATE_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_PRAY"] = 0
@@ -197,6 +164,7 @@ local foe = {}
 	foe["RATE_ITM_APPLE"] = 0
 	foe["RATE_ITM_BELL"] = 0
 	foe["RATE_ITM_CARROT"] = 0
+	foe["RATE_ITM_DEATHCUBE"] = 0
 	foe["RATE_ITM_FLAMEORB"] = 0
 	foe["RATE_ITM_HEALINGHERB"] = 0
 	foe["RATE_ITM_HEALSHOWER"] = 0
@@ -212,6 +180,7 @@ local foe = {}
 	foe["RATE_ITM_PURELITERATURE"] = 0
 	foe["RATE_ITM_SALVE"] = 0
 	foe["RATE_ITM_STORMBOTTLE"] = 0
+	foe["RATE_ITM_TOTALEXHAUSTION"] = 0
 	foe["RATE_ITM_TRUMPCARD"] = 0
 	foe["RATE_ITM_VOICEHERB"] = 0
 	foe["RATE_ITM_VOLTABALL"] = 0
@@ -240,8 +209,10 @@ local foe = {}
 	foe["TARGET_ABL_FOE_CRUSH"] = "Random"
 	foe["TARGET_ABL_FOE_DESPERATEATTACK"] = "Random"
 	foe["TARGET_ABL_FOE_DISTRACT"] = "Random"
+	foe["TARGET_ABL_FOE_EXHAUST"] = "Random"
 	foe["TARGET_ABL_FOE_FLAMESTRIKE"] = "Random"
 	foe["TARGET_ABL_FOE_GAZE"] = "Random"
+	foe["TARGET_ABL_FOE_HOLDPERSON"] = "Random"
 	foe["TARGET_ABL_FOE_MERMAID_TEMPATION"] = "Random"
 	foe["TARGET_ABL_FOE_PARADIVE"] = "Random"
 	foe["TARGET_ABL_FOE_SHOCKINGSTORIES"] = "Random"
@@ -261,6 +232,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_CLEANSE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_PRAY"] = "Random"
@@ -315,6 +287,7 @@ local foe = {}
 	foe["TARGET_ITM_APPLE"] = "Random"
 	foe["TARGET_ITM_BELL"] = "Random"
 	foe["TARGET_ITM_CARROT"] = "Random"
+	foe["TARGET_ITM_DEATHCUBE"] = "Random"
 	foe["TARGET_ITM_FLAMEORB"] = "Random"
 	foe["TARGET_ITM_HEALINGHERB"] = "Random"
 	foe["TARGET_ITM_HEALSHOWER"] = "Random"
@@ -330,6 +303,7 @@ local foe = {}
 	foe["TARGET_ITM_PURELITERATURE"] = "Random"
 	foe["TARGET_ITM_SALVE"] = "Random"
 	foe["TARGET_ITM_STORMBOTTLE"] = "Random"
+	foe["TARGET_ITM_TOTALEXHAUSTION"] = "Random"
 	foe["TARGET_ITM_TRUMPCARD"] = "Random"
 	foe["TARGET_ITM_VOICEHERB"] = "Random"
 	foe["TARGET_ITM_VOLTABALL"] = "Random"

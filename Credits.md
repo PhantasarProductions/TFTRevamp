@@ -273,6 +273,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_INVADE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_PICKPOCKET.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_POISONSTAB.lua
+    1. Script: Script/JINC/IA/EQP_ACC_TITANBELT.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_TRAINAXE.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP1.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP10.lua
@@ -345,6 +346,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_APPLE.lua
     1. Script: Script/JINC/IA/ITM_BELL.lua
     1. Script: Script/JINC/IA/ITM_CARROT.lua
+    1. Script: Script/JINC/IA/ITM_DEATHCUBE.lua
     1. Script: Script/JINC/IA/ITM_FLAMEORB.lua
     1. Script: Script/JINC/IA/ITM_HEALINGHERB.lua
     1. Script: Script/JINC/IA/ITM_HEALSHOWER.lua
@@ -482,9 +484,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
     1. Script: Script/Use/Combat/SpellAni/Frost.lua
     1. Script: Script/Use/Combat/SpellAni/Heal.lua
-    1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
+    1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
     1. Script: Script/Use/Combat/SpellAni/Temptation.lua
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua

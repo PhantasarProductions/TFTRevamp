@@ -1,6 +1,6 @@
 --[[
   Heal.lua
-  Version: 17.02.04
+  Version: 17.02.23
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -80,3 +80,7 @@ for ak=1,50 do
     Flip()
     end
 end
+
+-- @IF IGNORE
+return SpellAni
+-- @FI

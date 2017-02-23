@@ -1,6 +1,6 @@
 --[[
   HellHound.lua
-  Version: 17.02.19
+  Version: 17.02.23
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sun 19 February 2017; 12:54:54
+-- File Generated: Thu 23 February 2017; 16:44:00
 
 
 local foe = {}
@@ -113,6 +113,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_HANDOSTILLOR_CLEANSE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_PRAY"] = 0
@@ -167,6 +168,7 @@ local foe = {}
 	foe["RATE_ITM_APPLE"] = 0
 	foe["RATE_ITM_BELL"] = 0
 	foe["RATE_ITM_CARROT"] = 0
+	foe["RATE_ITM_DEATHCUBE"] = 0
 	foe["RATE_ITM_FLAMEORB"] = 0
 	foe["RATE_ITM_HEALINGHERB"] = 0
 	foe["RATE_ITM_HEALSHOWER"] = 0
@@ -231,6 +233,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_CLEANSE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_PRAY"] = "Random"
@@ -285,6 +288,7 @@ local foe = {}
 	foe["TARGET_ITM_APPLE"] = "Random"
 	foe["TARGET_ITM_BELL"] = "Random"
 	foe["TARGET_ITM_CARROT"] = "Random"
+	foe["TARGET_ITM_DEATHCUBE"] = "Random"
 	foe["TARGET_ITM_FLAMEORB"] = "Random"
 	foe["TARGET_ITM_HEALINGHERB"] = "Random"
 	foe["TARGET_ITM_HEALSHOWER"] = "Random"
