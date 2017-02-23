@@ -1,11 +1,11 @@
-# Star Story Credits
+# The Fairy Tale REVAMPED Credits
 This game has been written by Jeroen Broks.
 The LAURA II engine and the launcher were written in BlitzMax by Blitz Research Ltd.
 The Lua scripting language used in LAURA was written by PUC-Rio.
 
 
 Below you can see all files I contributed myself, but also by people who selflessly donated all kinds of stuff to the community. Without their selfless effort this game would not be possible.
-Please note all 3rd party contributions remain copyrighted and licensed by their respective creators, unless the files were explicitly created for the Star Story Project, or unless the creator did donate his/her contribution to the Public Domain.
+Please note all 3rd party contributions remain copyrighted and licensed by their respective creators, unless the files were explicitly created for the The Fairy Tale REVAMPED Project, or unless the creator did donate his/her contribution to the Public Domain.
 
 
 
@@ -542,12 +542,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png
