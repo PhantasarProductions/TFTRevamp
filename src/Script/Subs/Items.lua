@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.02.08
+  Version: 17.02.23
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -358,8 +358,12 @@ function ItemShowList(showfilter,enablefilter,char,psizes)
    local y,c
    for idx,itm in ipairs(showitems[showfilter..(char or "")]) do       
        y = idx*25
-       if moved and mx>Sys.Val(sizes[1]) and mx<Sys.Val(sizes[3])+Sys.Val(sizes[1]) and my>y and my<y+25 then pos[scrollid]=idx end
-       if mx>0 and mx<tonumber(sizes[3]) and my>=y and my<=y-24 and INP.MouseH(1)==1 then
+       if idx==pos[scrollid] then
+             if y-scrollers[scrollid].down<0 then scrollers[scrollid].down=scrollers[scrollid].down - 2 
+             elseif y-scrollers[scrollid].down>scrollers[scrollid].h-50 then scrollers[scrollid].down = scrollers[scrollid].down + 2 end
+       end       
+       if moved and mx>Sys.Val(sizes[1]) and mx<Sys.Val(sizes[3])+Sys.Val(sizes[1]) and my+scrollers[scrollid].down>y and my+scrollers[scrollid].down<y+25 then pos[scrollid]=idx end
+       if mx>0 and mx<tonumber(sizes[3]) and my+scrollers[scrollid].down>=y and my+scrollers[scrollid].down<=y-24 and INP.MouseH(1)==1 then
           if y==pos[scrollid] then
              Var.D("$SELECTEDITEM",itm)
           else
@@ -373,6 +377,7 @@ function ItemShowList(showfilter,enablefilter,char,psizes)
        SetFont('ItemAmm')
        DarkText(inventory[itm],sizes[3]-25,y,1,0,c[1],c[2],c[3])
        if showfilter=="Sellable" then DarkText(items[itm].ITM_SellPrice.." shilders",Sys.Val(sizes[3])*.75,y,1,0,0,180,255) end
+       ScrollMax(scrollid,y+50)
    end
    EndScroller(scrollid)
    if (INP.KeyH(KEY_DOWN)==1 or joyhit(joydown) or mousehit(1)) and pos[scrollid]<#showitems[showfilter..(char or "")]  then pos[scrollid] = pos[scrollid] + 1 end 

@@ -1,7 +1,7 @@
 --[[
   Scroller.lua
-  Version: 16.10.17
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.02.23
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -40,7 +40,7 @@ Image.LoadNew('SCROLLUP','GFX/Scroll/Up.png')
 Image.LoadNew('SCROLLDN','GFX/Scroll/Down.png')
 
 scroll_imc = { [true]=255, [false]=100}
-scroll_d   = { UP = -1, DN = 1}
+scroll_d   = { UP = -2, DN = 2}
 
 function ScrollArrow(tag,itag,x,y)
     local tmx,tmy = GetMouse()
@@ -52,6 +52,10 @@ function ScrollArrow(tag,itag,x,y)
     Image.Draw('SCROLL'..itag,x,y+scrollers[tag].down)
     if inmouse and INP.MouseD(1)==1 then scrollers[tag].down = scrollers[tag].down + scroll_d[itag] end
 end
+
+function ScrollPos(tag)
+   return scrollers[tag].down
+end   
 
 
 function Scroller(tag,x,y,w,h)
