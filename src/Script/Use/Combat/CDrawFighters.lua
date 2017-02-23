@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 17.02.22
+  Version: 17.02.23
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -61,7 +61,13 @@ end
 function DrawFighter(g,i)
      -- Drawing the char itself
      local chdata = Fighters[g][i]
+     local mx,my = MouseCoords()
+     local fx,fy = FighterCoords(g,i)
+     dfomx,dfomy = dfomx or mx, dfomy or my
      color ( chdata.R or 255, chdata.G or 255, chdata.B or 255)
+     if flow=='playerselectsingletarget' and nextact and nextact.group==g and mx>fx-16 and mx<fx+16 and my>fy-64 and my<fy and mx~=dfomx and my~=dfomy then 
+        nextact.targetidx=i
+     end
      local targetted = flow=='playerselectsingletarget' and nextact and nextact.group==g and nextact.targetidx==i
      if targetted then
         local c=200+(sin(Time.MSecs()/250)*55)
