@@ -1,6 +1,6 @@
 --[[
   WorldMap.lua
-  Version: 17.01.07
+  Version: 17.02.23
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -160,7 +160,7 @@ function R_WorldMap_Unlock(tag)
     CSay(tag.." unlocked")
 end
 
-function R_WorlMap_Lock(tag)
+function R_WorldMap_Lock(tag)
     wm_unlocked[tag] = false
 end
 

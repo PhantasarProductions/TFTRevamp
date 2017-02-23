@@ -184,6 +184,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/GobRogue.lua
     1. Script: Script/JINC/Foes/reg/Hawk.lua
     1. Script: Script/JINC/Foes/reg/HellHound.lua
+    1. Script: Script/JINC/Foes/reg/Highwayman.lua
     1. Script: Script/JINC/Foes/reg/InvisibleMan.lua
     1. Script: Script/JINC/Foes/reg/Lemming.lua
     1. Script: Script/JINC/Foes/reg/Medusa.lua
@@ -200,8 +201,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_CRUSH.lua
     1. Script: Script/JINC/IA/ABL_FOE_DESPERATEATTACK.lua
     1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
+    1. Script: Script/JINC/IA/ABL_FOE_EXHAUST.lua
     1. Script: Script/JINC/IA/ABL_FOE_FLAMESTRIKE.lua
     1. Script: Script/JINC/IA/ABL_FOE_GAZE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_HOLDPERSON.lua
     1. Script: Script/JINC/IA/ABL_FOE_MERMAID_TEMPATION.lua
     1. Script: Script/JINC/IA/ABL_FOE_PARADIVE.lua
     1. Script: Script/JINC/IA/ABL_FOE_SHOCKINGSTORIES.lua
@@ -219,12 +222,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_AXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_SUPERAXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CLEANSE.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CUREDISEASE.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_FIRSTAID.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_GOODMORNING.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_HOLYSTRIKE.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_PRAY.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_PURIFY.lua
@@ -362,6 +365,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_PURELITERATURE.lua
     1. Script: Script/JINC/IA/ITM_SALVE.lua
     1. Script: Script/JINC/IA/ITM_STORMBOTTLE.lua
+    1. Script: Script/JINC/IA/ITM_TOTALEXHAUSTION.lua
     1. Script: Script/JINC/IA/ITM_TRUMPCARD.lua
     1. Script: Script/JINC/IA/ITM_VOICEHERB.lua
     1. Script: Script/JINC/IA/ITM_VOLTABALL.lua
@@ -484,9 +488,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
     1. Script: Script/Use/Combat/SpellAni/Frost.lua
     1. Script: Script/Use/Combat/SpellAni/Heal.lua
+    1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
-    1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
     1. Script: Script/Use/Combat/SpellAni/Temptation.lua
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
@@ -544,12 +548,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png
@@ -1214,8 +1218,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/AltEncounter/Tempting Secrets.ogg
     1. Music: Music/Dungeon/Chillin Hard.ogg
     1. Music: Music/Dungeon/Pippin the Hunchback.ogg
-    1. Music: Music/SpecialBoss/Summon the Rawk.ogg
+    1. Music: Music/Hub/Indore.ogg
+    1. Music: Music/RandomEncounter/Killers.ogg
     1. Music: Music/Dungeon/TheDread.ogg
+    1. Music: Music/SpecialBoss/Summon the Rawk.ogg
     1. Music: Music/Hub/Angevin.ogg
     1. Music: Music/Scenario/We Got Trouble.ogg
     1. Music: Music/Town/Enchanted Valley.ogg
@@ -1653,6 +1659,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/John_6.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/John_7.ogg
 - Unknown artist from the Public Domain
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Hag.png
     1. Graphics: GFX/Combat/Spellani/Temptation/Heart.png
     1. Graphics: GFX/Textures/Trees/Loofboom.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/KillerEscargot.png

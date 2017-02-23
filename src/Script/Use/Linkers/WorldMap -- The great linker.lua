@@ -1,6 +1,6 @@
 --[[
   WorldMap -- The great linker.lua
-  Version: 17.01.01
+  Version: 17.02.23
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -35,7 +35,10 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 function WorldMap(map)
-   Music('Music/Hub/StartToFantasyInstrumental.ogg')
+   Music(
+       ({ Delisto  = 'Music/Hub/StartToFantasyInstrumental.ogg',
+          Kokonora = 'Music/Hub/Indore.ogg'})[map or 'Delisto'] 
+       )
    MS.LoadNew("WORLD","Script/Flow/WorldMap.lua")
    if CVV("$WORLDTALK")=="" then Var.D("$WORLDTALK","TOALTAR") end
    MS.Run('WORLD',"LoadWorld",map or "Delisto") -- Since most locations are on Delisto this was the easiest way to go. Yeah I know, I'm lazy, and I don't care!
