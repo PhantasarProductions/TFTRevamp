@@ -5048,7 +5048,7 @@ Rec: ABL_HERO_MARRILONA_BREEZE
 	SpellAni = 
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
-	Stance = Attack
+	Stance = Cast
 	Target = 1F
 	Title = Breeze
 	Type = Ability
@@ -5149,7 +5149,7 @@ Rec: ABL_HERO_MARRILONA_CHILL
 	SpellAni = Frost
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
-	Stance = Attack
+	Stance = Cast
 	Target = 1F
 	Title = Chill
 	Type = Ability
@@ -5250,7 +5250,7 @@ Rec: ABL_HERO_MARRILONA_ETERNALFLAME
 	SpellAni = Flame
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
-	Stance = Attack
+	Stance = Cast
 	Target = 1F
 	Title = Eternal Flame
 	Type = Ability
@@ -5351,7 +5351,7 @@ Rec: ABL_HERO_MARRILONA_FIREBLAST
 	SpellAni = BurnAll
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
-	Stance = Attack
+	Stance = Cast
 	Target = AF
 	Title = Fireblast
 	Type = Ability
@@ -5452,7 +5452,7 @@ Rec: ABL_HERO_MARRILONA_FLAME
 	SpellAni = Flame
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
-	Stance = Attack
+	Stance = Cast
 	Target = 1F
 	Title = Flame
 	Type = Ability
@@ -5654,7 +5654,7 @@ Rec: ABL_HERO_MARRILONA_INFERNO
 	SpellAni = Inferno
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
-	Stance = Attack
+	Stance = Cast
 	Target = AF
 	Title = Inferno
 	Type = Ability
@@ -6462,7 +6462,7 @@ Rec: ABL_HERO_MARRILONA_ZAP
 	SpellAni = Spark
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
-	Stance = Attack
+	Stance = Cast
 	Target = 1F
 	Title = Zap!
 	Type = Ability

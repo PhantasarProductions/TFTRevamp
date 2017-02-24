@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_INFERNO.lua
-  Version: 17.02.23
+  Version: 17.02.24
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -62,7 +62,7 @@ ret = {
 	["ITM_WeaponAbility"] = true,
 	["Rew_GainAP"] = 5,
 	["SpellAni"] = "Inferno",
-	["Stance"] = "Attack",
+	["Stance"] = "Cast",
 	["Target"] = "AF",
 	["Title"] = "Inferno",
 	["Type"] = "Ability",

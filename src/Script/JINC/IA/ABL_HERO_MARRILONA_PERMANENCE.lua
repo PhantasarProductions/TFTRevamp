@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_PERMANENCE.lua
-  Version: 17.02.23
+  Version: 17.02.24
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

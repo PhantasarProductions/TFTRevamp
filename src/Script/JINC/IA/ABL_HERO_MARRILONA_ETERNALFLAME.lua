@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_ETERNALFLAME.lua
-  Version: 17.02.23
+  Version: 17.02.24
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -61,7 +61,7 @@ ret = {
 	["ITM_Type"] = "Weapon",
 	["ITM_WeaponAbility"] = true,
 	["SpellAni"] = "Flame",
-	["Stance"] = "Attack",
+	["Stance"] = "Cast",
 	["Target"] = "1F",
 	["Title"] = "Eternal Flame",
 	["Type"] = "Ability",

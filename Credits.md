@@ -505,6 +505,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/Temptation.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
     1. Script: Script/Use/Combat/StatusChanges/Charm&Confusion.lua
+    1. Script: Script/Use/Combat/StatusChanges/Curse.lua
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
     1. Script: Script/Use/Combat/StatusChanges/Guard.lua
     1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
@@ -585,6 +586,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.piko
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.png
+    1. Graphics: GFX/Actors/Single/Humans/Russel.png
     1. Graphics: GFX/BoxText/Portret/Rosetta/General.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/MegaGhost.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/DragonKeeper/Female.png

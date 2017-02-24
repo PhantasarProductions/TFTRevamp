@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_BREEZE.lua
-  Version: 17.02.23
+  Version: 17.02.24
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -60,7 +60,7 @@ ret = {
 	["ITM_ShopPrice"] = 250,
 	["ITM_Type"] = "Weapon",
 	["ITM_WeaponAbility"] = true,
-	["Stance"] = "Attack",
+	["Stance"] = "Cast",
 	["Target"] = "1F",
 	["Title"] = "Breeze",
 	["Type"] = "Ability",
