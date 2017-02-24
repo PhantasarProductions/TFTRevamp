@@ -35,7 +35,7 @@
 version: 17.02.24
 ]]
 
-russel = "&DONE.BOSS.RUSSEL"
+russel = "&DONE.BOSS.RUSSELL"
 
 function GoToCorrectStart()
     GoToLayer("forest",({[false]="Start_South",[true]="Start_North"})[CVV(russel)])

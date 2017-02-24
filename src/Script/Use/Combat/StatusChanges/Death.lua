@@ -76,6 +76,7 @@ function KillAward(myfoe)
        inc("%CASH",acash)
     end
     -- Bodycount
+    MasterAllInc("Russel","RusselKills")
     inc('%KILLS')
     bestiary[myfoe.fidtag] = (bestiary[myfoe.fidtag] or 0) + 1
     oversoul[myfoe.fidtag] = (oversoul[myfoe.fidtag] or 0) + 1    
