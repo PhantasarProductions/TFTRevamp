@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 17.02.03
+  Version: 17.02.24
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -73,6 +73,7 @@ function KillAward(myfoe)
        local shilders = "shilders"; if acash==1 then shilders='shilder' end
        ChMiniMsg(myfoe.tag,"Dropped "..acash.." "..shilders,0,180,255)
        MasterAllInc('Rubine','RubinePoints')
+       inc("%CASH",acash)
     end
     -- Bodycount
     inc('%KILLS')
