@@ -37,6 +37,26 @@ version: 17.02.24
 
 russel = "&DONE.BOSS.RUSSELL"
 
+function Boss_Russell()
+  if Done("&DONE.BOSS.RUSSELL") then return end
+  PartyPop("R","North")
+  MapText("RUSSELL_PREBOSS")
+  ClearCombatData()
+  --Schedule('MAP','NPC_Russell')
+  Var.D("$COMBAT.FOE_1","Boss/Russell")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  Var.D("$COMBAT.MUSIC","Music/SpecialBoss/Living Voyage.ogg")
+  Var.D("$COMBAT.ARENA","ForestLoof.png")
+  StartBoss("A pirate's life for him","Russell")
+  Maps.Obj.Obj("NPC_Elizabeth").Visible = 1   
+  WorldMap_Unlock("CH2DOUBLINE")
+  Maps.Obj.Kill("Russell_Boss")
+end
+
+function NPC_Russell()   
+   Master("Russell")
+end   
+
 function GoToCorrectStart()
     GoToLayer("forest",({[false]="Start_South",[true]="Start_North"})[CVV(russel)])
 end
@@ -45,4 +65,6 @@ function GALE_OnLoad()
     ZA_Enter("StartZone",GoToCorrectStart)
     for i=1,2 do ZA_Enter("Bye"..i,WorldMap) end
     MapHide("Secret")
+    Maps.Obj.Obj("NPC_Elizabeth").Visible = ({ [true]=1, [false]=0})[CVV("&DONE.BOSS.RUSSELL")]
+    ZA_Enter("Russell_Boss",Boss_Russell)
 end

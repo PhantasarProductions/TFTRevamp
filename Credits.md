@@ -170,6 +170,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
     1. Script: Script/JINC/Foes/Boss/Librarian.lua
     1. Script: Script/JINC/Foes/Boss/Mega Ghost.lua
+    1. Script: Script/JINC/Foes/Boss/Russell.lua
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/Boss/harry2.lua
@@ -225,9 +226,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_AXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_SUPERAXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CLEANSE.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CUREDISEASE.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_FIRSTAID.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_GOODMORNING.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_HOLYSTRIKE.lua
@@ -271,7 +270,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_VOID.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_REJUVENATE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_ULTRAHEAL.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_VIGOR.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_MASTER_MIDAS_HARDFORTHEMONEY.lua
     1. Script: Script/JINC/IA/ABL_MASTER_MIDAS_STEALMONEY.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_BACKSTAB.lua
@@ -279,6 +280,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_INVADE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_PICKPOCKET.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_POISONSTAB.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_RUSSELL_DECAPITATE.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_RUSSELL_GENOCIDE.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_RUSSELL_SAFESHOT.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_RUSSEL_DECAPITATE.lua
     1. Script: Script/JINC/IA/EQP_ACC_TITANBELT.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_TRAINAXE.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP1.lua
@@ -395,6 +400,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Masters/Freya.lua
     1. Script: Script/JINC/Masters/Midas.lua
     1. Script: Script/JINC/Masters/Rubine.lua
+    1. Script: Script/JINC/Masters/Russell.lua
     1. Script: Script/JINC/PrologueChains/Dandor.lua
     1. Script: Script/JINC/PrologueChains/HandoStillor.lua
     1. Script: Script/JINC/PrologueChains/Jake.lua
@@ -489,8 +495,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellAni/Frost.lua
     1. Script: Script/Use/Combat/SpellAni/Heal.lua
     1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
@@ -500,6 +504,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
+    1. Script: Script/Use/Combat/SpellScript/SafeShot.lua
     1. Script: Script/Use/Combat/SpellScript/Spirata.lua
     1. Script: Script/Use/Combat/SpellScript/Steal.lua
     1. Script: Script/Use/Combat/SpellScript/Temptation.lua
@@ -552,12 +557,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png
@@ -587,6 +594,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.piko
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.png
     1. Graphics: GFX/Actors/Single/Humans/Russel.png
+    1. Graphics: GFX/Actors/Single/Humans/Russell.png
     1. Graphics: GFX/BoxText/Portret/Rosetta/General.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/MegaGhost.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/DragonKeeper/Female.png
@@ -643,16 +651,16 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
-    1. Music: Music/Sys/Silence.ogg
     1. Graphics: GFX/Chapters/1.png
+    1. Music: Music/Sys/Silence.ogg
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
     1. Graphics: GFX/Chapters/4.png
     1. Graphics: GFX/Combat/End/Game Over.png
     1. Graphics: GFX/Combat/End/YouWin.png
-    1. Music: Music/Dungeon/JustASong.ogg
     1. Graphics: GFX/Loading/Graphic.png
     1. Graphics: GFX/Loading/Saving.png
+    1. Music: Music/Dungeon/JustASong.ogg
     1. Graphics: GFX/Logo/End Of Prologue.hot
     1. Graphics: GFX/Logo/End Of Prologue.png
     1. Graphics: GFX/Logo/Game Over.png
@@ -1168,6 +1176,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_SUBRIVER
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_JAKEHUT
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_DOUBLINEBAYFOREST
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_ELFROAD
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_SPIRATAFIRE
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_SPIRATAWATER
@@ -1200,6 +1209,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_SUBRIVER
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_ALTAR
     1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_JAKEHUT
+    1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_DOUBLINEBAYFOREST
     1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_ELFROAD
     1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_SPIRATAFIRE
     1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_SPIRATAWATER
@@ -1227,8 +1237,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Hub/Indore.ogg
     1. Music: Music/RandomEncounter/Killers.ogg
     1. Music: Music/Dungeon/TheDread.ogg
-    1. Music: Music/SpecialBoss/Summon the Rawk.ogg
+    1. Music: Music/SpecialBoss/Living Voyage.ogg
     1. Music: Music/Hub/Angevin.ogg
+    1. Music: Music/SpecialBoss/Summon the Rawk.ogg
     1. Music: Music/Scenario/We Got Trouble.ogg
     1. Music: Music/Town/Enchanted Valley.ogg
 - Man Of Steel

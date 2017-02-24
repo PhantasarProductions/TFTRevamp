@@ -1,4 +1,40 @@
--- File Generated: Fri 24 February 2017; 12:26:33
+--[[
+**********************************************
+  
+  Russell.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
+  
+  This file contains material that is related 
+  to a storyline that is which is strictly
+  copyrighted to Jeroen Broks.
+  
+  This file may only be used in an unmodified
+  form with an unmodified version of the 
+  software this file belongs to.
+  
+  You may use this file for your study to see
+  how I solved certain things in the creation
+  of this project to see if you find valuable
+  leads for the creation of your own.
+  
+  Mostly this file comes along with a project
+  that is for most part released under an
+  open source license and that means that if
+  you use that code with this file removed
+  from it, you can use it under that license.
+  Please check out the other files to find out
+  which license applies.
+  This file comes 'as-is' and in no possible
+  way the author can be held responsible of
+  any form of damages that may occur due to 
+  the usage of this file
+  
+  
+ **********************************************
+ 
+version: 17.02.24
+]]
+-- File Generated: Fri 24 February 2017; 19:05:16
 
 
 local foe = {}
@@ -8,6 +44,8 @@ local foe = {}
 	foe["NEWGAMEPLUS_AAA_GUARD"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_DISTRACT"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_EXHAUST"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_VENOMSTAB"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_VIRUSSTAB"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_JAKE_\50PS"] = true
 	foe["NEWGAMEPLUS_ABL_MASTER_RUBINE_POISONSTAB"] = true
 	foe["NEWGAMEPLUS_ABL_MASTER_RUSSELL_GENOCIDE"] = true
@@ -19,6 +57,8 @@ local foe = {}
 	foe["NORMAL_AAA_GUARD"] = true
 	foe["NORMAL_ABL_FOE_DISTRACT"] = true
 	foe["NORMAL_ABL_FOE_EXHAUST"] = true
+	foe["NORMAL_ABL_FOE_VENOMSTAB"] = true
+	foe["NORMAL_ABL_FOE_VIRUSSTAB"] = true
 	foe["NORMAL_ABL_HERO_JAKE_\50PS"] = true
 	foe["NORMAL_ABL_MASTER_RUBINE_POISONSTAB"] = true
 	foe["NORMAL_ABL_MASTER_RUSSELL_GENOCIDE"] = true
@@ -30,6 +70,8 @@ local foe = {}
 	foe["OVERSOUL_AAA_GUARD"] = true
 	foe["OVERSOUL_ABL_FOE_DISTRACT"] = true
 	foe["OVERSOUL_ABL_FOE_EXHAUST"] = true
+	foe["OVERSOUL_ABL_FOE_VENOMSTAB"] = true
+	foe["OVERSOUL_ABL_FOE_VIRUSSTAB"] = true
 	foe["OVERSOUL_ABL_HERO_JAKE_\50PS"] = true
 	foe["OVERSOUL_ABL_MASTER_RUBINE_POISONSTAB"] = true
 	foe["OVERSOUL_ABL_MASTER_RUSSELL_GENOCIDE"] = true
@@ -41,6 +83,8 @@ local foe = {}
 	foe["SKILL\49_AAA_GUARD"] = true
 	foe["SKILL\49_ABL_FOE_DISTRACT"] = true
 	foe["SKILL\49_ABL_FOE_EXHAUST"] = true
+	foe["SKILL\49_ABL_FOE_VENOMSTAB"] = true
+	foe["SKILL\49_ABL_FOE_VIRUSSTAB"] = true
 	foe["SKILL\49_ABL_HERO_JAKE_\50PS"] = false
 	foe["SKILL\49_ABL_MASTER_RUBINE_POISONSTAB"] = true
 	foe["SKILL\49_ABL_MASTER_RUSSELL_GENOCIDE"] = false
@@ -52,6 +96,8 @@ local foe = {}
 	foe["SKILL\50_AAA_GUARD"] = true
 	foe["SKILL\50_ABL_FOE_DISTRACT"] = true
 	foe["SKILL\50_ABL_FOE_EXHAUST"] = true
+	foe["SKILL\50_ABL_FOE_VENOMSTAB"] = true
+	foe["SKILL\50_ABL_FOE_VIRUSSTAB"] = true
 	foe["SKILL\50_ABL_HERO_JAKE_\50PS"] = true
 	foe["SKILL\50_ABL_MASTER_RUBINE_POISONSTAB"] = true
 	foe["SKILL\50_ABL_MASTER_RUSSELL_GENOCIDE"] = false
@@ -63,6 +109,8 @@ local foe = {}
 	foe["SKILL\51_AAA_GUARD"] = true
 	foe["SKILL\51_ABL_FOE_DISTRACT"] = true
 	foe["SKILL\51_ABL_FOE_EXHAUST"] = true
+	foe["SKILL\51_ABL_FOE_VENOMSTAB"] = true
+	foe["SKILL\51_ABL_FOE_VIRUSSTAB"] = true
 	foe["SKILL\51_ABL_HERO_JAKE_\50PS"] = true
 	foe["SKILL\51_ABL_MASTER_RUBINE_POISONSTAB"] = true
 	foe["SKILL\51_ABL_MASTER_RUSSELL_GENOCIDE"] = true
@@ -79,20 +127,20 @@ local foe = {}
 	foe["STSTART_Silence"] = false
 	foe["STSTART_Undead"] = false
 	foe["Desc"] = "He THINKS he\39s a pirate\46\10Nobody knows where he got his\10obsession from since there are no\10trade ships and thus nu pirates on\10the seas of Phantasar\46"
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47boss\47Russell\46png"
+	foe["Image"] = "GFX\47Actors\47Single\47Humans\47Russell\46png"
 	foe["Item Drop \49"] = "ITM_INFERNOORB"
 	foe["Item Drop \50"] = "ITM_MANDRAKE"
 	foe["Item Steal \49"] = "ITM_STORMBOTTLE"
 	foe["Item Steal \50"] = "EQP_JAKE_WP\49\48"
 	foe["Item Steal \51"] = "EQP_JEWEL_EMERALD"
 	foe["Name"] = "Russell"
-	foe["RATE_AAA_ATTACK"] = 25
+	foe["RATE_AAA_ATTACK"] = 15
 	foe["RATE_AAA_GUARD"] = 1
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
 	foe["RATE_ABL_FOE_CRUSH"] = 0
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
 	foe["RATE_ABL_FOE_DISTRACT"] = 1
-	foe["RATE_ABL_FOE_EXHAUST"] = 1
+	foe["RATE_ABL_FOE_EXHAUST"] = 3
 	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 0
 	foe["RATE_ABL_FOE_GAZE"] = 0
 	foe["RATE_ABL_FOE_HOLDPERSON"] = 0
@@ -107,8 +155,8 @@ local foe = {}
 	foe["RATE_ABL_FOE_TAKEOVER\50"] = 0
 	foe["RATE_ABL_FOE_TUSK"] = 0
 	foe["RATE_ABL_FOE_VENOMBITE"] = 0
-	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
-	foe["RATE_ABL_FOE_VIRUSSTAB"] = 0
+	foe["RATE_ABL_FOE_VENOMSTAB"] = 5
+	foe["RATE_ABL_FOE_VIRUSSTAB"] = 5
 	foe["RATE_ABL_GLOOM"] = 0
 	foe["RATE_ABL_HERO_DANDOR_AXESMASH"] = 0
 	foe["RATE_ABL_HERO_DANDOR_SUPERAXESMASH"] = 0
@@ -164,9 +212,9 @@ local foe = {}
 	foe["RATE_ABL_MASTER_RUBINE_FOLLOWME"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_INVADE"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_PICKPOCKET"] = 0
-	foe["RATE_ABL_MASTER_RUBINE_POISONSTAB"] = 2
+	foe["RATE_ABL_MASTER_RUBINE_POISONSTAB"] = 4
 	foe["RATE_ABL_MASTER_RUSSELL_GENOCIDE"] = 1
-	foe["RATE_ABL_MASTER_RUSSELL_SAFESHOT"] = 5
+	foe["RATE_ABL_MASTER_RUSSELL_SAFESHOT"] = 6
 	foe["RATE_ABL_MASTER_RUSSEL_DECAPITATE"] = 5
 	foe["RATE_ITM_ANABOLINEA"] = 0
 	foe["RATE_ITM_ANTIDOTE"] = 0

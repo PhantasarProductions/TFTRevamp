@@ -1,7 +1,7 @@
 --[[
-  PlayWithPoints.lua
+  SafeShot.lua
   Version: 17.02.24
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -38,31 +38,14 @@
 SpellScript = {}
 -- @FI
 
-function SpellScript.PointAlter(tartag,extag,param)
-    local sp = mysplit(param," ")
-    local p = RPG.Points(tartag,sp[1])
-    p.Have = (({ RAND = function (p) return rand(1,p.Maximum) end})[upper(sp[2])] or function(p,tp) return Sys.Val(tp) end)(p,sp[2])
-    return true
+function SpellScript.SafeShot(tartag,extag,param)
+    local pwr = RPG.Stat(extag,"END_Power")
+    local grp = "Hero"; if prefixed(extag,"FOE_") then grp="Foe" end
+    local factor = ({ Hero = {.75,.5,.15}, Foe={.1,.5,1}})[grp][skill]
+    Hurt(tartag,math.ceil(pwr*factor))
+    return true    
 end
 
-function SpellScript.MultiPointAlter(tartag,extag,paramsequence)
-   for seq in each(mysplit(paramsequence,";")) do SpellScript.PointAlter(extag,tartag,seq) end
-   return true
-end   
-
-function SpellScript.RecoverAP(tartag,extag,param)
-   local n = Sys.Val(param)
-   RPG.Points(tartag,'AP').Inc(n)
-   return true
-end   
-
-function SpellScript.APNUL(tartag,extag,param)
-   RPG.Points(tartag,'AP').Have=0
-   if param and param~="" then
-      charmsg(tartag,param,255,0,0)
-   end
-   return true
-end   
 
 -- @IF INGORE
 return SpellScript 

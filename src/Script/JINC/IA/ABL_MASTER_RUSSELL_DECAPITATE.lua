@@ -1,14 +1,18 @@
 ret = {
-	["ABL_APCost"] = 45,
+	["ABL_APCost"] = 50,
 	["ADDCARD_Action_Act"] = "Self",
 	["ADDCARD_Action_Interval"] = 5,
 	["ADDCARD_Char_Interval"] = 5,
+	["Attack"] = 95,
 	["Attack_AccuracyRate"] = 100,
+	["Attack_AllowAccuracy"] = true,
+	["Attack_AllowCritical"] = true,
+	["Attack_AllowDodge"] = true,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["CurePetrification"] = true,
-	["Desc"] = "Cures \"Petrification\"",
+	["CauseDeath"] = true,
+	["Desc"] = "Attack which may kill instantly",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -20,15 +24,11 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "Heal",
-	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Stone to Flesh",
+	["Stance"] = "Attack",
+	["Target"] = "1F",
+	["Title"] = "Decapitate",
 	["Type"] = "Ability",
-	["Voice"] = "Heal",
-	["rew_GainSkill1"] = 1,
-	["rew_GainSkill3"] = 5,
-	["rew_GainSkill4"] = 5}
+	["Voice"] = "Critical"}
 
 return ret
 
