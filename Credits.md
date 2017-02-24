@@ -270,9 +270,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_VOID.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_REJUVENATE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_ULTRAHEAL.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_VIGOR.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_MASTER_MIDAS_HARDFORTHEMONEY.lua
     1. Script: Script/JINC/IA/ABL_MASTER_MIDAS_STEALMONEY.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_BACKSTAB.lua
@@ -378,7 +376,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_VOICEHERB.lua
     1. Script: Script/JINC/IA/ITM_VOLTABALL.lua
     1. Script: Script/JINC/IA/SPECIAL_AXESMASH.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/SPIRATATRANSFORM.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/SPIRATA_ATTACK_DANDOR.lua
     1. Script: Script/JINC/IA/SPIRATA_ATTACK_HANDOSTILLOR.lua
     1. Script: Script/JINC/IA/SPIRATA_ATTACK_JAKE.lua
@@ -430,6 +430,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH2_Dungeon_SpirataWater.lua
     1. Script: Script/Maps/CH2_Dungeon_SpirataWind.lua
     1. Script: Script/Maps/CH2_Dungeon_VandarRoad.lua
+    1. Script: Script/Maps/CH2_Town_Doubline.lua
     1. Script: Script/Maps/CH2_Town_Dreshka.lua
     1. Script: Script/Maps/CH2_Town_Iskarderiu.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
@@ -643,6 +644,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Data
     1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Objects
     1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Settings
+    1. Map Design: Kthura/CH2_Town_Doubline/Data
+    1. Map Design: Kthura/CH2_Town_Doubline/Objects
+    1. Map Design: Kthura/CH2_Town_Doubline/Settings
     1. Map Design: Kthura/CH2_Town_Dreshka/Data
     1. Map Design: Kthura/CH2_Town_Dreshka/Objects
     1. Map Design: Kthura/CH2_Town_Dreshka/Settings
@@ -1252,8 +1256,30 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Elves/RandomElfFemale2.png
     1. Graphics: GFX/Actors/Single/Elves/RandomElfMale.png
     1. Graphics: GFX/Actors/Single/Elves/RandomElfMale2.png
+    1. Graphics: GFX/Textures/Human Village/brick fence.png
+    1. Graphics: GFX/Textures/Human Village/brick fence2.png
+    1. Graphics: GFX/Textures/Human Village/brick fence3.png
+    1. Graphics: GFX/Textures/Human Village/brick fence4.png
+    1. Graphics: GFX/Textures/Human Village/brick fenceG.png
     1. Graphics: GFX/Textures/Kapot Mubilair/Bank.png
     1. Graphics: GFX/Textures/Kapot Mubilair/Hemelbed.png
+    1. Graphics: GFX/Textures/Road/Dead Grass.png
+    1. Graphics: GFX/Textures/Road/Grass1.png
+    1. Graphics: GFX/Textures/Road/Grass2.png
+    1. Graphics: GFX/Textures/Road/R.png
+    1. Graphics: GFX/Textures/Road/RBE.png
+    1. Graphics: GFX/Textures/Road/RBN.png
+    1. Graphics: GFX/Textures/Road/RBNE.png
+    1. Graphics: GFX/Textures/Road/RBNW.png
+    1. Graphics: GFX/Textures/Road/RBS.png
+    1. Graphics: GFX/Textures/Road/RBSE.png
+    1. Graphics: GFX/Textures/Road/RBSW.png
+    1. Graphics: GFX/Textures/Road/RBW.png
+    1. Graphics: GFX/Textures/Road/RSNE.png
+    1. Graphics: GFX/Textures/Road/RSNW.png
+    1. Graphics: GFX/Textures/Road/RSSE.png
+    1. Graphics: GFX/Textures/Road/RSSW.png
+    1. Graphics: GFX/Textures/Road/cliffside.png
     1. Graphics: GFX/Textures/Town/Elves/House.png
     1. Graphics: GFX/Actors/Single/Fairies/Female.piko
     1. Graphics: GFX/Actors/Single/Fairies/Female.png
@@ -1691,6 +1717,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Special Boss/PlayTillDeath_(Nostramantu).ogg
 - Wicky77
     1. Music: Music/Town/Happy.ogg
+    1. Music: Music/Town/IrishFishermen.ogg
     1. Music: Music/Combat/Victory.ogg
     1. Music: Music/Dungeon/Beethoven.ogg
     1. Music: Music/Dungeon/Chanson d'eglise.ogg
