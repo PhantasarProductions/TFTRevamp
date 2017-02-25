@@ -83,6 +83,30 @@ Rec: ITEM_ALBERTA
 	Slot9 = ITM_HOLYSCROLL
 	Title = Alberta's item store
 
+Rec: ITEM_BELLATRIX
+	AllowTrade = FALSE
+	Slot1 = ITM_DEATHCUBE
+	Slot10 = ITM_STORMBOTTLE
+	Slot11 = ITM_POTION
+	Slot12 = ITM_PANACEA
+	Slot13 = ITM_PHOENIX
+	Slot14 = 
+	Slot15 = 
+	Slot16 = 
+	Slot17 = 
+	Slot18 = 
+	Slot19 = 
+	Slot2 = ITM_EEL
+	Slot20 = 
+	Slot3 = ITM_FLAMEORB
+	Slot4 = ITM_INFERNOORB
+	Slot5 = ITM_TRUMPCARD
+	Slot6 = ITM_PURELITERATURE
+	Slot7 = ITM_POISONDART
+	Slot8 = ITM_SLEEPHERB
+	Slot9 = ITM_STONE
+	Title = 
+
 Rec: ITEM_ISKARDERIU
 	AllowTrade = FALSE
 	Slot1 = ITM_APPLE

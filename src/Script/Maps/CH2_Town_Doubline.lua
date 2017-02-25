@@ -32,5 +32,19 @@
   
  **********************************************
  
-version: 17.02.24
+version: 17.02.25
 ]]
+
+
+function NPC_Molly() Inn() end
+
+function NPC_Bellatrix()
+    MapText("BELLATRIX")
+    Shop("ITEM_BELLATRIX")
+end    
+
+
+
+function GALE_OnLoad()
+  ZA_Enter("Bye",WorldMap)
+end   

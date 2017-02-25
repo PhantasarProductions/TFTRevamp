@@ -558,12 +558,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
@@ -590,6 +590,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/blops/Blop4.png
     1. Graphics: gfx/Textures/blops/Blop5.png
     1. Graphics: gfx/Textures/blops/Blop6.png
+    1. Graphics: GFX/Actors/Single/Cameos/GJDC.png
+    1. Graphics: GFX/Actors/Single/Cameos/GJYT.png
     1. Graphics: GFX/Actors/Single/Elves/GedrioFulla.png
     1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.piko
@@ -1186,6 +1188,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_SPIRATAWATER
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_SPIRATAWIND
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_VANDARROAD
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_DOUBLINE
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_DRESHKA
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_ISKARDERIU
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
@@ -1219,6 +1222,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_SPIRATAWATER
     1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_SPIRATAWIND
     1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_VANDARROAD
+    1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_DOUBLINE
     1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_DRESHKA
     1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_ISKARDERIU
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
