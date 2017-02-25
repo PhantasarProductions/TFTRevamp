@@ -1,6 +1,6 @@
 --[[
   Flip.lua
-  Version: 17.01.01
+  Version: 17.02.25
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -56,13 +56,14 @@ end
 
 function Flip()
     MS.Run("ACH","AchFlip") -- Render any gotten achievements before we show the screen to the player!
-    if CVV('%CHAPTIME')>0 then
+    
+    if CVV('%CHAPTIME')>0 and Image.Exists("CHAP")~=0 then
        if CVV('%CHAPALPHA')<100 and CVV('%CHAPTIME')>100 then inc('%CHAPALPHA') end
        if CVV('%CHAPTIME')<100 then Var.D('%CHAPALPHA',CVV('%CHAPTIME')) end
        Image.SetAlphaPC(CVV('%CHAPALPHA'))
        Image.Show('CHAP',Center_X,Center_Y)
        Image.SetAlphaPC(100)
-       dec('%CHAPTIME')
+       dec('%CHAPTIME')       
     end
     Image.Flip() -- Show it!
     -- And recalcute the game time.
