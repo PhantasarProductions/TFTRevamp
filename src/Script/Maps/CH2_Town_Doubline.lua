@@ -41,7 +41,12 @@ function NPC_Molly() Inn() end
 function NPC_Bellatrix()
     MapText("BELLATRIX")
     Shop("ITEM_BELLATRIX")
-end    
+end
+
+function NPC_Gilduroy()
+    MapText("GILDUROY")
+    Shop("WEAPON_GILDUROY")
+end
 
 
 

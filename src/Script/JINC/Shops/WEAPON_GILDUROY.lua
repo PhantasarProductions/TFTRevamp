@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  ITEM_ISKARDERIU.lua
+  WEAPON_GILDUROY.lua
   (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
@@ -39,26 +39,26 @@ version: 17.02.25
 -- License: This file contains data from the Phantasar Universe and is therefore property of Jeroen Broks and may NOT be used for your own ends.
 	ret = {
 		["AllowTrade"] = false,
-		["Slot1"] = "ITM_APPLE",
-		["Slot10"] = "ITM_CARROT",
-		["Slot11"] = "ITM_PANACEA",
-		["Slot12"] = "",
-		["Slot13"] = "",
-		["Slot14"] = "",
-		["Slot15"] = "",
-		["Slot16"] = "",
-		["Slot17"] = "",
-		["Slot18"] = "",
-		["Slot19"] = "",
-		["Slot2"] = "ITM_SALVE",
-		["Slot20"] = "",
-		["Slot3"] = "ITM_POTION",
-		["Slot4"] = "ITM_HEALINGHERB",
-		["Slot5"] = "ITM_ANTIDOTE",
-		["Slot6"] = "ITM_MEDICINE",
-		["Slot7"] = "ITM_MAGICDUST",
-		["Slot8"] = "ITM_VOICEHERB",
-		["Slot9"] = "ITM_MANDRAKE",
-		["Title"] = "Emor Shylah's item shop"}
+		["Slot1"] = "EQP_JAKE_WP6",
+		["Slot10"] = "EQP_DANDOR_WP6",
+		["Slot11"] = "EQP_DANDOR_WP5",
+		["Slot12"] = "EQP_DANDOR_WP4",
+		["Slot13"] = "EQP_HANDOSTILLOR_WP6",
+		["Slot14"] = "EQP_HANDOSTILLOR_WP5",
+		["Slot15"] = "EQP_HANDOSTILLOR_WP4",
+		["Slot16"] = "EQP_HANDOSTILLOR_AR6",
+		["Slot17"] = "EQP_HANDOSTILLOR_AR5",
+		["Slot18"] = "EQP_HANDOSTILLOR_AR4",
+		["Slot19"] = "EQP_ACC_TITANBELT",
+		["Slot2"] = "EQP_JAKE_WP5",
+		["Slot20"] = "ITM_VOLTABALL",
+		["Slot3"] = "EQP_JAKE_WP4",
+		["Slot4"] = "EQP_JAKE_AR6",
+		["Slot5"] = "EQP_JAKE_AR5",
+		["Slot6"] = "EQP_JAKE_AR4",
+		["Slot7"] = "EQP_MARRILONA_AR6",
+		["Slot8"] = "EQP_MARRILONA_AR5",
+		["Slot9"] = "EQP_MARRILONA_AR4",
+		["Title"] = ""}
 
 return ret
