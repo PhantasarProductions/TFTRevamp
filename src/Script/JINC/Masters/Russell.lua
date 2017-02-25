@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.24
+version: 17.02.25
 ]]
 local RPG = RPGStat
 
@@ -110,7 +110,7 @@ Russell.Desc = {"A pirate's life for Russell","Although nobody on Phantasar know
 
 function Russell.ShowScore(ch)
      local r = RPGStat.Stat(ch,"RussellKills")
-     return r .. ({[true]='kill',[false]='kills'})[r==1]
+     return r .. ({[true]=' kill',[false]=' kills'})[r==1]
 end
 
 return Russell

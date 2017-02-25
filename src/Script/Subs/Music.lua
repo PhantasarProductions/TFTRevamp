@@ -1,8 +1,8 @@
 --[[
   Music.lua
   Music routine for LAURA II
-  version: 16.09.25
-  Copyright (C) 2015, 2016 Jeroen P. Broks
+  version: 17.02.25
+  Copyright (C) 2015, 2016, 2017 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
@@ -24,7 +24,8 @@
 musicavailable = JCR6.Exists("ID/ID.DEMO.MUSIC")==1;
 
 -- _@_USEDIR Scripts/Use/AltMusic
-function TrueMusic(songfile,noloop)
+function TrueMusic(psongfile,noloop)
+local songfile = upper(psongfile)
 if not musicavailable then
    Console.Write("Request done to load music "..songfile..", but the music is not available!",255,0,0)
    return 

@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 17.01.02
+Version: 17.02.25
 End Rem
 Strict
 
@@ -32,7 +32,7 @@ Import tricky_units.Listfile
 Import maxgui.maxgui
 
 
-MKL_Version "The Fairy Tale - REVAMP - Globals.bmx","17.01.02"
+MKL_Version "The Fairy Tale - REVAMP - Globals.bmx","17.02.25"
 MKL_Lic     "The Fairy Tale - REVAMP - Globals.bmx","GNU General Public License 3"
 
 AppTitle = StripAll(AppFile)
@@ -83,12 +83,14 @@ Function GetID:StringMap()
 			DebugLog c[0]+" = ~q"+c[1]+"~q"
 		EndIf
 	Next
-	If id.Value("Dev")="Yes"
+	If id.Value("Dev")="Yes" And JCR_Exists(jcr,"Authenticate/Check")
 		If Not FileType("/Volumes/Scyndi/Projects/Applications/BlitzMax/JCR6+/LAURA II/Design/The Fairy Tale - REVAMP/Jeroen")
 			Notify "Something went wrong with some internal settings. Please notify Jeroen to set this right!"
 			End
 		EndIf
 		Notify "Development version! You have be recognized"
+	ElseIf id.Value("Dev")="Yes"
+		Notify "Warning! This is a pre-alpha.~nGameJolt API and Anna not supported~nAnd the game may be buggy and incomplete"	
 	EndIf		
 End Function GetID
 

@@ -48,6 +48,30 @@ function NPC_Gilduroy()
     Shop("WEAPON_GILDUROY")
 end
 
+function NPC_Ludo()
+   local ludo = "&DONE.LUDO.CHARTERED"
+   if CVV(ludo) then
+      MapText("LUDO_SAIL");
+      ({function() LoadMap("CH3_Dungeon_KokonoraForest") GoToLayer("fisherman","ludo") end,Nothing})[RunQuestion("Map","LUDO_SAIL")]()
+      return
+   end
+   MapText("LUDO_CHARTER")
+   if CVV("%CASH")<5000 then return end -- Nope, you can't do this if you don't have the cash at all.
+   ({   function() 
+          dec("%CASH",5000)
+          Award("CHAPTER2")
+          MapText("LUDO_CHARTERED")
+          LoadMap("CH3_Dungeon_KokonoraForest") 
+          Chapter('GFX/Chapters/3.png')
+          GoToLayer("fisherman","ludo") 
+          Done(ludo)
+        end,
+        function() 
+            MapText("LUDO_REFUSE") 
+        end,
+        })[RunQuestion("MAP","LUDO_PAY")]()        
+end      
+
 
 
 function GALE_OnLoad()

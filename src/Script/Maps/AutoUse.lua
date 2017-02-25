@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 17.02.08
+  Version: 17.02.25
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -149,6 +149,9 @@ for ZK,ZZ in pairs(ZA.Flow) do
        end
     end
 end
+
+ZA_Enter("Kokonora",function() WorldMap("Kokonora") end)
+ZA_Enter("Delisto",function() WorldMap("Delisto") end)
 
 function NPC_MapText()
   TurnPlayer("North")
