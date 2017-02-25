@@ -16049,7 +16049,7 @@ Rec: ITM_DEATHCUBE
 	ITM_EQP_For = Jake
 	ITM_Field = TRUE
 	ITM_Sellable = TRUE
-	ITM_ShopPrice = 0
+	ITM_ShopPrice = 750
 	ITM_Type = Consumable
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE

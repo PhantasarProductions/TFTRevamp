@@ -218,6 +218,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_SUICIDE.lua
     1. Script: Script/JINC/IA/ABL_FOE_TAKEOVER.lua
     1. Script: Script/JINC/IA/ABL_FOE_TAKEOVER2.lua
+    1. Script: Script/JINC/IA/ABL_FOE_TOTALEXHAUSTION.lua
     1. Script: Script/JINC/IA/ABL_FOE_TUSK.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMBITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMSTAB.lua
@@ -356,6 +357,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_BELL.lua
     1. Script: Script/JINC/IA/ITM_CARROT.lua
     1. Script: Script/JINC/IA/ITM_DEATHCUBE.lua
+    1. Script: Script/JINC/IA/ITM_EEL.lua
     1. Script: Script/JINC/IA/ITM_FLAMEORB.lua
     1. Script: Script/JINC/IA/ITM_HEALINGHERB.lua
     1. Script: Script/JINC/IA/ITM_HEALSHOWER.lua
@@ -367,18 +369,23 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_MIRROR.lua
     1. Script: Script/JINC/IA/ITM_PANACEA.lua
     1. Script: Script/JINC/IA/ITM_PHOENIX.lua
+    1. Script: Script/JINC/IA/ITM_POISONDART.lua
     1. Script: Script/JINC/IA/ITM_POTION.lua
     1. Script: Script/JINC/IA/ITM_PURELITERATURE.lua
     1. Script: Script/JINC/IA/ITM_SALVE.lua
+    1. Script: Script/JINC/IA/ITM_SLEEPHERB.lua
+    1. Script: Script/JINC/IA/ITM_STONE.lua
     1. Script: Script/JINC/IA/ITM_STORMBOTTLE.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/ITM_TOTALEXHAUSTION.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ITM_TRUMPCARD.lua
+    1. Script: Script/JINC/IA/ITM_VIRUSBOMB.lua
     1. Script: Script/JINC/IA/ITM_VOICEHERB.lua
     1. Script: Script/JINC/IA/ITM_VOLTABALL.lua
+    1. Script: Script/JINC/IA/ITM_WATERBUBBLE.lua
     1. Script: Script/JINC/IA/SPECIAL_AXESMASH.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/SPIRATATRANSFORM.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/SPIRATA_ATTACK_DANDOR.lua
     1. Script: Script/JINC/IA/SPIRATA_ATTACK_HANDOSTILLOR.lua
     1. Script: Script/JINC/IA/SPIRATA_ATTACK_JAKE.lua
@@ -408,6 +415,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Shops/CLONE_Aelvindor.lua
     1. Script: Script/JINC/Shops/CLONE_Fred.lua
     1. Script: Script/JINC/Shops/ITEM_ALBERTA.lua
+    1. Script: Script/JINC/Shops/ITEM_BELLATRIX.lua
     1. Script: Script/JINC/Shops/ITEM_ISKARDERIU.lua
     1. Script: Script/JINC/Shops/ITEM_WANDA.lua
     1. Script: Script/JINC/Shops/WAND_MONIQUE.lua
@@ -558,12 +566,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
