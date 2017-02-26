@@ -76,6 +76,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - Angela Nagtzaam
     1. Graphics: GFX/BoxText/Portret/Dreshka/General.png
     1. Graphics: GFX/BoxText/Portret/Gedrio Fulla/General.png
+    1. Graphics: GFX/BoxText/Portret/Krandar/General.png
+    1. Graphics: GFX/BoxText/Portret/Krandar/VeelTeGroot.png
+    1. Graphics: GFX/BigPic/Krandar.png
     1. Graphics: GFX/BoxText/Portret/Fandalora/General.png
     1. Graphics: GFX/BoxText/Portret/Fandalora/NoEmo.png
     1. Graphics: GFX/BoxText/Portret/Harry/Angry.png
@@ -256,9 +259,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_INFERNO.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PERMANENCE.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PROTECT.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ROCK.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_SPEEDUP.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_SPLASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_STONE2FLESH.lua
@@ -287,6 +288,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSELL_SAFESHOT.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSEL_DECAPITATE.lua
     1. Script: Script/JINC/IA/EQP_ACC_TITANBELT.lua
+    1. Script: Script/JINC/IA/EQP_DANDOR_CURSEDWP_HUNGERAXE.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_TRAINAXE.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP1.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP10.lua
@@ -308,6 +310,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_AR7.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_AR8.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_AR9.lua
+    1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_CURSEDWP_ZOMBIESTAFF.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_TRAINSTAFF.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP1.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP10.lua
@@ -329,8 +332,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_AR7.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR8.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR9.lua
+    1. Script: Script/JINC/IA/EQP_JAKE_CURSEDWP_VENOMBLADE.lua
     1. Script: Script/JINC/IA/EQP_JAKE_TRAINSWORD.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/EQP_JAKE_WP1.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/EQP_JAKE_WP10.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP2.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP3.lua
@@ -393,6 +399,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/SPIRATA_ATTACK_MARRILONA.lua
     1. Script: Script/JINC/IA/WAND_BIO.lua
     1. Script: Script/JINC/IA/WAND_DARK.lua
+    1. Script: Script/JINC/IA/WAND_DOOM.lua
     1. Script: Script/JINC/IA/WAND_FLAME.lua
     1. Script: Script/JINC/IA/WAND_FROST.lua
     1. Script: Script/JINC/IA/WAND_GAIA.lua
@@ -516,10 +523,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
+    1. Script: Script/Use/Combat/SpellScript/PunishUser.lua
     1. Script: Script/Use/Combat/SpellScript/SafeShot.lua
     1. Script: Script/Use/Combat/SpellScript/Spirata.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Use/Combat/SpellScript/Steal.lua
     1. Script: Script/Use/Combat/SpellScript/Temptation.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
@@ -571,12 +577,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png
@@ -601,6 +609,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/blops/Blop4.png
     1. Graphics: gfx/Textures/blops/Blop5.png
     1. Graphics: gfx/Textures/blops/Blop6.png
+    1. Graphics: GFX/Actors/Bundled/Player/Krandar.NS.piko
+    1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.frames
+    1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.png
     1. Graphics: GFX/Actors/Single/Cameos/GJDC.png
     1. Graphics: GFX/Actors/Single/Cameos/GJYT.png
     1. Graphics: GFX/Actors/Single/Elves/GedrioFulla.png
@@ -672,15 +683,16 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Music: Music/Sys/Silence.ogg
+    1. Music: Music/Dungeon/JustASong.ogg
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
     1. Graphics: GFX/Chapters/4.png
     1. Graphics: GFX/Combat/End/Game Over.png
-    1. Music: Music/Dungeon/JustASong.ogg
     1. Graphics: GFX/Combat/End/YouWin.png
     1. Graphics: GFX/Loading/Graphic.png
     1. Graphics: GFX/Loading/Saving.png
+    1. Music: Music/Dungeon/Scary Song.ogg
     1. Graphics: GFX/Logo/End Of Prologue.hot
     1. Graphics: GFX/Logo/End Of Prologue.png
     1. Graphics: GFX/Logo/Game Over.png
@@ -690,7 +702,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Menu Icons/Buy.png
     1. Graphics: GFX/Menu Icons/Sell.png
     1. Graphics: GFX/Menu Icons/Trade.png
-    1. Music: Music/Dungeon/Scary Song.ogg
     1. Graphics: GFX/Party/Level Up.png
     1. Audio: Audio/Combat/CardSlide.ogg
     1. Audio: Audio/Party/Level Up.ogg

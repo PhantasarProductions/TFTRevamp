@@ -1,6 +1,6 @@
 --[[
   Scroller.lua
-  Version: 17.02.23
+  Version: 17.02.26
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -57,10 +57,15 @@ function ScrollPos(tag)
    return scrollers[tag].down
 end   
 
+function ScrollMove(tag,value)
+   scrollers[tag].down = scrollers[tag].down + (value or 2)
+   if     scrollers[tag].down < ( scrollers[tag].min or 0    )      then scrollers[tag].down = scrollers[tag].min or 0
+   elseif scrollers[tag].down+scrollers[tag].h > scrollers[tag].max then scrollers[tag].down = scrollers[tag].max - scrollers[tag].h end
+end   
 
 function Scroller(tag,x,y,w,h)
   -- CSay('Scroller("'..tag..'",'..x..','..y..','..w..','..h..")")
-  scrollers[tag] = scrollers[tag] or { x=x, y=y, w=w, h=h, down=0}
+  scrollers[tag] = scrollers[tag] or { x=x, y=y, w=w, h=h, down=0, max=h}
   local myscroll = scrollers[tag]
   myscroll.ori = myscroll.ori or {}
   local ori=myscroll.ori

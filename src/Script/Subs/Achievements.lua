@@ -1,6 +1,6 @@
 --[[
   Achievements.lua
-  Version: 17.02.22
+  Version: 17.02.26
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -194,6 +194,8 @@ function AchList(argstring)
        y = y + 45
        ScrollMax(myarg.tag,y)
    end
+   if     INP.KeyD(KEY_DOWN)==1 or joydown(joy_down) then ScrollMove(myarg.tag, 2) 
+   elseif INP.KeyD(KEY_UP  )==1 or joydown(joy_up  ) then ScrollMove(myarg.tag,-2) end
    EndScroller(myarg.tag)
 end 
 
