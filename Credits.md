@@ -612,6 +612,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.NS.piko
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.frames
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.png
+    1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 1.png
+    1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 2.png
+    1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female.NS.piko
+    1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male 1.png
+    1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male.piko
     1. Graphics: GFX/Actors/Single/Cameos/GJDC.png
     1. Graphics: GFX/Actors/Single/Cameos/GJYT.png
     1. Graphics: GFX/Actors/Single/Elves/GedrioFulla.png
