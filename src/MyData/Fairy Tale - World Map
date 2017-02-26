@@ -233,7 +233,7 @@ Rec: CH2WINDSPIRATA
 	UnlockedFromStart = FALSE
 
 Rec: CH3KOKOFOREST
-	Dungeon = FALSE
+	Dungeon = TRUE
 	Folder = Kokonora
 	Kthura = CH3_Dungeon_KokonoraForest
 	Layer = forest

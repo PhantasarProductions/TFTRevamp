@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.22
+version: 17.02.26
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
@@ -76,7 +76,8 @@ function Hurt(tag,damage,element)
       RPG.Points(tag,'HP') -- Any minimums and maximums are now taken in order automatically.
       if hp.Have<=0 then SetStatus(tag,'Death',true) end 
       CSay(sval(tag).." suffered "..dmg.." damage")
-      if (not prefixed(tag,"FOE")) and ((not VicQ) or upper(VicQ)=="PERFECT") then VicQ="General" end                  
+      if (not prefixed(tag,"FOE")) and ((not VicQ) or upper(VicQ)=="PERFECT") then VicQ="General" end      
+      return dmg            
 end
 
 
@@ -104,6 +105,11 @@ function Attack(act,g,i,na)
     if critical then 
        damage = rand(damage,damage*2)
        charmsg(ttag,'Critical!',255,0,0) 
+    end
+    -- Dandor skills
+    if ttag=="Dandor" and prefixed(atag,"FOE") then -- Attacks from confused allies won't count!
+       if act.Attack_DefenseStat=="Power" or act.Attack_DefenseStat=="Endurance" and RPG.PointsExists("Dandor","SK_EXP_2")~=0 then RPG.Points("Dandor","SK_EXP_2").inc(damage)
+       elseif act.Attack_DefenseStat=="Intelligence" or act.Attack_DefenseStat=="Resistance" and RPG.PointsExists("Dandor","SK_EXP_3")~=0 then RPG.Points("Dandor","SK_EXP_3").inc(damage) end
     end
     -- And let's put it all through now... 
     Hurt(ttag,damage,act.Attack_Element)

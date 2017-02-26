@@ -248,6 +248,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_BIO.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_BREEZE.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_CHILL.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ELECTROCUTION.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ETERNALFLAME.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FIREBLAST.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FLAME.lua
@@ -255,10 +256,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_INFERNO.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PERMANENCE.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PROTECT.lua
-    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ROCK.lua
-    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_SPEEDUP.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ROCK.lua
     1. Graphics: gfx/Effects/Darkness II.png
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_SPEEDUP.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_SPLASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_STONE2FLESH.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_TSUNAMI.lua
@@ -517,9 +518,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
     1. Script: Script/Use/Combat/SpellScript/SafeShot.lua
     1. Script: Script/Use/Combat/SpellScript/Spirata.lua
-    1. Script: Script/Use/Combat/SpellScript/Steal.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
+    1. Script: Script/Use/Combat/SpellScript/Steal.lua
     1. Script: Script/Use/Combat/SpellScript/Temptation.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
     1. Script: Script/Use/Combat/StatusChanges/Charm&Confusion.lua
@@ -570,12 +571,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png
@@ -689,8 +690,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Menu Icons/Buy.png
     1. Graphics: GFX/Menu Icons/Sell.png
     1. Graphics: GFX/Menu Icons/Trade.png
-    1. Graphics: GFX/Party/Level Up.png
     1. Music: Music/Dungeon/Scary Song.ogg
+    1. Graphics: GFX/Party/Level Up.png
     1. Audio: Audio/Combat/CardSlide.ogg
     1. Audio: Audio/Party/Level Up.ogg
     1. Audio: Audio/Party/Level Up.wav

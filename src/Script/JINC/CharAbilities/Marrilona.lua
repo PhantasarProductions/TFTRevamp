@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.17
+version: 17.02.26
 ]]
 
 -- abl_hero_jake_2ps = {5},abl_hero_jake_3ps={25},abl_hero_jake_4ps={50},abl_hero_jake_berserk={10,5}
@@ -72,7 +72,8 @@ if fullversion then -- That's right Marrilona will not get her level #2 and leve
                      }
    r["3. Level 3"] = {                 abl_hero_marrilona_stone2flesh = {[3]=10,[4]=65}, --  1
                                        abl_hero_marrilona_empower = {[2]=25},      --  2
-                                       abl_hero_marrilona_inferno = {[1]=5*skill,[2]=15*skill} -- 3
+                                       abl_hero_marrilona_inferno = {[1]=5*skill,[2]=15*skill}, -- 3
+                                       abl_hero_marrilona_electrotion = {[1]=2*skill,[2]=10*skill,[3]=10*skill} --4
                      }                  
 end
              

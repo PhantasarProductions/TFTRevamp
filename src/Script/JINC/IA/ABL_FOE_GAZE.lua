@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_GAZE.lua
-  Version: 17.02.25
+  Version: 17.02.26
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
