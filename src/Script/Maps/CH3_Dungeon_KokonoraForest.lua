@@ -34,3 +34,8 @@
  
 version: 17.02.25
 ]]
+
+
+function GALE_OnLoad()
+    ZA_Enter("Kokonora2",WorldMap,"Kokonora")
+end    

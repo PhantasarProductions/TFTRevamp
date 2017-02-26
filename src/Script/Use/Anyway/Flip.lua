@@ -57,7 +57,7 @@ end
 function Flip()
     MS.Run("ACH","AchFlip") -- Render any gotten achievements before we show the screen to the player!
     
-    if CVV('%CHAPTIME')>0 and Image.Exists("CHAP")~=0 then
+    if CVV('%CHAPTIME')>0 and Image.Exist("CHAP")~=0 then
        if CVV('%CHAPALPHA')<100 and CVV('%CHAPTIME')>100 then inc('%CHAPALPHA') end
        if CVV('%CHAPTIME')<100 then Var.D('%CHAPALPHA',CVV('%CHAPTIME')) end
        Image.SetAlphaPC(CVV('%CHAPALPHA'))
