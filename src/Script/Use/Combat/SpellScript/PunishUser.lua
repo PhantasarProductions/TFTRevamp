@@ -42,6 +42,27 @@ function SpellScript.CurseUser(tartag,extag,param)
      GiveStatus(extag,"Curse")
 end     
 
+function SpellScript.PoisonUser(tartag,extag,param)
+     GiveStatus(extag,"Poison")
+end     
+
+
+function SpellScript.EatUserHP(tartag,extag,p)
+     local HP=RPG.Points(extag,"HP")
+     local factor = ({.25,.50,.75})[skill]
+     HP.Have = math.ceil(HP.Have*factor)
+end 
+
+function SpellScript.UndeadBackfire(tartag,extag)
+     local s = fighterbytag[tartag].statuschanges or {}
+     local HP=RPG.Points(extag,"HP")
+     if s.Undead then
+        HP.inc(RPG.Points(tartag,"HP").Have)
+        GiveStatus(tartag,"Death")
+     end
+     GiveStatus(extag,"Undead")
+end            
+
 
 -- @IF IGNORE
 return SpellScript
