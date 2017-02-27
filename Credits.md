@@ -249,6 +249,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_2PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_3PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_4PS.lua
+    1. Script: Script/JINC/IA/ABL_HERO_JAKE_BERSERK.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_HEALBLADE.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_FAIRY.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_HUMAN.lua
@@ -291,6 +292,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSELL_GENOCIDE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSELL_SAFESHOT.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSEL_DECAPITATE.lua
+    1. Script: Script/JINC/IA/BESERK_ATTACK.lua
     1. Script: Script/JINC/IA/EQP_ACC_TITANBELT.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_CURSEDWP_HUNGERAXE.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_TRAINAXE.lua
@@ -338,10 +340,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_AR9.lua
     1. Script: Script/JINC/IA/EQP_JAKE_CURSEDWP_VENOMBLADE.lua
     1. Script: Script/JINC/IA/EQP_JAKE_TRAINSWORD.lua
-    1. Script: Script/JINC/IA/EQP_JAKE_WP1.lua
-    1. Script: Script/JINC/IA/EQP_JAKE_WP10.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Graphics: gfx/Effects/Darkness II.png
+    1. Script: Script/JINC/IA/EQP_JAKE_WP1.lua
+    1. Script: Script/JINC/IA/EQP_JAKE_WP10.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP2.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP3.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP4.lua

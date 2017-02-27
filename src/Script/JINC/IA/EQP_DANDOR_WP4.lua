@@ -35,6 +35,7 @@
 version: 17.02.27
 ]]
 ret = {
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Power",
 	["Attack_Element"] = "None",

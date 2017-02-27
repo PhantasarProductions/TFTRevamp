@@ -1,5 +1,5 @@
 --[[
-  Charm&Confusion.lua
+  ABL_HERO_JAKE_BERSERK.lua
   Version: 17.02.27
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -34,66 +34,33 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- @IF IGNORE
-local StatusChanges = {}
--- @FI
+ret = {
+	["ABL_APCost"] = 25,
+	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack_AccuracyRate"] = 100,
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Element"] = "None",
+	["CauseBerserk"] = true,
+	["Desc"] = "Rage at the world! Just rage!",
+	["Heal_StatPercent"] = "Intelligence",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "HealSingle",
+	["Stance"] = "Cast",
+	["Target"] = "OS",
+	["Title"] = "Berserk",
+	["Type"] = "Ability"}
 
+return ret
 
-function ConfuSetMove(me,groups)
-          nextact   = {
-                           executor = { group = ({[true]='Foe',[false]='Hero'})[prefixed(me,'FOE_')], tag=me },
-                           act = 'AAA_ATTACK', 
-                           flow='Execution', 
-                           group=groups[rand(1,#groups)],
-                           --targetidx=i
-                       }
-          flow='Execution'                             
-          local myg = nextact.executor.group
-          local chg = {}
-          local g = groups[rand(1,#groups)]
-          for i,_ in pairs(fighters[g]) do chg[#chg+1]=i end
-          nextact.targetidx = chg[rand(1,#chg)]              
-          return nextact             
+-- This file is an automatically generated file!
 
-end
-
-
-
-StatusChanges.Charmed = {
-    mydat = { zzz = {} },
-
-    AttackExpire = true,
-    
-    AltMove = function(me) return ConfuSetMove(me,{'Hero'}) end,
-    
-    
-    DrawFighter = function(ch)
-
-       local chx,chy = FighterCoords(ch)
-       Image.LoadNew('ST_HEART','GFX/Combat/SpellAni/Temptation/Heart.png'); Image.Hot('ST_HEART',Image.Width('ST_HEART')/2,Image.Height('ST_HEART'))
-       
-       QScale(10+math.abs(math.sin(Time.MSecs()/5)*10))
-       Image.Show('ST_HEART',chx,chy-70)
-       QScale()
-    end
-}
-
-StatusChanges.Berserk = {
-      DrawFighter = function(ch)
-         color(255,55,0)
-      end   ,
-      
-      Altmove = function(me)
-                     local myg = nextact.executor.group
-                     local trg = ({Hero='Foe',Foe='Hero'})
-                     local na = ConfuSetMove(me,{trg})
-                     na.act="BERSERK_ATTACK"
-                     return na 
-                end
-
-}
-
-
--- @IF IGNORE
-return StatusChanges
--- @FI
