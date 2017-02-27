@@ -49,6 +49,7 @@ ret = {
 	["EQP_STAT_Power"] = 250,
 	["EffectScript"] = "Undeadbackfire",
 	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,

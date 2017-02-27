@@ -46,7 +46,6 @@ ret = {
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
 	["Desc"] = "Strong attack vs. 1 target",
-	["EffectScript"] = "EatUserHP",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,

@@ -3135,7 +3135,7 @@ Rec: ABL_HERO_DANDOR_SUPERAXESMASH
 	EQP_STAT_SR_Silence = 0
 	EQP_STAT_SR_Sleep = 0
 	EQP_STAT_SR_Undead = 0
-	EffectScript = EatUserHP
+	EffectScript = 
 	EffectScript_Arg = 
 	EffectScript_External = FALSE
 	Heal = 0
@@ -3301,7 +3301,7 @@ Rec: ABL_HERO_HANDOSTILLOR_CUREDISEASE
 	BUFF_Power = 0
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
-	CauseBerserk = 
+	CauseBerserk = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -11461,7 +11461,7 @@ Rec: EQP_HANDOSTILLOR_CURSEDWP_ZOMBIESTAFF
 	BUFF_Power = 0
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
-	CauseBerserk = 
+	CauseBerserk = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -11504,7 +11504,7 @@ Rec: EQP_HANDOSTILLOR_CURSEDWP_ZOMBIESTAFF
 	EffectScript_External = FALSE
 	Heal = 0
 	Heal_StatPercent = Intelligence
-	Heal_Type = 
+	Heal_Type = Absolute
 	ITM_ACC_Dandor = TRUE
 	ITM_ACC_HandoStillor = TRUE
 	ITM_ACC_Jake = TRUE
