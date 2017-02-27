@@ -1,6 +1,6 @@
 --[[
   PunishUser.lua
-  Version: 17.02.26
+  Version: 17.02.27
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -44,6 +44,10 @@ end
 
 function SpellScript.PoisonUser(tartag,extag,param)
      GiveStatus(extag,"Poison")
+end     
+
+function SpellScript.Undeadbackfire(tartag,extag,param)
+     GiveStatus(extag,"Undead")
 end     
 
 
