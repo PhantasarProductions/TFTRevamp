@@ -15,6 +15,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Aqua.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Ignis.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Terra.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Imp.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Wolf.png
     1. Graphics: GFX/Big_Char/Dandor.png
     1. Graphics: GFX/Big_Char/Hando Stillor.png
@@ -191,11 +192,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Hawk.lua
     1. Script: Script/JINC/Foes/reg/HellHound.lua
     1. Script: Script/JINC/Foes/reg/Highwayman.lua
+    1. Script: Script/JINC/Foes/reg/Imp.lua
     1. Script: Script/JINC/Foes/reg/InvisibleMan.lua
     1. Script: Script/JINC/Foes/reg/Lemming.lua
     1. Script: Script/JINC/Foes/reg/Medusa.lua
     1. Script: Script/JINC/Foes/reg/Mermaid.lua
     1. Script: Script/JINC/Foes/reg/RSpook.lua
+    1. Script: Script/JINC/Foes/reg/Shroom.lua
     1. Script: Script/JINC/Foes/reg/Skeleton.lua
     1. Script: Script/JINC/Foes/reg/Slime.lua
     1. Script: Script/JINC/Foes/reg/Snake.lua
@@ -218,6 +221,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_SICKSTORIES.lua
     1. Script: Script/JINC/IA/ABL_FOE_SMITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_SOULCRUSHINGSTORY.lua
+    1. Script: Script/JINC/IA/ABL_FOE_SPORES.lua
     1. Script: Script/JINC/IA/ABL_FOE_SUICIDE.lua
     1. Script: Script/JINC/IA/ABL_FOE_TAKEOVER.lua
     1. Script: Script/JINC/IA/ABL_FOE_TAKEOVER2.lua
@@ -334,11 +338,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_AR9.lua
     1. Script: Script/JINC/IA/EQP_JAKE_CURSEDWP_VENOMBLADE.lua
     1. Script: Script/JINC/IA/EQP_JAKE_TRAINSWORD.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/EQP_JAKE_WP1.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/EQP_JAKE_WP10.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/EQP_JAKE_WP2.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/EQP_JAKE_WP3.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP4.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP5.lua
@@ -1737,6 +1741,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/John_7.ogg
 - Unknown artist from the Public Domain
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Hag.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Shroom.png
     1. Graphics: GFX/Combat/Spellani/Temptation/Heart.png
     1. Graphics: GFX/Textures/Trees/Loofboom.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/KillerEscargot.png

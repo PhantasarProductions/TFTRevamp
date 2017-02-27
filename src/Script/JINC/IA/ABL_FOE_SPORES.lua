@@ -1,7 +1,7 @@
 --[[
-  ABL_FOE_FLAMESTRIKE.lua
+  ABL_FOE_SPORES.lua
   Version: 17.02.27
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -35,34 +35,28 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
-	["Attack"] = 100,
+	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 25,
+	["ADDCARD_Action_Number"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowAccuracy"] = true,
-	["Attack_AllowCritical"] = true,
-	["Attack_AllowDodge"] = true,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "Flame",
-	["Desc"] = "Attack the enemy",
+	["Attack_Element"] = "None",
+	["CausePoison"] = true,
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
-	["Rew_GainAP"] = 6,
-	["Stance"] = "Attack",
-	["Target"] = "1F",
-	["Title"] = "Flame Strike",
-	["Type"] = "Ability",
-	["Voice"] = "Attack",
-	["rew_CreateSkill1"] = true,
-	["rew_GainSkill1"] = 6}
+	["Stance"] = "Cast",
+	["Target"] = "AF",
+	["Title"] = "Spores",
+	["Type"] = "Ability"}
 
 return ret
 

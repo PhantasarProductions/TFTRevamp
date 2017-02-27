@@ -1,6 +1,6 @@
 --[[
   ITM_PANACEA.lua
-  Version: 17.02.26
+  Version: 17.02.27
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================

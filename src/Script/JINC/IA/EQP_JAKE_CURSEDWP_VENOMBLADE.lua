@@ -1,6 +1,6 @@
 --[[
   EQP_JAKE_CURSEDWP_VENOMBLADE.lua
-  Version: 17.02.26
+  Version: 17.02.27
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
