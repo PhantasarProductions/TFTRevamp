@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 17.02.04
+  Version: 17.02.27
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -348,10 +348,10 @@ function features.Items(x,y,w,h)
           Weapon = function(ch,myitem,item)
                      -- CSay('Iemand thuis?')
                      -- CSay(ch.."\n "..serialize('item',item).." \n "..myitem)
-                     if prefixed(item.ITM_EQP_For,ch) or ch==item.ITM_EQP_For then eqChange("Weapon",myitem,item) end
+                     if prefixed(ch,item.ITM_EQP_For) or ch==item.ITM_EQP_For then eqChange("Weapon",myitem,item) end
                    end,
           Armor = function(ch,myitem,item)
-                     if prefixed(item.ITM_EQP_For,ch) or ch==item.ITM_EQP_For then eqChange("Armor",myitem,item) end
+                     if prefixed(ch,item.ITM_EQP_For) or ch==item.ITM_EQP_For then eqChange("Armor",myitem,item) end
                    end,
           Accesoiry = function(ch,myitem,item)
                         local pch = ch
