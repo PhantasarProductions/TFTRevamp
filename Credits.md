@@ -341,8 +341,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_WP1.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP10.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
-    1. Script: Script/JINC/IA/EQP_JAKE_WP2.lua
     1. Graphics: gfx/Effects/Darkness II.png
+    1. Script: Script/JINC/IA/EQP_JAKE_WP2.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP3.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP4.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP5.lua
@@ -581,12 +581,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
