@@ -77,6 +77,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - Angela Nagtzaam
     1. Graphics: GFX/BoxText/Portret/Dreshka/General.png
     1. Graphics: GFX/BoxText/Portret/Gedrio Fulla/General.png
+    1. Graphics: GFX/BoxText/Portret/Krandar/Eyes.png
     1. Graphics: GFX/BoxText/Portret/Krandar/General.png
     1. Graphics: GFX/BoxText/Portret/Krandar/VeelTeGroot.png
     1. Graphics: GFX/BigPic/Krandar.png
@@ -340,8 +341,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_AR8.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR9.lua
     1. Script: Script/JINC/IA/EQP_JAKE_CURSEDWP_VENOMBLADE.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/EQP_JAKE_TRAINSWORD.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP1.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP10.lua
@@ -356,6 +355,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JEWEL_EMERALD.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLEMERALD.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLTOPAZ.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/EQP_JEWEL_TOPAZ.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR1.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR10.lua
@@ -584,12 +585,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
@@ -1555,17 +1556,57 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/General/Introduction/STILLOR_18.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_19.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_2.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_42.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_43.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_20.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_44.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_45.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_46.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_21.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_47.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_48.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_49.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_50.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_51.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_22.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_52.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_53.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_54.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_23.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_55.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_56.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_57.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_58.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_24.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_59.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_60.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_61.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_62.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_63.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_25.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_64.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_65.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_66.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_67.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_3.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_68.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_69.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_70.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_71.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_72.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_4.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_73.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_1.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_10.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_11.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_12.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_20.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_5.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_13.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_14.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_15.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_16.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_17.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_21.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_6.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_2.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_3.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_4.ogg
@@ -1575,21 +1616,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_8.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_9.ogg
     1. Audio: Vocals/Spirata/Dandor.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_22.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_23.ogg
-    1. Audio: Vocals/Spirata/HandoStillor.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_24.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_25.ogg
-    1. Audio: Vocals/Spirata/Jake.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_3.ogg
-    1. Audio: Vocals/Spirata/Marrilona.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_4.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_5.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_6.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_7.ogg
+    1. Audio: Vocals/Spirata/HandoStillor.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_8.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_9.ogg
+    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/General/Prologues/Dandor_1.ogg
+    1. Audio: Vocals/Spirata/Marrilona.ogg
     1. Audio: Vocals/General/Prologues/HandoStillor_1.ogg
     1. Audio: Vocals/General/Prologues/HandoStillor_2.ogg
     1. Audio: Vocals/General/Prologues/Jake_1.ogg

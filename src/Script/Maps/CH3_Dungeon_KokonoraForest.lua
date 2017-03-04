@@ -32,14 +32,22 @@
   
  **********************************************
  
-version: 17.03.03
+version: 17.03.04
 ]]
 
 
 function Krandar()
     PartyPop('Krandar','North')
+    Music("Sys/Silence.ogg")
+    Shift("Human")
     MapText('KRANDAR1')
-    Sys.Error("Sorry, the rest isn't scripted yet")
+    WorldMap_Unlock("CH3MINE")
+    Var.D("$WMCHAT","KRANDARNOS")
+    for i=1,3 do Maps.Obj.Kill("BWF"..i,1) end
+    Maps.Obj.Kill('Krandar',1)
+    Maps.Obj.Kill('ActKrandar',1)
+    WorldMap()
+    -- Sys.Error("Sorry, the rest isn't scripted yet")
 end
 
 function GALE_OnLoad()

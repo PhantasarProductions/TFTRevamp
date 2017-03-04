@@ -237,7 +237,7 @@ Rec: CH3KOKOFOREST
 	Folder = Kokonora
 	Kthura = CH3_Dungeon_KokonoraForest
 	Layer = forest
-	LocationName = Kokonora Forest 
+	LocationName = Kokonora Forest
 	LocationPrefix = 
 	Start = Start
 	UnlockedFromStart = TRUE
@@ -251,4 +251,14 @@ Rec: CH3KOKOFORESTSTRAND
 	LocationPrefix = 
 	Start = Start
 	UnlockedFromStart = TRUE
+
+Rec: CH3MINE
+	Dungeon = TRUE
+	Folder = Delisto
+	Kthura = 
+	Layer = #001
+	LocationName = Abandoned Mine
+	LocationPrefix = The
+	Start = Start
+	UnlockedFromStart = FALSE
 
