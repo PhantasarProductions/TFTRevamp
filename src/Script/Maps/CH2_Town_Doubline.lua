@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.25
+version: 17.03.04
 ]]
 
 
@@ -51,8 +51,8 @@ end
 function NPC_Ludo()
    local ludo = "&DONE.LUDO.CHARTERED"
    if CVV(ludo) then
-      MapText("LUDO_SAIL");
-      ({function() LoadMap("CH3_Dungeon_KokonoraForest") GoToLayer("fisherman","ludo") end,Nothing})[RunQuestion("Map","LUDO_SAIL")]()
+      --MapText("LUDO_SAIL");
+      ({function() LoadMap("CH3_Dungeon_KokonoraForest") GoToLayer("fisherman","ludo") end,Nothing})[RunQuestion("MAP","LUDO_SAIL")]()
       return
    end
    MapText("LUDO_CHARTER")
