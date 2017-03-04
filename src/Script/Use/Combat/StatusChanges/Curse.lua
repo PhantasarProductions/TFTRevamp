@@ -55,7 +55,7 @@ StatusChanges.Curse = {
       end,
 
       DrawFighter = function(ch)
-         color(0,255,0)
+         color(255,0,0)
       end   ,
       
       PreTurn = function(ch)
