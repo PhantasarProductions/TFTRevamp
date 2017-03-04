@@ -50,6 +50,15 @@ function Krandar()
     -- Sys.Error("Sorry, the rest isn't scripted yet")
 end
 
+function NPC_Ludo()
+   --local ludo = "&DONE.LUDO.CHARTERED"
+   --if CVV(ludo) then
+      --MapText("LUDO_SAIL");
+      ({function() LoadMap("CH2_Town_Doubline") GoToLayer("city","Einde") end,Nothing})[RunQuestion("MAP","LUDO_SAIL")]()
+      --return
+   --end
+end
+
 function GALE_OnLoad()
     ZA_Enter("Kokonora2",WorldMap,"Kokonora")
     ZA_Enter("ActKrandar",Krandar)
