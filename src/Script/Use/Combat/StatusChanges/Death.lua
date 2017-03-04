@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 17.02.24
+  Version: 17.03.04
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -76,7 +76,7 @@ function KillAward(myfoe)
        inc("%CASH",acash)
     end
     -- Bodycount
-    MasterAllInc("Russel","RusselKills")
+    MasterAllInc("Russell","RussellKills")
     inc('%KILLS')
     bestiary[myfoe.fidtag] = (bestiary[myfoe.fidtag] or 0) + 1
     oversoul[myfoe.fidtag] = (oversoul[myfoe.fidtag] or 0) + 1    
