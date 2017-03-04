@@ -46,7 +46,7 @@ function Krandar()
     for i=1,3 do Maps.Obj.Kill("BWF"..i,1) end
     Maps.Obj.Kill('Krandar',1)
     Maps.Obj.Kill('ActKrandar',1)
-    WorldMap()
+    WorldMap('Kokonora')
     -- Sys.Error("Sorry, the rest isn't scripted yet")
 end
 
