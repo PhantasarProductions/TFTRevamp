@@ -1228,6 +1228,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_DOUBLINE
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_DRESHKA
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_ISKARDERIU
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_KOKONORAFOREST
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_MAGIC
@@ -1262,6 +1263,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_DOUBLINE
     1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_DRESHKA
     1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_ISKARDERIU
+    1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_KOKONORAFOREST
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_MAGIC
@@ -1543,43 +1545,44 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_7.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_8.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_9.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_1.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_10.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_11.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_12.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_13.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_14.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_4.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_12.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_15.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_16.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_17.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_2.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_3.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_4.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_5.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_13.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_6.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_7.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_8.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_9.ogg
-    1. Audio: Vocals/Spirata/Dandor.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_14.ogg
-    1. Audio: Vocals/Spirata/HandoStillor.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_15.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_16.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_17.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_18.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_19.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_2.ogg
-    1. Audio: Vocals/Spirata/Jake.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_1.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_10.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_11.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_12.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_20.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_13.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_14.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_15.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_16.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_17.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_21.ogg
-    1. Audio: Vocals/Spirata/Marrilona.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_2.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_3.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_4.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_5.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_6.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_7.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_8.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_9.ogg
+    1. Audio: Vocals/Spirata/Dandor.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_22.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_23.ogg
+    1. Audio: Vocals/Spirata/HandoStillor.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_24.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_25.ogg
+    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_3.ogg
+    1. Audio: Vocals/Spirata/Marrilona.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_4.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_5.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_6.ogg

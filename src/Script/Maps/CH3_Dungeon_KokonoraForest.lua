@@ -32,10 +32,17 @@
   
  **********************************************
  
-version: 17.02.26
+version: 17.03.03
 ]]
 
 
+function Krandar()
+    PartyPop('Krandar','North')
+    MapText('KRANDAR1')
+    Sys.Error("Sorry, the rest isn't scripted yet")
+end
+
 function GALE_OnLoad()
     ZA_Enter("Kokonora2",WorldMap,"Kokonora")
+    ZA_Enter("ActKrandar",Krandar)
 end    
