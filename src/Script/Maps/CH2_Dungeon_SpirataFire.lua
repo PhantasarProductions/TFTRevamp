@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.09
+version: 17.03.05
 ]]
 
 -- @USE /script/use/specific/plasmafloor.lua
@@ -134,13 +134,17 @@ end
 
 
 function MAP_FLOW()
-   FlowBlops()
+   --FlowBlops()
+   FlowMoveTex(hsin)
+   FlowMoveTex(vsin)
    local lay = Maps.LayerCodeName;
    -- (SubFlow[lay] or Nothing)()
 end
 
 function GALE_OnLoad()
-   InitBlops()
+   -- InitBlops()
+   hsin = InitMoveTex({X= 1,Y=0,suffix='HSINUS.PNG'})
+   vsin = InitMoveTex({X= 0,Y=1,suffix='VSINUS.PNG'})   
    ZA_Enter('Bye',WorldMap)
    ZA_Enter('genpuzzle',genpuzzle)
    ZA_Enter('SpirataMusic',Music,"Hub/Angevin.ogg")

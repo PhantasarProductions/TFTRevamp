@@ -1,6 +1,6 @@
 --[[
   Curse.lua
-  Version: 17.02.23
+  Version: 17.03.04
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
