@@ -30,6 +30,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Big_Char/Marrilona_Clown.png
     1. Graphics: GFX/Big_Char/Marrilona_Clown.xcf
     1. Graphics: GFX/Big_Char/Marrilona_Easter.png
+    1. Graphics: GFX/Big_Char/Marrilona_King.png
+    1. Graphics: GFX/Big_Char/Marrilona_King.xcf
     1. Graphics: GFX/Big_Char/Marrilona_NewYear.png
     1. Graphics: GFX/Big_Char/Marrilona_Valentine.png
     1. Graphics: GFX/Big_Char/Negatief_Marrilona.Png
@@ -585,12 +587,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
@@ -711,6 +713,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Music: Music/Sys/Silence.ogg
     1. Music: Music/Dungeon/JustASong.ogg
+    1. Music: Music/Dungeon/Scary Song.ogg
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
@@ -719,7 +722,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/End/YouWin.png
     1. Graphics: GFX/Loading/Graphic.png
     1. Graphics: GFX/Loading/Saving.png
-    1. Music: Music/Dungeon/Scary Song.ogg
     1. Graphics: GFX/Logo/End Of Prologue.hot
     1. Graphics: GFX/Logo/End Of Prologue.png
     1. Graphics: GFX/Logo/Game Over.png
