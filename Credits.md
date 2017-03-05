@@ -460,7 +460,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH2_Town_Doubline.lua
     1. Script: Script/Maps/CH2_Town_Dreshka.lua
     1. Script: Script/Maps/CH2_Town_Iskarderiu.lua
+    1. Script: Script/Maps/CH3_Dungeon_Garden.lua
     1. Script: Script/Maps/CH3_Dungeon_KokonoraForest.lua
+    1. Script: Script/Maps/CH3_Dungeon_Mine.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
     1. Script: Script/Maps/PRO_DUNGEON_Magic.lua
     1. Script: Script/Maps/PRO_DUNGEON_Tomb.lua
@@ -587,12 +589,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
@@ -703,6 +705,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
+    1. Map Design: Kthura/CH3_Dungeon_Garden/Data
+    1. Map Design: Kthura/CH3_Dungeon_Garden/Objects
+    1. Map Design: Kthura/CH3_Dungeon_Garden/Settings
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Data
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Objects
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Settings

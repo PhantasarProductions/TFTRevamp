@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  CH3_Dungeon_Mine.lua
+  CH3_Dungeon_Garden.lua
   (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
@@ -35,12 +35,37 @@
 version: 17.03.05
 ]]
 
-function SecretDungeon()
-    LoadMap("CH3_Dungeon_Garden")
-    GoToLayer("#000","Start")
+-- @USE /Script/Use/Specific/Walda.lua
+
+function DrawPlasma()
+   local tp = Maps.CObj
+   local A = Actors.Actor('PLAYER')
+   tp.X = A.X
+   tp.Y = A.Y
+   tp.Dominance = 0
+   BlopPlasma.DrawCol(25,100,25)
+end
+   
+function MAP_FLOW()   
+   local e
+   if Maps.Obj.Exists("Obstacle_Next")==1 then 
+      e = Maps.Obj.Obj('Obstacle_Next')
+      e.Rotation = e.Rotation + 1
+      if e.Rotation>=360 then e.Rotation = e.Rotation - 360 end
+   end   
+   if Maps.Obj.Exists("Obstacle_Prev")==1 then 
+      e = Maps.Obj.Obj('Obstacle_Next')
+      e.Rotation = e.Rotation - 1
+      if e.Rotation<=0 then e.Rotation = e.Rotation + 360 end
+   end   
 end
 
+function Bye()
+   LoadMap("CH3_Dungeon_Mine")
+   GoToLayer('#001','FromSecretDungeon')
+end   
+
+
 function GALE_OnLoad()
-    MapHide('Secret')
-    ZA_Enter("ToSecretDungeon",SecretDungeon)
-end    
+   InitWalda('Garden')   
+end
