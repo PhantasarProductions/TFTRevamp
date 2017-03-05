@@ -358,8 +358,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLEMERALD.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLTOPAZ.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
-    1. Script: Script/JINC/IA/EQP_JEWEL_TOPAZ.lua
     1. Graphics: gfx/Effects/Darkness II.png
+    1. Script: Script/JINC/IA/EQP_JEWEL_TOPAZ.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR1.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR10.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR2.lua
@@ -380,6 +380,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_FLAMEORB.lua
     1. Script: Script/JINC/IA/ITM_HEALINGHERB.lua
     1. Script: Script/JINC/IA/ITM_HEALSHOWER.lua
+    1. Script: Script/JINC/IA/ITM_HELLSTONE.lua
     1. Script: Script/JINC/IA/ITM_HOLYSCROLL.lua
     1. Script: Script/JINC/IA/ITM_INFERNOORB.lua
     1. Script: Script/JINC/IA/ITM_MAGICDUST.lua
@@ -589,12 +590,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png

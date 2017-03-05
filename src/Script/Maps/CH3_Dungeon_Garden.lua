@@ -42,7 +42,10 @@ function DrawPlasma()
    local A = Actors.Actor('PLAYER')
    tp.X = A.X
    tp.Y = A.Y
-   tp.Dominance = 0
+   if tp.Dominance~=0 then
+      tp.Dominance = 0
+      Maps.Remap()
+   end   
    BlopPlasma.DrawCol(25,100,25)
 end
    
@@ -54,7 +57,7 @@ function MAP_FLOW()
       if e.Rotation>=360 then e.Rotation = e.Rotation - 360 end
    end   
    if Maps.Obj.Exists("Obstacle_Prev")==1 then 
-      e = Maps.Obj.Obj('Obstacle_Next')
+      e = Maps.Obj.Obj('Obstacle_Prev')
       e.Rotation = e.Rotation - 1
       if e.Rotation<=0 then e.Rotation = e.Rotation + 360 end
    end   
