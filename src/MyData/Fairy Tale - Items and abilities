@@ -17746,7 +17746,7 @@ Rec: ITM_ICICLE
 	SpellAni_External = FALSE
 	Stance = Attack
 	Target = 1F
-	Title = Frost Wand
+	Title = Icicle
 	Type = Item
 	USE_Penalty = 0
 	Voice = Frost
@@ -17848,7 +17848,7 @@ Rec: ITM_ICICLES
 	SpellAni_External = FALSE
 	Stance = Attack
 	Target = 1F
-	Title = Frost Wand
+	Title = Icicles
 	Type = Item
 	USE_Penalty = 0
 	Voice = Frost
