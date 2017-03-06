@@ -68,7 +68,8 @@ if fullversion then -- That's right Marrilona will not get her level #2 and leve
                                        abl_hero_marrilona_permanence = {25,25,25,25,25}, --  1
                                        abl_hero_marrilona_eternalflame = {[2]=4^skill},  --  2
                                        abl_hero_marrilona_tsunami = {[1]=10, [4]=25},    --  3
-                                       abl_hero_marrilona_fireblast = {[1]=5, [2]=15}    --  4
+                                       abl_hero_marrilona_fireblast = {[1]=5, [2]=15},   --  4
+                                       abl_hero_marrilona_iceblast = {[1]=skill^skill, [3]=8*skill,[4]=7*skill} -- 5
                      }
    r["3. Level 3"] = {                 abl_hero_marrilona_stone2flesh = {[3]=10,[4]=65}, --  1
                                        abl_hero_marrilona_empower = {[2]=25},      --  2
