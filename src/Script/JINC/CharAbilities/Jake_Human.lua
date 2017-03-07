@@ -32,14 +32,15 @@
   
  **********************************************
  
-version: 17.01.08
+version: 17.03.07
 ]]
 
 local fullversion = JCR6.Exists('ID/ID.Data.Full')==1
+local skill = Sys.Val(Var.C("%SKILL"))
 
 local r = {
                  ["1. Sword"]  = {abl_hero_jake_2ps = {5},abl_hero_jake_3ps={25},abl_hero_jake_4ps={50},abl_hero_jake_berserk={10,5},ABL_HERO_JAKE_SHIFT_FAIRY={[2]=99,[3]=99,[4]=99,[5]=99}},
-                 ["2. Hybrid"] = {abl_hero_jake_healbalde = {[1]=30,[4]=15,[5]=15},abl_foe_paradive={15,10,10}}
+                 ["2. Hybrid"] = {abl_hero_jake_healbalde = {[1]=30,[4]=15,[5]=15},abl_foe_paradive={15,10,10},abl_hero_jake_flameblade={8,2*skill}}
 
 
           }

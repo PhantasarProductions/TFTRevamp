@@ -1,6 +1,6 @@
 --[[
   Idle.lua
-  Version: 17.02.04
+  Version: 17.03.07
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -44,6 +44,7 @@ function AddCard(data,aspot)
     local spot = aspot or ( 25 + (order.tagorder[ch] * 2)+ (math.floor(rand(1,order.tagorder[ch])/2)) )
     while cards[spot] and cards[spot].data do spot=spot+1 end -- If the spot is taken, move to the next one, and keep doing this until an empty spot has been found.
     cards[spot] = card
+    if card.data.nextact and card.data.nextact.executor then card.data.tag = card.data.nextact.executor.tag end
 end
 
 function RemoveFirstCard()
@@ -75,21 +76,23 @@ function fflow.idle()
        RemoveFirstCard()
        return
     end
-    if card.data.tag and (not card.data.extra) and fighterbytag[card.data.tag] then
+    if card.data.tag and --(not card.data.extra) and 
+       fighterbytag[card.data.tag] then
        assert(fighterbytag[card.data.tag],"There is no fighter tagged: "..card.data.tag) 
        fighterbytag[card.data.tag].statuschanges = fighterbytag[card.data.tag].statuschanges or {}
        for s,d in pairs(fighterbytag[card.data.tag].statuschanges) do
            (d.preturn or d.PreTurn or Nothing)(card.data.tag)
        end
-       if card.data.nextact then nextact=card.data.nextact  nextact.auto = true flow = 'Execution'
+       if card.data.nextact then nextact=card.data.nextact  nextact.auto = true flow = 'Execution' CSay('Ability from card')
        elseif AltMove(card.data.tag) then CSay("Alternate move executed")
        elseif card.data.group == 'Foe' then if  (not TurnSkip(card.data.tag,true)) then flow = 'foeinput' else RemoveFirstCard() end 
        elseif card.data.group == 'Hero' then if (not TurnSkip(card.data.tag,true)) then fflow.setplayerinput(card.data.tag) else RemoveFirstCard() end end
-    elseif card.data.extra then
-       Sys.Error('Stuff for extra cards not yet set up.')
+    -- elseif card.data.extra then -- dropped
+    --   Sys.Error('Stuff for extra cards not yet set up.')
     else 
+       CSay('Destroyed card that appears useless now ('..sval(Cards[1].data.nextact.executor.tag)..")")
+       -- CSay(serialize("CardData",Cards[1]))
        Cards[1].data=nil
-       CSay('Destroyed card that appears useless now ('..sval(Cards[1].tag))
     end      
 end
 

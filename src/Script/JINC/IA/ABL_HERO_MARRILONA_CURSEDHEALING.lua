@@ -54,7 +54,6 @@ ret = {
 	["BUFF_Speed"] = -100,
 	["CauseConfusion"] = true,
 	["CauseCurse"] = true,
-	["CauseDeath"] = true,
 	["CauseDisease"] = true,
 	["CauseParalysis"] = true,
 	["CausePoison"] = true,

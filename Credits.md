@@ -194,6 +194,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Hag.lua
     1. Script: Script/JINC/Foes/reg/Hawk.lua
     1. Script: Script/JINC/Foes/reg/HellHound.lua
+    1. Script: Script/JINC/Foes/reg/HidingHag.lua
     1. Script: Script/JINC/Foes/reg/Highwayman.lua
     1. Script: Script/JINC/Foes/reg/Imp.lua
     1. Script: Script/JINC/Foes/reg/InvisibleMan.lua
@@ -201,6 +202,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Medusa.lua
     1. Script: Script/JINC/Foes/reg/Mermaid.lua
     1. Script: Script/JINC/Foes/reg/RSpook.lua
+    1. Script: Script/JINC/Foes/reg/ShadowShroom.lua
     1. Script: Script/JINC/Foes/reg/Shroom.lua
     1. Script: Script/JINC/Foes/reg/Skeleton.lua
     1. Script: Script/JINC/Foes/reg/Slime.lua
@@ -253,6 +255,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_3PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_4PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_BERSERK.lua
+    1. Script: Script/JINC/IA/ABL_HERO_JAKE_FLAMEBLADE.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_HEALBLADE.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_FAIRY.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_HUMAN.lua
@@ -351,6 +354,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_WP3.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP4.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP5.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/EQP_JAKE_WP6.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP7.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP8.lua
@@ -358,9 +363,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JEWEL_EMERALD.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLEMERALD.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLTOPAZ.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/EQP_JEWEL_TOPAZ.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR1.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR10.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR2.lua
@@ -599,11 +602,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Blends.lua
     1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/DarkText.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png
@@ -712,9 +715,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
-    1. Map Design: Kthura/CH3_Dungeon_Garden/DATA
-    1. Map Design: Kthura/CH3_Dungeon_Garden/OBJECTS
-    1. Map Design: Kthura/CH3_Dungeon_Garden/SETTINGS
+    1. Map Design: Kthura/CH3_Dungeon_Garden/Data
+    1. Map Design: Kthura/CH3_Dungeon_Garden/Objects
+    1. Map Design: Kthura/CH3_Dungeon_Garden/Settings
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Data
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Objects
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Settings
@@ -1021,6 +1024,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Arena/GreyDung.png
     1. Graphics: GFX/Combat/Arena/Hell.png
     1. Graphics: GFX/Combat/Arena/Library.png
+    1. Graphics: GFX/Combat/Arena/MG.png
     1. Graphics: GFX/Combat/Arena/Magic.png
     1. Graphics: GFX/Combat/Arena/SpirataFire.png
     1. Graphics: GFX/Combat/Arena/SpirataFire.png.BK!
@@ -1812,7 +1816,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/John_7.ogg
 - Unknown artist from the Public Domain
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Hag.png
-    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Line00000000_Hag.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/HidingHag.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/ShadowShroom.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Shroom.png
     1. Graphics: GFX/Combat/Spellani/Temptation/Heart.png

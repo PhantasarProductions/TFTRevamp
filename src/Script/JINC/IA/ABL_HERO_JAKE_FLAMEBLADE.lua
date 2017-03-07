@@ -1,7 +1,7 @@
 --[[
-  PathOfMagic.lua
+  ABL_HERO_JAKE_FLAMEBLADE.lua
   Version: 17.03.07
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,16 +34,43 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- @IF IGNORE
-AltArena = {}
--- @FI
+ret = {
+	["ABL_APCost"] = 25,
+	["ADDCARD_Action_Act"] = "Self",
+	["Attack"] = 150,
+	["Attack_AccuracyRate"] = 100,
+	["Attack_AllowAccuracy"] = true,
+	["Attack_AllowCritical"] = true,
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Element"] = "Flame",
+	["Desc"] = "Blade of Fire",
+	["EQP_STAT_Intelligence"] = 1,
+	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Marrilona",
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 250,
+	["ITM_Type"] = "Weapon",
+	["ITM_WeaponAbility"] = true,
+	["Rew_GainAP"] = 5,
+	["SpellAni"] = "Flame",
+	["Stance"] = "Attack",
+	["Target"] = "1F",
+	["Title"] = "Flame Blade",
+	["Type"] = "Ability",
+	["Voice"] = "Fire",
+	["rew_CreateSkill1"] = true,
+	["rew_GainSkill1"] = 1,
+	["rew_GainSkill2"] = 25}
 
-AltArena.magic = {
-                      Before = BlopPlasma.Draw
-                 }
+return ret
 
-AltArena.MG = { Before = function() BlopPlasma.DrawCol(25,100,25) end }
-AltArena.mg = AltArena.MG
--- @IF IGNORE
-return AltArena
--- @FI
+-- This file is an automatically generated file!
+
