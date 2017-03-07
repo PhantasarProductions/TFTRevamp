@@ -17237,7 +17237,7 @@ Rec: ITM_CURSEDSPORES
 	Stance = Cast
 	Target = AF
 	Title = Cursed Spores
-	Type = Ability
+	Type = Item
 	USE_Penalty = 0
 	Voice = 
 	rew_CreateSkill1 = FALSE

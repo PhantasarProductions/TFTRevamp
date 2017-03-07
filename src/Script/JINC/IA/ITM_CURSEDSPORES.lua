@@ -59,7 +59,7 @@ ret = {
 	["Stance"] = "Cast",
 	["Target"] = "AF",
 	["Title"] = "Cursed Spores",
-	["Type"] = "Ability"}
+	["Type"] = "Item"}
 
 return ret
 
