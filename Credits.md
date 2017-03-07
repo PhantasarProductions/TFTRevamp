@@ -370,6 +370,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR7.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR8.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR9.lua
+    1. Script: Script/JINC/IA/ICEBLAST.lua
     1. Script: Script/JINC/IA/ITM_AMBROSIA.lua
     1. Script: Script/JINC/IA/ITM_ANABOLINEA.lua
     1. Script: Script/JINC/IA/ITM_ANTIDOTE.lua
