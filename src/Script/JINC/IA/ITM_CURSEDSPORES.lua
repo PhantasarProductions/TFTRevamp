@@ -1,5 +1,5 @@
 --[[
-  WAND_HOLY.lua
+  ITM_CURSEDSPORES.lua
   Version: 17.03.07
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -36,16 +36,15 @@
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
-	["Attack"] = 100,
+	["ADDCARD_Action_Interval"] = 25,
+	["ADDCARD_Action_Number"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowAccuracy"] = true,
-	["Attack_AllowCritical"] = true,
-	["Attack_AllowDodge"] = true,
-	["Attack_AttackStat"] = "Intelligence",
-	["Attack_DefenseStat"] = "Resistance",
-	["Attack_Element"] = "Light",
-	["Desc"] = "Oh wicked ones, I shall smite thee!",
-	["EQP_STAT_Intelligence"] = 1,
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Element"] = "None",
+	["CauseCurse"] = true,
+	["CausePoison"] = true,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -53,19 +52,14 @@ ret = {
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Marrilona",
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 250,
-	["ITM_Type"] = "Weapon",
-	["ITM_WeaponAbility"] = true,
-	["Rew_GainAP"] = 5,
-	["Stance"] = "Attack",
-	["Target"] = "1F",
-	["Title"] = "Holy Wand",
-	["Type"] = "Item",
-	["rew_CreateSkill1"] = true,
-	["rew_GainSkill1"] = 5}
+	["ITM_Type"] = "Consumable",
+	["Stance"] = "Cast",
+	["Target"] = "AF",
+	["Title"] = "Cursed Spores",
+	["Type"] = "Ability"}
 
 return ret
 

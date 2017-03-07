@@ -259,6 +259,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_BIO.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_BREEZE.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_CHILL.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_CURSEDHEALING.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ELECTROCUTION.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ETERNALFLAME.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FIREBLAST.lua
@@ -358,8 +359,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLEMERALD.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLTOPAZ.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/EQP_JEWEL_TOPAZ.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR1.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR10.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR2.lua
@@ -377,6 +378,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_APPLE.lua
     1. Script: Script/JINC/IA/ITM_BELL.lua
     1. Script: Script/JINC/IA/ITM_CARROT.lua
+    1. Script: Script/JINC/IA/ITM_CURSEDSPORES.lua
     1. Script: Script/JINC/IA/ITM_DEATHCUBE.lua
     1. Script: Script/JINC/IA/ITM_EEL.lua
     1. Script: Script/JINC/IA/ITM_FLAMEORB.lua
@@ -594,12 +596,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
@@ -1810,6 +1812,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/John_7.ogg
 - Unknown artist from the Public Domain
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Hag.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Line00000000_Hag.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/ShadowShroom.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Shroom.png
     1. Graphics: GFX/Combat/Spellani/Temptation/Heart.png
     1. Graphics: GFX/Textures/Trees/Loofboom.png

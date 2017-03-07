@@ -1,5 +1,5 @@
 --[[
-  WAND_HOLY.lua
+  ABL_HERO_MARRILONA_CURSEDHEALING.lua
   Version: 17.03.07
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -35,37 +35,56 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ABL_APCost"] = 85,
 	["ADDCARD_Action_Act"] = "Self",
-	["Attack"] = 100,
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowAccuracy"] = true,
 	["Attack_AllowCritical"] = true,
-	["Attack_AllowDodge"] = true,
-	["Attack_AttackStat"] = "Intelligence",
-	["Attack_DefenseStat"] = "Resistance",
-	["Attack_Element"] = "Light",
-	["Desc"] = "Oh wicked ones, I shall smite thee!",
-	["EQP_STAT_Intelligence"] = 1,
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Desperate"] = true,
+	["Attack_Element"] = "None",
+	["BUFF_Accuracy"] = -100,
+	["BUFF_Endurance"] = -100,
+	["BUFF_Evasion"] = -100,
+	["BUFF_Intelligence"] = -100,
+	["BUFF_Power"] = -100,
+	["BUFF_Resistance"] = -100,
+	["BUFF_Speed"] = -100,
+	["CauseConfusion"] = true,
+	["CauseCurse"] = true,
+	["CauseDeath"] = true,
+	["CauseDisease"] = true,
+	["CauseParalysis"] = true,
+	["CausePoison"] = true,
+	["CauseSilence"] = true,
+	["CauseSleep"] = true,
+	["CauseUndead"] = true,
+	["Desc"] = "Heals enemy, but ....",
+	["Heal"] = 100,
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
+	["Heal_Type"] = "Percent",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Marrilona",
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 250,
-	["ITM_Type"] = "Weapon",
-	["ITM_WeaponAbility"] = true,
-	["Rew_GainAP"] = 5,
-	["Stance"] = "Attack",
+	["ITM_Type"] = "Consumable",
+	["Rew_GainAP"] = 25,
+	["Stance"] = "Cast",
 	["Target"] = "1F",
-	["Title"] = "Holy Wand",
-	["Type"] = "Item",
-	["rew_CreateSkill1"] = true,
-	["rew_GainSkill1"] = 5}
+	["Title"] = "Cursed Healing",
+	["Type"] = "Ability",
+	["Voice"] = "Heal",
+	["rew_GainSkill1"] = 25,
+	["rew_GainSkill2"] = 25,
+	["rew_GainSkill3"] = 25,
+	["rew_GainSkill4"] = 25,
+	["rew_GainSkill5"] = 25}
 
 return ret
 
