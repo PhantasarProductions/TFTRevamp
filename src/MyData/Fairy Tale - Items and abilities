@@ -9421,7 +9421,7 @@ Rec: EQP_DANDOR_CURSEDWP_HUNGERAXE
 	BUFF_Power = 0
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
-	CauseBerserk = 
+	CauseBerserk = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -21049,7 +21049,7 @@ Rec: WAND_DOOM
 	BUFF_Power = 0
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
-	CauseBerserk = 
+	CauseBerserk = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE

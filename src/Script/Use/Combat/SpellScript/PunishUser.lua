@@ -40,14 +40,18 @@ local SpellScript = {}
 
 function SpellScript.CurseUser(tartag,extag,param)
      GiveStatus(extag,"Curse")
+     CSay(extag.." should now be cursed")
+     return true
 end     
 
 function SpellScript.PoisonUser(tartag,extag,param)
      GiveStatus(extag,"Poison")
+     return true
 end     
 
 function SpellScript.Undeadbackfire(tartag,extag,param)
      GiveStatus(extag,"Undead")
+     return true
 end     
 
 
@@ -55,6 +59,8 @@ function SpellScript.EatUserHP(tartag,extag,p)
      local HP=RPG.Points(extag,"HP")
      local factor = ({.25,.50,.75})[skill]
      HP.Have = math.ceil(HP.Have*factor)
+     CSay(extag.." now has "..HP.Have.." HP after working with factor: "..factor)
+     return true
 end 
 
 function SpellScript.UndeadBackfire(tartag,extag)
@@ -65,6 +71,7 @@ function SpellScript.UndeadBackfire(tartag,extag)
         GiveStatus(tartag,"Death")
      end
      GiveStatus(extag,"Undead")
+     return true
 end            
 
 
