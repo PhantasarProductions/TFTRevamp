@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.02.08
+  Version: 17.03.07
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -125,7 +125,7 @@ function PerformAction(act,group,i)
         if act.EffectScript_External then
            Sys.Error("External effect scripts not yet scripted")
         else
-           SpellScript[act.EffectScript](myfighter.tag,myexecutor.tag,act.EffectScript_Arg)
+           effect = SpellScript[act.EffectScript](myfighter.tag,myexecutor.tag,act.EffectScript_Arg) or effect
         end   
      end
      -- Target Card Addition
