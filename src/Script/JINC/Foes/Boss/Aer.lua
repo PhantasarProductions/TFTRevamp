@@ -1,40 +1,4 @@
---[[
-**********************************************
-  
-  Aer.lua
-  (c) Jeroen Broks, 2017, All Rights Reserved.
-  
-  This file contains material that is related 
-  to a storyline that is which is strictly
-  copyrighted to Jeroen Broks.
-  
-  This file may only be used in an unmodified
-  form with an unmodified version of the 
-  software this file belongs to.
-  
-  You may use this file for your study to see
-  how I solved certain things in the creation
-  of this project to see if you find valuable
-  leads for the creation of your own.
-  
-  Mostly this file comes along with a project
-  that is for most part released under an
-  open source license and that means that if
-  you use that code with this file removed
-  from it, you can use it under that license.
-  Please check out the other files to find out
-  which license applies.
-  This file comes 'as-is' and in no possible
-  way the author can be held responsible of
-  any form of damages that may occur due to 
-  the usage of this file
-  
-  
- **********************************************
- 
-version: 17.02.27
-]]
--- File Generated: Mon 27 February 2017; 12:36:32
+-- File Generated: Tue 07 March 2017; 09:10:32
 
 
 local foe = {}
@@ -132,6 +96,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_SICKSTORIES"] = 0
 	foe["RATE_ABL_FOE_SMITE"] = 0
 	foe["RATE_ABL_FOE_SOULCRUSHINGSTORY"] = 0
+	foe["RATE_ABL_FOE_SPORES"] = 0
 	foe["RATE_ABL_FOE_SUICIDE"] = 0
 	foe["RATE_ABL_FOE_TAKEOVER"] = 1
 	foe["RATE_ABL_FOE_TAKEOVER\50"] = 5
@@ -159,12 +124,14 @@ local foe = {}
 	foe["RATE_ABL_HERO_JAKE_\50PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\52PS"] = 0
+	foe["RATE_ABL_HERO_JAKE_BERSERK"] = 0
 	foe["RATE_ABL_HERO_JAKE_HEALBLADE"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_FAIRY"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_HUMAN"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_BIO"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_BREEZE"] = 10
 	foe["RATE_ABL_HERO_MARRILONA_CHILL"] = 3
+	foe["RATE_ABL_HERO_MARRILONA_CURSEDHEALING"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ELECTROCUTION"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ETERNALFLAME"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_FIREBLAST"] = 0
@@ -201,17 +168,25 @@ local foe = {}
 	foe["RATE_ABL_MASTER_RUSSELL_GENOCIDE"] = 0
 	foe["RATE_ABL_MASTER_RUSSELL_SAFESHOT"] = 0
 	foe["RATE_ABL_MASTER_RUSSEL_DECAPITATE"] = 0
+	foe["RATE_BERSERK_ATTACK"] = 0
+	foe["RATE_BESERK_ATTACK"] = 0
+	foe["RATE_ICEBLAST"] = 0
+	foe["RATE_ITM_AMBROSIA"] = 0
 	foe["RATE_ITM_ANABOLINEA"] = 0
 	foe["RATE_ITM_ANTIDOTE"] = 0
 	foe["RATE_ITM_APPLE"] = 0
 	foe["RATE_ITM_BELL"] = 0
 	foe["RATE_ITM_CARROT"] = 0
+	foe["RATE_ITM_CURSEDSPORES"] = 0
 	foe["RATE_ITM_DEATHCUBE"] = 0
 	foe["RATE_ITM_EEL"] = 0
 	foe["RATE_ITM_FLAMEORB"] = 0
 	foe["RATE_ITM_HEALINGHERB"] = 0
 	foe["RATE_ITM_HEALSHOWER"] = 0
+	foe["RATE_ITM_HELLSTONE"] = 0
 	foe["RATE_ITM_HOLYSCROLL"] = 0
+	foe["RATE_ITM_ICICLE"] = 0
+	foe["RATE_ITM_ICICLES"] = 0
 	foe["RATE_ITM_INFERNOORB"] = 0
 	foe["RATE_ITM_MAGICDUST"] = 0
 	foe["RATE_ITM_MANDRAKE"] = 0
@@ -268,6 +243,7 @@ local foe = {}
 	foe["TARGET_ABL_FOE_SICKSTORIES"] = "Random"
 	foe["TARGET_ABL_FOE_SMITE"] = "Random"
 	foe["TARGET_ABL_FOE_SOULCRUSHINGSTORY"] = "Random"
+	foe["TARGET_ABL_FOE_SPORES"] = "Random"
 	foe["TARGET_ABL_FOE_SUICIDE"] = "Random"
 	foe["TARGET_ABL_FOE_TAKEOVER"] = "Random"
 	foe["TARGET_ABL_FOE_TAKEOVER\50"] = "Random"
@@ -295,12 +271,14 @@ local foe = {}
 	foe["TARGET_ABL_HERO_JAKE_\50PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\51PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\52PS"] = "Random"
+	foe["TARGET_ABL_HERO_JAKE_BERSERK"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_HEALBLADE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_SHIFT_FAIRY"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_SHIFT_HUMAN"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_BIO"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_BREEZE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_CHILL"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_CURSEDHEALING"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ELECTROCUTION"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ETERNALFLAME"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_FIREBLAST"] = "Random"
@@ -337,17 +315,25 @@ local foe = {}
 	foe["TARGET_ABL_MASTER_RUSSELL_GENOCIDE"] = "Random"
 	foe["TARGET_ABL_MASTER_RUSSELL_SAFESHOT"] = "Random"
 	foe["TARGET_ABL_MASTER_RUSSEL_DECAPITATE"] = "Random"
+	foe["TARGET_BERSERK_ATTACK"] = "Random"
+	foe["TARGET_BESERK_ATTACK"] = "Random"
+	foe["TARGET_ICEBLAST"] = "Random"
+	foe["TARGET_ITM_AMBROSIA"] = "Random"
 	foe["TARGET_ITM_ANABOLINEA"] = "Random"
 	foe["TARGET_ITM_ANTIDOTE"] = "Random"
 	foe["TARGET_ITM_APPLE"] = "Random"
 	foe["TARGET_ITM_BELL"] = "Random"
 	foe["TARGET_ITM_CARROT"] = "Random"
+	foe["TARGET_ITM_CURSEDSPORES"] = "Random"
 	foe["TARGET_ITM_DEATHCUBE"] = "Random"
 	foe["TARGET_ITM_EEL"] = "Random"
 	foe["TARGET_ITM_FLAMEORB"] = "Random"
 	foe["TARGET_ITM_HEALINGHERB"] = "Random"
 	foe["TARGET_ITM_HEALSHOWER"] = "Random"
+	foe["TARGET_ITM_HELLSTONE"] = "Random"
 	foe["TARGET_ITM_HOLYSCROLL"] = "Random"
+	foe["TARGET_ITM_ICICLE"] = "Random"
+	foe["TARGET_ITM_ICICLES"] = "Random"
 	foe["TARGET_ITM_INFERNOORB"] = "Random"
 	foe["TARGET_ITM_MAGICDUST"] = "Random"
 	foe["TARGET_ITM_MANDRAKE"] = "Random"
