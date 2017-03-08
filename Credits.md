@@ -252,6 +252,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_PURIFY.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_RECOVER.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS.lua
+    1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_SMITE.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_STICKSWING.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_TREATMENT.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_VITALIZE.lua
@@ -349,10 +350,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_AR6.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR7.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR8.lua
-    1. Script: Script/JINC/IA/EQP_JAKE_AR9.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
-    1. Script: Script/JINC/IA/EQP_JAKE_CURSEDWP_VENOMBLADE.lua
+    1. Script: Script/JINC/IA/EQP_JAKE_AR9.lua
     1. Graphics: gfx/Effects/Darkness II.png
+    1. Script: Script/JINC/IA/EQP_JAKE_CURSEDWP_VENOMBLADE.lua
     1. Script: Script/JINC/IA/EQP_JAKE_TRAINSWORD.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP1.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP10.lua
@@ -528,7 +529,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/CVoice.lua
     1. Script: Script/Use/Combat/Defeat/AAA_Default.lua
     1. Script: Script/Use/Combat/DestroyAllFoes.lua
-    1. Script: Script/Use/Combat/Flow/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.lua
+    1. Script: Script/Use/Combat/Flow/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.lua
     1. Script: Script/Use/Combat/Flow/Execution.lua
     1. Script: Script/Use/Combat/Flow/FoeInput.lua
     1. Script: Script/Use/Combat/Flow/Idle.lua
@@ -595,22 +596,22 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/RPGSTAT_Iterator.lua
     1. Script: Script/Libs/CVV.lua
     1. Script: Script/Libs/LAURA II/Kthura.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Libs/QuickImage.lua
     1. Script: Script/Libs/Console.lua
     1. Script: Script/Libs/jinclude.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Libs/Debug.lua
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png

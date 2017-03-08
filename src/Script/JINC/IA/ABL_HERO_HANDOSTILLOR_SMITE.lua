@@ -1,7 +1,7 @@
 --[[
-  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.lua
-  Version: 16.09.25
-  Copyright (C) 2016 Jeroen Petrus Broks
+  ABL_HERO_HANDOSTILLOR_SMITE.lua
+  Version: 17.03.08
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,24 +34,34 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+ret = {
+	["ABL_APCost"] = 35,
+	["ADDCARD_Action_Act"] = "Self",
+	["Attack"] = 200,
+	["Attack_AccuracyRate"] = 100,
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Element"] = "Light",
+	["Desc"] = "Light attack on one target",
+	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_Type"] = "Consumable",
+	["Stance"] = "Cast",
+	["Target"] = "1F",
+	["Title"] = "Smite",
+	["Type"] = "Ability",
+	["Voice"] = "Weniaria",
+	["rew_GainSkill2"] = 75}
 
--- Silly name of this file I know.
--- It's just that JCR6 always sorts all files inside it's resources files (or archives if you like) by name.
--- And @USEDIR imports the files in the order they are found.
--- This name will guarantee it's always loaded first.
+return ret
 
+-- This file is an automatically generated file!
 
-fflow = {}
-flow = "idle"
-
-
-function CombatFlow()
-   assert(fflow[flow],'Combat flow not found: '..sval(flow))
-   fflow[flow]()
-end
-
-
-
--- @IF IGNORE
-return fflow
--- @FI

@@ -40,15 +40,17 @@ SpellScript = {}
 
 function SpellScript.PointAlter(tartag,extag,param)
     local sp = mysplit(param," ")
-    if RPG.PointsExist(tartag,sp[1])==0 then return end
+    if RPG.PointsExists(tartag,sp[1])==0 then return end
     local p = RPG.Points(tartag,sp[1])
     p.Have = (({ RAND = function (p) return rand(1,p.Maximum) end,
                  MAX = function(p) return p.Maximum end})[upper(sp[2])] or function(p,tp) return Sys.Val(tp) end)(p,sp[2])
+    CSay(tartag.."'s "..sp[1].." is now "..p.Have)
+    if (not prefixed(tartag,"FOE_")) and prefixed(sp[1],"SL_EXP_") then IncSkill(tartag,Sys.Val(right(sp[1],1)),0)                 end
     return true
 end
 
 function SpellScript.MultiPointAlter(tartag,extag,paramsequence)
-   for seq in each(mysplit(paramsequence,";")) do SpellScript.PointAlter(extag,tartag,seq) end
+   for seq in each(mysplit(paramsequence,";")) do SpellScript.PointAlter(tartag,extag,seq) end
    return true
 end   
 

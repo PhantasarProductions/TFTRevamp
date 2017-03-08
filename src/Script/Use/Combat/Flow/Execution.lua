@@ -82,10 +82,10 @@ function PerformAction(act,group,i)
          end   
      end    
      -- Revive
-     if act.Revive and group=="Hero" and (myfighter.statuschanges.Death or RPG.Points(myfighter.tag,"HP")<=0) then
+     if act.Revive and group=="Hero" and (myfighter.statuschanges.Death or RPG.Points(myfighter.tag,"HP").Have<=0) then
         ClearTable(myfighter.statuschanges) 
         RPG.Points(myfighter.tag,"HP").Have=1
-        charmis(myfighter.tag,"REVIVE",180,255,0)
+        charmsg(myfighter.tag,"REVIVE",180,255,0)
      end
      -- Dispell Buffs 
      -- Recover HP or AP     
@@ -104,7 +104,7 @@ function PerformAction(act,group,i)
         if block then heal=0 end
         if hurt then RPG.Points(myfighter.tag,"HP").Inc(-heal) charmsg(myfighter.tag,heal,255,180,0)
         elseif not AltHealing(group,i,heal) then RPG.Points(myfighter.tag,"HP").Inc(heal) charmsg(myfighter.tag,heal,0,255,0) end
-        if RPG.Points(myfighter.tag,"HP")<=0 then 
+        if RPG.Points(myfighter.tag,"HP").Have<=0 then 
            ClearTable(myfighter.statuschanges)
            myfighter.statuschanges.Death=StatusChanges.Death
         end   

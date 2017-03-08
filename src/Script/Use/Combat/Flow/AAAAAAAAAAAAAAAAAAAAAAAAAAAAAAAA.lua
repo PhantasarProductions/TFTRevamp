@@ -1,7 +1,7 @@
 --[[
-  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.lua
-  Version: 16.09.25
-  Copyright (C) 2016 Jeroen Petrus Broks
+  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.lua
+  Version: 17.03.08
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another

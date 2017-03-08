@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Wed 08 March 2017; 16:23:07
+-- File Generated: Wed 08 March 2017; 19:05:47
 
 
 local foe = {}
@@ -475,7 +475,7 @@ local foe = {}
 	foe["SR_Petrification "] = 100
 	foe["SR_Poison "] = 100
 	foe["SR_Silence "] = 100
-	foe["SR_Undead "] = 100
+	foe["SR_Undead "] = 140
 	foe["normal_Accuracy"] = 100
 	foe["normal_EXP"] = 5000
 	foe["normal_Endurance"] = 325

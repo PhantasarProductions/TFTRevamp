@@ -1,6 +1,6 @@
 --[[
   PlayerInput.lua
-  Version: 17.01.27
+  Version: 17.03.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -162,7 +162,7 @@ function RedoTarget(modifier,comodifier)
     local timeout = 1000
     --CSay("RedoTarget("..sval(modifier)..","..sval(comodifier)..")")
     nextact.targetidx = nextact.targetidx + (modifier or 1)
-    while (not Fighters[nextact.group][nextact.targetidx]) or (RPG.Points(Fighters[nextact.group][nextact.targetidx].tag,"HP").Have==0 and prefixed(nextact.group=='Foe')) do
+    while (not Fighters[nextact.group][nextact.targetidx]) or (RPG.Points(Fighters[nextact.group][nextact.targetidx].tag,"HP").Have==0 and prefixed(nextact.group,'Foe')) do
         nextact.targetidx = nextact.targetidx + (comodifier or modifier or 1)
         if nextact.targetidx<0 then nextact.targetidx=groupmax end
         if nextact.targetidx>groupmax then nextact.targetidx=0 end 

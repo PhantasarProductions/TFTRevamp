@@ -35,7 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
-	["ABL_APCost"] = 50,
+	["ABL_APCost"] = 70,
 	["ADDCARD_Action_Act"] = "Self",
 	["ADDCARD_Action_Interval"] = 75,
 	["ADDCARD_Action_Number"] = 3,

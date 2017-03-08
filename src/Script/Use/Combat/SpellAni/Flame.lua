@@ -1,6 +1,6 @@
 --[[
   Flame.lua
-  Version: 17.02.08
+  Version: 17.03.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -77,7 +77,7 @@ function SpellAni.BurnAll(ActG,ActT,TarG,TarT)
   for ak,stront in pairs(Fighters.Foe) do
     if Fighters.Foe[ak] then
        x,y = FighterCoords(TarG,ak)
-       if RPGStat.Points(Fighters.Foe[ak].Tag,"HP").Have>0 then table.insert(tlist,{x=x,y=y}) end
+       if RPGStat.Points(Fighters.Foe[ak].tag,"HP").Have>0 then table.insert(tlist,{x=x,y=y}) end
     end   
   end       
   -- @ENDSELECT       
