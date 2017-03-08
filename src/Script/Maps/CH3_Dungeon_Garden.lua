@@ -65,7 +65,7 @@ end
 
 function Boss()
   ClearCombatData()
-  Var.D("$COMBAT.FOE_1","Boss/Invisible Demon")
+  Var.D("$COMBAT.FOE_1","Boss/InvisibleDemon")
   Var.D("$COMBAT.POSFOE_1","CENTER")
   Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
   Var.D("$COMBAT.ARENA","MG.png")
