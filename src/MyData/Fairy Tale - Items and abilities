@@ -4412,8 +4412,8 @@ Rec: ABL_HERO_HANDOSTILLOR_SMITE
 	Attack_AllowAccuracy = FALSE
 	Attack_AllowCritical = FALSE
 	Attack_AllowDodge = FALSE
-	Attack_AttackStat = Power
-	Attack_DefenseStat = Endurance
+	Attack_AttackStat = Intelligence
+	Attack_DefenseStat = Resistance
 	Attack_Desperate = FALSE
 	Attack_Element = Light
 	BUFF_Accuracy = 0
@@ -4481,7 +4481,7 @@ Rec: ABL_HERO_HANDOSTILLOR_SMITE
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = 
+	SpellAni = SingleHeal
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
@@ -5180,14 +5180,14 @@ Rec: ABL_HERO_JAKE_BERSERK
 	EffectScript_External = FALSE
 	Heal = 0
 	Heal_StatPercent = Intelligence
-	Heal_Type = 
+	Heal_Type = Absolute
 	ITM_ACC_Dandor = TRUE
 	ITM_ACC_HandoStillor = TRUE
 	ITM_ACC_Jake = TRUE
 	ITM_ACC_Marrilona = TRUE
 	ITM_BlackMarket = FALSE
 	ITM_Combat = TRUE
-	ITM_EQP_For = 
+	ITM_EQP_For = Jake
 	ITM_Field = TRUE
 	ITM_Sellable = TRUE
 	ITM_ShopPrice = 0
@@ -5195,7 +5195,7 @@ Rec: ABL_HERO_JAKE_BERSERK
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = HealSingle
+	SpellAni = SingleHeal
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
