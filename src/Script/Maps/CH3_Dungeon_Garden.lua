@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.05
+version: 17.03.08
 ]]
 
 -- @USE /Script/Use/Specific/Walda.lua
@@ -62,6 +62,16 @@ function MAP_FLOW()
       if e.Rotation<=0 then e.Rotation = e.Rotation + 360 end
    end   
 end
+
+function Boss()
+  ClearCombatData()
+  Var.D("$COMBAT.FOE_1","Boss/Invisible Demon")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
+  Var.D("$COMBAT.ARENA","MG.png")
+  StartBoss("Eye-Spy","Invisible Demon")    
+end
+
 
 function Bye()
    LoadMap("CH3_Dungeon_Mine")

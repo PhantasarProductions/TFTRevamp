@@ -1,6 +1,6 @@
 --[[
   PlayWithPoints.lua
-  Version: 17.02.24
+  Version: 17.03.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -40,8 +40,10 @@ SpellScript = {}
 
 function SpellScript.PointAlter(tartag,extag,param)
     local sp = mysplit(param," ")
+    if RPG.PointsExist(tartag,sp[1])==0 then return end
     local p = RPG.Points(tartag,sp[1])
-    p.Have = (({ RAND = function (p) return rand(1,p.Maximum) end})[upper(sp[2])] or function(p,tp) return Sys.Val(tp) end)(p,sp[2])
+    p.Have = (({ RAND = function (p) return rand(1,p.Maximum) end,
+                 MAX = function(p) return p.Maximum end})[upper(sp[2])] or function(p,tp) return Sys.Val(tp) end)(p,sp[2])
     return true
 end
 

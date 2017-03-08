@@ -67,6 +67,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Marrilona/Think.png
     1. Graphics: GFX/BoxText/Portret/Marrilona/Wet.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Dwarf.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/InvisibleDemon.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/ShadowSweeper.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/HellHound.png
     1. Graphics: GFX/Eyes/Dandor.png
@@ -174,6 +175,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/GobKing.lua
     1. Script: Script/JINC/Foes/Boss/Harry1.lua
     1. Script: Script/JINC/Foes/Boss/Ignis.lua
+    1. Script: Script/JINC/Foes/Boss/InvisibleDemon.lua
     1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
     1. Script: Script/JINC/Foes/Boss/Librarian.lua
     1. Script: Script/JINC/Foes/Boss/Mega Ghost.lua
@@ -214,6 +216,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/AAA_GUARD.lua
     1. Script: Script/JINC/IA/ABL_FOE_BACTERIATUSK.lua
     1. Script: Script/JINC/IA/ABL_FOE_CRUSH.lua
+    1. Script: Script/JINC/IA/ABL_FOE_DEMON_SOUL_BREAKER.lua
     1. Script: Script/JINC/IA/ABL_FOE_DESPERATEATTACK.lua
     1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
     1. Script: Script/JINC/IA/ABL_FOE_EXHAUST.lua
@@ -232,6 +235,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_TAKEOVER2.lua
     1. Script: Script/JINC/IA/ABL_FOE_TOTALEXHAUSTION.lua
     1. Script: Script/JINC/IA/ABL_FOE_TUSK.lua
+    1. Script: Script/JINC/IA/ABL_FOE_ULTIMATESOULCRUSHER.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMBITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMSTAB.lua
     1. Script: Script/JINC/IA/ABL_FOE_VIRUSSTAB.lua
@@ -346,7 +350,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_AR7.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR8.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR9.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/EQP_JAKE_CURSEDWP_VENOMBLADE.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/EQP_JAKE_TRAINSWORD.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP1.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP10.lua
@@ -354,8 +360,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_WP3.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP4.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP5.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/EQP_JAKE_WP6.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP7.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP8.lua
@@ -594,19 +598,19 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickImage.lua
     1. Script: Script/Libs/Console.lua
     1. Script: Script/Libs/jinclude.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Libs/Debug.lua
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png

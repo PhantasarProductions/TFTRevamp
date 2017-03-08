@@ -1,6 +1,6 @@
 --[[
   Idle.lua
-  Version: 17.03.07
+  Version: 17.03.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -90,7 +90,7 @@ function fflow.idle()
     -- elseif card.data.extra then -- dropped
     --   Sys.Error('Stuff for extra cards not yet set up.')
     else 
-       CSay('Destroyed card that appears useless now ('..sval(Cards[1].data.nextact.executor.tag)..")")
+       CSay('Destroyed card that appears useless now ('..sval((Cards[1].data.nextact.data or {tag="NOTHING HERE"}).tag)..")")
        -- CSay(serialize("CardData",Cards[1]))
        Cards[1].data=nil
     end      

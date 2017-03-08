@@ -1,6 +1,6 @@
 --[[
   Curse.lua
-  Version: 17.03.04
+  Version: 17.03.08
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -61,7 +61,12 @@ StatusChanges.Curse = {
       PreTurn = function(ch)
           local me = StatusChanges.Curse
           local HP = RPG.Points(ch,'HP')
-          local AP = RPG.Points(ch,"AP")
+          local AP
+          if prefixed(ch,"FOE") then
+             AP = HP
+          else
+             AP = RPG.Points(ch,"AP")
+          end   
           local forf = 'Hero' -- Friend or foe?
           if prefixed(ch,'FOE') then forf='Foe' end
           local r=rand(1,skill*10)
