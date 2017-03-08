@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.03.07
+  Version: 17.03.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -81,6 +81,12 @@ function PerformAction(act,group,i)
             end
          end   
      end    
+     -- Revive
+     if act.Revive and group=="Hero" and (myfighter.statuschanges.Death or RPG.Points(myfighter.tag,"HP")<=0) then
+        ClearTable(myfighter.statuschanges) 
+        RPG.Points(myfighter.tag,"HP").Have=1
+        charmis(myfighter.tag,"REVIVE",180,255,0)
+     end
      -- Dispell Buffs 
      -- Recover HP or AP     
      local heal = ItemHeal(myfighter.tag,act,true,nextact.executor.tag)
@@ -98,6 +104,10 @@ function PerformAction(act,group,i)
         if block then heal=0 end
         if hurt then RPG.Points(myfighter.tag,"HP").Inc(-heal) charmsg(myfighter.tag,heal,255,180,0)
         elseif not AltHealing(group,i,heal) then RPG.Points(myfighter.tag,"HP").Inc(heal) charmsg(myfighter.tag,heal,0,255,0) end
+        if RPG.Points(myfighter.tag,"HP")<=0 then 
+           ClearTable(myfighter.statuschanges)
+           myfighter.statuschanges.Death=StatusChanges.Death
+        end   
      end
      -- Attack
      if act.Attack and act.Attack>0 then effect=effect or Attack(act,group,i,nextact) end
