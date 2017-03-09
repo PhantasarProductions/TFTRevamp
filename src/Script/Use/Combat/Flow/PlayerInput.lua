@@ -1,6 +1,6 @@
 --[[
   PlayerInput.lua
-  Version: 17.03.08
+  Version: 17.03.09
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -73,6 +73,7 @@ fflow.inputicons = { attack = {
                      spirata = {
                                  x = 0, y = 50,
                                  allow = function()
+                                           if inputchar.tag=="Jake_Fairy" then return CVV("&SPIRATA.JAKE_HUMAN") end
                                            return CVV("&SPIRATA."..upper(inputchar.tag))
                                          end,
                                  key = KEY_DOWN,
