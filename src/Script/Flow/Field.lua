@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 17.01.17
+  Version: 17.03.09
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -750,6 +750,9 @@ function RandomEncounter()
    for i=1,num do
        Var.D("$COMBAT.FOE_"..i,monstertable[rand(1,#monstertable)]) 
    end
+   Actors.Actor("PLAYER").Walking=false
+   Actors.Actor("PLAYER").Moving=false
+   WalkArrival=nil
    StartCombat()
 end
   
