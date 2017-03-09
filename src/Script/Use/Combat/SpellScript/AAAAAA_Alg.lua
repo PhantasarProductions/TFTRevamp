@@ -1,7 +1,7 @@
 --[[
   AAAAAA_Alg.lua
-  Version: 16.12.19
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.03.09
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,8 +34,10 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
 SpellScript = {}
 
 SpellScript[""] = Nothing
+function SpellScript.Nothing() return true end -- This for some moves that appear to do nothing, but which should not show a "miss" 
 
 -- functions must havce  the next parems (executor tag, target tag, additional code from ability)

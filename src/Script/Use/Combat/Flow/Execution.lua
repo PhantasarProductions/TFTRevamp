@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.03.08
+  Version: 17.03.09
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -143,6 +143,7 @@ function PerformAction(act,group,i)
      if act.ADDCARD_Char_Number then
         for ak=1,act.ADDCARD_Char_Number do
             AddCard(card2add,ak*(act.ADDCARD_Char_Interval or 2))
+            effect=true
         end
      end
      -- Cause status changes (this always comes last)

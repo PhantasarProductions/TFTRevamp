@@ -379,6 +379,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR7.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR8.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR9.lua
+    1. Script: Script/JINC/IA/FOE_WATCHMOVE.lua
     1. Script: Script/JINC/IA/ICEBLAST.lua
     1. Script: Script/JINC/IA/ITM_AMBROSIA.lua
     1. Script: Script/JINC/IA/ITM_ANABOLINEA.lua
@@ -398,6 +399,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_ICICLES.lua
     1. Script: Script/JINC/IA/ITM_INFERNOORB.lua
     1. Script: Script/JINC/IA/ITM_MAGICDUST.lua
+    1. Script: Script/JINC/IA/ITM_MAGICSTONE.lua
     1. Script: Script/JINC/IA/ITM_MANDRAKE.lua
     1. Script: Script/JINC/IA/ITM_MEDICINE.lua
     1. Script: Script/JINC/IA/ITM_MIRROR.lua
@@ -595,9 +597,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/bool2int.lua
     1. Script: Script/Libs/RPGSTAT_Iterator.lua
     1. Script: Script/Libs/CVV.lua
-    1. Script: Script/Libs/LAURA II/Kthura.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
+    1. Script: Script/Libs/LAURA II/Kthura.lua
     1. Script: Script/Libs/QuickImage.lua
     1. Script: Script/Libs/Console.lua
     1. Script: Script/Libs/jinclude.lua

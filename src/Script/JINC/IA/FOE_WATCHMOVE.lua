@@ -1,5 +1,5 @@
 --[[
-  ITM_STORMBOTTLE.lua
+  FOE_WATCHMOVE.lua
   Version: 17.03.09
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -42,24 +42,20 @@ ret = {
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Uncork it and blow the enemy away",
+	["EffectScript"] = "Nothing",
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 175,
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
-	["Title"] = "Storm in a bottle",
-	["Type"] = "Item",
-	["Voice"] = "Wind"}
+	["Title"] = "Watching your move",
+	["Type"] = "Ability"}
 
 return ret
 
