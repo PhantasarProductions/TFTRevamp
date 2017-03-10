@@ -1,6 +1,6 @@
 --[[
   HidingHag.lua
-  Version: 17.03.07
+  Version: 17.03.10
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Tue 07 March 2017; 10:20:13
+-- File Generated: Fri 10 March 2017; 13:34:47
 
 
 local foe = {}
@@ -120,6 +120,7 @@ local foe = {}
 	foe["RATE_AAA_GUARD"] = 2
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
 	foe["RATE_ABL_FOE_CRUSH"] = 10
+	foe["RATE_ABL_FOE_DEMON_SOUL_BREAKER"] = 0
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
 	foe["RATE_ABL_FOE_DISTRACT"] = 10
 	foe["RATE_ABL_FOE_EXHAUST"] = 10
@@ -138,6 +139,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_TAKEOVER\50"] = 0
 	foe["RATE_ABL_FOE_TOTALEXHAUSTION"] = 0
 	foe["RATE_ABL_FOE_TUSK"] = 0
+	foe["RATE_ABL_FOE_ULTIMATESOULCRUSHER"] = 0
 	foe["RATE_ABL_FOE_VENOMBITE"] = 0
 	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
 	foe["RATE_ABL_FOE_VIRUSSTAB"] = 0
@@ -154,6 +156,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_HANDOSTILLOR_PURIFY"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_RECOVER"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_SMITE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_STICKSWING"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_TREATMENT"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_VITALIZE"] = 0
@@ -161,6 +164,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\52PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_BERSERK"] = 0
+	foe["RATE_ABL_HERO_JAKE_FLAMEBLADE"] = 0
 	foe["RATE_ABL_HERO_JAKE_HEALBLADE"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_FAIRY"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_HUMAN"] = 0
@@ -206,6 +210,7 @@ local foe = {}
 	foe["RATE_ABL_MASTER_RUSSEL_DECAPITATE"] = 0
 	foe["RATE_BERSERK_ATTACK"] = 0
 	foe["RATE_BESERK_ATTACK"] = 0
+	foe["RATE_FOE_WATCHMOVE"] = 0
 	foe["RATE_ICEBLAST"] = 0
 	foe["RATE_ITM_AMBROSIA"] = 0
 	foe["RATE_ITM_ANABOLINEA"] = 0
@@ -225,6 +230,7 @@ local foe = {}
 	foe["RATE_ITM_ICICLES"] = 0
 	foe["RATE_ITM_INFERNOORB"] = 0
 	foe["RATE_ITM_MAGICDUST"] = 0
+	foe["RATE_ITM_MAGICSTONE"] = 0
 	foe["RATE_ITM_MANDRAKE"] = 0
 	foe["RATE_ITM_MEDICINE"] = 0
 	foe["RATE_ITM_MIRROR"] = 0
@@ -267,6 +273,7 @@ local foe = {}
 	foe["TARGET_AAA_GUARD"] = "Random"
 	foe["TARGET_ABL_FOE_BACTERIATUSK"] = "Random"
 	foe["TARGET_ABL_FOE_CRUSH"] = "Random"
+	foe["TARGET_ABL_FOE_DEMON_SOUL_BREAKER"] = "Random"
 	foe["TARGET_ABL_FOE_DESPERATEATTACK"] = "Random"
 	foe["TARGET_ABL_FOE_DISTRACT"] = "Random"
 	foe["TARGET_ABL_FOE_EXHAUST"] = "Random"
@@ -285,6 +292,7 @@ local foe = {}
 	foe["TARGET_ABL_FOE_TAKEOVER\50"] = "Random"
 	foe["TARGET_ABL_FOE_TOTALEXHAUSTION"] = "Random"
 	foe["TARGET_ABL_FOE_TUSK"] = "Random"
+	foe["TARGET_ABL_FOE_ULTIMATESOULCRUSHER"] = "Random"
 	foe["TARGET_ABL_FOE_VENOMBITE"] = "Random"
 	foe["TARGET_ABL_FOE_VENOMSTAB"] = "Random"
 	foe["TARGET_ABL_FOE_VIRUSSTAB"] = "Random"
@@ -301,6 +309,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_PURIFY"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_RECOVER"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_SMITE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_STICKSWING"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_TREATMENT"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_VITALIZE"] = "Random"
@@ -308,6 +317,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_JAKE_\51PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\52PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_BERSERK"] = "Random"
+	foe["TARGET_ABL_HERO_JAKE_FLAMEBLADE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_HEALBLADE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_SHIFT_FAIRY"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_SHIFT_HUMAN"] = "Random"
@@ -353,6 +363,7 @@ local foe = {}
 	foe["TARGET_ABL_MASTER_RUSSEL_DECAPITATE"] = "Random"
 	foe["TARGET_BERSERK_ATTACK"] = "Random"
 	foe["TARGET_BESERK_ATTACK"] = "Random"
+	foe["TARGET_FOE_WATCHMOVE"] = "Random"
 	foe["TARGET_ICEBLAST"] = "Random"
 	foe["TARGET_ITM_AMBROSIA"] = "Random"
 	foe["TARGET_ITM_ANABOLINEA"] = "Random"
@@ -372,6 +383,7 @@ local foe = {}
 	foe["TARGET_ITM_ICICLES"] = "Random"
 	foe["TARGET_ITM_INFERNOORB"] = "Random"
 	foe["TARGET_ITM_MAGICDUST"] = "Random"
+	foe["TARGET_ITM_MAGICSTONE"] = "Random"
 	foe["TARGET_ITM_MANDRAKE"] = "Random"
 	foe["TARGET_ITM_MEDICINE"] = "Random"
 	foe["TARGET_ITM_MIRROR"] = "Random"
@@ -423,7 +435,7 @@ local foe = {}
 	foe["ER_Earth"] = 100
 	foe["ER_Flame"] = -100
 	foe["ER_Frost"] = 100
-	foe["ER_Light"] = -200
+	foe["ER_Light"] = -250
 	foe["ER_Lightning"] = 100
 	foe["ER_Water"] = 100
 	foe["ER_Wind"] = 100
