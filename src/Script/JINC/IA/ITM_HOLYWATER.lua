@@ -1,5 +1,5 @@
 --[[
-  ITM_HEALINGHERB.lua
+  ITM_HOLYWATER.lua
   Version: 17.03.10
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -36,17 +36,15 @@
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 50,
-	["ADDCARD_Action_Number"] = 5,
+	["ADDCARD_Action_Interval"] = 250,
+	["ADDCARD_Action_Number"] = 3,
 	["ADDCARD_Char_Interval"] = 5,
+	["Attack"] = 125,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["CureDisease"] = true,
-	["CurePoison"] = true,
-	["Desc"] = "The knowlege of herbs can be good for your heath",
-	["Heal"] = 500,
+	["Attack_AttackStat"] = "Intelligence",
+	["Attack_DefenseStat"] = "Resistance",
+	["Attack_Element"] = "Light",
+	["Desc"] = "Holy attack to one target",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -57,14 +55,13 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 1750,
+	["ITM_ShopPrice"] = 1500,
 	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "Heal",
+	["SpellAni"] = "SingleHeal",
 	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Healing Herb",
-	["Type"] = "Item",
-	["Voice"] = "Heal"}
+	["Target"] = "1F",
+	["Title"] = "Holy Water",
+	["Type"] = "Item"}
 
 return ret
 

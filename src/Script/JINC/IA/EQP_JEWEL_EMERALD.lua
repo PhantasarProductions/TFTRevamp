@@ -1,6 +1,6 @@
 --[[
   EQP_JEWEL_EMERALD.lua
-  Version: 17.03.09
+  Version: 17.03.10
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -40,22 +40,24 @@ ret = {
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Raises protection against silence",
-	["EQP_STAT_SR_Silence"] = 50,
+	["Desc"] = "Raises protection against poison",
+	["EQP_STAT_SR_Poison"] = 100,
 	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_BlackMarket"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_ShopPrice"] = 6000,
 	["ITM_Type"] = "Accesoiry",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
-	["Title"] = "Topaz",
+	["Title"] = "Emerald",
 	["Type"] = "Item"}
 
 return ret
