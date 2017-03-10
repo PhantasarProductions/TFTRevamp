@@ -304,9 +304,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSELL_GENOCIDE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSELL_SAFESHOT.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSEL_DECAPITATE.lua
-    1. Script: Script/JINC/IA/ABL_RUBY.lua
     1. Script: Script/JINC/IA/BERSERK_ATTACK.lua
-    1. Script: Script/JINC/IA/BESERK_ATTACK.lua
     1. Script: Script/JINC/IA/EQP_ACC_TITANBELT.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_CURSEDWP_HUNGERAXE.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_TRAINAXE.lua
@@ -350,10 +348,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_AR5.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR6.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR7.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/EQP_JAKE_AR8.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/EQP_JAKE_AR9.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/EQP_JAKE_CURSEDWP_VENOMBLADE.lua
     1. Script: Script/JINC/IA/EQP_JAKE_TRAINSWORD.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP1.lua
@@ -367,6 +365,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_WP8.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP9.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_EMERALD.lua
+    1. Script: Script/JINC/IA/EQP_JEWEL_RUBY.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLEMERALD.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLTOPAZ.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_TOPAZ.lua
@@ -595,9 +594,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/ShowSerialize.lua
     1. Script: Script/Libs/KeyCodes_BlitzMax.lua
     1. Script: Script/Libs/Append.lua
+    1. Script: Script/Libs/Colors.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
-    1. Script: Script/Libs/Colors.lua
     1. Script: Script/Libs/bool2int.lua
     1. Script: Script/Libs/RPGSTAT_Iterator.lua
     1. Script: Script/Libs/CVV.lua
