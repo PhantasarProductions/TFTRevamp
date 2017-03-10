@@ -1,5 +1,5 @@
 --[[
-  ABL_RUBY.lua
+  EQP_JEWEL_RUBY.lua
   Version: 17.03.10
   Copyright (C) 2017 Jeroen Petrus Broks
   
