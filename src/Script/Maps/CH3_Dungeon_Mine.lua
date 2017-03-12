@@ -32,8 +32,89 @@
   
  **********************************************
  
-version: 17.03.05
+version: 17.03.12
 ]]
+
+
+function InitPuzzle()
+   DonePuzzle="&DONE.MINE.PUZZLE.SOLVED["..Maps.LayerCodeName.."]"
+   local maxset=16
+   if CVV(DonePuzzle) or Touched then return end
+   local r
+   Touched = {}
+   if not Symbols then
+     Symbols = {}
+     for f in iJCR6Dir(true) do
+       if (prefixed(f,'GFX/TEXTURES/SHAPES/') or prefixed(f,'GFX/TEXTURES/SHAPESMINE/')) and suffixed(f,".PNG") then Symbols[#Symbols+1] = f end
+     end
+   end  
+   assert(#Symbols>=maxset,"Not enough Symbols. "..maxset.." at least required.")
+   Tiles = {}
+   local SymUsed = {}
+   for i=1,16 do
+       local timeout=1000
+       repeat
+          timeout=timeout-1
+          assert(timeout>=0,"Puzzle Generation TimeOut! (Start)")
+          r = rand(1,#Symbols)
+       until not SymUsed[r]
+       SymUsed[r] = i
+       Tiles[i] = Symbols[r]
+   end
+   same = {}
+   timeout=1000
+   repeat
+      timeout=timeout-1
+      assert(timeout>=0,"Puzzle Generation TimeOut! (Same)")
+      same.ori = rand(1,16)
+      same.tgt = rand(1,16)
+   until same.ori~=same.tgt
+   Tiles[same.ori]=Tiles[same.tgt]
+   for i=1,maxset do
+       Maps.Obj.Obj("Sym"..i).TextureFile = Tiles[i]
+       Maps.Obj.Obj("Sym"..i).R=0
+       Maps.Obj.Obj("Sym"..i).G=0
+       Maps.Obj.Obj("Sym"..i).B=255       
+       Touched[i]=false
+   end          
+end
+
+function TouchSymbol(idx)
+   local c = {[true]={r=0,g=180,b=255},[false]={r=0,g=0,b=255}}
+   local tile = Maps.Obj.Obj("Sym"..idx)
+   Touched[idx] = not Touched[idx]
+   local cc = c[Touched[idx]]
+   tile.R = cc.r
+   tile.G = cc.g
+   tile.B = cc.b
+   local solved = true
+   for i=1,#Touched do
+       CSay("idx="..sval(idx)..";Touched["..i.."]="..sval(Touched[i]).."; i="..sval(i).."; same.ori="..sval(same.ori).."; solved = "..sval(solved))
+       solved = solved and (Touched[i]==(i==same.ori or i==same.tgt))
+   end
+   if solved then
+      SFX("Audio/SFX/General/Solved.ogg")
+      for i=1,16 do
+          Maps.Obj.Kill('Sym'..i,1)
+      end
+      --[[
+      for i=1,4 do
+          Maps.Obj.Kill("Block"..i,1)
+      end
+      ]]
+      Maps.Obj.Kill("PuzBlock",1)
+      Done(DonePuzzle)    
+      Touched=nil
+      Symbols=nil
+      for ch in EachParty() do RPG.IncStat(ch,"EXP",-math.ceil((240/(skill^2)))) end
+   end
+end
+
+
+
+
+
+
 
 function SecretDungeon()
     LoadMap("CH3_Dungeon_Garden")
@@ -43,4 +124,7 @@ end
 function GALE_OnLoad()
     MapHide('Secret')
     ZA_Enter("ToSecretDungeon",SecretDungeon)
+    ZA_Enter("InitPuzzle",InitPuzzle)
+   for i=1,25 do ZA_Enter("Sym"..i,TouchSymbol,i) end
+    
 end    

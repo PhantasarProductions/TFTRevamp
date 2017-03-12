@@ -1,6 +1,6 @@
 --[[
   Curse.lua
-  Version: 17.03.08
+  Version: 17.03.11
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -84,7 +84,9 @@ StatusChanges.Curse = {
              HP.Have=1
              AP.Have=0
           elseif (r>14 and r<20) or (r==23) then
-             SetStatus(ch,me.mystat[rand(1,#me.mystat)])   
+             local cstat = me.mystat[rand(1,#me.mystat)]
+             if (cstat=="Death" and cstat=="Petrification") and prefixed(ch,"FOE_") then return end
+             SetStatus(ch,cstat)   
           end                              
       end 
 

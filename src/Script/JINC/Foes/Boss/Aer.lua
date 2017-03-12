@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 17.03.08
+version: 17.03.11
 ]]
--- File Generated: Wed 08 March 2017; 16:19:42
+-- File Generated: Sat 11 March 2017; 12:15:01
 
 
 local foe = {}
@@ -156,6 +156,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_HANDOSTILLOR_PURIFY"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_RECOVER"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_SMITE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_STICKSWING"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_TREATMENT"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_VITALIZE"] = 0
@@ -208,7 +209,7 @@ local foe = {}
 	foe["RATE_ABL_MASTER_RUSSELL_SAFESHOT"] = 0
 	foe["RATE_ABL_MASTER_RUSSEL_DECAPITATE"] = 0
 	foe["RATE_BERSERK_ATTACK"] = 0
-	foe["RATE_BESERK_ATTACK"] = 0
+	foe["RATE_FOE_WATCHMOVE"] = 0
 	foe["RATE_ICEBLAST"] = 0
 	foe["RATE_ITM_AMBROSIA"] = 0
 	foe["RATE_ITM_ANABOLINEA"] = 0
@@ -224,10 +225,12 @@ local foe = {}
 	foe["RATE_ITM_HEALSHOWER"] = 0
 	foe["RATE_ITM_HELLSTONE"] = 0
 	foe["RATE_ITM_HOLYSCROLL"] = 0
+	foe["RATE_ITM_HOLYWATER"] = 0
 	foe["RATE_ITM_ICICLE"] = 0
 	foe["RATE_ITM_ICICLES"] = 0
 	foe["RATE_ITM_INFERNOORB"] = 0
 	foe["RATE_ITM_MAGICDUST"] = 0
+	foe["RATE_ITM_MAGICSTONE"] = 0
 	foe["RATE_ITM_MANDRAKE"] = 0
 	foe["RATE_ITM_MEDICINE"] = 0
 	foe["RATE_ITM_MIRROR"] = 0
@@ -306,6 +309,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_PURIFY"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_RECOVER"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_SMITE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_STICKSWING"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_TREATMENT"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_VITALIZE"] = "Random"
@@ -358,7 +362,7 @@ local foe = {}
 	foe["TARGET_ABL_MASTER_RUSSELL_SAFESHOT"] = "Random"
 	foe["TARGET_ABL_MASTER_RUSSEL_DECAPITATE"] = "Random"
 	foe["TARGET_BERSERK_ATTACK"] = "Random"
-	foe["TARGET_BESERK_ATTACK"] = "Random"
+	foe["TARGET_FOE_WATCHMOVE"] = "Random"
 	foe["TARGET_ICEBLAST"] = "Random"
 	foe["TARGET_ITM_AMBROSIA"] = "Random"
 	foe["TARGET_ITM_ANABOLINEA"] = "Random"
@@ -374,10 +378,12 @@ local foe = {}
 	foe["TARGET_ITM_HEALSHOWER"] = "Random"
 	foe["TARGET_ITM_HELLSTONE"] = "Random"
 	foe["TARGET_ITM_HOLYSCROLL"] = "Random"
+	foe["TARGET_ITM_HOLYWATER"] = "Random"
 	foe["TARGET_ITM_ICICLE"] = "Random"
 	foe["TARGET_ITM_ICICLES"] = "Random"
 	foe["TARGET_ITM_INFERNOORB"] = "Random"
 	foe["TARGET_ITM_MAGICDUST"] = "Random"
+	foe["TARGET_ITM_MAGICSTONE"] = "Random"
 	foe["TARGET_ITM_MANDRAKE"] = "Random"
 	foe["TARGET_ITM_MEDICINE"] = "Random"
 	foe["TARGET_ITM_MIRROR"] = "Random"

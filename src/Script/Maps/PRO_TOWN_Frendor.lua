@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.10
+version: 17.03.11
 ]]
 
 -- @USE /Script/Use/Specific/EndOfPrologue.lua
@@ -44,6 +44,16 @@ version: 17.02.10
       Inn:          Yrromani
 ]]
 
+
+-- FandaZone
+function FandaZone()
+   local fanda = Maps.Obj.Exists("NPC_FandaloraOutside")
+   Maps.Obj.Obj('FandaEnter').Impassible=fanda
+   Maps.Obj.Obj("FandaEnter").ForcePassible=1-fanda
+   Maps.Remap() 
+   CSay("Fanda = "..sval(fanda)..";\nzone.impassible = "..Maps.Obj.Obj('FandaEnter').Impassible.."; zone.force = "..Maps.Obj.Obj("FandaEnter").ForcePassible)
+end
+
 -- General
 function MapMusic()
    if not (Done("&DONE.VANDAR.OPENING_Fandalora") or CVV('$WMCHAT')=='FAIRYJAKE') then 
@@ -51,6 +61,7 @@ function MapMusic()
    else
       OriMapMusic()
    end   
+   -- FandaZone()
 end
 
 
@@ -205,11 +216,18 @@ end
 
 
 function AccessDenied()
-  if (not CVV('&FRENDOR.ALLOW2STAY')) then MapText('ACCESSDENIED') WorldMap() elseif Maps.Obj.Exists('FANDALORA_ENTRANCE')==1 then Maps.Obj.Kill('FANDALORA_ENTRANCE',1) end
+  if (not CVV('&FRENDOR.ALLOW2STAY')) then 
+     MapText('ACCESSDENIED') 
+     WorldMap() 
+  elseif Maps.Obj.Exists('FANDALORA_ENTRANCE')==1 then 
+     Maps.Obj.Kill('FANDALORA_ENTRANCE',1) 
+     FandaZone()
+  end
 end
   
 function ComeInEvents()
-   local ret = (({ FAIRYJAKE = Treason, LIBDONE=PleaseGo })[CVV('$WMCHAT')] or AccessDenied)()   
+   local ret = (({ FAIRYJAKE = Treason, LIBDONE=PleaseGo })[CVV('$WMCHAT')] or AccessDenied)()
+   FandaZone()   
 end
 
 
@@ -229,6 +247,8 @@ function NPC_FandaloraOutside()
      Var.D("$WMCHAT","DANDORJOINED")
      WorldMap_Unlock("CH2WINDSPIRATA")
      Done("&DONE.PARTY.DANDORJOINED")
+     FandaZone()
+     Maps.GotoLayer("marrilona")
    else
      MapText('FANDALORA_OUTSIDE')
      MasterFandalora()
@@ -274,8 +294,11 @@ function NPC_YanneeOutside()
 end
 
 function FandaloraEnter()
-   GoToLayer('marrilona',Entry)
+   GoToLayer('marrilona','Entry')
 end   
+
+
+
 
 -- Init
 function GALE_OnLoad()
@@ -287,5 +310,7 @@ function GALE_OnLoad()
    end    
    ZA_Enter('B_Exit',B_Exit)
    ZA_Enter('Byebye',WorldMap)
-   ZA_Enter('FandaloraEnter',FandaloraEnter)
+   ZA_Enter('FandaEnter',FandaloraEnter)
+   ZA_Enter("FandaLeaveRezone",FandaZone)
+   Maps.GoToLayer("town")
 end

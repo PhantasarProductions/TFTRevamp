@@ -32,10 +32,12 @@
   
  **********************************************
  
-version: 17.03.08
+version: 17.03.11
 ]]
 
 -- @USE /Script/Use/Specific/Walda.lua
+
+tree19 = {}
 
 function DrawPlasma()
    local tp = Maps.CObj
@@ -60,16 +62,31 @@ function MAP_FLOW()
       e = Maps.Obj.Obj('Obstacle_Prev')
       e.Rotation = e.Rotation - 1
       if e.Rotation<=0 then e.Rotation = e.Rotation + 360 end
-   end   
+   end  
+   if Maps.LayerCodeName=="#019" then
+      for i=#tree19,2,-1 do
+          local o=tree19[i]
+          local p=tree19[i-1]
+          o.R = p.R
+          o.G = p.G
+          o.B = p.B
+          o.SetAlpha(p.GetAlpha())
+      end
+      local f=tree19[1]
+      f.R=rand(0,255)
+      f.G=rand(0,255)
+      f.B=rand(0,255)
+      if f.GetAlpha()<1000 then f.SetAlpha(f.GetAlpha()+1) end
+   end 
 end
 
 function Boss()
   ClearCombatData()
-  Var.D("$COMBAT.FOE_1","Boss/InvisibleDemon")
+  Var.D("$COMBAT.FOE_1",({["#006"]="Boss/InvisibleDemon",['#018']='Boss/SuperHidingHag'})[Maps.LayerCodeName])
   Var.D("$COMBAT.POSFOE_1","CENTER")
   Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
   Var.D("$COMBAT.ARENA","MG.png")
-  StartBoss("Eye-Spy","Invisible Demon")    
+  StartBoss("Eye-Spy",({["#006"]='Invisible Demon', ['#018']='Super Hiding Hag'})[Maps.LayerCodeName])    
 end
 
 
@@ -78,7 +95,30 @@ function Bye()
    GoToLayer('#001','FromSecretDungeon')
 end   
 
+function Back()
+    GoToLayer("#000","Einde")
+end
+
+function NPC_ManaOrb()
+     ManaOrb()
+     Award("SECRETDUNGEON_MAGICGARDEN")
+     Maps.Obj.Kill("NPC_ManaOrb",1)
+end
+
 
 function GALE_OnLoad()
    InitWalda('Garden')   
+   Maps.GoToLayer("#019")
+   for obj in KthuraEach('Obstacle') do
+       if obj.Tag=="" then 
+          tree19[#tree19+1] = obj
+          obj.R=0
+          obj.G=0
+          obj.B=0
+          obj.SetAlpha(0)
+       end
+       CSay(#tree19.." trees of tree effect")
+   end
+   ZA_Enter("Back",Back)    
+   ZA_Enter("Bye",Bye)      
 end

@@ -1,5 +1,5 @@
 --[[
-  EQP_JEWEL_SMALLEMERALD.lua
+  EQP_JEWEL_SMALLGARNET.lua
   Version: 17.03.10
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -40,8 +40,8 @@ ret = {
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Raises protection against Poison",
-	["EQP_STAT_SR_Poison"] = 25,
+	["Desc"] = "Raises protection against Disease",
+	["EQP_STAT_SR_Disease"] = 25,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -57,7 +57,7 @@ ret = {
 	["ITM_Type"] = "Accesoiry",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
-	["Title"] = "Small Emerald",
+	["Title"] = "Small Garnet",
 	["Type"] = "Item"}
 
 return ret

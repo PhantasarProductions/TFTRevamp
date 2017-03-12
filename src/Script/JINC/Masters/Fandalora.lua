@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.10
+version: 17.03.11
 ]]
 local RPG = RPGStat
 
@@ -90,7 +90,8 @@ Fandalora.abl = {
                     [15] = 'abl_master_fandalora_removecurse',
                     [20] = 'abl_master_fandalora_curse',
                     [25] = 'abl_master_fandalora_removecurse',
-                    [30] = 'abl_master_fandalora_phantom'                    
+                    [30] = 'abl_master_fandalora_phantom',
+                    [11+(skill^skill)] = 'abl_master_fandalora_void'                    
               }
 
 Fandalora.abl[(3^skill)+5] = 'abl_master_fandalora_death' 
