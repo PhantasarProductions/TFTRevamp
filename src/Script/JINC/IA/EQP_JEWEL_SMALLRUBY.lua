@@ -1,5 +1,5 @@
 --[[
-  EQP_MARRILONA_AR7.lua
+  EQP_JEWEL_SMALLRUBY.lua
   Version: 17.03.13
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -35,21 +35,29 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ADDCARD_Action_Act"] = "Self",
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "No president can grab you in the pussy now!",
-	["EQP_STAT_Endurance"] = 7,
-	["EQP_STAT_Intelligence"] = 7,
-	["EQP_STAT_Resistance"] = 21,
-	["Heal_StatPercent"] = "Power",
+	["Desc"] = "Raises protection against curse",
+	["EQP_STAT_SR_Curse"] = 25,
+	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "Marrilona",
-	["ITM_ShopPrice"] = 8000,
-	["ITM_Type"] = "Armor",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Hiss Dress",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_BlackMarket"] = true,
+	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 6000,
+	["ITM_Type"] = "Accesoiry",
+	["Stance"] = "Cast",
+	["Target"] = "1F",
+	["Title"] = "Ruby",
 	["Type"] = "Item"}
 
 return ret
