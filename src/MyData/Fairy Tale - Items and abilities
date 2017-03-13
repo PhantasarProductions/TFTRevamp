@@ -21559,8 +21559,8 @@ Rec: SPIRATA_ATTACK_HANDOSTILLOR
 	BUFF_Power = 0
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
-	CauseBerserk = 
-	CauseConfusion = 
+	CauseBerserk = FALSE
+	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
@@ -21661,7 +21661,7 @@ Rec: SPIRATA_ATTACK_JAKE
 	BUFF_Power = 0
 	BUFF_Resistance = -15
 	BUFF_Speed = 0
-	CauseBerserk = 
+	CauseBerserk = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -21719,7 +21719,7 @@ Rec: SPIRATA_ATTACK_JAKE
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = 
+	SpellAni = Inferno
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast

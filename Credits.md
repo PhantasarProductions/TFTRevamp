@@ -370,6 +370,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JEWEL_RUBY.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLEMERALD.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLGARNET.lua
+    1. Script: Script/JINC/IA/EQP_JEWEL_SMALLRUBY.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLTOPAZ.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_TOPAZ.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR1.lua
@@ -590,9 +591,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Specific/EndOfPrologue.lua
     1. Script: Script/Use/Specific/MoveTex.lua
     1. Script: Script/Use/Specific/PlasmaFloor.lua
-    1. Script: Script/Use/Specific/Scroller.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
+    1. Script: Script/Use/Specific/Scroller.lua
     1. Script: Script/Use/Specific/StepsPuzzle.lua
     1. Script: Script/Use/Specific/Walda.lua
     1. Script: Script/Libs/Coords2Rotation.lua
