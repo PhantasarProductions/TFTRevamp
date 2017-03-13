@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.03.09
+  Version: 17.03.13
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -190,6 +190,14 @@ function fflow.Execution()
    local myactor = fighterbytag[nextact.executor.tag]
    Var.D('$EXE.EXECUTOR',nextact.executor.tag)
    -- Var.D('$EXE.TARGET',"--")
+   -- Is this move possible
+   if not ActionPossible(act.Target) then 
+      nextact = nil
+      table.remove(cards,1)
+      e_act = nil
+      flow='idle' 
+      return 
+   end
    -- Show Box
    assert ( act.Title,serialize("act",act))
    ExeShowMsg = ExeShowMsg or CardMessage(act.Title,1)

@@ -533,6 +533,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/CCompileFoes.lua
     1. Script: Script/Use/Combat/CDrawFighters.lua
     1. Script: Script/Use/Combat/CDrawScreen.lua
+    1. Script: Script/Use/Combat/CPossible.lua
     1. Script: Script/Use/Combat/CVoice.lua
     1. Script: Script/Use/Combat/Defeat/AAA_Default.lua
     1. Script: Script/Use/Combat/DestroyAllFoes.lua
@@ -590,9 +591,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Scenario/Scenario.lua
     1. Script: Script/Use/Specific/EndOfPrologue.lua
     1. Script: Script/Use/Specific/MoveTex.lua
-    1. Script: Script/Use/Specific/PlasmaFloor.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
+    1. Script: Script/Use/Specific/PlasmaFloor.lua
     1. Script: Script/Use/Specific/Scroller.lua
     1. Script: Script/Use/Specific/StepsPuzzle.lua
     1. Script: Script/Use/Specific/Walda.lua
@@ -613,12 +614,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png
