@@ -1,6 +1,6 @@
 --[[
   PlayerInput.lua
-  Version: 17.03.09
+  Version: 17.03.14
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -194,7 +194,15 @@ nextact.aftertarget = aftertarget;
      ['1A'] = function() nextact.group='Hero' flow='playerselectsingletarget' end,
      ['AF'] = function() nextact.group='Foe'  flow=aftertarget                end,
      ['AA'] = function() nextact.group='Hero' flow=aftertarget                end,
-     ['OS'] = function() nextact.group='Hero' flow=aftertarget                end
+     ['OS'] = function() 
+        nextact.group='Hero' 
+        flow=aftertarget
+        local ret
+        for i,d in pairs(Fighters[nextact.executor.group]) do
+            if d.tag == nextact.executor.tag then ret = i end
+        end
+        nextact.targetidx=ret                        
+     end
 })[myitem.Target]()
 end
 

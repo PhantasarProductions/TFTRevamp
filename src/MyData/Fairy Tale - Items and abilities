@@ -4015,7 +4015,7 @@ Rec: ABL_HERO_HANDOSTILLOR_PRAY
 	BUFF_Power = -1
 	BUFF_Resistance = 5
 	BUFF_Speed = -100
-	CauseBerserk = 
+	CauseBerserk = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -4073,7 +4073,7 @@ Rec: ABL_HERO_HANDOSTILLOR_PRAY
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = Heal
+	SpellAni = SingleHeal
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast

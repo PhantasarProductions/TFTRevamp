@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.03.13
+  Version: 17.03.14
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -171,6 +171,7 @@ fflow.Range = { ['1F'] = function(act)
                             for i,d in pairs(Fighters[nextact.executor.group]) do
                                 if d.tag == nextact.executor.tag then ret = i end
                             end
+                            -- nextact.targetidx=ret
                             PerformAction(act,nextact.executor.group,ret)     
                           end                
                          }

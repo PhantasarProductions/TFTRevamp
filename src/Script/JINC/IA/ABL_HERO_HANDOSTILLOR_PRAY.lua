@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_HANDOSTILLOR_PRAY.lua
-  Version: 17.03.13
+  Version: 17.03.14
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -63,7 +63,7 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "Heal",
+	["SpellAni"] = "SingleHeal",
 	["Stance"] = "Cast",
 	["Target"] = "OS",
 	["Title"] = "Pray",
