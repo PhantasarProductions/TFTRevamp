@@ -32,13 +32,14 @@
   
  **********************************************
  
-version: 17.03.12
+version: 17.03.15
 ]]
 
 
 function InitPuzzle()
    DonePuzzle="&DONE.MINE.PUZZLE.SOLVED["..Maps.LayerCodeName.."]"
    local maxset=16
+   if Maps.LayerCodeName=="#007" then maxset=25 end
    if CVV(DonePuzzle) or Touched then return end
    local r
    Touched = {}
