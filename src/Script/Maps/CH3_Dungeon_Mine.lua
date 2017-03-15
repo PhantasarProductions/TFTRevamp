@@ -52,7 +52,7 @@ function InitPuzzle()
    assert(#Symbols>=maxset,"Not enough Symbols. "..maxset.." at least required.")
    Tiles = {}
    local SymUsed = {}
-   for i=1,16 do
+   for i=1,maxset do
        local timeout=1000
        repeat
           timeout=timeout-1
@@ -95,7 +95,7 @@ function TouchSymbol(idx)
    end
    if solved then
       SFX("Audio/SFX/General/Solved.ogg")
-      for i=1,16 do
+      for i=1,#Touched do
           Maps.Obj.Kill('Sym'..i,1)
       end
       --[[
