@@ -517,7 +517,7 @@ for layer in each(layers) do
     for obj in KthuraEach() do
         if prefixed(p,"RNDITEM_") and (not got) then
            RandomItems[Maps.CodeName][layer] = true
-           if rand(1,9/skill)~=1 then Maps.Obj.Kill(p,1) end
+           if rand(1,math.ceil(9/skill))~=1 then Maps.Obj.Kill(p,1) end
         end   
         for p in each(prefixes) do 
             if prefixed(obj.Tag,p) then AddClickable(obj.Tag) CSay(layer..": Autoclickable "..obj.Tag.." added") end

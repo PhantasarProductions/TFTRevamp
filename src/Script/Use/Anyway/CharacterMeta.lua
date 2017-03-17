@@ -120,7 +120,7 @@ CharacterMeta.Jake_Fairy = CharacterMeta.Jake
 
 function SetSkill(exp,lvl,level)
    exp.Maximum = level * ({20,25,30})[skill]
-   lvl.Maximum = skill * ({300,250,100})[skill]
+   lvl.Maximum = ({750,500,100})[skill]
    if level>=lvl.Maximum then exp.Maximum = 0 end
    lvl.Have = level or 1
    lvl.Minimum = 1
