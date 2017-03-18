@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 17.01.01
+  Version: 17.03.18
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -54,7 +54,7 @@ function GALE_OnLoad()
        l = tonumber(lv[i])
        CSay("Checking "..i.."  >> "..r.." must be "..l.." or higher")
        if l>r then break end
-       if l<r then Sys.Error("You are using an outdated version of LAURA. This game requires version "..RequiredVersion,"CurrentVersion,"..LAURA.Version()) end
+       if l<r then Sys.Error("You are using an outdated version of LAURA II. This game requires version "..RequiredVersion,"CurrentVersion,"..LAURA.Version()) end
    end
    CSay("LAURA II version is in order!")
    MS.LoadNew("BOXTEXT","Script/Subs/BoxText.lua"); CSay("BOXTEXT loaded!")
@@ -67,6 +67,11 @@ function GALE_OnLoad()
    MS.Run('BOXTEXT','LoadData','WORLDMAP;WMCHAT')
    MS.Run("BOXTEXT","LoadData","COMBAT/LEARN;COMBATLEARN")
    MS.Run("BOXTEXT","LoadData","GENERAL/MANAORB;MANAORB")
+   local fn = fonts['CombatCharMessage'][1]
+   for i=1,fonts['CombatCharMessage'][2] do
+        CSay("Damage font #"..i)
+        Image.Font("fonts/"..fn,i)
+   end         
 end
 
 
