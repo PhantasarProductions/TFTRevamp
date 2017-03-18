@@ -122,6 +122,7 @@ function PostBoss()
     Maps.Obj.Kill("PRC_PROLOGUE",1)
     GoToLayer("#000","Start")
     Maps.Obj.Kill("Remove",1)
+    Done("&ALLOW.ENCOFF['"..Maps.CodeName.."']")
 end
 
 function ToTomb()
