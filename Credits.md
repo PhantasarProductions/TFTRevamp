@@ -258,6 +258,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_PURIFY.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_RECOVER.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS.lua
+    1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_RESURRECT.lua
+    1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_REVIVE.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_SMITE.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_STICKSWING.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_TREATMENT.lua
@@ -370,7 +372,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_WP8.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP9.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_EMERALD.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/JINC/IA/EQP_JEWEL_GARNET.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_RUBY.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLEMERALD.lua
@@ -389,17 +390,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR8.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR9.lua
     1. Script: Script/JINC/IA/FOE_WATCHMOVE.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/JINC/IA/ICEBLAST.lua
     1. Script: Script/JINC/IA/ITM_AMBROSIA.lua
     1. Script: Script/JINC/IA/ITM_ANABOLINEA.lua
     1. Script: Script/JINC/IA/ITM_ANTIDOTE.lua
     1. Script: Script/JINC/IA/ITM_APPLE.lua
     1. Script: Script/JINC/IA/ITM_BELL.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
     1. Script: Script/JINC/IA/ITM_CARROT.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/JINC/IA/ITM_CURSEDSPORES.lua
     1. Script: Script/JINC/IA/ITM_DEATHCUBE.lua
     1. Script: Script/JINC/IA/ITM_EEL.lua
@@ -409,7 +406,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_HELLSTONE.lua
     1. Script: Script/JINC/IA/ITM_HOLYSCROLL.lua
     1. Script: Script/JINC/IA/ITM_HOLYWATER.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ITM_ICICLE.lua
     1. Script: Script/JINC/IA/ITM_ICICLES.lua
     1. Script: Script/JINC/IA/ITM_INFERNOORB.lua
@@ -485,6 +481,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH2_Dungeon_DoublineBayForest.lua
     1. Script: Script/Maps/CH2_Dungeon_DragonCastle.lua
     1. Script: Script/Maps/CH2_Dungeon_ElfRoad.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/Maps/CH2_Dungeon_SpirataFire.lua
     1. Script: Script/Maps/CH2_Dungeon_SpirataWater.lua
     1. Script: Script/Maps/CH2_Dungeon_SpirataWind.lua
@@ -497,10 +494,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH3_Dungeon_Mine.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
     1. Script: Script/Maps/PRO_DUNGEON_Magic.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/Maps/PRO_DUNGEON_Tomb.lua
     1. Script: Script/Maps/PRO_Dungeon_Crypt.lua
     1. Script: Script/Maps/PRO_Hub_Weniaria.lua
     1. Script: Script/Maps/PRO_TOWN_Frendor.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/Maps/PRO_TOWN_Vandar.lua
     1. Script: Script/Maps/PRO_TheEnd.lua
     1. Script: Script/OSBOOT/Linux.x86.lua
@@ -510,6 +511,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Subs/Achievements.lua
     1. Script: Script/Subs/Autouse.lua
     1. Script: Script/Subs/BoxText.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/Subs/Items.lsv
     1. Script: Script/Subs/Items.lua
     1. Script: Script/Subs/MiniMsg.lua
@@ -623,12 +625,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png

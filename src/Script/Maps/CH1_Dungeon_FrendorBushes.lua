@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.20
+version: 17.03.18
 ]]
 
 
@@ -140,7 +140,8 @@ end
 
 
 function GALE_OnLoad()
-   if (not Done('&ANNOUNCED.CHAPTER.ONE')) or CVV('%CHAPTIME')>0 then Chapter('GFX/Chapters/1.png') end
+   if (not Done('&ANNOUNCED.CHAPTER.ONE')) -- or CVV('%CHAPTIME')>0 
+        then Chapter('GFX/Chapters/1.png') end
    ZA_Enter("Boss_Jake",Boss_Jake)
    ZA_Enter('Boss_Marrilona',Boss_Marrilona)
    ZA_Enter('ExitSouthWest',Leave,'Jake')
