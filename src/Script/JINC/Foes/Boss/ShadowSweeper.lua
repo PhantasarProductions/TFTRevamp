@@ -1,6 +1,6 @@
 --[[
   ShadowSweeper.lua
-  Version: 17.03.11
+  Version: 17.03.18
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sat 11 March 2017; 12:32:07
+-- File Generated: Sat 18 March 2017; 16:00:24
 
 
 local foe = {}
@@ -64,6 +64,7 @@ local foe = {}
 	foe["SKILL\51_AAA_GUARD"] = true
 	foe["SKILL\51_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
 	foe["SKILL\51_ITM_SALVE"] = true
+	foe["STSTART_Confusion"] = false
 	foe["STSTART_Curse"] = false
 	foe["STSTART_Death"] = false
 	foe["STSTART_Disease"] = false
@@ -71,6 +72,7 @@ local foe = {}
 	foe["STSTART_Petrification"] = false
 	foe["STSTART_Poison"] = false
 	foe["STSTART_Silence"] = false
+	foe["STSTART_Sleep"] = false
 	foe["STSTART_Undead"] = false
 	foe["Desc"] = "Master of Darkness\10Likes the darker places\46\10Afraid of light\44 what good that may do\46"
 	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47boss\47ShadowSweeper\46png"
@@ -84,8 +86,10 @@ local foe = {}
 	foe["RATE_AAA_GUARD"] = 45
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
 	foe["RATE_ABL_FOE_CRUSH"] = 0
+	foe["RATE_ABL_FOE_DEATHSPELL"] = 0
 	foe["RATE_ABL_FOE_DEMON_SOUL_BREAKER"] = 0
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
+	foe["RATE_ABL_FOE_DISINTEGRATE"] = 0
 	foe["RATE_ABL_FOE_DISTRACT"] = 0
 	foe["RATE_ABL_FOE_EXHAUST"] = 0
 	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 0
@@ -172,6 +176,7 @@ local foe = {}
 	foe["RATE_ABL_MASTER_RUSSELL_GENOCIDE"] = 0
 	foe["RATE_ABL_MASTER_RUSSELL_SAFESHOT"] = 0
 	foe["RATE_ABL_MASTER_RUSSEL_DECAPITATE"] = 0
+	foe["RATE_AUTO_NOODHULP"] = 0
 	foe["RATE_BERSERK_ATTACK"] = 0
 	foe["RATE_FOE_WATCHMOVE"] = 0
 	foe["RATE_ICEBLAST"] = 0
@@ -237,8 +242,10 @@ local foe = {}
 	foe["TARGET_AAA_GUARD"] = "Random"
 	foe["TARGET_ABL_FOE_BACTERIATUSK"] = "Random"
 	foe["TARGET_ABL_FOE_CRUSH"] = "Random"
+	foe["TARGET_ABL_FOE_DEATHSPELL"] = "Random"
 	foe["TARGET_ABL_FOE_DEMON_SOUL_BREAKER"] = "Random"
 	foe["TARGET_ABL_FOE_DESPERATEATTACK"] = "Random"
+	foe["TARGET_ABL_FOE_DISINTEGRATE"] = "Random"
 	foe["TARGET_ABL_FOE_DISTRACT"] = "Random"
 	foe["TARGET_ABL_FOE_EXHAUST"] = "Random"
 	foe["TARGET_ABL_FOE_FLAMESTRIKE"] = "Random"
@@ -325,6 +332,7 @@ local foe = {}
 	foe["TARGET_ABL_MASTER_RUSSELL_GENOCIDE"] = "Random"
 	foe["TARGET_ABL_MASTER_RUSSELL_SAFESHOT"] = "Random"
 	foe["TARGET_ABL_MASTER_RUSSEL_DECAPITATE"] = "Random"
+	foe["TARGET_AUTO_NOODHULP"] = "Random"
 	foe["TARGET_BERSERK_ATTACK"] = "Random"
 	foe["TARGET_FOE_WATCHMOVE"] = "Random"
 	foe["TARGET_ICEBLAST"] = "Random"
@@ -408,14 +416,16 @@ local foe = {}
 	foe["Rate Steal \49"] = 0
 	foe["Rate Steal \50"] = 0
 	foe["Rate Steal \51"] = 0
-	foe["SR_Curse "] = 100
+	foe["SR_Confusion"] = 100
+	foe["SR_Curse"] = 100
 	foe["SR_Death"] = 100
-	foe["SR_Disease "] = 100
-	foe["SR_Paralysis "] = 100
-	foe["SR_Petrification "] = 100
-	foe["SR_Poison "] = 100
-	foe["SR_Silence "] = 100
-	foe["SR_Undead "] = 100
+	foe["SR_Disease"] = 100
+	foe["SR_Paralysis"] = 100
+	foe["SR_Petrification"] = 100
+	foe["SR_Poison"] = 100
+	foe["SR_Silence"] = 100
+	foe["SR_Sleep"] = 100
+	foe["SR_Undead"] = 100
 	foe["normal_Accuracy"] = 100
 	foe["normal_EXP"] = 30
 	foe["normal_Endurance"] = 20

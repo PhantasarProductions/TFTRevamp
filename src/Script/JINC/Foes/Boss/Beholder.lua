@@ -1,4 +1,4 @@
--- File Generated: Sat 18 March 2017; 15:40:31
+-- File Generated: Sat 18 March 2017; 16:08:58
 
 
 local foe = {}
@@ -118,6 +118,7 @@ local foe = {}
 	foe["SKILL\51_ABL_HERO_HANDOSTILLOR_RECOVER"] = true
 	foe["SKILL\51_ABL_HERO_SPEEDUP"] = true
 	foe["SKILL\51_ABL_MASTER_FANDALORA_DARKNESS"] = true
+	foe["STSTART_Confusion"] = false
 	foe["STSTART_Curse"] = false
 	foe["STSTART_Death"] = false
 	foe["STSTART_Disease"] = false
@@ -125,6 +126,7 @@ local foe = {}
 	foe["STSTART_Petrification"] = false
 	foe["STSTART_Poison"] = false
 	foe["STSTART_Silence"] = false
+	foe["STSTART_Sleep"] = false
 	foe["STSTART_Undead"] = false
 	foe["Desc"] = "The ultimate master of death and destruction\46\10They say its eye is its only weak spot\46\10It hate you\44 it hates everything\44 \10but the only thing it hates more\10is an other Beholder\46"
 	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Boss\47Beholder\46png"
@@ -134,7 +136,7 @@ local foe = {}
 	foe["Item Steal \50"] = "ITM_AMBROSIA"
 	foe["Item Steal \51"] = "ITM_AMBROSIA"
 	foe["Name"] = "Beholder"
-	foe["RATE_AAA_ATTACK"] = 25
+	foe["RATE_AAA_ATTACK"] = 15
 	foe["RATE_AAA_GUARD"] = 0
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
 	foe["RATE_ABL_FOE_CRUSH"] = 5
@@ -468,14 +470,16 @@ local foe = {}
 	foe["Rate Steal \49"] = 1
 	foe["Rate Steal \50"] = 0
 	foe["Rate Steal \51"] = 0
-	foe["SR_Curse "] = 100
+	foe["SR_Confusion"] = 100
+	foe["SR_Curse"] = 100
 	foe["SR_Death"] = 100
-	foe["SR_Disease "] = 100
-	foe["SR_Paralysis "] = 100
-	foe["SR_Petrification "] = 100
-	foe["SR_Poison "] = 100
-	foe["SR_Silence "] = 100
-	foe["SR_Undead "] = 100
+	foe["SR_Disease"] = 100
+	foe["SR_Paralysis"] = 100
+	foe["SR_Petrification"] = 100
+	foe["SR_Poison"] = 100
+	foe["SR_Silence"] = 100
+	foe["SR_Sleep"] = 100
+	foe["SR_Undead"] = 100
 	foe["normal_Accuracy"] = 95
 	foe["normal_EXP"] = 800
 	foe["normal_Endurance"] = 200

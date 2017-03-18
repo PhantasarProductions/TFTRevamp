@@ -1,40 +1,4 @@
---[[
-**********************************************
-  
-  Aqua.lua
-  (c) Jeroen Broks, 2017, All Rights Reserved.
-  
-  This file contains material that is related 
-  to a storyline that is which is strictly
-  copyrighted to Jeroen Broks.
-  
-  This file may only be used in an unmodified
-  form with an unmodified version of the 
-  software this file belongs to.
-  
-  You may use this file for your study to see
-  how I solved certain things in the creation
-  of this project to see if you find valuable
-  leads for the creation of your own.
-  
-  Mostly this file comes along with a project
-  that is for most part released under an
-  open source license and that means that if
-  you use that code with this file removed
-  from it, you can use it under that license.
-  Please check out the other files to find out
-  which license applies.
-  This file comes 'as-is' and in no possible
-  way the author can be held responsible of
-  any form of damages that may occur due to 
-  the usage of this file
-  
-  
- **********************************************
- 
-version: 17.03.18
-]]
--- File Generated: Sat 18 March 2017; 15:19:16
+-- File Generated: Sat 18 March 2017; 16:08:56
 
 
 local foe = {}
@@ -82,6 +46,7 @@ local foe = {}
 	foe["SKILL\51_ABL_HERO_MARRILONA_HEAL"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_SPLASH"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_TSUNAMI"] = true
+	foe["STSTART_Confusion"] = false
 	foe["STSTART_Curse"] = false
 	foe["STSTART_Death"] = false
 	foe["STSTART_Disease"] = false
@@ -89,6 +54,7 @@ local foe = {}
 	foe["STSTART_Petrification"] = false
 	foe["STSTART_Poison"] = false
 	foe["STSTART_Silence"] = false
+	foe["STSTART_Sleep"] = false
 	foe["STSTART_Undead"] = false
 	foe["Desc"] = "Protector of the Water Spirata"
 	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47boss\47Aqua\46png"
@@ -432,14 +398,16 @@ local foe = {}
 	foe["Rate Steal \49"] = 0
 	foe["Rate Steal \50"] = 0
 	foe["Rate Steal \51"] = 0
-	foe["SR_Curse "] = 100
+	foe["SR_Confusion"] = 100
+	foe["SR_Curse"] = 100
 	foe["SR_Death"] = 100
-	foe["SR_Disease "] = 100
-	foe["SR_Paralysis "] = 100
-	foe["SR_Petrification "] = 100
-	foe["SR_Poison "] = 100
-	foe["SR_Silence "] = 100
-	foe["SR_Undead "] = 100
+	foe["SR_Disease"] = 100
+	foe["SR_Paralysis"] = 100
+	foe["SR_Petrification"] = 100
+	foe["SR_Poison"] = 100
+	foe["SR_Silence"] = 100
+	foe["SR_Sleep"] = 100
+	foe["SR_Undead"] = 100
 	foe["normal_Accuracy"] = 89
 	foe["normal_EXP"] = 100
 	foe["normal_Endurance"] = 80

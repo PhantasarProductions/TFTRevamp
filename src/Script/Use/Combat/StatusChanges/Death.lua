@@ -92,6 +92,7 @@ StatusChanges.Death = {
                       if RPG.Points(ch,"HP").Have<=0 then RPG.Points(ch,"HP").Have=1 end
                   end,
          StillorHelp = function(ch)
+                       if prefixed(ch,"FOE") then return end -- Hando Stillor is not gonna help his foes
                        if RPG.Points("HandoStillor","HP").Have==0 then return end -- If Hando Stillor is out himself, then sorry, no go.
                        if not CVVN("%HANDO.NOODHULP") then Var.D("%HANDO.NOODHULP",skill) end
                        if fighterbytag.HandoStillor.Petrified then return end -- Petrified? That won't do!

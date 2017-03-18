@@ -1,6 +1,6 @@
 --[[
   InvisibleDemon.lua
-  Version: 17.03.08
+  Version: 17.03.18
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Wed 08 March 2017; 19:05:47
+-- File Generated: Sat 18 March 2017; 15:59:45
 
 
 local foe = {}
@@ -130,6 +130,7 @@ local foe = {}
 	foe["SKILL\51_ABL_FOE_TOTALEXHAUSTION"] = true
 	foe["SKILL\51_ABL_FOE_ULTIMATESOULCRUSHER"] = true
 	foe["SKILL\51_ABL_MASTER_FANDALORA_CURSE"] = true
+	foe["STSTART_Confusion"] = false
 	foe["STSTART_Curse"] = false
 	foe["STSTART_Death"] = false
 	foe["STSTART_Disease"] = false
@@ -137,6 +138,7 @@ local foe = {}
 	foe["STSTART_Petrification"] = false
 	foe["STSTART_Poison"] = false
 	foe["STSTART_Silence"] = false
+	foe["STSTART_Sleep"] = false
 	foe["STSTART_Undead"] = false
 	foe["Desc"] = "Just because you can\39t see it\10doesn\39t mean it\39s harmless"
 	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47boss\47InvisibleDemon\46png"
@@ -150,8 +152,10 @@ local foe = {}
 	foe["RATE_AAA_GUARD"] = 5
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
 	foe["RATE_ABL_FOE_CRUSH"] = 5
+	foe["RATE_ABL_FOE_DEATHSPELL"] = 0
 	foe["RATE_ABL_FOE_DEMON_SOUL_BREAKER"] = 1
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 2
+	foe["RATE_ABL_FOE_DISINTEGRATE"] = 0
 	foe["RATE_ABL_FOE_DISTRACT"] = 10
 	foe["RATE_ABL_FOE_EXHAUST"] = 5
 	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 5
@@ -186,6 +190,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_HANDOSTILLOR_PURIFY"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_RECOVER"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_SMITE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_STICKSWING"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_TREATMENT"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_VITALIZE"] = 0
@@ -237,8 +242,9 @@ local foe = {}
 	foe["RATE_ABL_MASTER_RUSSELL_GENOCIDE"] = 0
 	foe["RATE_ABL_MASTER_RUSSELL_SAFESHOT"] = 0
 	foe["RATE_ABL_MASTER_RUSSEL_DECAPITATE"] = 0
+	foe["RATE_AUTO_NOODHULP"] = 0
 	foe["RATE_BERSERK_ATTACK"] = 0
-	foe["RATE_BESERK_ATTACK"] = 0
+	foe["RATE_FOE_WATCHMOVE"] = 0
 	foe["RATE_ICEBLAST"] = 0
 	foe["RATE_ITM_AMBROSIA"] = 0
 	foe["RATE_ITM_ANABOLINEA"] = 0
@@ -254,10 +260,12 @@ local foe = {}
 	foe["RATE_ITM_HEALSHOWER"] = 0
 	foe["RATE_ITM_HELLSTONE"] = 0
 	foe["RATE_ITM_HOLYSCROLL"] = 0
+	foe["RATE_ITM_HOLYWATER"] = 0
 	foe["RATE_ITM_ICICLE"] = 0
 	foe["RATE_ITM_ICICLES"] = 0
 	foe["RATE_ITM_INFERNOORB"] = 0
 	foe["RATE_ITM_MAGICDUST"] = 0
+	foe["RATE_ITM_MAGICSTONE"] = 0
 	foe["RATE_ITM_MANDRAKE"] = 0
 	foe["RATE_ITM_MEDICINE"] = 0
 	foe["RATE_ITM_MIRROR"] = 0
@@ -300,8 +308,10 @@ local foe = {}
 	foe["TARGET_AAA_GUARD"] = "Random"
 	foe["TARGET_ABL_FOE_BACTERIATUSK"] = "Random"
 	foe["TARGET_ABL_FOE_CRUSH"] = "Random"
+	foe["TARGET_ABL_FOE_DEATHSPELL"] = "Random"
 	foe["TARGET_ABL_FOE_DEMON_SOUL_BREAKER"] = "Random"
 	foe["TARGET_ABL_FOE_DESPERATEATTACK"] = "Random"
+	foe["TARGET_ABL_FOE_DISINTEGRATE"] = "Random"
 	foe["TARGET_ABL_FOE_DISTRACT"] = "Random"
 	foe["TARGET_ABL_FOE_EXHAUST"] = "Random"
 	foe["TARGET_ABL_FOE_FLAMESTRIKE"] = "Random"
@@ -336,6 +346,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_PURIFY"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_RECOVER"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_SMITE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_STICKSWING"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_TREATMENT"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_VITALIZE"] = "Random"
@@ -387,8 +398,9 @@ local foe = {}
 	foe["TARGET_ABL_MASTER_RUSSELL_GENOCIDE"] = "Random"
 	foe["TARGET_ABL_MASTER_RUSSELL_SAFESHOT"] = "Random"
 	foe["TARGET_ABL_MASTER_RUSSEL_DECAPITATE"] = "Random"
+	foe["TARGET_AUTO_NOODHULP"] = "Random"
 	foe["TARGET_BERSERK_ATTACK"] = "Random"
-	foe["TARGET_BESERK_ATTACK"] = "Random"
+	foe["TARGET_FOE_WATCHMOVE"] = "Random"
 	foe["TARGET_ICEBLAST"] = "Random"
 	foe["TARGET_ITM_AMBROSIA"] = "Random"
 	foe["TARGET_ITM_ANABOLINEA"] = "Random"
@@ -404,10 +416,12 @@ local foe = {}
 	foe["TARGET_ITM_HEALSHOWER"] = "Random"
 	foe["TARGET_ITM_HELLSTONE"] = "Random"
 	foe["TARGET_ITM_HOLYSCROLL"] = "Random"
+	foe["TARGET_ITM_HOLYWATER"] = "Random"
 	foe["TARGET_ITM_ICICLE"] = "Random"
 	foe["TARGET_ITM_ICICLES"] = "Random"
 	foe["TARGET_ITM_INFERNOORB"] = "Random"
 	foe["TARGET_ITM_MAGICDUST"] = "Random"
+	foe["TARGET_ITM_MAGICSTONE"] = "Random"
 	foe["TARGET_ITM_MANDRAKE"] = "Random"
 	foe["TARGET_ITM_MEDICINE"] = "Random"
 	foe["TARGET_ITM_MIRROR"] = "Random"
@@ -468,14 +482,16 @@ local foe = {}
 	foe["Rate Steal \49"] = 25
 	foe["Rate Steal \50"] = 0
 	foe["Rate Steal \51"] = 0
-	foe["SR_Curse "] = 100
+	foe["SR_Confusion"] = 100
+	foe["SR_Curse"] = 100
 	foe["SR_Death"] = 100
-	foe["SR_Disease "] = 100
-	foe["SR_Paralysis "] = 100
-	foe["SR_Petrification "] = 100
-	foe["SR_Poison "] = 100
-	foe["SR_Silence "] = 100
-	foe["SR_Undead "] = 140
+	foe["SR_Disease"] = 100
+	foe["SR_Paralysis"] = 100
+	foe["SR_Petrification"] = 100
+	foe["SR_Poison"] = 100
+	foe["SR_Silence"] = 100
+	foe["SR_Sleep"] = 100
+	foe["SR_Undead"] = 140
 	foe["normal_Accuracy"] = 100
 	foe["normal_EXP"] = 5000
 	foe["normal_Endurance"] = 325
