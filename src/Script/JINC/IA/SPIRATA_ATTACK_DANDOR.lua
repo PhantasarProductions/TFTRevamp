@@ -59,6 +59,7 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "Quake",
 	["Stance"] = "Cast",
 	["Target"] = "AF",
 	["Title"] = "Richter",

@@ -1,7 +1,7 @@
 --[[
-  The Fairy Tale REVAMPED - Full.lua
+  Quake.lua
   Version: 17.03.18
-  Copyright (C) 2017 Jeroen Petrus Broks
+  Copyright (C) 2014, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -35,5 +35,38 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 
+-- If set, the computer will display this image behind the quake and afterward clean it up.
+quakeimage = nil
 
--- @USERAW /Volumes/Scyndi/Projects/Applications/BlitzMax/JCR6+/Kthura Map Editor/Scripts/Projects/The Fairy Tale REVAMPED.lua
+function SpellAni.Quake()
+local screen = Image.GrabScreen()
+local ak
+for ak=1,100 do
+    Image.Cls()
+    Image.Draw(screen,0,0-(ak/10))
+    if quakeimage then Image.Draw(quakeimage.Img,quakeimage.X,quakeimage.Y-(ak/10)) end
+    Image.Flip()
+    Time.Sleep(20)
+    Image.Cls()
+    Image.Draw(screen,0,0+(ak/10))
+    if quakeimage then Image.Draw(quakeimage.Img,quakeimage.X,quakeimage.Y+(ak/10)) end
+    Image.Flip()
+    Time.Sleep(20)
+    end
+for ak=1,100 do
+    Image.Cls()
+    Image.Draw(screen,0,0-(10))
+    if quakeimage then Image.Draw(quakeimage.Img,quakeimage.X,quakeimage.Y-(ak/10)) end
+    Image.Flip()
+    Time.Sleep(20)
+    Image.Cls()
+    Image.Draw(screen,0,0+(10))
+    if quakeimage then Image.Draw(quakeimage.Img,quakeimage.X,quakeimage.Y+(ak/10)) end
+    Image.Flip()
+    Time.Sleep(20)
+    end
+Image.Free(screen)
+quakeimage=nil    
+end
+
+Quake = SpellAni.Quake
