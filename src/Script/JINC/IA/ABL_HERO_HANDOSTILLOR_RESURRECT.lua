@@ -1,5 +1,5 @@
 --[[
-  The Fairy Tale REVAMPED - Full.lua
+  ABL_HERO_HANDOSTILLOR_RESURRECT.lua
   Version: 17.03.18
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -34,6 +34,37 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+ret = {
+	["ABL_APCost"] = 100,
+	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 75,
+	["ADDCARD_Char_Number"] = 1,
+	["Attack_AccuracyRate"] = 100,
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Element"] = "None",
+	["Desc"] = "Full health to KO'ed character",
+	["EffectScript"] = "Resurrect",
+	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "SingleHeal",
+	["Stance"] = "Cast",
+	["Target"] = "1A",
+	["Title"] = "Resurrect",
+	["Type"] = "Ability",
+	["Voice"] = "Weniaria"}
 
+return ret
 
--- @USERAW /Volumes/Scyndi/Projects/Applications/BlitzMax/JCR6+/Kthura Map Editor/Scripts/Projects/The Fairy Tale REVAMPED.lua
+-- This file is an automatically generated file!
+

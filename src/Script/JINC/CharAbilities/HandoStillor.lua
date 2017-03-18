@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.08
+version: 17.03.18
 ]]
 
 local fullversion = JCR6.Exists('ID/ID.Data.Full')==1
@@ -57,11 +57,14 @@ local r = {
 if fullversion then -- That's right Hando Stillor will not get his level #2 and level #3 spells unless you have the full version of the game.          
    r["2. Level 2"] = { abl_hero_handostillor_cleanse = { [2]=3*skill }, --1 
                        abl_hero_handostillor_treatment = { [2]=(2^skill)+skill }, -- 2
-                       abl_hero_handostillor_goodmorning = {[2]=5*skill} -- 3
+                       abl_hero_handostillor_goodmorning = {[2]=5*skill}, -- 3
+                       abl_hero_handostillor_revive = {[2] = 12*skill } -- 4
                      }  
    r["3. Level 3"] = { abl_hero_handostillor_pray = { 5*skill, math.ceil(3^skill) }, -- 1
                        abl_hero_handostillor_smite = {(skill^skill)+(2*skill)}                   -- 2
                      }
 end
+
+if skill~=3 then r["3. Level 3"].abl_hero_handostillor_resurrect = { [2] = ({20,50})[skill]} end -- 3
              
 return r

@@ -80,6 +80,16 @@ function SpellScript.Disintegrate(tartag,extag)
    end
 end
 
+function SpellScript.Resurrect(tartag,extag)
+   if prefixed(tartag,"FOE_") then return end -- Not usable on foes
+   local t = fighterbytag[tartag]
+   if not t.statuschanges then return end -- No crashes :P
+   if not t.statuschanges.Death then return end -- This only works when you are dead.
+   ClearTable(t.statuschanges)
+   SpellScript.PointAlter(tartag,extag,'MAX')
+   charmsg(tartag,"RESURRECTION",0,255,0)
+end   
+
 -- @IF INGORE
 return SpellScript 
 -- @FI
