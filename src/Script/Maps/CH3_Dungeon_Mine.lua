@@ -137,7 +137,7 @@ function Boss()
   Var.D("$COMBAT.FOE_1","Boss/Beholder")
   Var.D("$COMBAT.POSFOE_1","CENTER")
   Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
-  Var.D("$COMBAT.ARENA","MINES.png")
+  Var.D("$COMBAT.ARENA","MINE.png")
   StartBoss("Master of Death and Destruction","Beholder")   
 end   
 
