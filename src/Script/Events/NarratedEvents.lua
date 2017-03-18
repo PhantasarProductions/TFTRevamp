@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.07
+version: 17.03.18
 ]]
 
 function GoNext()
@@ -98,7 +98,8 @@ function MAIN_FLOW()
   Cls()
   font()
   -- Show Message
-  for i,line in ipairs(story.lines) do
+  for i,dline in ipairs(story.lines) do
+     local line = Var.S(dline)
      if i<story.line then 
         DarkText(line,Center_X,story.y+(i*Image.TextHeight("0")),2,2)
      elseif i==story.line then
