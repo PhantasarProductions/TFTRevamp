@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 17.03.04
+  Version: 17.03.18
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -91,6 +91,26 @@ StatusChanges.Death = {
          OnCure = function(ch) 
                       if RPG.Points(ch,"HP").Have<=0 then RPG.Points(ch,"HP").Have=1 end
                   end,
+         StillorHelp = function(ch)
+                       if RPG.Points("HandoStillor","HP").Have==0 then return end -- If Hando Stillor is out himself, then sorry, no go.
+                       if not CVVN("%HANDO.NOODHULP") then Var.D("%HANDO.NOODHULP",skill) end
+                       if fighterbytag.HandoStillor.Petrified then return end -- Petrified? That won't do!
+                       if fighterbytag.HandoStillor.Sleep then return end -- Asleep? That won't do!
+                       if fighterbytag.HandoStillor.Paralysis then return end -- Paralyzed? That won't do!
+                       if rand(1,CVV('%HANDO.NOODHULP'))~=1 then return end
+                       SerialBoxText("COMBATLEARN","AUTO_HANDOSTILLOR","FLOW_COMBAT")
+                       local card2add = { group = 'Hero', tag='HandoStillor', auto=true }
+                       card2add.nextact = { executor = { group="Hero",tag="HandoStillor"}, act="AUTO_NOODHULP"}
+                       for i=0,3 do
+                           if RPG.PartyTag(i)==ch then
+                              card2add.nextact.group = "Hero"
+                              card2add.nextact.targetidx=i
+                           end
+                       end
+                       AddCard(card2add,1)
+                       local r=rand(1,10)
+                       if r<=skill^2 then inc('%HANDO.NOODHULP') end
+                  end,         
          OnGiven = function(ch) 
                         -- Boss vocal?
                         if prefixed(ch,"FOE") then
@@ -111,6 +131,7 @@ StatusChanges.Death = {
                             scl[s] = nil
                             CSay("Death removed status"..s.." from "..ch)
                         end
+                        StatusChanges.Death.StillorHelp(ch)
                    end, 
          DrawFighter = function(ch)
                          local mychar = fighterbytag[ch]

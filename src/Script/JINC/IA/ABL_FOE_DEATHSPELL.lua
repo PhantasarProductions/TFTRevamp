@@ -1,7 +1,7 @@
 --[[
-  PlayWithPoints.lua
+  ABL_FOE_DEATHSPELL.lua
   Version: 17.03.18
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,52 +34,33 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- @IF IGNORE
-SpellScript = {}
--- @FI
+ret = {
+	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack_AccuracyRate"] = 100,
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Element"] = "None",
+	["CauseDeath"] = true,
+	["Desc"] = "Kill all party members",
+	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "Death",
+	["Stance"] = "Cast",
+	["Target"] = "AF",
+	["Title"] = "Death Spell",
+	["Type"] = "Item"}
 
-function SpellScript.PointAlter(tartag,extag,param)
-    local sp = mysplit(param," ")
-    if RPG.PointsExists(tartag,sp[1])==0 then return end
-    local p = RPG.Points(tartag,sp[1])
-    p.Have = (({ RAND = function (p) return rand(1,p.Maximum) end,
-                 MAX = function(p) return p.Maximum end})[upper(sp[2])] or function(p,tp) return Sys.Val(tp) end)(p,sp[2])
-    CSay(tartag.."'s "..sp[1].." is now "..p.Have)
-    if (not prefixed(tartag,"FOE_")) and prefixed(sp[1],"SL_EXP_") then IncSkill(tartag,Sys.Val(right(sp[1],1)),0)                 end
-    return true
-end
+return ret
 
-function SpellScript.MultiPointAlter(tartag,extag,paramsequence)
-   for seq in each(mysplit(paramsequence,";")) do SpellScript.PointAlter(tartag,extag,seq) end
-   return true
-end   
+-- This file is an automatically generated file!
 
-function SpellScript.RecoverAP(tartag,extag,param)
-   local n = Sys.Val(param)
-   RPG.Points(tartag,'AP').Inc(n)
-   return true
-end   
-
-function SpellScript.APNUL(tartag,extag,param)
-   RPG.Points(tartag,'AP').Have=0
-   if param and param~="" then
-      charmsg(tartag,param,255,0,0)
-   end
-   return true
-end   
-
-function SpellScript.Disintegrate(tartag,extag)
-   local thp = RPG.Points(tartag,'HP')
-   local ehp = RPG.Points( extag,'HP')
-   local foe = prefixed(tartag,'FOE_')
-   if (not foe) and skill==1 and rand(1,10)<5 then return end -- In the easy mode you're not disintegrated that easily.
-   if rand(0,thp)>rand(0,ehp) then
-      SetStatus(tartag,'Death')
-      charmsg(tartag,"!! DISINTEGRATED !!",255,0,0)
-      return true
-   end
-end
-
--- @IF INGORE
-return SpellScript 
--- @FI

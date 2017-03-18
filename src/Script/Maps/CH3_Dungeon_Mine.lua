@@ -114,12 +114,13 @@ end
 
 function PostBoss()
     PartyPop("Feena","North")
-    -- MapText("TOMBA")
+    MapText("TOMBA")
     Maps.Obj.Kill("TombBlock",1)
-    -- MapText("TOMBB")
+    MapText("TOMBB")
     LoadMap("PRO_Dungeon_Tomb")
     Maps.GoToLayer("#001")
     Maps.Obj.Kill("PRC_PROLOGUE",1)
+    Done(upper("&DONE.BOSS.AUTO['"..Maps.CodeName.."','"..Maps.LayerCodename.."']")) -- Force bugged boss to get fixed.
     GoToLayer("#000","Start")
     Maps.Obj.Kill("Remove",1)
     Done("&ALLOW.ENCOFF['"..Maps.CodeName.."']")
@@ -131,7 +132,13 @@ function ToTomb()
 end
 
 function Boss()
-   Schedule("MAP","PostBoss")
+  Schedule("MAP","PostBoss")
+  ClearCombatData()
+  Var.D("$COMBAT.FOE_1","Boss/Beholder")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
+  Var.D("$COMBAT.ARENA","MINES.png")
+  StartBoss("Master of Death and Destruction","Beholder")   
 end   
 
 

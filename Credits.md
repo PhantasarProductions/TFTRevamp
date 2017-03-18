@@ -219,8 +219,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/AAA_GUARD.lua
     1. Script: Script/JINC/IA/ABL_FOE_BACTERIATUSK.lua
     1. Script: Script/JINC/IA/ABL_FOE_CRUSH.lua
+    1. Script: Script/JINC/IA/ABL_FOE_DEATHSPELL.lua
     1. Script: Script/JINC/IA/ABL_FOE_DEMON_SOUL_BREAKER.lua
     1. Script: Script/JINC/IA/ABL_FOE_DESPERATEATTACK.lua
+    1. Script: Script/JINC/IA/ABL_FOE_DISINTEGRATE.lua
     1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
     1. Script: Script/JINC/IA/ABL_FOE_EXHAUST.lua
     1. Script: Script/JINC/IA/ABL_FOE_FLAMESTRIKE.lua
@@ -307,6 +309,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSELL_GENOCIDE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSELL_SAFESHOT.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSEL_DECAPITATE.lua
+    1. Script: Script/JINC/IA/AUTO_NOODHULP.lua
     1. Script: Script/JINC/IA/BERSERK_ATTACK.lua
     1. Script: Script/JINC/IA/EQP_ACC_TITANBELT.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_CURSEDWP_HUNGERAXE.lua
@@ -385,10 +388,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR9.lua
     1. Script: Script/JINC/IA/FOE_WATCHMOVE.lua
     1. Script: Script/JINC/IA/ICEBLAST.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/JINC/IA/ITM_AMBROSIA.lua
     1. Script: Script/JINC/IA/ITM_ANABOLINEA.lua
     1. Script: Script/JINC/IA/ITM_ANTIDOTE.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/JINC/IA/ITM_APPLE.lua
     1. Script: Script/JINC/IA/ITM_BELL.lua
     1. Script: Script/JINC/IA/ITM_CARROT.lua
@@ -402,30 +405,30 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_HOLYSCROLL.lua
     1. Script: Script/JINC/IA/ITM_HOLYWATER.lua
     1. Script: Script/JINC/IA/ITM_ICICLE.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/JINC/IA/ITM_ICICLES.lua
     1. Script: Script/JINC/IA/ITM_INFERNOORB.lua
     1. Script: Script/JINC/IA/ITM_MAGICDUST.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/JINC/IA/ITM_MAGICSTONE.lua
     1. Script: Script/JINC/IA/ITM_MANDRAKE.lua
     1. Script: Script/JINC/IA/ITM_MEDICINE.lua
-    1. Script: Script/JINC/IA/ITM_MIRROR.lua
-    1. Script: Script/JINC/IA/ITM_PANACEA.lua
-    1. Script: Script/JINC/IA/ITM_PHOENIX.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
-    1. Script: Script/JINC/IA/ITM_POISONDART.lua
+    1. Script: Script/JINC/IA/ITM_MIRROR.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
+    1. Script: Script/JINC/IA/ITM_PANACEA.lua
+    1. Script: Script/JINC/IA/ITM_PHOENIX.lua
+    1. Script: Script/JINC/IA/ITM_POISONDART.lua
     1. Script: Script/JINC/IA/ITM_POTION.lua
     1. Script: Script/JINC/IA/ITM_PURELITERATURE.lua
     1. Script: Script/JINC/IA/ITM_SALVE.lua
     1. Script: Script/JINC/IA/ITM_SLEEPHERB.lua
     1. Script: Script/JINC/IA/ITM_STONE.lua
     1. Script: Script/JINC/IA/ITM_STORMBOTTLE.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ITM_TOTALEXHAUSTION.lua
     1. Script: Script/JINC/IA/ITM_TRUMPCARD.lua
     1. Script: Script/JINC/IA/ITM_VIRUSBOMB.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ITM_VOICEHERB.lua
     1. Script: Script/JINC/IA/ITM_VOLTABALL.lua
     1. Script: Script/JINC/IA/ITM_WATERBUBBLE.lua
@@ -619,12 +622,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
@@ -1298,6 +1301,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_ISKARDERIU
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_GARDEN
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_KOKONORAFOREST
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_MINE
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_MAGIC
@@ -1334,6 +1338,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_ISKARDERIU
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_GARDEN
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_KOKONORAFOREST
+    1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_MINE
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_MAGIC
