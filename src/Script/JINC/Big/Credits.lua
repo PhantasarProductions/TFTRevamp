@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.16
+version: 17.03.18
 ]]
 local
 ret = {
@@ -61,27 +61,28 @@ ret = {
         ['00000578'] = { txt = 'Angela Nagtzaam', r=0,g=180,b=255, y=1400 },
         ['0000058C'] = { txt = 'GR-Sites', r=0,g=180,b=255, y=1420 },
         ['000005A0'] = { txt = 'Holly', r=0,g=180,b=255, y=1440 },
-        ['000005B4'] = { txt = 'Man Of Steel', r=0,g=180,b=255, y=1460 },
-        ['000005C8'] = { txt = 'Merlin2525', r=0,g=180,b=255, y=1480 },
-        ['000005DC'] = { txt = 'Michael Frank', r=0,g=180,b=255, y=1500 },
-        ['000005F0'] = { txt = 'Papapishu', r=0,g=180,b=255, y=1520 },
-        ['00000604'] = { txt = 'Solar Granulation', r=0,g=180,b=255, y=1540 },
-        ['00000618'] = { txt = 'Unknown artist from the Public Domain', r=0,g=180,b=255, y=1560 },
-        ['0000062C'] = { txt = 'Yannee\'s artist', r=0,g=180,b=255, y=1580 },
-        ['00000654'] = { txt = 'Map Design', r=255,g=0,b=0, y=1620 }, -- Map Design
-        ['0000067C'] = { txt = 'Music', r=255,g=0,b=0, y=1660 }, -- Music
-        ['00000690'] = { txt = 'Eric Matyas', r=0,g=180,b=255, y=1680 },
-        ['000006A4'] = { txt = 'Hung Kee Chan', r=0,g=180,b=255, y=1700 },
-        ['000006B8'] = { txt = 'Kevin McLeod', r=0,g=180,b=255, y=1720 },
-        ['000006CC'] = { txt = 'Matt McFarland', r=0,g=180,b=255, y=1740 },
-        ['000006E0'] = { txt = 'W.K. Chan & Wouter Wershkull', r=0,g=180,b=255, y=1760 },
-        ['000006F4'] = { txt = 'Wicky77', r=0,g=180,b=255, y=1780 },
-        ['00000708'] = { txt = 'Wicky77 & Wout66', r=0,g=180,b=255, y=1800 },
-        ['0000071C'] = { txt = 'Widzy', r=0,g=180,b=255, y=1820 },
-        ['00000744'] = { txt = 'Scenario', r=255,g=0,b=0, y=1860 }, -- Scenario
-        ['0000076C'] = { txt = 'Script', r=255,g=0,b=0, y=1900 }, -- Script
-        ['000009C4'] = { txt = '(c) Copyright 2016', r=255, g=180,b=0,y=2500},
-        ['000009DD'] = { txt = 'Jeroen Petrus Broks', r=255, g=180,b=0,y=2525}
+        ['000005B4'] = { txt = 'Kelly', r=0,g=180,b=255, y=1460 },
+        ['000005C8'] = { txt = 'Man Of Steel', r=0,g=180,b=255, y=1480 },
+        ['000005DC'] = { txt = 'Merlin2525', r=0,g=180,b=255, y=1500 },
+        ['000005F0'] = { txt = 'Michael Frank', r=0,g=180,b=255, y=1520 },
+        ['00000604'] = { txt = 'Papapishu', r=0,g=180,b=255, y=1540 },
+        ['00000618'] = { txt = 'Solar Granulation', r=0,g=180,b=255, y=1560 },
+        ['0000062C'] = { txt = 'Unknown artist from the Public Domain', r=0,g=180,b=255, y=1580 },
+        ['00000640'] = { txt = 'Yannee\'s artist', r=0,g=180,b=255, y=1600 },
+        ['00000668'] = { txt = 'Map Design', r=255,g=0,b=0, y=1640 }, -- Map Design
+        ['00000690'] = { txt = 'Music', r=255,g=0,b=0, y=1680 }, -- Music
+        ['000006A4'] = { txt = 'Eric Matyas', r=0,g=180,b=255, y=1700 },
+        ['000006B8'] = { txt = 'Hung Kee Chan', r=0,g=180,b=255, y=1720 },
+        ['000006CC'] = { txt = 'Kevin McLeod', r=0,g=180,b=255, y=1740 },
+        ['000006E0'] = { txt = 'Matt McFarland', r=0,g=180,b=255, y=1760 },
+        ['000006F4'] = { txt = 'W.K. Chan & Wouter Wershkull', r=0,g=180,b=255, y=1780 },
+        ['00000708'] = { txt = 'Wicky77', r=0,g=180,b=255, y=1800 },
+        ['0000071C'] = { txt = 'Wicky77 & Wout66', r=0,g=180,b=255, y=1820 },
+        ['00000730'] = { txt = 'Widzy', r=0,g=180,b=255, y=1840 },
+        ['00000758'] = { txt = 'Scenario', r=255,g=0,b=0, y=1880 }, -- Scenario
+        ['00000780'] = { txt = 'Script', r=255,g=0,b=0, y=1920 }, -- Script
+        ['000009D8'] = { txt = '(c) Copyright 2016', r=255, g=180,b=0,y=2520},
+        ['000009F1'] = { txt = 'Jeroen Petrus Broks', r=255, g=180,b=0,y=2545}
 }
 
 return ret

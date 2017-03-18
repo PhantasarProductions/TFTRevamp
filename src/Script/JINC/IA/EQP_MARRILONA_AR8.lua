@@ -1,6 +1,6 @@
 --[[
   EQP_MARRILONA_AR8.lua
-  Version: 17.03.14
+  Version: 17.03.18
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

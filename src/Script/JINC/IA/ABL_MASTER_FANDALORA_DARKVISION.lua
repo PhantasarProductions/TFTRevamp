@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_FANDALORA_DARKVISION.lua
-  Version: 17.03.14
+  Version: 17.03.18
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -55,6 +55,7 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "DarkVision",
 	["Stance"] = "Cast",
 	["Target"] = "AF",
 	["Title"] = "Dark Vision",

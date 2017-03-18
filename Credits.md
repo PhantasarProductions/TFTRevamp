@@ -203,6 +203,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Imp.lua
     1. Script: Script/JINC/Foes/reg/InvisibleMan.lua
     1. Script: Script/JINC/Foes/reg/Lemming.lua
+    1. Script: Script/JINC/Foes/reg/Lich.lua
     1. Script: Script/JINC/Foes/reg/Medusa.lua
     1. Script: Script/JINC/Foes/reg/Mermaid.lua
     1. Script: Script/JINC/Foes/reg/RSpook.lua
@@ -342,11 +343,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP7.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP8.lua
     1. Script: Script/JINC/IA/EQP_HANDOSTILLOR_WP9.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/EQP_JAKE_AR1.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
     1. Script: Script/JINC/IA/EQP_JAKE_AR10.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/JINC/IA/EQP_JAKE_AR2.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR3.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR4.lua
@@ -357,7 +355,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_AR9.lua
     1. Script: Script/JINC/IA/EQP_JAKE_CURSEDWP_VENOMBLADE.lua
     1. Script: Script/JINC/IA/EQP_JAKE_TRAINSWORD.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/EQP_JAKE_WP1.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP10.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP2.lua
@@ -391,7 +388,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_AMBROSIA.lua
     1. Script: Script/JINC/IA/ITM_ANABOLINEA.lua
     1. Script: Script/JINC/IA/ITM_ANTIDOTE.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
     1. Script: Script/JINC/IA/ITM_APPLE.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/JINC/IA/ITM_BELL.lua
     1. Script: Script/JINC/IA/ITM_CARROT.lua
     1. Script: Script/JINC/IA/ITM_CURSEDSPORES.lua
@@ -401,6 +401,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_HEALINGHERB.lua
     1. Script: Script/JINC/IA/ITM_HEALSHOWER.lua
     1. Script: Script/JINC/IA/ITM_HELLSTONE.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ITM_HOLYSCROLL.lua
     1. Script: Script/JINC/IA/ITM_HOLYWATER.lua
     1. Script: Script/JINC/IA/ITM_ICICLE.lua
@@ -599,8 +600,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Specific/Scroller.lua
     1. Script: Script/Use/Specific/StepsPuzzle.lua
     1. Script: Script/Use/Specific/Walda.lua
-    1. Graphics: gfx/Effects/Darkness.hot
-    1. Graphics: gfx/Effects/Darkness.png
     1. Script: Script/Libs/Coords2Rotation.lua
     1. Script: Script/Libs/ShowSerialize.lua
     1. Script: Script/Libs/KeyCodes_BlitzMax.lua
@@ -624,6 +623,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Graphics: gfx/Effects/Darkness.hot
+    1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
     1. Graphics: gfx/Textures/Blops2/Blop2.png
     1. Graphics: gfx/Textures/Blops2/Blop3.png
@@ -1058,6 +1059,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Arena/Library.png
     1. Graphics: GFX/Combat/Arena/MG.png
     1. Graphics: GFX/Combat/Arena/Magic.png
+    1. Graphics: GFX/Combat/Arena/Mine.png
     1. Graphics: GFX/Combat/Arena/SpirataFire.png
     1. Graphics: GFX/Combat/Arena/SpirataFire.png.BK!
     1. Graphics: GFX/Combat/Arena/SpirataWater.png
@@ -1341,6 +1343,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_VANDAR
     1. Scenario: Languages/English/Scenario/TEST
     1. Scenario: Languages/English/Scenario/WORLDMAP
+- Kelly
+    1. Graphics: GfX/cOMBAT/SpellAni/Death/Death.png
 - Kevin McLeod
     1. Music: Music/AltBoss/Day of Chaos.ogg
     1. Music: Music/Dreshka/Hero Down.ogg
@@ -1879,6 +1883,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Boss/BrutalSong.ogg
     1. Music: Music/Hub/StartToFantasyInstrumental.ogg
 - Widzy
+    1. Audio: Audio/Combat/SpellAni/DarkVision.ogg
     1. Audio: audio/SFX/SpellAni/Fire.ogg
     1. Audio: audio/SFX/SpellAni/Heal.ogg
     1. Music: Music/Hub/Calm Indoors.ogg

@@ -7585,7 +7585,7 @@ Rec: ABL_MASTER_FANDALORA_DARKNESS
 	BUFF_Power = 0
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
-	CauseBerserk = 
+	CauseBerserk = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -7687,7 +7687,7 @@ Rec: ABL_MASTER_FANDALORA_DARKVISION
 	BUFF_Power = 0
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
-	CauseBerserk = 
+	CauseBerserk = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -7745,7 +7745,7 @@ Rec: ABL_MASTER_FANDALORA_DARKVISION
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = 
+	SpellAni = DarkVision
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
@@ -7789,7 +7789,7 @@ Rec: ABL_MASTER_FANDALORA_DEATH
 	BUFF_Power = 0
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
-	CauseBerserk = 
+	CauseBerserk = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -7847,7 +7847,7 @@ Rec: ABL_MASTER_FANDALORA_DEATH
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = 
+	SpellAni = Death
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
