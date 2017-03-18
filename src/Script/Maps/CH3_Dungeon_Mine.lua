@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.15
+version: 17.03.18
 ]]
 
 
@@ -112,8 +112,26 @@ function TouchSymbol(idx)
 end
 
 
+function PostBoss()
+    PartyPop("Feena","North")
+    -- MapText("TOMBA")
+    Maps.Obj.Kill("TombBlock",1)
+    -- MapText("TOMBB")
+    LoadMap("PRO_Dungeon_Tomb")
+    Maps.GoToLayer("#001")
+    Maps.Obj.Kill("PRC_PROLOGUE",1)
+    GoToLayer("#000","Start")
+    Maps.Obj.Kill("Remove",1)
+end
 
+function ToTomb()
+    LoadMap("PRO_Dungeon_Tomb")
+    GoToLayer("#000","Start")    
+end
 
+function Boss()
+   Schedule("MAP","PostBoss")
+end   
 
 
 
@@ -126,6 +144,7 @@ function GALE_OnLoad()
     MapHide('Secret')
     ZA_Enter("ToSecretDungeon",SecretDungeon)
     ZA_Enter("InitPuzzle",InitPuzzle)
+    ZA_Enter("ToTomb",ToTomb)
    for i=1,25 do ZA_Enter("Sym"..i,TouchSymbol,i) end
     
 end    

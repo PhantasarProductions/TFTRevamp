@@ -388,10 +388,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_AMBROSIA.lua
     1. Script: Script/JINC/IA/ITM_ANABOLINEA.lua
     1. Script: Script/JINC/IA/ITM_ANTIDOTE.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/JINC/IA/ITM_APPLE.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/JINC/IA/ITM_BELL.lua
     1. Script: Script/JINC/IA/ITM_CARROT.lua
     1. Script: Script/JINC/IA/ITM_CURSEDSPORES.lua
@@ -401,20 +399,23 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_HEALINGHERB.lua
     1. Script: Script/JINC/IA/ITM_HEALSHOWER.lua
     1. Script: Script/JINC/IA/ITM_HELLSTONE.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ITM_HOLYSCROLL.lua
     1. Script: Script/JINC/IA/ITM_HOLYWATER.lua
     1. Script: Script/JINC/IA/ITM_ICICLE.lua
     1. Script: Script/JINC/IA/ITM_ICICLES.lua
     1. Script: Script/JINC/IA/ITM_INFERNOORB.lua
     1. Script: Script/JINC/IA/ITM_MAGICDUST.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/JINC/IA/ITM_MAGICSTONE.lua
     1. Script: Script/JINC/IA/ITM_MANDRAKE.lua
     1. Script: Script/JINC/IA/ITM_MEDICINE.lua
     1. Script: Script/JINC/IA/ITM_MIRROR.lua
     1. Script: Script/JINC/IA/ITM_PANACEA.lua
     1. Script: Script/JINC/IA/ITM_PHOENIX.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
     1. Script: Script/JINC/IA/ITM_POISONDART.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/JINC/IA/ITM_POTION.lua
     1. Script: Script/JINC/IA/ITM_PURELITERATURE.lua
     1. Script: Script/JINC/IA/ITM_SALVE.lua
@@ -424,6 +425,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_TOTALEXHAUSTION.lua
     1. Script: Script/JINC/IA/ITM_TRUMPCARD.lua
     1. Script: Script/JINC/IA/ITM_VIRUSBOMB.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ITM_VOICEHERB.lua
     1. Script: Script/JINC/IA/ITM_VOLTABALL.lua
     1. Script: Script/JINC/IA/ITM_WATERBUBBLE.lua
@@ -988,7 +990,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.South.Frames
     1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.South.piko
     1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.South.png
-    1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.West (Autosaved).piko
     1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.West.Frames
     1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.West.piko
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Idle.png

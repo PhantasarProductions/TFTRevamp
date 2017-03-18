@@ -161,6 +161,11 @@ function Feena_Chain()
 end    
 
 
+function ToMine()
+   LoadMap("CH3_Dungeon_Mine")
+   GoToLayer("#010","Einde")
+end   
+
 function GALE_OnLoad()
    ZA_Enter('PuzzleField',InitPuzzle)
    for i=1,16 do ZA_Enter("Sym"..i,TouchSymbol,i) end
@@ -170,4 +175,5 @@ function GALE_OnLoad()
    ZA_Enter('EnterGrave',EnterGrave)
    ZA_Enter('ExitGrave',ExitGrave)
    ZA_Enter("GrafEvent",Feena_Chain)
+   ZA_Enter("ToMine",ToMine)
 end
