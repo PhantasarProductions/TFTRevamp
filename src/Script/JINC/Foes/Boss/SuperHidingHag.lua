@@ -1,6 +1,6 @@
 --[[
   SuperHidingHag.lua
-  Version: 17.03.18
+  Version: 17.03.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sat 18 March 2017; 16:00:29
+-- File Generated: Sun 19 March 2017; 23:14:03
 
 
 local foe = {}
@@ -178,6 +178,8 @@ local foe = {}
 	foe["RATE_ABL_HERO_HANDOSTILLOR_PURIFY"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_RECOVER"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_RESURRECT"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_REVIVE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_SMITE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_STICKSWING"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_TREATMENT"] = 0
@@ -186,6 +188,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\52PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_BERSERK"] = 0
+	foe["RATE_ABL_HERO_JAKE_EARTHSLICE"] = 0
 	foe["RATE_ABL_HERO_JAKE_FLAMEBLADE"] = 0
 	foe["RATE_ABL_HERO_JAKE_HEALBLADE"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_FAIRY"] = 0
@@ -334,6 +337,8 @@ local foe = {}
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_PURIFY"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_RECOVER"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_RESURRECT"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_REVIVE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_SMITE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_STICKSWING"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_TREATMENT"] = "Random"
@@ -342,6 +347,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_JAKE_\51PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\52PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_BERSERK"] = "Random"
+	foe["TARGET_ABL_HERO_JAKE_EARTHSLICE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_FLAMEBLADE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_HEALBLADE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_SHIFT_FAIRY"] = "Random"

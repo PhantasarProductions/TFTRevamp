@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 17.03.18
+version: 17.03.19
 ]]
--- File Generated: Sat 18 March 2017; 16:00:32
+-- File Generated: Sun 19 March 2017; 23:14:04
 
 
 local foe = {}
@@ -69,7 +69,7 @@ local foe = {}
 	foe["Item Steal \49"] = "ITM_ANTIDOTE"
 	foe["Item Steal \50"] = "ITM_ANTIDOTE"
 	foe["Item Steal \51"] = "ITM_ANTIDOTE"
-	foe["Name"] = "Zombie"
+	foe["Name"] = "Super Zombie"
 	foe["RATE_AAA_ATTACK"] = 5
 	foe["RATE_AAA_GUARD"] = 1
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
@@ -112,6 +112,8 @@ local foe = {}
 	foe["RATE_ABL_HERO_HANDOSTILLOR_PURIFY"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_RECOVER"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_RESURRECT"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_REVIVE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_SMITE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_STICKSWING"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_TREATMENT"] = 0
@@ -120,6 +122,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\52PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_BERSERK"] = 0
+	foe["RATE_ABL_HERO_JAKE_EARTHSLICE"] = 0
 	foe["RATE_ABL_HERO_JAKE_FLAMEBLADE"] = 0
 	foe["RATE_ABL_HERO_JAKE_HEALBLADE"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_FAIRY"] = 0
@@ -268,6 +271,8 @@ local foe = {}
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_PURIFY"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_RECOVER"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_RESURRECT"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_REVIVE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_SMITE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_STICKSWING"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_TREATMENT"] = "Random"
@@ -276,6 +281,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_JAKE_\51PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\52PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_BERSERK"] = "Random"
+	foe["TARGET_ABL_HERO_JAKE_EARTHSLICE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_FLAMEBLADE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_HEALBLADE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_SHIFT_FAIRY"] = "Random"

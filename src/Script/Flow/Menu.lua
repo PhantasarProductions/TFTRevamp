@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 17.02.27
+  Version: 17.03.19
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -413,7 +413,7 @@ function features.Buy(x,y,w,h)
    SetFont("FieldStat")
    DarkText(CVV('%CASH').." shilders",w-15,15,1,0,0,180,255)
    for i= 1 , 20 do
-       if Shop['Slot'..i] and Shop['Slot'..i]~="" then
+       if Shop['Slot'..i] and Shop['Slot'..i]~="" and (not prefixed(Shop['Slot'..i],"AAA")) then
           local iy = 40 + (i*siz)
           Shop.itemdata[i] = Shop.itemdata[i] or ItemGet(Shop['Slot'..i])
           local item = Shop.itemdata[i]
@@ -498,7 +498,7 @@ function features.Trade(x,y,w,h)
    DarkText(CVV('%CASH').." shilders",w-15,15,1,0,0,180,255)
    local allow = {}
    for i= 1 , 20 do
-       if Shop['Slot'..i] and Shop['Slot'..i]~="" then
+       if Shop['Slot'..i] and Shop['Slot'..i]~="" and (not prefixed(Shop['Slot'..i],"AAA"))then
           local iy = 40 + (i*siz)
           Shop.itemdata[i] = Shop.itemdata[i] or ItemGet(Shop['Slot'..i])
           local item = Shop.itemdata[i]
