@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 17.03.18
+  Version: 17.03.19
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -185,8 +185,11 @@ ZA_Enter("Prev",Z_Prev)
 -- Autoboss
 function AutoBossStart()
     if not Boss then return CSay("WARNING! No Boss function found in MapScript") end
+    --[[
     if Maps.Multi()==0 and Done("&DONE.BOSS.AUTO['"..Maps.CodeName.."']") then return
     elseif Maps.Multi()==1 and (Done(upper("&DONE.BOSS.AUTO['"..Maps.CodeName.."','"..Maps.LayerCodename.."']")) or Done("&DONE.BOSS.AUTO['"..Maps.CodeName.."','"..Maps.LayerCodename.."']")) then return end
+    ]]
+    if Maps.Obj.Exists("Boss")==0 then return end
     Maps.Obj.Kill("Boss",1)
     Maps.Remap()
     Boss()
