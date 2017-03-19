@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 17.03.18
+  Version: 17.03.19
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -93,6 +93,7 @@ StatusChanges.Death = {
                   end,
          StillorHelp = function(ch)
                        if prefixed(ch,"FOE") then return end -- Hando Stillor is not gonna help his foes
+                       if RPG.CharExists("HandoStillor")==0 then return end
                        if RPG.Points("HandoStillor","HP").Have==0 then return end -- If Hando Stillor is out himself, then sorry, no go.
                        if not CVVN("%HANDO.NOODHULP") then Var.D("%HANDO.NOODHULP",skill) end
                        if fighterbytag.HandoStillor.Petrified then return end -- Petrified? That won't do!
