@@ -388,8 +388,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR4.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR5.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR6.lua
-    1. Script: Script/JINC/IA/EQP_MARRILONA_AR7.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
+    1. Script: Script/JINC/IA/EQP_MARRILONA_AR7.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR8.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR9.lua
     1. Script: Script/JINC/IA/FOE_WATCHMOVE.lua
@@ -398,8 +398,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/ITM_ANABOLINEA.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
-    1. Script: Script/JINC/IA/ITM_ANTIDOTE.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
+    1. Script: Script/JINC/IA/ITM_ANTIDOTE.lua
     1. Script: Script/JINC/IA/ITM_APPLE.lua
     1. Script: Script/JINC/IA/ITM_BELL.lua
     1. Script: Script/JINC/IA/ITM_CARROT.lua
@@ -627,12 +627,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
