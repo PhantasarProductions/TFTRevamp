@@ -1,6 +1,6 @@
 --[[
   Flip.lua
-  Version: 17.02.25
+  Version: 17.03.20
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -55,6 +55,8 @@ function Chapter(file)
 end      
 
 function Flip()
+    LAURA.TerminateBye() -- This function will terminate the game, if a user request was done to it by either clicking the close icon of the window, or on mac using the "Quit LAURA2" menu option.
+
     MS.Run("ACH","AchFlip") -- Render any gotten achievements before we show the screen to the player!
     
     if CVV('%CHAPTIME')>0 and Image.Exist("CHAP")~=0 then
@@ -81,5 +83,4 @@ function Flip()
           if CVV("%GAMETIME.HOURS")>=24 then Award("HOURS024") end
        end             
     end
-    LAURA.TerminateBye() -- This function will terminate the game, if a user request was done to it by either clicking the close icon of the window, or on mac using the "Quit LAURA2" menu option.
 end

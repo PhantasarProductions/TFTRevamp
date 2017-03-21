@@ -2,7 +2,7 @@
 **********************************************
   
   CH1_Dungeon_SubRiver.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.21
+version: 17.03.20
 ]]
 
 RiverWidth = nil
@@ -40,7 +40,7 @@ RiverHeight = nil
 RiverTiles = {}
 
 function Bye()
-   LoadMap('CH1_DUngeon_HolyPath')
+   LoadMap(upper('CH1_DUngeon_HolyPath'))
    GoToLayer('Bos','FromSecret')
 end   
 

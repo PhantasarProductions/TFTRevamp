@@ -2,7 +2,7 @@
 **********************************************
   
   CH1_Dungeon_HolyPath.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.16
+version: 17.03.21
 ]]
 
 
@@ -52,4 +52,5 @@ function GALE_OnLoad()
    ZA_Enter('ByeSouth',Bye,true)
    ZA_Enter('ToSecretDungeon',SecretDungeon)
    MapHide('Secret')
+   --Var.D(upper("&ALLOW.ENCOFF['"..'CH1_DUngeon_HolyPath'.."']"),Var.C("&ALLOW.ENCOFF['"..'CH1_DUngeon_HolyPath'.."']"))
 end   

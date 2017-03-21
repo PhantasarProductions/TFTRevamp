@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 17.03.18
+  Version: 17.03.21
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -157,7 +157,7 @@ function LoadMap(map)
     AUTOHIDE = {}
     -- Load the map itself
     CSay("Loading Map!")
-    Maps.Load(map)
+    Maps.Load(upper(map))
     CSay("Configuring Data!")
     Maps.LayerCodeName = ""
     local layers,multi = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),true end})[Maps.Multi()]()    

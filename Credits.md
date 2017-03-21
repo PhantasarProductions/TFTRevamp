@@ -627,12 +627,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
@@ -695,6 +695,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.piko
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.png
+    1. Graphics: GFX/Actors/Single/Fairies/Feenalaria.piko
     1. Graphics: GFX/Actors/Single/Humans/Russel.png
     1. Graphics: GFX/Actors/Single/Humans/Russell.png
     1. Graphics: GFX/BoxText/Portret/Rosetta/General.png
@@ -1022,6 +1023,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Idle.png
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.png
+    1. Graphics: GFX/Actors/Bundled/Player/Marrilona.NS (Autosaved).piko
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.NS.piko
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.North.frames
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.North.png
