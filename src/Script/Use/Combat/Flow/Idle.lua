@@ -1,6 +1,6 @@
 --[[
   Idle.lua
-  Version: 17.03.08
+  Version: 17.03.22
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -53,6 +53,9 @@ function RemoveFirstCard()
     for i=1,max do cards[i] = cards[i] or {} end
     table.remove(cards,1)
     BuffCountDown()
+    if CVVN("%HANDICAP.MARRILONA") and rand(1,3+(skill^skill))==1 then 
+       inc("%HANDICAP.MARRILONA") 
+    end
 end
 
 function fflow.idle()

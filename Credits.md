@@ -11,6 +11,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 
 
 - Aeris
+    1. Graphics: GFX/Boxtext/Portret/Feenalaria/Angry.png
+    1. Graphics: GFX/Boxtext/Portret/Feenalaria/Blush.png
+    1. Graphics: GFX/Boxtext/Portret/Feenalaria/General.png
+    1. Graphics: GFX/Boxtext/Portret/Feenalaria/JustSmile.png
+    1. Graphics: GFX/Boxtext/Portret/Feenalaria/NoEmo.png
+    1. Graphics: GFX/Boxtext/Portret/Feenalaria/Scared.png
+    1. Graphics: GFX/Boxtext/Portret/Feenalaria/Think.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Aer.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Aqua.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Ignis.png
@@ -369,7 +376,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_WP4.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP5.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP6.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/JINC/IA/EQP_JAKE_WP7.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP8.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP9.lua
@@ -388,17 +394,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR4.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR5.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR6.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR7.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR8.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR9.lua
     1. Script: Script/JINC/IA/FOE_WATCHMOVE.lua
     1. Script: Script/JINC/IA/ICEBLAST.lua
     1. Script: Script/JINC/IA/ITM_AMBROSIA.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/IA/ITM_ANABOLINEA.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/JINC/IA/ITM_ANTIDOTE.lua
     1. Script: Script/JINC/IA/ITM_APPLE.lua
     1. Script: Script/JINC/IA/ITM_BELL.lua
@@ -408,7 +410,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_EEL.lua
     1. Script: Script/JINC/IA/ITM_FLAMEORB.lua
     1. Script: Script/JINC/IA/ITM_HEALINGHERB.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/ITM_HEALSHOWER.lua
     1. Script: Script/JINC/IA/ITM_HELLSTONE.lua
     1. Script: Script/JINC/IA/ITM_HOLYSCROLL.lua
@@ -446,6 +447,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/WAND_DARK.lua
     1. Script: Script/JINC/IA/WAND_DOOM.lua
     1. Script: Script/JINC/IA/WAND_FLAME.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/JINC/IA/WAND_FROST.lua
     1. Script: Script/JINC/IA/WAND_GAIA.lua
     1. Script: Script/JINC/IA/WAND_HOLY.lua
@@ -461,6 +463,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Masters/Midas.lua
     1. Script: Script/JINC/Masters/Rubine.lua
     1. Script: Script/JINC/Masters/Russell.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/JINC/PrologueChains/Dandor.lua
     1. Script: Script/JINC/PrologueChains/HandoStillor.lua
     1. Script: Script/JINC/PrologueChains/Jake.lua
@@ -468,8 +471,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Shops/CLONE_Aelvindor.lua
     1. Script: Script/JINC/Shops/CLONE_Fred.lua
     1. Script: Script/JINC/Shops/ITEM_ALBERTA.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/Shops/ITEM_BELLATRIX.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
     1. Script: Script/JINC/Shops/ITEM_ISKARDERIU.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/JINC/Shops/ITEM_WANDA.lua
     1. Script: Script/JINC/Shops/WAND_MONIQUE.lua
     1. Script: Script/JINC/Shops/WEAPON_ERIC.lua
@@ -478,6 +484,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Shops/WEAPON_MYRAREMEMBO.lua
     1. Script: Script/Maps/Anna.lua
     1. Script: Script/Maps/AutoUse.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/Maps/CH1_Dungeon_FrendorBushes.lua
     1. Script: Script/Maps/CH1_Dungeon_Hell.lua
     1. Script: Script/Maps/CH1_Dungeon_HolyPath.lua
@@ -696,6 +703,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.piko
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.png
     1. Graphics: GFX/Actors/Single/Fairies/Feenalaria.piko
+    1. Graphics: GFX/Actors/Single/Fairies/Feenalaria.png
     1. Graphics: GFX/Actors/Single/Humans/Russel.png
     1. Graphics: GFX/Actors/Single/Humans/Russell.png
     1. Graphics: GFX/BoxText/Portret/Rosetta/General.png
@@ -767,6 +775,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH3_Dungeon_Mine/Data
     1. Map Design: Kthura/CH3_Dungeon_Mine/Objects
     1. Map Design: Kthura/CH3_Dungeon_Mine/Settings
+    1. Map Design: Kthura/CH3_Town_Grombo/Data
+    1. Map Design: Kthura/CH3_Town_Grombo/Objects
+    1. Map Design: Kthura/CH3_Town_Grombo/Settings
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Music: Music/Sys/Silence.ogg
@@ -1023,7 +1034,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Idle.png
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.png
-    1. Graphics: GFX/Actors/Bundled/Player/Marrilona.NS (Autosaved).piko
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.NS.piko
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.North.frames
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.North.png

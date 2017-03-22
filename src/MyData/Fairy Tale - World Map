@@ -232,6 +232,16 @@ Rec: CH2WINDSPIRATA
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: CH3GROMBO
+	Dungeon = FALSE
+	Folder = Delisto
+	Kthura = CH3_Town_Grombo
+	Layer = Town
+	LocationName = Grombo
+	LocationPrefix = The Dwarven city of
+	Start = Start
+	UnlockedFromStart = FALSE
+
 Rec: CH3KOKOFOREST
 	Dungeon = TRUE
 	Folder = Kokonora

@@ -1,6 +1,6 @@
 --[[
   Char.lua
-  Version: 17.01.21
+  Version: 17.03.22
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -125,7 +125,6 @@ function ENDURANCE   (ch) NStat(ch,"Endurance")    end
 function INTELLIGENCE(ch) NStat(ch,"Intelligence") end   
 function RESISTANCE  (ch) NStat(ch,"Resistance")   end
 function SPEED       (ch) NStat(ch,"Speed")        end
-function HP          (ch) NStat(ch,"HP")           end     
 function AP          (ch) NStat(ch,"AP")           end
 function ACCURACY    (ch) NStat(ch,"Accuracy",100,0) end    
 function CRITICAL    (ch) NStat(ch,"Critical",100,0) end    
@@ -154,6 +153,14 @@ function SR_DESTRUCTION
                                                          end
 function SR_UNDEAD   (ch) NStat(ch,"SR_Undead",100,0)    end
 
+function HP          (ch) 
+   local hp = NStat(ch,"HP")
+   local handi = CVVN("%HANDICAP.MARRILONA")
+   if ch=="Marrilona" and handi then
+      if handi>=hp then Var.Clear("%HANDICAP.MARRILONA") return end
+      RPG.SetStat(ch,"END_HP",handi)
+   end           
+end     
 
 
 

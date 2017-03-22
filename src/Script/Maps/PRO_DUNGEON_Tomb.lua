@@ -152,7 +152,27 @@ function Feena_Prologue()
 end
 
 function Feena_Revival()
-   Sys.Error("Sorry, this event is not yet available")
+   PartyPop("Full","North")
+   MapText("FEENA_REVIVE_1")
+   local feena = Maps.Obj.CreateObject('Obstacle','IkBenFeena')
+   feena.TextureFile = 'GFX/Actors/Single/Fairies/Feenalaria.png'
+   local spot = Maps.Obj.Obj('FeenaZelf')
+   feena.X = spot.X
+   feena.Y = spot.Y
+   feena.Dominance=20
+   Maps.Remap()
+   for a=0,1000 do 
+     Cls()
+     feena.SetAlpha(a)
+     DrawScreen()
+     Flip()
+   end
+   Var.D("%HANDICAP.MARRILONA",1)
+   Var.D("$WMCHAT","FEENA")
+   MapText("FEENA_REVIVE_2")
+   WorldMap_Unlock("CH3GROMBO")
+   WorldMap()
+   --Sys.Error("Sorry, this event is not yet available")
 end   
 
 function Feena_Chain()
