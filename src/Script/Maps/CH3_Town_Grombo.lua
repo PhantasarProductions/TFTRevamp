@@ -34,6 +34,6 @@
  
 version: 17.03.22
 ]]
-function NPC_INN()
+function NPC_INNKEEPER()
   Inn()
 end

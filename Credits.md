@@ -505,6 +505,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH3_Dungeon_Garden.lua
     1. Script: Script/Maps/CH3_Dungeon_KokonoraForest.lua
     1. Script: Script/Maps/CH3_Dungeon_Mine.lua
+    1. Script: Script/Maps/CH3_Town_Grombo.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
     1. Script: Script/Maps/PRO_DUNGEON_Magic.lua
     1. Script: Script/Maps/PRO_DUNGEON_Tomb.lua
@@ -634,12 +635,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
@@ -1319,6 +1320,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_GARDEN
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_KOKONORAFOREST
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_MINE
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_MAGIC
@@ -1356,6 +1358,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_GARDEN
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_KOKONORAFOREST
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_MINE
+    1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_MAGIC
@@ -1381,6 +1384,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/SpecialBoss/Living Voyage.ogg
     1. Music: Music/Hub/Angevin.ogg
     1. Music: Music/SpecialBoss/Summon the Rawk.ogg
+    1. Music: Music/Town/Rite of Passage.ogg
     1. Music: Music/Scenario/We Got Trouble.ogg
     1. Music: Music/Town/Enchanted Valley.ogg
 - Man Of Steel

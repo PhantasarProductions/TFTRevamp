@@ -236,7 +236,7 @@ Rec: CH3GROMBO
 	Dungeon = FALSE
 	Folder = Delisto
 	Kthura = CH3_Town_Grombo
-	Layer = Town
+	Layer = town
 	LocationName = Grombo
 	LocationPrefix = The Dwarven city of
 	Start = Start
