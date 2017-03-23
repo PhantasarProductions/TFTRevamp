@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  ITM_SALVE.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  ZZKEY_GAIA.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -36,30 +36,26 @@ version: 17.03.23
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "A very ancient recipe for healing",
-	["Heal"] = 250,
+	["Desc"] = "Grands access to the Earth Spirata Temple",
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 120,
-	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "Heal",
+	["ITM_Type"] = "KeyItem",
 	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Salve",
-	["Type"] = "Item",
-	["Voice"] = "Heal"}
+	["Target"] = "1F",
+	["Title"] = "Gaia Key",
+	["Type"] = "Item"}
 
 return ret
 
