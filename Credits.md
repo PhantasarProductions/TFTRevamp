@@ -37,6 +37,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Big_Char/Marrilona_Clown.png
     1. Graphics: GFX/Big_Char/Marrilona_Clown.xcf
     1. Graphics: GFX/Big_Char/Marrilona_Easter.png
+    1. Graphics: GFX/Big_Char/Marrilona_Halloween.png
+    1. Graphics: GFX/Big_Char/Marrilona_Halloween.xcf
     1. Graphics: GFX/Big_Char/Marrilona_King.png
     1. Graphics: GFX/Big_Char/Marrilona_King.xcf
     1. Graphics: GFX/Big_Char/Marrilona_NewYear.png
@@ -635,12 +637,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
@@ -699,17 +701,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male.piko
     1. Graphics: GFX/Actors/Single/Cameos/GJDC.png
     1. Graphics: GFX/Actors/Single/Cameos/GJYT.png
-    1. Graphics: GFX/Actors/Single/Dwarves/Female Dwarf Setup (Autosaved).piko
     1. Graphics: GFX/Actors/Single/Dwarves/Female Dwarf Setup.piko
     1. Graphics: GFX/Actors/Single/Dwarves/Female Purple.png
     1. Graphics: GFX/Actors/Single/Dwarves/Female Red.png
     1. Graphics: GFX/Actors/Single/Dwarves/Female Yellow.png
+    1. Graphics: GFX/Actors/Single/Dwarves/Quendor.piko
+    1. Graphics: GFX/Actors/Single/Dwarves/Quendor.png
     1. Graphics: GFX/Actors/Single/Dwarves/Sandra.png
     1. Graphics: GFX/Actors/Single/Elves/GedrioFulla.png
     1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.piko
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.png
-    1. Graphics: GFX/Actors/Single/Fairies/Feenalaria (Autosaved).piko
     1. Graphics: GFX/Actors/Single/Fairies/Feenalaria.piko
     1. Graphics: GFX/Actors/Single/Fairies/Feenalaria.png
     1. Graphics: GFX/Actors/Single/Humans/Russel.png
@@ -1005,6 +1007,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Bundled/Player/Dandor.East.png
     1. Graphics: GFX/Actors/Bundled/Player/Dandor.North.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Dandor.North.png
+    1. ???: GFX/Actors/Bundled/Player/Dandor.South (Autosaved).piko-png
     1. Graphics: GFX/Actors/Bundled/Player/Dandor.South.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Dandor.South.png
     1. Graphics: GFX/Actors/Bundled/Player/Dandor.West.Frames
