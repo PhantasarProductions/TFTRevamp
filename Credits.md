@@ -699,10 +699,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male.piko
     1. Graphics: GFX/Actors/Single/Cameos/GJDC.png
     1. Graphics: GFX/Actors/Single/Cameos/GJYT.png
+    1. Graphics: GFX/Actors/Single/Dwarves/Female Dwarf Setup (Autosaved).piko
+    1. Graphics: GFX/Actors/Single/Dwarves/Female Dwarf Setup.piko
+    1. Graphics: GFX/Actors/Single/Dwarves/Female Purple.png
+    1. Graphics: GFX/Actors/Single/Dwarves/Female Red.png
+    1. Graphics: GFX/Actors/Single/Dwarves/Female Yellow.png
+    1. Graphics: GFX/Actors/Single/Dwarves/Sandra.png
     1. Graphics: GFX/Actors/Single/Elves/GedrioFulla.png
     1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.piko
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.png
+    1. Graphics: GFX/Actors/Single/Fairies/Feenalaria (Autosaved).piko
     1. Graphics: GFX/Actors/Single/Fairies/Feenalaria.piko
     1. Graphics: GFX/Actors/Single/Fairies/Feenalaria.png
     1. Graphics: GFX/Actors/Single/Humans/Russel.png

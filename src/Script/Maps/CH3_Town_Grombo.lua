@@ -32,8 +32,22 @@
   
  **********************************************
  
-version: 17.03.22
+version: 17.03.23
 ]]
 function NPC_INNKEEPER()
   Inn()
+end
+
+function NPC_Sandra()
+  MapText("SANDRA_" ..
+            ({
+               [false] = "A",
+               [true] = "B"
+            })[Done('&DONE.GROMBO.SPOKEN.SANDRA')]
+         )
+end
+
+function GALE_OnLoad()
+    ZA_Enter('ToQuendor',function() GoToLayer('quendor',"Start") end)
+    ZA_Enter("ToTown",function() GoToLayer('town',"Einde") end)
 end
