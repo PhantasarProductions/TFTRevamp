@@ -272,3 +272,13 @@ Rec: CH3MINE
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: CH3NOSTRABURG
+	Dungeon = FALSE
+	Folder = Kokonora
+	Kthura = 
+	Layer = town
+	LocationName = Nostraburg
+	LocationPrefix = The Black Winged Fairy City Of
+	Start = Start
+	UnlockedFromStart = FALSE
+

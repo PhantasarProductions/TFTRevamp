@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.23
+version: 17.03.24
 ]]
 function NPC_INNKEEPER()
   Inn()
@@ -45,6 +45,18 @@ function NPC_Sandra()
                [true] = "B"
             })[Done('&DONE.GROMBO.SPOKEN.SANDRA')]
          )
+end
+
+function QuendorGive()
+   Var.D("$WMCHAT","QUENDOR")
+   ItemGive("ZZKEY_GAIA")
+   WorldMap_Unlock("CH3NOSTRABURG")
+end   
+
+function NPC_Quendor()
+       local ldone = Done("&DONE.GROMBO.SPOKEN.QUENDOR")==true
+       MapText("QUENDOR_"..upper(sval(ldone)));
+       ({ [true] = Nothing, [false]=QuendorGive })[ldone]()       
 end
 
 function GALE_OnLoad()
