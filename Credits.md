@@ -487,23 +487,24 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Shops/ITEM_WANDA.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/JINC/Shops/WAND_MONIQUE.lua
+    1. Script: Script/JINC/Shops/WAND_YLLABONJA.lua
     1. Script: Script/JINC/Shops/WEAPON_ERIC.lua
     1. Script: Script/JINC/Shops/WEAPON_GILDUROY.lua
     1. Script: Script/JINC/Shops/WEAPON_MICHIEL.lua
     1. Script: Script/JINC/Shops/WEAPON_MYRAREMEMBO.lua
     1. Script: Script/JINC/Shops/WEAPON_NATHALIA.lua
-    1. Script: Script/Maps/Anna.lua
-    1. Script: Script/Maps/AutoUse.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Script: Script/Maps/Anna.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
+    1. Script: Script/Maps/AutoUse.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/Maps/CH1_Dungeon_FrendorBushes.lua
     1. Script: Script/Maps/CH1_Dungeon_Hell.lua
     1. Script: Script/Maps/CH1_Dungeon_HolyPath.lua
     1. Script: Script/Maps/CH1_Dungeon_Library.lua
     1. Script: Script/Maps/CH1_Dungeon_SubRiver.lua
-    1. Script: Script/Maps/CH1_HUB_Altar.lua
     1. Graphics: gfx/Effects/Darkness II.png
+    1. Script: Script/Maps/CH1_HUB_Altar.lua
     1. Script: Script/Maps/CH1_Hub_JakeHut.lua
     1. Script: Script/Maps/CH2_Dungeon_DoublineBayForest.lua
     1. Script: Script/Maps/CH2_Dungeon_DragonCastle.lua
@@ -649,12 +650,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
@@ -708,6 +709,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 1.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 2.png
+    1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 3.png
+    1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 4.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female.NS.piko
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male 1.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male.piko
