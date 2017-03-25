@@ -61,6 +61,11 @@ function NPC_Nathalia()
     Shop('WEAPON_NATHALIA')
 end
 
+function NPC_Yllabonja()
+    MapText("YLLABONJA")
+    Shop('WAND_YLLABONJA')
+end
+
 
 
 function Enter_Building(l)

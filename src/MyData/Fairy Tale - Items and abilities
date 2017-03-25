@@ -23356,7 +23356,7 @@ Rec: WAND_II_GAIA
 	SpellAni_External = FALSE
 	Stance = Attack
 	Target = AF
-	Title = Gaia Wand
+	Title = Great Gaia Wand
 	Type = Item
 	USE_Penalty = 0
 	Voice = Fire
