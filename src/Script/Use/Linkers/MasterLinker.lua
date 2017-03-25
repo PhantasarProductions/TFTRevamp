@@ -1,6 +1,6 @@
 --[[
   MasterLinker.lua
-  Version: 17.02.04
+  Version: 17.03.25
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -50,3 +50,9 @@ function MasterAllInc(master,stat,value)
         MasterInc(ch,master,stat,value)
    end
 end              
+
+function MasterList()
+   MS.LN_Run("MASTER","Script/Flow/Master.lua","MasterList")
+   local f = loadstring(Var.C("$MASTERLIST"))
+   return f()
+end

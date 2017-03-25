@@ -1,6 +1,6 @@
 --[[
   Master.lua
-  Version: 17.02.04
+  Version: 17.03.25
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -83,6 +83,20 @@ function Master(id)
    Loading()
    LAURA.Flow('MASTER')   
 end
+
+function MasterList()
+   local ret
+   for m,b in spairs(Unlocked) do
+       if b then
+          if ret then ret = ret ..",\n\t" else ret = "return {\t" end
+          ret = ret .. '"'..m..'"'
+       end
+   end    
+   ret = "\n}"
+   Var.D("$MASTERLIST",ret)
+end
+           
+   
 
 function MasterEyes(mid,mdata,x,y)
     SetFont("MasterContent")

@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 17.03.21
+  Version: 17.03.25
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -504,7 +504,7 @@ function TurnOffClicks()
 end
 
 function SetUpAutoClickables()
-local prefixes = {"NPC_","PSG_","PRC_","CHEST_","PTE_","BLACKORB_","RNDITEM_"}
+local prefixes = {"NPC_","PSG_","PRC_","CHEST_","PTE_","BLACKORB_","RNDITEM_","ENTER_"}
 local p 
 local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()
 -- CSay(type(layers).."/"..type(each))
@@ -575,6 +575,8 @@ function RandomItem(tag)
     CSay("Finished: Random Items")
 end
 
+function Click2Enter(ocode)
+   local tolay = right(ocode,-6)
 
 
 function CheckClickables(fakex,fakey)
@@ -650,7 +652,12 @@ if mousehit(1) or fakex or fakey then
                WalkArrival = TreasureChest
                WalkArrivalArg = c
                ret = true  
-            end             
+            end           
+          elseif prefixed(upper(c),"ENTER_") then
+             if Actors.WalkToSpot(cplayer,"exit_"..right(c,#c-6)) then
+               WalkArrival = Click2Enter
+               WalkArrivalArg = c
+             end      
           elseif prefixed(c,"RNDITEM_") then
             if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32)==1 then
                --local chest = Maps.Obj.Obj(c) 

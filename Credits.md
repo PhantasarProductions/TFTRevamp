@@ -92,6 +92,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Krandar/Eyes.png
     1. Graphics: GFX/BoxText/Portret/Krandar/General.png
     1. Graphics: GFX/BoxText/Portret/Krandar/VeelTeGroot.png
+    1. Graphics: GFX/BoxText/Portret/Marata/General.png
     1. Graphics: GFX/BigPic/Krandar.png
     1. Graphics: GFX/BoxText/Portret/Fandalora/General.png
     1. Graphics: GFX/BoxText/Portret/Fandalora/NoEmo.png
@@ -449,7 +450,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/WAND_DARK.lua
     1. Script: Script/JINC/IA/WAND_DOOM.lua
     1. Script: Script/JINC/IA/WAND_FLAME.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/JINC/IA/WAND_FROST.lua
     1. Script: Script/JINC/IA/WAND_GAIA.lua
     1. Script: Script/JINC/IA/WAND_HOLY.lua
@@ -466,18 +466,15 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Masters/Midas.lua
     1. Script: Script/JINC/Masters/Rubine.lua
     1. Script: Script/JINC/Masters/Russell.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/JINC/PrologueChains/Dandor.lua
     1. Script: Script/JINC/PrologueChains/HandoStillor.lua
     1. Script: Script/JINC/PrologueChains/Jake.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/JINC/PrologueChains/Marrilona.lua
     1. Script: Script/JINC/Shops/CLONE_Aelvindor.lua
     1. Script: Script/JINC/Shops/CLONE_Fred.lua
     1. Script: Script/JINC/Shops/ITEM_ALBERTA.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
     1. Script: Script/JINC/Shops/ITEM_BELLATRIX.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/JINC/Shops/ITEM_ISKARDERIU.lua
     1. Script: Script/JINC/Shops/ITEM_WANDA.lua
     1. Script: Script/JINC/Shops/WAND_MONIQUE.lua
@@ -487,20 +484,24 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Shops/WEAPON_MYRAREMEMBO.lua
     1. Script: Script/Maps/Anna.lua
     1. Script: Script/Maps/AutoUse.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/Maps/CH1_Dungeon_FrendorBushes.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/Maps/CH1_Dungeon_Hell.lua
     1. Script: Script/Maps/CH1_Dungeon_HolyPath.lua
     1. Script: Script/Maps/CH1_Dungeon_Library.lua
     1. Script: Script/Maps/CH1_Dungeon_SubRiver.lua
     1. Script: Script/Maps/CH1_HUB_Altar.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
     1. Script: Script/Maps/CH1_Hub_JakeHut.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/Maps/CH2_Dungeon_DoublineBayForest.lua
     1. Script: Script/Maps/CH2_Dungeon_DragonCastle.lua
     1. Script: Script/Maps/CH2_Dungeon_ElfRoad.lua
     1. Script: Script/Maps/CH2_Dungeon_SpirataFire.lua
     1. Script: Script/Maps/CH2_Dungeon_SpirataWater.lua
     1. Script: Script/Maps/CH2_Dungeon_SpirataWind.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/Maps/CH2_Dungeon_VandarRoad.lua
     1. Script: Script/Maps/CH2_Town_Doubline.lua
     1. Script: Script/Maps/CH2_Town_Dreshka.lua
@@ -509,6 +510,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH3_Dungeon_KokonoraForest.lua
     1. Script: Script/Maps/CH3_Dungeon_Mine.lua
     1. Script: Script/Maps/CH3_Town_Grombo.lua
+    1. Script: Script/Maps/CH3_Town_Nostraburg.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
     1. Script: Script/Maps/PRO_DUNGEON_Magic.lua
     1. Script: Script/Maps/PRO_DUNGEON_Tomb.lua
@@ -638,12 +640,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
@@ -700,6 +702,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female.NS.piko
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male 1.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male.piko
+    1. Graphics: GFX/Actors/Single/Black Winged Fairies/Ramata.png
     1. Graphics: GFX/Actors/Single/Cameos/GJDC.png
     1. Graphics: GFX/Actors/Single/Cameos/GJYT.png
     1. Graphics: GFX/Actors/Single/Dwarves/Female Dwarf Setup.piko
@@ -789,6 +792,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH3_Town_Grombo/Data
     1. Map Design: Kthura/CH3_Town_Grombo/Objects
     1. Map Design: Kthura/CH3_Town_Grombo/Settings
+    1. Map Design: Kthura/CH3_Town_Nostraburg/Data
+    1. Map Design: Kthura/CH3_Town_Nostraburg/Objects
+    1. Map Design: Kthura/CH3_Town_Nostraburg/Settings
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Music: Music/Sys/Silence.ogg
@@ -1008,7 +1014,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Bundled/Player/Dandor.East.png
     1. Graphics: GFX/Actors/Bundled/Player/Dandor.North.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Dandor.North.png
-    1. ???: GFX/Actors/Bundled/Player/Dandor.South (Autosaved).piko-png
     1. Graphics: GFX/Actors/Bundled/Player/Dandor.South.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Dandor.South.png
     1. Graphics: GFX/Actors/Bundled/Player/Dandor.West.Frames
@@ -1332,6 +1337,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_KOKONORAFOREST
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_MINE
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_GROMBO
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_NOSTRABURG
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_MAGIC
@@ -1370,6 +1376,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_KOKONORAFOREST
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_MINE
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_GROMBO
+    1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_NOSTRABURG
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_MAGIC
@@ -1907,6 +1914,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Audio/sfx/General/Solved.ogg
 - W.K. Chan & Wouter Wershkull
     1. Music: Music/Special Boss/PlayTillDeath_(Nostramantu).ogg
+    1. Music: Music/Town/Funky Fairy.ogg
 - Wicky77
     1. Music: Music/Town/Happy.ogg
     1. Music: Music/Town/IrishFishermen.ogg

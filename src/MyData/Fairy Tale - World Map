@@ -275,7 +275,7 @@ Rec: CH3MINE
 Rec: CH3NOSTRABURG
 	Dungeon = FALSE
 	Folder = Kokonora
-	Kthura = 
+	Kthura = CH3_Town_Nostraburg
 	Layer = town
 	LocationName = Nostraburg
 	LocationPrefix = The Black Winged Fairy City Of
