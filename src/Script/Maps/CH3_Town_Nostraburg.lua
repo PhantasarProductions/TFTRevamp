@@ -66,6 +66,15 @@ function NPC_Yllabonja()
     Shop('WAND_YLLABONJA')
 end
 
+function NPC_Katinta()
+    MapText("KATINTA")
+    Shop("ITEM_KATINTA")
+end
+
+function NPC_Hotelmus()
+    Inn()
+end        
+
 
 
 function Enter_Building(l)
@@ -96,7 +105,7 @@ function GALE_OnLoad()
   for obj in KthuraEach() do
       if prefixed(obj.Tag,"ENTER_") then
          ZA_Enter("ZA_"..obj.Tag,Enter_Building,right(obj.Tag,-6))
-         
+         AddClickable(obj.Tag)
       end
   end
 end
