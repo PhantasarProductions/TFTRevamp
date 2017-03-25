@@ -504,7 +504,7 @@ function TurnOffClicks()
 end
 
 function SetUpAutoClickables()
-local prefixes = {"NPC_","PSG_","PRC_","CHEST_","PTE_","BLACKORB_","RNDITEM_","ENTER_"}
+local prefixes = {"NPC_","PSG_","PRC_","CHEST_","PTE_","BLACKORB_","RNDITEM_"}
 local p 
 local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()
 -- CSay(type(layers).."/"..type(each))
@@ -520,7 +520,13 @@ for layer in each(layers) do
            if rand(1,math.ceil(9/skill))~=1 then Maps.Obj.Kill(p,1) end
         end   
         for p in each(prefixes) do 
-            if prefixed(obj.Tag,p) then AddClickable(obj.Tag) CSay(layer..": Autoclickable "..obj.Tag.." added") end
+            if prefixed(obj.Tag,p) then 
+               AddClickable(obj.Tag) 
+               CSay(layer..": Autoclickable "..obj.Tag.." added")
+               if p=="ENTER_" then
+                  MS.Run("MAP","ZA_Enter","ZA_"..obj.Tag..";EnterBuilding;"..right(obj.tag,-6))
+               end 
+             end
             end
         end
     end
@@ -575,9 +581,10 @@ function RandomItem(tag)
     CSay("Finished: Random Items")
 end
 
-function Click2Enter(ocode)
+function WalkClick2Enter(ocode)
    local tolay = right(ocode,-6)
    GoToLayer(tolay,"Start")
+   CSay("Went to "..tolay)
 end   
 
 
@@ -655,10 +662,13 @@ if mousehit(1) or fakex or fakey then
                WalkArrivalArg = c
                ret = true  
             end           
-          elseif prefixed(upper(c),"ENTER_") then
-             if Actors.WalkToSpot(cplayer,"exit_"..right(c,#c-6)) then
-               WalkArrival = Click2Enter
+          elseif prefixed(c,"ENTER_") then
+             if Actors.WalkToSpot(cplayer,"entry_"..right(c,#c-6))==1 then
+               WalkArrival = nil -- WalkClick2Enter
                WalkArrivalArg = c
+               CSay("Let's gonna enter "..c.."   >>> "..type(WalkArrival))
+             else
+               CSay("WARNING! Spot exit_"..right(c,#c-6).." appears to be out of reach for "..cplayer)  
              end      
           elseif prefixed(c,"RNDITEM_") then
             if Actors.WalkTo(cplayer,Maps.Obj.Obj(c).X,Maps.Obj.Obj(c).Y+32)==1 then

@@ -468,8 +468,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Masters/Russell.lua
     1. Script: Script/JINC/PrologueChains/Dandor.lua
     1. Script: Script/JINC/PrologueChains/HandoStillor.lua
-    1. Script: Script/JINC/PrologueChains/Jake.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
+    1. Script: Script/JINC/PrologueChains/Jake.lua
     1. Script: Script/JINC/PrologueChains/Marrilona.lua
     1. Script: Script/JINC/Shops/CLONE_Aelvindor.lua
     1. Script: Script/JINC/Shops/CLONE_Fred.lua
@@ -482,19 +482,20 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Shops/WEAPON_GILDUROY.lua
     1. Script: Script/JINC/Shops/WEAPON_MICHIEL.lua
     1. Script: Script/JINC/Shops/WEAPON_MYRAREMEMBO.lua
+    1. Script: Script/JINC/Shops/WEAPON_NATHALIA.lua
     1. Script: Script/Maps/Anna.lua
     1. Script: Script/Maps/AutoUse.lua
-    1. Script: Script/Maps/CH1_Dungeon_FrendorBushes.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
+    1. Script: Script/Maps/CH1_Dungeon_FrendorBushes.lua
     1. Script: Script/Maps/CH1_Dungeon_Hell.lua
     1. Script: Script/Maps/CH1_Dungeon_HolyPath.lua
     1. Script: Script/Maps/CH1_Dungeon_Library.lua
     1. Script: Script/Maps/CH1_Dungeon_SubRiver.lua
-    1. Script: Script/Maps/CH1_HUB_Altar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Script: Script/Maps/CH1_HUB_Altar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
-    1. Script: Script/Maps/CH1_Hub_JakeHut.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
+    1. Script: Script/Maps/CH1_Hub_JakeHut.lua
     1. Script: Script/Maps/CH2_Dungeon_DoublineBayForest.lua
     1. Script: Script/Maps/CH2_Dungeon_DragonCastle.lua
     1. Script: Script/Maps/CH2_Dungeon_ElfRoad.lua

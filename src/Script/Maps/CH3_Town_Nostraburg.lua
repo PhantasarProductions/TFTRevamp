@@ -56,9 +56,21 @@ function NPC_Feenalaria()
     Master("Feenalaria")   
 end
 
+function NPC_Nathalia()
+    MapText("NATHALIA")
+    Shop('WEAPON_NATHALIA')
+end
+
+
+
+function Enter_Building(l)
+   GoToLayer(l,"Start")
+end   
+
 
 function GALE_OnLoad()
-  if not CVV(RAMATA) then 
+  Maps.GotoLayer("town") 
+  if not CVV(RAMATA) then    
     local function RemataWelcome()
       MapText("RAMATA_GUARD")
       Maps.Obj.Kill("Guard_Remata",1)
@@ -68,13 +80,20 @@ function GALE_OnLoad()
   CSay("REMATA Set up")
   end  
   if CVV("&KRANDAR.GONE")then
-     Maps.GotoLayer("town") 
+     
      Maps.Obj.Kill("NPC_Krandar")
   else
      Maps.Obj.Obj("Enter_krandar").Tag="krandarhouseunavailablenow"
      Maps.ReMap()   
   end   
-  if not CVV("&DONE.BOSS.NOSTRAMANTU1") then Maps.Obj.Obj("NPC_Feenalaria").Visible=0 end 
+  if not CVV("&DONE.BOSS.NOSTRAMANTU1") then Maps.Obj.Obj("NPC_Feenalaria").Visible=0 end
+  ZA_Enter("Exit",function() GoToLayer("town","exit_"..lower(Maps.LayerCodeName)) end) 
+  for obj in KthuraEach() do
+      if prefixed(obj.Tag,"ENTER_") then
+         ZA_Enter("ZA_"..obj.Tag,Enter_Building,right(obj.Tag,-6))
+         
+      end
+  end
 end
 
 
