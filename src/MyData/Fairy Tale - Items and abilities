@@ -14827,7 +14827,7 @@ Rec: EQP_JAKE_CURSEDWP_VENOMBLADE
 	BUFF_Power = 0
 	BUFF_Resistance = 0
 	BUFF_Speed = -99
-	CauseBerserk = 
+	CauseBerserk = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -14870,7 +14870,7 @@ Rec: EQP_JAKE_CURSEDWP_VENOMBLADE
 	EffectScript_External = FALSE
 	Heal = 0
 	Heal_StatPercent = Intelligence
-	Heal_Type = 
+	Heal_Type = Absolute
 	ITM_ACC_Dandor = TRUE
 	ITM_ACC_HandoStillor = TRUE
 	ITM_ACC_Jake = TRUE
@@ -14879,8 +14879,8 @@ Rec: EQP_JAKE_CURSEDWP_VENOMBLADE
 	ITM_Combat = TRUE
 	ITM_EQP_For = Jake
 	ITM_Field = TRUE
-	ITM_Sellable = TRUE
-	ITM_ShopPrice = 1
+	ITM_Sellable = FALSE
+	ITM_ShopPrice = 0
 	ITM_Type = Weapon
 	ITM_WeaponAbility = TRUE
 	Revive = FALSE
@@ -22733,7 +22733,7 @@ Rec: WAND_DOOM
 	ITM_Combat = TRUE
 	ITM_EQP_For = Marrilona
 	ITM_Field = TRUE
-	ITM_Sellable = TRUE
+	ITM_Sellable = FALSE
 	ITM_ShopPrice = 0
 	ITM_Type = Weapon
 	ITM_WeaponAbility = TRUE

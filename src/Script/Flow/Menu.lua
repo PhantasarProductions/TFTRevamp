@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 17.03.19
+  Version: 17.03.25
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -517,9 +517,9 @@ function features.Trade(x,y,w,h)
             local pch = item.ITM_EQP_For; if pch=="Jake" then pch="Jake_Human" end -- Jake Human always exists, and Jake_Fairy will be linked so they always carry the same ;)
             local haveitem = RPG.GetData(pch,"EQP_"..item.ITM_Type)  -- CSay(pch.." has "..haveitem.. " on "..item.ITM_Type)
             local have = ItemGet(haveitem)
-            local price = item.ITM_ShopPrice - have.ITM_SellPrice
+            local price = item.ITM_ShopPrice - (have.ITM_SellPrice or 0)
             if allow[i] then allow[i] = price end
-            if (not have.ITM_Sellable) or (not InParty(pch)) then
+            if (not have.ITM_Sellable) or (not InParty(pch)) or ((have.ITM_SellPrice or 0)<=0)then
                -- DarkText('Sellable: '..sval(have.ITM_Sellable).." InParty("..sval(pch).."): "..sval(InParty(pch)),w-50,iy,1,0,255,0,0) -- Debug line. MUST be REMMED in actual version
                DarkText('CANNOT TRADE!',w-50,iy,1,0,255,0,0) -- Actual line, may not be REMMED in actual version
                allow[i] = false
