@@ -492,8 +492,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH1_Dungeon_Library.lua
     1. Script: Script/Maps/CH1_Dungeon_SubRiver.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
-    1. Script: Script/Maps/CH1_HUB_Altar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
+    1. Script: Script/Maps/CH1_HUB_Altar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/Maps/CH1_Hub_JakeHut.lua
     1. Script: Script/Maps/CH2_Dungeon_DoublineBayForest.lua
@@ -641,12 +641,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
