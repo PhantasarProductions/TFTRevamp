@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_HOLDPERSON.lua
-  Version: 17.03.23
+  Version: 17.03.25
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
