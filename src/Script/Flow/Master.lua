@@ -94,6 +94,7 @@ function MasterList()
    end    
    ret = "\n}"
    Var.D("$MASTERLIST",ret)
+   CSay(ret)
 end
            
    
