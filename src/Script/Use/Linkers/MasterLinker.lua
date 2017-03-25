@@ -51,7 +51,7 @@ function MasterAllInc(master,stat,value)
    end
 end              
 
-Masterlist =  MasterList or function()
+MasterList = MasterList or function()
    MS.LN_Run("MASTER","Script/Flow/Master.lua","MasterList")
    local f = loadstring(Var.C("$MASTERLIST"))
    return f()
