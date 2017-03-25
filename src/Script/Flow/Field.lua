@@ -577,6 +577,8 @@ end
 
 function Click2Enter(ocode)
    local tolay = right(ocode,-6)
+   GoToLayer(tolay,"Start")
+end   
 
 
 function CheckClickables(fakex,fakey)
