@@ -74,6 +74,7 @@ function GALE_OnLoad()
      Maps.Obj.Obj("Enter_krandar").Tag="krandarhouseunavailablenow"
      Maps.ReMap()   
   end   
+  if not CVV("&DONE.BOSS.NOSTRAMANTU1") then Maps.Obj.Obj("NPC_Feenalaria").Visible=0 end 
 end
 
 
