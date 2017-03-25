@@ -35,6 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Power",
 	["Attack_Element"] = "None",
@@ -44,6 +45,7 @@ ret = {
 	["Heal_StatPercent"] = "Power",
 	["Heal_Type"] = "Absolute",
 	["ITM_EQP_For"] = "HandoStillor",
+	["ITM_Sellable"] = true,
 	["ITM_ShopPrice"] = 28672,
 	["ITM_Type"] = "Armor",
 	["Stance"] = "Attack",

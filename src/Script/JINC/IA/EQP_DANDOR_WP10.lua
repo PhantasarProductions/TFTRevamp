@@ -44,6 +44,7 @@ ret = {
 	["Heal_StatPercent"] = "Power",
 	["Heal_Type"] = "Absolute",
 	["ITM_EQP_For"] = "Dandor",
+	["ITM_Sellable"] = true,
 	["ITM_ShopPrice"] = 1024000,
 	["ITM_Type"] = "Weapon",
 	["Stance"] = "Attack",
