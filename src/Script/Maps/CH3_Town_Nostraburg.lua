@@ -50,7 +50,7 @@ function NPC_Feenalaria()
        MapText("FEENA_PREMASTER")
        local ml = MasterList()
        CSay("You have "..#ml.." out of "..req)
-       if ml<req then MapText("FEENA_NOTREADY") return end
+       if #ml<req then MapText("FEENA_NOTREADY") return end
        Done(master)
     end
     Master("Feenalaria")   
