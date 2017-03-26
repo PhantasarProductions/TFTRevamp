@@ -495,8 +495,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/Shops/WEAPON_MYRAREMEMBO.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
-    1. Script: Script/JINC/Shops/WEAPON_NATHALIA.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
+    1. Script: Script/JINC/Shops/WEAPON_NATHALIA.lua
     1. Script: Script/Maps/Anna.lua
     1. Script: Script/Maps/AutoUse.lua
     1. Script: Script/Maps/CH1_Dungeon_FrendorBushes.lua
@@ -520,6 +520,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH3_Dungeon_Garden.lua
     1. Script: Script/Maps/CH3_Dungeon_KokonoraForest.lua
     1. Script: Script/Maps/CH3_Dungeon_Mine.lua
+    1. Script: Script/Maps/CH3_Dungeon_SpirataEarth.lua
     1. Script: Script/Maps/CH3_Town_Grombo.lua
     1. Script: Script/Maps/CH3_Town_Nostraburg.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
@@ -712,8 +713,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 2.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 3.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 4.png
+    1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 5.png
+    1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 6.png
+    1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 7.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female.NS.piko
+    1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male (Autosaved).piko
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male 1.png
+    1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male 2.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male.piko
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Ramata.png
     1. Graphics: GFX/Actors/Single/Cameos/GJDC.png
@@ -802,6 +808,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH3_Dungeon_Mine/Data
     1. Map Design: Kthura/CH3_Dungeon_Mine/Objects
     1. Map Design: Kthura/CH3_Dungeon_Mine/Settings
+    1. Map Design: Kthura/CH3_Dungeon_SpirataEarth/Data
+    1. Map Design: Kthura/CH3_Dungeon_SpirataEarth/Objects
+    1. Map Design: Kthura/CH3_Dungeon_SpirataEarth/Settings
     1. Map Design: Kthura/CH3_Town_Grombo/Data
     1. Map Design: Kthura/CH3_Town_Grombo/Objects
     1. Map Design: Kthura/CH3_Town_Grombo/Settings

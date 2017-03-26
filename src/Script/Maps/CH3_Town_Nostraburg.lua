@@ -32,10 +32,22 @@
   
  **********************************************
  
-version: 17.03.25
+version: 17.03.26
 ]]
 RAMATA = "&DONE.NOSTRABURG.RAMATA.WELCOME.TEXT"
 
+function MeesterKrandar()
+   local master="&MASTER.KRANDAR"
+   if not CVV(master) then
+      MapText("KRANDAR_PREMASTER")
+      if CVV("%SEALEDBOSSESDEFEATED")==0 then
+         MapText("KRANDAR_NOTREADY")
+         return
+      end
+      Done(master)
+   end
+   Master("Krandar")   
+end
 
 function NPC_Calanus()
     MapText("CALANUS_"..Maps.Obj.Exists("NPC_BlueSeal"))
@@ -73,6 +85,16 @@ end
 
 function NPC_Hotelmus()
     Inn()
+end
+
+function NPC_Krandar()
+  if not Done("&DONE.KRANDAR.FIRSTTIME") then
+   MapText("KRANDAR_FIRST")
+   WorldMap_Unlock("CH3SPIRATAEARTH")
+   Var.D("$WMCHAT","KRANDAR")
+   return
+  end 
+  MeesterKrandar()
 end        
 
 
