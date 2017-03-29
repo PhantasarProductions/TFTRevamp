@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.25
+version: 17.03.29
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
@@ -42,15 +42,7 @@ ret = {
 	["Desc"] = "Works quite well when worn",
 	["EQP_STAT_Endurance"] = 6,
 	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "Jake",
-	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 400,
-	["ITM_Type"] = "Armor",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Leather plate",
-	["Type"] = "Item"}
+	["Heal_Type"] = "Absolute"}
 
 return ret
 
