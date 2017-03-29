@@ -1,7 +1,7 @@
 --[[
-  ITM_ANTIDOTE.lua
+  ITM_UBERPOTION.lua
   Version: 17.03.29
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -36,11 +36,13 @@
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
 	["CurePoison"] = true,
-	["Desc"] = "Poison be gone",
+	["Desc"] = "Now this is a nice healing item",
+	["Heal"] = 1500,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -51,13 +53,14 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 50,
+	["ITM_ShopPrice"] = 300,
 	["ITM_Type"] = "Consumable",
 	["SpellAni"] = "Heal",
 	["Stance"] = "Cast",
 	["Target"] = "1A",
-	["Title"] = "Antidote",
-	["Type"] = "Item"}
+	["Title"] = "UberPotion",
+	["Type"] = "Item",
+	["Voice"] = "Heal"}
 
 return ret
 

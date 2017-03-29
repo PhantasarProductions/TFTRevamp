@@ -221,6 +221,18 @@ Rec: KILL1000
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: MANA8
+	Description = Collect all 8 mana orbs
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = The 8th Element
+	Type = Silver
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: RATE025
 	Description = Achievement rating 25% or more
 	Icon = *DEFAULT*
