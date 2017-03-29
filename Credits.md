@@ -489,8 +489,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Shops/ITEM_KATINTA.lua
     1. Script: Script/JINC/Shops/ITEM_WANDA.lua
     1. Script: Script/JINC/Shops/WAND_MONIQUE.lua
-    1. Script: Script/JINC/Shops/WAND_YLLABONJA.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Script: Script/JINC/Shops/WAND_YLLABONJA.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
     1. Script: Script/JINC/Shops/WEAPON_ERIC.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png

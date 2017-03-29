@@ -273,6 +273,13 @@ function Goal()
        MS.Destroy("CRACKPUZ")                      
 end
 
+function AutoScroll()
+   local camx = APLAY.X-(SW/2)
+   local camy = APLAY.Y-(SH/2)
+   if Maps.CamX>camx then Maps.CamX=Maps.CamX-1 elseif Maps.CamX<camx then Maps.CamX=Maps.CamX+1 end
+   if Maps.CamY>camy then Maps.CamY=Maps.CamY-1 elseif Maps.CamY<camy then Maps.CamY=Maps.CamY+1 end
+end
+
 
 function MAIN_FLOW()
    Cls()
@@ -281,6 +288,7 @@ function MAIN_FLOW()
    Forfeit()
    Goal()
    BlockMoveExec()
+   AutoScroll()
    Flip()
    for go in each(godirs) do go() end
 end   
