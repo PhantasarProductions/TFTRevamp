@@ -1,6 +1,6 @@
 --[[
   Spirata.lua
-  Version: 17.02.19
+  Version: 17.03.29
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -50,13 +50,18 @@ AltArena.spiratawater = {
 
 AltArena.spiratafire = {
                       Before = function() 
-                         BlopPlasma.DrawCol(180,60,0)
+                         BlopPlasma.DrawCol(100,60,0)
                       end
                  }
 
 AltArena.spiratawind = {
                       Before = function() 
-                         BlopPlasma.DrawCol(0,180,0)
+                         BlopPlasma.DrawCol(0,100,0)
+                      end
+                 }
+AltArena.spirataearth = {
+                      Before = function() 
+                         BlopPlasma.DrawCol(100,71,0)
                       end
                  }
 
