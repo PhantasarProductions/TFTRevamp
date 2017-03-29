@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.26
+version: 17.03.27
 ]]
 SubFlow = {}
 
@@ -45,10 +45,17 @@ function MAP_FLOW()
 end
 
 
+function sap_startfunction()
+    MapText("PUZZLETUTORIAL")
+end
+
 function GALE_OnLoad()
    hsin = InitMoveTex({X= 1,Y=0,suffix='HSINUS.PNG'})
    vsin = InitMoveTex({X= 0,Y=1,suffix='VSINUS.PNG'})
+   arrowdir['#002']='East'
+   arrowslide_onload(sap_startfunction)
 end
 
 
 -- @USE /script/use/specific/plasmafloor.lua
+-- @USE /script/use/specific/arrowslide.lua

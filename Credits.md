@@ -144,6 +144,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Events/NarratedEvents.lua
     1. Script: Script/Events/StartGame.lua
     1. Script: Script/Flow/AltInput.lua
+    1. Script: Script/Flow/ArrowSlide.lua
     1. Script: Script/Flow/AutoUse.lua
     1. Script: Script/Flow/Combat.lsv
     1. Script: Script/Flow/Combat.lua
@@ -463,11 +464,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/WAND_II_WATT.lua
     1. Script: Script/JINC/IA/WAND_SPLASH.lua
     1. Script: Script/JINC/IA/WAND_THUNDER.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/JINC/IA/WAND_TRAINING.lua
     1. Script: Script/JINC/IA/WAND_WIND.lua
     1. Script: Script/JINC/IA/ZZKEY_FIRE.lua
     1. Script: Script/JINC/IA/ZZKEY_GAIA.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/JINC/IA/ZZKEY_KEYWATER.lua
     1. Script: Script/JINC/IA/ZZKEY_WIND.lua
     1. Script: Script/JINC/Masters/Fandalora.lua
@@ -481,29 +482,29 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/PrologueChains/Marrilona.lua
     1. Script: Script/JINC/Shops/CLONE_Aelvindor.lua
     1. Script: Script/JINC/Shops/CLONE_Fred.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/JINC/Shops/ITEM_ALBERTA.lua
     1. Script: Script/JINC/Shops/ITEM_BELLATRIX.lua
     1. Script: Script/JINC/Shops/ITEM_ISKARDERIU.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/JINC/Shops/ITEM_KATINTA.lua
     1. Script: Script/JINC/Shops/ITEM_WANDA.lua
     1. Script: Script/JINC/Shops/WAND_MONIQUE.lua
     1. Script: Script/JINC/Shops/WAND_YLLABONJA.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
     1. Script: Script/JINC/Shops/WEAPON_ERIC.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/JINC/Shops/WEAPON_GILDUROY.lua
     1. Script: Script/JINC/Shops/WEAPON_MICHIEL.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/Shops/WEAPON_MYRAREMEMBO.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/JINC/Shops/WEAPON_NATHALIA.lua
     1. Script: Script/Maps/Anna.lua
     1. Script: Script/Maps/AutoUse.lua
     1. Script: Script/Maps/CH1_Dungeon_FrendorBushes.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/Maps/CH1_Dungeon_Hell.lua
     1. Script: Script/Maps/CH1_Dungeon_HolyPath.lua
     1. Script: Script/Maps/CH1_Dungeon_Library.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/Maps/CH1_Dungeon_SubRiver.lua
     1. Script: Script/Maps/CH1_HUB_Altar.lua
     1. Script: Script/Maps/CH1_Hub_JakeHut.lua
@@ -635,6 +636,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Specific/Scroller.lua
     1. Script: Script/Use/Specific/StepsPuzzle.lua
     1. Script: Script/Use/Specific/Walda.lua
+    1. Script: Script/Use/Specific/arrowslide.lua
     1. Script: Script/Libs/Coords2Rotation.lua
     1. Script: Script/Libs/ShowSerialize.lua
     1. Script: Script/Libs/KeyCodes_BlitzMax.lua
@@ -665,6 +667,16 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/Blops2/Blop3.png
     1. Graphics: gfx/Textures/Blops2/Blop4.png
     1. Graphics: gfx/Textures/Blops2/Blop5.png
+    1. Graphics: gfx/Textures/EarthPuzzle/AR_DN.png
+    1. Graphics: gfx/Textures/EarthPuzzle/AR_LF.png
+    1. Graphics: gfx/Textures/EarthPuzzle/AR_RT.png
+    1. Graphics: gfx/Textures/EarthPuzzle/AR_UP.png
+    1. Graphics: gfx/Textures/EarthPuzzle/ArrowPlates.piko
+    1. Graphics: gfx/Textures/EarthPuzzle/Pyramid.piko
+    1. Graphics: gfx/Textures/EarthPuzzle/Pyramid.png
+    1. Graphics: gfx/Textures/EarthPuzzle/cracked.piko
+    1. Graphics: gfx/Textures/EarthPuzzle/cracked.png
+    1. Graphics: gfx/Textures/EarthPuzzle/cracked.xcf
     1. Graphics: gfx/Textures/Mine/Rails/EW.png
     1. Graphics: gfx/Textures/Mine/Rails/EW2.png
     1. Graphics: gfx/Textures/Mine/Rails/NE.PNG
@@ -717,7 +729,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 6.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 7.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female.NS.piko
-    1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male (Autosaved).piko
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male 1.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male 2.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male.piko
@@ -1358,6 +1369,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_GARDEN
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_KOKONORAFOREST
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_MINE
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_SPIRATAEARTH
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_NOSTRABURG
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
@@ -1397,6 +1409,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_GARDEN
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_KOKONORAFOREST
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_MINE
+    1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_SPIRATAEARTH
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_NOSTRABURG
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT

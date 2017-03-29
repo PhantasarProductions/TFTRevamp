@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 17.03.19
+  Version: 17.03.27
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -91,9 +91,9 @@ table.insert(ZA[A],{Z = Z, F = F, P = P})
 end
 
 function ZA_Enter(Z,PF,P)
-local F = PF
-if F=="ALB_EXE" then F = ALB_EXE end
-ZA_SetAction(Z,"Enter",F,P)
+  local F = PF
+  if F=="ALB_EXE" then F = ALB_EXE end
+  ZA_SetAction(Z,"Enter",F,P)
 end
 
 function ZA_Leave(Z,F,P)
@@ -311,6 +311,12 @@ function PartyPop(spot,wind,methode)
          local a = "PLAYER"..i; if i==0 then a="PLAYER" end
          guys[#guys+1] = { ch = guy, actor=a, spot=spot.."_"..guy}
          if prefixed(guy,"Jake") then guys[#guys].spot=spot.."_Jake" end
+         --[[
+         Actors.Actor(a).Moving=0
+         Actors.Actor(a).Walking=0
+         ]]
+         Actors.StopWalking(a)
+         Actors.StopMoving(a)
     end
     for guy in each(guys) do
         Walk(guy.actor,guy.spot)
