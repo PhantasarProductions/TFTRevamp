@@ -1,40 +1,4 @@
---[[
-**********************************************
-  
-  SuperZombie.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
-  
-  This file contains material that is related 
-  to a storyline that is which is strictly
-  copyrighted to Jeroen Broks.
-  
-  This file may only be used in an unmodified
-  form with an unmodified version of the 
-  software this file belongs to.
-  
-  You may use this file for your study to see
-  how I solved certain things in the creation
-  of this project to see if you find valuable
-  leads for the creation of your own.
-  
-  Mostly this file comes along with a project
-  that is for most part released under an
-  open source license and that means that if
-  you use that code with this file removed
-  from it, you can use it under that license.
-  Please check out the other files to find out
-  which license applies.
-  This file comes 'as-is' and in no possible
-  way the author can be held responsible of
-  any form of damages that may occur due to 
-  the usage of this file
-  
-  
- **********************************************
- 
-version: 17.03.19
-]]
--- File Generated: Sun 19 March 2017; 23:14:04
+-- File Generated: Fri 31 March 2017; 12:51:57
 
 
 local foe = {}
@@ -139,6 +103,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_INFERNO"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PERMANENCE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PROTECT"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_QUAKE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ROCK"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_SPEEDUP"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 0
@@ -205,6 +170,7 @@ local foe = {}
 	foe["RATE_ITM_STORMBOTTLE"] = 0
 	foe["RATE_ITM_TOTALEXHAUSTION"] = 0
 	foe["RATE_ITM_TRUMPCARD"] = 0
+	foe["RATE_ITM_UBERPOTION"] = 0
 	foe["RATE_ITM_VIRUSBOMB"] = 0
 	foe["RATE_ITM_VOICEHERB"] = 0
 	foe["RATE_ITM_VOLTABALL"] = 0
@@ -222,11 +188,20 @@ local foe = {}
 	foe["RATE_WAND_FROST"] = 0
 	foe["RATE_WAND_GAIA"] = 0
 	foe["RATE_WAND_HOLY"] = 0
+	foe["RATE_WAND_II_EVIL"] = 0
+	foe["RATE_WAND_II_GAIA"] = 0
+	foe["RATE_WAND_II_HURRICANE"] = 0
+	foe["RATE_WAND_II_KELVIN"] = 0
+	foe["RATE_WAND_II_SAINT"] = 0
+	foe["RATE_WAND_II_SPRINGTIJ"] = 0
+	foe["RATE_WAND_II_VOLCANOWAND"] = 0
+	foe["RATE_WAND_II_WATT"] = 0
 	foe["RATE_WAND_SPLASH"] = 0
 	foe["RATE_WAND_THUNDER"] = 0
 	foe["RATE_WAND_TRAINING"] = 0
 	foe["RATE_WAND_WIND"] = 0
 	foe["RATE_ZZKEY_FIRE"] = 0
+	foe["RATE_ZZKEY_GAIA"] = 0
 	foe["RATE_ZZKEY_KEYWATER"] = 0
 	foe["RATE_ZZKEY_WIND"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
@@ -298,6 +273,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_MARRILONA_INFERNO"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_PERMANENCE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_PROTECT"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_QUAKE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ROCK"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_SPEEDUP"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_SPLASH"] = "Random"
@@ -364,6 +340,7 @@ local foe = {}
 	foe["TARGET_ITM_STORMBOTTLE"] = "Random"
 	foe["TARGET_ITM_TOTALEXHAUSTION"] = "Random"
 	foe["TARGET_ITM_TRUMPCARD"] = "Random"
+	foe["TARGET_ITM_UBERPOTION"] = "Random"
 	foe["TARGET_ITM_VIRUSBOMB"] = "Random"
 	foe["TARGET_ITM_VOICEHERB"] = "Random"
 	foe["TARGET_ITM_VOLTABALL"] = "Random"
@@ -381,11 +358,20 @@ local foe = {}
 	foe["TARGET_WAND_FROST"] = "Random"
 	foe["TARGET_WAND_GAIA"] = "Random"
 	foe["TARGET_WAND_HOLY"] = "Random"
+	foe["TARGET_WAND_II_EVIL"] = "Random"
+	foe["TARGET_WAND_II_GAIA"] = "Random"
+	foe["TARGET_WAND_II_HURRICANE"] = "Random"
+	foe["TARGET_WAND_II_KELVIN"] = "Random"
+	foe["TARGET_WAND_II_SAINT"] = "Random"
+	foe["TARGET_WAND_II_SPRINGTIJ"] = "Random"
+	foe["TARGET_WAND_II_VOLCANOWAND"] = "Random"
+	foe["TARGET_WAND_II_WATT"] = "Random"
 	foe["TARGET_WAND_SPLASH"] = "Random"
 	foe["TARGET_WAND_THUNDER"] = "Random"
 	foe["TARGET_WAND_TRAINING"] = "Random"
 	foe["TARGET_WAND_WIND"] = "Random"
 	foe["TARGET_ZZKEY_FIRE"] = "Random"
+	foe["TARGET_ZZKEY_GAIA"] = "Random"
 	foe["TARGET_ZZKEY_KEYWATER"] = "Random"
 	foe["TARGET_ZZKEY_WIND"] = "Random"
 	foe["VocalTag"] = ""

@@ -1,40 +1,4 @@
---[[
-  ArcaneSlime.lua
-  Version: 17.03.18
-  Copyright (C) 2017 Jeroen Petrus Broks
-  
-  ===========================
-  This file is part of a project related to the Phantasar Chronicles or another
-  series or saga which is property of Jeroen P. Broks.
-  This means that it may contain references to a story-line plus characters
-  which are property of Jeroen Broks. These references may only be distributed
-  along with an unmodified version of the game. 
-  
-  As soon as you remove or replace ALL references to the storyline or character
-  references, or any termology specifically set up for the Phantasar universe,
-  or any other univers a story of Jeroen P. Broks is set up for,
-  the restrictions of this file are removed and will automatically become
-  zLib licensed (see below).
-  
-  Please note that doing so counts as a modification and must be marked as such
-  in accordance to the zLib license.
-  ===========================
-  zLib license terms:
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
-]]
--- File Generated: Sat 18 March 2017; 16:01:10
+-- File Generated: Fri 31 March 2017; 12:41:02
 
 
 local foe = {}
@@ -178,6 +142,8 @@ local foe = {}
 	foe["RATE_ABL_HERO_HANDOSTILLOR_PURIFY"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_RECOVER"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_RESURRECT"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_REVIVE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_SMITE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_STICKSWING"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_TREATMENT"] = 0
@@ -186,6 +152,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\52PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_BERSERK"] = 0
+	foe["RATE_ABL_HERO_JAKE_EARTHSLICE"] = 0
 	foe["RATE_ABL_HERO_JAKE_FLAMEBLADE"] = 0
 	foe["RATE_ABL_HERO_JAKE_HEALBLADE"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_FAIRY"] = 0
@@ -202,6 +169,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_INFERNO"] = 1
 	foe["RATE_ABL_HERO_MARRILONA_PERMANENCE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PROTECT"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_QUAKE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ROCK"] = 10
 	foe["RATE_ABL_HERO_MARRILONA_SPEEDUP"] = 5
 	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 10
@@ -268,6 +236,7 @@ local foe = {}
 	foe["RATE_ITM_STORMBOTTLE"] = 0
 	foe["RATE_ITM_TOTALEXHAUSTION"] = 0
 	foe["RATE_ITM_TRUMPCARD"] = 0
+	foe["RATE_ITM_UBERPOTION"] = 0
 	foe["RATE_ITM_VIRUSBOMB"] = 0
 	foe["RATE_ITM_VOICEHERB"] = 0
 	foe["RATE_ITM_VOLTABALL"] = 0
@@ -285,11 +254,20 @@ local foe = {}
 	foe["RATE_WAND_FROST"] = 0
 	foe["RATE_WAND_GAIA"] = 0
 	foe["RATE_WAND_HOLY"] = 0
+	foe["RATE_WAND_II_EVIL"] = 0
+	foe["RATE_WAND_II_GAIA"] = 0
+	foe["RATE_WAND_II_HURRICANE"] = 0
+	foe["RATE_WAND_II_KELVIN"] = 0
+	foe["RATE_WAND_II_SAINT"] = 0
+	foe["RATE_WAND_II_SPRINGTIJ"] = 0
+	foe["RATE_WAND_II_VOLCANOWAND"] = 0
+	foe["RATE_WAND_II_WATT"] = 0
 	foe["RATE_WAND_SPLASH"] = 0
 	foe["RATE_WAND_THUNDER"] = 0
 	foe["RATE_WAND_TRAINING"] = 0
 	foe["RATE_WAND_WIND"] = 0
 	foe["RATE_ZZKEY_FIRE"] = 0
+	foe["RATE_ZZKEY_GAIA"] = 0
 	foe["RATE_ZZKEY_KEYWATER"] = 0
 	foe["RATE_ZZKEY_WIND"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
@@ -334,6 +312,8 @@ local foe = {}
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_PURIFY"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_RECOVER"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_RESURRECT"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_REVIVE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_SMITE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_STICKSWING"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_TREATMENT"] = "Random"
@@ -342,6 +322,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_JAKE_\51PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\52PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_BERSERK"] = "Random"
+	foe["TARGET_ABL_HERO_JAKE_EARTHSLICE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_FLAMEBLADE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_HEALBLADE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_SHIFT_FAIRY"] = "Random"
@@ -358,6 +339,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_MARRILONA_INFERNO"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_PERMANENCE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_PROTECT"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_QUAKE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ROCK"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_SPEEDUP"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_SPLASH"] = "Random"
@@ -424,6 +406,7 @@ local foe = {}
 	foe["TARGET_ITM_STORMBOTTLE"] = "Random"
 	foe["TARGET_ITM_TOTALEXHAUSTION"] = "Random"
 	foe["TARGET_ITM_TRUMPCARD"] = "Random"
+	foe["TARGET_ITM_UBERPOTION"] = "Random"
 	foe["TARGET_ITM_VIRUSBOMB"] = "Random"
 	foe["TARGET_ITM_VOICEHERB"] = "Random"
 	foe["TARGET_ITM_VOLTABALL"] = "Random"
@@ -441,11 +424,20 @@ local foe = {}
 	foe["TARGET_WAND_FROST"] = "Random"
 	foe["TARGET_WAND_GAIA"] = "Random"
 	foe["TARGET_WAND_HOLY"] = "Random"
+	foe["TARGET_WAND_II_EVIL"] = "Random"
+	foe["TARGET_WAND_II_GAIA"] = "Random"
+	foe["TARGET_WAND_II_HURRICANE"] = "Random"
+	foe["TARGET_WAND_II_KELVIN"] = "Random"
+	foe["TARGET_WAND_II_SAINT"] = "Random"
+	foe["TARGET_WAND_II_SPRINGTIJ"] = "Random"
+	foe["TARGET_WAND_II_VOLCANOWAND"] = "Random"
+	foe["TARGET_WAND_II_WATT"] = "Random"
 	foe["TARGET_WAND_SPLASH"] = "Random"
 	foe["TARGET_WAND_THUNDER"] = "Random"
 	foe["TARGET_WAND_TRAINING"] = "Random"
 	foe["TARGET_WAND_WIND"] = "Random"
 	foe["TARGET_ZZKEY_FIRE"] = "Random"
+	foe["TARGET_ZZKEY_GAIA"] = "Random"
 	foe["TARGET_ZZKEY_KEYWATER"] = "Random"
 	foe["TARGET_ZZKEY_WIND"] = "Random"
 	foe["VocalTag"] = "ArcaneSlime"
