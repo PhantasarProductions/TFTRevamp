@@ -657,12 +657,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
@@ -1134,11 +1134,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Arena/MG.png
     1. Graphics: GFX/Combat/Arena/Magic.png
     1. Graphics: GFX/Combat/Arena/Mine.png
+    1. Graphics: GFX/Combat/Arena/SpirataEarth.png
     1. Graphics: GFX/Combat/Arena/SpirataFire.png
-    1. Graphics: GFX/Combat/Arena/SpirataFire.png.BK!
     1. Graphics: GFX/Combat/Arena/SpirataWater.png
     1. Graphics: GFX/Combat/Arena/SpirataWind.png
-    1. Graphics: GFX/Combat/Arena/SpirataWind.png.BK!
     1. Graphics: GFX/Combat/Arena/SpookyDung.png
     1. Graphics: GFX/Combat/Arena/SubRiver.png
     1. Graphics: GFX/Combat/Cards/Ability.png
