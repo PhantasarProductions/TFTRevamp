@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 17.04.01
+version: 17.04.02
 ]]
--- File Generated: Fri 31 March 2017; 12:52:10
+-- File Generated: Sun 02 April 2017; 13:19:03
 
 
 local foe = {}
@@ -129,7 +129,7 @@ local foe = {}
 	foe["STSTART_Sleep"] = false
 	foe["STSTART_Undead"] = false
 	foe["Desc"] = "Protector of the Earth Spirata"
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Terra\46png"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Boss\47Terra\46png"
 	foe["Item Drop \49"] = "ITM_AMBROSIA"
 	foe["Item Drop \50"] = "ITM_ANABOLINEA"
 	foe["Item Steal \49"] = "ITM_CURSEDSPORES"
