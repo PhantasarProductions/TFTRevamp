@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.27
+version: 17.04.02
 ]]
 SubFlow = {}
 
@@ -49,6 +49,21 @@ function sap_startfunction()
     MapText("PUZZLETUTORIAL")
 end
 
+function Boss()
+  ClearCombatData()
+  Schedule('MAP','ManaOrb')
+  Var.D("$COMBAT.FOE_1","Boss/Terra")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  Var.D("$COMBAT.MUSIC","Music/SpecialBoss/Summon the Rawk.ogg")
+  Var.D("$COMBAT.ARENA","spirataearth.png")
+  StartBoss("Protector of the Earth Spirata","Aer")  
+  Maps.PermaWrite("if Maps.Obj.Exists('PTE_GAIA)==1 then \n\tlocal e = Maps.Obj.Obj('PTE_GAIA')\n\tlocal es=Maps.Obj.Obj('EmblemSpot')\n\te.X=es.X\n\te.Y=es.Y\nend")  
+  local e = Maps.Obj.Obj('PTE_GAIA')
+  local es=Maps.Obj.Obj('EmblemSpot')
+  e.X=es.X
+  e.Y=es.Y
+  end
+
 function GALE_OnLoad()
    hsin = InitMoveTex({X= 1,Y=0,suffix='HSINUS.PNG'})
    vsin = InitMoveTex({X= 0,Y=1,suffix='VSINUS.PNG'})
@@ -59,3 +74,4 @@ end
 
 -- @USE /script/use/specific/plasmafloor.lua
 -- @USE /script/use/specific/arrowslide.lua
+
