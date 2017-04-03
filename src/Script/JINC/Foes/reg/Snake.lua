@@ -1,6 +1,6 @@
 --[[
   Snake.lua
-  Version: 17.03.29
+  Version: 17.04.03
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Wed 29 March 2017; 23:19:38
+-- File Generated: Mon 03 April 2017; 11:47:08
 
 
 local foe = {}
@@ -139,6 +139,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_INFERNO"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PERMANENCE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PROTECT"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_QUAKE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ROCK"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_SPEEDUP"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 0
@@ -308,6 +309,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_MARRILONA_INFERNO"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_PERMANENCE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_PROTECT"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_QUAKE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ROCK"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_SPEEDUP"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_SPLASH"] = "Random"

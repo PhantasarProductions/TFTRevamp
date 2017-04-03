@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 17.04.02
+version: 17.04.03
 ]]
--- File Generated: Sun 02 April 2017; 15:15:05
+-- File Generated: Mon 03 April 2017; 11:46:42
 
 
 local foe = {}
@@ -477,7 +477,7 @@ local foe = {}
 	foe["TARGET_ZZKEY_KEYWATER"] = "Random"
 	foe["TARGET_ZZKEY_WIND"] = "Random"
 	foe["VocalTag"] = "Terra"
-	foe["Boss"] = false
+	foe["Boss"] = true
 	foe["Oversoul"] = false
 	foe["Oversoul Drop \49"] = false
 	foe["Oversoul Drop \50"] = false

@@ -1,6 +1,6 @@
 --[[
   StoneGolem.lua
-  Version: 17.03.29
+  Version: 17.04.03
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Wed 29 March 2017; 23:19:39
+-- File Generated: Mon 03 April 2017; 11:47:06
 
 
 local foe = {}
@@ -187,6 +187,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_INFERNO"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PERMANENCE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PROTECT"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_QUAKE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ROCK"] = 10
 	foe["RATE_ABL_HERO_MARRILONA_SPEEDUP"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 0
@@ -356,6 +357,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_MARRILONA_INFERNO"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_PERMANENCE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_PROTECT"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_QUAKE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ROCK"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_SPEEDUP"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_SPLASH"] = "Random"
@@ -466,13 +468,13 @@ local foe = {}
 	foe["Oversoul Steal \51"] = false
 	foe["Cash"] = 5
 	foe["ER_Darkness"] = 111
-	foe["ER_Earth"] = -12345
+	foe["ER_Earth"] = 12345
 	foe["ER_Flame"] = 100
 	foe["ER_Frost"] = 100
-	foe["ER_Light"] = -75
+	foe["ER_Light"] = -175
 	foe["ER_Lightning"] = 100
 	foe["ER_Water"] = 100
-	foe["ER_Wind"] = -195
+	foe["ER_Wind"] = -295
 	foe["Rate Drop \49"] = 1
 	foe["Rate Drop \50"] = 25
 	foe["Rate Steal \49"] = 1
