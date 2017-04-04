@@ -363,6 +363,15 @@ end
 
 FManaOrbRespond.MARRILONA = FManaOrbRespond.JAKE
 
+function AllManaOrb()
+  local all=true
+  for ch in each({'Jake_Human','Marrilona'}) do
+      for i=2,5 do
+          all = all and RPG.pointsExists(ch,'SK_LVL_'..i) 
+      end
+  end  
+  if not all then CSay("Not yet all orbs found") else Award('MANA8') end        
+end
 
 function ManaOrb()
   FManaOrbDo="WHO"
@@ -374,4 +383,5 @@ function ManaOrb()
      ch,next = FManaOrbRespond[FManaOrbDo](answer,ch)
      FManaOrbDo = ch or FManaOrbDo 
   until next
+  AllManaOrb()
 end

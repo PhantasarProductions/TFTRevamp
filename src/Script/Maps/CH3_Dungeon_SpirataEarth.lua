@@ -62,7 +62,12 @@ function Boss()
   local es=Maps.Obj.Obj('EmblemSpot')
   e.X=es.X
   e.Y=es.Y
-  end
+end
+  
+function Spirata()
+   AllManaOrbs()
+   Sys.Error("Sorry, no more yet")
+end  
 
 function GALE_OnLoad()
    hsin = InitMoveTex({X= 1,Y=0,suffix='HSINUS.PNG'})
@@ -70,6 +75,7 @@ function GALE_OnLoad()
    arrowdir['#002']='East'
    arrowdir['#008']='South'
    arrowslide_onload(sap_startfunction)
+   ZA_Enter('Spirata_Zone',Spirata)
 end
 
 
