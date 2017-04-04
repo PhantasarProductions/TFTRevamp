@@ -1,6 +1,6 @@
 --[[
   ArrowSlide.lua
-  Version: 17.03.29
+  Version: 17.04.04
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -238,6 +238,7 @@ function Forfeit()
        Actors.Actor("PLAYER3").SetAlpha(1000)
        LAURA.FLOW("FIELD")
        MS.Destroy("CRACKPUZ")
+       return true
     end
 end
 
@@ -270,7 +271,8 @@ function Goal()
        Maps.ObjectList.KillByLabel("Puzzle",1)
        Maps.ReMap()
        LAURA.FLOW("FIELD")
-       MS.Destroy("CRACKPUZ")                      
+       MS.Destroy("CRACKPUZ")   
+       return true                   
 end
 
 function AutoScroll()
@@ -285,8 +287,7 @@ function MAIN_FLOW()
    Cls()
    MS.Run("FIELD","DrawScreen")
    MS.Run("MAP","MAP_FLOW")
-   Forfeit()
-   Goal()
+   local yeahyeah = Forfeit() or Goal() 
    BlockMoveExec()
    AutoScroll()
    Flip()
