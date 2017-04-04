@@ -265,6 +265,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CUREDISEASE.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_FIRSTAID.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_GOODMORNING.lua
+    1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_HASPARONVITALIZATION.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_HOLYSTRIKE.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_PRAY.lua
@@ -277,6 +278,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_STICKSWING.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_TREATMENT.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_VITALIZE.lua
+    1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_WHIZZY.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_2PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_3PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_4PS.lua
@@ -295,6 +297,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FIREBLAST.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FLAME.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HEAL.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HURRICANE.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ICEBLAST.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_INFERNO.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PERMANENCE.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PROTECT.lua
@@ -457,10 +461,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/WAND_FLAME.lua
     1. Script: Script/JINC/IA/WAND_FROST.lua
     1. Script: Script/JINC/IA/WAND_GAIA.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/JINC/IA/WAND_HOLY.lua
     1. Script: Script/JINC/IA/WAND_II_EVIL.lua
     1. Script: Script/JINC/IA/WAND_II_GAIA.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/JINC/IA/WAND_II_HURRICANE.lua
     1. Script: Script/JINC/IA/WAND_II_KELVIN.lua
     1. Script: Script/JINC/IA/WAND_II_SAINT.lua
@@ -474,30 +478,30 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ZZKEY_FIRE.lua
     1. Script: Script/JINC/IA/ZZKEY_GAIA.lua
     1. Script: Script/JINC/IA/ZZKEY_KEYWATER.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/JINC/IA/ZZKEY_WIND.lua
     1. Script: Script/JINC/Masters/Fandalora.lua
     1. Script: Script/JINC/Masters/Freya.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/JINC/Masters/Midas.lua
     1. Script: Script/JINC/Masters/Rubine.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
     1. Script: Script/JINC/Masters/Russell.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/JINC/PrologueChains/Dandor.lua
     1. Script: Script/JINC/PrologueChains/HandoStillor.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/PrologueChains/Jake.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
     1. Script: Script/JINC/PrologueChains/Marrilona.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/JINC/Shops/CLONE_Aelvindor.lua
     1. Script: Script/JINC/Shops/CLONE_Fred.lua
     1. Script: Script/JINC/Shops/ITEM_ALBERTA.lua
     1. Script: Script/JINC/Shops/ITEM_BELLATRIX.lua
     1. Script: Script/JINC/Shops/ITEM_ISKARDERIU.lua
     1. Script: Script/JINC/Shops/ITEM_KATINTA.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/Shops/ITEM_WANDA.lua
     1. Script: Script/JINC/Shops/WAND_MONIQUE.lua
     1. Script: Script/JINC/Shops/WAND_YLLABONJA.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/Shops/WEAPON_ERIC.lua
     1. Script: Script/JINC/Shops/WEAPON_GILDUROY.lua
     1. Script: Script/JINC/Shops/WEAPON_MICHIEL.lua
@@ -658,12 +662,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png

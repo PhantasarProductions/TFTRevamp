@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_HANDOSTILLOR_RESURRECT.lua
-  Version: 17.03.29
+  Version: 17.04.04
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -35,7 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
-	["ABL_APCost"] = 100,
+	["ABL_APCost"] = 300,
 	["ADDCARD_Action_Act"] = "Self",
 	["ADDCARD_Action_Interval"] = 5,
 	["ADDCARD_Char_Interval"] = 75,
@@ -62,7 +62,8 @@ ret = {
 	["Target"] = "1A",
 	["Title"] = "Resurrect",
 	["Type"] = "Ability",
-	["Voice"] = "Weniaria"}
+	["Voice"] = "Weniaria",
+	["rew_GainSkill2"] = 800}
 
 return ret
 

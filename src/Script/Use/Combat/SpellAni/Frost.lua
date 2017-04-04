@@ -1,6 +1,6 @@
 --[[
   Frost.lua
-  Version: 17.01.06
+  Version: 17.04.04
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -53,6 +53,23 @@ function SpellAni.Frost(ActG,ActT,TarG,TarT)
       Time.Sleep(25)
   end
 end
+
+function SpellAni.MultiFrost(ActG,ActT,TarG,TarT)
+  Image.LoadNew('ICE_CRYSTAL','GFX/Combat/SpellAni/Frost/Crystals.png')
+  Image.Hot('ICE_CRYSTAL',Image.Width('ICE_CRYSTAL')/2,Image.Height('ICE_CRYSTAL'))
+  for i=0,100 do
+    DrawScreen()
+    for idx,val in pairs(Fighters[TarG]) do
+      local x,y = FighterCoords(TarG,idx)
+      QScale(i)
+      Image.Show('ICE_CRYSTAL',x,y)
+      QScale()
+    end
+  Flip()
+  Time.Sleep(25)
+  end
+end
+
 
 
 -- @IF IGNORE

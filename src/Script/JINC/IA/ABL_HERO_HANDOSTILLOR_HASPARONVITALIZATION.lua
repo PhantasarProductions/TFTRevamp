@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  ITM_SALVE.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  ABL_HERO_HANDOSTILLOR_HASPARONVITALIZATION.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -35,15 +35,20 @@
 version: 17.04.04
 ]]
 ret = {
+	["ABL_APCost"] = 550,
 	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 15,
+	["ADDCARD_Action_Number"] = 20,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "A very ancient recipe for healing",
-	["Heal"] = 250,
+	["CureDisease"] = true,
+	["CurePoison"] = true,
+	["Desc"] = "Strong healing spell on the entire party",
+	["Heal"] = 275,
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
+	["Heal_Type"] = "StatPercent",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
@@ -52,14 +57,15 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 120,
 	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "Heal",
+	["SpellAni"] = "AllHeal",
 	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Salve",
-	["Type"] = "Item",
-	["Voice"] = "Heal"}
+	["Target"] = "AA",
+	["Title"] = "Hasparon's Vitalization",
+	["Type"] = "Ability",
+	["Voice"] = "Weniaria",
+	["rew_GainSkill1"] = 10,
+	["rew_GainSkill2"] = 150}
 
 return ret
 

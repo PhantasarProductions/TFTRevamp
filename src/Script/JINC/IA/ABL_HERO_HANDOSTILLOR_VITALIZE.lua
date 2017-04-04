@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.29
+version: 17.04.04
 ]]
 ret = {
 	["ABL_APCost"] = 150,
@@ -60,7 +60,8 @@ ret = {
 	["Title"] = "Vitalize",
 	["Type"] = "Ability",
 	["Voice"] = "Weniaria",
-	["rew_GainSkill1"] = 10}
+	["rew_GainSkill1"] = 10,
+	["rew_GainSkill2"] = 25}
 
 return ret
 

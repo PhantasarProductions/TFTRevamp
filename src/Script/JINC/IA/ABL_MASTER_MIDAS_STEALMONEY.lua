@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_MIDAS_STEALMONEY.lua
-  Version: 17.03.29
+  Version: 17.04.04
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
