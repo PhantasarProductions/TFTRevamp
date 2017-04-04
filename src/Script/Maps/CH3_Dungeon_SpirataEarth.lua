@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.02
+version: 17.04.04
 ]]
 SubFlow = {}
 
@@ -68,6 +68,7 @@ function GALE_OnLoad()
    hsin = InitMoveTex({X= 1,Y=0,suffix='HSINUS.PNG'})
    vsin = InitMoveTex({X= 0,Y=1,suffix='VSINUS.PNG'})
    arrowdir['#002']='East'
+   arrowdir['#008']='South'
    arrowslide_onload(sap_startfunction)
 end
 
