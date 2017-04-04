@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 17.03.27
+  Version: 17.04.04
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
