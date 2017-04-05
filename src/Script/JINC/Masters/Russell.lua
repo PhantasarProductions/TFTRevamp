@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.25
+version: 17.04.05
 ]]
 local RPG = RPGStat
 
@@ -77,7 +77,7 @@ function Russell.teach(ch) -- Should return true if master actually decides to t
     local rabl = false
     for truereq,abl in pairs(Russell.abl) do -- DEFINITELY NOT ipairs!!!!!
         local req = truereq*(skill-1)
-        if maylearn and RPG.Stat(ch,"RussellKillss")>=req and (not Done('&MASTER.Russell.'..ch.."."..abl)) then
+        if maylearn and RPG.Stat(ch,"RussellKills")>=req and (not Done('&MASTER.Russell.'..ch.."."..abl)) then
            Console.Write(RPG.Stat(ch,"RussellKills")..">="..req.." so let's teach!",180,255,0)
            maylearn=false
            rabl=abl
