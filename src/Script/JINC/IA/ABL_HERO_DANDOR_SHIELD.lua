@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  EQP_DANDOR_WP5.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  ABL_HERO_DANDOR_SHIELD.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -35,22 +35,34 @@
 version: 17.04.05
 ]]
 ret = {
+	["ABL_APCost"] = 18,
 	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 500,
+	["ADDCARD_Action_Number"] = 2,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Oh my!",
-	["EQP_STAT_Power"] = 20,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "Dandor",
+	["BUFF_Endurance"] = 150,
+	["BUFF_Evasion"] = 5,
+	["Desc"] = "Dandor Protect",
+	["Heal_StatPercent"] = "Intelligence",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 32000,
-	["ITM_Type"] = "Weapon",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Grand Axe",
-	["Type"] = "Item"}
+	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "AllHeal",
+	["Stance"] = "Cast",
+	["Target"] = "AA",
+	["Title"] = "Shield",
+	["Type"] = "Ability",
+	["Voice"] = "Protect",
+	["rew_GainSkill2"] = 15}
 
 return ret
 
