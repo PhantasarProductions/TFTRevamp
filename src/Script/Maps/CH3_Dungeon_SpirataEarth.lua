@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.04
+version: 17.04.05
 ]]
 SubFlow = {}
 
@@ -65,7 +65,9 @@ function Boss()
 end
   
 function Spirata()
-   AllManaOrbs()
+   AllManaOrb()
+   PartyPop('Spir','North')
+   MapText("SPIRATA_A")
    Sys.Error("Sorry, no more yet")
 end  
 
@@ -75,7 +77,9 @@ function GALE_OnLoad()
    arrowdir['#002']='East'
    arrowdir['#008']='South'
    arrowslide_onload(sap_startfunction)
-   ZA_Enter('Spirata_Zone',Spirata)
+   ZA_Enter('ZA_Spirata',Spirata)
+   ZA_Enter('Angevin',Music,'Hub/Angevin.ogg')
+   ZA_Leave('Angevin',Music,"Dungeon/Chanson d'eglise")
 end
 
 
