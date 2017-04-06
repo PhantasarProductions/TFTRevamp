@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.03
+version: 17.04.06
 ]]
 
 local fullversion = JCR6.Exists('ID/ID.Data.Full')==1
@@ -67,6 +67,8 @@ if fullversion then -- That's right Hando Stillor will not get his level #2 and 
                      }
 end
 
-if skill~=3 then r["3. Level 3"].abl_hero_handostillor_resurrect = { [2] = ({20,50})[skill]} end -- 3
+if r["3. Level 3"] then
+  if skill~=3 then r["3. Level 3"].abl_hero_handostillor_resurrect = { [2] = ({20,50})[skill]} end -- 3
+end  
              
 return r

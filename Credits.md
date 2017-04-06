@@ -664,12 +664,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
@@ -826,6 +826,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Data
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Objects
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Settings
+    1. Map Design: Kthura/CH3_Dungeon_MTPYRUS/Data
+    1. Map Design: Kthura/CH3_Dungeon_MTPYRUS/Objects
+    1. Map Design: Kthura/CH3_Dungeon_MTPYRUS/Settings
     1. Map Design: Kthura/CH3_Dungeon_Mine/Data
     1. Map Design: Kthura/CH3_Dungeon_Mine/Objects
     1. Map Design: Kthura/CH3_Dungeon_Mine/Settings
