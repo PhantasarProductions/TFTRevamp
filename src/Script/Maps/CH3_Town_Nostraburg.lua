@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.26
+version: 17.04.06
 ]]
 RAMATA = "&DONE.NOSTRABURG.RAMATA.WELCOME.TEXT"
 
@@ -94,6 +94,15 @@ function NPC_Krandar()
    Var.D("$WMCHAT","KRANDAR")
    return
   end 
+  if CVV("&SPIRATA.DANDOR") and (not CVV("&DONE.KRANDAR.SUMMONING")) then
+     Done("&DONE.KRANDAR.SUMMONING")
+     MapText("KRANDAR_SUMMONING_A")
+     Cls()
+     Flip()
+     Time.Sleep(2500)
+     MapText("KRANDAR_SUMMONING_B")
+     Sys.Error("That's all folks!")
+  end     
   MeesterKrandar()
 end        
 

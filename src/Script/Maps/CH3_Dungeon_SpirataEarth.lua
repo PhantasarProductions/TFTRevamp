@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.05
+version: 17.04.06
 ]]
 SubFlow = {}
 
@@ -65,10 +65,29 @@ function Boss()
 end
   
 function Spirata()
-   AllManaOrb()
-   PartyPop('Spir','North')
-   MapText("SPIRATA_A")
-   Sys.Error("Sorry, no more yet")
+    Maps.Obj.Kill('ZA_Spirata',1)
+    AllManaOrb()
+    PartyPop('Spir','North')
+    MapText("SPIRATA_A")
+    local spirscript = [[ -- Spirata Wall changes
+      local spirata = Maps.Obj.Obj('SpirataMuur')
+      spirata.AltBlend=0
+      spirata.TextureFile='GFX/Textures/Marble/Wall - N.png'
+      spirata.R=255
+      spirata.G=180
+      spirata.B=0
+      -- All done
+    ]]
+    Maps.PermaWrite(spirscript)
+    local spirscriptcompiled = loadstring(spirscript)
+    local ok,error = pcall(spirscriptcompiled)
+    if not ok then Sys.Error(error,'Note,This is from an attempt to remove the Spirata wall.') end
+    --Sys.Error("Sorry, no more yet")
+    MapText("SPIRATA_B")
+    Done('&SPIRATA.DANDOR')
+    Var.D('$WMCHAT','SPIRATAEARTH')
+    WorldMap('Kokonora')
+    
 end  
 
 function GALE_OnLoad()

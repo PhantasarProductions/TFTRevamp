@@ -282,6 +282,16 @@ Rec: CH3NOSTRABURG
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: CH3PYRUS
+	Dungeon = FALSE
+	Folder = Delisto
+	Kthura = CH3_Dungeon_MTPYRUS
+	Layer = #000
+	LocationName = Mt. Pyrus
+	LocationPrefix = 
+	Start = Start
+	UnlockedFromStart = FALSE
+
 Rec: CH3SPIRATAEARTH
 	Dungeon = TRUE
 	Folder = Kokonora
