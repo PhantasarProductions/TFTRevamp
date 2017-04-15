@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.06
+version: 17.04.15
 ]]
 RAMATA = "&DONE.NOSTRABURG.RAMATA.WELCOME.TEXT"
 
@@ -101,7 +101,18 @@ function NPC_Krandar()
      Flip()
      Time.Sleep(2500)
      MapText("KRANDAR_SUMMONING_B")
-     Sys.Error("That's all folks!")
+     LoadMap("CH3_Story_Dragon_Forest")
+     GoToLayer("summon","Start")
+     Actors.Actor("PLAYER").Visible=0
+     MapText("SUMMONING")
+     LoadMap("CH3_Town_Nostraburg")
+     GoToLayer("town","K_Jake")
+     PartyPop("K","North")
+     MapText("KRANDAR_SUMMONING_C")
+     WorldMap_Unlock("PYRUS")
+     Var.D("$WMCHAT","PREDRAGON")
+     -- Sys.Error("That's all folks!")
+     return
   end     
   MeesterKrandar()
 end        

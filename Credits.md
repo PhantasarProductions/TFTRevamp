@@ -94,6 +94,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Krandar/VeelTeGroot.png
     1. Graphics: GFX/BoxText/Portret/Marata/General.png
     1. Graphics: GFX/BigPic/Krandar.png
+    1. Graphics: GFX/BoxText/Portret/Chief Werrington/Angry.png
+    1. Graphics: GFX/BoxText/Portret/Chief Werrington/Chief.piko
+    1. Graphics: GFX/BoxText/Portret/Chief Werrington/General.png
+    1. Graphics: GFX/BoxText/Portret/Chief Werrington/Smile.png
     1. Graphics: GFX/BoxText/Portret/Fandalora/General.png
     1. Graphics: GFX/BoxText/Portret/Fandalora/NoEmo.png
     1. Graphics: GFX/BoxText/Portret/Harry/Angry.png
@@ -532,6 +536,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH3_Dungeon_KokonoraForest.lua
     1. Script: Script/Maps/CH3_Dungeon_Mine.lua
     1. Script: Script/Maps/CH3_Dungeon_SpirataEarth.lua
+    1. Script: Script/Maps/CH3_Story_Dragon_Forest.lua
     1. Script: Script/Maps/CH3_Town_Grombo.lua
     1. Script: Script/Maps/CH3_Town_Nostraburg.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
@@ -664,12 +669,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
@@ -753,6 +758,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Dwarves/Quendor.png
     1. Graphics: GFX/Actors/Single/Dwarves/Sandra.png
     1. Graphics: GFX/Actors/Single/Elves/GedrioFulla.png
+    1. Graphics: GFX/Actors/Single/Elves/GedrioFulla_BackSide.png
     1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.piko
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.png
@@ -835,6 +841,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH3_Dungeon_SpirataEarth/Data
     1. Map Design: Kthura/CH3_Dungeon_SpirataEarth/Objects
     1. Map Design: Kthura/CH3_Dungeon_SpirataEarth/Settings
+    1. Map Design: Kthura/CH3_Story_Dragon_Forest/Data
+    1. Map Design: Kthura/CH3_Story_Dragon_Forest/Objects
+    1. Map Design: Kthura/CH3_Story_Dragon_Forest/Settings
     1. Map Design: Kthura/CH3_Town_Grombo/Data
     1. Map Design: Kthura/CH3_Town_Grombo/Objects
     1. Map Design: Kthura/CH3_Town_Grombo/Settings
@@ -1116,22 +1125,20 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Fairies/FairyKid.png
     1. Graphics: GFX/Actors/Single/Fairies/Fandalora.piko
     1. Graphics: GFX/Actors/Single/Fairies/Fandalora.png
+    1. Graphics: GFX/Actors/Single/Fairies/Fandalora_BackSide.png
     1. Graphics: GFX/Actors/Single/Fairies/Freya.piko
     1. Graphics: GFX/Actors/Single/Fairies/Freya.png
     1. Graphics: GFX/Actors/Single/Fairies/Nostramantu.piko
     1. Graphics: GFX/Actors/Single/Fairies/Nostramantu.png
     1. Graphics: GFX/Actors/Single/Fairies/Yanee.png
     1. Graphics: GFX/Actors/Single/Humans/ChiefWerrington.png
+    1. Graphics: GFX/Actors/Single/Humans/ChiefWerrington_BackSide.png
     1. Graphics: GFX/Actors/Single/Humans/Harry.png
     1. Graphics: GFX/Actors/Single/Humans/Harry_BackSide.png
     1. Graphics: GFX/Actors/Single/Humans/Master John.png
     1. Graphics: GFX/Algemeen/Bushes.png
     1. Graphics: GFX/Algemeen/Needle.png
     1. Graphics: GFX/Bonus Art/Feenalaria's name written in Phantasar Script.png
-    1. Graphics: GFX/BoxText/Portret/Chief Werrington/Angry.png
-    1. Graphics: GFX/BoxText/Portret/Chief Werrington/Chief.png
-    1. Graphics: GFX/BoxText/Portret/Chief Werrington/General.png
-    1. Graphics: GFX/BoxText/Portret/Chief Werrington/Smile.png
     1. Graphics: GFX/BoxText/Portret/Melody/General.png
     1. Graphics: GFX/BoxText/Portret/Melody/Untitled.piko
     1. Graphics: GFX/Combat/Arena/Altar.png
@@ -1382,6 +1389,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_KOKONORAFOREST
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_MINE
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_SPIRATAEARTH
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_STORY_DRAGON_FOREST
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_NOSTRABURG
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
@@ -1422,6 +1430,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_KOKONORAFOREST
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_MINE
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_SPIRATAEARTH
+    1. Scenario: Languages/English/Scenario/MAPS/CH3_STORY_DRAGON_FOREST
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_NOSTRABURG
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
@@ -1762,18 +1771,37 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_72.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_73.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_4.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_1.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_10.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_11.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_12.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_13.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_5.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_14.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_15.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_16.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_17.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_2.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_6.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_3.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_4.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_7.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_5.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_6.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_7.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_8.ogg
+    1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_9.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_1.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_10.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_11.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_12.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_13.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_5.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_14.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_8.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_15.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_16.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_17.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_2.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_6.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_3.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_4.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_5.ogg
@@ -1782,15 +1810,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_8.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_9.ogg
     1. Audio: Vocals/Spirata/Dandor.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_7.ogg
-    1. Audio: Vocals/Spirata/HandoStillor.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_8.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_9.ogg
-    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/General/Prologues/Dandor_1.ogg
-    1. Audio: Vocals/Spirata/Marrilona.ogg
+    1. Audio: Vocals/Spirata/HandoStillor.ogg
     1. Audio: Vocals/General/Prologues/HandoStillor_1.ogg
+    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/General/Prologues/HandoStillor_2.ogg
+    1. Audio: Vocals/Spirata/Marrilona.ogg
     1. Audio: Vocals/General/Prologues/Jake_1.ogg
     1. Audio: Vocals/General/Prologues/Jake_2.ogg
     1. Audio: Vocals/General/Prologues/Marrilona_1.ogg

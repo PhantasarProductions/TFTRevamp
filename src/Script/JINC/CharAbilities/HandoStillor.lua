@@ -65,10 +65,10 @@ if fullversion then -- That's right Hando Stillor will not get his level #2 and 
                        abl_hero_handostillor_smite = {(skill^skill)+(2*skill)},                   -- 2
                        abl_hero_handostillor_whizzy = {[2]=50}
                      }
-end
 
-if r["3. Level 3"] then
+--if r["3. Level 3"] then
   if skill~=3 then r["3. Level 3"].abl_hero_handostillor_resurrect = { [2] = ({20,50})[skill]} end -- 3
-end  
+--end  
+end             
              
 return r

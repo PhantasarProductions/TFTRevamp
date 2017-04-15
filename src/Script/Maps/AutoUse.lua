@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 17.04.04
+  Version: 17.04.15
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -43,7 +43,7 @@ end
 
 function OriMapMusic()
    local mf = Maps.GetData("Music")
-   if not suffixed(upper(mf),".ogg") then mf = mf .. ".ogg" end
+   if not suffixed(lower(mf),".ogg") then mf = mf .. ".ogg" end
    Music(mf)
 end
 
