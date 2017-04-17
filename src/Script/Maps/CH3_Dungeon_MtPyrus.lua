@@ -43,6 +43,36 @@ function MAP_FLOW()
     --for e in each(effect) do for e1 in each(e) do FlowMoveTex(e1) end end
     for e in each(effect[Maps.LayerCodeName]) do FlowMoveTex(e) end
 end
+function EnterDungeonAndCloseTheDoorBehindYou()
+    local schuif = Maps.Obj.Obj("Schuif")
+    local doel   = Maps.Obj.Obj("SchuifEnter")
+    Actors.MoveToSpot("PLAYER","Disappear")
+    Actors.MoveToSpot("PLAYER1","Disappear")
+    Actors.MoveToSpot("PLAYER2","Disappear")
+    Actors.MoveToSpot("PLAYER3","Disappear")
+    local players = { Actors.Actor("PLAYER"),Actors.Actor("PLAYER1"),Actors.Actor("PLAYER2"),Actors.Actor("PLAYER3")}
+    repeat
+       Cls()
+       schuif.X = schuif.X - 1
+       DrawScreen()
+       Flip()       
+       for a in each(players) do
+           if a.Y<32 then a.Visible=0 end
+       end
+   until schuif.X==doel.X+32
+   Time.Sleep(1000)
+   Maps.Obj.Kill("NPC_Ramata",1)
+   GoToLayer("#002","Start")
+end
+
+function NPC_Ramata()
+   MapText("Ramata")
+end 
+
+function ZAStart()
+   PartyPop("S",North)
+   MapText("Start")
+end      
 
 function GALE_OnLoad()
      effect = SetupGreatMagic()
@@ -52,4 +82,6 @@ function GALE_OnLoad()
      Maps.Obj.Obj("Schuif").Y=Maps.Obj.Obj("Schuif"..SchuifX[CVV("&DONE.PYRUS.ENTER")]).Y 
      InitWalda('Pyrus')
      Maps.ReMap()
+     ZA_Enter('EnterCave',EnterDungeonAndCloseTheDoorBehindYou)
+     ZA_Enter('ZAStart',ZAStart)
 end     
