@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 17.02.18
+  Version: 17.04.16
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -304,3 +304,18 @@ function TAGGEDOBJECTS()
       if o.Tag~="" then CSay(o.Tag..": "..o.Kind.."  ("..o.X..","..o.Y..")") end
   end
 end      
+
+function LAYERS()
+   local l = mysplit(Maps.Layers(),";")
+   for cl in each(l) do CSay(cl) end   
+end
+
+function GOTOLAYER(lay,exit)
+   local letsgo
+   local l = mysplit(Maps.Layers(),";")
+   for checklay in each(l) do
+       letsgo = letsgo or checklay==lay
+   end
+   if not letsgo then Console.Write("? LAYER "..lay.." DOES NOT EXIST",255,0,0); return; end
+   GoToLayer(lay,exit or "Start")
+end

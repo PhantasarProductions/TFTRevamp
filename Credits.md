@@ -104,7 +104,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Harry/Furious.png
     1. Graphics: GFX/BoxText/Portret/Harry/General.png
     1. Graphics: GFX/BoxText/Portret/Harry/Harry.piko
-    1. Graphics: GFX/BoxText/Portret/Harry/Laugh.png
+    1. Graphics: GFX/BoxText/Portret/Harry/Smile.png
     1. Graphics: GFX/BoxText/Portret/Nostramantu/Angry.png
     1. Graphics: GFX/BoxText/Portret/Nostramantu/EvilLaugh.png
     1. Graphics: GFX/BoxText/Portret/Nostramantu/General.png
@@ -535,6 +535,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH3_Dungeon_Garden.lua
     1. Script: Script/Maps/CH3_Dungeon_KokonoraForest.lua
     1. Script: Script/Maps/CH3_Dungeon_Mine.lua
+    1. Script: Script/Maps/CH3_Dungeon_MtPyrus.lua
     1. Script: Script/Maps/CH3_Dungeon_SpirataEarth.lua
     1. Script: Script/Maps/CH3_Story_Dragon_Forest.lua
     1. Script: Script/Maps/CH3_Town_Grombo.lua
@@ -646,6 +647,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Linkers/WorldMap -- The great linker.lua
     1. Script: Script/Use/Scenario/Scenario.lua
     1. Script: Script/Use/Specific/EndOfPrologue.lua
+    1. Script: Script/Use/Specific/GreatMagicBack.lua
     1. Script: Script/Use/Specific/MoveTex.lua
     1. Script: Script/Use/Specific/PlasmaFloor.lua
     1. Script: Script/Use/Specific/Scroller.lua
@@ -1388,6 +1390,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_GARDEN
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_KOKONORAFOREST
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_MINE
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_MTPYRUS
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_SPIRATAEARTH
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_STORY_DRAGON_FOREST
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_GROMBO
@@ -1400,8 +1403,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_THEEND
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_TOWN_FRENDOR
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_TOWN_VANDAR
-    1. Scenario: Languages/Dutch/Scenario/TEST
     1. Scenario: Languages/Dutch/Scenario/WORLDMAP
+    1. Scenario: Languages/Dutch/Scenario.$$TEMP$$0$$
     1. Scenario: Languages/English/Scenario/COMBAT/LEARN
     1. Scenario: Languages/English/Scenario/GENERAL/BLUESEAL
     1. Scenario: Languages/English/Scenario/GENERAL/INN
@@ -1429,6 +1432,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_GARDEN
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_KOKONORAFOREST
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_MINE
+    1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_MTPYRUS
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_SPIRATAEARTH
     1. Scenario: Languages/English/Scenario/MAPS/CH3_STORY_DRAGON_FOREST
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_GROMBO
@@ -1441,8 +1445,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/PRO_THEEND
     1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_FRENDOR
     1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_VANDAR
-    1. Scenario: Languages/English/Scenario/TEST
     1. Scenario: Languages/English/Scenario/WORLDMAP
+    1. Scenario: Languages/English/Scenario.$$TEMP$$0$$
 - Kelly
     1. Graphics: GfX/cOMBAT/SpellAni/Death/Death.png
 - Kevin McLeod
@@ -1515,6 +1519,15 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/GobKing.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Gob.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/GobPriest.png
+    1. Graphics: GFX/Textures/Caves/Doorzichtig/E.png
+    1. Graphics: GFX/Textures/Caves/Doorzichtig/F.png
+    1. Graphics: GFX/Textures/Caves/Doorzichtig/N.png
+    1. Graphics: GFX/Textures/Caves/Doorzichtig/NE.png
+    1. Graphics: GFX/Textures/Caves/Doorzichtig/NW.png
+    1. Graphics: GFX/Textures/Caves/Doorzichtig/S.png
+    1. Graphics: GFX/Textures/Caves/Doorzichtig/SE.png
+    1. Graphics: GFX/Textures/Caves/Doorzichtig/SW.png
+    1. Graphics: GFX/Textures/Caves/Doorzichtig/W.png
     1. Graphics: GFX/Textures/Caves/Grey + Alpha/E.png
     1. Graphics: GFX/Textures/Caves/Grey + Alpha/N.png
     1. Graphics: GFX/Textures/Caves/Grey + Alpha/NE.png

@@ -283,7 +283,7 @@ Rec: CH3NOSTRABURG
 	UnlockedFromStart = FALSE
 
 Rec: CH3PYRUS
-	Dungeon = FALSE
+	Dungeon = TRUE
 	Folder = Delisto
 	Kthura = CH3_Dungeon_MTPYRUS
 	Layer = #000

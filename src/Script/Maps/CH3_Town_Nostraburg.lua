@@ -109,7 +109,7 @@ function NPC_Krandar()
      GoToLayer("town","K_Jake")
      PartyPop("K","North")
      MapText("KRANDAR_SUMMONING_C")
-     WorldMap_Unlock("PYRUS")
+     WorldMap_Unlock("CH3PYRUS")
      Var.D("$WMCHAT","PREDRAGON")
      -- Sys.Error("That's all folks!")
      return

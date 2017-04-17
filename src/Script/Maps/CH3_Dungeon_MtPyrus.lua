@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  Walda.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  CH3_Dungeon_MtPyrus.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -36,28 +36,20 @@ version: 17.04.17
 ]]
 
 
-function InitWalda(i)
-    if not CVVN("$WALDAFOUND") then Var.D("$WALDAFOUND",'return {}') end
-    local ffw = loadstring(CVV('$WALDAFOUND'))
-    FoundWalda = ffw() 
-    MapHide('Walda')
-    ZA_Enter("ShowWalda",Maps.ShowLabel ,"Walda")
-    ZA_Enter("HideWalda",Maps.HideLabels,"Walda")
-    WaldaIndex = i
+-- @USE /Script/Use/Specific/GreatMagicBack.lua
+-- @USE /Script/Use/Specific/Walda.lua
+
+function MAP_FLOW()
+    --for e in each(effect) do for e1 in each(e) do FlowMoveTex(e1) end end
+    for e in each(effect[Maps.LayerCodeName]) do FlowMoveTex(e) end
 end
 
-
-function NPC_Walda()
-    FoundWalda[WaldaIndex] = true
-    local found = 0
-    for k,v in pairs(FoundWalda) do
-        if v then
-           CSay("= Found: "..k)
-           found = found + 1
-        end
-    end
-    Var.D("$WALDAFOUND",serialize('local walda',FoundWalda).."\nreturn walda")
-    if found>=1 then Award('WALDA1') end
-    if found>=4 then Award('WALDA4') end
-    MapText('WALDA')
-end    
+function GALE_OnLoad()
+     effect = SetupGreatMagic()
+     local SchuifX = { [true]='Enter', [false]='Next' }
+     Maps.GoToLayer("#000")
+     Maps.Obj.Obj("Schuif").X=Maps.Obj.Obj("Schuif"..SchuifX[CVV("&DONE.PYRUS.ENTER")]).X + 32
+     Maps.Obj.Obj("Schuif").Y=Maps.Obj.Obj("Schuif"..SchuifX[CVV("&DONE.PYRUS.ENTER")]).Y 
+     InitWalda('Pyrus')
+     Maps.ReMap()
+end     

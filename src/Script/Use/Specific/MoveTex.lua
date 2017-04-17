@@ -1,6 +1,6 @@
 --[[
   MoveTex.lua
-  Version: 17.02.16
+  Version: 17.04.16
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -64,6 +64,9 @@ function FlowMoveTex(data)
    for obj in each (data.tiles) do
        obj.InsertX = obj.InsertX + data.movx
        obj.InsertY = obj.InsertY + data.movy       
-       if obj.InsertX<-data.Width then obj.InsertX = obj.InsertX+data.Width end
+       if obj.InsertX<-data.Width  then obj.InsertX = obj.InsertX+data.Width  end
+       if obj.InsertX> data.Width  then obj.InsertX = obj.InsertX-data.Width  end
+       if obj.InsertY<-data.Height then obj.InsertY = obj.InsertY+data.Height end
+       if obj.InsertY> data.Height then obj.InsertY = obj.InsertY-data.Height end
    end
 end
