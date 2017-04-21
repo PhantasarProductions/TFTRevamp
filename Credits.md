@@ -253,8 +253,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_FLAMESTRIKE.lua
     1. Script: Script/JINC/IA/ABL_FOE_GAZE.lua
     1. Script: Script/JINC/IA/ABL_FOE_HOLDPERSON.lua
+    1. Script: Script/JINC/IA/ABL_FOE_HORROR.lua
     1. Script: Script/JINC/IA/ABL_FOE_MERMAID_TEMPATION.lua
     1. Script: Script/JINC/IA/ABL_FOE_PARADIVE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_SETTHESTAGEONFIRE.lua
     1. Script: Script/JINC/IA/ABL_FOE_SHOCKINGSTORIES.lua
     1. Script: Script/JINC/IA/ABL_FOE_SICKSTORIES.lua
     1. Script: Script/JINC/IA/ABL_FOE_SMITE.lua
@@ -269,6 +271,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_VENOMBITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMSTAB.lua
     1. Script: Script/JINC/IA/ABL_FOE_VIRUSSTAB.lua
+    1. Script: Script/JINC/IA/ABL_FOE_WELCOMEINHELL.lua
+    1. Script: Script/JINC/IA/ABL_FOLLOWUP_FIKKIE.lua
     1. Script: Script/JINC/IA/ABL_GLOOM.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_AXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_BARRIER.lua
@@ -673,12 +677,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
