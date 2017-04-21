@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 17.01.17
+  Version: 17.04.21
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -166,7 +166,8 @@ function SetupInitialCards()
 end
 
 function CombatMusic()
-    if CVVN("$COMBAT.MUSIC")=="*NOCHANGE*" then return end
+    --CSay(CVV("$COMBAT.MUSIC"))
+    if Var.C("$COMBAT.MUSIC")=="*NOCHANGE*" or Var.C("$COMBAT.MUSIC")=="*NOCHANGE*.ogg" then return end
     PushMusic()
     if not CVVN("$COMBAT.MUSIC") then RandomEncounterTune() return end
     Music(Var.C("$COMBAT.MUSIC"))

@@ -34,7 +34,7 @@
  
 version: 17.04.21
 ]]
--- File Generated: Fri 21 April 2017; 16:20:24
+-- File Generated: Fri 21 April 2017; 22:37:06
 
 
 local foe = {}
@@ -213,7 +213,7 @@ local foe = {}
 	foe["STSTART_Sleep"] = false
 	foe["STSTART_Undead"] = false
 	foe["Desc"] = "These hot monks are dangerous\10and their only mission is to drag as\10many souls to Hell as they can\33"
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Reg\47Devil Monk From Hell"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Reg\47Devil Monk From Hell\47"
 	foe["Item Drop \49"] = "ITM_AMBROSIA"
 	foe["Item Drop \50"] = "ITM_INFERNOORB"
 	foe["Item Steal \49"] = "ITM_ANABOLINEA"
@@ -588,7 +588,7 @@ local foe = {}
 	foe["Oversoul Steal \49"] = false
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
-	foe["Cash"] = 0
+	foe["Cash"] = 666
 	foe["ER_Darkness"] = 150
 	foe["ER_Earth"] = 100
 	foe["ER_Flame"] = 8000

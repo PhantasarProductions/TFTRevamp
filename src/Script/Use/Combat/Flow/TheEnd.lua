@@ -1,6 +1,6 @@
 --[[
   TheEnd.lua
-  Version: 17.01.05
+  Version: 17.04.21
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -42,10 +42,12 @@ fflow = {}
 
 function f_vicinit()
    if musicavailable then
-      Music("Sys/Silence.ogg")
-      -- SFX("Music/Combat/Victory.ogg")
-      Audio.Load('Music/Combat/Victory.ogg','CVIC',1)
-      Audio.Play('CVIC','CVICC')
+      if not ( Var.C("$COMBAT.MUSIC")=="*NOCHANGE*" or Var.C("$COMBAT.MUSIC")=="*NOCHANGE*.ogg" ) then
+         Music("Sys/Silence.ogg")
+         -- SFX("Music/Combat/Victory.ogg")
+         Audio.Load('Music/Combat/Victory.ogg','CVIC',1)
+         Audio.Play('CVIC','CVICC')
+      end   
    end
    if LastAction and vocals then
       local stances = {LastAction}
@@ -73,7 +75,7 @@ function fflow.Victory()
       youwinvalue=100
       youwintimer = (youwintimer or 150) - 1
       if youwintimer<=0 and Audio.Playing('CVICC')==0 then
-         PullMusic()
+         if not ( Var.C("$COMBAT.MUSIC")=="*NOCHANGE*" or Var.C("$COMBAT.MUSIC")=="*NOCHANGE*.ogg" ) then PullMusic() end
          inc('%VICTORIES')
          MS.LoadNew("ACH","Script/Subs/Achievements.lua")
          MS.Run('ACH','AchByVictory')

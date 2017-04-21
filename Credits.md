@@ -213,6 +213,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Bat.lua
     1. Script: Script/JINC/Foes/reg/Boar.lua
     1. Script: Script/JINC/Foes/reg/Boekenworm.lua
+    1. Script: Script/JINC/Foes/reg/Devil Monk From Hell.lua
     1. Script: Script/JINC/Foes/reg/DragonKeeper.lua
     1. Script: Script/JINC/Foes/reg/FireHound.lua
     1. Script: Script/JINC/Foes/reg/Gob.lua
@@ -238,6 +239,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Snake.lua
     1. Script: Script/JINC/Foes/reg/StoneGolem.lua
     1. Script: Script/JINC/Foes/reg/Thief.lua
+    1. Script: Script/JINC/Foes/reg/VolcanoHound.lua
     1. Script: Script/JINC/Foes/reg/Wolf.lua
     1. Script: Script/JINC/Foes/reg/Zombie.lua
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
@@ -584,6 +586,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Available/Demo.lua
     1. Development documentation: Script/Use/Available/Readme.md
     1. Script: Script/Use/Combat/AltArena/AAA_Algemeen.lua
+    1. Script: Script/Use/Combat/AltArena/MountPyrus.lua
     1. Script: Script/Use/Combat/AltArena/PathOfMagic.lua
     1. Script: Script/Use/Combat/AltArena/Spirata.lua
     1. Script: Script/Use/Combat/AltArena/SpookyDung.lua
@@ -672,6 +675,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickImage.lua
     1. Script: Script/Libs/Console.lua
     1. Script: Script/Libs/jinclude.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/Libs/Debug.lua
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
@@ -683,7 +687,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/mysplit.lua
     1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
@@ -782,6 +785,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Humans/Russell.png
     1. Graphics: GFX/BoxText/Portret/Rosetta/General.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/MegaGhost.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Female1.piko
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Female1.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Female2.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Male.piko
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Male.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Male2.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/DragonKeeper/Female.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/DragonKeeper/Male.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/InvisibleMan.png
@@ -1162,7 +1171,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Arena/GreyDung.png
     1. Graphics: GFX/Combat/Arena/Hell.png
     1. Graphics: GFX/Combat/Arena/Library.png
-    1. Graphics: GFX/Combat/Arena/MG.png
+    1. Graphics: GFX/Combat/Arena/Pyrus.png
     1. Graphics: GFX/Combat/Arena/Magic.png
     1. Graphics: GFX/Combat/Arena/Mine.png
     1. Graphics: GFX/Combat/Arena/SpirataEarth.png
