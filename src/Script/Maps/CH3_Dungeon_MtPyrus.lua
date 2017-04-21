@@ -32,12 +32,13 @@
   
  **********************************************
  
-version: 17.04.17
+version: 17.04.20
 ]]
 
 
 -- @USE /Script/Use/Specific/GreatMagicBack.lua
 -- @USE /Script/Use/Specific/Walda.lua
+-- @USE /Script/Use/Specific/PicSlide.lua
 
 function MAP_FLOW()
     --for e in each(effect) do for e1 in each(e) do FlowMoveTex(e1) end end
@@ -63,6 +64,7 @@ function EnterDungeonAndCloseTheDoorBehindYou()
    Time.Sleep(1000)
    Maps.Obj.Kill("NPC_Ramata",1)
    GoToLayer("#002","Start")
+   Done("&DONE.PYRUS.ENTER")
 end
 
 function NPC_Ramata()
@@ -70,6 +72,7 @@ function NPC_Ramata()
 end 
 
 function ZAStart()
+   if Done("&DONE.PYRUS.WELCOME") then return end
    PartyPop("S",North)
    MapText("Start")
 end      
@@ -84,4 +87,7 @@ function GALE_OnLoad()
      Maps.ReMap()
      ZA_Enter('EnterCave',EnterDungeonAndCloseTheDoorBehindYou)
      ZA_Enter('ZAStart',ZAStart)
+     slide.Init()
+     ZA_Enter('Puzzle',slide.Start,'GFX/TEXTURES/MTPYRUSPUZZLE/VOLCANOSLIDE.PNG')
+     slide.Changes['#004'] = skill
 end     

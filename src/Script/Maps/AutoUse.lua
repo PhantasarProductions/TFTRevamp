@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 17.04.15
+  Version: 17.04.20
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -86,22 +86,22 @@ ZA = { Enter = {}, Leave = {}, Flow = {} }
 ZAChkEnter = {}
 ZAChkLeave = {}
 
-function ZA_SetAction(Z,A,F,P)
-table.insert(ZA[A],{Z = Z, F = F, P = P})
+function ZA_SetAction(Z,A,F,P,P2)
+table.insert(ZA[A],{Z = Z, F = F, P = P, P2=P2})
 end
 
-function ZA_Enter(Z,PF,P)
+function ZA_Enter(Z,PF,P,P2)
   local F = PF
   if F=="ALB_EXE" then F = ALB_EXE end
-  ZA_SetAction(Z,"Enter",F,P)
+  ZA_SetAction(Z,"Enter",F,P,P2)
 end
 
 function ZA_Leave(Z,F,P)
-ZA_SetAction(Z,"Leave",F,P)
+ZA_SetAction(Z,"Leave",F,P,P2)
 end
 
 function ZA_Flow(Z,F,P)
-ZA_SetAction(Z,"Flow",F)
+ZA_SetAction(Z,"Flow",F,P2)
 end
 
 
@@ -118,7 +118,7 @@ for ZK,ZZ in pairs(ZA.Enter) do
        b = Maps.Obj.Exists(ZZ.Z)==1 and Maps.ActorInZone(actor,ZZ.Z)==1
        if (not ZAChkEnter[ZZ.Z]) and b then 
           KillWalkArrival() 
-          ZZ.F(ZZ.P) 
+          ZZ.F(ZZ.P,ZZ.P2) 
           end
        ZAChkEnter[ZZ.Z] = b
        end 
@@ -326,6 +326,15 @@ function PartyPop(spot,wind,methode)
     CSay(serialize('partypop.guys',guys))
 end
 
+function PartyFreeze(spot,wind,methode)
+   if spot then PartyPop(spot,wind,method) end
+   MS.Run('FIELD','SetFollowTheLeader',"OFF")
+end
+   
+function PartyUnFreeze()
+  MS.Run('FIELD','SetFollowTheLeader','ON')
+end     
+
 
 FManaOrbRespond = { DONE = Nothing }
 
@@ -385,3 +394,5 @@ function ManaOrb()
   until next
   AllManaOrb()
 end
+
+ZA_Enter("UnFreeze",PartyUnFreeze)

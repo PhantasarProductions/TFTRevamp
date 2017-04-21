@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 17.03.25
+  Version: 17.04.20
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -857,6 +857,7 @@ FTL = { South = {0,-32},North={0,32},East={-32,0},West={32,0}}
 FTL_OldWind = {}
 
 function FollowTheLeader()
+   if FTL_Allowed=="OFF" then return end
    local myactors = { [0] = Actors.Actor('PLAYER') }
    if Maps.Obj.Exists("PLAYER1")==1 then myactors[#myactors+1] = Actors.Actor('PLAYER1') end
    if Maps.Obj.Exists("PLAYER2")==1 then myactors[#myactors+1] = Actors.Actor('PLAYER2') end
@@ -873,6 +874,10 @@ function FollowTheLeader()
        end   
    end
 end
+
+function SetFollowTheLeader(value)
+   FTL_Allowed=value
+end   
 
 function ShiftCheck()
     if joyhit('SELECT') or INP.KeyH(KEY_J)==1 then Shift() end

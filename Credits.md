@@ -138,6 +138,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/combat/fighters/foe/Reg/Hawk.png
 - Hung Kee Chan
     1. Music: Music/Special Boss/Juggernaut.ogg
+- J4p4n
+    1. Graphics: Textures/MtPyrusPuzzle/Volcano.piko
+    1. Graphics: Textures/MtPyrusPuzzle/Volcano.png
 - Jeroen P. Broks
     1. Game identification data: ID/ID.Vocal.Full
     1. Game identification data: ID/Identify
@@ -465,7 +468,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/WAND_DARK.lua
     1. Script: Script/JINC/IA/WAND_DOOM.lua
     1. Script: Script/JINC/IA/WAND_FLAME.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/JINC/IA/WAND_FROST.lua
     1. Script: Script/JINC/IA/WAND_GAIA.lua
     1. Script: Script/JINC/IA/WAND_HOLY.lua
@@ -481,17 +483,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/WAND_THUNDER.lua
     1. Script: Script/JINC/IA/WAND_TRAINING.lua
     1. Script: Script/JINC/IA/WAND_WIND.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/JINC/IA/ZZKEY_FIRE.lua
     1. Script: Script/JINC/IA/ZZKEY_GAIA.lua
     1. Script: Script/JINC/IA/ZZKEY_KEYWATER.lua
     1. Script: Script/JINC/IA/ZZKEY_WIND.lua
     1. Script: Script/JINC/Masters/Fandalora.lua
     1. Script: Script/JINC/Masters/Freya.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Script: Script/JINC/Masters/Midas.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
-    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/JINC/Masters/Rubine.lua
     1. Script: Script/JINC/Masters/Russell.lua
     1. Script: Script/JINC/PrologueChains/Dandor.lua
@@ -501,7 +499,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Shops/CLONE_Aelvindor.lua
     1. Script: Script/JINC/Shops/CLONE_Fred.lua
     1. Script: Script/JINC/Shops/ITEM_ALBERTA.lua
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/Shops/ITEM_BELLATRIX.lua
     1. Script: Script/JINC/Shops/ITEM_ISKARDERIU.lua
     1. Script: Script/JINC/Shops/ITEM_KATINTA.lua
@@ -594,6 +591,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/DestroyAllFoes.lua
     1. Script: Script/Use/Combat/Flow/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.lua
     1. Script: Script/Use/Combat/Flow/Execution.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/Use/Combat/Flow/FoeInput.lua
     1. Script: Script/Use/Combat/Flow/Idle.lua
     1. Script: Script/Use/Combat/Flow/PlayerInput.lua
@@ -605,12 +603,16 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
     1. Script: Script/Use/Combat/SpellAni/DarkVision.lua
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/Use/Combat/SpellAni/Frost.lua
     1. Script: Script/Use/Combat/SpellAni/Heal.lua
     1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
     1. Script: Script/Use/Combat/SpellAni/Quake.lua
     1. Script: Script/Use/Combat/SpellAni/Temptation.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
@@ -619,6 +621,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/SafeShot.lua
     1. Script: Script/Use/Combat/SpellScript/Spirata.lua
     1. Script: Script/Use/Combat/SpellScript/Steal.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/Use/Combat/SpellScript/Temptation.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
     1. Script: Script/Use/Combat/StatusChanges/Charm&Confusion.lua
@@ -649,6 +652,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Specific/EndOfPrologue.lua
     1. Script: Script/Use/Specific/GreatMagicBack.lua
     1. Script: Script/Use/Specific/MoveTex.lua
+    1. Script: Script/Use/Specific/PicSlide.lua
     1. Script: Script/Use/Specific/PlasmaFloor.lua
     1. Script: Script/Use/Specific/Scroller.lua
     1. Script: Script/Use/Specific/StepsPuzzle.lua
@@ -671,12 +675,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
     1. Graphics: gfx/Textures/Blops2/Blop1.png
@@ -1629,6 +1633,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/textures/objects/Houten Plank.png
 - Papapishu
     1. Graphics: gfx/combat/fighters/foe/reg/boar.png
+- Rambo Tribble
+    1. Graphics: GFX/Textures/MtPyrusPuzzle/VolcanoSlide.frames
+    1. Graphics: GFX/Textures/MtPyrusPuzzle/VolcanoSlide.piko
+    1. Graphics: GFX/Textures/MtPyrusPuzzle/VolcanoSlide.png
 - Ray Larabie
     1. Font: Fonts/Coolvetica.ttf
 - Solar Granulation
