@@ -1,6 +1,6 @@
 --[[
   EQP_DANDOR_CURSEDWP_HUNGERAXE.lua
-  Version: 17.04.05
+  Version: 17.04.21
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

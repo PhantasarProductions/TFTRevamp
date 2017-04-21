@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  ABL_HERO_HANDOSTILLOR_STICKSWING.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  ABL_FOE_SETTHESTAGEONFIRE.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -35,14 +35,17 @@
 version: 17.04.21
 ]]
 ret = {
-	["ABL_APCost"] = 45,
-	["ADDCARD_Action_Act"] = "Self",
-	["Attack"] = 120,
+	["ADDCARD_Action_Act"] = "ABL_FOLLOWUP_FIKKIE",
+	["ADDCARD_Action_Interval"] = 3,
+	["ADDCARD_Action_Number"] = 50,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack"] = 80,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Power",
+	["Attack_AllowCritical"] = true,
+	["Attack_AllowDodge"] = true,
+	["Attack_AttackStat"] = "Intelligence",
 	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "Attacks one enemy",
+	["Attack_Element"] = "Flame",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -54,12 +57,11 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "Inferno",
 	["Stance"] = "Cast",
-	["Target"] = "1F",
-	["Title"] = "Stick Swing",
-	["Type"] = "Ability",
-	["Voice"] = "Attack",
-	["rew_GainSkill1"] = 5}
+	["Target"] = "AF",
+	["Title"] = "!!SET THE STAGE ON FIRE!!",
+	["Type"] = "Ability"}
 
 return ret
 

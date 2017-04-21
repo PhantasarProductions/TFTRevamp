@@ -1,6 +1,6 @@
 --[[
   PicSlide.lua
-  Version: 17.04.20
+  Version: 17.04.21
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -64,6 +64,7 @@ slide = {
                           Done(slide.pzd())    
                           slide.PuzTiles=nil    
                           PartyUnFreeze()
+                          slide.PzIC = nil
                        end
                     end,
                     

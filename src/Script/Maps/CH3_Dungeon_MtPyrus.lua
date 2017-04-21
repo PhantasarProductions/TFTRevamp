@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.20
+version: 17.04.21
 ]]
 
 
@@ -89,5 +89,7 @@ function GALE_OnLoad()
      ZA_Enter('ZAStart',ZAStart)
      slide.Init()
      ZA_Enter('Puzzle',slide.Start,'GFX/TEXTURES/MTPYRUSPUZZLE/VOLCANOSLIDE.PNG')
+     ZA_Enter('Puzzle10',slide.Start,'GFX/TEXTURES/MTPYRUSPUZZLE/FEMALE DEVIL MONK FROM HELL.PNG')
      slide.Changes['#004'] = skill
+     slide.Changes['#010'] = skill ^ 2
 end     
