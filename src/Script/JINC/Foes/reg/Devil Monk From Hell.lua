@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 17.04.21
+version: 17.04.22
 ]]
--- File Generated: Fri 21 April 2017; 22:37:06
+-- File Generated: Sat 22 April 2017; 10:22:09
 
 
 local foe = {}
@@ -371,6 +371,8 @@ local foe = {}
 	foe["RATE_ITM_VOICEHERB"] = 0
 	foe["RATE_ITM_VOLTABALL"] = 0
 	foe["RATE_ITM_WATERBUBBLE"] = 0
+	foe["RATE_SILLY_ONE"] = 0
+	foe["RATE_SILLY_ONES"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_SPIRATATRANSFORM"] = 0
 	foe["RATE_SPIRATA_ATTACK_DANDOR"] = 0
@@ -551,6 +553,8 @@ local foe = {}
 	foe["TARGET_ITM_VOICEHERB"] = "Random"
 	foe["TARGET_ITM_VOLTABALL"] = "Random"
 	foe["TARGET_ITM_WATERBUBBLE"] = "Random"
+	foe["TARGET_SILLY_ONE"] = "Random"
+	foe["TARGET_SILLY_ONES"] = "Random"
 	foe["TARGET_SPECIAL_AXESMASH"] = "Random"
 	foe["TARGET_SPIRATATRANSFORM"] = "Random"
 	foe["TARGET_SPIRATA_ATTACK_DANDOR"] = "Random"

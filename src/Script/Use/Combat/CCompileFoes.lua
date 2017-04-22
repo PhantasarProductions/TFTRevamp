@@ -1,6 +1,6 @@
 --[[
   CCompileFoes.lua
-  Version: 17.01.17
+  Version: 17.04.22
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -113,6 +113,11 @@ function CompileFoe(tag,data,foefile,oversoul)
    if altcoords=='CENTER' then
       myfoe.x = math.floor(Center_X/2)
       myfoe.y = Center_Y+((Center_Y-100)/2)
+   elseif altcoords then
+      local ac = mysplit(altcoords)
+      myfoe.x = Sys.Val(ac[1])
+      myfoe.y = Sys.Val(ac[2])
+      -- Sys.Val will return 0 when the string value is not correct. tonumber() will return 'nil' in that case, and that will surely crash the game as a whole, so Sys.Val is the safer route here.   
    end    
    myfoe.boss = data.Boss
    -- Compile ability list
