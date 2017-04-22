@@ -201,6 +201,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/InvisibleDemon.lua
     1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
     1. Script: Script/JINC/Foes/Boss/Librarian.lua
+    1. Script: Script/JINC/Foes/Boss/MONK1.lua
+    1. Script: Script/JINC/Foes/Boss/MONK2.lua
+    1. Script: Script/JINC/Foes/Boss/MONK3.lua
+    1. Script: Script/JINC/Foes/Boss/MONK4.lua
     1. Script: Script/JINC/Foes/Boss/Mega Ghost.lua
     1. Script: Script/JINC/Foes/Boss/Russell.lua
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
@@ -659,6 +663,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Scenario/Scenario.lua
     1. Script: Script/Use/Specific/EndOfPrologue.lua
     1. Script: Script/Use/Specific/GreatMagicBack.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/Use/Specific/MoveTex.lua
     1. Script: Script/Use/Specific/PicSlide.lua
     1. Script: Script/Use/Specific/PlasmaFloor.lua
@@ -674,7 +679,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/bool2int.lua
     1. Script: Script/Libs/RPGSTAT_Iterator.lua
     1. Script: Script/Libs/CVV.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/Libs/LAURA II/Kthura.lua
     1. Script: Script/Libs/QuickImage.lua
     1. Script: Script/Libs/Console.lua
@@ -683,17 +688,16 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Effects/Darkness II.png
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
@@ -1486,6 +1490,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/SpecialBoss/Living Voyage.ogg
     1. Music: Music/Hub/Angevin.ogg
     1. Music: Music/SpecialBoss/Summon the Rawk.ogg
+    1. Music: Music/SpecialBoss/Volatile Reaction.ogg
     1. Music: Music/Town/Rite of Passage.ogg
     1. Music: Music/Scenario/We Got Trouble.ogg
     1. Music: Music/Town/Enchanted Valley.ogg

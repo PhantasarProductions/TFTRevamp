@@ -34,7 +34,7 @@
  
 version: 17.04.22
 ]]
--- File Generated: Sat 22 April 2017; 11:09:59
+-- File Generated: Sat 22 April 2017; 12:16:50
 
 
 local foe = {}
@@ -249,7 +249,7 @@ local foe = {}
 	foe["STSTART_Sleep"] = false
 	foe["STSTART_Undead"] = false
 	foe["Desc"] = "Nasty one\33"
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Boss\47MONK\50\46png"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Reg\47Devil Monk From Hell\47Male\46png"
 	foe["Item Drop \49"] = "ITM_AMBROSIA"
 	foe["Item Drop \50"] = "ITM_ANABOLINEA"
 	foe["Item Steal \49"] = "ITM_FLAMEORB"

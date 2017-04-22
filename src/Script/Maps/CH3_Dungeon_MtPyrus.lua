@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.21
+version: 17.04.22
 ]]
 
 
@@ -44,6 +44,7 @@ function MAP_FLOW()
     --for e in each(effect) do for e1 in each(e) do FlowMoveTex(e1) end end
     for e in each(effect[Maps.LayerCodeName]) do FlowMoveTex(e) end
 end
+
 function EnterDungeonAndCloseTheDoorBehindYou()
     local schuif = Maps.Obj.Obj("Schuif")
     local doel   = Maps.Obj.Obj("SchuifEnter")
@@ -77,6 +78,25 @@ function ZAStart()
    MapText("Start")
 end      
 
+function The4MonksFromHell()
+  ClearCombatData()
+  Var.D("$COMBAT.FOE_1","Boss/Beholder")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  local h = (SH/2)-180
+  local w = (SW/2)
+  for i=1,4 do
+    local x = w/i
+    local y = (SH/2)+(h/(5-i))
+    Var.D("$COMBAT.FOE_"..i,"Boss/MONK"..i)
+    Var.D("$COMBAT.POSFOE_"..i,x..","..y)
+    Maps.Obj.Kill('MONK'..i,1)
+  end  
+  Var.D("$COMBAT.MUSIC","SpecialBoss/Volatile Reaction.ogg")
+  Var.D("$COMBAT.ARENA","pyrus.png")
+  StartBoss("Helena, Eduard, Lucy and Leonnard","The 4 Monks From Hell")   
+  Maps.Obj.Kill("4MonksFromHell",1)
+end
+
 function GALE_OnLoad()
      effect = SetupGreatMagic()
      local SchuifX = { [true]='Enter', [false]='Next' }
@@ -92,4 +112,5 @@ function GALE_OnLoad()
      ZA_Enter('Puzzle10',slide.Start,'GFX/TEXTURES/MTPYRUSPUZZLE/FEMALE DEVIL MONK FROM HELL.PNG')
      slide.Changes['#004'] = skill
      slide.Changes['#010'] = skill ^ 2
+     ZA_Enter('4MonksFromHell',The4MonksFromHell)
 end     

@@ -34,7 +34,7 @@
  
 version: 17.04.22
 ]]
--- File Generated: Sat 22 April 2017; 11:15:26
+-- File Generated: Sat 22 April 2017; 12:17:01
 
 
 local foe = {}
@@ -531,7 +531,7 @@ local foe = {}
 	foe["STSTART_Sleep"] = false
 	foe["STSTART_Undead"] = false
 	foe["Desc"] = "She has the most HP of the \52 monks\46\10But does that also make her the strongest?"
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Boss\47MONK\49\46png"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Reg\47Devil Monk From Hell\47Female\49\46png"
 	foe["Item Drop \49"] = "ITM_AMBROSIA"
 	foe["Item Drop \50"] = "ITM_AMBROSIA"
 	foe["Item Steal \49"] = "ITM_AMBROSIA"
