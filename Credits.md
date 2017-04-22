@@ -135,6 +135,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Worldmap/back.png
     1. Graphics: gfx/Worldmap/rock001.jpg
     1. Graphics: gfx/textures/Lava/Lava.png
+    1. Graphics: gfx/textures/Random Shit/Hell.png
     1. Graphics: gfx/textures/Water/water.png
     1. Graphics: gfx/textures/wood/muur.png
     1. Graphics: gfx/textures/wood/vloer.png
@@ -716,6 +717,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/EarthPuzzle/cracked.piko
     1. Graphics: gfx/Textures/EarthPuzzle/cracked.png
     1. Graphics: gfx/Textures/EarthPuzzle/cracked.xcf
+    1. Graphics: gfx/Textures/HoleTexture/HoleTexture.png
     1. Graphics: gfx/Textures/Mine/Rails/EW.png
     1. Graphics: gfx/Textures/Mine/Rails/EW2.png
     1. Graphics: gfx/Textures/Mine/Rails/NE.PNG
