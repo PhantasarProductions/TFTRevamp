@@ -1,5 +1,5 @@
 --[[
-  ABL_FOE_ULTIMATESOULCRUSHER.lua
+  SILLY_ONES.lua
   Version: 17.04.22
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -42,8 +42,7 @@ ret = {
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["EffectScript"] = "MultiPointAlter",
-	["EffectScript_Arg"] = "HP 1;AP 0;SK_EXP_1 MAX;SK_EXP_2 MAX;SK_EXP_3 MAX;SK_EXP_4 MAX;SK_EXP_5 MAX",
+	["EffectScript"] = "HelpForSillyOnes",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -55,9 +54,10 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "AllHeal",
 	["Stance"] = "Cast",
 	["Target"] = "AF",
-	["Title"] = "Ultimate Soul Crusher",
+	["Title"] = "Alright you silly ones! I'll help you this time",
 	["Type"] = "Item"}
 
 return ret

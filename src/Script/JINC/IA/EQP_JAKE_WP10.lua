@@ -1,6 +1,6 @@
 --[[
   EQP_JAKE_WP10.lua
-  Version: 17.04.21
+  Version: 17.04.22
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

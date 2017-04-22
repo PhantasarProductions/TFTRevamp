@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_VENOMSTAB.lua
-  Version: 17.04.21
+  Version: 17.04.22
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
