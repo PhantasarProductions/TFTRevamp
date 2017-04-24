@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.22
+version: 17.04.24
 ]]
 
 
@@ -80,8 +80,8 @@ end
 
 function The4MonksFromHell()
   ClearCombatData()
-  Var.D("$COMBAT.FOE_1","Boss/Beholder")
-  Var.D("$COMBAT.POSFOE_1","CENTER")
+  --Var.D("$COMBAT.FOE_1","Boss/Beholder")
+  --Var.D("$COMBAT.POSFOE_1","CENTER")
   local h = (SH/2)-180
   local w = (SW/2)
   for i=1,4 do
@@ -96,6 +96,18 @@ function The4MonksFromHell()
   StartBoss("Helena, Eduard, Lucy and Leonnard","The 4 Monks From Hell")   
   Maps.Obj.Kill("4MonksFromHell",1)
 end
+
+
+function Crater()
+  ClearCombatData()
+  Var.D("$COMBAT.FOE_1","Boss/Black Dragon")
+  Var.D("$COMBAT.POSFOE_1","DRAGON")
+  Var.D("$COMBAT.MUSIC","SpecialBoss/Threat.ogg")
+  Var.D("$COMBAT.ARENA","pyrus.png")
+  StartBoss("Mindless destroyer of everything","The Black Dragon")   
+  --Maps.Obj.Kill("4MonksFromHell",1)
+end
+
 
 function GALE_OnLoad()
      effect = SetupGreatMagic()
@@ -113,4 +125,5 @@ function GALE_OnLoad()
      slide.Changes['#004'] = skill
      slide.Changes['#010'] = skill ^ 2
      ZA_Enter('4MonksFromHell',The4MonksFromHell)
+     ZA_Enter("Crater",Crater)
 end     

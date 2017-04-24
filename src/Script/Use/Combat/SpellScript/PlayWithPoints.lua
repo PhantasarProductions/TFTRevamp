@@ -1,6 +1,6 @@
 --[[
   PlayWithPoints.lua
-  Version: 17.03.18
+  Version: 17.04.24
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -90,6 +90,18 @@ function SpellScript.Resurrect(tartag,extag)
    charmsg(tartag,"RESURRECTION",0,255,0)
 end   
 
+function SpellScript.Gravity(tar,exe)
+   local procent
+   if prefixed(tar,"FOE_") then
+      procent = ({.75,.50,.25})[skill]
+   else 
+      procent = ({.25,.50,.75})[skill]
+   end   
+   hp = RPG.Points(tar,'HP')
+   dmg = math.floor(hp.Have*procent)
+   Hurt(tar,dmg)
+end
+   
 -- @IF INGORE
 return SpellScript 
 -- @FI

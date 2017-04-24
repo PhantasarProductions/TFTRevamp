@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.03.14
+  Version: 17.04.24
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -103,7 +103,10 @@ function PerformAction(act,group,i)
      if heal and heal>0 then
         if block then heal=0 end
         if hurt then RPG.Points(myfighter.tag,"HP").Inc(-heal) charmsg(myfighter.tag,heal,255,180,0)
-        elseif not AltHealing(group,i,heal) then RPG.Points(myfighter.tag,"HP").Inc(heal) charmsg(myfighter.tag,heal,0,255,0) end
+        elseif not AltHealing(group,i,heal) then 
+            if myfighter.tag=="Marrilona" and CVVN('%MARRILONA.HANDICAP') then inc('%MARRINONA',6-(skill*2)) end 
+            RPG.Points(myfighter.tag,"HP").Inc(heal) charmsg(myfighter.tag,heal,0,255,0)
+        end
         if RPG.Points(myfighter.tag,"HP").Have<=0 then 
            ClearTable(myfighter.statuschanges)
            myfighter.statuschanges.Death=StatusChanges.Death

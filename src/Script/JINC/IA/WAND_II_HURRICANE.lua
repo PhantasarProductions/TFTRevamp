@@ -1,6 +1,6 @@
 --[[
   WAND_II_HURRICANE.lua
-  Version: 17.04.22
+  Version: 17.04.24
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

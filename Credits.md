@@ -355,6 +355,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSELL_GENOCIDE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSELL_SAFESHOT.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSEL_DECAPITATE.lua
+    1. Script: Script/JINC/IA/ABL_SPECIAL_INSTABILITY.lua
     1. Script: Script/JINC/IA/AUTO_NOODHULP.lua
     1. Script: Script/JINC/IA/BERSERK_ATTACK.lua
     1. Script: Script/JINC/IA/EQP_ACC_TITANBELT.lua
@@ -628,6 +629,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
     1. Script: Script/Use/Combat/SpellScript/Alright you silly ones -- I will help you this time.lua
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
+    1. Script: Script/Use/Combat/SpellScript/Instability.lua
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
@@ -662,9 +664,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Linkers/ShowParty.lua
     1. Script: Script/Use/Linkers/WorldMap -- The great linker.lua
     1. Script: Script/Use/Scenario/Scenario.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/Use/Specific/EndOfPrologue.lua
     1. Script: Script/Use/Specific/GreatMagicBack.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Script: Script/Use/Specific/MoveTex.lua
     1. Script: Script/Use/Specific/PicSlide.lua
     1. Script: Script/Use/Specific/PlasmaFloor.lua
@@ -678,27 +680,27 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Append.lua
     1. Script: Script/Libs/Colors.lua
     1. Script: Script/Libs/bool2int.lua
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/Libs/RPGSTAT_Iterator.lua
     1. Script: Script/Libs/CVV.lua
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Script: Script/Libs/LAURA II/Kthura.lua
     1. Script: Script/Libs/QuickImage.lua
     1. Script: Script/Libs/Console.lua
     1. Script: Script/Libs/jinclude.lua
     1. Script: Script/Libs/Debug.lua
-    1. Script: Script/Libs/QuickJCR6.lua
-    1. Script: Script/Libs/Quick String Routines.lua
-    1. Script: Script/Libs/A few mathematical functions.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
+    1. Script: Script/Libs/QuickJCR6.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
+    1. Script: Script/Libs/Quick String Routines.lua
+    1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Effects/Darkness II.png
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
@@ -887,6 +889,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Sys/Silence.ogg
     1. Music: Music/Dungeon/JustASong.ogg
     1. Music: Music/Dungeon/Scary Song.ogg
+    1. Music: Music/SpecialBoss/Threat.ogg
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
