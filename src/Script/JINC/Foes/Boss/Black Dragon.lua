@@ -1,9 +1,9 @@
--- File Generated: Mon 24 April 2017; 12:27:20
+-- File Generated: Mon 24 April 2017; 12:44:19
 
 
 local foe = {}
 
-	foe["AI"] = "default"
+	foe["AI"] = "BlackDragon"
 	foe["NEWGAMEPLUS_AAA_ATTACK"] = true
 	foe["NEWGAMEPLUS_AAA_GUARD"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_CRUSH"] = true
