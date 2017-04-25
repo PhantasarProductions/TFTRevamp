@@ -41,7 +41,7 @@ local Jokers = {}
 
 function Jokers.Dragon()
     MapText("BDJ"..rand(1,5),'FLOW_COMBAT')
-    local dmg = rand(90000/skill,90000000/skill)
+    local dmg = rand(900000/skill,900000000/skill)
     Hurt("FOE_1",dmg)
     AddCard({group='Joker',joker='Dragon'},rand(10*skill,25*skill))
 end

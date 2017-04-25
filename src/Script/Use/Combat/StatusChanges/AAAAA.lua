@@ -1,6 +1,6 @@
 --[[
   AAAAA.lua
-  Version: 17.01.28
+  Version: 17.04.25
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -67,6 +67,7 @@ function SetStatus(ch,st,dontannounce)
        charmsg(ch,"! "..st.." !",StatusChanges[st].AnnR,StatusChanges[st].AnnG,StatusChanges[st].AnnB)
     end   
     CSay(ch.." now has the status: "..st)
+    if ch=="Marrilona" and CVVN("%HANDICAP.MARRILONA") and st~="Death" then inc('%HANDICAP.MARRILONA',12/skill) end
 end
 GiveStatus = SetStatus
 
