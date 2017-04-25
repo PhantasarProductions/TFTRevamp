@@ -1,6 +1,6 @@
 --[[
   DarkVision.lua
-  Version: 17.03.16
+  Version: 17.04.25
   Copyright (C) 2014, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -69,9 +69,9 @@ ShowDARKVISION()
 end
 
 function SpellAni.Death(G,T)
-local img = Image.Load('GFX/Combat/SpellAni/Death.png')
-ShowDARKVISION(img)
-Image.Free(img)
+  local img = Image.Load('GFX/Combat/SpellAni/Death/Death.png')
+  ShowDARKVISION(img)
+  Image.Free(img)
 end
 
 -- @IF IGNORE
