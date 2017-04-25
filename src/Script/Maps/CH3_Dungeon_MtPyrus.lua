@@ -100,6 +100,7 @@ end
 function StartBlackDragon()
     RPG.Points('FOE_1','HP').Minimum = 1
     MapText('BLACK_DRAGON','FLOW_COMBAT')
+    AddJoker('Dragon')
 end
 
 function Crater()

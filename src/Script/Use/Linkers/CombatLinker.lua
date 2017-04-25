@@ -1,7 +1,7 @@
 --[[
   CombatLinker.lua
-  Version: 16.10.13
-  Copyright (C) 2015, 2016 Jeroen Petrus Broks
+  Version: 17.04.25
+  Copyright (C) 2015, 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -122,4 +122,8 @@ function StartBoss(desc,boss)
      Flip()    
   until cont
   StartCombat()                                          
+end    
+
+AddJoker = AddJoker or function(joker,num)
+    MS.Run('COMBAT','AddJoker',joker..";"..(num or 30))
 end        

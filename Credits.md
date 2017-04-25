@@ -623,6 +623,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/FoeAI/BlackDragon.lua
     1. Script: Script/Use/Combat/FoeAI/Default.lua
     1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
+    1. Script: Script/Use/Combat/Jokers/AAA_Jokers.lua
+    1. Script: Script/Use/Combat/Jokers/Dragon.lua
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
     1. Script: Script/Use/Combat/SpellAni/DarkVision.lua
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
@@ -1257,6 +1259,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Cards/HERO_JAKE_FAIRY.png
     1. Graphics: GFX/Combat/Cards/HERO_JAKE_HUMAN.png
     1. Graphics: GFX/Combat/Cards/HERO_MARRILONA.png
+    1. Graphics: GFX/Combat/Cards/Joker.piko
+    1. Graphics: GFX/Combat/Cards/Joker.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/GhostPriest.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Harry.piko
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Harry.png

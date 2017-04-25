@@ -1,6 +1,6 @@
 --[[
   CDrawScreen.lua
-  Version: 17.01.13
+  Version: 17.04.25
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -41,9 +41,10 @@ function ShowCard(i,myx,myy)
        local show = "BACKSIDE"
        local data = Cards[i].data
        if data then
-          if data.nextact then show="Ability"           
-          elseif data.group=='Hero' then show="HERO_"..data.tag 
-          elseif data.group=="Foe"  then
+          if data.nextact then show="Ability"  
+          elseif data.group=="Joker" then show="JOKER"         
+          elseif data.group=='Hero'  then show="HERO_"..data.tag 
+          elseif data.group=="Foe"   then
              if RPG.Points(data.tag,'HP').Have>0 then 
                 show="FOE_"..(data.letter or 'UNKNOWN')                
                 if data.boss or fighterbytag[data.tag].boss then show="BOSS_"..(data.letter or 'UNKNOWN') end

@@ -1,7 +1,7 @@
 --[[
-  MapLinker.lua
+  AAA_Jokers.lua
   Version: 17.04.25
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,8 +34,10 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-MapText = MapText or function(ptag,flow)
-    local tag = ptag
-    if flow then tag = tag ..";"..flow end
-    MS.Run("MAP","MapText",tag)
-end    
+Jokers = {}
+
+
+function AddJoker(joker,num)
+   local d = { group='Joker', joker=joker, tag='Joker -- '..joker}
+   AddCard(d,tonumber(num) or 30)
+end   
