@@ -1,6 +1,6 @@
 --[[
   CCompileFoes.lua
-  Version: 17.04.22
+  Version: 17.04.25
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -113,6 +113,19 @@ function CompileFoe(tag,data,foefile,oversoul)
    if altcoords=='CENTER' then
       myfoe.x = math.floor(Center_X/2)
       myfoe.y = Center_Y+((Center_Y-100)/2)
+   elseif altcoords=="DRAGON" then
+      Image.Hot("FIGHT_"..tag.."FALSE",0,0) -- Hotspot bottom center
+      Image.Hot("FIGHT_"..tag.."TRUE" ,0,0) -- Hotspot bottom center
+      c_dragon = {
+           x = - Image.Width("FIGHT_"..tag.."TRUE"),
+           y = - Image.Height("FIGHT_"..tag.."TRUE"),
+           w =   Image.Width("FIGHT_"..tag.."TRUE"),
+           h =   Image.Height("FIGHT_"..tag.."TRUE")           
+      }
+      c_dragon.maxx = (SW/2)-c_dragon.w
+      c_dragon.maxy = (SH-180)-c_dragon.h
+      myfoe.x=c_dragon.x
+      myfoe.y=c_dragon.y   
    elseif altcoords then
       local ac = mysplit(altcoords)
       myfoe.x = Sys.Val(ac[1])

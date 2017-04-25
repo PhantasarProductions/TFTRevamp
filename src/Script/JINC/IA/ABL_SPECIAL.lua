@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  EQP_MARRILONA_AR3.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  ABL_SPECIAL.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -36,22 +36,25 @@ version: 17.04.25
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "It fits nicely",
-	["EQP_STAT_Endurance"] = 3,
-	["EQP_STAT_Intelligence"] = 3,
-	["EQP_STAT_Resistance"] = 9,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "Marrilona",
+	["EffectScript"] = "BDragonDefeated",
+	["Heal_StatPercent"] = "Intelligence",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 500,
-	["ITM_Type"] = "Armor",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Cotton Dress",
+	["ITM_Type"] = "Consumable",
+	["Stance"] = "Cast",
+	["Target"] = "1F",
+	["Title"] = "Losing Power",
 	["Type"] = "Item"}
 
 return ret

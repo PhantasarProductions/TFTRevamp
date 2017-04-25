@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.24
+version: 17.04.25
 ]]
 
 
@@ -97,9 +97,14 @@ function The4MonksFromHell()
   Maps.Obj.Kill("4MonksFromHell",1)
 end
 
+function StartBlackDragon()
+    RPG.Points('FOE_1','HP').Minimum = 1
+    MapText('BLACK_DRAGON','FLOW_COMBAT')
+end
 
 function Crater()
   ClearCombatData()
+  Var.D("$COMBAT.STARTEVENT","MAP,StartBlackDragon")
   Var.D("$COMBAT.FOE_1","Boss/Black Dragon")
   Var.D("$COMBAT.POSFOE_1","DRAGON")
   Var.D("$COMBAT.MUSIC","SpecialBoss/Threat.ogg")

@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_SPORES.lua
-  Version: 17.04.24
+  Version: 17.04.25
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

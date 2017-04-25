@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 17.02.23
+  Version: 17.04.25
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -81,6 +81,12 @@ function DrawFighter(g,i)
      end    
      if not altdraw then ({Foe=DrawFoe,Hero=DrawHero})[g](i) end -- Perhaps I need to do this otherwise, if there are serious performance issues.
      -- Show damage or other messages if any
+     local shdata = chdata
+     if c_dragon and prefixed(chdata.tag,"FOE_")then
+        shdata={}
+        shdata.x = SW/4
+        shdata.y = SH-(SH/3)
+     end 
      if array_charmessages and array_charmessages[chdata.tag] and array_charmessages[chdata.tag][1] then
         local acma = array_charmessages[chdata.tag]
         local acm=acma[1]
@@ -89,7 +95,7 @@ function DrawFighter(g,i)
         acm.fs = acm.fs or 1 -- fonts['CombatCharMessage'][2] * (acm.scale/100); fs = math.ceil(fs)
         --Image.ScalePC(acm.scale,acm.scale)
         Image.Font("fonts/"..fn,acm.fs) 
-        DarkText(acm.msg,chdata.x,chdata.y-30,2,1,acm.r,acm.g,acm.b)
+        DarkText(acm.msg,shdata.x,shdata.y-30,2,1,acm.r,acm.g,acm.b)
         -- Image.ScalePC(100,100)
         --if acm.scale<100 then 
         --   acm.scale = acm.scale + 1
@@ -112,18 +118,18 @@ function DrawFighter(g,i)
         local hp  = php.have
         local hpm = php.Maximum
         local bw  = Image.TextWidth(name)
-        local bx  = ({Foe=chdata.x,Hero=chdata.x-bw})[g] 
-        DarkText(name,chdata.x,chdata.y-25,align[g],1,col[g][1],col[g][2],col[g][3])
+        local bx  = ({Foe=shdata.x,Hero=shdata.x-bw})[g] 
+        DarkText(name,shdata.x,shdata.y-25,align[g],1,col[g][1],col[g][2],col[g][3])
         color(50,50,50)
         if skill~=3 then
-           Image.Rect(bx,chdata.y-25,bw,25)
+           Image.Rect(bx,shdata.y-25,bw,25)
            color(180,255,0)
             if skill==2 and (not bestiary[upper(chdata.fidtag)]) and prefixed(chdata.tag,'FOE_') then
-              DarkText('?',bx+(bw/2),chdata.y-12,2,2,rand(0,255),rand(0,255),rand(0,255))
+              DarkText('?',bx+(bw/2),shdata.y-12,2,2,rand(0,255),rand(0,255),rand(0,255))
             else
-              Image.Rect(bx,chdata.y-25,(hp/hpm)*bw,25)    
+              Image.Rect(bx,shdata.y-25,(hp/hpm)*bw,25)    
             end
-            local ty = chdata.y
+            local ty = shdata.y
             for st,_ in spairs(chdata.statuschanges or {}) do
                 if st~="Oversoul" then DarkText(st,bx,ty); ty=ty+25 end
             end           

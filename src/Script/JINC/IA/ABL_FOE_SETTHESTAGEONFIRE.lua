@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.24
+version: 17.04.25
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "ABL_FOLLOWUP_FIKKIE",
