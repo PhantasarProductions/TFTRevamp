@@ -9479,7 +9479,7 @@ Rec: ABL_MASTER_FANDALORA_DARKVISION
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = DarkVision
+	SpellAni = DARKVISION
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast

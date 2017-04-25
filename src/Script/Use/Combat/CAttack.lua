@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.26
+version: 17.04.25
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
