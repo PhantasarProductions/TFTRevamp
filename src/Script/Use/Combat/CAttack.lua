@@ -74,7 +74,10 @@ function Hurt(tag,damage,element)
       hp.Have = hp.Have - dmg -- Yeah that even works for absorb, as a negative value is then in dmg and two negatives make one positive.
       CSay(tag.." has "..hp.Have.." HP left")
       RPG.Points(tag,'HP') -- Any minimums and maximums are now taken in order automatically.
-      if hp.Have<=0 then SetStatus(tag,'Death',true) end 
+      if hp.Have<=0 then SetStatus(tag,'Death',true)
+      elseif tag=="Marrilona" and CVVN("%HANDICAP.MARRILONA") then
+             inc('%HANDICAP.MARRILONA',math.ceil(dmg/skill)) 
+      end 
       CSay(sval(tag).." suffered "..dmg.." damage")
       if (not prefixed(tag,"FOE")) and ((not VicQ) or upper(VicQ)=="PERFECT") then VicQ="General" end      
       return dmg            

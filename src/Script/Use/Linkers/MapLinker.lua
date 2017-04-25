@@ -34,6 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
 MapText = MapText or function(ptag,flow)
     local tag = ptag
     if flow then tag = tag ..";"..flow end
