@@ -255,7 +255,7 @@ Rec: CH3KOKOFORESTSTRAND
 Rec: CH3MINE
 	Dungeon = TRUE
 	Folder = Delisto
-	Kthura = 
+	Kthura = CH3_Dungeon_Mine
 	Layer = #001
 	LocationName = Abandoned Mine
 	LocationPrefix = The

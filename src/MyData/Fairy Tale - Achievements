@@ -377,6 +377,18 @@ Rec: SECRETDUNGEON_DRAGON
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: SECRETDUNGEON_MAGICGARDEN
+	Description = Complete: The Magic Garden
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = There.... and back again
+	Type = Silver
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: SECRETDUNGEON_SUBRIVER
 	Description = Complete the secret dungeon: Subterranean River
 	Icon = *DEFAULT*

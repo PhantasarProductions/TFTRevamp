@@ -356,8 +356,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLEMERALD.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLTOPAZ.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
-    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/EQP_JEWEL_TOPAZ.lua
+    1. Graphics: gfx/Effects/Darkness II.png
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR1.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR10.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR2.lua
@@ -598,6 +598,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/Blops2/Blop3.png
     1. Graphics: gfx/Textures/Blops2/Blop4.png
     1. Graphics: gfx/Textures/Blops2/Blop5.png
+    1. Graphics: gfx/Textures/Mine/Rails/EW.png
+    1. Graphics: gfx/Textures/Mine/Rails/EW2.png
+    1. Graphics: gfx/Textures/Mine/Rails/NE.PNG
+    1. Graphics: gfx/Textures/Mine/Rails/NE2.PNG
+    1. Graphics: gfx/Textures/Mine/Rails/NW.png
+    1. Graphics: gfx/Textures/Mine/Rails/NW2.png
+    1. Graphics: gfx/Textures/Mine/Rails/NZ.png
+    1. Graphics: gfx/Textures/Mine/Rails/NZ2.png
+    1. Graphics: gfx/Textures/Mine/Rails/SE.png
+    1. Graphics: gfx/Textures/Mine/Rails/SW.png
+    1. Graphics: gfx/Textures/Mine/Woodbars.png
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
     1. Graphics: gfx/Textures/Sinus/Dark Sinus/HSinus.png
@@ -693,6 +704,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Data
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Objects
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Settings
+    1. Map Design: Kthura/CH3_Dungeon_Mine/Data
+    1. Map Design: Kthura/CH3_Dungeon_Mine/Objects
+    1. Map Design: Kthura/CH3_Dungeon_Mine/Settings
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Music: Music/Sys/Silence.ogg
@@ -1307,6 +1321,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Human Village/brick fenceG.png
     1. Graphics: GFX/Textures/Kapot Mubilair/Bank.png
     1. Graphics: GFX/Textures/Kapot Mubilair/Hemelbed.png
+    1. Graphics: GFX/Textures/Mine/Cart.png
     1. Graphics: GFX/Textures/Road/Dead Grass.png
     1. Graphics: GFX/Textures/Road/Grass1.png
     1. Graphics: GFX/Textures/Road/Grass2.png
