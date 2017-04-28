@@ -700,12 +700,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -1844,24 +1844,31 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_72.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_73.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_4.ogg
+    1. Audio: Vocals/Maps/CH3_Hub_FrendorGrave/Harry_1.ogg
+    1. Audio: Vocals/Maps/CH3_Hub_FrendorGrave/Harry_2.ogg
+    1. Audio: Vocals/Maps/CH3_Hub_FrendorGrave/Harry_3.ogg
+    1. Audio: Vocals/Maps/CH3_Hub_FrendorGrave/Harry_4.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_5.ogg
+    1. Audio: Vocals/Maps/CH3_Hub_FrendorGrave/Harry_5.ogg
+    1. Audio: Vocals/Maps/CH3_Hub_FrendorGrave/Harry_6.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_1.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_10.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_11.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_12.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_13.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_5.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_6.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_14.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_15.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_16.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_17.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_7.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_2.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_6.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_3.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_4.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_7.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_5.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_6.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_7.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_8.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_8.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_9.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_1.ogg
@@ -1870,9 +1877,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_12.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_13.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_14.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_8.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_15.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_16.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_9.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_17.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_2.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_3.ogg
@@ -1883,14 +1890,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_8.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_9.ogg
     1. Audio: Vocals/Spirata/Dandor.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_9.ogg
     1. Audio: Vocals/General/Prologues/Dandor_1.ogg
     1. Audio: Vocals/Spirata/HandoStillor.ogg
     1. Audio: Vocals/General/Prologues/HandoStillor_1.ogg
-    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/General/Prologues/HandoStillor_2.ogg
-    1. Audio: Vocals/Spirata/Marrilona.ogg
+    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/General/Prologues/Jake_1.ogg
+    1. Audio: Vocals/Spirata/Marrilona.ogg
     1. Audio: Vocals/General/Prologues/Jake_2.ogg
     1. Audio: Vocals/General/Prologues/Marrilona_1.ogg
     1. Audio: Vocals/General/Prologues/Marrilona_2.ogg

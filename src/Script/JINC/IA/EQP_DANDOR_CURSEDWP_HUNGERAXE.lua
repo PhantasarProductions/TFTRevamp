@@ -1,6 +1,6 @@
 --[[
   EQP_DANDOR_CURSEDWP_HUNGERAXE.lua
-  Version: 17.04.27
+  Version: 17.04.28
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -64,7 +64,7 @@ ret = {
 	["ITM_Type"] = "Weapon",
 	["ITM_WeaponAbility"] = true,
 	["Rew_GainAP"] = 15,
-	["Stance"] = "Cast",
+	["Stance"] = "Attack",
 	["Target"] = "1F",
 	["Title"] = "Hungering Axe",
 	["Type"] = "Item",

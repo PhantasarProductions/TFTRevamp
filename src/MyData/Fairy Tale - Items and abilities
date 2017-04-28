@@ -11828,7 +11828,7 @@ Rec: EQP_DANDOR_CURSEDWP_HUNGERAXE
 	SpellAni = 
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
-	Stance = Cast
+	Stance = Attack
 	Target = 1F
 	Title = Hungering Axe
 	Type = Item

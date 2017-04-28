@@ -35,11 +35,22 @@
 version: 17.04.28
 ]]
 function Harry()
-   error("Nothing here yet!")
+    MapText('HARRY')
+    ClearCombatData()
+    Var.D("$COMBAT.FOE_1","Boss/Harry3")
+    Var.D("$COMBAT.POSFOE_1","CENTER")
+    Var.D("$COMBAT.MUSIC","Music/Special Boss/AnnoyingBoy.ogg")
+    Var.D("$COMBAT.ARENA","Forest.png")
+    StartBoss("Doesn't he ever give up?","Harry McDummy")      
+    Schedule("MAP","Harry_Post")
+end
+
+function Harry_Post()
+   error("Move along nothing to see here!")
 end
 
 function Event()
-   Maps.Obj.Kill("Event")
+   Maps.Obj.Kill("Event",1)
    PartyPop("Ev","North")
    MapText("Event")
    Award("SCEN_DRAGON")
