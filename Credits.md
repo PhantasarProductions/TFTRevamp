@@ -359,6 +359,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSELL_SAFESHOT.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSEL_DECAPITATE.lua
     1. Script: Script/JINC/IA/ABL_SPECIAL.lua
+    1. Script: Script/JINC/IA/ABL_SPECIAL_DRAGONDOWN.lua
     1. Script: Script/JINC/IA/ABL_SPECIAL_INSTABILITY.lua
     1. Script: Script/JINC/IA/AUTO_NOODHULP.lua
     1. Script: Script/JINC/IA/BERSERK_ATTACK.lua
@@ -636,6 +637,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
     1. Script: Script/Use/Combat/SpellScript/Alright you silly ones -- I will help you this time.lua
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
+    1. Script: Script/Use/Combat/SpellScript/DragonDown.lua
     1. Script: Script/Use/Combat/SpellScript/Instability.lua
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
@@ -799,6 +801,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.png
     1. Graphics: GFX/Actors/Single/Fairies/Feenalaria.piko
     1. Graphics: GFX/Actors/Single/Fairies/Feenalaria.png
+    1. Graphics: GFX/Actors/Single/Humans/Frendor.piko
+    1. Graphics: GFX/Actors/Single/Humans/Frendor.png
+    1. Graphics: GFX/Actors/Single/Humans/Frendor_Big.piko
+    1. Graphics: GFX/Actors/Single/Humans/Frendor_Big.png
     1. Graphics: GFX/Actors/Single/Humans/Russel.png
     1. Graphics: GFX/Actors/Single/Humans/Russell.png
     1. Graphics: GFX/BoxText/Portret/Rosetta/General.png
@@ -882,6 +888,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH3_Dungeon_SpirataEarth/Data
     1. Map Design: Kthura/CH3_Dungeon_SpirataEarth/Objects
     1. Map Design: Kthura/CH3_Dungeon_SpirataEarth/Settings
+    1. Map Design: Kthura/CH3_Hub_FrendorGrave/Data
+    1. Map Design: Kthura/CH3_Hub_FrendorGrave/Objects
+    1. Map Design: Kthura/CH3_Hub_FrendorGrave/Settings
     1. Map Design: Kthura/CH3_Story_Dragon_Forest/Data
     1. Map Design: Kthura/CH3_Story_Dragon_Forest/Objects
     1. Map Design: Kthura/CH3_Story_Dragon_Forest/Settings
@@ -1041,6 +1050,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/General Shapes/Square.png
     1. Graphics: GFX/Textures/General Shapes/VLNW_Triangle.png
     1. Graphics: GFX/Textures/General Shapes/VLSW_Triangle.png
+    1. Graphics: GFX/Textures/Graf/Grafsteen.png
     1. Graphics: GFX/Textures/Kast/Pottenkast.png
     1. Graphics: GFX/Textures/Marble/Deur.png
     1. Graphics: GFX/Textures/Muur Toorts/Brandend.frames
@@ -2050,6 +2060,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Special Boss/PlayTillDeath_(Nostramantu).ogg
     1. Music: Music/Town/Funky Fairy.ogg
 - Wicky77
+    1. Music: Music/Hub/The Sad Fate.ogg
     1. Music: Music/Town/Happy.ogg
     1. Music: Music/Town/IrishFishermen.ogg
     1. Music: Music/Combat/Victory.ogg

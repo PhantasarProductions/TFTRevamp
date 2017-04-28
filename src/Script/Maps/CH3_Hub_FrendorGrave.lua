@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  EQP_JAKE_AR1.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  CH3_Hub_FrendorGrave.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -34,25 +34,11 @@
  
 version: 17.04.27
 ]]
-ret = {
-	["ADDCARD_Action_Act"] = "Self",
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
-	["Attack_Element"] = "None",
-	["Desc"] = "A good armor for a beginning warrior",
-	["EQP_STAT_Endurance"] = 2,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "Jake",
-	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 100,
-	["ITM_Type"] = "Armor",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Leather Armor",
-	["Type"] = "Item"}
+function Harry()
+   error("Nothing here yet!")
+end
 
-return ret
 
--- This file is an automatically generated file!
-
+function GALE_OnLoad()
+    ZA_Enter('Harry',Harry)
+end       

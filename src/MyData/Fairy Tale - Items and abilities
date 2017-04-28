@@ -11233,7 +11233,7 @@ Rec: ABL_MASTER_RUSSELL_SAFESHOT
 	rew_GainSkill4 = 0
 	rew_GainSkill5 = 0
 
-Rec: ABL_SPECIAL
+Rec: ABL_SPECIAL_DRAGONDOWN
 	ABL_APCost = 0
 	ABL_HPCost = 0
 	ADDCARD_Action_Act = Self
