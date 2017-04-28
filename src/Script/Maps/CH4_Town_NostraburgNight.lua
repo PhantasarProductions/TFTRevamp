@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  Jake_Human.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  CH4_Town_NostraburgNight.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -34,19 +34,4 @@
  
 version: 17.04.28
 ]]
-
-local fullversion = JCR6.Exists('ID/ID.Data.Full')==1
-local skill = Sys.Val(Var.C("%SKILL"))
-
-local r = {
-                 ["1. Sword"]  = {abl_hero_jake_2ps = {5},abl_hero_jake_3ps={20},abl_hero_jake_4ps={40},abl_hero_jake_berserk={10,5},ABL_HERO_JAKE_SHIFT_FAIRY={[2]=99,[3]=99,[4]=99,[5]=99}},
-                 ["2. Hybrid"] = {abl_hero_jake_healbalde = {[1]=30,[4]=15,[5]=15},abl_foe_paradive={15,10,10},abl_hero_jake_flameblade={8,2*skill},
-                                  abl_hero_jake_earthslice = {[1]=10+(skill^2),[5]=skill*15}}
-
-
-          }
-          
-if not fullversion then r["1. Sword"].abl_hero_jake_berserk=nil end
-          
-return r
 

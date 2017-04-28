@@ -34,7 +34,7 @@
  
 version: 17.04.28
 ]]
--- File Generated: Fri 28 April 2017; 18:00:38
+-- File Generated: Fri 28 April 2017; 20:54:00
 
 
 local foe = {}
@@ -490,7 +490,7 @@ local foe = {}
 	foe["TARGET_ZZKEY_GAIA"] = "Random"
 	foe["TARGET_ZZKEY_KEYWATER"] = "Random"
 	foe["TARGET_ZZKEY_WIND"] = "Random"
-	foe["VocalTag"] = "Harry\51"
+	foe["VocalTag"] = "Harry"
 	foe["Boss"] = false
 	foe["Oversoul"] = false
 	foe["Oversoul Drop \49"] = false

@@ -35,6 +35,7 @@
 version: 17.04.28
 ]]
 function Harry()
+    PartyPop("H")
     MapText('HARRY')
     ClearCombatData()
     Var.D("$COMBAT.FOE_1","Boss/Harry3")
@@ -46,7 +47,20 @@ function Harry()
 end
 
 function Harry_Post()
-   error("Move along nothing to see here!")
+   Award('CHAPTER3')
+   local chief = Maps.Obj.Obj("NPC_MT_Chief")
+   local chiefspot = Maps.Obj.Obj('NewChief')
+   chief.TextureFile = "GFX/ACTORS/SINGLE/HUMANS/CHIEFWERRINGTON_BACKSIDE.PNG"
+   chief.x = chiefspot.x
+   chief.y = chiefspot.y
+   MapText('HARRY_POST')
+   Party("Marrilona")
+   LoadMap('CH4_Town_NostraburgNight')
+   GoToLayer('town','exit_krandar')
+   Chapter('GFX/Chapters/4.png')
+   MapText("START")
+   Var.D('$VANDAR.STATUS',"All cleared now")
+   --error("Move along nothing to see here!")
 end
 
 function Event()

@@ -200,6 +200,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
     1. Script: Script/JINC/Foes/Boss/GobKing.lua
     1. Script: Script/JINC/Foes/Boss/Harry1.lua
+    1. Script: Script/JINC/Foes/Boss/Harry3.lua
     1. Script: Script/JINC/Foes/Boss/Ignis.lua
     1. Script: Script/JINC/Foes/Boss/InvisibleDemon.lua
     1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
@@ -561,6 +562,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH3_Story_Dragon_Forest.lua
     1. Script: Script/Maps/CH3_Town_Grombo.lua
     1. Script: Script/Maps/CH3_Town_Nostraburg.lua
+    1. Script: Script/Maps/CH4_Town_NostraburgNight.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
     1. Script: Script/Maps/PRO_DUNGEON_Magic.lua
     1. Script: Script/Maps/PRO_DUNGEON_Tomb.lua
@@ -700,12 +702,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -901,6 +903,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH3_Town_Nostraburg/Data
     1. Map Design: Kthura/CH3_Town_Nostraburg/Objects
     1. Map Design: Kthura/CH3_Town_Nostraburg/Settings
+    1. Map Design: Kthura/CH4_Town_NostraburgNight/Data
+    1. Map Design: Kthura/CH4_Town_NostraburgNight/Objects
+    1. Map Design: Kthura/CH4_Town_NostraburgNight/Settings
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Music: Music/Sys/Silence.ogg
@@ -1449,6 +1454,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_STORY_DRAGON_FOREST
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_NOSTRABURG
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_MAGIC
@@ -1492,6 +1498,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH3_STORY_DRAGON_FOREST
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_NOSTRABURG
+    1. Scenario: Languages/English/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_MAGIC
@@ -1518,6 +1525,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Hub/Angevin.ogg
     1. Music: Music/SpecialBoss/Summon the Rawk.ogg
     1. Music: Music/SpecialBoss/Volatile Reaction.ogg
+    1. Music: Music/Town/Night on the Docks - Sax.ogg
     1. Music: Music/Town/Rite of Passage.ogg
     1. Music: Music/Scenario/We Got Trouble.ogg
     1. Music: Music/Town/Enchanted Valley.ogg
@@ -2070,10 +2078,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Town/Funky Fairy.ogg
 - Wicky77
     1. Music: Music/Hub/The Sad Fate.ogg
-    1. Music: Music/Town/Happy.ogg
-    1. Music: Music/Town/IrishFishermen.ogg
     1. Music: Music/Combat/Victory.ogg
     1. Music: Music/Dungeon/Beethoven.ogg
+    1. Music: Music/Town/Happy.ogg
+    1. Music: Music/Town/IrishFishermen.ogg
     1. Music: Music/Dungeon/Chanson d'eglise.ogg
     1. Music: Music/Dungeon/D'Amour.ogg
     1. Music: Music/Dungeon/WinterBreeze.ogg
