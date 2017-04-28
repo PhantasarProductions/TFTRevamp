@@ -293,6 +293,18 @@ Rec: SCEN_CH2_ELVES
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: SCEN_DRAGON
+	Description = Defeat the Black dragon
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Achieved
+	Title = Breath of Fire
+	Type = Platinum
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: SCEN_LOVE
 	Description = Jake and Marrilona met each other and fell in love
 	Icon = *DEFAULT*

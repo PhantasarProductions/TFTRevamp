@@ -232,6 +232,16 @@ Rec: CH2WINDSPIRATA
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: CH3FRENDORGRAVE
+	Dungeon = FALSE
+	Folder = Delisto
+	Kthura = CH3_Hub_FrendorGrave
+	Layer = #001
+	LocationName = Frendor's Grave
+	LocationPrefix = 
+	Start = Graf
+	UnlockedFromStart = FALSE
+
 Rec: CH3GROMBO
 	Dungeon = FALSE
 	Folder = Delisto

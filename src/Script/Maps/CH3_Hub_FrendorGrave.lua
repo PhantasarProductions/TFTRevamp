@@ -32,13 +32,22 @@
   
  **********************************************
  
-version: 17.04.27
+version: 17.04.28
 ]]
 function Harry()
    error("Nothing here yet!")
 end
 
+function Event()
+   Maps.Obj.Kill("Event")
+   PartyPop("Ev","North")
+   MapText("Event")
+   Award("SCEN_DRAGON")
+   WorldMap_Unlock("CH3FRENDORGRAVE") 
+end      
+
 
 function GALE_OnLoad()
     ZA_Enter('Harry',Harry)
+    ZA_Enter("Event",Event)
 end       

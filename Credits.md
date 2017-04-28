@@ -557,6 +557,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH3_Dungeon_Mine.lua
     1. Script: Script/Maps/CH3_Dungeon_MtPyrus.lua
     1. Script: Script/Maps/CH3_Dungeon_SpirataEarth.lua
+    1. Script: Script/Maps/CH3_Hub_FrendorGrave.lua
     1. Script: Script/Maps/CH3_Story_Dragon_Forest.lua
     1. Script: Script/Maps/CH3_Town_Grombo.lua
     1. Script: Script/Maps/CH3_Town_Nostraburg.lua
@@ -699,12 +700,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -1444,6 +1445,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_MINE
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_MTPYRUS
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_SPIRATAEARTH
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_HUB_FRENDORGRAVE
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_STORY_DRAGON_FOREST
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_NOSTRABURG
@@ -1486,6 +1488,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_MINE
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_MTPYRUS
     1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_SPIRATAEARTH
+    1. Scenario: Languages/English/Scenario/MAPS/CH3_HUB_FRENDORGRAVE
     1. Scenario: Languages/English/Scenario/MAPS/CH3_STORY_DRAGON_FOREST
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_NOSTRABURG
