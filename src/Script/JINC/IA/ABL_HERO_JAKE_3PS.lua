@@ -36,6 +36,7 @@ version: 17.04.29
 ]]
 ret = {
 	["ABL_APCost"] = 35,
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack"] = 300,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AllowCritical"] = true,

@@ -228,6 +228,8 @@ function CreateKrandar()
      RPG.SetStat('Krandar','Critical',90-(skill*30))
      RPG.LinkStat('Dandor','Krandar','BASE_HP')
      RPG.LinkStat('Marrilona','Krandar','BASE_AP')
+     RPG.LinkStat('Jake_Human','Krandar','BASE_Accuracy')
+     RPG.LinkStat('Marrilona','Krandar','BASE_Evasion')
      RPG.SetStat("Krandar",'Level',200000) -- Make sure Krandar will NEVER gain EXP
 end
 

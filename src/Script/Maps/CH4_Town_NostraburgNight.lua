@@ -55,7 +55,7 @@ function MarrilonaBossLink()
    local K=RPG.Points('Krandar','HP')
    K.Have=K.Maximum
    MapText('MARRILONA_START','FLOW_COMBAT')  
-   
+   MS.LN_Run("ITEMS","Script/Subs/Items.lua","UnlockAllSpells","Krandar")
 end
 
 function NPC_Nostramantu()

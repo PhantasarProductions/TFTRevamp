@@ -84,7 +84,7 @@ pos = {}
 function GALE_OnLoad()
    LoadItemModule = nil
    chars = GetCharList()
-   local ichars = {'Jake_Human','Jake_Fairy','Marrilona','Dandor','HandoStillor'} -- Characters must ALWAYS be loaded in THIS order!
+   local ichars = {'Jake_Human','Jake_Fairy','Marrilona','Dandor','HandoStillor',"Krandar"} -- Characters must ALWAYS be loaded in THIS order!
    for c in each(ichars) do
        abllist[c] = JINC('Script/JINC/CharAbilities/'..c..".lua")
        if abllist[c] then
@@ -284,6 +284,7 @@ function ShowSpellList(ch,psizes)
 end
 
 function Teach(ch,ability)
+   heroabl[ch] = heroabl[ch] or {}
    heroabl[ch][ability] = true
 end
 
@@ -315,6 +316,19 @@ function MayTeach(ch)
        end
    end
    CSay("Apparently not")
+end
+
+function UnlockAllSpells(ch)
+   heroabl[ch] = heroabl[ch] or {}   
+   CSay("Unlock all spells for: "..ch)
+   for pagenum,pagekey in spairs(ablpage[ch]) do
+       CSay('Checking: '..pagekey)
+       --for ablkey,ablreq in spairs(pagedata) do
+       for ablindex,ablkey,ablreq in iSpell(ch,ablpage[ch][pagenum]) do
+           CSay('Unlocking: '..ablkey..' from page: '..pagekey)
+           heroabl[ch][ablkey] = true
+       end
+   end   
 end
 
 function CombatTeach(ch)
