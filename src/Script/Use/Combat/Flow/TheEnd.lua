@@ -1,6 +1,6 @@
 --[[
   TheEnd.lua
-  Version: 17.04.21
+  Version: 17.04.29
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -65,7 +65,7 @@ end
 function fflow.Victory()
    local altvic = CVVN("$COMBAT.ALT_VICTORY")
    if altvic then
-      Sys.Error("No Altvitory routine yet.")
+      AltVictory[altvic]()
       return
    end
    vicinit = vicinit or f_vicinit()

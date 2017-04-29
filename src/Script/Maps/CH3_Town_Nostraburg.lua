@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.15
+version: 17.04.29
 ]]
 RAMATA = "&DONE.NOSTRABURG.RAMATA.WELCOME.TEXT"
 
@@ -123,6 +123,25 @@ function Enter_Building(l)
    GoToLayer(l,"Start")
 end   
 
+function MapMusic()
+   if not CVV("&KRANDAR.GONE") then 
+      OriMapMusic()
+   else
+      Music('Dreshka/Water Prelude.ogg')
+   end
+end         
+
+function KanWelJanken()
+   ActorRepos("PLAYER1","Stillor_Depri","South","HandoStillor")
+   MapText("DEPRI_Jake")
+   Maps.Obj.Kill('KanWelJanken',1)
+   --error('*sob*')
+end
+
+function KeinDurgang()
+    MapText('KEINDURGANG')
+    Actors.WalkToSpot("PLAYER","Terug")
+end    
 
 function GALE_OnLoad()
   Maps.GotoLayer("town") 
@@ -135,11 +154,14 @@ function GALE_OnLoad()
   ZA_Enter("Guard_Ramata",RemataWelcome)  
   CSay("REMATA Set up")
   end  
-  if CVV("&KRANDAR.GONE")then
-     
+  if CVV("&KRANDAR.GONE")then     
      Maps.Obj.Kill("NPC_Krandar")
+     ZA_Enter('KanWelJanken',KanWelJanken)
+     ZA_Enter('KeinDurgang',KeinDurgang)
+     
   else
      Maps.Obj.Obj("Enter_krandar").Tag="krandarhouseunavailablenow"
+     Maps.Obj.Kill("ZA_ENTER_krandar")
      Maps.ReMap()   
   end   
   if not CVV("&DONE.BOSS.NOSTRAMANTU1") then Maps.Obj.Obj("NPC_Feenalaria").Visible=0 end

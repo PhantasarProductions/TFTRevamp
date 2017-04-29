@@ -615,6 +615,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/AltArena/PathOfMagic.lua
     1. Script: Script/Use/Combat/AltArena/Spirata.lua
     1. Script: Script/Use/Combat/AltArena/SpookyDung.lua
+    1. Script: Script/Use/Combat/AltVictory/AAA_Algemeen.lua
+    1. Script: Script/Use/Combat/AltVictory/Marrilona.lua
     1. Script: Script/Use/Combat/CAttack.lua
     1. Script: Script/Use/Combat/CBuffCountDown.lua
     1. Script: Script/Use/Combat/CCharacterMessage.lua
@@ -711,12 +713,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -1725,41 +1727,48 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - SterioType
     1. Font: Fonts/master_of_break.ttf
 - TFTCREW
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_1_6.ogg
+    1. Audio: Vocals/Combat/Foe/Marrilona/DSB.ogg
     1. Audio: Vocals/Combat/Foe/Harry/Action/Desperate.ogg
     1. Audio: Vocals/Combat/Foe/Harry/Action/Distract.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_1.ogg
+    1. Audio: Vocals/Combat/Foe/Marrilona/Earth.ogg
+    1. Audio: Vocals/Combat/Foe/Marrilona/Fire.ogg
     1. Audio: Vocals/Combat/Hero/Dandor/Action/Attack.ogg
+    1. Audio: Vocals/Combat/Foe/Marrilona/Frost.ogg
+    1. Audio: Vocals/Combat/Foe/Marrilona/Heal.ogg
+    1. Audio: Vocals/Combat/Hero/Dandor/Victory/Boss.ogg
+    1. Audio: Vocals/Combat/Foe/Marrilona/Hit.ogg
+    1. Audio: Vocals/Combat/Foe/Marrilona/Thunder.ogg
+    1. Audio: Vocals/Combat/Foe/Marrilona/Water.ogg
+    1. Audio: Vocals/Combat/Foe/Marrilona/Wind.ogg
+    1. Audio: Vocals/Combat/Foe/Marrilona/Yell.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_1_6.ogg
+    1. Audio: Vocals/Combat/Hero/Dandor/Victory/Dead.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_1.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_10.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_11.ogg
-    1. Audio: Vocals/Combat/Hero/Dandor/Victory/Boss.ogg
+    1. Audio: Vocals/Combat/Hero/Dandor/Victory/General.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_12.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_13.ogg
-    1. Audio: Vocals/Combat/Hero/Dandor/Victory/Dead.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_14.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_15.ogg
-    1. Audio: Vocals/Combat/Hero/Dandor/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/Dandor/Victory/Perfect.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_16.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_17.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_18.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_14.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Attack.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Critical.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Heal.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/HolyStrike.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_15.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/NeutralizePoison.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Revive.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Weniaria.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/Boss.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/Dead.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_19.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/General.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_16.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/Perfect.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Action/2PS.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_2.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Action/3PS.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_17.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Action/4PS.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_20.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_18.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Action/Attack.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Action/Fire.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Action/Frost.ogg
@@ -1768,49 +1777,53 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Combat/Hero/Jake/Victory/Dead.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Victory/Perfect.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_21.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Victory/Boss.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_22.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Victory/Dead.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_19.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Victory/Perfect.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Attack.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_23.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/DefUp.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Earth.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_2.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Fire.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Frost.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_24.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Heal.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Lightning.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_20.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/SpeedUp.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_25.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Water.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Wind.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_3.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/Boss.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/Dead.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_4.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/Perfect.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_21.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_22.ogg
     1. Audio: Vocals/Combat/Hero/Nostramantu/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/Nostramantu/Victory/Perfect.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_5.ogg
     1. Audio: Vocals/Combat/Learn/Dandor_1.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_23.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_24.ogg
+    1. Audio: Vocals/Combat/Learn/Jake_1.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_25.ogg
+    1. Audio: Vocals/Combat/Learn/Marrilona_1.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_1.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_3.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_4.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_5.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_10.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_6.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_7.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_8.ogg
-    1. Audio: Vocals/Combat/Learn/Jake_1.ogg
-    1. Audio: Vocals/Combat/Learn/Marrilona_1.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_9.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_1.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry1_9.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_1.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_10.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_10.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_11.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_12.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_13.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_11.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_14.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_15.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_2.ogg
@@ -1818,12 +1831,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_4.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_5.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_6.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_11.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_7.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_8.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_12.ogg
     1. Audio: Vocals/Maps/CH2_Town_Dreshka/Harry2_9.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_4.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_12.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_13.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_14.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_15.ogg
@@ -1832,100 +1844,128 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/General/Introduction/STILLOR_18.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_19.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_2.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_20.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_42.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_43.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_20.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_21.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_44.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_45.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_46.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_47.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_21.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_48.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_22.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_49.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_50.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_51.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_22.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_23.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_52.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_53.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_54.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_55.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_23.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_24.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_56.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_57.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_58.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_59.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_60.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_24.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_61.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_25.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_62.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_63.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_25.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_64.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_65.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_3.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_66.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_67.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_68.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_3.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_69.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_70.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_71.ogg
-    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_72.ogg
-    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_73.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_4.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_72.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_5.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_73.ogg
     1. Audio: Vocals/Maps/CH3_Hub_FrendorGrave/Harry_1.ogg
     1. Audio: Vocals/Maps/CH3_Hub_FrendorGrave/Harry_2.ogg
     1. Audio: Vocals/Maps/CH3_Hub_FrendorGrave/Harry_3.ogg
     1. Audio: Vocals/Maps/CH3_Hub_FrendorGrave/Harry_4.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_5.ogg
     1. Audio: Vocals/Maps/CH3_Hub_FrendorGrave/Harry_5.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_6.ogg
     1. Audio: Vocals/Maps/CH3_Hub_FrendorGrave/Harry_6.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_1.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_10.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_11.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_12.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_13.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_6.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_7.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_14.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_15.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_16.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_17.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_7.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_2.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_3.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_4.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_8.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_5.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_6.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_7.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_8.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_8.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_9.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_1.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_10.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_9.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_11.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_12.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_13.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_14.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_15.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_16.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_17.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_18.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_19.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_2.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_20.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_21.ogg
+    1. Audio: Vocals/General/Prologues/Dandor_1.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_22.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_23.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_24.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_25.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_26.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_3.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_5.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_6.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_7.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_8.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/Depri_Jake_9.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_1.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_10.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_11.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_2.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_3.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_4.ogg
+    1. Audio: Vocals/General/Prologues/HandoStillor_1.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_5.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_6.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_9.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_7.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_8.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_9.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_1.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_10.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_11.ogg
+    1. Audio: Vocals/General/Prologues/HandoStillor_2.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_12.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_13.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_14.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_15.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_16.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_17.ogg
-    1. Audio: Vocals/General/Prologues/Dandor_1.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_18.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_19.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_2.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_20.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_21.ogg
+    1. Audio: Vocals/General/Prologues/Jake_1.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_3.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_4.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_5.ogg
@@ -1933,7 +1973,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_7.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_8.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_9.ogg
-    1. Audio: Vocals/General/Prologues/HandoStillor_1.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_1.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_10.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_11.ogg
@@ -1942,8 +1981,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_14.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_15.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_16.ogg
-    1. Audio: Vocals/General/Prologues/HandoStillor_2.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_17.ogg
+    1. Audio: Vocals/General/Prologues/Jake_2.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_2.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_3.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_4.ogg
@@ -1953,13 +1992,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_8.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_9.ogg
     1. Audio: Vocals/Spirata/Dandor.ogg
-    1. Audio: Vocals/General/Prologues/Jake_1.ogg
-    1. Audio: Vocals/Spirata/HandoStillor.ogg
-    1. Audio: Vocals/General/Prologues/Jake_2.ogg
-    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/General/Prologues/Marrilona_1.ogg
-    1. Audio: Vocals/Spirata/Marrilona.ogg
+    1. Audio: Vocals/Spirata/HandoStillor.ogg
     1. Audio: Vocals/General/Prologues/Marrilona_2.ogg
+    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_0_1.OGG
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_0_2.OGG
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_1.OGG
@@ -1973,6 +2009,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_17.OGG
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_18.OGG
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_19.OGG
+    1. Audio: Vocals/Spirata/Marrilona.ogg
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_2.OGG
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_20.OGG
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_21.OGG

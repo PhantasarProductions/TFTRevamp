@@ -32,10 +32,10 @@
   
  **********************************************
  
-version: 17.04.29
+version: 17.04.30
 ]]
 
--- @DEFINE SKIPSCENARIO
+-- @UNDEF SKIPSCENARIO
 
 function LetsGoto(l)
     GoToLayer(l,"Start")
@@ -93,6 +93,7 @@ function NPC_Nostramantu()
     Var.D("$COMBAT.POSFOE_1","CENTER")
     Var.D("$COMBAT.MUSIC","Music/SpecialBoss/Threat.ogg")
     Var.D("$COMBAT.ARENA","Forest.png")
+    Var.D("$COMBAT.ALT_VICTORY","Marrilona")
     Party('Jake_Human;Krandar')
     RPGStat.SetData('Krandar','EQP_Weapon',"ZZZ_KRANDARBLADE")
     RPGStat.SetData('Krandar','EQP_Armor' ,"ZZZ_KRANDARARMOR")
