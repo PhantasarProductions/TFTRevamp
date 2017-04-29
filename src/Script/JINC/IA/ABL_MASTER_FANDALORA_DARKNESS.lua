@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_FANDALORA_DARKNESS.lua
-  Version: 17.04.28
+  Version: 17.04.29
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

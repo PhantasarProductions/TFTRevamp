@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.04.25
+  Version: 17.04.29
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -55,6 +55,7 @@ function AltHealing(group,i,Heal)
 end
 
 function PerformAction(act,group,i)
+     CSay('Action on '..sval(group).." #"..sval(i))
      -- Set up variables
      local effect = nil
      local myfighter = Fighters[group][i]

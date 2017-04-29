@@ -49,6 +49,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Dandor/General.xcf
     1. Graphics: GFX/BoxText/Portret/Hando Stillor/General.png
     1. Graphics: GFX/BoxText/Portret/Hando Stillor/General.xcf
+    1. Graphics: GFX/BoxText/Portret/Jake & Marrilona/What.piko
+    1. Graphics: GFX/BoxText/Portret/Jake & Marrilona/What.png
     1. Graphics: GFX/BoxText/Portret/Jake/Angry.png
     1. Graphics: GFX/BoxText/Portret/Jake/Angry_Fairy.png
     1. Graphics: GFX/BoxText/Portret/Jake/Blush.png
@@ -92,6 +94,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Krandar/Eyes.png
     1. Graphics: GFX/BoxText/Portret/Krandar/General.png
     1. Graphics: GFX/BoxText/Portret/Krandar/VeelTeGroot.png
+    1. Graphics: GFX/BoxText/Portret/Krandar/Worried.png
     1. Graphics: GFX/BoxText/Portret/Marata/General.png
     1. Graphics: GFX/BigPic/Krandar.png
     1. Graphics: GFX/BoxText/Portret/Chief Werrington/Angry.png
@@ -209,6 +212,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/MONK2.lua
     1. Script: Script/JINC/Foes/Boss/MONK3.lua
     1. Script: Script/JINC/Foes/Boss/MONK4.lua
+    1. Script: Script/JINC/Foes/Boss/Marrilona.lua
     1. Script: Script/JINC/Foes/Boss/Mega Ghost.lua
     1. Script: Script/JINC/Foes/Boss/Russell.lua
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
@@ -702,12 +706,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -773,9 +777,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/blops/Blop4.png
     1. Graphics: gfx/Textures/blops/Blop5.png
     1. Graphics: gfx/Textures/blops/Blop6.png
+    1. Graphics: GFX/Actors/Bundled/Player/Krandar.East.png
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.NS.piko
+    1. Graphics: GFX/Actors/Bundled/Player/Krandar.North.png
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.frames
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Idle.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 1.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 2.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 3.png
@@ -811,6 +818,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Humans/Russel.png
     1. Graphics: GFX/Actors/Single/Humans/Russell.png
     1. Graphics: GFX/BoxText/Portret/Rosetta/General.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/Marrilona.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/MegaGhost.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Female1.piko
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Female1.png
@@ -839,6 +847,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Spirata.Action.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake.Spirata.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Spirata.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Attack.1.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Attack.2.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Cast.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Petrified.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Victory.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Krandar.dead.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.Action.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.png
@@ -1274,6 +1288,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Cards/HERO_HANDOSTILLOR.png
     1. Graphics: GFX/Combat/Cards/HERO_JAKE_FAIRY.png
     1. Graphics: GFX/Combat/Cards/HERO_JAKE_HUMAN.png
+    1. Graphics: GFX/Combat/Cards/HERO_KRANDAR.png
     1. Graphics: GFX/Combat/Cards/HERO_MARRILONA.png
     1. Graphics: GFX/Combat/Cards/Joker.piko
     1. Graphics: GFX/Combat/Cards/Joker.png
@@ -1879,6 +1894,41 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/General/Introduction/STILLOR_8.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_8.ogg
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_9.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_1.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_10.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_11.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_2.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_3.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_4.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_5.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_6.ogg
+    1. Audio: Vocals/General/Introduction/STILLOR_9.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_7.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_8.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_9.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_1.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_10.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_11.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_12.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_13.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_14.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_15.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_16.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_17.ogg
+    1. Audio: Vocals/General/Prologues/Dandor_1.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_18.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_19.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_2.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_20.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_21.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_3.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_4.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_5.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_6.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_7.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_8.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_9.ogg
+    1. Audio: Vocals/General/Prologues/HandoStillor_1.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_1.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_10.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_11.ogg
@@ -1887,7 +1937,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_14.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_15.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_16.ogg
-    1. Audio: Vocals/General/Introduction/STILLOR_9.ogg
+    1. Audio: Vocals/General/Prologues/HandoStillor_2.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_17.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_2.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_3.ogg
@@ -1898,15 +1948,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_8.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_9.ogg
     1. Audio: Vocals/Spirata/Dandor.ogg
-    1. Audio: Vocals/General/Prologues/Dandor_1.ogg
-    1. Audio: Vocals/Spirata/HandoStillor.ogg
-    1. Audio: Vocals/General/Prologues/HandoStillor_1.ogg
-    1. Audio: Vocals/General/Prologues/HandoStillor_2.ogg
-    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/General/Prologues/Jake_1.ogg
-    1. Audio: Vocals/Spirata/Marrilona.ogg
+    1. Audio: Vocals/Spirata/HandoStillor.ogg
     1. Audio: Vocals/General/Prologues/Jake_2.ogg
+    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/General/Prologues/Marrilona_1.ogg
+    1. Audio: Vocals/Spirata/Marrilona.ogg
     1. Audio: Vocals/General/Prologues/Marrilona_2.ogg
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_0_1.OGG
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_0_2.OGG

@@ -2,7 +2,7 @@
 **********************************************
   
   Krandar.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,5 +32,13 @@
   
  **********************************************
  
-version: 16.10.03
+version: 17.04.29
 ]]
+
+
+return {}
+
+
+-- Krandar has all his abilities by default, and will as thus not gain new ones....
+-- using this file will therefore only confuse the system, but it had to contain some value
+-- or the system would crash, so here we go :P

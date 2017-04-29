@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 17.01.06
+  Version: 17.04.29
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -219,6 +219,17 @@ function GrabLevel(ch,lv)
   SyncLevel(ch)
 end      
 
+function CreateKrandar()
+     RPG.LinkStat('Dandor','Krandar','BASE_Power')
+     RPG.LinkStat('Jake_Human','Krandar','BASE_Endurance')
+     RPG.LinkStat('HandoStillor','Krandar','BASE_Intelligence')
+     RPG.LinkStat('Marrilona','Krandar','BASE_Resistance')
+     RPG.LinkStat('HandoStillor','Krandar','BASE_Speed')
+     RPG.SetStat('Krandar','Critical',90-(skill*30))
+     RPG.LinkStat('Dandor','Krandar','BASE_HP')
+     RPG.LinkStat('Marrilona','Krandar','BASE_AP')
+     RPG.SetStat("Krandar",'Level',200000) -- Make sure Krandar will NEVER gain EXP
+end
 
 function CreateChar(ch,name)
   -- Create
@@ -246,7 +257,7 @@ function CreateChar(ch,name)
   -- Experience
   RPGChar.SetStat(ch,"Level",1)
   RPGChar.SetStat(ch,"EXP",1000*(skill/2))
-  SyncLevel(ch)          
+  if ch~='Krandar' then SyncLevel(ch) end          
   -- Maxout
   local cp
   for p in each({'HP','AP','VIT'}) do
@@ -255,6 +266,7 @@ function CreateChar(ch,name)
   end
   -- Portrait
   RPGStat.SetData(ch,'Face',ch)
+  if ch=="Krandar" then CreateKrandar() return end  
 end
 
 function ClickedChar(ch,dump)

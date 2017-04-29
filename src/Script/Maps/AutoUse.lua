@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 17.04.20
+  Version: 17.04.29
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -36,6 +36,8 @@
 ]]
 
 -- @USEDIR Script/Use/Anyway
+
+Var.D("Marata","Ramata") -- Name error correction
 
 function DrawScreen(flow)
    MS.Run(flow or 'FIELD','DrawScreen')

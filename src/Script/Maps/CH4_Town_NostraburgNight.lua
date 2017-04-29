@@ -32,6 +32,62 @@
   
  **********************************************
  
-version: 17.04.28
+version: 17.04.29
 ]]
 
+function LetsGoto(l)
+    GoToLayer(l,"Start")
+end
+
+function MarrilonaBossLink()
+   for s in each({'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion'}) do
+       RPG.LinkStat('Marrilona','FOE_1','BASE_'..s)
+   end
+   local HP = RPG.Points('FOE_1','HP')
+   local HPL = RPG.Stat('Marrilona','BASE_HP') * (skill*5)
+   HP.Maximum = HPL
+   HP.Have = HPL
+   MapText('MARRILONA_START','FLOW_COMBAT')  
+end
+
+function NPC_Nostramantu()
+    local NostraCam = Maps.Obj.Obj('NostraCam')
+    local KrandarCam = Maps.Obj.Obj('KrandarCam')
+    CSay("CAM:")
+    CSay('- Nostramantu: '..NostraCam.Y)
+    CSay('- Krandar:     '..KrandarCam.Y)
+    repeat
+        Cls()
+        Maps.CamY = Maps.CamY + 1
+        DrawScreen()
+        Flip()
+        CSay('N -- Cam now: '..Maps.CamY)
+    until Maps.CamY>=NostraCam.Y
+    MapText('NOSTRAMANTU1')
+    Maps.Obj.Obj('JAKE').Visible=1
+    Maps.Obj.Obj('KRANDAR').Visible=1
+    repeat
+        Cls()
+        Maps.CamY = Maps.CamY - 1
+        DrawScreen()
+        Flip()
+        CSay('K -- Cam now: '..Maps.CamY)
+    until Maps.CamY<=KrandarCam.Y
+    MapText('NOSTRAMANTU2')
+    ClearCombatData()
+    Var.D("$COMBAT.STARTEVENT","MAP,MarrilonaBossLink")
+    Var.D("$COMBAT.FOE_1","Boss/Marrilona")
+    Var.D("$COMBAT.POSFOE_1","CENTER")
+    Var.D("$COMBAT.MUSIC","Music/SpecialBoss/Threat.ogg")
+    Var.D("$COMBAT.ARENA","Forest.png")
+    Party('Jake_Human;Krandar')
+    StartBoss("Berserk Fairy","Marrilona")      
+    Schedule("MAP","PostBoss")
+end    
+
+function GALE_OnLoad()
+   ZA_Enter("ToCreek",LetsGoto,'creek')
+   ZA_Enter('ToTown' ,LetsGoto,'town')
+   ZA_Enter('Stop',MapText,"STOP")
+   MapHide('ZKRANDAR')
+end

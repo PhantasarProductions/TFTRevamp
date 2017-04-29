@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_ULTIMATESOULCRUSHER.lua
-  Version: 17.04.28
+  Version: 17.04.29
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -58,7 +58,8 @@ ret = {
 	["Stance"] = "Cast",
 	["Target"] = "AF",
 	["Title"] = "Ultimate Soul Crusher",
-	["Type"] = "Item"}
+	["Type"] = "Item",
+	["Voice"] = "DSB"}
 
 return ret
 
