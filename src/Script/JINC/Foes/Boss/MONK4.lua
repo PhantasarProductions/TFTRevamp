@@ -1,40 +1,4 @@
---[[
-**********************************************
-  
-  MONK4.lua
-  (c) Jeroen Broks, 2017, All Rights Reserved.
-  
-  This file contains material that is related 
-  to a storyline that is which is strictly
-  copyrighted to Jeroen Broks.
-  
-  This file may only be used in an unmodified
-  form with an unmodified version of the 
-  software this file belongs to.
-  
-  You may use this file for your study to see
-  how I solved certain things in the creation
-  of this project to see if you find valuable
-  leads for the creation of your own.
-  
-  Mostly this file comes along with a project
-  that is for most part released under an
-  open source license and that means that if
-  you use that code with this file removed
-  from it, you can use it under that license.
-  Please check out the other files to find out
-  which license applies.
-  This file comes 'as-is' and in no possible
-  way the author can be held responsible of
-  any form of damages that may occur due to 
-  the usage of this file
-  
-  
- **********************************************
- 
-version: 17.04.29
-]]
--- File Generated: Sat 29 April 2017; 13:59:18
+-- File Generated: Sat 29 April 2017; 22:30:49
 
 
 local foe = {}
@@ -318,6 +282,9 @@ local foe = {}
 	foe["RATE_ABL_MASTER_FREYA_REJUVENATE"] = 5
 	foe["RATE_ABL_MASTER_FREYA_ULTRAHEAL"] = 1
 	foe["RATE_ABL_MASTER_FREYA_VIGOR"] = 1
+	foe["RATE_ABL_MASTER_KRANDAR_\53PS"] = 0
+	foe["RATE_ABL_MASTER_KRANDAR_\54PS"] = 0
+	foe["RATE_ABL_MASTER_KRANDAR_\55PS"] = 0
 	foe["RATE_ABL_MASTER_MIDAS_HARDFORTHEMONEY"] = 0
 	foe["RATE_ABL_MASTER_MIDAS_STEALMONEY"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_BACKSTAB"] = 0
@@ -406,6 +373,8 @@ local foe = {}
 	foe["RATE_ZZKEY_GAIA"] = 0
 	foe["RATE_ZZKEY_KEYWATER"] = 0
 	foe["RATE_ZZKEY_WIND"] = 0
+	foe["RATE_ZZZ_KRANDARARMOR"] = 0
+	foe["RATE_ZZZ_KRANDARBLADE"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
 	foe["TARGET_AAA_GUARD"] = "Random"
 	foe["TARGET_ABL_FOE_BACTERIATUSK"] = "Random"
@@ -504,6 +473,9 @@ local foe = {}
 	foe["TARGET_ABL_MASTER_FREYA_REJUVENATE"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_ULTRAHEAL"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_VIGOR"] = "Random"
+	foe["TARGET_ABL_MASTER_KRANDAR_\53PS"] = "Random"
+	foe["TARGET_ABL_MASTER_KRANDAR_\54PS"] = "Random"
+	foe["TARGET_ABL_MASTER_KRANDAR_\55PS"] = "Random"
 	foe["TARGET_ABL_MASTER_MIDAS_HARDFORTHEMONEY"] = "Random"
 	foe["TARGET_ABL_MASTER_MIDAS_STEALMONEY"] = "Random"
 	foe["TARGET_ABL_MASTER_RUBINE_BACKSTAB"] = "Random"
@@ -592,6 +564,8 @@ local foe = {}
 	foe["TARGET_ZZKEY_GAIA"] = "Random"
 	foe["TARGET_ZZKEY_KEYWATER"] = "Random"
 	foe["TARGET_ZZKEY_WIND"] = "Random"
+	foe["TARGET_ZZZ_KRANDARARMOR"] = "Random"
+	foe["TARGET_ZZZ_KRANDARBLADE"] = "Random"
 	foe["VocalTag"] = "MONK\52"
 	foe["Boss"] = true
 	foe["Oversoul"] = false
