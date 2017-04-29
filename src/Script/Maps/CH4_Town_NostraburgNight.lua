@@ -48,6 +48,7 @@ function MarrilonaBossLink()
    end
    local HP = RPG.Points('FOE_1','HP')
    local HPL = RPG.Stat('Marrilona','BASE_HP') * (skill*5)
+   RPG.SetStat("FOE_1","BASE_HP",HPL)
    HP.Maximum = HPL
    HP.Have = HPL
    CSay("Boss Marrilona has "..HPL.." HP")
