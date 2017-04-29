@@ -35,6 +35,8 @@
 version: 17.04.29
 ]]
 
+-- @DEFINE SKIPSCENARIO
+
 function LetsGoto(l)
     GoToLayer(l,"Start")
 end
@@ -42,38 +44,48 @@ end
 function MarrilonaBossLink()
    for s in each({'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion'}) do
        RPG.LinkStat('Marrilona','FOE_1','BASE_'..s)
+       CSay("Boss Marrilona has stat "..s.." to value: "..RPG.Stat('FOE_1',"BASE_"..s))
    end
    local HP = RPG.Points('FOE_1','HP')
    local HPL = RPG.Stat('Marrilona','BASE_HP') * (skill*5)
    HP.Maximum = HPL
    HP.Have = HPL
+   CSay("Boss Marrilona has "..HPL.." HP")
+   local K=RPG.Points('Krandar','HP')
+   K.Have=K.Maximum
    MapText('MARRILONA_START','FLOW_COMBAT')  
+   
 end
 
 function NPC_Nostramantu()
     local NostraCam = Maps.Obj.Obj('NostraCam')
     local KrandarCam = Maps.Obj.Obj('KrandarCam')
-    CSay("CAM:")
-    CSay('- Nostramantu: '..NostraCam.Y)
-    CSay('- Krandar:     '..KrandarCam.Y)
-    repeat
+    -- @IF SKIPSCENARIO
+    local skip = true
+    -- @FI
+    if not skip then
+     CSay("CAM:")
+     CSay('- Nostramantu: '..NostraCam.Y)
+     CSay('- Krandar:     '..KrandarCam.Y)
+     repeat
         Cls()
         Maps.CamY = Maps.CamY + 1
         DrawScreen()
         Flip()
         CSay('N -- Cam now: '..Maps.CamY)
-    until Maps.CamY>=NostraCam.Y
-    MapText('NOSTRAMANTU1')
-    Maps.Obj.Obj('JAKE').Visible=1
-    Maps.Obj.Obj('KRANDAR').Visible=1
-    repeat
+     until Maps.CamY>=NostraCam.Y
+     MapText('NOSTRAMANTU1')
+     Maps.Obj.Obj('JAKE').Visible=1
+     Maps.Obj.Obj('KRANDAR').Visible=1
+     repeat
         Cls()
         Maps.CamY = Maps.CamY - 1
         DrawScreen()
         Flip()
         CSay('K -- Cam now: '..Maps.CamY)
-    until Maps.CamY<=KrandarCam.Y
-    MapText('NOSTRAMANTU2')
+     until Maps.CamY<=KrandarCam.Y
+     MapText('NOSTRAMANTU2')
+    end 
     ClearCombatData()
     Var.D("$COMBAT.STARTEVENT","MAP,MarrilonaBossLink")
     Var.D("$COMBAT.FOE_1","Boss/Marrilona")
@@ -81,6 +93,12 @@ function NPC_Nostramantu()
     Var.D("$COMBAT.MUSIC","Music/SpecialBoss/Threat.ogg")
     Var.D("$COMBAT.ARENA","Forest.png")
     Party('Jake_Human;Krandar')
+    RPGStat.SetData('Krandar','EQP_Weapon',"ZZZ_KRANDARBLADE")
+    RPGStat.SetData('Krandar','EQP_Armor' ,"ZZZ_KRANDARARMOR")
+    RPGStat.LinkData("Marrilona","Krandar","EQP_Acc","") 
+    for i=1,5 do
+        CreateSkill('Krandar',i,9999)
+    end        
     StartBoss("Berserk Fairy","Marrilona")      
     Schedule("MAP","PostBoss")
 end    

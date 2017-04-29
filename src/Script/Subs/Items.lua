@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.02.23
+  Version: 17.04.29
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -289,6 +289,10 @@ end
 
 function MayTeach(ch)
    heroabl[ch] = heroabl[ch] or {}
+   if ch=="Krandar" then
+      CSay("Krandar is blocked from the attack to ability system.. sorry")
+      return
+   end      
    CSay("Can "..ch.." learn a new ability?")
    for pagenum,pagekey in spairs(ablpage[ch]) do
        CSay('Checking: '..pagekey)
