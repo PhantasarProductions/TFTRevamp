@@ -82,7 +82,8 @@ function PerformAction(act,group,i)
             end
          end   
      end    
-     -- Revive
+     -- Revive     
+     myfighter.statuschanges = myfighter.statuschanges or myfighter.StatusChanges or {}
      if act.Revive and group=="Hero" and (myfighter.statuschanges.Death or RPG.Points(myfighter.tag,"HP").Have<=0) then
         ClearTable(myfighter.statuschanges) 
         RPG.Points(myfighter.tag,"HP").Have=1
