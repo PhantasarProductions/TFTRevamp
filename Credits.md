@@ -714,12 +714,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -785,12 +785,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/blops/Blop4.png
     1. Graphics: gfx/Textures/blops/Blop5.png
     1. Graphics: gfx/Textures/blops/Blop6.png
+    1. Graphics: GFX/Actors/Bundled/Player/Krandar.East.Frames
+    1. Graphics: GFX/Actors/Bundled/Player/Krandar.East.piko
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.East.png
+    1. Graphics: GFX/Actors/Bundled/Player/Krandar.NS (Autosaved).piko
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.NS.piko
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.North.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.North.png
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.frames
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.png
+    1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.Frames
+    1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Idle.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 1.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 2.png
@@ -856,10 +861,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Spirata.Action.png
     1. Graphics: GFX/Combat/Fighters/Hero/Jake.Spirata.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Spirata.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Attack.1.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Attack.1.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Attack.2.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Attack.2.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Cast.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Cast.png
     1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Petrified.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Victory.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Victory.png
     1. Graphics: GFX/Combat/Fighters/Hero/Krandar.dead.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.Action.png
