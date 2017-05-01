@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.29
+version: 17.04.30
 ]]
 RAMATA = "&DONE.NOSTRABURG.RAMATA.WELCOME.TEXT"
 
@@ -143,6 +143,19 @@ function KeinDurgang()
     Actors.WalkToSpot("PLAYER","Terug")
 end    
 
+function JakeIsACoward()
+    if Done('&DONE.NOSTRABURG.MARRILONA.DEADORDRAGON.SPOKEN.KRANDAR.COWARD') then return end 
+    PartyPop('M','North')
+    MapText('JAKE_IS_A_COWARD')    
+end
+
+function MAP_FLOW()
+    if Maps.LayerCodeName=="krandar" then
+       OMarrilona = OMarrilona or Maps.Obj.Obj('Marrilona')
+       OMarrilona.Y = 270 + math.sin(Time.MSecs()/250)*5 
+    end
+end
+
 function GALE_OnLoad()
   Maps.GotoLayer("town") 
   if not CVV(RAMATA) then    
@@ -158,6 +171,8 @@ function GALE_OnLoad()
      Maps.Obj.Kill("NPC_Krandar")
      ZA_Enter('KanWelJanken',KanWelJanken)
      ZA_Enter('KeinDurgang',KeinDurgang)
+     ZA_Enter('JakeIsACoward',JakeIsACoward)
+     ZA_Enter('AndWeAreOff',function() MapText('GOTOPYRUS') Party('Jake_Human;Krandar;Dandor;HandoStillor') LoadMap("CH4_DUNGEON_PYRUSPASS") GoToLayer('#000','Start') end)
      
   else
      Maps.Obj.Obj("Enter_krandar").Tag="krandarhouseunavailablenow"

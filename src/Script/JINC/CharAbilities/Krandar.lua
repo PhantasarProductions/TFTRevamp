@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.29
+version: 17.04.30
 ]]
 
 local fullversion = JCR6.Exists('ID/ID.Data.Full')==1
@@ -54,7 +54,7 @@ local ret = { ['1. Physical']={
                                      abl_hero_jake_flameblade={8,2*skill}
                               },
               ['2. Magical']={
-                                     ABL_HERO_JAKE_SHIFT_HUMAN={[2]=99,[3]=99,[4]=99,[5]=99},
+                                     --ABL_HERO_JAKE_SHIFT_HUMAN={[2]=99,[3]=99,[4]=99,[5]=99},
                                      abl_hero_marrilona_flame = {[2]=1},          -- 2
                                      abl_hero_marrilona_speedup = {[3]=1},       -- 3
                                      abl_hero_marrilona_heal = {[4]=1},          -- 4                                     
