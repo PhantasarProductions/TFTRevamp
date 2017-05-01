@@ -32,5 +32,23 @@
   
  **********************************************
  
-version: 17.04.30
+version: 17.05.01
 ]]
+
+-- @IF IGNORE
+local
+-- @FI
+      nostradone = "&DONE.CHAPTER4.MTPYRUS.BOSS.NOSTRAMANTU.DEFEATED"
+
+function Leave()
+     if not CVV(nostradone) then
+        MapText('NOLEAVE')
+        Actors.MoveToSpot('PLAYER','Start')
+     else
+        WorldMap('Delisto')
+     end
+end
+
+function GALE_OnLoad()
+   ZA_Enter('Leave',Leave)
+end   

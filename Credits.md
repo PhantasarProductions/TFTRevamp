@@ -714,12 +714,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -795,6 +795,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.frames
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.png
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.Frames
+    1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.Placeholder.png
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Idle.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 1.png
@@ -870,6 +871,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Petrified.png
     1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Victory.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Victory.png
+    1. Graphics: GFX/Combat/Fighters/Hero/Krandar.West.png
     1. Graphics: GFX/Combat/Fighters/Hero/Krandar.dead.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.Action.png
     1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.piko
@@ -1494,6 +1496,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_STORY_DRAGON_FOREST
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_NOSTRABURG
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_PYRUSPASS
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
@@ -1538,6 +1541,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH3_STORY_DRAGON_FOREST
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_NOSTRABURG
+    1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_PYRUSPASS
     1. Scenario: Languages/English/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
@@ -1732,6 +1736,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: Gfx/Combat/Fighters/Foe/Reg/Bat.png
 - Michael Frank
     1. Graphics: GFX/textures/objects/Houten Plank.png
+- Nihilore
+    1. Music: Music/Special Boss/Final Boss.ogg
+    1. Music: Music/Dungeon/Spirata Crypt.ogg
 - Papapishu
     1. Graphics: gfx/combat/fighters/foe/reg/boar.png
 - Rambo Tribble

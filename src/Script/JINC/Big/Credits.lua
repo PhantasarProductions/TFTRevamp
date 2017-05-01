@@ -78,14 +78,15 @@ ret = {
         ['000006F4'] = { txt = 'Hung Kee Chan', r=0,g=180,b=255, y=1780 },
         ['00000708'] = { txt = 'Kevin McLeod', r=0,g=180,b=255, y=1800 },
         ['0000071C'] = { txt = 'Matt McFarland', r=0,g=180,b=255, y=1820 },
-        ['00000730'] = { txt = 'W.K. Chan & Wouter Wershkull', r=0,g=180,b=255, y=1840 },
-        ['00000744'] = { txt = 'Wicky77', r=0,g=180,b=255, y=1860 },
-        ['00000758'] = { txt = 'Wicky77 & Wout66', r=0,g=180,b=255, y=1880 },
-        ['0000076C'] = { txt = 'Widzy', r=0,g=180,b=255, y=1900 },
-        ['00000794'] = { txt = 'Scenario', r=255,g=0,b=0, y=1940 }, -- Scenario
-        ['000007BC'] = { txt = 'Script', r=255,g=0,b=0, y=1980 }, -- Script
-        ['00000A14'] = { txt = '(c) Copyright 2016', r=255, g=180,b=0,y=2580},
-        ['00000A2D'] = { txt = 'Jeroen Petrus Broks', r=255, g=180,b=0,y=2605}
+        ['00000730'] = { txt = 'Nihilore', r=0,g=180,b=255, y=1840 },
+        ['00000744'] = { txt = 'W.K. Chan & Wouter Wershkull', r=0,g=180,b=255, y=1860 },
+        ['00000758'] = { txt = 'Wicky77', r=0,g=180,b=255, y=1880 },
+        ['0000076C'] = { txt = 'Wicky77 & Wout66', r=0,g=180,b=255, y=1900 },
+        ['00000780'] = { txt = 'Widzy', r=0,g=180,b=255, y=1920 },
+        ['000007A8'] = { txt = 'Scenario', r=255,g=0,b=0, y=1960 }, -- Scenario
+        ['000007D0'] = { txt = 'Script', r=255,g=0,b=0, y=2000 }, -- Script
+        ['00000A28'] = { txt = '(c) Copyright 2016', r=255, g=180,b=0,y=2600},
+        ['00000A41'] = { txt = 'Jeroen Petrus Broks', r=255, g=180,b=0,y=2625}
 }
 
 return ret
