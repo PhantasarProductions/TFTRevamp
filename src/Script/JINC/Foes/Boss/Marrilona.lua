@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 17.04.30
+version: 17.05.02
 ]]
--- File Generated: Sun 30 April 2017; 00:14:54
+-- File Generated: Tue 02 May 2017; 11:07:20
 
 
 local foe = {}
@@ -228,7 +228,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_GAZE"] = 0
 	foe["RATE_ABL_FOE_GRAVITY"] = 0
 	foe["RATE_ABL_FOE_HOLDPERSON"] = 20
-	foe["RATE_ABL_FOE_HORROR"] = 20
+	foe["RATE_ABL_FOE_HORROR"] = 1
 	foe["RATE_ABL_FOE_MERMAID_TEMPATION"] = 0
 	foe["RATE_ABL_FOE_PARADIVE"] = 0
 	foe["RATE_ABL_FOE_SETTHESTAGEONFIRE"] = 0

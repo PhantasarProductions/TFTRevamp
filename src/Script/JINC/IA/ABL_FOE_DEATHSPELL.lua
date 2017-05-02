@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_DEATHSPELL.lua
-  Version: 17.04.29
+  Version: 17.05.02
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

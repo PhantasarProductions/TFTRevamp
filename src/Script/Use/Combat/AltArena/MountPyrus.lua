@@ -1,6 +1,6 @@
 --[[
   MountPyrus.lua
-  Version: 17.04.25
+  Version: 17.05.02
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -52,6 +52,9 @@ AltArena.pyrus = {
                                 end
                  }
 
+
+
+AltArena.pyruspass = { Before = AltArena.pyrus.Before }
 
 -- @IF IGNORE
 return AltArena

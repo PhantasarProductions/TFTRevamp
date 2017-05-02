@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.01
+version: 17.05.02
 ]]
 
 -- @IF IGNORE
@@ -47,6 +47,18 @@ function Leave()
      else
         WorldMap('Delisto')
      end
+end
+
+function MAP_FLOW()
+   local MSecs=Time.MSecs()
+   if Maps.LayerCodeName~="#001" then return end
+   local o = Maps.Obj.Obj('Lava')  
+   o.x=Maps.CamX
+   o.y=Maps.CamY
+   o.w=SW
+   o.h=SH
+   o.InsertX=math.sin(MSecs/8000)*500
+   o.InsertY=math.cos(MSecs/8000)*500
 end
 
 function GALE_OnLoad()

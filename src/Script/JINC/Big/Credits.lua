@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.01
+version: 17.05.02
 ]]
 local
 ret = {
@@ -61,32 +61,33 @@ ret = {
         ['00000578'] = { txt = 'Angela Nagtzaam', r=0,g=180,b=255, y=1400 },
         ['0000058C'] = { txt = 'Angela Nagtzaam & Jeroen P. Broks', r=0,g=180,b=255, y=1420 },
         ['000005A0'] = { txt = 'GR-Sites', r=0,g=180,b=255, y=1440 },
-        ['000005B4'] = { txt = 'Holly', r=0,g=180,b=255, y=1460 },
-        ['000005C8'] = { txt = 'J4p4n', r=0,g=180,b=255, y=1480 },
-        ['000005DC'] = { txt = 'Kelly', r=0,g=180,b=255, y=1500 },
-        ['000005F0'] = { txt = 'Man Of Steel', r=0,g=180,b=255, y=1520 },
-        ['00000604'] = { txt = 'Merlin2525', r=0,g=180,b=255, y=1540 },
-        ['00000618'] = { txt = 'Michael Frank', r=0,g=180,b=255, y=1560 },
-        ['0000062C'] = { txt = 'Papapishu', r=0,g=180,b=255, y=1580 },
-        ['00000640'] = { txt = 'Rambo Tribble', r=0,g=180,b=255, y=1600 },
-        ['00000654'] = { txt = 'Solar Granulation', r=0,g=180,b=255, y=1620 },
-        ['00000668'] = { txt = 'Unknown artist from the Public Domain', r=0,g=180,b=255, y=1640 },
-        ['0000067C'] = { txt = 'Yannee\'s artist', r=0,g=180,b=255, y=1660 },
-        ['000006A4'] = { txt = 'Map Design', r=255,g=0,b=0, y=1700 }, -- Map Design
-        ['000006CC'] = { txt = 'Music', r=255,g=0,b=0, y=1740 }, -- Music
-        ['000006E0'] = { txt = 'Eric Matyas', r=0,g=180,b=255, y=1760 },
-        ['000006F4'] = { txt = 'Hung Kee Chan', r=0,g=180,b=255, y=1780 },
-        ['00000708'] = { txt = 'Kevin McLeod', r=0,g=180,b=255, y=1800 },
-        ['0000071C'] = { txt = 'Matt McFarland', r=0,g=180,b=255, y=1820 },
-        ['00000730'] = { txt = 'Nihilore', r=0,g=180,b=255, y=1840 },
-        ['00000744'] = { txt = 'W.K. Chan & Wouter Wershkull', r=0,g=180,b=255, y=1860 },
-        ['00000758'] = { txt = 'Wicky77', r=0,g=180,b=255, y=1880 },
-        ['0000076C'] = { txt = 'Wicky77 & Wout66', r=0,g=180,b=255, y=1900 },
-        ['00000780'] = { txt = 'Widzy', r=0,g=180,b=255, y=1920 },
-        ['000007A8'] = { txt = 'Scenario', r=255,g=0,b=0, y=1960 }, -- Scenario
-        ['000007D0'] = { txt = 'Script', r=255,g=0,b=0, y=2000 }, -- Script
-        ['00000A28'] = { txt = '(c) Copyright 2016', r=255, g=180,b=0,y=2600},
-        ['00000A41'] = { txt = 'Jeroen Petrus Broks', r=255, g=180,b=0,y=2625}
+        ['000005B4'] = { txt = 'Helm42', r=0,g=180,b=255, y=1460 },
+        ['000005C8'] = { txt = 'Holly', r=0,g=180,b=255, y=1480 },
+        ['000005DC'] = { txt = 'J4p4n', r=0,g=180,b=255, y=1500 },
+        ['000005F0'] = { txt = 'Kelly', r=0,g=180,b=255, y=1520 },
+        ['00000604'] = { txt = 'Man Of Steel', r=0,g=180,b=255, y=1540 },
+        ['00000618'] = { txt = 'Merlin2525', r=0,g=180,b=255, y=1560 },
+        ['0000062C'] = { txt = 'Michael Frank', r=0,g=180,b=255, y=1580 },
+        ['00000640'] = { txt = 'Papapishu', r=0,g=180,b=255, y=1600 },
+        ['00000654'] = { txt = 'Rambo Tribble', r=0,g=180,b=255, y=1620 },
+        ['00000668'] = { txt = 'Solar Granulation', r=0,g=180,b=255, y=1640 },
+        ['0000067C'] = { txt = 'Unknown artist from the Public Domain', r=0,g=180,b=255, y=1660 },
+        ['00000690'] = { txt = 'Yannee\'s artist', r=0,g=180,b=255, y=1680 },
+        ['000006B8'] = { txt = 'Map Design', r=255,g=0,b=0, y=1720 }, -- Map Design
+        ['000006E0'] = { txt = 'Music', r=255,g=0,b=0, y=1760 }, -- Music
+        ['000006F4'] = { txt = 'Eric Matyas', r=0,g=180,b=255, y=1780 },
+        ['00000708'] = { txt = 'Hung Kee Chan', r=0,g=180,b=255, y=1800 },
+        ['0000071C'] = { txt = 'Kevin McLeod', r=0,g=180,b=255, y=1820 },
+        ['00000730'] = { txt = 'Matt McFarland', r=0,g=180,b=255, y=1840 },
+        ['00000744'] = { txt = 'Nihilore', r=0,g=180,b=255, y=1860 },
+        ['00000758'] = { txt = 'W.K. Chan & Wouter Wershkull', r=0,g=180,b=255, y=1880 },
+        ['0000076C'] = { txt = 'Wicky77', r=0,g=180,b=255, y=1900 },
+        ['00000780'] = { txt = 'Wicky77 & Wout66', r=0,g=180,b=255, y=1920 },
+        ['00000794'] = { txt = 'Widzy', r=0,g=180,b=255, y=1940 },
+        ['000007BC'] = { txt = 'Scenario', r=255,g=0,b=0, y=1980 }, -- Scenario
+        ['000007E4'] = { txt = 'Script', r=255,g=0,b=0, y=2020 }, -- Script
+        ['00000A3C'] = { txt = '(c) Copyright 2016', r=255, g=180,b=0,y=2620},
+        ['00000A55'] = { txt = 'Jeroen Petrus Broks', r=255, g=180,b=0,y=2645}
 }
 
 return ret
