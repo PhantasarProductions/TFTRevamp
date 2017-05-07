@@ -1,6 +1,6 @@
 --[[
   HellHound.lua
-  Version: 17.04.21
+  Version: 17.05.02
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Fri 21 April 2017; 16:31:30
+-- File Generated: Tue 02 May 2017; 22:54:01
 
 
 local foe = {}
@@ -98,8 +98,10 @@ local foe = {}
 	foe["RATE_ABL_FOE_DISINTEGRATE"] = 0
 	foe["RATE_ABL_FOE_DISTRACT"] = 0
 	foe["RATE_ABL_FOE_EXHAUST"] = 0
+	foe["RATE_ABL_FOE_FLAMEBITE"] = 0
 	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 10
 	foe["RATE_ABL_FOE_GAZE"] = 0
+	foe["RATE_ABL_FOE_GRAVITY"] = 0
 	foe["RATE_ABL_FOE_HOLDPERSON"] = 0
 	foe["RATE_ABL_FOE_HORROR"] = 0
 	foe["RATE_ABL_FOE_MERMAID_TEMPATION"] = 0
@@ -185,6 +187,9 @@ local foe = {}
 	foe["RATE_ABL_MASTER_FREYA_REJUVENATE"] = 0
 	foe["RATE_ABL_MASTER_FREYA_ULTRAHEAL"] = 0
 	foe["RATE_ABL_MASTER_FREYA_VIGOR"] = 0
+	foe["RATE_ABL_MASTER_KRANDAR_\53PS"] = 0
+	foe["RATE_ABL_MASTER_KRANDAR_\54PS"] = 0
+	foe["RATE_ABL_MASTER_KRANDAR_\55PS"] = 0
 	foe["RATE_ABL_MASTER_MIDAS_HARDFORTHEMONEY"] = 0
 	foe["RATE_ABL_MASTER_MIDAS_STEALMONEY"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_BACKSTAB"] = 0
@@ -196,6 +201,9 @@ local foe = {}
 	foe["RATE_ABL_MASTER_RUSSELL_GENOCIDE"] = 0
 	foe["RATE_ABL_MASTER_RUSSELL_SAFESHOT"] = 0
 	foe["RATE_ABL_MASTER_RUSSEL_DECAPITATE"] = 0
+	foe["RATE_ABL_SPECIAL"] = 0
+	foe["RATE_ABL_SPECIAL_DRAGONDOWN"] = 0
+	foe["RATE_ABL_SPECIAL_INSTABILITY"] = 0
 	foe["RATE_AUTO_NOODHULP"] = 0
 	foe["RATE_BERSERK_ATTACK"] = 0
 	foe["RATE_FOE_WATCHMOVE"] = 0
@@ -239,6 +247,8 @@ local foe = {}
 	foe["RATE_ITM_VOICEHERB"] = 0
 	foe["RATE_ITM_VOLTABALL"] = 0
 	foe["RATE_ITM_WATERBUBBLE"] = 0
+	foe["RATE_SILLY_ONE"] = 0
+	foe["RATE_SILLY_ONES"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_SPIRATATRANSFORM"] = 0
 	foe["RATE_SPIRATA_ATTACK_DANDOR"] = 0
@@ -268,6 +278,8 @@ local foe = {}
 	foe["RATE_ZZKEY_GAIA"] = 0
 	foe["RATE_ZZKEY_KEYWATER"] = 0
 	foe["RATE_ZZKEY_WIND"] = 0
+	foe["RATE_ZZZ_KRANDARARMOR"] = 0
+	foe["RATE_ZZZ_KRANDARBLADE"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
 	foe["TARGET_AAA_GUARD"] = "Random"
 	foe["TARGET_ABL_FOE_BACTERIATUSK"] = "Random"
@@ -278,8 +290,10 @@ local foe = {}
 	foe["TARGET_ABL_FOE_DISINTEGRATE"] = "Random"
 	foe["TARGET_ABL_FOE_DISTRACT"] = "Random"
 	foe["TARGET_ABL_FOE_EXHAUST"] = "Random"
+	foe["TARGET_ABL_FOE_FLAMEBITE"] = "Random"
 	foe["TARGET_ABL_FOE_FLAMESTRIKE"] = "Random"
 	foe["TARGET_ABL_FOE_GAZE"] = "Random"
+	foe["TARGET_ABL_FOE_GRAVITY"] = "Random"
 	foe["TARGET_ABL_FOE_HOLDPERSON"] = "Random"
 	foe["TARGET_ABL_FOE_HORROR"] = "Random"
 	foe["TARGET_ABL_FOE_MERMAID_TEMPATION"] = "Random"
@@ -365,6 +379,9 @@ local foe = {}
 	foe["TARGET_ABL_MASTER_FREYA_REJUVENATE"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_ULTRAHEAL"] = "Random"
 	foe["TARGET_ABL_MASTER_FREYA_VIGOR"] = "Random"
+	foe["TARGET_ABL_MASTER_KRANDAR_\53PS"] = "Random"
+	foe["TARGET_ABL_MASTER_KRANDAR_\54PS"] = "Random"
+	foe["TARGET_ABL_MASTER_KRANDAR_\55PS"] = "Random"
 	foe["TARGET_ABL_MASTER_MIDAS_HARDFORTHEMONEY"] = "Random"
 	foe["TARGET_ABL_MASTER_MIDAS_STEALMONEY"] = "Random"
 	foe["TARGET_ABL_MASTER_RUBINE_BACKSTAB"] = "Random"
@@ -376,6 +393,9 @@ local foe = {}
 	foe["TARGET_ABL_MASTER_RUSSELL_GENOCIDE"] = "Random"
 	foe["TARGET_ABL_MASTER_RUSSELL_SAFESHOT"] = "Random"
 	foe["TARGET_ABL_MASTER_RUSSEL_DECAPITATE"] = "Random"
+	foe["TARGET_ABL_SPECIAL"] = "Random"
+	foe["TARGET_ABL_SPECIAL_DRAGONDOWN"] = "Random"
+	foe["TARGET_ABL_SPECIAL_INSTABILITY"] = "Random"
 	foe["TARGET_AUTO_NOODHULP"] = "Random"
 	foe["TARGET_BERSERK_ATTACK"] = "Random"
 	foe["TARGET_FOE_WATCHMOVE"] = "Random"
@@ -419,6 +439,8 @@ local foe = {}
 	foe["TARGET_ITM_VOICEHERB"] = "Random"
 	foe["TARGET_ITM_VOLTABALL"] = "Random"
 	foe["TARGET_ITM_WATERBUBBLE"] = "Random"
+	foe["TARGET_SILLY_ONE"] = "Random"
+	foe["TARGET_SILLY_ONES"] = "Random"
 	foe["TARGET_SPECIAL_AXESMASH"] = "Random"
 	foe["TARGET_SPIRATATRANSFORM"] = "Random"
 	foe["TARGET_SPIRATA_ATTACK_DANDOR"] = "Random"
@@ -448,6 +470,8 @@ local foe = {}
 	foe["TARGET_ZZKEY_GAIA"] = "Random"
 	foe["TARGET_ZZKEY_KEYWATER"] = "Random"
 	foe["TARGET_ZZKEY_WIND"] = "Random"
+	foe["TARGET_ZZZ_KRANDARARMOR"] = "Random"
+	foe["TARGET_ZZZ_KRANDARBLADE"] = "Random"
 	foe["VocalTag"] = "HellHound"
 	foe["Boss"] = false
 	foe["Oversoul"] = true
@@ -486,7 +510,7 @@ local foe = {}
 	foe["normal_Evasion"] = 5
 	foe["normal_HP"] = 500
 	foe["normal_Intelligence"] = 250
-	foe["normal_Power"] = 250
+	foe["normal_Power"] = 200
 	foe["normal_Resistance"] = 200
 	foe["normal_Speed"] = 200
 	foe["oversoul_Accuracy"] = 100

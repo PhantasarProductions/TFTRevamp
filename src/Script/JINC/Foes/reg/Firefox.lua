@@ -1,6 +1,6 @@
 --[[
   Firefox.lua
-  Version: 17.05.02
+  Version: 17.05.07
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Tue 02 May 2017; 22:31:57
+-- File Generated: Thu 04 May 2017; 19:16:17
 
 
 local foe = {}
@@ -486,7 +486,7 @@ local foe = {}
 	foe["normal_Evasion"] = 85
 	foe["normal_HP"] = 2000
 	foe["normal_Intelligence"] = 1
-	foe["normal_Power"] = 1200
+	foe["normal_Power"] = 800
 	foe["normal_Resistance"] = 50
 	foe["normal_Speed"] = 850
 	foe["oversoul_Accuracy"] = 100
@@ -495,7 +495,7 @@ local foe = {}
 	foe["oversoul_Evasion"] = 99
 	foe["oversoul_HP"] = 4000
 	foe["oversoul_Intelligence"] = 1
-	foe["oversoul_Power"] = 2400
+	foe["oversoul_Power"] = 1600
 	foe["oversoul_Resistance"] = 800
 	foe["oversoul_Speed"] = 1200
 

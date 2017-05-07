@@ -143,7 +143,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/textures/wood/muur.png
     1. Graphics: gfx/textures/wood/vloer.png
 - Helm42
-    1. Graphics: Combat/Fighters/Foe/Reg/FireFox.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/FireFox.png
 - Holly
     1. Graphics: GFX/combat/fighters/foe/Reg/Hawk.png
 - Hung Kee Chan
@@ -230,6 +230,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Devil Monk From Hell.lua
     1. Script: Script/JINC/Foes/reg/DragonKeeper.lua
     1. Script: Script/JINC/Foes/reg/FireHound.lua
+    1. Script: Script/JINC/Foes/reg/Firefox.lua
     1. Script: Script/JINC/Foes/reg/Gob.lua
     1. Script: Script/JINC/Foes/reg/GobPriest.lua
     1. Script: Script/JINC/Foes/reg/GobRogue.lua
@@ -245,6 +246,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Lich.lua
     1. Script: Script/JINC/Foes/reg/Medusa.lua
     1. Script: Script/JINC/Foes/reg/Mermaid.lua
+    1. Script: Script/JINC/Foes/reg/Pyroguin.lua
     1. Script: Script/JINC/Foes/reg/RSpook.lua
     1. Script: Script/JINC/Foes/reg/ShadowShroom.lua
     1. Script: Script/JINC/Foes/reg/Shroom.lua
@@ -717,12 +719,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -797,7 +799,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.North.png
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.frames
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.png
-    1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.Frames
+    1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Idle.frames
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.Placeholder.png
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Idle.png
@@ -2191,6 +2193,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - Unknown artist from the Public Domain
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Hag.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/HidingHag.png
+    1. General Data: GFX/Combat/Fighters/Foe/Reg/Pyroguin
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/ShadowShroom.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Shroom.png
     1. Graphics: GFX/Combat/Spellani/Temptation/Heart.png
