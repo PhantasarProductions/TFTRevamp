@@ -1,6 +1,6 @@
 --[[
   ITM_BELL.lua
-  Version: 17.05.02
+  Version: 17.05.10
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

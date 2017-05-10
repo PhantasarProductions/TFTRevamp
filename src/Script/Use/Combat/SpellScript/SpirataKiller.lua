@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  ABL_HERO_JAKE_2PS.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  SpirataKiller.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -34,35 +34,16 @@
  
 version: 17.05.10
 ]]
-ret = {
-	["ABL_APCost"] = 20,
-	["ADDCARD_Action_Act"] = "Self",
-	["Attack"] = 200,
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowCritical"] = true,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "Double-Double-Toil-And-Trouble",
-	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
-	["ITM_ACC_Dandor"] = true,
-	["ITM_ACC_HandoStillor"] = true,
-	["ITM_ACC_Jake"] = true,
-	["ITM_ACC_Marrilona"] = true,
-	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
-	["ITM_Field"] = true,
-	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Consumable",
-	["Stance"] = "Attack",
-	["Target"] = "1F",
-	["Title"] = "Double Power Strike",
-	["Type"] = "Ability",
-	["Voice"] = "2PS",
-	["rew_GainSkill1"] = 25}
+-- @IF IGNORE
+local SpellScript = {}
+-- @FI
 
-return ret
+function SpellScript.SpirataKiller(tar,user)
+    local f = FighterByTag[tar]
+    if f.StatusChanges.Spirata then Hurt(tar,RPG.Points(tar,"HP").Maximum*123) end
+end
 
--- This file is an automatically generated file!
 
+-- @IF IGNORE
+return SpellScript
+-- @FI
