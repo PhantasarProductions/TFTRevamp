@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.02
+version: 17.05.10
 ]]
 
 -- @IF IGNORE
@@ -49,9 +49,23 @@ function Leave()
      end
 end
 
+function NPC_KRUID()
+    Music('Sys/Silence.ogg')
+    PartyPop('K','North')
+    MapText('WHEAT1')
+    for alpha=0,1000,5 do Maps.Obj.Obj('Nostramantu').SetAlpha(alpha) DrawScreen() Flip() end
+    MapText('WHEAT2')
+end
+
 function MAP_FLOW()
    local MSecs=Time.MSecs()
-   if Maps.LayerCodeName~="#001" then return end
+   if Maps.LayerCodeName=="#002" then
+      for i=1,4 do
+          local lo = Maps.Obj.Obj('Lava'..i)
+          lo.InsertY = lo.InsertY + 1
+      end
+      return
+   elseif Maps.LayerCodeName~="#001" then return end
    local o = Maps.Obj.Obj('Lava')  
    o.x=Maps.CamX
    o.y=Maps.CamY
