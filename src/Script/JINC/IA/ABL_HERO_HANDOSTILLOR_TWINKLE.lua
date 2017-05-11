@@ -1,5 +1,5 @@
 --[[
-  ABL_FOE_DEMON_SOUL_BREAKER.lua
+  ABL_HERO_HANDOSTILLOR_TWINKLE.lua
   Version: 17.05.11
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -35,15 +35,17 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ABL_APCost"] = 50,
 	["ADDCARD_Action_Act"] = "Self",
 	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Action_Number"] = 25,
 	["ADDCARD_Char_Interval"] = 5,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["EffectScript"] = "PointAlter",
-	["EffectScript_Arg"] = "HP 1",
+	["Desc"] = "Heal everybody a little bit over time",
+	["Heal"] = 25,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -55,11 +57,12 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "AllHeal",
 	["Stance"] = "Cast",
-	["Target"] = "AF",
-	["Title"] = "Demon Soul Breaker",
-	["Type"] = "Item",
-	["Voice"] = "DSB"}
+	["Target"] = "1F",
+	["Title"] = "Twinkle Twinkle Little Star",
+	["Type"] = "Ability",
+	["Voice"] = "Weniaria"}
 
 return ret
 

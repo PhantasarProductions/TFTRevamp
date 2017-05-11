@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_SMITE.lua
-  Version: 17.05.10
+  Version: 17.05.11
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================

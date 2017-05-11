@@ -1,5 +1,5 @@
 --[[
-  ABL_FOE_DEMON_SOUL_BREAKER.lua
+  ABL_HERO_HANDOSTILLOR_PRAYFORALL.lua
   Version: 17.05.11
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -37,13 +37,22 @@
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
 	["ADDCARD_Action_Interval"] = 5,
-	["ADDCARD_Char_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 100,
+	["ADDCARD_Char_Number"] = 1,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["EffectScript"] = "PointAlter",
-	["EffectScript_Arg"] = "HP 1",
+	["BUFF_Accuracy"] = -20,
+	["BUFF_Endurance"] = -5,
+	["BUFF_Evasion"] = -100,
+	["BUFF_Intelligence"] = 5,
+	["BUFF_Power"] = -1,
+	["BUFF_Resistance"] = 5,
+	["BUFF_Speed"] = -100,
+	["Desc"] = "Gain extra AP",
+	["EffectScript"] = "RecoverAP",
+	["EffectScript_Arg"] = "100",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -55,11 +64,13 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "AllHeal",
 	["Stance"] = "Cast",
-	["Target"] = "AF",
-	["Title"] = "Demon Soul Breaker",
-	["Type"] = "Item",
-	["Voice"] = "DSB"}
+	["Target"] = "AA",
+	["Title"] = "PrayForAll",
+	["Type"] = "Ability",
+	["Voice"] = "Weniaria",
+	["rew_GainSkill2"] = -1}
 
 return ret
 
