@@ -75,6 +75,7 @@ function Post_Nostramantu()
     MapText('WHEAT3')
     Done(nostradone)
     Maps.Obj.Kill('NPC_KRUID',1)
+    Music('Dungeon/Trade-Off.ogg')
 end
 
 

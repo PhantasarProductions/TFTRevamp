@@ -6219,7 +6219,7 @@ Rec: ABL_HERO_HANDOSTILLOR_TWINKLE
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
-	Target = 1F
+	Target = AA
 	Title = Twinkle Twinkle Little Star
 	Type = Ability
 	USE_Penalty = 0
@@ -8157,7 +8157,7 @@ Rec: ABL_HERO_MARRILONA_FLAME
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
-	Target = 1F
+	Target = AA
 	Title = Flame
 	Type = Ability
 	USE_Penalty = 0
