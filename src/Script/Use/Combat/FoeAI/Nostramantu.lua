@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  SpirataKiller.lua
+  Nostramantu.lua
   (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
@@ -35,15 +35,32 @@
 version: 17.05.10
 ]]
 -- @IF IGNORE
-local SpellScript = {}
+local FoeAI = {}
 -- @FI
 
-function SpellScript.SpirataKiller(tar,user)
-    local f = fightersbytag[tar]
-    if f.StatusChanges.Spirata then Hurt(tar,RPG.Points(tar,"HP").Maximum*123) end
+function FoeAI.Nostramantu(tag)
+   local spirata
+   local foe = fightersbytag[tag]
+   for i=0,3 do       
+       local t = RPG.PartyTag(i)
+       spirata = spirata or fightersbytag[t].StatusChanges.Spirata
+   end
+   if spirata then
+    nextact =   {
+                           executor = { group = 'Foe', tag=foe.tag },
+                           act = 'SPECIAL_SPIRATAKILLER', 
+                           flow='Execution', 
+                           group='Hero',
+                           targetidx=1
+    }
+   else
+      FoeAI.default(tag)
+   end
+   return nextact     
+   --assert(false,"Nothing to see here yet!")
 end
 
 
 -- @IF IGNORE
-return SpellScript
+return FoeAI
 -- @FI

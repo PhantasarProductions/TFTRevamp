@@ -216,6 +216,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/MONK4.lua
     1. Script: Script/JINC/Foes/Boss/Marrilona.lua
     1. Script: Script/JINC/Foes/Boss/Mega Ghost.lua
+    1. Script: Script/JINC/Foes/Boss/Nostramantu1.lua
     1. Script: Script/JINC/Foes/Boss/Russell.lua
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperHidingHag.lua
@@ -457,6 +458,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_ANABOLINEA.lua
     1. Script: Script/JINC/IA/ITM_ANTIDOTE.lua
     1. Script: Script/JINC/IA/ITM_APPLE.lua
+    1. Script: Script/JINC/IA/ITM_BANANA.lua
     1. Script: Script/JINC/IA/ITM_BELL.lua
     1. Script: Script/JINC/IA/ITM_CARROT.lua
     1. Script: Script/JINC/IA/ITM_CURSEDSPORES.lua
@@ -495,6 +497,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/SILLY_ONE.lua
     1. Script: Script/JINC/IA/SILLY_ONES.lua
     1. Script: Script/JINC/IA/SPECIAL_AXESMASH.lua
+    1. Script: Script/JINC/IA/SPECIAL_SPIRATAKILLER.lua
     1. Script: Script/JINC/IA/SPIRATATRANSFORM.lua
     1. Script: Script/JINC/IA/SPIRATA_ATTACK_DANDOR.lua
     1. Script: Script/JINC/IA/SPIRATA_ATTACK_HANDOSTILLOR.lua
@@ -644,6 +647,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/FoeAI/BlackDragon.lua
     1. Script: Script/Use/Combat/FoeAI/Default.lua
     1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
+    1. Script: Script/Use/Combat/FoeAI/Nostramantu.lua
     1. Script: Script/Use/Combat/Jokers/AAA_Jokers.lua
     1. Script: Script/Use/Combat/Jokers/Dragon.lua
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
@@ -665,6 +669,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/PunishUser.lua
     1. Script: Script/Use/Combat/SpellScript/SafeShot.lua
     1. Script: Script/Use/Combat/SpellScript/Spirata.lua
+    1. Script: Script/Use/Combat/SpellScript/SpirataKiller.lua
     1. Script: Script/Use/Combat/SpellScript/Steal.lua
     1. Script: Script/Use/Combat/SpellScript/Temptation.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
@@ -839,6 +844,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Rosetta/General.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Marrilona.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/MegaGhost.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/Nostramantu.piko
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/Nostramantu.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Female1.piko
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Female1.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Female2.png
@@ -1231,6 +1238,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Fairies/Fandalora_BackSide.png
     1. Graphics: GFX/Actors/Single/Fairies/Freya.piko
     1. Graphics: GFX/Actors/Single/Fairies/Freya.png
+    1. Graphics: GFX/Actors/Single/Fairies/Nostramantu (Autosaved).piko
     1. Graphics: GFX/Actors/Single/Fairies/Nostramantu.piko
     1. Graphics: GFX/Actors/Single/Fairies/Nostramantu.png
     1. Graphics: GFX/Actors/Single/Fairies/Yanee.png

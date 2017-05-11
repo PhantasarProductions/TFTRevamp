@@ -89,6 +89,18 @@ Rec: BOSS_JUGGERNAUT
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: BOSS_NOSTRAMANTU
+	Description = Defeat Nostramantu at the Mt. Pyrus
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Achieved
+	Title = You talkin' to me?
+	Type = Silver
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: BOSS_RUSSEL
 	Description = Defeat Russel Veenboer
 	Icon = *DEFAULT*
@@ -385,6 +397,18 @@ Rec: SCEN_PROLOGUE_MARRILONA
 	Show = Always
 	Title = It's a kind of magic
 	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: SCEN_SAVEMARRILONA
+	Description = Cure Marrilona from Nostramantu's curse
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Achieved
+	Title = She's alive... ALIVE!!!!
+	Type = Gold
 	skill1 = TRUE
 	skill2 = TRUE
 	skill3 = TRUE

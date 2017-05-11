@@ -32,30 +32,51 @@
   
  **********************************************
  
-version: 17.05.10
+version: 17.05.11
 ]]
 
 -- @IF IGNORE
 local
 -- @FI
-      nostradone = "&DONE.CHAPTER4.MTPYRUS.BOSS.NOSTRAMANTU.DEFEATED"
+      nostradone,marrilonadone = "&DONE.CHAPTER4.MTPYRUS.BOSS.NOSTRAMANTU.DEFEATED","&DONE.CHAPTER4.MARRILONA.CURED.WHEAT"
 
 function Leave()
      if not CVV(nostradone) then
         MapText('NOLEAVE')
         Actors.MoveToSpot('PLAYER','Start')
+     elseif not CVV(marrilonadone) then
+        error("Sorry, the rest has not yet been scripted")   
      else
         WorldMap('Delisto')
      end
 end
 
 function NPC_KRUID()
+    -- Pre Nostramantu
     Music('Sys/Silence.ogg')
     PartyPop('K','North')
     MapText('WHEAT1')
-    for alpha=0,1000,5 do Maps.Obj.Obj('Nostramantu').SetAlpha(alpha) DrawScreen() Flip() end
+    for alpha=0,1000,5 do Maps.Obj.Obj('Nostramantu').SetAlpha(alpha) Cls() DrawScreen() Flip() end
     MapText('WHEAT2')
+
+    -- Fight Nostramantu
+    ClearCombatData()
+    Var.D("$COMBAT.FOE_1","Boss/Nostramantu1")
+    Var.D("$COMBAT.POSFOE_1","CENTER")
+    Var.D("$COMBAT.MUSIC","Music/Special Boss/PlayTillDeath_(Nostramantu).ogg")
+    Var.D("$COMBAT.ARENA","pyruspass.png")
+    Schedule('MAP','Post_Nostramantu')
+    StartBoss("Fairy Elder","Nostramantu")  
+    Maps.Obj.Kill('Nostramantu',1)
 end
+
+function Post_Nostramantu()
+    Award('BOSS_NOSTRAMANTU')
+    MapText('WHEAT3')
+    Done(nostradone)
+    Maps.Obj.Kill('NPC_KRUID',1)
+end
+
 
 function MAP_FLOW()
    local MSecs=Time.MSecs()

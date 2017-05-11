@@ -1,6 +1,6 @@
 --[[
   PlayWithPoints.lua
-  Version: 17.04.24
+  Version: 17.05.10
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -68,6 +68,14 @@ function SpellScript.APNUL(tartag,extag,param)
    return true
 end   
 
+function SpellScript.APFull(tartag,extag,param)
+   local a = RPG.Points(tartag,'AP')
+   a.Have = a.Maximum
+   if param and param~="" then
+      charmsg(tartag,param,0,180,255)
+   end
+end
+   
 function SpellScript.Disintegrate(tartag,extag)
    local thp = RPG.Points(tartag,'HP')
    local ehp = RPG.Points( extag,'HP')
