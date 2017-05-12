@@ -167,6 +167,13 @@ function Terug()
    end
 end
 
+function NPC_BlueStaff()
+    ItemGive('ZZKEY_BLUESTAFF')
+    MapText('BLUE')
+    Done('&BLUESTAFF')
+    Maps.Obj.Kill('NPC_BlueStaff')
+end
+
    
 function GALE_OnLoad()
    MapHide('Secret')

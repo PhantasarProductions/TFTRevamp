@@ -325,7 +325,7 @@ Rec: CH4MANAROAD
 Rec: CH4PYRUSPASS
 	Dungeon = TRUE
 	Folder = Delisto
-	Kthura = CH4_Town_NostraburgNight
+	Kthura = CH4_Dungeon_PyrusPass
 	Layer = #000
 	LocationName = Pyrus Pass
 	LocationPrefix = 

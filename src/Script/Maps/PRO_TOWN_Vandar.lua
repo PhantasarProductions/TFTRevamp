@@ -73,8 +73,10 @@ end
 function Bye()
    if not CVV("&DONE.JAKE.CHIEF.PROLOGUESPOKEN") then 
       MapText("NOLEAVECHIEF")
-   elseif not CVV("&DONE.JAKE.LITTLEJENNY.RESCUED") then
+   elseif not CVVN("&DONE.CH4DISCUSSION") then
       MapText("NOLEAVEJENNY")   
+   else
+      WorldMap()   
    end   
 end
 

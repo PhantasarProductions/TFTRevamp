@@ -524,6 +524,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/WAND_THUNDER.lua
     1. Script: Script/JINC/IA/WAND_TRAINING.lua
     1. Script: Script/JINC/IA/WAND_WIND.lua
+    1. Script: Script/JINC/IA/ZZKEY_BLUESTAFF.lua
     1. Script: Script/JINC/IA/ZZKEY_FIRE.lua
     1. Script: Script/JINC/IA/ZZKEY_GAIA.lua
     1. Script: Script/JINC/IA/ZZKEY_KEYWATER.lua
@@ -1208,7 +1209,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.West.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.West.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Idle.png
-    1. ???: GFX/Actors/Bundled/Player/Jake_Human.East (Autosaved).piko-png
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.East.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.East.png
     1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.North.Frames
@@ -1420,6 +1420,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Scenario/FeenaTomb/Untitled.png
     1. Graphics: GFX/Treasure/Bag.png
     1. Graphics: GFX/Treasure/Black Orb.png
+    1. Graphics: GFX/Treasure/Blue Staff.png
     1. Graphics: GFX/Treasure/Chest.Frames
     1. Graphics: GFX/Treasure/Chest.png
     1. Graphics: GFX/Treasure/ManaOrb.png

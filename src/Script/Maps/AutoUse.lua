@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 17.04.29
+  Version: 17.05.12
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -303,6 +303,11 @@ end
 
 function NPC_BlueSeal()
    SerialBoxText("BLUESEAL",'SEAL',"FLOW_FIELD")
+   if not CVVN('&BLUESTAFF') then return end
+   assert(BlueSeal,"There is no definition of the sealed boss in this map: "..Maps.CodeName)
+   Maps.Obj.Kill('NPC_BlueSeal')
+   Done('&DONE.SEALEDBOSS.'..upper(Maps.CodeName))
+   BlueSeal()   
 end
  
  
