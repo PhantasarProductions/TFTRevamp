@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.03
+version: 17.05.12
 ]]
 
 
@@ -189,14 +189,14 @@ function GALE_OnLoad()
    ZA_Enter('UP2',Up)
    ZA_Enter('DOWN',Down)
    ZA_Enter("Enter_Cave",Dragon)   
-   if not CVVN("&DONE.JAKE.LITTLEJENNY.RESCUED") then 
+   if not CVVN("&DONE.CH4DISCUSSION") then 
       local oldlay = Maps.LayerCodeName
       Maps.GotoLayer('town')
       Maps.Obj.Kill("NPC_MT_Jenny")
       -- if oldlay and oldlay~="" then Maps.GotoLayer(oldlay) end
       CSay("Jenny not yet in town!")
    else
-      CSay('Janny is in town! '..Var.C("&DONE.JAKE.LITTLEJENNY.RESCUED")) 
+      CSay('Janny is in town! '..Var.C("&DONE.JAKE.LITTLEJENNY.RESCUED").."/"..Var.C('&DONE.CH4DISCUSSION')) 
    end -- Don't show Jenny until she's saved from the Dragon Cave. She won't be accessible until the final part of the game.
    -- Clickable for entering houses
    AddClickable('HOUSECHIEF')
