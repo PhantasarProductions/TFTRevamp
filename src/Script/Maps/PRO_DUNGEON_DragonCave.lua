@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.06
+version: 17.05.12
 ]]
 
 -- @USE /Script/Use/Specific/EndOfPrologue.lua
@@ -158,6 +158,15 @@ function Jenny_BackZone()
    })[Maps.Obj.Exists('NPC_Jenny')]()
 end
 
+function Terug()
+   if CVV('&DONE.CH4DISCUSSION') then
+      GoToLayer('#000','End')
+   else
+      MapText('NIET_TERUG')
+      Actors.WalkToSpot('Start')
+   end
+end
+
    
 function GALE_OnLoad()
    MapHide('Secret')
@@ -165,8 +174,9 @@ function GALE_OnLoad()
    --ZA_Enter('REMAP',Maps.Remap)
    ZA_Enter('Jenny_BackZone',Jenny_BackZone)
    ZA_Enter('BackToTown',BackToTown)
+   ZA_Enter('Terug',Terug)
    if CVVN('&DONE.CH4DISCUSSION') then
       Maps.GoToLayer('#001')
-      Map.Obj.Kill('PRC_GETRIDOFME')
+      Maps.Obj.Kill('PRC_GETRIDOFME')
    end   
 end    
