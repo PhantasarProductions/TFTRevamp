@@ -6177,7 +6177,7 @@ Rec: ABL_HERO_HANDOSTILLOR_TWINKLE
 	CurePoison = FALSE
 	CureSilence = FALSE
 	CureSleep = FALSE
-	CureUndead = FALSE
+	CureUndead = TRUE
 	Desc = Heal everybody a little bit over time
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_Endurance = 0
@@ -6195,12 +6195,12 @@ Rec: ABL_HERO_HANDOSTILLOR_TWINKLE
 	EQP_STAT_SR_Silence = 0
 	EQP_STAT_SR_Sleep = 0
 	EQP_STAT_SR_Undead = 0
-	EffectScript = 
-	EffectScript_Arg = 
+	EffectScript = Recover AP
+	EffectScript_Arg = 5
 	EffectScript_External = FALSE
-	Heal = 25
+	Heal = 5
 	Heal_StatPercent = Intelligence
-	Heal_Type = Absolute
+	Heal_Type = Percent
 	ITM_ACC_Dandor = TRUE
 	ITM_ACC_HandoStillor = TRUE
 	ITM_ACC_Jake = TRUE
@@ -6214,7 +6214,7 @@ Rec: ABL_HERO_HANDOSTILLOR_TWINKLE
 	ITM_Type = Consumable
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
-	Rew_GainAP = 0
+	Rew_GainAP = 1
 	SpellAni = AllHeal
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
@@ -6229,8 +6229,8 @@ Rec: ABL_HERO_HANDOSTILLOR_TWINKLE
 	rew_CreateSkill3 = FALSE
 	rew_CreateSkill4 = FALSE
 	rew_CreateSkill5 = FALSE
-	rew_GainSkill1 = 0
-	rew_GainSkill2 = 0
+	rew_GainSkill1 = 8
+	rew_GainSkill2 = 12
 	rew_GainSkill3 = 0
 	rew_GainSkill4 = 0
 	rew_GainSkill5 = 0

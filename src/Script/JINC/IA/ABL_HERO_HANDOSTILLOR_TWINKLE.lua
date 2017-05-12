@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_HANDOSTILLOR_TWINKLE.lua
-  Version: 17.05.11
+  Version: 17.05.12
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -44,10 +44,13 @@ ret = {
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
+	["CureUndead"] = true,
 	["Desc"] = "Heal everybody a little bit over time",
-	["Heal"] = 25,
+	["EffectScript"] = "Recover AP",
+	["EffectScript_Arg"] = "5",
+	["Heal"] = 5,
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
+	["Heal_Type"] = "Percent",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
@@ -57,12 +60,15 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["Rew_GainAP"] = 1,
 	["SpellAni"] = "AllHeal",
 	["Stance"] = "Cast",
 	["Target"] = "AA",
 	["Title"] = "Twinkle Twinkle Little Star",
 	["Type"] = "Ability",
-	["Voice"] = "Weniaria"}
+	["Voice"] = "Weniaria",
+	["rew_GainSkill1"] = 8,
+	["rew_GainSkill2"] = 12}
 
 return ret
 

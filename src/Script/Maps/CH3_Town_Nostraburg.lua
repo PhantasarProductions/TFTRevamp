@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.30
+version: 17.05.12
 ]]
 RAMATA = "&DONE.NOSTRABURG.RAMATA.WELCOME.TEXT"
 
@@ -175,11 +175,11 @@ function GALE_OnLoad()
      ZA_Enter('AndWeAreOff',function() MapText('GOTOPYRUS') Party('Jake_Human;Krandar;Dandor;HandoStillor') LoadMap("CH4_DUNGEON_PYRUSPASS") GoToLayer('#000','Start') end)
      
   else
-     Maps.Obj.Obj("Enter_krandar").Tag="krandarhouseunavailablenow"
+     --Maps.Obj.Obj("Enter_krandar").Tag="krandarhouseunavailablenow"
      Maps.Obj.Kill("ZA_ENTER_krandar")
      Maps.ReMap()   
   end   
-  if not CVV("&DONE.BOSS.NOSTRAMANTU1") then Maps.Obj.Obj("NPC_Feenalaria").Visible=0 end
+  if not CVV("&DONE.CHAPTER4.MTPYRUS.BOSS.NOSTRAMANTU.DEFEATED") then Maps.Obj.Obj("NPC_Feenalaria").Visible=0 end
   ZA_Enter("Exit",function() GoToLayer("town","exit_"..lower(Maps.LayerCodeName)) end) 
   for obj in KthuraEach() do
       if prefixed(obj.Tag,"ENTER_") then

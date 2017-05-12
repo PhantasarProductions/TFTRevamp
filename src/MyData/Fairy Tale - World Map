@@ -312,3 +312,23 @@ Rec: CH3SPIRATAEARTH
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: CH4MANAROAD
+	Dungeon = TRUE
+	Folder = Kokonora
+	Kthura = Anna
+	Layer = #001
+	LocationName = Mana Road
+	LocationPrefix = The
+	Start = Start
+	UnlockedFromStart = FALSE
+
+Rec: CH4PYRUSPASS
+	Dungeon = TRUE
+	Folder = Delisto
+	Kthura = CH4_Town_NostraburgNight
+	Layer = #000
+	LocationName = Pyrus Pass
+	LocationPrefix = 
+	Start = Start
+	UnlockedFromStart = FALSE
+

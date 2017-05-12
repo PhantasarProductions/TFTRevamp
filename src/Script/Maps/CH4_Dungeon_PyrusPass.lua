@@ -32,20 +32,63 @@
   
  **********************************************
  
-version: 17.05.11
+version: 17.05.12
 ]]
 
 -- @IF IGNORE
 local
 -- @FI
       nostradone,marrilonadone = "&DONE.CHAPTER4.MTPYRUS.BOSS.NOSTRAMANTU.DEFEATED","&DONE.CHAPTER4.MARRILONA.CURED.WHEAT"
+      
+function CureMarrilona()
+      LoadMap('CH3_Town_Nostraburg')
+      Party('Jake_Human')
+      GoToLayer('krandar',"M_Jake")
+      Maps.Obj.Obj('HandoStillor').SetAlpha(1000)
+      PartyPop('M','North')
+      MapText('CURE1')
+      Cls()
+      Flip()
+      Music('SYS/Silence.ogg')
+      local v={'DSB.ogg','Earth.ogg','Fire.ogg','Frost.ogg','Heal.ogg','Hit.ogg','Thunder.ogg',"Water.ogg","Wind.ogg",'Yell.ogg'}
+      for vf in each(v) do
+          if JCR6.Exists('Vocals/Combat/Foe/Marrilona/Action/'..vf)==1 then SFX('Vocals/Combat/Foe/Marrilona/Action/'..vf) Time.Sleep(1200) end
+      end
+      Award('SCEN_SAVEMARRILONA')
+      Maps.Obj.Kill('Shroud')
+      local marrilona=Maps.Obj.Obj('Marrilona')
+      marrilona.TextureFile='GFX/Actors/Bundled/Player/Marrilona.West.png'
+      MapText('CURE2')
+      marrilona.TextureFile='GFX/Actors/Single/Combi/JakeMarrilonaHug.png'
+      Maps.Obj.Obj('PLAYER').Visible=0
+      MapText('CURE3')
+      local cap = CVV("%LEVELCAP")
+      local lv  = RPG.Stat('Marrilona',"Level")
+      local plus = 6/skill; if skill==3 then plus=0 end
+      if lv+plus<cap then 
+         RPG.IncStat('Marrilona','Level',plus)
+         MS.LN_Run('PARTY','Script/Subs/Party.lua','SyncLevel','Marrilona')
+      end
+      WorldMap_UnLock('CH4PYRUSPASS')
+      WorldMap_UnLock('CH4MANAROAD')
+      Var.Clear('&KRANDAR.GONE')
+      Party('Jake_Human;Marrilona;Dandor;HandoStillor')
+      LoadMap('CH3_TOWN_NOSTRABURG')
+      GoToLayer('town','CH4START')
+      PartyPop('K')
+      Var.Clear("%HANDICAP.MARRILONA")
+      Music('SYS/Silence.ogg')
+      MapText('CH4START')  
+      Done('&DONE.CH4DISCUSSION') 
+end      
 
 function Leave()
      if not CVV(nostradone) then
         MapText('NOLEAVE')
         Actors.MoveToSpot('PLAYER','Start')
-     elseif not CVV(marrilonadone) then
-        error("Sorry, the rest has not yet been scripted")   
+        return
+     elseif not Done(marrilonadone) then
+        CureMarrilona()   
      else
         WorldMap('Delisto')
      end
