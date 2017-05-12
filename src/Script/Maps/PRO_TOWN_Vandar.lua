@@ -196,6 +196,7 @@ function GALE_OnLoad()
       -- if oldlay and oldlay~="" then Maps.GotoLayer(oldlay) end
       CSay("Jenny not yet in town!")
    else
+      Done("&ALLOW.ENCOFF['PRO_DUNGEON_DRAGONCAVE']")
       CSay('Janny is in town! '..Var.C("&DONE.JAKE.LITTLEJENNY.RESCUED").."/"..Var.C('&DONE.CH4DISCUSSION')) 
    end -- Don't show Jenny until she's saved from the Dragon Cave. She won't be accessible until the final part of the game.
    -- Clickable for entering houses
