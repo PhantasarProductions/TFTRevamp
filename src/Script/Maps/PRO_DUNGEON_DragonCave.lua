@@ -165,4 +165,8 @@ function GALE_OnLoad()
    --ZA_Enter('REMAP',Maps.Remap)
    ZA_Enter('Jenny_BackZone',Jenny_BackZone)
    ZA_Enter('BackToTown',BackToTown)
+   if CVVN('&DONE.CH4DISCUSSION') then
+      Maps.GoToLayer('#001')
+      Map.Obj.Kill('PRC_GETRIDOFME')
+   end   
 end    
