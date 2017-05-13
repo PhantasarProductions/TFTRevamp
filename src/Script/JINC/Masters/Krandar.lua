@@ -1,3 +1,39 @@
+--[[
+**********************************************
+  
+  Krandar.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
+  
+  This file contains material that is related 
+  to a storyline that is which is strictly
+  copyrighted to Jeroen Broks.
+  
+  This file may only be used in an unmodified
+  form with an unmodified version of the 
+  software this file belongs to.
+  
+  You may use this file for your study to see
+  how I solved certain things in the creation
+  of this project to see if you find valuable
+  leads for the creation of your own.
+  
+  Mostly this file comes along with a project
+  that is for most part released under an
+  open source license and that means that if
+  you use that code with this file removed
+  from it, you can use it under that license.
+  Please check out the other files to find out
+  which license applies.
+  This file comes 'as-is' and in no possible
+  way the author can be held responsible of
+  any form of damages that may occur due to 
+  the usage of this file
+  
+  
+ **********************************************
+ 
+version: 17.05.13
+]]
 local RPG = RPGStat
 
 local Krandar = {}
@@ -33,12 +69,13 @@ Krandar.abl = {
          Dandor       = 'abl_master_Krandar_charge',
          HandoStillor = 'abl_master_krandar_holyshit'
 }         
-Krandar.abl.Jake_Human = Krandar.abl.Jake
-Krandar.abl.Jake_Fairy = Krandar.abl.Jake
+--Krandar.abl.Jake_Human = Krandar.abl.Jake
+--Krandar.abl.Jake_Fairy = Krandar.abl.Jake
 
-function Krandar.teach(ch) -- Should return true if master actually decides to teach something
+function Krandar.teach(pch) -- Should return true if master actually decides to teach something
    local all,rabl
-   local uch = upper(ch); if prefixed(uch,"JAKE") then uch="JAKE" end
+   local ch=pch
+   local uch = upper(ch); if prefixed(uch,"JAKE") then uch="JAKE"; ch='Jake' end
    if CVV('&MASTER.KRANDAR.TEACH.JAKE') and CVV('&MASTER.KRANDAR.TEACH.MARRILONA') and CVV('&MASTER.KRANDAR.TEACH.DANDOR') and CVV('&MASTER.KRANDAR.TEACH.HANDOSTILLOR') then 
       all=true
    elseif CVV('&DONE.SEAL.'..uch..'1') and CVV('&DONE.SEAL.'..uch..'2') and (not (Done('&DONE.MASTER.KRANDAR.TEACH.'..uch))) then

@@ -40,7 +40,7 @@ function MeesterKrandar()
    local master="&MASTER.KRANDAR"
    if not CVV(master) then
       MapText("KRANDAR_PREMASTER")
-      if CVV("%SEALEDBOSSESDEFEATED")==0 then
+      if not CVVN("&KRANDARWILLTEACH") then
          MapText("KRANDAR_NOTREADY")
          return
       end

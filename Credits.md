@@ -365,6 +365,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_MASTER_KRANDAR_5PS.lua
     1. Script: Script/JINC/IA/ABL_MASTER_KRANDAR_6PS.lua
     1. Script: Script/JINC/IA/ABL_MASTER_KRANDAR_7PS.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_KRANDAR_CATASTROPHE.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_KRANDAR_CHARGE.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_KRANDAR_HOLYSHIT.lua
     1. Script: Script/JINC/IA/ABL_MASTER_MIDAS_HARDFORTHEMONEY.lua
     1. Script: Script/JINC/IA/ABL_MASTER_MIDAS_STEALMONEY.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUBINE_BACKSTAB.lua
@@ -537,6 +540,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ZZZ_KRANDARBLADE.lua
     1. Script: Script/JINC/Masters/Fandalora.lua
     1. Script: Script/JINC/Masters/Freya.lua
+    1. Script: Script/JINC/Masters/Krandar.lua
     1. Script: Script/JINC/Masters/Midas.lua
     1. Script: Script/JINC/Masters/Rubine.lua
     1. Script: Script/JINC/Masters/Russell.lua
