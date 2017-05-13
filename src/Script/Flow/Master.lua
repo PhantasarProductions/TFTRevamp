@@ -45,6 +45,13 @@ function GALE_OnLoad()
   sty = LC('screen.margin.top')
 end  
 
+function FeenaCheckAll()
+    local masters = {'Fandalora','Freya','Krandar','Midas','Rubine','Russell'}
+    local ret = true
+    for m in each(masters) do ret=ret and Unlocked[m] end
+    Var.D("&ACTIVATE.FEENALARIA.MASTER",upper(ret==true))
+end
+
 function Master(id)
    cMaster = jinc('Script/JINC/Masters/'..id..".lua")
    cMaster.name = cMaster.name or id
