@@ -1,6 +1,6 @@
 --[[
   Card Tricks.lua
-  Version: 17.03.08
+  Version: 17.05.13
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -81,6 +81,20 @@ function SpellScript.TakeOver(tartag,extag,param)
 end
 
 SpellScript.Takeover=SpellScript.TakeOver
+
+
+function SpellScript.Cocytus(tartag,extag,param)
+    local rounds = {'Caina','Antenora','Ptolomea','Judecca'}
+    local card2add = { group = nextact.group, tag=nextact.tag, letter=nextact.letter, auto=true }
+    card2add.nextact = {}
+    for f,i in pairs(nextact) do card2add.nextact[f]=i; CSay("Added to cocytus round card: "..f) end
+    local l=1
+    for r in each(rounds) do
+        card2add.nextact.act = "cocytus_"..r
+        l = l + (round(l,l+10)*skill)
+        AddCard(card2add,l)
+    end    
+end
 
 -- @IF INGORE
 return SpellScript 
