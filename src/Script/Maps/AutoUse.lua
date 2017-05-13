@@ -305,7 +305,7 @@ function NPC_BlueSeal()
    SerialBoxText("BLUESEAL",'SEAL',"FLOW_FIELD")
    if not CVVN('&BLUESTAFF') then return end
    assert(BlueSeal,"There is no definition of the sealed boss in this map: "..Maps.CodeName)
-   Maps.Obj.Kill('NPC_BlueSeal')
+   Maps.Obj.Kill('NPC_BlueSeal',1)
    Done('&DONE.SEALEDBOSS.'..upper(Maps.CodeName))
    SerialBoxText("BLUESEAL",'OPEN',"FLOW_FIELD")
    BlueSeal()   
