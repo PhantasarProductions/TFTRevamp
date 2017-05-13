@@ -64,7 +64,9 @@ function Feenalaria.requirement() return true end
 
 Feenalaria.abl = {
                     [ 25]='abl_master_feena_magmablast',
-                    [ 40]='abl_master_feena_cocytus'
+                    [ 40]='abl_master_feena_cocytus',
+                    [ 50]='abl_master_feena_drown',
+                    [ 60]='abl_master_feena_megaquake'
                   
               }
 
