@@ -1,5 +1,5 @@
 --[[
-  ABL_HERO_MARRILONA_HURRICANE.lua
+  ABL_MASTER_FEENA_KATRINA.lua
   Version: 17.05.13
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -35,16 +35,17 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
-	["ABL_APCost"] = 200,
+	["ABL_APCost"] = 400,
 	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 50,
+	["ADDCARD_Action_Interval"] = 75,
 	["ADDCARD_Action_Number"] = 5,
-	["Attack"] = 175,
+	["Attack"] = 575,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AllowCritical"] = true,
 	["Attack_AttackStat"] = "Intelligence",
 	["Attack_DefenseStat"] = "Resistance",
 	["Attack_Element"] = "Wind",
+	["CauseParalysis"] = true,
 	["Desc"] = "Blow, storm! Blow!",
 	["EQP_STAT_Intelligence"] = 1,
 	["Heal_StatPercent"] = "Intelligence",
@@ -62,11 +63,15 @@ ret = {
 	["ITM_WeaponAbility"] = true,
 	["Stance"] = "Cast",
 	["Target"] = "AF",
-	["Title"] = "Hurricane",
+	["Title"] = "Katrina",
 	["Type"] = "Ability",
 	["Voice"] = "Wind",
 	["rew_CreateSkill1"] = true,
-	["rew_GainSkill3"] = 250}
+	["rew_GainSkill1"] = 3,
+	["rew_GainSkill2"] = 250,
+	["rew_GainSkill3"] = 250,
+	["rew_GainSkill4"] = 250,
+	["rew_GainSkill5"] = 250}
 
 return ret
 

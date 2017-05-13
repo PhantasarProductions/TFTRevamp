@@ -1,6 +1,6 @@
 --[[
   PlayWithPoints.lua
-  Version: 17.05.10
+  Version: 17.05.13
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -105,9 +105,22 @@ function SpellScript.Gravity(tar,exe)
    else 
       procent = ({.25,.50,.75})[skill]
    end   
-   hp = RPG.Points(tar,'HP')
-   dmg = math.floor(hp.Have*procent)
+   local hp = RPG.Points(tar,'HP')
+   local dmg = math.floor(hp.Have*procent)
    Hurt(tar,dmg)
+end
+
+function SpellScript.FullPower(tar,exe)
+   local ex = upper(exe); if prefixed(ex,"JAKE") then ex="JAKE" end
+   local tr = upper(tre); if prefixed(tr,"JAKE") then tr="JAKE" end
+   local ch = CVV("%GAMETIME.HOURS")
+   local sp = CVVN('%FULLPOWER.'..ex.."."..tr..".HOURS")
+   if (not sp) or math.abs(sp-ch)>=3 then
+      for s in each({'HP','AP','VIT'}) do
+          local p = RPG.Points(tar,s)
+          p.Have = p.Maximum
+      end
+  end
 end
    
 -- @IF INGORE

@@ -66,7 +66,10 @@ Feenalaria.abl = {
                     [ 25]='abl_master_feena_magmablast',
                     [ 40]='abl_master_feena_cocytus',
                     [ 50]='abl_master_feena_drown',
-                    [ 60]='abl_master_feena_megaquake'
+                    [ 60]='abl_master_feena_megaquake',
+                    [ 70]='abl_master_feena_katrina',
+                    [ 80]='abl_master_feena_scylla',
+                    [200]='abl_master_feena_fullpower'
                   
               }
 

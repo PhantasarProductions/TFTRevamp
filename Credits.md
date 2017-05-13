@@ -359,6 +359,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_PHANTOM.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_REMOVECURSE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_VOID.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FEENA_COCYTUS.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FEENA_MAGMABLAST.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_REJUVENATE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_ULTRAHEAL.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_VIGOR.lua
@@ -384,6 +386,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_SPECIAL_INSTABILITY.lua
     1. Script: Script/JINC/IA/AUTO_NOODHULP.lua
     1. Script: Script/JINC/IA/BERSERK_ATTACK.lua
+    1. Script: Script/JINC/IA/COCYTUS_ANTENORA.lua
+    1. Script: Script/JINC/IA/COCYTUS_CAINA.lua
+    1. Script: Script/JINC/IA/COCYTUS_JUDECCA.lua
+    1. Script: Script/JINC/IA/COCYTUS_PTOLOMEA.lua
     1. Script: Script/JINC/IA/EQP_ACC_TITANBELT.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_CURSEDWP_HUNGERAXE.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_TRAINAXE.lua
@@ -736,12 +742,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png

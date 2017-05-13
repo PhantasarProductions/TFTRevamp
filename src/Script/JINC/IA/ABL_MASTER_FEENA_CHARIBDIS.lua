@@ -1,5 +1,5 @@
 --[[
-  ABL_HERO_MARRILONA_HURRICANE.lua
+  ABL_MASTER_FEENA_CHARIBDIS.lua
   Version: 17.05.13
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -35,18 +35,16 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
-	["ABL_APCost"] = 200,
 	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 50,
-	["ADDCARD_Action_Number"] = 5,
-	["Attack"] = 175,
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack"] = 750,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowCritical"] = true,
 	["Attack_AttackStat"] = "Intelligence",
-	["Attack_DefenseStat"] = "Resistance",
-	["Attack_Element"] = "Wind",
-	["Desc"] = "Blow, storm! Blow!",
-	["EQP_STAT_Intelligence"] = 1,
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Element"] = "None",
+	["CauseDeath"] = true,
+	["CauseSleep"] = true,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -54,19 +52,14 @@ ret = {
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Marrilona",
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 250,
-	["ITM_Type"] = "Weapon",
-	["ITM_WeaponAbility"] = true,
+	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
 	["Target"] = "AF",
-	["Title"] = "Hurricane",
-	["Type"] = "Ability",
-	["Voice"] = "Wind",
-	["rew_CreateSkill1"] = true,
-	["rew_GainSkill3"] = 250}
+	["Title"] = "Charibdis",
+	["Type"] = "Item"}
 
 return ret
 
