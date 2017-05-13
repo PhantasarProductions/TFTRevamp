@@ -1,6 +1,6 @@
 --[[
   CombatLinker.lua
-  Version: 17.04.25
+  Version: 17.05.13
   Copyright (C) 2015, 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -89,7 +89,7 @@ function StartCombat()
 end
 
 
-function StartBoss(desc,boss)
+function StartBoss(desc,boss,r,g,b)
   StopMusic()
   if musicavailable then SFX('Music/Boss/BossIntro.ogg') end
   -- Base Setup
@@ -108,7 +108,7 @@ function StartBoss(desc,boss)
   -- Make this all appear
   repeat
      local cont = true
-     color(100,0,0)
+     color(r or 100,g or 0,b or 0)
      Image.Rect(0,0,SW+50,SH+50) -- Ruling out any trouble with border settings, as they don't matter in this screen.
      for fw in each(w) do
          Image.Font('Fonts/Coolvetica.ttf',fw.fontsize)

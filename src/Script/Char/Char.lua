@@ -1,6 +1,6 @@
 --[[
   Char.lua
-  Version: 17.03.22
+  Version: 17.05.13
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -72,7 +72,8 @@ function EStat(ch)
         if v~="" then
            local i = ItemGet(v)
            for s in each(stats) do
-               RPG.IncStat(ch,'EQP_'..s,i['EQP_Stat_'..v])
+               CSay('Change on '..s..': '..sval(i['EQP_STAT_'..s]))
+               RPG.IncStat(ch,'EQP_'..s,i['EQP_STAT_'..s])
            end
         end   
     end    
@@ -91,7 +92,7 @@ function NStat(ch,stat,max,pmin)
    if prefixed(ch,"FOE_") then 
       w = {'BASE','BUFF'}; 
       rate = .75 + (.25*(skill-1)) 
-      end
+   end
    -- Calc Regular stat
    for wi in each(w) do
        total = total + (RPGChar.Stat(ch,wi.."_"..stat)*rate)

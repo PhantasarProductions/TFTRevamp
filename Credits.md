@@ -148,6 +148,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/combat/fighters/foe/Reg/Hawk.png
 - Hung Kee Chan
     1. Music: Music/Special Boss/Juggernaut.ogg
+    1. Music: Music/Special Boss/Rush.ogg
 - J4p4n
     1. Graphics: Gfx/Combat/Fighters/Foe/Boss/Black Dragon.png
     1. Graphics: Gfx/Textures/MtPyrusPuzzle/Volcano.piko
@@ -223,6 +224,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/Boss/Terra.lua
     1. Script: Script/JINC/Foes/Boss/harry2.lua
+    1. Script: Script/JINC/Foes/Sealed/Kabi.lua
     1. Script: Script/JINC/Foes/reg/ArcaneSlime.lua
     1. Script: Script/JINC/Foes/reg/Bandit.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
@@ -454,6 +456,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR7.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR8.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR9.lua
+    1. Script: Script/JINC/IA/EQP_MARRILONA_SEALARMOR.lua
     1. Script: Script/JINC/IA/FOE_WATCHMOVE.lua
     1. Script: Script/JINC/IA/ICEBLAST.lua
     1. Script: Script/JINC/IA/ITM_AMBROSIA.lua
@@ -498,6 +501,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_WATERBUBBLE.lua
     1. Script: Script/JINC/IA/SILLY_ONE.lua
     1. Script: Script/JINC/IA/SILLY_ONES.lua
+    1. Script: Script/JINC/IA/SPECIAL_ARMAGEDDON.lua
     1. Script: Script/JINC/IA/SPECIAL_AXESMASH.lua
     1. Script: Script/JINC/IA/SPECIAL_SPIRATAKILLER.lua
     1. Script: Script/JINC/IA/SPIRATATRANSFORM.lua
@@ -870,6 +874,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant09.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant10.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Skeleton.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Sealed/Kabi.png
+    1. ???: GFX/Combat/Fighters/Foe/Sealed/KabiArc.lzh
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Spirata.Action.png
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Spirata.piko
     1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Spirata.png
@@ -964,9 +970,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Music: Music/Sys/Silence.ogg
-    1. Music: Music/Dungeon/JustASong.ogg
-    1. Music: Music/Dungeon/Scary Song.ogg
-    1. Music: Music/SpecialBoss/Threat.ogg
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
@@ -1571,26 +1574,29 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_VANDAR
     1. Scenario: Languages/English/Scenario/WORLDMAP
     1. Scenario: Languages/English/Scenario.$$TEMP$$0$$
+    1. Music: Music/Dungeon/JustASong.ogg
+    1. Music: Music/Dungeon/Scary Song.ogg
+    1. Music: Music/SpecialBoss/Threat.ogg
 - Kelly
     1. Graphics: GfX/cOMBAT/SpellAni/Death/Death.png
 - Kevin McLeod
     1. Music: Music/AltBoss/Day of Chaos.ogg
-    1. Music: Music/Dreshka/Hero Down.ogg
-    1. Music: Music/Dreshka/Water Prelude.ogg
     1. Music: Music/AltEncounter/Tempting Secrets.ogg
+    1. Music: Music/Dreshka/Hero Down.ogg
     1. Music: Music/Dungeon/Chillin Hard.ogg
+    1. Music: Music/Dreshka/Water Prelude.ogg
     1. Music: Music/Dungeon/Pippin the Hunchback.ogg
+    1. Music: Music/Dungeon/TheDread.ogg
+    1. Music: Music/Hub/Angevin.ogg
     1. Music: Music/Hub/Indore.ogg
     1. Music: Music/RandomEncounter/Killers.ogg
-    1. Music: Music/Dungeon/TheDread.ogg
+    1. Music: Music/Scenario/We Got Trouble.ogg
     1. Music: Music/SpecialBoss/Living Voyage.ogg
-    1. Music: Music/Hub/Angevin.ogg
     1. Music: Music/SpecialBoss/Summon the Rawk.ogg
+    1. Music: Music/Town/Enchanted Valley.ogg
     1. Music: Music/SpecialBoss/Volatile Reaction.ogg
     1. Music: Music/Town/Night on the Docks - Sax.ogg
     1. Music: Music/Town/Rite of Passage.ogg
-    1. Music: Music/Scenario/We Got Trouble.ogg
-    1. Music: Music/Town/Enchanted Valley.ogg
 - Man Of Steel
     1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Thief.piko
     1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Variant01.png
@@ -1747,6 +1753,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Trees/Spar.png
     1. Graphics: GFX/Textures/Trees/Struik.png
 - Matt McFarland
+    1. Music: Music/Special Boss/Blue Seal.ogg
     1. Music: Music/Dungeon/Ooze.ogg
     1. Music: Music/Dungeon/Strangled.ogg
     1. Music: Music/Dungeon/trade-off.ogg
@@ -2270,6 +2277,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Dungeon/WinterBreeze.ogg
     1. Music: Music/Gen/Sleep.ogg
     1. Music: Music/RandomEncounter/Wicky's combat tune.ogg
+    1. Music: Music/Dungeon/Cathedral.ogg
     1. Music: Music/Hub/The Sad Fate.ogg
     1. Music: Music/Town/Happy.ogg
     1. Music: Music/Town/IrishFishermen.ogg

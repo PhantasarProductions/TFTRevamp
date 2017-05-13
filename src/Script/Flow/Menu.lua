@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 17.03.25
+  Version: 17.05.13
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -333,7 +333,8 @@ function eqChange(slot,itag,item)
        ItemGive(ecode)
     end
     RPG.SetData(ch,"EQP_"..slot,itag)
-    RemoveItem(itag)   
+    RemoveItem(itag) 
+    MS.LN_Run('CHAR',"Script/Char/Char.lua",'EStat',ch)  
 end
 
 function features.Items(x,y,w,h)

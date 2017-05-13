@@ -1,6 +1,6 @@
 --[[
   EQP_MARRILONA_AR10.lua
-  Version: 17.05.12
+  Version: 17.05.13
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -35,6 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Power",
 	["Attack_Element"] = "None",

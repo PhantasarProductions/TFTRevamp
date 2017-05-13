@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.12
+version: 17.05.13
 ]]
 RAMATA = "&DONE.NOSTRABURG.RAMATA.WELCOME.TEXT"
 
@@ -155,6 +155,16 @@ function MAP_FLOW()
        OMarrilona.Y = 270 + math.sin(Time.MSecs()/250)*5 
     end
 end
+
+function BlueSeal()
+    ClearCombatData()
+    Var.D("$COMBAT.FOE_1","Sealed/Kabi")
+    Var.D("$COMBAT.POSFOE_1","CENTER")
+    Var.D("$COMBAT.MUSIC","Music/Special Boss/Blue Seal.ogg")
+    Var.D("$COMBAT.ARENA","Forest.png")
+    StartBoss("World Destroyer","Kabi",0,25,100)      
+    Done('&DONE.SEAL.MARRILONA1')
+end    
 
 function GALE_OnLoad()
   Maps.GotoLayer("town") 
