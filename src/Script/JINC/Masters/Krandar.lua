@@ -76,6 +76,8 @@ Krandar.abl = {
          Dandor       = 'abl_master_Krandar_charge',
          HandoStillor = 'abl_master_krandar_holyshit'
 }         
+
+Krandar.ablname = { Jake="Penta Power Strike",Marrilona="Catastrophe",Dandor="Charge",HandoStillor="Holy Shit!"}
 --Krandar.abl.Jake_Human = Krandar.abl.Jake
 --Krandar.abl.Jake_Fairy = Krandar.abl.Jake
 
@@ -114,7 +116,7 @@ Krandar.Desc = {"Krandar is the leader of the Black Winged Fairies","Proove your
 function Krandar.ShowScore(ch)
    local chi=ch
    if prefixed(chi,"Jake") then chi="Jake" end
-   return Krandar.abl[chi]
+   return Krandar.ablname[chi]
 end   
 
 Krandar.HideRates = true
