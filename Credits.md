@@ -359,8 +359,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_PHANTOM.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_REMOVECURSE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_VOID.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FEENA_CHARIBDIS.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FEENA_COCYTUS.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FEENA_DROWN.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FEENA_FULLPOWER.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FEENA_KATRINA.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FEENA_MAGMABLAST.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FEENA_MEGAQUAKE.lua
+    1. Script: Script/JINC/IA/ABL_MASTER_FEENA_SCYLLA.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_REJUVENATE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_ULTRAHEAL.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FREYA_VIGOR.lua
@@ -742,12 +748,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png

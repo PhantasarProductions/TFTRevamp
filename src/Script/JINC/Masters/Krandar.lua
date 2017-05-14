@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.13
+version: 17.05.14
 ]]
 local RPG = RPGStat
 
@@ -40,6 +40,13 @@ local Krandar = {}
 
 local skill = Sys.Val(Var.C('%SKILL'))
 
+local function left(txt,l)
+return Str.Left(txt,l or 1)
+end
+
+local function prefixed(m,s)
+   return left(m,#s)==s
+end   
 
 
 
