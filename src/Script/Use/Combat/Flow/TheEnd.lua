@@ -1,6 +1,6 @@
 --[[
   TheEnd.lua
-  Version: 17.04.29
+  Version: 17.05.15
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -40,7 +40,16 @@
 fflow = {}
 -- @FI
 
-function f_vicinit()
+
+function VicCount()
+    inc('%VICTORIES')
+    MS.LoadNew("ACH","Script/Subs/Achievements.lua")
+    MS.Run('ACH','AchByVictories')
+    MasterAllInc('Feenalaria','FeenalariaPoints')
+end
+
+function f_vicinit()   
+   VicCount()
    if musicavailable then
       if not ( Var.C("$COMBAT.MUSIC")=="*NOCHANGE*" or Var.C("$COMBAT.MUSIC")=="*NOCHANGE*.ogg" ) then
          Music("Sys/Silence.ogg")
@@ -62,7 +71,7 @@ function f_vicinit()
    return true
 end
 
-function fflow.Victory()
+function fflow.Victory()   
    local altvic = CVVN("$COMBAT.ALT_VICTORY")
    if altvic then
       AltVictory[altvic]()
