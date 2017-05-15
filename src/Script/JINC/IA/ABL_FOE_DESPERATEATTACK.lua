@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_DESPERATEATTACK.lua
-  Version: 17.05.13
+  Version: 17.05.15
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================

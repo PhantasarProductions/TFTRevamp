@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_FEENA_MEGAQUAKE.lua
-  Version: 17.05.13
+  Version: 17.05.15
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -63,7 +63,7 @@ ret = {
 	["SpellAni"] = "Quake",
 	["Stance"] = "Cast",
 	["Target"] = "1A",
-	["Title"] = "Earthquake",
+	["Title"] = "Mega Quake",
 	["Type"] = "Ability",
 	["rew_GainSkill1"] = 50,
 	["rew_GainSkill2"] = 100,

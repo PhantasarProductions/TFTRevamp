@@ -10912,7 +10912,7 @@ Rec: ABL_MASTER_FEENA_MEGAQUAKE
 	SpellAni_External = FALSE
 	Stance = Cast
 	Target = 1A
-	Title = Earthquake
+	Title = Mega Quake
 	Type = Ability
 	USE_Penalty = 0
 	Voice = 
