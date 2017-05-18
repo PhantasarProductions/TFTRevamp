@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_FREYA_REJUVENATE.lua
-  Version: 17.05.15
+  Version: 17.05.18
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

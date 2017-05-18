@@ -1,6 +1,6 @@
 --[[
   EQP_JEWEL_TOPAZ.lua
-  Version: 17.05.15
+  Version: 17.05.18
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -43,11 +43,13 @@ ret = {
 	["Desc"] = "Raises protection against silence",
 	["EQP_STAT_SR_Silence"] = 50,
 	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_BlackMarket"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_ShopPrice"] = 6000,

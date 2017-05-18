@@ -749,12 +749,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -858,8 +858,23 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male 2.png
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male.piko
     1. Graphics: GFX/Actors/Single/Black Winged Fairies/Ramata.png
+    1. Graphics: GFX/Actors/Single/Cameos/Cyl_Crystal.png
+    1. Graphics: GFX/Actors/Single/Cameos/Cyl_Foxy.png
+    1. Graphics: GFX/Actors/Single/Cameos/Cyl_Rolf.png
+    1. Graphics: GFX/Actors/Single/Cameos/Cyl_Wendicka.png
+    1. Graphics: GFX/Actors/Single/Cameos/Cyl_Xenobi.png
+    1. Graphics: GFX/Actors/Single/Cameos/Cyl_Yirl.png
+    1. Graphics: GFX/Actors/Single/Cameos/Cylinder.piko
     1. Graphics: GFX/Actors/Single/Cameos/GJDC.png
     1. Graphics: GFX/Actors/Single/Cameos/GJYT.png
+    1. Graphics: GFX/Actors/Single/Cameos/SS_Crystal.png
+    1. Graphics: GFX/Actors/Single/Cameos/SS_Foxy.piko
+    1. Graphics: GFX/Actors/Single/Cameos/SS_Foxy.png
+    1. Graphics: GFX/Actors/Single/Cameos/SS_Rolf.png
+    1. Graphics: GFX/Actors/Single/Cameos/SS_Wendicka.png
+    1. Graphics: GFX/Actors/Single/Cameos/SS_Xenobi.png
+    1. Graphics: GFX/Actors/Single/Cameos/SS_Yirl.png
+    1. Graphics: GFX/Actors/Single/Cameos/Untitled 3.piko
     1. Graphics: GFX/Actors/Single/Dwarves/Female Dwarf Setup.piko
     1. Graphics: GFX/Actors/Single/Dwarves/Female Purple.png
     1. Graphics: GFX/Actors/Single/Dwarves/Female Red.png

@@ -1,5 +1,5 @@
 --[[
-  ABL_MASTER_FANDALORA_PHANTOM.lua
+  EQP_JEWEL_SAPPHIRE.lua
   Version: 17.05.18
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -35,37 +35,30 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
-	["ABL_APCost"] = 120,
 	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 100,
-	["ADDCARD_Action_Number"] = 5,
-	["ADDCARD_Char_Interval"] = 5,
-	["Attack"] = 200,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowCritical"] = true,
-	["Attack_AttackStat"] = "Intelligence",
-	["Attack_DefenseStat"] = "Resistance",
-	["Attack_Element"] = "Darkness",
-	["Desc"] = "Dark attack to all",
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Element"] = "None",
+	["Desc"] = "Raises protection against Paralysis",
+	["EQP_STAT_SR_Paralysis"] = 100,
 	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
+	["ITM_BlackMarket"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Consumable",
+	["ITM_ShopPrice"] = 6000,
+	["ITM_Type"] = "Accesoiry",
 	["Stance"] = "Cast",
-	["Target"] = "AF",
-	["Title"] = "Phantom Hazard",
-	["Type"] = "Ability",
-	["Voice"] = "Dark",
-	["rew_GainSkill1"] = 4,
-	["rew_GainSkill2"] = 4,
-	["rew_GainSkill3"] = 4,
-	["rew_GainSkill4"] = 4,
-	["rew_GainSkill5"] = 4}
+	["Target"] = "1F",
+	["Title"] = "Sapphire",
+	["Type"] = "Item"}
 
 return ret
 
