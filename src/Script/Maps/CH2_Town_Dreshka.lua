@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.29
+version: 17.05.16
 ]]
 
 function NPC_Rosetta()
@@ -113,8 +113,14 @@ function SeeDamage()
    -- Sys.Error("Boss fight not there yet!")
 end   
 
+function NPC_StarDome()
+   MapText('STARDOME')
+   WorldMap_Unlock('CH4STARDOME')
+end   
+
 
 function GALE_OnLoad()
+   Maps.GoToLayer('destroyed'); if not CVV('&DONE.CH4DISCUSSION') then Maps.Obj.Kill('NPC_StarDome') end
    ZA_Enter('EnterTown',function() local d=CVV('&DONE.SPIRATA.WATER')==true GoToLayer(({ [true]='destroyed', [false]='town'})[d],'Start') end)
    ZA_Enter('SeeDamage',SeeDamage)
    ZA_Enter('Leave',WorldMap)

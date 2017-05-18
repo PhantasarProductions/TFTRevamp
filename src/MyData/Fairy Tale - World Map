@@ -332,3 +332,13 @@ Rec: CH4PYRUSPASS
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: CH4STARDOME
+	Dungeon = TRUE
+	Folder = Delisto
+	Kthura = CH4_Dungeon_StarDome
+	Layer = #001
+	LocationName = Star Dome
+	LocationPrefix = 
+	Start = Start
+	UnlockedFromStart = FALSE
+

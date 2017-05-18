@@ -604,6 +604,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH3_Town_Grombo.lua
     1. Script: Script/Maps/CH3_Town_Nostraburg.lua
     1. Script: Script/Maps/CH4_Dungeon_PyrusPass.lua
+    1. Script: Script/Maps/CH4_Dungeon_StarDome.lua
     1. Script: Script/Maps/CH4_Town_NostraburgNight.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
     1. Script: Script/Maps/PRO_DUNGEON_Magic.lua
@@ -789,6 +790,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/Mine/Rails/SE.png
     1. Graphics: gfx/Textures/Mine/Rails/SW.png
     1. Graphics: gfx/Textures/Mine/Woodbars.png
+    1. Graphics: gfx/Textures/Plasma/TiledPlasma.png
     1. Graphics: gfx/Textures/Random/AshFloor.piko
     1. Graphics: gfx/Textures/Random/AshFloor.png
     1. Graphics: gfx/Textures/Shapes/Mine/I.png
@@ -806,6 +808,19 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/Sinus/Dark Sinus/VSinus.png
     1. Graphics: gfx/Textures/Sinus/Light Sinus/HSinus.png
     1. Graphics: gfx/Textures/Sinus/Light Sinus/VSinus.png
+    1. Graphics: gfx/Textures/Star Dome/E.png
+    1. Graphics: gfx/Textures/Star Dome/Floor.png
+    1. Graphics: gfx/Textures/Star Dome/N.png
+    1. Graphics: gfx/Textures/Star Dome/NE.png
+    1. Graphics: gfx/Textures/Star Dome/NES.png
+    1. Graphics: gfx/Textures/Star Dome/NW.png
+    1. Graphics: gfx/Textures/Star Dome/NWS.png
+    1. Graphics: gfx/Textures/Star Dome/S.png
+    1. Graphics: gfx/Textures/Star Dome/SE.png
+    1. Graphics: gfx/Textures/Star Dome/SES.png
+    1. Graphics: gfx/Textures/Star Dome/SW.png
+    1. Graphics: gfx/Textures/Star Dome/SWS.png
+    1. Graphics: gfx/Textures/Star Dome/W.png
     1. General Data: gfx/Textures/Town/Elves/Bench
     1. Graphics: gfx/Textures/Town/Elves/Bench.png
     1. Graphics: gfx/Textures/Town/Elves/Fence.png
@@ -981,6 +996,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Data
     1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Objects
     1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Settings
+    1. Map Design: Kthura/CH4_Dungeon_StarDome/Data
+    1. Map Design: Kthura/CH4_Dungeon_StarDome/Objects
+    1. Map Design: Kthura/CH4_Dungeon_StarDome/Settings
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Data
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Objects
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Settings
@@ -1018,6 +1036,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Algemeen/Earth.png
     1. Graphics: GFX/Algemeen/Next.png
     1. Graphics: GFX/Algemeen/Prev.png
+    1. Graphics: GFX/Algemeen/Sterretjes.alpha.png
     1. Graphics: GFX/Algemeen/Sterretjes.png
     1. Graphics: GFX/Algemeen/pointer.png
     1. Graphics: GFX/Combat/Cards/Backside.piko
@@ -1591,6 +1610,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_VANDAR
     1. Scenario: Languages/English/Scenario/WORLDMAP
     1. Scenario: Languages/English/Scenario.$$TEMP$$0$$
+    1. Music: Music/Dungeon/Alien.ogg
     1. Music: Music/Dungeon/JustASong.ogg
     1. Music: Music/Dungeon/Scary Song.ogg
     1. Music: Music/SpecialBoss/Threat.ogg
@@ -1601,16 +1621,16 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/AltEncounter/Tempting Secrets.ogg
     1. Music: Music/Dreshka/Hero Down.ogg
     1. Music: Music/Dungeon/Chillin Hard.ogg
-    1. Music: Music/Dreshka/Water Prelude.ogg
     1. Music: Music/Dungeon/Pippin the Hunchback.ogg
+    1. Music: Music/Dreshka/Water Prelude.ogg
     1. Music: Music/Dungeon/TheDread.ogg
     1. Music: Music/Hub/Angevin.ogg
     1. Music: Music/Hub/Indore.ogg
     1. Music: Music/RandomEncounter/Killers.ogg
     1. Music: Music/Scenario/We Got Trouble.ogg
     1. Music: Music/SpecialBoss/Living Voyage.ogg
-    1. Music: Music/SpecialBoss/Summon the Rawk.ogg
     1. Music: Music/Town/Enchanted Valley.ogg
+    1. Music: Music/SpecialBoss/Summon the Rawk.ogg
     1. Music: Music/SpecialBoss/Volatile Reaction.ogg
     1. Music: Music/Town/Night on the Docks - Sax.ogg
     1. Music: Music/Town/Rite of Passage.ogg
