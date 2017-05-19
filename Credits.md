@@ -453,9 +453,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_WP7.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP8.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP9.lua
+    1. Script: Script/JINC/IA/EQP_JEWEL_AMETHYST.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_EMERALD.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_GARNET.lua
+    1. Script: Script/JINC/IA/EQP_JEWEL_ONYX.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_RUBY.lua
+    1. Script: Script/JINC/IA/EQP_JEWEL_SAPPHIRE.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLEMERALD.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLGARNET.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLRUBY.lua
@@ -749,12 +752,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
