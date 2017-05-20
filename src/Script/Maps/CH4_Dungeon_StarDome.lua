@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.18
+version: 17.05.20
 ]]
 
 
@@ -66,3 +66,62 @@ function MAP_FLOW()
       if e.Rotation<=0 then e.Rotation = e.Rotation + 360 end
    end     
 end   
+
+
+function HetGatIn(gat)
+      assert(puzzle,"No puzzle set up")
+      if gat==puzzle.gat then return end
+      local p = Actors.Actor('PLAYER')
+      p.Dominance=2
+      for i=1000,0,-1 do
+          p.ScaleX=i
+          p.ScaleY=i
+          p.Rotation=p.Rotation+1
+          p.Y = p.Y - 1
+          Cls()
+          MAP_FLOW()
+          DrawScreen()
+          Flip()
+      end
+      puzzle=nil
+      GoToLayer('#007','Start')
+      Maps.ReMap()
+end
+
+function InitPuzzle()
+   if puzzle then return end
+   local starchars = {'Wendicka','Crystal','Yirl','Foxy','Xenobi','Rolf'}
+   local chosen = rand(1,#starchars)
+   puzzle = { gat = rand(1,6) }
+   puzzle.gatpic = starchars[chosen]
+   puzzle.chosen = chosen
+   puzzle.chosenpic = starchars[chosen]
+   local getset = { [puzzle.gat]=puzzle.chosenpic }; puzzle.getset=getset
+   CSay(serialize('PRIOR.Puzzle',puzzle))
+   for i=1,6 do -- Chars
+       local r
+       local timeout = i*200
+       if i~=puzzle.chosen  then
+         repeat
+          r=rand(1,6) -- hole
+          timeout = timeout - 1
+          assert(timeout>0,"Puzzle generation time-out ("..i..") "..serialize('puzzle',puzzle))
+          CSay(i..".  "..'r = '..r.."  timeout: "..timeout)
+         until (not getset[r]) -- and (r~=chosen)
+       getset[r]=starchars[i]
+       end  
+   end
+   CSay(serialize('puzzle',puzzle))
+   for i=1,6 do
+       CSay("Setting up cylinder: "..i)
+       local c = Maps.Obj.Obj('Cyl'..i)
+       c.TextureFile = 'GFX/Actors/Single/Cameos/CYL_'..puzzle.getset[i]..".png"
+   end
+   Maps.Obj.Obj('KeyPerson').TextureFile = 'GFX/Actors/Single/Cameos/SS_'..puzzle.chosenpic..".png"
+end
+
+function GALE_OnLoad()
+    for i=1,6 do ZA_Enter('Gat'..i,HetGatIn,i) end
+    ZA_Enter('InitPuz',InitPuzzle)
+    
+end
