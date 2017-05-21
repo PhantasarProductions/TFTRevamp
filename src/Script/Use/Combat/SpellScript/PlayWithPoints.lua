@@ -1,6 +1,6 @@
 --[[
   PlayWithPoints.lua
-  Version: 17.05.13
+  Version: 17.05.21
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -122,6 +122,20 @@ function SpellScript.FullPower(tar,exe)
       end
   end
 end
+
+function SpellScript.Randomizer(tar,exe)
+    local f = mysplit(RPGChar.PointsFields(tar),";")
+    if RPG.Points(tar,"HP").Have==0 then return end
+    for p in each(f) do
+        if not prefixed(p,"SK_LVL_") then
+           local pnt = RPG.Points(tar,p)
+           local min = pnt.Minimum; if p=="HP" then min=1 end
+           local max = pnt.Maximum
+           pnt.Have=rand(min,max)
+        end 
+    end
+end
+SpellScript.RandomAll=SpellScript.Randomizer
    
 -- @IF INGORE
 return SpellScript 

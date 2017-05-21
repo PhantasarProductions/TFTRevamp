@@ -226,6 +226,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/harry2.lua
     1. Script: Script/JINC/Foes/Sealed/Kabi.lua
     1. Script: Script/JINC/Foes/reg/ArcaneSlime.lua
+    1. Script: Script/JINC/Foes/reg/BSpook.lua
     1. Script: Script/JINC/Foes/reg/Bandit.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
     1. Script: Script/JINC/Foes/reg/Boar.lua
@@ -249,6 +250,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Lich.lua
     1. Script: Script/JINC/Foes/reg/Medusa.lua
     1. Script: Script/JINC/Foes/reg/Mermaid.lua
+    1. Script: Script/JINC/Foes/reg/Pinky.lua
     1. Script: Script/JINC/Foes/reg/Pyroguin.lua
     1. Script: Script/JINC/Foes/reg/RSpook.lua
     1. Script: Script/JINC/Foes/reg/ShadowShroom.lua
@@ -261,6 +263,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/VolcanoHound.lua
     1. Script: Script/JINC/Foes/reg/Wolf.lua
     1. Script: Script/JINC/Foes/reg/Zombie.lua
+    1. Script: Script/JINC/Foes/reg/litworm.lua
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
     1. Script: Script/JINC/IA/AAA_GUARD.lua
     1. Script: Script/JINC/IA/ABL_FOE_BACTERIATUSK.lua
@@ -279,6 +282,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_HORROR.lua
     1. Script: Script/JINC/IA/ABL_FOE_MERMAID_TEMPATION.lua
     1. Script: Script/JINC/IA/ABL_FOE_PARADIVE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_RANDOMIZER.lua
+    1. Script: Script/JINC/IA/ABL_FOE_RANDOMIZERTOTAL.lua
     1. Script: Script/JINC/IA/ABL_FOE_SETTHESTAGEONFIRE.lua
     1. Script: Script/JINC/IA/ABL_FOE_SHOCKINGSTORIES.lua
     1. Script: Script/JINC/IA/ABL_FOE_SICKSTORIES.lua
@@ -1060,6 +1065,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Algemeen/pointer.png
     1. Graphics: GFX/Combat/Cards/Backside.piko
     1. Graphics: GFX/Combat/Cards/Backside.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/BSpook.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Lemming.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/RSpook.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Rat.piko
@@ -1330,6 +1336,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Arena/SpirataWater.png
     1. Graphics: GFX/Combat/Arena/SpirataWind.png
     1. Graphics: GFX/Combat/Arena/SpookyDung.png
+    1. Graphics: GFX/Combat/Arena/StarDome.png
     1. Graphics: GFX/Combat/Arena/SubRiver.png
     1. Graphics: GFX/Combat/Cards/Ability.png
     1. Graphics: GFX/Combat/Cards/BOSS_A.png
@@ -1828,6 +1835,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/MtPyrusPuzzle/VolcanoSlide.png
 - Ray Larabie
     1. Font: Fonts/Coolvetica.ttf
+- Roana
+    1. Graphics: gfx/combat/fighters/foe/reg/Pinky.png
 - Solar Granulation
     1. Graphics: GFX/System/Quill.png
     1. Graphics: GFX/System/Solar-Granulation-Used-Quill-800px.png
