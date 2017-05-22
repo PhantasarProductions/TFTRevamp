@@ -97,6 +97,14 @@ function Boss()
   StartBoss("Alien Lord","Rjafhkfhafjklhgjd")   
 end
 
+function NPC_Key()
+    ItemGive('ZZ_CRYPTKEY')
+    MapText('KEY')
+    Done('&CRYPTKEY')
+    Maps.Obj.Kill('NPC_Key')
+end
+
+
 function InitPuzzle()
    if puzzle then return end
    local starchars = {'Wendicka','Crystal','Yirl','Foxy','Xenobi','Rolf'}

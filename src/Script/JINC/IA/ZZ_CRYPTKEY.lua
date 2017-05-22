@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  ABL_HERO_HANDOSTILLOR_VITALIZE.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  ZZ_CRYPTKEY.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -35,16 +35,16 @@
 version: 17.05.22
 ]]
 ret = {
-	["ABL_APCost"] = 150,
 	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Strong healing spell on the entire party",
-	["Heal"] = 275,
+	["Desc"] = "Grants access to the crypts under the Spirata Temples",
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "StatPercent",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
@@ -53,15 +53,11 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "AllHeal",
+	["ITM_Type"] = "KeyItem",
 	["Stance"] = "Cast",
-	["Target"] = "AA",
-	["Title"] = "Vitalize",
-	["Type"] = "Ability",
-	["Voice"] = "Weniaria",
-	["rew_GainSkill1"] = 10,
-	["rew_GainSkill2"] = 25}
+	["Target"] = "1F",
+	["Title"] = "Crypt Key",
+	["Type"] = "Item"}
 
 return ret
 

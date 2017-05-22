@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_DISTRACT.lua
-  Version: 17.05.21
+  Version: 17.05.22
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================

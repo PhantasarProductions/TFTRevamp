@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.21
+version: 17.05.22
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
@@ -44,11 +44,13 @@ ret = {
 	["Attack_Element"] = "None",
 	["Desc"] = "Grants access to temple of the Water Spirata",
 	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "KeyItem",

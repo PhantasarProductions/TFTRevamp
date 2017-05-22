@@ -1,6 +1,6 @@
 --[[
   WAND_II_KELVIN.lua
-  Version: 17.05.21
+  Version: 17.05.22
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

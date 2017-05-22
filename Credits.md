@@ -560,6 +560,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ZZKEY_WIND.lua
     1. Script: Script/JINC/IA/ZZZ_KRANDARARMOR.lua
     1. Script: Script/JINC/IA/ZZZ_KRANDARBLADE.lua
+    1. Script: Script/JINC/IA/ZZ_CRYPTKEY.lua
     1. Script: Script/JINC/Masters/Fandalora.lua
     1. Script: Script/JINC/Masters/Feenalaria.lua
     1. Script: Script/JINC/Masters/Freya.lua
@@ -759,12 +760,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -830,6 +831,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/Star Dome/SES.png
     1. Graphics: gfx/Textures/Star Dome/SW.png
     1. Graphics: gfx/Textures/Star Dome/SWS.png
+    1. Graphics: gfx/Textures/Star Dome/The_Key.piko
+    1. Graphics: gfx/Textures/Star Dome/The_Key.png
     1. Graphics: gfx/Textures/Star Dome/W.png
     1. General Data: gfx/Textures/Town/Elves/Bench
     1. Graphics: gfx/Textures/Town/Elves/Bench.png
@@ -1581,6 +1584,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_NOSTRABURG
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_PYRUSPASS
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_STARDOME
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
@@ -1626,6 +1630,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_NOSTRABURG
     1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_PYRUSPASS
+    1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_STARDOME
     1. Scenario: Languages/English/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
