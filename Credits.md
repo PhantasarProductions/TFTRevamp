@@ -224,6 +224,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/Boss/Terra.lua
     1. Script: Script/JINC/Foes/Boss/harry2.lua
+    1. Script: Script/JINC/Foes/Boss/superalien.lua
     1. Script: Script/JINC/Foes/Sealed/Kabi.lua
     1. Script: Script/JINC/Foes/reg/ArcaneSlime.lua
     1. Script: Script/JINC/Foes/reg/BSpook.lua
@@ -758,12 +759,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -1840,6 +1841,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - Solar Granulation
     1. Graphics: GFX/System/Quill.png
     1. Graphics: GFX/System/Solar-Granulation-Used-Quill-800px.png
+- Spiedkiks
+    1. Music: Music/Special Boss/Freak Boutique.ogg
 - SterioType
     1. Font: Fonts/master_of_break.ttf
 - TFTCREW
@@ -2360,6 +2363,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Yannee/Cry.png
     1. Graphics: GFX/BoxText/Portret/Yannee/General.png
     1. Graphics: GFX/BoxText/Portret/Yannee/Tears.png
+- anarres
+    1. Graphics: gfx/combat/fighters/foe/boss/Superalien.piko
+    1. Graphics: gfx/combat/fighters/foe/boss/Superalien.png
 - http://www.freesfx.co.uk
     1. Audio: Audio/SpellAni/Thunder/Spark.ogg
     1. Audio: Audio/SpellAni/Thunder/ThunderStrike.ogg

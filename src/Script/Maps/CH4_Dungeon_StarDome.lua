@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.20
+version: 17.05.22
 ]]
 
 
@@ -86,6 +86,15 @@ function HetGatIn(gat)
       puzzle=nil
       GoToLayer('#007','Start')
       Maps.ReMap()
+end
+
+function Boss()
+  ClearCombatData()
+  Var.D("$COMBAT.FOE_1","Boss/SuperAlien")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  Var.D("$COMBAT.MUSIC","Music/Special Boss/Freak Boutique.ogg")
+  Var.D("$COMBAT.ARENA","StarDome.png")
+  StartBoss("Alien Lord","Rjafhkfhafjklhgjd")   
 end
 
 function InitPuzzle()

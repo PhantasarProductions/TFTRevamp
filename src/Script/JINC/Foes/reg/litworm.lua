@@ -1,6 +1,6 @@
 --[[
   litworm.lua
-  Version: 17.05.21
+  Version: 17.05.22
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sun 21 May 2017; 16:06:36
+-- File Generated: Mon 22 May 2017; 19:16:44
 
 
 local foe = {}
