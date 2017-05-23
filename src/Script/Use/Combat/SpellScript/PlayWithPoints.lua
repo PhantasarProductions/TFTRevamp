@@ -1,6 +1,6 @@
 --[[
   PlayWithPoints.lua
-  Version: 17.05.21
+  Version: 17.05.23
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,6 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
 -- @IF IGNORE
 SpellScript = {}
 -- @FI
@@ -74,6 +75,7 @@ function SpellScript.APFull(tartag,extag,param)
    if param and param~="" then
       charmsg(tartag,param,0,180,255)
    end
+   return true
 end
    
 function SpellScript.Disintegrate(tartag,extag)
@@ -96,6 +98,7 @@ function SpellScript.Resurrect(tartag,extag)
    ClearTable(t.statuschanges)
    SpellScript.PointAlter(tartag,extag,'MAX')
    charmsg(tartag,"RESURRECTION",0,255,0)
+   return true
 end   
 
 function SpellScript.Gravity(tar,exe)
@@ -108,6 +111,7 @@ function SpellScript.Gravity(tar,exe)
    local hp = RPG.Points(tar,'HP')
    local dmg = math.floor(hp.Have*procent)
    Hurt(tar,dmg)
+   return true
 end
 
 function SpellScript.FullPower(tar,exe)
@@ -121,6 +125,7 @@ function SpellScript.FullPower(tar,exe)
           p.Have = p.Maximum
       end
   end
+  return true
 end
 
 function SpellScript.Randomizer(tar,exe)
@@ -134,8 +139,21 @@ function SpellScript.Randomizer(tar,exe)
            pnt.Have=rand(min,max)
         end 
     end
+    return true
 end
 SpellScript.RandomAll=SpellScript.Randomizer
+
+
+function SpellScript.TwoEdge(tar,exe)
+    local a = {"AP","HP"}
+    local r = rand(1,#a)
+    local full  = a[r]
+    local empty = a[(#a+1)-r]
+    local e = {AP=0,HP=1}
+    RPG.Points(tar,full ).Have = RPG.Points(tar,full ).Maximum
+    RPG.Points(tar,empty).Have = e[empty] -- RPG.Points(tar,empty).Maximum
+    return true
+end    
    
 -- @IF INGORE
 return SpellScript 

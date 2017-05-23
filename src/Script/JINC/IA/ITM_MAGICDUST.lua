@@ -1,6 +1,6 @@
 --[[
   ITM_MAGICDUST.lua
-  Version: 17.05.22
+  Version: 17.05.23
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
