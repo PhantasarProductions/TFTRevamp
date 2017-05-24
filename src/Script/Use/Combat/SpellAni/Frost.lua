@@ -70,7 +70,7 @@ function SpellAni.MultiFrost(ActG,ActT,TarG,TarT)
   end
 end
 
-SpellAni.IceBlast = MultiFrost
+SpellAni.IceBlast = SpellAni.MultiFrost
 
 
 -- @IF IGNORE
