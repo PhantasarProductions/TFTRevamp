@@ -316,7 +316,7 @@ Rec: CH4MANAROAD
 	Dungeon = TRUE
 	Folder = Kokonora
 	Kthura = CH4_Dungeon_ManaRoad
-	Layer = #001
+	Layer = bos
 	LocationName = Mana Road
 	LocationPrefix = The
 	Start = Start

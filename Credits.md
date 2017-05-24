@@ -619,6 +619,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH3_Story_Dragon_Forest.lua
     1. Script: Script/Maps/CH3_Town_Grombo.lua
     1. Script: Script/Maps/CH3_Town_Nostraburg.lua
+    1. Script: Script/Maps/CH4_Dungeon_ManaRoad.lua
     1. Script: Script/Maps/CH4_Dungeon_PyrusPass.lua
     1. Script: Script/Maps/CH4_Dungeon_StarDome.lua
     1. Script: Script/Maps/CH4_Town_NostraburgNight.lua
@@ -765,12 +766,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -1026,6 +1027,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH3_Town_Nostraburg/Data
     1. Map Design: Kthura/CH3_Town_Nostraburg/Objects
     1. Map Design: Kthura/CH3_Town_Nostraburg/Settings
+    1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Data
+    1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Objects
+    1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Settings
     1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Data
     1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Objects
     1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Settings
