@@ -152,7 +152,7 @@ function NPC_George()
     end
    --]]
    MapText('GEORGE')
-   Shop('CLONE_GEORGE')
+   Shop('WEAPON_GEORGE')
 end   
 
 KickTown = {

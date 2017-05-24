@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  WAND_YLLABONJA.lua
+  WEAPON_GEORGE.lua
   (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
@@ -38,27 +38,27 @@ version: 17.05.24
 -- 24 May 2017; 10:58:22
 -- License: This file contains data from the Phantasar Universe and is therefore property of Jeroen Broks and may NOT be used for your own ends.
 	ret = {
-		["AllowTrade"] = true,
-		["Slot1"] = "WAND_II_EVIL",
-		["Slot10"] = "WAND_THUNDER",
-		["Slot11"] = "WAND_SPLASH",
-		["Slot12"] = "WAND_HOLY",
-		["Slot13"] = "WAND_GAIA",
-		["Slot14"] = "WAND_FROST",
-		["Slot15"] = "WAND_FLAME",
-		["Slot16"] = "WAND_DARK",
-		["Slot17"] = "WAND_BIO",
-		["Slot18"] = "",
-		["Slot19"] = "",
-		["Slot2"] = "WAND_II_GAIA",
-		["Slot20"] = "",
-		["Slot3"] = "WAND_II_HURRICANE",
-		["Slot4"] = "WAND_II_KELVIN",
-		["Slot5"] = "WAND_II_SAINT",
-		["Slot6"] = "WAND_II_SPRINGTIJ",
-		["Slot7"] = "WAND_II_VOLCANOWAND",
-		["Slot8"] = "WAND_II_WATT",
-		["Slot9"] = "WAND_WIND",
-		["Title"] = "Yllabonja's Wand Store"}
+		["AllowTrade"] = false,
+		["Slot1"] = "EQP_JAKE_WP9",
+		["Slot10"] = "EQP_JAKE_AR9",
+		["Slot11"] = "EQP_JAKE_AR8",
+		["Slot12"] = "EQP_JAKE_AR7",
+		["Slot13"] = "EQP_MARRILONA_AR9",
+		["Slot14"] = "EQP_MARRILONA_AR8",
+		["Slot15"] = "EQP_MARRILONA_AR7",
+		["Slot16"] = "EQP_HANDOSTILLOR_AR9",
+		["Slot17"] = "EQP_HANDOSTILLOR_AR8",
+		["Slot18"] = "EQP_HANDOSTILLOR_AR7",
+		["Slot19"] = "EQP_JEWEL_SMALLEMERALD",
+		["Slot2"] = "EQP_JAKE_WP8",
+		["Slot20"] = "EQP_JEWEL_SMALLRUBY",
+		["Slot3"] = "EQP_JAKE_WP7",
+		["Slot4"] = "EQP_DANDOR_WP9",
+		["Slot5"] = "EQP_DANDOR_WP8",
+		["Slot6"] = "EQP_DANDOR_WP7",
+		["Slot7"] = "EQP_HANDOSTILLOR_WP9",
+		["Slot8"] = "EQP_HANDOSTILLOR_WP8",
+		["Slot9"] = "EQP_HANDOSTILLOR_WP7",
+		["Title"] = ""}
 
 return ret
