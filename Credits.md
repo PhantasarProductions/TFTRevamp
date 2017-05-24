@@ -133,6 +133,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/RandomEncounter/RPG-Battle-Climax_v001.ogg
     1. Music: Music/Town/Chamber-of-Jewels.ogg
     1. Music: Music/Game Over/Going-Different-Ways.ogg
+- GDJ
+    1. Graphics: GFX/Combat/Fighters/Foe/Sealed/MinoKing.png
 - GR-Sites
     1. Audio: Audio/Dungeon/FallingDown.ogg
     1. Graphics: gfx/Worldmap/back.png
@@ -226,6 +228,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/harry2.lua
     1. Script: Script/JINC/Foes/Boss/superalien.lua
     1. Script: Script/JINC/Foes/Sealed/Kabi.lua
+    1. Script: Script/JINC/Foes/Sealed/MinoKing.lua
     1. Script: Script/JINC/Foes/reg/ArcaneSlime.lua
     1. Script: Script/JINC/Foes/reg/BSpook.lua
     1. Script: Script/JINC/Foes/reg/Bandit.lua
@@ -296,6 +299,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_TAKEOVER2.lua
     1. Script: Script/JINC/IA/ABL_FOE_TOTALEXHAUSTION.lua
     1. Script: Script/JINC/IA/ABL_FOE_TUSK.lua
+    1. Script: Script/JINC/IA/ABL_FOE_TWOEDGE.lua
     1. Script: Script/JINC/IA/ABL_FOE_ULTIMATESOULCRUSHER.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMBITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMSTAB.lua
@@ -448,6 +452,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JAKE_AR8.lua
     1. Script: Script/JINC/IA/EQP_JAKE_AR9.lua
     1. Script: Script/JINC/IA/EQP_JAKE_CURSEDWP_VENOMBLADE.lua
+    1. Script: Script/JINC/IA/EQP_JAKE_SEALARMOR.lua
     1. Script: Script/JINC/IA/EQP_JAKE_TRAINSWORD.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP1.lua
     1. Script: Script/JINC/IA/EQP_JAKE_WP10.lua

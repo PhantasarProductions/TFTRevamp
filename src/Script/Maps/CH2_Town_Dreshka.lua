@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.16
+version: 17.05.23
 ]]
 
 function NPC_Rosetta()
@@ -112,6 +112,17 @@ function SeeDamage()
    
    -- Sys.Error("Boss fight not there yet!")
 end   
+
+function BlueSeal()
+    ClearCombatData()
+    Var.D("$COMBAT.FOE_1","Sealed/MinoKing")
+    Var.D("$COMBAT.POSFOE_1","CENTER")
+    Var.D("$COMBAT.MUSIC","Music/Special Boss/Blue Seal.ogg")
+    Var.D("$COMBAT.ARENA","Forest.png")
+    StartBoss("Demon ruler","Minotaur King",0,25,100)      
+    Done('&DONE.SEAL.JAKE1')
+end    
+
 
 function NPC_StarDome()
    MapText('STARDOME')

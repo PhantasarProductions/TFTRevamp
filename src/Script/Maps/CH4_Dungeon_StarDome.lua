@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.22
+version: 17.05.23
 ]]
 
 
@@ -101,7 +101,7 @@ function NPC_Key()
     ItemGive('ZZ_CRYPTKEY')
     MapText('KEY')
     Done('&CRYPTKEY')
-    Maps.Obj.Kill('NPC_Key')
+    Maps.Obj.Kill('NPC_Key',1)
 end
 
 
