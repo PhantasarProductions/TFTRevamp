@@ -273,7 +273,7 @@ Rec: WEAPON_GILDUROY
 	Slot7 = EQP_MARRILONA_AR6
 	Slot8 = EQP_MARRILONA_AR5
 	Slot9 = EQP_MARRILONA_AR4
-	Title = 
+	Title = Gilduroy's weapon shop
 
 Rec: WEAPON_MICHIEL
 	AllowTrade = FALSE

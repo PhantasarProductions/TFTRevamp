@@ -70,7 +70,7 @@ function LoadWorld(worldfolder)
           world[v.LocationName] = v
           v.key = k
           v.lKthura = v.Kthura
-          v.Kthura = upper(v.UKthura)
+          v.Kthura = upper(v.lKthura)
           if CVVN("&ALLOW.ENCOFF['"..v.lKthura.."']")~=nil then -- A fix destroys old data. This should recover this as much as possible.
              Var.D("&ALLOW.ENCOFF['"..v.Kthura.."']",Var.C("&ALLOW.ENCOFF['"..v.lKthura.."']"))
              Var.Clear("&ALLOW.ENCOFF['"..v.lKthura.."']")

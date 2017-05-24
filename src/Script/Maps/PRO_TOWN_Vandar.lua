@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.12
+version: 17.05.24
 ]]
 
 
@@ -125,7 +125,7 @@ function HouseExit()
 end      
 
 function NPC_InnKeeper()
-    if not CVV('&DONE.BLACKDRAGON') then
+    if not CVV('&DONE.CH4DISCUSSION') then
        MapText("INN_NOTTODAY")
        return
     end
@@ -134,7 +134,7 @@ end
 
 function NPC_Fred()
     -- --[[  (easy way to turn this off in order to test this).
-    if not CVV('&DONE.BLACKDRAGON') then
+    if not CVV('&DONE.CH4DISCUSSION') then
        MapText("FRED_NOSELL")
        return
     end
@@ -146,7 +146,7 @@ end
 
 function NPC_George()
     -- --[[  (easy way to turn this off in order to test this).
-    if not CVV('&DONE.BLACKDRAGON') then
+    if not CVV('&DONE.CH4DISCUSSION') then
        MapText("GEORGE_NOSELL")
        return
     end
