@@ -449,6 +449,7 @@ function TreasureChest(tag)
     if rcode and rcode~="" then
        if ((not inventory[rcode]) or inventory[icode]<0) and (not AnyBodyEquipped(rcode)) then 
           SerialBoxText('ITEM','LOCKED','FLOW_FIELD')
+          return
        end   
     end
     if prefixed(icode,"CASH:") then

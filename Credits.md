@@ -767,12 +767,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -2361,6 +2361,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Gen/Sleep.ogg
     1. Music: Music/RandomEncounter/Wicky's combat tune.ogg
     1. Music: Music/Dungeon/Cathedral.ogg
+    1. Music: Music/Dungeon/TearDrops.ogg
     1. Music: Music/Hub/The Sad Fate.ogg
     1. Music: Music/Town/Happy.ogg
     1. Music: Music/Town/IrishFishermen.ogg

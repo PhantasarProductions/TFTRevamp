@@ -94,6 +94,7 @@ function SpellScript.Cocytus(tartag,extag,param)
         l = l + (round(l,l+10)*skill)
         AddCard(card2add,l)
     end    
+    return true
 end
 
 -- @IF INGORE
