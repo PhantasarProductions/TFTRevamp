@@ -447,7 +447,7 @@ function TreasureChest(tag)
     MS.LoadNew("BOXTEXT","Script/Subs/BoxText.lua")
     MS.Run("BOXTEXT","LoadData","General/Items;ITEM")
     if rcode and rcode~="" then
-       if ((not inventory[rcode]) or inventory[icode]<0) and (not AnyBodyEquipped(rcode)) then 
+       if ((not inventory[rcode]) or (inventory[rcode]<=0)) and (not AnyBodyEquipped(rcode)) then 
           SerialBoxText('ITEM','LOCKED','FLOW_FIELD')
           return
        end   
