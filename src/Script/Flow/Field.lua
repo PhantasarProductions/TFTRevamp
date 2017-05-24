@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 17.04.20
+  Version: 17.05.24
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -151,7 +151,8 @@ function SetUpRoomNames()
 end
 
 
-function LoadMap(map)
+function LoadMap(lmap)
+    local map = upper(lmap)
     -- Reset some stuff prior to loading
     ResetClickables()
     AUTOHIDE = {}

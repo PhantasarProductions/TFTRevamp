@@ -315,7 +315,7 @@ Rec: CH3SPIRATAEARTH
 Rec: CH4MANAROAD
 	Dungeon = TRUE
 	Folder = Kokonora
-	Kthura = Anna
+	Kthura = CH4_Dungeon_ManaRoad
 	Layer = #001
 	LocationName = Mana Road
 	LocationPrefix = The
