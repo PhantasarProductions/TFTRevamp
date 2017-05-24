@@ -1,6 +1,6 @@
 --[[
   Frost.lua
-  Version: 17.04.04
+  Version: 17.05.24
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -70,6 +70,7 @@ function SpellAni.MultiFrost(ActG,ActT,TarG,TarT)
   end
 end
 
+SpellAni.IceBlast = MultiFrost
 
 
 -- @IF IGNORE
