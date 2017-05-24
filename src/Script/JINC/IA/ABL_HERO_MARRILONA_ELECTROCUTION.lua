@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_ELECTROCUTION.lua
-  Version: 17.05.23
+  Version: 17.05.24
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

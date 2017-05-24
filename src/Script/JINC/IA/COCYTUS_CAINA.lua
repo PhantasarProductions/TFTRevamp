@@ -1,6 +1,6 @@
 --[[
   COCYTUS_CAINA.lua
-  Version: 17.05.23
+  Version: 17.05.24
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -44,7 +44,6 @@ ret = {
 	["Attack_DefenseStat"] = "Resistance",
 	["Attack_Element"] = "None",
 	["CauseCurse"] = true,
-	["EffectScript"] = "Iceblast",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -56,6 +55,7 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "Iceblast",
 	["Stance"] = "Cast",
 	["Target"] = "AF",
 	["Title"] = "Caina",

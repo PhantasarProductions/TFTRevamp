@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.04.29
+  Version: 17.05.24
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -427,14 +427,30 @@ function RemoveAllItemQuery(items,svar)
     Done(svar)
 end    
     
+function AnyBodyEquipped(item)
+     local sockets = {"EQP_Acc","EQP_Armor","EQP_Weapon"}
+     local ret=true
+     for i=0,3 do
+         local ch=RPG.PartyTag(i)
+         for s in each(sockets) do
+             ret = ret or upper(RPG.GetData(ch,s))==upper(item)
+         end    
+     end
+end    
 
 function TreasureChest(tag)
     local chest = Maps.Obj.Obj(tag)
     if chest.Frame==1 then return end -- We don't deal with already open chests (this check is not needed at all, but rather an extra safety precaution).
     local icode = upper(chest.DataGet("Item"))
+    local rcode = upper(chest.DataGet("RequiredItem"))
     local gotit
     MS.LoadNew("BOXTEXT","Script/Subs/BoxText.lua")
     MS.Run("BOXTEXT","LoadData","General/Items;ITEM")
+    if rcode and rcode~="" then
+       if ((not inventory[rcode]) or inventory[icode]<0) and (not AnyBodyEquipped(rcode)) then 
+          SerialBoxText('ITEM','LOCKED','FLOW_FIELD')
+       end   
+    end
     if prefixed(icode,"CASH:") then
        MasterAllInc('Rubine','RubinePoints')
        local wc = mysplit(icode,":")

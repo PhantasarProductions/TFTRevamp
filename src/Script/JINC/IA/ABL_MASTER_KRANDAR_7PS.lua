@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_KRANDAR_7PS.lua
-  Version: 17.05.23
+  Version: 17.05.24
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

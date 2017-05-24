@@ -13743,7 +13743,7 @@ Rec: COCYTUS_ANTENORA
 	EQP_STAT_SR_Silence = 0
 	EQP_STAT_SR_Sleep = 0
 	EQP_STAT_SR_Undead = 0
-	EffectScript = Icebast
+	EffectScript = 
 	EffectScript_Arg = 
 	EffectScript_External = FALSE
 	Heal = 0
@@ -13763,7 +13763,7 @@ Rec: COCYTUS_ANTENORA
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = 
+	SpellAni = Iceblast
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
@@ -13845,7 +13845,7 @@ Rec: COCYTUS_CAINA
 	EQP_STAT_SR_Silence = 0
 	EQP_STAT_SR_Sleep = 0
 	EQP_STAT_SR_Undead = 0
-	EffectScript = Iceblast
+	EffectScript = 
 	EffectScript_Arg = 
 	EffectScript_External = FALSE
 	Heal = 0
@@ -13865,7 +13865,7 @@ Rec: COCYTUS_CAINA
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = 
+	SpellAni = Iceblast
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
@@ -13947,7 +13947,7 @@ Rec: COCYTUS_JUDECCA
 	EQP_STAT_SR_Silence = 0
 	EQP_STAT_SR_Sleep = 0
 	EQP_STAT_SR_Undead = 0
-	EffectScript = Iceblast
+	EffectScript = 
 	EffectScript_Arg = 
 	EffectScript_External = FALSE
 	Heal = 0
@@ -13967,7 +13967,7 @@ Rec: COCYTUS_JUDECCA
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = 
+	SpellAni = Iceblast
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
@@ -14049,7 +14049,7 @@ Rec: COCYTUS_PTOLOMEA
 	EQP_STAT_SR_Silence = 0
 	EQP_STAT_SR_Sleep = 0
 	EQP_STAT_SR_Undead = 0
-	EffectScript = Iceblast
+	EffectScript = 
 	EffectScript_Arg = 
 	EffectScript_External = FALSE
 	Heal = 0
@@ -14069,7 +14069,7 @@ Rec: COCYTUS_PTOLOMEA
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = 
+	SpellAni = Iceblast
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast

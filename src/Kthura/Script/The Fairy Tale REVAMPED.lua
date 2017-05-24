@@ -63,6 +63,8 @@ CLICKED.RET = oz[ result ]
 end
 
 CSpot_Compass_Click = SPOTCLICKED
+CSpot_RecoverySpot_Click = SPOTCLICKED
+CSpot_SaveSpot_Show = SPOTCLICKED
 
 function CSpot_SaveSpot_Place()
     local tag = NewTag('SSG_')
@@ -127,7 +129,7 @@ function CSpot_RecoverySpot_Place()
 end
 
 
-function CSpot_Chest_Place()
+function CSpot_Chest_Place(lock)
     local ME = SPOT.ME()
     local Item = INPUT.Ask("Item Code Name (or prefix with CASH: to let the chest contain money)");
     if Item=="" then SPOT.Kill() return end
@@ -135,7 +137,15 @@ function CSpot_Chest_Place()
     ME.TextureFile = "GFX/Treasure/Chest.png"
     ME.Tag = NewTag("CHEST_")   
     ME.DataSet('Item',Item) 
+    if lock=="LOCKME" then
+       local required =  INPUT.Ask("Item Code Name for the item required to have to open this chest")
+       ME.DataSet("RequiredItem",required)
+    end   
 end
+
+function CSpot_LockedChest_Place()
+    CSpot_Chest_Place("LOCKME")
+end    
 
 function CSpot_RandomItem_Place()
     local ME = SPOT.ME()

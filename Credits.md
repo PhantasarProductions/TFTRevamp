@@ -587,6 +587,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Shops/WAND_MONIQUE.lua
     1. Script: Script/JINC/Shops/WAND_YLLABONJA.lua
     1. Script: Script/JINC/Shops/WEAPON_ERIC.lua
+    1. Script: Script/JINC/Shops/WEAPON_GEORGE.lua
     1. Script: Script/JINC/Shops/WEAPON_GILDUROY.lua
     1. Script: Script/JINC/Shops/WEAPON_MICHIEL.lua
     1. Script: Script/JINC/Shops/WEAPON_MYRAREMEMBO.lua
