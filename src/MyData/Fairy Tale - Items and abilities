@@ -8968,7 +8968,7 @@ Rec: ABL_HERO_MARRILONA_MEDITATION
 	ITM_Type = Consumable
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
-	Rew_GainAP = 0
+	Rew_GainAP = 1
 	SpellAni = SingleHeal
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
@@ -8983,11 +8983,11 @@ Rec: ABL_HERO_MARRILONA_MEDITATION
 	rew_CreateSkill3 = FALSE
 	rew_CreateSkill4 = FALSE
 	rew_CreateSkill5 = FALSE
-	rew_GainSkill1 = 0
-	rew_GainSkill2 = 0
-	rew_GainSkill3 = 0
-	rew_GainSkill4 = 0
-	rew_GainSkill5 = 0
+	rew_GainSkill1 = 50
+	rew_GainSkill2 = 50
+	rew_GainSkill3 = 50
+	rew_GainSkill4 = 50
+	rew_GainSkill5 = 50
 
 Rec: ABL_HERO_MARRILONA_PERMANENCE
 	ABL_APCost = 95

@@ -57,11 +57,17 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["Rew_GainAP"] = 1,
 	["SpellAni"] = "SingleHeal",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
 	["Title"] = "Meditation",
-	["Type"] = "Item"}
+	["Type"] = "Item",
+	["rew_GainSkill1"] = 50,
+	["rew_GainSkill2"] = 50,
+	["rew_GainSkill3"] = 50,
+	["rew_GainSkill4"] = 50,
+	["rew_GainSkill5"] = 50}
 
 return ret
 
