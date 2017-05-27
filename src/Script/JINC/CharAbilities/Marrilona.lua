@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.27
+version: 17.05.16
 ]]
 
 -- abl_hero_jake_2ps = {5},abl_hero_jake_3ps={25},abl_hero_jake_4ps={50},abl_hero_jake_berserk={10,5}
@@ -72,7 +72,7 @@ if fullversion then -- That's right Marrilona will not get her level #2 and leve
                                        abl_hero_marrilona_iceblast = {[1]=skill^skill, [3]=8*skill,[4]=7*skill}, -- 5
                                        abl_hero_marrilona_quake = {[5]=10*skill},        -- 6
                                        abl_hero_marrilona_hurricane = {[3]=math.floor(12.5*skill)}, --7
-                                       abl_hero_marrilona_mediation = {50,60,70,20,16} --  8
+                                       abl_hero_marrilona_meditation = {50,60,70,20,16} --  8
                      }
    r["3. Level 3"] = {                 abl_hero_marrilona_stone2flesh = {[3]=10,[4]=65}, --  1
                                        abl_hero_marrilona_empower = {[2]=25},      --  2
