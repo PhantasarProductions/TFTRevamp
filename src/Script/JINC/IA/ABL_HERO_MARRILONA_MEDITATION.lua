@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  EQP_HANDOSTILLOR_WP1.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  ABL_HERO_MARRILONA_MEDITATION.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -35,22 +35,32 @@
 version: 17.05.27
 ]]
 ret = {
-	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Act"] = "EXE_MARRILONA_MEDITATION",
+	["ADDCARD_Action_Interval"] = 50,
+	["ADDCARD_Action_Number"] = 2,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Just a fighting stick",
-	["EQP_STAT_Intelligence"] = 2,
-	["EQP_STAT_Power"] = 1,
-	["Heal_StatPercent"] = "Power",
+	["Desc"] = "Wait for the magic shower",
+	["EffectScript"] = "RecoverAP",
+	["EffectScript_Arg"] = "1",
+	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "HandoStillor",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
+	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 300,
-	["ITM_Type"] = "Weapon",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Staff",
+	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "SingleHeal",
+	["Stance"] = "Cast",
+	["Target"] = "1F",
+	["Title"] = "Meditation",
 	["Type"] = "Item"}
 
 return ret
