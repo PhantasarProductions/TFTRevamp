@@ -1,123 +1,267 @@
 --[[
-  ArcaneSlime.lua
-  Version: 17.05.27
-  Copyright (C) 2017 Jeroen Petrus Broks
+**********************************************
   
-  ===========================
-  This file is part of a project related to the Phantasar Chronicles or another
-  series or saga which is property of Jeroen P. Broks.
-  This means that it may contain references to a story-line plus characters
-  which are property of Jeroen Broks. These references may only be distributed
-  along with an unmodified version of the game. 
+  Archmage.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
-  As soon as you remove or replace ALL references to the storyline or character
-  references, or any termology specifically set up for the Phantasar universe,
-  or any other univers a story of Jeroen P. Broks is set up for,
-  the restrictions of this file are removed and will automatically become
-  zLib licensed (see below).
+  This file contains material that is related 
+  to a storyline that is which is strictly
+  copyrighted to Jeroen Broks.
   
-  Please note that doing so counts as a modification and must be marked as such
-  in accordance to the zLib license.
-  ===========================
-  zLib license terms:
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
+  This file may only be used in an unmodified
+  form with an unmodified version of the 
+  software this file belongs to.
+  
+  You may use this file for your study to see
+  how I solved certain things in the creation
+  of this project to see if you find valuable
+  leads for the creation of your own.
+  
+  Mostly this file comes along with a project
+  that is for most part released under an
+  open source license and that means that if
+  you use that code with this file removed
+  from it, you can use it under that license.
+  Please check out the other files to find out
+  which license applies.
+  This file comes 'as-is' and in no possible
+  way the author can be held responsible of
+  any form of damages that may occur due to 
+  the usage of this file
+  
+  
+ **********************************************
+ 
+version: 17.05.27
 ]]
--- File Generated: Sat 27 May 2017; 16:59:42
+-- File Generated: Sat 27 May 2017; 17:35:57
 
 
 local foe = {}
 
 	foe["AI"] = "default"
+	foe["NEWGAMEPLUS_AAA_ATTACK"] = true
 	foe["NEWGAMEPLUS_AAA_GUARD"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_CRUSH"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_DEATHSPELL"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_DEMON_SOUL_BREAKER"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_DISINTEGRATE"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_EXHAUST"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_HORROR"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_SMITE"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_TAKEOVER\50"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_TOTALEXHAUSTION"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_ULTIMATESOULCRUSHER"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_WELCOMEINHELL"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_BIO"] = true
-	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_BREEZE"] = true
-	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_CHILL"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_CURSEDHEALING"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_ELECTROCUTION"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_ETERNALFLAME"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_FIREBLAST"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_FLAME"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_HURRICANE"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_ICEBLAST"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_INFERNO"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_PROTECT"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_QUAKE"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_ROCK"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_SPEEDUP"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_TSUNAMI"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_ZAP"] = true
+	foe["NEWGAMEPLUS_ABL_MASTER_FEENA_COCYTUS"] = true
+	foe["NEWGAMEPLUS_ABL_MASTER_FEENA_DROWN"] = true
+	foe["NEWGAMEPLUS_ABL_MASTER_FEENA_FULLPOWER"] = true
+	foe["NEWGAMEPLUS_ABL_MASTER_FEENA_KATRINA"] = true
+	foe["NEWGAMEPLUS_ABL_MASTER_FEENA_MAGMABLAST"] = true
+	foe["NEWGAMEPLUS_ABL_MASTER_FEENA_MEGAQUAKE"] = true
+	foe["NEWGAMEPLUS_ABL_MASTER_FEENA_SCYLLA"] = true
+	foe["NORMAL_AAA_ATTACK"] = true
 	foe["NORMAL_AAA_GUARD"] = true
+	foe["NORMAL_ABL_FOE_CRUSH"] = true
+	foe["NORMAL_ABL_FOE_DEATHSPELL"] = true
+	foe["NORMAL_ABL_FOE_DEMON_SOUL_BREAKER"] = true
+	foe["NORMAL_ABL_FOE_DISINTEGRATE"] = true
+	foe["NORMAL_ABL_FOE_EXHAUST"] = true
+	foe["NORMAL_ABL_FOE_HORROR"] = true
+	foe["NORMAL_ABL_FOE_SMITE"] = true
+	foe["NORMAL_ABL_FOE_TAKEOVER\50"] = true
+	foe["NORMAL_ABL_FOE_TOTALEXHAUSTION"] = true
+	foe["NORMAL_ABL_FOE_ULTIMATESOULCRUSHER"] = true
+	foe["NORMAL_ABL_FOE_WELCOMEINHELL"] = true
 	foe["NORMAL_ABL_HERO_MARRILONA_BIO"] = true
-	foe["NORMAL_ABL_HERO_MARRILONA_BREEZE"] = true
-	foe["NORMAL_ABL_HERO_MARRILONA_CHILL"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_CURSEDHEALING"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_ELECTROCUTION"] = true
 	foe["NORMAL_ABL_HERO_MARRILONA_ETERNALFLAME"] = true
 	foe["NORMAL_ABL_HERO_MARRILONA_FIREBLAST"] = true
 	foe["NORMAL_ABL_HERO_MARRILONA_FLAME"] = true
 	foe["NORMAL_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_HURRICANE"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_ICEBLAST"] = true
 	foe["NORMAL_ABL_HERO_MARRILONA_INFERNO"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_PROTECT"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_QUAKE"] = true
 	foe["NORMAL_ABL_HERO_MARRILONA_ROCK"] = true
 	foe["NORMAL_ABL_HERO_MARRILONA_SPEEDUP"] = true
 	foe["NORMAL_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_TSUNAMI"] = true
 	foe["NORMAL_ABL_HERO_MARRILONA_ZAP"] = true
+	foe["NORMAL_ABL_MASTER_FEENA_COCYTUS"] = true
+	foe["NORMAL_ABL_MASTER_FEENA_DROWN"] = true
+	foe["NORMAL_ABL_MASTER_FEENA_FULLPOWER"] = true
+	foe["NORMAL_ABL_MASTER_FEENA_KATRINA"] = true
+	foe["NORMAL_ABL_MASTER_FEENA_MAGMABLAST"] = true
+	foe["NORMAL_ABL_MASTER_FEENA_MEGAQUAKE"] = true
+	foe["NORMAL_ABL_MASTER_FEENA_SCYLLA"] = true
+	foe["OVERSOUL_AAA_ATTACK"] = true
 	foe["OVERSOUL_AAA_GUARD"] = true
+	foe["OVERSOUL_ABL_FOE_CRUSH"] = true
+	foe["OVERSOUL_ABL_FOE_DEATHSPELL"] = true
+	foe["OVERSOUL_ABL_FOE_DEMON_SOUL_BREAKER"] = true
+	foe["OVERSOUL_ABL_FOE_DISINTEGRATE"] = true
+	foe["OVERSOUL_ABL_FOE_EXHAUST"] = true
+	foe["OVERSOUL_ABL_FOE_HORROR"] = true
+	foe["OVERSOUL_ABL_FOE_SMITE"] = true
+	foe["OVERSOUL_ABL_FOE_TAKEOVER\50"] = true
+	foe["OVERSOUL_ABL_FOE_TOTALEXHAUSTION"] = true
+	foe["OVERSOUL_ABL_FOE_ULTIMATESOULCRUSHER"] = true
+	foe["OVERSOUL_ABL_FOE_WELCOMEINHELL"] = true
 	foe["OVERSOUL_ABL_HERO_MARRILONA_BIO"] = true
-	foe["OVERSOUL_ABL_HERO_MARRILONA_BREEZE"] = true
-	foe["OVERSOUL_ABL_HERO_MARRILONA_CHILL"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_CURSEDHEALING"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_ELECTROCUTION"] = true
 	foe["OVERSOUL_ABL_HERO_MARRILONA_ETERNALFLAME"] = true
 	foe["OVERSOUL_ABL_HERO_MARRILONA_FIREBLAST"] = true
 	foe["OVERSOUL_ABL_HERO_MARRILONA_FLAME"] = true
 	foe["OVERSOUL_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_HURRICANE"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_ICEBLAST"] = true
 	foe["OVERSOUL_ABL_HERO_MARRILONA_INFERNO"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_PROTECT"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_QUAKE"] = true
 	foe["OVERSOUL_ABL_HERO_MARRILONA_ROCK"] = true
 	foe["OVERSOUL_ABL_HERO_MARRILONA_SPEEDUP"] = true
 	foe["OVERSOUL_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_TSUNAMI"] = true
 	foe["OVERSOUL_ABL_HERO_MARRILONA_ZAP"] = true
+	foe["OVERSOUL_ABL_MASTER_FEENA_COCYTUS"] = true
+	foe["OVERSOUL_ABL_MASTER_FEENA_DROWN"] = true
+	foe["OVERSOUL_ABL_MASTER_FEENA_FULLPOWER"] = true
+	foe["OVERSOUL_ABL_MASTER_FEENA_KATRINA"] = true
+	foe["OVERSOUL_ABL_MASTER_FEENA_MAGMABLAST"] = true
+	foe["OVERSOUL_ABL_MASTER_FEENA_MEGAQUAKE"] = true
+	foe["OVERSOUL_ABL_MASTER_FEENA_SCYLLA"] = true
+	foe["SKILL\49_AAA_ATTACK"] = true
 	foe["SKILL\49_AAA_GUARD"] = true
+	foe["SKILL\49_ABL_FOE_CRUSH"] = true
+	foe["SKILL\49_ABL_FOE_DEATHSPELL"] = true
+	foe["SKILL\49_ABL_FOE_DEMON_SOUL_BREAKER"] = true
+	foe["SKILL\49_ABL_FOE_DISINTEGRATE"] = true
+	foe["SKILL\49_ABL_FOE_EXHAUST"] = true
+	foe["SKILL\49_ABL_FOE_HORROR"] = true
+	foe["SKILL\49_ABL_FOE_SMITE"] = true
+	foe["SKILL\49_ABL_FOE_TAKEOVER\50"] = true
+	foe["SKILL\49_ABL_FOE_TOTALEXHAUSTION"] = false
+	foe["SKILL\49_ABL_FOE_ULTIMATESOULCRUSHER"] = true
+	foe["SKILL\49_ABL_FOE_WELCOMEINHELL"] = true
 	foe["SKILL\49_ABL_HERO_MARRILONA_BIO"] = true
-	foe["SKILL\49_ABL_HERO_MARRILONA_BREEZE"] = true
-	foe["SKILL\49_ABL_HERO_MARRILONA_CHILL"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_CURSEDHEALING"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_ELECTROCUTION"] = true
 	foe["SKILL\49_ABL_HERO_MARRILONA_ETERNALFLAME"] = true
-	foe["SKILL\49_ABL_HERO_MARRILONA_FIREBLAST"] = false
+	foe["SKILL\49_ABL_HERO_MARRILONA_FIREBLAST"] = true
 	foe["SKILL\49_ABL_HERO_MARRILONA_FLAME"] = true
 	foe["SKILL\49_ABL_HERO_MARRILONA_HEAL"] = true
-	foe["SKILL\49_ABL_HERO_MARRILONA_INFERNO"] = false
+	foe["SKILL\49_ABL_HERO_MARRILONA_HURRICANE"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_ICEBLAST"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_INFERNO"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_PROTECT"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_QUAKE"] = true
 	foe["SKILL\49_ABL_HERO_MARRILONA_ROCK"] = true
 	foe["SKILL\49_ABL_HERO_MARRILONA_SPEEDUP"] = true
 	foe["SKILL\49_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_TSUNAMI"] = true
 	foe["SKILL\49_ABL_HERO_MARRILONA_ZAP"] = true
+	foe["SKILL\49_ABL_MASTER_FEENA_COCYTUS"] = true
+	foe["SKILL\49_ABL_MASTER_FEENA_DROWN"] = true
+	foe["SKILL\49_ABL_MASTER_FEENA_FULLPOWER"] = true
+	foe["SKILL\49_ABL_MASTER_FEENA_KATRINA"] = true
+	foe["SKILL\49_ABL_MASTER_FEENA_MAGMABLAST"] = true
+	foe["SKILL\49_ABL_MASTER_FEENA_MEGAQUAKE"] = true
+	foe["SKILL\49_ABL_MASTER_FEENA_SCYLLA"] = true
+	foe["SKILL\50_AAA_ATTACK"] = false
 	foe["SKILL\50_AAA_GUARD"] = true
+	foe["SKILL\50_ABL_FOE_CRUSH"] = true
+	foe["SKILL\50_ABL_FOE_DEATHSPELL"] = true
+	foe["SKILL\50_ABL_FOE_DEMON_SOUL_BREAKER"] = true
+	foe["SKILL\50_ABL_FOE_DISINTEGRATE"] = true
+	foe["SKILL\50_ABL_FOE_EXHAUST"] = true
+	foe["SKILL\50_ABL_FOE_HORROR"] = true
+	foe["SKILL\50_ABL_FOE_SMITE"] = true
+	foe["SKILL\50_ABL_FOE_TAKEOVER\50"] = true
+	foe["SKILL\50_ABL_FOE_TOTALEXHAUSTION"] = true
+	foe["SKILL\50_ABL_FOE_ULTIMATESOULCRUSHER"] = true
+	foe["SKILL\50_ABL_FOE_WELCOMEINHELL"] = true
 	foe["SKILL\50_ABL_HERO_MARRILONA_BIO"] = true
-	foe["SKILL\50_ABL_HERO_MARRILONA_BREEZE"] = true
-	foe["SKILL\50_ABL_HERO_MARRILONA_CHILL"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_CURSEDHEALING"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_ELECTROCUTION"] = true
 	foe["SKILL\50_ABL_HERO_MARRILONA_ETERNALFLAME"] = true
 	foe["SKILL\50_ABL_HERO_MARRILONA_FIREBLAST"] = true
 	foe["SKILL\50_ABL_HERO_MARRILONA_FLAME"] = true
 	foe["SKILL\50_ABL_HERO_MARRILONA_HEAL"] = true
-	foe["SKILL\50_ABL_HERO_MARRILONA_INFERNO"] = false
+	foe["SKILL\50_ABL_HERO_MARRILONA_HURRICANE"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_ICEBLAST"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_INFERNO"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_PROTECT"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_QUAKE"] = true
 	foe["SKILL\50_ABL_HERO_MARRILONA_ROCK"] = true
 	foe["SKILL\50_ABL_HERO_MARRILONA_SPEEDUP"] = true
 	foe["SKILL\50_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_TSUNAMI"] = true
 	foe["SKILL\50_ABL_HERO_MARRILONA_ZAP"] = true
-	foe["SKILL\51_AAA_GUARD"] = true
+	foe["SKILL\50_ABL_MASTER_FEENA_COCYTUS"] = true
+	foe["SKILL\50_ABL_MASTER_FEENA_DROWN"] = true
+	foe["SKILL\50_ABL_MASTER_FEENA_FULLPOWER"] = true
+	foe["SKILL\50_ABL_MASTER_FEENA_KATRINA"] = true
+	foe["SKILL\50_ABL_MASTER_FEENA_MAGMABLAST"] = true
+	foe["SKILL\50_ABL_MASTER_FEENA_MEGAQUAKE"] = true
+	foe["SKILL\50_ABL_MASTER_FEENA_SCYLLA"] = true
+	foe["SKILL\51_AAA_ATTACK"] = false
+	foe["SKILL\51_AAA_GUARD"] = false
+	foe["SKILL\51_ABL_FOE_CRUSH"] = true
+	foe["SKILL\51_ABL_FOE_DEATHSPELL"] = true
+	foe["SKILL\51_ABL_FOE_DEMON_SOUL_BREAKER"] = true
+	foe["SKILL\51_ABL_FOE_DISINTEGRATE"] = true
+	foe["SKILL\51_ABL_FOE_EXHAUST"] = true
+	foe["SKILL\51_ABL_FOE_HORROR"] = true
+	foe["SKILL\51_ABL_FOE_SMITE"] = true
+	foe["SKILL\51_ABL_FOE_TAKEOVER\50"] = true
+	foe["SKILL\51_ABL_FOE_TOTALEXHAUSTION"] = true
+	foe["SKILL\51_ABL_FOE_ULTIMATESOULCRUSHER"] = true
+	foe["SKILL\51_ABL_FOE_WELCOMEINHELL"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_BIO"] = true
-	foe["SKILL\51_ABL_HERO_MARRILONA_BREEZE"] = true
-	foe["SKILL\51_ABL_HERO_MARRILONA_CHILL"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_CURSEDHEALING"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_ELECTROCUTION"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_ETERNALFLAME"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_FIREBLAST"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_FLAME"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_HURRICANE"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_ICEBLAST"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_INFERNO"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_PROTECT"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_QUAKE"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_ROCK"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_SPEEDUP"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_SPLASH"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_TSUNAMI"] = true
 	foe["SKILL\51_ABL_HERO_MARRILONA_ZAP"] = true
+	foe["SKILL\51_ABL_MASTER_FEENA_COCYTUS"] = true
+	foe["SKILL\51_ABL_MASTER_FEENA_DROWN"] = true
+	foe["SKILL\51_ABL_MASTER_FEENA_FULLPOWER"] = true
+	foe["SKILL\51_ABL_MASTER_FEENA_KATRINA"] = true
+	foe["SKILL\51_ABL_MASTER_FEENA_MAGMABLAST"] = true
+	foe["SKILL\51_ABL_MASTER_FEENA_MEGAQUAKE"] = true
+	foe["SKILL\51_ABL_MASTER_FEENA_SCYLLA"] = true
 	foe["STSTART_Confusion"] = false
 	foe["STSTART_Curse"] = false
 	foe["STSTART_Death"] = false
@@ -128,30 +272,30 @@ local foe = {}
 	foe["STSTART_Silence"] = false
 	foe["STSTART_Sleep"] = false
 	foe["STSTART_Undead"] = false
-	foe["Desc"] = "Weak to magic even though it excels in it"
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47reg\47ArcaneSlime\46png"
-	foe["Item Drop \49"] = "ITM_CARROT"
-	foe["Item Drop \50"] = "ITM_PANACEA"
-	foe["Item Steal \49"] = "ITM_VOICEHERB"
-	foe["Item Steal \50"] = "ITM_ANABOLINEA"
-	foe["Item Steal \51"] = "ITM_CARROT"
-	foe["Name"] = "Arcane Slime"
-	foe["RATE_AAA_ATTACK"] = 0
-	foe["RATE_AAA_GUARD"] = 100
+	foe["Desc"] = "A magic lizard kind commonly known as \34Archmage\34\44\10because it\39s magic is very extremely strong\44 and when\10unprepared it\39s unlikely you\39ll live to tell the tale\46 \10Physically these lizards are very weak\44 so basically\10the trick is to kill it before it can cast any spell at all\46"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Reg\47Archmage\46png"
+	foe["Item Drop \49"] = "ITM_BANANA"
+	foe["Item Drop \50"] = "ITM_JUSDORANGE"
+	foe["Item Steal \49"] = "WAND_II_WATT"
+	foe["Item Steal \50"] = "WAND_II_VOLCANOWAND"
+	foe["Item Steal \51"] = "ITM_JUSDORANGE"
+	foe["Name"] = "Archmage"
+	foe["RATE_AAA_ATTACK"] = 100
+	foe["RATE_AAA_GUARD"] = 2
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
-	foe["RATE_ABL_FOE_CRUSH"] = 0
-	foe["RATE_ABL_FOE_DEATHSPELL"] = 0
-	foe["RATE_ABL_FOE_DEMON_SOUL_BREAKER"] = 0
+	foe["RATE_ABL_FOE_CRUSH"] = 1
+	foe["RATE_ABL_FOE_DEATHSPELL"] = 5
+	foe["RATE_ABL_FOE_DEMON_SOUL_BREAKER"] = 5
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
-	foe["RATE_ABL_FOE_DISINTEGRATE"] = 0
+	foe["RATE_ABL_FOE_DISINTEGRATE"] = 2
 	foe["RATE_ABL_FOE_DISTRACT"] = 0
-	foe["RATE_ABL_FOE_EXHAUST"] = 0
+	foe["RATE_ABL_FOE_EXHAUST"] = 5
 	foe["RATE_ABL_FOE_FLAMEBITE"] = 0
 	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 0
 	foe["RATE_ABL_FOE_GAZE"] = 0
 	foe["RATE_ABL_FOE_GRAVITY"] = 0
 	foe["RATE_ABL_FOE_HOLDPERSON"] = 0
-	foe["RATE_ABL_FOE_HORROR"] = 0
+	foe["RATE_ABL_FOE_HORROR"] = 1
 	foe["RATE_ABL_FOE_MERMAID_TEMPATION"] = 0
 	foe["RATE_ABL_FOE_PARADIVE"] = 0
 	foe["RATE_ABL_FOE_RANDOMIZER"] = 0
@@ -159,20 +303,20 @@ local foe = {}
 	foe["RATE_ABL_FOE_SETTHESTAGEONFIRE"] = 0
 	foe["RATE_ABL_FOE_SHOCKINGSTORIES"] = 0
 	foe["RATE_ABL_FOE_SICKSTORIES"] = 0
-	foe["RATE_ABL_FOE_SMITE"] = 0
+	foe["RATE_ABL_FOE_SMITE"] = 2
 	foe["RATE_ABL_FOE_SOULCRUSHINGSTORY"] = 0
 	foe["RATE_ABL_FOE_SPORES"] = 0
 	foe["RATE_ABL_FOE_SUICIDE"] = 0
 	foe["RATE_ABL_FOE_TAKEOVER"] = 0
-	foe["RATE_ABL_FOE_TAKEOVER\50"] = 0
-	foe["RATE_ABL_FOE_TOTALEXHAUSTION"] = 0
+	foe["RATE_ABL_FOE_TAKEOVER\50"] = 1
+	foe["RATE_ABL_FOE_TOTALEXHAUSTION"] = 25
 	foe["RATE_ABL_FOE_TUSK"] = 0
 	foe["RATE_ABL_FOE_TWOEDGE"] = 0
-	foe["RATE_ABL_FOE_ULTIMATESOULCRUSHER"] = 0
+	foe["RATE_ABL_FOE_ULTIMATESOULCRUSHER"] = 25
 	foe["RATE_ABL_FOE_VENOMBITE"] = 0
 	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
 	foe["RATE_ABL_FOE_VIRUSSTAB"] = 0
-	foe["RATE_ABL_FOE_WELCOMEINHELL"] = 0
+	foe["RATE_ABL_FOE_WELCOMEINHELL"] = 5
 	foe["RATE_ABL_FOLLOWUP_FIKKIE"] = 0
 	foe["RATE_ABL_GLOOM"] = 0
 	foe["RATE_ABL_HERO_DANDOR_AXESMASH"] = 0
@@ -209,27 +353,27 @@ local foe = {}
 	foe["RATE_ABL_HERO_JAKE_SHIFT_FAIRY"] = 0
 	foe["RATE_ABL_HERO_JAKE_SHIFT_HUMAN"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_BIO"] = 5
-	foe["RATE_ABL_HERO_MARRILONA_BREEZE"] = 10
-	foe["RATE_ABL_HERO_MARRILONA_CHILL"] = 10
-	foe["RATE_ABL_HERO_MARRILONA_CURSEDHEALING"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_ELECTROCUTION"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_ETERNALFLAME"] = 1
-	foe["RATE_ABL_HERO_MARRILONA_FIREBLAST"] = 1
-	foe["RATE_ABL_HERO_MARRILONA_FLAME"] = 10
-	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 8
-	foe["RATE_ABL_HERO_MARRILONA_HURRICANE"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_ICEBLAST"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_INFERNO"] = 1
+	foe["RATE_ABL_HERO_MARRILONA_BREEZE"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_CHILL"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_CURSEDHEALING"] = 5
+	foe["RATE_ABL_HERO_MARRILONA_ELECTROCUTION"] = 5
+	foe["RATE_ABL_HERO_MARRILONA_ETERNALFLAME"] = 5
+	foe["RATE_ABL_HERO_MARRILONA_FIREBLAST"] = 5
+	foe["RATE_ABL_HERO_MARRILONA_FLAME"] = 5
+	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 5
+	foe["RATE_ABL_HERO_MARRILONA_HURRICANE"] = 5
+	foe["RATE_ABL_HERO_MARRILONA_ICEBLAST"] = 5
+	foe["RATE_ABL_HERO_MARRILONA_INFERNO"] = 5
 	foe["RATE_ABL_HERO_MARRILONA_MEDITATION"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PERMANENCE"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_PROTECT"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_QUAKE"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_ROCK"] = 10
+	foe["RATE_ABL_HERO_MARRILONA_PROTECT"] = 5
+	foe["RATE_ABL_HERO_MARRILONA_QUAKE"] = 5
+	foe["RATE_ABL_HERO_MARRILONA_ROCK"] = 5
 	foe["RATE_ABL_HERO_MARRILONA_SPEEDUP"] = 5
-	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 10
+	foe["RATE_ABL_HERO_MARRILONA_SPLASH"] = 5
 	foe["RATE_ABL_HERO_MARRILONA_STONE\50FLESH"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_TSUNAMI"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_ZAP"] = 10
+	foe["RATE_ABL_HERO_MARRILONA_TSUNAMI"] = 5
+	foe["RATE_ABL_HERO_MARRILONA_ZAP"] = 5
 	foe["RATE_ABL_HERO_SPEEDUP"] = 0
 	foe["RATE_ABL_MASTER_FANDALORA_CURSE"] = 0
 	foe["RATE_ABL_MASTER_FANDALORA_DARKNESS"] = 0
@@ -239,13 +383,13 @@ local foe = {}
 	foe["RATE_ABL_MASTER_FANDALORA_REMOVECURSE"] = 0
 	foe["RATE_ABL_MASTER_FANDALORA_VOID"] = 0
 	foe["RATE_ABL_MASTER_FEENA_CHARIBDIS"] = 0
-	foe["RATE_ABL_MASTER_FEENA_COCYTUS"] = 0
-	foe["RATE_ABL_MASTER_FEENA_DROWN"] = 0
-	foe["RATE_ABL_MASTER_FEENA_FULLPOWER"] = 0
-	foe["RATE_ABL_MASTER_FEENA_KATRINA"] = 0
-	foe["RATE_ABL_MASTER_FEENA_MAGMABLAST"] = 0
-	foe["RATE_ABL_MASTER_FEENA_MEGAQUAKE"] = 0
-	foe["RATE_ABL_MASTER_FEENA_SCYLLA"] = 0
+	foe["RATE_ABL_MASTER_FEENA_COCYTUS"] = 1
+	foe["RATE_ABL_MASTER_FEENA_DROWN"] = 1
+	foe["RATE_ABL_MASTER_FEENA_FULLPOWER"] = 1
+	foe["RATE_ABL_MASTER_FEENA_KATRINA"] = 1
+	foe["RATE_ABL_MASTER_FEENA_MAGMABLAST"] = 1
+	foe["RATE_ABL_MASTER_FEENA_MEGAQUAKE"] = 1
+	foe["RATE_ABL_MASTER_FEENA_SCYLLA"] = 1
 	foe["RATE_ABL_MASTER_FREYA_REJUVENATE"] = 0
 	foe["RATE_ABL_MASTER_FREYA_ULTRAHEAL"] = 0
 	foe["RATE_ABL_MASTER_FREYA_VIGOR"] = 0
@@ -576,7 +720,7 @@ local foe = {}
 	foe["TARGET_ZZZ_KRANDARARMOR"] = "Random"
 	foe["TARGET_ZZZ_KRANDARBLADE"] = "Random"
 	foe["TARGET_ZZ_CRYPTKEY"] = "Random"
-	foe["VocalTag"] = "ArcaneSlime"
+	foe["VocalTag"] = "Archmage"
 	foe["Boss"] = false
 	foe["Oversoul"] = true
 	foe["Oversoul Drop \49"] = false
@@ -585,47 +729,47 @@ local foe = {}
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
 	foe["Cash"] = 8
-	foe["ER_Darkness"] = -300
-	foe["ER_Earth"] = -300
-	foe["ER_Flame"] = -300
-	foe["ER_Frost"] = -300
-	foe["ER_Light"] = -300
-	foe["ER_Lightning"] = -300
-	foe["ER_Water"] = -300
-	foe["ER_Wind"] = -300
-	foe["Rate Drop \49"] = 2
-	foe["Rate Drop \50"] = 5
-	foe["Rate Steal \49"] = 25
+	foe["ER_Darkness"] = 100
+	foe["ER_Earth"] = 100
+	foe["ER_Flame"] = 100
+	foe["ER_Frost"] = 100
+	foe["ER_Light"] = 100
+	foe["ER_Lightning"] = 100
+	foe["ER_Water"] = 100
+	foe["ER_Wind"] = 100
+	foe["Rate Drop \49"] = 1
+	foe["Rate Drop \50"] = 25
+	foe["Rate Steal \49"] = 1
 	foe["Rate Steal \50"] = 1
-	foe["Rate Steal \51"] = 50
+	foe["Rate Steal \51"] = 25
 	foe["SR_Confusion"] = 100
 	foe["SR_Curse"] = 100
-	foe["SR_Death"] = 100
-	foe["SR_Disease"] = 100
-	foe["SR_Paralysis"] = 100
+	foe["SR_Death"] = 75
+	foe["SR_Disease"] = 0
+	foe["SR_Paralysis"] = 25
 	foe["SR_Petrification"] = 100
-	foe["SR_Poison"] = 100
+	foe["SR_Poison"] = 0
 	foe["SR_Silence"] = 100
 	foe["SR_Sleep"] = 100
-	foe["SR_Undead"] = 100
+	foe["SR_Undead"] = 65
 	foe["normal_Accuracy"] = 100
-	foe["normal_EXP"] = 25
-	foe["normal_Endurance"] = 9999
-	foe["normal_Evasion"] = 100
-	foe["normal_HP"] = 1000
-	foe["normal_Intelligence"] = 300
-	foe["normal_Power"] = 200
-	foe["normal_Resistance"] = 200
-	foe["normal_Speed"] = 200
-	foe["oversoul_Accuracy"] = 9999
-	foe["oversoul_EXP"] = 1
-	foe["oversoul_Endurance"] = 9999
-	foe["oversoul_Evasion"] = 9999
-	foe["oversoul_HP"] = 99999
-	foe["oversoul_Intelligence"] = 350
-	foe["oversoul_Power"] = 200
-	foe["oversoul_Resistance"] = 400
-	foe["oversoul_Speed"] = 9999
+	foe["normal_EXP"] = 1200
+	foe["normal_Endurance"] = 1
+	foe["normal_Evasion"] = 1
+	foe["normal_HP"] = 123
+	foe["normal_Intelligence"] = 8000
+	foe["normal_Power"] = 5
+	foe["normal_Resistance"] = 123456
+	foe["normal_Speed"] = 250
+	foe["oversoul_Accuracy"] = 100
+	foe["oversoul_EXP"] = 2400
+	foe["oversoul_Endurance"] = 1
+	foe["oversoul_Evasion"] = 5
+	foe["oversoul_HP"] = 246
+	foe["oversoul_Intelligence"] = 9000
+	foe["oversoul_Power"] = 1
+	foe["oversoul_Resistance"] = 234567
+	foe["oversoul_Speed"] = 500
 
 
 return foe
