@@ -8973,11 +8973,11 @@ Rec: ABL_HERO_MARRILONA_MEDITATION
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
-	Target = 1F
+	Target = OS
 	Title = Meditation
 	Type = Item
 	USE_Penalty = 0
-	Voice = 
+	Voice = Heal
 	rew_CreateSkill1 = FALSE
 	rew_CreateSkill2 = FALSE
 	rew_CreateSkill3 = FALSE
