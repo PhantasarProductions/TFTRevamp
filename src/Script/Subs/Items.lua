@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.05.24
+  Version: 17.05.26
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -429,13 +429,14 @@ end
     
 function AnyBodyEquipped(item)
      local sockets = {"EQP_Acc","EQP_Armor","EQP_Weapon"}
-     local ret=true
+     local ret=false
      for i=0,3 do
          local ch=RPG.PartyTag(i)
          for s in each(sockets) do
              ret = ret or upper(RPG.GetData(ch,s))==upper(item)
          end    
      end
+     return ret
 end    
 
 function TreasureChest(tag)
