@@ -91,6 +91,7 @@ StatusChanges.Death = {
          OnCure = function(ch) 
                       if RPG.Points(ch,"HP").Have<=0 then RPG.Points(ch,"HP").Have=1 end
                   end,
+         BlockHeal = true,         
          StillorHelp = function(ch)
                        if prefixed(ch,"FOE") then return end -- Hando Stillor is not gonna help his foes
                        if RPG.CharExists("HandoStillor")==0 then return end
