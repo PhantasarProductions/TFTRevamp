@@ -8565,7 +8565,7 @@ Rec: ABL_HERO_MARRILONA_FLAME
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
-	Target = AA
+	Target = 1F
 	Title = Flame
 	Type = Ability
 	USE_Penalty = 0

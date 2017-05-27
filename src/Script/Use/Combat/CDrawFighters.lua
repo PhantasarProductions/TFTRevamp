@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 17.04.25
+  Version: 17.05.27
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -54,7 +54,13 @@ function DrawHero(i)
 end
 
 function FighterCoords(g,i)
-   if type(i)=='nil' then return fighterbytag[g].x,fighterbytag[g].y end
+   if type(i)=='nil' then
+      if not fighterbytag[g] then
+         CSay("WARNING! FighterCooords('"..sval(g).."'): Non-Existent Character")
+         return -100,-100
+      end 
+      return fighterbytag[g].x,fighterbytag[g].y 
+   end
    return Fighters[g][i].x,Fighters[g][i].y
 end   
 
