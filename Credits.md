@@ -155,6 +155,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: Gfx/Combat/Fighters/Foe/Boss/Black Dragon.png
     1. Graphics: Gfx/Textures/MtPyrusPuzzle/Volcano.piko
     1. Graphics: Gfx/Textures/MtPyrusPuzzle/Volcano.png
+- JWH Broeders
+    1. ???: GFX/Combat/Fighters/Foe/Reg/Archmage.bmp
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Archmage.png
 - Jeroen P. Broks
     1. Game identification data: ID/ID.Vocal.Full
     1. Game identification data: ID/Identify
@@ -352,6 +355,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HURRICANE.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ICEBLAST.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_INFERNO.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_MEDITATION.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PERMANENCE.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PROTECT.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_QUAKE.lua
@@ -486,6 +490,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR8.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR9.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_SEALARMOR.lua
+    1. Script: Script/JINC/IA/EXE_MARRILONA_MEDITATION.lua
     1. Script: Script/JINC/IA/FOE_WATCHMOVE.lua
     1. Script: Script/JINC/IA/ICEBLAST.lua
     1. Script: Script/JINC/IA/ITM_AMBROSIA.lua
