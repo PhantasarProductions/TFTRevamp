@@ -233,6 +233,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Sealed/Kabi.lua
     1. Script: Script/JINC/Foes/Sealed/MinoKing.lua
     1. Script: Script/JINC/Foes/reg/ArcaneSlime.lua
+    1. Script: Script/JINC/Foes/reg/Archmage.lua
     1. Script: Script/JINC/Foes/reg/BSpook.lua
     1. Script: Script/JINC/Foes/reg/Bandit.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
@@ -252,6 +253,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/HidingHag.lua
     1. Script: Script/JINC/Foes/reg/Highwayman.lua
     1. Script: Script/JINC/Foes/reg/Imp.lua
+    1. Script: Script/JINC/Foes/reg/Imp2.lua
     1. Script: Script/JINC/Foes/reg/InvisibleMan.lua
     1. Script: Script/JINC/Foes/reg/Lemming.lua
     1. Script: Script/JINC/Foes/reg/Lich.lua
@@ -348,6 +350,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_CHILL.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_CURSEDHEALING.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ELECTROCUTION.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_EMPOWER.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ETERNALFLAME.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FIREBLAST.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FLAME.lua
@@ -772,12 +775,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
     1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/ClearTable.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
