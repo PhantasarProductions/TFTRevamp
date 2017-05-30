@@ -32,5 +32,32 @@
   
  **********************************************
  
-version: 17.05.24
+version: 17.05.30
 ]]
+
+function PetitRoi()
+  if Done("&DONE.BOSS.PETITROI") then return end
+  ClearCombatData()
+  local i = 1
+  local s = ({0,1,3})[skill]
+  for ak=1,s do 
+      Var.D("$COMBAT.FOE_"..i,"Reg/Imp2")
+      i = i + 1
+  end    
+  Var.D("$COMBAT.FOE_"..i,"Boss/PetitRoi"); i=i+1
+  for ak=1,s do 
+      Var.D("$COMBAT.FOE_"..i,"Reg/Imp2")
+      i = i + 1
+  end    
+  Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
+  Var.D("$COMBAT.ARENA","Forest.png")
+  StartBoss("King of the Imps","Petit Roi")   
+end
+
+function ManaBoss()    
+    ({ Jake_Human = PetitRoi, Jake_Fairy=PetitRoi, Nostramantu = NosBoss})[RPG.PartyTag(0)]()
+end
+
+function GALE_OnLoad()
+  ZA_Enter('ManaBoss',ManaBoss)
+end  

@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 17.03.20
+  Version: 17.05.27
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
