@@ -630,6 +630,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH3_Story_Dragon_Forest.lua
     1. Script: Script/Maps/CH3_Town_Grombo.lua
     1. Script: Script/Maps/CH3_Town_Nostraburg.lua
+    1. Script: Script/Maps/CH4_Dungeon_ManaCave.lua
     1. Script: Script/Maps/CH4_Dungeon_ManaRoad.lua
     1. Script: Script/Maps/CH4_Dungeon_PyrusPass.lua
     1. Script: Script/Maps/CH4_Dungeon_StarDome.lua
@@ -1038,6 +1039,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH3_Town_Nostraburg/Data
     1. Map Design: Kthura/CH3_Town_Nostraburg/Objects
     1. Map Design: Kthura/CH3_Town_Nostraburg/Settings
+    1. Map Design: Kthura/CH4_Dungeon_ManaCave/Data
+    1. Map Design: Kthura/CH4_Dungeon_ManaCave/Objects
+    1. Map Design: Kthura/CH4_Dungeon_ManaCave/Settings
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Data
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Objects
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Settings
@@ -1603,6 +1607,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_STORY_DRAGON_FOREST
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_NOSTRABURG
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_MANACAVE
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_PYRUSPASS
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_STARDOME
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
@@ -1649,6 +1654,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH3_STORY_DRAGON_FOREST
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_NOSTRABURG
+    1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_MANACAVE
     1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_PYRUSPASS
     1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_STARDOME
     1. Scenario: Languages/English/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
@@ -2360,6 +2366,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - Varazuvi(TM)
     1. Audio: Audio/sfx/General/Solved.ogg
 - W.K. Chan & Wouter Wershkull
+    1. Music: Music/Mystery/Draft1.ogg
+    1. Music: Music/Mystery/Draft2.ogg
     1. Music: Music/Special Boss/PlayTillDeath_(Nostramantu).ogg
     1. Music: Music/Town/Funky Fairy.ogg
 - Wicky77

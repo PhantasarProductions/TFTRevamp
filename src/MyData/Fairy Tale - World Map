@@ -312,6 +312,16 @@ Rec: CH3SPIRATAEARTH
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: CH4MANACAVE
+	Dungeon = TRUE
+	Folder = Kokonora
+	Kthura = CH4_Dungeon_ManaCave
+	Layer = #000
+	LocationName = Mana Cave
+	LocationPrefix = The
+	Start = Start
+	UnlockedFromStart = FALSE
+
 Rec: CH4MANAROAD
 	Dungeon = TRUE
 	Folder = Kokonora

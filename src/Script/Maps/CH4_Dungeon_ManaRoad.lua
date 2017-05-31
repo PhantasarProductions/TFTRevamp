@@ -32,8 +32,9 @@
   
  **********************************************
  
-version: 17.05.30
+version: 17.05.31
 ]]
+
 
 function PetitRoi()
   if Done("&DONE.BOSS.PETITROI") then return end
@@ -54,10 +55,18 @@ function PetitRoi()
   StartBoss("King of the Imps","Petit Roi")   
 end
 
+function NaarDeManaCave()
+   LoadMap("CH4_DUNGEON_MANACAVE")
+   GoToLayer("#000","Start")
+end   
+
 function ManaBoss()    
     ({ Jake_Human = PetitRoi, Jake_Fairy=PetitRoi, Nostramantu = NosBoss})[RPG.PartyTag(0)]()
 end
 
+
+
 function GALE_OnLoad()
   ZA_Enter('ManaBoss',ManaBoss)
+  ZA_Enter('NaarDeManaGrot',NaarDeManaCave)
 end  

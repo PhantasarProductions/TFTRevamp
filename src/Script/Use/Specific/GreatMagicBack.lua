@@ -1,6 +1,6 @@
 --[[
   GreatMagicBack.lua
-  Version: 17.04.17
+  Version: 17.05.31
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -62,7 +62,7 @@ gm_default.speed = { {1,0},{2,0},{0,1},{0,2}}
 
 gm_default.hide = "/F.PNG"                            
 
-function SetUpGreatMagic(data,layer)      
+function SetUpGreatMagicDo(data,layer)      
       local retv = {} 
       local added = 0
       for obj in KthuraEach("TiledArea") do
@@ -106,7 +106,7 @@ function SetupGreatMagic(pdata)
       local layers = mysplit(Maps.Layers(),";")
       for layer in each(layers) do
           Maps.GoToLayer(layer) 
-          ret[layer] = SetUpGreatMagic(data,layer) 
+          ret[layer] = SetUpGreatMagicDo(data,layer) 
       end
       for k,a in spairs(ret) do CSay("MAGIC TILES: "..k.."> "..#a) end
       Maps.Remap()
