@@ -1,6 +1,6 @@
 --[[
   litworm.lua
-  Version: 17.05.22
+  Version: 17.06.01
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Mon 22 May 2017; 19:16:44
+-- File Generated: Thu 01 June 2017; 21:50:54
 
 
 local foe = {}
@@ -167,6 +167,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_TAKEOVER\50"] = 5
 	foe["RATE_ABL_FOE_TOTALEXHAUSTION"] = 0
 	foe["RATE_ABL_FOE_TUSK"] = 0
+	foe["RATE_ABL_FOE_TWOEDGE"] = 0
 	foe["RATE_ABL_FOE_ULTIMATESOULCRUSHER"] = 0
 	foe["RATE_ABL_FOE_VENOMBITE"] = 0
 	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
@@ -212,6 +213,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_CHILL"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_CURSEDHEALING"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ELECTROCUTION"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_EMPOWER"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ETERNALFLAME"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_FIREBLAST"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_FLAME"] = 0
@@ -219,6 +221,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_HURRICANE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ICEBLAST"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_INFERNO"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_MEDITATION"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PERMANENCE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_PROTECT"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_QUAKE"] = 0
@@ -273,6 +276,7 @@ local foe = {}
 	foe["RATE_COCYTUS_CAINA"] = 0
 	foe["RATE_COCYTUS_JUDECCA"] = 0
 	foe["RATE_COCYTUS_PTOLOMEA"] = 0
+	foe["RATE_EXE_MARRILONA_MEDITATION"] = 0
 	foe["RATE_FOE_WATCHMOVE"] = 0
 	foe["RATE_ICEBLAST"] = 0
 	foe["RATE_ITM_AMBROSIA"] = 0
@@ -352,6 +356,7 @@ local foe = {}
 	foe["RATE_ZZKEY_WIND"] = 0
 	foe["RATE_ZZZ_KRANDARARMOR"] = 0
 	foe["RATE_ZZZ_KRANDARBLADE"] = 0
+	foe["RATE_ZZ_CRYPTKEY"] = 0
 	foe["TARGET_AAA_ATTACK"] = "Random"
 	foe["TARGET_AAA_GUARD"] = "Random"
 	foe["TARGET_ABL_FOE_BACTERIATUSK"] = "Random"
@@ -383,6 +388,7 @@ local foe = {}
 	foe["TARGET_ABL_FOE_TAKEOVER\50"] = "Random"
 	foe["TARGET_ABL_FOE_TOTALEXHAUSTION"] = "Random"
 	foe["TARGET_ABL_FOE_TUSK"] = "Random"
+	foe["TARGET_ABL_FOE_TWOEDGE"] = "Random"
 	foe["TARGET_ABL_FOE_ULTIMATESOULCRUSHER"] = "Random"
 	foe["TARGET_ABL_FOE_VENOMBITE"] = "Random"
 	foe["TARGET_ABL_FOE_VENOMSTAB"] = "Random"
@@ -428,6 +434,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_MARRILONA_CHILL"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_CURSEDHEALING"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ELECTROCUTION"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_EMPOWER"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ETERNALFLAME"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_FIREBLAST"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_FLAME"] = "Random"
@@ -435,6 +442,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_MARRILONA_HURRICANE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ICEBLAST"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_INFERNO"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_MEDITATION"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_PERMANENCE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_PROTECT"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_QUAKE"] = "Random"
@@ -489,6 +497,7 @@ local foe = {}
 	foe["TARGET_COCYTUS_CAINA"] = "Random"
 	foe["TARGET_COCYTUS_JUDECCA"] = "Random"
 	foe["TARGET_COCYTUS_PTOLOMEA"] = "Random"
+	foe["TARGET_EXE_MARRILONA_MEDITATION"] = "Random"
 	foe["TARGET_FOE_WATCHMOVE"] = "Random"
 	foe["TARGET_ICEBLAST"] = "Random"
 	foe["TARGET_ITM_AMBROSIA"] = "Random"
@@ -568,6 +577,7 @@ local foe = {}
 	foe["TARGET_ZZKEY_WIND"] = "Random"
 	foe["TARGET_ZZZ_KRANDARARMOR"] = "Random"
 	foe["TARGET_ZZZ_KRANDARBLADE"] = "Random"
+	foe["TARGET_ZZ_CRYPTKEY"] = "Random"
 	foe["VocalTag"] = "litworm"
 	foe["Boss"] = false
 	foe["Oversoul"] = false

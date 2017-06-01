@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_HANDOSTILLOR_PRAYFORALL.lua
-  Version: 17.05.27
+  Version: 17.06.01
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

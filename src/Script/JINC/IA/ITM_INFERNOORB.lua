@@ -1,6 +1,6 @@
 --[[
   ITM_INFERNOORB.lua
-  Version: 17.05.27
+  Version: 17.06.01
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
