@@ -635,6 +635,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH4_Dungeon_ManaCave.lua
     1. Script: Script/Maps/CH4_Dungeon_ManaRoad.lua
     1. Script: Script/Maps/CH4_Dungeon_PyrusPass.lua
+    1. Script: Script/Maps/CH4_Dungeon_SpirataCrypt.lua
     1. Script: Script/Maps/CH4_Dungeon_StarDome.lua
     1. Script: Script/Maps/CH4_Town_NostraburgNight.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
@@ -760,6 +761,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Specific/PicSlide.lua
     1. Script: Script/Use/Specific/PlasmaFloor.lua
     1. Script: Script/Use/Specific/Scroller.lua
+    1. Script: Script/Use/Specific/SpirataCryptEntrance.lua
     1. Script: Script/Use/Specific/StepsPuzzle.lua
     1. Script: Script/Use/Specific/Walda.lua
     1. Script: Script/Use/Specific/arrowslide.lua
@@ -779,10 +781,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Script: Script/Libs/tablecontains.lua
     1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
     1. Script: Script/Libs/DarkText.lua
     1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua

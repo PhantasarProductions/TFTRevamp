@@ -32,9 +32,11 @@
   
  **********************************************
  
-version: 17.02.16
+version: 17.06.04
 ]]
+
 -- @USE /script/use/specific/plasmafloor.lua
+-- @USE /Script/Use/Specific/SpirataCryptEntrance.lua
 
 
 subniveau = {}
@@ -175,4 +177,5 @@ function GALE_OnLoad()
    ZA_Enter('Kerk'       ,Music,"Dungeon/Chanson d'eglise.ogg")
    ZA_Enter('Spirata',Spirata)
    MapHide('Secret')
+   InitSpirEntry('aqua')
 end
