@@ -277,6 +277,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/VolcanoHound.lua
     1. Script: Script/JINC/Foes/reg/Wolf.lua
     1. Script: Script/JINC/Foes/reg/Zombie.lua
+    1. Script: Script/JINC/Foes/reg/Zombie2.lua
     1. Script: Script/JINC/Foes/reg/litworm.lua
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
     1. Script: Script/JINC/IA/AAA_GUARD.lua
@@ -784,14 +785,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/SerializeIntoSysVar.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
