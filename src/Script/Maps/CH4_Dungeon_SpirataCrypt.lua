@@ -34,3 +34,24 @@
  
 version: 17.06.04
 ]]
+
+
+local backspirata = {
+
+   aqua = { kthura = 'CH2_DUNGEON_SPIRATAWATER',
+            layer  = '#005'}
+
+
+}
+
+local function Back2Spirata()
+   local layer = Maps.LayerCodeName
+   local back = backspriata[layer]
+   assert(back,"No 'back' information for layer '"..layer.."'")
+   
+end
+
+function GALE_OnLoad()
+   MapHide('Secret')
+   ZA_Enter('Spirata',Back2Spirata)
+end   
