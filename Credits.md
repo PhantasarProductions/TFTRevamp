@@ -263,6 +263,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Lich.lua
     1. Script: Script/JINC/Foes/reg/Medusa.lua
     1. Script: Script/JINC/Foes/reg/Mermaid.lua
+    1. Script: Script/JINC/Foes/reg/Nemesis.lua
     1. Script: Script/JINC/Foes/reg/Pinky.lua
     1. Script: Script/JINC/Foes/reg/Pyroguin.lua
     1. Script: Script/JINC/Foes/reg/RSpook.lua
@@ -306,6 +307,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_SUICIDE.lua
     1. Script: Script/JINC/IA/ABL_FOE_TAKEOVER.lua
     1. Script: Script/JINC/IA/ABL_FOE_TAKEOVER2.lua
+    1. Script: Script/JINC/IA/ABL_FOE_THRILL.lua
     1. Script: Script/JINC/IA/ABL_FOE_TOTALEXHAUSTION.lua
     1. Script: Script/JINC/IA/ABL_FOE_TUSK.lua
     1. Script: Script/JINC/IA/ABL_FOE_TWOEDGE.lua
@@ -782,14 +784,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/SerializeIntoSysVar.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -957,6 +959,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant08.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant09.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Mermaid/Variant10.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Nemesis.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Skeleton.png
     1. Graphics: GFX/Combat/Fighters/Foe/Sealed/Kabi.png
     1. ???: GFX/Combat/Fighters/Foe/Sealed/KabiArc.lzh
