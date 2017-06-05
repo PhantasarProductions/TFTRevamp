@@ -1,5 +1,5 @@
 --[[
-  ABL_MASTER_KRANDAR_6PS.lua
+  ABL_FOE_THRILL.lua
   Version: 17.06.05
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -35,15 +35,18 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
-	["ABL_APCost"] = 120,
 	["ADDCARD_Action_Act"] = "Self",
-	["Attack"] = 600,
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 125,
+	["ADDCARD_Char_Number"] = 1,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowCritical"] = true,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "The \"six\" culture",
+	["CauseCurse"] = true,
+	["CauseUndead"] = true,
+	["EffectScript"] = "PointAlter",
+	["EffectScript_Arg"] = "HP 1",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -55,12 +58,11 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
-	["Stance"] = "Attack",
-	["Target"] = "1F",
-	["Title"] = "Hexa Power Strike",
-	["Type"] = "Ability",
-	["Voice"] = "Critical",
-	["rew_GainSkill1"] = 50}
+	["SpellAni"] = "AllHeal",
+	["Stance"] = "Cast",
+	["Target"] = "1A",
+	["Title"] = "Thrill",
+	["Type"] = "Item"}
 
 return ret
 

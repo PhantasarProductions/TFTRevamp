@@ -255,6 +255,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/HellHound.lua
     1. Script: Script/JINC/Foes/reg/HidingHag.lua
     1. Script: Script/JINC/Foes/reg/Highwayman.lua
+    1. Script: Script/JINC/Foes/reg/HobGob.lua
     1. Script: Script/JINC/Foes/reg/Imp.lua
     1. Script: Script/JINC/Foes/reg/Imp2.lua
     1. Script: Script/JINC/Foes/reg/InvisibleMan.lua
@@ -781,14 +782,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/SerializeIntoSysVar.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -993,9 +994,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/Data
     1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/Objects
     1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/Settings
-    1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Data
-    1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Objects
-    1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Settings
+    1. Map Design: Kthura/CH2_Dungeon_DragonCastle/DATA
+    1. Map Design: Kthura/CH2_Dungeon_DragonCastle/OBJECTS
+    1. Map Design: Kthura/CH2_Dungeon_DragonCastle/SETTINGS
     1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Data
     1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Objects
     1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Settings
