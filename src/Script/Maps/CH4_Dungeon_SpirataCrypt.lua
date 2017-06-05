@@ -32,9 +32,10 @@
   
  **********************************************
  
-version: 17.06.04
+version: 17.06.05
 ]]
 
+local NoDarkness={}
 
 local backspirata = {
 
@@ -44,6 +45,33 @@ local backspirata = {
 
 }
 
+local function MakeDarkness()
+   local layers = mysplit(Maps.Layers(),";")
+   local dark
+   local scx = math.ceil((SW/3000)*1000); if scx>1000 then scx=1000 end
+   local scy = math.ceil((SH/3000)*1000); if scy>1000 then scy=1000 end
+   CSay('Darkness scale: '..scx..","..scy)
+   for lay in each(layers) do
+       Maps.GoToLayer(lay)
+       Maps.CreateObstacle(0,0,'GFX/Effects/Darkness.png',"Darkness",0)
+       dark = Maps.Obj.Obj("Darkness")
+       if tablecontains(NoDarkness,lay) then dark.Visible=0 end
+       dark.Impassible=0
+       dark.Dominance=50000
+       dark.ScaleX = scx
+       dark.ScaleY = scy
+   end
+   Maps.ReMap()
+end
+
+function MAP_FLOW()
+   local dark = Maps.Obj.Obj("Darkness")
+   local play = Actors.Actor('PLAYER')
+   dark.X = play.X
+   dark.Y = play.Y
+end
+
+
 local function Back2Spirata()
    local layer = Maps.LayerCodeName
    local back = backspriata[layer]
@@ -52,6 +80,7 @@ local function Back2Spirata()
 end
 
 function GALE_OnLoad()
+   MakeDarkness()
    MapHide('Secret')
    ZA_Enter('Spirata',Back2Spirata)
 end   
