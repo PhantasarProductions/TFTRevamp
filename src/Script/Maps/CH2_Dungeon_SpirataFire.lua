@@ -36,6 +36,8 @@ version: 17.03.05
 ]]
 
 -- @USE /script/use/specific/plasmafloor.lua
+-- @USE /Script/Use/Specific/SpirataCryptEntrance.lua
+
 
 function genpuzzle()
   local counton  
@@ -150,4 +152,5 @@ function GALE_OnLoad()
    ZA_Enter('SpirataMusic',Music,"Hub/Angevin.ogg")
    ZA_Enter("MapMusic",MapMusic)
    ZA_Enter("StartSpirataEvent",Spirata)
+   InitSpirEntry('ignis')
  end
