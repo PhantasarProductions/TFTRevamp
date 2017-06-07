@@ -42,7 +42,10 @@ local backspirata = {
    aqua = { kthura = 'CH2_DUNGEON_SPIRATAWATER',
             layer  = '#005',
             boss   = 'SuperGhostPriest',
-            bossh  = {'High priest of the undead','Super Ghost Priest'}}
+            bossh  = {'High priest of the undead','Super Ghost Priest'}},
+            
+   ignis = {kthura = 'CH2_DUNGEON_SPIRATAFIRE',
+            layer  = '#002'}          
 
 
 }
@@ -111,9 +114,10 @@ end
 
 local function Back2Spirata()
    local layer = Maps.LayerCodeName
-   local back = backspriata[layer]
+   local back = backspirata[layer]
    assert(back,"No 'back' information for layer '"..layer.."'")
-   
+   LoadMap(back.kthura)
+   GoToLayer('SPOT_ToCrypt')
 end
 
 local function t_go(t)
