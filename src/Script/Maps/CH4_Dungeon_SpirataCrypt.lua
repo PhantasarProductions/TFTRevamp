@@ -102,7 +102,7 @@ function MAP_FLOW()
    dark.X = play.X
    dark.Y = play.Y
    if Maps.LayerCodeName=="together" then
-      for l in each(tgd) do TurnDisk(tgd) end
+      for l in each(tgd) do TurnDisk(l) end
    else
       TurnDisk('go_together')
    end   
@@ -141,5 +141,5 @@ function GALE_OnLoad()
    MakeDarkness()
    MapHide('Secret')
    ZA_Enter('Spirata',Back2Spirata)
-   for l in each({'aer','aqua','ignis','terra'}) do ZA_Enter('go_'..l,t_go,l) end
+   for l in each({'aer','aqua','ignis','terra','together'}) do ZA_Enter('go_'..l,t_go,l) end
 end   

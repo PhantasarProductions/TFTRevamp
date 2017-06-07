@@ -3535,7 +3535,7 @@ Rec: ABL_FOE_THRILL
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
-	Target = 1A
+	Target = AF
 	Title = Thrill
 	Type = Item
 	USE_Penalty = 0

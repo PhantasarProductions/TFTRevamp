@@ -60,7 +60,7 @@ ret = {
 	["ITM_Type"] = "Consumable",
 	["SpellAni"] = "AllHeal",
 	["Stance"] = "Cast",
-	["Target"] = "1A",
+	["Target"] = "AF",
 	["Title"] = "Thrill",
 	["Type"] = "Item"}
 
