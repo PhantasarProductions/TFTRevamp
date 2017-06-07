@@ -45,7 +45,9 @@ local backspirata = {
             bossh  = {'High priest of the undead','Super Ghost Priest'}},
             
    ignis = {kthura = 'CH2_DUNGEON_SPIRATAFIRE',
-            layer  = '#002'}          
+            layer  = '#002',
+            boss   = 'UltraMonk',
+            bossh  = {'Ultra Monk From Hell','Evelyn'}}          
 
 
 }
