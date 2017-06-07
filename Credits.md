@@ -227,6 +227,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/PetitRoi.lua
     1. Script: Script/JINC/Foes/Boss/Russell.lua
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
+    1. Script: Script/JINC/Foes/Boss/SuperGhostPriest.lua
     1. Script: Script/JINC/Foes/Boss/SuperHidingHag.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/Boss/Terra.lua
@@ -422,6 +423,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/COCYTUS_JUDECCA.lua
     1. Script: Script/JINC/IA/COCYTUS_PTOLOMEA.lua
     1. Script: Script/JINC/IA/EQP_ACC_TITANBELT.lua
+    1. Script: Script/JINC/IA/EQP_ACC_WIZARDRING.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_CURSEDWP_HUNGERAXE.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_TRAINAXE.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP1.lua
@@ -712,6 +714,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/FoeAI/Nostramantu.lua
     1. Script: Script/Use/Combat/Jokers/AAA_Jokers.lua
     1. Script: Script/Use/Combat/Jokers/Dragon.lua
+    1. Script: Script/Use/Combat/PreTurn/AAA_Algemeen.lua
+    1. Script: Script/Use/Combat/PreTurn/GainAP.lua
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
     1. Script: Script/Use/Combat/SpellAni/DarkVision.lua
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
@@ -786,14 +790,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/SerializeIntoSysVar.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png

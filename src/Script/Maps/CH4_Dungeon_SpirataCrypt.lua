@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.05
+version: 17.06.07
 ]]
 
 local NoDarkness={}
@@ -50,7 +50,7 @@ local backspirata = {
 
 local function Boss()
   local layer = Maps.LayerCodeName
-  local back = backspriata[layer]
+  local back = backspirata[layer]
   local nbe = (skill-1)*3
   local bs  = nbe+1
   ClearCombatData()
@@ -84,11 +84,28 @@ local function MakeDarkness()
    Maps.ReMap()
 end
 
+local tgdd = {}
+
+local function TurnDisk(tag)
+    local l = Maps.LayerCodeName ..  "_"
+    tgdd[l..tag] = tgdd[l..tag] or rand(0,360)
+    tgdd[l..tag] = tgdd[l..tag] + 1
+    if tgdd[l..tag]>360 then tgdd[l..tag] = tgdd[l..tag] - 360 end
+    Maps.Obj.Obj("Obstacle_"..tag).Rotation = tgdd[l..tag]   
+end
+
+local tgd = {'go_terra','go_aqua','go_ignis','go_aer','Delisto'}
+
 function MAP_FLOW()
    local dark = Maps.Obj.Obj("Darkness")
    local play = Actors.Actor('PLAYER')
    dark.X = play.X
    dark.Y = play.Y
+   if Maps.LayerCodeName=="together" then
+      for l in each(tgd) do TurnDisk(tgd) end
+   else
+      TurnDisk('go_together')
+   end   
 end
 
 

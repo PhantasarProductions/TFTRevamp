@@ -1,6 +1,6 @@
 --[[
   Idle.lua
-  Version: 17.04.25
+  Version: 17.06.07
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -92,8 +92,8 @@ function fflow.idle()
        -- end
        if card.data.nextact then nextact=card.data.nextact  nextact.auto = true flow = 'Execution' CSay('Ability from card')       
        elseif AltMove(card.data.tag) then CSay("Alternate move executed")
-       elseif card.data.group == 'Foe' then if  (not TurnSkip(card.data.tag,true)) then flow = 'foeinput' else RemoveFirstCard() end 
-       elseif card.data.group == 'Hero' then if (not TurnSkip(card.data.tag,true)) then fflow.setplayerinput(card.data.tag) else RemoveFirstCard() end end
+       elseif card.data.group == 'Foe'  then if  (not TurnSkip(card.data.tag,true)) then flow = 'foeinput' else RemoveFirstCard() end 
+       elseif card.data.group == 'Hero' then if (not TurnSkip(card.data.tag,true)) then fflow.setplayerinput(card.data.tag) Pre_Turn(card.data.tag) else RemoveFirstCard() end end
     -- elseif card.data.extra then -- dropped
     --   Sys.Error('Stuff for extra cards not yet set up.')
     else 

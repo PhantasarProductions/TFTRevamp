@@ -283,9 +283,17 @@ bool rew_CreateSkill5
 string SpellAni
 string SpellAni_Arg
 bool SpellAni_External
+strike
 string EffectScript
 string EffectScript_Arg
 bool EffectScript_External
+strike
+string Acc_PreTurn
+string Acc_PreTurn_Arg
+
+[allow: ITM_Type == Accesoiry]
+Acc_PreTurn
+Acc_PreTurn_Arg
 
 
 
@@ -327,6 +335,8 @@ Rec: AAA_ATTACK
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -429,6 +439,8 @@ Rec: AAA_GUARD
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -531,6 +543,8 @@ Rec: ABL_FOE_BACTERIATUSK
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -633,6 +647,8 @@ Rec: ABL_FOE_CRUSH
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -735,6 +751,8 @@ Rec: ABL_FOE_DEATHSPELL
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -837,6 +855,8 @@ Rec: ABL_FOE_DEMON_SOUL_BREAKER
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -939,6 +959,8 @@ Rec: ABL_FOE_DESPERATEATTACK
 	ADDCARD_Action_Number = 
 	ADDCARD_Char_Interval = 
 	ADDCARD_Char_Number = 
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 120
 	Attack_AccuracyRate = 25
 	Attack_AllowAccuracy = TRUE
@@ -1041,6 +1063,8 @@ Rec: ABL_FOE_DISINTEGRATE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -1143,6 +1167,8 @@ Rec: ABL_FOE_DISTRACT
 	ADDCARD_Action_Number = 
 	ADDCARD_Char_Interval = 
 	ADDCARD_Char_Number = 
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -1245,6 +1271,8 @@ Rec: ABL_FOE_ENEMYVITALIZE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -1347,6 +1375,8 @@ Rec: ABL_FOE_EXHAUST
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -1449,6 +1479,8 @@ Rec: ABL_FOE_FLAMEBITE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 150
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -1551,6 +1583,8 @@ Rec: ABL_FOE_FLAMESTRIKE
 	ADDCARD_Action_Number = 
 	ADDCARD_Char_Interval = 
 	ADDCARD_Char_Number = 
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -1653,6 +1687,8 @@ Rec: ABL_FOE_GAZE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -1755,6 +1791,8 @@ Rec: ABL_FOE_GRAVITY
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -1857,6 +1895,8 @@ Rec: ABL_FOE_HOLDPERSON
 	ADDCARD_Action_Number = 1
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -1959,6 +1999,8 @@ Rec: ABL_FOE_HORROR
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -2061,6 +2103,8 @@ Rec: ABL_FOE_MERMAID_TEMPATION
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 1
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -2163,6 +2207,8 @@ Rec: ABL_FOE_PARADIVE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 85
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -2265,6 +2311,8 @@ Rec: ABL_FOE_RANDOMIZER
 	ADDCARD_Action_Number = 5
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -2367,6 +2415,8 @@ Rec: ABL_FOE_RANDOMIZERTOTAL
 	ADDCARD_Action_Number = 5
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -2469,6 +2519,8 @@ Rec: ABL_FOE_SETTHESTAGEONFIRE
 	ADDCARD_Action_Number = 50
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 80
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -2571,6 +2623,8 @@ Rec: ABL_FOE_SHOCKINGSTORIES
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -2673,6 +2727,8 @@ Rec: ABL_FOE_SICKSTORIES
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -2775,6 +2831,8 @@ Rec: ABL_FOE_SMITE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 150
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -2877,6 +2935,8 @@ Rec: ABL_FOE_SOULCRUSHINGSTORY
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -2979,6 +3039,8 @@ Rec: ABL_FOE_SPORES
 	ADDCARD_Action_Number = 5
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -3081,6 +3143,8 @@ Rec: ABL_FOE_SUICIDE
 	ADDCARD_Action_Number = 
 	ADDCARD_Char_Interval = 
 	ADDCARD_Char_Number = 
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 10000
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -3183,6 +3247,8 @@ Rec: ABL_FOE_TAKEOVER
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -3285,6 +3351,8 @@ Rec: ABL_FOE_TAKEOVER2
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -3387,6 +3455,8 @@ Rec: ABL_FOE_THRILL
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 125
 	ADDCARD_Char_Number = 1
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -3489,6 +3559,8 @@ Rec: ABL_FOE_TOTALEXHAUSTION
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -3591,6 +3663,8 @@ Rec: ABL_FOE_TUSK
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -3693,6 +3767,8 @@ Rec: ABL_FOE_TWOEDGE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -3795,6 +3871,8 @@ Rec: ABL_FOE_ULTIMATESOULCRUSHER
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -3897,6 +3975,8 @@ Rec: ABL_FOE_VENOMBITE
 	ADDCARD_Action_Number = 
 	ADDCARD_Char_Interval = 
 	ADDCARD_Char_Number = 
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -3999,6 +4079,8 @@ Rec: ABL_FOE_VENOMSTAB
 	ADDCARD_Action_Number = 
 	ADDCARD_Char_Interval = 
 	ADDCARD_Char_Number = 
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -4101,6 +4183,8 @@ Rec: ABL_FOE_VIRUSSTAB
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -4203,6 +4287,8 @@ Rec: ABL_FOE_WELCOMEINHELL
 	ADDCARD_Action_Number = 2
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 150
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -4305,6 +4391,8 @@ Rec: ABL_FOLLOWUP_FIKKIE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 25
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -4407,6 +4495,8 @@ Rec: ABL_GLOOM
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 50
 	ADDCARD_Char_Number = 1
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -4509,6 +4599,8 @@ Rec: ABL_HERO_DANDOR_AXESMASH
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 250
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -4611,6 +4703,8 @@ Rec: ABL_HERO_DANDOR_BARRIER
 	ADDCARD_Action_Number = 2
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -4713,6 +4807,8 @@ Rec: ABL_HERO_DANDOR_SHIELD
 	ADDCARD_Action_Number = 2
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -4815,6 +4911,8 @@ Rec: ABL_HERO_DANDOR_SUPERAXESMASH
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 650
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -4917,6 +5015,8 @@ Rec: ABL_HERO_HANDOSTILLOR_CLEANSE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -5019,6 +5119,8 @@ Rec: ABL_HERO_HANDOSTILLOR_CUREDISEASE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -5121,6 +5223,8 @@ Rec: ABL_HERO_HANDOSTILLOR_FIRSTAID
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -5223,6 +5327,8 @@ Rec: ABL_HERO_HANDOSTILLOR_GOODMORNING
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -5325,6 +5431,8 @@ Rec: ABL_HERO_HANDOSTILLOR_HASPARONVITALIZATION
 	ADDCARD_Action_Number = 20
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -5427,6 +5535,8 @@ Rec: ABL_HERO_HANDOSTILLOR_HOLYSTRIKE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 150
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -5529,6 +5639,8 @@ Rec: ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -5631,6 +5743,8 @@ Rec: ABL_HERO_HANDOSTILLOR_PRAY
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -5733,6 +5847,8 @@ Rec: ABL_HERO_HANDOSTILLOR_PRAYFORALL
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 100
 	ADDCARD_Char_Number = 1
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -5835,6 +5951,8 @@ Rec: ABL_HERO_HANDOSTILLOR_PURIFY
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -5937,6 +6055,8 @@ Rec: ABL_HERO_HANDOSTILLOR_RECOVER
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -6039,6 +6159,8 @@ Rec: ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -6141,6 +6263,8 @@ Rec: ABL_HERO_HANDOSTILLOR_RESURRECT
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 75
 	ADDCARD_Char_Number = 1
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -6243,6 +6367,8 @@ Rec: ABL_HERO_HANDOSTILLOR_REVIVE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -6345,6 +6471,8 @@ Rec: ABL_HERO_HANDOSTILLOR_SMITE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 200
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -6447,6 +6575,8 @@ Rec: ABL_HERO_HANDOSTILLOR_STICKSWING
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 120
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -6549,6 +6679,8 @@ Rec: ABL_HERO_HANDOSTILLOR_TREATMENT
 	ADDCARD_Action_Number = 5
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -6651,6 +6783,8 @@ Rec: ABL_HERO_HANDOSTILLOR_TWINKLE
 	ADDCARD_Action_Number = 25
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -6753,6 +6887,8 @@ Rec: ABL_HERO_HANDOSTILLOR_VITALIZE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -6855,6 +6991,8 @@ Rec: ABL_HERO_HANDOSTILLOR_WHIZZY
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 150
 	ADDCARD_Char_Number = 1
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -6957,6 +7095,8 @@ Rec: ABL_HERO_JAKE_2PS
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 200
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -7059,6 +7199,8 @@ Rec: ABL_HERO_JAKE_3PS
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 300
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -7161,6 +7303,8 @@ Rec: ABL_HERO_JAKE_4PS
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 400
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -7263,6 +7407,8 @@ Rec: ABL_HERO_JAKE_BERSERK
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -7365,6 +7511,8 @@ Rec: ABL_HERO_JAKE_EARTHSLICE
 	ADDCARD_Action_Number = 2
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 175
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -7467,6 +7615,8 @@ Rec: ABL_HERO_JAKE_FLAMEBLADE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 150
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -7569,6 +7719,8 @@ Rec: ABL_HERO_JAKE_HEALBLADE
 	ADDCARD_Action_Number = 3
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -7671,6 +7823,8 @@ Rec: ABL_HERO_JAKE_SHIFT_FAIRY
 	ADDCARD_Action_Number = 
 	ADDCARD_Char_Interval = 
 	ADDCARD_Char_Number = 
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -7773,6 +7927,8 @@ Rec: ABL_HERO_JAKE_SHIFT_HUMAN
 	ADDCARD_Action_Number = 
 	ADDCARD_Char_Interval = 
 	ADDCARD_Char_Number = 
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -7875,6 +8031,8 @@ Rec: ABL_HERO_MARRILONA_BIO
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -7977,6 +8135,8 @@ Rec: ABL_HERO_MARRILONA_BREEZE
 	ADDCARD_Action_Number = 1
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -8079,6 +8239,8 @@ Rec: ABL_HERO_MARRILONA_CHILL
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -8181,6 +8343,8 @@ Rec: ABL_HERO_MARRILONA_CURSEDHEALING
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -8283,6 +8447,8 @@ Rec: ABL_HERO_MARRILONA_ELECTROCUTION
 	ADDCARD_Action_Number = 16
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 220
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -8385,6 +8551,8 @@ Rec: ABL_HERO_MARRILONA_EMPOWER
 	ADDCARD_Action_Number = 5
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -8487,6 +8655,8 @@ Rec: ABL_HERO_MARRILONA_ETERNALFLAME
 	ADDCARD_Action_Number = 100
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -8589,6 +8759,8 @@ Rec: ABL_HERO_MARRILONA_FIREBLAST
 	ADDCARD_Action_Number = 3
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 150
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -8691,6 +8863,8 @@ Rec: ABL_HERO_MARRILONA_FLAME
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -8793,6 +8967,8 @@ Rec: ABL_HERO_MARRILONA_HEAL
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -8895,6 +9071,8 @@ Rec: ABL_HERO_MARRILONA_HURRICANE
 	ADDCARD_Action_Number = 5
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 175
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -8997,6 +9175,8 @@ Rec: ABL_HERO_MARRILONA_ICEBLAST
 	ADDCARD_Action_Number = 5
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 112
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -9099,6 +9279,8 @@ Rec: ABL_HERO_MARRILONA_INFERNO
 	ADDCARD_Action_Number = 3
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 300
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -9201,6 +9383,8 @@ Rec: ABL_HERO_MARRILONA_MEDITATION
 	ADDCARD_Action_Number = 2
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -9303,6 +9487,8 @@ Rec: ABL_HERO_MARRILONA_PERMANENCE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -9405,6 +9591,8 @@ Rec: ABL_HERO_MARRILONA_PROTECT
 	ADDCARD_Action_Number = 5
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -9507,6 +9695,8 @@ Rec: ABL_HERO_MARRILONA_QUAKE
 	ADDCARD_Action_Number = 2
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 200
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -9609,6 +9799,8 @@ Rec: ABL_HERO_MARRILONA_ROCK
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -9711,6 +9903,8 @@ Rec: ABL_HERO_MARRILONA_SPEEDUP
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 8
 	ADDCARD_Char_Number = 3
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -9813,6 +10007,8 @@ Rec: ABL_HERO_MARRILONA_SPLASH
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -9915,6 +10111,8 @@ Rec: ABL_HERO_MARRILONA_STONE2FLESH
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -10017,6 +10215,8 @@ Rec: ABL_HERO_MARRILONA_TSUNAMI
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 200
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -10119,6 +10319,8 @@ Rec: ABL_HERO_MARRILONA_ZAP
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -10221,6 +10423,8 @@ Rec: ABL_MASTER_FANDALORA_CURSE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -10323,6 +10527,8 @@ Rec: ABL_MASTER_FANDALORA_DARKNESS
 	ADDCARD_Action_Number = 2
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -10425,6 +10631,8 @@ Rec: ABL_MASTER_FANDALORA_DARKVISION
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 200
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -10527,6 +10735,8 @@ Rec: ABL_MASTER_FANDALORA_DEATH
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -10629,6 +10839,8 @@ Rec: ABL_MASTER_FANDALORA_PHANTOM
 	ADDCARD_Action_Number = 5
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 200
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -10731,6 +10943,8 @@ Rec: ABL_MASTER_FANDALORA_REMOVECURSE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -10833,6 +11047,8 @@ Rec: ABL_MASTER_FANDALORA_VOID
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -10935,6 +11151,8 @@ Rec: ABL_MASTER_FEENA_CHARIBDIS
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 750
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -11037,6 +11255,8 @@ Rec: ABL_MASTER_FEENA_COCYTUS
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -11139,6 +11359,8 @@ Rec: ABL_MASTER_FEENA_DROWN
 	ADDCARD_Action_Number = 5
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 400
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -11241,6 +11463,8 @@ Rec: ABL_MASTER_FEENA_FULLPOWER
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -11343,6 +11567,8 @@ Rec: ABL_MASTER_FEENA_KATRINA
 	ADDCARD_Action_Number = 5
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 575
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -11445,6 +11671,8 @@ Rec: ABL_MASTER_FEENA_MAGMABLAST
 	ADDCARD_Action_Number = 3
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 350
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -11547,6 +11775,8 @@ Rec: ABL_MASTER_FEENA_MEGAQUAKE
 	ADDCARD_Action_Number = 3
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 40
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -11649,6 +11879,8 @@ Rec: ABL_MASTER_FEENA_SCYLLA
 	ADDCARD_Action_Number = 1
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 120
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -11751,6 +11983,8 @@ Rec: ABL_MASTER_FREYA_REJUVENATE
 	ADDCARD_Action_Number = 2
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -11853,6 +12087,8 @@ Rec: ABL_MASTER_FREYA_ULTRAHEAL
 	ADDCARD_Action_Number = 3
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -11955,6 +12191,8 @@ Rec: ABL_MASTER_FREYA_VIGOR
 	ADDCARD_Action_Number = 2
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -12057,6 +12295,8 @@ Rec: ABL_MASTER_KRANDAR_5PS
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 500
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -12159,6 +12399,8 @@ Rec: ABL_MASTER_KRANDAR_6PS
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 600
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -12261,6 +12503,8 @@ Rec: ABL_MASTER_KRANDAR_7PS
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 70
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -12363,6 +12607,8 @@ Rec: ABL_MASTER_KRANDAR_CATASTROPHE
 	ADDCARD_Action_Number = 5
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 500
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -12465,6 +12711,8 @@ Rec: ABL_MASTER_KRANDAR_CHARGE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 600
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -12567,6 +12815,8 @@ Rec: ABL_MASTER_KRANDAR_HOLYSHIT
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 500
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -12669,6 +12919,8 @@ Rec: ABL_MASTER_MIDAS_HARDFORTHEMONEY
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -12771,6 +13023,8 @@ Rec: ABL_MASTER_MIDAS_STEALMONEY
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -12873,6 +13127,8 @@ Rec: ABL_MASTER_RUBINE_BACKSTAB
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 25
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -12975,6 +13231,8 @@ Rec: ABL_MASTER_RUBINE_FOLLOWME
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -13077,6 +13335,8 @@ Rec: ABL_MASTER_RUBINE_INVADE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 2
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -13179,6 +13439,8 @@ Rec: ABL_MASTER_RUBINE_PICKPOCKET
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -13281,6 +13543,8 @@ Rec: ABL_MASTER_RUBINE_POISONSTAB
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 75
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -13383,6 +13647,8 @@ Rec: ABL_MASTER_RUSSELL_DECAPITATE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 95
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -13485,6 +13751,8 @@ Rec: ABL_MASTER_RUSSELL_GENOCIDE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -13587,6 +13855,8 @@ Rec: ABL_MASTER_RUSSELL_SAFESHOT
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -13689,6 +13959,8 @@ Rec: ABL_SPECIAL_DRAGONDOWN
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -13791,6 +14063,8 @@ Rec: ABL_SPECIAL_INSTABILITY
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -13893,6 +14167,8 @@ Rec: AUTO_NOODHULP
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -13995,6 +14271,8 @@ Rec: BERSERK_ATTACK
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 175
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -14097,6 +14375,8 @@ Rec: COCYTUS_ANTENORA
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 200
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -14199,6 +14479,8 @@ Rec: COCYTUS_CAINA
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -14301,6 +14583,8 @@ Rec: COCYTUS_JUDECCA
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 400
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -14403,6 +14687,8 @@ Rec: COCYTUS_PTOLOMEA
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 300
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -14505,6 +14791,8 @@ Rec: EQP_ACC_TITANBELT
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -14521,7 +14809,7 @@ Rec: EQP_ACC_TITANBELT
 	BUFF_Power = 0
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
-	CauseBerserk = 
+	CauseBerserk = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -14564,14 +14852,14 @@ Rec: EQP_ACC_TITANBELT
 	EffectScript_External = FALSE
 	Heal = 0
 	Heal_StatPercent = Intelligence
-	Heal_Type = 
+	Heal_Type = Absolute
 	ITM_ACC_Dandor = TRUE
 	ITM_ACC_HandoStillor = TRUE
 	ITM_ACC_Jake = TRUE
 	ITM_ACC_Marrilona = TRUE
 	ITM_BlackMarket = TRUE
 	ITM_Combat = TRUE
-	ITM_EQP_For = 
+	ITM_EQP_For = Jake
 	ITM_Field = TRUE
 	ITM_Sellable = TRUE
 	ITM_ShopPrice = 5000
@@ -14599,6 +14887,110 @@ Rec: EQP_ACC_TITANBELT
 	rew_GainSkill4 = 0
 	rew_GainSkill5 = 0
 
+Rec: EQP_ACC_WIZARDRING
+	ABL_APCost = 0
+	ABL_HPCost = 0
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 5
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 5
+	ADDCARD_Char_Number = 0
+	Acc_PreTurn = GainAP
+	Acc_PreTurn_Arg = 15
+	Attack = 0
+	Attack_AccuracyRate = 100
+	Attack_AllowAccuracy = FALSE
+	Attack_AllowCritical = FALSE
+	Attack_AllowDodge = FALSE
+	Attack_AttackStat = Power
+	Attack_DefenseStat = Endurance
+	Attack_Desperate = FALSE
+	Attack_Element = None
+	BUFF_Accuracy = 0
+	BUFF_Endurance = 0
+	BUFF_Evasion = 0
+	BUFF_Intelligence = 0
+	BUFF_Power = 0
+	BUFF_Resistance = 0
+	BUFF_Speed = 0
+	CauseBerserk = FALSE
+	CauseConfusion = FALSE
+	CauseCurse = FALSE
+	CauseDeath = FALSE
+	CauseDisease = FALSE
+	CauseGuarding = FALSE
+	CauseParalysis = FALSE
+	CausePermanence = FALSE
+	CausePetrification = FALSE
+	CausePoison = FALSE
+	CauseSilence = FALSE
+	CauseSleep = FALSE
+	CauseUndead = FALSE
+	CureCurse = FALSE
+	CureDisease = FALSE
+	CureParalysis = FALSE
+	CurePetrification = FALSE
+	CurePoison = FALSE
+	CureSilence = FALSE
+	CureSleep = FALSE
+	CureUndead = FALSE
+	Desc = *The* ring to boost magic power
+	EQP_STAT_Accuracy = 0
+	EQP_STAT_Endurance = 0
+	EQP_STAT_Evasion = 0
+	EQP_STAT_Intelligence = 75
+	EQP_STAT_Power = 0
+	EQP_STAT_Resistance = 0
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
+	EffectScript = 
+	EffectScript_Arg = 
+	EffectScript_External = FALSE
+	Heal = 0
+	Heal_StatPercent = Intelligence
+	Heal_Type = Absolute
+	ITM_ACC_Dandor = FALSE
+	ITM_ACC_HandoStillor = TRUE
+	ITM_ACC_Jake = TRUE
+	ITM_ACC_Marrilona = TRUE
+	ITM_BlackMarket = TRUE
+	ITM_Combat = TRUE
+	ITM_EQP_For = Jake
+	ITM_Field = TRUE
+	ITM_Sellable = TRUE
+	ITM_ShopPrice = 0
+	ITM_Type = Accesoiry
+	ITM_WeaponAbility = FALSE
+	Revive = FALSE
+	Rew_GainAP = 0
+	SpellAni = 
+	SpellAni_Arg = 
+	SpellAni_External = FALSE
+	Stance = Cast
+	Target = 1F
+	Title = Ring of wizardry
+	Type = Item
+	USE_Penalty = 0
+	Voice = 
+	rew_CreateSkill1 = FALSE
+	rew_CreateSkill2 = FALSE
+	rew_CreateSkill3 = FALSE
+	rew_CreateSkill4 = FALSE
+	rew_CreateSkill5 = FALSE
+	rew_GainSkill1 = 0
+	rew_GainSkill2 = 0
+	rew_GainSkill3 = 0
+	rew_GainSkill4 = 0
+	rew_GainSkill5 = 0
+
 Rec: EQP_DANDOR_CURSEDWP_HUNGERAXE
 	ABL_APCost = 0
 	ABL_HPCost = 0
@@ -14607,6 +14999,8 @@ Rec: EQP_DANDOR_CURSEDWP_HUNGERAXE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 500
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -14709,6 +15103,8 @@ Rec: EQP_DANDOR_TRAINAXE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 5
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -14811,6 +15207,8 @@ Rec: EQP_DANDOR_WP1
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -14913,6 +15311,8 @@ Rec: EQP_DANDOR_WP10
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -15015,6 +15415,8 @@ Rec: EQP_DANDOR_WP2
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -15117,6 +15519,8 @@ Rec: EQP_DANDOR_WP3
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -15219,6 +15623,8 @@ Rec: EQP_DANDOR_WP4
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -15321,6 +15727,8 @@ Rec: EQP_DANDOR_WP5
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -15423,6 +15831,8 @@ Rec: EQP_DANDOR_WP6
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -15525,6 +15935,8 @@ Rec: EQP_DANDOR_WP7
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -15627,6 +16039,8 @@ Rec: EQP_DANDOR_WP8
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -15729,6 +16143,8 @@ Rec: EQP_DANDOR_WP9
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -15831,6 +16247,8 @@ Rec: EQP_HANDOSTILLOR_AR1
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -15933,6 +16351,8 @@ Rec: EQP_HANDOSTILLOR_AR10
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -16035,6 +16455,8 @@ Rec: EQP_HANDOSTILLOR_AR2
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -16137,6 +16559,8 @@ Rec: EQP_HANDOSTILLOR_AR3
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -16239,6 +16663,8 @@ Rec: EQP_HANDOSTILLOR_AR4
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -16341,6 +16767,8 @@ Rec: EQP_HANDOSTILLOR_AR5
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -16443,6 +16871,8 @@ Rec: EQP_HANDOSTILLOR_AR6
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -16545,6 +16975,8 @@ Rec: EQP_HANDOSTILLOR_AR7
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -16647,6 +17079,8 @@ Rec: EQP_HANDOSTILLOR_AR8
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -16749,6 +17183,8 @@ Rec: EQP_HANDOSTILLOR_AR9
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -16851,6 +17287,8 @@ Rec: EQP_HANDOSTILLOR_CURSEDWP_ZOMBIESTAFF
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 200
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -16953,6 +17391,8 @@ Rec: EQP_HANDOSTILLOR_SEALWEAPON
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 1
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 120
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -17055,6 +17495,8 @@ Rec: EQP_HANDOSTILLOR_TRAINSTAFF
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 5
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -17157,6 +17599,8 @@ Rec: EQP_HANDOSTILLOR_WP1
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -17259,6 +17703,8 @@ Rec: EQP_HANDOSTILLOR_WP10
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -17361,6 +17807,8 @@ Rec: EQP_HANDOSTILLOR_WP2
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -17463,6 +17911,8 @@ Rec: EQP_HANDOSTILLOR_WP3
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -17565,6 +18015,8 @@ Rec: EQP_HANDOSTILLOR_WP4
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -17667,6 +18119,8 @@ Rec: EQP_HANDOSTILLOR_WP5
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -17769,6 +18223,8 @@ Rec: EQP_HANDOSTILLOR_WP6
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -17871,6 +18327,8 @@ Rec: EQP_HANDOSTILLOR_WP7
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -17973,6 +18431,8 @@ Rec: EQP_HANDOSTILLOR_WP8
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -18075,6 +18535,8 @@ Rec: EQP_HANDOSTILLOR_WP9
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -18177,6 +18639,8 @@ Rec: EQP_JAKE_AR1
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -18279,6 +18743,8 @@ Rec: EQP_JAKE_AR10
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -18381,6 +18847,8 @@ Rec: EQP_JAKE_AR2
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -18483,6 +18951,8 @@ Rec: EQP_JAKE_AR3
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -18585,6 +19055,8 @@ Rec: EQP_JAKE_AR4
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -18687,6 +19159,8 @@ Rec: EQP_JAKE_AR5
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -18789,6 +19263,8 @@ Rec: EQP_JAKE_AR6
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -18891,6 +19367,8 @@ Rec: EQP_JAKE_AR7
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -18993,6 +19471,8 @@ Rec: EQP_JAKE_AR8
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -19095,6 +19575,8 @@ Rec: EQP_JAKE_AR9
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -19197,6 +19679,8 @@ Rec: EQP_JAKE_CURSEDWP_VENOMBLADE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 200
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -19299,6 +19783,8 @@ Rec: EQP_JAKE_SEALARMOR
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -19401,6 +19887,8 @@ Rec: EQP_JAKE_TRAINSWORD
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 5
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -19503,6 +19991,8 @@ Rec: EQP_JAKE_WP1
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -19605,6 +20095,8 @@ Rec: EQP_JAKE_WP10
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -19707,6 +20199,8 @@ Rec: EQP_JAKE_WP2
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -19809,6 +20303,8 @@ Rec: EQP_JAKE_WP3
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -19911,6 +20407,8 @@ Rec: EQP_JAKE_WP4
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -20013,6 +20511,8 @@ Rec: EQP_JAKE_WP5
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -20115,6 +20615,8 @@ Rec: EQP_JAKE_WP6
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -20217,6 +20719,8 @@ Rec: EQP_JAKE_WP7
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -20319,6 +20823,8 @@ Rec: EQP_JAKE_WP8
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -20421,6 +20927,8 @@ Rec: EQP_JAKE_WP9
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -20523,6 +21031,8 @@ Rec: EQP_JEWEL_AMETHYST
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -20625,6 +21135,8 @@ Rec: EQP_JEWEL_EMERALD
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -20727,6 +21239,8 @@ Rec: EQP_JEWEL_GARNET
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -20829,6 +21343,8 @@ Rec: EQP_JEWEL_ONYX
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -20931,6 +21447,8 @@ Rec: EQP_JEWEL_RUBY
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -21033,6 +21551,8 @@ Rec: EQP_JEWEL_SAPPHIRE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -21135,6 +21655,8 @@ Rec: EQP_JEWEL_SMALLEMERALD
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -21237,6 +21759,8 @@ Rec: EQP_JEWEL_SMALLGARNET
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -21339,6 +21863,8 @@ Rec: EQP_JEWEL_SMALLRUBY
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -21441,6 +21967,8 @@ Rec: EQP_JEWEL_SMALLTOPAZ
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -21543,6 +22071,8 @@ Rec: EQP_JEWEL_TOPAZ
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -21645,6 +22175,8 @@ Rec: EQP_MARRILONA_AR1
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -21747,6 +22279,8 @@ Rec: EQP_MARRILONA_AR10
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -21849,6 +22383,8 @@ Rec: EQP_MARRILONA_AR2
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -21951,6 +22487,8 @@ Rec: EQP_MARRILONA_AR3
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -22053,6 +22591,8 @@ Rec: EQP_MARRILONA_AR4
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -22155,6 +22695,8 @@ Rec: EQP_MARRILONA_AR5
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -22257,6 +22799,8 @@ Rec: EQP_MARRILONA_AR6
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -22359,6 +22903,8 @@ Rec: EQP_MARRILONA_AR7
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -22461,6 +23007,8 @@ Rec: EQP_MARRILONA_AR8
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -22563,6 +23111,8 @@ Rec: EQP_MARRILONA_AR9
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -22665,6 +23215,8 @@ Rec: EQP_MARRILONA_SEALARMOR
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -22767,6 +23319,8 @@ Rec: EXE_MARRILONA_MEDITATION
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -22869,6 +23423,8 @@ Rec: FOE_WATCHMOVE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -22971,6 +23527,8 @@ Rec: ICEBLAST
 	ADDCARD_Action_Number = 10
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 20
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -23073,6 +23631,8 @@ Rec: ITM_AMBROSIA
 	ADDCARD_Action_Number = 2
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -23175,6 +23735,8 @@ Rec: ITM_ANABOLINEA
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 2
 	ADDCARD_Char_Number = 50
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -23277,6 +23839,8 @@ Rec: ITM_ANTIDOTE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -23379,6 +23943,8 @@ Rec: ITM_APPLE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 0
 	Attack_AllowAccuracy = FALSE
@@ -23481,6 +24047,8 @@ Rec: ITM_BANANA
 	ADDCARD_Action_Number = 2
 	ADDCARD_Char_Interval = 15
 	ADDCARD_Char_Number = 1
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -23583,6 +24151,8 @@ Rec: ITM_BELL
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -23685,6 +24255,8 @@ Rec: ITM_CARROT
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -23787,6 +24359,8 @@ Rec: ITM_CURSEDSPORES
 	ADDCARD_Action_Number = 5
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -23889,6 +24463,8 @@ Rec: ITM_DEATHCUBE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -23991,6 +24567,8 @@ Rec: ITM_EEL
 	ADDCARD_Action_Number = 1
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -24093,6 +24671,8 @@ Rec: ITM_FLAMEORB
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -24195,6 +24775,8 @@ Rec: ITM_HEALINGHERB
 	ADDCARD_Action_Number = 5
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -24297,6 +24879,8 @@ Rec: ITM_HEALSHOWER
 	ADDCARD_Action_Number = 5
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -24399,6 +24983,8 @@ Rec: ITM_HELLSTONE
 	ADDCARD_Action_Number = 6
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 300
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -24501,6 +25087,8 @@ Rec: ITM_HOLYSCROLL
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -24603,6 +25191,8 @@ Rec: ITM_HOLYWATER
 	ADDCARD_Action_Number = 3
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 125
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -24705,6 +25295,8 @@ Rec: ITM_ICICLE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -24807,6 +25399,8 @@ Rec: ITM_ICICLES
 	ADDCARD_Action_Number = 6
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -24909,6 +25503,8 @@ Rec: ITM_INFERNOORB
 	ADDCARD_Action_Number = 3
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 300
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -25011,6 +25607,8 @@ Rec: ITM_JUSDORANGE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -25113,6 +25711,8 @@ Rec: ITM_MAGICDUST
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -25215,6 +25815,8 @@ Rec: ITM_MAGICSTONE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 1
 	ADDCARD_Char_Number = 1
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -25317,6 +25919,8 @@ Rec: ITM_MANDRAKE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -25419,6 +26023,8 @@ Rec: ITM_MEDICINE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -25521,6 +26127,8 @@ Rec: ITM_MIRROR
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -25623,6 +26231,8 @@ Rec: ITM_PANACEA
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -25725,6 +26335,8 @@ Rec: ITM_PHOENIX
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -25827,6 +26439,8 @@ Rec: ITM_POISONDART
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -25929,6 +26543,8 @@ Rec: ITM_POTION
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -26031,6 +26647,8 @@ Rec: ITM_PURELITERATURE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -26133,6 +26751,8 @@ Rec: ITM_SALVE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -26235,6 +26855,8 @@ Rec: ITM_SLEEPHERB
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -26337,6 +26959,8 @@ Rec: ITM_STONE
 	ADDCARD_Action_Number = 1
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -26439,6 +27063,8 @@ Rec: ITM_STORMBOTTLE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -26541,6 +27167,8 @@ Rec: ITM_TRUMPCARD
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -26643,6 +27271,8 @@ Rec: ITM_UBERPOTION
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -26745,6 +27375,8 @@ Rec: ITM_VIRUSBOMB
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -26847,6 +27479,8 @@ Rec: ITM_VOICEHERB
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -26949,6 +27583,8 @@ Rec: ITM_VOLTABALL
 	ADDCARD_Action_Number = 5
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -27051,6 +27687,8 @@ Rec: ITM_WATERBUBBLE
 	ADDCARD_Action_Number = 1
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -27153,6 +27791,8 @@ Rec: SILLY_ONE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -27255,6 +27895,8 @@ Rec: SILLY_ONES
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -27357,6 +27999,8 @@ Rec: SPECIAL_ARMAGEDDON
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -27459,6 +28103,8 @@ Rec: SPECIAL_AXESMASH
 	ADDCARD_Action_Number = 
 	ADDCARD_Char_Interval = 
 	ADDCARD_Char_Number = 
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -27561,6 +28207,8 @@ Rec: SPECIAL_SPIRATAKILLER
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -27663,6 +28311,8 @@ Rec: SPIRATATRANSFORM
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -27765,6 +28415,8 @@ Rec: SPIRATA_ATTACK_DANDOR
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 10
 	ADDCARD_Char_Number = 1
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 200
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -27867,6 +28519,8 @@ Rec: SPIRATA_ATTACK_HANDOSTILLOR
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 10
 	ADDCARD_Char_Number = 1
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 200
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -27969,6 +28623,8 @@ Rec: SPIRATA_ATTACK_JAKE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 10
 	ADDCARD_Char_Number = 1
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 200
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -28071,6 +28727,8 @@ Rec: SPIRATA_ATTACK_MARRILONA
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 10
 	ADDCARD_Char_Number = 1
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 200
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -28173,6 +28831,8 @@ Rec: WAND_BIO
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 25
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -28275,6 +28935,8 @@ Rec: WAND_DARK
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -28377,6 +29039,8 @@ Rec: WAND_DOOM
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 300
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -28479,6 +29143,8 @@ Rec: WAND_FLAME
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -28581,6 +29247,8 @@ Rec: WAND_FROST
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -28683,6 +29351,8 @@ Rec: WAND_GAIA
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -28785,6 +29455,8 @@ Rec: WAND_HOLY
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -28887,6 +29559,8 @@ Rec: WAND_II_EVIL
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 125
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -28989,6 +29663,8 @@ Rec: WAND_II_GAIA
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 125
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -29091,6 +29767,8 @@ Rec: WAND_II_HURRICANE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 125
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -29193,6 +29871,8 @@ Rec: WAND_II_KELVIN
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 125
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -29295,6 +29975,8 @@ Rec: WAND_II_SAINT
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 125
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -29397,6 +30079,8 @@ Rec: WAND_II_SPRINGTIJ
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 125
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -29499,6 +30183,8 @@ Rec: WAND_II_VOLCANOWAND
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 125
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -29601,6 +30287,8 @@ Rec: WAND_II_WATT
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 125
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -29703,6 +30391,8 @@ Rec: WAND_SPLASH
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -29805,6 +30495,8 @@ Rec: WAND_THUNDER
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -29907,6 +30599,8 @@ Rec: WAND_TRAINING
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 20
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -30009,6 +30703,8 @@ Rec: WAND_WIND
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 0
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = TRUE
@@ -30111,6 +30807,8 @@ Rec: ZZKEY_BLUESTAFF
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -30213,6 +30911,8 @@ Rec: ZZKEY_FIRE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -30315,6 +31015,8 @@ Rec: ZZKEY_GAIA
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -30417,6 +31119,8 @@ Rec: ZZKEY_KEYWATER
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -30519,6 +31223,8 @@ Rec: ZZKEY_WIND
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -30621,6 +31327,8 @@ Rec: ZZZ_KRANDARARMOR
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -30723,6 +31431,8 @@ Rec: ZZZ_KRANDARBLADE
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
@@ -30825,6 +31535,8 @@ Rec: ZZ_CRYPTKEY
 	ADDCARD_Action_Number = 0
 	ADDCARD_Char_Interval = 5
 	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
 	Attack = 0
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
