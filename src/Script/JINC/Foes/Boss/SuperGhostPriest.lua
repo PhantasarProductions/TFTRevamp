@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Wed 07 June 2017; 14:07:53
+-- File Generated: Wed 07 June 2017; 15:19:26
 
 
 local foe = {}
@@ -105,7 +105,7 @@ local foe = {}
 	foe["STSTART_Sleep"] = false
 	foe["STSTART_Undead"] = true
 	foe["Desc"] = "Turns his enemies into undead and heals them afterward\46\10A very dangerous combination\46"
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Boss\47Ghost Priest\46png"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47boss\47GhostPriest\46png"
 	foe["Item Drop \49"] = "ITM_AMBROSIA"
 	foe["Item Drop \50"] = "ITM_TRUMPCARD"
 	foe["Item Steal \49"] = "ITM_BANANA"

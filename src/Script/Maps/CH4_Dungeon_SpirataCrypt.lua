@@ -57,8 +57,8 @@ local function Boss()
   for i=1,nbe do
       Var.D("$COMBAT.FOE_"..i,'REG/ZOMBIE2')
   end
-  Var.D("$COMBAT.FOE_"+bs,"Boss/"..back.boss)
-  Var.D("$COMBAT.POSFOE_"+bs,"CENTER")
+  Var.D("$COMBAT.FOE_"..bs,"Boss/"..back.boss)
+  Var.D("$COMBAT.POSFOE_"..bs,"CENTER")
   Var.D("$COMBAT.MUSIC","Music/AltBoss/Day Of Chaos.ogg")
   Var.D("$COMBAT.ARENA","SpookyDung.png")
   StartBoss(back.bossh[1],back.bossh[2])
@@ -116,8 +116,30 @@ local function Back2Spirata()
    
 end
 
+local function t_go(t)
+    local old = Maps.LayerCodeName
+    GoToLayer(t,"na_go")
+    if t=='together' then
+       Done('&CRYPT['..old..']')
+       local complete=true
+       for e in each({'aer','aqua','ignis','terra'}) do
+           if not(CVV('&CRYPT['..e..']')) then
+              Maps.Obj.Kill("go_"..e)
+              local oe=Maps.Obj.Obj('sym_'..e) oe.R=0 oe.G=0 oe.B=0 
+              Maps.Obj.Obj('Obstacle_go_'..e).Visible=0
+           else
+              complete=false  
+           end
+       end
+    end
+    if complete then 
+       CSay("AWARD: Achievement!!!")
+    end   
+end
+
 function GALE_OnLoad()
    MakeDarkness()
    MapHide('Secret')
    ZA_Enter('Spirata',Back2Spirata)
+   for l in each({'aer','aqua','ignis','terra'}) do ZA_Enter('go_'..l,t_go,l) end
 end   
