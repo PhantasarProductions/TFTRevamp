@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.05
+version: 17.06.07
 ]]
 
 -- @USE /script/use/specific/plasmafloor.lua
