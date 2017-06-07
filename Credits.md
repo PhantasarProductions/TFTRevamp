@@ -288,6 +288,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_DESPERATEATTACK.lua
     1. Script: Script/JINC/IA/ABL_FOE_DISINTEGRATE.lua
     1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
+    1. Script: Script/JINC/IA/ABL_FOE_ENEMYVITALIZE.lua
     1. Script: Script/JINC/IA/ABL_FOE_EXHAUST.lua
     1. Script: Script/JINC/IA/ABL_FOE_FLAMEBITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_FLAMESTRIKE.lua

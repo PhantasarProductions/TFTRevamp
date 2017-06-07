@@ -40,10 +40,30 @@ local NoDarkness={}
 local backspirata = {
 
    aqua = { kthura = 'CH2_DUNGEON_SPIRATAWATER',
-            layer  = '#005'}
+            layer  = '#005',
+            boss   = 'SuperGhostPriest',
+            bossh  = {'High priest of the undead','Super Ghost Priest'}}
 
 
 }
+
+
+local function Boss()
+  local layer = Maps.LayerCodeName
+  local back = backspriata[layer]
+  local nbe = (skill-1)*3
+  local bs  = nbe+1
+  ClearCombatData()
+  for i=1,nbe do
+      Var.D("$COMBAT.FOE_"..i,'REG/ZOMBIE2')
+  end
+  Var.D("$COMBAT.FOE_"+bs,"Boss/"..back.boss)
+  Var.D("$COMBAT.POSFOE_"+bs,"CENTER")
+  Var.D("$COMBAT.MUSIC","Music/AltBoss/Day Of Chaos.ogg")
+  Var.D("$COMBAT.ARENA","SpookyDung.png")
+  StartBoss(back.bossh[1],back.bossh[2])
+  Maps.Obj.Kill('StartBoss',1) 
+end
 
 local function MakeDarkness()
    local layers = mysplit(Maps.Layers(),";")

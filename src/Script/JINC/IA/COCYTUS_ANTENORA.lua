@@ -1,6 +1,6 @@
 --[[
   COCYTUS_ANTENORA.lua
-  Version: 17.06.05
+  Version: 17.06.07
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
