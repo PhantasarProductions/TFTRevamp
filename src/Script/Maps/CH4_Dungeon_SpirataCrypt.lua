@@ -117,7 +117,7 @@ local function Back2Spirata()
    local back = backspirata[layer]
    assert(back,"No 'back' information for layer '"..layer.."'")
    LoadMap(back.kthura)
-   GoToLayer('SPOT_ToCrypt')
+   GoToLayer(back.layer,'SPOT_ToCrypt')
 end
 
 local function t_go(t)

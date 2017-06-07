@@ -504,6 +504,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR8.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR9.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_SEALARMOR.lua
+    1. Script: Script/JINC/IA/EQP_RINGTYRANT.lua
     1. Script: Script/JINC/IA/EXE_MARRILONA_MEDITATION.lua
     1. Script: Script/JINC/IA/FOE_WATCHMOVE.lua
     1. Script: Script/JINC/IA/ICEBLAST.lua

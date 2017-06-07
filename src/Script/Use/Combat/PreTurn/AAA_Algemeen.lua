@@ -46,6 +46,7 @@ function Pre_Turn(tag)
    local acc = ItemGet(i)
    if not acc.Acc_PreTurn then return end
    if acc.Acc_PreTurn=="" then return end
-   local doe = PreTurnArray[acc].Acc_PreTurn or Pre_Turn_Warn
-   doe(tag,acc.Acc_Preturn_Arg)
+   CSay("PRE-TURN: "..acc.Acc_PreTurn.." for " ..tag)
+   local doe = Pre_Turn_Array[acc.Acc_PreTurn] or Pre_Turn_Warn
+   doe(tag,acc.Acc_PreTurn_Arg)
 end

@@ -39,11 +39,11 @@ local Pre_Turn_Array = {}
 -- @FI
 
 function Pre_Turn_Array.GainAP(tag,amount)
-    local a = Sys.Val(amount)
-    if a<=0 then return end
+    local am = Sys.Val(amount)
+    if am<=0 then return end
     charmsg(tag,"+"..a.." AP",0,180,255)
     local a = RPG.Points(tag,'AP')
-    a.Have = a.Have + a
+    a.Have = a.Have + am
 end
 
 
