@@ -231,6 +231,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/SuperHidingHag.lua
     1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
     1. Script: Script/JINC/Foes/Boss/Terra.lua
+    1. Script: Script/JINC/Foes/Boss/UltraMonk.lua
     1. Script: Script/JINC/Foes/Boss/harry2.lua
     1. Script: Script/JINC/Foes/Boss/superalien.lua
     1. Script: Script/JINC/Foes/Sealed/Aanschouwer.lua
@@ -422,6 +423,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/COCYTUS_CAINA.lua
     1. Script: Script/JINC/IA/COCYTUS_JUDECCA.lua
     1. Script: Script/JINC/IA/COCYTUS_PTOLOMEA.lua
+    1. Script: Script/JINC/IA/EQP_ACC_RINGTYRANT.lua
     1. Script: Script/JINC/IA/EQP_ACC_TITANBELT.lua
     1. Script: Script/JINC/IA/EQP_ACC_WIZARDRING.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_CURSEDWP_HUNGERAXE.lua

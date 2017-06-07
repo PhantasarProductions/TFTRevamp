@@ -1,6 +1,6 @@
 --[[
   ABL_SPECIAL_INSTABILITY.lua
-  Version: 17.06.07
+  Version: 17.06.08
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
