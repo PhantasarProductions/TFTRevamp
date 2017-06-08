@@ -223,6 +223,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/MONK4.lua
     1. Script: Script/JINC/Foes/Boss/Marrilona.lua
     1. Script: Script/JINC/Foes/Boss/Mega Ghost.lua
+    1. Script: Script/JINC/Foes/Boss/MountainKing.lua
     1. Script: Script/JINC/Foes/Boss/Nostramantu1.lua
     1. Script: Script/JINC/Foes/Boss/PetitRoi.lua
     1. Script: Script/JINC/Foes/Boss/Russell.lua
@@ -294,6 +295,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_EXHAUST.lua
     1. Script: Script/JINC/IA/ABL_FOE_FLAMEBITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_FLAMESTRIKE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_GAIASMASH.lua
     1. Script: Script/JINC/IA/ABL_FOE_GAZE.lua
     1. Script: Script/JINC/IA/ABL_FOE_GRAVITY.lua
     1. Script: Script/JINC/IA/ABL_FOE_HOLDPERSON.lua
@@ -797,14 +799,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/SerializeIntoSysVar.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png

@@ -51,8 +51,9 @@ local backspirata = {
 
    terra = {kthura = 'CH3_DUNGEON_SPIRATAEARTH',
             layer  = '#004',
-            boss   = 'Mountain King',
-            bossh  = {'The King of Stone','Mountain King'}}
+            boss   = 'MountainKing',
+            bossh  = {'The King of Stone','Mountain King'},
+            bossm  = 'Music/Special Boss/Hall of the Mountain King.ogg'}
 }
 
 
@@ -67,7 +68,7 @@ local function Boss()
   end
   Var.D("$COMBAT.FOE_"..bs,"Boss/"..back.boss)
   Var.D("$COMBAT.POSFOE_"..bs,"CENTER")
-  Var.D("$COMBAT.MUSIC","Music/AltBoss/Day Of Chaos.ogg")
+  Var.D("$COMBAT.MUSIC",back.bossm or "Music/AltBoss/Day Of Chaos.ogg")
   Var.D("$COMBAT.ARENA","SpookyDung.png")
   StartBoss(back.bossh[1],back.bossh[2])
   Maps.Obj.Kill('StartBoss',1) 
