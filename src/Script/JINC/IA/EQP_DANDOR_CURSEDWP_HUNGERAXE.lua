@@ -49,6 +49,7 @@ ret = {
 	["BUFF_Endurance"] = -100,
 	["CauseParalysis"] = true,
 	["Desc"] = "Extremly strong axe. Good for training. Drains user's life",
+	["EQP_STAT_ER_Light"] = -25,
 	["EffectScript"] = "EatUserHP",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",

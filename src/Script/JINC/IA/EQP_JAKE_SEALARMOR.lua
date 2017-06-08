@@ -44,6 +44,7 @@ ret = {
 	["Attack_Element"] = "None",
 	["Desc"] = "These are very rare. Normally nobody uses real dragonskin.",
 	["EQP_STAT_Accuracy"] = 4,
+	["EQP_STAT_ER_Flame"] = 100,
 	["EQP_STAT_Endurance"] = 40,
 	["EQP_STAT_Evasion"] = 30,
 	["EQP_STAT_Intelligence"] = 10,

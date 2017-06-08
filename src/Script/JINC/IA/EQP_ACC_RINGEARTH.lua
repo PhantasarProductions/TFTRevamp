@@ -1,5 +1,5 @@
 --[[
-  EQP_HANDOSTILLOR_AR10.lua
+  EQP_ACC_RINGEARTH.lua
   Version: 17.06.08
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -36,27 +36,30 @@
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Now this is the stuff",
-	["EQP_STAT_ER_Darkness"] = 25,
-	["EQP_STAT_Endurance"] = 10,
-	["EQP_STAT_Resistance"] = 10,
-	["EQP_STAT_SR_Death"] = 100,
-	["EQP_STAT_SR_Destruction"] = 100,
-	["EQP_STAT_SR_Disease"] = 100,
-	["EQP_STAT_SR_Poison"] = 200,
-	["EQP_STAT_SR_Undead"] = 100,
-	["Heal_StatPercent"] = "Power",
+	["Desc"] = "Protects wearer against earth",
+	["EQP_STAT_ER_Earth"] = 100,
+	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "HandoStillor",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_BlackMarket"] = true,
+	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
+	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 57344,
-	["ITM_Type"] = "Armor",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Robe blessed by Weniaria",
+	["ITM_ShopPrice"] = 125000,
+	["ITM_Type"] = "Accesoiry",
+	["Stance"] = "Cast",
+	["Target"] = "1F",
+	["Title"] = "Ring \"Nano\"",
 	["Type"] = "Item"}
 
 return ret

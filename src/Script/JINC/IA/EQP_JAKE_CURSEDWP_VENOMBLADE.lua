@@ -48,6 +48,7 @@ ret = {
 	["BUFF_Speed"] = -99,
 	["CausePoison"] = true,
 	["Desc"] = "Much damage + poison/death! Great for training! Poisons user.",
+	["EQP_STAT_ER_Flame"] = -25,
 	["EQP_STAT_Power"] = 20,
 	["EffectScript"] = "PoisonUser",
 	["Heal_StatPercent"] = "Intelligence",

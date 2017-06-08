@@ -48,6 +48,7 @@ ret = {
 	["Attack_Element"] = "None",
 	["CauseUndead"] = true,
 	["Desc"] = "Drains life from undead. Great for training. Turns user into undead",
+	["EQP_STAT_ER_Darkness"] = -25,
 	["EQP_STAT_Evasion"] = 25,
 	["EQP_STAT_Power"] = 250,
 	["EffectScript"] = "Undeadbackfire",

@@ -49,6 +49,7 @@ ret = {
 	["BUFF_Endurance"] = -100,
 	["CauseDeath"] = true,
 	["Desc"] = "Kills the enemy, grants loads of skill exp. Curses user",
+	["EQP_STAT_ER_Light"] = -25,
 	["EQP_STAT_Evasion"] = 9,
 	["EQP_STAT_Intelligence"] = 100,
 	["EQP_STAT_Resistance"] = 70,

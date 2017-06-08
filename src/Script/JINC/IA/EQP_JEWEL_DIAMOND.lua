@@ -1,5 +1,5 @@
 --[[
-  EQP_HANDOSTILLOR_AR10.lua
+  EQP_JEWEL_DIAMOND.lua
   Version: 17.06.08
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -36,27 +36,35 @@
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Now this is the stuff",
-	["EQP_STAT_ER_Darkness"] = 25,
-	["EQP_STAT_Endurance"] = 10,
-	["EQP_STAT_Resistance"] = 10,
-	["EQP_STAT_SR_Death"] = 100,
-	["EQP_STAT_SR_Destruction"] = 100,
-	["EQP_STAT_SR_Disease"] = 100,
-	["EQP_STAT_SR_Poison"] = 200,
-	["EQP_STAT_SR_Undead"] = 100,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "HandoStillor",
-	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 57344,
-	["ITM_Type"] = "Armor",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Robe blessed by Weniaria",
+	["Desc"] = "Protects against ALL status ailments",
+	["EQP_STAT_SR_Curse"] = 500,
+	["EQP_STAT_SR_Death"] = 500,
+	["EQP_STAT_SR_Destruction"] = 500,
+	["EQP_STAT_SR_Disease"] = 500,
+	["EQP_STAT_SR_Paralysis"] = 500,
+	["EQP_STAT_SR_Petrification"] = 500,
+	["EQP_STAT_SR_Poison"] = 500,
+	["EQP_STAT_SR_Silence"] = 500,
+	["EQP_STAT_SR_Sleep"] = 500,
+	["EQP_STAT_SR_Undead"] = 500,
+	["Heal_StatPercent"] = "Intelligence",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_BlackMarket"] = true,
+	["ITM_Combat"] = true,
+	["ITM_Field"] = true,
+	["ITM_Type"] = "Accesoiry",
+	["Stance"] = "Cast",
+	["Target"] = "1F",
+	["Title"] = "Diamond",
 	["Type"] = "Item"}
 
 return ret
