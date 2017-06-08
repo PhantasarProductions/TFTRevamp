@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.07
+version: 17.06.08
 ]]
 
 local NoDarkness={}
@@ -47,9 +47,12 @@ local backspirata = {
    ignis = {kthura = 'CH2_DUNGEON_SPIRATAFIRE',
             layer  = '#002',
             boss   = 'UltraMonk',
-            bossh  = {'Ultra Monk From Hell','Evelyn'}}          
+            bossh  = {'Ultra Monk From Hell','Evelyn'}},          
 
-
+   terra = {kthura = 'CH3_DUNGEON_SPIRATAEARTH',
+            layer  = '#004',
+            boss   = 'Mountain King',
+            bossh  = {'The King of Stone','Mountain King'}}
 }
 
 

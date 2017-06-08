@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.06
+version: 17.06.08
 ]]
 SubFlow = {}
 
@@ -99,9 +99,11 @@ function GALE_OnLoad()
    ZA_Enter('ZA_Spirata',Spirata)
    ZA_Enter('Angevin',Music,'Hub/Angevin.ogg')
    ZA_Leave('Angevin',Music,"Dungeon/Chanson d'eglise")
+   InitSpirEntry('terra')   
 end
 
 
 -- @USE /script/use/specific/plasmafloor.lua
 -- @USE /script/use/specific/arrowslide.lua
+-- @USE /Script/Use/Specific/SpirataCryptEntrance.lua
 

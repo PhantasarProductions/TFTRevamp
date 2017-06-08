@@ -427,6 +427,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_ACC_RINGFIRE.lua
     1. Script: Script/JINC/IA/EQP_ACC_RINGTYRANT.lua
     1. Script: Script/JINC/IA/EQP_ACC_RINGWATER.lua
+    1. Script: Script/JINC/IA/EQP_ACC_RINGWIND.lua
     1. Script: Script/JINC/IA/EQP_ACC_TITANBELT.lua
     1. Script: Script/JINC/IA/EQP_ACC_WIZARDRING.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_CURSEDWP_HUNGERAXE.lua
@@ -492,7 +493,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_JEWEL_EMERALD.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_GARNET.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_ONYX.lua
-    1. Script: Script/JINC/IA/EQP_JEWEL_RINGWIND.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_RUBY.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SAPPHIRE.lua
     1. Script: Script/JINC/IA/EQP_JEWEL_SMALLEMERALD.lua
@@ -1711,8 +1711,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Hub/Indore.ogg
     1. Music: Music/RandomEncounter/Killers.ogg
     1. Music: Music/Scenario/We Got Trouble.ogg
-    1. Music: Music/SpecialBoss/Living Voyage.ogg
+    1. Music: Music/Special Boss/Hall Of The Mountain King.ogg
     1. Music: Music/Town/Enchanted Valley.ogg
+    1. Music: Music/SpecialBoss/Living Voyage.ogg
     1. Music: Music/SpecialBoss/Summon the Rawk.ogg
     1. Music: Music/SpecialBoss/Volatile Reaction.ogg
     1. Music: Music/Town/Night on the Docks - Sax.ogg
@@ -2374,6 +2375,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/John_6.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/John_7.ogg
 - Unknown artist from the Public Domain
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/MountainKing.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Hag.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/HidingHag.png
     1. General Data: GFX/Combat/Fighters/Foe/Reg/Pyroguin
