@@ -63,6 +63,7 @@ ret = {
 	["ITM_Type"] = "Weapon",
 	["ITM_WeaponAbility"] = true,
 	["Rew_GainAP"] = 10,
+	["SpellAni"] = "Tsunami",
 	["Stance"] = "Attack",
 	["Target"] = "AF",
 	["Title"] = "Springtij Wand",

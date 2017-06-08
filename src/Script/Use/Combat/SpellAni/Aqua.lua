@@ -1,5 +1,5 @@
 --[[
-  ABL_MASTER_FEENA_CHARIBDIS.lua
+  Aqua.lua
   Version: 17.06.08
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -34,35 +34,40 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-ret = {
-	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 5,
-	["ADDCARD_Char_Interval"] = 5,
-	["Attack"] = 750,
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Intelligence",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["CauseDeath"] = true,
-	["CauseSleep"] = true,
-	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
-	["ITM_ACC_Dandor"] = true,
-	["ITM_ACC_HandoStillor"] = true,
-	["ITM_ACC_Jake"] = true,
-	["ITM_ACC_Marrilona"] = true,
-	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
-	["ITM_Field"] = true,
-	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "Tsunami",
-	["Stance"] = "Cast",
-	["Target"] = "AF",
-	["Title"] = "Charibdis",
-	["Type"] = "Item"}
+-- @IF IGNORE
+local SpellAni = {}
+-- @FI
 
-return ret
+-- -- @DEFINE TSUNAMIDEBUG
 
--- This file is an automatically generated file!
+function SpellAni.Tsunami(actG,actT,tarG,tarT)
+   local water = Image.Load('gfx/textures/Water/water.png')
+   local alpha = 50
+   local ox,oy,ow,oh = GetViewport()
+-- local y = {Sys.Val(SH),Sys.Val(SH)}
+   local y = {oh,oh}
+   local spd = {5,2}
+   local allemaalnul = true
+   while alpha>=0 do
+      Image.SetAlphaPC(100)
+      Cls()
+      DrawScreen()
+      Image.SetAlphaPC(alpha)
+      allemaalnul=true
+      for i=#y,1,-1 do
+          Image.ViewPort(0,y[i],ow,oh-y[i])
+          Image.Tile(water,0,y[i])
+          y[i]=y[i]-spd[i]
+          if y[i]>=0 then allemaalnul=false end
+      end
+      if allemaalnul then alpha = alpha - 1 end
+      Flip()
+      Image.ViewPort(ox,oy,ow,oh)
+   end
+   Image.Free(water)
+end  
 
+
+-- @IF IGNORE
+return SpellAni
+-- @GI
