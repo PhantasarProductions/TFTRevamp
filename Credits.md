@@ -359,6 +359,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_HEALBLADE.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_FAIRY.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_SHIFT_HUMAN.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_1953.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_BIO.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_BREEZE.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_CHILL.lua
@@ -559,6 +560,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_VOICEHERB.lua
     1. Script: Script/JINC/IA/ITM_VOLTABALL.lua
     1. Script: Script/JINC/IA/ITM_WATERBUBBLE.lua
+    1. Script: Script/JINC/IA/JUG_ATK1.lua
+    1. Script: Script/JINC/IA/JUG_ATK2.lua
+    1. Script: Script/JINC/IA/JUG_ATK3.lua
+    1. Script: Script/JINC/IA/JUG_ATK4.lua
+    1. Script: Script/JINC/IA/JUG_JUGGERNAUT.lua
     1. Script: Script/JINC/IA/SILLY_ONE.lua
     1. Script: Script/JINC/IA/SILLY_ONES.lua
     1. Script: Script/JINC/IA/SPECIAL_ARMAGEDDON.lua
@@ -742,6 +748,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/DragonDown.lua
     1. Script: Script/Use/Combat/SpellScript/Instability.lua
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
+    1. Script: Script/Use/Combat/SpellScript/Juggernaut.lua
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
     1. Script: Script/Use/Combat/SpellScript/PunishUser.lua
