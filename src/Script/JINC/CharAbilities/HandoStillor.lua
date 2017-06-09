@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.11
+version: 17.06.09
 ]]
 
 local fullversion = JCR6.Exists('ID/ID.Data.Full')==1
@@ -60,7 +60,8 @@ if fullversion then -- That's right Hando Stillor will not get his level #2 and 
                        abl_hero_handostillor_goodmorning = {[2]=5*skill}, -- 3
                        abl_hero_handostillor_revive = {[2] = 12*skill }, -- 4
                        abl_hero_handostillor_hasparonvitalization = {[2]=15*skill}, -- 5
-                       abl_hero_handostillor_twinkle = {[2]=6*skill}               -- 6
+                       abl_hero_handostillor_twinkle = {[2]=6*skill},              -- 6
+                       abl_hero_handostillor_kneelbeforeme = {16,80}               -- 7
                      }  
    r["3. Level 3"] = { abl_hero_handostillor_pray = { 5*skill, math.ceil(3^skill) }, -- 1
                        abl_hero_handostillor_smite = {(skill^skill)+(2*skill)},                    -- 2
@@ -69,7 +70,10 @@ if fullversion then -- That's right Hando Stillor will not get his level #2 and 
                      }
 
 --if r["3. Level 3"] then
-  if skill~=3 then r["3. Level 3"].abl_hero_handostillor_resurrect = { [2] = ({20,50})[skill]} end -- 3
+  if skill~=3 then 
+     r["3. Level 3"].abl_hero_handostillor_resurrect = { [2] = ({20,50})[skill]} --5
+     r["3. Level 3"].abl_hero_handostillor_everybodykneelbeforeme = { [2] = ({10*skill,95})[skill]} --5 
+   end 
 --end  
 end             
              

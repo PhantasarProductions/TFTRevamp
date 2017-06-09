@@ -1,5 +1,5 @@
 --[[
-  ABL_FOE_DEMON_SOUL_BREAKER.lua
+  ABL_HERO_HANDOSTILLOR_KNEELBEFOREME.lua
   Version: 17.06.09
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -35,31 +35,32 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ABL_APCost"] = 128,
 	["ADDCARD_Action_Act"] = "Self",
 	["ADDCARD_Action_Interval"] = 5,
 	["ADDCARD_Char_Interval"] = 5,
+	["Attack"] = 2,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["EffectScript"] = "PointAlter",
-	["EffectScript_Arg"] = "HP 1",
+	["Attack_Element"] = "Light",
+	["Desc"] = "Remove all cards of an enemy",
+	["EffectScript"] = "RemoveAllUserCards",
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
-	["Target"] = "AF",
-	["Title"] = "Demon Soul Breaker",
-	["Type"] = "Item",
-	["Voice"] = "DSB"}
+	["Target"] = "1F",
+	["Title"] = "Kneel Before Me!",
+	["Type"] = "Ability",
+	["Voice"] = "Critical",
+	["rew_GainSkill2"] = 100}
 
 return ret
 

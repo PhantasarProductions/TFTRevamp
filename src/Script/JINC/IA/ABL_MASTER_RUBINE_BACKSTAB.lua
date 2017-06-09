@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_RUBINE_BACKSTAB.lua
-  Version: 17.06.08
+  Version: 17.06.09
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -36,6 +36,7 @@
 ]]
 ret = {
 	["ABL_APCost"] = 100,
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack"] = 25,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",

@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 17.05.13
+  Version: 17.06.09
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -280,6 +280,10 @@ function Shop(tag,trade)
    LAURA.Flow("MENU")
 end
 
+function JuggernautAward()
+   Award('BOSS_JUGGERNAUT')
+end
+
 function BlackOrb(tag)
   inc('%ORBS')
   if CVV('%ORBS')==1 then
@@ -292,8 +296,16 @@ function BlackOrb(tag)
      barrier.ForcePassible=1
      ]])
      Maps.Remap()
-  elseif CVV('%ORBS')==255 then
-     Sys.Error('Juggernaut not coded yet')     
+  elseif CVV('%ORBS')==250 then
+     MS.Run("BOXTEXT","LoadData","General/Items;ITEM")
+     SerialBoxText("ITEM","ALLORBS","FLOW_FIELD")
+     ClearCombatData()
+     Var.D("$COMBAT.FOE_1","Uberboss/Juggernaut")
+     Var.D("$COMBAT.POSFOE_1","CENTER")
+     Var.D("$COMBAT.MUSIC","Music/Special Boss/Juggernaut.ogg")
+     Var.D("$COMBAT.ARENA","Dark.png")
+     StartBoss("Ultimate Destroyed of Everything","Juggernaut",80,0,100)
+     Schedule("MAP","JuggernautAward")          
   else
      MS.Run("BOXTEXT","LoadData","General/Items;ITEM")
      SerialBoxText("ITEM","BLACKORB","FLOW_FIELD")
