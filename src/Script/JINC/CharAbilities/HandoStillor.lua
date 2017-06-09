@@ -72,7 +72,7 @@ if fullversion then -- That's right Hando Stillor will not get his level #2 and 
 --if r["3. Level 3"] then
   if skill~=3 then 
      r["3. Level 3"].abl_hero_handostillor_resurrect = { [2] = ({20,50})[skill]} --5
-     r["3. Level 3"].abl_hero_handostillor_everybodykneelbeforeme = { [2] = ({10*skill,95})[skill]} --5 
+     r["3. Level 3"].abl_hero_handostillor_everybodykneelbeforeme = {10*skill,95}  --5 
    end 
 --end  
 end             

@@ -324,6 +324,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_WELCOMEINHELL.lua
     1. Script: Script/JINC/IA/ABL_FOLLOWUP_FIKKIE.lua
     1. Script: Script/JINC/IA/ABL_GLOOM.lua
+    1. Script: Script/JINC/IA/ABL_HANDOSTILLOR_EVERYBODYKNEELBEFOREME.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_AXESMASH.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_BARRIER.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_SHIELD.lua
@@ -334,6 +335,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_GOODMORNING.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_HASPARONVITALIZATION.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_HOLYSTRIKE.lua
+    1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_KNEELBEFOREME.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_PRAY.lua
     1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_PRAYFORALL.lua
@@ -800,14 +802,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/SerializeIntoSysVar.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -889,6 +891,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/blops/Blop4.png
     1. Graphics: gfx/Textures/blops/Blop5.png
     1. Graphics: gfx/Textures/blops/Blop6.png
+    1. Font: Fonts/Phantasar.ttf
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.East.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.East.piko
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.East.png
@@ -1378,6 +1381,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Melody/Untitled.piko
     1. Graphics: GFX/Combat/Arena/Altar.png
     1. Graphics: GFX/Combat/Arena/Caves.png
+    1. Graphics: GFX/Combat/Arena/Dark.png
     1. Graphics: GFX/Combat/Arena/Forest.png
     1. Graphics: GFX/Combat/Arena/ForestLoof.png
     1. Graphics: GFX/Combat/Arena/GreyDung.png
