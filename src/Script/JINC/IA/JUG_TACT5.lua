@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  JUG_TACT3.lua
+  JUG_TACT5.lua
   (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
@@ -42,7 +42,7 @@ ret = {
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["CausePoison"] = true,
+	["CauseCurse"] = true,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -56,7 +56,7 @@ ret = {
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
 	["Target"] = "AF",
-	["Title"] = "Pos",
+	["Title"] = "Kyr<auml>s",
 	["Type"] = "Item"}
 
 return ret
