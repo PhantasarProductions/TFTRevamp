@@ -32,8 +32,8 @@
   
  **********************************************
  
-version: 17.06.09
+version: 17.06.10
 ]]
 
 -- Spells to pick from
-local JUG = { ATK=10,HEAL=0,TACT=0}
+local JUG = { ATK=12,HEAL=0,TACT=0}

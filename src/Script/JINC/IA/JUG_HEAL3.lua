@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  JUG_HEAL3.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -35,30 +35,27 @@
 version: 17.06.10
 ]]
 ret = {
-	["ABL_APCost"] = 30,
 	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["CureParalysis"] = true,
-	["Desc"] = "Remove paralysis on the entire party",
+	["Heal"] = 180,
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "AllHeal",
 	["Stance"] = "Cast",
-	["Target"] = "AA",
-	["Title"] = "Remove Paralysis",
-	["Type"] = "Ability"}
+	["Target"] = "1A",
+	["Title"] = "S<ecirc>ntt<ocirc>kit<ocirc>p",
+	["Type"] = "Item"}
 
 return ret
 
