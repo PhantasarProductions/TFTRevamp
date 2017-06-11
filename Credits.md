@@ -238,6 +238,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Sealed/Aanschouwer.lua
     1. Script: Script/JINC/Foes/Sealed/Kabi.lua
     1. Script: Script/JINC/Foes/Sealed/MinoKing.lua
+    1. Script: Script/JINC/Foes/UberBoss/Juggernaut.lua
     1. Script: Script/JINC/Foes/reg/ArcaneSlime.lua
     1. Script: Script/JINC/Foes/reg/Archmage.lua
     1. Script: Script/JINC/Foes/reg/BSpook.lua
@@ -384,6 +385,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_TSUNAMI.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ZAP.lua
     1. Script: Script/JINC/IA/ABL_HERO_SPEEDUP.lua
+    1. Script: Script/JINC/IA/ABL_JUGGERNAUT_DONALDTRUMP.lua
+    1. Script: Script/JINC/IA/ABL_JUGGERNAUT_MAY.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_CURSE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_DARKNESS.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_DARKVISION.lua
@@ -428,6 +431,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/COCYTUS_CAINA.lua
     1. Script: Script/JINC/IA/COCYTUS_JUDECCA.lua
     1. Script: Script/JINC/IA/COCYTUS_PTOLOMEA.lua
+    1. Script: Script/JINC/IA/EQP_ACC_AAA_NOSTRAMANTUS_AMULET.lua
     1. Script: Script/JINC/IA/EQP_ACC_RINGEARTH.lua
     1. Script: Script/JINC/IA/EQP_ACC_RINGFIRE.lua
     1. Script: Script/JINC/IA/EQP_ACC_RINGTYRANT.lua
@@ -778,6 +782,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/SpirataKiller.lua
     1. Script: Script/Use/Combat/SpellScript/Steal.lua
     1. Script: Script/Use/Combat/SpellScript/Temptation.lua
+    1. Script: Script/Use/Combat/SpellScript/Theresa May.lua
     1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
     1. Script: Script/Use/Combat/StatusChanges/Charm&Confusion.lua
     1. Script: Script/Use/Combat/StatusChanges/Curse.lua
@@ -1754,6 +1759,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Town/Night on the Docks - Sax.ogg
     1. Music: Music/Town/Rite of Passage.ogg
 - Man Of Steel
+    1. Graphics: gfx/Combat/Fighters/foe/UberBoss/Juggernaut.png
     1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Thief.piko
     1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Variant01.png
     1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Variant02.png
