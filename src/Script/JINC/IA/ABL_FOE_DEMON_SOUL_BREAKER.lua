@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_DEMON_SOUL_BREAKER.lua
-  Version: 17.06.10
+  Version: 17.06.11
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

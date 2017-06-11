@@ -257,6 +257,7 @@ Attack_AllowCritical=true
 info These are special status changes. Good bad. Depends on your own interpretation.
 bool CausePermanence
 bool CauseBerserk
+bool CauseIDDQD
 strike
 bool CauseGuarding
 
@@ -370,6 +371,7 @@ Rec: AAA_ATTACK
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -482,6 +484,7 @@ Rec: AAA_GUARD
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = TRUE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -594,6 +597,7 @@ Rec: ABL_FOE_BACTERIATUSK
 	CauseDeath = FALSE
 	CauseDisease = TRUE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = TRUE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -706,6 +710,7 @@ Rec: ABL_FOE_CRUSH
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -818,6 +823,7 @@ Rec: ABL_FOE_DEATHSPELL
 	CauseDeath = TRUE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -930,6 +936,7 @@ Rec: ABL_FOE_DEMON_SOUL_BREAKER
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -1042,6 +1049,7 @@ Rec: ABL_FOE_DESPERATEATTACK
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = 
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = 
 	CausePetrification = FALSE
@@ -1154,6 +1162,7 @@ Rec: ABL_FOE_DISINTEGRATE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -1266,6 +1275,7 @@ Rec: ABL_FOE_DISTRACT
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = 
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = 
 	CausePetrification = FALSE
@@ -1378,6 +1388,7 @@ Rec: ABL_FOE_ENEMYVITALIZE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -1490,6 +1501,7 @@ Rec: ABL_FOE_EXHAUST
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -1602,6 +1614,7 @@ Rec: ABL_FOE_FLAMEBITE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -1714,6 +1727,7 @@ Rec: ABL_FOE_FLAMESTRIKE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = 
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = 
 	CausePetrification = FALSE
@@ -1826,6 +1840,7 @@ Rec: ABL_FOE_GAIASMASH
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -1938,6 +1953,7 @@ Rec: ABL_FOE_GAZE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = TRUE
@@ -2050,6 +2066,7 @@ Rec: ABL_FOE_GRAVITY
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -2162,6 +2179,7 @@ Rec: ABL_FOE_HOLDPERSON
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = TRUE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -2274,6 +2292,7 @@ Rec: ABL_FOE_HORROR
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = TRUE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -2386,6 +2405,7 @@ Rec: ABL_FOE_MERMAID_TEMPATION
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -2498,6 +2518,7 @@ Rec: ABL_FOE_PARADIVE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = TRUE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -2610,6 +2631,7 @@ Rec: ABL_FOE_RANDOMIZER
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -2722,6 +2744,7 @@ Rec: ABL_FOE_RANDOMIZERTOTAL
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -2834,6 +2857,7 @@ Rec: ABL_FOE_SETTHESTAGEONFIRE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -2946,6 +2970,7 @@ Rec: ABL_FOE_SHOCKINGSTORIES
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -3058,6 +3083,7 @@ Rec: ABL_FOE_SICKSTORIES
 	CauseDeath = FALSE
 	CauseDisease = TRUE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -3170,6 +3196,7 @@ Rec: ABL_FOE_SMITE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -3282,6 +3309,7 @@ Rec: ABL_FOE_SOULCRUSHINGSTORY
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -3394,6 +3422,7 @@ Rec: ABL_FOE_SPORES
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -3506,6 +3535,7 @@ Rec: ABL_FOE_SUICIDE
 	CauseDeath = TRUE
 	CauseDisease = FALSE
 	CauseGuarding = 
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = 
 	CausePetrification = FALSE
@@ -3618,6 +3648,7 @@ Rec: ABL_FOE_TAKEOVER
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -3730,6 +3761,7 @@ Rec: ABL_FOE_TAKEOVER2
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -3842,6 +3874,7 @@ Rec: ABL_FOE_THRILL
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -3954,6 +3987,7 @@ Rec: ABL_FOE_TOTALEXHAUSTION
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -4066,6 +4100,7 @@ Rec: ABL_FOE_TUSK
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -4178,6 +4213,7 @@ Rec: ABL_FOE_TWOEDGE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -4290,6 +4326,7 @@ Rec: ABL_FOE_ULTIMATESOULCRUSHER
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -4402,6 +4439,7 @@ Rec: ABL_FOE_VENOMBITE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = 
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = 
 	CausePetrification = FALSE
@@ -4514,6 +4552,7 @@ Rec: ABL_FOE_VENOMSTAB
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = 
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = 
 	CausePetrification = FALSE
@@ -4626,6 +4665,7 @@ Rec: ABL_FOE_VIRUSSTAB
 	CauseDeath = FALSE
 	CauseDisease = TRUE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -4738,6 +4778,7 @@ Rec: ABL_FOE_WELCOMEINHELL
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -4850,6 +4891,7 @@ Rec: ABL_FOLLOWUP_FIKKIE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -4962,6 +5004,7 @@ Rec: ABL_GLOOM
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -5074,6 +5117,7 @@ Rec: ABL_HANDOSTILLOR_EVERYBODYKNEELBEFOREME
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -5186,6 +5230,7 @@ Rec: ABL_HERO_DANDOR_AXESMASH
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -5298,6 +5343,7 @@ Rec: ABL_HERO_DANDOR_BARRIER
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -5410,6 +5456,7 @@ Rec: ABL_HERO_DANDOR_SHIELD
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -5522,6 +5569,7 @@ Rec: ABL_HERO_DANDOR_SUPERAXESMASH
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -5634,6 +5682,7 @@ Rec: ABL_HERO_HANDOSTILLOR_CLEANSE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -5746,6 +5795,7 @@ Rec: ABL_HERO_HANDOSTILLOR_CUREDISEASE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -5858,6 +5908,7 @@ Rec: ABL_HERO_HANDOSTILLOR_FIRSTAID
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -5970,6 +6021,7 @@ Rec: ABL_HERO_HANDOSTILLOR_GOODMORNING
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -6082,6 +6134,7 @@ Rec: ABL_HERO_HANDOSTILLOR_HASPARONVITALIZATION
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -6194,6 +6247,7 @@ Rec: ABL_HERO_HANDOSTILLOR_HOLYSTRIKE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -6306,6 +6360,7 @@ Rec: ABL_HERO_HANDOSTILLOR_KNEELBEFOREME
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -6418,6 +6473,7 @@ Rec: ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -6530,6 +6586,7 @@ Rec: ABL_HERO_HANDOSTILLOR_PRAY
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -6642,6 +6699,7 @@ Rec: ABL_HERO_HANDOSTILLOR_PRAYFORALL
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -6754,6 +6812,7 @@ Rec: ABL_HERO_HANDOSTILLOR_PURIFY
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -6866,6 +6925,7 @@ Rec: ABL_HERO_HANDOSTILLOR_RECOVER
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -6978,6 +7038,7 @@ Rec: ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -7090,6 +7151,7 @@ Rec: ABL_HERO_HANDOSTILLOR_RESURRECT
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -7202,6 +7264,7 @@ Rec: ABL_HERO_HANDOSTILLOR_REVIVE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -7314,6 +7377,7 @@ Rec: ABL_HERO_HANDOSTILLOR_SMITE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -7426,6 +7490,7 @@ Rec: ABL_HERO_HANDOSTILLOR_STICKSWING
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -7538,6 +7603,7 @@ Rec: ABL_HERO_HANDOSTILLOR_TREATMENT
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -7650,6 +7716,7 @@ Rec: ABL_HERO_HANDOSTILLOR_TWINKLE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -7762,6 +7829,7 @@ Rec: ABL_HERO_HANDOSTILLOR_VITALIZE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -7874,6 +7942,7 @@ Rec: ABL_HERO_HANDOSTILLOR_WHIZZY
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = TRUE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = TRUE
 	CausePetrification = FALSE
@@ -7986,6 +8055,7 @@ Rec: ABL_HERO_JAKE_2PS
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -8098,6 +8168,7 @@ Rec: ABL_HERO_JAKE_3PS
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -8210,6 +8281,7 @@ Rec: ABL_HERO_JAKE_4PS
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -8322,6 +8394,7 @@ Rec: ABL_HERO_JAKE_BERSERK
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -8434,6 +8507,7 @@ Rec: ABL_HERO_JAKE_EARTHSLICE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -8546,6 +8620,7 @@ Rec: ABL_HERO_JAKE_FLAMEBLADE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -8658,6 +8733,7 @@ Rec: ABL_HERO_JAKE_HEALBLADE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -8770,6 +8846,7 @@ Rec: ABL_HERO_JAKE_SHIFT_FAIRY
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = 
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = 
 	CausePetrification = FALSE
@@ -8882,6 +8959,7 @@ Rec: ABL_HERO_JAKE_SHIFT_HUMAN
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = 
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = 
 	CausePetrification = FALSE
@@ -8994,6 +9072,7 @@ Rec: ABL_HERO_MARRILONA_1953
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -9106,6 +9185,7 @@ Rec: ABL_HERO_MARRILONA_BIO
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -9218,6 +9298,7 @@ Rec: ABL_HERO_MARRILONA_BREEZE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -9330,6 +9411,7 @@ Rec: ABL_HERO_MARRILONA_CHILL
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -9442,6 +9524,7 @@ Rec: ABL_HERO_MARRILONA_CURSEDHEALING
 	CauseDeath = FALSE
 	CauseDisease = TRUE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = TRUE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -9554,6 +9637,7 @@ Rec: ABL_HERO_MARRILONA_ELECTROCUTION
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = TRUE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -9666,6 +9750,7 @@ Rec: ABL_HERO_MARRILONA_EMPOWER
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -9778,6 +9863,7 @@ Rec: ABL_HERO_MARRILONA_ETERNALFLAME
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -9890,6 +9976,7 @@ Rec: ABL_HERO_MARRILONA_FIREBLAST
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -10002,6 +10089,7 @@ Rec: ABL_HERO_MARRILONA_FLAME
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -10114,6 +10202,7 @@ Rec: ABL_HERO_MARRILONA_HEAL
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -10226,6 +10315,7 @@ Rec: ABL_HERO_MARRILONA_HURRICANE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -10338,6 +10428,7 @@ Rec: ABL_HERO_MARRILONA_ICEBLAST
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -10450,6 +10541,7 @@ Rec: ABL_HERO_MARRILONA_INFERNO
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -10562,6 +10654,7 @@ Rec: ABL_HERO_MARRILONA_MEDITATION
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -10674,6 +10767,7 @@ Rec: ABL_HERO_MARRILONA_PERMANENCE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = TRUE
 	CausePetrification = FALSE
@@ -10786,6 +10880,7 @@ Rec: ABL_HERO_MARRILONA_PROTECT
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -10898,6 +10993,7 @@ Rec: ABL_HERO_MARRILONA_QUAKE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -11010,6 +11106,7 @@ Rec: ABL_HERO_MARRILONA_ROCK
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -11122,6 +11219,7 @@ Rec: ABL_HERO_MARRILONA_SPEEDUP
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -11234,6 +11332,7 @@ Rec: ABL_HERO_MARRILONA_SPLASH
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -11346,6 +11445,7 @@ Rec: ABL_HERO_MARRILONA_STONE2FLESH
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -11458,6 +11558,7 @@ Rec: ABL_HERO_MARRILONA_TSUNAMI
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -11570,6 +11671,7 @@ Rec: ABL_HERO_MARRILONA_ZAP
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -11650,6 +11752,232 @@ Rec: ABL_HERO_MARRILONA_ZAP
 	rew_GainSkill4 = 0
 	rew_GainSkill5 = 0
 
+Rec: ABL_JUGGERNAUT_DONALDTRUMP
+	ABL_APCost = 0
+	ABL_HPCost = 0
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 5
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 5
+	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
+	Attack = 0
+	Attack_AccuracyRate = 100
+	Attack_AllowAccuracy = FALSE
+	Attack_AllowCritical = FALSE
+	Attack_AllowDodge = FALSE
+	Attack_AttackStat = Power
+	Attack_DefenseStat = Endurance
+	Attack_Desperate = FALSE
+	Attack_Element = None
+	BUFF_Accuracy = 0
+	BUFF_Endurance = 0
+	BUFF_Evasion = 0
+	BUFF_Intelligence = 0
+	BUFF_Power = 0
+	BUFF_Resistance = 0
+	BUFF_Speed = 0
+	CauseBerserk = FALSE
+	CauseConfusion = FALSE
+	CauseCurse = FALSE
+	CauseDeath = FALSE
+	CauseDisease = FALSE
+	CauseGuarding = FALSE
+	CauseIDDQD = TRUE
+	CauseParalysis = FALSE
+	CausePermanence = FALSE
+	CausePetrification = FALSE
+	CausePoison = FALSE
+	CauseSilence = FALSE
+	CauseSleep = FALSE
+	CauseUndead = FALSE
+	CureCurse = FALSE
+	CureDisease = FALSE
+	CureParalysis = FALSE
+	CurePetrification = FALSE
+	CurePoison = FALSE
+	CureSilence = FALSE
+	CureSleep = FALSE
+	CureUndead = FALSE
+	Desc = 
+	EQP_STAT_Accuracy = 0
+	EQP_STAT_ER_Darkness = 0
+	EQP_STAT_ER_Earth = 0
+	EQP_STAT_ER_Flame = 0
+	EQP_STAT_ER_Frost = 0
+	EQP_STAT_ER_Light = 0
+	EQP_STAT_ER_Lightning = 0
+	EQP_STAT_ER_Water = 0
+	EQP_STAT_ER_Wind = 0
+	EQP_STAT_Endurance = 0
+	EQP_STAT_Evasion = 0
+	EQP_STAT_Intelligence = 0
+	EQP_STAT_Power = 0
+	EQP_STAT_Resistance = 0
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
+	EffectScript = 
+	EffectScript_Arg = 
+	EffectScript_External = FALSE
+	Heal = 0
+	Heal_StatPercent = Intelligence
+	Heal_Type = Absolute
+	ITM_ACC_Dandor = TRUE
+	ITM_ACC_HandoStillor = TRUE
+	ITM_ACC_Jake = TRUE
+	ITM_ACC_Marrilona = TRUE
+	ITM_BlackMarket = FALSE
+	ITM_Combat = TRUE
+	ITM_EQP_For = Jake
+	ITM_Field = TRUE
+	ITM_Sellable = TRUE
+	ITM_ShopPrice = 0
+	ITM_Type = Consumable
+	ITM_WeaponAbility = FALSE
+	Revive = FALSE
+	Rew_GainAP = 0
+	SpellAni = DonaldTrump
+	SpellAni_Arg = 
+	SpellAni_External = FALSE
+	Stance = Cast
+	Target = AA
+	Title = Donald Trump
+	Type = Item
+	USE_Penalty = 0
+	Voice = 
+	rew_CreateSkill1 = FALSE
+	rew_CreateSkill2 = FALSE
+	rew_CreateSkill3 = FALSE
+	rew_CreateSkill4 = FALSE
+	rew_CreateSkill5 = FALSE
+	rew_GainSkill1 = 0
+	rew_GainSkill2 = 0
+	rew_GainSkill3 = 0
+	rew_GainSkill4 = 0
+	rew_GainSkill5 = 0
+
+Rec: ABL_JUGGERNAUT_MAY
+	ABL_APCost = 0
+	ABL_HPCost = 0
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 5
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 5
+	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
+	Attack = 0
+	Attack_AccuracyRate = 100
+	Attack_AllowAccuracy = FALSE
+	Attack_AllowCritical = FALSE
+	Attack_AllowDodge = FALSE
+	Attack_AttackStat = Power
+	Attack_DefenseStat = Endurance
+	Attack_Desperate = FALSE
+	Attack_Element = None
+	BUFF_Accuracy = 0
+	BUFF_Endurance = 0
+	BUFF_Evasion = 0
+	BUFF_Intelligence = 0
+	BUFF_Power = 0
+	BUFF_Resistance = 0
+	BUFF_Speed = 0
+	CauseBerserk = FALSE
+	CauseConfusion = FALSE
+	CauseCurse = FALSE
+	CauseDeath = FALSE
+	CauseDisease = FALSE
+	CauseGuarding = FALSE
+	CauseIDDQD = FALSE
+	CauseParalysis = FALSE
+	CausePermanence = FALSE
+	CausePetrification = FALSE
+	CausePoison = FALSE
+	CauseSilence = FALSE
+	CauseSleep = FALSE
+	CauseUndead = FALSE
+	CureCurse = FALSE
+	CureDisease = FALSE
+	CureParalysis = FALSE
+	CurePetrification = FALSE
+	CurePoison = FALSE
+	CureSilence = FALSE
+	CureSleep = FALSE
+	CureUndead = FALSE
+	Desc = 
+	EQP_STAT_Accuracy = 0
+	EQP_STAT_ER_Darkness = 0
+	EQP_STAT_ER_Earth = 0
+	EQP_STAT_ER_Flame = 0
+	EQP_STAT_ER_Frost = 0
+	EQP_STAT_ER_Light = 0
+	EQP_STAT_ER_Lightning = 0
+	EQP_STAT_ER_Water = 0
+	EQP_STAT_ER_Wind = 0
+	EQP_STAT_Endurance = 0
+	EQP_STAT_Evasion = 0
+	EQP_STAT_Intelligence = 0
+	EQP_STAT_Power = 0
+	EQP_STAT_Resistance = 0
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
+	EffectScript = May
+	EffectScript_Arg = 
+	EffectScript_External = FALSE
+	Heal = 0
+	Heal_StatPercent = Intelligence
+	Heal_Type = 
+	ITM_ACC_Dandor = TRUE
+	ITM_ACC_HandoStillor = TRUE
+	ITM_ACC_Jake = TRUE
+	ITM_ACC_Marrilona = TRUE
+	ITM_BlackMarket = FALSE
+	ITM_Combat = TRUE
+	ITM_EQP_For = 
+	ITM_Field = TRUE
+	ITM_Sellable = TRUE
+	ITM_ShopPrice = 0
+	ITM_Type = Consumable
+	ITM_WeaponAbility = FALSE
+	Revive = FALSE
+	Rew_GainAP = 0
+	SpellAni = 
+	SpellAni_Arg = 
+	SpellAni_External = FALSE
+	Stance = Cast
+	Target = 1F
+	Title = Theresa May
+	Type = Item
+	USE_Penalty = 0
+	Voice = 
+	rew_CreateSkill1 = FALSE
+	rew_CreateSkill2 = FALSE
+	rew_CreateSkill3 = FALSE
+	rew_CreateSkill4 = FALSE
+	rew_CreateSkill5 = FALSE
+	rew_GainSkill1 = 0
+	rew_GainSkill2 = 0
+	rew_GainSkill3 = 0
+	rew_GainSkill4 = 0
+	rew_GainSkill5 = 0
+
 Rec: ABL_MASTER_FANDALORA_CURSE
 	ABL_APCost = 0
 	ABL_HPCost = 0
@@ -11682,6 +12010,7 @@ Rec: ABL_MASTER_FANDALORA_CURSE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -11794,6 +12123,7 @@ Rec: ABL_MASTER_FANDALORA_DARKNESS
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -11906,6 +12236,7 @@ Rec: ABL_MASTER_FANDALORA_DARKVISION
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -12018,6 +12349,7 @@ Rec: ABL_MASTER_FANDALORA_DEATH
 	CauseDeath = TRUE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -12130,6 +12462,7 @@ Rec: ABL_MASTER_FANDALORA_PHANTOM
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -12242,6 +12575,7 @@ Rec: ABL_MASTER_FANDALORA_REMOVECURSE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -12354,6 +12688,7 @@ Rec: ABL_MASTER_FANDALORA_VOID
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -12466,6 +12801,7 @@ Rec: ABL_MASTER_FEENA_CHARIBDIS
 	CauseDeath = TRUE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -12578,6 +12914,7 @@ Rec: ABL_MASTER_FEENA_COCYTUS
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -12690,6 +13027,7 @@ Rec: ABL_MASTER_FEENA_DROWN
 	CauseDeath = FALSE
 	CauseDisease = TRUE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -12802,6 +13140,7 @@ Rec: ABL_MASTER_FEENA_FULLPOWER
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -12914,6 +13253,7 @@ Rec: ABL_MASTER_FEENA_KATRINA
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = TRUE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -13026,6 +13366,7 @@ Rec: ABL_MASTER_FEENA_MAGMABLAST
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -13138,6 +13479,7 @@ Rec: ABL_MASTER_FEENA_MEGAQUAKE
 	CauseDeath = TRUE
 	CauseDisease = TRUE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -13250,6 +13592,7 @@ Rec: ABL_MASTER_FEENA_SCYLLA
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -13362,6 +13705,7 @@ Rec: ABL_MASTER_FREYA_REJUVENATE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = 
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = 
 	CausePetrification = FALSE
@@ -13474,6 +13818,7 @@ Rec: ABL_MASTER_FREYA_ULTRAHEAL
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = 
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = 
 	CausePetrification = FALSE
@@ -13586,6 +13931,7 @@ Rec: ABL_MASTER_FREYA_VIGOR
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = 
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = 
 	CausePetrification = FALSE
@@ -13698,6 +14044,7 @@ Rec: ABL_MASTER_KRANDAR_5PS
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -13810,6 +14157,7 @@ Rec: ABL_MASTER_KRANDAR_6PS
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -13922,6 +14270,7 @@ Rec: ABL_MASTER_KRANDAR_7PS
 	CauseDeath = TRUE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -14034,6 +14383,7 @@ Rec: ABL_MASTER_KRANDAR_CATASTROPHE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -14146,6 +14496,7 @@ Rec: ABL_MASTER_KRANDAR_CHARGE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -14258,6 +14609,7 @@ Rec: ABL_MASTER_KRANDAR_HOLYSHIT
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = TRUE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -14370,6 +14722,7 @@ Rec: ABL_MASTER_MIDAS_HARDFORTHEMONEY
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -14482,6 +14835,7 @@ Rec: ABL_MASTER_MIDAS_STEALMONEY
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -14594,6 +14948,7 @@ Rec: ABL_MASTER_RUBINE_BACKSTAB
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -14706,6 +15061,7 @@ Rec: ABL_MASTER_RUBINE_FOLLOWME
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = 
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = 
 	CausePetrification = FALSE
@@ -14818,6 +15174,7 @@ Rec: ABL_MASTER_RUBINE_INVADE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -14930,6 +15287,7 @@ Rec: ABL_MASTER_RUBINE_PICKPOCKET
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = 
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = 
 	CausePetrification = FALSE
@@ -15042,6 +15400,7 @@ Rec: ABL_MASTER_RUBINE_POISONSTAB
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = 
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = 
 	CausePetrification = FALSE
@@ -15154,6 +15513,7 @@ Rec: ABL_MASTER_RUSSELL_DECAPITATE
 	CauseDeath = TRUE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -15266,6 +15626,7 @@ Rec: ABL_MASTER_RUSSELL_GENOCIDE
 	CauseDeath = TRUE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -15378,6 +15739,7 @@ Rec: ABL_MASTER_RUSSELL_SAFESHOT
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -15490,6 +15852,7 @@ Rec: ABL_SPECIAL_DRAGONDOWN
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -15602,6 +15965,7 @@ Rec: ABL_SPECIAL_INSTABILITY
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -15714,6 +16078,7 @@ Rec: AUTO_NOODHULP
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -15826,6 +16191,7 @@ Rec: BERSERK_ATTACK
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -15938,6 +16304,7 @@ Rec: COCYTUS_ANTENORA
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = TRUE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -16050,6 +16417,7 @@ Rec: COCYTUS_CAINA
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -16162,6 +16530,7 @@ Rec: COCYTUS_JUDECCA
 	CauseDeath = TRUE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -16274,6 +16643,7 @@ Rec: COCYTUS_PTOLOMEA
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -16386,6 +16756,7 @@ Rec: EQP_ACC_RINGEARTH
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -16498,6 +16869,7 @@ Rec: EQP_ACC_RINGFIRE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -16610,6 +16982,7 @@ Rec: EQP_ACC_RINGTYRANT
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -16722,6 +17095,7 @@ Rec: EQP_ACC_RINGWATER
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -16834,6 +17208,7 @@ Rec: EQP_ACC_RINGWIND
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -16946,6 +17321,7 @@ Rec: EQP_ACC_TITANBELT
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -17058,6 +17434,7 @@ Rec: EQP_ACC_WIZARDRING
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -17170,6 +17547,7 @@ Rec: EQP_DANDOR_CURSEDWP_HUNGERAXE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = TRUE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -17282,6 +17660,7 @@ Rec: EQP_DANDOR_TRAINAXE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -17394,6 +17773,7 @@ Rec: EQP_DANDOR_WP1
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -17506,6 +17886,7 @@ Rec: EQP_DANDOR_WP10
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -17618,6 +17999,7 @@ Rec: EQP_DANDOR_WP2
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -17730,6 +18112,7 @@ Rec: EQP_DANDOR_WP3
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -17842,6 +18225,7 @@ Rec: EQP_DANDOR_WP4
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -17954,6 +18338,7 @@ Rec: EQP_DANDOR_WP5
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -18066,6 +18451,7 @@ Rec: EQP_DANDOR_WP6
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -18178,6 +18564,7 @@ Rec: EQP_DANDOR_WP7
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -18290,6 +18677,7 @@ Rec: EQP_DANDOR_WP8
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -18402,6 +18790,7 @@ Rec: EQP_DANDOR_WP9
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -18514,6 +18903,7 @@ Rec: EQP_HANDOSTILLOR_AR1
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -18626,6 +19016,7 @@ Rec: EQP_HANDOSTILLOR_AR10
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -18738,6 +19129,7 @@ Rec: EQP_HANDOSTILLOR_AR2
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -18850,6 +19242,7 @@ Rec: EQP_HANDOSTILLOR_AR3
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -18962,6 +19355,7 @@ Rec: EQP_HANDOSTILLOR_AR4
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -19074,6 +19468,7 @@ Rec: EQP_HANDOSTILLOR_AR5
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -19186,6 +19581,7 @@ Rec: EQP_HANDOSTILLOR_AR6
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -19298,6 +19694,7 @@ Rec: EQP_HANDOSTILLOR_AR7
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -19410,6 +19807,7 @@ Rec: EQP_HANDOSTILLOR_AR8
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -19522,6 +19920,7 @@ Rec: EQP_HANDOSTILLOR_AR9
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -19634,6 +20033,7 @@ Rec: EQP_HANDOSTILLOR_CURSEDWP_ZOMBIESTAFF
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -19746,6 +20146,7 @@ Rec: EQP_HANDOSTILLOR_SEALWEAPON
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -19858,6 +20259,7 @@ Rec: EQP_HANDOSTILLOR_TRAINSTAFF
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -19970,6 +20372,7 @@ Rec: EQP_HANDOSTILLOR_WP1
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -20082,6 +20485,7 @@ Rec: EQP_HANDOSTILLOR_WP10
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -20194,6 +20598,7 @@ Rec: EQP_HANDOSTILLOR_WP2
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -20306,6 +20711,7 @@ Rec: EQP_HANDOSTILLOR_WP3
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -20418,6 +20824,7 @@ Rec: EQP_HANDOSTILLOR_WP4
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -20530,6 +20937,7 @@ Rec: EQP_HANDOSTILLOR_WP5
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -20642,6 +21050,7 @@ Rec: EQP_HANDOSTILLOR_WP6
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -20754,6 +21163,7 @@ Rec: EQP_HANDOSTILLOR_WP7
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -20866,6 +21276,7 @@ Rec: EQP_HANDOSTILLOR_WP8
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -20978,6 +21389,7 @@ Rec: EQP_HANDOSTILLOR_WP9
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -21090,6 +21502,7 @@ Rec: EQP_JAKE_AR1
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -21202,6 +21615,7 @@ Rec: EQP_JAKE_AR10
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -21314,6 +21728,7 @@ Rec: EQP_JAKE_AR2
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -21426,6 +21841,7 @@ Rec: EQP_JAKE_AR3
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -21538,6 +21954,7 @@ Rec: EQP_JAKE_AR4
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -21650,6 +22067,7 @@ Rec: EQP_JAKE_AR5
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -21762,6 +22180,7 @@ Rec: EQP_JAKE_AR6
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -21874,6 +22293,7 @@ Rec: EQP_JAKE_AR7
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -21986,6 +22406,7 @@ Rec: EQP_JAKE_AR8
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -22098,6 +22519,7 @@ Rec: EQP_JAKE_AR9
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -22210,6 +22632,7 @@ Rec: EQP_JAKE_CURSEDWP_VENOMBLADE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -22322,6 +22745,7 @@ Rec: EQP_JAKE_SEALARMOR
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -22434,6 +22858,7 @@ Rec: EQP_JAKE_TRAINSWORD
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -22546,6 +22971,7 @@ Rec: EQP_JAKE_WP1
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -22658,6 +23084,7 @@ Rec: EQP_JAKE_WP10
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -22770,6 +23197,7 @@ Rec: EQP_JAKE_WP2
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -22882,6 +23310,7 @@ Rec: EQP_JAKE_WP3
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -22994,6 +23423,7 @@ Rec: EQP_JAKE_WP4
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -23106,6 +23536,7 @@ Rec: EQP_JAKE_WP5
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -23218,6 +23649,7 @@ Rec: EQP_JAKE_WP6
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -23330,6 +23762,7 @@ Rec: EQP_JAKE_WP7
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -23442,6 +23875,7 @@ Rec: EQP_JAKE_WP8
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -23554,6 +23988,7 @@ Rec: EQP_JAKE_WP9
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -23666,6 +24101,7 @@ Rec: EQP_JEWEL_AMETHYST
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -23778,6 +24214,7 @@ Rec: EQP_JEWEL_DIAMOND
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -23890,6 +24327,7 @@ Rec: EQP_JEWEL_EMERALD
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -24002,6 +24440,7 @@ Rec: EQP_JEWEL_GARNET
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -24114,6 +24553,7 @@ Rec: EQP_JEWEL_ONYX
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -24226,6 +24666,7 @@ Rec: EQP_JEWEL_RUBY
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -24338,6 +24779,7 @@ Rec: EQP_JEWEL_SAPPHIRE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -24450,6 +24892,7 @@ Rec: EQP_JEWEL_SMALLEMERALD
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -24562,6 +25005,7 @@ Rec: EQP_JEWEL_SMALLGARNET
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -24674,6 +25118,7 @@ Rec: EQP_JEWEL_SMALLRUBY
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -24786,6 +25231,7 @@ Rec: EQP_JEWEL_SMALLTOPAZ
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -24898,6 +25344,7 @@ Rec: EQP_JEWEL_TOPAZ
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -25010,6 +25457,7 @@ Rec: EQP_MARRILONA_AR1
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -25122,6 +25570,7 @@ Rec: EQP_MARRILONA_AR10
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -25234,6 +25683,7 @@ Rec: EQP_MARRILONA_AR2
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -25346,6 +25796,7 @@ Rec: EQP_MARRILONA_AR3
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -25458,6 +25909,7 @@ Rec: EQP_MARRILONA_AR4
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -25570,6 +26022,7 @@ Rec: EQP_MARRILONA_AR5
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -25682,6 +26135,7 @@ Rec: EQP_MARRILONA_AR6
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -25794,6 +26248,7 @@ Rec: EQP_MARRILONA_AR7
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -25906,6 +26361,7 @@ Rec: EQP_MARRILONA_AR8
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -26018,6 +26474,7 @@ Rec: EQP_MARRILONA_AR9
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -26130,6 +26587,7 @@ Rec: EQP_MARRILONA_SEALARMOR
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -26242,6 +26700,7 @@ Rec: EXE_MARRILONA_MEDITATION
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -26354,6 +26813,7 @@ Rec: FOE_WATCHMOVE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -26466,6 +26926,7 @@ Rec: ICEBLAST
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -26578,6 +27039,7 @@ Rec: ITM_AMBROSIA
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -26690,6 +27152,7 @@ Rec: ITM_ANABOLINEA
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -26802,6 +27265,7 @@ Rec: ITM_ANTIDOTE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -26914,6 +27378,7 @@ Rec: ITM_APPLE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -27026,6 +27491,7 @@ Rec: ITM_BANANA
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -27138,6 +27604,7 @@ Rec: ITM_BELL
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -27250,6 +27717,7 @@ Rec: ITM_CARROT
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -27362,6 +27830,7 @@ Rec: ITM_CURSEDSPORES
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -27474,6 +27943,7 @@ Rec: ITM_DEATHCUBE
 	CauseDeath = TRUE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -27586,6 +28056,7 @@ Rec: ITM_EEL
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = TRUE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -27698,6 +28169,7 @@ Rec: ITM_FLAMEORB
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -27810,6 +28282,7 @@ Rec: ITM_HEALINGHERB
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -27922,6 +28395,7 @@ Rec: ITM_HEALSHOWER
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -28034,6 +28508,7 @@ Rec: ITM_HELLSTONE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -28146,6 +28621,7 @@ Rec: ITM_HOLYSCROLL
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -28258,6 +28734,7 @@ Rec: ITM_HOLYWATER
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -28370,6 +28847,7 @@ Rec: ITM_ICICLE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -28482,6 +28960,7 @@ Rec: ITM_ICICLES
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -28594,6 +29073,7 @@ Rec: ITM_INFERNOORB
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -28706,6 +29186,7 @@ Rec: ITM_JUSDORANGE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -28818,6 +29299,7 @@ Rec: ITM_MAGICDUST
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -28930,6 +29412,7 @@ Rec: ITM_MAGICSTONE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -29042,6 +29525,7 @@ Rec: ITM_MANDRAKE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -29154,6 +29638,7 @@ Rec: ITM_MEDICINE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -29266,6 +29751,7 @@ Rec: ITM_MIRROR
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -29378,6 +29864,7 @@ Rec: ITM_PANACEA
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -29490,6 +29977,7 @@ Rec: ITM_PHOENIX
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -29602,6 +30090,7 @@ Rec: ITM_POISONDART
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -29714,6 +30203,7 @@ Rec: ITM_POTION
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -29826,6 +30316,7 @@ Rec: ITM_PURELITERATURE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -29938,6 +30429,7 @@ Rec: ITM_SALVE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -30050,6 +30542,7 @@ Rec: ITM_SLEEPHERB
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -30162,6 +30655,7 @@ Rec: ITM_STONE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -30274,6 +30768,7 @@ Rec: ITM_STORMBOTTLE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -30386,6 +30881,7 @@ Rec: ITM_TRUMPCARD
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -30498,6 +30994,7 @@ Rec: ITM_UBERPOTION
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -30610,6 +31107,7 @@ Rec: ITM_VIRUSBOMB
 	CauseDeath = FALSE
 	CauseDisease = TRUE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -30722,6 +31220,7 @@ Rec: ITM_VOICEHERB
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -30834,6 +31333,7 @@ Rec: ITM_VOLTABALL
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = TRUE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -30946,6 +31446,7 @@ Rec: ITM_WATERBUBBLE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -31058,6 +31559,7 @@ Rec: JUG_ATK1
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -31170,6 +31672,7 @@ Rec: JUG_ATK10
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -31282,6 +31785,7 @@ Rec: JUG_ATK11
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -31394,6 +31898,7 @@ Rec: JUG_ATK12
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = TRUE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -31506,6 +32011,7 @@ Rec: JUG_ATK2
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -31618,6 +32124,7 @@ Rec: JUG_ATK3
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -31730,6 +32237,7 @@ Rec: JUG_ATK4
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -31842,6 +32350,7 @@ Rec: JUG_ATK5
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -31954,6 +32463,7 @@ Rec: JUG_ATK6
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -32066,6 +32576,7 @@ Rec: JUG_ATK7
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -32178,6 +32689,7 @@ Rec: JUG_ATK8
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -32290,6 +32802,7 @@ Rec: JUG_ATK9
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -32402,6 +32915,7 @@ Rec: JUG_HEAL1
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -32447,14 +32961,14 @@ Rec: JUG_HEAL1
 	EffectScript_External = FALSE
 	Heal = 60
 	Heal_StatPercent = Intelligence
-	Heal_Type = 
+	Heal_Type = Absolute
 	ITM_ACC_Dandor = TRUE
 	ITM_ACC_HandoStillor = TRUE
 	ITM_ACC_Jake = TRUE
 	ITM_ACC_Marrilona = TRUE
 	ITM_BlackMarket = FALSE
 	ITM_Combat = TRUE
-	ITM_EQP_For = 
+	ITM_EQP_For = Jake
 	ITM_Field = TRUE
 	ITM_Sellable = TRUE
 	ITM_ShopPrice = 0
@@ -32466,7 +32980,7 @@ Rec: JUG_HEAL1
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
-	Target = 1A
+	Target = OS
 	Title = H<ecirc>kst<ocirc>p
 	Type = Item
 	USE_Penalty = 0
@@ -32514,6 +33028,7 @@ Rec: JUG_HEAL2
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -32559,14 +33074,14 @@ Rec: JUG_HEAL2
 	EffectScript_External = FALSE
 	Heal = 120
 	Heal_StatPercent = Intelligence
-	Heal_Type = 
+	Heal_Type = Absolute
 	ITM_ACC_Dandor = TRUE
 	ITM_ACC_HandoStillor = TRUE
 	ITM_ACC_Jake = TRUE
 	ITM_ACC_Marrilona = TRUE
 	ITM_BlackMarket = FALSE
 	ITM_Combat = TRUE
-	ITM_EQP_For = 
+	ITM_EQP_For = Jake
 	ITM_Field = TRUE
 	ITM_Sellable = TRUE
 	ITM_ShopPrice = 0
@@ -32578,7 +33093,7 @@ Rec: JUG_HEAL2
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
-	Target = 1A
+	Target = OS
 	Title = S<ecirc>nttw<ouml>t<ocirc>p
 	Type = Item
 	USE_Penalty = 0
@@ -32626,6 +33141,7 @@ Rec: JUG_HEAL3
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -32671,14 +33187,14 @@ Rec: JUG_HEAL3
 	EffectScript_External = FALSE
 	Heal = 180
 	Heal_StatPercent = Intelligence
-	Heal_Type = 
+	Heal_Type = Absolute
 	ITM_ACC_Dandor = TRUE
 	ITM_ACC_HandoStillor = TRUE
 	ITM_ACC_Jake = TRUE
 	ITM_ACC_Marrilona = TRUE
 	ITM_BlackMarket = FALSE
 	ITM_Combat = TRUE
-	ITM_EQP_For = 
+	ITM_EQP_For = Jake
 	ITM_Field = TRUE
 	ITM_Sellable = TRUE
 	ITM_ShopPrice = 0
@@ -32690,7 +33206,7 @@ Rec: JUG_HEAL3
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
-	Target = 1A
+	Target = OS
 	Title = S<ecirc>ntt<ocirc>kit<ocirc>p
 	Type = Item
 	USE_Penalty = 0
@@ -32738,6 +33254,7 @@ Rec: JUG_JUGGERNAUT
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -32850,6 +33367,7 @@ Rec: JUG_TACT1
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -32962,6 +33480,7 @@ Rec: JUG_TACT10
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -33074,6 +33593,7 @@ Rec: JUG_TACT2
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -33186,6 +33706,7 @@ Rec: JUG_TACT3
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -33298,6 +33819,7 @@ Rec: JUG_TACT4
 	CauseDeath = FALSE
 	CauseDisease = TRUE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -33410,6 +33932,7 @@ Rec: JUG_TACT5
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -33522,6 +34045,7 @@ Rec: JUG_TACT6
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = TRUE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -33634,6 +34158,7 @@ Rec: JUG_TACT7
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = TRUE
@@ -33746,6 +34271,7 @@ Rec: JUG_TACT8
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -33858,6 +34384,7 @@ Rec: JUG_TACT9
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -33970,6 +34497,7 @@ Rec: SILLY_ONE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -34082,6 +34610,7 @@ Rec: SILLY_ONES
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -34194,6 +34723,7 @@ Rec: SPECIAL_ARMAGEDDON
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -34306,6 +34836,7 @@ Rec: SPECIAL_AXESMASH
 	CauseDeath = 
 	CauseDisease = 
 	CauseGuarding = 
+	CauseIDDQD = 
 	CauseParalysis = 
 	CausePermanence = 
 	CausePetrification = 
@@ -34418,6 +34949,7 @@ Rec: SPECIAL_SPIRATAKILLER
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -34530,6 +35062,7 @@ Rec: SPIRATATRANSFORM
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -34642,6 +35175,7 @@ Rec: SPIRATA_ATTACK_DANDOR
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -34754,6 +35288,7 @@ Rec: SPIRATA_ATTACK_HANDOSTILLOR
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -34866,6 +35401,7 @@ Rec: SPIRATA_ATTACK_JAKE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -34978,6 +35514,7 @@ Rec: SPIRATA_ATTACK_MARRILONA
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -35090,6 +35627,7 @@ Rec: WAND_BIO
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -35202,6 +35740,7 @@ Rec: WAND_DARK
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -35314,6 +35853,7 @@ Rec: WAND_DOOM
 	CauseDeath = TRUE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -35426,6 +35966,7 @@ Rec: WAND_FLAME
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -35538,6 +36079,7 @@ Rec: WAND_FROST
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -35650,6 +36192,7 @@ Rec: WAND_GAIA
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -35762,6 +36305,7 @@ Rec: WAND_HOLY
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -35874,6 +36418,7 @@ Rec: WAND_II_EVIL
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -35986,6 +36531,7 @@ Rec: WAND_II_GAIA
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -36098,6 +36644,7 @@ Rec: WAND_II_HURRICANE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -36210,6 +36757,7 @@ Rec: WAND_II_KELVIN
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -36322,6 +36870,7 @@ Rec: WAND_II_SAINT
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -36434,6 +36983,7 @@ Rec: WAND_II_SPRINGTIJ
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -36546,6 +37096,7 @@ Rec: WAND_II_VOLCANOWAND
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -36658,6 +37209,7 @@ Rec: WAND_II_WATT
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = TRUE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -36770,6 +37322,7 @@ Rec: WAND_SPLASH
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -36882,6 +37435,7 @@ Rec: WAND_THUNDER
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -36994,6 +37548,7 @@ Rec: WAND_TRAINING
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -37106,6 +37661,7 @@ Rec: WAND_WIND
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -37218,6 +37774,7 @@ Rec: ZZKEY_BLUESTAFF
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -37330,6 +37887,7 @@ Rec: ZZKEY_FIRE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -37442,6 +38000,7 @@ Rec: ZZKEY_GAIA
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -37554,6 +38113,7 @@ Rec: ZZKEY_KEYWATER
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -37666,6 +38226,7 @@ Rec: ZZKEY_WIND
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -37778,6 +38339,7 @@ Rec: ZZZ_KRANDARARMOR
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -37890,6 +38452,7 @@ Rec: ZZZ_KRANDARBLADE
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -38002,6 +38565,7 @@ Rec: ZZ_CRYPTKEY
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
+	CauseIDDQD = 
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
