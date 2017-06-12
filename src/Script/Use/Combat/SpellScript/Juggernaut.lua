@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.11
+version: 17.06.12
 ]]
 
 -- Spells to pick from
@@ -44,14 +44,15 @@ local SpellScript = {}
 -- @FI
 
 function SpellScript.Juggernaut()
-    local card2add = { group = nextact.group, tag=nextact.tag, letter=nextact.letter, auto=true }
     local rounds = {'ATK','HEAL','TACT'}
-    card2add.nextact = {}
-    for f,i in pairs(nextact) do card2add.nextact[f]=i; CSay("Added to juggernaut round card: "..f) end
     local l=1
     for r in each(rounds) do
-        CSay("Adding round "..r)
+        local card2add = { group = nextact.group, tag=nextact.tag, letter=nextact.letter, auto=true }
+        card2add.nextact = {}
+        for f,i in pairs(nextact) do card2add.nextact[f]=i; CSay("Added to juggernaut round card: "..f) end
+        CSay("Adding round card "..r)
         card2add.nextact.act = "jug_"..r..rand(1,JUG[r])
+        CSay("= Action "..card2add.nextact.act)
         l = l + (10-(skill*3))
         AddCard(card2add,l)
     end    
