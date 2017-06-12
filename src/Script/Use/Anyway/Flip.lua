@@ -80,7 +80,7 @@ function Flip()
        if CVV('%GAMETIME.MINUTES')>=60 then
           Var.D("%GAMETIME.MINUTES",0)
           inc("%GAMETIME.HOURS")
-          if CVV("%GAMETIME.HOURS")>=24 then Award("HOURS024") end
+          if CVV("%GAMETIME.HOURS")>=24 then Award("HOURS0024") end
        end             
     end
 end
