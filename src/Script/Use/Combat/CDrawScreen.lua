@@ -1,6 +1,6 @@
 --[[
   CDrawScreen.lua
-  Version: 17.04.25
+  Version: 17.06.12
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -76,8 +76,9 @@ function ShowCards()
    end
 end
 
-function CardMessage(txt,card)
-  dataBigMessage = { Text = Var.S(txt), Card = tonumber(card or 1) }
+function CardMessage(txt,card,font)
+  dataBigMessage = { Text = Var.S(txt), Card = tonumber(card or 1), CardData = Cards[card].data, font=font }
+  
   return dataBigMessage
 end  
 
@@ -92,13 +93,14 @@ function ShowBigMessage()
       Image.Rotate(dataBigMessage.Rotate or -22)
       Image.Show(dataBigMessage.Image,Center_X-(Image.TextWidth(dataBigMessage.Text)/2)-(Image.Width(data.BigMessage.Image)*.75),175-(Image.Height(dataBigMessage.Image)))
    end
+   
    if dataBigMessage.Card then
       white()   
       Image.Rotate(-22)
       ShowCard(dataBigMessage.Card,Center_X-(Image.TextWidth(dataBigMessage.Text)/2)-40,145)
    end   
-   Image.Rotate(0)
-   SetFont('CombatBigMessage')
+   Image.Rotate(0)   
+   SetFont(dataBigMessage.font or 'CombatBigMessage')   
    DarkText(dataBigMessage.Text,Center_X,175,2,2,c,255,0)
    dataBigMessage.Timer = (dataBigMessage.Timer or 150) - 1
    if dataBigMessage.Timer<=0 then dataBigMessage = nil end 

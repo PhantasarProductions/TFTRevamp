@@ -304,7 +304,7 @@ function BlackOrb(tag)
      Var.D("$COMBAT.POSFOE_1","CENTER")
      Var.D("$COMBAT.MUSIC","Music/Special Boss/Juggernaut.ogg")
      Var.D("$COMBAT.ARENA","Dark.png")
-     StartBoss("Ultimate Destroyed of Everything","Juggernaut",80,0,100)
+     StartBoss("Ultimate Destroyer of Everything","Juggernaut",80,0,100)
      Schedule("MAP","JuggernautAward")          
   else
      MS.Run("BOXTEXT","LoadData","General/Items;ITEM")

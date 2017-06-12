@@ -1,6 +1,6 @@
 --[[
   Fonts.lua
-  Version: 17.01.03
+  Version: 17.06.12
   Copyright (C) 2016, 2017 2015
   
   ===========================
@@ -61,6 +61,7 @@ fonts = {
     Target = {'Monof55.ttf',20},
     CombatBigMessage = {'CoolVetica.TtF',45},
     CombatCharMessage = {'Monof55.ttf',20},
+    PhanCombatBigMessage = {'Phantasar.ttf',45},
     SpellUnlockBox = {'CoolVetica.ttf',10},
     MiniMsg = {'Monof55.ttf',20},
     Lv1 = {'Monof55.ttf',15},

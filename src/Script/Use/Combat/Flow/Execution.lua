@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.04.29
+  Version: 17.06.12
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -192,7 +192,7 @@ function fflow.Execution()
    end      
    -- Init
    e_act = e_act or ItemGet(nextact.act); local act=e_act
-   local acttag = nextact.act
+   local acttag = upper(nextact.act)
    local myactor = fighterbytag[nextact.executor.tag]
    Var.D('$EXE.EXECUTOR',nextact.executor.tag)
    -- Var.D('$EXE.TARGET',"--")
@@ -206,7 +206,9 @@ function fflow.Execution()
    end
    -- Show Box
    assert ( act.Title,serialize("act",act))
-   ExeShowMsg = ExeShowMsg or CardMessage(act.Title,1)
+   local f 
+   if prefixed(acttag,"JUG_") then f="PhanCombatBigMessage" end
+   ExeShowMsg = ExeShowMsg or CardMessage(act.Title,1,f)
    -- if (not ExeShowMsg.Timer) or (ExeShowMsg.Timer>50) then return end
    while (not ExeShowMsg.Timer) or (ExeShowMsg.Timer>50) do   
          DrawScreen(); FPS()
