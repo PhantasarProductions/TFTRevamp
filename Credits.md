@@ -127,6 +127,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Font: Fonts/monof55.ttf
 - Dieter Steffmann
     1. Font: Fonts/CloisterBlack.ttf
+- Donald Trump
+    1. Audio: Audio/Trump/Trump.ogg
 - Eric Matyas
     1. Music: Music/Dungeon/Magic-Clock-Shop_Looping.ogg
     1. Music: Music/Dungeon/Sewer-Monsters-Town-Hall-Meeting_Looping.ogg
@@ -761,6 +763,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
     1. Script: Script/Use/Combat/SpellAni/Aqua.lua
     1. Script: Script/Use/Combat/SpellAni/DarkVision.lua
+    1. Script: Script/Use/Combat/SpellAni/Donald Trump.lua
     1. Script: Script/Use/Combat/SpellAni/Flame.lua
     1. Script: Script/Use/Combat/SpellAni/Frost.lua
     1. Script: Script/Use/Combat/SpellAni/Heal.lua
@@ -788,6 +791,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/StatusChanges/Curse.lua
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
     1. Script: Script/Use/Combat/StatusChanges/Guard.lua
+    1. Script: Script/Use/Combat/StatusChanges/IDDQD.lua
     1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
     1. Script: Script/Use/Combat/StatusChanges/Paralysis and Sleep.lua
     1. Script: Script/Use/Combat/StatusChanges/Permanence.lua
@@ -835,14 +839,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/SerializeIntoSysVar.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -1506,6 +1510,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Cast.png
     1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Dead.png
     1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Idle.Frames
+    1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Petrified.png
     1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Victory.piko
     1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Victory.png
     1. Graphics: GFX/Combat/Fighters/Hero/Dandor.piko
@@ -2472,6 +2477,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - anarres
     1. Graphics: gfx/combat/fighters/foe/boss/Superalien.piko
     1. Graphics: gfx/combat/fighters/foe/boss/Superalien.png
+- crisg
+    1. Graphics: gfx/Combat/SpellAni/Trump/Sombrero.png
+    1. Graphics: gfx/Combat/SpellAni/Trump/Wall.piko
+    1. Graphics: gfx/Combat/SpellAni/Trump/Wall.png
 - http://www.freesfx.co.uk
     1. Audio: Audio/SpellAni/Thunder/Spark.ogg
     1. Audio: Audio/SpellAni/Thunder/ThunderStrike.ogg

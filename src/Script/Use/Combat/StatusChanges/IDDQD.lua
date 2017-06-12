@@ -1,5 +1,5 @@
 --[[
-  EQP_MARRILONA_AR8.lua
+  IDDQD.lua
   Version: 17.06.12
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -34,27 +34,22 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-ret = {
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
-	["Attack_Element"] = "None",
-	["Desc"] = "Does it have extra effects?",
-	["EQP_STAT_Endurance"] = 8,
-	["EQP_STAT_Intelligence"] = 8,
-	["EQP_STAT_Resistance"] = 24,
-	["EQP_STAT_SR_Disease"] = 100,
-	["EQP_STAT_SR_Poison"] = 100,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "Marrilona",
-	["ITM_ShopPrice"] = 16000,
-	["ITM_Type"] = "Armor",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "White Dress",
-	["Type"] = "Item"}
+-- @IF IGNORE
+local StatusChanges = {}
+-- @IF
 
-return ret
+StatusChanges.IDDQD = {
+     BlockHurt = true,
+     DrawFighter = function(ch)
+         color(0,255,0)
+      end   ,
+     PreTurn = function(ch)
+         if prefixed(ch,"FOE") then e=skill*3 else e=9/skill end
+         if rand(1,e)==1 then fighterbytag[ch].StatusChanges.IDDQD = nil end
+     end
+}
 
--- This file is an automatically generated file!
 
+-- @IF IGNORE
+return StatusChanges
+-- @FI

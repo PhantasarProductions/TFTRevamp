@@ -33480,7 +33480,7 @@ Rec: JUG_TACT1
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
-	CauseIDDQD = 
+	CauseIDDQD = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -33593,7 +33593,7 @@ Rec: JUG_TACT10
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
-	CauseIDDQD = 
+	CauseIDDQD = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -33706,7 +33706,7 @@ Rec: JUG_TACT2
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
-	CauseIDDQD = 
+	CauseIDDQD = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -33819,7 +33819,7 @@ Rec: JUG_TACT3
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
-	CauseIDDQD = 
+	CauseIDDQD = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -33932,7 +33932,7 @@ Rec: JUG_TACT4
 	CauseDeath = FALSE
 	CauseDisease = TRUE
 	CauseGuarding = FALSE
-	CauseIDDQD = 
+	CauseIDDQD = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -34045,7 +34045,7 @@ Rec: JUG_TACT5
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
-	CauseIDDQD = 
+	CauseIDDQD = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -34158,7 +34158,7 @@ Rec: JUG_TACT6
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
-	CauseIDDQD = 
+	CauseIDDQD = FALSE
 	CauseParalysis = TRUE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -34271,7 +34271,7 @@ Rec: JUG_TACT7
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
-	CauseIDDQD = 
+	CauseIDDQD = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = TRUE
@@ -34336,7 +34336,7 @@ Rec: JUG_TACT7
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
-	Target = AF
+	Target = 1F
 	Title = P<ecirc>tryk
 	Type = Item
 	USE_Penalty = 0
@@ -34384,7 +34384,7 @@ Rec: JUG_TACT8
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
-	CauseIDDQD = 
+	CauseIDDQD = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -34497,7 +34497,7 @@ Rec: JUG_TACT9
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
-	CauseIDDQD = 
+	CauseIDDQD = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE

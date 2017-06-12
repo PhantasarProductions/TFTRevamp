@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.11
+version: 17.06.12
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
@@ -55,7 +55,7 @@ ret = {
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
-	["Target"] = "AF",
+	["Target"] = "1F",
 	["Title"] = "P<ecirc>tryk",
 	["Type"] = "Item"}
 
