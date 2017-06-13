@@ -32,8 +32,20 @@
   
  **********************************************
  
-version: 17.01.02
+version: 17.06.13
 ]]
+
+
+function BlueSeal()
+    ClearCombatData()
+    Var.D("$COMBAT.FOE_1","Sealed/GobEmperor")
+    Var.D("$COMBAT.POSFOE_1","CENTER")
+    Var.D("$COMBAT.MUSIC","Music/Special Boss/Blue Seal.ogg")
+    Var.D("$COMBAT.ARENA","Altar.png")
+    StartBoss("The Goblin who takes you over","Goblin Emperor",0,25,100)      
+    Done('&DONE.SEAL.JAKE2')
+end    
+
 
 -- Link all stats in Jake that should be linked
 function CreateJakeFairy()
