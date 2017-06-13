@@ -150,6 +150,9 @@ int EQP_STAT_Resistance
 int EQP_STAT_Accuracy
 int EQP_STAT_Evasion
 strike
+int EQP_STAT_HP
+int EQP_STAT_AP
+strike
 int EQP_STAT_SR_Poison
 int EQP_STAT_SR_Paralysis
 int EQP_STAT_SR_Curse
@@ -388,6 +391,7 @@ Rec: AAA_ATTACK
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Attack the enemy
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -399,6 +403,7 @@ Rec: AAA_ATTACK
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -501,6 +506,7 @@ Rec: AAA_GUARD
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Skip turn and half damage
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -512,6 +518,7 @@ Rec: AAA_GUARD
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -614,6 +621,7 @@ Rec: ABL_FOE_BACTERIATUSK
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -625,6 +633,7 @@ Rec: ABL_FOE_BACTERIATUSK
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -727,6 +736,7 @@ Rec: ABL_FOE_CRUSH
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -738,6 +748,7 @@ Rec: ABL_FOE_CRUSH
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -840,6 +851,7 @@ Rec: ABL_FOE_DEATHSPELL
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Kill all party members
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -851,6 +863,7 @@ Rec: ABL_FOE_DEATHSPELL
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -953,6 +966,7 @@ Rec: ABL_FOE_DEMON_SOUL_BREAKER
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -964,6 +978,7 @@ Rec: ABL_FOE_DEMON_SOUL_BREAKER
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -1066,6 +1081,7 @@ Rec: ABL_FOE_DESPERATEATTACK
 	CureSleep = 
 	CureUndead = FALSE
 	Desc = Critical hit if it hits
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -1077,6 +1093,7 @@ Rec: ABL_FOE_DESPERATEATTACK
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -1179,6 +1196,7 @@ Rec: ABL_FOE_DISINTEGRATE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -1190,6 +1208,7 @@ Rec: ABL_FOE_DISINTEGRATE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -1292,6 +1311,7 @@ Rec: ABL_FOE_DISTRACT
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Removes all cards of a specific foe
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -1303,6 +1323,7 @@ Rec: ABL_FOE_DISTRACT
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -1405,6 +1426,7 @@ Rec: ABL_FOE_ENEMYVITALIZE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Strong healing spell on the entire party
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -1416,6 +1438,7 @@ Rec: ABL_FOE_ENEMYVITALIZE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -1518,6 +1541,7 @@ Rec: ABL_FOE_EXHAUST
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = AP to 0
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -1529,6 +1553,7 @@ Rec: ABL_FOE_EXHAUST
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -1631,6 +1656,7 @@ Rec: ABL_FOE_FLAMEBITE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Blade of Fire
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -1642,6 +1668,7 @@ Rec: ABL_FOE_FLAMEBITE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -1744,6 +1771,7 @@ Rec: ABL_FOE_FLAMESTRIKE
 	CureSleep = 
 	CureUndead = FALSE
 	Desc = Attack the enemy
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -1755,6 +1783,7 @@ Rec: ABL_FOE_FLAMESTRIKE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -1857,6 +1886,7 @@ Rec: ABL_FOE_GAIASMASH
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -1868,6 +1898,7 @@ Rec: ABL_FOE_GAIASMASH
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -1970,6 +2001,7 @@ Rec: ABL_FOE_GAZE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Turn to stone!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -1981,6 +2013,7 @@ Rec: ABL_FOE_GAZE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -2083,6 +2116,7 @@ Rec: ABL_FOE_GRAVITY
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -2094,6 +2128,7 @@ Rec: ABL_FOE_GRAVITY
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -2196,6 +2231,7 @@ Rec: ABL_FOE_HOLDPERSON
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -2207,6 +2243,7 @@ Rec: ABL_FOE_HOLDPERSON
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -2309,6 +2346,7 @@ Rec: ABL_FOE_HORROR
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -2320,6 +2358,7 @@ Rec: ABL_FOE_HORROR
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -2422,6 +2461,7 @@ Rec: ABL_FOE_MERMAID_TEMPATION
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = All men will fall for the charms of this
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -2433,6 +2473,7 @@ Rec: ABL_FOE_MERMAID_TEMPATION
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -2535,6 +2576,7 @@ Rec: ABL_FOE_PARADIVE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Attack which also paralyses the enemy
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -2546,6 +2588,7 @@ Rec: ABL_FOE_PARADIVE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -2648,6 +2691,7 @@ Rec: ABL_FOE_RANDOMIZER
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -2659,6 +2703,7 @@ Rec: ABL_FOE_RANDOMIZER
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -2761,6 +2806,7 @@ Rec: ABL_FOE_RANDOMIZERTOTAL
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -2772,6 +2818,7 @@ Rec: ABL_FOE_RANDOMIZERTOTAL
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -2874,6 +2921,7 @@ Rec: ABL_FOE_SETTHESTAGEONFIRE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -2885,6 +2933,7 @@ Rec: ABL_FOE_SETTHESTAGEONFIRE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -2987,6 +3036,7 @@ Rec: ABL_FOE_SHOCKINGSTORIES
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -2998,6 +3048,7 @@ Rec: ABL_FOE_SHOCKINGSTORIES
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -3100,6 +3151,7 @@ Rec: ABL_FOE_SICKSTORIES
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -3111,6 +3163,7 @@ Rec: ABL_FOE_SICKSTORIES
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -3213,6 +3266,7 @@ Rec: ABL_FOE_SMITE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Light attack on one target
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -3224,6 +3278,7 @@ Rec: ABL_FOE_SMITE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -3326,6 +3381,7 @@ Rec: ABL_FOE_SOULCRUSHINGSTORY
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -3337,6 +3393,7 @@ Rec: ABL_FOE_SOULCRUSHINGSTORY
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -3439,6 +3496,7 @@ Rec: ABL_FOE_SPORES
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -3450,6 +3508,7 @@ Rec: ABL_FOE_SPORES
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -3552,6 +3611,7 @@ Rec: ABL_FOE_SUICIDE
 	CureSleep = 
 	CureUndead = FALSE
 	Desc = Kill yourself
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -3563,6 +3623,7 @@ Rec: ABL_FOE_SUICIDE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -3665,6 +3726,7 @@ Rec: ABL_FOE_TAKEOVER
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -3676,6 +3738,7 @@ Rec: ABL_FOE_TAKEOVER
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -3778,6 +3841,7 @@ Rec: ABL_FOE_TAKEOVER2
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -3789,6 +3853,7 @@ Rec: ABL_FOE_TAKEOVER2
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -3891,6 +3956,7 @@ Rec: ABL_FOE_THRILL
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -3902,6 +3968,7 @@ Rec: ABL_FOE_THRILL
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -4004,6 +4071,7 @@ Rec: ABL_FOE_TOTALEXHAUSTION
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = AP to 0
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -4015,6 +4083,7 @@ Rec: ABL_FOE_TOTALEXHAUSTION
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -4117,6 +4186,7 @@ Rec: ABL_FOE_TUSK
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Attack the enemy
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -4128,6 +4198,7 @@ Rec: ABL_FOE_TUSK
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -4230,6 +4301,7 @@ Rec: ABL_FOE_TWOEDGE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -4241,6 +4313,7 @@ Rec: ABL_FOE_TWOEDGE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -4343,6 +4416,7 @@ Rec: ABL_FOE_ULTIMATESOULCRUSHER
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -4354,6 +4428,7 @@ Rec: ABL_FOE_ULTIMATESOULCRUSHER
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -4456,6 +4531,7 @@ Rec: ABL_FOE_VENOMBITE
 	CureSleep = 
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -4467,6 +4543,7 @@ Rec: ABL_FOE_VENOMBITE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -4569,6 +4646,7 @@ Rec: ABL_FOE_VENOMSTAB
 	CureSleep = 
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -4580,6 +4658,7 @@ Rec: ABL_FOE_VENOMSTAB
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -4682,6 +4761,7 @@ Rec: ABL_FOE_VIRUSSTAB
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -4693,6 +4773,7 @@ Rec: ABL_FOE_VIRUSSTAB
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -4795,6 +4876,7 @@ Rec: ABL_FOE_WELCOMEINHELL
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = We don't need no water, let the mother$(@*#@ burn!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -4806,6 +4888,7 @@ Rec: ABL_FOE_WELCOMEINHELL
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -4908,6 +4991,7 @@ Rec: ABL_FOLLOWUP_FIKKIE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -4919,6 +5003,7 @@ Rec: ABL_FOLLOWUP_FIKKIE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -5021,6 +5106,7 @@ Rec: ABL_GLOOM
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = You will become udead now
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -5032,6 +5118,7 @@ Rec: ABL_GLOOM
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -5134,6 +5221,7 @@ Rec: ABL_HANDOSTILLOR_EVERYBODYKNEELBEFOREME
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Remove all cards of all enemies
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -5145,6 +5233,7 @@ Rec: ABL_HANDOSTILLOR_EVERYBODYKNEELBEFOREME
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -5247,6 +5336,7 @@ Rec: ABL_HERO_DANDOR_AXESMASH
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = BAM! You're dead!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -5258,6 +5348,7 @@ Rec: ABL_HERO_DANDOR_AXESMASH
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -5360,6 +5451,7 @@ Rec: ABL_HERO_DANDOR_BARRIER
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Dandor Protect
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -5371,6 +5463,7 @@ Rec: ABL_HERO_DANDOR_BARRIER
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -5473,6 +5566,7 @@ Rec: ABL_HERO_DANDOR_SHIELD
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Dandor Protect
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -5484,6 +5578,7 @@ Rec: ABL_HERO_DANDOR_SHIELD
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -5586,6 +5681,7 @@ Rec: ABL_HERO_DANDOR_SUPERAXESMASH
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Strong attack vs. 1 target
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -5597,6 +5693,7 @@ Rec: ABL_HERO_DANDOR_SUPERAXESMASH
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -5699,6 +5796,7 @@ Rec: ABL_HERO_HANDOSTILLOR_CLEANSE
 	CureSleep = FALSE
 	CureUndead = TRUE
 	Desc = Removes "Undead" Status
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -5710,6 +5808,7 @@ Rec: ABL_HERO_HANDOSTILLOR_CLEANSE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -5812,6 +5911,7 @@ Rec: ABL_HERO_HANDOSTILLOR_CUREDISEASE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Guess....
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -5823,6 +5923,7 @@ Rec: ABL_HERO_HANDOSTILLOR_CUREDISEASE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -5925,6 +6026,7 @@ Rec: ABL_HERO_HANDOSTILLOR_FIRSTAID
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Weniaria can heal small wounds
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -5936,6 +6038,7 @@ Rec: ABL_HERO_HANDOSTILLOR_FIRSTAID
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -6038,6 +6141,7 @@ Rec: ABL_HERO_HANDOSTILLOR_GOODMORNING
 	CureSleep = TRUE
 	CureUndead = FALSE
 	Desc = Wakes up all sleeping allies
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -6049,6 +6153,7 @@ Rec: ABL_HERO_HANDOSTILLOR_GOODMORNING
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -6151,6 +6256,7 @@ Rec: ABL_HERO_HANDOSTILLOR_HASPARONVITALIZATION
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Strong healing spell on the entire party
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -6162,6 +6268,7 @@ Rec: ABL_HERO_HANDOSTILLOR_HASPARONVITALIZATION
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -6264,6 +6371,7 @@ Rec: ABL_HERO_HANDOSTILLOR_HOLYSTRIKE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Strike with holy light!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -6275,6 +6383,7 @@ Rec: ABL_HERO_HANDOSTILLOR_HOLYSTRIKE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -6377,6 +6486,7 @@ Rec: ABL_HERO_HANDOSTILLOR_KNEELBEFOREME
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Remove all cards of an enemy
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -6388,6 +6498,7 @@ Rec: ABL_HERO_HANDOSTILLOR_KNEELBEFOREME
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -6490,6 +6601,7 @@ Rec: ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Like the name suggests, eh?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -6501,6 +6613,7 @@ Rec: ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -6603,6 +6716,7 @@ Rec: ABL_HERO_HANDOSTILLOR_PRAY
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Gain extra AP
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -6614,6 +6728,7 @@ Rec: ABL_HERO_HANDOSTILLOR_PRAY
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -6716,6 +6831,7 @@ Rec: ABL_HERO_HANDOSTILLOR_PRAYFORALL
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Gain extra AP
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -6727,6 +6843,7 @@ Rec: ABL_HERO_HANDOSTILLOR_PRAYFORALL
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -6829,6 +6946,7 @@ Rec: ABL_HERO_HANDOSTILLOR_PURIFY
 	CureSleep = FALSE
 	CureUndead = TRUE
 	Desc = Cure all status changes
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -6840,6 +6958,7 @@ Rec: ABL_HERO_HANDOSTILLOR_PURIFY
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -6942,6 +7061,7 @@ Rec: ABL_HERO_HANDOSTILLOR_RECOVER
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Strong healing spell
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -6953,6 +7073,7 @@ Rec: ABL_HERO_HANDOSTILLOR_RECOVER
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -7055,6 +7176,7 @@ Rec: ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Remove paralysis on the entire party
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -7066,6 +7188,7 @@ Rec: ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -7168,6 +7291,7 @@ Rec: ABL_HERO_HANDOSTILLOR_RESURRECT
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Full health to KO'ed character
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -7179,6 +7303,7 @@ Rec: ABL_HERO_HANDOSTILLOR_RESURRECT
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -7281,6 +7406,7 @@ Rec: ABL_HERO_HANDOSTILLOR_REVIVE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Revive KO'ed character
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -7292,6 +7418,7 @@ Rec: ABL_HERO_HANDOSTILLOR_REVIVE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -7394,6 +7521,7 @@ Rec: ABL_HERO_HANDOSTILLOR_SMITE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Light attack on one target
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -7405,6 +7533,7 @@ Rec: ABL_HERO_HANDOSTILLOR_SMITE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -7507,6 +7636,7 @@ Rec: ABL_HERO_HANDOSTILLOR_STICKSWING
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Attacks one enemy
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -7518,6 +7648,7 @@ Rec: ABL_HERO_HANDOSTILLOR_STICKSWING
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -7620,6 +7751,7 @@ Rec: ABL_HERO_HANDOSTILLOR_TREATMENT
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Weniaria can heal small wounds over and over
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -7631,6 +7763,7 @@ Rec: ABL_HERO_HANDOSTILLOR_TREATMENT
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -7733,6 +7866,7 @@ Rec: ABL_HERO_HANDOSTILLOR_TWINKLE
 	CureSleep = FALSE
 	CureUndead = TRUE
 	Desc = Heal everybody a little bit over time
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -7744,6 +7878,7 @@ Rec: ABL_HERO_HANDOSTILLOR_TWINKLE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -7846,6 +7981,7 @@ Rec: ABL_HERO_HANDOSTILLOR_VITALIZE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Strong healing spell on the entire party
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -7857,6 +7993,7 @@ Rec: ABL_HERO_HANDOSTILLOR_VITALIZE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -7959,6 +8096,7 @@ Rec: ABL_HERO_HANDOSTILLOR_WHIZZY
 	CureSleep = TRUE
 	CureUndead = TRUE
 	Desc = Heals everything there is to be healed
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -7970,6 +8108,7 @@ Rec: ABL_HERO_HANDOSTILLOR_WHIZZY
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -8072,6 +8211,7 @@ Rec: ABL_HERO_JAKE_2PS
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Double-Double-Toil-And-Trouble
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -8083,6 +8223,7 @@ Rec: ABL_HERO_JAKE_2PS
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -8185,6 +8326,7 @@ Rec: ABL_HERO_JAKE_3PS
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = All good things come in three
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -8196,6 +8338,7 @@ Rec: ABL_HERO_JAKE_3PS
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -8298,6 +8441,7 @@ Rec: ABL_HERO_JAKE_4PS
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = I got a little present FOUR you
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -8309,6 +8453,7 @@ Rec: ABL_HERO_JAKE_4PS
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -8411,6 +8556,7 @@ Rec: ABL_HERO_JAKE_BERSERK
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Rage at the world! Just rage!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -8422,6 +8568,7 @@ Rec: ABL_HERO_JAKE_BERSERK
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -8524,6 +8671,7 @@ Rec: ABL_HERO_JAKE_EARTHSLICE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Cut the Earth in two!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -8535,6 +8683,7 @@ Rec: ABL_HERO_JAKE_EARTHSLICE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -8637,6 +8786,7 @@ Rec: ABL_HERO_JAKE_FLAMEBLADE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Blade of Fire
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -8648,6 +8798,7 @@ Rec: ABL_HERO_JAKE_FLAMEBLADE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -8750,6 +8901,7 @@ Rec: ABL_HERO_JAKE_HEALBLADE
 	CureSleep = TRUE
 	CureUndead = TRUE
 	Desc = Heals HP and cures status changes
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -8761,6 +8913,7 @@ Rec: ABL_HERO_JAKE_HEALBLADE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -8863,6 +9016,7 @@ Rec: ABL_HERO_JAKE_SHIFT_FAIRY
 	CureSleep = 
 	CureUndead = FALSE
 	Desc = Become a Fairy
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -8874,6 +9028,7 @@ Rec: ABL_HERO_JAKE_SHIFT_FAIRY
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -8976,6 +9131,7 @@ Rec: ABL_HERO_JAKE_SHIFT_HUMAN
 	CureSleep = 
 	CureUndead = FALSE
 	Desc = Become a Human
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -8987,6 +9143,7 @@ Rec: ABL_HERO_JAKE_SHIFT_HUMAN
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -9089,6 +9246,7 @@ Rec: ABL_HERO_MARRILONA_1953
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = World of water, where you swim to the other side
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -9100,6 +9258,7 @@ Rec: ABL_HERO_MARRILONA_1953
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -9202,6 +9361,7 @@ Rec: ABL_HERO_MARRILONA_BIO
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Poisons the enemy
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -9213,6 +9373,7 @@ Rec: ABL_HERO_MARRILONA_BIO
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -9315,6 +9476,7 @@ Rec: ABL_HERO_MARRILONA_BREEZE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Blow, storm! Blow!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -9326,6 +9488,7 @@ Rec: ABL_HERO_MARRILONA_BREEZE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -9428,6 +9591,7 @@ Rec: ABL_HERO_MARRILONA_CHILL
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Let it go! Let it go!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -9439,6 +9603,7 @@ Rec: ABL_HERO_MARRILONA_CHILL
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -9541,6 +9706,7 @@ Rec: ABL_HERO_MARRILONA_CURSEDHEALING
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Heals enemy, but ....
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -9552,6 +9718,7 @@ Rec: ABL_HERO_MARRILONA_CURSEDHEALING
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -9654,6 +9821,7 @@ Rec: ABL_HERO_MARRILONA_ELECTROCUTION
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Electricity shall now pass through your body untill you are dead
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -9665,6 +9833,7 @@ Rec: ABL_HERO_MARRILONA_ELECTROCUTION
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -9767,6 +9936,7 @@ Rec: ABL_HERO_MARRILONA_EMPOWER
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Get much more power
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -9778,6 +9948,7 @@ Rec: ABL_HERO_MARRILONA_EMPOWER
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -9880,6 +10051,7 @@ Rec: ABL_HERO_MARRILONA_ETERNALFLAME
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Is this turn-in, an eternal flame?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -9891,6 +10063,7 @@ Rec: ABL_HERO_MARRILONA_ETERNALFLAME
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -9993,6 +10166,7 @@ Rec: ABL_HERO_MARRILONA_FIREBLAST
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Burn, baby, burn!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -10004,6 +10178,7 @@ Rec: ABL_HERO_MARRILONA_FIREBLAST
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -10106,6 +10281,7 @@ Rec: ABL_HERO_MARRILONA_FLAME
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = We didn't start a fire!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -10117,6 +10293,7 @@ Rec: ABL_HERO_MARRILONA_FLAME
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -10219,6 +10396,7 @@ Rec: ABL_HERO_MARRILONA_HEAL
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Nurse Marrilona ready
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -10230,6 +10408,7 @@ Rec: ABL_HERO_MARRILONA_HEAL
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -10332,6 +10511,7 @@ Rec: ABL_HERO_MARRILONA_HURRICANE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Blow, storm! Blow!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -10343,6 +10523,7 @@ Rec: ABL_HERO_MARRILONA_HURRICANE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -10445,6 +10626,7 @@ Rec: ABL_HERO_MARRILONA_ICEBLAST
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = You're as cold as ice!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -10456,6 +10638,7 @@ Rec: ABL_HERO_MARRILONA_ICEBLAST
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -10558,6 +10741,7 @@ Rec: ABL_HERO_MARRILONA_INFERNO
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = We don't need no water, let the mother$(@*#@ burn!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -10569,6 +10753,7 @@ Rec: ABL_HERO_MARRILONA_INFERNO
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -10671,6 +10856,7 @@ Rec: ABL_HERO_MARRILONA_MEDITATION
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Wait for the magic shower
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -10682,6 +10868,7 @@ Rec: ABL_HERO_MARRILONA_MEDITATION
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -10784,6 +10971,7 @@ Rec: ABL_HERO_MARRILONA_PERMANENCE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Stops the power of buffs going down
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -10795,6 +10983,7 @@ Rec: ABL_HERO_MARRILONA_PERMANENCE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -10897,6 +11086,7 @@ Rec: ABL_HERO_MARRILONA_PROTECT
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Raises endurance a little
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -10908,6 +11098,7 @@ Rec: ABL_HERO_MARRILONA_PROTECT
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -11010,6 +11201,7 @@ Rec: ABL_HERO_MARRILONA_QUAKE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = It's the arockalypse, now bear your soul
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -11021,6 +11213,7 @@ Rec: ABL_HERO_MARRILONA_QUAKE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -11123,6 +11316,7 @@ Rec: ABL_HERO_MARRILONA_ROCK
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Rolling Stones
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -11134,6 +11328,7 @@ Rec: ABL_HERO_MARRILONA_ROCK
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -11236,6 +11431,7 @@ Rec: ABL_HERO_MARRILONA_SPEEDUP
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Adds 3 cards of the targeted ally
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -11247,6 +11443,7 @@ Rec: ABL_HERO_MARRILONA_SPEEDUP
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -11349,6 +11546,7 @@ Rec: ABL_HERO_MARRILONA_SPLASH
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Water is coming
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -11360,6 +11558,7 @@ Rec: ABL_HERO_MARRILONA_SPLASH
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -11462,6 +11661,7 @@ Rec: ABL_HERO_MARRILONA_STONE2FLESH
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Cures "Petrification"
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -11473,6 +11673,7 @@ Rec: ABL_HERO_MARRILONA_STONE2FLESH
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -11575,6 +11776,7 @@ Rec: ABL_HERO_MARRILONA_TSUNAMI
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = World of water, where you swim to the other side
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -11586,6 +11788,7 @@ Rec: ABL_HERO_MARRILONA_TSUNAMI
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -11688,6 +11891,7 @@ Rec: ABL_HERO_MARRILONA_ZAP
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Electric Boogie!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -11699,6 +11903,7 @@ Rec: ABL_HERO_MARRILONA_ZAP
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -11801,6 +12006,7 @@ Rec: ABL_JUGGERNAUT_DONALDTRUMP
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -11812,6 +12018,7 @@ Rec: ABL_JUGGERNAUT_DONALDTRUMP
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -11849,7 +12056,7 @@ Rec: ABL_JUGGERNAUT_DONALDTRUMP
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
-	Target = AA
+	Target = 1A
 	Title = Donald Trump
 	Type = Item
 	USE_Penalty = 0
@@ -11914,6 +12121,7 @@ Rec: ABL_JUGGERNAUT_MAY
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -11925,6 +12133,7 @@ Rec: ABL_JUGGERNAUT_MAY
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -12027,6 +12236,7 @@ Rec: ABL_MASTER_FANDALORA_CURSE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Curses one enemy
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -12038,6 +12248,7 @@ Rec: ABL_MASTER_FANDALORA_CURSE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -12140,6 +12351,7 @@ Rec: ABL_MASTER_FANDALORA_DARKNESS
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Dark attack
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -12151,6 +12363,7 @@ Rec: ABL_MASTER_FANDALORA_DARKNESS
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -12253,6 +12466,7 @@ Rec: ABL_MASTER_FANDALORA_DARKVISION
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Dark attack to all. Causes confusion.
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -12264,6 +12478,7 @@ Rec: ABL_MASTER_FANDALORA_DARKVISION
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -12366,6 +12581,7 @@ Rec: ABL_MASTER_FANDALORA_DEATH
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Kill one enemy instantly
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -12377,6 +12593,7 @@ Rec: ABL_MASTER_FANDALORA_DEATH
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -12479,6 +12696,7 @@ Rec: ABL_MASTER_FANDALORA_PHANTOM
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Dark attack to all
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -12490,6 +12708,7 @@ Rec: ABL_MASTER_FANDALORA_PHANTOM
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -12592,6 +12811,7 @@ Rec: ABL_MASTER_FANDALORA_REMOVECURSE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Removes a curse from one ally
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -12603,6 +12823,7 @@ Rec: ABL_MASTER_FANDALORA_REMOVECURSE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -12705,6 +12926,7 @@ Rec: ABL_MASTER_FANDALORA_VOID
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Remove all enemies (no effect on bosses).
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -12716,6 +12938,7 @@ Rec: ABL_MASTER_FANDALORA_VOID
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -12818,6 +13041,7 @@ Rec: ABL_MASTER_FEENA_CHARIBDIS
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -12829,6 +13053,7 @@ Rec: ABL_MASTER_FEENA_CHARIBDIS
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -12931,6 +13156,7 @@ Rec: ABL_MASTER_FEENA_COCYTUS
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Adds the four rounds of the frozen lake of hell
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -12942,6 +13168,7 @@ Rec: ABL_MASTER_FEENA_COCYTUS
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -13044,6 +13271,7 @@ Rec: ABL_MASTER_FEENA_DROWN
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = World of water, where you swim to the other side
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -13055,6 +13283,7 @@ Rec: ABL_MASTER_FEENA_DROWN
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -13157,6 +13386,7 @@ Rec: ABL_MASTER_FEENA_FULLPOWER
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Full recovery (3 hrs cooldown)
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -13168,6 +13398,7 @@ Rec: ABL_MASTER_FEENA_FULLPOWER
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -13270,6 +13501,7 @@ Rec: ABL_MASTER_FEENA_KATRINA
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Blow, storm! Blow!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -13281,6 +13513,7 @@ Rec: ABL_MASTER_FEENA_KATRINA
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -13383,6 +13616,7 @@ Rec: ABL_MASTER_FEENA_MAGMABLAST
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Fresh Magma.
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -13394,6 +13628,7 @@ Rec: ABL_MASTER_FEENA_MAGMABLAST
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -13496,6 +13731,7 @@ Rec: ABL_MASTER_FEENA_MEGAQUAKE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = It's the arockalypse, now bear your soul
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -13507,6 +13743,7 @@ Rec: ABL_MASTER_FEENA_MEGAQUAKE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -13609,6 +13846,7 @@ Rec: ABL_MASTER_FEENA_SCYLLA
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Non-elemental attack -- Adds Card: Charibdis
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -13620,6 +13858,7 @@ Rec: ABL_MASTER_FEENA_SCYLLA
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -13722,6 +13961,7 @@ Rec: ABL_MASTER_FREYA_REJUVENATE
 	CureSleep = 
 	CureUndead = FALSE
 	Desc = See me, feel me, touch me, heal me.
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -13733,6 +13973,7 @@ Rec: ABL_MASTER_FREYA_REJUVENATE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -13835,6 +14076,7 @@ Rec: ABL_MASTER_FREYA_ULTRAHEAL
 	CureSleep = 
 	CureUndead = TRUE
 	Desc = A good healt is your best asset
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -13846,6 +14088,7 @@ Rec: ABL_MASTER_FREYA_ULTRAHEAL
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -13948,6 +14191,7 @@ Rec: ABL_MASTER_FREYA_VIGOR
 	CureSleep = 
 	CureUndead = FALSE
 	Desc = Heal, boy! Heal!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -13959,6 +14203,7 @@ Rec: ABL_MASTER_FREYA_VIGOR
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -14061,6 +14306,7 @@ Rec: ABL_MASTER_KRANDAR_5PS
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Five nights at Krandar's
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -14072,6 +14318,7 @@ Rec: ABL_MASTER_KRANDAR_5PS
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -14174,6 +14421,7 @@ Rec: ABL_MASTER_KRANDAR_6PS
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = The "six" culture
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -14185,6 +14433,7 @@ Rec: ABL_MASTER_KRANDAR_6PS
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -14287,6 +14536,7 @@ Rec: ABL_MASTER_KRANDAR_7PS
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Good luck for you and bad luck for the enemy
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -14298,6 +14548,7 @@ Rec: ABL_MASTER_KRANDAR_7PS
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -14400,6 +14651,7 @@ Rec: ABL_MASTER_KRANDAR_CATASTROPHE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Everyone will DIE!!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -14411,6 +14663,7 @@ Rec: ABL_MASTER_KRANDAR_CATASTROPHE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -14513,6 +14766,7 @@ Rec: ABL_MASTER_KRANDAR_CHARGE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Dandor unstoppable
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -14524,6 +14778,7 @@ Rec: ABL_MASTER_KRANDAR_CHARGE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -14626,6 +14881,7 @@ Rec: ABL_MASTER_KRANDAR_HOLYSHIT
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = You stink, Your Holiness
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -14637,6 +14893,7 @@ Rec: ABL_MASTER_KRANDAR_HOLYSHIT
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -14739,6 +14996,7 @@ Rec: ABL_MASTER_MIDAS_HARDFORTHEMONEY
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Force enemy to drop money in stead of items
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -14750,6 +15008,7 @@ Rec: ABL_MASTER_MIDAS_HARDFORTHEMONEY
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -14852,6 +15111,7 @@ Rec: ABL_MASTER_MIDAS_STEALMONEY
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Steal money. Enemy may still drop items.
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -14863,6 +15123,7 @@ Rec: ABL_MASTER_MIDAS_STEALMONEY
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -14965,6 +15226,7 @@ Rec: ABL_MASTER_RUBINE_BACKSTAB
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Removes all cards of a specific foe
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -14976,6 +15238,7 @@ Rec: ABL_MASTER_RUBINE_BACKSTAB
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -15078,6 +15341,7 @@ Rec: ABL_MASTER_RUBINE_FOLLOWME
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = All allies get an extra card at the first free available spot
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -15089,6 +15353,7 @@ Rec: ABL_MASTER_RUBINE_FOLLOWME
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -15191,6 +15456,7 @@ Rec: ABL_MASTER_RUBINE_INVADE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Adds two cards to the card gauge
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -15202,6 +15468,7 @@ Rec: ABL_MASTER_RUBINE_INVADE
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -15304,6 +15571,7 @@ Rec: ABL_MASTER_RUBINE_PICKPOCKET
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Steal items from your enemy
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -15315,6 +15583,7 @@ Rec: ABL_MASTER_RUBINE_PICKPOCKET
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -15417,6 +15686,7 @@ Rec: ABL_MASTER_RUBINE_POISONSTAB
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = I wanna taste you but your lips so venomous, POISON!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -15428,6 +15698,7 @@ Rec: ABL_MASTER_RUBINE_POISONSTAB
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -15530,6 +15801,7 @@ Rec: ABL_MASTER_RUSSELL_DECAPITATE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Attack which may kill instantly
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -15541,6 +15813,7 @@ Rec: ABL_MASTER_RUSSELL_DECAPITATE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -15643,6 +15916,7 @@ Rec: ABL_MASTER_RUSSELL_GENOCIDE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Kill all your enemies
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -15654,6 +15928,7 @@ Rec: ABL_MASTER_RUSSELL_GENOCIDE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -15756,6 +16031,7 @@ Rec: ABL_MASTER_RUSSELL_SAFESHOT
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Same Damage Always. Penetrates defenses
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -15767,6 +16043,7 @@ Rec: ABL_MASTER_RUSSELL_SAFESHOT
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -15869,6 +16146,7 @@ Rec: ABL_SPECIAL_DRAGONDOWN
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -15880,6 +16158,7 @@ Rec: ABL_SPECIAL_DRAGONDOWN
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -15982,6 +16261,7 @@ Rec: ABL_SPECIAL_INSTABILITY
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -15993,6 +16273,7 @@ Rec: ABL_SPECIAL_INSTABILITY
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -16095,6 +16376,7 @@ Rec: AUTO_NOODHULP
 	CureSleep = TRUE
 	CureUndead = TRUE
 	Desc = Heal when needed
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -16106,6 +16388,7 @@ Rec: AUTO_NOODHULP
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -16208,6 +16491,7 @@ Rec: BERSERK_ATTACK
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Attack
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -16219,6 +16503,7 @@ Rec: BERSERK_ATTACK
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -16321,6 +16606,7 @@ Rec: COCYTUS_ANTENORA
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -16332,6 +16618,7 @@ Rec: COCYTUS_ANTENORA
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -16434,6 +16721,7 @@ Rec: COCYTUS_CAINA
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -16445,6 +16733,7 @@ Rec: COCYTUS_CAINA
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -16547,6 +16836,7 @@ Rec: COCYTUS_JUDECCA
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -16558,6 +16848,7 @@ Rec: COCYTUS_JUDECCA
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -16660,6 +16951,7 @@ Rec: COCYTUS_PTOLOMEA
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -16671,6 +16963,7 @@ Rec: COCYTUS_PTOLOMEA
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -16773,6 +17066,7 @@ Rec: EQP_ACC_AAA_NOSTRAMANTUS_AMULET
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Now this is POWER!!
+	EQP_STAT_AP = 125
 	EQP_STAT_Accuracy = 100
 	EQP_STAT_ER_Darkness = 200
 	EQP_STAT_ER_Earth = 200
@@ -16784,6 +17078,7 @@ Rec: EQP_ACC_AAA_NOSTRAMANTUS_AMULET
 	EQP_STAT_ER_Wind = 200
 	EQP_STAT_Endurance = 100
 	EQP_STAT_Evasion = 100
+	EQP_STAT_HP = 500
 	EQP_STAT_Intelligence = 100
 	EQP_STAT_Power = 100
 	EQP_STAT_Resistance = 100
@@ -16823,6 +17118,121 @@ Rec: EQP_ACC_AAA_NOSTRAMANTUS_AMULET
 	Stance = Cast
 	Target = 1F
 	Title = Nostramantu's Amulet
+	Type = Item
+	USE_Penalty = 0
+	Voice = 
+	rew_CreateSkill1 = FALSE
+	rew_CreateSkill2 = FALSE
+	rew_CreateSkill3 = FALSE
+	rew_CreateSkill4 = FALSE
+	rew_CreateSkill5 = FALSE
+	rew_GainSkill1 = 0
+	rew_GainSkill2 = 0
+	rew_GainSkill3 = 0
+	rew_GainSkill4 = 0
+	rew_GainSkill5 = 0
+
+Rec: EQP_ACC_AMULETLIFE
+	ABL_APCost = 0
+	ABL_HPCost = 0
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 5
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 5
+	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
+	Attack = 0
+	Attack_AccuracyRate = 100
+	Attack_AllowAccuracy = FALSE
+	Attack_AllowCritical = FALSE
+	Attack_AllowDodge = FALSE
+	Attack_AttackStat = Power
+	Attack_DefenseStat = Endurance
+	Attack_Desperate = FALSE
+	Attack_Element = None
+	BUFF_Accuracy = 0
+	BUFF_Endurance = 0
+	BUFF_Evasion = 0
+	BUFF_Intelligence = 0
+	BUFF_Power = 0
+	BUFF_Resistance = 0
+	BUFF_Speed = 0
+	CauseBerserk = FALSE
+	CauseConfusion = FALSE
+	CauseCurse = FALSE
+	CauseDeath = FALSE
+	CauseDisease = FALSE
+	CauseGuarding = FALSE
+	CauseIDDQD = FALSE
+	CauseParalysis = FALSE
+	CausePermanence = FALSE
+	CausePetrification = FALSE
+	CausePoison = FALSE
+	CauseSilence = FALSE
+	CauseSleep = FALSE
+	CauseUndead = FALSE
+	CureCurse = FALSE
+	CureDisease = FALSE
+	CureParalysis = FALSE
+	CurePetrification = FALSE
+	CurePoison = FALSE
+	CureSilence = FALSE
+	CureSleep = FALSE
+	CureUndead = FALSE
+	Desc = Raises Max HP by 1200
+	EQP_STAT_AP = 0
+	EQP_STAT_Accuracy = 0
+	EQP_STAT_ER_Darkness = 0
+	EQP_STAT_ER_Earth = 0
+	EQP_STAT_ER_Flame = 0
+	EQP_STAT_ER_Frost = 0
+	EQP_STAT_ER_Light = 0
+	EQP_STAT_ER_Lightning = 0
+	EQP_STAT_ER_Water = 0
+	EQP_STAT_ER_Wind = 0
+	EQP_STAT_Endurance = 0
+	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 1200
+	EQP_STAT_Intelligence = 0
+	EQP_STAT_Power = 0
+	EQP_STAT_Resistance = 0
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
+	EffectScript = 
+	EffectScript_Arg = 
+	EffectScript_External = FALSE
+	Heal = 0
+	Heal_StatPercent = Intelligence
+	Heal_Type = Absolute
+	ITM_ACC_Dandor = TRUE
+	ITM_ACC_HandoStillor = TRUE
+	ITM_ACC_Jake = TRUE
+	ITM_ACC_Marrilona = TRUE
+	ITM_BlackMarket = FALSE
+	ITM_Combat = TRUE
+	ITM_EQP_For = Jake
+	ITM_Field = TRUE
+	ITM_Sellable = TRUE
+	ITM_ShopPrice = 0
+	ITM_Type = Accesoiry
+	ITM_WeaponAbility = FALSE
+	Revive = FALSE
+	Rew_GainAP = 0
+	SpellAni = 
+	SpellAni_Arg = 
+	SpellAni_External = FALSE
+	Stance = Cast
+	Target = 1F
+	Title = Amulet of life
 	Type = Item
 	USE_Penalty = 0
 	Voice = 
@@ -16886,6 +17296,7 @@ Rec: EQP_ACC_RINGEARTH
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Protects wearer against earth
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 100
@@ -16897,6 +17308,7 @@ Rec: EQP_ACC_RINGEARTH
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -16999,6 +17411,7 @@ Rec: EQP_ACC_RINGFIRE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Protects wearer against fire
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -17010,6 +17423,7 @@ Rec: EQP_ACC_RINGFIRE
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -17049,6 +17463,121 @@ Rec: EQP_ACC_RINGFIRE
 	Stance = Cast
 	Target = 1F
 	Title = Ring "Hum"
+	Type = Item
+	USE_Penalty = 0
+	Voice = 
+	rew_CreateSkill1 = FALSE
+	rew_CreateSkill2 = FALSE
+	rew_CreateSkill3 = FALSE
+	rew_CreateSkill4 = FALSE
+	rew_CreateSkill5 = FALSE
+	rew_GainSkill1 = 0
+	rew_GainSkill2 = 0
+	rew_GainSkill3 = 0
+	rew_GainSkill4 = 0
+	rew_GainSkill5 = 0
+
+Rec: EQP_ACC_RINGSKILL
+	ABL_APCost = 0
+	ABL_HPCost = 0
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 5
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 5
+	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
+	Attack = 0
+	Attack_AccuracyRate = 100
+	Attack_AllowAccuracy = FALSE
+	Attack_AllowCritical = FALSE
+	Attack_AllowDodge = FALSE
+	Attack_AttackStat = Power
+	Attack_DefenseStat = Endurance
+	Attack_Desperate = FALSE
+	Attack_Element = None
+	BUFF_Accuracy = 0
+	BUFF_Endurance = 0
+	BUFF_Evasion = 0
+	BUFF_Intelligence = 0
+	BUFF_Power = 0
+	BUFF_Resistance = 0
+	BUFF_Speed = 0
+	CauseBerserk = FALSE
+	CauseConfusion = FALSE
+	CauseCurse = FALSE
+	CauseDeath = FALSE
+	CauseDisease = FALSE
+	CauseGuarding = FALSE
+	CauseIDDQD = FALSE
+	CauseParalysis = FALSE
+	CausePermanence = FALSE
+	CausePetrification = FALSE
+	CausePoison = FALSE
+	CauseSilence = FALSE
+	CauseSleep = FALSE
+	CauseUndead = FALSE
+	CureCurse = FALSE
+	CureDisease = FALSE
+	CureParalysis = FALSE
+	CurePetrification = FALSE
+	CurePoison = FALSE
+	CureSilence = FALSE
+	CureSleep = FALSE
+	CureUndead = FALSE
+	Desc = Raises Max AP by 500
+	EQP_STAT_AP = 500
+	EQP_STAT_Accuracy = 0
+	EQP_STAT_ER_Darkness = 0
+	EQP_STAT_ER_Earth = 0
+	EQP_STAT_ER_Flame = 0
+	EQP_STAT_ER_Frost = 0
+	EQP_STAT_ER_Light = 0
+	EQP_STAT_ER_Lightning = 0
+	EQP_STAT_ER_Water = 0
+	EQP_STAT_ER_Wind = 0
+	EQP_STAT_Endurance = 0
+	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 0
+	EQP_STAT_Intelligence = 0
+	EQP_STAT_Power = 0
+	EQP_STAT_Resistance = 0
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
+	EffectScript = 
+	EffectScript_Arg = 
+	EffectScript_External = FALSE
+	Heal = 0
+	Heal_StatPercent = Intelligence
+	Heal_Type = Absolute
+	ITM_ACC_Dandor = TRUE
+	ITM_ACC_HandoStillor = TRUE
+	ITM_ACC_Jake = TRUE
+	ITM_ACC_Marrilona = TRUE
+	ITM_BlackMarket = FALSE
+	ITM_Combat = TRUE
+	ITM_EQP_For = Jake
+	ITM_Field = TRUE
+	ITM_Sellable = TRUE
+	ITM_ShopPrice = 0
+	ITM_Type = Accesoiry
+	ITM_WeaponAbility = FALSE
+	Revive = FALSE
+	Rew_GainAP = 0
+	SpellAni = 
+	SpellAni_Arg = 
+	SpellAni_External = FALSE
+	Stance = Cast
+	Target = 1F
+	Title = Ring of skills
 	Type = Item
 	USE_Penalty = 0
 	Voice = 
@@ -17112,6 +17641,7 @@ Rec: EQP_ACC_RINGTYRANT
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Raises power, but lowers defense
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 200
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -17123,6 +17653,7 @@ Rec: EQP_ACC_RINGTYRANT
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = -1200
 	EQP_STAT_Evasion = -200
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 1200
 	EQP_STAT_Resistance = 0
@@ -17225,6 +17756,7 @@ Rec: EQP_ACC_RINGWATER
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Protects wearer against water
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -17236,6 +17768,7 @@ Rec: EQP_ACC_RINGWATER
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -17338,6 +17871,7 @@ Rec: EQP_ACC_RINGWIND
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Protects wearer against wind
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -17349,6 +17883,7 @@ Rec: EQP_ACC_RINGWIND
 	EQP_STAT_ER_Wind = 100
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -17451,6 +17986,7 @@ Rec: EQP_ACC_TITANBELT
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = The power of a titan
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -17462,6 +17998,7 @@ Rec: EQP_ACC_TITANBELT
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 20
 	EQP_STAT_Resistance = 0
@@ -17547,7 +18084,7 @@ Rec: EQP_ACC_WIZARDRING
 	CauseDeath = FALSE
 	CauseDisease = FALSE
 	CauseGuarding = FALSE
-	CauseIDDQD = 
+	CauseIDDQD = FALSE
 	CauseParalysis = FALSE
 	CausePermanence = FALSE
 	CausePetrification = FALSE
@@ -17564,17 +18101,19 @@ Rec: EQP_ACC_WIZARDRING
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = *The* ring to boost magic power
+	EQP_STAT_AP = 300
 	EQP_STAT_Accuracy = 0
-	EQP_STAT_ER_Darkness = 
-	EQP_STAT_ER_Earth = 
-	EQP_STAT_ER_Flame = 
-	EQP_STAT_ER_Frost = 
-	EQP_STAT_ER_Light = 
-	EQP_STAT_ER_Lightning = 
-	EQP_STAT_ER_Water = 
-	EQP_STAT_ER_Wind = 
+	EQP_STAT_ER_Darkness = 0
+	EQP_STAT_ER_Earth = 0
+	EQP_STAT_ER_Flame = 0
+	EQP_STAT_ER_Frost = 0
+	EQP_STAT_ER_Light = 0
+	EQP_STAT_ER_Lightning = 0
+	EQP_STAT_ER_Water = 0
+	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 0
 	EQP_STAT_Intelligence = 75
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -17677,6 +18216,7 @@ Rec: EQP_DANDOR_CURSEDWP_HUNGERAXE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Extremly strong axe. Good for training. Drains user's life
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -17688,6 +18228,7 @@ Rec: EQP_DANDOR_CURSEDWP_HUNGERAXE
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -17790,6 +18331,7 @@ Rec: EQP_DANDOR_TRAINAXE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Useless or ...?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -17801,6 +18343,7 @@ Rec: EQP_DANDOR_TRAINAXE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -17903,6 +18446,7 @@ Rec: EQP_DANDOR_WP1
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Just an axe
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -17914,6 +18458,7 @@ Rec: EQP_DANDOR_WP1
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 4
 	EQP_STAT_Resistance = 0
@@ -18016,6 +18561,7 @@ Rec: EQP_DANDOR_WP10
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Me Strong You Dead!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -18027,6 +18573,7 @@ Rec: EQP_DANDOR_WP10
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 40
 	EQP_STAT_Resistance = 0
@@ -18129,6 +18676,7 @@ Rec: EQP_DANDOR_WP2
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Just a battleax
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -18140,6 +18688,7 @@ Rec: EQP_DANDOR_WP2
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 8
 	EQP_STAT_Resistance = 0
@@ -18242,6 +18791,7 @@ Rec: EQP_DANDOR_WP3
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = It's big!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -18253,6 +18803,7 @@ Rec: EQP_DANDOR_WP3
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 12
 	EQP_STAT_Resistance = 0
@@ -18355,6 +18906,7 @@ Rec: EQP_DANDOR_WP4
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Yeah... great
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -18366,6 +18918,7 @@ Rec: EQP_DANDOR_WP4
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 16
 	EQP_STAT_Resistance = 0
@@ -18468,6 +19021,7 @@ Rec: EQP_DANDOR_WP5
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Oh my!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -18479,6 +19033,7 @@ Rec: EQP_DANDOR_WP5
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 20
 	EQP_STAT_Resistance = 0
@@ -18581,6 +19136,7 @@ Rec: EQP_DANDOR_WP6
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Really a dangerous toy
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -18592,6 +19148,7 @@ Rec: EQP_DANDOR_WP6
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 24
 	EQP_STAT_Resistance = 0
@@ -18694,6 +19251,7 @@ Rec: EQP_DANDOR_WP7
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Dandor crush enemy
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -18705,6 +19263,7 @@ Rec: EQP_DANDOR_WP7
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 28
 	EQP_STAT_Resistance = 0
@@ -18807,6 +19366,7 @@ Rec: EQP_DANDOR_WP8
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = GRRR!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -18818,6 +19378,7 @@ Rec: EQP_DANDOR_WP8
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 32
 	EQP_STAT_Resistance = 0
@@ -18920,6 +19481,7 @@ Rec: EQP_DANDOR_WP9
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Wow!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -18931,6 +19493,7 @@ Rec: EQP_DANDOR_WP9
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 36
 	EQP_STAT_Resistance = 0
@@ -19033,6 +19596,7 @@ Rec: EQP_HANDOSTILLOR_AR1
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Never seen a shirt before?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -19044,6 +19608,7 @@ Rec: EQP_HANDOSTILLOR_AR1
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 1
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 1
@@ -19146,6 +19711,7 @@ Rec: EQP_HANDOSTILLOR_AR10
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Now this is the stuff
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 25
 	EQP_STAT_ER_Earth = 0
@@ -19157,6 +19723,7 @@ Rec: EQP_HANDOSTILLOR_AR10
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 10
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 10
@@ -19259,6 +19826,7 @@ Rec: EQP_HANDOSTILLOR_AR2
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Seems to be blessed
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -19270,6 +19838,7 @@ Rec: EQP_HANDOSTILLOR_AR2
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 2
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 2
@@ -19372,6 +19941,7 @@ Rec: EQP_HANDOSTILLOR_AR3
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Is green really the color of nature?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -19383,6 +19953,7 @@ Rec: EQP_HANDOSTILLOR_AR3
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 3
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 3
@@ -19485,6 +20056,7 @@ Rec: EQP_HANDOSTILLOR_AR4
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = For some reason only a priest may wear this.
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -19496,6 +20068,7 @@ Rec: EQP_HANDOSTILLOR_AR4
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 4
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 4
@@ -19598,6 +20171,7 @@ Rec: EQP_HANDOSTILLOR_AR5
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Protects you, right?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -19609,6 +20183,7 @@ Rec: EQP_HANDOSTILLOR_AR5
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 5
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 5
@@ -19711,6 +20286,7 @@ Rec: EQP_HANDOSTILLOR_AR6
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Is it really that strong, or is this overrated?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -19722,6 +20298,7 @@ Rec: EQP_HANDOSTILLOR_AR6
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 6
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 6
@@ -19824,6 +20401,7 @@ Rec: EQP_HANDOSTILLOR_AR7
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = It comes with plusses?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -19835,6 +20413,7 @@ Rec: EQP_HANDOSTILLOR_AR7
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 7
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 7
@@ -19937,6 +20516,7 @@ Rec: EQP_HANDOSTILLOR_AR8
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Well we were all tired of Lucy in the sky
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -19948,6 +20528,7 @@ Rec: EQP_HANDOSTILLOR_AR8
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 8
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 8
@@ -20050,6 +20631,7 @@ Rec: EQP_HANDOSTILLOR_AR9
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = You look important, Your Holiness
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -20061,6 +20643,7 @@ Rec: EQP_HANDOSTILLOR_AR9
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 9
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 9
@@ -20163,6 +20746,7 @@ Rec: EQP_HANDOSTILLOR_CURSEDWP_ZOMBIESTAFF
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Drains life from undead. Great for training. Turns user into undead
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = -25
 	EQP_STAT_ER_Earth = 0
@@ -20174,6 +20758,7 @@ Rec: EQP_HANDOSTILLOR_CURSEDWP_ZOMBIESTAFF
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 25
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 250
 	EQP_STAT_Resistance = 0
@@ -20276,6 +20861,7 @@ Rec: EQP_HANDOSTILLOR_SEALWEAPON
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = The best weapon for a priest who stickfights
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 100
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -20287,6 +20873,7 @@ Rec: EQP_HANDOSTILLOR_SEALWEAPON
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 5
 	EQP_STAT_Evasion = 3
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 150
 	EQP_STAT_Power = 300
 	EQP_STAT_Resistance = 3
@@ -20389,6 +20976,7 @@ Rec: EQP_HANDOSTILLOR_TRAINSTAFF
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Useless or ...?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -20400,6 +20988,7 @@ Rec: EQP_HANDOSTILLOR_TRAINSTAFF
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -20502,6 +21091,7 @@ Rec: EQP_HANDOSTILLOR_WP1
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Just a fighting stick
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -20513,6 +21103,7 @@ Rec: EQP_HANDOSTILLOR_WP1
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 2
 	EQP_STAT_Power = 1
 	EQP_STAT_Resistance = 0
@@ -20615,6 +21206,7 @@ Rec: EQP_HANDOSTILLOR_WP10
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = None shall live!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -20626,6 +21218,7 @@ Rec: EQP_HANDOSTILLOR_WP10
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 5
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 20
 	EQP_STAT_Power = 10
 	EQP_STAT_Resistance = 0
@@ -20728,6 +21321,7 @@ Rec: EQP_HANDOSTILLOR_WP2
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = It's longer, so what?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -20739,6 +21333,7 @@ Rec: EQP_HANDOSTILLOR_WP2
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 4
 	EQP_STAT_Power = 2
 	EQP_STAT_Resistance = 0
@@ -20841,6 +21436,7 @@ Rec: EQP_HANDOSTILLOR_WP3
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = I see a priest's staff and I want it painted black!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -20852,6 +21448,7 @@ Rec: EQP_HANDOSTILLOR_WP3
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 6
 	EQP_STAT_Power = 3
 	EQP_STAT_Resistance = 0
@@ -20954,6 +21551,7 @@ Rec: EQP_HANDOSTILLOR_WP4
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Were did people "steel" this? (Drum fill)
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -20965,6 +21563,7 @@ Rec: EQP_HANDOSTILLOR_WP4
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 8
 	EQP_STAT_Power = 4
 	EQP_STAT_Resistance = 0
@@ -21067,6 +21666,7 @@ Rec: EQP_HANDOSTILLOR_WP5
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Holy name. Does it live up to it?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -21078,6 +21678,7 @@ Rec: EQP_HANDOSTILLOR_WP5
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 10
 	EQP_STAT_Power = 5
 	EQP_STAT_Resistance = 0
@@ -21180,6 +21781,7 @@ Rec: EQP_HANDOSTILLOR_WP6
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Strong, right?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -21191,6 +21793,7 @@ Rec: EQP_HANDOSTILLOR_WP6
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 12
 	EQP_STAT_Power = 6
 	EQP_STAT_Resistance = 0
@@ -21293,6 +21896,7 @@ Rec: EQP_HANDOSTILLOR_WP7
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Is this a girl's best friend?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -21304,6 +21908,7 @@ Rec: EQP_HANDOSTILLOR_WP7
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 14
 	EQP_STAT_Power = 7
 	EQP_STAT_Resistance = 0
@@ -21406,6 +22011,7 @@ Rec: EQP_HANDOSTILLOR_WP8
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Should handle some enemies
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -21417,6 +22023,7 @@ Rec: EQP_HANDOSTILLOR_WP8
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 16
 	EQP_STAT_Power = 8
 	EQP_STAT_Resistance = 0
@@ -21519,6 +22126,7 @@ Rec: EQP_HANDOSTILLOR_WP9
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = The enemy would pray you'd miss with this one
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -21530,6 +22138,7 @@ Rec: EQP_HANDOSTILLOR_WP9
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 18
 	EQP_STAT_Power = 9
 	EQP_STAT_Resistance = 0
@@ -21632,6 +22241,7 @@ Rec: EQP_JAKE_AR1
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = A good armor for a beginning warrior
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -21643,6 +22253,7 @@ Rec: EQP_JAKE_AR1
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 2
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -21745,6 +22356,7 @@ Rec: EQP_JAKE_AR10
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Wow, baby! Just wow!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -21756,6 +22368,7 @@ Rec: EQP_JAKE_AR10
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 20
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -21858,6 +22471,7 @@ Rec: EQP_JAKE_AR2
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Goblins may be dumb, but they do know how to tan leather
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -21869,6 +22483,7 @@ Rec: EQP_JAKE_AR2
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 4
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -21971,6 +22586,7 @@ Rec: EQP_JAKE_AR3
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Works quite well when worn
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -21982,6 +22598,7 @@ Rec: EQP_JAKE_AR3
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 6
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -22084,6 +22701,7 @@ Rec: EQP_JAKE_AR4
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Bright as the sun, or so they say
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -22095,6 +22713,7 @@ Rec: EQP_JAKE_AR4
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 8
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -22197,6 +22816,7 @@ Rec: EQP_JAKE_AR5
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Looks great, eh?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -22208,6 +22828,7 @@ Rec: EQP_JAKE_AR5
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 10
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -22310,6 +22931,7 @@ Rec: EQP_JAKE_AR6
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = it looks gross, but it protects its wearer well.
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -22321,6 +22943,7 @@ Rec: EQP_JAKE_AR6
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 12
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -22423,6 +23046,7 @@ Rec: EQP_JAKE_AR7
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Strange name for armor, but I suppose it works
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -22434,6 +23058,7 @@ Rec: EQP_JAKE_AR7
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 14
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -22536,6 +23161,7 @@ Rec: EQP_JAKE_AR8
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Now this is the stuff
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -22547,6 +23173,7 @@ Rec: EQP_JAKE_AR8
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 16
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -22649,6 +23276,7 @@ Rec: EQP_JAKE_AR9
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Will it get any better than this?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -22660,6 +23288,7 @@ Rec: EQP_JAKE_AR9
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 18
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -22762,6 +23391,7 @@ Rec: EQP_JAKE_CURSEDWP_VENOMBLADE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Much damage + poison/death! Great for training! Poisons user.
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -22773,6 +23403,7 @@ Rec: EQP_JAKE_CURSEDWP_VENOMBLADE
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 20
 	EQP_STAT_Resistance = 0
@@ -22875,6 +23506,7 @@ Rec: EQP_JAKE_SEALARMOR
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = These are very rare. Normally nobody uses real dragonskin.
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 4
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -22886,6 +23518,7 @@ Rec: EQP_JAKE_SEALARMOR
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 40
 	EQP_STAT_Evasion = 30
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 10
 	EQP_STAT_Power = 5
 	EQP_STAT_Resistance = 50
@@ -22988,6 +23621,7 @@ Rec: EQP_JAKE_TRAINSWORD
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Useless or ...?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -22999,6 +23633,7 @@ Rec: EQP_JAKE_TRAINSWORD
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -23101,6 +23736,7 @@ Rec: EQP_JAKE_WP1
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = A weapon for a warrior fresh on the field
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -23112,6 +23748,7 @@ Rec: EQP_JAKE_WP1
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 2
 	EQP_STAT_Resistance = 0
@@ -23214,6 +23851,7 @@ Rec: EQP_JAKE_WP10
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Well well well. This is cool :P
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -23225,6 +23863,7 @@ Rec: EQP_JAKE_WP10
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 20
 	EQP_STAT_Resistance = 0
@@ -23327,6 +23966,7 @@ Rec: EQP_JAKE_WP2
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Just a little prick, but still leathal.
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -23338,6 +23978,7 @@ Rec: EQP_JAKE_WP2
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 4
 	EQP_STAT_Resistance = 0
@@ -23440,6 +24081,7 @@ Rec: EQP_JAKE_WP3
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = A great sword for a great warrior
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -23451,6 +24093,7 @@ Rec: EQP_JAKE_WP3
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 6
 	EQP_STAT_Resistance = 0
@@ -23553,6 +24196,7 @@ Rec: EQP_JAKE_WP4
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = No enemy would dare to approach you now!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -23564,6 +24208,7 @@ Rec: EQP_JAKE_WP4
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 8
 	EQP_STAT_Resistance = 0
@@ -23666,6 +24311,7 @@ Rec: EQP_JAKE_WP5
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Winter is coming
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -23677,6 +24323,7 @@ Rec: EQP_JAKE_WP5
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 10
 	EQP_STAT_Resistance = 0
@@ -23779,6 +24426,7 @@ Rec: EQP_JAKE_WP6
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Death is upon you!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -23790,6 +24438,7 @@ Rec: EQP_JAKE_WP6
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 12
 	EQP_STAT_Resistance = 0
@@ -23892,6 +24541,7 @@ Rec: EQP_JAKE_WP7
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Should a male warrior use this thing?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -23903,6 +24553,7 @@ Rec: EQP_JAKE_WP7
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 14
 	EQP_STAT_Resistance = 0
@@ -24005,6 +24656,7 @@ Rec: EQP_JAKE_WP8
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Meet the power of justice
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -24016,6 +24668,7 @@ Rec: EQP_JAKE_WP8
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 16
 	EQP_STAT_Resistance = 0
@@ -24118,6 +24771,7 @@ Rec: EQP_JAKE_WP9
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Now this is great, man!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -24129,6 +24783,7 @@ Rec: EQP_JAKE_WP9
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 18
 	EQP_STAT_Resistance = 0
@@ -24231,6 +24886,7 @@ Rec: EQP_JEWEL_AMETHYST
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Raises protection against Death
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -24242,6 +24898,7 @@ Rec: EQP_JEWEL_AMETHYST
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -24344,6 +25001,7 @@ Rec: EQP_JEWEL_DIAMOND
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Protects against ALL status ailments
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -24355,6 +25013,7 @@ Rec: EQP_JEWEL_DIAMOND
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -24457,6 +25116,7 @@ Rec: EQP_JEWEL_EMERALD
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Raises protection against poison
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -24468,6 +25128,7 @@ Rec: EQP_JEWEL_EMERALD
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -24570,6 +25231,7 @@ Rec: EQP_JEWEL_GARNET
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Raises protection against Disease
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -24581,6 +25243,7 @@ Rec: EQP_JEWEL_GARNET
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -24683,6 +25346,7 @@ Rec: EQP_JEWEL_ONYX
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Raises protection against Zombie
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -24694,6 +25358,7 @@ Rec: EQP_JEWEL_ONYX
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -24796,6 +25461,7 @@ Rec: EQP_JEWEL_RUBY
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Raises protection against curse
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -24807,6 +25473,7 @@ Rec: EQP_JEWEL_RUBY
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -24909,6 +25576,7 @@ Rec: EQP_JEWEL_SAPPHIRE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Raises protection against Paralysis
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -24920,6 +25588,7 @@ Rec: EQP_JEWEL_SAPPHIRE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -25022,6 +25691,7 @@ Rec: EQP_JEWEL_SMALLEMERALD
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Raises protection against Poison
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -25033,6 +25703,7 @@ Rec: EQP_JEWEL_SMALLEMERALD
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -25135,6 +25806,7 @@ Rec: EQP_JEWEL_SMALLGARNET
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Raises protection against Disease
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -25146,6 +25818,7 @@ Rec: EQP_JEWEL_SMALLGARNET
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -25248,6 +25921,7 @@ Rec: EQP_JEWEL_SMALLRUBY
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Raises protection against curse
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -25259,6 +25933,7 @@ Rec: EQP_JEWEL_SMALLRUBY
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -25361,6 +26036,7 @@ Rec: EQP_JEWEL_SMALLTOPAZ
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Raises protection against silence
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -25372,6 +26048,7 @@ Rec: EQP_JEWEL_SMALLTOPAZ
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -25474,6 +26151,7 @@ Rec: EQP_JEWEL_TOPAZ
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Raises protection against silence
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -25485,6 +26163,7 @@ Rec: EQP_JEWEL_TOPAZ
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -25587,6 +26266,7 @@ Rec: EQP_MARRILONA_AR1
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Just the regular fairy fashion for young girls
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -25598,6 +26278,7 @@ Rec: EQP_MARRILONA_AR1
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 1
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 3
@@ -25700,6 +26381,7 @@ Rec: EQP_MARRILONA_AR10
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = You're the star of the catwalk now
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -25711,6 +26393,7 @@ Rec: EQP_MARRILONA_AR10
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 10
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 10
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 30
@@ -25813,6 +26496,7 @@ Rec: EQP_MARRILONA_AR2
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = It's not easy being green.
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -25824,6 +26508,7 @@ Rec: EQP_MARRILONA_AR2
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 2
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 2
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 6
@@ -25926,6 +26611,7 @@ Rec: EQP_MARRILONA_AR3
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = It fits nicely
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -25937,6 +26623,7 @@ Rec: EQP_MARRILONA_AR3
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 3
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 3
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 9
@@ -26039,6 +26726,7 @@ Rec: EQP_MARRILONA_AR4
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = I'm too sexy for my love, love's going to leave me!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -26050,6 +26738,7 @@ Rec: EQP_MARRILONA_AR4
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 4
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 4
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 12
@@ -26152,6 +26841,7 @@ Rec: EQP_MARRILONA_AR5
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = I'm a model, you know what I mean!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -26163,6 +26853,7 @@ Rec: EQP_MARRILONA_AR5
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 5
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 5
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 15
@@ -26265,6 +26956,7 @@ Rec: EQP_MARRILONA_AR6
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = And I do my little turn on the catwalk!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -26276,6 +26968,7 @@ Rec: EQP_MARRILONA_AR6
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 6
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 6
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 18
@@ -26378,6 +27071,7 @@ Rec: EQP_MARRILONA_AR7
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = No president can grab you in the pussy now!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -26389,6 +27083,7 @@ Rec: EQP_MARRILONA_AR7
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 7
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 7
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 21
@@ -26491,6 +27186,7 @@ Rec: EQP_MARRILONA_AR8
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Does it have extra effects?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -26502,6 +27198,7 @@ Rec: EQP_MARRILONA_AR8
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 8
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 8
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 24
@@ -26604,6 +27301,7 @@ Rec: EQP_MARRILONA_AR9
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Does this make you invincible?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -26615,6 +27313,7 @@ Rec: EQP_MARRILONA_AR9
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 9
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 9
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 27
@@ -26717,6 +27416,7 @@ Rec: EQP_MARRILONA_SEALARMOR
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Marrilona is hot and indestructable
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 10
 	EQP_STAT_ER_Earth = 10
@@ -26728,6 +27428,7 @@ Rec: EQP_MARRILONA_SEALARMOR
 	EQP_STAT_ER_Wind = 10
 	EQP_STAT_Endurance = 20
 	EQP_STAT_Evasion = 20
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 25
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 60
@@ -26830,6 +27531,7 @@ Rec: EXE_MARRILONA_MEDITATION
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = With a little patience you'll get more AP
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -26841,6 +27543,7 @@ Rec: EXE_MARRILONA_MEDITATION
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -26943,6 +27646,7 @@ Rec: FOE_WATCHMOVE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -26954,6 +27658,7 @@ Rec: FOE_WATCHMOVE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -27056,6 +27761,7 @@ Rec: ICEBLAST
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = The cold never bothered me anyway!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -27067,6 +27773,7 @@ Rec: ICEBLAST
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -27169,6 +27876,7 @@ Rec: ITM_AMBROSIA
 	CureSleep = TRUE
 	CureUndead = TRUE
 	Desc = Heal the entire party full and heal all status changes
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -27180,6 +27888,7 @@ Rec: ITM_AMBROSIA
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -27282,6 +27991,7 @@ Rec: ITM_ANABOLINEA
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Adds 50 extra cards with a short interval
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -27293,6 +28003,7 @@ Rec: ITM_ANABOLINEA
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -27395,6 +28106,7 @@ Rec: ITM_ANTIDOTE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Poison be gone
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -27406,6 +28118,7 @@ Rec: ITM_ANTIDOTE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -27508,6 +28221,7 @@ Rec: ITM_APPLE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = An apple a day keeps the doctor away
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -27519,6 +28233,7 @@ Rec: ITM_APPLE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -27621,6 +28336,7 @@ Rec: ITM_BANANA
 	CureSleep = TRUE
 	CureUndead = TRUE
 	Desc = Full HP+AP and status gone
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -27632,6 +28348,7 @@ Rec: ITM_BANANA
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -27734,6 +28451,7 @@ Rec: ITM_BELL
 	CureSleep = TRUE
 	CureUndead = FALSE
 	Desc = Wake somebody up
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -27745,6 +28463,7 @@ Rec: ITM_BELL
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -27847,6 +28566,7 @@ Rec: ITM_CARROT
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Use in combat to recover 25 AP
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -27858,6 +28578,7 @@ Rec: ITM_CARROT
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -27960,6 +28681,7 @@ Rec: ITM_CURSEDSPORES
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -27971,6 +28693,7 @@ Rec: ITM_CURSEDSPORES
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -28073,6 +28796,7 @@ Rec: ITM_DEATHCUBE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = This cube is death! Pin it in your head!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -28084,6 +28808,7 @@ Rec: ITM_DEATHCUBE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -28186,6 +28911,7 @@ Rec: ITM_EEL
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = A shocking experience
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -28197,6 +28923,7 @@ Rec: ITM_EEL
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -28299,6 +29026,7 @@ Rec: ITM_FLAMEORB
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = We don't need no water, let the ###### burn!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -28310,6 +29038,7 @@ Rec: ITM_FLAMEORB
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -28412,6 +29141,7 @@ Rec: ITM_HEALINGHERB
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = The knowlege of herbs can be good for your heath
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -28423,6 +29153,7 @@ Rec: ITM_HEALINGHERB
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -28525,6 +29256,7 @@ Rec: ITM_HEALSHOWER
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Throw in the air and be healed many times
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -28536,6 +29268,7 @@ Rec: ITM_HEALSHOWER
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -28638,6 +29371,7 @@ Rec: ITM_HELLSTONE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Nobody can stop this fire
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -28649,6 +29383,7 @@ Rec: ITM_HELLSTONE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -28751,6 +29486,7 @@ Rec: ITM_HOLYSCROLL
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Cures curse
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -28762,6 +29498,7 @@ Rec: ITM_HOLYSCROLL
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -28864,6 +29601,7 @@ Rec: ITM_HOLYWATER
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Holy attack to one target
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -28875,6 +29613,7 @@ Rec: ITM_HOLYWATER
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -28977,6 +29716,7 @@ Rec: ITM_ICICLE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = A little treat on ice
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -28988,6 +29728,7 @@ Rec: ITM_ICICLE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -29090,6 +29831,7 @@ Rec: ITM_ICICLES
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = A little treat on ice
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -29101,6 +29843,7 @@ Rec: ITM_ICICLES
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -29203,6 +29946,7 @@ Rec: ITM_INFERNOORB
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = We don't need no water, let the mother$(@*#@ burn!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -29214,6 +29958,7 @@ Rec: ITM_INFERNOORB
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -29316,6 +30061,7 @@ Rec: ITM_JUSDORANGE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Use in combat to recover 150 AP
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -29327,6 +30073,7 @@ Rec: ITM_JUSDORANGE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -29429,6 +30176,7 @@ Rec: ITM_MAGICDUST
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Cures paralysis
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -29440,6 +30188,7 @@ Rec: ITM_MAGICDUST
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -29542,6 +30291,7 @@ Rec: ITM_MAGICSTONE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Use in combat to gain much of skill EXP in all skills
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -29553,6 +30303,7 @@ Rec: ITM_MAGICSTONE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -29655,6 +30406,7 @@ Rec: ITM_MANDRAKE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Cures Petrification
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -29666,6 +30418,7 @@ Rec: ITM_MANDRAKE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -29768,6 +30521,7 @@ Rec: ITM_MEDICINE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Cures "Disease"
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -29779,6 +30533,7 @@ Rec: ITM_MEDICINE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -29881,6 +30636,7 @@ Rec: ITM_MIRROR
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Protects against petrification
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -29892,6 +30648,7 @@ Rec: ITM_MIRROR
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -29994,6 +30751,7 @@ Rec: ITM_PANACEA
 	CureSleep = FALSE
 	CureUndead = TRUE
 	Desc = Cures all status changes
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -30005,6 +30763,7 @@ Rec: ITM_PANACEA
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -30107,6 +30866,7 @@ Rec: ITM_PHOENIX
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Revive fallen ally
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -30118,6 +30878,7 @@ Rec: ITM_PHOENIX
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -30220,6 +30981,7 @@ Rec: ITM_POISONDART
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Toxic level - one hundred and eieighty!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -30231,6 +30993,7 @@ Rec: ITM_POISONDART
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -30333,6 +31096,7 @@ Rec: ITM_POTION
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Now this is a nice healing item
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -30344,6 +31108,7 @@ Rec: ITM_POTION
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -30446,6 +31211,7 @@ Rec: ITM_PURELITERATURE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Boring stories you can use to bore your enemies to sleep.
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -30457,6 +31223,7 @@ Rec: ITM_PURELITERATURE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -30559,6 +31326,7 @@ Rec: ITM_SALVE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = A very ancient recipe for healing
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -30570,6 +31338,7 @@ Rec: ITM_SALVE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -30672,6 +31441,7 @@ Rec: ITM_SLEEPHERB
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Sweat dreams are made of this. Who am I to disagree?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -30683,6 +31453,7 @@ Rec: ITM_SLEEPHERB
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -30785,6 +31556,7 @@ Rec: ITM_STONE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Papa was a rolling stone
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -30796,6 +31568,7 @@ Rec: ITM_STONE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -30898,6 +31671,7 @@ Rec: ITM_STORMBOTTLE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Uncork it and blow the enemy away
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -30909,6 +31683,7 @@ Rec: ITM_STORMBOTTLE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -31011,6 +31786,7 @@ Rec: ITM_TRUMPCARD
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = This Trump curses the enemy.
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -31022,6 +31798,7 @@ Rec: ITM_TRUMPCARD
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -31124,6 +31901,7 @@ Rec: ITM_UBERPOTION
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Now this is a nice healing item
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -31135,6 +31913,7 @@ Rec: ITM_UBERPOTION
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -31237,6 +32016,7 @@ Rec: ITM_VIRUSBOMB
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = This is a COMPUTER game after all
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -31248,6 +32028,7 @@ Rec: ITM_VIRUSBOMB
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -31350,6 +32131,7 @@ Rec: ITM_VOICEHERB
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Cures "Silence"
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -31361,6 +32143,7 @@ Rec: ITM_VOICEHERB
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -31463,6 +32246,7 @@ Rec: ITM_VOLTABALL
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Fry, baby! Fry!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -31474,6 +32258,7 @@ Rec: ITM_VOLTABALL
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -31576,6 +32361,7 @@ Rec: ITM_WATERBUBBLE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Water all over the place
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -31587,6 +32373,7 @@ Rec: ITM_WATERBUBBLE
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -31689,6 +32476,7 @@ Rec: JUG_ATK1
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -31700,6 +32488,7 @@ Rec: JUG_ATK1
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -31802,6 +32591,7 @@ Rec: JUG_ATK10
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Attack the enemy
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -31813,6 +32603,7 @@ Rec: JUG_ATK10
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -31915,6 +32706,7 @@ Rec: JUG_ATK11
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Have a seat in ol' Sparkey
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -31926,6 +32718,7 @@ Rec: JUG_ATK11
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -32028,6 +32821,7 @@ Rec: JUG_ATK12
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = This is a shocking experience
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -32039,6 +32833,7 @@ Rec: JUG_ATK12
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 25
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -32141,6 +32936,7 @@ Rec: JUG_ATK2
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -32152,6 +32948,7 @@ Rec: JUG_ATK2
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -32254,6 +33051,7 @@ Rec: JUG_ATK3
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -32265,6 +33063,7 @@ Rec: JUG_ATK3
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -32367,6 +33166,7 @@ Rec: JUG_ATK4
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -32378,6 +33178,7 @@ Rec: JUG_ATK4
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -32480,6 +33281,7 @@ Rec: JUG_ATK5
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -32491,6 +33293,7 @@ Rec: JUG_ATK5
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -32593,6 +33396,7 @@ Rec: JUG_ATK6
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -32604,6 +33408,7 @@ Rec: JUG_ATK6
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -32706,6 +33511,7 @@ Rec: JUG_ATK7
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -32717,6 +33523,7 @@ Rec: JUG_ATK7
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -32819,6 +33626,7 @@ Rec: JUG_ATK8
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -32830,6 +33638,7 @@ Rec: JUG_ATK8
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -32932,6 +33741,7 @@ Rec: JUG_ATK9
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Attack the enemy
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -32943,6 +33753,7 @@ Rec: JUG_ATK9
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -33045,6 +33856,7 @@ Rec: JUG_HEAL1
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -33056,6 +33868,7 @@ Rec: JUG_HEAL1
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -33158,6 +33971,7 @@ Rec: JUG_HEAL2
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -33169,6 +33983,7 @@ Rec: JUG_HEAL2
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -33271,6 +34086,7 @@ Rec: JUG_HEAL3
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -33282,6 +34098,7 @@ Rec: JUG_HEAL3
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -33384,6 +34201,7 @@ Rec: JUG_JUGGERNAUT
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = What action is Juggernaut about to perform?
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -33395,6 +34213,7 @@ Rec: JUG_JUGGERNAUT
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -33497,6 +34316,7 @@ Rec: JUG_TACT1
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -33508,6 +34328,7 @@ Rec: JUG_TACT1
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -33610,6 +34431,7 @@ Rec: JUG_TACT10
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = AP to 0
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -33621,6 +34443,7 @@ Rec: JUG_TACT10
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -33723,6 +34546,7 @@ Rec: JUG_TACT2
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -33734,6 +34558,7 @@ Rec: JUG_TACT2
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -33836,6 +34661,7 @@ Rec: JUG_TACT3
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -33847,6 +34673,7 @@ Rec: JUG_TACT3
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -33949,6 +34776,7 @@ Rec: JUG_TACT4
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -33960,6 +34788,7 @@ Rec: JUG_TACT4
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -34062,6 +34891,7 @@ Rec: JUG_TACT5
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -34073,6 +34903,7 @@ Rec: JUG_TACT5
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -34175,6 +35006,7 @@ Rec: JUG_TACT6
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -34186,6 +35018,7 @@ Rec: JUG_TACT6
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -34288,6 +35121,7 @@ Rec: JUG_TACT7
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -34299,6 +35133,7 @@ Rec: JUG_TACT7
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -34401,6 +35236,7 @@ Rec: JUG_TACT8
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Adds two cards to the card gauge
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -34412,6 +35248,7 @@ Rec: JUG_TACT8
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -34514,6 +35351,7 @@ Rec: JUG_TACT9
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Removes all cards of a specific foe
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -34525,6 +35363,7 @@ Rec: JUG_TACT9
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -34627,6 +35466,7 @@ Rec: SILLY_ONE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -34638,6 +35478,7 @@ Rec: SILLY_ONE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -34740,6 +35581,7 @@ Rec: SILLY_ONES
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -34751,6 +35593,7 @@ Rec: SILLY_ONES
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -34853,6 +35696,7 @@ Rec: SPECIAL_ARMAGEDDON
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Destroys the world
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -34864,6 +35708,7 @@ Rec: SPECIAL_ARMAGEDDON
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -34966,6 +35811,7 @@ Rec: SPECIAL_AXESMASH
 	CureSleep = 
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -34977,6 +35823,7 @@ Rec: SPECIAL_AXESMASH
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -35079,6 +35926,7 @@ Rec: SPECIAL_SPIRATAKILLER
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Kills all spirata forms
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -35090,6 +35938,7 @@ Rec: SPECIAL_SPIRATAKILLER
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -35192,6 +36041,7 @@ Rec: SPIRATATRANSFORM
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Become a spirata
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -35203,6 +36053,7 @@ Rec: SPIRATATRANSFORM
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -35305,6 +36156,7 @@ Rec: SPIRATA_ATTACK_DANDOR
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Spirata Earth attack
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -35316,6 +36168,7 @@ Rec: SPIRATA_ATTACK_DANDOR
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -35418,6 +36271,7 @@ Rec: SPIRATA_ATTACK_HANDOSTILLOR
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Spirata Wind attack
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -35429,6 +36283,7 @@ Rec: SPIRATA_ATTACK_HANDOSTILLOR
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -35531,6 +36386,7 @@ Rec: SPIRATA_ATTACK_JAKE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Spirata Fire attack
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -35542,6 +36398,7 @@ Rec: SPIRATA_ATTACK_JAKE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -35644,6 +36501,7 @@ Rec: SPIRATA_ATTACK_MARRILONA
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Spirata Water attack
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -35655,6 +36513,7 @@ Rec: SPIRATA_ATTACK_MARRILONA
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -35757,6 +36616,7 @@ Rec: WAND_BIO
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Mother Nature is venomous
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -35768,6 +36628,7 @@ Rec: WAND_BIO
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -35870,6 +36731,7 @@ Rec: WAND_DARK
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Beware of the powers of evil!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -35881,6 +36743,7 @@ Rec: WAND_DARK
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -35983,6 +36846,7 @@ Rec: WAND_DOOM
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Kills the enemy, grants loads of skill exp. Curses user
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -35994,6 +36858,7 @@ Rec: WAND_DOOM
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 9
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 100
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 70
@@ -36096,6 +36961,7 @@ Rec: WAND_FLAME
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Burn, baby! Burn!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -36107,6 +36973,7 @@ Rec: WAND_FLAME
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -36209,6 +37076,7 @@ Rec: WAND_FROST
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Let it go! Let it go!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -36220,6 +37088,7 @@ Rec: WAND_FROST
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -36322,6 +37191,7 @@ Rec: WAND_GAIA
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Let's rock and roll
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -36333,6 +37203,7 @@ Rec: WAND_GAIA
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -36435,6 +37306,7 @@ Rec: WAND_HOLY
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Oh wicked ones, I shall smite thee!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -36446,6 +37318,7 @@ Rec: WAND_HOLY
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -36548,6 +37421,7 @@ Rec: WAND_II_EVIL
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Be damned by the powers of evil!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -36559,6 +37433,7 @@ Rec: WAND_II_EVIL
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 25
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -36661,6 +37536,7 @@ Rec: WAND_II_GAIA
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Shake it, baby!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -36672,6 +37548,7 @@ Rec: WAND_II_GAIA
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 25
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -36774,6 +37651,7 @@ Rec: WAND_II_HURRICANE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = The foes, my friend, are blowin; in the wind!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -36785,6 +37663,7 @@ Rec: WAND_II_HURRICANE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 25
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -36887,6 +37766,7 @@ Rec: WAND_II_KELVIN
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Only Trump's heart is colder
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -36898,6 +37778,7 @@ Rec: WAND_II_KELVIN
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 25
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -37000,6 +37881,7 @@ Rec: WAND_II_SAINT
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = The light of holiness shall shine!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -37011,6 +37893,7 @@ Rec: WAND_II_SAINT
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 25
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -37113,6 +37996,7 @@ Rec: WAND_II_SPRINGTIJ
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Don't get wet feet
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -37124,6 +38008,7 @@ Rec: WAND_II_SPRINGTIJ
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 25
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -37226,6 +38111,7 @@ Rec: WAND_II_VOLCANOWAND
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Destroy the enemy, and let them taste the fires of hell!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -37237,6 +38123,7 @@ Rec: WAND_II_VOLCANOWAND
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 25
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -37339,6 +38226,7 @@ Rec: WAND_II_WATT
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = This is a shocking experience
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -37350,6 +38238,7 @@ Rec: WAND_II_WATT
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 25
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -37452,6 +38341,7 @@ Rec: WAND_SPLASH
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = This world of water
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -37463,6 +38353,7 @@ Rec: WAND_SPLASH
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -37565,6 +38456,7 @@ Rec: WAND_THUNDER
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Have a seat in ol' Sparkey
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 0
 	EQP_STAT_ER_Earth = 0
@@ -37576,6 +38468,7 @@ Rec: WAND_THUNDER
 	EQP_STAT_ER_Wind = 0
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -37678,6 +38571,7 @@ Rec: WAND_TRAINING
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Minimal damange, but ....
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -37689,6 +38583,7 @@ Rec: WAND_TRAINING
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -37791,6 +38686,7 @@ Rec: WAND_WIND
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Blow, storm! Blow!
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -37802,6 +38698,7 @@ Rec: WAND_WIND
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 1
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -37904,6 +38801,7 @@ Rec: ZZKEY_BLUESTAFF
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Opens blue seals and releases what is within
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -37915,6 +38813,7 @@ Rec: ZZKEY_BLUESTAFF
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -38017,6 +38916,7 @@ Rec: ZZKEY_FIRE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Grants access to temple of the Fire Spirata
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -38028,6 +38928,7 @@ Rec: ZZKEY_FIRE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -38130,6 +39031,7 @@ Rec: ZZKEY_GAIA
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Grands access to the Earth Spirata Temple
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -38141,6 +39043,7 @@ Rec: ZZKEY_GAIA
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -38243,6 +39146,7 @@ Rec: ZZKEY_KEYWATER
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Grants access to temple of the Water Spirata
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -38254,6 +39158,7 @@ Rec: ZZKEY_KEYWATER
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -38356,6 +39261,7 @@ Rec: ZZKEY_WIND
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Grants access to temple of the Wind Spirata
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -38367,6 +39273,7 @@ Rec: ZZKEY_WIND
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0
@@ -38469,6 +39376,7 @@ Rec: ZZZ_KRANDARARMOR
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 5
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -38480,6 +39388,7 @@ Rec: ZZZ_KRANDARARMOR
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 5
 	EQP_STAT_Evasion = 5
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 5
 	EQP_STAT_Power = 5
 	EQP_STAT_Resistance = 5
@@ -38582,6 +39491,7 @@ Rec: ZZZ_KRANDARBLADE
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = 
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 10
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -38593,6 +39503,7 @@ Rec: ZZZ_KRANDARBLADE
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 10
 	EQP_STAT_Evasion = 10
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 60
 	EQP_STAT_Power = 50
 	EQP_STAT_Resistance = 20
@@ -38695,6 +39606,7 @@ Rec: ZZ_CRYPTKEY
 	CureSleep = FALSE
 	CureUndead = FALSE
 	Desc = Grants access to the crypts under the Spirata Temples
+	EQP_STAT_AP = 
 	EQP_STAT_Accuracy = 0
 	EQP_STAT_ER_Darkness = 
 	EQP_STAT_ER_Earth = 
@@ -38706,6 +39618,7 @@ Rec: ZZ_CRYPTKEY
 	EQP_STAT_ER_Wind = 
 	EQP_STAT_Endurance = 0
 	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 
 	EQP_STAT_Intelligence = 0
 	EQP_STAT_Power = 0
 	EQP_STAT_Resistance = 0

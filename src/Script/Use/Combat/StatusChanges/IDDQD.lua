@@ -1,6 +1,6 @@
 --[[
   IDDQD.lua
-  Version: 17.06.12
+  Version: 17.06.13
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -41,9 +41,10 @@ local StatusChanges = {}
 StatusChanges.IDDQD = {
      BlockHurt = true,
      DrawFighter = function(ch)
-         color(0,255,0)
+         color(255,180,0)
       end   ,
      PreTurn = function(ch)
+         local e
          if prefixed(ch,"FOE") then e=skill*3 else e=9/skill end
          if rand(1,e)==1 then fighterbytag[ch].StatusChanges.IDDQD = nil end
      end

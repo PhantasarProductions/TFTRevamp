@@ -1,6 +1,6 @@
 --[[
   EQP_DANDOR_WP10.lua
-  Version: 17.06.12
+  Version: 17.06.13
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

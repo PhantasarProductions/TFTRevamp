@@ -1,5 +1,5 @@
 --[[
-  ABL_FOE_TUSK.lua
+  EQP_ACC_AMULETLIFE.lua
   Version: 17.06.13
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -36,15 +36,14 @@
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
-	["Attack"] = 100,
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowAccuracy"] = true,
-	["Attack_AllowCritical"] = true,
-	["Attack_AllowDodge"] = true,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Attack the enemy",
+	["Desc"] = "Raises Max HP by 1200",
+	["EQP_STAT_HP"] = 1200,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -55,15 +54,11 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Consumable",
-	["Rew_GainAP"] = 6,
-	["Stance"] = "Attack",
+	["ITM_Type"] = "Accesoiry",
+	["Stance"] = "Cast",
 	["Target"] = "1F",
-	["Title"] = "Tusk",
-	["Type"] = "Ability",
-	["Voice"] = "Attack",
-	["rew_CreateSkill1"] = true,
-	["rew_GainSkill1"] = 6}
+	["Title"] = "Amulet of life",
+	["Type"] = "Item"}
 
 return ret
 

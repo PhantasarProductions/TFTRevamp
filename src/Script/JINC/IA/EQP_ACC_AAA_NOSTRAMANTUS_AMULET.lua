@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.12
+version: 17.06.13
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
@@ -44,6 +44,7 @@ ret = {
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
 	["Desc"] = "Now this is POWER!!",
+	["EQP_STAT_AP"] = 125,
 	["EQP_STAT_Accuracy"] = 100,
 	["EQP_STAT_ER_Darkness"] = 200,
 	["EQP_STAT_ER_Earth"] = 200,
@@ -55,6 +56,7 @@ ret = {
 	["EQP_STAT_ER_Wind"] = 200,
 	["EQP_STAT_Endurance"] = 100,
 	["EQP_STAT_Evasion"] = 100,
+	["EQP_STAT_HP"] = 500,
 	["EQP_STAT_Intelligence"] = 100,
 	["EQP_STAT_Power"] = 100,
 	["EQP_STAT_Resistance"] = 100,

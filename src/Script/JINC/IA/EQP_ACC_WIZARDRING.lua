@@ -1,6 +1,6 @@
 --[[
   EQP_ACC_WIZARDRING.lua
-  Version: 17.06.12
+  Version: 17.06.13
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -45,6 +45,7 @@ ret = {
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
 	["Desc"] = "*The* ring to boost magic power",
+	["EQP_STAT_AP"] = 300,
 	["EQP_STAT_Intelligence"] = 75,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",

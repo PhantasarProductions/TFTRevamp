@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.12
+version: 17.06.13
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
@@ -56,7 +56,7 @@ ret = {
 	["ITM_Type"] = "Consumable",
 	["SpellAni"] = "DonaldTrump",
 	["Stance"] = "Cast",
-	["Target"] = "AA",
+	["Target"] = "1A",
 	["Title"] = "Donald Trump",
 	["Type"] = "Item"}
 

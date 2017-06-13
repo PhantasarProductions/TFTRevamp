@@ -434,8 +434,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/COCYTUS_JUDECCA.lua
     1. Script: Script/JINC/IA/COCYTUS_PTOLOMEA.lua
     1. Script: Script/JINC/IA/EQP_ACC_AAA_NOSTRAMANTUS_AMULET.lua
+    1. Script: Script/JINC/IA/EQP_ACC_AMULETLIFE.lua
     1. Script: Script/JINC/IA/EQP_ACC_RINGEARTH.lua
     1. Script: Script/JINC/IA/EQP_ACC_RINGFIRE.lua
+    1. Script: Script/JINC/IA/EQP_ACC_RINGSKILL.lua
     1. Script: Script/JINC/IA/EQP_ACC_RINGTYRANT.lua
     1. Script: Script/JINC/IA/EQP_ACC_RINGWATER.lua
     1. Script: Script/JINC/IA/EQP_ACC_RINGWIND.lua
