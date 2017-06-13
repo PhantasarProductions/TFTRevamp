@@ -32,8 +32,18 @@
   
  **********************************************
  
-version: 17.03.18
+version: 17.06.13
 ]]
+
+function BlueSeal()
+    ClearCombatData()
+    Var.D("$COMBAT.FOE_1","Sealed/Cockatrice")
+    Var.D("$COMBAT.POSFOE_1","CENTER")
+    Var.D("$COMBAT.MUSIC","Music/Special Boss/Blue Seal.ogg")
+    Var.D("$COMBAT.ARENA","Mine.png")
+    StartBoss("Mythical Beast","Cockatrice",0,25,100)      
+    Done('&DONE.SEAL.DANDOR1')
+end    
 
 
 function InitPuzzle()

@@ -138,6 +138,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Game Over/Going-Different-Ways.ogg
 - GDJ
     1. Graphics: GFX/Combat/Fighters/Foe/Sealed/MinoKing.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Sealed/Cockatrice.png
 - GR-Sites
     1. Audio: Audio/Dungeon/FallingDown.ogg
     1. Graphics: gfx/Worldmap/back.png
@@ -296,6 +297,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_DISINTEGRATE.lua
     1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
     1. Script: Script/JINC/IA/ABL_FOE_ENEMYVITALIZE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_EVIL_EYE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_EVIL_EYE_PARALYZE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_EVIL_EYE_PETRIFY.lua
     1. Script: Script/JINC/IA/ABL_FOE_EXHAUST.lua
     1. Script: Script/JINC/IA/ABL_FOE_FLAMEBITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_FLAMESTRIKE.lua
@@ -378,6 +382,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HURRICANE.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ICEBLAST.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_INFERNO.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_LETSHEALEMALL.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_MEDITATION.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PERMANENCE.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_PROTECT.lua
@@ -446,6 +451,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_ACC_TITANBELT.lua
     1. Script: Script/JINC/IA/EQP_ACC_WIZARDRING.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_CURSEDWP_HUNGERAXE.lua
+    1. Script: Script/JINC/IA/EQP_DANDOR_SEALEDWEAPON.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_TRAINAXE.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP1.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP10.lua
@@ -844,14 +850,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/SerializeIntoSysVar.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
