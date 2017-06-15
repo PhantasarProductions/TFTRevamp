@@ -32,10 +32,12 @@
   
  **********************************************
  
-version: 17.02.22
+version: 17.06.15
 ]]
 
 -- @USE /script/use/specific/plasmafloor.lua
+-- @USE /Script/Use/Specific/SpirataCryptEntrance.lua
+
 
 function GenPuzzle()
    if puzdata then return end
@@ -255,4 +257,5 @@ function GALE_OnLoad()
    ZA_Enter('Prev2',Prev2)   
    ZA_Enter("Bye",WorldMap)
    MapHide('Secret')
+   InitSpirEntry('aer')
 end
