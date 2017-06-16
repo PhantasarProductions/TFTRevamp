@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.16
+version: 17.06.17
 ]]
 ret = {
 	["ABL_APCost"] = 25,
@@ -47,11 +47,13 @@ ret = {
 	["BUFF_Endurance"] = 5,
 	["Desc"] = "BAM! You're dead!",
 	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",

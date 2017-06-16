@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_DEATHSPELL.lua
-  Version: 17.06.16
+  Version: 17.06.17
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -51,6 +51,7 @@ ret = {
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",

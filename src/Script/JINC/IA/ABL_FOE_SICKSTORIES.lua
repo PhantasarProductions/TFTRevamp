@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_SICKSTORIES.lua
-  Version: 17.06.16
+  Version: 17.06.17
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -35,6 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ADDCARD_Action_Act"] = "Self",
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",

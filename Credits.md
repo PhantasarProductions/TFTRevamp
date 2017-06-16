@@ -437,7 +437,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_SPECIAL.lua
     1. Script: Script/JINC/IA/ABL_SPECIAL_DRAGONDOWN.lua
     1. Script: Script/JINC/IA/ABL_SPECIAL_INSTABILITY.lua
-    1. Script: Script/JINC/IA/ACC_EQP_RINGWENIARIA.lua
     1. Script: Script/JINC/IA/AUTO_NOODHULP.lua
     1. Script: Script/JINC/IA/BERSERK_ATTACK.lua
     1. Script: Script/JINC/IA/COCYTUS_ANTENORA.lua

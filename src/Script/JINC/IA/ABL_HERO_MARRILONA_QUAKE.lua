@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_QUAKE.lua
-  Version: 17.06.16
+  Version: 17.06.17
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -59,7 +59,7 @@ ret = {
 	["ITM_Type"] = "Consumable",
 	["SpellAni"] = "Quake",
 	["Stance"] = "Cast",
-	["Target"] = "1A",
+	["Target"] = "AF",
 	["Title"] = "Earthquake",
 	["Type"] = "Ability",
 	["rew_GainSkill5"] = 250}

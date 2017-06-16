@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_RUBINE_PICKPOCKET.lua
-  Version: 17.06.16
+  Version: 17.06.17
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -44,11 +44,13 @@ ret = {
 	["Desc"] = "Steal items from your enemy",
 	["EffectScript"] = "Steal",
 	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
