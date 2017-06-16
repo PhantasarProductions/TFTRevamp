@@ -63,7 +63,7 @@ ret = {
 	["Target"] = "AF",
 	["Title"] = "Electrocution",
 	["Type"] = "Ability",
-	["Voice"] = "Water",
+	["Voice"] = "Lightning",
 	["rew_GainSkill4"] = 150}
 
 return ret

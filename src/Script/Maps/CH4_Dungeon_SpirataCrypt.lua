@@ -56,7 +56,9 @@ local backspirata = {
             bossm  = 'Music/Special Boss/Hall of the Mountain King.ogg'},
             
    aer  = { kthura = 'CH2_DUNGEON_SPIRATAWIND',
-            layer  = '#002'}   
+            layer  = '#002',
+            boss   = 'DemonAir',
+            bossh  = {'Air Demon','DemonAir'}}   
 }
 
 
