@@ -32,10 +32,10 @@
   
  **********************************************
  
-version: 17.06.13
+version: 17.06.16
 ]]
 ret = {
-	["ADDCARD_Action_Act"] = "ABL_HERO_JAKE_HEALBLADE",
+	["ADDCARD_Action_Act"] = "Self",
 	["ADDCARD_Action_Interval"] = 100,
 	["ADDCARD_Action_Number"] = 1,
 	["ADDCARD_Char_Interval"] = 5,

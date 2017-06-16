@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  EQP_HANDOSTILLOR_WP5.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  ACC_EQP_RINGWENIARIA.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -36,21 +36,38 @@ version: 17.06.16
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
+	["Acc_PreTurn"] = "Regenerate",
+	["Acc_PreTurn_Arg"] = "150",
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Holy name. Does it live up to it?",
-	["EQP_STAT_Intelligence"] = 10,
-	["EQP_STAT_Power"] = 5,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "HandoStillor",
+	["Desc"] = "Heals 150 HP each turn",
+	["EQP_STAT_AP"] = 1,
+	["EQP_STAT_Endurance"] = 1,
+	["EQP_STAT_Evasion"] = 5,
+	["EQP_STAT_HP"] = 25,
+	["EQP_STAT_Intelligence"] = 25,
+	["EQP_STAT_Resistance"] = 1,
+	["EQP_STAT_SR_Death"] = 25,
+	["EQP_STAT_SR_Destruction"] = 25,
+	["EQP_STAT_SR_Disease"] = 25,
+	["EQP_STAT_SR_Poison"] = 25,
+	["EQP_STAT_SR_Undead"] = 75,
+	["Heal_StatPercent"] = "Intelligence",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 4800,
-	["ITM_Type"] = "Weapon",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Saint's staff",
+	["ITM_Type"] = "Accesoiry",
+	["Stance"] = "Cast",
+	["Target"] = "1F",
+	["Title"] = "Weniaria's Ring",
 	["Type"] = "Item"}
 
 return ret

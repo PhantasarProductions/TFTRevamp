@@ -1,6 +1,6 @@
 --[[
   AUTO_NOODHULP.lua
-  Version: 17.06.13
+  Version: 17.06.16
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

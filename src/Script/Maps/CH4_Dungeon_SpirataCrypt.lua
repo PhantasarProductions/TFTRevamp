@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.08
+version: 17.06.16
 ]]
 
 local NoDarkness={}
@@ -53,7 +53,10 @@ local backspirata = {
             layer  = '#004',
             boss   = 'MountainKing',
             bossh  = {'The King of Stone','Mountain King'},
-            bossm  = 'Music/Special Boss/Hall of the Mountain King.ogg'}
+            bossm  = 'Music/Special Boss/Hall of the Mountain King.ogg'},
+            
+   aer  = { kthura = 'CH2_DUNGEON_SPIRATAWIND',
+            layer  = '#002'}   
 }
 
 

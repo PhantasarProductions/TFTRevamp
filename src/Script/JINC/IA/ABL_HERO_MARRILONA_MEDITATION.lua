@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.13
+version: 17.06.16
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "EXE_MARRILONA_MEDITATION",

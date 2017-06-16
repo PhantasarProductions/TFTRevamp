@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_JAKE_BERSERK.lua
-  Version: 17.06.13
+  Version: 17.06.16
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
