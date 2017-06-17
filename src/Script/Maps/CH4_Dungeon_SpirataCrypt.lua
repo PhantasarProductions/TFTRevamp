@@ -143,7 +143,6 @@ local function t_go(t)
               Maps.Obj.Kill("go_"..e)
               local oe=Maps.Obj.Obj('sym_'..e) oe.R=0 oe.G=0 oe.B=0 
               Maps.Obj.Obj('Obstacle_go_'..e).Visible=0
-           else
               complete=false  
            end
        end
@@ -152,7 +151,8 @@ local function t_go(t)
        if not Done('&DONE.SPIRATA.CRYPT.ALL.DONE') then 
           Maps.ObjectList.KillByLabel('Kaars',1)
           Award('SECRETDUNGEON_SPIRATACRYPT')
-          for a in each({'Jake_Human','Marrilona','Dandor','HandoStillor'}) do RPG.IncStat(a,-50000) end
+          for a in each({'Jake_Human','Marrilona','Dandor','HandoStillor'}) do RPG.IncStat(a,'EXP',-50000) end
+          Maps.Remap()
           --CSay("AWARD: Achievement!!!")
        end
     end   
