@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.16
+version: 17.06.17
 ]]
 
 local NoDarkness={}
@@ -133,10 +133,11 @@ end
 
 local function t_go(t)
     local old = Maps.LayerCodeName
+    local complete
     GoToLayer(t,"na_go")
     if t=='together' then
        Done('&CRYPT['..old..']')
-       local complete=true
+       complete=true
        for e in each({'aer','aqua','ignis','terra'}) do
            if not(CVV('&CRYPT['..e..']')) then
               Maps.Obj.Kill("go_"..e)
@@ -147,8 +148,13 @@ local function t_go(t)
            end
        end
     end
-    if complete then 
-       CSay("AWARD: Achievement!!!")
+    if complete then
+       if not Done('&DONE.SPIRATA.CRYPT.ALL.DONE') then 
+          Maps.ObjectList.KillByLabel('Kaars',1)
+          Award('SECRETDUNGEON_SPIRATACRYPT')
+          for a in each({'Jake_Human','Marrilona','Dandor','HandoStillor'}) do RPG.IncStat(a,-50000) end
+          --CSay("AWARD: Achievement!!!")
+       end
     end   
 end
 

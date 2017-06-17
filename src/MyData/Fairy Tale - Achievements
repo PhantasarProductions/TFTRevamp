@@ -437,6 +437,18 @@ Rec: SECRETDUNGEON_MAGICGARDEN
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: SECRETDUNGEON_SPIRATACRYPT
+	Description = Complete all four wings of the Spirata Crypt
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Always
+	Title = EnCRYPTion
+	Type = Platinum
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: SECRETDUNGEON_SUBRIVER
 	Description = Complete the secret dungeon: Subterranean River
 	Icon = *DEFAULT*
