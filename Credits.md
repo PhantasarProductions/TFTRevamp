@@ -450,6 +450,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_ACC_RINGSKILL.lua
     1. Script: Script/JINC/IA/EQP_ACC_RINGTYRANT.lua
     1. Script: Script/JINC/IA/EQP_ACC_RINGWATER.lua
+    1. Script: Script/JINC/IA/EQP_ACC_RINGWENIARIA.lua
     1. Script: Script/JINC/IA/EQP_ACC_RINGWIND.lua
     1. Script: Script/JINC/IA/EQP_ACC_TITANBELT.lua
     1. Script: Script/JINC/IA/EQP_ACC_WIZARDRING.lua
@@ -853,14 +854,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/SerializeIntoSysVar.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
