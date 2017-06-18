@@ -40,6 +40,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Big_Char/Marrilona_Easter.png
     1. Graphics: GFX/Big_Char/Marrilona_Halloween.png
     1. Graphics: GFX/Big_Char/Marrilona_Halloween.xcf
+    1. Graphics: GFX/Big_Char/Marrilona_JeroenJarig.png
+    1. Graphics: GFX/Big_Char/Marrilona_JeroenJarig.xcf
     1. Graphics: GFX/Big_Char/Marrilona_King.png
     1. Graphics: GFX/Big_Char/Marrilona_King.xcf
     1. Graphics: GFX/Big_Char/Marrilona_NewYear.png
