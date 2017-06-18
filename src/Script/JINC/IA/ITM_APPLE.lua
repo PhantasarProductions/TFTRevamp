@@ -1,6 +1,6 @@
 --[[
   ITM_APPLE.lua
-  Version: 17.06.17
+  Version: 17.06.18
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================

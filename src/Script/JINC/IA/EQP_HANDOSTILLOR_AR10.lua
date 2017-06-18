@@ -1,6 +1,6 @@
 --[[
   EQP_HANDOSTILLOR_AR10.lua
-  Version: 17.06.17
+  Version: 17.06.18
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
