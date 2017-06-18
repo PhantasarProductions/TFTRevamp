@@ -137,6 +137,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Town/Chamber-of-Jewels.ogg
     1. Music: Music/Game Over/Going-Different-Ways.ogg
 - GDJ
+    1. Graphics: GFX/Combat/Fighters/Foe/Sealed/*.hot
+    1. Graphics: GFX/Combat/Fighters/Foe/Sealed/Hydra.png
     1. Graphics: GFX/Combat/Fighters/Foe/Sealed/MinoKing.png
     1. Graphics: GFX/Combat/Fighters/Foe/Sealed/Cockatrice.png
 - GR-Sites
@@ -772,6 +774,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/FoeAI/Default.lua
     1. Script: Script/Use/Combat/FoeAI/Dwarf vs Marrilona.lua
     1. Script: Script/Use/Combat/FoeAI/Nostramantu.lua
+    1. Script: Script/Use/Combat/HitBy/AAA.lua
+    1. Script: Script/Use/Combat/HitBy/Hydra.lua
     1. Script: Script/Use/Combat/Jokers/AAA_Jokers.lua
     1. Script: Script/Use/Combat/Jokers/Dragon.lua
     1. Script: Script/Use/Combat/PreTurn/AAA_Algemeen.lua
@@ -855,14 +859,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/SerializeIntoSysVar.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
