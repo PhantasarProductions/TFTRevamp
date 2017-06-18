@@ -232,7 +232,7 @@ CheckHave False
 Gadgets.make "Marrilona",CreatePanel(pw-bw,0,bw,by,Panel)
 If Month()=12 Then
 	SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona_Christmas.png") ),PANELPIXMAP_CENTER
-ElseIf Month()=6 And Day()=18
+ElseIf Month()=6 And Day()=19
 	SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona_JeroenJarig.png") ),PANELPIXMAP_CENTER
 ElseIf Month()=10 And Day()>23 
 	SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona_Halloween.png") ),PANELPIXMAP_CENTER	
