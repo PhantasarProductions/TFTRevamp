@@ -2,7 +2,7 @@
 **********************************************
   
   CH1_Dungeon_Hell.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,12 +32,28 @@
   
  **********************************************
  
-version: 16.12.25
+version: 17.06.18
 ]]
 
 
 -- @USE /Script/Use/Specific/MoveTex.lua
 
+
+function StartHydra()
+    RPG.Points('FOE_1','HP').Minimum = 1
+    AddJoker('Hydra')
+end
+
+function BlueSeal()
+  ClearCombatData()
+  Var.D("$COMBAT.STARTEVENT","MAP,StartHydra")
+  Var.D("$COMBAT.FOE_1","Sealed/Hydra")
+  --Var.D("$COMBAT.POSFOE_1","DRAGON")
+  Var.D("$COMBAT.MUSIC","Music/Special Boss/Blue Seal.ogg")
+  Var.D("$COMBAT.ARENA","Hell.png")
+  StartBoss("Mythical Snake","Hydra",0,0,255)   
+  --Maps.Obj.Kill("4MonksFromHell",1)
+end
 
 function North()
   WorldMap_Unlock('CH1LIBRARY')

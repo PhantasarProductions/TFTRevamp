@@ -137,7 +137,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Town/Chamber-of-Jewels.ogg
     1. Music: Music/Game Over/Going-Different-Ways.ogg
 - GDJ
-    1. Graphics: GFX/Combat/Fighters/Foe/Sealed/*.hot
+    1. Graphics: GFX/Combat/Fighters/Foe/Sealed/Hydra.hot
     1. Graphics: GFX/Combat/Fighters/Foe/Sealed/Hydra.png
     1. Graphics: GFX/Combat/Fighters/Foe/Sealed/MinoKing.png
     1. Graphics: GFX/Combat/Fighters/Foe/Sealed/Cockatrice.png
@@ -244,6 +244,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Sealed/Aanschouwer.lua
     1. Script: Script/JINC/Foes/Sealed/Cockatrice.lua
     1. Script: Script/JINC/Foes/Sealed/GobEmperor.lua
+    1. Script: Script/JINC/Foes/Sealed/Hydra.lua
     1. Script: Script/JINC/Foes/Sealed/Kabi.lua
     1. Script: Script/JINC/Foes/Sealed/MinoKing.lua
     1. Script: Script/JINC/Foes/UberBoss/Juggernaut.lua
