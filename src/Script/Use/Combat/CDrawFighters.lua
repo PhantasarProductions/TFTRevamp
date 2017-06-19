@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 17.05.27
+  Version: 17.06.19
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -141,6 +141,7 @@ function DrawFighter(g,i)
             end           
         end  
      end
+     Image.SetAlphaPC(100)
 end
 
 function DrawFighters()

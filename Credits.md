@@ -814,6 +814,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/StatusChanges/Curse.lua
     1. Script: Script/Use/Combat/StatusChanges/Death.lua
     1. Script: Script/Use/Combat/StatusChanges/Guard.lua
+    1. Script: Script/Use/Combat/StatusChanges/Hydra_Status.lua
     1. Script: Script/Use/Combat/StatusChanges/IDDQD.lua
     1. Script: Script/Use/Combat/StatusChanges/Oversoul.lua
     1. Script: Script/Use/Combat/StatusChanges/Paralysis and Sleep.lua

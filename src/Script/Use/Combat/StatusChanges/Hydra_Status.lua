@@ -1,6 +1,6 @@
 --[[
   Hydra_Status.lua
-  Version: 17.06.18
+  Version: 17.06.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -42,7 +42,8 @@ local StatusChanges = {}
 StatusChanges.Hydra = {
 
      DrawFighter = function(ch)
-          
+        local hp=RPG.Points(ch,"HP")
+        if hp.Have==1 then Color(0,0,0); Image.SetAlphaPC(25) end  
      end
      }
 
