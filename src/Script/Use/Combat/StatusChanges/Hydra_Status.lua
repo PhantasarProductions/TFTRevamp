@@ -45,7 +45,7 @@ StatusChanges.Hydra = {
         local hp=RPG.Points(ch,"HP")
         if hp.Have==1 then Color(0,0,0); Image.SetAlphaPC(25) end  
         local f = fighterbytag[ch]
-        if f.x>0 then f.x = f.x*-10 
+        if f.x>0 then f.x = -300
         elseif f.x<0 then f.x = f.x + 1; CSay(ch.." scrolling in: "..f.x) end
      end
      }

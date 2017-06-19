@@ -1,6 +1,6 @@
 --[[
   GobEmperor.lua
-  Version: 17.06.18
+  Version: 17.06.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sun 18 June 2017; 22:33:01
+-- File Generated: Mon 19 June 2017; 17:32:49
 
 
 local foe = {}

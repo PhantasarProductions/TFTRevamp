@@ -1,6 +1,6 @@
 --[[
   EQP_ACC_RINGSKILL.lua
-  Version: 17.06.18
+  Version: 17.06.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

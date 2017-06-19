@@ -1,5 +1,5 @@
 --[[
-  EQP_ACC_RINGTYRANT.lua
+  Hydra.lua
   Version: 17.06.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -34,45 +34,28 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-ret = {
-	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 5,
-	["ADDCARD_Char_Interval"] = 5,
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "Raises power, but lowers defense",
-	["EQP_STAT_Accuracy"] = 200,
-	["EQP_STAT_Endurance"] = -1200,
-	["EQP_STAT_Evasion"] = -200,
-	["EQP_STAT_Power"] = 1200,
-	["EQP_STAT_SR_Curse"] = 2,
-	["EQP_STAT_SR_Death"] = 2,
-	["EQP_STAT_SR_Destruction"] = 2,
-	["EQP_STAT_SR_Disease"] = 2,
-	["EQP_STAT_SR_Paralysis"] = 2,
-	["EQP_STAT_SR_Petrification"] = 2,
-	["EQP_STAT_SR_Poison"] = 2,
-	["EQP_STAT_SR_Silence"] = 2,
-	["EQP_STAT_SR_Sleep"] = 2,
-	["EQP_STAT_SR_Undead"] = 2,
-	["Heal_StatPercent"] = "Intelligence",
-	["ITM_ACC_Dandor"] = true,
-	["ITM_ACC_HandoStillor"] = true,
-	["ITM_ACC_Jake"] = true,
-	["ITM_ACC_Marrilona"] = true,
-	["ITM_BlackMarket"] = true,
-	["ITM_Combat"] = true,
-	["ITM_Field"] = true,
-	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Accesoiry",
-	["Stance"] = "Cast",
-	["Target"] = "1F",
-	["Title"] = "Ring of the tyrant",
-	["Type"] = "Item"}
+-- @IF IGNORE
+local FoeAI = {}
+-- @FI
 
-return ret
+function FoeAI.Hydra(tag)
+    -- @IF IGNORE
+    local nextact
+    -- @FI
+    local foe = fightersbytag[tag]
+    local hp=RPG.Points(tag,"HP")
+    if hp.Have>1 then return FoeAI.default(tag) end
+    -- if RPG.Points(tag,'HP').Have>1 then return FoeAI.default(tag) end    
+    nextact =   {
+                           executor = { group = 'Foe', tag=foe.tag },
+                           act = 'HYDRA_ONTHOOFD', 
+                           flow='Execution', 
+                           group='Foe',
+                           targetidx=1
+    }
+    return nextact
+end
 
--- This file is an automatically generated file!
-
+-- @IF IGNORE
+return FoeAI
+-- @FI

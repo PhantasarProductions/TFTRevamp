@@ -1,6 +1,6 @@
 --[[
   WAND_II_WATT.lua
-  Version: 17.06.18
+  Version: 17.06.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  ABL_MASTER_RUSSELL_SAFESHOT.lua
+  HYDRA_ONTHOOFD.lua
   (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
@@ -42,24 +42,20 @@ ret = {
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Same Damage Always. Penetrates defenses",
-	["EffectScript"] = "SafeShot",
+	["EffectScript"] = "Nothing",
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
-	["Stance"] = "Attack",
+	["Stance"] = "Cast",
 	["Target"] = "1F",
-	["Title"] = "Safe Shot",
-	["Type"] = "Item",
-	["Voice"] = "Critical"}
+	["Title"] = "Hydra is decaptiated and cannot act",
+	["Type"] = "Item"}
 
 return ret
 

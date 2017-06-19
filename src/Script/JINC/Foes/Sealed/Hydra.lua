@@ -1,6 +1,6 @@
 --[[
   Hydra.lua
-  Version: 17.06.18
+  Version: 17.06.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,12 +34,12 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sun 18 June 2017; 22:32:59
+-- File Generated: Mon 19 June 2017; 17:32:50
 
 
 local foe = {}
 
-	foe["AI"] = "default"
+	foe["AI"] = "Hydra"
 	foe["NEWGAMEPLUS_AAA_ATTACK"] = true
 	foe["NEWGAMEPLUS_AAA_GUARD"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_CRUSH"] = true
