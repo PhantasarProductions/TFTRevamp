@@ -101,7 +101,10 @@ function DrawFighter(g,i)
         acm.fs = acm.fs or 1 -- fonts['CombatCharMessage'][2] * (acm.scale/100); fs = math.ceil(fs)
         --Image.ScalePC(acm.scale,acm.scale)
         Image.Font("fonts/"..fn,acm.fs) 
-        DarkText(acm.msg,shdata.x,shdata.y-30,2,1,acm.r,acm.g,acm.b)
+        --if shdata.x<10 then shdata.x = 100 end
+        local usex=shdata.x
+        if usex<50 then usex=125 end
+        DarkText(acm.msg,usex,shdata.y-30,2,1,acm.r,acm.g,acm.b)
         -- Image.ScalePC(100,100)
         --if acm.scale<100 then 
         --   acm.scale = acm.scale + 1

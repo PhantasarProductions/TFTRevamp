@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.18
+version: 17.06.19
 ]]
 
 
@@ -44,6 +44,12 @@ function StartHydra()
     AddJoker('Hydra')
 end
 
+function PostHydra()
+    MapText('HYDRADROP')
+    ItemGive('EQP_HANDOSTILLOR_SEALEDARMOR')
+    for ch in each({'Jake_Human','Marrilona','Dandor','HandoStillor'}) do RPG.IncStat(ch,'EXP',-100000) end
+end
+
 function BlueSeal()
   ClearCombatData()
   Var.D("$COMBAT.STARTEVENT","MAP,StartHydra")
@@ -52,6 +58,7 @@ function BlueSeal()
   Var.D("$COMBAT.MUSIC","Music/Special Boss/Blue Seal.ogg")
   Var.D("$COMBAT.ARENA","Hell.png")
   StartBoss("Mythical Snake","Hydra",0,0,255)   
+  Schedule('MAP','PostHydra')
   --Maps.Obj.Kill("4MonksFromHell",1)
 end
 
