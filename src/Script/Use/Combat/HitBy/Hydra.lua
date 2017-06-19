@@ -1,6 +1,6 @@
 --[[
   Hydra.lua
-  Version: 17.06.18
+  Version: 17.06.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -41,6 +41,7 @@ local HitBy = {}
 
 -- Hydra kill upon being struck by fire when HP is on 1
 function HitBy.Hydra(tag,elem)
+    CSay(tag..' is hit by '..elem)
     if elem~="Flame" then return end
     local hp = RPG.Points(tag,"HP")
     if hp.Have>1 then return end

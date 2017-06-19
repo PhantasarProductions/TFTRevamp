@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.18
+version: 17.06.19
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
@@ -50,6 +50,7 @@ function Hurt(tag,damage,element)
       if eleprot<-200 then -- Fatal
          if dmg>0 then dmg = hp.Have end
          charmsg(tag,"DEATH!",255,0,0)
+         hp.Minimum=0
       elseif eleprot<-100 then -- Very weak
          charmsg(tag,dmg,255,0,0)
       elseif eleprot<0 then -- weak

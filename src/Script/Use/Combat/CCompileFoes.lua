@@ -57,6 +57,7 @@ function CompileFoe(tag,data,foefile,oversoul)
    myfoe.data = data
    myfoe.exp = data.normal_EXP
    myfoe.voicetag = data.VocalTag
+   myfoe.HitBy = data.HitBy
    if oversoul then
       if skill==3 then myfoe.exp = 0 else myfoe.exp = data.oversoul_EXP end
    end

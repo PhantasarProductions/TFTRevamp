@@ -43,7 +43,14 @@ StatusChanges.Hydra = {
 
      DrawFighter = function(ch)
         local hp=RPG.Points(ch,"HP")
-        if hp.Have==1 then Color(0,0,0); Image.SetAlphaPC(25) end  
+        local flame=200
+        if hp.Have<=1 then 
+           Color(0,0,0); 
+           Image.SetAlphaPC(25)
+           flame=-500
+           --hp.Minimum=0            
+        end  
+        RPG.SetStat(ch,"BASE_ER_Flame",flame)
         local f = fighterbytag[ch]
         if f.x>0 then f.x = -300
         elseif f.x<0 then f.x = f.x + 1; CSay(ch.." scrolling in: "..f.x) end
