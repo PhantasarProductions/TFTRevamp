@@ -1,6 +1,6 @@
 --[[
   CCompileFoes.lua
-  Version: 17.04.25
+  Version: 17.06.19
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -97,10 +97,16 @@ function CompileFoe(tag,data,foefile,oversoul)
          Image.Load(list[rand(1,#list)],"FIGHT_"..tag..upper(sval(false)))
       else
          Image.Load(data.Image,"FIGHT_"..tag..upper(sval(false)))
-      end   
-      Image.Negative("FIGHT_"..tag..upper(sval(false)),"FIGHT_"..tag..upper(sval(true)))
-      Image.Hot("FIGHT_"..tag.."FALSE",Image.Width("FIGHT_"..tag.."FALSE")/2,Image.Height("FIGHT_"..tag.."FALSE")) -- Hotspot bottom center
-      Image.Hot("FIGHT_"..tag.."TRUE" ,Image.Width("FIGHT_"..tag.."TRUE" )/2,Image.Height("FIGHT_"..tag.."TRUE" )) -- Hotspot bottom center
+      end
+      if JCR6.Exists(replace(data.Image,".png",".hot"))==1 then
+        Image.Negative("FIGHT_"..tag..upper(sval(false)),"FIGHT_"..tag..upper(sval(true)))
+        local i = Image.Image("FIGHT_"..tag..upper(sval(false)))
+        Image.Hot("FIGHT_"..tag..upper(sval(true)),i.handle_x,i.handle_y)
+      else   
+        Image.Negative("FIGHT_"..tag..upper(sval(false)),"FIGHT_"..tag..upper(sval(true)))
+        Image.Hot("FIGHT_"..tag.."FALSE",Image.Width("FIGHT_"..tag.."FALSE")/2,Image.Height("FIGHT_"..tag.."FALSE")) -- Hotspot bottom center
+        Image.Hot("FIGHT_"..tag.."TRUE" ,Image.Width("FIGHT_"..tag.."TRUE" )/2,Image.Height("FIGHT_"..tag.."TRUE" )) -- Hotspot bottom center
+      end  
    end   
    local x --= math.ceil(id/3)
    local y --= (id - x)+1

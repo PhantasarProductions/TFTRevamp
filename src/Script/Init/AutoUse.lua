@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 17.03.29
+  Version: 17.06.19
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -39,7 +39,7 @@
 -- @USEDIR Script/Use/Anyway
 
 
-RequiredVersion = "17.03.29"
+RequiredVersion = "17.06.19"
 
 
 function GALE_OnLoad()
