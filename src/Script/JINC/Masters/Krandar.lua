@@ -32,13 +32,15 @@
   
  **********************************************
  
-version: 17.05.14
+version: 17.06.19
 ]]
 local RPG = RPGStat
 
 local Krandar = {}
 
 local skill = Sys.Val(Var.C('%SKILL'))
+
+local upper = string.upper
 
 local function left(txt,l)
 return Str.Left(txt,l or 1)

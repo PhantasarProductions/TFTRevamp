@@ -1681,6 +1681,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/GENERAL/TRAVELEMBLEM
     1. Scenario: Languages/Dutch/Scenario/MAPS/ANNA
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_FRENDORBUSHES
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_HELL
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_HOLYPATH
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_LIBRARY
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_SUBRIVER
@@ -1728,6 +1729,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/GENERAL/TRAVELEMBLEM
     1. Scenario: Languages/English/Scenario/MAPS/ANNA
     1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_FRENDORBUSHES
+    1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_HELL
     1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_HOLYPATH
     1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_LIBRARY
     1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_SUBRIVER

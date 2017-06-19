@@ -48,6 +48,7 @@ function PostHydra()
     MapText('HYDRADROP')
     ItemGive('EQP_HANDOSTILLOR_SEALEDARMOR')
     for ch in each({'Jake_Human','Marrilona','Dandor','HandoStillor'}) do RPG.IncStat(ch,'EXP',-100000) end
+    Done('&DONE.SEAL.HANDOSTILLOR2')
 end
 
 function BlueSeal()
