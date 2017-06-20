@@ -306,6 +306,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_DISINTEGRATE.lua
     1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
     1. Script: Script/JINC/IA/ABL_FOE_ENEMYVITALIZE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_ENERGYDRAIN.lua
     1. Script: Script/JINC/IA/ABL_FOE_EVIL_EYE.lua
     1. Script: Script/JINC/IA/ABL_FOE_EVIL_EYE_PARALYZE.lua
     1. Script: Script/JINC/IA/ABL_FOE_EVIL_EYE_PETRIFY.lua
@@ -317,6 +318,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_GRAVITY.lua
     1. Script: Script/JINC/IA/ABL_FOE_HOLDPERSON.lua
     1. Script: Script/JINC/IA/ABL_FOE_HORROR.lua
+    1. Script: Script/JINC/IA/ABL_FOE_LIFEDRAIN.lua
+    1. Script: Script/JINC/IA/ABL_FOE_LIFEFORCE.lua
     1. Script: Script/JINC/IA/ABL_FOE_MERMAID_TEMPATION.lua
     1. Script: Script/JINC/IA/ABL_FOE_PARADIVE.lua
     1. Script: Script/JINC/IA/ABL_FOE_RANDOMIZER.lua
