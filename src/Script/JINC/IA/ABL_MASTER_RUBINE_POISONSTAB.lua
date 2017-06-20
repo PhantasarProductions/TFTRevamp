@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_RUBINE_POISONSTAB.lua
-  Version: 17.06.20
+  Version: 17.06.21
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================

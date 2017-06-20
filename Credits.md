@@ -131,6 +131,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Font: Fonts/CloisterBlack.ttf
 - Donald Trump
     1. Audio: Audio/Trump/Trump.ogg
+- Ed Kasap
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/Grwol.png
 - Eric Matyas
     1. Music: Music/Dungeon/Magic-Clock-Shop_Looping.ogg
     1. Music: Music/Dungeon/Sewer-Monsters-Town-Hall-Meeting_Looping.ogg
@@ -801,6 +803,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/Alright you silly ones -- I will help you this time.lua
     1. Script: Script/Use/Combat/SpellScript/Card Tricks.lua
     1. Script: Script/Use/Combat/SpellScript/DragonDown.lua
+    1. Script: Script/Use/Combat/SpellScript/Drain.lua
     1. Script: Script/Use/Combat/SpellScript/Instability.lua
     1. Script: Script/Use/Combat/SpellScript/Jake Shift.lua
     1. Script: Script/Use/Combat/SpellScript/Juggernaut.lua
@@ -867,14 +870,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/SerializeIntoSysVar.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
