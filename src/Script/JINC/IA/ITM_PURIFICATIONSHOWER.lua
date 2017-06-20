@@ -1,5 +1,5 @@
 --[[
-  EQP_HANDOSTILLOR_AR9.lua
+  ITM_PURIFICATIONSHOWER.lua
   Version: 17.06.20
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -36,22 +36,44 @@
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 9,
+	["ADDCARD_Action_Number"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "You look important, Your Holiness",
-	["EQP_STAT_Endurance"] = 9,
-	["EQP_STAT_Resistance"] = 9,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "HandoStillor",
+	["CureCurse"] = true,
+	["CureDisease"] = true,
+	["CureParalysis"] = true,
+	["CurePetrification"] = true,
+	["CurePoison"] = true,
+	["CureSilence"] = true,
+	["CureSleep"] = true,
+	["CureUndead"] = true,
+	["Desc"] = "Heals all status ailments and adds extra cards doing the same",
+	["Heal_StatPercent"] = "Intelligence",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 28672,
-	["ITM_Type"] = "Armor",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Holy robes",
-	["Type"] = "Item"}
+	["ITM_ShopPrice"] = 2500,
+	["ITM_Type"] = "Consumable",
+	["Revive"] = true,
+	["Rew_GainAP"] = 5,
+	["SpellAni"] = "AllHeal",
+	["Stance"] = "Cast",
+	["Target"] = "AA",
+	["Title"] = "Purification Shower",
+	["Type"] = "Item",
+	["Voice"] = "Heal",
+	["rew_GainSkill1"] = 5,
+	["rew_GainSkill2"] = 5,
+	["rew_GainSkill3"] = 5,
+	["rew_GainSkill4"] = 5,
+	["rew_GainSkill5"] = 5}
 
 return ret
 

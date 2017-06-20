@@ -1,6 +1,6 @@
 --[[
   EQP_JEWEL_RUBY.lua
-  Version: 17.06.19
+  Version: 17.06.20
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

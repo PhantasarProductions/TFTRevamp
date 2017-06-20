@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_FANDALORA_DEATH.lua
-  Version: 17.06.19
+  Version: 17.06.20
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
