@@ -48,10 +48,12 @@ function SpellScript.Drain(t,e,p)
   local drained = math.ceil(hpt.Have * breuk)
   if hpe.Have+drained>hpe.Maximum then drained = hpe.Maximum-hpe.Have end
   if (fighterbytag[e].StatusChanges or {}).Disease then drained = 0 end
+  if drained>htp.Have then drained=hpt.have end
   charmsg(t,drained,255,255,255)
   charmsg(e,drained,180,255,0)
   hpt.Inc(-drained)
   hpe.Inc( drained)
+  if hpt.Have<=0 then SetStatus(t,'Death',true) end
   return true
 end
 
