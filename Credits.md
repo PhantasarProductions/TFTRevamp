@@ -566,6 +566,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_HEALINGHERB.lua
     1. Script: Script/JINC/IA/ITM_HEALSHOWER.lua
     1. Script: Script/JINC/IA/ITM_HELLSTONE.lua
+    1. Script: Script/JINC/IA/ITM_HOLYHANDGRENATE.lua
     1. Script: Script/JINC/IA/ITM_HOLYSCROLL.lua
     1. Script: Script/JINC/IA/ITM_HOLYWATER.lua
     1. Script: Script/JINC/IA/ITM_ICICLE.lua
@@ -756,6 +757,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Available/Demo.lua
     1. Development documentation: Script/Use/Available/Readme.md
     1. Script: Script/Use/Combat/AltArena/AAA_Algemeen.lua
+    1. Script: Script/Use/Combat/AltArena/ManaCave.lua
     1. Script: Script/Use/Combat/AltArena/MountPyrus.lua
     1. Script: Script/Use/Combat/AltArena/PathOfMagic.lua
     1. Script: Script/Use/Combat/AltArena/Spirata.lua
@@ -1460,6 +1462,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Arena/Library.png
     1. Graphics: GFX/Combat/Arena/Pyrus.png
     1. Graphics: GFX/Combat/Arena/Magic.png
+    1. Graphics: GFX/Combat/Arena/ManaCave.piko
+    1. Graphics: GFX/Combat/Arena/ManaCave.png
     1. Graphics: GFX/Combat/Arena/Mine.png
     1. Graphics: GFX/Combat/Arena/PyrusPass.png
     1. Graphics: GFX/Combat/Arena/SpirataEarth.png
