@@ -1,8 +1,8 @@
 --[[
   Music.lua
   
-  version: 16.12.06
-  Copyright (C) 2015, 2016 Jeroen P. Broks
+  version: 17.06.21
+  Copyright (C) 2015, 2016, 2017 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
@@ -40,11 +40,11 @@ musicavailable = JCR6.Exists("ID/ID.DEMO.MUSIC")==1;
        MS.Run("MUSIC","StopMusic")
        end
 
-       function PushMusic()
+       function PushMusic(altpush)
        local pushidx = CVV("%PUSHEDSONGS") + 1
        MS.LN_Run("MUSIC","Script/Subs/Music.lua","GetCurrentSong","$CURRENTSONG")
        Var.D("%PUSHEDSONGS",pushidx)
-       Var.D("$PUSHEDSONGS["..pushidx.."]",CVV("$CURRENTSONG"))
+       Var.D("$PUSHEDSONGS["..pushidx.."]",altpush or CVV("$CURRENTSONG"))
        CSay("Pushed: $PUSHEDSONGS["..pushidx.."]",CVV("$CURRENTSONG"))
        end
 
