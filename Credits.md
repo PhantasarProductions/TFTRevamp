@@ -168,6 +168,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - JWH Broeders
     1. ???: GFX/Combat/Fighters/Foe/Reg/Archmage.bmp
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Archmage.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Warlock.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/Warlock.xcf
 - Jeroen P. Broks
     1. Game identification data: ID/ID.Vocal.Full
     1. Game identification data: ID/Identify
@@ -293,6 +295,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/StoneGolem.lua
     1. Script: Script/JINC/Foes/reg/Thief.lua
     1. Script: Script/JINC/Foes/reg/VolcanoHound.lua
+    1. Script: Script/JINC/Foes/reg/Warlock.lua
     1. Script: Script/JINC/Foes/reg/Wolf.lua
     1. Script: Script/JINC/Foes/reg/Zombie.lua
     1. Script: Script/JINC/Foes/reg/Zombie2.lua
@@ -876,14 +879,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/SerializeIntoSysVar.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
