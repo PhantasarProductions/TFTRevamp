@@ -71,7 +71,7 @@ function Boss()
   Var.D("$COMBAT.ARENA","ManaCave.png")
   StartBoss("Guardian of the Mana Cave",bossfile[bid])   
   DestroyPushedMusic()
-  PushMusic('"Mystery/Draft2.ogg')
+  PushMusic('Mystery/Draft2.ogg')
 end
 
 function MapMusic()
