@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.31
+version: 17.06.21
 ]]
 
 -- @USE /Script/Use/Specific/GreatMagicBack.lua
@@ -45,7 +45,32 @@ local effect
 local complete  = "&DONE.MANACAVE.COMPLETE"
 local boss1down = "&DONE.MANACAVE.BOSS1"
 local welcome   = "&DONE.MANACAVE.WELCOME"
-local tune = {[true]=2,[false]=1}
+local tune      = {[true]=2,[false]=1}
+local bosses    = {['#005']=1}
+local bossfile  = {'Grwol'}
+
+
+function Boss()
+  local bid = bosses[Maps.LayerCodeName]
+  if Done("&DONE.MANACAVE.BOSS"..bid) then return end
+  ClearCombatData()
+  local i = 1
+  local s = ({0,1,3})[skill]
+  for ak=1,s do 
+      Var.D("$COMBAT.FOE_"..i,"Reg/Nemesis")
+      i = i + 1
+  end    
+  Var.D("$COMBAT.FOE_"..i,"Boss/"..bossfile[bid])
+  Var.D('$COMBAT.POSFOE_'..i,"CENTER")
+  i=i+1
+  for ak=1,s do 
+      Var.D("$COMBAT.FOE_"..i,"Reg/Nemesis")      
+      i = i + 1
+  end    
+  Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
+  Var.D("$COMBAT.ARENA","Forest.png")
+  StartBoss("Guardian of the Mana Cave",bossfile[bid])   
+end
 
 function MapMusic()
      Music("Mystery/Draft"..tune[CVV(boss1down)]..".ogg")
