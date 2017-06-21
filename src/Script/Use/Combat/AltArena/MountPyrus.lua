@@ -1,6 +1,6 @@
 --[[
   MountPyrus.lua
-  Version: 17.05.02
+  Version: 17.06.21
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -35,7 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 -- @IF IGNORE
-AltArena = {}
+local AltArena = {}
 -- @FI
 
 AltArena.pyrus = {

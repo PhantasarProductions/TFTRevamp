@@ -1,40 +1,4 @@
---[[
-  MagSkeleton.lua
-  Version: 17.06.21
-  Copyright (C) 2017 Jeroen Petrus Broks
-  
-  ===========================
-  This file is part of a project related to the Phantasar Chronicles or another
-  series or saga which is property of Jeroen P. Broks.
-  This means that it may contain references to a story-line plus characters
-  which are property of Jeroen Broks. These references may only be distributed
-  along with an unmodified version of the game. 
-  
-  As soon as you remove or replace ALL references to the storyline or character
-  references, or any termology specifically set up for the Phantasar universe,
-  or any other univers a story of Jeroen P. Broks is set up for,
-  the restrictions of this file are removed and will automatically become
-  zLib licensed (see below).
-  
-  Please note that doing so counts as a modification and must be marked as such
-  in accordance to the zLib license.
-  ===========================
-  zLib license terms:
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
-]]
--- File Generated: Wed 21 June 2017; 13:31:30
+-- File Generated: Wed 21 June 2017; 14:42:24
 
 
 local foe = {}
@@ -200,7 +164,7 @@ local foe = {}
 	foe["STSTART_Poison"] = false
 	foe["STSTART_Silence"] = false
 	foe["STSTART_Sleep"] = false
-	foe["STSTART_Undead"] = false
+	foe["STSTART_Undead"] = true
 	foe["Desc"] = "A magic skeleton?\10Oh my goodness\46\46\46"
 	foe["HitBy"] = ""
 	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Reg\47Skeleton\46png"
@@ -746,54 +710,54 @@ local foe = {}
 	foe["TARGET_ZZ_CRYPTKEY"] = "Random"
 	foe["VocalTag"] = "MagSkeleton"
 	foe["Boss"] = false
-	foe["Oversoul"] = false
+	foe["Oversoul"] = true
 	foe["Oversoul Drop \49"] = false
 	foe["Oversoul Drop \50"] = false
 	foe["Oversoul Steal \49"] = false
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
 	foe["Cash"] = 80
-	foe["ER_Darkness"] = 0
-	foe["ER_Earth"] = 0
-	foe["ER_Flame"] = 0
-	foe["ER_Frost"] = 0
-	foe["ER_Light"] = 0
-	foe["ER_Lightning"] = 0
-	foe["ER_Water"] = 0
-	foe["ER_Wind"] = 0
+	foe["ER_Darkness"] = 999
+	foe["ER_Earth"] = 100
+	foe["ER_Flame"] = -100
+	foe["ER_Frost"] = 100
+	foe["ER_Light"] = -999
+	foe["ER_Lightning"] = 100
+	foe["ER_Water"] = 100
+	foe["ER_Wind"] = 100
 	foe["Rate Drop \49"] = 2
 	foe["Rate Drop \50"] = 75
 	foe["Rate Steal \49"] = 100
 	foe["Rate Steal \50"] = 1
 	foe["Rate Steal \51"] = 2
-	foe["SR_Confusion"] = 0
-	foe["SR_Curse"] = 0
-	foe["SR_Death"] = 0
-	foe["SR_Disease"] = 0
-	foe["SR_Paralysis"] = 0
-	foe["SR_Petrification"] = 0
-	foe["SR_Poison"] = 0
-	foe["SR_Silence"] = 0
-	foe["SR_Sleep"] = 0
+	foe["SR_Confusion"] = 100
+	foe["SR_Curse"] = 100
+	foe["SR_Death"] = 100
+	foe["SR_Disease"] = 100
+	foe["SR_Paralysis"] = 100
+	foe["SR_Petrification"] = 100
+	foe["SR_Poison"] = 100
+	foe["SR_Silence"] = 100
+	foe["SR_Sleep"] = 100
 	foe["SR_Undead"] = 0
 	foe["normal_Accuracy"] = 100
-	foe["normal_EXP"] = 0
-	foe["normal_Endurance"] = 0
-	foe["normal_Evasion"] = 0
-	foe["normal_HP"] = 0
-	foe["normal_Intelligence"] = 0
-	foe["normal_Power"] = 0
-	foe["normal_Resistance"] = 0
-	foe["normal_Speed"] = 0
+	foe["normal_EXP"] = 1234
+	foe["normal_Endurance"] = 99999
+	foe["normal_Evasion"] = 100
+	foe["normal_HP"] = 12345
+	foe["normal_Intelligence"] = 700
+	foe["normal_Power"] = 123
+	foe["normal_Resistance"] = 99999
+	foe["normal_Speed"] = 450
 	foe["oversoul_Accuracy"] = 100
-	foe["oversoul_EXP"] = 0
-	foe["oversoul_Endurance"] = 0
-	foe["oversoul_Evasion"] = 0
-	foe["oversoul_HP"] = 0
-	foe["oversoul_Intelligence"] = 0
-	foe["oversoul_Power"] = 0
-	foe["oversoul_Resistance"] = 0
-	foe["oversoul_Speed"] = 0
+	foe["oversoul_EXP"] = 10
+	foe["oversoul_Endurance"] = 99999
+	foe["oversoul_Evasion"] = 100
+	foe["oversoul_HP"] = 50000
+	foe["oversoul_Intelligence"] = 2000
+	foe["oversoul_Power"] = 500
+	foe["oversoul_Resistance"] = 99999
+	foe["oversoul_Speed"] = 9000
 
 
 return foe

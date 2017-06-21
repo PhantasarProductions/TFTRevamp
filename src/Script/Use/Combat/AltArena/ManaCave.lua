@@ -38,43 +38,49 @@
 local AltArena = {}
 -- @FI
 
+-- CSay("ManaCave Script import")
+
 ManaCavePlasma = ManaCavePlasma or {}
 
 
-function AltArena.ManaCave()
+AltArena.ManaCave = {}
+
+function AltArena.ManaCave.Before()
     Image.LoadNew('MCTPLASMA','gfx/Textures/Plasma/TiledPlasma.png')
     --local plasma = ManaCavePlasma
-    ManaCavePlasma.initiated = ManaCavePlasma.initated or (function (plasma)
+    ManaCavePlasma.initiated = ManaCavePlasma.initiated or (function (plasma)
       --plasma.textures = {'gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png'}
       plasma.colors = { {180,0,0}, {0,180,0}, {0,0,180},{180,0,0}, {0,180,0}, {0,0,180}}
       plasma.speed = {{1,0},{0,1},{-1,-1},{-1,0},{0,-1},{1,1}}
       plasma.x = {}
       plasma.y = {}
       for i=1,#plasma.colors do
-          plasma.x=rand(0,800)
-          plasma.y=rand(0,800)
+          plasma.x[i]=rand(0,800)
+          plasma.y[i]=rand(0,800)
       end    
       plasma.max=#plasma.colors
+      CSay('Plasma stream initiated -- '..plasma.max.." layers")
       return true
     end)(ManaCavePlasma)
     local plasma=ManaCavePlasma
     Image.SetBlend(LightBlend)
     for i=1,ManaCavePlasma.max do
+        --CSay("Plasma layer "..i.."/"..plasma.max)
         plasma.x[i] = plasma.x[i] + plasma.speed[i][1] 
         plasma.y[i] = plasma.y[i] + plasma.speed[i][1]
-        if     plasma.x<0    then plasma.x[i] = plasma.x[i] + 1600 
-        elseif plasma.x>1600 then plasma.x[i] = plasma.x[i] - 1600 end
-        if     plasma.y<0    then plasma.x[i] = plasma.y[i] + 1200 
-        elseif plasma.y>1600 then plasma.x[i] = plasma.y[i] - 1200 end
+        if     plasma.x[i]<0    then plasma.x[i] = plasma.x[i] + 1600 
+        elseif plasma.x[i]>1600 then plasma.x[i] = plasma.x[i] - 1600 end
+        if     plasma.y[i]<0    then plasma.x[i] = plasma.y[i] + 1200 
+        elseif plasma.y[i]>1600 then plasma.x[i] = plasma.y[i] - 1200 end
         local c = plasma.colors[i]
         Color(c[1],c[2],c[3])
-        Image.Tile('NCTPLASMA',plasma.x[i],plasma.y[i])
+        Image.Tile('MCTPLASMA',plasma.x[i],plasma.y[i])
     end
     Image.SetBlend(AlphaBlend)  
 end    
 
 
-
+AltArena.manacave = AltArena.ManaCave
 
 -- @IF IGNORE
 return AltArena
