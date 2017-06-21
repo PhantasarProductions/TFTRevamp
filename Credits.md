@@ -223,6 +223,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/Dwarf_J.lua
     1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
     1. Script: Script/JINC/Foes/Boss/GobKing.lua
+    1. Script: Script/JINC/Foes/Boss/Grwol.lua
     1. Script: Script/JINC/Foes/Boss/Harry1.lua
     1. Script: Script/JINC/Foes/Boss/Harry3.lua
     1. Script: Script/JINC/Foes/Boss/Ignis.lua

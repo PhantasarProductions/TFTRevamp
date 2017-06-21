@@ -68,8 +68,10 @@ function Boss()
       i = i + 1
   end    
   Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
-  Var.D("$COMBAT.ARENA","Forest.png")
+  Var.D("$COMBAT.ARENA","ManaCave.png")
   StartBoss("Guardian of the Mana Cave",bossfile[bid])   
+  DestroyPushedMusic()
+  PushMusic('"Mystery/Draft2.ogg')
 end
 
 function MapMusic()

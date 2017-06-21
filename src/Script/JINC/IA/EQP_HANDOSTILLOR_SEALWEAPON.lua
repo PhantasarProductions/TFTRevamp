@@ -37,8 +37,8 @@ version: 17.06.21
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
 	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Action_Number"] = 2,
 	["ADDCARD_Char_Interval"] = 5,
-	["ADDCARD_Char_Number"] = 1,
 	["Attack"] = 120,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
