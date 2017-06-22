@@ -881,14 +881,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/SerializeIntoSysVar.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -1147,9 +1147,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH3_Town_Nostraburg/Data
     1. Map Design: Kthura/CH3_Town_Nostraburg/Objects
     1. Map Design: Kthura/CH3_Town_Nostraburg/Settings
-    1. Map Design: Kthura/CH4_Dungeon_ManaCave/DATA
-    1. Map Design: Kthura/CH4_Dungeon_ManaCave/OBJECTS
-    1. Map Design: Kthura/CH4_Dungeon_ManaCave/SETTINGS
+    1. Map Design: Kthura/CH4_Dungeon_ManaCave/Data
+    1. Map Design: Kthura/CH4_Dungeon_ManaCave/Objects
+    1. Map Design: Kthura/CH4_Dungeon_ManaCave/Settings
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Data
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Objects
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Settings
@@ -2484,6 +2484,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Trees/Loofboom.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/DemonAir.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/KillerEscargot.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/UberGoblin.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Boekenworm.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/StoneGolem.png
     1. Graphics: GFX/MapSpots/Travel.png
