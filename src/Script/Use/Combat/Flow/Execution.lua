@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.06.12
+  Version: 17.06.22
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -41,7 +41,7 @@
 
 
 -- @IF IGNORE
-fflow = {}
+local fflow = {}
 -- @FI
 
 
@@ -185,6 +185,7 @@ fflow.Range['1A'] = fflow.Range['1F']
 fflow.Range.AA = fflow.Range.AF                          
 
 function fflow.Execution()
+   
    -- Check the teacher. If set it may override the selected attack.
    if nextact.executor.group=="Hero" and nextact.mayteach and (not nextact.auto) then
       LoadItemModule() -- Loads the items module if this wasn't done before. 

@@ -1,6 +1,6 @@
 --[[
   CPossible.lua
-  Version: 17.03.13
+  Version: 17.06.22
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -38,7 +38,11 @@ local LOCALALWAYSYES = function() return true end
 local function LOCALSINGLE()
          local g = nextact.group
          local i = nextact.targetidx
-         return Fighters[g][i]~=nil 
+         local tab = Fighters[g][i]
+         local ret = tab~=nil 
+         local tag = (tab or {}).tag; if not tag then return nil end
+         if prefixed(tag,"FOE_") and RPG.Points(tag,'HP')==0 then ret = false end
+         return ret
 end         
 
 ArrayPossible = {

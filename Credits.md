@@ -1147,9 +1147,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH3_Town_Nostraburg/Data
     1. Map Design: Kthura/CH3_Town_Nostraburg/Objects
     1. Map Design: Kthura/CH3_Town_Nostraburg/Settings
-    1. Map Design: Kthura/CH4_Dungeon_ManaCave/Data
-    1. Map Design: Kthura/CH4_Dungeon_ManaCave/Objects
-    1. Map Design: Kthura/CH4_Dungeon_ManaCave/Settings
+    1. Map Design: Kthura/CH4_Dungeon_ManaCave/DATA
+    1. Map Design: Kthura/CH4_Dungeon_ManaCave/OBJECTS
+    1. Map Design: Kthura/CH4_Dungeon_ManaCave/SETTINGS
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Data
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Objects
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Settings
