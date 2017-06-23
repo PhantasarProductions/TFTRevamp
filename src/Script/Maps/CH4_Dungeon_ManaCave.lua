@@ -123,5 +123,5 @@ function GALE_OnLoad()
     -- @IF Ignore
        local
     -- @FI
-    effect = SetupGreatMagic(plasma,20)    
+    effect = SetupGreatMagic(plasma,21) -- #000 counts too, you know!    
 end          
