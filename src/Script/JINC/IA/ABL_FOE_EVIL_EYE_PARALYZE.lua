@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_EVIL_EYE_PARALYZE.lua
-  Version: 17.06.21
+  Version: 17.06.23
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

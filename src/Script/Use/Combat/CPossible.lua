@@ -1,6 +1,6 @@
 --[[
   CPossible.lua
-  Version: 17.06.22
+  Version: 17.06.23
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,6 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
 local LOCALALWAYSYES = function() return true end
 local function LOCALSINGLE()
          local g = nextact.group
