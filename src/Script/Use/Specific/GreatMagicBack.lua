@@ -1,6 +1,6 @@
 --[[
   GreatMagicBack.lua
-  Version: 17.05.31
+  Version: 17.06.23
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -99,12 +99,23 @@ function SetUpGreatMagicDo(data,layer)
       return retv
 end
 
-function SetupGreatMagic(pdata)
+function SetupGreatMagic(pdata,process)
       local data = pdata or {}
       local ret = {}
       for k,v in pairs(gm_default) do data[k] = data[k] or v end
       local layers = mysplit(Maps.Layers(),";")
+      local pr = 1
       for layer in each(layers) do
+          if process then
+             Cls()
+             Image.NoFont()
+             Color(255,180,0)
+             Image.Text(0,0,"Configuring extra data...")
+             Color(180,0,255)
+             Image.Text(0,20,math.ceil((pr/process)*100).."%")
+             Image.Flip()
+             pr = pr + 1
+          end   
           Maps.GoToLayer(layer) 
           ret[layer] = SetUpGreatMagicDo(data,layer) 
       end
