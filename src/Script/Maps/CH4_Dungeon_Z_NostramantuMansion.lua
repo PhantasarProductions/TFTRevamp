@@ -41,3 +41,8 @@ version: 17.06.23
    Confrontation -- Zone leading to Nostramantu (point of no-return
 
 ]]
+
+
+function GALE_OnLoad()
+  ZA_Enter('ManaCave',function() LoadMap('CH4_DUNGEON_MANACAVE') GoToLayer('#020','Einde') end)
+end  
