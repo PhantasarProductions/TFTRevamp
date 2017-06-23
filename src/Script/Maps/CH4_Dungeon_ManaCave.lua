@@ -81,7 +81,8 @@ end
     
     
 local function QuickMansion()
-    error("This route is not open yet")
+    -- error("This route is not open yet")
+    GoToLayer('#020','Start')
 end        
 
 local function Welcome()
@@ -89,6 +90,12 @@ local function Welcome()
      Maps.Obj.Kill("Welcome",1)
      WorldMap_UnLock("CH4MANACAVE")
 end
+
+local function ToBegin()
+    --GoToLayer("#000","Start") 
+    Done(complete)
+    WorldMap('Kokonora')
+end    
 
 function MAP_FLOW()
    local e
@@ -116,6 +123,7 @@ function GALE_OnLoad()
        ZA_Enter("Quick",QuickMansion)
     end
     ZA_Enter("Welcome",Welcome)
+    ZA_Enter("ToBegin",ToBegin)
     local plasma = {}
     plasma.textures = {'gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png'}
     plasma.colors = { {180,0,0}, {0,180,0}, {0,0,180},{180,0,0}, {0,180,0}, {0,0,180}}
