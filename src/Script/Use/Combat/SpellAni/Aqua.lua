@@ -1,6 +1,6 @@
 --[[
   Aqua.lua
-  Version: 17.06.08
+  Version: 17.06.23
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -67,6 +67,25 @@ function SpellAni.Tsunami(actG,actT,tarG,tarT)
    Image.Free(water)
 end  
 
+function SpellAni.Splash(ag,at,tg,tt)
+   local water = Image.Load('gfx/textures/Water/water.png')
+   local alpha = 25
+   local ox,oy,ow,oh = GetViewport()
+   local x,y = FighterCoords(tg,tt)
+   for i=0,25 do
+       Cls()
+       DrawScreen()
+       Image.SetALphaPC(alpha)
+       Image.ViewPort(x-5,0,10,y)
+       for j=0,5 do
+           my = my or {}
+           my[j]=(my[j] or j) + j
+           Image.Tile(water,0,my[j])
+       end
+       Flip()    
+   end
+   Image.Free(water)   
+end
 
 -- @IF IGNORE
 return SpellAni
