@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Fri 23 June 2017; 11:22:23
+-- File Generated: Fri 23 June 2017; 12:19:07
 
 
 local foe = {}
@@ -107,7 +107,7 @@ local foe = {}
 	foe["STSTART_Undead"] = false
 	foe["Desc"] = "Very very strong"
 	foe["HitBy"] = ""
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Boss\47UberGob\46png"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Boss\47UberGoblin\46png"
 	foe["Item Drop \49"] = "ITM_BANANA"
 	foe["Item Drop \50"] = "EQP_JEWEL_SAPPHIRE"
 	foe["Item Steal \49"] = "EQP_JEWEL_AMETHYST"
