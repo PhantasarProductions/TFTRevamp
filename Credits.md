@@ -663,6 +663,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ZZKEY_FIRE.lua
     1. Script: Script/JINC/IA/ZZKEY_GAIA.lua
     1. Script: Script/JINC/IA/ZZKEY_KEYWATER.lua
+    1. Script: Script/JINC/IA/ZZKEY_NOSTRACOIN1.lua
+    1. Script: Script/JINC/IA/ZZKEY_NOSTRACOIN2.lua
+    1. Script: Script/JINC/IA/ZZKEY_NOSTRACOIN3.lua
+    1. Script: Script/JINC/IA/ZZKEY_NOSTRACOIN4.lua
+    1. Script: Script/JINC/IA/ZZKEY_NOSTRACOIN5.lua
+    1. Script: Script/JINC/IA/ZZKEY_NOSTRACOIN6.lua
+    1. Script: Script/JINC/IA/ZZKEY_NOSTRACOIN7.lua
+    1. Script: Script/JINC/IA/ZZKEY_NOSTRACOIN8.lua
     1. Script: Script/JINC/IA/ZZKEY_WIND.lua
     1. Script: Script/JINC/IA/ZZZ_KRANDARARMOR.lua
     1. Script: Script/JINC/IA/ZZZ_KRANDARBLADE.lua
@@ -804,6 +812,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/Jokers/HydraJoker.lua
     1. Script: Script/Use/Combat/PreTurn/AAA_Algemeen.lua
     1. Script: Script/Use/Combat/PreTurn/GainAP.lua
+    1. Script: Script/Use/Combat/PreTurn/GainHP.lua
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
     1. Script: Script/Use/Combat/SpellAni/Aqua.lua
     1. Script: Script/Use/Combat/SpellAni/DarkVision.lua
