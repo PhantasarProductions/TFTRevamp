@@ -71,7 +71,7 @@ function AltArena.ManaCave.Before()
         if     plasma.x[i]<0   then plasma.x[i] = plasma.x[i] + 640 
         elseif plasma.x[i]>600 then plasma.x[i] = plasma.x[i] - 640 end
         if     plasma.y[i]<0   then plasma.x[i] = plasma.y[i] + 400 
-        elseif plasma.y[i]>400 then plasma.x[i] = plasma.y[i] - 400 end
+        elseif plasma.y[i]>400 then plasma.x[i] = plasma.y[i] - 400 end 
         local c = plasma.colors[i]
         Color(c[1],c[2],c[3])
         Image.Tile('MCTPLASMA',plasma.x[i],plasma.y[i])
