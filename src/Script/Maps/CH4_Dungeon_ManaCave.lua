@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.21
+version: 17.06.23
 ]]
 
 -- @USE /Script/Use/Specific/GreatMagicBack.lua
@@ -47,7 +47,8 @@ local boss1down = "&DONE.MANACAVE.BOSS1"
 local welcome   = "&DONE.MANACAVE.WELCOME"
 local tune      = {[true]=2,[false]=1}
 local bosses    = {['#005']=1}
-local bossfile  = {'Grwol'}
+local bossfile  = {'Grwol','UberGob'}
+local bossann   = {'Grwol',Var.S("<Uuml>bergoblin")}
 
 
 function Boss()
@@ -69,7 +70,7 @@ function Boss()
   end    
   Var.D("$COMBAT.MUSIC","Music/Boss/BrutalSong.ogg")
   Var.D("$COMBAT.ARENA","ManaCave.png")
-  StartBoss("Guardian of the Mana Cave",bossfile[bid])   
+  StartBoss("Guardian of the Mana Cave",bossann[bid])   
   DestroyPushedMusic()
   PushMusic('Mystery/Draft2.ogg')
 end
