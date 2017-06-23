@@ -68,10 +68,10 @@ function AltArena.ManaCave.Before()
         --CSay("Plasma layer "..i.."/"..plasma.max)
         plasma.x[i] = plasma.x[i] + plasma.speed[i][1] 
         plasma.y[i] = plasma.y[i] + plasma.speed[i][1]
-        if     plasma.x[i]<0    then plasma.x[i] = plasma.x[i] + 1600 
-        elseif plasma.x[i]>1600 then plasma.x[i] = plasma.x[i] - 1600 end
-        if     plasma.y[i]<0    then plasma.x[i] = plasma.y[i] + 1200 
-        elseif plasma.y[i]>1600 then plasma.x[i] = plasma.y[i] - 1200 end
+        if     plasma.x[i]<0   then plasma.x[i] = plasma.x[i] + 640 
+        elseif plasma.x[i]>600 then plasma.x[i] = plasma.x[i] - 640 end
+        if     plasma.y[i]<0   then plasma.x[i] = plasma.y[i] + 400 
+        elseif plasma.y[i]>400 then plasma.x[i] = plasma.y[i] - 400 end
         local c = plasma.colors[i]
         Color(c[1],c[2],c[3])
         Image.Tile('MCTPLASMA',plasma.x[i],plasma.y[i])
