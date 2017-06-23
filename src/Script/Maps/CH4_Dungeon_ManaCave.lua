@@ -46,7 +46,7 @@ local complete  = "&DONE.MANACAVE.COMPLETE"
 local boss1down = "&DONE.MANACAVE.BOSS1"
 local welcome   = "&DONE.MANACAVE.WELCOME"
 local tune      = {[true]=2,[false]=1}
-local bosses    = {['#005']=1}
+local bosses    = {['#005']=1,['#009']=2}
 local bossfile  = {'Grwol','UberGob'}
 local bossann   = {'Grwol',Var.S("<Uuml>bergoblin")}
 
