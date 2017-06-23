@@ -726,6 +726,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH4_Dungeon_PyrusPass.lua
     1. Script: Script/Maps/CH4_Dungeon_SpirataCrypt.lua
     1. Script: Script/Maps/CH4_Dungeon_StarDome.lua
+    1. Script: Script/Maps/CH4_Dungeon_Z_NostramantuMansion.lua
     1. Script: Script/Maps/CH4_Town_NostraburgNight.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
     1. Script: Script/Maps/PRO_DUNGEON_Magic.lua
@@ -1165,6 +1166,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH4_Dungeon_StarDome/Data
     1. Map Design: Kthura/CH4_Dungeon_StarDome/Objects
     1. Map Design: Kthura/CH4_Dungeon_StarDome/Settings
+    1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/Data
+    1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/Objects
+    1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/Settings
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Data
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Objects
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Settings
@@ -1833,6 +1837,18 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Human Village/brick fenceG.png
     1. Graphics: GFX/Textures/Kapot Mubilair/Bank.png
     1. Graphics: GFX/Textures/Kapot Mubilair/Hemelbed.png
+    1. Graphics: GFX/Textures/Mansion/BankM.png
+    1. Graphics: GFX/Textures/Mansion/MHemelBedBed.png
+    1. Graphics: GFX/Textures/Mansion/MVloer.png
+    1. Graphics: GFX/Textures/Mansion/MWall.png
+    1. Graphics: GFX/Textures/Mansion/MWallE.png
+    1. Graphics: GFX/Textures/Mansion/MWall_lh.png
+    1. Graphics: GFX/Textures/Mansion/MWall_lv.png
+    1. Graphics: GFX/Textures/Mansion/MWall_rh.png
+    1. Graphics: GFX/Textures/Mansion/MWall_rv.png
+    1. Graphics: GFX/Textures/Mansion/SchilderijM.png
+    1. Graphics: GFX/Textures/Mansion/WindowM.png
+    1. Graphics: GFX/Textures/Mansion/WindowM2.png
     1. Graphics: GFX/Textures/Mine/Cart.png
     1. Graphics: GFX/Textures/Road/Dead Grass.png
     1. Graphics: GFX/Textures/Road/Grass1.png

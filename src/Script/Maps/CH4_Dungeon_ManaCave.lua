@@ -97,6 +97,27 @@ local function ToBegin()
     WorldMap('Kokonora')
 end    
 
+local function Mansion()
+  if not Done("&DONE.MANSION.FIRST.SEEING") then
+     local vx,vy,vw,vh = GetViewport()
+     local toy = 190
+     local m = Maps.Obj.Obj('Mansion')
+     local tox = m.x-math.floor(vw/2)
+     repeat
+        if Maps.CamY>toy then Maps.CamY=Maps.CamY-1 end
+        if Maps.CamX>tox then Maps.CamX=Maps.CamX-1 end
+        if Maps.CamX<tox then Maps.CamX=Maps.CamX+1 end
+        Cls()
+        DrawScreen()
+        Flip()
+     until Maps.CamX==tox and Maps.CamY==toy
+     MapText('MANSION')
+     for ch in each({'Jake_Human','Marrilona','Dandor','HandoStillor'}) do RPG.IncStat(ch,'EXP',-250000) end   
+  end
+  LoadMap('CH4_DUNGEON_Z_NOSTRAMANTUMANSION')
+  GoToLayer('lobby','Start')
+end
+
 function MAP_FLOW()
    local e
    for e in each(effect[Maps.LayerCodeName]) do FlowMoveTex(e) end
@@ -107,7 +128,7 @@ function MAP_FLOW()
       if e.Rotation>=360 then e.Rotation = e.Rotation - 360 end
    end   
    if Maps.Obj.Exists("Obstacle_Quick")==1 then 
-      e = Maps.Obj.Obj('Obstacle_Next')
+      e = Maps.Obj.Obj('Obstacle_Quick')
       e.Rotation = e.Rotation + 10
       if e.Rotation>=360 then e.Rotation = e.Rotation - 360 end
    end       
@@ -124,6 +145,7 @@ function GALE_OnLoad()
     end
     ZA_Enter("Welcome",Welcome)
     ZA_Enter("ToBegin",ToBegin)
+    ZA_Enter('ShowMansion',Mansion)
     local plasma = {}
     plasma.textures = {'gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png'}
     plasma.colors = { {180,0,0}, {0,180,0}, {0,0,180},{180,0,0}, {0,180,0}, {0,0,180}}
