@@ -1,6 +1,6 @@
 --[[
   GainHP.lua
-  Version: 17.06.23
+  Version: 17.06.24
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,6 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+
 -- @IF IGNORE
 local Pre_Turn_Array = {}
 -- @FI

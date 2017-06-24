@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.23
+version: 17.06.24
 ]]
 
 --[[
@@ -44,6 +44,37 @@ version: 17.06.23
 ]]
 
 
+local function InitRandomDoors()
+   local r
+   entries = {}
+   exits   = {}
+   doors = {entries=entries,exits=exits}
+   for i = 1, 9 do
+       timeout=10000
+       repeat
+           r=rand(1,9)
+           timeout=timeout-1
+           assert(timeout>0,"Timeout on mansion room entry #"..i)
+       until not entries[r] entries[r]=i   
+       timeout=10000
+       repeat
+           r=rand(1,9)
+           timeout=timeout-1
+           assert(timeout>0,"Timeout on mansion room exit #"..i)
+       until not exits[r] exits[r]=i   
+   end 
+   CSay("doors initialized")
+   CSay(serialize('doors',doors))
+end
+
+local function GT(d) GoToLayer('corridor','Start'..d) end
+local function LV(d) GoToLayer('lobby','Ex'..d) end
+
 function GALE_OnLoad()
+  InitRandomDoors()
   ZA_Enter('ManaCave',function() LoadMap('CH4_DUNGEON_MANACAVE') GoToLayer('#020','Einde') end)
+  ZA_Enter('Rechts',GT,'Rechts')
+  ZA_Enter('Links',GT,'Links')
+  ZA_Enter('ToLinks',LV,'Links')
+  ZA_Enter('ToLobbyRechts',LV,'Rechts')
 end  
