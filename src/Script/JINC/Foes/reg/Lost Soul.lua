@@ -1,40 +1,40 @@
 --[[
-  Lich.lua
-  Version: 17.06.25
-  Copyright (C) 2017 Jeroen Petrus Broks
+**********************************************
   
-  ===========================
-  This file is part of a project related to the Phantasar Chronicles or another
-  series or saga which is property of Jeroen P. Broks.
-  This means that it may contain references to a story-line plus characters
-  which are property of Jeroen Broks. These references may only be distributed
-  along with an unmodified version of the game. 
+  Lost Soul.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
-  As soon as you remove or replace ALL references to the storyline or character
-  references, or any termology specifically set up for the Phantasar universe,
-  or any other univers a story of Jeroen P. Broks is set up for,
-  the restrictions of this file are removed and will automatically become
-  zLib licensed (see below).
+  This file contains material that is related 
+  to a storyline that is which is strictly
+  copyrighted to Jeroen Broks.
   
-  Please note that doing so counts as a modification and must be marked as such
-  in accordance to the zLib license.
-  ===========================
-  zLib license terms:
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
+  This file may only be used in an unmodified
+  form with an unmodified version of the 
+  software this file belongs to.
+  
+  You may use this file for your study to see
+  how I solved certain things in the creation
+  of this project to see if you find valuable
+  leads for the creation of your own.
+  
+  Mostly this file comes along with a project
+  that is for most part released under an
+  open source license and that means that if
+  you use that code with this file removed
+  from it, you can use it under that license.
+  Please check out the other files to find out
+  which license applies.
+  This file comes 'as-is' and in no possible
+  way the author can be held responsible of
+  any form of damages that may occur due to 
+  the usage of this file
+  
+  
+ **********************************************
+ 
+version: 17.06.25
 ]]
--- File Generated: Sun 25 June 2017; 00:35:48
+-- File Generated: Sun 25 June 2017; 00:35:49
 
 
 local foe = {}
@@ -43,111 +43,69 @@ local foe = {}
 	foe["NEWGAMEPLUS_AAA_ATTACK"] = true
 	foe["NEWGAMEPLUS_AAA_GUARD"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_CRUSH"] = true
-	foe["NEWGAMEPLUS_ABL_FOE_DEMON_SOUL_BREAKER"] = true
-	foe["NEWGAMEPLUS_ABL_FOE_DISTRACT"] = true
-	foe["NEWGAMEPLUS_ABL_FOE_EXHAUST"] = true
-	foe["NEWGAMEPLUS_ABL_FOE_HOLDPERSON"] = true
-	foe["NEWGAMEPLUS_ABL_FOE_PARADIVE"] = true
-	foe["NEWGAMEPLUS_ABL_FOE_TAKEOVER"] = true
-	foe["NEWGAMEPLUS_ABL_FOE_TAKEOVER\50"] = true
-	foe["NEWGAMEPLUS_ABL_FOE_TOTALEXHAUSTION"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_DISINTEGRATE"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_SOULCRUSHINGSTORY"] = true
 	foe["NEWGAMEPLUS_ABL_GLOOM"] = true
-	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_CHILL"] = true
-	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_CURSEDHEALING"] = true
-	foe["NEWGAMEPLUS_ABL_MASTER_FANDALORA_DARKNESS"] = true
 	foe["NEWGAMEPLUS_ABL_MASTER_FANDALORA_DARKVISION"] = true
 	foe["NEWGAMEPLUS_ABL_MASTER_FANDALORA_DEATH"] = true
-	foe["NEWGAMEPLUS_ABL_MASTER_RUBINE_INVADE"] = true
+	foe["NEWGAMEPLUS_FOE_WATCHMOVE"] = true
+	foe["NEWGAMEPLUS_SILLY_ONE"] = true
+	foe["NEWGAMEPLUS_SILLY_ONES"] = true
 	foe["NORMAL_AAA_ATTACK"] = true
 	foe["NORMAL_AAA_GUARD"] = true
 	foe["NORMAL_ABL_FOE_CRUSH"] = true
-	foe["NORMAL_ABL_FOE_DEMON_SOUL_BREAKER"] = true
-	foe["NORMAL_ABL_FOE_DISTRACT"] = true
-	foe["NORMAL_ABL_FOE_EXHAUST"] = true
-	foe["NORMAL_ABL_FOE_HOLDPERSON"] = true
-	foe["NORMAL_ABL_FOE_PARADIVE"] = true
-	foe["NORMAL_ABL_FOE_TAKEOVER"] = true
-	foe["NORMAL_ABL_FOE_TAKEOVER\50"] = true
-	foe["NORMAL_ABL_FOE_TOTALEXHAUSTION"] = true
+	foe["NORMAL_ABL_FOE_DISINTEGRATE"] = true
+	foe["NORMAL_ABL_FOE_SOULCRUSHINGSTORY"] = true
 	foe["NORMAL_ABL_GLOOM"] = true
-	foe["NORMAL_ABL_HERO_MARRILONA_CHILL"] = true
-	foe["NORMAL_ABL_HERO_MARRILONA_CURSEDHEALING"] = true
-	foe["NORMAL_ABL_MASTER_FANDALORA_DARKNESS"] = true
 	foe["NORMAL_ABL_MASTER_FANDALORA_DARKVISION"] = true
 	foe["NORMAL_ABL_MASTER_FANDALORA_DEATH"] = true
-	foe["NORMAL_ABL_MASTER_RUBINE_INVADE"] = true
+	foe["NORMAL_FOE_WATCHMOVE"] = true
+	foe["NORMAL_SILLY_ONE"] = true
+	foe["NORMAL_SILLY_ONES"] = true
 	foe["OVERSOUL_AAA_ATTACK"] = true
 	foe["OVERSOUL_AAA_GUARD"] = true
 	foe["OVERSOUL_ABL_FOE_CRUSH"] = true
-	foe["OVERSOUL_ABL_FOE_DEMON_SOUL_BREAKER"] = true
-	foe["OVERSOUL_ABL_FOE_DISTRACT"] = true
-	foe["OVERSOUL_ABL_FOE_EXHAUST"] = true
-	foe["OVERSOUL_ABL_FOE_HOLDPERSON"] = true
-	foe["OVERSOUL_ABL_FOE_PARADIVE"] = true
-	foe["OVERSOUL_ABL_FOE_TAKEOVER"] = true
-	foe["OVERSOUL_ABL_FOE_TAKEOVER\50"] = true
-	foe["OVERSOUL_ABL_FOE_TOTALEXHAUSTION"] = true
+	foe["OVERSOUL_ABL_FOE_DISINTEGRATE"] = true
+	foe["OVERSOUL_ABL_FOE_SOULCRUSHINGSTORY"] = true
 	foe["OVERSOUL_ABL_GLOOM"] = true
-	foe["OVERSOUL_ABL_HERO_MARRILONA_CHILL"] = true
-	foe["OVERSOUL_ABL_HERO_MARRILONA_CURSEDHEALING"] = true
-	foe["OVERSOUL_ABL_MASTER_FANDALORA_DARKNESS"] = true
 	foe["OVERSOUL_ABL_MASTER_FANDALORA_DARKVISION"] = true
 	foe["OVERSOUL_ABL_MASTER_FANDALORA_DEATH"] = true
-	foe["OVERSOUL_ABL_MASTER_RUBINE_INVADE"] = true
+	foe["OVERSOUL_FOE_WATCHMOVE"] = true
+	foe["OVERSOUL_SILLY_ONE"] = true
+	foe["OVERSOUL_SILLY_ONES"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
 	foe["SKILL\49_AAA_GUARD"] = true
 	foe["SKILL\49_ABL_FOE_CRUSH"] = true
-	foe["SKILL\49_ABL_FOE_DEMON_SOUL_BREAKER"] = false
-	foe["SKILL\49_ABL_FOE_DISTRACT"] = true
-	foe["SKILL\49_ABL_FOE_EXHAUST"] = true
-	foe["SKILL\49_ABL_FOE_HOLDPERSON"] = true
-	foe["SKILL\49_ABL_FOE_PARADIVE"] = true
-	foe["SKILL\49_ABL_FOE_TAKEOVER"] = true
-	foe["SKILL\49_ABL_FOE_TAKEOVER\50"] = true
-	foe["SKILL\49_ABL_FOE_TOTALEXHAUSTION"] = true
+	foe["SKILL\49_ABL_FOE_DISINTEGRATE"] = true
+	foe["SKILL\49_ABL_FOE_SOULCRUSHINGSTORY"] = true
 	foe["SKILL\49_ABL_GLOOM"] = true
-	foe["SKILL\49_ABL_HERO_MARRILONA_CHILL"] = true
-	foe["SKILL\49_ABL_HERO_MARRILONA_CURSEDHEALING"] = true
-	foe["SKILL\49_ABL_MASTER_FANDALORA_DARKNESS"] = true
 	foe["SKILL\49_ABL_MASTER_FANDALORA_DARKVISION"] = true
-	foe["SKILL\49_ABL_MASTER_FANDALORA_DEATH"] = false
-	foe["SKILL\49_ABL_MASTER_RUBINE_INVADE"] = true
+	foe["SKILL\49_ABL_MASTER_FANDALORA_DEATH"] = true
+	foe["SKILL\49_FOE_WATCHMOVE"] = true
+	foe["SKILL\49_SILLY_ONE"] = true
+	foe["SKILL\49_SILLY_ONES"] = true
 	foe["SKILL\50_AAA_ATTACK"] = true
-	foe["SKILL\50_AAA_GUARD"] = true
+	foe["SKILL\50_AAA_GUARD"] = false
 	foe["SKILL\50_ABL_FOE_CRUSH"] = true
-	foe["SKILL\50_ABL_FOE_DEMON_SOUL_BREAKER"] = false
-	foe["SKILL\50_ABL_FOE_DISTRACT"] = true
-	foe["SKILL\50_ABL_FOE_EXHAUST"] = true
-	foe["SKILL\50_ABL_FOE_HOLDPERSON"] = true
-	foe["SKILL\50_ABL_FOE_PARADIVE"] = true
-	foe["SKILL\50_ABL_FOE_TAKEOVER"] = true
-	foe["SKILL\50_ABL_FOE_TAKEOVER\50"] = true
-	foe["SKILL\50_ABL_FOE_TOTALEXHAUSTION"] = true
+	foe["SKILL\50_ABL_FOE_DISINTEGRATE"] = true
+	foe["SKILL\50_ABL_FOE_SOULCRUSHINGSTORY"] = true
 	foe["SKILL\50_ABL_GLOOM"] = true
-	foe["SKILL\50_ABL_HERO_MARRILONA_CHILL"] = true
-	foe["SKILL\50_ABL_HERO_MARRILONA_CURSEDHEALING"] = true
-	foe["SKILL\50_ABL_MASTER_FANDALORA_DARKNESS"] = true
 	foe["SKILL\50_ABL_MASTER_FANDALORA_DARKVISION"] = true
 	foe["SKILL\50_ABL_MASTER_FANDALORA_DEATH"] = true
-	foe["SKILL\50_ABL_MASTER_RUBINE_INVADE"] = true
+	foe["SKILL\50_FOE_WATCHMOVE"] = true
+	foe["SKILL\50_SILLY_ONE"] = true
+	foe["SKILL\50_SILLY_ONES"] = true
 	foe["SKILL\51_AAA_ATTACK"] = true
-	foe["SKILL\51_AAA_GUARD"] = true
+	foe["SKILL\51_AAA_GUARD"] = false
 	foe["SKILL\51_ABL_FOE_CRUSH"] = true
-	foe["SKILL\51_ABL_FOE_DEMON_SOUL_BREAKER"] = true
-	foe["SKILL\51_ABL_FOE_DISTRACT"] = true
-	foe["SKILL\51_ABL_FOE_EXHAUST"] = true
-	foe["SKILL\51_ABL_FOE_HOLDPERSON"] = true
-	foe["SKILL\51_ABL_FOE_PARADIVE"] = true
-	foe["SKILL\51_ABL_FOE_TAKEOVER"] = true
-	foe["SKILL\51_ABL_FOE_TAKEOVER\50"] = true
-	foe["SKILL\51_ABL_FOE_TOTALEXHAUSTION"] = true
+	foe["SKILL\51_ABL_FOE_DISINTEGRATE"] = true
+	foe["SKILL\51_ABL_FOE_SOULCRUSHINGSTORY"] = true
 	foe["SKILL\51_ABL_GLOOM"] = true
-	foe["SKILL\51_ABL_HERO_MARRILONA_CHILL"] = true
-	foe["SKILL\51_ABL_HERO_MARRILONA_CURSEDHEALING"] = true
-	foe["SKILL\51_ABL_MASTER_FANDALORA_DARKNESS"] = true
 	foe["SKILL\51_ABL_MASTER_FANDALORA_DARKVISION"] = true
 	foe["SKILL\51_ABL_MASTER_FANDALORA_DEATH"] = true
-	foe["SKILL\51_ABL_MASTER_RUBINE_INVADE"] = true
+	foe["SKILL\51_FOE_WATCHMOVE"] = false
+	foe["SKILL\51_SILLY_ONE"] = false
+	foe["SKILL\51_SILLY_ONES"] = false
 	foe["STSTART_Confusion"] = false
 	foe["STSTART_Curse"] = false
 	foe["STSTART_Death"] = false
@@ -159,30 +117,30 @@ local foe = {}
 	foe["STSTART_Silence"] = false
 	foe["STSTART_Sleep"] = false
 	foe["STSTART_Undead"] = true
-	foe["Desc"] = "Yikes\44 this fellow can be dangerous\33"
+	foe["Desc"] = "Probably a victim of Nostramantu\39s madness\46\10Now wanders his mansion forever until\10the end of time\46"
 	foe["HitBy"] = ""
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Reg\47Lich\46png"
-	foe["Item Drop \49"] = "ITM_PURELITERATURE"
-	foe["Item Drop \50"] = "ITM_CARROT"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Reg\47Lost Soul\46png"
+	foe["Item Drop \49"] = "ITM_JUSDORANGE"
+	foe["Item Drop \50"] = "ITM_HOLYWATER"
 	foe["Item Steal \49"] = "ITM_AMBROSIA"
-	foe["Item Steal \50"] = "ITM_ANABOLINEA"
-	foe["Item Steal \51"] = "EQP_JAKE_AR\49\48"
-	foe["Name"] = "Lich"
-	foe["RATE_AAA_ATTACK"] = 50
-	foe["RATE_AAA_GUARD"] = 5
+	foe["Item Steal \50"] = "ITM_BANANA"
+	foe["Item Steal \51"] = "ITM_HOLYWATER"
+	foe["Name"] = "Lost Soul"
+	foe["RATE_AAA_ATTACK"] = 3
+	foe["RATE_AAA_GUARD"] = 1
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
-	foe["RATE_ABL_FOE_CRUSH"] = 3
+	foe["RATE_ABL_FOE_CRUSH"] = 4
 	foe["RATE_ABL_FOE_DEATHSPELL"] = 0
-	foe["RATE_ABL_FOE_DEMON_SOUL_BREAKER"] = 1
+	foe["RATE_ABL_FOE_DEMON_SOUL_BREAKER"] = 0
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
-	foe["RATE_ABL_FOE_DISINTEGRATE"] = 0
-	foe["RATE_ABL_FOE_DISTRACT"] = 2
+	foe["RATE_ABL_FOE_DISINTEGRATE"] = 1
+	foe["RATE_ABL_FOE_DISTRACT"] = 0
 	foe["RATE_ABL_FOE_ENEMYVITALIZE"] = 0
 	foe["RATE_ABL_FOE_ENERGYDRAIN"] = 0
 	foe["RATE_ABL_FOE_EVIL_EYE"] = 0
 	foe["RATE_ABL_FOE_EVIL_EYE_PARALYZE"] = 0
 	foe["RATE_ABL_FOE_EVIL_EYE_PETRIFY"] = 0
-	foe["RATE_ABL_FOE_EXHAUST"] = 5
+	foe["RATE_ABL_FOE_EXHAUST"] = 0
 	foe["RATE_ABL_FOE_FATALPOISON"] = 0
 	foe["RATE_ABL_FOE_FLAMEBITE"] = 0
 	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 0
@@ -190,13 +148,13 @@ local foe = {}
 	foe["RATE_ABL_FOE_GAIASMASH"] = 0
 	foe["RATE_ABL_FOE_GAZE"] = 0
 	foe["RATE_ABL_FOE_GRAVITY"] = 0
-	foe["RATE_ABL_FOE_HOLDPERSON"] = 3
+	foe["RATE_ABL_FOE_HOLDPERSON"] = 0
 	foe["RATE_ABL_FOE_HORROR"] = 0
 	foe["RATE_ABL_FOE_LIFEDRAIN"] = 0
 	foe["RATE_ABL_FOE_LIFEFORCE"] = 0
 	foe["RATE_ABL_FOE_MERMAID_TEMPATION"] = 0
 	foe["RATE_ABL_FOE_MULTISTRIKE"] = 0
-	foe["RATE_ABL_FOE_PARADIVE"] = 1
+	foe["RATE_ABL_FOE_PARADIVE"] = 0
 	foe["RATE_ABL_FOE_RANDOMIZER"] = 0
 	foe["RATE_ABL_FOE_RANDOMIZERTOTAL"] = 0
 	foe["RATE_ABL_FOE_SETTHESTAGEONFIRE"] = 0
@@ -204,14 +162,14 @@ local foe = {}
 	foe["RATE_ABL_FOE_SICKSTORIES"] = 0
 	foe["RATE_ABL_FOE_SLASH"] = 0
 	foe["RATE_ABL_FOE_SMITE"] = 0
-	foe["RATE_ABL_FOE_SOULCRUSHINGSTORY"] = 0
+	foe["RATE_ABL_FOE_SOULCRUSHINGSTORY"] = 2
 	foe["RATE_ABL_FOE_SPORES"] = 0
 	foe["RATE_ABL_FOE_SUICIDE"] = 0
-	foe["RATE_ABL_FOE_TAKEOVER"] = 3
-	foe["RATE_ABL_FOE_TAKEOVER\50"] = 2
+	foe["RATE_ABL_FOE_TAKEOVER"] = 0
+	foe["RATE_ABL_FOE_TAKEOVER\50"] = 0
 	foe["RATE_ABL_FOE_TAKEOVER_STRIKE"] = 0
 	foe["RATE_ABL_FOE_THRILL"] = 0
-	foe["RATE_ABL_FOE_TOTALEXHAUSTION"] = 1
+	foe["RATE_ABL_FOE_TOTALEXHAUSTION"] = 0
 	foe["RATE_ABL_FOE_TUSK"] = 0
 	foe["RATE_ABL_FOE_TWOEDGE"] = 0
 	foe["RATE_ABL_FOE_ULTIMATESOULCRUSHER"] = 0
@@ -220,7 +178,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_VIRUSSTAB"] = 0
 	foe["RATE_ABL_FOE_WELCOMEINHELL"] = 0
 	foe["RATE_ABL_FOLLOWUP_FIKKIE"] = 0
-	foe["RATE_ABL_GLOOM"] = 3
+	foe["RATE_ABL_GLOOM"] = 20
 	foe["RATE_ABL_HANDOSTILLOR_EVERYBODYKNEELBEFOREME"] = 0
 	foe["RATE_ABL_HERO_DANDOR_AXESMASH"] = 0
 	foe["RATE_ABL_HERO_DANDOR_BARRIER"] = 0
@@ -259,8 +217,8 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_\49\57\53\51"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_BIO"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_BREEZE"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_CHILL"] = 5
-	foe["RATE_ABL_HERO_MARRILONA_CURSEDHEALING"] = 5
+	foe["RATE_ABL_HERO_MARRILONA_CHILL"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_CURSEDHEALING"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ELECTROCUTION"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_EMPOWER"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ETERNALFLAME"] = 0
@@ -285,7 +243,7 @@ local foe = {}
 	foe["RATE_ABL_JUGGERNAUT_DONALDTRUMP"] = 0
 	foe["RATE_ABL_JUGGERNAUT_MAY"] = 0
 	foe["RATE_ABL_MASTER_FANDALORA_CURSE"] = 0
-	foe["RATE_ABL_MASTER_FANDALORA_DARKNESS"] = 10
+	foe["RATE_ABL_MASTER_FANDALORA_DARKNESS"] = 0
 	foe["RATE_ABL_MASTER_FANDALORA_DARKVISION"] = 2
 	foe["RATE_ABL_MASTER_FANDALORA_DEATH"] = 1
 	foe["RATE_ABL_MASTER_FANDALORA_PHANTOM"] = 0
@@ -312,7 +270,7 @@ local foe = {}
 	foe["RATE_ABL_MASTER_MIDAS_STEALMONEY"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_BACKSTAB"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_FOLLOWME"] = 0
-	foe["RATE_ABL_MASTER_RUBINE_INVADE"] = 3
+	foe["RATE_ABL_MASTER_RUBINE_INVADE"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_PICKPOCKET"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_POISONSTAB"] = 0
 	foe["RATE_ABL_MASTER_RUSSELL_DECAPITATE"] = 0
@@ -329,7 +287,7 @@ local foe = {}
 	foe["RATE_COCYTUS_JUDECCA"] = 0
 	foe["RATE_COCYTUS_PTOLOMEA"] = 0
 	foe["RATE_EXE_MARRILONA_MEDITATION"] = 0
-	foe["RATE_FOE_WATCHMOVE"] = 0
+	foe["RATE_FOE_WATCHMOVE"] = 4
 	foe["RATE_HYDRA_ONTHOOFD"] = 0
 	foe["RATE_ICEBLAST"] = 0
 	foe["RATE_ITM_AMBROSIA"] = 0
@@ -401,8 +359,8 @@ local foe = {}
 	foe["RATE_JUG_TACT\55"] = 0
 	foe["RATE_JUG_TACT\56"] = 0
 	foe["RATE_JUG_TACT\57"] = 0
-	foe["RATE_SILLY_ONE"] = 0
-	foe["RATE_SILLY_ONES"] = 0
+	foe["RATE_SILLY_ONE"] = 6
+	foe["RATE_SILLY_ONES"] = 5
 	foe["RATE_SPECIAL_ARMAGEDDON"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_SPECIAL_SPIRATAKILLER"] = 0
@@ -724,7 +682,7 @@ local foe = {}
 	foe["TARGET_ZZZ_KRANDARARMOR"] = "Random"
 	foe["TARGET_ZZZ_KRANDARBLADE"] = "Random"
 	foe["TARGET_ZZ_CRYPTKEY"] = "Random"
-	foe["VocalTag"] = "Lich"
+	foe["VocalTag"] = "Lost Soul"
 	foe["Boss"] = false
 	foe["Oversoul"] = true
 	foe["Oversoul Drop \49"] = false
@@ -732,21 +690,21 @@ local foe = {}
 	foe["Oversoul Steal \49"] = false
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
-	foe["Cash"] = 0
-	foe["ER_Darkness"] = 500
-	foe["ER_Earth"] = 100
+	foe["Cash"] = 123
+	foe["ER_Darkness"] = 12345
+	foe["ER_Earth"] = 0
 	foe["ER_Flame"] = -25
-	foe["ER_Frost"] = 100
-	foe["ER_Light"] = -180
-	foe["ER_Lightning"] = -100
-	foe["ER_Water"] = 100
-	foe["ER_Wind"] = 100
-	foe["Rate Drop \49"] = 5
-	foe["Rate Drop \50"] = 10
-	foe["Rate Steal \49"] = 2
-	foe["Rate Steal \50"] = 1
-	foe["Rate Steal \51"] = 10
-	foe["SR_Confusion"] = 0
+	foe["ER_Frost"] = 0
+	foe["ER_Light"] = -120
+	foe["ER_Lightning"] = -80
+	foe["ER_Water"] = 0
+	foe["ER_Wind"] = 0
+	foe["Rate Drop \49"] = 25
+	foe["Rate Drop \50"] = 5
+	foe["Rate Steal \49"] = 5
+	foe["Rate Steal \50"] = 5
+	foe["Rate Steal \51"] = 30
+	foe["SR_Confusion"] = 100
 	foe["SR_Curse"] = 100
 	foe["SR_Death"] = 100
 	foe["SR_Disease"] = 100
@@ -754,26 +712,26 @@ local foe = {}
 	foe["SR_Petrification"] = 100
 	foe["SR_Poison"] = 100
 	foe["SR_Silence"] = 100
-	foe["SR_Sleep"] = 0
-	foe["SR_Undead"] = 0
+	foe["SR_Sleep"] = 100
+	foe["SR_Undead"] = 100
 	foe["normal_Accuracy"] = 100
-	foe["normal_EXP"] = 100
-	foe["normal_Endurance"] = 5
+	foe["normal_EXP"] = 4500
+	foe["normal_Endurance"] = 1
 	foe["normal_Evasion"] = 4
-	foe["normal_HP"] = 400
-	foe["normal_Intelligence"] = 480
-	foe["normal_Power"] = 480
-	foe["normal_Resistance"] = 5
-	foe["normal_Speed"] = 250
+	foe["normal_HP"] = 20000
+	foe["normal_Intelligence"] = 500
+	foe["normal_Power"] = 400
+	foe["normal_Resistance"] = 2
+	foe["normal_Speed"] = 400
 	foe["oversoul_Accuracy"] = 100
-	foe["oversoul_EXP"] = 75
-	foe["oversoul_Endurance"] = 10
-	foe["oversoul_Evasion"] = 8
-	foe["oversoul_HP"] = 800
-	foe["oversoul_Intelligence"] = 960
-	foe["oversoul_Power"] = 960
-	foe["oversoul_Resistance"] = 10
-	foe["oversoul_Speed"] = 500
+	foe["oversoul_EXP"] = 0
+	foe["oversoul_Endurance"] = 2
+	foe["oversoul_Evasion"] = 1
+	foe["oversoul_HP"] = 15000
+	foe["oversoul_Intelligence"] = 800
+	foe["oversoul_Power"] = 3000
+	foe["oversoul_Resistance"] = 2
+	foe["oversoul_Speed"] = 100
 
 
 return foe
