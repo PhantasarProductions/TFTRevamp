@@ -99,6 +99,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Krandar/VeelTeGroot.png
     1. Graphics: GFX/BoxText/Portret/Krandar/Worried.png
     1. Graphics: GFX/BoxText/Portret/Marata/General.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Reg/MonsterGuy.png
     1. Graphics: GFX/BigPic/Krandar.png
     1. Graphics: GFX/BoxText/Portret/Chief Werrington/Angry.png
     1. Graphics: GFX/BoxText/Portret/Chief Werrington/Chief.piko
@@ -288,6 +289,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Medusa.lua
     1. Script: Script/JINC/Foes/reg/Mermaid.lua
     1. Script: Script/JINC/Foes/reg/Mimic.lua
+    1. Script: Script/JINC/Foes/reg/MonsterGuy.lua
     1. Script: Script/JINC/Foes/reg/Nemesis.lua
     1. Script: Script/JINC/Foes/reg/Pinky.lua
     1. Script: Script/JINC/Foes/reg/Pyroguin.lua
@@ -1838,6 +1840,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Mana Cave/Mansion.png
 - Man Of Steel
     1. Graphics: gfx/Combat/Fighters/foe/UberBoss/Juggernaut.png
+    1. Graphics: gfx/Combat/Fighters/foe/reg/Lost Soul.png
     1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Thief.piko
     1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Variant01.png
     1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Variant02.png

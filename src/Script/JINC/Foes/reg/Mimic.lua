@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sun 25 June 2017; 00:43:34
+-- File Generated: Sun 25 June 2017; 01:07:30
 
 
 local foe = {}
@@ -131,7 +131,7 @@ local foe = {}
 	foe["STSTART_Undead"] = false
 	foe["Desc"] = "Monster mimicking a treasure chest\46\10Either that or the chest is cursed\46\10Either way\44 it\39s very very dangerous\46"
 	foe["HitBy"] = ""
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47reg\47Mimic\46png"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47reg\47Mimic\47"
 	foe["Item Drop \49"] = "EQP_ACC_RINGWENIARIA"
 	foe["Item Drop \50"] = "EQP_MARRILONA_AR\57"
 	foe["Item Steal \49"] = "ITM_ANABOLINEA"
