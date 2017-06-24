@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_HANDOSTILLOR_KNEELBEFOREME.lua
-  Version: 17.06.23
+  Version: 17.06.25
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

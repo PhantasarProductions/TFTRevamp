@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  EQP_HANDOSTILLOR_WP1.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  Fool's Gold.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -34,26 +34,22 @@
  
 version: 17.06.25
 ]]
-ret = {
-	["ADDCARD_Action_Act"] = "Self",
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
-	["Attack_Element"] = "None",
-	["Desc"] = "Just a fighting stick",
-	["EQP_STAT_Intelligence"] = 2,
-	["EQP_STAT_Power"] = 1,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "HandoStillor",
-	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 300,
-	["ITM_Type"] = "Weapon",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Staff",
-	["Type"] = "Item"}
+-- @IF IGNORE
+local SpellScript = {}
+-- @FI
 
-return ret
 
--- This file is an automatically generated file!
 
+function SpellScript.FoolGold(t,e,p)
+    local cash=CVV('%CASH')
+    if (not cash) or cash<=0 then return false end
+    local vanish = math.floor(cash * (.1*skill))
+    if vanish==0 then return false end
+    charmsg(e,vanish.." shilders appeared to be illusions and have disappeared",180,255,0)
+    return true
+end
+
+
+-- @IF IGNORE
+return SpellScript
+-- @FI

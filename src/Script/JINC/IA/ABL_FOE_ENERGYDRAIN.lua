@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_ENERGYDRAIN.lua
-  Version: 17.06.23
+  Version: 17.06.24
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

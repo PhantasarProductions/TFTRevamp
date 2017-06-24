@@ -163,6 +163,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Special Boss/Rush.ogg
 - J4p4n
     1. Graphics: Gfx/Combat/Fighters/Foe/Boss/Black Dragon.png
+    1. Graphics: Gfx/Combat/Fighters/Foe/Reg/Mimic/treasurechest-colour.png
     1. Graphics: Gfx/Textures/MtPyrusPuzzle/Volcano.piko
     1. Graphics: Gfx/Textures/MtPyrusPuzzle/Volcano.png
 - JWH Broeders
@@ -1488,6 +1489,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Arena/ManaCave.piko
     1. Graphics: GFX/Combat/Arena/ManaCave.png
     1. Graphics: GFX/Combat/Arena/Mine.png
+    1. Graphics: GFX/Combat/Arena/NosMansion.png
     1. Graphics: GFX/Combat/Arena/PyrusPass.png
     1. Graphics: GFX/Combat/Arena/SpirataEarth.png
     1. Graphics: GFX/Combat/Arena/SpirataFire.png
@@ -1742,6 +1744,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_MANACAVE
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_PYRUSPASS
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_STARDOME
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_Z_NOSTRAMANTUMANSION
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
@@ -1790,6 +1793,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_MANACAVE
     1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_PYRUSPASS
     1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_STARDOME
+    1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_Z_NOSTRAMANTUMANSION
     1. Scenario: Languages/English/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
@@ -2565,6 +2569,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - http://www.freesfx.co.uk
     1. Audio: Audio/SpellAni/Thunder/Spark.ogg
     1. Audio: Audio/SpellAni/Thunder/ThunderStrike.ogg
+- mystica
+    1. Graphics: gfx/combat/fighters/foe/mimic/mystica-Treasure-chest.png
+- yeKcim
+    1. Graphics: GFX/Combat/FighterS/Foe/Reg/Mimic/yeKcim-chests-1.png
 
 
 The LAURA II engine is licensed under the terms of the GNU GPL 3
