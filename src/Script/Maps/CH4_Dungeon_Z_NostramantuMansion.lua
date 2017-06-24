@@ -44,6 +44,8 @@ version: 17.06.24
 ]]
 
 
+-- @DEFINE DEUR_NUMMERS
+
 local function InitRandomDoors()
    local r
    entries = {}
@@ -70,6 +72,46 @@ end
 local function GT(d) GoToLayer('corridor','Start'..d) end
 local function LV(d) GoToLayer('lobby','Ex'..d) end
 
+-- @IF DEUR_NUMMERS
+function MAP_FLOW()
+    if Maps.LayerCodeName~='corridor' then return end
+    for i=1,9 do
+        local o = Maps.Obj.Obj('NPC_Deur'..i)
+        local x = o.x - Maps.CamX
+        local y = o.y - Maps.CamY
+        local c = i*27
+        DarkText(i,x,y,2,1,255-c,180,c)
+        DarkText(entries[i],x,y,2,0,c,0,255-c)
+    end
+end
+-- @FI
+
+
+local function KEnter(r)
+      local n = entries[r] 
+      GoToLayer('k'..n,"Start")
+      if not Done('&DONE.NOSMANSION.ENTERED.k'..n) then
+         for ch in each({'Jake_Human','Marrilona','Dandor','HandoStillor'}) do RPG.IncStat(ch,'EXP',-6000/skill) end
+      end
+end           
+
+function NPC_Deur1() KEnter(1) end
+function NPC_Deur2() KEnter(2) end
+function NPC_Deur3() KEnter(3) end
+function NPC_Deur4() KEnter(4) end
+function NPC_Deur5() KEnter(5) end
+function NPC_Deur6() KEnter(6) end
+function NPC_Deur7() KEnter(7) end
+function NPC_Deur8() KEnter(8) end
+function NPC_Deur9() KEnter(9) end
+
+local function KExit()
+   local i = Sys.Val(right(Maps.LayerCodeName,1))
+   local n = exits[i]
+   GoToLayer('corridor','x'..n)
+end   
+   
+
 function GALE_OnLoad()
   InitRandomDoors()
   ZA_Enter('ManaCave',function() LoadMap('CH4_DUNGEON_MANACAVE') GoToLayer('#020','Einde') end)
@@ -77,4 +119,5 @@ function GALE_OnLoad()
   ZA_Enter('Links',GT,'Links')
   ZA_Enter('ToLinks',LV,'Links')
   ZA_Enter('ToLobbyRechts',LV,'Rechts')
+  ZA_Enter('KExit',KExit)
 end  
