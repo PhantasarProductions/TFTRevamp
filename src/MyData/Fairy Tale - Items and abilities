@@ -18727,7 +18727,7 @@ Rec: EQP_ACC_NOTNAMED
 	SpellAni_External = FALSE
 	Stance = Cast
 	Target = 1F
-	Title = The Ring Witch Shall Not Be Named
+	Title = The Ring Which Shall Not Be Named
 	Type = Item
 	USE_Penalty = 0
 	Voice = 

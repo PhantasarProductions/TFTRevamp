@@ -1,6 +1,6 @@
 --[[
   ITM_MANDRAKE.lua
-  Version: 17.06.25
+  Version: 17.06.26
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================

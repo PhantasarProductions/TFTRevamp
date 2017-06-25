@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.06.25
+  Version: 17.06.26
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -466,7 +466,7 @@ function TreasureChest(tag)
           inc('%CASH',getcash)
           gotit = true
        end   
-    elseif icode==':MIMIC:' then
+    elseif icode==':MIMIC:' or icode==":MIMIC" or icode=="MIMIC:" then
        MimicSounds = MimiSounds or jinc('Script/JINC/Big/MimicSounds.lua')
        local m = upper(Maps.CodeName)
        local v = MimicSounds[m]

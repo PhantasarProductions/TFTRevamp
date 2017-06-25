@@ -1,6 +1,6 @@
 --[[
   EQP_ACC_NOTNAMED.lua
-  Version: 17.06.25
+  Version: 17.06.26
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -67,7 +67,7 @@ ret = {
 	["ITM_Type"] = "Accesoiry",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
-	["Title"] = "The Ring Witch Shall Not Be Named",
+	["Title"] = "The Ring Which Shall Not Be Named",
 	["Type"] = "Item"}
 
 return ret
