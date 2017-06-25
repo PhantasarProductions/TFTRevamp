@@ -204,6 +204,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Init/Synchronize.lua
     1. Script: Script/JINC/Big/Achievements.lua
     1. Script: Script/JINC/Big/Credits.lua
+    1. Script: Script/JINC/Big/MimicSounds.lua
     1. Script: Script/JINC/Big/WorldMap.lua
     1. Script: Script/JINC/CharAbilities/Dandor.lua
     1. Script: Script/JINC/CharAbilities/Elder.lua
@@ -990,6 +991,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/blops/Blop4.png
     1. Graphics: gfx/Textures/blops/Blop5.png
     1. Graphics: gfx/Textures/blops/Blop6.png
+    1. Audio: Audio/SFX/Nostramantu/Laugh.ogg
     1. Font: Fonts/Phantasar.ttf
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.East.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Krandar.East.piko

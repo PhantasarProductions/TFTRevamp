@@ -34,8 +34,8 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- @USE /Script/Use/Specific/Scroller.lua
 
+-- @USE /Script/Use/Specific/Scroller.lua
 
 
 inventory = inventory or { ITM_APPLE = ({20,10,1})[tonumber(Var.C("%SKILL"))]}
@@ -466,6 +466,25 @@ function TreasureChest(tag)
           inc('%CASH',getcash)
           gotit = true
        end   
+    elseif icode==':MIMIC:' then
+       MimicSounds = MimiSounds or jinc('Script/JINC/Big/MimicSounds.lua')
+       local m = upper(Maps.CodeName)
+       local v = MimicSounds[m]
+       local a = rand(1,5); if a>skill then a=1 end
+       ClearCombatData() 
+       for i=1,a do
+          Var.D("$COMBAT.FOE_"..i,"Reg/Mimic")
+       end
+       local aet = Maps.GetData('AltEncounterTune')
+       if aet and aet~="" then
+         if not suffixed(lower(aet),".ogg") then aet = aet .. ".ogg" end 
+         Var.D('$COMBAT.MUSIC',aet)
+       end
+       local arena = Maps.GetData("Arena"); if not suffixed(arena,".png") then arena = arena..".png" end
+       Var.D("$COMBAT.ARENA",arena)
+       if v then SFX(v) end              
+       StartCombat()
+       gotit=true
     else
        if not(prefixed(icode,"ITM_") or prefixed(icode,"WAND_") or prefixed(icode,"EQP_") or prefixed(icode,"ZZKEY_")) then icode="ITM_"..icode end
        items[icode] = items[icode] or ItemGet(icode)
