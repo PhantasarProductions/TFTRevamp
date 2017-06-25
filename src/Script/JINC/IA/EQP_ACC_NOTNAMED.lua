@@ -1,5 +1,5 @@
 --[[
-  ABL_FOE_FLAMEBITE.lua
+  EQP_ACC_NOTNAMED.lua
   Version: 17.06.25
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -35,40 +35,40 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
-	["ABL_APCost"] = 25,
 	["ADDCARD_Action_Act"] = "Self",
-	["Attack"] = 150,
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
+	["Acc_PreTurn"] = "RecoverAP",
+	["Acc_PreTurn_Arg"] = "50",
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowAccuracy"] = true,
-	["Attack_AllowCritical"] = true,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "Flame",
-	["Desc"] = "Blade of Fire",
-	["EQP_STAT_Intelligence"] = 1,
+	["Attack_Element"] = "None",
+	["Desc"] = "Will it really help you?",
+	["EQP_STAT_AP"] = 500,
+	["EQP_STAT_Accuracy"] = -10000,
+	["EQP_STAT_Endurance"] = -10000,
+	["EQP_STAT_Evasion"] = -10000,
+	["EQP_STAT_HP"] = -500,
+	["EQP_STAT_Intelligence"] = 200,
+	["EQP_STAT_Power"] = -10000,
+	["EQP_STAT_Resistance"] = -50,
+	["EQP_STAT_SR_Curse"] = 100,
+	["EQP_STAT_SR_Death"] = 100,
+	["EQP_STAT_SR_Petrification"] = 100,
 	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
-	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Marrilona",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 250,
-	["ITM_Type"] = "Weapon",
-	["ITM_WeaponAbility"] = true,
-	["Rew_GainAP"] = 5,
-	["SpellAni"] = "Flame",
-	["Stance"] = "Attack",
+	["ITM_ShopPrice"] = 50000,
+	["ITM_Type"] = "Accesoiry",
+	["Stance"] = "Cast",
 	["Target"] = "1F",
-	["Title"] = "Flame Bite",
-	["Type"] = "Ability",
-	["Voice"] = "Fire",
-	["rew_CreateSkill1"] = true,
-	["rew_GainSkill1"] = 1,
-	["rew_GainSkill2"] = 25}
+	["Title"] = "The Ring Witch Shall Not Be Named",
+	["Type"] = "Item"}
 
 return ret
 

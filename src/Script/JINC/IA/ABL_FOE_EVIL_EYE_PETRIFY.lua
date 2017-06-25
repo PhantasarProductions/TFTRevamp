@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_EVIL_EYE_PETRIFY.lua
-  Version: 17.06.24
+  Version: 17.06.25
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
