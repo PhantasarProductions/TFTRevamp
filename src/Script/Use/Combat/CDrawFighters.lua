@@ -162,8 +162,8 @@ function DrawFighters()
         --Image.ScalePC(acm.scale,acm.scale)
         Image.Font("fonts/"..fn,acm.fs) 
         --if shdata.x<10 then shdata.x = 100 end
-        local usex=shdata.x
-        if usex<50 then usex=125 end
+        --local usex=shdata.x
+        --if usex<50 then usex=125 end
         DarkText(acm.msg,SW/2,SH/2,2,1,acm.r,acm.g,acm.b)
         -- Image.ScalePC(100,100)
         --if acm.scale<100 then 
