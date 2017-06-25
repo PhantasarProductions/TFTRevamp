@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.05.26
+  Version: 17.06.25
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -467,7 +467,7 @@ function TreasureChest(tag)
           gotit = true
        end   
     else
-       if not(prefixed(icode,"ITM_") or prefixed(icode,"WAND_") or prefixed(icode,"EQP_")) then icode="ITM_"..icode end
+       if not(prefixed(icode,"ITM_") or prefixed(icode,"WAND_") or prefixed(icode,"EQP_") or prefixed(icode,"ZZKEY_")) then icode="ITM_"..icode end
        items[icode] = items[icode] or ItemGet(icode)
        local item = items[icode]
        Var.D("$ITEMNAME",item.Title)
