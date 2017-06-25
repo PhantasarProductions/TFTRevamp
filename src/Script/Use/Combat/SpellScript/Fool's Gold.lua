@@ -46,6 +46,7 @@ function SpellScript.FoolGold(t,e,p)
     local vanish = math.floor(cash * (.1*skill))
     if vanish==0 then return false end
     charmsg('CENTER_SCREEN',vanish.." shilders appeared to be illusions and have disappeared",180,255,0)
+    dec('%CASH',vanish)
     return true
 end
 
