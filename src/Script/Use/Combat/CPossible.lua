@@ -1,6 +1,6 @@
 --[[
   CPossible.lua
-  Version: 17.06.23
+  Version: 17.06.25
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -35,14 +35,20 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 
+-- @DEFINE POSSIBLE_DEBUG
+
 local LOCALALWAYSYES = function() return true end
 local function LOCALSINGLE()
          local g = nextact.group
          local i = nextact.targetidx
-         local tab = Fighters[g][i]
+         local tab = Fighters[g][i]; if not tab then return nil end
          local ret = tab~=nil 
-         local tag = (tab or {}).tag; if not tag then return nil end
-         if prefixed(tag,"FOE_") and RPG.Points(tag,'HP')==0 then ret = false end
+         local tag = (tab or {}).tag; 
+         -- @IF POSSIBLE_DEBUG
+         CSay("target group = "..sval(g).."; index = "..sval(i).."; tag = "..sval(tag))
+         -- @FI
+         if not tag then return nil end
+         if prefixed(tag,"FOE_") and RPG.Points(tag,'HP').Have==0 then ret = false end
          return ret
 end         
 
