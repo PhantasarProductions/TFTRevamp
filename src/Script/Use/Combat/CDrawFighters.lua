@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 17.06.19
+  Version: 17.06.25
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -152,5 +152,28 @@ function DrawFighters()
       for idx,data in pairs(grouparray) do
           DrawFighter(group,idx)
       end 
+  end
+  if array_charmessages and array_charmessages.CENTER_SCREEN then
+        local acma = array_charmessages.CENTER_SCREEN
+        local acm=acma[1]
+        --SetFont('CombatCharMessage')
+        local fn = fonts['CombatCharMessage'][1]
+        acm.fs = acm.fs or 1 -- fonts['CombatCharMessage'][2] * (acm.scale/100); fs = math.ceil(fs)
+        --Image.ScalePC(acm.scale,acm.scale)
+        Image.Font("fonts/"..fn,acm.fs) 
+        --if shdata.x<10 then shdata.x = 100 end
+        local usex=shdata.x
+        if usex<50 then usex=125 end
+        DarkText(acm.msg,SW/2,SH/2,2,1,acm.r,acm.g,acm.b)
+        -- Image.ScalePC(100,100)
+        --if acm.scale<100 then 
+        --   acm.scale = acm.scale + 1
+        if acm.fs<fonts['CombatCharMessage'][2] then
+           acm.fs = acm.fs + 1
+        elseif #acma>1 or acm.time<=0 then
+           table.remove(acma,1)
+        else
+           acm.time = acm.time - 1       
+        end
   end
 end

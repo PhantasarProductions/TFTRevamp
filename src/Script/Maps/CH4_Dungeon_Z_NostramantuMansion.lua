@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.24
+version: 17.06.25
 ]]
 
 --[[
@@ -120,4 +120,5 @@ function GALE_OnLoad()
   ZA_Enter('ToLinks',LV,'Links')
   ZA_Enter('ToLobbyRechts',LV,'Rechts')
   ZA_Enter('KExit',KExit)
+  MapHide('Secret')
 end  
