@@ -904,14 +904,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/SerializeIntoSysVar.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -1186,9 +1186,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH4_Dungeon_StarDome/Data
     1. Map Design: Kthura/CH4_Dungeon_StarDome/Objects
     1. Map Design: Kthura/CH4_Dungeon_StarDome/Settings
-    1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/Data
-    1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/Objects
-    1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/Settings
+    1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/DATA
+    1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/OBJECTS
+    1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/SETTINGS
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Data
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Objects
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Settings
