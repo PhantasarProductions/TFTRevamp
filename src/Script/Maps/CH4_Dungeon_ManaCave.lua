@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.23
+version: 17.06.26
 ]]
 
 -- @USE /Script/Use/Specific/GreatMagicBack.lua
@@ -41,6 +41,18 @@ version: 17.06.23
 -- @IF IGNORE
 local effect
 -- @FI
+
+
+function BlueSeal()
+    ClearCombatData()
+    Var.D("$COMBAT.FOE_1","Sealed/Gendrabroe")
+    Var.D("$COMBAT.POSFOE_1","CENTER")
+    Var.D("$COMBAT.MUSIC","Music/Special Boss/Blue Seal.ogg")
+    Var.D("$COMBAT.ARENA","ManaCave.png")
+    StartBoss("Fair sharing monster","Gendrabroe",0,25,100)      
+    Done('&DONE.SEAL.MARRILONA2')
+end    
+
 
 local complete  = "&DONE.MANACAVE.COMPLETE"
 local boss1down = "&DONE.MANACAVE.BOSS1"

@@ -1,5 +1,5 @@
 --[[
-  Drain.lua
+  Rule of Vengeance.lua
   Version: 17.06.26
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -39,22 +39,8 @@ local SpellScript = {}
 -- @FI
 
 
-
-function SpellScript.Drain(t,e,p)
-  local procent = tonumber(p) or 25
-  local breuk = procent/100
-  local hpt = RPG.Points(t,"HP")
-  local hpe = RPG.Points(e,"HP")
-  local drained = math.ceil(hpt.Have * breuk)
-  if hpe.Have+drained>hpe.Maximum then drained = hpe.Maximum-hpe.Have end
-  if (fighterbytag[e].StatusChanges or {}).Disease then drained = 0 end
-  if drained>hpt.Have then drained=hpt.Have end
-  charmsg(t,drained,255,255,255)
-  charmsg(e,drained,180,255,0)
-  hpt.Inc(-drained)
-  hpe.Inc( drained)
-  if hpt.Have<=0 then SetStatus(t,'Death',true) end
-  return true
+function SpellScript.RuleOfVengeance(t,e,p)
+    Hurt(t,lastdamagedone or 100)
 end
 
 

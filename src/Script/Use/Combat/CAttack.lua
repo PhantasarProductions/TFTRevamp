@@ -116,7 +116,7 @@ function Attack(act,g,i,na)
        elseif act.Attack_DefenseStat=="Intelligence" or act.Attack_DefenseStat=="Resistance" and RPG.PointsExists("Dandor","SK_EXP_3")~=0 then RPG.Points("Dandor","SK_EXP_3").inc(damage) end
     end
     -- And let's put it all through now... 
-    Hurt(ttag,damage,act.Attack_Element)
+    lastdamagedone = Hurt(ttag,damage,act.Attack_Element)
     local mychar = fighterbytag[ttag]
     if mychar.statuschanges then
        for s,d in pairs(mychar.statuschanges) do

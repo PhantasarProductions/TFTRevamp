@@ -254,6 +254,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/superalien.lua
     1. Script: Script/JINC/Foes/Sealed/Aanschouwer.lua
     1. Script: Script/JINC/Foes/Sealed/Cockatrice.lua
+    1. Script: Script/JINC/Foes/Sealed/Gendrabroe.lua
     1. Script: Script/JINC/Foes/Sealed/GobEmperor.lua
     1. Script: Script/JINC/Foes/Sealed/Hydra.lua
     1. Script: Script/JINC/Foes/Sealed/Kabi.lua
@@ -566,6 +567,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR8.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_AR9.lua
     1. Script: Script/JINC/IA/EQP_MARRILONA_SEALARMOR.lua
+    1. Script: Script/JINC/IA/EQP_MARRILONA_WPSEALED.lua
     1. Script: Script/JINC/IA/EXE_MARRILONA_MEDITATION.lua
     1. Script: Script/JINC/IA/FOE_WATCHMOVE.lua
     1. Script: Script/JINC/IA/HYDRA_ONTHOOFD.lua
@@ -646,6 +648,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/SILLY_ONES.lua
     1. Script: Script/JINC/IA/SPECIAL_ARMAGEDDON.lua
     1. Script: Script/JINC/IA/SPECIAL_AXESMASH.lua
+    1. Script: Script/JINC/IA/SPECIAL_GENDRABROE_COUNTER.lua
     1. Script: Script/JINC/IA/SPECIAL_SPIRATAKILLER.lua
     1. Script: Script/JINC/IA/SPIRATATRANSFORM.lua
     1. Script: Script/JINC/IA/SPIRATA_ATTACK_DANDOR.lua
@@ -818,6 +821,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/FoeAI/Hydra.lua
     1. Script: Script/Use/Combat/FoeAI/Nostramantu.lua
     1. Script: Script/Use/Combat/HitBy/AAA.lua
+    1. Script: Script/Use/Combat/HitBy/Gendrabroe.lua
     1. Script: Script/Use/Combat/HitBy/Hydra.lua
     1. Script: Script/Use/Combat/Jokers/AAA_Jokers.lua
     1. Script: Script/Use/Combat/Jokers/Dragon.lua
@@ -849,6 +853,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/SpellScript/Marrilona vs Dwarf - The end.lua
     1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
     1. Script: Script/Use/Combat/SpellScript/PunishUser.lua
+    1. Script: Script/Use/Combat/SpellScript/Rule of Vengeance.lua
     1. Script: Script/Use/Combat/SpellScript/SafeShot.lua
     1. Script: Script/Use/Combat/SpellScript/Spirata.lua
     1. Script: Script/Use/Combat/SpellScript/SpirataKiller.lua
@@ -909,19 +914,20 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/SerializeIntoSysVar.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Sealed/Gendrabroe.png
     1. Graphics: gfx/Effects/Darkness II.png
     1. Graphics: gfx/Effects/Darkness.hot
     1. Graphics: gfx/Effects/Darkness.png
