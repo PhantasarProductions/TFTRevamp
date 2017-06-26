@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.19
+version: 17.06.26
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
@@ -124,6 +124,6 @@ function Attack(act,g,i,na)
        end
     end
     -- If enemies respond to certain attacks, let's init that effect then, shall we?
-    ;(HitBy[mychar.HitBy or 'Nothing'] or Nothing)(ttag,act.Attack_Element,act.Attack_AttackStat,act.Attack_DefenseStat)       
+    ;(HitBy[mychar.HitBy or 'Nothing'] or Nothing)(ttag,act.Attack_Element,act.Attack_AttackStat,act.Attack_DefenseStat,{damage=damage,executor=atag})       
     return true
 end
