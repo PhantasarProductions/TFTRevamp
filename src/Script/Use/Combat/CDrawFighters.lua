@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 17.06.25
+  Version: 17.06.26
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -154,8 +154,9 @@ function DrawFighters()
       end 
   end
   if array_charmessages and array_charmessages.CENTER_SCREEN then
-        local acma = array_charmessages.CENTER_SCREEN
-        local acm=acma[1]
+      local acma = array_charmessages.CENTER_SCREEN
+      local acm=acma[1]
+      if acma[1] then
         --SetFont('CombatCharMessage')
         local fn = fonts['CombatCharMessage'][1]
         acm.fs = acm.fs or 1 -- fonts['CombatCharMessage'][2] * (acm.scale/100); fs = math.ceil(fs)
@@ -175,5 +176,6 @@ function DrawFighters()
         else
            acm.time = acm.time - 1       
         end
+      end
   end
 end
