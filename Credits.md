@@ -580,6 +580,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_CURSEDSPORES.lua
     1. Script: Script/JINC/IA/ITM_DEATHCUBE.lua
     1. Script: Script/JINC/IA/ITM_EEL.lua
+    1. Script: Script/JINC/IA/ITM_FISH.lua
     1. Script: Script/JINC/IA/ITM_FLAMEORB.lua
     1. Script: Script/JINC/IA/ITM_HEALINGHERB.lua
     1. Script: Script/JINC/IA/ITM_HEALSHOWER.lua
@@ -596,6 +597,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_MANDRAKE.lua
     1. Script: Script/JINC/IA/ITM_MEDICINE.lua
     1. Script: Script/JINC/IA/ITM_MIRROR.lua
+    1. Script: Script/JINC/IA/ITM_MUTTON.lua
     1. Script: Script/JINC/IA/ITM_PANACEA.lua
     1. Script: Script/JINC/IA/ITM_PHOENIX.lua
     1. Script: Script/JINC/IA/ITM_POISONDART.lua
@@ -603,6 +605,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_PURELITERATURE.lua
     1. Script: Script/JINC/IA/ITM_PURIFICATIONSHOWER.lua
     1. Script: Script/JINC/IA/ITM_SALVE.lua
+    1. Script: Script/JINC/IA/ITM_SAUERKRAUT.lua
     1. Script: Script/JINC/IA/ITM_SLEEPHERB.lua
     1. Script: Script/JINC/IA/ITM_STONE.lua
     1. Script: Script/JINC/IA/ITM_STORMBOTTLE.lua
@@ -639,7 +642,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/JUG_TACT7.lua
     1. Script: Script/JINC/IA/JUG_TACT8.lua
     1. Script: Script/JINC/IA/JUG_TACT9.lua
-    1. Script: Script/JINC/IA/MUTTON.lua
     1. Script: Script/JINC/IA/SILLY_ONE.lua
     1. Script: Script/JINC/IA/SILLY_ONES.lua
     1. Script: Script/JINC/IA/SPECIAL_ARMAGEDDON.lua
@@ -907,14 +909,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/SerializeIntoSysVar.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -1189,9 +1191,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH4_Dungeon_StarDome/Data
     1. Map Design: Kthura/CH4_Dungeon_StarDome/Objects
     1. Map Design: Kthura/CH4_Dungeon_StarDome/Settings
-    1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/DATA
-    1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/OBJECTS
-    1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/SETTINGS
+    1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/Data
+    1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/Objects
+    1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/Settings
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Data
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Objects
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Settings
