@@ -822,6 +822,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Combat/PreTurn/AAA_Algemeen.lua
     1. Script: Script/Use/Combat/PreTurn/GainAP.lua
     1. Script: Script/Use/Combat/PreTurn/GainHP.lua
+    1. Script: Script/Use/Combat/PreTurn/Nostramantu's Amulet.lsv
+    1. Script: Script/Use/Combat/PreTurn/Nostramantu's Amulet.lua
     1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
     1. Script: Script/Use/Combat/SpellAni/Aqua.lua
     1. Script: Script/Use/Combat/SpellAni/DarkVision.lua
