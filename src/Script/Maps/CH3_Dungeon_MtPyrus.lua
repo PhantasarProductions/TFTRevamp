@@ -127,7 +127,7 @@ end
 
 
 function GALE_OnLoad()
-     effect = SetupGreatMagic()
+     effect = SetupGreatMagic(nil,14)
      local SchuifX = { [true]='Enter', [false]='Next' }
      Maps.GoToLayer("#000")
      Maps.Obj.Obj("Schuif").X=Maps.Obj.Obj("Schuif"..SchuifX[CVV("&DONE.PYRUS.ENTER")]).X + 32
