@@ -138,9 +138,13 @@ function MAP_FLOW()
    o.w=SW
    o.h=SH
    o.InsertX=math.sin(MSecs/8000)*500
-   o.InsertY=math.cos(MSecs/8000)*500
+   o.InsertY=math.cos(MSecs/8000)*500  
 end
 
 function GALE_OnLoad()
    ZA_Enter('Leave',Leave)
+   if CVV('&DONE.CH4DISCUSSION') then
+      Maps.GoToLayer('#000')
+      Maps.Obj.Kill('PRC_Bye')
+   end
 end   
