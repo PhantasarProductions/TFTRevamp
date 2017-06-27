@@ -1,6 +1,6 @@
 --[[
   ManaCave.lua
-  Version: 17.06.23
+  Version: 17.06.27
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -67,7 +67,7 @@ function AltArena.ManaCave.Before()
     for i=1,ManaCavePlasma.max do
         --CSay("Plasma layer "..i.."/"..plasma.max)
         plasma.x[i] = plasma.x[i] + plasma.speed[i][1] 
-        plasma.y[i] = plasma.y[i] + plasma.speed[i][1]
+        plasma.y[i] = plasma.y[i] + plasma.speed[i][2]
         if     plasma.x[i]<0   then plasma.x[i] = plasma.x[i] + 640 
         elseif plasma.x[i]>600 then plasma.x[i] = plasma.x[i] - 640 end
         if     plasma.y[i]<0   then plasma.x[i] = plasma.y[i] + 400 
