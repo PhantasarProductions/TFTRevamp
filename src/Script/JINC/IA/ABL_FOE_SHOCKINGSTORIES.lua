@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_SHOCKINGSTORIES.lua
-  Version: 17.06.26
+  Version: 17.06.27
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================

@@ -32,13 +32,24 @@
   
  **********************************************
  
-version: 17.04.25
+version: 17.06.27
 ]]
 
 
 -- @USE /Script/Use/Specific/GreatMagicBack.lua
 -- @USE /Script/Use/Specific/Walda.lua
 -- @USE /Script/Use/Specific/PicSlide.lua
+
+function BlueSeal()
+    ClearCombatData()
+    Var.D("$COMBAT.FOE_1","Sealed/MountainEmperor")
+    Var.D("$COMBAT.POSFOE_1","CENTER")
+    Var.D("$COMBAT.MUSIC","Music/Special Boss/Hall Of The Mountain King.ogg")
+    Var.D("$COMBAT.ARENA","pyruspass.png")
+    StartBoss("Ultimate crusher","Mountain Emperor",0,25,100)      
+    Done('&DONE.SEAL.DANDOR2')
+end
+
 
 function MAP_FLOW()
     --for e in each(effect) do for e1 in each(e) do FlowMoveTex(e1) end end

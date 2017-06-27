@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.12
+version: 17.06.27
 ]]
 
 -- @IF IGNORE
@@ -81,6 +81,7 @@ function CureMarrilona()
       MapText('CH4START')  
       Done('&DONE.CH4DISCUSSION') 
 end      
+
 
 function Leave()
      if not CVV(nostradone) then

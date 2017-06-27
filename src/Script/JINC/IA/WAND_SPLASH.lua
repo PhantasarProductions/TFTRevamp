@@ -1,6 +1,6 @@
 --[[
   WAND_SPLASH.lua
-  Version: 17.06.26
+  Version: 17.06.27
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

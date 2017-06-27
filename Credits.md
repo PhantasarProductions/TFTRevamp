@@ -259,6 +259,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Sealed/Hydra.lua
     1. Script: Script/JINC/Foes/Sealed/Kabi.lua
     1. Script: Script/JINC/Foes/Sealed/MinoKing.lua
+    1. Script: Script/JINC/Foes/Sealed/MountainEmperor.lua
     1. Script: Script/JINC/Foes/UberBoss/Juggernaut.lua
     1. Script: Script/JINC/Foes/reg/ArcaneSlime.lua
     1. Script: Script/JINC/Foes/reg/Archmage.lua
@@ -483,6 +484,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/EQP_ACC_TITANBELT.lua
     1. Script: Script/JINC/IA/EQP_ACC_WIZARDRING.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_CURSEDWP_HUNGERAXE.lua
+    1. Script: Script/JINC/IA/EQP_DANDOR_SEALEDAR.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_SEALEDWEAPON.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_TRAINAXE.lua
     1. Script: Script/JINC/IA/EQP_DANDOR_WP1.lua
@@ -914,14 +916,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/SerializeIntoSysVar.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -2532,6 +2534,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. General Data: GFX/Combat/Fighters/Foe/Reg/Pyroguin
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/ShadowShroom.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Shroom.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Sealed/MountainEmperor.png
     1. Graphics: GFX/Combat/Spellani/Temptation/Heart.png
     1. Graphics: GFX/Textures/4 Elements/Aarde.png
     1. Graphics: GFX/Textures/4 Elements/Vuur.png
