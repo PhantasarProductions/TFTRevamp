@@ -236,10 +236,10 @@ Rec: CH3FRENDORGRAVE
 	Dungeon = FALSE
 	Folder = Delisto
 	Kthura = CH3_Hub_FrendorGrave
-	Layer = #001
+	Layer = Graf
 	LocationName = Frendor's Grave
 	LocationPrefix = 
-	Start = Graf
+	Start = Start
 	UnlockedFromStart = FALSE
 
 Rec: CH3GROMBO

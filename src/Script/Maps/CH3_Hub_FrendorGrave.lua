@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.28
+version: 17.06.27
 ]]
 function Harry()
     PartyPop("H")
@@ -73,6 +73,9 @@ end
 
 
 function GALE_OnLoad()
+    if CVV('&DONE.CH4DISCUSSION') then
+      Maps.ObjectList.KillByLabel('ch')
+    end
     ZA_Enter('Harry',Harry)
     ZA_Enter("Event",Event)
 end       
