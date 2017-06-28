@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_FLAME.lua
-  Version: 17.06.27
+  Version: 17.06.28
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.10
+version: 17.06.28
 ]]
 -- @IF IGNORE
 local FoeAI = {}
@@ -45,7 +45,15 @@ function FoeAI.Nostramantu(tag)
        local t = RPG.PartyTag(i)
        spirata = spirata or fightersbytag[t].StatusChanges.Spirata
    end
-   if spirata then
+   if RPG.Points(tag,'HP').Have==1 and RPG.Points(tag,'HP').Minimum==1 then 
+    nextact =   {
+                           executor = { group = 'Foe', tag=foe.tag },
+                           act = 'SPECIAL_NOSTRAMORPH', 
+                           flow='Execution', 
+                           group='Foe',
+                           targetidx=2
+    }
+   elseif spirata then
     nextact =   {
                            executor = { group = 'Foe', tag=foe.tag },
                            act = 'SPECIAL_SPIRATAKILLER', 

@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_RUBINE_INVADE.lua
-  Version: 17.06.27
+  Version: 17.06.28
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

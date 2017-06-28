@@ -1,6 +1,6 @@
 --[[
   ITM_ICICLES.lua
-  Version: 17.06.27
+  Version: 17.06.28
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -62,7 +62,7 @@ ret = {
 	["ITM_ShopPrice"] = 2500,
 	["ITM_Type"] = "Consumable",
 	["ITM_WeaponAbility"] = true,
-	["SpellAni"] = "Frost",
+	["SpellAni"] = "MultiFrost",
 	["Stance"] = "Attack",
 	["Target"] = "1F",
 	["Title"] = "Icicles",
