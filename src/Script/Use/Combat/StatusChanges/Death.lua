@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 17.05.27
+  Version: 17.06.28
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -39,6 +39,9 @@ StatusChanges = {}
 -- @FI
 
 function KillAward(myfoe)
+    -- End?
+    if CVV('&DONE.ULTIMATENOSTRAMANTU.MORPH.COMPLETE') then LAURA.Flow('FIELD') end    
+    -- Normal?
     local itemgiven = false
     -- Experience
     for i=0,3 do  

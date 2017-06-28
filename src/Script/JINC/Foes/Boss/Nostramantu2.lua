@@ -34,12 +34,12 @@
  
 version: 17.06.28
 ]]
--- File Generated: Wed 28 June 2017; 11:15:57
+-- File Generated: Wed 28 June 2017; 19:57:11
 
 
 local foe = {}
 
-	foe["AI"] = "default"
+	foe["AI"] = "Nostramantu"
 	foe["NEWGAMEPLUS_AAA_GUARD"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_CRUSH"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_DEATHSPELL"] = true
@@ -447,11 +447,24 @@ local foe = {}
 	foe["RATE_JUG_TACT\55"] = 0
 	foe["RATE_JUG_TACT\56"] = 0
 	foe["RATE_JUG_TACT\57"] = 0
+	foe["RATE_NOS_BURN"] = 0
+	foe["RATE_NOS_DROWN"] = 0
+	foe["RATE_NOS_FREEZE"] = 0
+	foe["RATE_NOS_FRY"] = 0
+	foe["RATE_NOS_GET"] = 0
+	foe["RATE_NOS_HATE"] = 0
+	foe["RATE_NOS_HURT"] = 0
+	foe["RATE_NOS_KILL"] = 0
+	foe["RATE_NOS_SHAKE"] = 0
+	foe["RATE_NOS_SQUEEZE"] = 0
+	foe["RATE_NOS_STOP"] = 0
+	foe["RATE_NOS_TWIST"] = 0
 	foe["RATE_SILLY_ONE"] = 0
 	foe["RATE_SILLY_ONES"] = 0
 	foe["RATE_SPECIAL_ARMAGEDDON"] = 0
 	foe["RATE_SPECIAL_AXESMASH"] = 0
 	foe["RATE_SPECIAL_GENDRABROE_COUNTER"] = 0
+	foe["RATE_SPECIAL_NOSTRAMORPH"] = 0
 	foe["RATE_SPECIAL_SPIRATAKILLER"] = 0
 	foe["RATE_SPIRATATRANSFORM"] = 0
 	foe["RATE_SPIRATA_ATTACK_DANDOR"] = 0
@@ -730,11 +743,24 @@ local foe = {}
 	foe["TARGET_JUG_TACT\55"] = "Random"
 	foe["TARGET_JUG_TACT\56"] = "Random"
 	foe["TARGET_JUG_TACT\57"] = "Random"
+	foe["TARGET_NOS_BURN"] = "Random"
+	foe["TARGET_NOS_DROWN"] = "Random"
+	foe["TARGET_NOS_FREEZE"] = "Random"
+	foe["TARGET_NOS_FRY"] = "Random"
+	foe["TARGET_NOS_GET"] = "Random"
+	foe["TARGET_NOS_HATE"] = "Random"
+	foe["TARGET_NOS_HURT"] = "Random"
+	foe["TARGET_NOS_KILL"] = "Random"
+	foe["TARGET_NOS_SHAKE"] = "Random"
+	foe["TARGET_NOS_SQUEEZE"] = "Random"
+	foe["TARGET_NOS_STOP"] = "Random"
+	foe["TARGET_NOS_TWIST"] = "Random"
 	foe["TARGET_SILLY_ONE"] = "Random"
 	foe["TARGET_SILLY_ONES"] = "Random"
 	foe["TARGET_SPECIAL_ARMAGEDDON"] = "Random"
 	foe["TARGET_SPECIAL_AXESMASH"] = "Random"
 	foe["TARGET_SPECIAL_GENDRABROE_COUNTER"] = "Random"
+	foe["TARGET_SPECIAL_NOSTRAMORPH"] = "Random"
 	foe["TARGET_SPECIAL_SPIRATAKILLER"] = "Random"
 	foe["TARGET_SPIRATATRANSFORM"] = "Random"
 	foe["TARGET_SPIRATA_ATTACK_DANDOR"] = "Random"

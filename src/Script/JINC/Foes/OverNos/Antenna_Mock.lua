@@ -34,7 +34,7 @@
  
 version: 17.06.28
 ]]
--- File Generated: Wed 28 June 2017; 17:35:25
+-- File Generated: Wed 28 June 2017; 20:23:53
 
 
 local foe = {}
@@ -83,7 +83,7 @@ local foe = {}
 	foe["OVERSOUL_ABL_FOE_ULTIMATESOULCRUSHER"] = true
 	foe["OVERSOUL_ABL_GLOOM"] = true
 	foe["SKILL\49_ABL_FOE_CRUSH"] = false
-	foe["SKILL\49_ABL_FOE_DEMON_SOUL_BREAKER"] = true
+	foe["SKILL\49_ABL_FOE_DEMON_SOUL_BREAKER"] = false
 	foe["SKILL\49_ABL_FOE_DISTRACT"] = true
 	foe["SKILL\49_ABL_FOE_FATALPOISON"] = true
 	foe["SKILL\49_ABL_FOE_FOOLGOLD"] = true
@@ -97,7 +97,7 @@ local foe = {}
 	foe["SKILL\49_ABL_FOE_ULTIMATESOULCRUSHER"] = true
 	foe["SKILL\49_ABL_GLOOM"] = true
 	foe["SKILL\50_ABL_FOE_CRUSH"] = true
-	foe["SKILL\50_ABL_FOE_DEMON_SOUL_BREAKER"] = true
+	foe["SKILL\50_ABL_FOE_DEMON_SOUL_BREAKER"] = false
 	foe["SKILL\50_ABL_FOE_DISTRACT"] = true
 	foe["SKILL\50_ABL_FOE_FATALPOISON"] = true
 	foe["SKILL\50_ABL_FOE_FOOLGOLD"] = true
@@ -737,7 +737,7 @@ local foe = {}
 	foe["TARGET_ZZZ_KRANDARBLADE"] = "Random"
 	foe["TARGET_ZZ_CRYPTKEY"] = "Random"
 	foe["VocalTag"] = "Antenna_Mock"
-	foe["Boss"] = false
+	foe["Boss"] = true
 	foe["Oversoul"] = false
 	foe["Oversoul Drop \49"] = false
 	foe["Oversoul Drop \50"] = false

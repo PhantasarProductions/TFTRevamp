@@ -1,6 +1,6 @@
 --[[
   PlayWithPoints.lua
-  Version: 17.05.23
+  Version: 17.06.28
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -36,7 +36,7 @@
 ]]
 
 -- @IF IGNORE
-SpellScript = {}
+local SpellScript = {}
 -- @FI
 
 function SpellScript.PointAlter(tartag,extag,param)
@@ -49,6 +49,9 @@ function SpellScript.PointAlter(tartag,extag,param)
     if (not prefixed(tartag,"FOE_")) and prefixed(sp[1],"SL_EXP_") then IncSkill(tartag,Sys.Val(right(sp[1],1)),0)                 end
     return true
 end
+
+SpellScript.PointsAlter = SpellScript.PointAlter
+SpellScript.AlterPoints = SpellScript.PointsAlter
 
 function SpellScript.MultiPointAlter(tartag,extag,paramsequence)
    for seq in each(mysplit(paramsequence,";")) do SpellScript.PointAlter(tartag,extag,seq) end

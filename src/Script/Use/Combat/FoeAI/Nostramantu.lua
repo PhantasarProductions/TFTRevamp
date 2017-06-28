@@ -45,6 +45,7 @@ function FoeAI.Nostramantu(tag)
        local t = RPG.PartyTag(i)
        spirata = spirata or fightersbytag[t].StatusChanges.Spirata
    end
+   CSay("NosHP:"..RPG.Points(tag,'HP').Have.."/"..RPG.Points(tag,'HP').Minimum)
    if RPG.Points(tag,'HP').Have==1 and RPG.Points(tag,'HP').Minimum==1 then 
     nextact =   {
                            executor = { group = 'Foe', tag=foe.tag },
