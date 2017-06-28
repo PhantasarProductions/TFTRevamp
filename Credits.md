@@ -99,6 +99,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Krandar/VeelTeGroot.png
     1. Graphics: GFX/BoxText/Portret/Krandar/Worried.png
     1. Graphics: GFX/BoxText/Portret/Marata/General.png
+    1. Graphics: GFX/Combat/Fighters/Foe/OverNos/Nostramantu.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/MonsterGuy.png
     1. Graphics: GFX/BigPic/Krandar.png
     1. Graphics: GFX/BoxText/Portret/Chief Werrington/Angry.png
@@ -253,6 +254,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/UltraMonk.lua
     1. Script: Script/JINC/Foes/Boss/harry2.lua
     1. Script: Script/JINC/Foes/Boss/superalien.lua
+    1. Script: Script/JINC/Foes/OverNos/Nostramantu.lua
     1. Script: Script/JINC/Foes/Sealed/Aanschouwer.lua
     1. Script: Script/JINC/Foes/Sealed/Cockatrice.lua
     1. Script: Script/JINC/Foes/Sealed/Gendrabroe.lua
@@ -931,14 +933,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/SerializeIntoSysVar.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -1091,7 +1093,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Nostramantu.piko
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Nostramantu.png
     1. Graphics: GFX/Combat/Fighters/Foe/OverNos/Antenna.piko
-    1. Graphics: GFX/Combat/Fighters/Foe/OverNos/Antenna.png
+    1. Graphics: GFX/Combat/Fighters/Foe/OverNos/Antenna_Nice.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Female1.piko
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Female1.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Female2.png

@@ -1,9 +1,93 @@
--- File Generated: Wed 28 June 2017; 17:28:25
+--[[
+**********************************************
+  
+  Antenna_Nice.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
+  
+  This file contains material that is related 
+  to a storyline that is which is strictly
+  copyrighted to Jeroen Broks.
+  
+  This file may only be used in an unmodified
+  form with an unmodified version of the 
+  software this file belongs to.
+  
+  You may use this file for your study to see
+  how I solved certain things in the creation
+  of this project to see if you find valuable
+  leads for the creation of your own.
+  
+  Mostly this file comes along with a project
+  that is for most part released under an
+  open source license and that means that if
+  you use that code with this file removed
+  from it, you can use it under that license.
+  Please check out the other files to find out
+  which license applies.
+  This file comes 'as-is' and in no possible
+  way the author can be held responsible of
+  any form of damages that may occur due to 
+  the usage of this file
+  
+  
+ **********************************************
+ 
+version: 17.06.28
+]]
+-- File Generated: Wed 28 June 2017; 17:33:19
 
 
 local foe = {}
 
 	foe["AI"] = "default"
+	foe["NEWGAMEPLUS_ABL_FOE_ENEMYVITALIZE"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_HANDOSTILLOR_HASPARONVITALIZATION"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_HANDOSTILLOR_RECOVER"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["NORMAL_ABL_FOE_ENEMYVITALIZE"] = true
+	foe["NORMAL_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = true
+	foe["NORMAL_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
+	foe["NORMAL_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = true
+	foe["NORMAL_ABL_HERO_HANDOSTILLOR_HASPARONVITALIZATION"] = true
+	foe["NORMAL_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = true
+	foe["NORMAL_ABL_HERO_HANDOSTILLOR_RECOVER"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["OVERSOUL_ABL_FOE_ENEMYVITALIZE"] = true
+	foe["OVERSOUL_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = true
+	foe["OVERSOUL_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
+	foe["OVERSOUL_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = true
+	foe["OVERSOUL_ABL_HERO_HANDOSTILLOR_HASPARONVITALIZATION"] = true
+	foe["OVERSOUL_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = true
+	foe["OVERSOUL_ABL_HERO_HANDOSTILLOR_RECOVER"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["SKILL\49_ABL_FOE_ENEMYVITALIZE"] = true
+	foe["SKILL\49_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = true
+	foe["SKILL\49_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
+	foe["SKILL\49_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = true
+	foe["SKILL\49_ABL_HERO_HANDOSTILLOR_HASPARONVITALIZATION"] = true
+	foe["SKILL\49_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = false
+	foe["SKILL\49_ABL_HERO_HANDOSTILLOR_RECOVER"] = true
+	foe["SKILL\49_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["SKILL\50_ABL_FOE_ENEMYVITALIZE"] = true
+	foe["SKILL\50_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = true
+	foe["SKILL\50_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = true
+	foe["SKILL\50_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = true
+	foe["SKILL\50_ABL_HERO_HANDOSTILLOR_HASPARONVITALIZATION"] = true
+	foe["SKILL\50_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = true
+	foe["SKILL\50_ABL_HERO_HANDOSTILLOR_RECOVER"] = true
+	foe["SKILL\50_ABL_HERO_MARRILONA_HEAL"] = true
+	foe["SKILL\51_ABL_FOE_ENEMYVITALIZE"] = true
+	foe["SKILL\51_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = false
+	foe["SKILL\51_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = false
+	foe["SKILL\51_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = false
+	foe["SKILL\51_ABL_HERO_HANDOSTILLOR_HASPARONVITALIZATION"] = true
+	foe["SKILL\51_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = true
+	foe["SKILL\51_ABL_HERO_HANDOSTILLOR_RECOVER"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_HEAL"] = true
 	foe["STSTART_Confusion"] = false
 	foe["STSTART_Curse"] = false
 	foe["STSTART_Death"] = false
@@ -23,7 +107,7 @@ local foe = {}
 	foe["Item Steal \49"] = "ITM_AMBROSIA"
 	foe["Item Steal \50"] = "ITM_AMBROSIA"
 	foe["Item Steal \51"] = "ITM_AMBROSIA"
-	foe["Name"] = ""
+	foe["Name"] = "Nice Antenna"
 	foe["RATE_AAA_ATTACK"] = 0
 	foe["RATE_AAA_GUARD"] = 0
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
@@ -33,7 +117,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
 	foe["RATE_ABL_FOE_DISINTEGRATE"] = 0
 	foe["RATE_ABL_FOE_DISTRACT"] = 0
-	foe["RATE_ABL_FOE_ENEMYVITALIZE"] = 0
+	foe["RATE_ABL_FOE_ENEMYVITALIZE"] = 1
 	foe["RATE_ABL_FOE_ENERGYDRAIN"] = 0
 	foe["RATE_ABL_FOE_EVIL_EYE"] = 0
 	foe["RATE_ABL_FOE_EVIL_EYE_PARALYZE"] = 0
@@ -83,17 +167,17 @@ local foe = {}
 	foe["RATE_ABL_HERO_DANDOR_SHIELD"] = 0
 	foe["RATE_ABL_HERO_DANDOR_SUPERAXESMASH"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_CLEANSE"] = 0
-	foe["RATE_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = 0
-	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = 0
-	foe["RATE_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = 0
-	foe["RATE_ABL_HERO_HANDOSTILLOR_HASPARONVITALIZATION"] = 0
-	foe["RATE_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = 4
+	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = 5
+	foe["RATE_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = 5
+	foe["RATE_ABL_HERO_HANDOSTILLOR_HASPARONVITALIZATION"] = 1
+	foe["RATE_ABL_HERO_HANDOSTILLOR_HOLYSTRIKE"] = 1
 	foe["RATE_ABL_HERO_HANDOSTILLOR_KNEELBEFOREME"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_PRAY"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_PRAYFORALL"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_PURIFY"] = 0
-	foe["RATE_ABL_HERO_HANDOSTILLOR_RECOVER"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_RECOVER"] = 3
 	foe["RATE_ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_RESURRECT"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_REVIVE"] = 0
@@ -123,7 +207,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_ETERNALFLAME"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_FIREBLAST"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_FLAME"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 5
 	foe["RATE_ABL_HERO_MARRILONA_HURRICANE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ICEBLAST"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_INFERNO"] = 0
@@ -617,7 +701,7 @@ local foe = {}
 	foe["TARGET_ZZZ_KRANDARBLADE"] = "Random"
 	foe["TARGET_ZZ_CRYPTKEY"] = "Random"
 	foe["VocalTag"] = "Antenna_Nice"
-	foe["Boss"] = false
+	foe["Boss"] = true
 	foe["Oversoul"] = false
 	foe["Oversoul Drop \49"] = false
 	foe["Oversoul Drop \50"] = false
@@ -625,38 +709,38 @@ local foe = {}
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
 	foe["Cash"] = 0
-	foe["ER_Darkness"] = 0
-	foe["ER_Earth"] = 0
-	foe["ER_Flame"] = 0
-	foe["ER_Frost"] = 0
-	foe["ER_Light"] = 0
-	foe["ER_Lightning"] = 0
-	foe["ER_Water"] = 0
-	foe["ER_Wind"] = 0
+	foe["ER_Darkness"] = 100
+	foe["ER_Earth"] = 100
+	foe["ER_Flame"] = 100
+	foe["ER_Frost"] = 100
+	foe["ER_Light"] = 100
+	foe["ER_Lightning"] = 100
+	foe["ER_Water"] = 100
+	foe["ER_Wind"] = 100
 	foe["Rate Drop \49"] = 0
 	foe["Rate Drop \50"] = 0
 	foe["Rate Steal \49"] = 0
 	foe["Rate Steal \50"] = 0
 	foe["Rate Steal \51"] = 0
-	foe["SR_Confusion"] = 0
-	foe["SR_Curse"] = 0
-	foe["SR_Death"] = 0
-	foe["SR_Disease"] = 0
-	foe["SR_Paralysis"] = 0
-	foe["SR_Petrification"] = 0
-	foe["SR_Poison"] = 0
-	foe["SR_Silence"] = 0
-	foe["SR_Sleep"] = 0
-	foe["SR_Undead"] = 0
+	foe["SR_Confusion"] = 100
+	foe["SR_Curse"] = 100
+	foe["SR_Death"] = 100
+	foe["SR_Disease"] = 100
+	foe["SR_Paralysis"] = 100
+	foe["SR_Petrification"] = 100
+	foe["SR_Poison"] = 100
+	foe["SR_Silence"] = 100
+	foe["SR_Sleep"] = 100
+	foe["SR_Undead"] = 100
 	foe["normal_Accuracy"] = 100
 	foe["normal_EXP"] = 0
-	foe["normal_Endurance"] = 0
-	foe["normal_Evasion"] = 0
-	foe["normal_HP"] = 0
-	foe["normal_Intelligence"] = 0
-	foe["normal_Power"] = 0
-	foe["normal_Resistance"] = 0
-	foe["normal_Speed"] = 0
+	foe["normal_Endurance"] = 2
+	foe["normal_Evasion"] = 100
+	foe["normal_HP"] = 5
+	foe["normal_Intelligence"] = 800
+	foe["normal_Power"] = 1
+	foe["normal_Resistance"] = 2
+	foe["normal_Speed"] = 3
 	foe["oversoul_Accuracy"] = 100
 	foe["oversoul_EXP"] = 0
 	foe["oversoul_Endurance"] = 0
