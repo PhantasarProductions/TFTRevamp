@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  Nostramantu1.lua
+  Nostramantu2.lua
   (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
@@ -34,7 +34,7 @@
  
 version: 17.06.28
 ]]
--- File Generated: Wed 28 June 2017; 11:15:55
+-- File Generated: Wed 28 June 2017; 11:15:57
 
 
 local foe = {}
@@ -804,19 +804,19 @@ local foe = {}
 	foe["SR_Disease"] = 85
 	foe["SR_Paralysis"] = 95
 	foe["SR_Petrification"] = 100
-	foe["SR_Poison"] = 90
+	foe["SR_Poison"] = 95
 	foe["SR_Silence"] = 100
 	foe["SR_Sleep"] = 100
 	foe["SR_Undead"] = 100
 	foe["normal_Accuracy"] = 100
 	foe["normal_EXP"] = 10000
-	foe["normal_Endurance"] = 50
+	foe["normal_Endurance"] = 100
 	foe["normal_Evasion"] = 25
-	foe["normal_HP"] = 25000
-	foe["normal_Intelligence"] = 700
-	foe["normal_Power"] = 250
-	foe["normal_Resistance"] = 800
-	foe["normal_Speed"] = 600
+	foe["normal_HP"] = 35000
+	foe["normal_Intelligence"] = 800
+	foe["normal_Power"] = 500
+	foe["normal_Resistance"] = 900
+	foe["normal_Speed"] = 900
 	foe["oversoul_Accuracy"] = 100
 	foe["oversoul_EXP"] = 0
 	foe["oversoul_Endurance"] = 0

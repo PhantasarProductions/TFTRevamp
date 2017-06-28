@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.25
+version: 17.06.28
 ]]
 
 --[[
@@ -111,6 +111,46 @@ local function KExit()
    GoToLayer('corridor','x'..n)
 end   
    
+function NPC_EndDoor()
+   local go=true
+   for i=1,8 do 
+       local IH = ItemHave("ZZKEY_NOSTRACOIN"..i)
+       go=go and IH>0
+       CSay("Coin #"..i.."; Have="..IH.." go = "..sval(go))
+   end    
+   if not go then
+      MapText("NOEND")
+   else
+      MapText("TOEND")
+      Maps.Obj.Kill('EndDoor')
+   end      
+end   
+
+local function GoNos() GoToLayer('nos','Start') end 
+
+function StartNos()
+    RPG.Points('FOE_2','HP').Minimum=1
+end
+
+function NPC_Nostramantu()
+   PartyPop('Nos')
+   MapText('CONFRONTATION')
+   -- Init Fight
+  ClearCombatData()
+   Var.D("$COMBAT.FOE_1","Reg/Nemesis")
+  Var.D("$COMBAT.FOE_2","Boss/Nostramantu2")
+  Var.D('$COMBAT.POSFOE_2',"CENTER")
+  Var.D("$COMBAT.FOE_3","Reg/Nemesis")      
+  Var.D("$COMBAT.MUSIC","Music/Special Boss/PlayTillDeath_(Nostramantu).ogg")
+  Var.D("$COMBAT.ARENA","nostramantu.png")
+  Var.D("$COMBAT.STARTEVENT","MAP,StartNos")
+  StartBoss("The Final Confrontation With","Nostramantu",255,180,0)   
+  Schedule('MAP','PostFinalBoss')    
+end   
+
+function PostFinalBoss()
+    assert(false,"Sorry, no more yet")
+end    
 
 function GALE_OnLoad()
   InitRandomDoors()
@@ -120,5 +160,7 @@ function GALE_OnLoad()
   ZA_Enter('ToLinks',LV,'Links')
   ZA_Enter('ToLobbyRechts',LV,'Rechts')
   ZA_Enter('KExit',KExit)
+  ZA_Enter('StopMusic',StopMusic)
+  ZA_Enter('Confrontation',GoNos)
   MapHide('Secret')
 end  
