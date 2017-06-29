@@ -172,7 +172,9 @@ function PostFinalBoss()
     MapText('WEDDING')
     Maps.Obj.Obj('Harry').TextureFile='Gfx/Actors/Single/Humans/Harry.png'
     MapText('WEDDING2')    
-    assert(false,"Sorry, no more yet")
+    --assert(false,"Sorry, no more yet")
+    MS.Load("CREDITS",'Script/Flow/Credits.lua')
+    LAURA.Flow("CREDITS")
 end    
 
 function GALE_OnLoad()

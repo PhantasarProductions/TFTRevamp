@@ -83,7 +83,7 @@ function MAIN_FLOW()
              Image.Color(d.r or 255,d.g or 255,d.b or 255)
              d.imgtag = d.imgtag or Image.Load(d.img)
              Image.HotCenter(d.imgtag)
-             Image.Show(d.imgtag,400,d.y)
+             Image.Show(d.imgtag,cnx,d.y)
           else
              DarkText(d.txt,cnx,d.y,2,2,d.r or 255, d.g or 255, d.b or 255,2,2)
           end
@@ -95,6 +95,7 @@ function MAIN_FLOW()
          for k,d in spairs(cdata) do if d.imgtag then Image.Free(d.imgtag) end end
          Image.Free(Orion)
          MS.Destroy('CREDITS')
+         error("Nothing anymore yet!")
          LAURA.Flow('Field')
       end
       Flip()   
@@ -104,7 +105,7 @@ end
 
 function GALE_OnLoad()
   cdata = JINC('Script/JINC/Big/Credits.lua')
-  Music('Launcher/Launcher.ogg')
+  Music('Hub/StartToFantasyInstrumental.ogg')
   crx,cry,crw,crh = GetViewport()
-  cnx = crx/2
+  cnx = crw/2
 end
