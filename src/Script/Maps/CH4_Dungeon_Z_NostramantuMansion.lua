@@ -157,12 +157,21 @@ function PostFinalBoss()
     MapText('ENDCHAT')
     local marrilona = Actors.Actor('PLAYER1')
     local s = marrilona.y
-    for y=s,-100,-2 do
-        marrilona.y = marrilona.y - 1
+    for y=s,-1000,-4 do
+        marrilona.y = y -- marrilona.y - 1
+        Cls()
         DrawScreen()
         Flip()
     end
-    MapText('ENDCHAT2')    
+    MapText('ENDCHAT2')
+    GoToLayer('trouwen','Start')
+    Actors.Actor('PLAYER').Visible=0
+    Actors.Actor('PLAYER1').Visible=0
+    Actors.Actor('PLAYER2').Visible=0
+    Actors.Actor('PLAYER3').Visible=0
+    MapText('WEDDING')
+    Maps.Obj.Obj('Harry').TextureFile='Gfx/Actors/Single/Humans/Harry.png'
+    MapText('WEDDING2')    
     assert(false,"Sorry, no more yet")
 end    
 
