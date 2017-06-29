@@ -1787,6 +1787,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_NOSTRABURG
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_MANACAVE
+    1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_MANAROAD
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_PYRUSPASS
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_STARDOME
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_Z_NOSTRAMANTUMANSION
@@ -1836,6 +1837,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_GROMBO
     1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_NOSTRABURG
     1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_MANACAVE
+    1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_MANAROAD
     1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_PYRUSPASS
     1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_STARDOME
     1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_Z_NOSTRAMANTUMANSION

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.28
+version: 17.06.29
 ]]
 
 --[[
@@ -149,6 +149,20 @@ function NPC_Nostramantu()
 end   
 
 function PostFinalBoss()
+    LoadMap('CH4_DUNGEON_MANAROAD')
+    GoToLayer('bos','Einde')
+    PartyPop('Eind','North')
+    Maps.Obj.Obj('Krandar').SetAlpha(1000)
+    Maps.Obj.Obj('Feenalaria').SetAlpha(1000)
+    MapText('ENDCHAT')
+    local marrilona = Actors.Actor('PLAYER1')
+    local s = marrilona.y
+    for y=s,-100,-2 do
+        marrilona.y = marrilona.y - 1
+        DrawScreen()
+        Flip()
+    end
+    MapText('ENDCHAT2')    
     assert(false,"Sorry, no more yet")
 end    
 
