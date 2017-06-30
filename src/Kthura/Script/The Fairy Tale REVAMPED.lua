@@ -140,12 +140,19 @@ function CSpot_Chest_Place(lock)
     if lock=="LOCKME" then
        local required =  INPUT.Ask("Item Code Name for the item required to have to open this chest")
        ME.DataSet("RequiredItem",required)
+    elseif lock == "NEWGP" then
+       ME.R=0
+       ME.DataSet("NewGame+","Only")   
     end   
 end
 
 function CSpot_LockedChest_Place()
     CSpot_Chest_Place("LOCKME")
 end    
+
+function CSpot_NewGamePlusChest_Place()
+    CSpot_Chest_Place("NEWGP")
+end
 
 function CSpot_RandomItem_Place()
     local ME = SPOT.ME()

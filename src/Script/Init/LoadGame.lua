@@ -1,7 +1,7 @@
 --[[
   LoadGame.lua
-  Version: 16.12.29
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.06.30
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -39,6 +39,7 @@
 function LoadGame()
   CSay("Re-Setup clickables")
   -- MS.Run("FIELD","ResetClickables") -- Not needed here. This stuff is already empty.
+  MS.Run("FIELD","NewGamePlusRemoval") -- Must be first
   MS.Run("FIELD","SetUpAutoClickables")
   MS.Run("FIELD","SetUpCompassNeedles")
   MS.Run('FIELD','SetUpRoomNames')

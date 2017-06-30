@@ -150,8 +150,28 @@ function SetUpRoomNames()
     end
 end
 
+function NewGamePlusRemoval()
+    if not newgameplus then
+       CSay("Removing New Game+ objects")
+       local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()       
+       for layer in each(layers) do
+           local ri = 0 
+           local removal = {}
+           CSay("NGP-Cleaning: "..layer)
+           for o in KthuraEach() do
+               if o.DataGet("NewGame+")=="Only" then
+                  if o.Tag=="" then o.Tag="REMOVE_NGP_ITEM_"..ri; ri = ri + 1;  end
+                  removal[#removal+1] = o.tag
+               end
+           end
+           Maps.Remap()
+           for k in each(removal) do Maps.Obj.Kill(k) end
+       end    
+    end            
+end
 
 function LoadMap(lmap)
+    --[[ messed up code
     local map = upper(lmap)
     -- Reset some stuff prior to loading
     ResetClickables()
@@ -159,6 +179,32 @@ function LoadMap(lmap)
     -- Load the map itself
     CSay("Loading Map!")
     Maps.Load(upper(map))
+    CSay("Configuring Data!")
+    NewGamePlusRemovals() -- Must be done immediately after loading the map itself.
+    local got = RandomItems[Maps.CodeName][layer]
+    if Maps.Multi()==1 then Maps.GotoLayer(layer) end
+    Maps.LayerCodeName = ""
+    local layers,multi = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),true end})[Maps.Multi()]()    
+    --if layers[1]~="SL:MAP" then Maps.GotoLayer(layers[1]) end -- Does this prevent a crash?
+    CSay(serialize('LAYERS',layers))
+    if multi then Maps.GotoLayer(layers[1]) end
+    -- Lastly, load the music  
+    MS.Run("MAP","MapMusic") 
+    SetUpAutoClickables()
+    SetUpCompassNeedles()
+    SetUpRencTable()
+    SetUpRandomEncounters()
+    SetUpRoomNames()
+    rencon = true    
+    ]]
+    local map = upper(lmap)
+    -- Reset some stuff prior to loading
+    ResetClickables()
+    AUTOHIDE = {}
+    -- Load the map itself
+    CSay("Loading Map!")
+    Maps.Load(upper(map))
+    NewGamePlusRemovals() -- Must be done immediately after loading the map itself.
     CSay("Configuring Data!")
     Maps.LayerCodeName = ""
     local layers,multi = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),true end})[Maps.Multi()]()    
@@ -173,6 +219,7 @@ function LoadMap(lmap)
     SetUpRandomEncounters()
     SetUpRoomNames()
     rencon = true    
+    
 end
 
 function GotoLayerAutoHide(label)
