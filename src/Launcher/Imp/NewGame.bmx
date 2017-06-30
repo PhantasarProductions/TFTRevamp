@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 17.01.18
+Version: 17.06.30
 End Rem
 Strict
 
@@ -31,7 +31,10 @@ Import "FrameWork.bmx"
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - NewGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","17.01.18"
+MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","17.06.30"
+
+Const ngpk$ = "aefaefb42e2d12163c52475d8eec4703"
+Const ngpf$ = "$AppSupport$/Phantasar Productions/LAURA2/TFTREVAMP/Saved Games/ODETOJOY"
 
 
 Function Anna:StringMap(q$)
@@ -66,15 +69,18 @@ Global StartGame:TIni = New TIni
 Function PressNewGame(G:TGadget)
 	startgame.D("StartScript","NewGame.lua")
 	startGame.D("StartFunction","NewGame")
+	Print "Gewone New Game"
 End Function	
 
 Function PressNewGamePlus(G:TGadget)
 	startgame.D("StartScript","NewGamePlus.Lua")
 	startgame.D("StartFunction","NewGamePlus")
+	Print "We gaan voor de New Game + "
 End Function	
 
 SetButtonState gadgets.cr( CreateButton("New Game",300,0,300,25,gadgets.Gadget("PanNewGame"),button_radio),Null,PressNewGame ).g,1
 Global NewGamePlusButton:TGadget = CreateButton("New Game+",300,25,300,25,gadgets.Gadget("PanNewGame"),button_radio)
+gadgets.cr NewGamePlusButton,Null,PressNewGamePlus
 
 
 Function SkillEasy(G:TGadget)
@@ -283,8 +289,11 @@ End Function
 
 
 Function ActivateMe(G:TGadget)
+	Local angp = False
+	If FileType(Dirry(ngpf)) angp = MD5(LoadString(Dirry(ngpf)))=ngpk
+	'If angp Then gadgets.cr NewGamePlusButton,Null,PressNewGamePlus; Print "NGP activated"
 	pressnewgame Null
-	NewGamePlusButton.SetEnabled False ' The actual code for this comes later.	
+	NewGamePlusButton.SetEnabled angp ' The actual code for this comes later.	
 	Local gotanna = True ' the actual code comes later
 	Local gotgamejolt = True
 	Local tg:TGadget

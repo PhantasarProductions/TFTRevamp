@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 17.05.24
+  Version: 17.06.30
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -437,6 +437,7 @@ function FieldStats()
           renc = true   
        end
        stuff[#stuff+1] = {'FSTIM',PlayTime()}
+       if newgameplus then stuff[#stuff+1]={'FNGP','New Game +'} end
        for i,data in ipairs(stuff) do
            white()
            SetFont(data[3] or 'FieldStat')

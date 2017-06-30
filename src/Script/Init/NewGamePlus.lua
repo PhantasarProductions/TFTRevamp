@@ -1,7 +1,7 @@
 --[[
-  AAA_Algemeen.lua
+  NewGamePlus.lua
   Version: 17.06.30
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,36 +34,13 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+function NewGamePlus()
+  Console.Write("NEW GAME PLUS!",180,255,0)
+  Var.D("%SKILL",LAURA.LauraStartUp("SKILL"))
+  Var.D("&NEWGAMEPLUS","TRUE")
+  MS.Load("STARTGAME","Script/Events/StartGame.lua")
+  LAURA.Flow("STARTGAME")
+  -- Var.D("$LANG")
+end  
 
--- @USEDIR Script/Use/Available
--- @USEDIR Script/Libs
--- @USEDIR Script/Use/Linkers
-
-
-
-
--- Some definitions based on things
-
---[[
-function bv(tag,condition)
-  local ar = { [true]='TRUE',[false]='FALSE'}
-  Var.D(tag,ar[condition])
-end
-]]
-
-RPG = RPGChar -- LAAAAAAAAZY!!!
-
-vocals = JCR6.Exists('ID/ID.Vocal.Demo')==1
-fullversion = JCR6.Exists('ID/ID.Data.Full')==1
-  
-skill = tonumber(Var.C("%SKILL")); Console.Write('Difficulty setting is: '..skill,0,180,255)
-
-LC = LAURA.LauraStartUp -- Quick reference to get the LAURA start up configuration. Yes, I know, I'm lazy!
-
-newgameplus = Var.C("&NEWGAMEPLUS")=="TRUE"
-
-function Nothing() end -- This function does nothing at all, and can be used for several things ;)
-
-
-CapModifier = {5,4,3}
-function CapIncrease() inc("%LEVELCAP",CapModifier[skill]) end
+NewGamePlus()

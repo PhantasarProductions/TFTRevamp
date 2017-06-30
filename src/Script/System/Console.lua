@@ -324,3 +324,10 @@ function GOTOLAYER(lay,exit)
    if not letsgo then Console.Write("? LAYER "..lay.." DOES NOT EXIST",255,0,0); return; end
    GoToLayer(lay,exit or "Start")
 end
+
+function VARS()
+    local v = mysplit(Var.Vars(),";")
+    for vr in each(v) do
+        CSay(vr.." = "..Var.C(vr))
+    end
+end
