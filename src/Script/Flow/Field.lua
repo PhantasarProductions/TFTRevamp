@@ -204,7 +204,7 @@ function LoadMap(lmap)
     -- Load the map itself
     CSay("Loading Map!")
     Maps.Load(upper(map))
-    NewGamePlusRemovals() -- Must be done immediately after loading the map itself.
+    NewGamePlusRemoval() -- Must be done immediately after loading the map itself.
     CSay("Configuring Data!")
     Maps.LayerCodeName = ""
     local layers,multi = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),true end})[Maps.Multi()]()    
