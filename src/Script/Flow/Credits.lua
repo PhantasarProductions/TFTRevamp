@@ -1,6 +1,6 @@
 --[[
   Credits.lua
-  Version: 17.06.29
+  Version: 17.06.30
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -95,8 +95,9 @@ function MAIN_FLOW()
          for k,d in spairs(cdata) do if d.imgtag then Image.Free(d.imgtag) end end
          Image.Free(Orion)
          MS.Destroy('CREDITS')
-         error("Nothing anymore yet!")
-         LAURA.Flow('Field')
+         -- error("Nothing anymore yet!")
+         MS.Load("OUTTAKES","Script/Flow/Outtakes.lua")
+         LAURA.Flow('OUTTAKES')
       end
       Flip()   
 end

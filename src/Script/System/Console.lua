@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 17.04.16
+  Version: 17.06.30
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -194,6 +194,11 @@ function TB_FIGHTERS()
   end 
   MS.Run("COMBAT",'DebugFighter')
 end
+
+function OUTTAKES()
+   MS.Load("OUTTAKES",'Script/Flow/Outtakes.lua')
+   LAURA.Flow('OUTTAKES')
+end   
 
 function EXPNEED(lvl)
   local l=tonumber(lvl)

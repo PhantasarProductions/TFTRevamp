@@ -25,9 +25,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Terra.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Imp.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Wolf.png
-    1. Graphics: GFX/Big_Char/Dandor.png
-    1. Graphics: GFX/Big_Char/Hando Stillor.png
-    1. Graphics: GFX/Big_Char/Jake.png
+    1. Graphics: GFX/OUTTAKES/Dandor.png
+    1. Graphics: GFX/OUTTAKES/Hando Stillor.png
+    1. Graphics: GFX/OUTTAKES/Jake.png
     1. Graphics: GFX/Big_Char/JakeMarrilona.GIF
     1. Graphics: GFX/Big_Char/JakeMarrilona.png
     1. Graphics: GFX/Big_Char/JakeMarrilona.xcf
@@ -44,9 +44,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Big_Char/Marrilona_JeroenJarig.xcf
     1. Graphics: GFX/Big_Char/Marrilona_King.png
     1. Graphics: GFX/Big_Char/Marrilona_King.xcf
-    1. ???: GFX/Big_Char/Marrilona_Mike (Autosaved).piko-png
     1. Graphics: GFX/Big_Char/Marrilona_Mike.piko
-    1. Graphics: GFX/Big_Char/Marrilona_Mike.png
+    1. Graphics: GFX/OUTTAKES/Marrilona.png
     1. Graphics: GFX/Big_Char/Marrilona_NewYear.png
     1. Graphics: GFX/Big_Char/Marrilona_Valentine.png
     1. Graphics: GFX/Big_Char/Negatief_Marrilona.Png
@@ -106,6 +105,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Marata/General.png
     1. Graphics: GFX/Combat/Fighters/Foe/OverNos/Nostramantu.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/MonsterGuy.png
+    1. Graphics: GFX/Outtakes/Chief Werrington.png
+    1. Graphics: GFX/Outtakes/Feenalaria.png
+    1. Graphics: GFX/Outtakes/Gedrio Fulla.png
+    1. Graphics: GFX/Outtakes/Harry.png
+    1. Graphics: GFX/Outtakes/Krandar.png
+    1. Graphics: GFX/Outtakes/Nostramantu.png
+    1. Graphics: GFX/Outtakes/Sandra.png
+    1. Graphics: GFX/Outtakes/Sasha Funda.png
     1. Graphics: GFX/BigPic/Krandar.png
     1. Graphics: GFX/BoxText/Portret/Chief Werrington/Angry.png
     1. Graphics: GFX/BoxText/Portret/Chief Werrington/Chief.piko
@@ -200,6 +207,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Flow/Master.lua
     1. Script: Script/Flow/Menu.lsv
     1. Script: Script/Flow/Menu.lua
+    1. Script: Script/Flow/Outtakes.lua
     1. Script: Script/Flow/PrologueSelectChar.lua
     1. Script: Script/Flow/SaveGame.lsv
     1. Script: Script/Flow/SaveGame.lua
@@ -1189,9 +1197,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Map Design: Kthura/CH3_Dungeon_Garden/Data
     1. Map Design: Kthura/CH3_Dungeon_Garden/Objects
+    1. Music: Music/Boss/BossIntro.ogg
     1. Map Design: Kthura/CH3_Dungeon_Garden/Settings
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Data
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Objects
+    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Settings
     1. Map Design: Kthura/CH3_Dungeon_MTPYRUS/Data
     1. Map Design: Kthura/CH3_Dungeon_MTPYRUS/Objects
@@ -1235,8 +1245,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Data
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Objects
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Settings
-    1. Music: Music/Boss/BossIntro.ogg
-    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Music: Music/Sys/Silence.ogg
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
@@ -1800,7 +1808,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_STARDOME
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_Z_NOSTRAMANTUMANSION
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
-    1. Music: Music/Dungeon/Alien.ogg
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_MAGIC
@@ -1861,6 +1868,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_VANDAR
     1. Scenario: Languages/English/Scenario/WORLDMAP
     1. Scenario: Languages/English/Scenario.$$TEMP$$0$$
+    1. Music: Music/Dungeon/Alien.ogg
     1. Music: Music/Dungeon/JustASong.ogg
     1. Music: Music/Dungeon/Scary Song.ogg
     1. Music: Music/SpecialBoss/Threat.ogg
@@ -2502,47 +2510,119 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Sandra_A_1.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_9.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Sandra_A_2.ogg
-    1. Audio: Vocals/Spirata/Dandor.ogg
+    1. Audio: Vocals/Outtakes/001 Jake/001 What is an Elven High Priest.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Sandra_A_3.ogg
+    1. General Data: Vocals/Outtakes/001 Jake/002 Blooper 2
+    1. Audio: Vocals/Outtakes/001 Jake/002 Blooper 2.ogg
+    1. Audio: Vocals/Outtakes/001 Jake/003 Verkeerde tekst.ogg
+    1. Audio: Vocals/Outtakes/001 Jake/004 - How do you know that this is my father.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Sandra_B_1.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Sandra_B_2.ogg
+    1. Audio: Vocals/Outtakes/001 Jake/005 - Daar gaat ie weer.ogg
+    1. Audio: Vocals/Outtakes/001 Jake/006 - So officially....ogg
+    1. Audio: Vocals/Outtakes/001 Jake/007 - HAHAHAHA SORRY.ogg
+    1. Audio: Vocals/Outtakes/001 Jake/008 - She is still.ogg
+    1. Audio: Vocals/Outtakes/001 Jake/009 - EEJ KUKKELEKE.ogg
+    1. Audio: Vocals/Outtakes/001 Jake/010 - De microfoon staat aan hoor.ogg
+    1. Audio: Vocals/Outtakes/001 Jake/011 - Somebody gotta pinch me.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Sandra_B_3.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Sandra_B_4.ogg
-    1. Audio: Vocals/Spirata/HandoStillor.ogg
+    1. Audio: Vocals/Outtakes/001 Jake/012 - Your game is over Nostramantu.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/001 Stotter stotter.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/002 Zet hem stop alsjeblieft.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_A_1.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_A_2.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_A_3.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/003 Goed of niet.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_1.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/004 Effe Terug.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_10.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_11.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/005 Wouldnt people be.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_12.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_13.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/006 Hou eens op.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/007 LACHUUHHHH.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_14.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_15.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/008 I can fix.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_16.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/009 I cannot make you welcome.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/010 I need a cigarette.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_17.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/011 DIE MOTHERFUCKER DIE.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_18.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/012 This must be.ogg
+    1. Audio: Vocals/Outtakes/004 Hando Stillor/001 shit.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_19.ogg
-    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_2.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_20.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_3.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_4.ogg
-    1. Audio: Vocals/Spirata/Marrilona.ogg
+    1. Audio: Vocals/Outtakes/004 Hando Stillor/002 I am a priest.ogg
+    1. Audio: Vocals/Outtakes/004 Hando Stillor/003 Doen we even overnieuw.ogg
+    1. Audio: Vocals/Outtakes/004 Hando Stillor/004 No that's not it.ogg
+    1. Audio: Vocals/Outtakes/004 Hando Stillor/006 Veel gevloek.ogg
+    1. Audio: Vocals/Outtakes/004 Hando Stillor/007 Not this time Jake.ogg
+    1. Audio: Vocals/Outtakes/004 Hando Stillor/008 Ik kan beter even stoppen.ogg
+    1. Audio: Vocals/Outtakes/004 Hando Stillor/009 Marriloni.ogg
+    1. Audio: Vocals/Outtakes/004 Hando Stillor/999 Greet you all.ogg
+    1. Audio: Vocals/Outtakes/007 Sandra/001 Je moet en je zal een blooper hebben.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_5.ogg
+    1. Audio: Vocals/Outtakes/007 Sandra/002 Anders zoekt Dandor het maar uit.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_6.ogg
+    1. Audio: Vocals/Outtakes/011 Gedrio Fulla/001 Kut.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_7.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_8.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_9.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/Dandor_1.ogg
+    1. Audio: Vocals/Outtakes/016 Harry/001 All I know.ogg
+    1. Audio: Vocals/Outtakes/016 Harry/999 Am I annoying or what.ogg
+    1. Audio: Vocals/Outtakes/017 Sasha Funda/001 My name is Sasha Funda.ogg
+    1. Audio: Vocals/Outtakes/017 Sasha Funda/002.ogg
+    1. Audio: Vocals/Outtakes/017 Sasha Funda/003 Your father... I meant name.ogg
+    1. Audio: Vocals/Outtakes/017 Sasha Funda/004 Dingetje.ogg
+    1. Audio: Vocals/Outtakes/017 Sasha Funda/005 Dingetje 2.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/Dandor_2.ogg
+    1. Audio: Vocals/Outtakes/017 Sasha Funda/007 but.ogg
+    1. Audio: Vocals/Outtakes/017 Sasha Funda/019 Yannee/001.ogg
+    1. Audio: Vocals/Outtakes/018 Chief Werrington/001 What is there to negotiate about.ogg
+    1. Audio: Vocals/Outtakes/018 Chief Werrington/002 Why should I trust.ogg
+    1. Audio: Vocals/Outtakes/021 Krandar/001 My name is .ogg
+    1. Audio: Vocals/Outtakes/021 Krandar/002 Scheet.ogg
+    1. Audio: Vocals/Outtakes/021 Krandar/003 Feenalaria.ogg
+    1. Audio: Vocals/Outtakes/021 Krandar/004 Nostramantu realized.ogg
+    1. Audio: Vocals/Outtakes/021 Krandar/005 Ja Family is gewoon een moeilijk woord, weet je.ogg
+    1. Audio: Vocals/Outtakes/021 Krandar/006 Schrik niet.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/HandoStillor_1.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/001 Not even started.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/002 Dat is twee.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/003 Forbidden spell.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/004 You are right Krandar.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/HandoStillor_2.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/005 He didn't expect.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/006 Die dingen, jeweetwel.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/007 Prirect you - Protect you.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/008 Zelfs 1 woord.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/009 Teeheehee.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/010.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/HandoStillor_3.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/011 Your sources were correct.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/012 It was my husband.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/014 I know Dandor.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/015 Beweeg niet.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/016 I am.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/017 Intonatie.ogg
+    1. Audio: Vocals/Outtakes/998 Feenalaria/018 Cluck-cluck-Clunk.ogg
+    1. Audio: Vocals/Outtakes/999 Nostramantu/001 I knew it would go wrong one day.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/Jake_1.ogg
+    1. Audio: Vocals/Spirata/Dandor.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/Jake_2.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/Marrilona_1.ogg
+    1. Audio: Vocals/Spirata/HandoStillor.ogg
+    1. Audio: Vocals/Spirata/Jake.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/Marrilona_2.ogg
+    1. Audio: Vocals/Spirata/Marrilona.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/Marrilona_3.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/Marrilona_4.ogg
     1. Audio: Vocals/Maps/PRO_Town_Frendor/Elder_Prologue_1.ogg
@@ -2648,6 +2728,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Yannee/Cry.png
     1. Graphics: GFX/BoxText/Portret/Yannee/General.png
     1. Graphics: GFX/BoxText/Portret/Yannee/Tears.png
+    1. Graphics: GFX/Outtakes/Yannee.png
 - anarres
     1. Graphics: gfx/combat/fighters/foe/boss/Superalien.piko
     1. Graphics: gfx/combat/fighters/foe/boss/Superalien.png

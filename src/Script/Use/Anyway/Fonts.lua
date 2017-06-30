@@ -1,6 +1,6 @@
 --[[
   Fonts.lua
-  Version: 17.06.12
+  Version: 17.06.30
   Copyright (C) 2016, 2017 2015
   
   ===========================
@@ -79,7 +79,10 @@ fonts = {
     AltInputHead = {"Coolvetica.ttf",60},
     AltInputInput = {'Monof55.ttf',50},
     AltInputKeys = {'Monof55.ttf',30},
-    MastersList = {'Coolvetica.ttf',15}    
+    MastersList = {'Coolvetica.ttf',15}    ,
+    OuttakesChar = {'master_of_break.ttf',50},
+    OuttakesAct = {"Coolvetica.ttf",50}
+    
     
 }
 
