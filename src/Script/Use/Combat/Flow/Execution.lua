@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.06.25
+  Version: 17.07.01
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -264,12 +264,16 @@ function fflow.Execution()
               end
            end      
            if act['rew_GainSkill'..i] and act['rew_GainSkill'..i]>0 and (RPG.PointsExists(nextact.executor.tag,'SK_EXP_'..i)==1) then
-              IncSkill(nextact.executor.tag,i, act['rew_GainSkill'..i] )   
+              local reward = act['rew_GainSkill'..i]
+              if newgameplus then reward = reward * (4-skill) end
+              IncSkill(nextact.executor.tag,i, reward )   
            end
       end
       -- AP recovery
       if act.Rew_GainAP then
-         RPG.Points(nextact.executor.tag,"AP").Inc(act.Rew_GainAP)
+         local rewap = act.Rew_GainAP
+         if newgameplus then rewap = rewap * ({2,1.25,1})[skill] end
+         RPG.Points(nextact.executor.tag,"AP").Inc(rewap)
       end     
    end     
    -- And now let's return to 'idle'

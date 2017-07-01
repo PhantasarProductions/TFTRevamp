@@ -30797,7 +30797,7 @@ Rec: ITM_ANTIDOTES
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = Heal
+	SpellAni = AllHeal
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
@@ -31027,7 +31027,7 @@ Rec: ITM_APPLES
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = Heal
+	SpellAni = AllHeal
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
