@@ -103,6 +103,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Krandar/VeelTeGroot.png
     1. Graphics: GFX/BoxText/Portret/Krandar/Worried.png
     1. Graphics: GFX/BoxText/Portret/Marata/General.png
+    1. Graphics: GFX/BoxText/Portret/Tai/General.png
     1. Graphics: GFX/Combat/Fighters/Foe/OverNos/Nostramantu.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/MonsterGuy.png
     1. Graphics: GFX/Outtakes/Chief Werrington.png
@@ -646,6 +647,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_VOICEHERB.lua
     1. Script: Script/JINC/IA/ITM_VOLTABALL.lua
     1. Script: Script/JINC/IA/ITM_WATERBUBBLE.lua
+    1. Script: Script/JINC/IA/ITM_YASHARBERRIES.lua
     1. Script: Script/JINC/IA/JUG_ATK1.lua
     1. Script: Script/JINC/IA/JUG_ATK10.lua
     1. Script: Script/JINC/IA/JUG_ATK11.lua
@@ -1204,10 +1206,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH3_Dungeon_Garden/Data
     1. Map Design: Kthura/CH3_Dungeon_Garden/Objects
     1. Music: Music/Boss/BossIntro.ogg
+    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Map Design: Kthura/CH3_Dungeon_Garden/Settings
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Data
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Objects
-    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Settings
     1. Map Design: Kthura/CH3_Dungeon_MTPYRUS/Data
     1. Map Design: Kthura/CH3_Dungeon_MTPYRUS/Objects
@@ -1251,6 +1253,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Data
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Objects
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Settings
+    1. Map Design: Kthura/NGP_Dungeon_Quayaro/Data
+    1. Map Design: Kthura/NGP_Dungeon_Quayaro/Objects
+    1. Map Design: Kthura/NGP_Dungeon_Quayaro/Settings
     1. Music: Music/Sys/Silence.ogg
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
@@ -1532,6 +1537,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Fairies/Freya.png
     1. Graphics: GFX/Actors/Single/Fairies/Nostramantu.piko
     1. Graphics: GFX/Actors/Single/Fairies/Nostramantu.png
+    1. Graphics: GFX/Actors/Single/Fairies/Tai.piko
+    1. Graphics: GFX/Actors/Single/Fairies/Tai.png
     1. Graphics: GFX/Actors/Single/Fairies/Yanee.png
     1. Graphics: GFX/Actors/Single/Humans/ChiefWerrington.png
     1. Graphics: GFX/Actors/Single/Humans/ChiefWerrington_BackSide.png

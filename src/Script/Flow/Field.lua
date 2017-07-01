@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 17.06.30
+  Version: 17.07.01
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -165,7 +165,10 @@ function NewGamePlusRemoval()
                end
            end
            Maps.Remap()
-           for k in each(removal) do Maps.Obj.Kill(k) end
+           for k in each(removal) do 
+               Maps.Obj.Kill(k)
+               CSay("= Removed NewGame+ object: "..k) 
+           end
        end    
     end            
 end

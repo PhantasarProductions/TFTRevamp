@@ -1,6 +1,6 @@
 --[[
   WorldMap.lua
-  Version: 17.05.24
+  Version: 17.07.01
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -71,10 +71,12 @@ function LoadWorld(worldfolder)
           v.key = k
           v.lKthura = v.Kthura
           v.Kthura = upper(v.lKthura)
+          --[[
           if CVVN("&ALLOW.ENCOFF['"..v.lKthura.."']")~=nil then -- A fix destroys old data. This should recover this as much as possible.
              Var.D("&ALLOW.ENCOFF['"..v.Kthura.."']",Var.C("&ALLOW.ENCOFF['"..v.lKthura.."']"))
              Var.Clear("&ALLOW.ENCOFF['"..v.lKthura.."']")
-          end   
+          end 
+          ]]  
           wm_beenthere[k] = wm_beenthere[k] or v.UnlockedFromStart
           if v.Dungeon then
              if CVVN("&ALLOW.ENCOFF['"..v.Kthura.."']") then 

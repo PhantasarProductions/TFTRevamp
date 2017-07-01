@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 17.06.30
+  Version: 17.07.01
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -331,3 +331,17 @@ function VARS()
         CSay(vr.." = "..Var.C(vr))
     end
 end
+
+function MAPDATA()
+   CSay("Map    CodeName: "..Maps.CodeName)
+   CSay("Layer  CodeName: "..Maps.LayerCodeName)
+   CSay("Camera position: ("..Maps.CamX..","..Maps.CamY..")")
+   CSay("Leader position: ("..Actors.Actor('PLAYER').X..","..Actors.Actor('PLAYER').Y..")")   
+   for i=1,3 do
+       if Maps.Obj.Exists('PLAYER'..i)==1 then
+          local o = Actors.Actor('PLAYER'..i)
+          CSay("Folower #"..i..":      ("..o.X..","..o.Y..")")
+       end
+   end
+end          
+   
