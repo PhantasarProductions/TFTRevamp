@@ -143,7 +143,7 @@ function NPC_Tai()
        MapText('TAI2')
     else
        MapText('TAI1')
-       Worldmap_Unlock('NGPQUAYARO')
+       WorldMap_Unlock('NGPQUAYARO')
     end      
 end
 
