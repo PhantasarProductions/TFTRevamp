@@ -149,12 +149,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - Ed Kasap
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Grwol.png
 - Eric Matyas
+    1. Music: Music/Dungeon/Invasion-of-the-Giant-Disco-Ants_Looping.ogg
     1. Music: Music/Dungeon/Magic-Clock-Shop_Looping.ogg
-    1. Music: Music/Dungeon/Sewer-Monsters-Town-Hall-Meeting_Looping.ogg
     1. Music: Music/Dungeon/Moonlit-Secrets_Looping.ogg
+    1. Music: Music/Dungeon/Sewer-Monsters-Town-Hall-Meeting_Looping.ogg
     1. Music: Music/RandomEncounter/RPG-Battle-Climax_v001.ogg
-    1. Music: Music/Town/Chamber-of-Jewels.ogg
     1. Music: Music/Game Over/Going-Different-Ways.ogg
+    1. Music: Music/Town/Chamber-of-Jewels.ogg
 - GDJ
     1. Graphics: GFX/Combat/Fighters/Foe/Sealed/Hydra.hot
     1. Graphics: GFX/Combat/Fighters/Foe/Sealed/Hydra.png
@@ -970,6 +971,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Kobold.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
     1. Graphics: gfx/Combat/Fighters/Foe/Sealed/Gendrabroe.png
     1. Graphics: gfx/Effects/Darkness II.png
