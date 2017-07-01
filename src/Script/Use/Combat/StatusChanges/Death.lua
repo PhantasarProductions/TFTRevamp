@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 17.06.28
+  Version: 17.07.01
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -50,6 +50,7 @@ function KillAward(myfoe)
            local rate = exprate[ch] or 1
            local get = (myfoe.exp or 1)*(rate)
            get = math.ceil(get)
+           if newgameplus then get = get * (4-skill) end
            RPG.IncStat(ch,'EXP', -get) 
            charmsg(ch,"EXP "..get,rand(0,255),rand(0,255),rand(0,255))
            if RPG.Stat(ch,"EXP")<=0 then charmsg(ch,"LEVEL UP!",rand(0,255),rand(0,255),rand(0,255)) end
@@ -73,6 +74,7 @@ function KillAward(myfoe)
     -- If no items are dropped, drop money in stead of this foe has it.
     if myfoe.data.Cash and myfoe.data.Cash>0 and (not itemgiven) then
        local acash = math.ceil(myfoe.data.Cash * ({2,1,.5})[skill])
+       if newgameplus then acash = acash * (4-skill) end
        local shilders = "shilders"; if acash==1 then shilders='shilder' end
        ChMiniMsg(myfoe.tag,"Dropped "..acash.." "..shilders,0,180,255)
        MasterAllInc('Rubine','RubinePoints')
