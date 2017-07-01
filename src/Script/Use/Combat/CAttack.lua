@@ -32,13 +32,21 @@
   
  **********************************************
  
-version: 17.06.26
+version: 17.07.01
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
       local hp  = RPG.Points(tag,'HP')
       local mod = -(eleprot/100)
       local dmg = damage 
+      if tag=="Dandor" then
+         local r = rand(1,4^skill)
+         if r==1 then
+            dmg=0
+            MS.Run("BOXTEXT","LoadData","COMBAT/LEARN;COMBATLEARN")
+            SerialBoxText('COMBATLEARN',"AUTO_DANDOR",'FLOW_COMBAT')
+         end               
+      end   
       dmg = round(dmg + round(dmg*mod))
       fighterbytag[tag].StatusChanges = fighterbytag[tag].StatusChanges or {}
       -- alt damage routine
