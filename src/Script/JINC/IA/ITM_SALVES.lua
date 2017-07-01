@@ -1,7 +1,7 @@
 --[[
-  ITM_POTION.lua
+  ITM_SALVES.lua
   Version: 17.07.01
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -36,12 +36,14 @@
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 25,
+	["ADDCARD_Action_Number"] = 1,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Now this is a nice healing item",
-	["Heal"] = 750,
+	["Desc"] = "A very ancient recipe for healing",
+	["Heal"] = 250,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -52,14 +54,20 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 3000,
+	["ITM_ShopPrice"] = 1200,
 	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "Heal",
+	["Rew_GainAP"] = 2,
+	["SpellAni"] = "AllHeal",
 	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Potion",
+	["Target"] = "AA",
+	["Title"] = "Salves",
 	["Type"] = "Item",
-	["Voice"] = "Heal"}
+	["Voice"] = "Heal",
+	["rew_GainSkill1"] = 5,
+	["rew_GainSkill2"] = 5,
+	["rew_GainSkill3"] = 5,
+	["rew_GainSkill4"] = 5,
+	["rew_GainSkill5"] = 5}
 
 return ret
 

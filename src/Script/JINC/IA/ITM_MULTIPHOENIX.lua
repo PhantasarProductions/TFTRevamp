@@ -1,7 +1,7 @@
 --[[
-  ITM_POTION.lua
+  ITM_MULTIPHOENIX.lua
   Version: 17.07.01
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -40,8 +40,7 @@ ret = {
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Now this is a nice healing item",
-	["Heal"] = 750,
+	["Desc"] = "Revive fallen allies",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -52,14 +51,21 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 3000,
+	["ITM_ShopPrice"] = 1000,
 	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "Heal",
+	["Revive"] = true,
+	["Rew_GainAP"] = 2,
+	["SpellAni"] = "AllHeal",
 	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Potion",
+	["Target"] = "AA",
+	["Title"] = "Multi Phoenix",
 	["Type"] = "Item",
-	["Voice"] = "Heal"}
+	["Voice"] = "Heal",
+	["rew_GainSkill1"] = 1,
+	["rew_GainSkill2"] = 1,
+	["rew_GainSkill3"] = 1,
+	["rew_GainSkill4"] = 1,
+	["rew_GainSkill5"] = 1}
 
 return ret
 
