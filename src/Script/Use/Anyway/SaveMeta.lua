@@ -1,6 +1,6 @@
 --[[
   SaveMeta.lua
-  Version: 17.01.02
+  Version: 17.07.01
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -35,7 +35,8 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 function SaveMeta()
-  local metasave = "Game:TFTREVAMP\nLocation:"..Maps.GetData('Title').."\nTime:"..PlayTime().."\n"  local ch,lv
+  local ngp = {[false]="",[true]=" (NewGame+)"}
+  local metasave = "Game:TFTREVAMP\nLocation:"..Maps.GetData('Title')..ngp[newgameplus].."\nTime:"..PlayTime().."\n"  local ch,lv
   for i=0,3 do
       ch = RPG.PartyTag(i)      
       if ch~="" then 
