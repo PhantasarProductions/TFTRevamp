@@ -1,6 +1,6 @@
 --[[
   AAA_Algemeen.lua
-  Version: 17.06.30
+  Version: 17.07.01
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -66,4 +66,7 @@ function Nothing() end -- This function does nothing at all, and can be used for
 
 
 CapModifier = {5,4,3}
-function CapIncrease() inc("%LEVELCAP",CapModifier[skill]) end
+if newgameplus then for i=1,#CapModifier do CapModifier[i]=CapModifier[i]+1 end end
+function CapIncrease() 
+   inc("%LEVELCAP",CapModifier[skill]) 
+end

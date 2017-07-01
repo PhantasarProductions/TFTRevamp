@@ -34482,7 +34482,7 @@ Rec: ITM_POTIONS
 	SpellAni_External = FALSE
 	Stance = Cast
 	Target = AA
-	Title = Potion
+	Title = Potions
 	Type = Item
 	USE_Penalty = 0
 	Voice = Heal

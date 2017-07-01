@@ -61,7 +61,7 @@ ret = {
 	["SpellAni"] = "AllHeal",
 	["Stance"] = "Cast",
 	["Target"] = "AA",
-	["Title"] = "Potion",
+	["Title"] = "Potions",
 	["Type"] = "Item",
 	["Voice"] = "Heal"}
 
