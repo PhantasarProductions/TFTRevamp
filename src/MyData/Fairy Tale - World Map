@@ -352,3 +352,13 @@ Rec: CH4STARDOME
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: NGPQUAYARO
+	Dungeon = TRUE
+	Folder = Delisto
+	Kthura = NGP_Dungeon_Quayaro
+	Layer = hall
+	LocationName = Quayaro's castle
+	LocationPrefix = 
+	Start = Start
+	UnlockedFromStart = FALSE
+
