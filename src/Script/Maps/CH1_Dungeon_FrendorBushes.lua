@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.18
+version: 17.07.01
 ]]
 
 
@@ -136,6 +136,15 @@ function Leave(char)
       MapText("DONTGO_"..upper(char))
       Actors.WalkToSpot('PLAYER','Start_'..char)
    end      
+end
+
+function NPC_Tai()
+    if Done('&DONE.NGP.SPOKEN.TAI') then
+       MapText('TAI2')
+    else
+       MapText('TAI1')
+       Worldmap_Unlock('NGPQUAYARO')
+    end      
 end
 
 
