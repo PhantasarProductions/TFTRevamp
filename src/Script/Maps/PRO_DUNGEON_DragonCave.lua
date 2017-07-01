@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.12
+version: 17.07.01
 ]]
 
 -- @USE /Script/Use/Specific/EndOfPrologue.lua
@@ -163,7 +163,7 @@ function Terug()
       GoToLayer('#000','End')
    else
       MapText('NIET_TERUG')
-      Actors.WalkToSpot('Start')
+      Actors.WalkToSpot('PLAYER','Start')
    end
 end
 
