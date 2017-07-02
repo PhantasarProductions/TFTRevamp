@@ -1,5 +1,5 @@
 --[[
-  ITM_MIRROR.lua
+  ITM_CHERRY.lua
   Version: 17.07.02
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -42,25 +42,31 @@ ret = {
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Protects against petrification",
-	["EQP_STAT_SR_Petrification"] = 1000,
+	["CureUndead"] = true,
+	["Desc"] = "East me",
+	["Heal"] = 25,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
-	["ITM_BlackMarket"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 50000,
-	["ITM_Type"] = "Accesoiry",
+	["ITM_Type"] = "Consumable",
+	["Rew_GainAP"] = 100,
+	["SpellAni"] = "SingleHeal",
 	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Mirror",
-	["Type"] = "Item"}
+	["Target"] = "OS",
+	["Title"] = "Cherry",
+	["Type"] = "Item",
+	["Voice"] = "Hit",
+	["rew_GainSkill1"] = 100,
+	["rew_GainSkill2"] = 100,
+	["rew_GainSkill3"] = 100,
+	["rew_GainSkill4"] = 100,
+	["rew_GainSkill5"] = 100}
 
 return ret
 
