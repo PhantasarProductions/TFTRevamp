@@ -941,6 +941,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Specific/MoveTex.lua
     1. Script: Script/Use/Specific/PicSlide.lua
     1. Script: Script/Use/Specific/PlasmaFloor.lua
+    1. Script: Script/Use/Specific/QuickTo.lua
     1. Script: Script/Use/Specific/Scroller.lua
     1. Script: Script/Use/Specific/SpirataCryptEntrance.lua
     1. Script: Script/Use/Specific/StepsPuzzle.lua

@@ -32,9 +32,12 @@
   
  **********************************************
  
-version: 17.07.01
+version: 17.07.02
 ]]
+
+-- @USE /Script/Use/Specific/QuickTo.lua
 
 function GALE_OnLoad()
     assert(newgameplus,"YOU ARE A CHEAT!")
+    SetupTo()
 end    
