@@ -569,3 +569,15 @@ Rec: WALDA4
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: ZZNGP_QUAYARO
+	Description = Complete Quayaro's Caslte
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = FALSE
+	Show = Always
+	Title = The first King of Man
+	Type = Silver
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+

@@ -32,10 +32,31 @@
   
  **********************************************
  
-version: 17.07.02
+version: 17.07.03
 ]]
 
 -- @USE /Script/Use/Specific/QuickTo.lua
+
+
+function NPC_Switch()
+     doneswitch = doneswitch or {}
+     local dswd = '$DONE.NGP.QUAYARO.SWITCHES'
+     local count = 0
+     doneswitch[Maps.LayerCodeName] = true
+     Maps.Obj.Obj('NPC_Switch').TextureFile = "GFX/TEXTURES/SWITCH/RIGHT.PNG"
+     for k,b in spairs(doneswitch) do
+        if b then count = count + 1 CSay('Switch '..k..' has been activated') end
+     end
+     CSay('Number of switches activated: '..count)
+     if count<4 then return CSay('That\'s not all of \'em') end
+     if Done(dswd) then return CSay('That is all but the great animation already took place here, so BYE!') end
+     CSay('Right, let\'s open that freaking big door')
+     local l = Maps.LayerCodeName
+     Maps.GoToLayer('courtyard')
+     Maps.Obj.Kill('MainDoor',1)
+     Maps.GoToLayer(l)   
+     MapScript('OPEN')
+end
 
 function GALE_OnLoad()
     assert(newgameplus,"YOU ARE A CHEAT!")

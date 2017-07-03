@@ -607,6 +607,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_BANANA.lua
     1. Script: Script/JINC/IA/ITM_BELL.lua
     1. Script: Script/JINC/IA/ITM_CARROT.lua
+    1. Script: Script/JINC/IA/ITM_CHERRY.lua
     1. Script: Script/JINC/IA/ITM_CURSEDSPORES.lua
     1. Script: Script/JINC/IA/ITM_DEATHCUBE.lua
     1. Script: Script/JINC/IA/ITM_EEL.lua
@@ -798,6 +799,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH4_Dungeon_Z_NostramantuMansion.lua
     1. Script: Script/Maps/CH4_Town_NostraburgNight.lua
     1. Script: Script/Maps/NGP_DUNGEON_Quayaro.lua
+    1. Script: Script/Maps/NPG_Dungeon_Quayaro.lsv
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
     1. Script: Script/Maps/PRO_DUNGEON_Magic.lua
     1. Script: Script/Maps/PRO_DUNGEON_Tomb.lua
@@ -963,14 +965,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/SerializeIntoSysVar.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -997,6 +999,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/EarthPuzzle/cracked.png
     1. Graphics: gfx/Textures/EarthPuzzle/cracked.xcf
     1. Graphics: gfx/Textures/HoleTexture/HoleTexture.png
+    1. Graphics: gfx/Textures/Keuken/Messenset.png
     1. Graphics: gfx/Textures/Mine/Rails/EW.png
     1. Graphics: gfx/Textures/Mine/Rails/EW2.png
     1. Graphics: gfx/Textures/Mine/Rails/NE.PNG
@@ -1261,8 +1264,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Settings
     1. Map Design: Kthura/NGP_Dungeon_Quayaro/Data
     1. Map Design: Kthura/NGP_Dungeon_Quayaro/Objects
-    1. Map Design: Kthura/NGP_Dungeon_Quayaro/Settings
     1. Music: Music/Sys/Silence.ogg
+    1. Map Design: Kthura/NGP_Dungeon_Quayaro/Settings
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
@@ -1838,6 +1841,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_THEEND
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_TOWN_FRENDOR
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_TOWN_VANDAR
+    1. Scenario: Languages/Dutch/Scenario/NGP_DUNGEON_QUAYARO
     1. Scenario: Languages/Dutch/Scenario/WORLDMAP
     1. Scenario: Languages/Dutch/Scenario.$$TEMP$$0$$
     1. Scenario: Languages/English/Scenario/COMBAT/LEARN
@@ -1888,6 +1892,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/PRO_THEEND
     1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_FRENDOR
     1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_VANDAR
+    1. Scenario: Languages/English/Scenario/NGP_DUNGEON_QUAYARO
     1. Scenario: Languages/English/Scenario/WORLDMAP
     1. Scenario: Languages/English/Scenario.$$TEMP$$0$$
     1. Music: Music/Dungeon/Alien.ogg
@@ -1929,6 +1934,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Elves/RandomElfFemale2.png
     1. Graphics: GFX/Actors/Single/Elves/RandomElfMale.png
     1. Graphics: GFX/Actors/Single/Elves/RandomElfMale2.png
+    1. Graphics: GFX/Textures/Dungeon/Bench East.png
+    1. Graphics: GFX/Textures/Dungeon/Bench West.png
+    1. Graphics: GFX/Textures/Dungeon/Prison Bars.png
+    1. Graphics: GFX/Textures/Dungeon/Skeleton Attached to wall.png
     1. Graphics: GFX/Textures/Human Village/brick fence.png
     1. Graphics: GFX/Textures/Human Village/brick fence2.png
     1. Graphics: GFX/Textures/Human Village/brick fence3.png
@@ -2607,9 +2616,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Outtakes/017 Sasha Funda/005 Dingetje 2.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/Dandor_2.ogg
     1. Audio: Vocals/Outtakes/017 Sasha Funda/007 but.ogg
-    1. Audio: Vocals/Outtakes/017 Sasha Funda/019 Yannee/001.ogg
     1. Audio: Vocals/Outtakes/018 Chief Werrington/001 What is there to negotiate about.ogg
     1. Audio: Vocals/Outtakes/018 Chief Werrington/002 Why should I trust.ogg
+    1. Audio: Vocals/Outtakes/019 Yannee/001.ogg
     1. Audio: Vocals/Outtakes/021 Krandar/001 My name is .ogg
     1. Audio: Vocals/Outtakes/021 Krandar/002 Scheet.ogg
     1. Audio: Vocals/Outtakes/021 Krandar/003 Feenalaria.ogg
@@ -2706,6 +2715,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/4 Elements/Vuur.png
     1. Graphics: GFX/Textures/4 Elements/Water.png
     1. Graphics: GFX/Textures/4 Elements/Wind.png
+    1. Graphics: GFX/Textures/Keuken/Ketel.png
     1. Graphics: GFX/Textures/Trees/Loofboom.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/DemonAir.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/KillerEscargot.png
