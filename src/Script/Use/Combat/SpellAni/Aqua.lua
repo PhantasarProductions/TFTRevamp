@@ -1,6 +1,6 @@
 --[[
   Aqua.lua
-  Version: 17.06.23
+  Version: 17.07.03
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -82,6 +82,7 @@ function SpellAni.Splash(ag,at,tg,tt)
            my[j]=(my[j] or j) + j
            Image.Tile(water,0,my[j])
        end
+       Image.ViewPort(ox,oy,ow,oh)
        Flip()    
    end
    Image.Free(water)   
