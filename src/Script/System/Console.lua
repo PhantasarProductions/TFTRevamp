@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 17.07.01
+  Version: 17.07.03
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -345,3 +345,7 @@ function MAPDATA()
    end
 end          
    
+function MAPSCRIPT(a,b)
+    MS.Run('MAP',a,b)
+    Console.Write('Ok',0,180,255)
+end    

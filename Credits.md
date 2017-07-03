@@ -1833,6 +1833,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_STARDOME
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_Z_NOSTRAMANTUMANSION
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
+    1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_QUAYARO
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_MAGIC
@@ -1841,7 +1842,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_THEEND
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_TOWN_FRENDOR
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_TOWN_VANDAR
-    1. Scenario: Languages/Dutch/Scenario/NGP_DUNGEON_QUAYARO
     1. Scenario: Languages/Dutch/Scenario/WORLDMAP
     1. Scenario: Languages/Dutch/Scenario.$$TEMP$$0$$
     1. Scenario: Languages/English/Scenario/COMBAT/LEARN
@@ -1884,6 +1884,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_STARDOME
     1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_Z_NOSTRAMANTUMANSION
     1. Scenario: Languages/English/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
+    1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_QUAYARO
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_MAGIC
@@ -1892,7 +1893,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/PRO_THEEND
     1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_FRENDOR
     1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_VANDAR
-    1. Scenario: Languages/English/Scenario/NGP_DUNGEON_QUAYARO
     1. Scenario: Languages/English/Scenario/WORLDMAP
     1. Scenario: Languages/English/Scenario.$$TEMP$$0$$
     1. Music: Music/Dungeon/Alien.ogg

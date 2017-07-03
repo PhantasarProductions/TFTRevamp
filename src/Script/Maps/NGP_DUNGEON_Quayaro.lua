@@ -40,7 +40,7 @@ version: 17.07.03
 
 function NPC_Switch()
      doneswitch = doneswitch or {}
-     local dswd = '$DONE.NGP.QUAYARO.SWITCHES'
+     local dswd = '&DONE.NGP.QUAYARO.SWITCHES'
      local count = 0
      doneswitch[Maps.LayerCodeName] = true
      Maps.Obj.Obj('NPC_Switch').TextureFile = "GFX/TEXTURES/SWITCH/RIGHT.PNG"
@@ -55,7 +55,7 @@ function NPC_Switch()
      Maps.GoToLayer('courtyard')
      Maps.Obj.Kill('MainDoor',1)
      Maps.GoToLayer(l)   
-     MapScript('OPEN')
+     MapText('OPEN')
 end
 
 function GALE_OnLoad()
