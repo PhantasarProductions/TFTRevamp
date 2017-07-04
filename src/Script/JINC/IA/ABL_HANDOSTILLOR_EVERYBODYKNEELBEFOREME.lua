@@ -1,6 +1,6 @@
 --[[
   ABL_HANDOSTILLOR_EVERYBODYKNEELBEFOREME.lua
-  Version: 17.07.02
+  Version: 17.07.04
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
