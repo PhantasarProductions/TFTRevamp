@@ -39,3 +39,24 @@
 function NGP_StartBoss(a,b)
     StartBoss(a,b,75,191,51)
 end    
+
+
+function ToHallHeroes(name,achkey,wmap)
+   local gh = loadstring(Var.C('$HALLOFHEROES.PEOPLE').."\n return ret")
+   local heroes = gh()
+   heroes[name] = true
+   MapText("HEROES_"..upper(name))
+   Var.D("$HALLOFHEROES.PEOPLE",serialize('ret',heroes))
+   Maps.Obj.Kill("NPC_"..name,1)
+   Award('ZZNGP_'..upper(achkey))
+   local c = 0
+   for k,b in spairs(heroes) do
+       CSay('= Achievement check '..k..' > '..sval(b))
+       if b then c=c+1 end
+   end
+   if c==4 then Award('ZZNGP_ALLHEROES') end
+   WorldMap(wmap or 'Delisto')
+   WorldMap_Unlock('NGPHEROES')
+end
+       
+   

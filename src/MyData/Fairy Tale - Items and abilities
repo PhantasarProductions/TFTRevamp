@@ -18179,9 +18179,9 @@ Rec: ABL_NPSR_VLOEK
 	Acc_PreTurn_Arg = 
 	Attack = 100
 	Attack_AccuracyRate = 100
-	Attack_AllowAccuracy = FALSE
+	Attack_AllowAccuracy = TRUE
 	Attack_AllowCritical = FALSE
-	Attack_AllowDodge = FALSE
+	Attack_AllowDodge = TRUE
 	Attack_AttackStat = Power
 	Attack_DefenseStat = Endurance
 	Attack_Desperate = FALSE
@@ -18195,9 +18195,9 @@ Rec: ABL_NPSR_VLOEK
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
 	CauseConfusion = FALSE
-	CauseCurse = FALSE
+	CauseCurse = TRUE
 	CauseDeath = FALSE
-	CauseDisease = TRUE
+	CauseDisease = FALSE
 	CauseGuarding = FALSE
 	CauseIDDQD = FALSE
 	CauseParalysis = FALSE

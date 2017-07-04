@@ -47,6 +47,9 @@ function Boss()
   NGP_StartBoss("Undead criminal","Shadow Rogue")    
 end
 
+function NPC_Zyviola() 
+   ToHallHeroes('Zyviola','QUAYARO')
+end
 
 
 function NPC_Switch()
