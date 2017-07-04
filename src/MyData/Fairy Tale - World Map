@@ -352,6 +352,16 @@ Rec: CH4STARDOME
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: NGPHEROES
+	Dungeon = FALSE
+	Folder = Delisto
+	Kthura = NGP_HUB_HEROES
+	Layer = heroes
+	LocationName = Hall of Heroes
+	LocationPrefix = The
+	Start = Start
+	UnlockedFromStart = FALSE
+
 Rec: NGPQUAYARO
 	Dungeon = TRUE
 	Folder = Delisto

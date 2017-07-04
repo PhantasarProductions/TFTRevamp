@@ -811,6 +811,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH4_Town_NostraburgNight.lua
     1. Script: Script/Maps/NGP_DUNGEON_Quayaro.lua
     1. Script: Script/Maps/NGP_Dungeon_Quayaro.lsv
+    1. Script: Script/Maps/NGP_HUB_Heroes.lua
     1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
     1. Script: Script/Maps/PRO_DUNGEON_Magic.lua
     1. Script: Script/Maps/PRO_DUNGEON_Tomb.lua
@@ -1928,6 +1929,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Scenario/We Got Trouble.ogg
     1. Music: Music/Town/Enchanted Valley.ogg
     1. Music: Music/Hub/Indore.ogg
+    1. Music: Music/Original4Alias/Heroic Age.ogg
     1. Music: Music/RandomEncounter/Killers.ogg
     1. Music: Music/Special Boss/Hall Of The Mountain King.ogg
     1. Music: Music/SpecialBoss/Living Voyage.ogg
