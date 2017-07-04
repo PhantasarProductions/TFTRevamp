@@ -153,8 +153,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Dungeon/Magic-Clock-Shop_Looping.ogg
     1. Music: Music/Dungeon/Moonlit-Secrets_Looping.ogg
     1. Music: Music/Dungeon/Sewer-Monsters-Town-Hall-Meeting_Looping.ogg
-    1. Music: Music/RandomEncounter/RPG-Battle-Climax_v001.ogg
+    1. Music: Music/Original4Alias/Tower Defense.ogg
     1. Music: Music/Game Over/Going-Different-Ways.ogg
+    1. Music: Music/RandomEncounter/Defending The Princess.ogg
+    1. Music: Music/RandomEncounter/Fantasy Forest Battle.ogg
+    1. Music: Music/RandomEncounter/RPG-Battle-Climax_v001.ogg
     1. Music: Music/Town/Chamber-of-Jewels.ogg
 - GDJ
     1. Graphics: GFX/Combat/Fighters/Foe/Sealed/Hydra.hot
@@ -486,6 +489,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSELL_GENOCIDE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSELL_SAFESHOT.lua
     1. Script: Script/JINC/IA/ABL_MASTER_RUSSEL_DECAPITATE.lua
+    1. Script: Script/JINC/IA/ABL_NPSH_OVERNAME.lua
+    1. Script: Script/JINC/IA/ABL_NPSR_DOOD.lua
+    1. Script: Script/JINC/IA/ABL_NPSR_GIF.lua
+    1. Script: Script/JINC/IA/ABL_NPSR_RUG.lua
+    1. Script: Script/JINC/IA/ABL_NPSR_VERLAM.lua
+    1. Script: Script/JINC/IA/ABL_NPSR_VLOEK.lua
+    1. Script: Script/JINC/IA/ABL_NPSR_ZIEKTE.lua
     1. Script: Script/JINC/IA/ABL_SPECIAL.lua
     1. Script: Script/JINC/IA/ABL_SPECIAL_DRAGONDOWN.lua
     1. Script: Script/JINC/IA/ABL_SPECIAL_INSTABILITY.lua
@@ -965,14 +975,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/SerializeIntoSysVar.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -1904,17 +1914,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - Kevin McLeod
     1. Music: Music/AltBoss/Day of Chaos.ogg
     1. Music: Music/AltEncounter/Tempting Secrets.ogg
-    1. Music: Music/Dreshka/Hero Down.ogg
     1. Music: Music/Dungeon/Chillin Hard.ogg
     1. Music: Music/Dungeon/Pippin the Hunchback.ogg
+    1. Music: Music/Dreshka/Hero Down.ogg
     1. Music: Music/Dreshka/Water Prelude.ogg
     1. Music: Music/Dungeon/TheDread.ogg
     1. Music: Music/Hub/Angevin.ogg
+    1. Music: Music/Scenario/We Got Trouble.ogg
+    1. Music: Music/Town/Enchanted Valley.ogg
     1. Music: Music/Hub/Indore.ogg
     1. Music: Music/RandomEncounter/Killers.ogg
-    1. Music: Music/Scenario/We Got Trouble.ogg
     1. Music: Music/Special Boss/Hall Of The Mountain King.ogg
-    1. Music: Music/Town/Enchanted Valley.ogg
     1. Music: Music/SpecialBoss/Living Voyage.ogg
     1. Music: Music/SpecialBoss/Summon the Rawk.ogg
     1. Music: Music/SpecialBoss/Volatile Reaction.ogg

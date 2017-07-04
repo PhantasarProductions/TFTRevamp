@@ -32,10 +32,21 @@
   
  **********************************************
  
-version: 17.07.03
+version: 17.07.04
 ]]
 
 -- @USE /Script/Use/Specific/QuickTo.lua
+-- @USE /Script/Use/Specific/NewGame+.lua
+
+function Boss()
+  ClearCombatData()
+  Var.D("$COMBAT.FOE_1","Boss/ShadowRogue")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  Var.D("$COMBAT.MUSIC","Music/Boss/NewGame+.ogg")
+  Var.D("$COMBAT.ARENA","Quayaro.png")
+  NGP_StartBoss("Undead criminal","Shadow Rogue")    
+end
+
 
 
 function NPC_Switch()
