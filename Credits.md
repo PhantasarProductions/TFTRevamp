@@ -265,6 +265,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/Nostramantu2.lua
     1. Script: Script/JINC/Foes/Boss/PetitRoi.lua
     1. Script: Script/JINC/Foes/Boss/Russell.lua
+    1. Script: Script/JINC/Foes/Boss/ShadowRogue.lua
     1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
     1. Script: Script/JINC/Foes/Boss/SuperGhostPriest.lua
     1. Script: Script/JINC/Foes/Boss/SuperHidingHag.lua
@@ -951,6 +952,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Use/Specific/EndOfPrologue.lua
     1. Script: Script/Use/Specific/GreatMagicBack.lua
     1. Script: Script/Use/Specific/MoveTex.lua
+    1. Script: Script/Use/Specific/NewGame+.lua
     1. Script: Script/Use/Specific/PicSlide.lua
     1. Script: Script/Use/Specific/PlasmaFloor.lua
     1. Script: Script/Use/Specific/QuickTo.lua
@@ -975,14 +977,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/SerializeIntoSysVar.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
@@ -1221,10 +1223,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Town_Dreshka/Settings
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
+    1. Music: Music/Boss/BossIntro.ogg
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Map Design: Kthura/CH3_Dungeon_Garden/Data
     1. Map Design: Kthura/CH3_Dungeon_Garden/Objects
-    1. Music: Music/Boss/BossIntro.ogg
     1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Map Design: Kthura/CH3_Dungeon_Garden/Settings
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Data
@@ -1268,13 +1270,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH4_Dungeon_StarDome/Settings
     1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/Data
     1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/Objects
+    1. Music: Music/Sys/Silence.ogg
     1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/Settings
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Data
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Objects
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Settings
     1. Map Design: Kthura/NGP_Dungeon_Quayaro/Data
     1. Map Design: Kthura/NGP_Dungeon_Quayaro/Objects
-    1. Music: Music/Sys/Silence.ogg
     1. Map Design: Kthura/NGP_Dungeon_Quayaro/Settings
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
@@ -2714,6 +2716,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/John_7.ogg
 - Unknown artist from the Public Domain
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/MountainKing.png
+    1. Graphics: GFX/Combat/Fighters/Foe/Boss/ShadowRogue.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/Hag.png
     1. Graphics: GFX/Combat/Fighters/Foe/Reg/HidingHag.png
     1. General Data: GFX/Combat/Fighters/Foe/Reg/Pyroguin

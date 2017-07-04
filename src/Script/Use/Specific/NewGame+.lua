@@ -34,6 +34,8 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-function NGP_BossIntro(a,b)
-    BossIntro(a,b,75,191,51)
+
+
+function NGP_StartBoss(a,b)
+    StartBoss(a,b,75,191,51)
 end    
