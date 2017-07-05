@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 17.04.21
+  Version: 17.07.05
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -57,6 +57,10 @@ learn = learn or { Jake_Human={}, Marrilona={}, Dandor={}, HandoStillor={} } -- 
 
 
 exprate = {}
+
+function TransferBestiary()
+    Var.D('$TRANSFER.BESTIARY',serialize('local ret',bestiary).."; return ret")
+end    
 
 function SetUpCards()
     Cards = {}

@@ -1,7 +1,7 @@
 --[[
   Loading.lua
-  Version: 16.10.06
-  Copyright (C) 2015, 2016 Jeroen Petrus Broks
+  Version: 17.07.05
+  Copyright (C) 2015, 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -45,8 +45,8 @@
 ---------------------------------------
 
 function Loading()
-if Image.Loaded("STICKY")==0 then Image.AssignLoad("STICKY","GFX/System/Quill.png") end
-White()
-Image.Show("STICKY",5,5)
-Flip()
+  if Image.Loaded("STICKY")==0 then Image.AssignLoad("STICKY","GFX/System/Quill.png") end
+  White()
+  Image.Show("STICKY",5,5)
+  Flip()
 end

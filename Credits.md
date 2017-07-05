@@ -202,6 +202,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Flow/AltInput.lua
     1. Script: Script/Flow/ArrowSlide.lua
     1. Script: Script/Flow/AutoUse.lua
+    1. Script: Script/Flow/Bestiary.lua
     1. Script: Script/Flow/Combat.lsv
     1. Script: Script/Flow/Combat.lua
     1. Script: Script/Flow/Credits.lua
@@ -1850,6 +1851,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_Z_NOSTRAMANTUMANSION
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
     1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_QUAYARO
+    1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_HUB_HEROES
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_MAGIC
@@ -1901,6 +1903,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_Z_NOSTRAMANTUMANSION
     1. Scenario: Languages/English/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
     1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_QUAYARO
+    1. Scenario: Languages/English/Scenario/MAPS/NGP_HUB_HEROES
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_MAGIC

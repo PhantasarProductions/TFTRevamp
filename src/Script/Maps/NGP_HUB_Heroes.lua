@@ -34,6 +34,14 @@
  
 version: 17.07.05
 ]]
+
+function NPC_Zyviola()
+    MapText('ZYVIOLA')
+    MS.LoadNew("BESTIARY","Script/Flow/Bestiary.lua")
+    MS.Run('BESTIARY',"Update")
+    LAURA.Flow('BESTIARY')
+end    
+
 function GALE_OnLoad()
    local gh = loadstring(Var.C('$HALLOFHEROES.PEOPLE').."\n return ret")
    local rep = gh()

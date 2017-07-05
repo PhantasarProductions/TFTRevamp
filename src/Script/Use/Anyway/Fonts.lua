@@ -1,6 +1,6 @@
 --[[
   Fonts.lua
-  Version: 17.06.30
+  Version: 17.07.05
   Copyright (C) 2016, 2017 2015
   
   ===========================
@@ -48,6 +48,7 @@ fonts = {
     Compass = {"Coolvetica.ttf",20},
     BoxTextContent = {"Coolvetica.ttf",20},
     BoxTextHeader= {'master_of_break.ttf',20},
+    BestiaryHeader= {'master_of_break.ttf',20},
     Tutorial = {"Coolvetica.ttf",10},
     Stats = {"Monof55.ttf",20},
     FieldInfo = {"Coolvetica.ttf",35},

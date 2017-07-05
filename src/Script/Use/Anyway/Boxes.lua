@@ -1,7 +1,7 @@
 --[[
   Boxes.lua
-  Version: 16.10.15
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.07.05
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -68,3 +68,5 @@ function Box(x,y,w,h,picturetag,altdata)
    -- DarkText("Box("..x..","..y..","..w..","..h..",'"..tag.."')",x,y,0,0,255,255,255) -- debug only!!!
    --CSay("Box("..x..","..y..","..w..","..h..",'"..tag.."')") -- debug only!!!
 end
+
+box = Box
