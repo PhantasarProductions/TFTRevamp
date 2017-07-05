@@ -1,6 +1,6 @@
 --[[
   Petrification.lua
-  Version: 17.01.20
+  Version: 17.07.05
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -58,7 +58,7 @@ StatusChanges.Petrification = {
                                fighters.Foe[mychar.id] = nil
                             end   
                          else
-                           local itag = "DEATH TO "..ch                           
+                           local itag = "STONE TO "..ch                           
                            Image.LoadNew(itag,"GFX/Combat/Fighters/Hero/"..ch..".petrified.png"); Image.Hot(itag,Image.Width(itag)/2,Image.height(itag))
                            Image.Show(itag,mychar.x,mychar.y)                            
                          end 
