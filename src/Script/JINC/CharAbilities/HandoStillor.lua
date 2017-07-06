@@ -32,11 +32,12 @@
   
  **********************************************
  
-version: 17.06.09
+version: 17.07.06
 ]]
 
 local fullversion = JCR6.Exists('ID/ID.Data.Full')==1
 local skill = Sys.Val(Var.C('%SKILL'))
+local newgameplus = Var.C("&NEWGAMEPLUS")=="TRUE"
 
 local r = {
                  ["1. Level 1"]  = {
@@ -72,9 +73,12 @@ if fullversion then -- That's right Hando Stillor will not get his level #2 and 
 --if r["3. Level 3"] then
   if skill~=3 then 
      r["3. Level 3"].abl_hero_handostillor_resurrect = { [2] = ({20,50})[skill]} --5
-     r["3. Level 3"].abl_hero_handostillor_everybodykneelbeforeme = {10*skill,95}  --5 
+     r["3. Level 3"].abl_hero_handostillor_everybodykneelbeforeme = {10*skill,95}  --6 
    end 
 --end  
+  if newgameplus then
+     r["3. Level 3"].abl_hero_handostillor_firestorm = { [1]=9*skill,[2]=({25,60,90})[skill]} -- 7
+  end
 end             
              
 return r
