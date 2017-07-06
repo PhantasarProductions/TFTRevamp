@@ -2,7 +2,7 @@
 **********************************************
   
   CH1_Hub_JakeHut.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.10
+version: 17.07.06
 ]]
 
 function CalmIndoors()
@@ -75,6 +75,15 @@ function NPC_Eric()
    Shop('WEAPON_ERIC')
 end   
 
+function NPC_Marinus()
+   if not Done('&DONE.NEWGAMEPLUS.CATHEDRAL.UNLOCKED.BY.MARINUS') then
+      MapText('MARINUS1')
+      WorldMap_Unlock('NGPCATHEDRAL')
+   else
+      MapText('MARINUS2')
+   end
+end
+
 function Bye()
    if not Done('&TUTORIAL.WORLDMAP') then MapText('TUTORIAL_WORLDMAP') end
    WorldMap()
@@ -85,6 +94,8 @@ function GALE_OnLoad()
    ZA_Enter('MusicOut',TheStartToFantasy)
    ZA_Enter('ExitHut',ExitHut)
    ZA_Enter('Bye',Bye)
+   Maps.GoToLayer('Exterior')
+   if not(CVV('&MASTER.MIDAS.HAVE') and newgameplus) then Maps.Obj.Kill('NPC_Marinus') end
 end
 
 

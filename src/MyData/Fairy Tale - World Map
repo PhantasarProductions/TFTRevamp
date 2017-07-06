@@ -352,6 +352,16 @@ Rec: CH4STARDOME
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: NGPCATHEDRAL
+	Dungeon = TRUE
+	Folder = Delisto
+	Kthura = NGP_Dungeon_Cathedral
+	Layer = #000
+	LocationName = Cathedral
+	LocationPrefix = The
+	Start = Start
+	UnlockedFromStart = FALSE
+
 Rec: NGPHEROES
 	Dungeon = FALSE
 	Folder = Delisto
