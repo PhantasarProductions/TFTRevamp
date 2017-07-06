@@ -34,7 +34,7 @@
  
 version: 17.07.06
 ]]
--- File Generated: Thu 06 July 2017; 22:52:50
+-- File Generated: Thu 06 July 2017; 23:04:22
 
 
 local foe = {}
@@ -141,6 +141,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_FOOLGOLD"] = 0
 	foe["RATE_ABL_FOE_GAIASMASH"] = 0
 	foe["RATE_ABL_FOE_GAZE"] = 0
+	foe["RATE_ABL_FOE_GG_DEATHSCREAM"] = 0
 	foe["RATE_ABL_FOE_GG_SCREAM"] = 0
 	foe["RATE_ABL_FOE_GRAVITY"] = 0
 	foe["RATE_ABL_FOE_HOLDPERSON"] = 0
@@ -459,6 +460,7 @@ local foe = {}
 	foe["TARGET_ABL_FOE_FOOLGOLD"] = "Random"
 	foe["TARGET_ABL_FOE_GAIASMASH"] = "Random"
 	foe["TARGET_ABL_FOE_GAZE"] = "Random"
+	foe["TARGET_ABL_FOE_GG_DEATHSCREAM"] = "Random"
 	foe["TARGET_ABL_FOE_GG_SCREAM"] = "Random"
 	foe["TARGET_ABL_FOE_GRAVITY"] = "Random"
 	foe["TARGET_ABL_FOE_HOLDPERSON"] = "Random"

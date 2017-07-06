@@ -168,6 +168,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Audio/Dungeon/FallingDown.ogg
     1. Graphics: gfx/Worldmap/back.png
     1. Graphics: gfx/Worldmap/rock001.jpg
+    1. Graphics: gfx/textures/Cathedral/Floor.png
+    1. Graphics: gfx/textures/Cathedral/Untitled.png
+    1. Graphics: gfx/textures/Cathedral/Wall.png
+    1. Graphics: gfx/textures/Cathedral/Wall_lv.png
+    1. Graphics: gfx/textures/Cathedral/Wall_rv.png
     1. Graphics: gfx/textures/Lava/Lava.png
     1. Graphics: gfx/textures/Random Shit/Hell.png
     1. Graphics: gfx/textures/Water/water.png
@@ -299,6 +304,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/DragonKeeper.lua
     1. Script: Script/JINC/Foes/reg/FireHound.lua
     1. Script: Script/JINC/Foes/reg/Firefox.lua
+    1. Script: Script/JINC/Foes/reg/Ghoul.lua
     1. Script: Script/JINC/Foes/reg/Gob.lua
     1. Script: Script/JINC/Foes/reg/GobPope.lua
     1. Script: Script/JINC/Foes/reg/GobPriest.lua
@@ -331,6 +337,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Skeleton.lua
     1. Script: Script/JINC/Foes/reg/Slime.lua
     1. Script: Script/JINC/Foes/reg/Snake.lua
+    1. Script: Script/JINC/Foes/reg/SpiritGirl.lua
     1. Script: Script/JINC/Foes/reg/StoneGolem.lua
     1. Script: Script/JINC/Foes/reg/Thief.lua
     1. Script: Script/JINC/Foes/reg/VolcanoHound.lua
@@ -338,6 +345,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Wolf.lua
     1. Script: Script/JINC/Foes/reg/Zombie.lua
     1. Script: Script/JINC/Foes/reg/Zombie2.lua
+    1. Script: Script/JINC/Foes/reg/ghostgirl.lua
     1. Script: Script/JINC/Foes/reg/litworm.lua
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
     1. Script: Script/JINC/IA/AAA_GUARD.lua
@@ -360,6 +368,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_FOOLGOLD.lua
     1. Script: Script/JINC/IA/ABL_FOE_GAIASMASH.lua
     1. Script: Script/JINC/IA/ABL_FOE_GAZE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_GG_DEATHSCREAM.lua
     1. Script: Script/JINC/IA/ABL_FOE_GG_SCREAM.lua
     1. Script: Script/JINC/IA/ABL_FOE_GRAVITY.lua
     1. Script: Script/JINC/IA/ABL_FOE_HOLDPERSON.lua
@@ -817,6 +826,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Maps/CH4_Dungeon_StarDome.lua
     1. Script: Script/Maps/CH4_Dungeon_Z_NostramantuMansion.lua
     1. Script: Script/Maps/CH4_Town_NostraburgNight.lua
+    1. Script: Script/Maps/NGP_DUNGEON_CATHEDRAL.lua
     1. Script: Script/Maps/NGP_DUNGEON_Quayaro.lua
     1. Script: Script/Maps/NGP_Dungeon_Quayaro.lsv
     1. Script: Script/Maps/NGP_HUB_Heroes.lua
@@ -986,20 +996,24 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/SerializeIntoSysVar.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Ghost Woman.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/GhostGirl.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Kobold.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/SpiritGirl.piko
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/SpiritGirl.png
     1. Graphics: gfx/Combat/Fighters/Foe/Sealed/Gendrabroe.png
     1. Graphics: gfx/Effects/Darkness II.png
     1. Graphics: gfx/Effects/Darkness.hot
@@ -1009,6 +1023,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/Blops2/Blop3.png
     1. Graphics: gfx/Textures/Blops2/Blop4.png
     1. Graphics: gfx/Textures/Blops2/Blop5.png
+    1. Graphics: gfx/Textures/Cathedral/Window.png
+    1. Graphics: gfx/Textures/Cathedral/Window_lv.png
+    1. Graphics: gfx/Textures/Cathedral/Window_rv.png
     1. Graphics: gfx/Textures/EarthPuzzle/AR_DN.png
     1. Graphics: gfx/Textures/EarthPuzzle/AR_LF.png
     1. Graphics: gfx/Textures/EarthPuzzle/AR_RT.png
@@ -1229,10 +1246,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Town_Doubline/Settings
     1. Map Design: Kthura/CH2_Town_Dreshka/Data
     1. Map Design: Kthura/CH2_Town_Dreshka/Objects
+    1. Music: Music/Boss/BossIntro.ogg
     1. Map Design: Kthura/CH2_Town_Dreshka/Settings
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
-    1. Music: Music/Boss/BossIntro.ogg
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Map Design: Kthura/CH3_Dungeon_Garden/Data
     1. Map Design: Kthura/CH3_Dungeon_Garden/Objects
@@ -1273,13 +1290,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Settings
     1. Map Design: Kthura/CH4_Dungeon_SpirataCrypt/DATA
     1. Map Design: Kthura/CH4_Dungeon_SpirataCrypt/OBJECTS
+    1. Music: Music/Sys/Silence.ogg
     1. Map Design: Kthura/CH4_Dungeon_SpirataCrypt/SETTINGS
     1. Map Design: Kthura/CH4_Dungeon_StarDome/Data
     1. Map Design: Kthura/CH4_Dungeon_StarDome/Objects
     1. Map Design: Kthura/CH4_Dungeon_StarDome/Settings
     1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/Data
     1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/Objects
-    1. Music: Music/Sys/Silence.ogg
     1. Map Design: Kthura/CH4_Dungeon_Z_NostramantuMansion/Settings
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Data
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Objects
