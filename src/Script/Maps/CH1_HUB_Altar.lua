@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.13
+version: 17.07.06
 ]]
 
 
@@ -85,6 +85,32 @@ function Altar()
     PartyPop('Altar','South')
     MapText('Altar1')
     -- New Game Plus part goes here --
+    if newgameplus then
+       local w = Screen.Width()
+       local h = Screen.Height()
+       local cx = Maps.CamX
+       local cy = Maps.CamY
+       local nos = Maps.Obj.Obj('Nostramantu')
+       local tx = nos.x-(w/2)
+       local ty = nos.y-(h/2)
+       nos.SetAlpha(1000)
+       repeat
+           if Maps.CamX<tx then Maps.CamX = Maps.CamX + 1 elseif  Maps.CamX>tx then Maps.CamX = Maps.CamX - 1 end
+           if Maps.CamY<ty then Maps.CamY = Maps.CamY + 2 end
+           Cls()
+           DrawScreen()
+           Flip()
+       until Maps.CamY>=ty
+       MapText('ALTAR_NGP')
+       repeat
+          Cls()
+          Maps.CamY = Maps.CamY - 4
+          DrawScreen()
+          Flip()
+       until Maps.CamY<=cy
+       nos.SetAlpha(0)   
+    end   
+    -- End of New Game Plus part --
     Party('Jake_Fairy;Marrilona')
     CreateJakeFairy()
     ActorRepos("PLAYER","Altar_Jake","South","Jake_Fairy")

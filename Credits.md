@@ -1563,6 +1563,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Fairies/Freya.png
     1. Graphics: GFX/Actors/Single/Fairies/Nostramantu.piko
     1. Graphics: GFX/Actors/Single/Fairies/Nostramantu.png
+    1. Graphics: GFX/Actors/Single/Fairies/Nostramantu_Backside.png
     1. Graphics: GFX/Actors/Single/Fairies/Tai.piko
     1. Graphics: GFX/Actors/Single/Fairies/Tai.png
     1. Graphics: GFX/Actors/Single/Fairies/Yanee.png
