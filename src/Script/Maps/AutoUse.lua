@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 17.06.12
+  Version: 17.07.06
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -398,7 +398,7 @@ function AllManaOrb()
   local all=true
   for ch in each({'Jake_Human','Marrilona'}) do
       for i=2,5 do
-          all = all and RPG.pointsExists(ch,'SK_LVL_'..i) 
+          all = all and RPG.pointsExists(ch,'SK_LVL_'..i) ~= 0
       end
   end  
   if not all then CSay("Not yet all orbs found") else Award('MANA8') end        
