@@ -1,6 +1,6 @@
 --[[
   FOE_WATCHMOVE.lua
-  Version: 17.07.04
+  Version: 17.07.06
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

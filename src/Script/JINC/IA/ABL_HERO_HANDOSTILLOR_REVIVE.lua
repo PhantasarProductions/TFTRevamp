@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_HANDOSTILLOR_REVIVE.lua
-  Version: 17.07.04
+  Version: 17.07.06
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
