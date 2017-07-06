@@ -637,6 +637,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_INFERNOORB.lua
     1. Script: Script/JINC/IA/ITM_JUSDORANGE.lua
     1. Script: Script/JINC/IA/ITM_MAGICDUST.lua
+    1. Script: Script/JINC/IA/ITM_MAGICSPRINKLES.lua
     1. Script: Script/JINC/IA/ITM_MAGICSTONE.lua
     1. Script: Script/JINC/IA/ITM_MANDRAKE.lua
     1. Script: Script/JINC/IA/ITM_MEDICINE.lua
