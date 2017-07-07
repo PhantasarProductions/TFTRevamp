@@ -254,6 +254,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/Boss/DemonAir.lua
     1. Script: Script/JINC/Foes/Boss/Dwarf.lua
     1. Script: Script/JINC/Foes/Boss/Dwarf_J.lua
+    1. Script: Script/JINC/Foes/Boss/Ghost Woman.lua
     1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
     1. Script: Script/JINC/Foes/Boss/GobKing.lua
     1. Script: Script/JINC/Foes/Boss/Grwol.lua
@@ -1316,9 +1317,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Data
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Objects
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Settings
-    1. Map Design: Kthura/NGP_Dungeon_Cathedral/DATA
-    1. Map Design: Kthura/NGP_Dungeon_Cathedral/OBJECTS
-    1. Map Design: Kthura/NGP_Dungeon_Cathedral/SETTINGS
+    1. Map Design: Kthura/NGP_Dungeon_Cathedral/Data
+    1. Map Design: Kthura/NGP_Dungeon_Cathedral/Objects
+    1. Map Design: Kthura/NGP_Dungeon_Cathedral/Settings
     1. Map Design: Kthura/NGP_Dungeon_Quayaro/Data
     1. Map Design: Kthura/NGP_Dungeon_Quayaro/Objects
     1. Map Design: Kthura/NGP_Dungeon_Quayaro/Settings

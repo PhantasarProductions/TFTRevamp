@@ -54,7 +54,7 @@ local function DO_SWITCH(s)
          Maps.CamX = tx
          Maps.CamY = ty
          Cls() DrawScreen(); Flip(); Time.Sleep(500)
-         Maps.Obj.Kill('Barrier')
+         Maps.Obj.Kill('Barrier',1)
          Cls() DrawScreen(); Flip(); Time.Sleep(500)
       end
    end
