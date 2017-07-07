@@ -1,6 +1,6 @@
 --[[
   EQP_JEWEL_JADE.lua
-  Version: 17.07.06
+  Version: 17.07.07
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
