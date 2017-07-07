@@ -405,6 +405,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_WELCOMEINHELL.lua
     1. Script: Script/JINC/IA/ABL_FOLLOWUP_FIKKIE.lua
     1. Script: Script/JINC/IA/ABL_GG_DEATHSCREAM.lua
+    1. Script: Script/JINC/IA/ABL_GG_TERRSCREAM.lua
+    1. Script: Script/JINC/IA/ABL_GG_TOTALBREAKSCREAM.lua
     1. Script: Script/JINC/IA/ABL_GLOOM.lua
     1. Script: Script/JINC/IA/ABL_HANDOSTILLOR_EVERYBODYKNEELBEFOREME.lua
     1. Script: Script/JINC/IA/ABL_HERO_DANDOR_AXESMASH.lua
@@ -646,6 +648,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_HEALSHOWER.lua
     1. Script: Script/JINC/IA/ITM_HELLSTONE.lua
     1. Script: Script/JINC/IA/ITM_HOLYHANDGRENATE.lua
+    1. Script: Script/JINC/IA/ITM_HOLYORB.lua
     1. Script: Script/JINC/IA/ITM_HOLYSCROLL.lua
     1. Script: Script/JINC/IA/ITM_HOLYWATER.lua
     1. Script: Script/JINC/IA/ITM_ICICLE.lua
@@ -1026,8 +1029,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/Blops2/Blop3.png
     1. Graphics: gfx/Textures/Blops2/Blop4.png
     1. Graphics: gfx/Textures/Blops2/Blop5.png
+    1. Graphics: gfx/Textures/Cathedral/Bank_Achteraanzicht (Autosaved).piko
+    1. Graphics: gfx/Textures/Cathedral/Bank_Achteraanzicht.piko
+    1. Graphics: gfx/Textures/Cathedral/Bank_Achteraanzicht.png
     1. Graphics: gfx/Textures/Cathedral/Kandelaar.frames
     1. Graphics: gfx/Textures/Cathedral/Kandelaar.png
+    1. Graphics: gfx/Textures/Cathedral/LijnTekening Bank Zijaanzicht.piko
+    1. Graphics: gfx/Textures/Cathedral/LijnTekening Bank Zijaanzicht.png
     1. Graphics: gfx/Textures/Cathedral/Wijwaterbasin.piko
     1. Graphics: gfx/Textures/Cathedral/Wijwaterbasin.png
     1. Graphics: gfx/Textures/Cathedral/Window.png
@@ -1247,20 +1255,20 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Dungeon_SpirataWind/Settings
     1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Data
     1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Objects
+    1. Music: Music/Boss/BossIntro.ogg
     1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Settings
     1. Map Design: Kthura/CH2_Town_Doubline/Data
     1. Map Design: Kthura/CH2_Town_Doubline/Objects
-    1. Music: Music/Boss/BossIntro.ogg
     1. Map Design: Kthura/CH2_Town_Doubline/Settings
     1. Map Design: Kthura/CH2_Town_Dreshka/Data
     1. Map Design: Kthura/CH2_Town_Dreshka/Objects
     1. Map Design: Kthura/CH2_Town_Dreshka/Settings
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
+    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Map Design: Kthura/CH3_Dungeon_Garden/Data
     1. Map Design: Kthura/CH3_Dungeon_Garden/Objects
-    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Map Design: Kthura/CH3_Dungeon_Garden/Settings
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Data
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Objects
@@ -1291,10 +1299,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH4_Dungeon_ManaCave/Settings
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Data
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Objects
+    1. Music: Music/Sys/Silence.ogg
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Settings
     1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Data
     1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Objects
-    1. Music: Music/Sys/Silence.ogg
     1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Settings
     1. Map Design: Kthura/CH4_Dungeon_SpirataCrypt/DATA
     1. Map Design: Kthura/CH4_Dungeon_SpirataCrypt/OBJECTS
@@ -1308,9 +1316,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Data
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Objects
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Settings
-    1. Map Design: Kthura/NGP_Dungeon_Cathedral/Data
-    1. Map Design: Kthura/NGP_Dungeon_Cathedral/Objects
-    1. Map Design: Kthura/NGP_Dungeon_Cathedral/Settings
+    1. Map Design: Kthura/NGP_Dungeon_Cathedral/DATA
+    1. Map Design: Kthura/NGP_Dungeon_Cathedral/OBJECTS
+    1. Map Design: Kthura/NGP_Dungeon_Cathedral/SETTINGS
     1. Map Design: Kthura/NGP_Dungeon_Quayaro/Data
     1. Map Design: Kthura/NGP_Dungeon_Quayaro/Objects
     1. Map Design: Kthura/NGP_Dungeon_Quayaro/Settings

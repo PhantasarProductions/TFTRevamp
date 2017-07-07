@@ -32,5 +32,56 @@
   
  **********************************************
  
-version: 17.07.07
+version: 17.07.08
 ]]
+
+-- Data
+local switched={}
+
+-- Let's switch
+local function DO_SWITCH(s) 
+   switched[s] = true
+   Maps.Obj.Obj('NPC_SWITCH'..s).Texturefile = 'GFX/Textures/Switch/Left.png'
+   if switched[1] and switched[2] then
+      if not Done('&DONE.NEWGAMEPLUS.CATHEDRAL.DOOR.OPEN.BY.SWITCH') then 
+         local w = Screen.Width()
+         local h = Screen.Height()
+         local cx = Maps.CamX
+         local cy = Maps.CamY
+         local bar = Maps.Obj.Obj('Barrier')
+         local tx = bar.x-(w/2)
+         local ty = bar.y-(h/2)
+         Maps.CamX = tx
+         Maps.CamY = ty
+         Cls() DrawScreen(); Flip(); Time.Sleep(500)
+         Maps.Obj.Kill('Barrier')
+         Cls() DrawScreen(); Flip(); Time.Sleep(500)
+      end
+   end
+end
+   
+function NPC_SWITCH1() DO_SWITCH(1) end
+function NPC_SWITCH2() DO_SWITCH(2) end
+
+function Boss()
+--Music/AltBoss/Day of Chaos.ogg
+  ClearCombatData()
+  ;({
+     function()
+       Var.D("$COMBAT.FOE_1","Boss/Ghost Woman")
+       Var.D("$COMBAT.POSFOE_1","CENTER")
+     end,function()
+       for i=1,3 do Var.D('$COMBAT_FOE_'..i,"REG/GHOSTGIRL") end
+       Var.D("$COMBAT.FOE_4","Boss/Ghost Woman")
+       Var.D("$COMBAT.POSFOE_4","CENTER")
+     end,function()
+       for i=1,9 do Var.D('$COMBAT_FOE_'..i,"REG/GHOSTGIRL") end
+       Var.D("$COMBAT.FOE_10","Boss/Ghost Woman")
+       Var.D("$COMBAT.POSFOE_10","CENTER")
+     end  
+  })[skill]()
+  Var.D("$COMBAT.MUSIC","Music/AltBoss/Day of Chaos.ogg")
+  Var.D("$COMBAT.ARENA","Cathedral.png")
+  NGP_StartBoss("Screaming undead","Ghost Woman")    
+
+end
