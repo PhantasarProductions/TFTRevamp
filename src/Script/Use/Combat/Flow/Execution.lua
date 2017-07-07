@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.07.01
+  Version: 17.07.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -61,6 +61,7 @@ function PerformAction(act,group,i)
      local myfighter = Fighters[group][i]
      local myexecutor = fighterbytag[nextact.executor.tag]
      assert(myfighter,"No fighter known on this index: "..group..":"..i)
+     if not myexecutor then return CSay('WARNING! No executor on tag: '..sval(nextact.executor.tag)) end
      -- Accuracy check if needed. If it fails, byebye
      if act.Attack_AllowAccuracy and (rand(1,100)>RPG.Stat(myexecutor.tag,"END_Accuracy")) then charmsg(myfighter.tag,'miss',155,155,155) return end     
      -- Dodge check if needed. If it succeeds, byebye
