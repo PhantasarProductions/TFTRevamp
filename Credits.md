@@ -170,6 +170,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Worldmap/rock001.jpg
     1. Graphics: gfx/textures/Cathedral/Floor.png
     1. Graphics: gfx/textures/Cathedral/Untitled.png
+    1. Graphics: gfx/textures/Cathedral/W32.png
+    1. Graphics: gfx/textures/Cathedral/W32_lv.png
+    1. Graphics: gfx/textures/Cathedral/W32_rv.png
     1. Graphics: gfx/textures/Cathedral/Wall.png
     1. Graphics: gfx/textures/Cathedral/Wall_lv.png
     1. Graphics: gfx/textures/Cathedral/Wall_rv.png
@@ -1023,6 +1026,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/Blops2/Blop3.png
     1. Graphics: gfx/Textures/Blops2/Blop4.png
     1. Graphics: gfx/Textures/Blops2/Blop5.png
+    1. Graphics: gfx/Textures/Cathedral/Kandelaar.frames
+    1. Graphics: gfx/Textures/Cathedral/Kandelaar.png
+    1. Graphics: gfx/Textures/Cathedral/Wijwaterbasin.piko
+    1. Graphics: gfx/Textures/Cathedral/Wijwaterbasin.png
     1. Graphics: gfx/Textures/Cathedral/Window.png
     1. Graphics: gfx/Textures/Cathedral/Window_lv.png
     1. Graphics: gfx/Textures/Cathedral/Window_rv.png
@@ -1243,10 +1250,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Settings
     1. Map Design: Kthura/CH2_Town_Doubline/Data
     1. Map Design: Kthura/CH2_Town_Doubline/Objects
+    1. Music: Music/Boss/BossIntro.ogg
     1. Map Design: Kthura/CH2_Town_Doubline/Settings
     1. Map Design: Kthura/CH2_Town_Dreshka/Data
     1. Map Design: Kthura/CH2_Town_Dreshka/Objects
-    1. Music: Music/Boss/BossIntro.ogg
     1. Map Design: Kthura/CH2_Town_Dreshka/Settings
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
@@ -1287,10 +1294,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Settings
     1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Data
     1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Objects
+    1. Music: Music/Sys/Silence.ogg
     1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Settings
     1. Map Design: Kthura/CH4_Dungeon_SpirataCrypt/DATA
     1. Map Design: Kthura/CH4_Dungeon_SpirataCrypt/OBJECTS
-    1. Music: Music/Sys/Silence.ogg
     1. Map Design: Kthura/CH4_Dungeon_SpirataCrypt/SETTINGS
     1. Map Design: Kthura/CH4_Dungeon_StarDome/Data
     1. Map Design: Kthura/CH4_Dungeon_StarDome/Objects
@@ -1605,6 +1612,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/BoxText/Portret/Melody/General.png
     1. Graphics: GFX/BoxText/Portret/Melody/Untitled.piko
     1. Graphics: GFX/Combat/Arena/Altar.png
+    1. Graphics: GFX/Combat/Arena/Cathedral.png
     1. Graphics: GFX/Combat/Arena/Caves.png
     1. Graphics: GFX/Combat/Arena/Dark.png
     1. Graphics: GFX/Combat/Arena/Forest.png
@@ -2173,15 +2181,16 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - SterioType
     1. Font: Fonts/master_of_break.ttf
 - TFTCREW
-    1. Audio: Vocals/Combat/Foe/Marrilona/Action/DSB.ogg
+    1. Audio: Vocals/Combat/Foe/Harry/Action/Attack.ogg
     1. Audio: Vocals/Combat/Foe/Harry/Action/Desperate.ogg
+    1. Audio: Vocals/Combat/Foe/Marrilona/Action/DSB.ogg
     1. Audio: Vocals/Combat/Foe/Harry/Action/Distract.ogg
     1. Audio: Vocals/Combat/Foe/Marrilona/Action/Earth.ogg
     1. Audio: Vocals/Combat/Foe/Marrilona/Action/Fire.ogg
     1. Audio: Vocals/Combat/Hero/Dandor/Action/Attack.ogg
     1. Audio: Vocals/Combat/Foe/Marrilona/Action/Frost.ogg
-    1. Audio: Vocals/Combat/Foe/Marrilona/Action/Heal.ogg
     1. Audio: Vocals/Combat/Hero/Dandor/Victory/Boss.ogg
+    1. Audio: Vocals/Combat/Foe/Marrilona/Action/Heal.ogg
     1. Audio: Vocals/Combat/Foe/Marrilona/Action/Hit.ogg
     1. Audio: Vocals/Combat/Foe/Marrilona/Action/Thunder.ogg
     1. Audio: Vocals/Combat/Foe/Marrilona/Action/Water.ogg
@@ -2192,42 +2201,42 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Combat/Foe/Nostramantu/Action/Fire.ogg
     1. Audio: Vocals/Combat/Foe/Nostramantu/Action/Heal.ogg
     1. Audio: Vocals/Combat/Foe/Nostramantu/Action/Laugh.ogg
-    1. Audio: Vocals/Combat/Foe/Nostramantu/Action/Lightning.ogg
     1. Audio: Vocals/Combat/Hero/Dandor/Victory/General.ogg
+    1. Audio: Vocals/Combat/Foe/Nostramantu/Action/Lightning.ogg
     1. Audio: Vocals/Combat/Foe/Nostramantu/Action/Water.ogg
     1. Audio: Vocals/Combat/Foe/Nostramantu/Action/Yell.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Action/Attack.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Action/Critical.ogg
-    1. Audio: Vocals/Combat/Hero/Krandar/Action/DefUp.ogg
     1. Audio: Vocals/Combat/Hero/Dandor/Victory/Perfect.ogg
+    1. Audio: Vocals/Combat/Hero/Krandar/Action/DefUp.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Action/Earth.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Action/Fire.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Action/Frost.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Action/Heal.ogg
-    1. Audio: Vocals/Combat/Hero/Krandar/Action/Lightning.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Attack.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Critical.ogg
-    1. Audio: Vocals/Combat/Hero/Krandar/Action/SpeedUp.ogg
+    1. Audio: Vocals/Combat/Hero/Krandar/Action/Lightning.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Heal.ogg
-    1. Audio: Vocals/Combat/Hero/Krandar/Action/Think.ogg
+    1. Audio: Vocals/Combat/Hero/Krandar/Action/SpeedUp.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/HolyStrike.ogg
+    1. Audio: Vocals/Combat/Hero/Krandar/Action/Think.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Action/Water.ogg
-    1. Audio: Vocals/Combat/Hero/Krandar/Action/Wind.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/NeutralizePoison.ogg
+    1. Audio: Vocals/Combat/Hero/Krandar/Action/Wind.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Revive.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Victory/Boss.ogg
-    1. Audio: Vocals/Combat/Hero/Krandar/Victory/Dead.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Weniaria.ogg
-    1. Audio: Vocals/Combat/Hero/Krandar/Victory/General.ogg
+    1. Audio: Vocals/Combat/Hero/Krandar/Victory/Dead.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/Boss.ogg
+    1. Audio: Vocals/Combat/Hero/Krandar/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/Krandar/Victory/Perfect.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/Dead.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_1_6.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/HandoStillor/Victory/Perfect.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_1.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_10.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Action/2PS.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_10.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Action/3PS.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_11.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Action/4PS.ogg
@@ -2236,21 +2245,21 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Combat/Hero/Jake/Action/Frost.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Action/Heal.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Victory/Boss.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_12.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Victory/Dead.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_12.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Victory/General.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_13.ogg
     1. Audio: Vocals/Combat/Hero/Jake/Victory/Perfect.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_13.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Attack.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Critical.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/DefUp.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_14.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Earth.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_14.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Fire.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Frost.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Heal.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_15.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Hit.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_15.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Lightning.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/SpeedUp.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Action/Water.ogg
@@ -2259,8 +2268,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/Dead.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/General.ogg
     1. Audio: Vocals/Combat/Hero/Marrilona/Victory/Perfect.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_16.ogg
     1. Audio: Vocals/Combat/Hero/Nostramantu/Victory/General.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_16.ogg
     1. Audio: Vocals/Combat/Hero/Nostramantu/Victory/Perfect.ogg
     1. Audio: Vocals/Combat/Learn/Dandor_1.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_17.ogg
@@ -2269,8 +2278,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Combat/Learn/Marrilona_1.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_1.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_19.ogg
-    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_2.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_10.ogg
+    1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_2.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_20.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_21.ogg
     1. Audio: Vocals/Maps/CH2_Dungeon_ElfRoad/Stillor_2_22.ogg
@@ -2337,8 +2346,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_59.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_60.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_61.ogg
-    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_62.ogg
     1. Audio: Vocals/General/Introduction/STILLOR_3.ogg
+    1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_62.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_63.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_64.ogg
     1. Audio: Vocals/Maps/CH3_Dungeon_KokonoraForest/Krandar1_65.ogg
@@ -2381,8 +2390,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH3_Story_Dragon_Forest/Summoning_9.ogg
     1. Audio: Vocals/Maps/CH3_Town_Nostraburg/CH4START_1.ogg
     1. Audio: Vocals/Maps/CH3_Town_Nostraburg/CH4START_10.ogg
-    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/CH4START_11.ogg
     1. Audio: Vocals/General/Prologues/Dandor_1.ogg
+    1. Audio: Vocals/Maps/CH3_Town_Nostraburg/CH4START_11.ogg
     1. Audio: Vocals/Maps/CH3_Town_Nostraburg/CH4START_12.ogg
     1. Audio: Vocals/Maps/CH3_Town_Nostraburg/CH4START_13.ogg
     1. Audio: Vocals/Maps/CH3_Town_Nostraburg/CH4START_14.ogg
@@ -2475,12 +2484,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_13.OGG
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_14.OGG
     1. Audio: Vocals/Maps/CH4_Dungeon_Z_NostramantuMansion/Confrontation_11.ogg
-    1. Audio: Vocals/Maps/CH4_Dungeon_Z_NostramantuMansion/Confrontation_12.ogg
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_15.OGG
-    1. Audio: Vocals/Maps/CH4_Dungeon_Z_NostramantuMansion/Confrontation_2.ogg
+    1. Audio: Vocals/Maps/CH4_Dungeon_Z_NostramantuMansion/Confrontation_12.ogg
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_16.OGG
-    1. Audio: Vocals/Maps/CH4_Dungeon_Z_NostramantuMansion/Confrontation_3.ogg
+    1. Audio: Vocals/Maps/CH4_Dungeon_Z_NostramantuMansion/Confrontation_2.ogg
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_17.OGG
+    1. Audio: Vocals/Maps/CH4_Dungeon_Z_NostramantuMansion/Confrontation_3.ogg
     1. Audio: Vocals/Maps/CH4_Dungeon_Z_NostramantuMansion/Confrontation_4.ogg
     1. Audio: Vocals/Maps/CH4_Dungeon_Z_NostramantuMansion/Confrontation_5.ogg
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_18.OGG
@@ -2495,20 +2504,20 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_5.OGG
     1. Audio: Vocals/Maps/CH4_Dungeon_Z_NostramantuMansion/Confrontation_7.ogg
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_6.OGG
-    1. Audio: Vocals/Maps/CH4_Dungeon_Z_NostramantuMansion/Confrontation_8.ogg
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_7.OGG
+    1. Audio: Vocals/Maps/CH4_Dungeon_Z_NostramantuMansion/Confrontation_8.ogg
     1. Audio: Vocals/Maps/CH4_Dungeon_Z_NostramantuMansion/Confrontation_9.ogg
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_8.OGG
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_1_9.OGG
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_2_1.OGG
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_2_2.OGG
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_1.ogg
-    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_10.ogg
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_2_3.OGG
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_10.ogg
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_2_4.OGG
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_11.ogg
-    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_2.ogg
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_3_1.OGG
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_2.ogg
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_3_2.OGG
     1. Audio: Vocals/Maps/CH1_Hub_JakeHut/LOVE_3_3.OGG
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu1_3.ogg
@@ -2534,16 +2543,16 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_13.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Crypt/The_End_12.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_14.ogg
-    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_15.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Crypt/The_End_13.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_15.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_16.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_17.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Crypt/The_End_14.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Crypt/The_End_15.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Crypt/The_End_16.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_18.ogg
-    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_19.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Crypt/The_End_17.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_19.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Crypt/The_End_2.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Crypt/The_End_3.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_2.ogg
@@ -2555,8 +2564,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Dungeon_Crypt/The_End_7.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_3.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_4.ogg
-    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_5.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Crypt/The_End_8.ogg
+    1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_5.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Crypt/The_End_9.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_6.ogg
     1. Audio: Vocals/Maps/CH4_Town_NostraburgNight/Nostramantu2_7.ogg
@@ -2569,28 +2578,28 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_11.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_12.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_13.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_14.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Feena_Prologue_2_3.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_14.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Feena_Prologue_2_4.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_15.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_16.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Feena_Prologue_2_5.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_16.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_17.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Feena_Prologue_2_6.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_2.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_3.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_4.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Feena_Prologue_2_7.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_4.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_5.ogg
     1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_6.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_7.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_8.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Feena_Prologue_2_8.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_7.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Sandra_A_1.ogg
-    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_9.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_8.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Sandra_A_2.ogg
-    1. Audio: Vocals/Outtakes/001 Jake/001 What is an Elven High Priest.ogg
+    1. Audio: Vocals/Maps/PRO_Town_Vandar/AngryChief_9.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Sandra_A_3.ogg
+    1. Audio: Vocals/Outtakes/001 Jake/001 What is an Elven High Priest.ogg
     1. General Data: Vocals/Outtakes/001 Jake/002 Blooper 2
     1. Audio: Vocals/Outtakes/001 Jake/002 Blooper 2.ogg
     1. Audio: Vocals/Outtakes/001 Jake/003 Verkeerde tekst.ogg
@@ -2603,8 +2612,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Outtakes/001 Jake/008 - She is still.ogg
     1. Audio: Vocals/Outtakes/001 Jake/009 - EEJ KUKKELEKE.ogg
     1. Audio: Vocals/Outtakes/001 Jake/010 - De microfoon staat aan hoor.ogg
-    1. Audio: Vocals/Outtakes/001 Jake/011 - Somebody gotta pinch me.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Sandra_B_3.ogg
+    1. Audio: Vocals/Outtakes/001 Jake/011 - Somebody gotta pinch me.ogg
     1. Audio: Vocals/Maps/PRO_Dungeon_Tomb/Sandra_B_4.ogg
     1. Audio: Vocals/Outtakes/001 Jake/012 - Your game is over Nostramantu.ogg
     1. Audio: Vocals/Outtakes/002 Marrilona/001 Stotter stotter.ogg
@@ -2612,25 +2621,25 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_A_1.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_A_2.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_A_3.ogg
-    1. Audio: Vocals/Outtakes/002 Marrilona/003 Goed of niet.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_1.ogg
-    1. Audio: Vocals/Outtakes/002 Marrilona/004 Effe Terug.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/003 Goed of niet.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_10.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/004 Effe Terug.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_11.ogg
     1. Audio: Vocals/Outtakes/002 Marrilona/005 Wouldnt people be.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_12.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_13.ogg
     1. Audio: Vocals/Outtakes/002 Marrilona/006 Hou eens op.ogg
-    1. Audio: Vocals/Outtakes/002 Marrilona/007 LACHUUHHHH.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_14.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/007 LACHUUHHHH.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_15.ogg
-    1. Audio: Vocals/Outtakes/002 Marrilona/008 I can fix.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_16.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/008 I can fix.ogg
     1. Audio: Vocals/Outtakes/002 Marrilona/009 I cannot make you welcome.ogg
     1. Audio: Vocals/Outtakes/002 Marrilona/010 I need a cigarette.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_17.ogg
-    1. Audio: Vocals/Outtakes/002 Marrilona/011 DIE MOTHERFUCKER DIE.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_18.ogg
+    1. Audio: Vocals/Outtakes/002 Marrilona/011 DIE MOTHERFUCKER DIE.ogg
     1. Audio: Vocals/Outtakes/002 Marrilona/012 This must be.ogg
     1. Audio: Vocals/Outtakes/004 Hando Stillor/001 shit.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_19.ogg
@@ -2650,8 +2659,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_5.ogg
     1. Audio: Vocals/Outtakes/007 Sandra/002 Anders zoekt Dandor het maar uit.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_6.ogg
-    1. Audio: Vocals/Outtakes/011 Gedrio Fulla/001 Kut.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_7.ogg
+    1. Audio: Vocals/Outtakes/011 Gedrio Fulla/001 Kut.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_8.ogg
     1. Audio: Vocals/Maps/PRO_Hub_Weniaria/Sasha_B_9.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/Dandor_1.ogg
@@ -2661,8 +2670,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Outtakes/017 Sasha Funda/002.ogg
     1. Audio: Vocals/Outtakes/017 Sasha Funda/003 Your father... I meant name.ogg
     1. Audio: Vocals/Outtakes/017 Sasha Funda/004 Dingetje.ogg
-    1. Audio: Vocals/Outtakes/017 Sasha Funda/005 Dingetje 2.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/Dandor_2.ogg
+    1. Audio: Vocals/Outtakes/017 Sasha Funda/005 Dingetje 2.ogg
     1. Audio: Vocals/Outtakes/017 Sasha Funda/007 but.ogg
     1. Audio: Vocals/Outtakes/018 Chief Werrington/001 What is there to negotiate about.ogg
     1. Audio: Vocals/Outtakes/018 Chief Werrington/002 Why should I trust.ogg
@@ -2693,8 +2702,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Vocals/Outtakes/998 Feenalaria/016 I am.ogg
     1. Audio: Vocals/Outtakes/998 Feenalaria/017 Intonatie.ogg
     1. Audio: Vocals/Outtakes/998 Feenalaria/018 Cluck-cluck-Clunk.ogg
-    1. Audio: Vocals/Outtakes/999 Nostramantu/001 I knew it would go wrong one day.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/Jake_1.ogg
+    1. Audio: Vocals/Outtakes/999 Nostramantu/001 I knew it would go wrong one day.ogg
     1. Audio: Vocals/Spirata/Dandor.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/Jake_2.ogg
     1. Audio: Vocals/Maps/PRO_TheEnd/Marrilona_1.ogg
