@@ -35,6 +35,9 @@
 version: 17.07.08
 ]]
 
+-- @USE /Script/Use/Specific/NewGame+.lua
+
+
 -- Data
 local switched={}
 
