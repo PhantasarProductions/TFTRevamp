@@ -533,6 +533,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/COCYTUS_PTOLOMEA.lua
     1. Script: Script/JINC/IA/EQP_ACC_AAA_NOSTRAMANTUS_AMULET.lua
     1. Script: Script/JINC/IA/EQP_ACC_AMULETLIFE.lua
+    1. Script: Script/JINC/IA/EQP_ACC_DRESHKA.lua
     1. Script: Script/JINC/IA/EQP_ACC_NOTNAMED.lua
     1. Script: Script/JINC/IA/EQP_ACC_RINGEARTH.lua
     1. Script: Script/JINC/IA/EQP_ACC_RINGFIRE.lua
@@ -634,6 +635,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/FOE_WATCHMOVE.lua
     1. Script: Script/JINC/IA/HYDRA_ONTHOOFD.lua
     1. Script: Script/JINC/IA/ICEBLAST.lua
+    1. Script: Script/JINC/IA/ITEM_MEDICINES.lua
     1. Script: Script/JINC/IA/ITM_AMBROSIA.lua
     1. Script: Script/JINC/IA/ITM_ANABOLINEA.lua
     1. Script: Script/JINC/IA/ITM_ANTIDOTE.lua

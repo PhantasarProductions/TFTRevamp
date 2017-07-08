@@ -1,12 +1,11 @@
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 5,
-	["ADDCARD_Char_Interval"] = 5,
-	["Attack"] = 100,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Intelligence",
-	["Attack_DefenseStat"] = "Resistance",
-	["Attack_Element"] = "Water",
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Element"] = "None",
+	["CureDisease"] = true,
+	["Desc"] = "Cures \"Disease\"",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -17,12 +16,14 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 500,
 	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "Tsunami",
+	["SpellAni"] = "AllHeal",
 	["Stance"] = "Cast",
-	["Target"] = "AF",
-	["Title"] = "T<uuml>namy",
-	["Type"] = "Item"}
+	["Target"] = "AA",
+	["Title"] = "Medicine",
+	["Type"] = "Item",
+	["Voice"] = "Heal"}
 
 return ret
 
