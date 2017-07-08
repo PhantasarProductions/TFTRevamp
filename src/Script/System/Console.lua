@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 17.07.03
+  Version: 17.07.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -36,6 +36,12 @@
 ]]
 
 -- TFT REVAMPED
+
+function ONEFORALL()
+  for foeid in ICHARS() do
+     if prefixed(foeid,'FOE_') then RPGChar.Points(foeid,"HP").Have=1 CSay("Affected: "..foeid) else CSay('Skipped: '..foeid) end
+  end
+end   
 
 function IDDQD()
    Toggle('&CHEAT.GOD')

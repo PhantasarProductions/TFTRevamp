@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 17.04.29
+  Version: 17.07.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -233,6 +233,29 @@ function CreateKrandar()
      RPG.SetStat("Krandar",'Level',200000) -- Make sure Krandar will NEVER gain EXP
 end
 
+function CreateNostramantu()
+     RPG.SetStat('Nostramantu','BASE_Power',40)
+     RPG.SetStat('Nostramantu','BASE_Endurance',1)
+     RPG.SetStat('Nostramantu','BASE_Intelligence',9999)
+     RPG.SetStat('Nostramantu','BASE_Resistance',500)
+     RPG.SetStat('Nostramantu','BASE_Evasion',5)
+     RPG.SetStat('Nostramantu','BASE_Accuracy',95)
+     RPG.SetStat('Nostramantu','BASE_HP',80000)
+     RPG.SetStat('Nostramantu','BASE_AP',20000)
+     RPG.SetStat("Nostramantu",'Level',200000)
+     for p in each({'HP','AP','VIT'}) do
+         local cp = RPGChar.Points('Nostramantu',p,1)
+         cp.Have = cp.Maximum
+     end
+     RPG.LinkData('Marrilona','Nostramantu','EQP_Weapon')
+     RPG.LinkData('Jake_Human','Nostramantu','EQP_Armor')
+     RPG.LinkData('HandoStillor','Nostramantu','EQP_Acc') 
+     RPG.Points('Nostramantu','SK_LVL_1',1).Maximum=500
+     RPG.Points('Nostramantu','SK_LVL_1'  ).Have=500
+     RPG.Points('Nostramantu',"SK_EXP_1",1).Maximum=123456789
+     RPG.Points('Nostramantu','SK_EXP_1'  ).Have=0         
+end
+
 function CreateChar(ch,name)
   -- Create
   RPGChar.CreateChar(ch)
@@ -259,7 +282,7 @@ function CreateChar(ch,name)
   -- Experience
   RPGChar.SetStat(ch,"Level",1)
   RPGChar.SetStat(ch,"EXP",1000*(skill/2))
-  if ch~='Krandar' then SyncLevel(ch) end          
+  if ch~='Krandar' and ch~='Nostramantu' then SyncLevel(ch) end          
   -- Maxout
   local cp
   for p in each({'HP','AP','VIT'}) do
@@ -269,6 +292,7 @@ function CreateChar(ch,name)
   -- Portrait
   RPGStat.SetData(ch,'Face',ch)
   if ch=="Krandar" then CreateKrandar() return end  
+  if ch=='Nostramantu' then CreateNostramantu() return end
 end
 
 function ClickedChar(ch,dump)

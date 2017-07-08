@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.06.26
+  Version: 17.07.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -167,6 +167,7 @@ end
 
 function SpellList(ch)
     local cch=ch; if prefixed(ch,"Jake_") then cch="Jake" end -- Prevent conflicts in Fairy in human list. If Jake unlocked a spell as a Fairy so did he as a human, it is only that not all spells appear in his list, that's all.
+    if ch=="Nostramantu" then cch='Marrilona' end -- Another conflict prevention. Nostramantu and Marrilona are supposed to have the same spell list.
     heroabl[cch] = heroabl[cch] or {}
     return heroabl[cch]
 end
@@ -195,8 +196,10 @@ function TeachSkill(pch,pskill)
     return true
 end
 
-function ShowSpellList(ch,psizes)
+function ShowSpellList(pch,psizes)
    -- Set up
+   local ch=pch
+   if pch=='Nostramantu' then ch='Marrilona' end -- Make sure Nostramantu can use all of Marrilona's spells.
    local sizes = ({['table']=psizes, ['string']=mysplit(psizes,",") })[type(psizes)]
    local c, allowcast
    local mx,my = MouseCoords()

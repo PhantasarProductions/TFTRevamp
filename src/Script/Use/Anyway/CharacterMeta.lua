@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.18
+version: 17.07.08
 ]]
 CharacterMeta = {
 
@@ -111,7 +111,8 @@ CharacterMeta = {
                    askillup3 = {'Speed',2},
                    askillup4 = {'HP',2},
                    askillup5 = {'Endurance',1}
-             }                   
+             },
+             Nostramantu = { race='Fairy', sex='male', pvnw='he',bvnw='his',avnw='him',skill1='Wand'}                   
 }
 
 CharacterMeta.Jake_Human = CharacterMeta.Jake

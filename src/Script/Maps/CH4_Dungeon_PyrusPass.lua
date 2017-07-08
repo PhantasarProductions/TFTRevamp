@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.27
+version: 17.07.08
 ]]
 
 -- @IF IGNORE
@@ -122,6 +122,12 @@ function Post_Nostramantu()
     Music('Dungeon/Trade-Off.ogg')
 end
 
+function NEWGAMEPLUS()
+   MapText('NGP2')
+   Party('Jake_Human;Marrilona;HandoStillor')
+   LoadMap('CH2_Town_Dreshka')
+   GoToLayer('town','NewGame+')
+end
 
 function MAP_FLOW()
    local MSecs=Time.MSecs()
@@ -140,6 +146,7 @@ function MAP_FLOW()
    o.InsertX=math.sin(MSecs/8000)*500
    o.InsertY=math.cos(MSecs/8000)*500  
 end
+
 
 function GALE_OnLoad()
    ZA_Enter('Leave',Leave)

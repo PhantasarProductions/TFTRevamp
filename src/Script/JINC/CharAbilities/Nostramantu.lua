@@ -2,7 +2,7 @@
 **********************************************
   
   Nostramantu.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,5 +32,15 @@
   
  **********************************************
  
-version: 16.10.03
+version: 17.07.08
 ]]
+
+local r = { }
+
+for i=1,3 do r[i..". Level "..i]="Marrilona" end
+
+
+r["9. Skills"] = "Jake_Human"
+
+
+return r

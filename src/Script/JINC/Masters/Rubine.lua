@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.07
+version: 17.07.08
 ]]
 
 local RPG = RPGStat
@@ -41,7 +41,7 @@ local Rubine = {}
 
 local skill = Sys.Val(Var.C('%SKILL'))
 
-
+local newgameplus = Var.C("&NEWGAMEPLUS")=="TRUE"
 
 local function CVV(k)
 local CVF = {
@@ -71,6 +71,7 @@ Rubine.abl = {
                      [400] = 'abl_master_rubine_followme'
               }
 
+if newgameplus then Rubine.abl[30] = 'abl_master_rubine_fastdraw' end
 
 function Rubine.teach(ch) -- Should return true if master actually decides to teach something
     local all = true

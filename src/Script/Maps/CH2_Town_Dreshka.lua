@@ -32,8 +32,10 @@
   
  **********************************************
  
-version: 17.05.23
+version: 17.07.08
 ]]
+
+-- @USE /Script/Use/Specific/NewGame+.lua
 
 function NPC_Rosetta()
          if not Done('&DONE.DRESHKA.ROSETTA') then
@@ -59,6 +61,21 @@ function NPC_Dreshka()
        WorldMap_Unlock('CH2WATERSPIRATA')
        Var.D('$WMCHAT','WATER')
        -- New Game+
+       if newgameplus then
+          MapText("MEANWHILE")
+          Party('Nostramantu')
+          LoadMap('CH4_Dungeon_PyrusPass')
+          GoToLayer('#002','NewGame+')
+          MapText('NGP1')
+          Schedule('MAP','NEWGAMEPLUS')
+          ClearCombatData()
+          for i=1,skill*3 do
+              Var.D("$COMBAT.FOE_"..i,"Boss/HellImp")
+          end    
+          Var.D("$COMBAT.MUSIC","Music/Boss/NewGame+.ogg")
+          Var.D("$COMBAT.ARENA","pyruspass.png")
+          NGP_StartBoss("Guardians of fire","Hell Imps")              
+       end
    end       
 end
 
