@@ -569,6 +569,30 @@ Rec: WALDA4
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: ZZNGP_ALL
+	Description = Find all the representatives of the Hall of Heroes
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = FALSE
+	Show = Always
+	Title = We are the heroes of our times
+	Type = Platinum
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
+Rec: ZZNGP_CATHEDRAL
+	Description = Complete the Cathedral
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = FALSE
+	Show = Always
+	Title = The Cathedral Knights
+	Type = Silver
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: ZZNGP_QUAYARO
 	Description = Complete Quayaro's Caslte
 	Icon = *DEFAULT*
@@ -576,7 +600,7 @@ Rec: ZZNGP_QUAYARO
 	NormalGame = FALSE
 	Show = Always
 	Title = The first King of Man
-	Type = Silver
+	Type = Bronze
 	skill1 = TRUE
 	skill2 = TRUE
 	skill3 = TRUE

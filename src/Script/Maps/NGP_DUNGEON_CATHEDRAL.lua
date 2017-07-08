@@ -74,11 +74,11 @@ function Boss()
        Var.D("$COMBAT.FOE_1","Boss/Ghost Woman")
        Var.D("$COMBAT.POSFOE_1","CENTER")
      end,function()
-       for i=1,3 do Var.D('$COMBAT_FOE_'..i,"REG/GHOSTGIRL") end
+       for i=1,3 do Var.D('$COMBAT.FOE_'..i,"REG/GHOSTGIRL") end
        Var.D("$COMBAT.FOE_4","Boss/Ghost Woman")
        Var.D("$COMBAT.POSFOE_4","CENTER")
      end,function()
-       for i=1,9 do Var.D('$COMBAT_FOE_'..i,"REG/GHOSTGIRL") end
+       for i=1,9 do Var.D('$COMBAT.FOE_'..i,"REG/GHOSTGIRL") end
        Var.D("$COMBAT.FOE_10","Boss/Ghost Woman")
        Var.D("$COMBAT.POSFOE_10","CENTER")
      end  
@@ -86,5 +86,8 @@ function Boss()
   Var.D("$COMBAT.MUSIC","Music/AltBoss/Day of Chaos.ogg")
   Var.D("$COMBAT.ARENA","Cathedral.png")
   NGP_StartBoss("Screaming undead","Ghost Woman")    
-
 end
+
+function NPC_SymphoNica()
+   ToHallHeroes('SymphNica','CATEDRAL')
+end   
