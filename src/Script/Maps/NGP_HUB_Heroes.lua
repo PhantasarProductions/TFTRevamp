@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.05
+version: 17.07.08
 ]]
 
 function NPC_Zyviola()
@@ -41,6 +41,18 @@ function NPC_Zyviola()
     MS.Run('BESTIARY',"Update")
     LAURA.Flow('BESTIARY')
 end    
+
+function NPC_SymphoNica()
+    MapText('SYMPHONICA')
+    if not musicavailable then
+       MapText('NOMUSIC')
+       return
+    end
+    MS.LoadNew('JUKEBOX','Script/Flow/Jukebox.lua')
+    LAURA.Flow('JUKEBOX')
+    StopMusic()
+end    
+    
 
 function GALE_OnLoad()
    local gh = loadstring(Var.C('$HALLOFHEROES.PEOPLE').."\n return ret")

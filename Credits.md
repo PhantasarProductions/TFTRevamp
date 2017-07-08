@@ -217,6 +217,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Flow/Field.lsv
     1. Script: Script/Flow/Field.lua
     1. Script: Script/Flow/Game Over.lua
+    1. Script: Script/Flow/Jukebox.lsv
+    1. Script: Script/Flow/Jukebox.lua
     1. Script: Script/Flow/Master.lsv
     1. Script: Script/Flow/Master.lua
     1. Script: Script/Flow/Menu.lsv
@@ -1004,14 +1006,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/SerializeIntoSysVar.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Ghost Woman.png
@@ -1031,7 +1033,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Textures/Blops2/Blop3.png
     1. Graphics: gfx/Textures/Blops2/Blop4.png
     1. Graphics: gfx/Textures/Blops2/Blop5.png
-    1. Graphics: gfx/Textures/Cathedral/Bank_Achteraanzicht (Autosaved).piko
     1. Graphics: gfx/Textures/Cathedral/Bank_Achteraanzicht.piko
     1. Graphics: gfx/Textures/Cathedral/Bank_Achteraanzicht.png
     1. Graphics: gfx/Textures/Cathedral/Kandelaar.frames
@@ -1178,6 +1179,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Humans/Frendor_Big.png
     1. Graphics: GFX/Actors/Single/Humans/Russel.png
     1. Graphics: GFX/Actors/Single/Humans/Russell.png
+    1. Graphics: GFX/BoxText/Portret/Jeroen P. Broks/General.png
     1. Graphics: GFX/BoxText/Portret/Rosetta/General.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/Marrilona.png
     1. Graphics: GFX/Combat/Fighters/Foe/Boss/MegaGhost.png
@@ -1254,20 +1256,20 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Settings
     1. Map Design: Kthura/CH2_Dungeon_SpirataWind/Data
     1. Map Design: Kthura/CH2_Dungeon_SpirataWind/Objects
+    1. Music: Music/Boss/BossIntro.ogg
     1. Map Design: Kthura/CH2_Dungeon_SpirataWind/Settings
     1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Data
     1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Objects
-    1. Music: Music/Boss/BossIntro.ogg
     1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Settings
     1. Map Design: Kthura/CH2_Town_Doubline/Data
     1. Map Design: Kthura/CH2_Town_Doubline/Objects
     1. Map Design: Kthura/CH2_Town_Doubline/Settings
     1. Map Design: Kthura/CH2_Town_Dreshka/Data
     1. Map Design: Kthura/CH2_Town_Dreshka/Objects
+    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Map Design: Kthura/CH2_Town_Dreshka/Settings
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
-    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
     1. Map Design: Kthura/CH3_Dungeon_Garden/Data
     1. Map Design: Kthura/CH3_Dungeon_Garden/Objects
@@ -1298,10 +1300,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH3_Town_Nostraburg/Settings
     1. Map Design: Kthura/CH4_Dungeon_ManaCave/Data
     1. Map Design: Kthura/CH4_Dungeon_ManaCave/Objects
+    1. Music: Music/Sys/Silence.ogg
     1. Map Design: Kthura/CH4_Dungeon_ManaCave/Settings
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Data
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Objects
-    1. Music: Music/Sys/Silence.ogg
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Settings
     1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Data
     1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Objects
@@ -1324,9 +1326,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/NGP_Dungeon_Quayaro/Data
     1. Map Design: Kthura/NGP_Dungeon_Quayaro/Objects
     1. Map Design: Kthura/NGP_Dungeon_Quayaro/Settings
-    1. Map Design: Kthura/NGP_HUB_HEROES/Data
-    1. Map Design: Kthura/NGP_HUB_HEROES/Objects
-    1. Map Design: Kthura/NGP_HUB_HEROES/Settings
+    1. Map Design: Kthura/NGP_HUB_HEROES/DATA
+    1. Map Design: Kthura/NGP_HUB_HEROES/OBJECTS
+    1. Map Design: Kthura/NGP_HUB_HEROES/SETTINGS
     1. Graphics: GFX/Chapters/1.png
     1. Graphics: GFX/Chapters/2.png
     1. Graphics: GFX/Chapters/3.png
@@ -1896,6 +1898,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_STARDOME
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_Z_NOSTRAMANTUMANSION
     1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
+    1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_CATHEDRAL
     1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_QUAYARO
     1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_HUB_HEROES
     1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
@@ -1948,6 +1951,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_STARDOME
     1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_Z_NOSTRAMANTUMANSION
     1. Scenario: Languages/English/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
+    1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_CATHEDRAL
     1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_QUAYARO
     1. Scenario: Languages/English/Scenario/MAPS/NGP_HUB_HEROES
     1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT

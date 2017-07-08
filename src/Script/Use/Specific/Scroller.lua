@@ -1,6 +1,6 @@
 --[[
   Scroller.lua
-  Version: 17.02.26
+  Version: 17.07.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -56,6 +56,26 @@ end
 function ScrollPos(tag)
    return scrollers[tag].down
 end   
+
+function ScrollBoundsCorrection(tag,py,r)
+    local y = py - scrollers[tag].down
+    if     y<0 then scrollers[tag].down = scrollers[tag].down - 5 
+    elseif y+math.abs(r or 0)>scrollers[tag].h then scrollers[tag].down = scrollers[tag].down + 5 end
+    -- DarkText(tag.."/"..py.."/"..sval(r).."/"..y.."/"..scrollers[tag].down.."/"..scrollers[tag].max,SW/2,SH/2,2,2,0,180,255) -- debug line
+end    
+
+function ScrollArea(tag,cx,cy,x,y,w,h)
+   local s=scrollers[tag]
+   -- --[[
+   if cx<s.x then return false end
+   if cx>s.x+s.w then return false end
+   if cy<s.y then return false end
+   if cy>s.y+s.h then return false end
+   --]]
+   local ty = (y - s.y)+s.down
+   -- CSay('ScrollArea:\n'..serialize('scroll',s).."\n"..cx.."/"..cy.."/"..x.."/"..y.."."..ty.."/"..w.."/"..h)
+   return cx>x and cx<x+w and cy>ty and cy<ty+h
+end
 
 function ScrollMove(tag,value)
    scrollers[tag].down = scrollers[tag].down + (value or 2)

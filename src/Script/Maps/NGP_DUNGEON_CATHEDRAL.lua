@@ -89,5 +89,5 @@ function Boss()
 end
 
 function NPC_SymphoNica()
-   ToHallHeroes('SymphNica','CATEDRAL')
+   ToHallHeroes('SymphoNica','CATHEDRAL')
 end   
