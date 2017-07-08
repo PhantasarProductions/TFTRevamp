@@ -305,6 +305,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Archmage.lua
     1. Script: Script/JINC/Foes/reg/BSpook.lua
     1. Script: Script/JINC/Foes/reg/Bandit.lua
+    1. Script: Script/JINC/Foes/reg/Banshee.lua
     1. Script: Script/JINC/Foes/reg/Bat.lua
     1. Script: Script/JINC/Foes/reg/Boar.lua
     1. Script: Script/JINC/Foes/reg/Boekenworm.lua
@@ -650,6 +651,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_EEL.lua
     1. Script: Script/JINC/IA/ITM_FISH.lua
     1. Script: Script/JINC/IA/ITM_FLAMEORB.lua
+    1. Script: Script/JINC/IA/ITM_FLAMEORBS.lua
     1. Script: Script/JINC/IA/ITM_HEALINGHERB.lua
     1. Script: Script/JINC/IA/ITM_HEALSHOWER.lua
     1. Script: Script/JINC/IA/ITM_HELLSTONE.lua
@@ -672,6 +674,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_MUTTON.lua
     1. Script: Script/JINC/IA/ITM_PANACEA.lua
     1. Script: Script/JINC/IA/ITM_PHOENIX.lua
+    1. Script: Script/JINC/IA/ITM_POCKETTSUNAMI.lua
     1. Script: Script/JINC/IA/ITM_POISONDART.lua
     1. Script: Script/JINC/IA/ITM_POTION.lua
     1. Script: Script/JINC/IA/ITM_POTIONS.lua
@@ -1018,7 +1021,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
-    1. Graphics: gfx/Combat/Fighters/Foe/Boss/Ghost Woman.png
+    1. Graphics: GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 2   .png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/GhostGirl.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png

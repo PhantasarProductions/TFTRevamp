@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 17.07.01
+  Version: 17.07.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -130,7 +130,7 @@ function SetUpRandomEncounters()
         local gs = Maps.GetData('Foes'..s)
         gst [ #gst + 1 ] = gs
     end
-    if newgameplus then gst[ #gst + 1 ] = 'Foes_NG+' end
+    if newgameplus then gst[ #gst + 1 ] = Maps.GetData('Foes_NG+') end
     for gs in each(gst) do
         local ga = mysplit(gs,";")
         for m in each(ga) do

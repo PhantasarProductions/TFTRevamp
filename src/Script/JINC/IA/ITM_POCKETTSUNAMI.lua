@@ -1,5 +1,5 @@
 --[[
-  Temptation.lua
+  ITM_POCKETTSUNAMI.lua
   Version: 17.07.08
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -34,31 +34,45 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- @IF IGNORE
-SpellAni = {}
--- @FI
+ret = {
+	["ABL_APCost"] = 50,
+	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 50,
+	["ADDCARD_Action_Number"] = 2,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack"] = 200,
+	["Attack_AccuracyRate"] = 100,
+	["Attack_AllowCritical"] = true,
+	["Attack_AttackStat"] = "Intelligence",
+	["Attack_DefenseStat"] = "Resistance",
+	["Attack_Element"] = "Water",
+	["Desc"] = "World of water, where you swim to the other side",
+	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 8000,
+	["ITM_Type"] = "Consumable",
+	["Rew_GainAP"] = 3,
+	["SpellAni"] = "Tsunami",
+	["Stance"] = "Cast",
+	["Target"] = "AF",
+	["Title"] = "Pocket Tsunami",
+	["Type"] = "Item",
+	["Voice"] = "Water",
+	["rew_GainSkill1"] = 25,
+	["rew_GainSkill2"] = 25,
+	["rew_GainSkill3"] = 25,
+	["rew_GainSkill4"] = 150,
+	["rew_GainSkill5"] = 25}
 
-function SpellAni.Temptation(ActG,ActT,TarG,TarT)
-  CSay('Actor: '..sval(ActG).."/"..sval(ActT))
-  local sx,sy = FighterCoords(ActG,ActT)
-  local count = 0
-  local hearts = {}
-  repeat
-     count = count + 1
-     if count==1 or (rand(1,20)==1 and count<500) then
-        hearts[#hearts+1] = { deg=rand(0,360), size=rand(10,30), cd=rand(25,250), rad = 0}
-     end
-     DrawScreen()
-     for h in each(hearts) do
-         QScale(h.size)
-         Image.LoadNew('TEMPTATION','GFX/Combat/SpellAni/Temptation/Heart.png'); Image.HotCenter('TEMPTATION')
-         Image.Show("TEMPTATION",sx+(sin(h.deg)*h.rad),sy+(cos(h.deg)*h.rad))         
-         h.rad = h.rad + 3
-         h.cd  = h.cd  - 1          
-     end
-     QScale()
-     ShowParty()
-     while #hearts>=1 and hearts[1].cd<=0 do table.remove(hearts,1) end
-     Flip()   
-  until #hearts==0
-end        
+return ret
+
+-- This file is an automatically generated file!
+
