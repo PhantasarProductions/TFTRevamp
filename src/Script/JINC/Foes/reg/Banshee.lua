@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sat 08 July 2017; 21:51:51
+-- File Generated: Sat 08 July 2017; 22:59:03
 
 
 local foe = {}
@@ -77,7 +77,7 @@ local foe = {}
 	foe["STSTART_Undead"] = true
 	foe["Desc"] = "All she can do is scream\46\10That\39s no good\46\46\46"
 	foe["HitBy"] = ""
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Reg\47Bashee\47"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Reg\47Banshee\47"
 	foe["Item Drop \49"] = "ITM_ANABOLINEA"
 	foe["Item Drop \50"] = "ITM_MAGICDUST"
 	foe["Item Steal \49"] = "ITM_ANABOLINEA"
@@ -280,6 +280,7 @@ local foe = {}
 	foe["RATE_ITM_EEL"] = 0
 	foe["RATE_ITM_FISH"] = 0
 	foe["RATE_ITM_FLAMEORB"] = 0
+	foe["RATE_ITM_FLAMEORBS"] = 0
 	foe["RATE_ITM_HEALINGHERB"] = 0
 	foe["RATE_ITM_HEALSHOWER"] = 0
 	foe["RATE_ITM_HELLSTONE"] = 0
@@ -302,6 +303,7 @@ local foe = {}
 	foe["RATE_ITM_MUTTON"] = 0
 	foe["RATE_ITM_PANACEA"] = 0
 	foe["RATE_ITM_PHOENIX"] = 0
+	foe["RATE_ITM_POCKETTSUNAMI"] = 0
 	foe["RATE_ITM_POISONDART"] = 0
 	foe["RATE_ITM_POTION"] = 0
 	foe["RATE_ITM_POTIONS"] = 0
@@ -603,6 +605,7 @@ local foe = {}
 	foe["TARGET_ITM_EEL"] = "Random"
 	foe["TARGET_ITM_FISH"] = "Random"
 	foe["TARGET_ITM_FLAMEORB"] = "Random"
+	foe["TARGET_ITM_FLAMEORBS"] = "Random"
 	foe["TARGET_ITM_HEALINGHERB"] = "Random"
 	foe["TARGET_ITM_HEALSHOWER"] = "Random"
 	foe["TARGET_ITM_HELLSTONE"] = "Random"
@@ -625,6 +628,7 @@ local foe = {}
 	foe["TARGET_ITM_MUTTON"] = "Random"
 	foe["TARGET_ITM_PANACEA"] = "Random"
 	foe["TARGET_ITM_PHOENIX"] = "Random"
+	foe["TARGET_ITM_POCKETTSUNAMI"] = "Random"
 	foe["TARGET_ITM_POISONDART"] = "Random"
 	foe["TARGET_ITM_POTION"] = "Random"
 	foe["TARGET_ITM_POTIONS"] = "Random"
