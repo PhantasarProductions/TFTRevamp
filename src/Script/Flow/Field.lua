@@ -125,8 +125,13 @@ end
 
 function SetUpRandomEncounters()
     monstertable = {}
-    for s=1,skill do
+    local gst = {}
+    for s=1,skill do    
         local gs = Maps.GetData('Foes'..s)
+        gst [ #gst + 1 ] = gs
+    end
+    if newgameplus then gst[ #gst + 1 ] = 'Foes_NG+' end
+    for gs in each(gst) do
         local ga = mysplit(gs,";")
         for m in each(ga) do
             local ma = mysplit(m,",")
