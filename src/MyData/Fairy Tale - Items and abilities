@@ -34825,8 +34825,8 @@ Rec: ITM_ICICLES
 	SpellAni = MultiFrost
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
-	Stance = Attack
-	Target = 1F
+	Stance = Cast
+	Target = AF
 	Title = Icicles
 	Type = Item
 	USE_Penalty = 0
