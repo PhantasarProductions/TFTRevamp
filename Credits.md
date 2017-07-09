@@ -375,6 +375,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_EXHAUST.lua
     1. Script: Script/JINC/IA/ABL_FOE_FATALPOISON.lua
     1. Script: Script/JINC/IA/ABL_FOE_FLAMEBITE.lua
+    1. Script: Script/JINC/IA/ABL_FOE_FLAMEONSELF.lua
     1. Script: Script/JINC/IA/ABL_FOE_FLAMESTRIKE.lua
     1. Script: Script/JINC/IA/ABL_FOE_FOOLGOLD.lua
     1. Script: Script/JINC/IA/ABL_FOE_GAIASMASH.lua
