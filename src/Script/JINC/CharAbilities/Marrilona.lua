@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.13
+version: 17.07.09
 ]]
 
 -- abl_hero_jake_2ps = {5},abl_hero_jake_3ps={25},abl_hero_jake_4ps={50},abl_hero_jake_berserk={10,5}
@@ -47,6 +47,8 @@ version: 17.06.13
 
 local fullversion = JCR6.Exists('ID/ID.Data.Full')==1
 local skill = Sys.Val(Var.C('%SKILL'))
+local newgameplus = Var.C("&NEWGAMEPLUS")=="TRUE"
+
 
 local r = {
                  ["1. Level 1"]  = { 
@@ -83,5 +85,7 @@ if fullversion then -- That's right Marrilona will not get her level #2 and leve
                                        abl_hero_marrilona_LetsHealEmAll = {[4]=({15,30,40})[skill]}
                      }                  
 end
+
+if newgameplus then r["3. Level 3"].abl_marrilona_lifeforce = {skill,skill*2,skill*4,skill*5,skill^2} end
              
 return r

@@ -1,5 +1,5 @@
 --[[
-  The Fairy Tale REVAMPED - Full.lua
+  ABL_FOE_DEVOUR.lua
   Version: 17.07.09
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -34,6 +34,39 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
+ret = {
+	["ABL_APCost"] = 1500,
+	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack_AccuracyRate"] = 100,
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Element"] = "None",
+	["Desc"] = "Drains all life if possible",
+	["EffectScript"] = "Drain",
+	["EffectScript_Arg"] = "75",
+	["Heal_StatPercent"] = "Intelligence",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_Field"] = true,
+	["ITM_Sellable"] = true,
+	["ITM_Type"] = "Consumable",
+	["Stance"] = "Cast",
+	["Target"] = "1F",
+	["Title"] = "Life Force",
+	["Type"] = "Ability",
+	["Voice"] = "Critical",
+	["rew_GainSkill1"] = 300,
+	["rew_GainSkill2"] = 300,
+	["rew_GainSkill3"] = 300,
+	["rew_GainSkill4"] = 300,
+	["rew_GainSkill5"] = 300}
 
+return ret
 
--- @USERAW /Volumes/Scyndi/Projects/Applications/BlitzMax/JCR6+/Kthura Map Editor/Scripts/Projects/The Fairy Tale REVAMPED.lua
+-- This file is an automatically generated file!
+

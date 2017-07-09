@@ -343,6 +343,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/RSpook.lua
     1. Script: Script/JINC/Foes/reg/ShadowShroom.lua
     1. Script: Script/JINC/Foes/reg/Shroom.lua
+    1. Script: Script/JINC/Foes/reg/Siren.lua
     1. Script: Script/JINC/Foes/reg/Skeleton.lua
     1. Script: Script/JINC/Foes/reg/Slime.lua
     1. Script: Script/JINC/Foes/reg/Snake.lua
@@ -363,6 +364,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_DEATHSPELL.lua
     1. Script: Script/JINC/IA/ABL_FOE_DEMON_SOUL_BREAKER.lua
     1. Script: Script/JINC/IA/ABL_FOE_DESPERATEATTACK.lua
+    1. Script: Script/JINC/IA/ABL_FOE_DEVOUR.lua
     1. Script: Script/JINC/IA/ABL_FOE_DISINTEGRATE.lua
     1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
     1. Script: Script/JINC/IA/ABL_FOE_ENEMYVITALIZE.lua
@@ -479,6 +481,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_SPEEDUP.lua
     1. Script: Script/JINC/IA/ABL_JUGGERNAUT_DONALDTRUMP.lua
     1. Script: Script/JINC/IA/ABL_JUGGERNAUT_MAY.lua
+    1. Script: Script/JINC/IA/ABL_MARRILONA_LIFEFORCE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_CURSE.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_DARKNESS.lua
     1. Script: Script/JINC/IA/ABL_MASTER_FANDALORA_DARKVISION.lua
@@ -1013,14 +1016,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/SerializeIntoSysVar.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 2   .png
