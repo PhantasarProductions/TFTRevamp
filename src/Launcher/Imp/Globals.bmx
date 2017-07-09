@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 17.02.25
+Version: 17.07.09
 End Rem
 Strict
 
@@ -32,7 +32,7 @@ Import tricky_units.Listfile
 Import maxgui.maxgui
 
 
-MKL_Version "The Fairy Tale - REVAMP - Globals.bmx","17.02.25"
+MKL_Version "The Fairy Tale - REVAMP - Globals.bmx","17.07.09"
 MKL_Lic     "The Fairy Tale - REVAMP - Globals.bmx","GNU General Public License 3"
 
 AppTitle = StripAll(AppFile)
@@ -88,7 +88,7 @@ Function GetID:StringMap()
 			Notify "Something went wrong with some internal settings. Please notify Jeroen to set this right!"
 			End
 		EndIf
-		Notify "Development version! You have be recognized"
+		Notify "Development version! You have been recognized"
 	ElseIf id.Value("Dev")="Yes"
 		Notify "Warning! This is a pre-alpha.~nGameJolt API and Anna not supported~nAnd the game may be buggy and incomplete"	
 	EndIf		
