@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.03
+version: 17.07.09
 ]]
 
 
@@ -47,6 +47,7 @@ function Dandor()
     Var.D("$COMBAT.ARENA","Forest.png")
     --Var.D("$COMBAT.STARTEVENT","MAP,DwarfBossStart_Jake")
     StartBoss("Berserk Dwarf","Dandor")    
+    WorldMap_Unlock('CH1FRENDOR')
 end
 
 function PostDandor()
