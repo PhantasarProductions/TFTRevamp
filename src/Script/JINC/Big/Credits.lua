@@ -93,46 +93,47 @@ ret = {
         ['00000488'] = { txt = 'Yannee\'s artist', r=0,g=180,b=255, y=mh+1160 },
         ['0000049C'] = { txt = 'anarres', r=0,g=180,b=255, y=mh+1180 },
         ['000004B0'] = { txt = 'crisg', r=0,g=180,b=255, y=mh+1200 },
-        ['000004C4'] = { txt = 'mystica', r=0,g=180,b=255, y=mh+1220 },
-        ['000004D8'] = { txt = 'yeKcim', r=0,g=180,b=255, y=mh+1240 },
-        ['00000500'] = { txt = 'Map Design', r=255,g=0,b=0, y=mh+1280 }, -- Map Design
-        ['00000514'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+1300 },
-        ['0000053C'] = { txt = 'Music', r=255,g=0,b=0, y=mh+1340 }, -- Music
-        ['00000550'] = { txt = '', r=0,g=180,b=255, y=mh+1360 },
-        ['00000564'] = { txt = 'Eric Matyas', r=0,g=180,b=255, y=mh+1380 },
-        ['00000578'] = { txt = 'Hung Kee Chan', r=0,g=180,b=255, y=mh+1400 },
-        ['0000058C'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+1420 },
-        ['000005A0'] = { txt = 'Kevin McLeod', r=0,g=180,b=255, y=mh+1440 },
-        ['000005B4'] = { txt = 'Matt McFarland', r=0,g=180,b=255, y=mh+1460 },
-        ['000005C8'] = { txt = 'Nihilore', r=0,g=180,b=255, y=mh+1480 },
-        ['000005DC'] = { txt = 'Spiedkiks', r=0,g=180,b=255, y=mh+1500 },
-        ['000005F0'] = { txt = 'W.K. Chan & Wouter Wershkull', r=0,g=180,b=255, y=mh+1520 },
-        ['00000604'] = { txt = 'Wicky77', r=0,g=180,b=255, y=mh+1540 },
-        ['00000618'] = { txt = 'Wicky77 & Wout66', r=0,g=180,b=255, y=mh+1560 },
-        ['0000062C'] = { txt = 'Widzy', r=0,g=180,b=255, y=mh+1580 },
-        ['00000654'] = { txt = 'Scenario', r=255,g=0,b=0, y=mh+1620 }, -- Scenario
-        ['00000668'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+1640 },
-        ['00000690'] = { txt = 'Script', r=255,g=0,b=0, y=mh+1680 }, -- Script
-        ['000006A4'] = { txt = '', r=0,g=180,b=255, y=mh+1700 },
-        ['000006B8'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+1720 },
-        ['0000071C'] = { txt = 'Voice Actors', r=255,g=0,b=0, y=mh+1820 }, -- Voice Acting
-        ['00000730'] = { txt = 'Jake - Wicky77', r=255,g=180,b=0, y=mh+1840 }, -- Voice actor
-        ['00000744'] = { txt = 'Marrilona - Pachelle', r=255,g=180,b=0, y=mh+1860 }, -- Voice actor
-        ['00000758'] = { txt = 'Dandor - Tricky', r=255,g=180,b=0, y=mh+1880 }, -- Voice actor
-        ['0000076C'] = { txt = 'Hando Stillor - Tricky', r=255,g=180,b=0, y=mh+1900 }, -- Voice actor
-        ['00000780'] = { txt = 'Master John - Wout66', r=255,g=180,b=0, y=mh+1920 }, -- Voice actor
-        ['00000794'] = { txt = 'Chief Werrington - Wout66', r=255,g=180,b=0, y=mh+1940 }, -- Voice actor
-        ['000007A8'] = { txt = 'Harry - Tricky', r=255,g=180,b=0, y=mh+1960 }, -- Voice actor
-        ['000007BC'] = { txt = 'Fandalora - Wout66', r=255,g=180,b=0, y=mh+1980 }, -- Voice actor
-        ['000007D0'] = { txt = 'Fairy Elder - Tricky', r=255,g=180,b=0, y=mh+2000 }, -- Voice actor
-        ['000007E4'] = { txt = 'Sandra - Linvala Kemellon', r=255,g=180,b=0, y=mh+2020 }, -- Voice actor
-        ['000007F8'] = { txt = 'Feenalaria - FOM', r=255,g=180,b=0, y=mh+2040 }, -- Voice actor
-        ['0000080C'] = { txt = 'Sasha Funda - FOM', r=255,g=180,b=0, y=mh+2060 }, -- Voice actor
-        ['00000820'] = { txt = 'Hando Stillor\'s father - HuKe24', r=255,g=180,b=0, y=mh+2080 }, -- Voice actor
-        ['00000834'] = { txt = 'Krandar - Tricky', r=255,g=180,b=0, y=mh+2100 }, -- Voice actor
-        ['00000848'] = { txt = 'Yannee - Pachelle', r=255,g=180,b=0, y=mh+2120 }, -- Voice actor
-        ['00000AB4'] = { txt = '(c) Copyright 2016-2017', r=255, g=180,b=0,y=mh+2740},
-        ['00000ACD'] = { txt = 'Jeroen Petrus Broks', r=255, g=180,b=0,y=mh+2765}
+        ['000004C4'] = { txt = 'ginkgo', r=0,g=180,b=255, y=mh+1220 },
+        ['000004D8'] = { txt = 'mystica', r=0,g=180,b=255, y=mh+1240 },
+        ['000004EC'] = { txt = 'yeKcim', r=0,g=180,b=255, y=mh+1260 },
+        ['00000514'] = { txt = 'Map Design', r=255,g=0,b=0, y=mh+1300 }, -- Map Design
+        ['00000528'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+1320 },
+        ['00000550'] = { txt = 'Music', r=255,g=0,b=0, y=mh+1360 }, -- Music
+        ['00000564'] = { txt = '', r=0,g=180,b=255, y=mh+1380 },
+        ['00000578'] = { txt = 'Eric Matyas', r=0,g=180,b=255, y=mh+1400 },
+        ['0000058C'] = { txt = 'Hung Kee Chan', r=0,g=180,b=255, y=mh+1420 },
+        ['000005A0'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+1440 },
+        ['000005B4'] = { txt = 'Kevin McLeod', r=0,g=180,b=255, y=mh+1460 },
+        ['000005C8'] = { txt = 'Matt McFarland', r=0,g=180,b=255, y=mh+1480 },
+        ['000005DC'] = { txt = 'Nihilore', r=0,g=180,b=255, y=mh+1500 },
+        ['000005F0'] = { txt = 'Spiedkiks', r=0,g=180,b=255, y=mh+1520 },
+        ['00000604'] = { txt = 'W.K. Chan & Wouter Wershkull', r=0,g=180,b=255, y=mh+1540 },
+        ['00000618'] = { txt = 'Wicky77', r=0,g=180,b=255, y=mh+1560 },
+        ['0000062C'] = { txt = 'Wicky77 & Wout66', r=0,g=180,b=255, y=mh+1580 },
+        ['00000640'] = { txt = 'Widzy', r=0,g=180,b=255, y=mh+1600 },
+        ['00000668'] = { txt = 'Scenario', r=255,g=0,b=0, y=mh+1640 }, -- Scenario
+        ['0000067C'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+1660 },
+        ['000006A4'] = { txt = 'Script', r=255,g=0,b=0, y=mh+1700 }, -- Script
+        ['000006B8'] = { txt = '', r=0,g=180,b=255, y=mh+1720 },
+        ['000006CC'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+1740 },
+        ['00000730'] = { txt = 'Voice Actors', r=255,g=0,b=0, y=mh+1840 }, -- Voice Acting
+        ['00000744'] = { txt = 'Jake - Wicky77', r=255,g=180,b=0, y=mh+1860 }, -- Voice actor
+        ['00000758'] = { txt = 'Marrilona - Pachelle', r=255,g=180,b=0, y=mh+1880 }, -- Voice actor
+        ['0000076C'] = { txt = 'Dandor - Tricky', r=255,g=180,b=0, y=mh+1900 }, -- Voice actor
+        ['00000780'] = { txt = 'Hando Stillor - Tricky', r=255,g=180,b=0, y=mh+1920 }, -- Voice actor
+        ['00000794'] = { txt = 'Master John - Wout66', r=255,g=180,b=0, y=mh+1940 }, -- Voice actor
+        ['000007A8'] = { txt = 'Chief Werrington - Wout66', r=255,g=180,b=0, y=mh+1960 }, -- Voice actor
+        ['000007BC'] = { txt = 'Harry - Tricky', r=255,g=180,b=0, y=mh+1980 }, -- Voice actor
+        ['000007D0'] = { txt = 'Fandalora - Wout66', r=255,g=180,b=0, y=mh+2000 }, -- Voice actor
+        ['000007E4'] = { txt = 'Fairy Elder - Tricky', r=255,g=180,b=0, y=mh+2020 }, -- Voice actor
+        ['000007F8'] = { txt = 'Sandra - Linvala Kemellon', r=255,g=180,b=0, y=mh+2040 }, -- Voice actor
+        ['0000080C'] = { txt = 'Feenalaria - FOM', r=255,g=180,b=0, y=mh+2060 }, -- Voice actor
+        ['00000820'] = { txt = 'Sasha Funda - FOM', r=255,g=180,b=0, y=mh+2080 }, -- Voice actor
+        ['00000834'] = { txt = 'Hando Stillor\'s father - HuKe24', r=255,g=180,b=0, y=mh+2100 }, -- Voice actor
+        ['00000848'] = { txt = 'Krandar - Tricky', r=255,g=180,b=0, y=mh+2120 }, -- Voice actor
+        ['0000085C'] = { txt = 'Yannee - Pachelle', r=255,g=180,b=0, y=mh+2140 }, -- Voice actor
+        ['00000AC8'] = { txt = '(c) Copyright 2016-2017', r=255, g=180,b=0,y=mh+2760},
+        ['00000AE1'] = { txt = 'Jeroen Petrus Broks', r=255, g=180,b=0,y=mh+2785}
 }
 
 return ret

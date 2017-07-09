@@ -311,6 +311,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Boekenworm.lua
     1. Script: Script/JINC/Foes/reg/Devil Monk From Hell.lua
     1. Script: Script/JINC/Foes/reg/DragonKeeper.lua
+    1. Script: Script/JINC/Foes/reg/FireElemental.lua
+    1. Script: Script/JINC/Foes/reg/FireGhoul.lua
     1. Script: Script/JINC/Foes/reg/FireHound.lua
     1. Script: Script/JINC/Foes/reg/Firefox.lua
     1. Script: Script/JINC/Foes/reg/Ghoul.lua
@@ -655,6 +657,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_CURSEDSPORES.lua
     1. Script: Script/JINC/IA/ITM_DEATHCUBE.lua
     1. Script: Script/JINC/IA/ITM_EEL.lua
+    1. Script: Script/JINC/IA/ITM_ELIXIR.lua
     1. Script: Script/JINC/IA/ITM_FISH.lua
     1. Script: Script/JINC/IA/ITM_FLAMEORB.lua
     1. Script: Script/JINC/IA/ITM_FLAMEORBS.lua
@@ -2864,6 +2867,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Combat/SpellAni/Trump/Sombrero.png
     1. Graphics: gfx/Combat/SpellAni/Trump/Wall.piko
     1. Graphics: gfx/Combat/SpellAni/Trump/Wall.png
+- ginkgo
+    1. Graphics: GFX/CoMbAt/Fighters/Foe/Reg/FireElemental.png
 - http://www.freesfx.co.uk
     1. Audio: Audio/SpellAni/Thunder/Spark.ogg
     1. Audio: Audio/SpellAni/Thunder/ThunderStrike.ogg
