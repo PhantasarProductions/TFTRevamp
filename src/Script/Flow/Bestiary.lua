@@ -1,6 +1,6 @@
 --[[
   Bestiary.lua
-  Version: 17.07.05
+  Version: 17.07.09
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -113,7 +113,19 @@ function MAIN_FLOW()
     local d=order[P]
     if oldP~=P then 
        oldP=P
-       Image.Load(d.data.Image,'BESTIMAGE')
+       if suffixed(d.data.Image,"/") then
+        local list = {}
+         CSay('Searching for random pics in: '..d.data.Image)
+         for file in iJCR6Dir(true) do
+           if prefixed(upper(file),upper(d.data.Image)) and suffixed(upper(file),".PNG") then
+              list[#list+1] = file
+              CSay("= Added: "..file)
+           end   
+         end
+         Image.Load(list[rand(1,#list)],"BESTIMAGE")         
+       else
+         Image.Load(d.data.Image,'BESTIMAGE')
+       end  
        Image.Hot('BESTIMAGE',Image.Width('BESTIMAGE'),0)
     end    
     local x = bw1+10

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.11
+version: 17.07.09
 ]]
 
 -- @USE /Script/Use/Specific/EndOfPrologue.lua
@@ -46,7 +46,7 @@ version: 17.03.11
 
 
 -- FandaZone
-function FandaZone()
+function FandaZone()   
    local fanda = Maps.Obj.Exists("NPC_FandaloraOutside")
    Maps.Obj.Obj('FandaEnter').Impassible=fanda
    Maps.Obj.Obj("FandaEnter").ForcePassible=1-fanda
@@ -247,6 +247,7 @@ function NPC_FandaloraOutside()
      Var.D("$WMCHAT","DANDORJOINED")
      WorldMap_Unlock("CH2WINDSPIRATA")
      Done("&DONE.PARTY.DANDORJOINED")
+     Maps.GoToLayer('town')
      FandaZone()
      Maps.GotoLayer("marrilona")
    else

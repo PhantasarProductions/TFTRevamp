@@ -1,6 +1,6 @@
 --[[
   Scroller.lua
-  Version: 17.07.08
+  Version: 17.07.09
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -72,7 +72,7 @@ function ScrollArea(tag,cx,cy,x,y,w,h)
    if cy<s.y then return false end
    if cy>s.y+s.h then return false end
    --]]
-   local ty = (y - s.y)+s.down
+   local ty = (y + s.y)-s.down
    -- CSay('ScrollArea:\n'..serialize('scroll',s).."\n"..cx.."/"..cy.."/"..x.."/"..y.."."..ty.."/"..w.."/"..h)
    return cx>x and cx<x+w and cy>ty and cy<ty+h
 end
