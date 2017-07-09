@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.07.08
+  Version: 17.07.09
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -288,6 +288,20 @@ function fflow.Execution()
       if not nextact.auto then myactor.stace='idle' end
    end
    -- Ability Card Addition
+   local streak=nextact.streak and rand(1,nextact.streak)==1
+   if streak then
+        local card2add = { group = nextact.group, tag=nextact.tag, letter=nextact.letter, auto=true }
+        card2add.nextact = {}
+        for f,i in pairs(nextact) do card2add.nextact[f]=i; CSay("Added to new card: "..f) end
+        --if act.ADDCARD_Action_Act~="Self" then card2add.nextact.act=act.ADDCARD_Action_Act end
+        --for ak=1,act.ADDCARD_Action_Number do
+            AddCard(card2add,1)
+            --chmsg(nextact.executor.tag,'Move Streaked') 
+            card2add.nextact.streak = nextact.streak + skill
+            card2add.streak = card2add.nextact.streak
+            SerialBoxText('COMBATLEARN',"AUTO_JAKE",'FLOW_COMBAT')            
+        --end
+   end
    if act.ADDCARD_Action_Number and (not nextact.auto) then
         local card2add = { group = nextact.group, tag=nextact.tag, letter=nextact.letter, auto=true }
         card2add.nextact = {}
