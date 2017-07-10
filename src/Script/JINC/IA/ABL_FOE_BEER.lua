@@ -1,5 +1,5 @@
 --[[
-  ABL_FOE_MASOSADO.lua
+  ABL_FOE_BEER.lua
   Version: 17.07.10
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -35,14 +35,19 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ABL_APCost"] = 125,
 	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Action_Interval"] = 50,
+	["ADDCARD_Action_Number"] = 1,
 	["ADDCARD_Char_Interval"] = 5,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["EffectScript"] = "MasoSado",
+	["BUFF_Accuracy"] = -900,
+	["BUFF_Evasion"] = -900,
+	["CauseParalysis"] = true,
+	["EffectScript"] = "Takeover",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -54,10 +59,11 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "Heal",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
-	["Title"] = "Masochism / Sadism",
-	["Type"] = "Item"}
+	["Title"] = "Take a beer!",
+	["Type"] = "Ability"}
 
 return ret
 

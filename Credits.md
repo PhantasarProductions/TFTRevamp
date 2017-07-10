@@ -332,6 +332,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/InvisibleMan.lua
     1. Script: Script/JINC/Foes/reg/Kobold.lua
     1. Script: Script/JINC/Foes/reg/Lemming.lua
+    1. Script: Script/JINC/Foes/reg/Leprechaun.lua
     1. Script: Script/JINC/Foes/reg/Lich.lua
     1. Script: Script/JINC/Foes/reg/Lost Soul.lua
     1. Script: Script/JINC/Foes/reg/MagSkeleton.lua
@@ -364,6 +365,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
     1. Script: Script/JINC/IA/AAA_GUARD.lua
     1. Script: Script/JINC/IA/ABL_FOE_BACTERIATUSK.lua
+    1. Script: Script/JINC/IA/ABL_FOE_BEER.lua
     1. Script: Script/JINC/IA/ABL_FOE_CRUSH.lua
     1. Script: Script/JINC/IA/ABL_FOE_CURSEDWIND.lua
     1. Script: Script/JINC/IA/ABL_FOE_DEATHSPELL.lua
@@ -1269,9 +1271,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Textures/Spirata/Spirata.piko
     1. Graphics: GFX/Textures/Spirata/Spirata.png
     1. Game identification data: ID/Test
-    1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/Data
-    1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/Objects
-    1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/Settings
+    1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/DATA
+    1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/OBJECTS
+    1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/SETTINGS
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/DATA
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/OBJECTS
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/SETTINGS
@@ -2882,6 +2884,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Audio: Audio/SpellAni/Thunder/ThunderStrike.ogg
 - mystica
     1. Graphics: gfx/combat/fighters/foe/mimic/mystica-Treasure-chest.png
+- snoopingasusual
+    1. Graphics: gfx/combat/fighters/foe/reg/Leprechaun.png
 - yeKcim
     1. Graphics: GFX/Combat/FighterS/Foe/Reg/Mimic/yeKcim-chests-1.png
 - Voice actors
