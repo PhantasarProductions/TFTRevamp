@@ -158,7 +158,7 @@ function SpellScript.TwoEdge(tar,exe)
     return true
 end    
 
-function MasoSado(tar,exe)
+function SpellScript.MasoSado(tar,exe)
     local thp = RPG.Points(tar,'HP')
     local ehp = RPG.Points(exe,'HP')
     local to1,tomore
