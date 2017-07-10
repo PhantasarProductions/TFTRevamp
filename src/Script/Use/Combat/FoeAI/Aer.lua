@@ -48,7 +48,7 @@ function FoeAI.Aer(tag)
     if rand(1,9)>skill^2 then return FoeAI.default(tag) end
     nextact =   {
                            executor = { group = 'Foe', tag=foe.tag },
-                           act = 'ITM_ANABOLIA', 
+                           act = 'ITM_ANABOLINEA', 
                            flow='Execution', 
                            group='Foe',
                            targetidx=1
