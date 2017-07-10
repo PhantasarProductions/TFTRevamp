@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.09
+version: 17.07.10
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "ITM_CARROT",

@@ -1,6 +1,6 @@
 --[[
   Ghost Woman.lua
-  Version: 17.07.08
+  Version: 17.07.10
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sat 08 July 2017; 01:23:21
+-- File Generated: Mon 10 July 2017; 07:50:51
 
 
 local foe = {}
@@ -82,9 +82,11 @@ local foe = {}
 	foe["RATE_AAA_GUARD"] = 0
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
 	foe["RATE_ABL_FOE_CRUSH"] = 0
+	foe["RATE_ABL_FOE_CURSEDWIND"] = 0
 	foe["RATE_ABL_FOE_DEATHSPELL"] = 0
 	foe["RATE_ABL_FOE_DEMON_SOUL_BREAKER"] = 0
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
+	foe["RATE_ABL_FOE_DEVOUR"] = 0
 	foe["RATE_ABL_FOE_DISINTEGRATE"] = 0
 	foe["RATE_ABL_FOE_DISTRACT"] = 0
 	foe["RATE_ABL_FOE_ENEMYVITALIZE"] = 0
@@ -95,6 +97,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_EXHAUST"] = 0
 	foe["RATE_ABL_FOE_FATALPOISON"] = 0
 	foe["RATE_ABL_FOE_FLAMEBITE"] = 0
+	foe["RATE_ABL_FOE_FLAMEONSELF"] = 0
 	foe["RATE_ABL_FOE_FLAMESTRIKE"] = 0
 	foe["RATE_ABL_FOE_FOOLGOLD"] = 0
 	foe["RATE_ABL_FOE_GAIASMASH"] = 0
@@ -201,6 +204,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_SPEEDUP"] = 0
 	foe["RATE_ABL_JUGGERNAUT_DONALDTRUMP"] = 0
 	foe["RATE_ABL_JUGGERNAUT_MAY"] = 0
+	foe["RATE_ABL_MARRILONA_LIFEFORCE"] = 0
 	foe["RATE_ABL_MASTER_FANDALORA_CURSE"] = 0
 	foe["RATE_ABL_MASTER_FANDALORA_DARKNESS"] = 0
 	foe["RATE_ABL_MASTER_FANDALORA_DARKVISION"] = 0
@@ -228,6 +232,7 @@ local foe = {}
 	foe["RATE_ABL_MASTER_MIDAS_HARDFORTHEMONEY"] = 0
 	foe["RATE_ABL_MASTER_MIDAS_STEALMONEY"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_BACKSTAB"] = 0
+	foe["RATE_ABL_MASTER_RUBINE_FASTDRAW"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_FOLLOWME"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_INVADE"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_PICKPOCKET"] = 0
@@ -256,6 +261,7 @@ local foe = {}
 	foe["RATE_FOE_WATCHMOVE"] = 0
 	foe["RATE_HYDRA_ONTHOOFD"] = 0
 	foe["RATE_ICEBLAST"] = 0
+	foe["RATE_ITEM_MEDICINES"] = 0
 	foe["RATE_ITM_AMBROSIA"] = 0
 	foe["RATE_ITM_ANABOLINEA"] = 0
 	foe["RATE_ITM_ANTIDOTE"] = 0
@@ -271,8 +277,10 @@ local foe = {}
 	foe["RATE_ITM_CURSEDSPORES"] = 0
 	foe["RATE_ITM_DEATHCUBE"] = 0
 	foe["RATE_ITM_EEL"] = 0
+	foe["RATE_ITM_ELIXIR"] = 0
 	foe["RATE_ITM_FISH"] = 0
 	foe["RATE_ITM_FLAMEORB"] = 0
+	foe["RATE_ITM_FLAMEORBS"] = 0
 	foe["RATE_ITM_HEALINGHERB"] = 0
 	foe["RATE_ITM_HEALSHOWER"] = 0
 	foe["RATE_ITM_HELLSTONE"] = 0
@@ -295,6 +303,7 @@ local foe = {}
 	foe["RATE_ITM_MUTTON"] = 0
 	foe["RATE_ITM_PANACEA"] = 0
 	foe["RATE_ITM_PHOENIX"] = 0
+	foe["RATE_ITM_POCKETTSUNAMI"] = 0
 	foe["RATE_ITM_POISONDART"] = 0
 	foe["RATE_ITM_POTION"] = 0
 	foe["RATE_ITM_POTIONS"] = 0
@@ -404,9 +413,11 @@ local foe = {}
 	foe["TARGET_AAA_GUARD"] = "Random"
 	foe["TARGET_ABL_FOE_BACTERIATUSK"] = "Random"
 	foe["TARGET_ABL_FOE_CRUSH"] = "Random"
+	foe["TARGET_ABL_FOE_CURSEDWIND"] = "Random"
 	foe["TARGET_ABL_FOE_DEATHSPELL"] = "Random"
 	foe["TARGET_ABL_FOE_DEMON_SOUL_BREAKER"] = "Random"
 	foe["TARGET_ABL_FOE_DESPERATEATTACK"] = "Random"
+	foe["TARGET_ABL_FOE_DEVOUR"] = "Random"
 	foe["TARGET_ABL_FOE_DISINTEGRATE"] = "Random"
 	foe["TARGET_ABL_FOE_DISTRACT"] = "Random"
 	foe["TARGET_ABL_FOE_ENEMYVITALIZE"] = "Random"
@@ -417,6 +428,7 @@ local foe = {}
 	foe["TARGET_ABL_FOE_EXHAUST"] = "Random"
 	foe["TARGET_ABL_FOE_FATALPOISON"] = "Random"
 	foe["TARGET_ABL_FOE_FLAMEBITE"] = "Random"
+	foe["TARGET_ABL_FOE_FLAMEONSELF"] = "Random"
 	foe["TARGET_ABL_FOE_FLAMESTRIKE"] = "Random"
 	foe["TARGET_ABL_FOE_FOOLGOLD"] = "Random"
 	foe["TARGET_ABL_FOE_GAIASMASH"] = "Random"
@@ -523,6 +535,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_SPEEDUP"] = "Random"
 	foe["TARGET_ABL_JUGGERNAUT_DONALDTRUMP"] = "Random"
 	foe["TARGET_ABL_JUGGERNAUT_MAY"] = "Random"
+	foe["TARGET_ABL_MARRILONA_LIFEFORCE"] = "Random"
 	foe["TARGET_ABL_MASTER_FANDALORA_CURSE"] = "Random"
 	foe["TARGET_ABL_MASTER_FANDALORA_DARKNESS"] = "Random"
 	foe["TARGET_ABL_MASTER_FANDALORA_DARKVISION"] = "Random"
@@ -550,6 +563,7 @@ local foe = {}
 	foe["TARGET_ABL_MASTER_MIDAS_HARDFORTHEMONEY"] = "Random"
 	foe["TARGET_ABL_MASTER_MIDAS_STEALMONEY"] = "Random"
 	foe["TARGET_ABL_MASTER_RUBINE_BACKSTAB"] = "Random"
+	foe["TARGET_ABL_MASTER_RUBINE_FASTDRAW"] = "Random"
 	foe["TARGET_ABL_MASTER_RUBINE_FOLLOWME"] = "Random"
 	foe["TARGET_ABL_MASTER_RUBINE_INVADE"] = "Random"
 	foe["TARGET_ABL_MASTER_RUBINE_PICKPOCKET"] = "Random"
@@ -578,6 +592,7 @@ local foe = {}
 	foe["TARGET_FOE_WATCHMOVE"] = "Random"
 	foe["TARGET_HYDRA_ONTHOOFD"] = "Random"
 	foe["TARGET_ICEBLAST"] = "Random"
+	foe["TARGET_ITEM_MEDICINES"] = "Random"
 	foe["TARGET_ITM_AMBROSIA"] = "Random"
 	foe["TARGET_ITM_ANABOLINEA"] = "Random"
 	foe["TARGET_ITM_ANTIDOTE"] = "Random"
@@ -593,8 +608,10 @@ local foe = {}
 	foe["TARGET_ITM_CURSEDSPORES"] = "Random"
 	foe["TARGET_ITM_DEATHCUBE"] = "Random"
 	foe["TARGET_ITM_EEL"] = "Random"
+	foe["TARGET_ITM_ELIXIR"] = "Random"
 	foe["TARGET_ITM_FISH"] = "Random"
 	foe["TARGET_ITM_FLAMEORB"] = "Random"
+	foe["TARGET_ITM_FLAMEORBS"] = "Random"
 	foe["TARGET_ITM_HEALINGHERB"] = "Random"
 	foe["TARGET_ITM_HEALSHOWER"] = "Random"
 	foe["TARGET_ITM_HELLSTONE"] = "Random"
@@ -617,6 +634,7 @@ local foe = {}
 	foe["TARGET_ITM_MUTTON"] = "Random"
 	foe["TARGET_ITM_PANACEA"] = "Random"
 	foe["TARGET_ITM_PHOENIX"] = "Random"
+	foe["TARGET_ITM_POCKETTSUNAMI"] = "Random"
 	foe["TARGET_ITM_POISONDART"] = "Random"
 	foe["TARGET_ITM_POTION"] = "Random"
 	foe["TARGET_ITM_POTIONS"] = "Random"

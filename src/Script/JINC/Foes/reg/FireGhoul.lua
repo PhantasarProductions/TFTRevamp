@@ -1,6 +1,6 @@
 --[[
   FireGhoul.lua
-  Version: 17.07.09
+  Version: 17.07.10
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sun 09 July 2017; 12:54:03
+-- File Generated: Mon 10 July 2017; 07:29:50
 
 
 local foe = {}

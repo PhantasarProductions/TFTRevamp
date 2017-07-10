@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_ENEMYVITALIZE.lua
-  Version: 17.07.09
+  Version: 17.07.10
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
