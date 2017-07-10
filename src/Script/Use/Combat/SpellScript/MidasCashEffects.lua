@@ -52,7 +52,15 @@ function SpellScript.HardForTheMoney(foetag,exe)
      return true
 end
 
-
+function SpellScript.StealMoney(foetag,exe)
+    local foe = fighterbytag[foetag]
+    if not foe.data.Cash then return false end
+    if foe.data.Cash==0 then return false end
+    charmsg(foetag,foe.data.Cash.." shilders stolen",160,255,0)
+    inc('%CASH',foe.data.Cash)
+    foe.data.Cash=0
+    return true
+end    
 
 
 -- @IF INGORE
