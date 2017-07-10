@@ -360,6 +360,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Wolf.lua
     1. Script: Script/JINC/Foes/reg/Zombie.lua
     1. Script: Script/JINC/Foes/reg/Zombie2.lua
+    1. Script: Script/JINC/Foes/reg/ZombieDoctor.lua
     1. Script: Script/JINC/Foes/reg/ghostgirl.lua
     1. Script: Script/JINC/Foes/reg/litworm.lua
     1. Script: Script/JINC/IA/AAA_ATTACK.lua
@@ -419,6 +420,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_FOE_VENOMBITE.lua
     1. Script: Script/JINC/IA/ABL_FOE_VENOMSTAB.lua
     1. Script: Script/JINC/IA/ABL_FOE_VIRUSSTAB.lua
+    1. Script: Script/JINC/IA/ABL_FOE_VITALIZE_OPPONENT.lua
     1. Script: Script/JINC/IA/ABL_FOE_WELCOMEINHELL.lua
     1. Script: Script/JINC/IA/ABL_FOLLOWUP_FIKKIE.lua
     1. Script: Script/JINC/IA/ABL_GG_DEATHSCREAM.lua
@@ -663,6 +665,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_CHERRY.lua
     1. Script: Script/JINC/IA/ITM_CURSEDSPORES.lua
     1. Script: Script/JINC/IA/ITM_DEATHCUBE.lua
+    1. Script: Script/JINC/IA/ITM_DRAGONFIRE.lua
     1. Script: Script/JINC/IA/ITM_EEL.lua
     1. Script: Script/JINC/IA/ITM_ELIXIR.lua
     1. Script: Script/JINC/IA/ITM_FISH.lua
@@ -685,6 +688,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ITM_MANDRAKE.lua
     1. Script: Script/JINC/IA/ITM_MANDRAKES.lua
     1. Script: Script/JINC/IA/ITM_MEDICINE.lua
+    1. Script: Script/JINC/IA/ITM_MEDICINES.lua
     1. Script: Script/JINC/IA/ITM_MIRROR.lua
     1. Script: Script/JINC/IA/ITM_MULTIPHOENIX.lua
     1. Script: Script/JINC/IA/ITM_MUTTON.lua
@@ -1028,14 +1032,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/SerializeIntoSysVar.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 2   .png
@@ -1274,9 +1278,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/DATA
     1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/OBJECTS
     1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/SETTINGS
-    1. Map Design: Kthura/CH2_Dungeon_DragonCastle/DATA
-    1. Map Design: Kthura/CH2_Dungeon_DragonCastle/OBJECTS
-    1. Map Design: Kthura/CH2_Dungeon_DragonCastle/SETTINGS
+    1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Data
+    1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Objects
+    1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Settings
     1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Data
     1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Objects
     1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Settings
