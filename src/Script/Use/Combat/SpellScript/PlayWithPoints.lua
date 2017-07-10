@@ -1,6 +1,6 @@
 --[[
   PlayWithPoints.lua
-  Version: 17.06.28
+  Version: 17.07.10
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -157,6 +157,17 @@ function SpellScript.TwoEdge(tar,exe)
     RPG.Points(tar,empty).Have = e[empty] -- RPG.Points(tar,empty).Maximum
     return true
 end    
+
+function MasoSado(tar,exe)
+    local thp = RPG.Points(tar,'HP')
+    local ehp = RPG.Points(exe,'HP')
+    local to1,tomore
+    if thp.Have>ehp.Have then to1=ehp tomore=thp else to1=thp tomore=ehp end
+    local dmg=to.Have-1
+    thp.Inc(-dmg)
+    ehp.Inc(-dmg)
+    return true 
+end
    
 -- @IF INGORE
 return SpellScript 
