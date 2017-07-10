@@ -62,7 +62,8 @@ if fullversion then -- That's right Hando Stillor will not get his level #2 and 
                        abl_hero_handostillor_revive = {[2] = 12*skill }, -- 4
                        abl_hero_handostillor_hasparonvitalization = {[2]=15*skill}, -- 5
                        abl_hero_handostillor_twinkle = {[2]=6*skill},              -- 6
-                       abl_hero_handostillor_kneelbeforeme = {16,80}               -- 7
+                       abl_hero_handostillor_kneelbeforeme = {16,80},               -- 7
+                       abl_hero_marrilona_handostillor_vitality = {14*skill,14*skill} -- 8 
                      }  
    r["3. Level 3"] = { abl_hero_handostillor_pray = { 5*skill, math.ceil(3^skill) }, -- 1
                        abl_hero_handostillor_smite = {(skill^skill)+(2*skill)},                    -- 2

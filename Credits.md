@@ -345,6 +345,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/Pyroguin.lua
     1. Script: Script/JINC/Foes/reg/RSpook.lua
     1. Script: Script/JINC/Foes/reg/Rogue.lua
+    1. Script: Script/JINC/Foes/reg/Shade.lua
     1. Script: Script/JINC/Foes/reg/ShadowShroom.lua
     1. Script: Script/JINC/Foes/reg/Shroom.lua
     1. Script: Script/JINC/Foes/reg/Siren.lua
@@ -458,6 +459,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_3PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_4PS.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_BERSERK.lua
+    1. Script: Script/JINC/IA/ABL_HERO_JAKE_DEATHSTRIKE.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_EARTHSLICE.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_FLAMEBLADE.lua
     1. Script: Script/JINC/IA/ABL_HERO_JAKE_HEALBLADE.lua
@@ -1032,14 +1034,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/Blends.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/valstr.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/ClearTable.lua
     1. Script: Script/Libs/SerializeIntoSysVar.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/Blends.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 2   .png

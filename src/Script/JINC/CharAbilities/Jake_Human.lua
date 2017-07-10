@@ -32,11 +32,13 @@
   
  **********************************************
  
-version: 17.06.27
+version: 17.07.10
 ]]
 
 local fullversion = JCR6.Exists('ID/ID.Data.Full')==1
 local skill = Sys.Val(Var.C("%SKILL"))
+local newgameplus = Var.C("&NEWGAMEPLUS")=="TRUE"
+
 
 local r = {
                  ["1. Sword"]  = {abl_hero_jake_2ps = {5},abl_hero_jake_3ps={20},abl_hero_jake_4ps={40},abl_hero_jake_berserk={10,5},ABL_HERO_JAKE_SHIFT_FAIRY={[2]=99,[3]=99,[4]=99,[5]=99}},
@@ -47,6 +49,8 @@ local r = {
           }
           
 if not fullversion then r["1. Sword"].abl_hero_jake_berserk=nil end
+
+if newgameplus then r["2. Hybrid"].abl_hero_jake_deathstrike = {skill*5,skill,skill,skill,skill} end
           
 return r
 
