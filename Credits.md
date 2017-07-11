@@ -1199,6 +1199,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Actors/Single/Elves/GedrioFulla.png
     1. Graphics: GFX/Actors/Single/Elves/GedrioFulla_BackSide.png
     1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
+    1. Graphics: GFX/Actors/Single/Fairies/Cherry.piko
+    1. Graphics: GFX/Actors/Single/Fairies/Cherry.png
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.piko
     1. Graphics: GFX/Actors/Single/Fairies/Dreshka.png
     1. Graphics: GFX/Actors/Single/Fairies/Feenalaria.piko
@@ -1287,22 +1289,22 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Data
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Objects
     1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Settings
+    1. Music: Music/Boss/BossIntro.ogg
     1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Data
     1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Objects
     1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Settings
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Data
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Objects
-    1. Music: Music/Boss/BossIntro.ogg
     1. Map Design: Kthura/CH2_Dungeon_SpirataWater/Settings
     1. Map Design: Kthura/CH2_Dungeon_SpirataWind/Data
     1. Map Design: Kthura/CH2_Dungeon_SpirataWind/Objects
     1. Map Design: Kthura/CH2_Dungeon_SpirataWind/Settings
     1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Data
     1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Objects
+    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Map Design: Kthura/CH2_Dungeon_VandarRoad/Settings
     1. Map Design: Kthura/CH2_Town_Doubline/Data
     1. Map Design: Kthura/CH2_Town_Doubline/Objects
-    1. Music: Music/Special Boss/AnnoyingBoy.ogg
     1. Map Design: Kthura/CH2_Town_Doubline/Settings
     1. Map Design: Kthura/CH2_Town_Dreshka/Data
     1. Map Design: Kthura/CH2_Town_Dreshka/Objects
@@ -1335,10 +1337,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH3_Town_Grombo/Objects
     1. Map Design: Kthura/CH3_Town_Grombo/Settings
     1. Map Design: Kthura/CH3_Town_Nostraburg/Data
+    1. Music: Music/Sys/Silence.ogg
     1. Map Design: Kthura/CH3_Town_Nostraburg/Objects
     1. Map Design: Kthura/CH3_Town_Nostraburg/Settings
     1. Map Design: Kthura/CH4_Dungeon_ManaCave/Data
-    1. Music: Music/Sys/Silence.ogg
     1. Map Design: Kthura/CH4_Dungeon_ManaCave/Objects
     1. Map Design: Kthura/CH4_Dungeon_ManaCave/Settings
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Data
@@ -1359,6 +1361,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Data
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Objects
     1. Map Design: Kthura/CH4_Town_NostraburgNight/Settings
+    1. Map Design: Kthura/NGP_AQUAANTRUM/Data
+    1. Map Design: Kthura/NGP_AQUAANTRUM/Objects
+    1. Map Design: Kthura/NGP_AQUAANTRUM/Settings
     1. Map Design: Kthura/NGP_Dungeon_Cathedral/Data
     1. Map Design: Kthura/NGP_Dungeon_Cathedral/Objects
     1. Map Design: Kthura/NGP_Dungeon_Cathedral/Settings
@@ -1622,6 +1627,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Idle.png
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.Frames
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.png
+    1. Graphics: GFX/Actors/Bundled/Player/Marrilona.NS (Autosaved).piko
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.NS.piko
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.North.frames
     1. Graphics: GFX/Actors/Bundled/Player/Marrilona.North.png
@@ -2022,7 +2028,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Music: Music/Scenario/We Got Trouble.ogg
     1. Music: Music/Town/Enchanted Valley.ogg
     1. Music: Music/Hub/Indore.ogg
+    1. Music: Music/Original4Alias/Ghost Story.ogg
     1. Music: Music/Original4Alias/Heroic Age.ogg
+    1. Music: Music/Original4Alias/Tenebrous Brothers Carnival - Mermaid.ogg
     1. Music: Music/RandomEncounter/Killers.ogg
     1. Music: Music/Special Boss/Hall Of The Mountain King.ogg
     1. Music: Music/SpecialBoss/Living Voyage.ogg

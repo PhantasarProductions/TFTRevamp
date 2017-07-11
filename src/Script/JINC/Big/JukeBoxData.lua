@@ -195,4 +195,10 @@ return {
                    Artist = "W.K. Chan & Wouter Wershkull"},
      ["Funky Fairy"] = {
                    File = "Music/Town/Funky Fairy.ogg",
-                   Artist = "W.K. Chan & Wouter Wershkull"}}
+                   Artist = "W.K. Chan & Wouter Wershkull"},
+     ["Tenebrous Brothers Carnival - Mermaid"] = {
+                   File = "Music/Original4Alias/Tenebrous Brothers Carnival - Mermaid.ogg",
+                   Artist = "Kevin McLeod"},
+     ["Ghost Story"] = {
+                   File = "Music/Original4Alias/Ghost Story.ogg",
+                   Artist = "Kevin McLeod"}}

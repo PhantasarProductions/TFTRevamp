@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.24
+version: 17.07.11
 ]]
 function NPC_INNKEEPER()
   Inn()
@@ -62,4 +62,11 @@ end
 function GALE_OnLoad()
     ZA_Enter('ToQuendor',function() GoToLayer('quendor',"Start") end)
     ZA_Enter("ToTown",function() GoToLayer('town',"Einde") end)
+    if not(newgameplus and CVV('&DONE.GROMBO.SPOKEN.QUENDOR')) then
+       Maps.GoToLayer('town')
+       Maps.Obj.Kill('NPC_Cherry')
+       CSay('Cherry is not here!')
+    else
+       CSay('She is here. Cherry should be there for you!')  
+    end   
 end
