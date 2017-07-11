@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Tue 11 July 2017; 10:08:48
+-- File Generated: Tue 11 July 2017; 10:47:29
 
 
 local foe = {}
@@ -67,10 +67,10 @@ local foe = {}
 	foe["HitBy"] = ""
 	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Reg\47Midget\46png"
 	foe["Item Drop \49"] = "ITM_POTION"
-	foe["Item Drop \50"] = "ITM_AMBROSIA"
-	foe["Item Steal \49"] = "ITM_AMBROSIA"
-	foe["Item Steal \50"] = "ITM_AMBROSIA"
-	foe["Item Steal \51"] = "ITM_AMBROSIA"
+	foe["Item Drop \50"] = "ITM_POTIONVITALITY"
+	foe["Item Steal \49"] = "EQP_MARRILONA_AR\57"
+	foe["Item Steal \50"] = "EQP_JAKE_WP\57"
+	foe["Item Steal \51"] = "ITM_POTIONVITALITY"
 	foe["Name"] = "Midget"
 	foe["RATE_AAA_ATTACK"] = 5
 	foe["RATE_AAA_GUARD"] = 8
@@ -308,6 +308,7 @@ local foe = {}
 	foe["RATE_ITM_POISONDART"] = 0
 	foe["RATE_ITM_POTION"] = 0
 	foe["RATE_ITM_POTIONS"] = 0
+	foe["RATE_ITM_POTIONVITALITY"] = 0
 	foe["RATE_ITM_PURELITERATURE"] = 0
 	foe["RATE_ITM_PURIFICATIONSHOWER"] = 0
 	foe["RATE_ITM_SALVE"] = 0
@@ -646,6 +647,7 @@ local foe = {}
 	foe["TARGET_ITM_POISONDART"] = "Random"
 	foe["TARGET_ITM_POTION"] = "Random"
 	foe["TARGET_ITM_POTIONS"] = "Random"
+	foe["TARGET_ITM_POTIONVITALITY"] = "Random"
 	foe["TARGET_ITM_PURELITERATURE"] = "Random"
 	foe["TARGET_ITM_PURIFICATIONSHOWER"] = "Random"
 	foe["TARGET_ITM_SALVE"] = "Random"
@@ -756,7 +758,7 @@ local foe = {}
 	foe["Oversoul Steal \49"] = false
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
-	foe["Cash"] = 0
+	foe["Cash"] = 1
 	foe["ER_Darkness"] = 999
 	foe["ER_Earth"] = 200
 	foe["ER_Flame"] = 100
@@ -765,11 +767,11 @@ local foe = {}
 	foe["ER_Lightning"] = -180
 	foe["ER_Water"] = 100
 	foe["ER_Wind"] = -180
-	foe["Rate Drop \49"] = 0
-	foe["Rate Drop \50"] = 0
-	foe["Rate Steal \49"] = 0
-	foe["Rate Steal \50"] = 0
-	foe["Rate Steal \51"] = 0
+	foe["Rate Drop \49"] = 25
+	foe["Rate Drop \50"] = 5
+	foe["Rate Steal \49"] = 1
+	foe["Rate Steal \50"] = 1
+	foe["Rate Steal \51"] = 100
 	foe["SR_Confusion"] = 100
 	foe["SR_Curse"] = 100
 	foe["SR_Death"] = 100
