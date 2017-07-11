@@ -1037,14 +1037,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/SerializeIntoSysVar.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 2   .png
@@ -1053,6 +1053,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Kobold.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
+    1. Graphics: gfx/Combat/Fighters/Foe/Reg/Midget.png
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/SpiritGirl.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Reg/SpiritGirl.png
     1. Graphics: gfx/Combat/Fighters/Foe/Sealed/Gendrabroe.png
@@ -1337,8 +1338,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH3_Town_Nostraburg/Objects
     1. Map Design: Kthura/CH3_Town_Nostraburg/Settings
     1. Map Design: Kthura/CH4_Dungeon_ManaCave/Data
-    1. Map Design: Kthura/CH4_Dungeon_ManaCave/Objects
     1. Music: Music/Sys/Silence.ogg
+    1. Map Design: Kthura/CH4_Dungeon_ManaCave/Objects
     1. Map Design: Kthura/CH4_Dungeon_ManaCave/Settings
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Data
     1. Map Design: Kthura/CH4_Dungeon_ManaRoad/Objects
