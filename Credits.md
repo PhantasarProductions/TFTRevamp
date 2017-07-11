@@ -338,6 +338,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/Foes/reg/MagSkeleton.lua
     1. Script: Script/JINC/Foes/reg/Medusa.lua
     1. Script: Script/JINC/Foes/reg/Mermaid.lua
+    1. Script: Script/JINC/Foes/reg/Midget.lua
     1. Script: Script/JINC/Foes/reg/Mimic.lua
     1. Script: Script/JINC/Foes/reg/MonsterGuy.lua
     1. Script: Script/JINC/Foes/reg/Nemesis.lua
@@ -476,6 +477,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ETERNALFLAME.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FIREBLAST.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_FLAME.lua
+    1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HANDOSTILLOR_VITALITY.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HEAL.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HURRICANE.lua
     1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ICEBLAST.lua
@@ -1034,14 +1036,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Script: Script/Libs/QuickJCR6.lua
     1. Script: Script/Libs/Quick String Routines.lua
     1. Script: Script/Libs/A few mathematical functions.lua
-    1. Script: Script/Libs/SerializeIntoSysVar.lua
-    1. Script: Script/Libs/tablecontains.lua
-    1. Script: Script/Libs/ClearTable.lua
-    1. Script: Script/Libs/mysplit.lua
-    1. Script: Script/Libs/join.lua
-    1. Script: Script/Libs/DarkText.lua
-    1. Script: Script/Libs/valstr.lua
     1. Script: Script/Libs/Blends.lua
+    1. Script: Script/Libs/tablecontains.lua
+    1. Script: Script/Libs/valstr.lua
+    1. Script: Script/Libs/DarkText.lua
+    1. Script: Script/Libs/join.lua
+    1. Script: Script/Libs/mysplit.lua
+    1. Script: Script/Libs/ClearTable.lua
+    1. Script: Script/Libs/SerializeIntoSysVar.lua
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
     1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
     1. Graphics: GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 2   .png
@@ -1306,9 +1308,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Data
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Objects
     1. Map Design: Kthura/CH2_Town_Iskarderiu/Settings
-    1. Map Design: Kthura/CH3_Dungeon_Garden/Data
-    1. Map Design: Kthura/CH3_Dungeon_Garden/Objects
-    1. Map Design: Kthura/CH3_Dungeon_Garden/Settings
+    1. Map Design: Kthura/CH3_Dungeon_Garden/DATA
+    1. Map Design: Kthura/CH3_Dungeon_Garden/OBJECTS
+    1. Map Design: Kthura/CH3_Dungeon_Garden/SETTINGS
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Data
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Objects
     1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Settings

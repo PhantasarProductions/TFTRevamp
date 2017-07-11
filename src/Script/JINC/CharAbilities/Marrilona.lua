@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.09
+version: 17.07.11
 ]]
 
 -- abl_hero_jake_2ps = {5},abl_hero_jake_3ps={25},abl_hero_jake_4ps={50},abl_hero_jake_berserk={10,5}

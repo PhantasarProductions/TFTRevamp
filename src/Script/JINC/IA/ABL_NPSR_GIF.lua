@@ -1,6 +1,6 @@
 --[[
   ABL_NPSR_GIF.lua
-  Version: 17.07.10
+  Version: 17.07.11
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

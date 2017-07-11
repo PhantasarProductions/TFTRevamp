@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.06
+version: 17.07.11
 ]]
 
 local fullversion = JCR6.Exists('ID/ID.Data.Full')==1
