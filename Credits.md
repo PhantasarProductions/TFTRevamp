@@ -12,6 +12,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 
 - Aeris
 	- This file was explicitly contributed for the usage in this game and may therefore not be extracted from this game.
+		1. Graphics: GFX/Big_Char/Dandor.png -alias- GFX/OUTTAKES/Dandor.png
+		1. Graphics: GFX/Big_Char/Hando Stillor.png -alias- GFX/OUTTAKES/Hando Stillor.png
+		1. Graphics: GFX/Big_Char/Jake.png -alias- GFX/OUTTAKES/Jake.png
 		1. Graphics: GFX/Big_Char/JakeMarrilona.GIF
 		1. Graphics: GFX/Big_Char/JakeMarrilona.png
 		1. Graphics: GFX/Big_Char/JakeMarrilona.xcf
@@ -29,19 +32,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Big_Char/Marrilona_King.png
 		1. Graphics: GFX/Big_Char/Marrilona_King.xcf
 		1. Graphics: GFX/Big_Char/Marrilona_Mike.piko
+		1. Graphics: GFX/Big_Char/Marrilona_Mike.png -alias- GFX/OUTTAKES/Marrilona.png
 		1. Graphics: GFX/Big_Char/Marrilona_NewYear.png
 		1. Graphics: GFX/Big_Char/Marrilona_Valentine.png
 		1. Graphics: GFX/Big_Char/Negatief_Marrilona.Png
 		1. Graphics: GFX/BoxText/Portret/Dandor/Cursed.png
 		1. Graphics: GFX/BoxText/Portret/Dandor/General.png
 		1. Graphics: GFX/BoxText/Portret/Dandor/General.xcf
-		1. Graphics: GFX/Boxtext/Portret/Feenalaria/Angry.png
-		1. Graphics: GFX/Boxtext/Portret/Feenalaria/Blush.png
-		1. Graphics: GFX/Boxtext/Portret/Feenalaria/General.png
-		1. Graphics: GFX/Boxtext/Portret/Feenalaria/JustSmile.png
-		1. Graphics: GFX/Boxtext/Portret/Feenalaria/NoEmo.png
-		1. Graphics: GFX/Boxtext/Portret/Feenalaria/Scared.png
-		1. Graphics: GFX/Boxtext/Portret/Feenalaria/Think.png
 		1. Graphics: GFX/BoxText/Portret/Hando Stillor/General.png
 		1. Graphics: GFX/BoxText/Portret/Hando Stillor/General.xcf
 		1. Graphics: GFX/BoxText/Portret/Jake & Marrilona/What.piko
@@ -52,12 +49,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/BoxText/Portret/Jake/Blush_Fairy.png
 		1. Graphics: GFX/BoxText/Portret/Jake/General.png
 		1. Graphics: GFX/BoxText/Portret/Jake/General.xcf
+		1. Graphics: GFX/BoxText/Portret/Jake/General_Fairy.png -alias- GFX/Boxtext/Portret/Jake_Fairy/General.png
 		1. Graphics: GFX/BoxText/Portret/Jake/Jake.piko
 		1. Graphics: GFX/BoxText/Portret/Jake/NoEmo.png
 		1. Graphics: GFX/BoxText/Portret/Jake/NoEmo_Fairy.png
 		1. Graphics: GFX/BoxText/Portret/Jake/Smile.png
 		1. Graphics: GFX/BoxText/Portret/Jake/Smile_Fairy.png
-		1. Graphics: GFX/BoxText/Portret/Jake/General_Fairy.png -alias- GFX/Boxtext/Portret/Jake_Fairy/General.png
 		1. Graphics: GFX/BoxText/Portret/Marrilona/All.png
 		1. Graphics: GFX/BoxText/Portret/Marrilona/Angry.png
 		1. Graphics: GFX/BoxText/Portret/Marrilona/Blown.png
@@ -74,6 +71,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/BoxText/Portret/Marrilona/Think.png
 		1. Graphics: GFX/BoxText/Portret/Marrilona/Wedding.xcf
 		1. Graphics: GFX/BoxText/Portret/Marrilona/Wet.png
+		1. Graphics: GFX/Boxtext/Portret/Feenalaria/Angry.png
+		1. Graphics: GFX/Boxtext/Portret/Feenalaria/Blush.png
+		1. Graphics: GFX/Boxtext/Portret/Feenalaria/General.png
+		1. Graphics: GFX/Boxtext/Portret/Feenalaria/JustSmile.png
+		1. Graphics: GFX/Boxtext/Portret/Feenalaria/NoEmo.png
+		1. Graphics: GFX/Boxtext/Portret/Feenalaria/Scared.png
+		1. Graphics: GFX/Boxtext/Portret/Feenalaria/Think.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Aer.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Aqua.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Dwarf.png
@@ -90,10 +94,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Eyes/Jake.png
 		1. Graphics: GFX/Eyes/Marrilona.piko
 		1. Graphics: GFX/Eyes/Marrilona.png
-		1. Graphics: GFX/Big_Char/Dandor.png -alias- GFX/OUTTAKES/Dandor.png
-		1. Graphics: GFX/Big_Char/Hando Stillor.png -alias- GFX/OUTTAKES/Hando Stillor.png
-		1. Graphics: GFX/Big_Char/Jake.png -alias- GFX/OUTTAKES/Jake.png
-		1. Graphics: GFX/Big_Char/Marrilona_Mike.png -alias- GFX/OUTTAKES/Marrilona.png
 - Alexander
 	- This file is under a Creative Commons Attribution license.
 		1. Audio: Audio/Combat/Ready.ogg
@@ -107,6 +107,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/BoxText/Portret/Chief Werrington/General.png
 		1. Graphics: GFX/BoxText/Portret/Chief Werrington/Smile.png
 		1. Graphics: GFX/BoxText/Portret/Dreshka/General.png
+		1. Graphics: GFX/BoxText/Portret/Fairy Elder/Angry.png -alias- GFX/BoxText/Portret/Nostramantu/Angry.png
+		1. Graphics: GFX/BoxText/Portret/Fairy Elder/General.png -alias- GFX/BoxText/Portret/Nostramantu/General.png
 		1. Graphics: GFX/BoxText/Portret/Fandalora/General.png
 		1. Graphics: GFX/BoxText/Portret/Fandalora/NoEmo.png
 		1. Graphics: GFX/BoxText/Portret/Gedrio Fulla/General.png
@@ -120,9 +122,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/BoxText/Portret/Krandar/VeelTeGroot.png
 		1. Graphics: GFX/BoxText/Portret/Krandar/Worried.png
 		1. Graphics: GFX/BoxText/Portret/Marata/General.png
-		1. Graphics: GFX/BoxText/Portret/Fairy Elder/Angry.png -alias- GFX/BoxText/Portret/Nostramantu/Angry.png
 		1. Graphics: GFX/BoxText/Portret/Nostramantu/EvilLaugh.png
-		1. Graphics: GFX/BoxText/Portret/Fairy Elder/General.png -alias- GFX/BoxText/Portret/Nostramantu/General.png
 		1. Graphics: GFX/BoxText/Portret/Nostramantu/Nostramantu.piko
 		1. Graphics: GFX/BoxText/Portret/Sandra/General.png
 		1. Graphics: GFX/BoxText/Portret/Sasha Funda/General.png
@@ -161,13 +161,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Grwol.png
 - Eric Matyas
 	- This song was composed and created by Eric Matyas. It may be used freely in free and commercial projects as long as you properly credit Eric Matyas for his work. You can find the full version of his license terms on his own  website: http://soundimage.org/sample-page/
+		1. Music: Music/Boss/NewGame+.ogg -alias- Music/Original4Alias/Tower Defense.ogg
 		1. Music: Music/Dungeon/Dafty Places (Looping).ogg
 		1. Music: Music/Dungeon/Invasion-of-the-Giant-Disco-Ants_Looping.ogg
 		1. Music: Music/Dungeon/Magic-Clock-Shop_Looping.ogg
 		1. Music: Music/Dungeon/Moonlit-Secrets_Looping.ogg
 		1. Music: Music/Dungeon/Sewer-Monsters-Town-Hall-Meeting_Looping.ogg
 		1. Music: Music/Game Over/Going-Different-Ways.ogg
-		1. Music: Music/Boss/NewGame+.ogg -alias- Music/Original4Alias/Tower Defense.ogg
 		1. Music: Music/RandomEncounter/Defending The Princess.ogg
 		1. Music: Music/RandomEncounter/Fantasy Forest Battle.ogg
 		1. Music: Music/RandomEncounter/RPG-Battle-Climax_v001.ogg
@@ -182,6 +182,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - GR-Sites
 	- Free stuff from unknown authors. Free to use, and that is all we know. I cannot rule out the possibility a copyright holder wants this removed.
 		1. Audio: Audio/Dungeon/FallingDown.ogg
+		1. Graphics: gfx/Worldmap/back.png
+		1. Graphics: gfx/Worldmap/rock001.jpg
 		1. Graphics: gfx/textures/Cathedral/Floor.png
 		1. Graphics: gfx/textures/Cathedral/Untitled.png
 		1. Graphics: gfx/textures/Cathedral/W32.png
@@ -195,8 +197,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: gfx/textures/Water/water.png
 		1. Graphics: gfx/textures/wood/muur.png
 		1. Graphics: gfx/textures/wood/vloer.png
-		1. Graphics: gfx/Worldmap/back.png
-		1. Graphics: gfx/Worldmap/rock001.jpg
 - Helm42
 	- This entry is in the public domain and free of all restrictions.
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/FireFox.png
@@ -224,25 +224,25 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Libs/A few mathematical functions.lua
 		1. Script: Script/Libs/Append.lua
 		1. Script: Script/Libs/Blends.lua
-		1. Script: Script/Libs/bool2int.lua
+		1. Script: Script/Libs/CVV.lua
 		1. Script: Script/Libs/ClearTable.lua
 		1. Script: Script/Libs/Colors.lua
 		1. Script: Script/Libs/Console.lua
 		1. Script: Script/Libs/Coords2Rotation.lua
-		1. Script: Script/Libs/CVV.lua
 		1. Script: Script/Libs/DarkText.lua
 		1. Script: Script/Libs/Debug.lua
-		1. Script: Script/Libs/jinclude.lua
-		1. Script: Script/Libs/join.lua
 		1. Script: Script/Libs/KeyCodes_BlitzMax.lua
 		1. Script: Script/Libs/LAURA II/Kthura.lua
-		1. Script: Script/Libs/mysplit.lua
 		1. Script: Script/Libs/Quick String Routines.lua
 		1. Script: Script/Libs/QuickImage.lua
 		1. Script: Script/Libs/QuickJCR6.lua
 		1. Script: Script/Libs/RPGSTAT_Iterator.lua
 		1. Script: Script/Libs/SerializeIntoSysVar.lua
 		1. Script: Script/Libs/ShowSerialize.lua
+		1. Script: Script/Libs/bool2int.lua
+		1. Script: Script/Libs/jinclude.lua
+		1. Script: Script/Libs/join.lua
+		1. Script: Script/Libs/mysplit.lua
 		1. Script: Script/Libs/tablecontains.lua
 		1. Script: Script/Libs/valstr.lua
 	- I created this logo using www.cooltext.com    This logo is specifically made for use in this game and may therefore NOT be extracted from this JCR file or be used for your own purposes.
@@ -268,6 +268,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Audio: Audio/Combat/CardSlide.ogg
 		1. Audio: Audio/Party/Level Up.ogg
 		1. Audio: Audio/Party/Level Up.wav
+		1. General Data: GFX/Combat/StatusChanges/Disease/Rode Kruis
+		1. General Data: gfx/Textures/Town/Elves/Bench
 		1. Graphics: GFX/Achievements/Check.png
 		1. Graphics: GFX/Actors/Single/Anna/Anna Monk Female Dwarf.png
 		1. Graphics: GFX/Actors/Single/Anna/Anna Monk Female Elf.png
@@ -277,33 +279,23 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Algemeen/CharPointer.png
 		1. Graphics: GFX/Algemeen/Earth.png
 		1. Graphics: GFX/Algemeen/Next.png
-		1. Graphics: GFX/Algemeen/pointer.png
 		1. Graphics: GFX/Algemeen/Prev.png
 		1. Graphics: GFX/Algemeen/Sterretjes.alpha.png
 		1. Graphics: GFX/Algemeen/Sterretjes.png
+		1. Graphics: GFX/Algemeen/pointer.png
+		1. Graphics: GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 1   .png -alias- gfx/Combat/Fighters/Foe/Reg/GhostGirl.png
+		1. Graphics: GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 3   .png -alias- gfx/Combat/Fighters/Foe/Reg/SpiritGirl.png
 		1. Graphics: GFX/Combat/Cards/Backside.piko
 		1. Graphics: GFX/Combat/Cards/Backside.png
-		1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
-		1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
-		1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
-		1. Graphics: gfx/Combat/Fighters/Foe/Boss/Ghost Woman.png -alias- GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 2   .png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/BSpook.png
-		1. Graphics: GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 1   .png -alias- gfx/Combat/Fighters/Foe/Reg/GhostGirl.png
-		1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
-		1. Graphics: gfx/Combat/Fighters/Foe/Reg/Kobold.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Lemming.png
-		1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
-		1. Graphics: gfx/Combat/Fighters/Foe/Reg/Midget.png
+		1. Graphics: GFX/Combat/Fighters/Foe/Reg/RSpook.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Rat.piko
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Rat.png
-		1. Graphics: GFX/Combat/Fighters/Foe/Reg/RSpook.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Slime.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Slime_Base.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Snake.piko
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Snake.png
-		1. Graphics: gfx/Combat/Fighters/Foe/Reg/SpiritGirl.piko
-		1. Graphics: GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 3   .png -alias- gfx/Combat/Fighters/Foe/Reg/SpiritGirl.png
-		1. Graphics: gfx/Combat/Fighters/Foe/Sealed/Gendrabroe.png
 		1. Graphics: GFX/Combat/RENC/Gauge.piko
 		1. Graphics: GFX/Combat/RENC/Gauge.png
 		1. Graphics: GFX/Combat/SpellAni/Flame/Flame.png
@@ -313,21 +305,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/SpellAni/Thunder/Lightning.hot
 		1. Graphics: GFX/Combat/SpellAni/Thunder/Lightning.png
 		1. Graphics: GFX/Combat/SpellAni/Thunder/Spark.png
-		1. General Data: GFX/Combat/StatusChanges/Disease/Rode Kruis
 		1. Graphics: GFX/Combat/StatusChanges/Disease/Rode Kruis.png
 		1. Graphics: GFX/Combat/StatusChanges/Paralysis/Bliksem.png
 		1. Graphics: GFX/Combat/StatusChanges/Sleep/Z.png
 		1. Graphics: GFX/Combat/Sys/Collision.png
-		1. Graphics: gfx/Effects/Darkness II.png
-		1. Graphics: gfx/Effects/Darkness.hot
-		1. Graphics: gfx/Effects/Darkness.png
 		1. Graphics: GFX/Equipment/Acc.png
 		1. Graphics: GFX/Equipment/Armor.png
 		1. Graphics: GFX/Equipment/Equipment.piko
 		1. Graphics: GFX/Equipment/WP_Dandor.png
 		1. Graphics: GFX/Equipment/WP_HandoStillor.png
-		1. Graphics: GFX/Equipment/WP_Marrilona.png
 		1. Graphics: GFX/Equipment/WP_Jake_Fairy.png -alias- GFX/Equipment/WP_Jake_Human.png -alias- GFX/Equipment/WP_Krandar.png -alias- GFX/Equipment/WP_Nostramantu_Human.png
+		1. Graphics: GFX/Equipment/WP_Marrilona.png
 		1. Graphics: GFX/JoyPad/Button.piko
 		1. Graphics: GFX/JoyPad/Push01.png
 		1. Graphics: GFX/JoyPad/Push02.png
@@ -397,65 +385,20 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Textures/AlphabetTiles/YurgonTile_X.png
 		1. Graphics: GFX/Textures/AlphabetTiles/YurgonTile_Y.png
 		1. Graphics: GFX/Textures/AlphabetTiles/YurgonTile_Z.png
-		1. Graphics: gfx/Textures/blops/Blop1.png
-		1. Graphics: gfx/Textures/blops/Blop2.png
-		1. Graphics: gfx/Textures/blops/Blop3.png
-		1. Graphics: gfx/Textures/blops/Blop4.png
-		1. Graphics: gfx/Textures/blops/Blop5.png
-		1. Graphics: gfx/Textures/blops/Blop6.png
-		1. Graphics: gfx/Textures/Blops2/Blop1.png
-		1. Graphics: gfx/Textures/Blops2/Blop2.png
-		1. Graphics: gfx/Textures/Blops2/Blop3.png
-		1. Graphics: gfx/Textures/Blops2/Blop4.png
-		1. Graphics: gfx/Textures/Blops2/Blop5.png
 		1. Graphics: GFX/Textures/Bookcase/Boekenkast.piko
 		1. Graphics: GFX/Textures/Bookcase/Boekenkast.png
-		1. Graphics: gfx/Textures/Cathedral/Bank_Achteraanzicht.piko
-		1. Graphics: gfx/Textures/Cathedral/Bank_Achteraanzicht.png
-		1. Graphics: gfx/Textures/Cathedral/Kandelaar.frames
-		1. Graphics: gfx/Textures/Cathedral/Kandelaar.png
-		1. Graphics: gfx/Textures/Cathedral/LijnTekening Bank Zijaanzicht.piko
-		1. Graphics: gfx/Textures/Cathedral/LijnTekening Bank Zijaanzicht.png
-		1. Graphics: gfx/Textures/Cathedral/Wijwaterbasin.piko
-		1. Graphics: gfx/Textures/Cathedral/Wijwaterbasin.png
-		1. Graphics: gfx/Textures/Cathedral/Window.png
-		1. Graphics: gfx/Textures/Cathedral/Window_lv.png
-		1. Graphics: gfx/Textures/Cathedral/Window_rv.png
 		1. Graphics: GFX/Textures/Demo/Barrier.piko
 		1. Graphics: GFX/Textures/Demo/Barrier.png
 		1. Graphics: GFX/Textures/Deur/Deur Hout 64x64.png
 		1. Graphics: GFX/Textures/Deur/Deur Hout 96x96.png
-		1. Graphics: gfx/Textures/EarthPuzzle/ArrowPlates.piko
-		1. Graphics: gfx/Textures/EarthPuzzle/AR_DN.png
-		1. Graphics: gfx/Textures/EarthPuzzle/AR_LF.png
-		1. Graphics: gfx/Textures/EarthPuzzle/AR_RT.png
-		1. Graphics: gfx/Textures/EarthPuzzle/AR_UP.png
-		1. Graphics: gfx/Textures/EarthPuzzle/cracked.piko
-		1. Graphics: gfx/Textures/EarthPuzzle/cracked.png
-		1. Graphics: gfx/Textures/EarthPuzzle/cracked.xcf
-		1. Graphics: gfx/Textures/EarthPuzzle/Pyramid.piko
-		1. Graphics: gfx/Textures/EarthPuzzle/Pyramid.png
 		1. Graphics: GFX/Textures/Effects/North-Hole.png
 		1. Graphics: GFX/Textures/General Shapes/Circle.png
 		1. Graphics: GFX/Textures/General Shapes/Square.png
 		1. Graphics: GFX/Textures/General Shapes/VLNW_Triangle.png
 		1. Graphics: GFX/Textures/General Shapes/VLSW_Triangle.png
 		1. Graphics: GFX/Textures/Graf/Grafsteen.png
-		1. Graphics: gfx/Textures/HoleTexture/HoleTexture.png
 		1. Graphics: GFX/Textures/Kast/Pottenkast.png
-		1. Graphics: gfx/Textures/Keuken/Messenset.png
 		1. Graphics: GFX/Textures/Marble/Deur.png
-		1. Graphics: gfx/Textures/Mine/Rails/EW.png
-		1. Graphics: gfx/Textures/Mine/Rails/EW2.png
-		1. Graphics: gfx/Textures/Mine/Rails/NE.PNG
-		1. Graphics: gfx/Textures/Mine/Rails/NE2.PNG
-		1. Graphics: gfx/Textures/Mine/Rails/NW.png
-		1. Graphics: gfx/Textures/Mine/Rails/NW2.png
-		1. Graphics: gfx/Textures/Mine/Rails/NZ.png
-		1. Graphics: gfx/Textures/Mine/Rails/NZ2.png
-		1. Graphics: gfx/Textures/Mine/Rails/SE.png
-		1. Graphics: gfx/Textures/Mine/Rails/SW.png
-		1. Graphics: gfx/Textures/Mine/Woodbars.png
 		1. Graphics: GFX/Textures/Muur Toorts/Brandend.frames
 		1. Graphics: GFX/Textures/Muur Toorts/Brandend.png
 		1. Graphics: GFX/Textures/Muur Toorts/Uit.png
@@ -477,9 +420,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Textures/Path Of Magic/PureExit.png
 		1. Graphics: GFX/Textures/Path Of Magic/ShadedExit.hot
 		1. Graphics: GFX/Textures/Path Of Magic/ShadedExit.png
-		1. Graphics: gfx/Textures/Plasma/TiledPlasma.png
-		1. Graphics: gfx/Textures/Random/AshFloor.piko
-		1. Graphics: gfx/Textures/Random/AshFloor.png
 		1. Graphics: GFX/Textures/Seal/Seal.Frames
 		1. Graphics: GFX/Textures/Seal/Seal.png
 		1. Graphics: GFX/Textures/Shapes/Cirkel in een cirkel.png
@@ -492,17 +432,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Textures/Shapes/Kruis Boven.png
 		1. Graphics: GFX/Textures/Shapes/Kruis Onder.png
 		1. Graphics: GFX/Textures/Shapes/Kruis.png
-		1. Graphics: gfx/Textures/Shapes/Mine/I.png
-		1. Graphics: gfx/Textures/Shapes/Mine/II.png
-		1. Graphics: gfx/Textures/Shapes/Mine/III.png
-		1. Graphics: gfx/Textures/Shapes/Mine/IV.png
-		1. Graphics: gfx/Textures/Shapes/Mine/IX.png
-		1. Graphics: gfx/Textures/Shapes/Mine/Shapes.piko
-		1. Graphics: gfx/Textures/Shapes/Mine/V.png
-		1. Graphics: gfx/Textures/Shapes/Mine/VI.png
-		1. Graphics: gfx/Textures/Shapes/Mine/VII.png
-		1. Graphics: gfx/Textures/Shapes/Mine/VIII.png
-		1. Graphics: gfx/Textures/Shapes/Mine/X.png
 		1. Graphics: GFX/Textures/Shapes/Rechthoek Horizontaal.png
 		1. Graphics: GFX/Textures/Shapes/Rechthoek Verticaal.png
 		1. Graphics: GFX/Textures/Shapes/Ruit.png
@@ -520,12 +449,85 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Textures/Signs/Wand.png
 		1. Graphics: GFX/Textures/Signs/Weapon Shop.piko
 		1. Graphics: GFX/Textures/Signs/Weapon Shop.png
+		1. Graphics: GFX/Textures/Stairs/Down.png
+		1. Graphics: GFX/Textures/Stairs/Up.png
+		1. Graphics: GFX/Textures/Swords/Combined.png
+		1. Graphics: GFX/Textures/Swords/Left 2 Right.png
+		1. Graphics: GFX/Textures/Swords/Right 2 Left.png
+		1. Graphics: GFX/Textures/Swords/Swords.piko
+		1. Graphics: GFX/World/Dot.png
+		1. Graphics: GFX/World/UNTITLED.LBM
+		1. Graphics: GFX/World/UNTITLED.PCX
+		1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
+		1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
+		1. Graphics: gfx/Combat/Fighters/Foe/Boss/Ghost Woman.png -alias- GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 2   .png
+		1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+		1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
+		1. Graphics: gfx/Combat/Fighters/Foe/Reg/Kobold.png
+		1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
+		1. Graphics: gfx/Combat/Fighters/Foe/Reg/Midget.png
+		1. Graphics: gfx/Combat/Fighters/Foe/Reg/SpiritGirl.piko
+		1. Graphics: gfx/Combat/Fighters/Foe/Sealed/Gendrabroe.png
+		1. Graphics: gfx/Effects/Darkness II.png
+		1. Graphics: gfx/Effects/Darkness.hot
+		1. Graphics: gfx/Effects/Darkness.png
+		1. Graphics: gfx/Textures/Blops2/Blop1.png
+		1. Graphics: gfx/Textures/Blops2/Blop2.png
+		1. Graphics: gfx/Textures/Blops2/Blop3.png
+		1. Graphics: gfx/Textures/Blops2/Blop4.png
+		1. Graphics: gfx/Textures/Blops2/Blop5.png
+		1. Graphics: gfx/Textures/Cathedral/Bank_Achteraanzicht.piko
+		1. Graphics: gfx/Textures/Cathedral/Bank_Achteraanzicht.png
+		1. Graphics: gfx/Textures/Cathedral/Kandelaar.frames
+		1. Graphics: gfx/Textures/Cathedral/Kandelaar.png
+		1. Graphics: gfx/Textures/Cathedral/LijnTekening Bank Zijaanzicht.piko
+		1. Graphics: gfx/Textures/Cathedral/LijnTekening Bank Zijaanzicht.png
+		1. Graphics: gfx/Textures/Cathedral/Wijwaterbasin.piko
+		1. Graphics: gfx/Textures/Cathedral/Wijwaterbasin.png
+		1. Graphics: gfx/Textures/Cathedral/Window.png
+		1. Graphics: gfx/Textures/Cathedral/Window_lv.png
+		1. Graphics: gfx/Textures/Cathedral/Window_rv.png
+		1. Graphics: gfx/Textures/EarthPuzzle/AR_DN.png
+		1. Graphics: gfx/Textures/EarthPuzzle/AR_LF.png
+		1. Graphics: gfx/Textures/EarthPuzzle/AR_RT.png
+		1. Graphics: gfx/Textures/EarthPuzzle/AR_UP.png
+		1. Graphics: gfx/Textures/EarthPuzzle/ArrowPlates.piko
+		1. Graphics: gfx/Textures/EarthPuzzle/Pyramid.piko
+		1. Graphics: gfx/Textures/EarthPuzzle/Pyramid.png
+		1. Graphics: gfx/Textures/EarthPuzzle/cracked.piko
+		1. Graphics: gfx/Textures/EarthPuzzle/cracked.png
+		1. Graphics: gfx/Textures/EarthPuzzle/cracked.xcf
+		1. Graphics: gfx/Textures/HoleTexture/HoleTexture.png
+		1. Graphics: gfx/Textures/Keuken/Messenset.png
+		1. Graphics: gfx/Textures/Mine/Rails/EW.png
+		1. Graphics: gfx/Textures/Mine/Rails/EW2.png
+		1. Graphics: gfx/Textures/Mine/Rails/NE.PNG
+		1. Graphics: gfx/Textures/Mine/Rails/NE2.PNG
+		1. Graphics: gfx/Textures/Mine/Rails/NW.png
+		1. Graphics: gfx/Textures/Mine/Rails/NW2.png
+		1. Graphics: gfx/Textures/Mine/Rails/NZ.png
+		1. Graphics: gfx/Textures/Mine/Rails/NZ2.png
+		1. Graphics: gfx/Textures/Mine/Rails/SE.png
+		1. Graphics: gfx/Textures/Mine/Rails/SW.png
+		1. Graphics: gfx/Textures/Mine/Woodbars.png
+		1. Graphics: gfx/Textures/Plasma/TiledPlasma.png
+		1. Graphics: gfx/Textures/Random/AshFloor.piko
+		1. Graphics: gfx/Textures/Random/AshFloor.png
+		1. Graphics: gfx/Textures/Shapes/Mine/I.png
+		1. Graphics: gfx/Textures/Shapes/Mine/II.png
+		1. Graphics: gfx/Textures/Shapes/Mine/III.png
+		1. Graphics: gfx/Textures/Shapes/Mine/IV.png
+		1. Graphics: gfx/Textures/Shapes/Mine/IX.png
+		1. Graphics: gfx/Textures/Shapes/Mine/Shapes.piko
+		1. Graphics: gfx/Textures/Shapes/Mine/V.png
+		1. Graphics: gfx/Textures/Shapes/Mine/VI.png
+		1. Graphics: gfx/Textures/Shapes/Mine/VII.png
+		1. Graphics: gfx/Textures/Shapes/Mine/VIII.png
+		1. Graphics: gfx/Textures/Shapes/Mine/X.png
 		1. Graphics: gfx/Textures/Sinus/Dark Sinus/HSinus.png
 		1. Graphics: gfx/Textures/Sinus/Dark Sinus/VSinus.png
 		1. Graphics: gfx/Textures/Sinus/Light Sinus/HSinus.png
 		1. Graphics: gfx/Textures/Sinus/Light Sinus/VSinus.png
-		1. Graphics: GFX/Textures/Stairs/Down.png
-		1. Graphics: GFX/Textures/Stairs/Up.png
 		1. Graphics: gfx/Textures/Star Dome/E.png
 		1. Graphics: gfx/Textures/Star Dome/Floor.png
 		1. Graphics: gfx/Textures/Star Dome/N.png
@@ -541,21 +543,20 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: gfx/Textures/Star Dome/The_Key.piko
 		1. Graphics: gfx/Textures/Star Dome/The_Key.png
 		1. Graphics: gfx/Textures/Star Dome/W.png
-		1. Graphics: GFX/Textures/Swords/Combined.png
-		1. Graphics: GFX/Textures/Swords/Left 2 Right.png
-		1. Graphics: GFX/Textures/Swords/Right 2 Left.png
-		1. Graphics: GFX/Textures/Swords/Swords.piko
-		1. General Data: gfx/Textures/Town/Elves/Bench
 		1. Graphics: gfx/Textures/Town/Elves/Bench.png
 		1. Graphics: gfx/Textures/Town/Elves/Fence.png
 		1. Graphics: gfx/Textures/Water Tubes/Back.png
 		1. Graphics: gfx/Textures/Water Tubes/Front.png
 		1. Graphics: gfx/Textures/Water Tubes/Project File.piko
 		1. Graphics: gfx/Textures/Water Tubes/Vloeistof.png
-		1. Graphics: GFX/World/Dot.png
-		1. Graphics: GFX/World/UNTITLED.LBM
-		1. Graphics: GFX/World/UNTITLED.PCX
+		1. Graphics: gfx/Textures/blops/Blop1.png
+		1. Graphics: gfx/Textures/blops/Blop2.png
+		1. Graphics: gfx/Textures/blops/Blop3.png
+		1. Graphics: gfx/Textures/blops/Blop4.png
+		1. Graphics: gfx/Textures/blops/Blop5.png
+		1. Graphics: gfx/Textures/blops/Blop6.png
 	- Look inside the file itself for the true license. Most script files may be used under the zLIB license ONCE all references to this game's storyline, characters and universe are removed
+		1. Development documentation: Script/Use/Available/Readme.md
 		1. Script: Script/Char/Char.lua
 		1. Script: Script/Events/AutoUse.lua
 		1. Script: Script/Events/NarratedEvents.lua
@@ -615,19 +616,18 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/Boss/GobKing.lua
 		1. Script: Script/JINC/Foes/Boss/Grwol.lua
 		1. Script: Script/JINC/Foes/Boss/Harry1.lua
-		1. Script: Script/JINC/Foes/Boss/harry2.lua
 		1. Script: Script/JINC/Foes/Boss/Harry3.lua
 		1. Script: Script/JINC/Foes/Boss/HellImp.lua
 		1. Script: Script/JINC/Foes/Boss/Ignis.lua
 		1. Script: Script/JINC/Foes/Boss/InvisibleDemon.lua
 		1. Script: Script/JINC/Foes/Boss/KillerEscargot.lua
 		1. Script: Script/JINC/Foes/Boss/Librarian.lua
-		1. Script: Script/JINC/Foes/Boss/Marrilona.lua
-		1. Script: Script/JINC/Foes/Boss/Mega Ghost.lua
 		1. Script: Script/JINC/Foes/Boss/MONK1.lua
 		1. Script: Script/JINC/Foes/Boss/MONK2.lua
 		1. Script: Script/JINC/Foes/Boss/MONK3.lua
 		1. Script: Script/JINC/Foes/Boss/MONK4.lua
+		1. Script: Script/JINC/Foes/Boss/Marrilona.lua
+		1. Script: Script/JINC/Foes/Boss/Mega Ghost.lua
 		1. Script: Script/JINC/Foes/Boss/MountainKing.lua
 		1. Script: Script/JINC/Foes/Boss/Nostramantu1.lua
 		1. Script: Script/JINC/Foes/Boss/Nostramantu2.lua
@@ -635,31 +635,40 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/Boss/Russell.lua
 		1. Script: Script/JINC/Foes/Boss/ShadowRogue.lua
 		1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
-		1. Script: Script/JINC/Foes/Boss/superalien.lua
 		1. Script: Script/JINC/Foes/Boss/SuperGhostPriest.lua
 		1. Script: Script/JINC/Foes/Boss/SuperHidingHag.lua
 		1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
 		1. Script: Script/JINC/Foes/Boss/Terra.lua
 		1. Script: Script/JINC/Foes/Boss/UberGob.lua
 		1. Script: Script/JINC/Foes/Boss/UltraMonk.lua
+		1. Script: Script/JINC/Foes/Boss/harry2.lua
+		1. Script: Script/JINC/Foes/Boss/superalien.lua
 		1. Script: Script/JINC/Foes/OverNos/Antenna_Mock.lua
 		1. Script: Script/JINC/Foes/OverNos/Antenna_Nice.lua
 		1. Script: Script/JINC/Foes/OverNos/Nostramantu.lua
+		1. Script: Script/JINC/Foes/Sealed/Aanschouwer.lua
+		1. Script: Script/JINC/Foes/Sealed/Cockatrice.lua
+		1. Script: Script/JINC/Foes/Sealed/Gendrabroe.lua
+		1. Script: Script/JINC/Foes/Sealed/GobEmperor.lua
+		1. Script: Script/JINC/Foes/Sealed/Hydra.lua
+		1. Script: Script/JINC/Foes/Sealed/Kabi.lua
+		1. Script: Script/JINC/Foes/Sealed/MinoKing.lua
+		1. Script: Script/JINC/Foes/Sealed/MountainEmperor.lua
+		1. Script: Script/JINC/Foes/UberBoss/Juggernaut.lua
 		1. Script: Script/JINC/Foes/reg/ArcaneSlime.lua
 		1. Script: Script/JINC/Foes/reg/Archmage.lua
+		1. Script: Script/JINC/Foes/reg/BSpook.lua
 		1. Script: Script/JINC/Foes/reg/Bandit.lua
 		1. Script: Script/JINC/Foes/reg/Banshee.lua
 		1. Script: Script/JINC/Foes/reg/Bat.lua
 		1. Script: Script/JINC/Foes/reg/Boar.lua
 		1. Script: Script/JINC/Foes/reg/Boekenworm.lua
-		1. Script: Script/JINC/Foes/reg/BSpook.lua
 		1. Script: Script/JINC/Foes/reg/Devil Monk From Hell.lua
 		1. Script: Script/JINC/Foes/reg/DragonKeeper.lua
 		1. Script: Script/JINC/Foes/reg/FireElemental.lua
-		1. Script: Script/JINC/Foes/reg/Firefox.lua
 		1. Script: Script/JINC/Foes/reg/FireGhoul.lua
 		1. Script: Script/JINC/Foes/reg/FireHound.lua
-		1. Script: Script/JINC/Foes/reg/ghostgirl.lua
+		1. Script: Script/JINC/Foes/reg/Firefox.lua
 		1. Script: Script/JINC/Foes/reg/Ghoul.lua
 		1. Script: Script/JINC/Foes/reg/Gob.lua
 		1. Script: Script/JINC/Foes/reg/GobPope.lua
@@ -679,7 +688,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/reg/Lemming.lua
 		1. Script: Script/JINC/Foes/reg/Leprechaun.lua
 		1. Script: Script/JINC/Foes/reg/Lich.lua
-		1. Script: Script/JINC/Foes/reg/litworm.lua
 		1. Script: Script/JINC/Foes/reg/Lost Soul.lua
 		1. Script: Script/JINC/Foes/reg/MagSkeleton.lua
 		1. Script: Script/JINC/Foes/reg/Medusa.lua
@@ -690,8 +698,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/reg/Nemesis.lua
 		1. Script: Script/JINC/Foes/reg/Pinky.lua
 		1. Script: Script/JINC/Foes/reg/Pyroguin.lua
-		1. Script: Script/JINC/Foes/reg/Rogue.lua
 		1. Script: Script/JINC/Foes/reg/RSpook.lua
+		1. Script: Script/JINC/Foes/reg/Rogue.lua
 		1. Script: Script/JINC/Foes/reg/Shade.lua
 		1. Script: Script/JINC/Foes/reg/ShadowShroom.lua
 		1. Script: Script/JINC/Foes/reg/Shroom.lua
@@ -709,15 +717,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/reg/Zombie.lua
 		1. Script: Script/JINC/Foes/reg/Zombie2.lua
 		1. Script: Script/JINC/Foes/reg/ZombieDoctor.lua
-		1. Script: Script/JINC/Foes/Sealed/Aanschouwer.lua
-		1. Script: Script/JINC/Foes/Sealed/Cockatrice.lua
-		1. Script: Script/JINC/Foes/Sealed/Gendrabroe.lua
-		1. Script: Script/JINC/Foes/Sealed/GobEmperor.lua
-		1. Script: Script/JINC/Foes/Sealed/Hydra.lua
-		1. Script: Script/JINC/Foes/Sealed/Kabi.lua
-		1. Script: Script/JINC/Foes/Sealed/MinoKing.lua
-		1. Script: Script/JINC/Foes/Sealed/MountainEmperor.lua
-		1. Script: Script/JINC/Foes/UberBoss/Juggernaut.lua
+		1. Script: Script/JINC/Foes/reg/ghostgirl.lua
+		1. Script: Script/JINC/Foes/reg/litworm.lua
 		1. Script: Script/JINC/IA/AAA_ATTACK.lua
 		1. Script: Script/JINC/IA/AAA_GUARD.lua
 		1. Script: Script/JINC/IA/ABL_FOE_BACTERIATUSK.lua
@@ -1221,17 +1222,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Maps/CH4_Town_NostraburgNight.lua
 		1. Script: Script/Maps/NGP_DUNGEON_AQUAANTRUM.lua
 		1. Script: Script/Maps/NGP_DUNGEON_CATHEDRAL.lua
-		1. Script: Script/Maps/NGP_Dungeon_Quayaro.lsv
 		1. Script: Script/Maps/NGP_DUNGEON_Quayaro.lua
+		1. Script: Script/Maps/NGP_Dungeon_Quayaro.lsv
 		1. Script: Script/Maps/NGP_HUB_Heroes.lua
-		1. Script: Script/Maps/PRO_Dungeon_Crypt.lua
 		1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
 		1. Script: Script/Maps/PRO_DUNGEON_Magic.lua
 		1. Script: Script/Maps/PRO_DUNGEON_Tomb.lua
+		1. Script: Script/Maps/PRO_Dungeon_Crypt.lua
 		1. Script: Script/Maps/PRO_Hub_Weniaria.lua
-		1. Script: Script/Maps/PRO_TheEnd.lua
 		1. Script: Script/Maps/PRO_TOWN_Frendor.lua
 		1. Script: Script/Maps/PRO_TOWN_Vandar.lua
+		1. Script: Script/Maps/PRO_TheEnd.lua
 		1. Script: Script/OSBOOT/Linux.x86.lua
 		1. Script: Script/OSBOOT/Mac.x86.lua
 		1. Script: Script/OSBOOT/Win32.x86.lua
@@ -1261,7 +1262,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Use/Anyway/Mouse.lua
 		1. Script: Script/Use/Anyway/SaveMeta.lua
 		1. Script: Script/Use/Available/Demo.lua
-		1. Development documentation: Script/Use/Available/Readme.md
 		1. Script: Script/Use/Combat/AltArena/AAA_Algemeen.lua
 		1. Script: Script/Use/Combat/AltArena/ManaCave.lua
 		1. Script: Script/Use/Combat/AltArena/MountPyrus.lua
@@ -1363,7 +1363,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Use/Linkers/ShowParty.lua
 		1. Script: Script/Use/Linkers/WorldMap -- The great linker.lua
 		1. Script: Script/Use/Scenario/Scenario.lua
-		1. Script: Script/Use/Specific/arrowslide.lua
 		1. Script: Script/Use/Specific/EndOfPrologue.lua
 		1. Script: Script/Use/Specific/GreatMagicBack.lua
 		1. Script: Script/Use/Specific/MoveTex.lua
@@ -1375,22 +1374,25 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Use/Specific/SpirataCryptEntrance.lua
 		1. Script: Script/Use/Specific/StepsPuzzle.lua
 		1. Script: Script/Use/Specific/Walda.lua
+		1. Script: Script/Use/Specific/arrowslide.lua
 	- Meta Definitions for the game. Don't touch them.
-		1. Game identification data: ID/ID.Data.Full
 		1. Game identification data: ID/ID.DEMO.MUSIC
+		1. Game identification data: ID/ID.Data.Full
 		1. Game identification data: ID/ID.FULL.MUSIC
 		1. Game identification data: ID/Identify.txt
 	- Property of Jeroen P. Broks
 		1. Game identification data: ID/ID.Vocal.Demo
 		1. Game identification data: ID/ID.Vocal.Full
 	- These are files specific to the story and may not be extracted from this JCR file.
+		1. ???: GFX/Combat/Fighters/Foe/Sealed/KabiArc.lzh
 		1. Audio: Audio/SFX/Nostramantu/Laugh.ogg
+		1. Font: Fonts/Phantasar.ttf
+		1. Game identification data: ID/Test
 		1. General Data: Data/CharStats/Dandor
 		1. General Data: Data/CharStats/HandoStillor
 		1. General Data: Data/CharStats/Jake_Fairy
 		1. General Data: Data/CharStats/Jake_Human
 		1. General Data: Data/CharStats/Marrilona
-		1. Font: Fonts/Phantasar.ttf
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.East.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.East.png
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.North.Frames
@@ -1398,6 +1400,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.South.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.South.png
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.West.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Dandor.West.png -alias- GFX/Combat/Fighters/Hero/Dandor.Idle.png
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.piko
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.png
@@ -1409,16 +1412,18 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.South.png
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.West.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.West.piko
+		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.West.png -alias- GFX/Combat/Fighters/Hero/HandoStillor.Idle.png
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.East.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.East.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.East.png
+		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.NS.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.North.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.North.png
-		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.NS.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.South.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.South.png
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.West.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.West.piko
+		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.West.png -alias- GFX/Combat/Fighters/Hero/Jake_Fairy.Idle.png
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.East.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.East.png
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.North.Frames
@@ -1426,26 +1431,31 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.South.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.South.png
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.West.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.West.png -alias- GFX/Combat/Fighters/Hero/Jake_Human.Idle.png
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.East.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.East.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.East.png
+		1. Graphics: GFX/Actors/Bundled/Player/Krandar.NS.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.North.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.North.png
-		1. Graphics: GFX/Actors/Bundled/Player/Krandar.NS.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.Petrified.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.frames
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.png
-		1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.piko
+		1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.Frames -alias- GFX/Combat/Fighters/Hero/Krandar.Idle.frames
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.Placeholder.png
+		1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.piko
+		1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.png -alias- GFX/Combat/Fighters/Hero/Krandar.Idle.png
 		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.png
+		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.NS.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.North.frames
 		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.North.png
-		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.NS.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.South.frames
 		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.South.png
 		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.West.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.West.piko
+		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.West.png -alias- GFX/Combat/Fighters/Hero/Marrilona.Idle.png
+		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu.East.png -alias- GFX/Actors/Bundled/Player/Nostramantu.North.png -alias- GFX/Actors/Bundled/Player/Nostramantu.South.png -alias- GFX/Actors/Bundled/Player/Nostramantu.West.png -alias- GFX/Actors/Single/Fairies/Nostramantu_Backside.png
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 1.png
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 2.png
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 3.png
@@ -1458,13 +1468,13 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male 2.png
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Male.piko
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Ramata.png
-		1. Graphics: GFX/Actors/Single/Cameos/Cylinder.piko
 		1. Graphics: GFX/Actors/Single/Cameos/Cyl_Crystal.png
 		1. Graphics: GFX/Actors/Single/Cameos/Cyl_Foxy.png
 		1. Graphics: GFX/Actors/Single/Cameos/Cyl_Rolf.png
 		1. Graphics: GFX/Actors/Single/Cameos/Cyl_Wendicka.png
 		1. Graphics: GFX/Actors/Single/Cameos/Cyl_Xenobi.png
 		1. Graphics: GFX/Actors/Single/Cameos/Cyl_Yirl.png
+		1. Graphics: GFX/Actors/Single/Cameos/Cylinder.piko
 		1. Graphics: GFX/Actors/Single/Cameos/GJDC.png
 		1. Graphics: GFX/Actors/Single/Cameos/GJYT.png
 		1. Graphics: GFX/Actors/Single/Cameos/SS_Crystal.png
@@ -1489,8 +1499,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Single/Elves/GedrioFulla.png
 		1. Graphics: GFX/Actors/Single/Elves/GedrioFulla_BackSide.png
 		1. Graphics: GFX/Actors/Single/Elves/Rosetta.png
-		1. Graphics: GFX/Actors/Single/Elves/SashaFunda.North.png
 		1. Graphics: GFX/Actors/Single/Elves/SashaFunda.NS.piko
+		1. Graphics: GFX/Actors/Single/Elves/SashaFunda.North.png
 		1. Graphics: GFX/Actors/Single/Elves/SashaFunda.South.png
 		1. Graphics: GFX/Actors/Single/Elves/Walda.piko
 		1. Graphics: GFX/Actors/Single/Elves/Walda.png
@@ -1511,7 +1521,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Single/Fairies/Marrilona de bruid.png
 		1. Graphics: GFX/Actors/Single/Fairies/Nostramantu.piko
 		1. Graphics: GFX/Actors/Single/Fairies/Nostramantu.png
-		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu.East.png -alias- GFX/Actors/Bundled/Player/Nostramantu.North.png -alias- GFX/Actors/Bundled/Player/Nostramantu.South.png -alias- GFX/Actors/Bundled/Player/Nostramantu.West.png -alias- GFX/Actors/Single/Fairies/Nostramantu_Backside.png
 		1. Graphics: GFX/Actors/Single/Fairies/Tai.piko
 		1. Graphics: GFX/Actors/Single/Fairies/Tai.png
 		1. Graphics: GFX/Actors/Single/Fairies/Yanee.png
@@ -1542,12 +1551,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Arena/GreyDung.png
 		1. Graphics: GFX/Combat/Arena/Hell.png
 		1. Graphics: GFX/Combat/Arena/Library.png
+		1. Graphics: GFX/Combat/Arena/MG.png -alias- GFX/Combat/Arena/Nostramantu.png -alias- GFX/Combat/Arena/Pyrus.png
 		1. Graphics: GFX/Combat/Arena/Magic.png
 		1. Graphics: GFX/Combat/Arena/ManaCave.piko
 		1. Graphics: GFX/Combat/Arena/ManaCave.png
 		1. Graphics: GFX/Combat/Arena/Mine.png
 		1. Graphics: GFX/Combat/Arena/NosMansion.png
-		1. Graphics: GFX/Combat/Arena/MG.png -alias- GFX/Combat/Arena/Nostramantu.png -alias- GFX/Combat/Arena/Pyrus.png
 		1. Graphics: GFX/Combat/Arena/PyrusPass.png
 		1. Graphics: GFX/Combat/Arena/Quayaro.png
 		1. Graphics: GFX/Combat/Arena/SpirataEarth.png
@@ -1657,72 +1666,64 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Skeleton.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Zombie.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Sealed/Kabi.png
-		1. ???: GFX/Combat/Fighters/Foe/Sealed/KabiArc.lzh
 		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Attack.1.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Attack.2.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Cast.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Dead.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Idle.Frames
-		1. Graphics: GFX/Actors/Bundled/Player/Dandor.West.png -alias- GFX/Combat/Fighters/Hero/Dandor.Idle.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Petrified.png
-		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Victory.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Victory.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Attack.1.png
 		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Attack.2.png
 		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Cast.png
 		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Dead.png
 		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Idle.Frames
-		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.West.png -alias- GFX/Combat/Fighters/Hero/HandoStillor.Idle.png
 		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Petrified.png
-		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Spirata.Action.png
 		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Spirata.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Spirata.png
 		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Victory.png
+		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.piko
+		1. Graphics: GFX/Combat/Fighters/Hero/Jake.Petrified.xcf
+		1. Graphics: GFX/Combat/Fighters/Hero/Jake.Spirata.Action.png -alias- GFX/Combat/Fighters/Hero/Jake_Fairy.Spirata.Action.png -alias- GFX/Combat/Fighters/Hero/Jake_Human.Spirata.Action.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Jake.Spirata.piko
+		1. Graphics: GFX/Combat/Fighters/Hero/Jake.Spirata.png -alias- GFX/Combat/Fighters/Hero/Jake_Fairy.Spirata.png -alias- GFX/Combat/Fighters/Hero/Jake_Human.Spirata.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake.dead.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake.dead.png
-		1. Graphics: GFX/Combat/Fighters/Hero/Jake.Petrified.xcf
-		1. Graphics: GFX/Combat/Fighters/Hero/Jake.Spirata.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Attack.1.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Attack.2.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Cast.png
-		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.dead.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Idle.Frames
-		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.West.png -alias- GFX/Combat/Fighters/Hero/Jake_Fairy.Idle.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Petrified.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Victory.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.dead.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Attack.1.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Attack.2.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Cast.png
-		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.dead.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Idle.Frames
-		1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.West.png -alias- GFX/Combat/Fighters/Hero/Jake_Human.Idle.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Petrified.png
-		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.piko
-		1. Graphics: GFX/Combat/Fighters/Hero/Jake.Spirata.Action.png -alias- GFX/Combat/Fighters/Hero/Jake_Fairy.Spirata.Action.png -alias- GFX/Combat/Fighters/Hero/Jake_Human.Spirata.Action.png
-		1. Graphics: GFX/Combat/Fighters/Hero/Jake.Spirata.png -alias- GFX/Combat/Fighters/Hero/Jake_Fairy.Spirata.png -alias- GFX/Combat/Fighters/Hero/Jake_Human.Spirata.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Victory.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.dead.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Attack.1.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Attack.1.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Attack.2.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Attack.2.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Cast.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Cast.png
-		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.dead.png
-		1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.Frames -alias- GFX/Combat/Fighters/Hero/Krandar.Idle.frames
-		1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.png -alias- GFX/Combat/Fighters/Hero/Krandar.Idle.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Petrified.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Victory.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Victory.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.West.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.dead.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Attack.1.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Attack.2.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Cast.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Dead.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Dead.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Idle.Frames
-		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.West.png -alias- GFX/Combat/Fighters/Hero/Marrilona.Idle.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Petrified.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.Action.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.piko
@@ -1786,7 +1787,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Treasure/Chest.Frames
 		1. Graphics: GFX/Treasure/Chest.png
 		1. Graphics: GFX/Treasure/ManaOrb.png
-		1. Game identification data: ID/Test
 		1. Map Design: Kthura/Anna/Data
 		1. Map Design: Kthura/Anna/Objects
 		1. Map Design: Kthura/Anna/Settings
@@ -1811,15 +1811,15 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Map Design: Kthura/CH1_HUB_JakeHut/Data
 		1. Map Design: Kthura/CH1_HUB_JakeHut/Objects
 		1. Map Design: Kthura/CH1_HUB_JakeHut/Settings
+		1. Map Design: Kthura/CH2_DUNGEON_ElfRoad/Data
+		1. Map Design: Kthura/CH2_DUNGEON_ElfRoad/Objects
+		1. Map Design: Kthura/CH2_DUNGEON_ElfRoad/Settings
 		1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/DATA
 		1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/OBJECTS
 		1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/SETTINGS
 		1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Data
 		1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Objects
 		1. Map Design: Kthura/CH2_Dungeon_DragonCastle/Settings
-		1. Map Design: Kthura/CH2_DUNGEON_ElfRoad/Data
-		1. Map Design: Kthura/CH2_DUNGEON_ElfRoad/Objects
-		1. Map Design: Kthura/CH2_DUNGEON_ElfRoad/Settings
 		1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Data
 		1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Objects
 		1. Map Design: Kthura/CH2_Dungeon_SpirataFire/Settings
@@ -1847,12 +1847,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Data
 		1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Objects
 		1. Map Design: Kthura/CH3_Dungeon_KokonoraForest/Settings
-		1. Map Design: Kthura/CH3_Dungeon_Mine/Data
-		1. Map Design: Kthura/CH3_Dungeon_Mine/Objects
-		1. Map Design: Kthura/CH3_Dungeon_Mine/Settings
 		1. Map Design: Kthura/CH3_Dungeon_MTPYRUS/Data
 		1. Map Design: Kthura/CH3_Dungeon_MTPYRUS/Objects
 		1. Map Design: Kthura/CH3_Dungeon_MTPYRUS/Settings
+		1. Map Design: Kthura/CH3_Dungeon_Mine/Data
+		1. Map Design: Kthura/CH3_Dungeon_Mine/Objects
+		1. Map Design: Kthura/CH3_Dungeon_Mine/Settings
 		1. Map Design: Kthura/CH3_Dungeon_SpirataEarth/Data
 		1. Map Design: Kthura/CH3_Dungeon_SpirataEarth/Objects
 		1. Map Design: Kthura/CH3_Dungeon_SpirataEarth/Settings
@@ -2054,14 +2054,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Music: Music/AltEncounter/Tempting Secrets.ogg
 		1. Music: Music/Dreshka/Hero Down.ogg
 		1. Music: Music/Dreshka/Water Prelude.ogg
+		1. Music: Music/Dungeon/Aqua Antrum.ogg -alias- Music/Original4Alias/Tenebrous Brothers Carnival - Mermaid.ogg
 		1. Music: Music/Dungeon/Chillin Hard.ogg
+		1. Music: Music/Dungeon/Dandleton.ogg -alias- Music/Original4Alias/Ghost Story.ogg
 		1. Music: Music/Dungeon/Pippin the Hunchback.ogg
 		1. Music: Music/Dungeon/TheDread.ogg
 		1. Music: Music/Hub/Angevin.ogg
-		1. Music: Music/Hub/Indore.ogg
-		1. Music: Music/Dungeon/Dandleton.ogg -alias- Music/Original4Alias/Ghost Story.ogg
 		1. Music: Music/Hub/Hall Of Heroes.ogg -alias- Music/Original4Alias/Heroic Age.ogg
-		1. Music: Music/Dungeon/Aqua Antrum.ogg -alias- Music/Original4Alias/Tenebrous Brothers Carnival - Mermaid.ogg
+		1. Music: Music/Hub/Indore.ogg
 		1. Music: Music/RandomEncounter/Killers.ogg
 		1. Music: Music/Scenario/We Got Trouble.ogg
 		1. Music: Music/Special Boss/Hall Of The Mountain King.ogg
@@ -2084,14 +2084,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Single/Fairies/Male2.png
 		1. Graphics: GFX/Actors/Single/Humans/RubineTheHood.png
 		1. Graphics: GFX/Actors/Single/Humans/Thief.png
+		1. Graphics: gfx/Combat/Fighters/foe/UberBoss/Juggernaut.png
 		1. Graphics: gfx/Combat/Fighters/foe/reg/Lost Soul.png
 		1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Thief.piko
 		1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Variant01.png
 		1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Variant02.png
 		1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Variant03.png
 		1. Graphics: gfx/Combat/Fighters/foe/reg/Thief/Variant04.png
-		1. Graphics: gfx/Combat/Fighters/foe/UberBoss/Juggernaut.png
 	- This stuff was written in entirely for games written by Jeroen Petrus Broks. When this notice is tied to the file though, it may be extracted from this project and be used freely under a CC_BY_NC_SA license.
+		1. General Data: GFX/Actors/Single/Humans/Jeroen
+		1. General Data: GFX/Textures/Marble/Hek - Verticaal
+		1. General Data: GFX/Textures/Marble/Pillar - Broken
 		1. Graphics: GFX/Actors/Single/Elves/RandomElfFemale.png
 		1. Graphics: GFX/Actors/Single/Elves/RandomElfFemale2.png
 		1. Graphics: GFX/Actors/Single/Elves/RandomElfMale.png
@@ -2099,7 +2102,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Single/Humans/Female.png
 		1. Graphics: GFX/Actors/Single/Humans/Girl.png
 		1. Graphics: GFX/Actors/Single/Humans/Guard.png
-		1. General Data: GFX/Actors/Single/Humans/Jeroen
 		1. Graphics: GFX/Actors/Single/Humans/Male.png
 		1. Graphics: GFX/Actors/Single/Humans/ShopHoer.png
 		1. Graphics: GFX/Actors/Single/Humans/ShopHoer2.png
@@ -2122,9 +2124,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Textures/Caves/Grey + Alpha/S.png
 		1. Graphics: GFX/Textures/Caves/Grey + Alpha/SE.png
 		1. Graphics: GFX/Textures/Caves/Grey + Alpha/SE_F.png
-		1. Graphics: GFX/Textures/Caves/Grey + Alpha/Shore.png
 		1. Graphics: GFX/Textures/Caves/Grey + Alpha/SW.png
 		1. Graphics: GFX/Textures/Caves/Grey + Alpha/SW_F.png
+		1. Graphics: GFX/Textures/Caves/Grey + Alpha/Shore.png
 		1. Graphics: GFX/Textures/Caves/Grey + Alpha/W.png
 		1. Graphics: GFX/Textures/Caves/Grey/E.png
 		1. Graphics: GFX/Textures/Caves/Grey/F.png
@@ -2136,9 +2138,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Textures/Caves/Grey/Rock.png
 		1. Graphics: GFX/Textures/Caves/Grey/S.png
 		1. Graphics: GFX/Textures/Caves/Grey/SE.png
+		1. Graphics: GFX/Textures/Caves/Grey/SW.png
 		1. Graphics: GFX/Textures/Caves/Grey/Stalagmite.png
 		1. Graphics: GFX/Textures/Caves/Grey/Stalagmite_2.png
-		1. Graphics: GFX/Textures/Caves/Grey/SW.png
 		1. Graphics: GFX/Textures/Caves/Grey/W.png
 		1. Graphics: GFX/Textures/Dungeon/Bench East.png
 		1. Graphics: GFX/Textures/Dungeon/Bench West.png
@@ -2162,11 +2164,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Textures/HalfHoutMuur/Rood_RV.png
 		1. Graphics: GFX/Textures/HalfHoutMuur/Vaal Groen.png
 		1. Graphics: GFX/Textures/HalfHoutMuur/Vaal Groen.xcf
-		1. Graphics: GFX/Textures/Human Village/brick fence.png
-		1. Graphics: GFX/Textures/Human Village/brick fence2.png
-		1. Graphics: GFX/Textures/Human Village/brick fence3.png
-		1. Graphics: GFX/Textures/Human Village/brick fence4.png
-		1. Graphics: GFX/Textures/Human Village/brick fenceG.png
 		1. Graphics: GFX/Textures/Human Village/House.png
 		1. Graphics: GFX/Textures/Human Village/Inside/Bed.png
 		1. Graphics: GFX/Textures/Human Village/Inside/Houten Rand - Horizontaal.png
@@ -2188,6 +2185,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Textures/Human Village/Stenen Muur - Midden.png
 		1. Graphics: GFX/Textures/Human Village/Stenen Muur - Paal.png
 		1. Graphics: GFX/Textures/Human Village/Well.png
+		1. Graphics: GFX/Textures/Human Village/brick fence.png
+		1. Graphics: GFX/Textures/Human Village/brick fence2.png
+		1. Graphics: GFX/Textures/Human Village/brick fence3.png
+		1. Graphics: GFX/Textures/Human Village/brick fence4.png
+		1. Graphics: GFX/Textures/Human Village/brick fenceG.png
 		1. Graphics: GFX/Textures/Kapot Mubilair/Bank.png
 		1. Graphics: GFX/Textures/Kapot Mubilair/Hemelbed.png
 		1. Graphics: GFX/Textures/Mansion/BankM.png
@@ -2205,10 +2207,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Textures/Marble/Floor.png
 		1. Graphics: GFX/Textures/Marble/Hek - Hoek - E.png
 		1. Graphics: GFX/Textures/Marble/Hek - Hoek - W.png
-		1. General Data: GFX/Textures/Marble/Hek - Verticaal
 		1. Graphics: GFX/Textures/Marble/Hek - Verticaal.png
 		1. Graphics: GFX/Textures/Marble/Hek.png
-		1. General Data: GFX/Textures/Marble/Pillar - Broken
 		1. Graphics: GFX/Textures/Marble/Pillar - Broken.png
 		1. Graphics: GFX/Textures/Marble/Pillar.png
 		1. Graphics: GFX/Textures/Marble/Trap.png
@@ -2218,7 +2218,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Textures/Mine/Cart.png
 		1. Graphics: GFX/Textures/Objects/Torch Post.frames
 		1. Graphics: GFX/Textures/Objects/Torch Post.png
-		1. Graphics: GFX/Textures/Road/cliffside.png
 		1. Graphics: GFX/Textures/Road/Dead Grass.png
 		1. Graphics: GFX/Textures/Road/Grass1.png
 		1. Graphics: GFX/Textures/Road/Grass2.png
@@ -2235,6 +2234,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Textures/Road/RSNW.png
 		1. Graphics: GFX/Textures/Road/RSSE.png
 		1. Graphics: GFX/Textures/Road/RSSW.png
+		1. Graphics: GFX/Textures/Road/cliffside.png
 		1. Graphics: GFX/Textures/Switch/Left.png
 		1. Graphics: GFX/Textures/Switch/Right.png
 		1. Graphics: GFX/Textures/Tapijt/Amber.frames
@@ -2251,10 +2251,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Textures/Trees/Struik.png
 - Matt McFarland
 	- Creative Commons license by attribute. Please check Matt's website for detailed information!
+		1. Music: Music/4Alias/machine-one.ogg -alias- Music/Special Boss/Blue Seal.ogg
 		1. Music: Music/Dungeon/Ooze.ogg
 		1. Music: Music/Dungeon/Strangled.ogg
 		1. Music: Music/Dungeon/trade-off.ogg
-		1. Music: Music/4Alias/machine-one.ogg -alias- Music/Special Boss/Blue Seal.ogg
 - Merlin2525
 	- This entry is in the public domain and free of all restrictions.
 		1. Graphics: Gfx/Combat/Fighters/Foe/Reg/Bat.png
@@ -2263,8 +2263,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/textures/objects/Houten Plank.png
 - Nihilore
 	- Creative Commons Attribution license -- http://www.nihilore.com/license/ -- Music downloaded from http://www.nihilore
-		1. Music: Music/4Alias/CreativeDestruction.ogg -alias- Music/Dungeon/Spirata Crypt.ogg
 		1. Music: Music/4Alias/A+Tremendous+Thing.ogg -alias- Music/Special Boss/Final Boss.ogg
+		1. Music: Music/4Alias/CreativeDestruction.ogg -alias- Music/Dungeon/Spirata Crypt.ogg
 - Papapishu
 	- This entry is in the public domain and free of all restrictions.
 		1. Graphics: gfx/combat/fighters/foe/reg/boar.png
@@ -2339,8 +2339,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Audio: Vocals/Combat/Hero/Jake/Victory/Dead.ogg
 		1. Audio: Vocals/Combat/Hero/Jake/Victory/General.ogg
 		1. Audio: Vocals/Combat/Hero/Jake/Victory/Perfect.ogg
-		1. Audio: Vocals/Combat/Hero/Krandar/Action/Attack.ogg
 		1. Audio: Vocals/Combat/Hero/Krandar/Action/2PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/3PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/4PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/5PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/6PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/7PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/Critical.ogg
+		1. Audio: Vocals/Combat/Hero/Krandar/Action/Attack.ogg
 		1. Audio: Vocals/Combat/Hero/Krandar/Action/DefUp.ogg
 		1. Audio: Vocals/Combat/Hero/Krandar/Action/Earth.ogg
 		1. Audio: Vocals/Combat/Hero/Krandar/Action/Fire.ogg
@@ -2800,7 +2800,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Audio: Vocals/Maps/PRO_Town_Vandar/John_6.ogg
 		1. Audio: Vocals/Maps/PRO_Town_Vandar/John_7.ogg
 		1. Audio: Vocals/Outtakes/001 Jake/001 What is an Elven High Priest.ogg
-		1. General Data: Vocals/Outtakes/001 Jake/002 Blooper 2
 		1. Audio: Vocals/Outtakes/001 Jake/002 Blooper 2.ogg
 		1. Audio: Vocals/Outtakes/001 Jake/003 Verkeerde tekst.ogg
 		1. Audio: Vocals/Outtakes/001 Jake/004 - How do you know that this is my father.ogg
@@ -2875,8 +2874,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Audio: Vocals/Spirata/HandoStillor.ogg
 		1. Audio: Vocals/Spirata/Jake.ogg
 		1. Audio: Vocals/Spirata/Marrilona.ogg
+		1. General Data: Vocals/Outtakes/001 Jake/002 Blooper 2
 - Unknown artist from the Public Domain
 	- This entry is in the public domain and free of all restrictions.
+		1. General Data: GFX/Combat/Fighters/Foe/Reg/Pyroguin
+		1. General Data: GFX/Textures/Objects/Hut
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/DemonAir.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/KillerEscargot.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/MountainKing.png
@@ -2885,7 +2887,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Boekenworm.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Hag.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/HidingHag.png
-		1. General Data: GFX/Combat/Fighters/Foe/Reg/Pyroguin
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/ShadowShroom.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Shroom.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/StoneGolem.png
@@ -2898,7 +2899,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Textures/4 Elements/Wind.png
 		1. Graphics: GFX/Textures/Anna/Girl_Head.png
 		1. Graphics: GFX/Textures/Keuken/Ketel.png
-		1. General Data: GFX/Textures/Objects/Hut
 		1. Graphics: GFX/Textures/Objects/Hut.png
 		1. Graphics: GFX/Textures/Trees/Loofboom.png
 - Varazuvi(TM)
@@ -2912,9 +2912,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Music: Music/Town/Funky Fairy.ogg
 - Wicky77
 	- This song was dedicated to my work as a game's programmer. It may only be extracted from this game and be used within your own projects if you have the artist's explicit's permission.
+		1. Music: Music/4Alias/spook.ogg -alias- Music/Dungeon/Cathedral.ogg
 		1. Music: Music/Combat/Victory.ogg
 		1. Music: Music/Dungeon/Beethoven.ogg
-		1. Music: Music/4Alias/spook.ogg -alias- Music/Dungeon/Cathedral.ogg
 		1. Music: Music/Dungeon/Chanson d'eglise.ogg
 		1. Music: Music/Dungeon/D'Amour.ogg
 		1. Music: Music/Dungeon/TearDrops.ogg
