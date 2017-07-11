@@ -59,6 +59,13 @@ function NPC_Quendor()
        ({ [true] = Nothing, [false]=QuendorGive })[ldone]()       
 end
 
+function NPC_Cherry()
+    local d={[true]=2, [false]=1}
+    local dn = Done('&DONE.NEWGAMEPLUS.CHERRY.GROMBO.UNLOCKED.AQUA.ANTRUM')==true
+    if dn then WorldMap_Unlock('NGPAQUAANTRUM') end
+    MapText('CHERRY'..d[dn])
+end    
+
 function GALE_OnLoad()
     ZA_Enter('ToQuendor',function() GoToLayer('quendor',"Start") end)
     ZA_Enter("ToTown",function() GoToLayer('town',"Einde") end)

@@ -352,6 +352,16 @@ Rec: CH4STARDOME
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: NGPAQUAANTRUM
+	Dungeon = TRUE
+	Folder = Delisto
+	Kthura = NGP_AQUAANTRUM
+	Layer = #000
+	LocationName = Aqua Antrum
+	LocationPrefix = 
+	Start = Start
+	UnlockedFromStart = FALSE
+
 Rec: NGPCATHEDRAL
 	Dungeon = TRUE
 	Folder = Delisto
