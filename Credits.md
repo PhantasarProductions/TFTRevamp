@@ -12,9 +12,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 
 - Aeris
 	- This file was explicitly contributed for the usage in this game and may therefore not be extracted from this game.
-		1. Graphics: GFX/Big_Char/Dandor.png
-		1. Graphics: GFX/Big_Char/Hando Stillor.png
-		1. Graphics: GFX/Big_Char/Jake.png
 		1. Graphics: GFX/Big_Char/JakeMarrilona.GIF
 		1. Graphics: GFX/Big_Char/JakeMarrilona.png
 		1. Graphics: GFX/Big_Char/JakeMarrilona.xcf
@@ -32,7 +29,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Big_Char/Marrilona_King.png
 		1. Graphics: GFX/Big_Char/Marrilona_King.xcf
 		1. Graphics: GFX/Big_Char/Marrilona_Mike.piko
-		1. Graphics: GFX/Big_Char/Marrilona_Mike.png
 		1. Graphics: GFX/Big_Char/Marrilona_NewYear.png
 		1. Graphics: GFX/Big_Char/Marrilona_Valentine.png
 		1. Graphics: GFX/Big_Char/Negatief_Marrilona.Png
@@ -56,7 +52,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/BoxText/Portret/Jake/Blush_Fairy.png
 		1. Graphics: GFX/BoxText/Portret/Jake/General.png
 		1. Graphics: GFX/BoxText/Portret/Jake/General.xcf
-		1. Graphics: GFX/BoxText/Portret/Jake/General_Fairy.png
 		1. Graphics: GFX/BoxText/Portret/Jake/Jake.piko
 		1. Graphics: GFX/BoxText/Portret/Jake/NoEmo.png
 		1. Graphics: GFX/BoxText/Portret/Jake/NoEmo_Fairy.png
@@ -112,8 +107,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/BoxText/Portret/Chief Werrington/General.png
 		1. Graphics: GFX/BoxText/Portret/Chief Werrington/Smile.png
 		1. Graphics: GFX/BoxText/Portret/Dreshka/General.png
-		1. Graphics: GFX/BoxText/Portret/Fairy Elder/Angry.png
-		1. Graphics: GFX/BoxText/Portret/Fairy Elder/General.png
 		1. Graphics: GFX/BoxText/Portret/Fandalora/General.png
 		1. Graphics: GFX/BoxText/Portret/Fandalora/NoEmo.png
 		1. Graphics: GFX/BoxText/Portret/Gedrio Fulla/General.png
@@ -121,7 +114,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/BoxText/Portret/Harry/Furious.png
 		1. Graphics: GFX/BoxText/Portret/Harry/General.png
 		1. Graphics: GFX/BoxText/Portret/Harry/Harry.piko
-		1. Graphics: GFX/BoxText/Portret/Harry/Laugh.png
 		1. Graphics: GFX/BoxText/Portret/Harry/Laugh.png -alias- GFX/BoxText/Portret/Harry/Smile.png
 		1. Graphics: GFX/BoxText/Portret/Krandar/Eyes.png
 		1. Graphics: GFX/BoxText/Portret/Krandar/General.png
@@ -169,9 +161,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Grwol.png
 - Eric Matyas
 	- This song was composed and created by Eric Matyas. It may be used freely in free and commercial projects as long as you properly credit Eric Matyas for his work. You can find the full version of his license terms on his own  website: http://soundimage.org/sample-page/
-		1. Music: Music/Boss/NewGame+.ogg
 		1. Music: Music/Dungeon/Dafty Places (Looping).ogg
-		1. Music: Music/Dungeon/Dafty Places (Looping).ogg -alias- Music/Dungeon/Invasion-of-the-Giant-Disco-Ants_Looping.ogg
+		1. Music: Music/Dungeon/Invasion-of-the-Giant-Disco-Ants_Looping.ogg
 		1. Music: Music/Dungeon/Magic-Clock-Shop_Looping.ogg
 		1. Music: Music/Dungeon/Moonlit-Secrets_Looping.ogg
 		1. Music: Music/Dungeon/Sewer-Monsters-Town-Hall-Meeting_Looping.ogg
@@ -294,11 +285,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Cards/Backside.png
 		1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.piko
 		1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
-		1. Graphics: gfx/Combat/Fighters/Foe/Boss/Ghost Woman.png
 		1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
-		1. Graphics: GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 1   .png
 		1. Graphics: gfx/Combat/Fighters/Foe/Boss/Ghost Woman.png -alias- GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 2   .png
-		1. Graphics: GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 3   .png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/BSpook.png
 		1. Graphics: GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 1   .png -alias- gfx/Combat/Fighters/Foe/Reg/GhostGirl.png
 		1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
@@ -338,9 +326,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Equipment/Equipment.piko
 		1. Graphics: GFX/Equipment/WP_Dandor.png
 		1. Graphics: GFX/Equipment/WP_HandoStillor.png
-		1. Graphics: GFX/Equipment/WP_Jake_Fairy.png
-		1. Graphics: GFX/Equipment/WP_Jake_Fairy.png -alias- GFX/Equipment/WP_Jake_Human.png
-		1. Graphics: GFX/Equipment/WP_Jake_Fairy.png -alias- GFX/Equipment/WP_Jake_Human.png -alias- GFX/Equipment/WP_Krandar.png
 		1. Graphics: GFX/Equipment/WP_Marrilona.png
 		1. Graphics: GFX/Equipment/WP_Jake_Fairy.png -alias- GFX/Equipment/WP_Jake_Human.png -alias- GFX/Equipment/WP_Krandar.png -alias- GFX/Equipment/WP_Nostramantu_Human.png
 		1. Graphics: GFX/JoyPad/Button.piko
@@ -1393,12 +1378,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 	- Meta Definitions for the game. Don't touch them.
 		1. Game identification data: ID/ID.Data.Full
 		1. Game identification data: ID/ID.DEMO.MUSIC
-		1. Game identification data: ID/ID.DEMO.MUSIC -alias- ID/ID.FULL.MUSIC
-		1. Game identification data: ID/ID.DEMO.MUSIC -alias- ID/ID.FULL.MUSIC -alias- ID/Identify
+		1. Game identification data: ID/ID.FULL.MUSIC
 		1. Game identification data: ID/Identify.txt
 	- Property of Jeroen P. Broks
 		1. Game identification data: ID/ID.Vocal.Demo
-		1. Game identification data: ID/ID.Vocal.Demo -alias- ID/ID.Vocal.Full
+		1. Game identification data: ID/ID.Vocal.Full
 	- These are files specific to the story and may not be extracted from this JCR file.
 		1. Audio: Audio/SFX/Nostramantu/Laugh.ogg
 		1. General Data: Data/CharStats/Dandor
@@ -1414,7 +1398,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.South.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.South.png
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.West.Frames
-		1. Graphics: GFX/Actors/Bundled/Player/Dandor.West.png
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.piko
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.png
@@ -1426,7 +1409,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.South.png
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.West.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.West.piko
-		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.West.png
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.East.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.East.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.East.png
@@ -1437,7 +1419,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.South.png
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.West.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.West.piko
-		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.West.png
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.East.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.East.png
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.North.Frames
@@ -1445,7 +1426,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.South.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.South.png
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.West.Frames
-		1. Graphics: GFX/Actors/Bundled/Player/Jake_Human.West.png
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.East.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.East.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.East.png
@@ -1455,10 +1435,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.Petrified.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.frames
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.South.png
-		1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.Placeholder.png
-		1. Graphics: GFX/Actors/Bundled/Player/Krandar.West.png
 		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.East.png
 		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.North.frames
@@ -1468,11 +1446,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.South.png
 		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.West.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.West.piko
-		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.West.png
-		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu.East.png
-		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu.East.png -alias- GFX/Actors/Bundled/Player/Nostramantu.North.png
-		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu.East.png -alias- GFX/Actors/Bundled/Player/Nostramantu.North.png -alias- GFX/Actors/Bundled/Player/Nostramantu.South.png
-		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu.East.png -alias- GFX/Actors/Bundled/Player/Nostramantu.North.png -alias- GFX/Actors/Bundled/Player/Nostramantu.South.png -alias- GFX/Actors/Bundled/Player/Nostramantu.West.png
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 1.png
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 2.png
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 3.png
@@ -1572,10 +1545,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Arena/Magic.png
 		1. Graphics: GFX/Combat/Arena/ManaCave.piko
 		1. Graphics: GFX/Combat/Arena/ManaCave.png
-		1. Graphics: GFX/Combat/Arena/MG.png
 		1. Graphics: GFX/Combat/Arena/Mine.png
 		1. Graphics: GFX/Combat/Arena/NosMansion.png
-		1. Graphics: GFX/Combat/Arena/MG.png -alias- GFX/Combat/Arena/Nostramantu.png
 		1. Graphics: GFX/Combat/Arena/MG.png -alias- GFX/Combat/Arena/Nostramantu.png -alias- GFX/Combat/Arena/Pyrus.png
 		1. Graphics: GFX/Combat/Arena/PyrusPass.png
 		1. Graphics: GFX/Combat/Arena/Quayaro.png
@@ -1661,8 +1632,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Nostramantu.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/SuperZombie.png
 		1. Graphics: GFX/Combat/Fighters/Foe/OverNos/Antenna.piko
-		1. Graphics: GFX/Combat/Fighters/Foe/OverNos/Antenna.png
-		1. Graphics: GFX/Combat/Fighters/Foe/OverNos/Antenna.png -alias- GFX/Combat/Fighters/Foe/OverNos/Antenna_Mock.png
 		1. Graphics: GFX/Combat/Fighters/Foe/OverNos/Antenna.png -alias- GFX/Combat/Fighters/Foe/OverNos/Antenna_Mock.png -alias- GFX/Combat/Fighters/Foe/OverNos/Antenna_Nice.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Female1.piko
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Female1.png
@@ -1714,9 +1683,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake.dead.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake.dead.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake.Petrified.xcf
-		1. Graphics: GFX/Combat/Fighters/Hero/Jake.Spirata.Action.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake.Spirata.piko
-		1. Graphics: GFX/Combat/Fighters/Hero/Jake.Spirata.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Attack.1.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Attack.2.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Cast.png
@@ -1724,8 +1691,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Idle.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Jake_Fairy.West.png -alias- GFX/Combat/Fighters/Hero/Jake_Fairy.Idle.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Petrified.png
-		1. Graphics: GFX/Combat/Fighters/Hero/Jake.Spirata.Action.png -alias- GFX/Combat/Fighters/Hero/Jake_Fairy.Spirata.Action.png
-		1. Graphics: GFX/Combat/Fighters/Hero/Jake.Spirata.png -alias- GFX/Combat/Fighters/Hero/Jake_Fairy.Spirata.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Fairy.Victory.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Attack.1.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Jake_Human.Attack.2.png
@@ -2089,13 +2054,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Music: Music/AltEncounter/Tempting Secrets.ogg
 		1. Music: Music/Dreshka/Hero Down.ogg
 		1. Music: Music/Dreshka/Water Prelude.ogg
-		1. Music: Music/Dungeon/Aqua Antrum.ogg
 		1. Music: Music/Dungeon/Chillin Hard.ogg
-		1. Music: Music/Dungeon/Dandleton.ogg
 		1. Music: Music/Dungeon/Pippin the Hunchback.ogg
 		1. Music: Music/Dungeon/TheDread.ogg
 		1. Music: Music/Hub/Angevin.ogg
-		1. Music: Music/Hub/Hall Of Heroes.ogg
 		1. Music: Music/Hub/Indore.ogg
 		1. Music: Music/Dungeon/Dandleton.ogg -alias- Music/Original4Alias/Ghost Story.ogg
 		1. Music: Music/Hub/Hall Of Heroes.ogg -alias- Music/Original4Alias/Heroic Age.ogg
@@ -2289,7 +2251,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Textures/Trees/Struik.png
 - Matt McFarland
 	- Creative Commons license by attribute. Please check Matt's website for detailed information!
-		1. Music: Music/4Alias/machine-one.ogg
 		1. Music: Music/Dungeon/Ooze.ogg
 		1. Music: Music/Dungeon/Strangled.ogg
 		1. Music: Music/Dungeon/trade-off.ogg
@@ -2302,8 +2263,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/textures/objects/Houten Plank.png
 - Nihilore
 	- Creative Commons Attribution license -- http://www.nihilore.com/license/ -- Music downloaded from http://www.nihilore
-		1. Music: Music/4Alias/A+Tremendous+Thing.ogg
-		1. Music: Music/4Alias/CreativeDestruction.ogg
 		1. Music: Music/4Alias/CreativeDestruction.ogg -alias- Music/Dungeon/Spirata Crypt.ogg
 		1. Music: Music/4Alias/A+Tremendous+Thing.ogg -alias- Music/Special Boss/Final Boss.ogg
 - Papapishu
@@ -2333,7 +2292,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - TFTCREW
 	- The vocals are all directed and recorded by Jeroen P. Broks. They are all property of Jeroen Broks and may only be used in an unmodified version of the game.The voices are from several people. Look at the voice acting list to see who portrayed who
 		1. Audio: Vocals/Combat/Foe/GhostGirl/Action/Scream.ogg
-		1. Audio: Vocals/Combat/Foe/GhostGirl/Action/Scream.ogg -alias- Vocals/Combat/Foe/Harry/Action/Attack.ogg
+		1. Audio: Vocals/Combat/Foe/Harry/Action/Attack.ogg
 		1. Audio: Vocals/Combat/Foe/Harry/Action/Desperate.ogg
 		1. Audio: Vocals/Combat/Foe/Harry/Action/Distract.ogg
 		1. Audio: Vocals/Combat/Foe/Marrilona/Action/DSB.ogg
@@ -2380,12 +2339,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Audio: Vocals/Combat/Hero/Jake/Victory/Dead.ogg
 		1. Audio: Vocals/Combat/Hero/Jake/Victory/General.ogg
 		1. Audio: Vocals/Combat/Hero/Jake/Victory/Perfect.ogg
-		1. Audio: Vocals/Combat/Hero/Krandar/Action/2PS.ogg
-		1. Audio: Vocals/Combat/Hero/Krandar/Action/2PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/3PS.ogg
-		1. Audio: Vocals/Combat/Hero/Krandar/Action/2PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/3PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/4PS.ogg
-		1. Audio: Vocals/Combat/Hero/Krandar/Action/2PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/3PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/4PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/5PS.ogg
-		1. Audio: Vocals/Combat/Hero/Krandar/Action/2PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/3PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/4PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/5PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/6PS.ogg
-		1. Audio: Vocals/Combat/Hero/Krandar/Action/2PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/3PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/4PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/5PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/6PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/7PS.ogg
 		1. Audio: Vocals/Combat/Hero/Krandar/Action/Attack.ogg
 		1. Audio: Vocals/Combat/Hero/Krandar/Action/2PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/3PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/4PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/5PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/6PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/7PS.ogg -alias- Vocals/Combat/Hero/Krandar/Action/Critical.ogg
 		1. Audio: Vocals/Combat/Hero/Krandar/Action/DefUp.ogg
@@ -2959,7 +2912,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Music: Music/Town/Funky Fairy.ogg
 - Wicky77
 	- This song was dedicated to my work as a game's programmer. It may only be extracted from this game and be used within your own projects if you have the artist's explicit's permission.
-		1. Music: Music/4Alias/spook.ogg
 		1. Music: Music/Combat/Victory.ogg
 		1. Music: Music/Dungeon/Beethoven.ogg
 		1. Music: Music/4Alias/spook.ogg -alias- Music/Dungeon/Cathedral.ogg
