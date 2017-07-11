@@ -355,7 +355,7 @@ Rec: CH4STARDOME
 Rec: NGPAQUAANTRUM
 	Dungeon = TRUE
 	Folder = Delisto
-	Kthura = NGP_AQUAANTRUM
+	Kthura = NGP_Dungeon_AquaAntrum
 	Layer = #000
 	LocationName = Aqua Antrum
 	LocationPrefix = 
