@@ -32,5 +32,38 @@
   
  **********************************************
  
-version: 17.07.11
+version: 17.07.12
 ]]
+
+
+-- @USE /Script/Use/Specific/GreatMagicBack.lua
+local effect
+
+function MAP_FLOW()
+    --for e in each(effect) do for e1 in each(e) do FlowMoveTex(e1) end end
+    for e in each(effect[Maps.LayerCodeName]) do FlowMoveTex(e) end
+end
+
+
+function GALE_OnLoad()
+    local plasma = {}
+    plasma.textures = {
+       'gfx/Textures/Plasma/TiledPlasma.png',
+       'gfx/Textures/Plasma/TiledPlasma.png',
+       "GFX/TEXTURES/SINUS/DARK SINUS/HSINUS.PNG",
+       "GFX/TEXTURES/SINUS/LIGHT SINUS/HSINUS.PNG"
+    }
+    plasma.colors = {
+            {0,0,50},
+            {0,0,50},
+            {0,0,50},
+            {0,0,50}
+        }
+    plasma.speed = {
+           {2,-2},
+           {-2,2},
+           {1,0},
+           {0,1}
+        }
+    effect = SetupGreatMagic(plasma,21)         
+end

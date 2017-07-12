@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.11
+version: 17.07.12
 ]]
 function NPC_INNKEEPER()
   Inn()
@@ -61,8 +61,8 @@ end
 
 function NPC_Cherry()
     local d={[true]=2, [false]=1}
-    local dn = Done('&DONE.NEWGAMEPLUS.CHERRY.GROMBO.UNLOCKED.AQUA.ANTRUM')==true
-    if dn then WorldMap_Unlock('NGPAQUAANTRUM') end
+    local dn = Done('&DONE.NEWGAMEPLUS.CHERRY.GROMBO.WORLDMAP.UNLOCKED.AQUA.ANTRUM')==true
+    if not dn then WorldMap_Unlock('NGPAQUAANTRUM') end
     MapText('CHERRY'..d[dn])
 end    
 

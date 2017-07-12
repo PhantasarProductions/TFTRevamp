@@ -1892,9 +1892,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Map Design: Kthura/Egg_Walda/Data
 		1. Map Design: Kthura/Egg_Walda/Objects
 		1. Map Design: Kthura/Egg_Walda/Settings
-		1. Map Design: Kthura/NGP_AQUAANTRUM/Data
-		1. Map Design: Kthura/NGP_AQUAANTRUM/Objects
-		1. Map Design: Kthura/NGP_AQUAANTRUM/Settings
+		1. Map Design: Kthura/NGP_Dungeon_AquaAntrum/Data
+		1. Map Design: Kthura/NGP_Dungeon_AquaAntrum/Objects
+		1. Map Design: Kthura/NGP_Dungeon_AquaAntrum/Settings
 		1. Map Design: Kthura/NGP_Dungeon_Cathedral/Data
 		1. Map Design: Kthura/NGP_Dungeon_Cathedral/Objects
 		1. Map Design: Kthura/NGP_Dungeon_Cathedral/Settings
