@@ -176,6 +176,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 	- Public Domain
 		1. Graphics: GFX/Combat/Fighters/Foe/Sealed/Cockatrice.png
 	- This entry is in the public domain and free of all restrictions.
+		1. Graphics: GFX/Combat/Fighters/Foe/Boss/OceanMaid.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Sealed/Hydra.hot
 		1. Graphics: GFX/Combat/Fighters/Foe/Sealed/Hydra.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Sealed/MinoKing.png
@@ -631,6 +632,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/Boss/MountainKing.lua
 		1. Script: Script/JINC/Foes/Boss/Nostramantu1.lua
 		1. Script: Script/JINC/Foes/Boss/Nostramantu2.lua
+		1. Script: Script/JINC/Foes/Boss/OceanMaid.lua
 		1. Script: Script/JINC/Foes/Boss/PetitRoi.lua
 		1. Script: Script/JINC/Foes/Boss/Russell.lua
 		1. Script: Script/JINC/Foes/Boss/ShadowRogue.lua
@@ -700,8 +702,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/reg/Pyroguin.lua
 		1. Script: Script/JINC/Foes/reg/RSpook.lua
 		1. Script: Script/JINC/Foes/reg/Rogue.lua
+		1. Script: Script/JINC/Foes/reg/SeaMaid.lua
 		1. Script: Script/JINC/Foes/reg/Shade.lua
 		1. Script: Script/JINC/Foes/reg/ShadowShroom.lua
+		1. Script: Script/JINC/Foes/reg/Shark.lua
 		1. Script: Script/JINC/Foes/reg/Shroom.lua
 		1. Script: Script/JINC/Foes/reg/Siren.lua
 		1. Script: Script/JINC/Foes/reg/Skeleton.lua
@@ -731,6 +735,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/ABL_FOE_DEVOUR.lua
 		1. Script: Script/JINC/IA/ABL_FOE_DISINTEGRATE.lua
 		1. Script: Script/JINC/IA/ABL_FOE_DISTRACT.lua
+		1. Script: Script/JINC/IA/ABL_FOE_EAT.lua
 		1. Script: Script/JINC/IA/ABL_FOE_ENEMYVITALIZE.lua
 		1. Script: Script/JINC/IA/ABL_FOE_ENERGYDRAIN.lua
 		1. Script: Script/JINC/IA/ABL_FOE_EVIL_EYE.lua
@@ -747,6 +752,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/ABL_FOE_GG_DEATHSCREAM.lua
 		1. Script: Script/JINC/IA/ABL_FOE_GG_SCREAM.lua
 		1. Script: Script/JINC/IA/ABL_FOE_GRAVITY.lua
+		1. Script: Script/JINC/IA/ABL_FOE_HAP.lua
 		1. Script: Script/JINC/IA/ABL_FOE_HOLDPERSON.lua
 		1. Script: Script/JINC/IA/ABL_FOE_HORROR.lua
 		1. Script: Script/JINC/IA/ABL_FOE_LIFEDRAIN.lua
@@ -1016,6 +1022,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/ITM_APPLE.lua
 		1. Script: Script/JINC/IA/ITM_APPLES.lua
 		1. Script: Script/JINC/IA/ITM_BANANA.lua
+		1. Script: Script/JINC/IA/ITM_BANANAS.lua
 		1. Script: Script/JINC/IA/ITM_BELL.lua
 		1. Script: Script/JINC/IA/ITM_CARROT.lua
 		1. Script: Script/JINC/IA/ITM_CARROTPACKFISH.lua
@@ -1306,6 +1313,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Use/Combat/PreTurn/Nostramantu's Amulet.lua
 		1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
 		1. Script: Script/Use/Combat/SpellAni/Aqua.lua
+		1. Script: Script/Use/Combat/SpellAni/Audio.lua
 		1. Script: Script/Use/Combat/SpellAni/DarkVision.lua
 		1. Script: Script/Use/Combat/SpellAni/Donald Trump.lua
 		1. Script: Script/Use/Combat/SpellAni/Flame.lua
@@ -1543,6 +1551,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/BoxText/Portret/Melody/Untitled.piko
 		1. Graphics: GFX/BoxText/Portret/Rosetta/General.png
 		1. Graphics: GFX/Combat/Arena/Altar.png
+		1. Graphics: GFX/Combat/Arena/Aqua.png
 		1. Graphics: GFX/Combat/Arena/Cathedral.png
 		1. Graphics: GFX/Combat/Arena/Caves.png
 		1. Graphics: GFX/Combat/Arena/Dark.png
@@ -2268,6 +2277,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - Papapishu
 	- This entry is in the public domain and free of all restrictions.
 		1. Graphics: gfx/combat/fighters/foe/reg/boar.png
+- ProductionNow
+	- Creative Commons ZERO license - The Creative Commons ZERO license means no restrictions and no obligations either to any party making stuff 100% free to use, modify or whatever. - This license is basically as free as the Public Domain.
+		1. Audio: Audio/SFX/Eat/Eat.ogg
+		1. Audio: Audio/SFX/Eat/Eat.wav
 - Rambo Tribble
 	- This entry is in the public domain and free of all restrictions.
 		1. Graphics: GFX/Textures/MtPyrusPuzzle/VolcanoSlide.frames
@@ -2963,6 +2976,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 	- The full text is on http://www.freesfx.co.uk/info/eula - You may only download these files from the original website under the terms described there!
 		1. Audio: Audio/SpellAni/Thunder/Spark.ogg
 		1. Audio: Audio/SpellAni/Thunder/ThunderStrike.ogg
+- mi_brami
+	- This entry is in the public domain and free of all restrictions.
+		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Shark.png
 - mystica
 	- This entry is in the public domain and free of all restrictions.
 		1. Graphics: gfx/combat/fighters/foe/mimic/mystica-Treasure-chest.png

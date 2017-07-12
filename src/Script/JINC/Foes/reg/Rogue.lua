@@ -1,6 +1,6 @@
 --[[
   Rogue.lua
-  Version: 17.07.10
+  Version: 17.07.12
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Mon 10 July 2017; 22:01:54
+-- File Generated: Wed 12 July 2017; 17:06:16
 
 
 local foe = {}
@@ -102,6 +102,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_DEVOUR"] = 0
 	foe["RATE_ABL_FOE_DISINTEGRATE"] = 0
 	foe["RATE_ABL_FOE_DISTRACT"] = 5
+	foe["RATE_ABL_FOE_EAT"] = 0
 	foe["RATE_ABL_FOE_ENEMYVITALIZE"] = 0
 	foe["RATE_ABL_FOE_ENERGYDRAIN"] = 0
 	foe["RATE_ABL_FOE_EVIL_EYE"] = 0
@@ -118,6 +119,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_GG_DEATHSCREAM"] = 0
 	foe["RATE_ABL_FOE_GG_SCREAM"] = 0
 	foe["RATE_ABL_FOE_GRAVITY"] = 0
+	foe["RATE_ABL_FOE_HAP"] = 0
 	foe["RATE_ABL_FOE_HOLDPERSON"] = 0
 	foe["RATE_ABL_FOE_HORROR"] = 0
 	foe["RATE_ABL_FOE_LIFEDRAIN"] = 0
@@ -202,6 +204,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_ETERNALFLAME"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_FIREBLAST"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_FLAME"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_HANDOSTILLOR_VITALITY"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_HURRICANE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ICEBLAST"] = 0
@@ -285,6 +288,7 @@ local foe = {}
 	foe["RATE_ITM_APPLE"] = 0
 	foe["RATE_ITM_APPLES"] = 0
 	foe["RATE_ITM_BANANA"] = 0
+	foe["RATE_ITM_BANANAS"] = 0
 	foe["RATE_ITM_BELL"] = 0
 	foe["RATE_ITM_CARROT"] = 0
 	foe["RATE_ITM_CARROTPACKFISH"] = 0
@@ -325,6 +329,7 @@ local foe = {}
 	foe["RATE_ITM_POISONDART"] = 0
 	foe["RATE_ITM_POTION"] = 0
 	foe["RATE_ITM_POTIONS"] = 0
+	foe["RATE_ITM_POTIONVITALITY"] = 0
 	foe["RATE_ITM_PURELITERATURE"] = 0
 	foe["RATE_ITM_PURIFICATIONSHOWER"] = 0
 	foe["RATE_ITM_SALVE"] = 0
@@ -439,6 +444,7 @@ local foe = {}
 	foe["TARGET_ABL_FOE_DEVOUR"] = "Random"
 	foe["TARGET_ABL_FOE_DISINTEGRATE"] = "Random"
 	foe["TARGET_ABL_FOE_DISTRACT"] = "Random"
+	foe["TARGET_ABL_FOE_EAT"] = "Random"
 	foe["TARGET_ABL_FOE_ENEMYVITALIZE"] = "Random"
 	foe["TARGET_ABL_FOE_ENERGYDRAIN"] = "Random"
 	foe["TARGET_ABL_FOE_EVIL_EYE"] = "Random"
@@ -455,6 +461,7 @@ local foe = {}
 	foe["TARGET_ABL_FOE_GG_DEATHSCREAM"] = "Random"
 	foe["TARGET_ABL_FOE_GG_SCREAM"] = "Random"
 	foe["TARGET_ABL_FOE_GRAVITY"] = "Random"
+	foe["TARGET_ABL_FOE_HAP"] = "Random"
 	foe["TARGET_ABL_FOE_HOLDPERSON"] = "Random"
 	foe["TARGET_ABL_FOE_HORROR"] = "Random"
 	foe["TARGET_ABL_FOE_LIFEDRAIN"] = "Random"
@@ -539,6 +546,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_MARRILONA_ETERNALFLAME"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_FIREBLAST"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_FLAME"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_HANDOSTILLOR_VITALITY"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_HEAL"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_HURRICANE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ICEBLAST"] = "Random"
@@ -622,6 +630,7 @@ local foe = {}
 	foe["TARGET_ITM_APPLE"] = "Random"
 	foe["TARGET_ITM_APPLES"] = "Random"
 	foe["TARGET_ITM_BANANA"] = "Random"
+	foe["TARGET_ITM_BANANAS"] = "Random"
 	foe["TARGET_ITM_BELL"] = "Random"
 	foe["TARGET_ITM_CARROT"] = "Random"
 	foe["TARGET_ITM_CARROTPACKFISH"] = "Random"
@@ -662,6 +671,7 @@ local foe = {}
 	foe["TARGET_ITM_POISONDART"] = "Random"
 	foe["TARGET_ITM_POTION"] = "Random"
 	foe["TARGET_ITM_POTIONS"] = "Random"
+	foe["TARGET_ITM_POTIONVITALITY"] = "Random"
 	foe["TARGET_ITM_PURELITERATURE"] = "Random"
 	foe["TARGET_ITM_PURIFICATIONSHOWER"] = "Random"
 	foe["TARGET_ITM_SALVE"] = "Random"

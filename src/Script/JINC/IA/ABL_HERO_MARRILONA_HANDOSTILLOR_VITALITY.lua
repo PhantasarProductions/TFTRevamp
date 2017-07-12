@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_HANDOSTILLOR_VITALITY.lua
-  Version: 17.07.11
+  Version: 17.07.12
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

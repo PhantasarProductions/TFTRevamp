@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.07.09
+  Version: 17.07.12
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -45,9 +45,9 @@ local fflow = {}
 -- @FI
 
 
-fflow.SpellAni = {  [true]=function(ag,at,tg,ti,act) MS.Load("X_SPELLANI","Script/SpellAni/"..act.SpellAni..".lua") MS_Run("X_SPELLANI","SPELLANI",act.SpellAni_Args) end, 
+fflow.SpellAni = {  [true]=function(ag,at,tg,ti,act) MS.Load("X_SPELLANI","Script/SpellAni/"..act.SpellAni..".lua") MS_Run("X_SPELLANI","SPELLANI",act.SpellAni_Arg) end, 
                     [false]=function(ag,at,tg,ti,act) 
-                              SpellAni[act.SpellAni](ag,at,tg,ti) 
+                              SpellAni[act.SpellAni](ag,at,tg,ti,act.SpellAni_Arg) 
                               end
                  }
 
