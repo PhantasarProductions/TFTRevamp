@@ -57,6 +57,7 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 1000000,
 	["ITM_Type"] = "Accesoiry",
 	["Stance"] = "Cast",
 	["Target"] = "1F",

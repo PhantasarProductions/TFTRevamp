@@ -581,6 +581,18 @@ Rec: ZZNGP_ALL
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: ZZNGP_AQUA
+	Description = Complete Aqua Antrum
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = FALSE
+	Show = Always
+	Title = I feel it in the water, I feel it in the earth
+	Type = Gold
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: ZZNGP_CATHEDRAL
 	Description = Complete the Cathedral
 	Icon = *DEFAULT*

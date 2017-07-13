@@ -986,6 +986,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/EQP_JAKE_WP8.lua
 		1. Script: Script/JINC/IA/EQP_JAKE_WP9.lua
 		1. Script: Script/JINC/IA/EQP_JEWEL_AMETHYST.lua
+		1. Script: Script/JINC/IA/EQP_JEWEL_AQUAMARINE.lua
 		1. Script: Script/JINC/IA/EQP_JEWEL_DIAMOND.lua
 		1. Script: Script/JINC/IA/EQP_JEWEL_EMERALD.lua
 		1. Script: Script/JINC/IA/EQP_JEWEL_GARNET.lua
@@ -1184,6 +1185,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Shops/ITEM_ISKARDERIU.lua
 		1. Script: Script/JINC/Shops/ITEM_KATINTA.lua
 		1. Script: Script/JINC/Shops/ITEM_WANDA.lua
+		1. Script: Script/JINC/Shops/NGP_WANINDRA.lua
 		1. Script: Script/JINC/Shops/WAND_MONIQUE.lua
 		1. Script: Script/JINC/Shops/WAND_YLLABONJA.lua
 		1. Script: Script/JINC/Shops/WEAPON_ERIC.lua
@@ -1910,9 +1912,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Map Design: Kthura/NGP_Dungeon_Quayaro/Data
 		1. Map Design: Kthura/NGP_Dungeon_Quayaro/Objects
 		1. Map Design: Kthura/NGP_Dungeon_Quayaro/Settings
-		1. Map Design: Kthura/NGP_HUB_HEROES/DATA
-		1. Map Design: Kthura/NGP_HUB_HEROES/OBJECTS
-		1. Map Design: Kthura/NGP_HUB_HEROES/SETTINGS
+		1. Map Design: Kthura/NGP_HUB_HEROES/Data
+		1. Map Design: Kthura/NGP_HUB_HEROES/Objects
+		1. Map Design: Kthura/NGP_HUB_HEROES/Settings
 		1. Map Design: Kthura/PRO_Dungeon_Crypt/Data
 		1. Map Design: Kthura/PRO_Dungeon_Crypt/Objects
 		1. Map Design: Kthura/PRO_Dungeon_Crypt/Settings
@@ -1981,6 +1983,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_STARDOME
 		1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_Z_NOSTRAMANTUMANSION
 		1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
+		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_AQUAANTRUM
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_CATHEDRAL
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_QUAYARO
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_HUB_HEROES
@@ -2034,6 +2037,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_STARDOME
 		1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_Z_NOSTRAMANTUMANSION
 		1. Scenario: Languages/English/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
+		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_AQUAANTRUM
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_CATHEDRAL
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_QUAYARO
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_HUB_HEROES

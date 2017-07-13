@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  ITEM_ISKARDERIU.lua
+  NGP_WANINDRA.lua
   (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
@@ -39,26 +39,26 @@ version: 17.07.12
 -- License: This file contains data from the Phantasar Universe and is therefore property of Jeroen Broks and may NOT be used for your own ends.
 	ret = {
 		["AllowTrade"] = false,
-		["Slot1"] = "ITM_APPLE",
-		["Slot10"] = "ITM_CARROT",
-		["Slot11"] = "ITM_PANACEA",
-		["Slot12"] = "ITM_POTIONVITALITY",
-		["Slot13"] = "AAA_ATTACK",
-		["Slot14"] = "AAA_ATTACK",
-		["Slot15"] = "AAA_ATTACK",
-		["Slot16"] = "AAA_ATTACK",
-		["Slot17"] = "AAA_ATTACK",
-		["Slot18"] = "AAA_ATTACK",
-		["Slot19"] = "AAA_ATTACK",
-		["Slot2"] = "ITM_SALVE",
-		["Slot20"] = "AAA_ATTACK",
-		["Slot3"] = "ITM_POTION",
-		["Slot4"] = "ITM_HEALINGHERB",
-		["Slot5"] = "ITM_ANTIDOTE",
-		["Slot6"] = "ITM_MEDICINE",
-		["Slot7"] = "ITM_MAGICDUST",
-		["Slot8"] = "ITM_VOICEHERB",
-		["Slot9"] = "ITM_MANDRAKE",
-		["Title"] = "Emor Shylah's item shop"}
+		["Slot1"] = "EQP_JEWEL_TOPAZ",
+		["Slot10"] = "EQP_ACC_AMULETLIFE",
+		["Slot11"] = "EQP_ACC_NOTNAMED",
+		["Slot12"] = "EQP_ACC_RINGEARTH",
+		["Slot13"] = "EQP_ACC_RINGFIRE",
+		["Slot14"] = "EQP_ACC_RINGWATER",
+		["Slot15"] = "EQP_ACC_RINGWIND",
+		["Slot16"] = "EQP_ACC_RINGSKILL",
+		["Slot17"] = "EQP_ACC_RINGWENIARIA",
+		["Slot18"] = "EQP_ACC_WIZARDRING",
+		["Slot19"] = "EQP_ACC_THIEFCLOAK",
+		["Slot2"] = "EQP_JEWEL_AMETHYST",
+		["Slot20"] = "EQP_ACC_TITANBELT",
+		["Slot3"] = "EQP_JEWEL_AQUAMARINE",
+		["Slot4"] = "EQP_JEWEL_EMERALD",
+		["Slot5"] = "EQP_JEWEL_GARNET",
+		["Slot6"] = "EQP_JEWEL_JADE",
+		["Slot7"] = "EQP_JEWEL_ONYX",
+		["Slot8"] = "EQP_JEWEL_RUBY",
+		["Slot9"] = "EQP_JEWEL_SAPPHIRE",
+		["Title"] = "Wanindra's Jewelry Shop"}
 
 return ret

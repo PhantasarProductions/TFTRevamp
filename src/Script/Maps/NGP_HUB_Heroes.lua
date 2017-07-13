@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.08
+version: 17.07.12
 ]]
 
 function NPC_Zyviola()
@@ -52,6 +52,11 @@ function NPC_SymphoNica()
     LAURA.Flow('JUKEBOX')
     StopMusic()
 end    
+
+function NPC_Wanindra()
+    MapText('WANINDRA')
+    Shop('NGP_WANINDRA')
+end
     
 
 function GALE_OnLoad()

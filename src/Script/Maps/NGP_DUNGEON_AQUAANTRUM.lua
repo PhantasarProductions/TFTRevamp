@@ -71,9 +71,9 @@ end
               
               
 function InitPuzzle()
-   DonePuzzle="&DONE.MINE.PUZZLE.SOLVED["..Maps.LayerCodeName.."]"
+   DonePuzzle="&DONE.AQUAANTRUM.PUZZLE.SOLVED["..Maps.LayerCodeName.."]"
    local maxset=16
-   --if Maps.LayerCodeName=="#007" then maxset=25 end
+   if Maps.LayerCodeName=="#007" then maxset=25 end
    if CVV(DonePuzzle) or Touched then return end
    local r
    Touched = {}
@@ -177,16 +177,24 @@ function MAP_FLOW()
     for w,d in pairs(water) do wflow(d) end    
 end
 
+function NPC_Wanindra()
+    ToHallHeroes('Wanindra','AQUA')
+end
+
 
 function GALE_OnLoad()
     local plasma = {}
     plasma.textures = {
        'gfx/Textures/Plasma/TiledPlasma.png',
        'gfx/Textures/Plasma/TiledPlasma.png',
+       "GFX/TEXTURES/SINUS/LIGHT SINUS/HSINUS.PNG",
+       "GFX/TEXTURES/SINUS/LIGHT SINUS/VSINUS.PNG",
        "GFX/TEXTURES/SINUS/DARK SINUS/HSINUS.PNG",
        "GFX/TEXTURES/SINUS/LIGHT SINUS/VSINUS.PNG"
     }
     plasma.colors = {
+            {0,0,50},
+            {0,0,50},
             {0,0,50},
             {0,0,50},
             {0,0,50},
@@ -196,8 +204,10 @@ function GALE_OnLoad()
            {2,-2},
            {-2,2},
            {1,0},
-           {0,1}
+           {0,1},
+           {-1,0},
+           {0,-1}
         }
-    effect = SetupGreatMagic(plasma,21)         
+    effect = SetupGreatMagic(plasma,8)         
     ZA_Enter('SymStart',InitPuzzle); for i=1,16 do ZA_Enter('Sym'..i,TouchSymbol,i) end
 end
