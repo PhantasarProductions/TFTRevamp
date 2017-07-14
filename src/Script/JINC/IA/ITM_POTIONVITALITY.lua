@@ -1,6 +1,6 @@
 --[[
   ITM_POTIONVITALITY.lua
-  Version: 17.07.12
+  Version: 17.07.13
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -55,7 +55,7 @@ ret = {
 	["Rew_GainAP"] = 1,
 	["SpellAni"] = "SingleHeal",
 	["Stance"] = "Cast",
-	["Target"] = "1F",
+	["Target"] = "1A",
 	["Title"] = "Potion of Vitality",
 	["Type"] = "Item",
 	["Voice"] = "Heal",

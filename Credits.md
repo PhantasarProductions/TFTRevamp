@@ -667,6 +667,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/reg/Boekenworm.lua
 		1. Script: Script/JINC/Foes/reg/Devil Monk From Hell.lua
 		1. Script: Script/JINC/Foes/reg/DragonKeeper.lua
+		1. Script: Script/JINC/Foes/reg/EarthElemental.lua
 		1. Script: Script/JINC/Foes/reg/FireElemental.lua
 		1. Script: Script/JINC/Foes/reg/FireGhoul.lua
 		1. Script: Script/JINC/Foes/reg/FireHound.lua
@@ -1030,6 +1031,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/ITM_CARROTS.lua
 		1. Script: Script/JINC/IA/ITM_CHERRY.lua
 		1. Script: Script/JINC/IA/ITM_CURSEDSPORES.lua
+		1. Script: Script/JINC/IA/ITM_DAMNEDDUST.lua
 		1. Script: Script/JINC/IA/ITM_DEATHCUBE.lua
 		1. Script: Script/JINC/IA/ITM_DRAGONFIRE.lua
 		1. Script: Script/JINC/IA/ITM_EEL.lua
@@ -1067,6 +1069,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/ITM_POTIONVITALITY.lua
 		1. Script: Script/JINC/IA/ITM_PURELITERATURE.lua
 		1. Script: Script/JINC/IA/ITM_PURIFICATIONSHOWER.lua
+		1. Script: Script/JINC/IA/ITM_ROCK.lua
 		1. Script: Script/JINC/IA/ITM_SALVE.lua
 		1. Script: Script/JINC/IA/ITM_SALVES.lua
 		1. Script: Script/JINC/IA/ITM_SAUERKRAUT.lua
@@ -1728,6 +1731,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Victory.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.Victory.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.West.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.dead.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Krandar.dead.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Attack.1.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Attack.2.png
@@ -2902,12 +2906,15 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/ShadowRogue.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/UberGoblin.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Boekenworm.png
+		1. Graphics: GFX/Combat/Fighters/Foe/Reg/EarthElemental.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Hag.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/HidingHag.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/ShadowShroom.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Shroom.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/StoneGolem.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Sealed/MountainEmperor.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Spirata.Action.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Spirata.png
 		1. Graphics: GFX/Combat/Spellani/Temptation/Heart.png
 		1. Graphics: GFX/MapSpots/Travel.png
 		1. Graphics: GFX/Textures/4 Elements/Aarde.png
