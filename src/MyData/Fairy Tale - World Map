@@ -372,6 +372,16 @@ Rec: NGPCATHEDRAL
 	Start = Start
 	UnlockedFromStart = FALSE
 
+Rec: NGPDANDLETON
+	Dungeon = TRUE
+	Folder = Kokonora
+	Kthura = NGP_Dungeon_Dandleton
+	Layer = #001
+	LocationName = Dandleton
+	LocationPrefix = The Lost City of 
+	Start = Start
+	UnlockedFromStart = FALSE
+
 Rec: NGPHEROES
 	Dungeon = FALSE
 	Folder = Delisto
