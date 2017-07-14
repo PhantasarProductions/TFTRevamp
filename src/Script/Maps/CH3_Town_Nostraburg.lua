@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.13
+version: 17.07.14
 ]]
 RAMATA = "&DONE.NOSTRABURG.RAMATA.WELCOME.TEXT"
 
@@ -166,6 +166,11 @@ function BlueSeal()
     Done('&DONE.SEAL.MARRILONA1')
 end    
 
+function NPC_Sinasina()
+    MapText('SINASINA')
+    WorldMap_Unlock('NGPDANDLETON')
+end    
+
 function GALE_OnLoad()
   Maps.GotoLayer("town") 
   if not CVV(RAMATA) then    
@@ -189,7 +194,12 @@ function GALE_OnLoad()
      Maps.Obj.Kill("ZA_ENTER_krandar")
      Maps.ReMap()   
   end   
-  if not CVV("&DONE.CHAPTER4.MTPYRUS.BOSS.NOSTRAMANTU.DEFEATED") then Maps.Obj.Obj("NPC_Feenalaria").Visible=0 end
+  if not CVV("&DONE.CHAPTER4.MTPYRUS.BOSS.NOSTRAMANTU.DEFEATED") then 
+     Maps.Obj.Obj("NPC_Feenalaria").Visible=0
+     Maps.Obj.Kill('NPC_Sinasina')
+  elseif not newgameplus then
+     Maps.Obj.Kill('NPC_Sinasina')      
+  end
   ZA_Enter("Exit",function() GoToLayer("town","exit_"..lower(Maps.LayerCodeName)) end) 
   for obj in KthuraEach() do
       if prefixed(obj.Tag,"ENTER_") then

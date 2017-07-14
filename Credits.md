@@ -717,6 +717,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/reg/Thief.lua
 		1. Script: Script/JINC/Foes/reg/VolcanoHound.lua
 		1. Script: Script/JINC/Foes/reg/Warlock.lua
+		1. Script: Script/JINC/Foes/reg/WaterElemental.lua
 		1. Script: Script/JINC/Foes/reg/WindElemental.lua
 		1. Script: Script/JINC/Foes/reg/Wolf.lua
 		1. Script: Script/JINC/Foes/reg/Zombie.lua
@@ -1892,9 +1893,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Data
 		1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Objects
 		1. Map Design: Kthura/CH4_Dungeon_PyrusPass/Settings
-		1. Map Design: Kthura/CH4_Dungeon_SpirataCrypt/DATA
-		1. Map Design: Kthura/CH4_Dungeon_SpirataCrypt/OBJECTS
-		1. Map Design: Kthura/CH4_Dungeon_SpirataCrypt/SETTINGS
+		1. Map Design: Kthura/CH4_Dungeon_SpirataCrypt/Data
+		1. Map Design: Kthura/CH4_Dungeon_SpirataCrypt/Objects
+		1. Map Design: Kthura/CH4_Dungeon_SpirataCrypt/Settings
 		1. Map Design: Kthura/CH4_Dungeon_StarDome/Data
 		1. Map Design: Kthura/CH4_Dungeon_StarDome/Objects
 		1. Map Design: Kthura/CH4_Dungeon_StarDome/Settings
@@ -1913,6 +1914,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Map Design: Kthura/NGP_Dungeon_Cathedral/Data
 		1. Map Design: Kthura/NGP_Dungeon_Cathedral/Objects
 		1. Map Design: Kthura/NGP_Dungeon_Cathedral/Settings
+		1. Map Design: Kthura/NGP_Dungeon_Dandleton/Data
+		1. Map Design: Kthura/NGP_Dungeon_Dandleton/Objects
+		1. Map Design: Kthura/NGP_Dungeon_Dandleton/Settings
 		1. Map Design: Kthura/NGP_Dungeon_Quayaro/Data
 		1. Map Design: Kthura/NGP_Dungeon_Quayaro/Objects
 		1. Map Design: Kthura/NGP_Dungeon_Quayaro/Settings
@@ -2983,6 +2987,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - ginkgo
 	- This entry is in the public domain and free of all restrictions.
 		1. Graphics: GFX/CoMbAt/Fighters/Foe/Reg/FireElemental.png
+		1. Graphics: GFX/CoMbAt/Fighters/Foe/Reg/WaterElemental.png
 - http://www.freesfx.co.uk
 	- The full text is on http://www.freesfx.co.uk/info/eula - You may only download these files from the original website under the terms described there!
 		1. Audio: Audio/SpellAni/Thunder/Spark.ogg
