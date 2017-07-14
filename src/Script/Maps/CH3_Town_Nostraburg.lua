@@ -171,7 +171,7 @@ function GALE_OnLoad()
   if not CVV(RAMATA) then    
     local function RemataWelcome()
       MapText("RAMATA_GUARD")
-      Maps.Obj.Kill("Guard_Remata",1)
+      Maps.Obj.Kill("Guard_Ramata",1)
       Done(RAMATA)
     end
   ZA_Enter("Guard_Ramata",RemataWelcome)  
