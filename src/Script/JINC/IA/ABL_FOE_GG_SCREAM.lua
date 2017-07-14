@@ -1,6 +1,6 @@
 --[[
   ABL_FOE_GG_SCREAM.lua
-  Version: 17.07.13
+  Version: 17.07.14
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

@@ -12780,7 +12780,7 @@ Rec: ABL_HERO_MARRILONA_ELECTROCUTION
 	Attack_AttackStat = Intelligence
 	Attack_DefenseStat = Resistance
 	Attack_Desperate = FALSE
-	Attack_Element = Water
+	Attack_Element = Lightning
 	BUFF_Accuracy = 0
 	BUFF_Endurance = 0
 	BUFF_Evasion = 0

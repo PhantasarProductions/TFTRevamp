@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Fri 14 July 2017; 11:58:03
+-- File Generated: Fri 14 July 2017; 12:09:36
 
 
 local foe = {}
@@ -785,7 +785,7 @@ local foe = {}
 	foe["TARGET_ZZZ_KRANDARBLADE"] = "Random"
 	foe["TARGET_ZZ_CRYPTKEY"] = "Random"
 	foe["VocalTag"] = "WaterElemental"
-	foe["Boss"] = true
+	foe["Boss"] = false
 	foe["Oversoul"] = true
 	foe["Oversoul Drop \49"] = false
 	foe["Oversoul Drop \50"] = false
