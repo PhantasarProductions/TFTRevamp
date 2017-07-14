@@ -488,6 +488,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: gfx/Textures/Cathedral/Window.png
 		1. Graphics: gfx/Textures/Cathedral/Window_lv.png
 		1. Graphics: gfx/Textures/Cathedral/Window_rv.png
+		1. Graphics: gfx/Textures/Dandleton/House - Leftover.png
+		1. Graphics: gfx/Textures/Dandleton/Pole.png
 		1. Graphics: gfx/Textures/EarthPuzzle/AR_DN.png
 		1. Graphics: gfx/Textures/EarthPuzzle/AR_LF.png
 		1. Graphics: gfx/Textures/EarthPuzzle/AR_RT.png
@@ -694,6 +696,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/reg/Lost Soul.lua
 		1. Script: Script/JINC/Foes/reg/MagSkeleton.lua
 		1. Script: Script/JINC/Foes/reg/Medusa.lua
+		1. Script: Script/JINC/Foes/reg/MedusaMage.lua
 		1. Script: Script/JINC/Foes/reg/Mermaid.lua
 		1. Script: Script/JINC/Foes/reg/Midget.lua
 		1. Script: Script/JINC/Foes/reg/Mimic.lua
@@ -842,6 +845,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HANDOSTILLOR_VITALITY.lua
 		1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HEAL.lua
 		1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_HURRICANE.lua
+		1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ICEAGE.lua
 		1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_ICEBLAST.lua
 		1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_INFERNO.lua
 		1. Script: Script/JINC/IA/ABL_HERO_MARRILONA_LETSHEALEMALL.lua
@@ -1051,6 +1055,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/ITM_ICICLES.lua
 		1. Script: Script/JINC/IA/ITM_INFERNOORB.lua
 		1. Script: Script/JINC/IA/ITM_JUSDORANGE.lua
+		1. Script: Script/JINC/IA/ITM_LEADERFLAG.lua
 		1. Script: Script/JINC/IA/ITM_MAGICDUST.lua
 		1. Script: Script/JINC/IA/ITM_MAGICSPRINKLES.lua
 		1. Script: Script/JINC/IA/ITM_MAGICSTONE.lua
@@ -1236,6 +1241,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Maps/NGP_DUNGEON_AQUAANTRUM.lua
 		1. Script: Script/Maps/NGP_DUNGEON_CATHEDRAL.lua
 		1. Script: Script/Maps/NGP_DUNGEON_Quayaro.lua
+		1. Script: Script/Maps/NGP_Dungeon_Dandleton.lua
 		1. Script: Script/Maps/NGP_Dungeon_Quayaro.lsv
 		1. Script: Script/Maps/NGP_HUB_Heroes.lua
 		1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
@@ -1560,6 +1566,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Arena/Aqua.png
 		1. Graphics: GFX/Combat/Arena/Cathedral.png
 		1. Graphics: GFX/Combat/Arena/Caves.png
+		1. Graphics: GFX/Combat/Arena/Dandleton.png
 		1. Graphics: GFX/Combat/Arena/Dark.png
 		1. Graphics: GFX/Combat/Arena/Forest.png
 		1. Graphics: GFX/Combat/Arena/ForestLoof.png
@@ -1993,6 +2000,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_AQUAANTRUM
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_CATHEDRAL
+		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_DANDLETON
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_QUAYARO
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_HUB_HEROES
 		1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
@@ -2047,6 +2055,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Scenario: Languages/English/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_AQUAANTRUM
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_CATHEDRAL
+		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_DANDLETON
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_QUAYARO
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_HUB_HEROES
 		1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
@@ -2163,6 +2172,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Textures/Caves/Grey/Stalagmite.png
 		1. Graphics: GFX/Textures/Caves/Grey/Stalagmite_2.png
 		1. Graphics: GFX/Textures/Caves/Grey/W.png
+		1. Graphics: GFX/Textures/Dandleton/Dichtgespijkerd huis.piko
+		1. Graphics: GFX/Textures/Dandleton/Dichtgespijkerd huis.png
 		1. Graphics: GFX/Textures/Dungeon/Bench East.png
 		1. Graphics: GFX/Textures/Dungeon/Bench West.png
 		1. Graphics: GFX/Textures/Dungeon/Grey/Arch+Door.png

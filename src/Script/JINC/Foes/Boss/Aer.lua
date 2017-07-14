@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 17.07.12
+version: 17.07.14
 ]]
--- File Generated: Wed 12 July 2017; 17:02:52
+-- File Generated: Fri 14 July 2017; 14:37:04
 
 
 local foe = {}
@@ -331,6 +331,7 @@ local foe = {}
 	foe["RATE_ITM_CARROTS"] = 0
 	foe["RATE_ITM_CHERRY"] = 0
 	foe["RATE_ITM_CURSEDSPORES"] = 0
+	foe["RATE_ITM_DAMNEDDUST"] = 0
 	foe["RATE_ITM_DEATHCUBE"] = 0
 	foe["RATE_ITM_DRAGONFIRE"] = 0
 	foe["RATE_ITM_EEL"] = 0
@@ -368,6 +369,7 @@ local foe = {}
 	foe["RATE_ITM_POTIONVITALITY"] = 0
 	foe["RATE_ITM_PURELITERATURE"] = 0
 	foe["RATE_ITM_PURIFICATIONSHOWER"] = 0
+	foe["RATE_ITM_ROCK"] = 0
 	foe["RATE_ITM_SALVE"] = 0
 	foe["RATE_ITM_SALVES"] = 0
 	foe["RATE_ITM_SAUERKRAUT"] = 0
@@ -673,6 +675,7 @@ local foe = {}
 	foe["TARGET_ITM_CARROTS"] = "Random"
 	foe["TARGET_ITM_CHERRY"] = "Random"
 	foe["TARGET_ITM_CURSEDSPORES"] = "Random"
+	foe["TARGET_ITM_DAMNEDDUST"] = "Random"
 	foe["TARGET_ITM_DEATHCUBE"] = "Random"
 	foe["TARGET_ITM_DRAGONFIRE"] = "Random"
 	foe["TARGET_ITM_EEL"] = "Random"
@@ -710,6 +713,7 @@ local foe = {}
 	foe["TARGET_ITM_POTIONVITALITY"] = "Random"
 	foe["TARGET_ITM_PURELITERATURE"] = "Random"
 	foe["TARGET_ITM_PURIFICATIONSHOWER"] = "Random"
+	foe["TARGET_ITM_ROCK"] = "Random"
 	foe["TARGET_ITM_SALVE"] = "Random"
 	foe["TARGET_ITM_SALVES"] = "Random"
 	foe["TARGET_ITM_SAUERKRAUT"] = "Random"

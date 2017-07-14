@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.11
+version: 17.07.14
 ]]
 
 -- abl_hero_jake_2ps = {5},abl_hero_jake_3ps={25},abl_hero_jake_4ps={50},abl_hero_jake_berserk={10,5}
@@ -75,7 +75,7 @@ if fullversion then -- That's right Marrilona will not get her level #2 and leve
                                        abl_hero_marrilona_quake = {[5]=10*skill},        -- 6
                                        abl_hero_marrilona_hurricane = {[3]=math.floor(12.5*skill)}, --7
                                        abl_hero_marrilona_meditation = {50,60,70,20,16}, --  8
-                                       abl_hero_marrilona_handostillor_vitality = {12*skill,6*skill,6*skill,6*skill,6*skill}
+                                       abl_hero_marrilona_handostillor_vitality = {12*skill,6*skill,6*skill,6*skill,6*skill} --9
                      }
    r["3. Level 3"] = {                 abl_hero_marrilona_stone2flesh = {[3]=10,[4]=65}, --  1
                                        abl_hero_marrilona_empower = {[2]=25},      --  2
@@ -83,7 +83,8 @@ if fullversion then -- That's right Marrilona will not get her level #2 and leve
                                        abl_hero_marrilona_electrocution = {[1]=2*skill,[2]=10*skill,[3]=10*skill}, -- 4
                                        abl_hero_marrilona_cursedhealing = {13,13,13,13}, -- 5
                                        abl_hero_marrilona_1953 = {[1]=19;[4]=53}, --6
-                                       abl_hero_marrilona_LetsHealEmAll = {[4]=({15,30,40})[skill]} --7
+                                       abl_hero_marrilona_LetsHealEmAll = {[4]=({15,30,40})[skill]}, --7
+                                       abl_hero_marrilona_iceaga = {[3]=skill*25,[4]=skill*26} -- 8
                      }                  
 end
 
