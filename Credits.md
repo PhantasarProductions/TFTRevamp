@@ -245,6 +245,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Libs/join.lua
 		1. Script: Script/Libs/mysplit.lua
 		1. Script: Script/Libs/tablecontains.lua
+		1. Script: Script/Libs/tablecopy.lua
 		1. Script: Script/Libs/valstr.lua
 	- I created this logo using www.cooltext.com    This logo is specifically made for use in this game and may therefore NOT be extracted from this JCR file or be used for your own purposes.
 		1. Graphics: GFX/Chapters/1.png
@@ -463,11 +464,17 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: gfx/Combat/Fighters/Foe/Boss/Beholder.png
 		1. Graphics: gfx/Combat/Fighters/Foe/Boss/Ghost Woman.png -alias- GFX/COMBAT/FIGHTERS/FOE/REG/BANSHEE/Meisje nummer 2   .png
 		1. Graphics: gfx/Combat/Fighters/Foe/Reg/ArcaneSlime.png
+		1. Graphics: gfx/Combat/Fighters/Foe/Reg/DandletonCitizen/Female.png
+		1. Graphics: gfx/Combat/Fighters/Foe/Reg/DandletonCitizen/Male.png
+		1. Graphics: gfx/Combat/Fighters/Foe/Reg/DandletonGuard/Guard.png
+		1. Graphics: gfx/Combat/Fighters/Foe/Reg/DandletonKid/Girl.png
 		1. Graphics: gfx/Combat/Fighters/Foe/Reg/Gremlin.png
 		1. Graphics: gfx/Combat/Fighters/Foe/Reg/Kobold.png
 		1. Graphics: gfx/Combat/Fighters/Foe/Reg/Lich.png
 		1. Graphics: gfx/Combat/Fighters/Foe/Reg/Midget.png
 		1. Graphics: gfx/Combat/Fighters/Foe/Reg/SpiritGirl.piko
+		1. Graphics: gfx/Combat/Fighters/Foe/Reg/ZombieShopHoer/Zombie - ShopHoer I.png
+		1. Graphics: gfx/Combat/Fighters/Foe/Reg/ZombieShopHoer/Zombie - ShopHoer II.png
 		1. Graphics: gfx/Combat/Fighters/Foe/Sealed/Gendrabroe.png
 		1. Graphics: gfx/Effects/Darkness II.png
 		1. Graphics: gfx/Effects/Darkness.hot
@@ -490,6 +497,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: gfx/Textures/Cathedral/Window_rv.png
 		1. Graphics: gfx/Textures/Dandleton/House - Leftover.png
 		1. Graphics: gfx/Textures/Dandleton/Pole.png
+		1. Graphics: gfx/Textures/Dandleton/Zombie - ShopHoer II.png
 		1. Graphics: gfx/Textures/EarthPuzzle/AR_DN.png
 		1. Graphics: gfx/Textures/EarthPuzzle/AR_LF.png
 		1. Graphics: gfx/Textures/EarthPuzzle/AR_RT.png
@@ -596,6 +604,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Big/JukeBoxData.lua
 		1. Script: Script/JINC/Big/MimicSounds.lua
 		1. Script: Script/JINC/Big/WorldMap.lua
+		1. Script: Script/JINC/Big/ZombieShopHoerStock.lua
 		1. Script: Script/JINC/CharAbilities/Dandor.lua
 		1. Script: Script/JINC/CharAbilities/Elder.lua
 		1. Script: Script/JINC/CharAbilities/Feenalaria.lua
