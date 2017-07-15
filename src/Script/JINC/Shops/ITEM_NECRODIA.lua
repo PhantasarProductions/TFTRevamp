@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  WEAPON_MYRAREMEMBO.lua
+  ITEM_NECRODIA.lua
   (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
@@ -38,27 +38,27 @@ version: 17.07.15
 -- 15 Jul 2017; 22:46:40
 -- License: This file contains data from the Phantasar Universe and is therefore property of Jeroen Broks and may NOT be used for your own ends.
 	ret = {
-		["AllowTrade"] = true,
-		["Slot1"] = "EQP_JAKE_WP2",
-		["Slot10"] = "EQP_DANDOR_WP2",
-		["Slot11"] = "EQP_DANDOR_WP3",
-		["Slot12"] = "EQP_DANDOR_WP4",
-		["Slot13"] = "EQP_HANDOSTILLOR_WP2",
-		["Slot14"] = "EQP_HANDOSTILLOR_WP3",
-		["Slot15"] = "EQP_HANDOSTILLOR_WP4",
-		["Slot16"] = "EQP_HANDOSTILLOR_AR2",
-		["Slot17"] = "EQP_HANDOSTILLOR_AR3",
-		["Slot18"] = "EQP_HANDOSTILLOR_AR4",
-		["Slot19"] = "ITM_PHOENIX",
-		["Slot2"] = "EQP_JAKE_WP3",
-		["Slot20"] = "ITM_SALVE",
-		["Slot3"] = "EQP_JAKE_WP4",
-		["Slot4"] = "EQP_JAKE_AR2",
-		["Slot5"] = "EQP_JAKE_AR3",
-		["Slot6"] = "EQP_JAKE_AR4",
-		["Slot7"] = "EQP_MARRILONA_AR2",
-		["Slot8"] = "EQP_MARRILONA_AR3",
-		["Slot9"] = "EQP_MARRILONA_AR4",
-		["Title"] = "Myra Remembo's weapon shop"}
+		["AllowTrade"] = false,
+		["Slot1"] = "ITM_SALVE",
+		["Slot10"] = "ITM_VOLTABALL",
+		["Slot11"] = "ITM_POTIONVITALITY",
+		["Slot12"] = "ITM_PANACEA",
+		["Slot13"] = "EQP_ACC_THIEFCLOAK",
+		["Slot14"] = "ITM_MANDRAKE",
+		["Slot15"] = "EQP_MARRILONA_AR8",
+		["Slot16"] = "EQP_JEWEL_SMALLRUBY",
+		["Slot17"] = "EQP_JAKE_WP4",
+		["Slot18"] = "ITM_APPLE",
+		["Slot19"] = "ITM_DEATHCUBE",
+		["Slot2"] = "ITM_CURSEDSPORES",
+		["Slot20"] = "EQP_DANDOR_WP5",
+		["Slot3"] = "ITM_FISH",
+		["Slot4"] = "ITM_ICICLE",
+		["Slot5"] = "ITM_HOLYHANDGRENATE",
+		["Slot6"] = "ITM_ROCK",
+		["Slot7"] = "EQP_DANDOR_WP2",
+		["Slot8"] = "ITM_FLAMEORB",
+		["Slot9"] = "ITM_POTION",
+		["Title"] = "Necrodia's Neat Needs"}
 
 return ret

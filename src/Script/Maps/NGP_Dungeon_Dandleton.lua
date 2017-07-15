@@ -1,6 +1,6 @@
 --[[
   NGP_Dungeon_Dandleton.lua
-  Version: 17.07.14
+  Version: 17.07.15
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -35,6 +35,15 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 
+
+function NPC_Necrodia()
+    local remark
+    repeat
+      remark = rand(1,6)
+    until remark~=oldnecroremark oldnecroremark=remark
+    MapText('SH'..remark)
+    Shop('ITEM_NECRODIA')
+end
 
 
 function Memory(tag,pop,popwind)

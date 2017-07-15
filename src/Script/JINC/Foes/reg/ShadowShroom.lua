@@ -1,6 +1,6 @@
 --[[
   ShadowShroom.lua
-  Version: 17.07.12
+  Version: 17.07.15
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Wed 12 July 2017; 17:53:01
+-- File Generated: Sat 15 July 2017; 19:51:39
 
 
 local foe = {}
@@ -183,6 +183,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_HANDOSTILLOR_VITALITY"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_HURRICANE"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_ICEAGE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ICEBLAST"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_INFERNO"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_LETSHEALEMALL"] = 0
@@ -246,6 +247,7 @@ local foe = {}
 	foe["RATE_ABL_SPECIAL"] = 0
 	foe["RATE_ABL_SPECIAL_DRAGONDOWN"] = 0
 	foe["RATE_ABL_SPECIAL_INSTABILITY"] = 0
+	foe["RATE_ABL_ZOMBIE_SHOPHOER"] = 0
 	foe["RATE_AUTO_NOODHULP"] = 0
 	foe["RATE_BERSERK_ATTACK"] = 0
 	foe["RATE_COCYTUS_ANTENORA"] = 0
@@ -254,6 +256,8 @@ local foe = {}
 	foe["RATE_COCYTUS_PTOLOMEA"] = 0
 	foe["RATE_EXE_MARRILONA_MEDITATION"] = 0
 	foe["RATE_FOE_WATCHMOVE"] = 0
+	foe["RATE_FOE_ZOMBIE_PLAYDEATH"] = 0
+	foe["RATE_FOE_ZOMBIE_PLAYUNDEAD"] = 0
 	foe["RATE_HYDRA_ONTHOOFD"] = 0
 	foe["RATE_ICEBLAST"] = 0
 	foe["RATE_ITEM_MEDICINES"] = 0
@@ -271,6 +275,7 @@ local foe = {}
 	foe["RATE_ITM_CARROTS"] = 0
 	foe["RATE_ITM_CHERRY"] = 0
 	foe["RATE_ITM_CURSEDSPORES"] = 10
+	foe["RATE_ITM_DAMNEDDUST"] = 0
 	foe["RATE_ITM_DEATHCUBE"] = 0
 	foe["RATE_ITM_DRAGONFIRE"] = 0
 	foe["RATE_ITM_EEL"] = 0
@@ -289,6 +294,7 @@ local foe = {}
 	foe["RATE_ITM_ICICLES"] = 0
 	foe["RATE_ITM_INFERNOORB"] = 0
 	foe["RATE_ITM_JUSDORANGE"] = 0
+	foe["RATE_ITM_LEADERFLAG"] = 0
 	foe["RATE_ITM_MAGICDUST"] = 0
 	foe["RATE_ITM_MAGICSPRINKLES"] = 0
 	foe["RATE_ITM_MAGICSTONE"] = 0
@@ -308,6 +314,7 @@ local foe = {}
 	foe["RATE_ITM_POTIONVITALITY"] = 0
 	foe["RATE_ITM_PURELITERATURE"] = 0
 	foe["RATE_ITM_PURIFICATIONSHOWER"] = 0
+	foe["RATE_ITM_ROCK"] = 0
 	foe["RATE_ITM_SALVE"] = 0
 	foe["RATE_ITM_SALVES"] = 0
 	foe["RATE_ITM_SAUERKRAUT"] = 0
@@ -525,6 +532,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_MARRILONA_HANDOSTILLOR_VITALITY"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_HEAL"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_HURRICANE"] = "Random"
+	foe["TARGET_ABL_HERO_MARRILONA_ICEAGE"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_ICEBLAST"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_INFERNO"] = "Random"
 	foe["TARGET_ABL_HERO_MARRILONA_LETSHEALEMALL"] = "Random"
@@ -588,6 +596,7 @@ local foe = {}
 	foe["TARGET_ABL_SPECIAL"] = "Random"
 	foe["TARGET_ABL_SPECIAL_DRAGONDOWN"] = "Random"
 	foe["TARGET_ABL_SPECIAL_INSTABILITY"] = "Random"
+	foe["TARGET_ABL_ZOMBIE_SHOPHOER"] = "Random"
 	foe["TARGET_AUTO_NOODHULP"] = "Random"
 	foe["TARGET_BERSERK_ATTACK"] = "Random"
 	foe["TARGET_COCYTUS_ANTENORA"] = "Random"
@@ -596,6 +605,8 @@ local foe = {}
 	foe["TARGET_COCYTUS_PTOLOMEA"] = "Random"
 	foe["TARGET_EXE_MARRILONA_MEDITATION"] = "Random"
 	foe["TARGET_FOE_WATCHMOVE"] = "Random"
+	foe["TARGET_FOE_ZOMBIE_PLAYDEATH"] = "Random"
+	foe["TARGET_FOE_ZOMBIE_PLAYUNDEAD"] = "Random"
 	foe["TARGET_HYDRA_ONTHOOFD"] = "Random"
 	foe["TARGET_ICEBLAST"] = "Random"
 	foe["TARGET_ITEM_MEDICINES"] = "Random"
@@ -613,6 +624,7 @@ local foe = {}
 	foe["TARGET_ITM_CARROTS"] = "Random"
 	foe["TARGET_ITM_CHERRY"] = "Random"
 	foe["TARGET_ITM_CURSEDSPORES"] = "Random"
+	foe["TARGET_ITM_DAMNEDDUST"] = "Random"
 	foe["TARGET_ITM_DEATHCUBE"] = "Random"
 	foe["TARGET_ITM_DRAGONFIRE"] = "Random"
 	foe["TARGET_ITM_EEL"] = "Random"
@@ -631,6 +643,7 @@ local foe = {}
 	foe["TARGET_ITM_ICICLES"] = "Random"
 	foe["TARGET_ITM_INFERNOORB"] = "Random"
 	foe["TARGET_ITM_JUSDORANGE"] = "Random"
+	foe["TARGET_ITM_LEADERFLAG"] = "Random"
 	foe["TARGET_ITM_MAGICDUST"] = "Random"
 	foe["TARGET_ITM_MAGICSPRINKLES"] = "Random"
 	foe["TARGET_ITM_MAGICSTONE"] = "Random"
@@ -650,6 +663,7 @@ local foe = {}
 	foe["TARGET_ITM_POTIONVITALITY"] = "Random"
 	foe["TARGET_ITM_PURELITERATURE"] = "Random"
 	foe["TARGET_ITM_PURIFICATIONSHOWER"] = "Random"
+	foe["TARGET_ITM_ROCK"] = "Random"
 	foe["TARGET_ITM_SALVE"] = "Random"
 	foe["TARGET_ITM_SALVES"] = "Random"
 	foe["TARGET_ITM_SAUERKRAUT"] = "Random"

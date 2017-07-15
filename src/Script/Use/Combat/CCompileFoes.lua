@@ -1,6 +1,6 @@
 --[[
   CCompileFoes.lua
-  Version: 17.06.19
+  Version: 17.07.15
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -44,6 +44,8 @@ function CompileFoe(tag,data,foefile,oversoul)
       CSay("COMPILEFOE:>"..t)
       -- @FI
    end
+   CSay("XCompile.prior."..upper(foefile).."('"..tag.."');")   
+   ;(XCompile.prior[upper(foefile)] or Nothing)(tag)
    dontcure[tag] = dontcure[tag] or {}
    local id = oversoul or (#Fighters.Foe + 1)
    local letter = string.char(id+64); if id>26 then letter="?" end
@@ -160,4 +162,6 @@ function CompileFoe(tag,data,foefile,oversoul)
        end
    end
    ---dbg("Result "..serialize('foe.'..tag,myfoe))
+   CSay("XCompile.post."..upper(foefile).."('"..tag.."');")
+   ;(XCompile.post[upper(foefile)] or Nothing)(tag)
 end

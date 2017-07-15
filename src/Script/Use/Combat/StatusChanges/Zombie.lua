@@ -1,6 +1,6 @@
 --[[
   Zombie.lua
-  Version: 17.01.17
+  Version: 17.07.15
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -47,6 +47,23 @@ StatusChanges.Undead = {
         
     DrawFighter = function(ch) end
 
+}
+
+StatusChanges.Damned = {
+     HurtHeal = true,
+     DrawFighter= function(ch) 
+        Color(180,100,255)
+        fighterbytag[ch].StatusChanges={Damned=StatusChanges.Damned}
+        fighterbytag[ch].statuschanges=fighterbytag[ch].StatusChanges
+        local esgibtzombies = false
+        for t,d in pairs(fighterbytag) do
+            if prefixed(t,'FOE_') then esgibtzombies = esgibtzombies or d.fidtag == "REG/DANDLETONCITIZEN" end            
+        end 
+        if not esgibtzombies then 
+           fighterbytag[ch].StatusChanges = {}
+           fighterbytag[ch].statuschanges=fighterbytag[ch].StatusChanges 
+        end 
+    end
 }
 
 -- @IF IGNORE

@@ -676,6 +676,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/reg/Bat.lua
 		1. Script: Script/JINC/Foes/reg/Boar.lua
 		1. Script: Script/JINC/Foes/reg/Boekenworm.lua
+		1. Script: Script/JINC/Foes/reg/DandletonCitizen.lua
+		1. Script: Script/JINC/Foes/reg/DandletonKid.lua
 		1. Script: Script/JINC/Foes/reg/Devil Monk From Hell.lua
 		1. Script: Script/JINC/Foes/reg/DragonKeeper.lua
 		1. Script: Script/JINC/Foes/reg/EarthElemental.lua
@@ -1030,6 +1032,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/EQP_MARRILONA_WPSEALED.lua
 		1. Script: Script/JINC/IA/EXE_MARRILONA_MEDITATION.lua
 		1. Script: Script/JINC/IA/FOE_WATCHMOVE.lua
+		1. Script: Script/JINC/IA/FOE_ZOMBIE_PLAYDEATH.lua
+		1. Script: Script/JINC/IA/FOE_ZOMBIE_PLAYUNDEAD.lua
 		1. Script: Script/JINC/IA/HYDRA_ONTHOOFD.lua
 		1. Script: Script/JINC/IA/ICEBLAST.lua
 		1. Script: Script/JINC/IA/ITEM_MEDICINES.lua
@@ -1204,6 +1208,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Shops/ITEM_BELLATRIX.lua
 		1. Script: Script/JINC/Shops/ITEM_ISKARDERIU.lua
 		1. Script: Script/JINC/Shops/ITEM_KATINTA.lua
+		1. Script: Script/JINC/Shops/ITEM_NECRODIA.lua
 		1. Script: Script/JINC/Shops/ITEM_WANDA.lua
 		1. Script: Script/JINC/Shops/NGP_WANINDRA.lua
 		1. Script: Script/JINC/Shops/WAND_MONIQUE.lua
@@ -1381,6 +1386,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Use/Combat/StatusChanges/Poison and Disease.lua
 		1. Script: Script/Use/Combat/StatusChanges/Spirata_StatusChange.lua
 		1. Script: Script/Use/Combat/StatusChanges/Zombie.lua
+		1. Script: Script/Use/Combat/XCompile/AAA.lua
+		1. Script: Script/Use/Combat/XCompile/DandletonCitizenX.lua
 		1. Script: Script/Use/Linkers/AchievementLinker.lua
 		1. Script: Script/Use/Linkers/AlternateInputLinker.lua
 		1. Script: Script/Use/Linkers/BoxTextLinker.lua
