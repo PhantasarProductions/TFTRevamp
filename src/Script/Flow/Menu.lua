@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 17.05.13
+  Version: 17.07.15
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -427,7 +427,7 @@ function features.Buy(x,y,w,h)
           end
           DarkText(item.Title,mix,iy,0,0,255,255,255)
           SetFont('ShopNumber')
-          DarkText(item.ITM_ShopPrice.." shilders",w-50,iy,1,0,255,180,0)
+          DarkText((item.ITM_ShopPrice or "ERROR").." shilders",w-50,iy,1,0,255,180,0)
           DarkText(ItemHave(Shop['Slot'..i]),w/2,iy,1,0,0,180,255)
           if moved and my>iy and my<iy+siz then Shop.P = i end
        end   
