@@ -36312,7 +36312,7 @@ Rec: ITM_FISH
 	ITM_EQP_For = Jake
 	ITM_Field = TRUE
 	ITM_Sellable = TRUE
-	ITM_ShopPrice = 0
+	ITM_ShopPrice = 900000
 	ITM_Type = Consumable
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
