@@ -735,6 +735,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/reg/Zombie.lua
 		1. Script: Script/JINC/Foes/reg/Zombie2.lua
 		1. Script: Script/JINC/Foes/reg/ZombieDoctor.lua
+		1. Script: Script/JINC/Foes/reg/ZombieShopHoer.lua
 		1. Script: Script/JINC/Foes/reg/ghostgirl.lua
 		1. Script: Script/JINC/Foes/reg/litworm.lua
 		1. Script: Script/JINC/IA/AAA_ATTACK.lua
@@ -918,6 +919,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/ABL_SPECIAL.lua
 		1. Script: Script/JINC/IA/ABL_SPECIAL_DRAGONDOWN.lua
 		1. Script: Script/JINC/IA/ABL_SPECIAL_INSTABILITY.lua
+		1. Script: Script/JINC/IA/ABL_ZOMBIE_SHOPHOER.lua
 		1. Script: Script/JINC/IA/AUTO_NOODHULP.lua
 		1. Script: Script/JINC/IA/BERSERK_ATTACK.lua
 		1. Script: Script/JINC/IA/COCYTUS_ANTENORA.lua
@@ -1364,6 +1366,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Use/Combat/SpellScript/Steal.lua
 		1. Script: Script/Use/Combat/SpellScript/Temptation.lua
 		1. Script: Script/Use/Combat/SpellScript/Theresa May.lua
+		1. Script: Script/Use/Combat/SpellScript/ZombieShopHoerSpellScript.lua
 		1. Script: Script/Use/Combat/StatusChanges/AAAAA.lua
 		1. Script: Script/Use/Combat/StatusChanges/Charm&Confusion.lua
 		1. Script: Script/Use/Combat/StatusChanges/Curse.lua

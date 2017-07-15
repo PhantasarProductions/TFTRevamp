@@ -1,7 +1,7 @@
 --[[
   Items -- Linker.lua
-  Version: 16.12.28
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.07.15
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -65,6 +65,8 @@ ItemHave = ItemHave or function(i)
    Var.Clear('%ITEMHAVE')
    return ret
 end
+
+ItemHas = ItemHave
    
          
 ItemFilterReset = ItemFilterReset or function()
