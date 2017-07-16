@@ -1459,7 +1459,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.South.png
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.West.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.West.piko
-		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.West.png
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.West.png -alias- GFX/Combat/Fighters/Hero/Feenalaria_Human.Idle.png
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.piko
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.png
@@ -1522,7 +1522,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.South.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.South.png
 		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.West.Frames
-		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.West.png
+		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.West.png -alias- GFX/Combat/Fighters/Hero/Nostramantu_Human.Idle.png
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 1.png
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 2.png
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 3.png
