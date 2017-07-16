@@ -1,6 +1,6 @@
 --[[
   NewGame+.lua
-  Version: 17.07.04
+  Version: 17.07.16
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -58,5 +58,9 @@ function ToHallHeroes(name,achkey,wmap)
    WorldMap(wmap or 'Delisto')
    WorldMap_Unlock('NGPHEROES')
 end
-       
+
+if RPGChar.PartyTag(1)=="Feenalaria_Human" then
+    MS.LoadNew('ITEMS','Script/Subs/Items.lua')
+    MS.Run('ITEMS','FeenaHumanSync')
+end       
    
