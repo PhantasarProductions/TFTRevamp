@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.08
+version: 17.07.16
 ]]
 CharacterMeta = {
 
@@ -112,7 +112,21 @@ CharacterMeta = {
                    askillup4 = {'HP',2},
                    askillup5 = {'Endurance',1}
              },
-             Nostramantu = { race='Fairy', sex='male', pvnw='he',bvnw='his',avnw='him',skill1='Wand'}                   
+             Nostramantu = { race='Fairy', sex='male', pvnw='he',bvnw='his',avnw='him',skill1='Wand'}     ,
+             Nostramantu_Human = {
+                   race='Human',
+                   sex='Male',
+                   pvnw = "He",
+                   bvnw = "His",
+                   avnw = "Him"},
+             Feenalaria_Human  = {
+                   race='Human',
+                   sex='Female',
+                   pvnw = "She",
+                   bvnw = "Her",
+                   avnw = "Her",
+                  
+             }              
 }
 
 CharacterMeta.Jake_Human = CharacterMeta.Jake

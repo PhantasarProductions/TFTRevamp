@@ -378,7 +378,7 @@ Rec: NGPDANDLETON
 	Kthura = NGP_Dungeon_Dandleton
 	Layer = #001
 	LocationName = Dandleton
-	LocationPrefix = The Lost City of 
+	LocationPrefix = The Lost City of
 	Start = Start
 	UnlockedFromStart = FALSE
 
@@ -389,6 +389,16 @@ Rec: NGPHEROES
 	Layer = heroes
 	LocationName = Hall of Heroes
 	LocationPrefix = The
+	Start = Start
+	UnlockedFromStart = FALSE
+
+Rec: NGPKOKO
+	Dungeon = TRUE
+	Folder = Delisto
+	Kthura = 
+	Layer = bush
+	LocationName = Koko Bushes
+	LocationPrefix = 
 	Start = Start
 	UnlockedFromStart = FALSE
 

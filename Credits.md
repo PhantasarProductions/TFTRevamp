@@ -111,6 +111,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/BoxText/Portret/Fairy Elder/General.png -alias- GFX/BoxText/Portret/Nostramantu/General.png
 		1. Graphics: GFX/BoxText/Portret/Fandalora/General.png
 		1. Graphics: GFX/BoxText/Portret/Fandalora/NoEmo.png
+		1. Graphics: GFX/BoxText/Portret/Feenalaria/Human.png -alias- GFX/BoxText/Portret/Feenalaria_Human/General.png
 		1. Graphics: GFX/BoxText/Portret/Gedrio Fulla/General.png
 		1. Graphics: GFX/BoxText/Portret/Harry/Angry.png
 		1. Graphics: GFX/BoxText/Portret/Harry/Furious.png
@@ -123,6 +124,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/BoxText/Portret/Krandar/Worried.png
 		1. Graphics: GFX/BoxText/Portret/Marata/General.png
 		1. Graphics: GFX/BoxText/Portret/Nostramantu/EvilLaugh.png
+		1. Graphics: GFX/BoxText/Portret/Nostramantu/Human.png -alias- GFX/BoxText/Portret/Nostramantu_Human/General.png
 		1. Graphics: GFX/BoxText/Portret/Nostramantu/Nostramantu.piko
 		1. Graphics: GFX/BoxText/Portret/Sandra/General.png
 		1. Graphics: GFX/BoxText/Portret/Sasha Funda/General.png
@@ -608,6 +610,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/CharAbilities/Dandor.lua
 		1. Script: Script/JINC/CharAbilities/Elder.lua
 		1. Script: Script/JINC/CharAbilities/Feenalaria.lua
+		1. Script: Script/JINC/CharAbilities/Feenalaria_Human.lua
 		1. Script: Script/JINC/CharAbilities/HandoStillor.lua
 		1. Script: Script/JINC/CharAbilities/Jake_Fairy.lua
 		1. Script: Script/JINC/CharAbilities/Jake_Human.lua
@@ -1031,6 +1034,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/EQP_MARRILONA_SEALARMOR.lua
 		1. Script: Script/JINC/IA/EQP_MARRILONA_WPSEALED.lua
 		1. Script: Script/JINC/IA/EXE_MARRILONA_MEDITATION.lua
+		1. Script: Script/JINC/IA/FLASHBACK_FEENAARMOR.lua
+		1. Script: Script/JINC/IA/FLASHBACK_FEENAWEAPON.lua
+		1. Script: Script/JINC/IA/FLASHBACK_NOSARMOR.lua
+		1. Script: Script/JINC/IA/FLASHBACK_NOSWEAPON.lua
 		1. Script: Script/JINC/IA/FOE_WATCHMOVE.lua
 		1. Script: Script/JINC/IA/FOE_ZOMBIE_PLAYDEATH.lua
 		1. Script: Script/JINC/IA/FOE_ZOMBIE_PLAYUNDEAD.lua
@@ -1260,6 +1267,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Maps/NGP_Dungeon_Dandleton.lua
 		1. Script: Script/Maps/NGP_Dungeon_Quayaro.lsv
 		1. Script: Script/Maps/NGP_HUB_Heroes.lua
+		1. Script: Script/Maps/NPG_Dungeon_KokoBushes.lua
 		1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
 		1. Script: Script/Maps/PRO_DUNGEON_Magic.lua
 		1. Script: Script/Maps/PRO_DUNGEON_Tomb.lua
@@ -1943,6 +1951,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Map Design: Kthura/NGP_Dungeon_Dandleton/Data
 		1. Map Design: Kthura/NGP_Dungeon_Dandleton/Objects
 		1. Map Design: Kthura/NGP_Dungeon_Dandleton/Settings
+		1. Map Design: Kthura/NGP_Dungeon_KokoBushes/Data
+		1. Map Design: Kthura/NGP_Dungeon_KokoBushes/Objects
+		1. Map Design: Kthura/NGP_Dungeon_KokoBushes/Settings
 		1. Map Design: Kthura/NGP_Dungeon_Quayaro/Data
 		1. Map Design: Kthura/NGP_Dungeon_Quayaro/Objects
 		1. Map Design: Kthura/NGP_Dungeon_Quayaro/Settings

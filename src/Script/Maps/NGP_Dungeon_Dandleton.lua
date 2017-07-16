@@ -1,6 +1,6 @@
 --[[
   NGP_Dungeon_Dandleton.lua
-  Version: 17.07.15
+  Version: 17.07.16
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -36,6 +36,8 @@
 ]]
 
 
+flashbacks = { ['#005'] = { priomt = nil, map='NGP_Dungeon_KokoBushes', layer='bushes', start='Start '}}
+
 function NPC_Necrodia()
     local remark
     repeat
@@ -51,7 +53,20 @@ function Memory(tag,pop,popwind)
     MapText('MEMORY'..(tag or right(Maps.LayerCodeName,3)))
 end
 
+function Flashback()
+    local fb = flashbacks[Maps.LayerCodeName]
+    if fb.priomt then MapText(fb.priomt) end
+    Party('Nostramantu_Human;Feenalaria_Human')
+    MS.LoadNew('ITEMS','Script/Subs/Items.lua')
+    MS.Run('ITEMS','FeenaHumanSync')
+    LoadMap(fb.map)
+    GoToLayer(fb,layer,start)
+    if fb.schedule then Scedule(fb.scheduleinstance or 'MAP',fb.schedule) end
+end    
+
+
 function GALE_OnLoad()
     ZA_Enter('pMemory',function() if not(Done('&DONE.NEWGAMEPLUS.DANDLETON.MEMORY.P['..Maps.LayerCodeName..'].SCENARIO')) then Memory(nil,'p') end end)
+    ZA_Enter('Flashback',Flashback)
 end
     

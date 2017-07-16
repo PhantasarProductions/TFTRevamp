@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.07.08
+  Version: 17.07.16
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -48,6 +48,9 @@ ablpage = {}
 heroabl.Jake = heroabl.Jake or {}
 heroabl.Jake_Human = heroabl.Jake
 heroabl.Jake_Fairy = heroabl.Jake
+
+heroabl.Feenalaria_Human = {}
+heroabl.Nostramantu_Human = {}
 -- Should prevent conflicts in Jake's forms. Reference based objects, doncha just love 'em? ;)
 
 itemfilter = {
@@ -84,7 +87,7 @@ pos = {}
 function GALE_OnLoad()
    LoadItemModule = nil
    chars = GetCharList()
-   local ichars = {'Jake_Human','Jake_Fairy','Marrilona','Dandor','HandoStillor',"Krandar"} -- Characters must ALWAYS be loaded in THIS order!
+   local ichars = {'Jake_Human','Jake_Fairy','Marrilona','Dandor','HandoStillor',"Krandar",'Feenalaria_Human'} -- Characters must ALWAYS be loaded in THIS order!
    for c in each(ichars) do
        abllist[c] = JINC('Script/JINC/CharAbilities/'..c..".lua")
        if abllist[c] then
@@ -101,8 +104,19 @@ function GALE_OnLoad()
           CSay("WARNING! I cannot yet linkscan empty character: "..c)       
        end       
    end
-end   
-             
+   abllist.Nostramantu_Human = { ['1. Nothing']={}}
+end
+
+function FeenaHumanSync()
+   local l = { {p='1.Sword',c='Jake_Human'},{p='9. skills',c='Marrilona'}}
+   heroabl.Feenalaria_Human = {}
+   for al in each(l) do
+      for a,_ in pairs(ablpage[al.c][al.p]) do      
+          heroabl.Feenalaria_Human[a]=heroabl[al.c][a]
+      end    
+   end
+end
+
 function ItemGet(I,s)
      loadeditems = loadeditems or {}
      local ui = upper(I)

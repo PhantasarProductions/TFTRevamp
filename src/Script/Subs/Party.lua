@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 17.07.08
+  Version: 17.07.16
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -256,6 +256,50 @@ function CreateNostramantu()
      RPG.Points('Nostramantu','SK_EXP_1'  ).Have=0         
 end
 
+
+function CreateNostramantuHuman()
+   local nh='Nostramantu_Human'
+   RPGChar.SetName(nh,'Nostramantu')
+   RPG.LinkStat('Marrilona'   ,nh,'BASE_Power')
+   RPG.LinkStat('HandoStillor',nh,'BASE_Endurance')
+   RPG.LinkStat('Marrilona'   ,nh,'BASE_Intelligence')
+   RPG.LinkStat('Marrilona',   nh,'BASE_Resistance')
+   RPG.LinkStat('Dandor'      ,nh,'BASE_Speed')
+   RPG.LinkStat('Dandor',      nh,'BASE_Accuracy')
+   RPG.LinkStat('Marrilona',   nh,'BASE_HP')
+   RPG.Points(nh,'AP',1).Maximum=0
+   for p in each({'HP','AP','VIT'}) do
+         local cp = RPGChar.Points(nh,p,1)
+         cp.Have = cp.Maximum
+   end
+   RPG.SetData(nh,'EQP_Weapon','FLASHBACK_NOSWEAPON')  
+   RPG.SetData(nh,'EQP_Armor','FLASHBACK_NOSARMOR')
+   RPG.LinkData('Jake_Human',nh,'EQP_Acc')  
+   RPG.SetStat(nh,'Level',200000)
+end
+
+function CreateFeenaHuman()
+   local fh="Feenalaria_Human"
+   RPGChar.SetName(fh,"Feenalaria")
+   RPG.LinkStat("Dandor",      fh,"BASE_Power")
+   RPG.LinkStat("Jake_Human"  ,fh,"BASE_Endurance")
+   RPG.LinkStat("Marrilona"   ,fh,"BASE_Intelligence")
+   RPG.LinkStat('Marrilona',   fh,"BASE_Resistance")
+   RPG.LinkStat('HandoStillor',fh,"BASE_Speed")
+   RPG.SetStat(fh,'BASE_Accuracy',100)
+   RPG.LinkStat('Marrilona'   ,fh,"BASE_Evasion")
+   RPG.LinkStat('Dandor',      fh,"BASE_HP")
+   RPG.LinkStat('HandoStillor',fh,"BASE_AP")
+   for p in each({'HP','AP','VIT'}) do
+         local cp = RPGChar.Points(fh,p,1)
+         cp.Have = cp.Maximum
+   end
+   RPG.SetData(fh,'EQP_Weapon','FLASHBACK_FEENAWEAPON')  
+   RPG.SetData(fh,'EQP_Armor','FLASHBACK_FEENAARMOR')
+   RPG.LinkData('Marrilona',fh,'EQP_Acc')  
+   RPG.SetStat(fh,'Level',200000)
+end   
+
 function CreateChar(ch,name)
   -- Create
   RPGChar.CreateChar(ch)
@@ -282,7 +326,7 @@ function CreateChar(ch,name)
   -- Experience
   RPGChar.SetStat(ch,"Level",1)
   RPGChar.SetStat(ch,"EXP",1000*(skill/2))
-  if ch~='Krandar' and ch~='Nostramantu' then SyncLevel(ch) end          
+  if ch~='Krandar' and (not prefixed(ch,'Nostramantu')) and (not prefixed(ch,'Feena')) then SyncLevel(ch) end          
   -- Maxout
   local cp
   for p in each({'HP','AP','VIT'}) do
@@ -293,6 +337,8 @@ function CreateChar(ch,name)
   RPGStat.SetData(ch,'Face',ch)
   if ch=="Krandar" then CreateKrandar() return end  
   if ch=='Nostramantu' then CreateNostramantu() return end
+  if ch=='Nostramantu_Human' then CreateNostramantuHuman() return end
+  if ch=='Feenalaria_Human' then CreateFeenaHuman() return end
 end
 
 function ClickedChar(ch,dump)

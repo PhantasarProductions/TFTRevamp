@@ -1,6 +1,6 @@
 --[[
   EQP_JEWEL_TOPAZ.lua
-  Version: 17.07.15
+  Version: 17.07.16
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
