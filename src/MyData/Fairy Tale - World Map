@@ -394,7 +394,7 @@ Rec: NGPHEROES
 
 Rec: NGPKOKO
 	Dungeon = TRUE
-	Folder = Delisto
+	Folder = Kokonora
 	Kthura = 
 	Layer = bush
 	LocationName = Koko Bushes

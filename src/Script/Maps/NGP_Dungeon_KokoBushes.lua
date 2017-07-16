@@ -35,6 +35,8 @@
 version: 17.07.16
 ]]
 
+-- @USE /Script/Use/Specific/NewGame+.lua
+
 function NossyEnd()
    error('nothing here yet folks')
 end
