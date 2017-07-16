@@ -605,6 +605,18 @@ Rec: ZZNGP_CATHEDRAL
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: ZZNGP_LINKPAST
+	Description = See for yourself what happened ten thousand years go!
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = FALSE
+	Show = Always
+	Title = A link to the past
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: ZZNGP_QUAYARO
 	Description = Complete Quayaro's Caslte
 	Icon = *DEFAULT*

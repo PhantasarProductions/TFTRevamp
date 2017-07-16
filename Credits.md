@@ -317,6 +317,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Equipment/Armor.png
 		1. Graphics: GFX/Equipment/Equipment.piko
 		1. Graphics: GFX/Equipment/WP_Dandor.png
+		1. Graphics: GFX/Equipment/WP_Feenalaria_Human.png
 		1. Graphics: GFX/Equipment/WP_HandoStillor.png
 		1. Graphics: GFX/Equipment/WP_Jake_Fairy.png -alias- GFX/Equipment/WP_Jake_Human.png -alias- GFX/Equipment/WP_Krandar.png -alias- GFX/Equipment/WP_Nostramantu_Human.png
 		1. Graphics: GFX/Equipment/WP_Marrilona.png
@@ -618,6 +619,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/CharAbilities/List.lua
 		1. Script: Script/JINC/CharAbilities/Marrilona.lua
 		1. Script: Script/JINC/CharAbilities/Nostramantu.lua
+		1. Script: Script/JINC/CharAbilities/Nostramantu_Human.lua
 		1. Script: Script/JINC/Foes/Boss/Aer.lua
 		1. Script: Script/JINC/Foes/Boss/Aqua.lua
 		1. Script: Script/JINC/Foes/Boss/Beholder.lua
@@ -1265,9 +1267,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Maps/NGP_DUNGEON_CATHEDRAL.lua
 		1. Script: Script/Maps/NGP_DUNGEON_Quayaro.lua
 		1. Script: Script/Maps/NGP_Dungeon_Dandleton.lua
+		1. Script: Script/Maps/NGP_Dungeon_KokoBushes.lua
 		1. Script: Script/Maps/NGP_Dungeon_Quayaro.lsv
 		1. Script: Script/Maps/NGP_HUB_Heroes.lua
-		1. Script: Script/Maps/NPG_Dungeon_KokoBushes.lua
 		1. Script: Script/Maps/PRO_DUNGEON_DragonCave.lua
 		1. Script: Script/Maps/PRO_DUNGEON_Magic.lua
 		1. Script: Script/Maps/PRO_DUNGEON_Tomb.lua
@@ -1448,6 +1450,16 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.South.png
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.West.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.West.png -alias- GFX/Combat/Fighters/Hero/Dandor.Idle.png
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.East.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.East.png
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.NS.piko
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.North.frames
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.North.png
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.South.frames
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.South.png
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.West.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.West.piko
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.West.png
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.piko
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.png
@@ -1503,6 +1515,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.West.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Marrilona.West.png -alias- GFX/Combat/Fighters/Hero/Marrilona.Idle.png
 		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu.East.png -alias- GFX/Actors/Bundled/Player/Nostramantu.North.png -alias- GFX/Actors/Bundled/Player/Nostramantu.South.png -alias- GFX/Actors/Bundled/Player/Nostramantu.West.png -alias- GFX/Actors/Single/Fairies/Nostramantu_Backside.png
+		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.East.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.East.png
+		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.North.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.North.png
+		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.South.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.South.png
+		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.West.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.West.png
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 1.png
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 2.png
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 3.png
@@ -2031,6 +2051,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_AQUAANTRUM
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_CATHEDRAL
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_DANDLETON
+		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_KOKOBUSHES
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_QUAYARO
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_HUB_HEROES
 		1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
@@ -2086,6 +2107,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_AQUAANTRUM
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_CATHEDRAL
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_DANDLETON
+		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_KOKOBUSHES
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_QUAYARO
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_HUB_HEROES
 		1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT

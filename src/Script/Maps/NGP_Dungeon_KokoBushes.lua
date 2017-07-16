@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  Feenalaria_Human.lua
+  NGP_Dungeon_KokoBushes.lua
   (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
@@ -34,10 +34,25 @@
  
 version: 17.07.16
 ]]
-local r = {
-    ["1. Sword"] = 'Jake_Human',
-    ['9. Skills'] = 'Marrilona'
-}
 
+function NossyEnd()
+   error('nothing here yet folks')
+end
 
-return r
+function Welcome()
+   if Done('&DONE.NGP.DANDLETON.FLASHBACK1.WELCOME') then return end
+   PartyPop('pp','North')
+   MapText('Welcome')
+   WorldMap_Unlock('NGPKOKO')
+   Award("ZZNGP_LINKPAST")
+end
+
+function GALE_OnLoad()
+   if RPG.PartyTag(0)=="Nostramantu_Human" then
+     ZA_Enter('Welcome',Welcome)
+     ZA_Enter('NossyEnd',NossyEnd)
+     Maps.Obj.Obj('NosBlock').Impassible=1
+     Maps.Remap()
+   end
+end     
+   

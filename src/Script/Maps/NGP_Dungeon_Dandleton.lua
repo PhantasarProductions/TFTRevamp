@@ -36,7 +36,7 @@
 ]]
 
 
-flashbacks = { ['#005'] = { priomt = nil, map='NGP_Dungeon_KokoBushes', layer='bushes', start='Start '}}
+flashbacks = { ['#005'] = { priomt = nil, map='NGP_Dungeon_KokoBushes', layer='bush', start='Start'}}
 
 function NPC_Necrodia()
     local remark
@@ -60,7 +60,7 @@ function Flashback()
     MS.LoadNew('ITEMS','Script/Subs/Items.lua')
     MS.Run('ITEMS','FeenaHumanSync')
     LoadMap(fb.map)
-    GoToLayer(fb,layer,start)
+    GoToLayer(fb.layer,fb.start)
     if fb.schedule then Scedule(fb.scheduleinstance or 'MAP',fb.schedule) end
 end    
 

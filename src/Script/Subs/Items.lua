@@ -87,7 +87,7 @@ pos = {}
 function GALE_OnLoad()
    LoadItemModule = nil
    chars = GetCharList()
-   local ichars = {'Jake_Human','Jake_Fairy','Marrilona','Dandor','HandoStillor',"Krandar",'Feenalaria_Human'} -- Characters must ALWAYS be loaded in THIS order!
+   local ichars = {'Jake_Human','Jake_Fairy','Marrilona','Dandor','HandoStillor',"Krandar",'Feenalaria_Human',"Nostramantu_Human"} -- Characters must ALWAYS be loaded in THIS order!
    for c in each(ichars) do
        abllist[c] = JINC('Script/JINC/CharAbilities/'..c..".lua")
        if abllist[c] then
@@ -108,10 +108,11 @@ function GALE_OnLoad()
 end
 
 function FeenaHumanSync()
-   local l = { {p='1.Sword',c='Jake_Human'},{p='9. skills',c='Marrilona'}}
+   local l = { {p='1. Sword',c='Jake_Human'},{p='9. Skills',c='Marrilona'}}
    heroabl.Feenalaria_Human = {}
    for al in each(l) do
-      for a,_ in pairs(ablpage[al.c][al.p]) do      
+      CSay(serialize('Synced',al))
+      for a,_ in pairs(abllist[al.c][al.p]) do      
           heroabl.Feenalaria_Human[a]=heroabl[al.c][a]
       end    
    end
@@ -213,6 +214,7 @@ end
 function ShowSpellList(pch,psizes)
    -- Set up
    local ch=pch
+   if pch=="Nostramantu_Human" then return end
    if pch=='Nostramantu' then ch='Marrilona' end -- Make sure Nostramantu can use all of Marrilona's spells.
    local sizes = ({['table']=psizes, ['string']=mysplit(psizes,",") })[type(psizes)]
    local c, allowcast

@@ -1,8 +1,8 @@
 --[[
   Scenario.lua
   
-  version: 16.09.11
-  Copyright (C) 2016 Jeroen P. Broks
+  version: 17.07.16
+  Copyright (C) 2016, 2017 Jeroen P. Broks
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
   arising from the use of this software.
@@ -99,7 +99,7 @@ for k,tag in pairs(ret) do for i,rec in pairs(tag) do
       rec.SoundFile = "Vocals/"..file.."/"..k.."_"..i..".ogg" 
       CSay("Got sound for "..k.." #"..i)
     else
-      CSay("no sound for "..k.." #"..i.."   (VOCALS/"..file.."/"..k.."_"..i..".ogg)",255,0,0)  
+      -- CSay("no sound for "..k.." #"..i.."   (VOCALS/"..file.."/"..k.."_"..i..".ogg)",255,0,0) -- Only annoying. Can be unremmed if needed (which I doubt).  
     end
 end end     
 -- closure
