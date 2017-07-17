@@ -19297,8 +19297,8 @@ Rec: ABL_MASTER_RUBINE_POISONSTAB
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = Poison Stab
-	SpellAni_Arg = Strike the enemy, less damage, but can do poison.
+	SpellAni = 
+	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Attack
 	Target = 1F
