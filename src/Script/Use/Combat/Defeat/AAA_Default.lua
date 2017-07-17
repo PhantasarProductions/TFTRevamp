@@ -41,6 +41,7 @@ Defeat = {
        Respawn = function ()
                       if not CVVN("$SYS.RESPAWN") then return Defeat.GameOver() end
                       if CVV('$SYS.RESPAWN')=='' then return Defeat.GameOver() end
+                      if RPG.PartyTag(0)=='Nostramantu_Human' then return Defeat.GameOver() end
                       local resfunction = loadstring(CVV('$SYS.RESPAWN'))
                       local respawn = resfunction()
                       if not respawn then CSay(serialize('respawn',respawn)) Sys.Error('Illegal respawn data') end

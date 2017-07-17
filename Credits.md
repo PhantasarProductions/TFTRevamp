@@ -1973,9 +1973,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Map Design: Kthura/NGP_Dungeon_Dandleton/Data
 		1. Map Design: Kthura/NGP_Dungeon_Dandleton/Objects
 		1. Map Design: Kthura/NGP_Dungeon_Dandleton/Settings
-		1. Map Design: Kthura/NGP_Dungeon_KokoBushes/DATA
-		1. Map Design: Kthura/NGP_Dungeon_KokoBushes/OBJECTS
-		1. Map Design: Kthura/NGP_Dungeon_KokoBushes/SETTINGS
+		1. Map Design: Kthura/NGP_Dungeon_KokoBushes/Data
+		1. Map Design: Kthura/NGP_Dungeon_KokoBushes/Objects
+		1. Map Design: Kthura/NGP_Dungeon_KokoBushes/Settings
 		1. Map Design: Kthura/NGP_Dungeon_Quayaro/Data
 		1. Map Design: Kthura/NGP_Dungeon_Quayaro/Objects
 		1. Map Design: Kthura/NGP_Dungeon_Quayaro/Settings
