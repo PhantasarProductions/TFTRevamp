@@ -51,6 +51,7 @@ local ret = {}
 	ret[#ret+1] = { itemtag = "EQP_JEWEL_ONYX", Title = "Onyx", Price = 6000 }
 	ret[#ret+1] = { itemtag = "ITM_CARROTS", Title = "Carrots", Price = 1200 }
 	ret[#ret+1] = { itemtag = "WAND_II_SAINT", Title = "Saint's Wand", Price = 123000 }
+	ret[#ret+1] = { itemtag = "ITM_MJOLNIR", Title = "Mj<ouml>lnir", Price = 25000 }
 	ret[#ret+1] = { itemtag = "ITM_MEDICINE", Title = "Medicine", Price = 50 }
 	ret[#ret+1] = { itemtag = "ITM_JUSDORANGE", Title = "Jus d'orange", Price = 1200 }
 	ret[#ret+1] = { itemtag = "ITM_HELLSTONE", Title = "Hell Stone", Price = 25000 }

@@ -1,5 +1,5 @@
 --[[
-  EQP_DANDOR_CURSEDWP_HUNGERAXE.lua
+  ITM_MJOLNIR.lua
   Version: 17.07.17
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -36,42 +36,38 @@
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 5,
-	["ADDCARD_Char_Interval"] = 5,
-	["Attack"] = 500,
+	["ADDCARD_Action_Interval"] = 30,
+	["ADDCARD_Action_Number"] = 5,
+	["Attack"] = 1000,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AllowAccuracy"] = true,
 	["Attack_AllowCritical"] = true,
-	["Attack_AllowDodge"] = true,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["BUFF_Endurance"] = -100,
+	["Attack_AttackStat"] = "Intelligence",
+	["Attack_DefenseStat"] = "Resistance",
+	["Attack_Element"] = "Lightning",
 	["CauseParalysis"] = true,
-	["Desc"] = "Extremly strong axe. Good for training. Drains user's life",
-	["EQP_STAT_ER_Light"] = -25,
-	["EffectScript"] = "EatUserHP",
+	["Desc"] = "Fry, baby! Fry!",
+	["EQP_STAT_Intelligence"] = 1,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
-	["ITM_BlackMarket"] = true,
 	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Dandor",
+	["ITM_EQP_For"] = "Marrilona",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Weapon",
-	["ITM_WeaponAbility"] = true,
-	["Rew_GainAP"] = 15,
+	["ITM_ShopPrice"] = 25000,
+	["ITM_Type"] = "Consumable",
+	["Rew_GainAP"] = 5,
+	["SpellAni"] = "Spark",
 	["Stance"] = "Attack",
 	["Target"] = "1F",
-	["Title"] = "Hungering Axe",
+	["Title"] = "Mj<ouml>lnir",
 	["Type"] = "Item",
-	["rew_GainSkill1"] = 15,
-	["rew_GainSkill2"] = 15,
-	["rew_GainSkill3"] = 15}
+	["Voice"] = "Lightning",
+	["rew_CreateSkill1"] = true,
+	["rew_GainSkill1"] = 5}
 
 return ret
 
