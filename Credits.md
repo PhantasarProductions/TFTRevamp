@@ -1088,6 +1088,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/ITM_MEDICINE.lua
 		1. Script: Script/JINC/IA/ITM_MEDICINES.lua
 		1. Script: Script/JINC/IA/ITM_MIRROR.lua
+		1. Script: Script/JINC/IA/ITM_MJOLNIR.lua
 		1. Script: Script/JINC/IA/ITM_MULTIPHOENIX.lua
 		1. Script: Script/JINC/IA/ITM_MUTTON.lua
 		1. Script: Script/JINC/IA/ITM_PANACEA.lua
