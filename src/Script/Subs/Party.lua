@@ -118,7 +118,7 @@ function ShowParty()
        Image.LoadNew("CL_FACE_"..ch,"GFX/Boxtext/Portret/"..imgtag.."/General.png")
        p_sc[ch] = p_sc[ch] or math.ceil(120/(Image.Height("CL_FACE_"..ch))*100)
        Image.ScalePC(p_sc[ch],p_sc[ch]) 
-       Image.Show("CL_FACE_"..ch,bsx,120) --(totalheight+origin[2])-Image.Height("CL_FACE_"..ch))
+       Image.Show("CL_FACE_"..ch,bsx,(totalheight+origin[2])-120) --(totalheight+origin[2])-Image.Height("CL_FACE_"..ch))
        Image.ScalePC(100,100)
    end end
    -- Draw the statbars and numbers
