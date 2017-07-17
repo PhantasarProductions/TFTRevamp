@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_RUBINE_POISONSTAB.lua
-  Version: 17.07.17
+  Version: 17.07.18
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -57,8 +57,6 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "Poison Stab",
-	["SpellAni_Arg"] = "Strike the enemy, less damage, but can do poison.",
 	["Stance"] = "Attack",
 	["Target"] = "1F",
 	["Title"] = "Poison Stab",

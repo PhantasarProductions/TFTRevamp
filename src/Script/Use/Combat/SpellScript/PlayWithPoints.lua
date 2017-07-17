@@ -1,6 +1,6 @@
 --[[
   PlayWithPoints.lua
-  Version: 17.07.10
+  Version: 17.07.18
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -163,7 +163,7 @@ function SpellScript.MasoSado(tar,exe)
     local ehp = RPG.Points(exe,'HP')
     local to1,tomore
     if thp.Have>ehp.Have then to1=ehp tomore=thp else to1=thp tomore=ehp end
-    local dmg=to.Have-1
+    local dmg=to1.Have-1
     thp.Inc(-dmg)
     ehp.Inc(-dmg)
     return true 

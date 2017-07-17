@@ -721,6 +721,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/reg/Pinky.lua
 		1. Script: Script/JINC/Foes/reg/Pyroguin.lua
 		1. Script: Script/JINC/Foes/reg/RSpook.lua
+		1. Script: Script/JINC/Foes/reg/Robber.lua
 		1. Script: Script/JINC/Foes/reg/Rogue.lua
 		1. Script: Script/JINC/Foes/reg/SeaMaid.lua
 		1. Script: Script/JINC/Foes/reg/Shade.lua
@@ -1434,6 +1435,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Game identification data: ID/ID.Vocal.Demo
 		1. Game identification data: ID/ID.Vocal.Full
 	- These are files specific to the story and may not be extracted from this JCR file.
+		1. ???: GFX/Actors/Bundled/Player/Nostramantu_Human.East (Autosaved).piko-png
+		1. ???: GFX/Actors/Bundled/Player/Nostramantu_Human.North (Autosaved).piko-png
 		1. ???: GFX/Combat/Fighters/Foe/Sealed/KabiArc.lzh
 		1. Audio: Audio/SFX/Nostramantu/Laugh.ogg
 		1. Font: Fonts/Phantasar.ttf
@@ -1459,7 +1462,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.North.png
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.South.frames
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.South.png
-		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.West.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.West.Frames -alias- GFX/Combat/Fighters/Hero/Feenalaria_Human.Idle.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.West.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.West.png -alias- GFX/Combat/Fighters/Hero/Feenalaria_Human.Idle.png
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.Frames
@@ -1523,7 +1526,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.North.png
 		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.South.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.South.png
-		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.West.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.West.Frames -alias- GFX/Combat/Fighters/Hero/Nostramantu_Human.Idle.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Nostramantu_Human.West.png -alias- GFX/Combat/Fighters/Hero/Nostramantu_Human.Idle.png
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 1.png
 		1. Graphics: GFX/Actors/Single/Black Winged Fairies/Female 2.png
@@ -1693,12 +1696,14 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Cards/FOE_Y.png
 		1. Graphics: GFX/Combat/Cards/FOE_Z.png
 		1. Graphics: GFX/Combat/Cards/HERO_DANDOR.png
+		1. Graphics: GFX/Combat/Cards/HERO_FEENALARIA_HUMAN.png
 		1. Graphics: GFX/Combat/Cards/HERO_HANDOSTILLOR.png
 		1. Graphics: GFX/Combat/Cards/HERO_JAKE_FAIRY.png
 		1. Graphics: GFX/Combat/Cards/HERO_JAKE_HUMAN.png
 		1. Graphics: GFX/Combat/Cards/HERO_KRANDAR.png
 		1. Graphics: GFX/Combat/Cards/HERO_MARRILONA.png
 		1. Graphics: GFX/Combat/Cards/HERO_NOSTRAMANTU.png
+		1. Graphics: GFX/Combat/Cards/HERO_NOSTRAMANTU_HUMAN.png
 		1. Graphics: GFX/Combat/Cards/Joker.piko
 		1. Graphics: GFX/Combat/Cards/Joker.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/GhostPriest.png
@@ -1746,6 +1751,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Victory.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Victory.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.piko
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.Attack.1.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.Attack.2.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.Cast.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.Dead.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.Victory.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Attack.1.png
 		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Attack.2.png
 		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Cast.png
@@ -1801,6 +1812,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Spirata.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Marrilona.Victory.png
+		1. Graphics: GFX/Combat/Fighters/Hero/NosHuman.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu.Attack.1.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu.Attack.2.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu.Attack.png
@@ -1808,6 +1820,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu.Dead.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu.Idle.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu.Victory.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu_Human.Attack.1.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu_Human.Cast.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu_Human.Victory.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu_Human.attack.2.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu_Human.png
 		1. Graphics: GFX/Combat/Menu/Ability.png
 		1. Graphics: GFX/Combat/Menu/Attack.png
 		1. Graphics: GFX/Combat/Menu/Guard.png
@@ -2407,6 +2424,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Audio: Vocals/Combat/Hero/Dandor/Victory/Dead.ogg
 		1. Audio: Vocals/Combat/Hero/Dandor/Victory/General.ogg
 		1. Audio: Vocals/Combat/Hero/Dandor/Victory/Perfect.ogg
+		1. Audio: Vocals/Combat/Hero/Feenalaria/Victory/Boss.ogg -alias- Vocals/Combat/Hero/Feenalaria/Victory/Dead.ogg -alias- Vocals/Combat/Hero/Feenalaria/Victory/General.ogg -alias- Vocals/Combat/Hero/Feenalaria/Victory/Perfect.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human/Laugh.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human/Victory/Boss.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human/Victory/Dead.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human/Victory/General.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human/Victory/Perfect.ogg
 		1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Attack.ogg
 		1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Critical.ogg
 		1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Heal.ogg
@@ -2468,6 +2486,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Audio: Vocals/Combat/Hero/Nostramantu/Victory/Boss.ogg
 		1. Audio: Vocals/Combat/Hero/Nostramantu/Victory/General.ogg
 		1. Audio: Vocals/Combat/Hero/Nostramantu/Victory/Perfect.ogg
+		1. Audio: Vocals/Combat/Hero/Nostramantu_Human/Action/Hit.ogg
+		1. Audio: Vocals/Combat/Hero/Nostramantu_Human/Victory/Boss.ogg
+		1. Audio: Vocals/Combat/Hero/Nostramantu_Human/Victory/General.ogg
+		1. Audio: Vocals/Combat/Hero/Nostramantu_Human/Victory/Perfect.ogg
 		1. Audio: Vocals/Combat/Learn/Dandor_1.ogg
 		1. Audio: Vocals/Combat/Learn/Jake_1.ogg
 		1. Audio: Vocals/Combat/Learn/Marrilona_1.ogg
