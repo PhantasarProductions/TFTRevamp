@@ -1451,7 +1451,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.West.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.West.png -alias- GFX/Combat/Fighters/Hero/Dandor.Idle.png
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.East.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.East.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.East.png
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.NS (Autosaved).piko
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.NS.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.North.frames
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.North.png

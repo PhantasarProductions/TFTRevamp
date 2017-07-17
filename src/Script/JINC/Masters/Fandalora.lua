@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.11
+version: 17.07.17
 ]]
 local RPG = RPGStat
 
@@ -104,8 +104,8 @@ function Fandalora.teach(ch) -- Should return true if master actually decides to
     local points = Fandalora.ShowScore(ch)
     for i,a in pairs(Fandalora.abl) do
         if points>=i and (not rabl) then 
-           if not Done('&MASTERLEARNING.FANDALORA['..a..']') then rabl=a 
-           else all = all and CVV('&MASTERLEARNING.FANDALORA['..a..']') end
+           if not Done('&MASTERLEARNING.FANDALORA['..a..']['..ch..']') then rabl=a 
+           else all = all and CVV('&MASTERLEARNING.FANDALORA['..a..']['..ch..']') end
         else 
            all=false    
         end
