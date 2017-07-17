@@ -50,7 +50,7 @@ fflow.inputicons = { attack = {
                             selected = function(ch)
                                nextact = { act = 'AAA_Attack', flow='playerselectsingletarget', group='Foe', mayteach=true }
                                if prefixed(ch,"Jake") then nextact.streak=skill*4 end
-                               if ch=='Nostramantu' then nextact.mayteach=false end
+                               if prefixed(ch,'Nostramantu') or prefixed(ch,'Feenalaria') then nextact.mayteach=false end
                                -- If the player is wearing a weapon causing an alternate attack then let's get this onto the road
                                local weaponname = RPG.GetData(ch,"EQP_Weapon")
                                local weapon = ItemGet(weaponname)
