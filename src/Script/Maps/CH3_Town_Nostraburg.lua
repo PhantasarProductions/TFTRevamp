@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.14
+version: 17.07.19
 ]]
 RAMATA = "&DONE.NOSTRABURG.RAMATA.WELCOME.TEXT"
 
@@ -124,7 +124,9 @@ function Enter_Building(l)
 end   
 
 function MapMusic()
-   if not CVV("&KRANDAR.GONE") then 
+   if RPG.PartyTag(0)=='Nostramantu_Human' then
+      Music('Hub/There is Romance')
+   elseif not CVV("&KRANDAR.GONE") then 
       OriMapMusic()
    else
       Music('Dreshka/Water Prelude.ogg')
@@ -202,7 +204,15 @@ function GALE_OnLoad()
   end
   ZA_Enter("Exit",function() GoToLayer("town","exit_"..lower(Maps.LayerCodeName)) end) 
   for obj in KthuraEach() do
-      if prefixed(obj.Tag,"ENTER_") then
+      if RPG.PartyTag(0)=='Nostramantu_Human' then
+         local remove={}
+         if (obj.Kind~="TiledArea" and obj.Kind~="Exit" and obj.Kind~="Zone" and (not suffixed(obj.TextureFile,"SPAR.PNG")) and (not suffixed(obj.TextureFile,"STRUIK.PNG")))  then
+            -- CSay("Removing #"..obj.IDNum.." "..obj.Kind.." "..obj.TextureFile)
+            remove[#remove+1]=obj
+         end
+         for o in each(remove) do o.Remove() end
+         Maps.Remap()   
+      elseif prefixed(obj.Tag,"ENTER_") then
          ZA_Enter("ZA_"..obj.Tag,Enter_Building,right(obj.Tag,-6))
          AddClickable(obj.Tag)
       end

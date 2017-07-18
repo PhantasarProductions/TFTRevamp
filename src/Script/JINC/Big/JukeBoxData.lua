@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.18
+version: 17.07.19
 ]]
 -------------------------------------------
 -- This file was automatically generated --
@@ -237,4 +237,7 @@ return {
                    Artist = "Kevin McLeod"},
      ["Ghost Story"] = {
                    File = "Music/Original4Alias/Ghost Story.ogg",
+                   Artist = "Kevin McLeod"},
+     ["There is Romance"] = {
+                   File = "Music/Hub/There is Romance.ogg",
                    Artist = "Kevin McLeod"}}

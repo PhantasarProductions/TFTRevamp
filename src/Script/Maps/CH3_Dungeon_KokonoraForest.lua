@@ -32,18 +32,28 @@
   
  **********************************************
  
-version: 17.07.18
+version: 17.07.19
 ]]
 
+-- @USE /Script/Use/Specific/NewGame+.lua
 
-function Krandar()
-    if RPG.PartyTag(0)=='Nostramantu_Human' then
+function ByeNos()
+    --if RPG.PartyTag(0)=='Nostramantu_Human' then
+       Loading()
+       LoadMap('CH3_TOWN_NOSTRABURG')
+       GoToLayer('town','NosStart')
+       PartyPop('Nos','North')
        MapText('BYE_NOS')
        Party('Jake_Human;Marrilona;Dandor;HandoStillor')
-       MapText("ENDFL2")
+       LoadMap('NGP_DUNGEON_DANDLETON')
+       GoToLayer('#007','Start')
+       MapText("ENDFL007")
        RPG.IncStat("Marrilona","EXP",-250000)
-    end
-    if Maps.Obj.Exist('Krandar')==0 then return end
+    --end
+end
+
+function Krandar()
+    --if Maps.Obj.Exist('Krandar')==0 then return end
     PartyPop('Krandar','North')
     Music("Sys/Silence.ogg")
     Shift("Human")
@@ -71,9 +81,9 @@ function WelcomeNos()
    Award('ZZNGP_Carry')
 end   
 
-function StartBoss()
+function Boss()
   ClearCombatData()
-  Var.D("$COMBAT.FOE_1","Boss/Giant Eagle")
+  Var.D("$COMBAT.FOE_1","Boss/GiantEagle")
   Var.D("$COMBAT.POSFOE_1","CENTER")
   Var.D("$COMBAT.MUSIC","Music/Boss/NewGame+.ogg")
   Var.D("$COMBAT.ARENA","ForestLoof.png")
@@ -81,10 +91,10 @@ function StartBoss()
 end
 
 function GALE_OnLoad()
-    ZA_Enter("Kokonora2",WorldMap,"Kokonora")
+    if RPG.PartyTag(0)=='Nostramantu_Human' then ZA_Enter('Kokonora2',ByeNos) else ZA_Enter("Kokonora2",WorldMap,"Kokonora") end
     ZA_Enter("ActKrandar",Krandar)
     if RPG.PartyTag(0)=="Nostramantu_Human" then 
-       Maps.Obj.Obj("NosBlock").Impassible=1 Maps.Rebuild() 
+       Maps.Obj.Obj("NosBlock").Impassible=1 Maps.Remap() 
     else 
        Maps.Obj.Kill('PRC_NosOnly')
        Maps.Obj.Kill('Boss')

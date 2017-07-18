@@ -64,7 +64,7 @@ function Flashback()
     MS.Run('ITEMS','FeenaHumanSync')
     LoadMap(fb.map)
     GoToLayer(fb.layer,fb.start)
-    if fb.schedule then Scedule(fb.scheduleinstance or 'MAP',fb.schedule) end
+    if fb.schedule then Schedule(fb.scheduleinstance or 'MAP',fb.schedule) Loading() end
 end    
 
 

@@ -174,6 +174,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Music: Music/RandomEncounter/Fantasy Forest Battle.ogg
 		1. Music: Music/RandomEncounter/RPG-Battle-Climax_v001.ogg
 		1. Music: Music/Town/Chamber-of-Jewels.ogg
+- Firkin
+	- This entry is in the public domain and free of all restrictions.
+		1. Graphics: GFX/Combat/Fighters/Foe/Boss/GiantEagle.png
 - GDJ
 	- Public Domain
 		1. Graphics: GFX/Combat/Fighters/Foe/Sealed/Cockatrice.png
@@ -630,6 +633,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/Boss/Dwarf_J.lua
 		1. Script: Script/JINC/Foes/Boss/Ghost Woman.lua
 		1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
+		1. Script: Script/JINC/Foes/Boss/GiantEagle.lua
 		1. Script: Script/JINC/Foes/Boss/GobKing.lua
 		1. Script: Script/JINC/Foes/Boss/Grwol.lua
 		1. Script: Script/JINC/Foes/Boss/Harry1.lua
@@ -2138,6 +2142,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_FRENDOR
 		1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_VANDAR
 		1. Scenario: Languages/English/Scenario/WORLDMAP
+		1. Scenario: Languages/TENG.zip
+		1. Scenario: Languages/TNED.zip
 	- This piece of music is now dedicated to the Creative Commons. This is a CCBYNCSA license.    You may use this piece of music freely, as long as you credit me (Jeroen P. Broks) as the original artist, if you don't use this music for commercial purposes, and share the music and works based upon it on a similar license. If you need this piece for a different kind of license contact me first, and I might be willing to negotiate.
 		1. Music: Music/Boss/BossIntro.ogg
 		1. Music: Music/Dungeon/Alien.ogg
@@ -2163,6 +2169,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Music: Music/Hub/Angevin.ogg
 		1. Music: Music/Hub/Hall Of Heroes.ogg -alias- Music/Original4Alias/Heroic Age.ogg
 		1. Music: Music/Hub/Indore.ogg
+		1. Music: Music/Hub/There is Romance.ogg
 		1. Music: Music/RandomEncounter/Killers.ogg
 		1. Music: Music/Scenario/We Got Trouble.ogg
 		1. Music: Music/Special Boss/Hall Of The Mountain King.ogg
