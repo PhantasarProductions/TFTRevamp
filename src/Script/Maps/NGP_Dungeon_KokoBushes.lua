@@ -32,13 +32,24 @@
   
  **********************************************
  
-version: 17.07.16
+version: 17.07.18
 ]]
 
 -- @USE /Script/Use/Specific/NewGame+.lua
 
 function NossyEnd()
-   error('nothing here yet folks')
+  if RPG.PartyTag(0)=="Nostramantu_Human" then
+   Done('&DONE.NEWGAMEPLUS.DANDLETON.FLASHBACK[#005].EXPERIENCED')
+   MapText('TIMETOGOBACK')
+   Party('Jake_Human;Marrilona;Dandor;HandoStillor')
+   LoadMap('NGP_Dungeon_Dandleton')
+   GoToLayer('#005','Start')
+   MapText('BACK1')
+   RPG.IncStat('Marrilona','EXP',150000)
+   Award('ZZNGP_BACKFUTURE')
+  else
+   WorldMap('Kokonora')
+  end 
 end
 
 function Welcome()
@@ -52,9 +63,9 @@ end
 function GALE_OnLoad()
    if RPG.PartyTag(0)=="Nostramantu_Human" then
      ZA_Enter('Welcome',Welcome)
-     ZA_Enter('NossyEnd',NossyEnd)
      Maps.Obj.Obj('NosBlock').Impassible=1
      Maps.Remap()
    end
+   ZA_Enter('TheEnd',NossyEnd)
 end     
    

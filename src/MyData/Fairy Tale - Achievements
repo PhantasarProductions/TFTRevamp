@@ -593,6 +593,18 @@ Rec: ZZNGP_AQUA
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: ZZNGP_BACKFUTURE
+	Description = Be back in your own time after seeing the past.
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = FALSE
+	Show = Always
+	Title = Back to the future
+	Type = Bronze
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: ZZNGP_CATHEDRAL
 	Description = Complete the Cathedral
 	Icon = *DEFAULT*

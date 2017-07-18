@@ -1,6 +1,6 @@
 --[[
   NGP_Dungeon_Dandleton.lua
-  Version: 17.07.16
+  Version: 17.07.18
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -54,6 +54,7 @@ function Memory(tag,pop,popwind)
 end
 
 function Flashback()
+    if Done('&DONE.NEWGAMEPLUS.DANDLETON.FLASHBACK['..Maps.LayerCodeName..'].EXPERIENCED') then return end
     local fb = flashbacks[Maps.LayerCodeName]
     if fb.priomt then MapText(fb.priomt) end
     Party('Nostramantu_Human;Feenalaria_Human')
