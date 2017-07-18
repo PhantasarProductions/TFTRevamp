@@ -1,40 +1,40 @@
 --[[
-**********************************************
+  GiantEagle.lua
+  Version: 17.07.18
+  Copyright (C) 2017 Jeroen Petrus Broks
   
-  Russell.lua
-  (c) Jeroen Broks, 2017, All Rights Reserved.
+  ===========================
+  This file is part of a project related to the Phantasar Chronicles or another
+  series or saga which is property of Jeroen P. Broks.
+  This means that it may contain references to a story-line plus characters
+  which are property of Jeroen Broks. These references may only be distributed
+  along with an unmodified version of the game. 
   
-  This file contains material that is related 
-  to a storyline that is which is strictly
-  copyrighted to Jeroen Broks.
+  As soon as you remove or replace ALL references to the storyline or character
+  references, or any termology specifically set up for the Phantasar universe,
+  or any other univers a story of Jeroen P. Broks is set up for,
+  the restrictions of this file are removed and will automatically become
+  zLib licensed (see below).
   
-  This file may only be used in an unmodified
-  form with an unmodified version of the 
-  software this file belongs to.
-  
-  You may use this file for your study to see
-  how I solved certain things in the creation
-  of this project to see if you find valuable
-  leads for the creation of your own.
-  
-  Mostly this file comes along with a project
-  that is for most part released under an
-  open source license and that means that if
-  you use that code with this file removed
-  from it, you can use it under that license.
-  Please check out the other files to find out
-  which license applies.
-  This file comes 'as-is' and in no possible
-  way the author can be held responsible of
-  any form of damages that may occur due to 
-  the usage of this file
-  
-  
- **********************************************
- 
-version: 17.07.18
+  Please note that doing so counts as a modification and must be marked as such
+  in accordance to the zLib license.
+  ===========================
+  zLib license terms:
+  This software is provided 'as-is', without any express or implied
+  warranty.  In no event will the authors be held liable for any damages
+  arising from the use of this software.
+  Permission is granted to anyone to use this software for any purpose,
+  including commercial applications, and to alter it and redistribute it
+  freely, subject to the following restrictions:
+  1. The origin of this software must not be misrepresented; you must not
+     claim that you wrote the original software. If you use this software
+     in a product, an acknowledgment in the product documentation would be
+     appreciated but is not required.
+  2. Altered source versions must be plainly marked as such, and must not be
+     misrepresented as being the original software.
+  3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Tue 18 July 2017; 20:48:31
+-- File Generated: Tue 18 July 2017; 20:51:25
 
 
 local foe = {}
@@ -42,82 +42,46 @@ local foe = {}
 	foe["AI"] = "default"
 	foe["NEWGAMEPLUS_AAA_ATTACK"] = true
 	foe["NEWGAMEPLUS_AAA_GUARD"] = true
-	foe["NEWGAMEPLUS_ABL_FOE_DISTRACT"] = true
 	foe["NEWGAMEPLUS_ABL_FOE_EXHAUST"] = true
-	foe["NEWGAMEPLUS_ABL_FOE_VENOMSTAB"] = true
-	foe["NEWGAMEPLUS_ABL_FOE_VIRUSSTAB"] = true
 	foe["NEWGAMEPLUS_ABL_HERO_JAKE_\50PS"] = true
-	foe["NEWGAMEPLUS_ABL_MASTER_RUBINE_POISONSTAB"] = true
-	foe["NEWGAMEPLUS_ABL_MASTER_RUSSELL_GENOCIDE"] = true
-	foe["NEWGAMEPLUS_ABL_MASTER_RUSSELL_SAFESHOT"] = true
-	foe["NEWGAMEPLUS_ABL_MASTER_RUSSEL_DECAPITATE"] = true
-	foe["NEWGAMEPLUS_ITM_HEALINGHERB"] = true
-	foe["NEWGAMEPLUS_ITM_POTION"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_JAKE_\51PS"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_JAKE_DEATHSTRIKE"] = true
+	foe["NEWGAMEPLUS_ABL_HERO_MARRILONA_HEAL"] = true
 	foe["NORMAL_AAA_ATTACK"] = true
 	foe["NORMAL_AAA_GUARD"] = true
-	foe["NORMAL_ABL_FOE_DISTRACT"] = true
 	foe["NORMAL_ABL_FOE_EXHAUST"] = true
-	foe["NORMAL_ABL_FOE_VENOMSTAB"] = true
-	foe["NORMAL_ABL_FOE_VIRUSSTAB"] = true
 	foe["NORMAL_ABL_HERO_JAKE_\50PS"] = true
-	foe["NORMAL_ABL_MASTER_RUBINE_POISONSTAB"] = true
-	foe["NORMAL_ABL_MASTER_RUSSELL_GENOCIDE"] = true
-	foe["NORMAL_ABL_MASTER_RUSSELL_SAFESHOT"] = true
-	foe["NORMAL_ABL_MASTER_RUSSEL_DECAPITATE"] = true
-	foe["NORMAL_ITM_HEALINGHERB"] = true
-	foe["NORMAL_ITM_POTION"] = true
+	foe["NORMAL_ABL_HERO_JAKE_\51PS"] = true
+	foe["NORMAL_ABL_HERO_JAKE_DEATHSTRIKE"] = true
+	foe["NORMAL_ABL_HERO_MARRILONA_HEAL"] = true
 	foe["OVERSOUL_AAA_ATTACK"] = true
 	foe["OVERSOUL_AAA_GUARD"] = true
-	foe["OVERSOUL_ABL_FOE_DISTRACT"] = true
 	foe["OVERSOUL_ABL_FOE_EXHAUST"] = true
-	foe["OVERSOUL_ABL_FOE_VENOMSTAB"] = true
-	foe["OVERSOUL_ABL_FOE_VIRUSSTAB"] = true
 	foe["OVERSOUL_ABL_HERO_JAKE_\50PS"] = true
-	foe["OVERSOUL_ABL_MASTER_RUBINE_POISONSTAB"] = true
-	foe["OVERSOUL_ABL_MASTER_RUSSELL_GENOCIDE"] = true
-	foe["OVERSOUL_ABL_MASTER_RUSSELL_SAFESHOT"] = true
-	foe["OVERSOUL_ABL_MASTER_RUSSEL_DECAPITATE"] = true
-	foe["OVERSOUL_ITM_HEALINGHERB"] = true
-	foe["OVERSOUL_ITM_POTION"] = true
+	foe["OVERSOUL_ABL_HERO_JAKE_\51PS"] = true
+	foe["OVERSOUL_ABL_HERO_JAKE_DEATHSTRIKE"] = true
+	foe["OVERSOUL_ABL_HERO_MARRILONA_HEAL"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
 	foe["SKILL\49_AAA_GUARD"] = true
-	foe["SKILL\49_ABL_FOE_DISTRACT"] = true
 	foe["SKILL\49_ABL_FOE_EXHAUST"] = true
-	foe["SKILL\49_ABL_FOE_VENOMSTAB"] = true
-	foe["SKILL\49_ABL_FOE_VIRUSSTAB"] = true
 	foe["SKILL\49_ABL_HERO_JAKE_\50PS"] = false
-	foe["SKILL\49_ABL_MASTER_RUBINE_POISONSTAB"] = true
-	foe["SKILL\49_ABL_MASTER_RUSSELL_GENOCIDE"] = false
-	foe["SKILL\49_ABL_MASTER_RUSSELL_SAFESHOT"] = true
-	foe["SKILL\49_ABL_MASTER_RUSSEL_DECAPITATE"] = true
-	foe["SKILL\49_ITM_HEALINGHERB"] = true
-	foe["SKILL\49_ITM_POTION"] = true
+	foe["SKILL\49_ABL_HERO_JAKE_\51PS"] = false
+	foe["SKILL\49_ABL_HERO_JAKE_DEATHSTRIKE"] = false
+	foe["SKILL\49_ABL_HERO_MARRILONA_HEAL"] = true
 	foe["SKILL\50_AAA_ATTACK"] = true
 	foe["SKILL\50_AAA_GUARD"] = true
-	foe["SKILL\50_ABL_FOE_DISTRACT"] = true
 	foe["SKILL\50_ABL_FOE_EXHAUST"] = true
-	foe["SKILL\50_ABL_FOE_VENOMSTAB"] = true
-	foe["SKILL\50_ABL_FOE_VIRUSSTAB"] = true
 	foe["SKILL\50_ABL_HERO_JAKE_\50PS"] = true
-	foe["SKILL\50_ABL_MASTER_RUBINE_POISONSTAB"] = true
-	foe["SKILL\50_ABL_MASTER_RUSSELL_GENOCIDE"] = false
-	foe["SKILL\50_ABL_MASTER_RUSSELL_SAFESHOT"] = true
-	foe["SKILL\50_ABL_MASTER_RUSSEL_DECAPITATE"] = true
-	foe["SKILL\50_ITM_HEALINGHERB"] = true
-	foe["SKILL\50_ITM_POTION"] = true
+	foe["SKILL\50_ABL_HERO_JAKE_\51PS"] = false
+	foe["SKILL\50_ABL_HERO_JAKE_DEATHSTRIKE"] = false
+	foe["SKILL\50_ABL_HERO_MARRILONA_HEAL"] = true
 	foe["SKILL\51_AAA_ATTACK"] = true
-	foe["SKILL\51_AAA_GUARD"] = true
-	foe["SKILL\51_ABL_FOE_DISTRACT"] = true
+	foe["SKILL\51_AAA_GUARD"] = false
 	foe["SKILL\51_ABL_FOE_EXHAUST"] = true
-	foe["SKILL\51_ABL_FOE_VENOMSTAB"] = true
-	foe["SKILL\51_ABL_FOE_VIRUSSTAB"] = true
 	foe["SKILL\51_ABL_HERO_JAKE_\50PS"] = true
-	foe["SKILL\51_ABL_MASTER_RUBINE_POISONSTAB"] = true
-	foe["SKILL\51_ABL_MASTER_RUSSELL_GENOCIDE"] = true
-	foe["SKILL\51_ABL_MASTER_RUSSELL_SAFESHOT"] = true
-	foe["SKILL\51_ABL_MASTER_RUSSEL_DECAPITATE"] = true
-	foe["SKILL\51_ITM_HEALINGHERB"] = true
-	foe["SKILL\51_ITM_POTION"] = true
+	foe["SKILL\51_ABL_HERO_JAKE_\51PS"] = true
+	foe["SKILL\51_ABL_HERO_JAKE_DEATHSTRIKE"] = true
+	foe["SKILL\51_ABL_HERO_MARRILONA_HEAL"] = true
 	foe["STSTART_Confusion"] = false
 	foe["STSTART_Curse"] = false
 	foe["STSTART_Death"] = false
@@ -129,17 +93,17 @@ local foe = {}
 	foe["STSTART_Silence"] = false
 	foe["STSTART_Sleep"] = false
 	foe["STSTART_Undead"] = false
-	foe["Desc"] = "He THINKS he\39s a pirate\46\10Nobody knows where he got his\10obsession from since there are no\10trade ships and thus nu pirates on\10the seas of Phantasar\46"
+	foe["Desc"] = "You look yummy to him\46"
 	foe["HitBy"] = ""
-	foe["Image"] = "GFX\47Actors\47Single\47Humans\47Russell\46png"
-	foe["Item Drop \49"] = "ITM_INFERNOORB"
-	foe["Item Drop \50"] = "ITM_MANDRAKE"
-	foe["Item Steal \49"] = "ITM_STORMBOTTLE"
-	foe["Item Steal \50"] = "EQP_JAKE_WP\49\48"
-	foe["Item Steal \51"] = "EQP_JEWEL_EMERALD"
-	foe["Name"] = "Russell"
-	foe["RATE_AAA_ATTACK"] = 15
-	foe["RATE_AAA_GUARD"] = 1
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Boss\47GiantEagle\46png"
+	foe["Item Drop \49"] = "ITM_AMBROSIA"
+	foe["Item Drop \50"] = "ITM_LEADERFLAG"
+	foe["Item Steal \49"] = "ITM_AMBROSIA"
+	foe["Item Steal \50"] = "ITM_ANABOLINEA"
+	foe["Item Steal \51"] = "EQP_MARRILONA_AR\50"
+	foe["Name"] = "Gaint Eagle"
+	foe["RATE_AAA_ATTACK"] = 50
+	foe["RATE_AAA_GUARD"] = 15
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
 	foe["RATE_ABL_FOE_BEER"] = 0
 	foe["RATE_ABL_FOE_CRUSH"] = 0
@@ -149,14 +113,14 @@ local foe = {}
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
 	foe["RATE_ABL_FOE_DEVOUR"] = 0
 	foe["RATE_ABL_FOE_DISINTEGRATE"] = 0
-	foe["RATE_ABL_FOE_DISTRACT"] = 1
+	foe["RATE_ABL_FOE_DISTRACT"] = 0
 	foe["RATE_ABL_FOE_EAT"] = 0
 	foe["RATE_ABL_FOE_ENEMYVITALIZE"] = 0
 	foe["RATE_ABL_FOE_ENERGYDRAIN"] = 0
 	foe["RATE_ABL_FOE_EVIL_EYE"] = 0
 	foe["RATE_ABL_FOE_EVIL_EYE_PARALYZE"] = 0
 	foe["RATE_ABL_FOE_EVIL_EYE_PETRIFY"] = 0
-	foe["RATE_ABL_FOE_EXHAUST"] = 3
+	foe["RATE_ABL_FOE_EXHAUST"] = 1
 	foe["RATE_ABL_FOE_FATALPOISON"] = 0
 	foe["RATE_ABL_FOE_FLAMEBITE"] = 0
 	foe["RATE_ABL_FOE_FLAMEONSELF"] = 0
@@ -195,8 +159,8 @@ local foe = {}
 	foe["RATE_ABL_FOE_TWOEDGE"] = 0
 	foe["RATE_ABL_FOE_ULTIMATESOULCRUSHER"] = 0
 	foe["RATE_ABL_FOE_VENOMBITE"] = 0
-	foe["RATE_ABL_FOE_VENOMSTAB"] = 5
-	foe["RATE_ABL_FOE_VIRUSSTAB"] = 5
+	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
+	foe["RATE_ABL_FOE_VIRUSSTAB"] = 0
 	foe["RATE_ABL_FOE_VITALIZE_OPPONENT"] = 0
 	foe["RATE_ABL_FOE_WELCOMEINHELL"] = 0
 	foe["RATE_ABL_FOLLOWUP_FIKKIE"] = 0
@@ -232,10 +196,10 @@ local foe = {}
 	foe["RATE_ABL_HERO_HANDOSTILLOR_VITALIZE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_WHIZZY"] = 0
 	foe["RATE_ABL_HERO_JAKE_\50PS"] = 1
-	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
+	foe["RATE_ABL_HERO_JAKE_\51PS"] = 3
 	foe["RATE_ABL_HERO_JAKE_\52PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_BERSERK"] = 0
-	foe["RATE_ABL_HERO_JAKE_DEATHSTRIKE"] = 0
+	foe["RATE_ABL_HERO_JAKE_DEATHSTRIKE"] = 1
 	foe["RATE_ABL_HERO_JAKE_EARTHSLICE"] = 0
 	foe["RATE_ABL_HERO_JAKE_FLAMEBLADE"] = 0
 	foe["RATE_ABL_HERO_JAKE_HEALBLADE"] = 0
@@ -253,7 +217,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_MARRILONA_FIREBLAST"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_FLAME"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_HANDOSTILLOR_VITALITY"] = 0
-	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 0
+	foe["RATE_ABL_HERO_MARRILONA_HEAL"] = 5
 	foe["RATE_ABL_HERO_MARRILONA_HURRICANE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ICEAGE"] = 0
 	foe["RATE_ABL_HERO_MARRILONA_ICEBLAST"] = 0
@@ -304,11 +268,11 @@ local foe = {}
 	foe["RATE_ABL_MASTER_RUBINE_FOLLOWME"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_INVADE"] = 0
 	foe["RATE_ABL_MASTER_RUBINE_PICKPOCKET"] = 0
-	foe["RATE_ABL_MASTER_RUBINE_POISONSTAB"] = 4
+	foe["RATE_ABL_MASTER_RUBINE_POISONSTAB"] = 0
 	foe["RATE_ABL_MASTER_RUSSELL_DECAPITATE"] = 0
-	foe["RATE_ABL_MASTER_RUSSELL_GENOCIDE"] = 1
-	foe["RATE_ABL_MASTER_RUSSELL_SAFESHOT"] = 6
-	foe["RATE_ABL_MASTER_RUSSEL_DECAPITATE"] = 5
+	foe["RATE_ABL_MASTER_RUSSELL_GENOCIDE"] = 0
+	foe["RATE_ABL_MASTER_RUSSELL_SAFESHOT"] = 0
+	foe["RATE_ABL_MASTER_RUSSEL_DECAPITATE"] = 0
 	foe["RATE_ABL_NPSH_OVERNAME"] = 0
 	foe["RATE_ABL_NPSR_DOOD"] = 0
 	foe["RATE_ABL_NPSR_GIF"] = 0
@@ -359,7 +323,7 @@ local foe = {}
 	foe["RATE_ITM_FISH"] = 0
 	foe["RATE_ITM_FLAMEORB"] = 0
 	foe["RATE_ITM_FLAMEORBS"] = 0
-	foe["RATE_ITM_HEALINGHERB"] = 5
+	foe["RATE_ITM_HEALINGHERB"] = 0
 	foe["RATE_ITM_HEALSHOWER"] = 0
 	foe["RATE_ITM_HELLSTONE"] = 0
 	foe["RATE_ITM_HOLYHANDGRENATE"] = 0
@@ -386,7 +350,7 @@ local foe = {}
 	foe["RATE_ITM_PHOENIX"] = 0
 	foe["RATE_ITM_POCKETTSUNAMI"] = 0
 	foe["RATE_ITM_POISONDART"] = 0
-	foe["RATE_ITM_POTION"] = 5
+	foe["RATE_ITM_POTION"] = 0
 	foe["RATE_ITM_POTIONS"] = 0
 	foe["RATE_ITM_POTIONVITALITY"] = 0
 	foe["RATE_ITM_PURELITERATURE"] = 0
@@ -846,7 +810,7 @@ local foe = {}
 	foe["TARGET_ZZZ_KRANDARARMOR"] = "Random"
 	foe["TARGET_ZZZ_KRANDARBLADE"] = "Random"
 	foe["TARGET_ZZ_CRYPTKEY"] = "Random"
-	foe["VocalTag"] = "Russell"
+	foe["VocalTag"] = "GiantEagle"
 	foe["Boss"] = true
 	foe["Oversoul"] = false
 	foe["Oversoul Drop \49"] = false
@@ -854,39 +818,39 @@ local foe = {}
 	foe["Oversoul Steal \49"] = false
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
-	foe["Cash"] = 500
-	foe["ER_Darkness"] = 25
+	foe["Cash"] = 55
+	foe["ER_Darkness"] = 0
 	foe["ER_Earth"] = 0
-	foe["ER_Flame"] = -25
-	foe["ER_Frost"] = 25
-	foe["ER_Light"] = -10
-	foe["ER_Lightning"] = 40
-	foe["ER_Water"] = 95
-	foe["ER_Wind"] = 80
-	foe["Rate Drop \49"] = 5
-	foe["Rate Drop \50"] = 1
-	foe["Rate Steal \49"] = 5
+	foe["ER_Flame"] = 0
+	foe["ER_Frost"] = 0
+	foe["ER_Light"] = 0
+	foe["ER_Lightning"] = 0
+	foe["ER_Water"] = 0
+	foe["ER_Wind"] = 0
+	foe["Rate Drop \49"] = 100
+	foe["Rate Drop \50"] = 100
+	foe["Rate Steal \49"] = 3
 	foe["Rate Steal \50"] = 1
-	foe["Rate Steal \51"] = 1
-	foe["SR_Confusion"] = 75
-	foe["SR_Curse"] = 95
+	foe["Rate Steal \51"] = 50
+	foe["SR_Confusion"] = 100
+	foe["SR_Curse"] = 100
 	foe["SR_Death"] = 100
-	foe["SR_Disease"] = 85
-	foe["SR_Paralysis"] = 100
+	foe["SR_Disease"] = 75
+	foe["SR_Paralysis"] = 95
 	foe["SR_Petrification"] = 100
-	foe["SR_Poison"] = 75
-	foe["SR_Silence"] = 95
-	foe["SR_Sleep"] = 60
-	foe["SR_Undead"] = 85
-	foe["normal_Accuracy"] = 95
-	foe["normal_EXP"] = 1000
+	foe["SR_Poison"] = 65
+	foe["SR_Silence"] = 100
+	foe["SR_Sleep"] = 100
+	foe["SR_Undead"] = 100
+	foe["normal_Accuracy"] = 100
+	foe["normal_EXP"] = 0
 	foe["normal_Endurance"] = 300
-	foe["normal_Evasion"] = 10
-	foe["normal_HP"] = 3000
-	foe["normal_Intelligence"] = 70
-	foe["normal_Power"] = 350
-	foe["normal_Resistance"] = 40
-	foe["normal_Speed"] = 60
+	foe["normal_Evasion"] = 1
+	foe["normal_HP"] = 15000
+	foe["normal_Intelligence"] = 850
+	foe["normal_Power"] = 850
+	foe["normal_Resistance"] = 300
+	foe["normal_Speed"] = 200
 	foe["oversoul_Accuracy"] = 100
 	foe["oversoul_EXP"] = 0
 	foe["oversoul_Endurance"] = 0

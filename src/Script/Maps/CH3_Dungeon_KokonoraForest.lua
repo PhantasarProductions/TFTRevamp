@@ -32,11 +32,18 @@
   
  **********************************************
  
-version: 17.03.04
+version: 17.07.18
 ]]
 
 
 function Krandar()
+    if RPG.PartyTag(0)=='Nostramantu_Human' then
+       MapText('BYE_NOS')
+       Party('Jake_Human;Marrilona;Dandor;HandoStillor')
+       MapText("ENDFL2")
+       RPG.IncStat("Marrilona","EXP",-250000)
+    end
+    if Maps.Obj.Exist('Krandar')==0 then return end
     PartyPop('Krandar','North')
     Music("Sys/Silence.ogg")
     Shift("Human")
@@ -59,7 +66,29 @@ function NPC_Ludo()
    --end
 end
 
+function WelcomeNos()
+   MapText('WELCOME_NOS')
+   Award('ZZNGP_Carry')
+end   
+
+function StartBoss()
+  ClearCombatData()
+  Var.D("$COMBAT.FOE_1","Boss/Giant Eagle")
+  Var.D("$COMBAT.POSFOE_1","CENTER")
+  Var.D("$COMBAT.MUSIC","Music/Boss/NewGame+.ogg")
+  Var.D("$COMBAT.ARENA","ForestLoof.png")
+  NGP_StartBoss("Bird of Prey","Giant Eagle")    
+end
+
 function GALE_OnLoad()
     ZA_Enter("Kokonora2",WorldMap,"Kokonora")
     ZA_Enter("ActKrandar",Krandar)
+    if RPG.PartyTag(0)=="Nostramantu_Human" then 
+       Maps.Obj.Obj("NosBlock").Impassible=1 Maps.Rebuild() 
+    else 
+       Maps.Obj.Kill('PRC_NosOnly')
+       Maps.Obj.Kill('Boss')
+       Maps.Obj.Kill('StartBoss') 
+       -- The boss is for Nostramantu during the New Game+ Flashback. Not for Jake and company!
+    end
 end    

@@ -605,6 +605,18 @@ Rec: ZZNGP_BACKFUTURE
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: ZZNGP_CARRY
+	Description = Feenalaria tells Nostramantu she loves him
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = FALSE
+	Show = Achieved
+	Title = I can't carry it for you, but I can carry you
+	Type = Silver
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: ZZNGP_CATHEDRAL
 	Description = Complete the Cathedral
 	Icon = *DEFAULT*

@@ -45,7 +45,7 @@ function NossyEnd()
    LoadMap('NGP_Dungeon_Dandleton')
    GoToLayer('#005','Start')
    MapText('BACK1')
-   RPG.IncStat('Marrilona','EXP',150000)
+   RPG.IncStat('Marrilona','EXP',-150000)
    Award('ZZNGP_BACKFUTURE')
   else
    WorldMap('Kokonora')

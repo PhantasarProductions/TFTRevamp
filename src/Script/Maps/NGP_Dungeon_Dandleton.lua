@@ -36,7 +36,9 @@
 ]]
 
 
-flashbacks = { ['#005'] = { priomt = nil, map='NGP_Dungeon_KokoBushes', layer='bush', start='Start'}}
+flashbacks = { ['#005'] = { priomt = nil, map='NGP_Dungeon_KokoBushes', layer='bush', start='Start'},
+               ['#007'] = { priomt = "FL007", map = 'CH3_Dungeon_KokonoraForest', layer='forest', start='Start', schedule="WelcomeNos"}
+             }
 
 function NPC_Necrodia()
     local remark
@@ -68,6 +70,7 @@ end
 
 function GALE_OnLoad()
     ZA_Enter('pMemory',function() if not(Done('&DONE.NEWGAMEPLUS.DANDLETON.MEMORY.P['..Maps.LayerCodeName..'].SCENARIO')) then Memory(nil,'p') end end)
+    ZA_Enter('Memory' ,function() if not(Done('&DONE.NEWGAMEPLUS.DANDLETON.MEMORY.N['..Maps.LayerCodeName..'].SCENARIO')) then Memory(nil,nil) end end)
     ZA_Enter('Flashback',Flashback)
 end
     
