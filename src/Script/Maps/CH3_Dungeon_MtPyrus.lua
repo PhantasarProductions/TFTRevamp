@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.27
+version: 17.07.19
 ]]
 
 
@@ -45,7 +45,7 @@ function BlueSeal()
     Var.D("$COMBAT.FOE_1","Sealed/MountainEmperor")
     Var.D("$COMBAT.POSFOE_1","CENTER")
     Var.D("$COMBAT.MUSIC","Music/Special Boss/Hall Of The Mountain King.ogg")
-    Var.D("$COMBAT.ARENA","pyruspass.png")
+    Var.D("$COMBAT.ARENA","pyrus.png")
     StartBoss("Ultimate crusher","Mountain Emperor",0,25,100)      
     Done('&DONE.SEAL.DANDOR2')
 end
