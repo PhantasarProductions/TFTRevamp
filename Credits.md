@@ -627,6 +627,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/Boss/Aqua.lua
 		1. Script: Script/JINC/Foes/Boss/Beholder.lua
 		1. Script: Script/JINC/Foes/Boss/Black Dragon.lua
+		1. Script: Script/JINC/Foes/Boss/Cyndrinana.lua
 		1. Script: Script/JINC/Foes/Boss/Dandor.lua
 		1. Script: Script/JINC/Foes/Boss/DemonAir.lua
 		1. Script: Script/JINC/Foes/Boss/Dwarf.lua
@@ -756,6 +757,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/ABL_FOE_BEER.lua
 		1. Script: Script/JINC/IA/ABL_FOE_CRUSH.lua
 		1. Script: Script/JINC/IA/ABL_FOE_CURSEDWIND.lua
+		1. Script: Script/JINC/IA/ABL_FOE_CYNDRINANA_I_MUST_ATONE_FOR_MY_SINS.lua
 		1. Script: Script/JINC/IA/ABL_FOE_DEATHSPELL.lua
 		1. Script: Script/JINC/IA/ABL_FOE_DEMON_SOUL_BREAKER.lua
 		1. Script: Script/JINC/IA/ABL_FOE_DESPERATEATTACK.lua
@@ -2213,6 +2215,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Single/Humans/Male.png
 		1. Graphics: GFX/Actors/Single/Humans/ShopHoer.png
 		1. Graphics: GFX/Actors/Single/Humans/ShopHoer2.png
+		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Cyndrinana.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/GobKing.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Gob.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/GobPriest.png

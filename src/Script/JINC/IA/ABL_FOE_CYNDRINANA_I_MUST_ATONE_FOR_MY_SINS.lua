@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  EQP_MARRILONA_AR1.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  ABL_FOE_CYNDRINANA_I_MUST_ATONE_FOR_MY_SINS.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -35,23 +35,41 @@
 version: 17.07.19
 ]]
 ret = {
+	["ADDCARD_Action_Act"] = "Self",
+	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Char_Interval"] = 5,
+	["Attack_AccuracyRate"] = 100,
 	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["Desc"] = "Just the regular fairy fashion for young girls",
-	["EQP_STAT_Endurance"] = 1,
-	["EQP_STAT_Intelligence"] = 1,
-	["EQP_STAT_Resistance"] = 3,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "Marrilona",
+	["CureCurse"] = true,
+	["CureDisease"] = true,
+	["CureParalysis"] = true,
+	["CurePetrification"] = true,
+	["CurePoison"] = true,
+	["CureSilence"] = true,
+	["CureSleep"] = true,
+	["CureUndead"] = true,
+	["EffectScript"] = "PointAlter",
+	["EffectScript_Arg"] = "AP 50000000;VIT 100",
+	["Heal"] = 100,
+	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Percent",
+	["ITM_ACC_Dandor"] = true,
+	["ITM_ACC_HandoStillor"] = true,
+	["ITM_ACC_Jake"] = true,
+	["ITM_ACC_Marrilona"] = true,
+	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
+	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 125,
-	["ITM_Type"] = "Armor",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Simple dress",
-	["Type"] = "Item"}
+	["ITM_Type"] = "Consumable",
+	["Revive"] = true,
+	["SpellAni"] = "AllHeal",
+	["Stance"] = "Cast",
+	["Target"] = "AF",
+	["Title"] = "I must attone for my sins!",
+	["Type"] = "Ability"}
 
 return ret
 

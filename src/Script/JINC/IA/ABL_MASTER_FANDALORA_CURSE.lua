@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_FANDALORA_CURSE.lua
-  Version: 17.07.18
+  Version: 17.07.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

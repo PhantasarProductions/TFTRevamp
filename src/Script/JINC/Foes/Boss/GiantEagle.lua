@@ -1,6 +1,6 @@
 --[[
   GiantEagle.lua
-  Version: 17.07.18
+  Version: 17.07.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Tue 18 July 2017; 20:51:25
+-- File Generated: Wed 19 July 2017; 10:26:35
 
 
 local foe = {}

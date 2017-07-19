@@ -1,6 +1,6 @@
 --[[
   NGP_Dungeon_Dandleton.lua
-  Version: 17.07.18
+  Version: 17.07.19
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -35,10 +35,14 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 
+-- @USE /Script/Use/Specific/NewGame+.lua
+
 
 flashbacks = { ['#005'] = { priomt = nil, map='NGP_Dungeon_KokoBushes', layer='bush', start='Start'},
                ['#007'] = { priomt = "FL007", map = 'CH3_Dungeon_KokonoraForest', layer='forest', start='Start', schedule="WelcomeNos"}
              }
+             
+bosses = {['#007']={priomt='BOSS007',boss='Cyndrinana',intro1="Ghost of Nostramantu's mother",intro2='Cyndrinana'}}
 
 function NPC_Necrodia()
     local remark
@@ -66,6 +70,25 @@ function Flashback()
     GoToLayer(fb.layer,fb.start)
     if fb.schedule then Schedule(fb.scheduleinstance or 'MAP',fb.schedule) Loading() end
 end    
+
+function Boss()
+  if Done('&DONE.NEWGAMEPLUS.DANDLETON.BOSS['..Maps.LayerCodeName..'].DEFEATED') then return end
+  local b 
+  local bs=bosses[Maps.LayerCodeName]
+  assert(bs,"No boss set for layer "..Maps.LayerCodeName)
+  if bs.priomt then MapText(bs.priomt) end
+  ClearCombatData()
+  for i=1,({1,3,6})[skill] do
+      b=i+1
+      Var.D('$COMBAT.FOE_'..i,'Reg/DandletonCitizen')
+  end
+  Var.D("$COMBAT.FOE_"..b,"Boss/"..bs.boss)
+  Var.D("$COMBAT.POSFOE_"..b,"CENTER")
+  Var.D("$COMBAT.MUSIC","Music/"..(bs.music or 'Altboss/Day Of Chaos')..".ogg")
+  Var.D("$COMBAT.ARENA","Dandleton.png")
+  NGP_StartBoss(bs.intro1,bs.intro2)    
+end
+
 
 
 function GALE_OnLoad()
