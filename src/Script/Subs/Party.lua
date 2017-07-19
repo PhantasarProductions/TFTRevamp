@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 17.07.18
+  Version: 17.07.19
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -304,6 +304,35 @@ function CreateFeenaHuman()
    RPG.SetStat(fh,'Level',200000)
 end   
 
+function LinkAllStats(original,target)
+   local fieldsstring = RPGChar.StatFields(original)
+   local fields = mysplit(fieldsstring,";")
+   CSay('- Linking Stats from '..original..' to '..target)
+   for f in each(fields) do
+       CSay(" = Stat: "..f)
+       RPG.LinkStat(original,target,f)
+   end    
+end
+
+
+function LinkAllPoints(original,target)
+   local fieldsstring = RPGChar.PointsFields(original)
+   local fields = mysplit(fieldsstring,";")
+   for f in each(fields) do
+       RPG.LinkPoints(original,target,f)
+   end    
+end
+
+function CreateFeenaHuman2()
+   RPGChar.SetName('Feenalaria_Human2',"Feenalaria")
+   local LinkData = RPG.LinkData
+   LinkAllStats ('Feenalaria_Human','Feenalaria_Human2')
+   LinkAllPoints('Feenalaria_Human','Feenalaria_Human2')
+   LinkData     ('Jake_Human',      'Feenalaria_Human2','EQP_Weapon')
+   LinkData     ('Marrilona',       'Feenalaria_Human2','EQP_Armor')
+   LinkData     ('Marrilona',       'Feenalaria_Human2','EQP_Acc')
+end   
+
 function CreateChar(ch,name)
   -- Create
   RPGChar.CreateChar(ch)
@@ -343,6 +372,7 @@ function CreateChar(ch,name)
   if ch=='Nostramantu' then CreateNostramantu() return end
   if ch=='Nostramantu_Human' then CreateNostramantuHuman() return end
   if ch=='Feenalaria_Human' then CreateFeenaHuman() return end
+  if ch=='Feenalaria_Human2' then CreateFeenaHuman2() return end
 end
 
 function ClickedChar(ch,dump)

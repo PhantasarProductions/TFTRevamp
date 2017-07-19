@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.31
+version: 17.07.19
 ]]
 
 
@@ -61,7 +61,18 @@ function NaarDeManaCave()
 end   
 
 function ManaBoss()    
-    ({ Jake_Human = PetitRoi, Jake_Fairy=PetitRoi, Nostramantu = NosBoss})[RPG.PartyTag(0)]()
+    ({ Jake_Human = PetitRoi, Jake_Fairy=PetitRoi, Nostramantu_Human = NosBoss})[RPG.PartyTag(0)]()
+end
+
+function NosWelcome()
+   PartyPop('n','South')
+   MapText('NOSWELCOME')
+   RPG.Points('Feenalaria_Human2','HP' ).Have=123456789
+   RPG.Points('Feenalaria_Human2','AP' ).Have=123456789
+   RPG.Points('Feenalaria_Human2','VIT').Have=123456789
+   RPG.Points('Nostramantu_Human','HP' ).Have=123456789
+   RPG.Points('Nostramantu_Human','AP' ).Have=123456789
+   RPG.Points('Nostramantu_Human','VIT').Have=123456789
 end
 
 
@@ -69,4 +80,12 @@ end
 function GALE_OnLoad()
   ZA_Enter('ManaBoss',ManaBoss)
   ZA_Enter('NaarDeManaGrot',NaarDeManaCave)
+  if RPG.PartyTag(0)=='Nostramantu_Human' then 
+     local nb = Maps.Obj.Obj('BlockNos')
+     nb.Impassible=1
+     nb.ForcePassible=0
+     Maps.ReMap()
+  else
+     Maps.Obj.Kill('PRC_NosOnly')   
+  end
 end  

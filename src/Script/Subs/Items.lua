@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.07.16
+  Version: 17.07.19
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -110,11 +110,16 @@ end
 function FeenaHumanSync()
    local l = { {p='1. Sword',c='Jake_Human'},{p='9. Skills',c='Marrilona'}}
    heroabl.Feenalaria_Human = {}
+   --heroabl.Feenalaria_Human2 = {}
    for al in each(l) do
       CSay(serialize('Synced',al))
-      for a,_ in pairs(abllist[al.c][al.p]) do      
-          heroabl.Feenalaria_Human[a]=heroabl[al.c][a]
-      end    
+      for a,_ in pairs(abllist[al.c][al.p]) do
+          if a~="ABL_HERO_JAKE_SHIFT_FAIRY" then      
+             heroabl.Feenalaria_Human[a]=heroabl[al.c][a]
+             CSay('Feenalaria (Human) should be able to perform: '..sval(a))
+             --heroabl.Feenalaria_Human2[a]=heroabl[al.c][a]
+          end   
+      end          
    end
 end
 
@@ -216,6 +221,7 @@ function ShowSpellList(pch,psizes)
    local ch=pch
    if pch=="Nostramantu_Human" then return end
    if pch=='Nostramantu' then ch='Marrilona' end -- Make sure Nostramantu can use all of Marrilona's spells.
+   if pch=='Feenalaria_Human2' then ch='Feenalaria_Human' end
    local sizes = ({['table']=psizes, ['string']=mysplit(psizes,",") })[type(psizes)]
    local c, allowcast
    local mx,my = MouseCoords()

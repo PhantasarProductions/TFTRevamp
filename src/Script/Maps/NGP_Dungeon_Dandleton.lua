@@ -40,7 +40,7 @@
 
 flashbacks = { ['#005'] = { priomt = nil, map='NGP_Dungeon_KokoBushes', layer='bush', start='Start'},
                ['#007'] = { priomt = "FL007", map = 'CH3_Dungeon_KokonoraForest', layer='forest', start='Start', schedule="WelcomeNos"},
-               ['#010'] = { priomt = "FL010", map = 'CH4_Dungeon_ManaRoad', layer='bos', start='Start', schedule="WelcomeNos"}
+               ['#010'] = { priomt = "FL010", map = 'CH4_Dungeon_ManaRoad', layer='bos', start='Start', schedule="NosWelcome", party='Nostramantu_Human;Feenalaria_Human2'}
              }
              
 bosses = {['#007']={priomt='BOSS007',boss='Cyndrinana',intro1="Ghost of Nostramantu's mother",intro2='Cyndrinana'},
@@ -67,7 +67,9 @@ function Flashback()
     if Done('&DONE.NEWGAMEPLUS.DANDLETON.FLASHBACK['..Maps.LayerCodeName..'].EXPERIENCED') then return end
     local fb = flashbacks[Maps.LayerCodeName]
     if fb.priomt then MapText(fb.priomt) end
-    Party('Nostramantu_Human;Feenalaria_Human')
+    Cls()
+    Loading()
+    Party(fb.party or 'Nostramantu_Human;Feenalaria_Human')
     MS.LoadNew('ITEMS','Script/Subs/Items.lua')
     MS.Run('ITEMS','FeenaHumanSync')
     LoadMap(fb.map)
@@ -125,5 +127,7 @@ function GALE_OnLoad()
     ZA_Enter('Memory' ,function() if not(Done('&DONE.NEWGAMEPLUS.DANDLETON.MEMORY.N['..Maps.LayerCodeName..'].SCENARIO')) then Memory(nil,nil) end end)
     ZA_Enter('Flashback',Flashback)
     NextMapFirst['#010'] = Flashback
+    ZA_Enter('NextMap',NextMap)
+    ZA_Enter('PrevMap',PrevMap)
 end
     

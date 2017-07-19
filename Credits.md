@@ -112,6 +112,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/BoxText/Portret/Fandalora/General.png
 		1. Graphics: GFX/BoxText/Portret/Fandalora/NoEmo.png
 		1. Graphics: GFX/BoxText/Portret/Feenalaria/Human.png -alias- GFX/BoxText/Portret/Feenalaria_Human/General.png
+		1. Graphics: GFX/BoxText/Portret/Feenalaria/Human2 - Lekker Groot.png
+		1. Graphics: GFX/BoxText/Portret/Feenalaria/Human2.png -alias- GFX/BoxText/Portret/Feenalaria_Human2/General.png
 		1. Graphics: GFX/BoxText/Portret/Gedrio Fulla/General.png
 		1. Graphics: GFX/BoxText/Portret/Harry/Angry.png
 		1. Graphics: GFX/BoxText/Portret/Harry/Furious.png
@@ -321,8 +323,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Equipment/Equipment.piko
 		1. Graphics: GFX/Equipment/WP_Dandor.png
 		1. Graphics: GFX/Equipment/WP_Feenalaria_Human.png
+		1. Graphics: GFX/Equipment/WP_Feenalaria_Human2.png -alias- GFX/Equipment/WP_Jake_Fairy.png -alias- GFX/Equipment/WP_Jake_Human.png -alias- GFX/Equipment/WP_Krandar.png -alias- GFX/Equipment/WP_Nostramantu_Human.png
 		1. Graphics: GFX/Equipment/WP_HandoStillor.png
-		1. Graphics: GFX/Equipment/WP_Jake_Fairy.png -alias- GFX/Equipment/WP_Jake_Human.png -alias- GFX/Equipment/WP_Krandar.png -alias- GFX/Equipment/WP_Nostramantu_Human.png
 		1. Graphics: GFX/Equipment/WP_Marrilona.png
 		1. Graphics: GFX/JoyPad/Button.piko
 		1. Graphics: GFX/JoyPad/Push01.png
@@ -614,7 +616,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/CharAbilities/Dandor.lua
 		1. Script: Script/JINC/CharAbilities/Elder.lua
 		1. Script: Script/JINC/CharAbilities/Feenalaria.lua
-		1. Script: Script/JINC/CharAbilities/Feenalaria_Human.lua
+		1. Script: Script/JINC/CharAbilities/Feenalaria_Human.lua -alias- Script/JINC/CharAbilities/Feenalaria_Human2.lua
 		1. Script: Script/JINC/CharAbilities/HandoStillor.lua
 		1. Script: Script/JINC/CharAbilities/Jake_Fairy.lua
 		1. Script: Script/JINC/CharAbilities/Jake_Human.lua
@@ -1473,6 +1475,15 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.West.Frames -alias- GFX/Combat/Fighters/Hero/Feenalaria_Human.Idle.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.West.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.West.png -alias- GFX/Combat/Fighters/Hero/Feenalaria_Human.Idle.png
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human2.East.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human2.East.png
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human2.North.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human2.North.png
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human2.South.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human2.South.piko
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human2.South.png
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human2.West.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human2.West.png
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.piko
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.png
