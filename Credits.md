@@ -1482,8 +1482,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human2.South.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human2.South.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human2.South.png
-		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human2.West.Frames
-		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human2.West.png
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human2.West.Frames -alias- GFX/Combat/Fighters/Hero/Feenalaria_Human2.Idle.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human2.West.png -alias- GFX/Combat/Fighters/Hero/Feenalaria_Human2.Idle.png
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.piko
 		1. Graphics: GFX/Actors/Bundled/Player/HandoStillor.East.png
@@ -2445,7 +2445,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Audio: Vocals/Combat/Hero/Dandor/Victory/Dead.ogg
 		1. Audio: Vocals/Combat/Hero/Dandor/Victory/General.ogg
 		1. Audio: Vocals/Combat/Hero/Dandor/Victory/Perfect.ogg
-		1. Audio: Vocals/Combat/Hero/Feenalaria/Victory/Boss.ogg -alias- Vocals/Combat/Hero/Feenalaria/Victory/Dead.ogg -alias- Vocals/Combat/Hero/Feenalaria/Victory/General.ogg -alias- Vocals/Combat/Hero/Feenalaria/Victory/Perfect.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human/Laugh.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human/Victory/Boss.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human/Victory/Dead.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human/Victory/General.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human/Victory/Perfect.ogg
+		1. Audio: Vocals/Combat/Hero/Feenalaria/Victory/Boss.ogg -alias- Vocals/Combat/Hero/Feenalaria/Victory/Dead.ogg -alias- Vocals/Combat/Hero/Feenalaria/Victory/General.ogg -alias- Vocals/Combat/Hero/Feenalaria/Victory/Perfect.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human/Laugh.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human/Victory/Boss.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human/Victory/Dead.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human/Victory/General.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human/Victory/Perfect.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human2/Victory/Boss.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human2/Victory/Dead.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human2/Victory/General.ogg -alias- Vocals/Combat/Hero/Feenalaria_Human2/Victory/Perfect.ogg
 		1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Attack.ogg
 		1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Critical.ogg
 		1. Audio: Vocals/Combat/Hero/HandoStillor/Action/Heal.ogg
