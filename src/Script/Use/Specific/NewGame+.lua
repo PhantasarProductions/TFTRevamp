@@ -1,6 +1,6 @@
 --[[
   NewGame+.lua
-  Version: 17.07.16
+  Version: 17.07.20
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -59,8 +59,13 @@ function ToHallHeroes(name,achkey,wmap)
    WorldMap_Unlock('NGPHEROES')
 end
 
-if RPGChar.PartyTag(1)=="Feenalaria_Human" then
+-- --[[
+--function FeenaSync()
+if RPGChar.PartyTag(1)=="Feenalaria_Human" or RPGChar.PartyTag(1)=="Feenalaria_Human2" then
+    Console.Write("Feena synchronize",255,0,0)
     MS.LoadNew('ITEMS','Script/Subs/Items.lua')
     MS.Run('ITEMS','FeenaHumanSync')
-end       
+end      
+-- ]]
+ 
    

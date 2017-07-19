@@ -1,6 +1,6 @@
 --[[
   SPECIAL_ARMAGEDDON.lua
-  Version: 17.07.19
+  Version: 17.07.20
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

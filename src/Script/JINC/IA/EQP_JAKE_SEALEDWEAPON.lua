@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.19
+version: 17.07.20
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
@@ -87,6 +87,7 @@ ret = {
 	["Title"] = "Oathkeeper",
 	["Type"] = "Item",
 	["Voice"] = "Critical",
+	["rew_CreateSkill1"] = true,
 	["rew_GainSkill1"] = 75,
 	["rew_GainSkill2"] = 25,
 	["rew_GainSkill3"] = 25,

@@ -1,6 +1,6 @@
 --[[
   EQP_JAKE_CURSEDWP_VENOMBLADE.lua
-  Version: 17.07.19
+  Version: 17.07.20
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -68,6 +68,7 @@ ret = {
 	["Target"] = "1F",
 	["Title"] = "Venom Blade",
 	["Type"] = "Item",
+	["rew_CreateSkill1"] = true,
 	["rew_GainSkill1"] = 19,
 	["rew_GainSkill2"] = 20,
 	["rew_GainSkill3"] = 20,

@@ -35,6 +35,8 @@
 version: 17.07.19
 ]]
 
+-- @USE /Script/Use/Specific/NewGame+.lua
+
 
 function PetitRoi()
   if Done("&DONE.BOSS.PETITROI") then return end

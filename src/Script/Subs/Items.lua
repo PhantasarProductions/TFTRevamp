@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.07.19
+  Version: 17.07.20
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -87,7 +87,7 @@ pos = {}
 function GALE_OnLoad()
    LoadItemModule = nil
    chars = GetCharList()
-   local ichars = {'Jake_Human','Jake_Fairy','Marrilona','Dandor','HandoStillor',"Krandar",'Feenalaria_Human',"Nostramantu_Human"} -- Characters must ALWAYS be loaded in THIS order!
+   local ichars = {'Jake_Human','Jake_Fairy','Marrilona','Dandor','HandoStillor',"Krandar"} --,'Feenalaria_Human',"Nostramantu_Human"} -- Characters must ALWAYS be loaded in THIS order!
    for c in each(ichars) do
        abllist[c] = JINC('Script/JINC/CharAbilities/'..c..".lua")
        if abllist[c] then
@@ -110,13 +110,19 @@ end
 function FeenaHumanSync()
    local l = { {p='1. Sword',c='Jake_Human'},{p='9. Skills',c='Marrilona'}}
    heroabl.Feenalaria_Human = {}
+   abllist.Feenalaria_Human = {}
+   ablpage.Feenalaria_Human = {'1. Sword','9. Skills'}
+   CSay(serialize('abllist',abllist))
    --heroabl.Feenalaria_Human2 = {}
    for al in each(l) do
       CSay(serialize('Synced',al))
       for a,_ in pairs(abllist[al.c][al.p]) do
-          if a~="ABL_HERO_JAKE_SHIFT_FAIRY" then      
-             heroabl.Feenalaria_Human[a]=heroabl[al.c][a]
-             CSay('Feenalaria (Human) should be able to perform: '..sval(a))
+          abllist.Feenalaria_Human[al.p] = abllist.Feenalaria_Human[al.p] or {}
+          local feenapage = abllist.Feenalaria_Human[al.p]          
+          if a~="ABL_HERO_JAKE_SHIFT_FAIRY" then    
+             feenapage[a] = {0} 
+             heroabl.Feenalaria_Human[a]=true --heroabl[al.c][a]
+             CSay('Feenalaria (Human) should be able to perform: '..sval(a).."from "..al.c.."/"..al.p)
              --heroabl.Feenalaria_Human2[a]=heroabl[al.c][a]
           end   
       end          
@@ -457,8 +463,10 @@ function AnyBodyEquipped(item)
      local ret=false
      for i=0,3 do
          local ch=RPG.PartyTag(i)
-         for s in each(sockets) do
-             ret = ret or upper(RPG.GetData(ch,s))==upper(item)
+         if ch~="" then
+           for s in each(sockets) do
+               ret = ret or upper(RPG.GetData(ch,s))==upper(item)
+           end    
          end    
      end
      return ret

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.19
+version: 17.07.20
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
@@ -59,11 +59,11 @@ ret = {
 	["Title"] = "Training Sword",
 	["Type"] = "Item",
 	["rew_CreateSkill1"] = true,
-	["rew_GainSkill1"] = 10,
-	["rew_GainSkill2"] = 10,
-	["rew_GainSkill3"] = 10,
-	["rew_GainSkill4"] = 10,
-	["rew_GainSkill5"] = 10}
+	["rew_GainSkill1"] = 100,
+	["rew_GainSkill2"] = 100,
+	["rew_GainSkill3"] = 100,
+	["rew_GainSkill4"] = 100,
+	["rew_GainSkill5"] = 100}
 
 return ret
 

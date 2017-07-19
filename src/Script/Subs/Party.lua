@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 17.07.19
+  Version: 17.07.20
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -307,10 +307,15 @@ end
 function LinkAllStats(original,target)
    local fieldsstring = RPGChar.StatFields(original)
    local fields = mysplit(fieldsstring,";")
+   local blockpref = {'END_','EQP_'}
    CSay('- Linking Stats from '..original..' to '..target)
    for f in each(fields) do
-       CSay(" = Stat: "..f)
-       RPG.LinkStat(original,target,f)
+       local allow=true
+       for bpf in each(blockpref) do allow = allow and (not prefixed(f,bpf)) end
+       if allow then
+          CSay(" = Stat: "..f)
+          RPG.LinkStat(original,target,f)
+       end   
    end    
 end
 
@@ -327,7 +332,7 @@ function CreateFeenaHuman2()
    RPGChar.SetName('Feenalaria_Human2',"Feenalaria")
    local LinkData = RPG.LinkData
    LinkAllStats ('Feenalaria_Human','Feenalaria_Human2')
-   LinkAllPoints('Feenalaria_Human','Feenalaria_Human2')
+-- LinkAllPoints('Feenalaria_Human','Feenalaria_Human2')
    LinkData     ('Jake_Human',      'Feenalaria_Human2','EQP_Weapon')
    LinkData     ('Marrilona',       'Feenalaria_Human2','EQP_Armor')
    LinkData     ('Marrilona',       'Feenalaria_Human2','EQP_Acc')
