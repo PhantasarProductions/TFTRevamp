@@ -285,6 +285,7 @@ function JuggernautAward()
 end
 
 function BlackOrb(tag)
+  if PartyTag(0)=='Nostramantu_Human' then return SerialBoxText("ITEM","BLACKORB_NOT_FOR_NOS","FLOW_FIELD") end
   inc('%ORBS')
   if CVV('%ORBS')==1 then
      MapText('TUTORIAL_BLACKORB')

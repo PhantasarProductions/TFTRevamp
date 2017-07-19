@@ -39,10 +39,14 @@
 
 
 flashbacks = { ['#005'] = { priomt = nil, map='NGP_Dungeon_KokoBushes', layer='bush', start='Start'},
-               ['#007'] = { priomt = "FL007", map = 'CH3_Dungeon_KokonoraForest', layer='forest', start='Start', schedule="WelcomeNos"}
+               ['#007'] = { priomt = "FL007", map = 'CH3_Dungeon_KokonoraForest', layer='forest', start='Start', schedule="WelcomeNos"},
+               ['#010'] = { priomt = "FL010", map = 'CH4_Dungeon_ManaRoad', layer='bos', start='Start', schedule="WelcomeNos"}
              }
              
-bosses = {['#007']={priomt='BOSS007',boss='Cyndrinana',intro1="Ghost of Nostramantu's mother",intro2='Cyndrinana'}}
+bosses = {['#007']={priomt='BOSS007',boss='Cyndrinana',intro1="Ghost of Nostramantu's mother",intro2='Cyndrinana'},
+          ['#009']={boss='Terinka',intro1="Ghost of Feenalaria's mother",intro2='Terinka'}}
+          
+NextMapFirst = {}
 
 function NPC_Necrodia()
     local remark
@@ -89,11 +93,37 @@ function Boss()
   NGP_StartBoss(bs.intro1,bs.intro2)    
 end
 
+function GoMap(l,e)
+   local mp = math.ceil(l/10)
+   local mf = "NGP_Dungeon_Dandleton_Part"..mp
+   if mp==1 then mf="NGP_Dungeon_Dandleton" end
+   Cls()
+   Loading()
+   LoadMap(mf)
+   GoToLayer('#'..right('00'..l,3),e or 'Start')
+end   
+   
+
+function NextMap()
+   if not(Done('&DONE.NEWGAMEPLUS.DANDLETON.NEXTMAP.FIRSTTIME['..Maps.LayerCodeName..'].DONE')) then
+      if NextMapFirst[Maps.LayerCodeName] then return NextMapFirst[Maps.LayerCodeName]() end
+   end 
+   local n = Sys.Val(right(Maps.LayerCodeName,3))+1
+   GoMap(n,"Start")
+end
+
+function PrevMap()
+   local n = Sys.Val(right(Maps.LayerCodeName,3))-1
+   GoMap(n,"Einde")
+end
+
+
 
 
 function GALE_OnLoad()
     ZA_Enter('pMemory',function() if not(Done('&DONE.NEWGAMEPLUS.DANDLETON.MEMORY.P['..Maps.LayerCodeName..'].SCENARIO')) then Memory(nil,'p') end end)
     ZA_Enter('Memory' ,function() if not(Done('&DONE.NEWGAMEPLUS.DANDLETON.MEMORY.N['..Maps.LayerCodeName..'].SCENARIO')) then Memory(nil,nil) end end)
     ZA_Enter('Flashback',Flashback)
+    NextMapFirst['#010'] = Flashback
 end
     

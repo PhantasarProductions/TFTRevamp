@@ -661,6 +661,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/Boss/SuperGhostPriest.lua
 		1. Script: Script/JINC/Foes/Boss/SuperHidingHag.lua
 		1. Script: Script/JINC/Foes/Boss/SuperZombie.lua
+		1. Script: Script/JINC/Foes/Boss/Terinka.lua
 		1. Script: Script/JINC/Foes/Boss/Terra.lua
 		1. Script: Script/JINC/Foes/Boss/UberGob.lua
 		1. Script: Script/JINC/Foes/Boss/UltraMonk.lua
@@ -1112,6 +1113,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/ITM_SALVES.lua
 		1. Script: Script/JINC/IA/ITM_SAUERKRAUT.lua
 		1. Script: Script/JINC/IA/ITM_SLEEPHERB.lua
+		1. Script: Script/JINC/IA/ITM_SPIKEBOMB.lua
 		1. Script: Script/JINC/IA/ITM_STONE.lua
 		1. Script: Script/JINC/IA/ITM_STORMBOTTLE.lua
 		1. Script: Script/JINC/IA/ITM_TOTALEXHAUSTION.lua
@@ -1274,7 +1276,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Maps/NGP_DUNGEON_AQUAANTRUM.lua
 		1. Script: Script/Maps/NGP_DUNGEON_CATHEDRAL.lua
 		1. Script: Script/Maps/NGP_DUNGEON_Quayaro.lua
-		1. Script: Script/Maps/NGP_Dungeon_Dandleton.lua
+		1. Script: Script/Maps/NGP_Dungeon_Dandleton.lua -alias- Script/Maps/NGP_Dungeon_Dandleton_part_2.lua
 		1. Script: Script/Maps/NGP_Dungeon_KokoBushes.lua
 		1. Script: Script/Maps/NGP_Dungeon_Quayaro.lsv
 		1. Script: Script/Maps/NGP_HUB_Heroes.lua
@@ -2032,6 +2034,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Map Design: Kthura/ZZZ_Test/Data
 		1. Map Design: Kthura/ZZZ_Test/Objects
 		1. Map Design: Kthura/ZZZ_Test/Settings
+		1. Scenario: Language/Dutch/Scenario/MAPS/NGP_DUNGEON_DANDLETON -alias- Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_DANDLETON
+		1. Scenario: Language/English/Scenario/MAPS/NGP_DUNGEON_DANDLETON -alias- Languages/English/Scenario/MAPS/NGP_DUNGEON_DANDLETON
 		1. Scenario: Languages/Dutch/Scenario.$$TEMP$$0$$
 		1. Scenario: Languages/Dutch/Scenario/COMBAT/LEARN
 		1. Scenario: Languages/Dutch/Scenario/GENERAL/BLUESEAL
@@ -2075,7 +2079,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_AQUAANTRUM
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_CATHEDRAL
-		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_DANDLETON
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_KOKOBUSHES
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_QUAYARO
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_HUB_HEROES
@@ -2131,7 +2134,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Scenario: Languages/English/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_AQUAANTRUM
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_CATHEDRAL
-		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_DANDLETON
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_KOKOBUSHES
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_QUAYARO
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_HUB_HEROES
@@ -2144,8 +2146,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_FRENDOR
 		1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_VANDAR
 		1. Scenario: Languages/English/Scenario/WORLDMAP
-		1. Scenario: Languages/TENG.zip
-		1. Scenario: Languages/TNED.zip
 	- This piece of music is now dedicated to the Creative Commons. This is a CCBYNCSA license.    You may use this piece of music freely, as long as you credit me (Jeroen P. Broks) as the original artist, if you don't use this music for commercial purposes, and share the music and works based upon it on a similar license. If you need this piece for a different kind of license contact me first, and I might be willing to negotiate.
 		1. Music: Music/Boss/BossIntro.ogg
 		1. Music: Music/Dungeon/Alien.ogg
