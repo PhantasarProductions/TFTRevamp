@@ -1448,6 +1448,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. ???: GFX/Actors/Bundled/Player/Nostramantu_Human.East (Autosaved).piko-png
 		1. ???: GFX/Actors/Bundled/Player/Nostramantu_Human.North (Autosaved).piko-png
 		1. ???: GFX/Combat/Fighters/Foe/Sealed/KabiArc.lzh
+		1. ???: GFX/Combat/Fighters/Hero/Feenalaria_Human2.Attack.1 (Autosaved).piko-png
 		1. Audio: Audio/SFX/Nostramantu/Laugh.ogg
 		1. Font: Fonts/Phantasar.ttf
 		1. Game identification data: ID/Test
@@ -1716,6 +1717,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Cards/FOE_Z.png
 		1. Graphics: GFX/Combat/Cards/HERO_DANDOR.png
 		1. Graphics: GFX/Combat/Cards/HERO_FEENALARIA_HUMAN.png
+		1. Graphics: GFX/Combat/Cards/HERO_FEENALARIA_HUMAN2.png
 		1. Graphics: GFX/Combat/Cards/HERO_HANDOSTILLOR.png
 		1. Graphics: GFX/Combat/Cards/HERO_JAKE_FAIRY.png
 		1. Graphics: GFX/Combat/Cards/HERO_JAKE_HUMAN.png
@@ -1776,6 +1778,12 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.Dead.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.Victory.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.piko
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human2.Attack.1.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human2.Attack.2.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human2.Cast.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human2.Dead.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human2.Victory.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenlaria_Human2.Petrified.png
 		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Attack.1.png
 		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Attack.2.png
 		1. Graphics: GFX/Combat/Fighters/Hero/HandoStillor.Cast.png
