@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.19
+version: 17.07.20
 ]]
 
 -- @USE /Script/Use/Specific/NewGame+.lua
@@ -56,6 +56,17 @@ function PetitRoi()
   Var.D("$COMBAT.ARENA","Forest.png")
   StartBoss("King of the Imps","Petit Roi")   
 end
+
+function NosBoss()
+  if Done("&DONE.BOSS.GRIFFIN.NOSTRAMANTU.FEENALARIA.NEWGAMEPLUS") then return end
+  ClearCombatData()
+  Var.D("$COMBAT.FOE_1","Boss/Griffin")
+  Var.D('$COMBAT.POSFOE_1','CENTER')
+  Var.D("$COMBAT.MUSIC","Music/Boss/NewGame+.ogg")
+  Var.D("$COMBAT.ARENA","Forest.png")
+  NGP_StartBoss("Guardian of the Mana Cave","Mana Griffin")   
+end
+
 
 function NaarDeManaCave()
    LoadMap("CH4_DUNGEON_MANACAVE")

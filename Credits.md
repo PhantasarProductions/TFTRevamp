@@ -638,6 +638,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
 		1. Script: Script/JINC/Foes/Boss/GiantEagle.lua
 		1. Script: Script/JINC/Foes/Boss/GobKing.lua
+		1. Script: Script/JINC/Foes/Boss/Griffin.lua
 		1. Script: Script/JINC/Foes/Boss/Grwol.lua
 		1. Script: Script/JINC/Foes/Boss/Harry1.lua
 		1. Script: Script/JINC/Foes/Boss/Harry3.lua
@@ -1445,10 +1446,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Game identification data: ID/ID.Vocal.Demo
 		1. Game identification data: ID/ID.Vocal.Full
 	- These are files specific to the story and may not be extracted from this JCR file.
-		1. ???: GFX/Actors/Bundled/Player/Nostramantu_Human.East (Autosaved).piko-png
-		1. ???: GFX/Actors/Bundled/Player/Nostramantu_Human.North (Autosaved).piko-png
 		1. ???: GFX/Combat/Fighters/Foe/Sealed/KabiArc.lzh
-		1. ???: GFX/Combat/Fighters/Hero/Feenalaria_Human2.Attack.1 (Autosaved).piko-png
 		1. Audio: Audio/SFX/Nostramantu/Laugh.ogg
 		1. Font: Fonts/Phantasar.ttf
 		1. Game identification data: ID/Test
@@ -3092,6 +3090,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 	- This entry is in the public domain and free of all restrictions.
 		1. Graphics: gfx/combat/fighters/foe/boss/Superalien.piko
 		1. Graphics: gfx/combat/fighters/foe/boss/Superalien.png
+- bnsonger47
+	- This entry is in the public domain and free of all restrictions.
+		1. Graphics: gfx/combat/fighters/foe/boss/Griffin.png
 - crisg
 	- This entry is in the public domain and free of all restrictions.
 		1. Graphics: gfx/Combat/SpellAni/Trump/Sombrero.png
