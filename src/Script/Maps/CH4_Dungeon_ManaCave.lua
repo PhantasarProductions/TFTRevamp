@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.26
+version: 17.07.20
 ]]
 
 -- @USE /Script/Use/Specific/GreatMagicBack.lua
@@ -98,9 +98,19 @@ local function QuickMansion()
 end        
 
 local function Welcome()
-     MapText("WELCOME")
-     Maps.Obj.Kill("Welcome",1)
-     WorldMap_UnLock("CH4MANACAVE")
+     if RPG.PartyTag(0)=="Nostramantu_Human" then
+        Award('ZZNGP_MANACAVE') 
+        MapText("WELCOME_NOS")
+        Party('Jake_Human;Marrilona;Dandor;HandoStillor')
+        LoadMap('NGP_DUNGEON_DANDLETON_PART2')
+        GoToLayer('#011','Start')
+        MapText('MANACAVE')
+        RPG.DefStat('Marrilona','EXP',-2000000000)
+     elseif not(Done('&DONE.MANACAVE.ENTERED.FIRSTTIME.JAKE.MARRILONA.DANDOR.HANDOSTILLOR')) then
+        MapText("WELCOME")
+        Maps.Obj.Kill("Welcome")
+        WorldMap_UnLock("CH4MANACAVE")
+     end   
 end
 
 local function ToBegin()
@@ -155,7 +165,8 @@ function GALE_OnLoad()
     else
        ZA_Enter("Quick",QuickMansion)
     end
-    ZA_Enter("Welcome",Welcome)
+    --ZA_Enter("Welcome",Welcome)
+    ZA_Enter("Welcome2",Welcome)
     ZA_Enter("ToBegin",ToBegin)
     ZA_Enter('ShowMansion',Mansion)
     local plasma = {}
@@ -163,7 +174,11 @@ function GALE_OnLoad()
     plasma.colors = { {180,0,0}, {0,180,0}, {0,0,180},{180,0,0}, {0,180,0}, {0,0,180}}
     plasma.speed = {{1,0},{0,1},{-1,-1},{-1,0},{0,-1},{1,1}}
     -- @IF Ignore
-       local
+       local effect
     -- @FI
-    effect = SetupGreatMagic(plasma,21) -- #000 counts too, you know!    
+    if RPG.PartyTag(0)=='Nostramantu_Human' then
+       effect = { ['#000'] = SetUpGreatMagicDo(plasma,'#000') }
+    else     
+       effect = SetupGreatMagic(plasma,21) -- #000 counts too, you know!
+    end       
 end          

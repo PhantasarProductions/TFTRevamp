@@ -1279,7 +1279,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Maps/NGP_DUNGEON_AQUAANTRUM.lua
 		1. Script: Script/Maps/NGP_DUNGEON_CATHEDRAL.lua
 		1. Script: Script/Maps/NGP_DUNGEON_Quayaro.lua
-		1. Script: Script/Maps/NGP_Dungeon_Dandleton.lua -alias- Script/Maps/NGP_Dungeon_Dandleton_part_2.lua
+		1. Script: Script/Maps/NGP_Dungeon_Dandleton.lua -alias- Script/Maps/NGP_Dungeon_Dandleton_part2.lua
 		1. Script: Script/Maps/NGP_Dungeon_KokoBushes.lua
 		1. Script: Script/Maps/NGP_Dungeon_Quayaro.lsv
 		1. Script: Script/Maps/NGP_HUB_Heroes.lua
@@ -1849,7 +1849,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu_Human.Cast.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu_Human.Victory.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu_Human.attack.2.png
-		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu_Human.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu_Human.dead.png
 		1. Graphics: GFX/Combat/Menu/Ability.png
 		1. Graphics: GFX/Combat/Menu/Attack.png
 		1. Graphics: GFX/Combat/Menu/Guard.png
@@ -2015,6 +2015,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Map Design: Kthura/NGP_Dungeon_Dandleton/Data
 		1. Map Design: Kthura/NGP_Dungeon_Dandleton/Objects
 		1. Map Design: Kthura/NGP_Dungeon_Dandleton/Settings
+		1. Map Design: Kthura/NGP_Dungeon_Dandleton_part2/Data
+		1. Map Design: Kthura/NGP_Dungeon_Dandleton_part2/Objects
+		1. Map Design: Kthura/NGP_Dungeon_Dandleton_part2/Settings
 		1. Map Design: Kthura/NGP_Dungeon_KokoBushes/Data
 		1. Map Design: Kthura/NGP_Dungeon_KokoBushes/Objects
 		1. Map Design: Kthura/NGP_Dungeon_KokoBushes/Settings
@@ -2051,8 +2054,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Map Design: Kthura/ZZZ_Test/Data
 		1. Map Design: Kthura/ZZZ_Test/Objects
 		1. Map Design: Kthura/ZZZ_Test/Settings
-		1. Scenario: Language/Dutch/Scenario/MAPS/NGP_DUNGEON_DANDLETON -alias- Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_DANDLETON
-		1. Scenario: Language/English/Scenario/MAPS/NGP_DUNGEON_DANDLETON -alias- Languages/English/Scenario/MAPS/NGP_DUNGEON_DANDLETON
 		1. Scenario: Languages/Dutch/Scenario.$$TEMP$$0$$
 		1. Scenario: Languages/Dutch/Scenario/COMBAT/LEARN
 		1. Scenario: Languages/Dutch/Scenario/GENERAL/BLUESEAL
@@ -2096,6 +2097,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_AQUAANTRUM
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_CATHEDRAL
+		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_DANDLETON -alias- Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_DANDLETON_PART2
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_KOKOBUSHES
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_QUAYARO
 		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_HUB_HEROES
@@ -2151,6 +2153,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Scenario: Languages/English/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_AQUAANTRUM
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_CATHEDRAL
+		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_DANDLETON -alias- Languages/English/Scenario/MAPS/NGP_DUNGEON_DANDLETON_PART2
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_KOKOBUSHES
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_QUAYARO
 		1. Scenario: Languages/English/Scenario/MAPS/NGP_HUB_HEROES

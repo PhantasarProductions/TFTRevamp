@@ -641,6 +641,18 @@ Rec: ZZNGP_LINKPAST
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: ZZNGP_MANACAVE
+	Description = Witness the discovery of the mana cave
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = FALSE
+	Show = Achieved
+	Title = Mana! The father of power! The mother of life!
+	Type = Platinum
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: ZZNGP_QUAYARO
 	Description = Complete Quayaro's Caslte
 	Icon = *DEFAULT*
