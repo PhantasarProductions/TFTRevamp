@@ -775,6 +775,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/ABL_FOE_EVIL_EYE_PARALYZE.lua
 		1. Script: Script/JINC/IA/ABL_FOE_EVIL_EYE_PETRIFY.lua
 		1. Script: Script/JINC/IA/ABL_FOE_EXHAUST.lua
+		1. Script: Script/JINC/IA/ABL_FOE_FATALBITE.lua
 		1. Script: Script/JINC/IA/ABL_FOE_FATALPOISON.lua
 		1. Script: Script/JINC/IA/ABL_FOE_FLAMEBITE.lua
 		1. Script: Script/JINC/IA/ABL_FOE_FLAMEONSELF.lua

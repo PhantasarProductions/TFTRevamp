@@ -1,6 +1,6 @@
 --[[
   ShadowShroom.lua
-  Version: 17.07.15
+  Version: 17.07.20
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sat 15 July 2017; 19:51:39
+-- File Generated: Thu 20 July 2017; 22:28:13
 
 
 local foe = {}
@@ -72,6 +72,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_BEER"] = 0
 	foe["RATE_ABL_FOE_CRUSH"] = 0
 	foe["RATE_ABL_FOE_CURSEDWIND"] = 0
+	foe["RATE_ABL_FOE_CYNDRINANA_I_MUST_ATONE_FOR_MY_SINS"] = 0
 	foe["RATE_ABL_FOE_DEATHSPELL"] = 0
 	foe["RATE_ABL_FOE_DEMON_SOUL_BREAKER"] = 0
 	foe["RATE_ABL_FOE_DESPERATEATTACK"] = 0
@@ -85,6 +86,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_EVIL_EYE_PARALYZE"] = 0
 	foe["RATE_ABL_FOE_EVIL_EYE_PETRIFY"] = 0
 	foe["RATE_ABL_FOE_EXHAUST"] = 0
+	foe["RATE_ABL_FOE_FATALBITE"] = 0
 	foe["RATE_ABL_FOE_FATALPOISON"] = 0
 	foe["RATE_ABL_FOE_FLAMEBITE"] = 0
 	foe["RATE_ABL_FOE_FLAMEONSELF"] = 0
@@ -255,6 +257,10 @@ local foe = {}
 	foe["RATE_COCYTUS_JUDECCA"] = 0
 	foe["RATE_COCYTUS_PTOLOMEA"] = 0
 	foe["RATE_EXE_MARRILONA_MEDITATION"] = 0
+	foe["RATE_FLASHBACK_FEENAARMOR"] = 0
+	foe["RATE_FLASHBACK_FEENAWEAPON"] = 0
+	foe["RATE_FLASHBACK_NOSARMOR"] = 0
+	foe["RATE_FLASHBACK_NOSWEAPON"] = 0
 	foe["RATE_FOE_WATCHMOVE"] = 0
 	foe["RATE_FOE_ZOMBIE_PLAYDEATH"] = 0
 	foe["RATE_FOE_ZOMBIE_PLAYUNDEAD"] = 0
@@ -303,6 +309,7 @@ local foe = {}
 	foe["RATE_ITM_MEDICINE"] = 0
 	foe["RATE_ITM_MEDICINES"] = 0
 	foe["RATE_ITM_MIRROR"] = 0
+	foe["RATE_ITM_MJOLNIR"] = 0
 	foe["RATE_ITM_MULTIPHOENIX"] = 0
 	foe["RATE_ITM_MUTTON"] = 0
 	foe["RATE_ITM_PANACEA"] = 0
@@ -319,6 +326,7 @@ local foe = {}
 	foe["RATE_ITM_SALVES"] = 0
 	foe["RATE_ITM_SAUERKRAUT"] = 0
 	foe["RATE_ITM_SLEEPHERB"] = 0
+	foe["RATE_ITM_SPIKEBOMB"] = 0
 	foe["RATE_ITM_STONE"] = 0
 	foe["RATE_ITM_STORMBOTTLE"] = 0
 	foe["RATE_ITM_TOTALEXHAUSTION"] = 0
@@ -421,6 +429,7 @@ local foe = {}
 	foe["TARGET_ABL_FOE_BEER"] = "Random"
 	foe["TARGET_ABL_FOE_CRUSH"] = "Random"
 	foe["TARGET_ABL_FOE_CURSEDWIND"] = "Random"
+	foe["TARGET_ABL_FOE_CYNDRINANA_I_MUST_ATONE_FOR_MY_SINS"] = "Random"
 	foe["TARGET_ABL_FOE_DEATHSPELL"] = "Random"
 	foe["TARGET_ABL_FOE_DEMON_SOUL_BREAKER"] = "Random"
 	foe["TARGET_ABL_FOE_DESPERATEATTACK"] = "Random"
@@ -434,6 +443,7 @@ local foe = {}
 	foe["TARGET_ABL_FOE_EVIL_EYE_PARALYZE"] = "Random"
 	foe["TARGET_ABL_FOE_EVIL_EYE_PETRIFY"] = "Random"
 	foe["TARGET_ABL_FOE_EXHAUST"] = "Random"
+	foe["TARGET_ABL_FOE_FATALBITE"] = "Random"
 	foe["TARGET_ABL_FOE_FATALPOISON"] = "Random"
 	foe["TARGET_ABL_FOE_FLAMEBITE"] = "Random"
 	foe["TARGET_ABL_FOE_FLAMEONSELF"] = "Random"
@@ -604,6 +614,10 @@ local foe = {}
 	foe["TARGET_COCYTUS_JUDECCA"] = "Random"
 	foe["TARGET_COCYTUS_PTOLOMEA"] = "Random"
 	foe["TARGET_EXE_MARRILONA_MEDITATION"] = "Random"
+	foe["TARGET_FLASHBACK_FEENAARMOR"] = "Random"
+	foe["TARGET_FLASHBACK_FEENAWEAPON"] = "Random"
+	foe["TARGET_FLASHBACK_NOSARMOR"] = "Random"
+	foe["TARGET_FLASHBACK_NOSWEAPON"] = "Random"
 	foe["TARGET_FOE_WATCHMOVE"] = "Random"
 	foe["TARGET_FOE_ZOMBIE_PLAYDEATH"] = "Random"
 	foe["TARGET_FOE_ZOMBIE_PLAYUNDEAD"] = "Random"
@@ -652,6 +666,7 @@ local foe = {}
 	foe["TARGET_ITM_MEDICINE"] = "Random"
 	foe["TARGET_ITM_MEDICINES"] = "Random"
 	foe["TARGET_ITM_MIRROR"] = "Random"
+	foe["TARGET_ITM_MJOLNIR"] = "Random"
 	foe["TARGET_ITM_MULTIPHOENIX"] = "Random"
 	foe["TARGET_ITM_MUTTON"] = "Random"
 	foe["TARGET_ITM_PANACEA"] = "Random"
@@ -668,6 +683,7 @@ local foe = {}
 	foe["TARGET_ITM_SALVES"] = "Random"
 	foe["TARGET_ITM_SAUERKRAUT"] = "Random"
 	foe["TARGET_ITM_SLEEPHERB"] = "Random"
+	foe["TARGET_ITM_SPIKEBOMB"] = "Random"
 	foe["TARGET_ITM_STONE"] = "Random"
 	foe["TARGET_ITM_STORMBOTTLE"] = "Random"
 	foe["TARGET_ITM_TOTALEXHAUSTION"] = "Random"
