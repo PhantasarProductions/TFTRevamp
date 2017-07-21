@@ -51,7 +51,9 @@ flashbacks = { ['#005'] = { priomt = nil, map='NGP_Dungeon_KokoBushes', layer='b
              }
              
 bosses = {['#007']={priomt='BOSS007',boss='Cyndrinana',intro1="Ghost of Nostramantu's mother",intro2='Cyndrinana'},
-          ['#009']={boss='Terinka',intro1="Ghost of Feenalaria's mother",intro2='Terinka'}}
+          ['#009']={boss='Terinka',intro1="Ghost of Feenalaria's mother",intro2='Terinka'},
+          ['#017']={boss='Salumon',intro1="Ghost of Nostramanu's father", intro2='Salumon'}
+         }
           
 NextMapFirst = {}
 

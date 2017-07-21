@@ -660,6 +660,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/Boss/OceanMaid.lua
 		1. Script: Script/JINC/Foes/Boss/PetitRoi.lua
 		1. Script: Script/JINC/Foes/Boss/Russell.lua
+		1. Script: Script/JINC/Foes/Boss/Salumon.lua
 		1. Script: Script/JINC/Foes/Boss/ShadowRogue.lua
 		1. Script: Script/JINC/Foes/Boss/ShadowSweeper.lua
 		1. Script: Script/JINC/Foes/Boss/SuperGhostPriest.lua
