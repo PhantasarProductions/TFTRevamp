@@ -1,7 +1,7 @@
 --[[
-  Snake.lua
+  Spider.lua
   Version: 17.07.21
-  Copyright (C) 2016, 2017 Jeroen Petrus Broks
+  Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,24 +34,42 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Fri 21 July 2017; 20:20:50
+-- File Generated: Fri 21 July 2017; 20:20:49
 
 
 local foe = {}
 
 	foe["AI"] = "default"
 	foe["NEWGAMEPLUS_AAA_ATTACK"] = true
-	foe["NEWGAMEPLUS_ABL_FOE_VENOMBITE"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_EVIL_EYE_PARALYZE"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_FATALBITE"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_HAP"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_LIFEFORCE"] = true
 	foe["NORMAL_AAA_ATTACK"] = true
-	foe["NORMAL_ABL_FOE_VENOMBITE"] = true
-	foe["OVERSOUL_AAA_ATTACK"] = false
-	foe["OVERSOUL_ABL_FOE_VENOMBITE"] = true
+	foe["NORMAL_ABL_FOE_EVIL_EYE_PARALYZE"] = true
+	foe["NORMAL_ABL_FOE_FATALBITE"] = true
+	foe["NORMAL_ABL_FOE_HAP"] = true
+	foe["NORMAL_ABL_FOE_LIFEFORCE"] = true
+	foe["OVERSOUL_AAA_ATTACK"] = true
+	foe["OVERSOUL_ABL_FOE_EVIL_EYE_PARALYZE"] = true
+	foe["OVERSOUL_ABL_FOE_FATALBITE"] = true
+	foe["OVERSOUL_ABL_FOE_HAP"] = true
+	foe["OVERSOUL_ABL_FOE_LIFEFORCE"] = true
 	foe["SKILL\49_AAA_ATTACK"] = true
-	foe["SKILL\49_ABL_FOE_VENOMBITE"] = true
+	foe["SKILL\49_ABL_FOE_EVIL_EYE_PARALYZE"] = true
+	foe["SKILL\49_ABL_FOE_FATALBITE"] = true
+	foe["SKILL\49_ABL_FOE_HAP"] = true
+	foe["SKILL\49_ABL_FOE_LIFEFORCE"] = true
 	foe["SKILL\50_AAA_ATTACK"] = true
-	foe["SKILL\50_ABL_FOE_VENOMBITE"] = true
-	foe["SKILL\51_AAA_ATTACK"] = false
-	foe["SKILL\51_ABL_FOE_VENOMBITE"] = true
+	foe["SKILL\50_ABL_FOE_EVIL_EYE_PARALYZE"] = true
+	foe["SKILL\50_ABL_FOE_FATALBITE"] = true
+	foe["SKILL\50_ABL_FOE_HAP"] = true
+	foe["SKILL\50_ABL_FOE_LIFEFORCE"] = true
+	foe["SKILL\51_AAA_ATTACK"] = true
+	foe["SKILL\51_ABL_FOE_EVIL_EYE_PARALYZE"] = true
+	foe["SKILL\51_ABL_FOE_FATALBITE"] = true
+	foe["SKILL\51_ABL_FOE_HAP"] = true
+	foe["SKILL\51_ABL_FOE_LIFEFORCE"] = true
 	foe["STSTART_Confusion"] = false
 	foe["STSTART_Curse"] = false
 	foe["STSTART_Death"] = false
@@ -63,16 +81,16 @@ local foe = {}
 	foe["STSTART_Silence"] = false
 	foe["STSTART_Sleep"] = false
 	foe["STSTART_Undead"] = false
-	foe["Desc"] = "Poisonous"
+	foe["Desc"] = "It will eat anything"
 	foe["HitBy"] = ""
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47reg\47Snake\46png"
-	foe["Item Drop \49"] = "ITM_ANTIDOTE"
-	foe["Item Drop \50"] = "ITM_ANTIDOTE"
-	foe["Item Steal \49"] = "ITM_POTION"
-	foe["Item Steal \50"] = "ITM_ANTIDOTE"
-	foe["Item Steal \51"] = "ITM_ANTIDOTE"
-	foe["Name"] = "Snake"
-	foe["RATE_AAA_ATTACK"] = 10
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47reg\47Spider\46png"
+	foe["Item Drop \49"] = "ITM_AMBROSIA"
+	foe["Item Drop \50"] = "ITM_APPLE"
+	foe["Item Steal \49"] = "ITM_AMBROSIA"
+	foe["Item Steal \50"] = "ITM_HOLYHANDGRENATE"
+	foe["Item Steal \51"] = "ITM_ANABOLINEA"
+	foe["Name"] = "Spider"
+	foe["RATE_AAA_ATTACK"] = 5
 	foe["RATE_AAA_GUARD"] = 0
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
 	foe["RATE_ABL_FOE_BEER"] = 0
@@ -89,10 +107,10 @@ local foe = {}
 	foe["RATE_ABL_FOE_ENEMYVITALIZE"] = 0
 	foe["RATE_ABL_FOE_ENERGYDRAIN"] = 0
 	foe["RATE_ABL_FOE_EVIL_EYE"] = 0
-	foe["RATE_ABL_FOE_EVIL_EYE_PARALYZE"] = 0
+	foe["RATE_ABL_FOE_EVIL_EYE_PARALYZE"] = 4
 	foe["RATE_ABL_FOE_EVIL_EYE_PETRIFY"] = 0
 	foe["RATE_ABL_FOE_EXHAUST"] = 0
-	foe["RATE_ABL_FOE_FATALBITE"] = 0
+	foe["RATE_ABL_FOE_FATALBITE"] = 5
 	foe["RATE_ABL_FOE_FATALPOISON"] = 0
 	foe["RATE_ABL_FOE_FLAMEBITE"] = 0
 	foe["RATE_ABL_FOE_FLAMEONSELF"] = 0
@@ -103,11 +121,11 @@ local foe = {}
 	foe["RATE_ABL_FOE_GG_DEATHSCREAM"] = 0
 	foe["RATE_ABL_FOE_GG_SCREAM"] = 0
 	foe["RATE_ABL_FOE_GRAVITY"] = 0
-	foe["RATE_ABL_FOE_HAP"] = 0
+	foe["RATE_ABL_FOE_HAP"] = 1
 	foe["RATE_ABL_FOE_HOLDPERSON"] = 0
 	foe["RATE_ABL_FOE_HORROR"] = 0
 	foe["RATE_ABL_FOE_LIFEDRAIN"] = 0
-	foe["RATE_ABL_FOE_LIFEFORCE"] = 0
+	foe["RATE_ABL_FOE_LIFEFORCE"] = 3
 	foe["RATE_ABL_FOE_MASOSADO"] = 0
 	foe["RATE_ABL_FOE_MERMAID_TEMPATION"] = 0
 	foe["RATE_ABL_FOE_MULTISTRIKE"] = 0
@@ -130,7 +148,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_TUSK"] = 0
 	foe["RATE_ABL_FOE_TWOEDGE"] = 0
 	foe["RATE_ABL_FOE_ULTIMATESOULCRUSHER"] = 0
-	foe["RATE_ABL_FOE_VENOMBITE"] = 5
+	foe["RATE_ABL_FOE_VENOMBITE"] = 0
 	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
 	foe["RATE_ABL_FOE_VIRUSSTAB"] = 0
 	foe["RATE_ABL_FOE_VITALIZE_OPPONENT"] = 0
@@ -786,15 +804,15 @@ local foe = {}
 	foe["TARGET_ZZZ_KRANDARARMOR"] = "Random"
 	foe["TARGET_ZZZ_KRANDARBLADE"] = "Random"
 	foe["TARGET_ZZ_CRYPTKEY"] = "Random"
-	foe["VocalTag"] = ""
+	foe["VocalTag"] = "Spider"
 	foe["Boss"] = false
 	foe["Oversoul"] = true
 	foe["Oversoul Drop \49"] = false
 	foe["Oversoul Drop \50"] = false
-	foe["Oversoul Steal \49"] = true
+	foe["Oversoul Steal \49"] = false
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
-	foe["Cash"] = 5
+	foe["Cash"] = 555
 	foe["ER_Darkness"] = 0
 	foe["ER_Earth"] = 0
 	foe["ER_Flame"] = 0
@@ -803,39 +821,39 @@ local foe = {}
 	foe["ER_Lightning"] = 0
 	foe["ER_Water"] = 0
 	foe["ER_Wind"] = 0
-	foe["Rate Drop \49"] = 75
-	foe["Rate Drop \50"] = 25
-	foe["Rate Steal \49"] = 100
-	foe["Rate Steal \50"] = 0
-	foe["Rate Steal \51"] = 0
-	foe["SR_Confusion"] = 0
-	foe["SR_Curse"] = 50
-	foe["SR_Death"] = 60
+	foe["Rate Drop \49"] = 25
+	foe["Rate Drop \50"] = 100
+	foe["Rate Steal \49"] = 1
+	foe["Rate Steal \50"] = 100
+	foe["Rate Steal \51"] = 2
+	foe["SR_Confusion"] = 100
+	foe["SR_Curse"] = 100
+	foe["SR_Death"] = 100
 	foe["SR_Disease"] = 100
-	foe["SR_Paralysis"] = 88
-	foe["SR_Petrification"] = 95
+	foe["SR_Paralysis"] = 100
+	foe["SR_Petrification"] = 100
 	foe["SR_Poison"] = 100
-	foe["SR_Silence"] = 40
-	foe["SR_Sleep"] = 0
+	foe["SR_Silence"] = 100
+	foe["SR_Sleep"] = 100
 	foe["SR_Undead"] = 100
-	foe["normal_Accuracy"] = 97
-	foe["normal_EXP"] = 4
-	foe["normal_Endurance"] = 28
-	foe["normal_Evasion"] = 4
-	foe["normal_HP"] = 151
-	foe["normal_Intelligence"] = 21
-	foe["normal_Power"] = 37
-	foe["normal_Resistance"] = 18
-	foe["normal_Speed"] = 31
+	foe["normal_Accuracy"] = 100
+	foe["normal_EXP"] = 100000
+	foe["normal_Endurance"] = 5
+	foe["normal_Evasion"] = 25
+	foe["normal_HP"] = 10000
+	foe["normal_Intelligence"] = 1000
+	foe["normal_Power"] = 1000
+	foe["normal_Resistance"] = 5
+	foe["normal_Speed"] = 125
 	foe["oversoul_Accuracy"] = 100
-	foe["oversoul_EXP"] = 8
-	foe["oversoul_Endurance"] = 30
-	foe["oversoul_Evasion"] = 5
-	foe["oversoul_HP"] = 300
-	foe["oversoul_Intelligence"] = 42
-	foe["oversoul_Power"] = 60
-	foe["oversoul_Resistance"] = 20
-	foe["oversoul_Speed"] = 60
+	foe["oversoul_EXP"] = 0
+	foe["oversoul_Endurance"] = 10
+	foe["oversoul_Evasion"] = 50
+	foe["oversoul_HP"] = 100000
+	foe["oversoul_Intelligence"] = 2000
+	foe["oversoul_Power"] = 2000
+	foe["oversoul_Resistance"] = 10
+	foe["oversoul_Speed"] = 250
 
 
 return foe

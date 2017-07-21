@@ -742,6 +742,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/reg/Skeleton.lua
 		1. Script: Script/JINC/Foes/reg/Slime.lua
 		1. Script: Script/JINC/Foes/reg/Snake.lua
+		1. Script: Script/JINC/Foes/reg/Spider.lua
 		1. Script: Script/JINC/Foes/reg/SpiritGirl.lua
 		1. Script: Script/JINC/Foes/reg/StoneGolem.lua
 		1. Script: Script/JINC/Foes/reg/Thief.lua
