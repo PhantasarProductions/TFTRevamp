@@ -275,7 +275,7 @@ function ShowSpellList(pch,psizes)
              allowcast=true
           else
              DarkText(abl.ABL_APCost,sizes[3]-10,y,1,2,0,180,255)
-             allowcast=RPG.Points(ch,"AP").Have>=Sys.Val(abl.ABL_APCost)
+             allowcast=RPG.Points(pch,"AP").Have>=Sys.Val(abl.ABL_APCost)
           end   
           if (INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_SPACE)==1 or joyhit('CONFIRM') or (mousehit(1) and my<sizes[4]-20)) and allowcast and i==SSLP then Var.D('$SELECTEDABILITY',k) end  
        else
