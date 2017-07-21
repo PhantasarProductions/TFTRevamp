@@ -1,63 +1,99 @@
 --[[
-  Ghost Woman.lua
-  Version: 17.07.21
-  Copyright (C) 2017 Jeroen Petrus Broks
+**********************************************
   
-  ===========================
-  This file is part of a project related to the Phantasar Chronicles or another
-  series or saga which is property of Jeroen P. Broks.
-  This means that it may contain references to a story-line plus characters
-  which are property of Jeroen Broks. These references may only be distributed
-  along with an unmodified version of the game. 
+  Frendor.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
-  As soon as you remove or replace ALL references to the storyline or character
-  references, or any termology specifically set up for the Phantasar universe,
-  or any other univers a story of Jeroen P. Broks is set up for,
-  the restrictions of this file are removed and will automatically become
-  zLib licensed (see below).
+  This file contains material that is related 
+  to a storyline that is which is strictly
+  copyrighted to Jeroen Broks.
   
-  Please note that doing so counts as a modification and must be marked as such
-  in accordance to the zLib license.
-  ===========================
-  zLib license terms:
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
+  This file may only be used in an unmodified
+  form with an unmodified version of the 
+  software this file belongs to.
+  
+  You may use this file for your study to see
+  how I solved certain things in the creation
+  of this project to see if you find valuable
+  leads for the creation of your own.
+  
+  Mostly this file comes along with a project
+  that is for most part released under an
+  open source license and that means that if
+  you use that code with this file removed
+  from it, you can use it under that license.
+  Please check out the other files to find out
+  which license applies.
+  This file comes 'as-is' and in no possible
+  way the author can be held responsible of
+  any form of damages that may occur due to 
+  the usage of this file
+  
+  
+ **********************************************
+ 
+version: 17.07.21
 ]]
--- File Generated: Fri 21 July 2017; 16:29:41
+-- File Generated: Fri 21 July 2017; 16:36:43
 
 
 local foe = {}
 
 	foe["AI"] = "default"
-	foe["NEWGAMEPLUS_ABL_FOE_GG_SCREAM"] = true
-	foe["NEWGAMEPLUS_ABL_GG_TERRSCREAM"] = true
-	foe["NEWGAMEPLUS_ABL_GG_TOTALBREAKSCREAM"] = true
-	foe["NORMAL_ABL_FOE_GG_SCREAM"] = true
-	foe["NORMAL_ABL_GG_TERRSCREAM"] = true
-	foe["NORMAL_ABL_GG_TOTALBREAKSCREAM"] = true
-	foe["OVERSOUL_ABL_FOE_GG_SCREAM"] = true
-	foe["OVERSOUL_ABL_GG_TERRSCREAM"] = true
-	foe["OVERSOUL_ABL_GG_TOTALBREAKSCREAM"] = true
-	foe["SKILL\49_ABL_FOE_GG_SCREAM"] = true
-	foe["SKILL\49_ABL_GG_TERRSCREAM"] = true
-	foe["SKILL\49_ABL_GG_TOTALBREAKSCREAM"] = true
-	foe["SKILL\50_ABL_FOE_GG_SCREAM"] = true
-	foe["SKILL\50_ABL_GG_TERRSCREAM"] = true
-	foe["SKILL\50_ABL_GG_TOTALBREAKSCREAM"] = true
-	foe["SKILL\51_ABL_FOE_GG_SCREAM"] = true
-	foe["SKILL\51_ABL_GG_TERRSCREAM"] = true
-	foe["SKILL\51_ABL_GG_TOTALBREAKSCREAM"] = true
+	foe["NEWGAMEPLUS_AAA_ATTACK"] = true
+	foe["NEWGAMEPLUS_AAA_GUARD"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_TAKEOVER"] = true
+	foe["NEWGAMEPLUS_ABL_FOE_VENOMSTAB"] = true
+	foe["NEWGAMEPLUS_ITM_APPLE"] = true
+	foe["NEWGAMEPLUS_ITM_HEALINGHERB"] = true
+	foe["NEWGAMEPLUS_ITM_HEALSHOWER"] = true
+	foe["NEWGAMEPLUS_ITM_PANACEA"] = true
+	foe["NEWGAMEPLUS_ITM_POTION"] = true
+	foe["NORMAL_AAA_ATTACK"] = true
+	foe["NORMAL_AAA_GUARD"] = true
+	foe["NORMAL_ABL_FOE_TAKEOVER"] = true
+	foe["NORMAL_ABL_FOE_VENOMSTAB"] = true
+	foe["NORMAL_ITM_APPLE"] = true
+	foe["NORMAL_ITM_HEALINGHERB"] = true
+	foe["NORMAL_ITM_HEALSHOWER"] = true
+	foe["NORMAL_ITM_PANACEA"] = true
+	foe["NORMAL_ITM_POTION"] = true
+	foe["OVERSOUL_AAA_ATTACK"] = true
+	foe["OVERSOUL_AAA_GUARD"] = true
+	foe["OVERSOUL_ABL_FOE_TAKEOVER"] = true
+	foe["OVERSOUL_ABL_FOE_VENOMSTAB"] = true
+	foe["OVERSOUL_ITM_APPLE"] = true
+	foe["OVERSOUL_ITM_HEALINGHERB"] = true
+	foe["OVERSOUL_ITM_HEALSHOWER"] = true
+	foe["OVERSOUL_ITM_PANACEA"] = true
+	foe["OVERSOUL_ITM_POTION"] = true
+	foe["SKILL\49_AAA_ATTACK"] = true
+	foe["SKILL\49_AAA_GUARD"] = true
+	foe["SKILL\49_ABL_FOE_TAKEOVER"] = false
+	foe["SKILL\49_ABL_FOE_VENOMSTAB"] = true
+	foe["SKILL\49_ITM_APPLE"] = true
+	foe["SKILL\49_ITM_HEALINGHERB"] = true
+	foe["SKILL\49_ITM_HEALSHOWER"] = true
+	foe["SKILL\49_ITM_PANACEA"] = true
+	foe["SKILL\49_ITM_POTION"] = true
+	foe["SKILL\50_AAA_ATTACK"] = true
+	foe["SKILL\50_AAA_GUARD"] = true
+	foe["SKILL\50_ABL_FOE_TAKEOVER"] = true
+	foe["SKILL\50_ABL_FOE_VENOMSTAB"] = true
+	foe["SKILL\50_ITM_APPLE"] = true
+	foe["SKILL\50_ITM_HEALINGHERB"] = true
+	foe["SKILL\50_ITM_HEALSHOWER"] = true
+	foe["SKILL\50_ITM_PANACEA"] = true
+	foe["SKILL\50_ITM_POTION"] = true
+	foe["SKILL\51_AAA_ATTACK"] = true
+	foe["SKILL\51_AAA_GUARD"] = false
+	foe["SKILL\51_ABL_FOE_TAKEOVER"] = true
+	foe["SKILL\51_ABL_FOE_VENOMSTAB"] = true
+	foe["SKILL\51_ITM_APPLE"] = true
+	foe["SKILL\51_ITM_HEALINGHERB"] = true
+	foe["SKILL\51_ITM_HEALSHOWER"] = true
+	foe["SKILL\51_ITM_PANACEA"] = true
+	foe["SKILL\51_ITM_POTION"] = true
 	foe["STSTART_Confusion"] = false
 	foe["STSTART_Curse"] = false
 	foe["STSTART_Death"] = false
@@ -68,18 +104,18 @@ local foe = {}
 	foe["STSTART_Poison"] = false
 	foe["STSTART_Silence"] = false
 	foe["STSTART_Sleep"] = false
-	foe["STSTART_Undead"] = true
-	foe["Desc"] = "You never can tell what her screams will do\46\10Whatever it is\44 it\39s bad\46 Very bad\33\10Unfortunately all she can do\44 is scream\33"
+	foe["STSTART_Undead"] = false
+	foe["Desc"] = "Feenalaria\39s loving and caring assho\46\46\46\10I mean brother\46"
 	foe["HitBy"] = ""
-	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Boss\47Ghost Woman\46png"
-	foe["Item Drop \49"] = "ITM_HOLYWATER"
-	foe["Item Drop \50"] = "ITM_HOLYHANDGRENATE"
+	foe["Image"] = "GFX\47Combat\47Fighters\47Foe\47Boss\47Frendor\46png"
+	foe["Item Drop \49"] = "ITM_APPLE"
+	foe["Item Drop \50"] = "ITM_APPLES"
 	foe["Item Steal \49"] = "ITM_AMBROSIA"
-	foe["Item Steal \50"] = "ITM_HOLYSCROLL"
-	foe["Item Steal \51"] = "ITM_APPLE"
-	foe["Name"] = "Ghost Woman"
-	foe["RATE_AAA_ATTACK"] = 0
-	foe["RATE_AAA_GUARD"] = 0
+	foe["Item Steal \50"] = "ITM_AMBROSIA"
+	foe["Item Steal \51"] = "ITM_AMBROSIA"
+	foe["Name"] = "Frendor"
+	foe["RATE_AAA_ATTACK"] = 100
+	foe["RATE_AAA_GUARD"] = 25
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
 	foe["RATE_ABL_FOE_BEER"] = 0
 	foe["RATE_ABL_FOE_CRUSH"] = 0
@@ -107,7 +143,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_GAIASMASH"] = 0
 	foe["RATE_ABL_FOE_GAZE"] = 0
 	foe["RATE_ABL_FOE_GG_DEATHSCREAM"] = 0
-	foe["RATE_ABL_FOE_GG_SCREAM"] = 4
+	foe["RATE_ABL_FOE_GG_SCREAM"] = 0
 	foe["RATE_ABL_FOE_GRAVITY"] = 0
 	foe["RATE_ABL_FOE_HAP"] = 0
 	foe["RATE_ABL_FOE_HOLDPERSON"] = 0
@@ -128,7 +164,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_SOULCRUSHINGSTORY"] = 0
 	foe["RATE_ABL_FOE_SPORES"] = 0
 	foe["RATE_ABL_FOE_SUICIDE"] = 0
-	foe["RATE_ABL_FOE_TAKEOVER"] = 0
+	foe["RATE_ABL_FOE_TAKEOVER"] = 1
 	foe["RATE_ABL_FOE_TAKEOVER\50"] = 0
 	foe["RATE_ABL_FOE_TAKEOVER_STRIKE"] = 0
 	foe["RATE_ABL_FOE_THRILL"] = 0
@@ -137,14 +173,14 @@ local foe = {}
 	foe["RATE_ABL_FOE_TWOEDGE"] = 0
 	foe["RATE_ABL_FOE_ULTIMATESOULCRUSHER"] = 0
 	foe["RATE_ABL_FOE_VENOMBITE"] = 0
-	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
+	foe["RATE_ABL_FOE_VENOMSTAB"] = 3
 	foe["RATE_ABL_FOE_VIRUSSTAB"] = 0
 	foe["RATE_ABL_FOE_VITALIZE_OPPONENT"] = 0
 	foe["RATE_ABL_FOE_WELCOMEINHELL"] = 0
 	foe["RATE_ABL_FOLLOWUP_FIKKIE"] = 0
 	foe["RATE_ABL_GG_DEATHSCREAM"] = 0
-	foe["RATE_ABL_GG_TERRSCREAM"] = 5
-	foe["RATE_ABL_GG_TOTALBREAKSCREAM"] = 2
+	foe["RATE_ABL_GG_TERRSCREAM"] = 0
+	foe["RATE_ABL_GG_TOTALBREAKSCREAM"] = 0
 	foe["RATE_ABL_GLOOM"] = 0
 	foe["RATE_ABL_HANDOSTILLOR_EVERYBODYKNEELBEFOREME"] = 0
 	foe["RATE_ABL_HERO_DANDOR_AXESMASH"] = 0
@@ -283,7 +319,7 @@ local foe = {}
 	foe["RATE_ITM_ANABOLINEA"] = 0
 	foe["RATE_ITM_ANTIDOTE"] = 0
 	foe["RATE_ITM_ANTIDOTES"] = 0
-	foe["RATE_ITM_APPLE"] = 0
+	foe["RATE_ITM_APPLE"] = 25
 	foe["RATE_ITM_APPLES"] = 0
 	foe["RATE_ITM_BANANA"] = 0
 	foe["RATE_ITM_BANANAS"] = 0
@@ -301,8 +337,8 @@ local foe = {}
 	foe["RATE_ITM_FISH"] = 0
 	foe["RATE_ITM_FLAMEORB"] = 0
 	foe["RATE_ITM_FLAMEORBS"] = 0
-	foe["RATE_ITM_HEALINGHERB"] = 0
-	foe["RATE_ITM_HEALSHOWER"] = 0
+	foe["RATE_ITM_HEALINGHERB"] = 4
+	foe["RATE_ITM_HEALSHOWER"] = 3
 	foe["RATE_ITM_HELLSTONE"] = 0
 	foe["RATE_ITM_HOLYHANDGRENATE"] = 0
 	foe["RATE_ITM_HOLYORB"] = 0
@@ -324,11 +360,11 @@ local foe = {}
 	foe["RATE_ITM_MJOLNIR"] = 0
 	foe["RATE_ITM_MULTIPHOENIX"] = 0
 	foe["RATE_ITM_MUTTON"] = 0
-	foe["RATE_ITM_PANACEA"] = 0
+	foe["RATE_ITM_PANACEA"] = 5
 	foe["RATE_ITM_PHOENIX"] = 0
 	foe["RATE_ITM_POCKETTSUNAMI"] = 0
 	foe["RATE_ITM_POISONDART"] = 0
-	foe["RATE_ITM_POTION"] = 0
+	foe["RATE_ITM_POTION"] = 2
 	foe["RATE_ITM_POTIONS"] = 0
 	foe["RATE_ITM_POTIONVITALITY"] = 0
 	foe["RATE_ITM_PURELITERATURE"] = 0
@@ -792,7 +828,7 @@ local foe = {}
 	foe["TARGET_ZZZ_KRANDARARMOR"] = "Random"
 	foe["TARGET_ZZZ_KRANDARBLADE"] = "Random"
 	foe["TARGET_ZZ_CRYPTKEY"] = "Random"
-	foe["VocalTag"] = "GhostGirl"
+	foe["VocalTag"] = "Frendor"
 	foe["Boss"] = true
 	foe["Oversoul"] = false
 	foe["Oversoul Drop \49"] = false
@@ -800,37 +836,37 @@ local foe = {}
 	foe["Oversoul Steal \49"] = false
 	foe["Oversoul Steal \50"] = false
 	foe["Oversoul Steal \51"] = false
-	foe["Cash"] = 500
-	foe["ER_Darkness"] = 200
-	foe["ER_Earth"] = 100
-	foe["ER_Flame"] = -100
-	foe["ER_Frost"] = 100
+	foe["Cash"] = 10
+	foe["ER_Darkness"] = -200
+	foe["ER_Earth"] = -200
+	foe["ER_Flame"] = -200
+	foe["ER_Frost"] = -200
 	foe["ER_Light"] = -200
-	foe["ER_Lightning"] = -150
-	foe["ER_Water"] = 100
-	foe["ER_Wind"] = 100
+	foe["ER_Lightning"] = -200
+	foe["ER_Water"] = -200
+	foe["ER_Wind"] = -200
 	foe["Rate Drop \49"] = 100
 	foe["Rate Drop \50"] = 100
-	foe["Rate Steal \49"] = 3
-	foe["Rate Steal \50"] = 10
-	foe["Rate Steal \51"] = 20
+	foe["Rate Steal \49"] = 1
+	foe["Rate Steal \50"] = 0
+	foe["Rate Steal \51"] = 0
 	foe["SR_Confusion"] = 100
-	foe["SR_Curse"] = 100
-	foe["SR_Death"] = 100
-	foe["SR_Disease"] = 100
-	foe["SR_Paralysis"] = 100
+	foe["SR_Curse"] = 80
+	foe["SR_Death"] = 95
+	foe["SR_Disease"] = 60
+	foe["SR_Paralysis"] = 70
 	foe["SR_Petrification"] = 100
-	foe["SR_Poison"] = 100
+	foe["SR_Poison"] = 65
 	foe["SR_Silence"] = 100
-	foe["SR_Sleep"] = 100
-	foe["SR_Undead"] = 0
+	foe["SR_Sleep"] = 20
+	foe["SR_Undead"] = 50
 	foe["normal_Accuracy"] = 100
-	foe["normal_EXP"] = 2000
-	foe["normal_Endurance"] = 4
-	foe["normal_Evasion"] = 0
-	foe["normal_HP"] = 10000
-	foe["normal_Intelligence"] = 300
-	foe["normal_Power"] = 300
+	foe["normal_EXP"] = 0
+	foe["normal_Endurance"] = 50
+	foe["normal_Evasion"] = 15
+	foe["normal_HP"] = 20000
+	foe["normal_Intelligence"] = 70
+	foe["normal_Power"] = 1234
 	foe["normal_Resistance"] = 1
 	foe["normal_Speed"] = 123
 	foe["oversoul_Accuracy"] = 100

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.19
+version: 17.07.21
 ]]
 CharacterMeta = {
 
@@ -138,6 +138,15 @@ CharacterMeta = {
                    avnw = "Her",
                    skill1 = "Sword Fighting Skills",
                    askillup1 = {'Power',15}                  
+             }       ,       
+             Feenalaria  = {
+                   race='Fairy',
+                   sex='Female',
+                   pvnw = "She",
+                   bvnw = "Her",
+                   avnw = "Her",
+                   skill1 = "Sword Fighting Skills",
+                   askillup1 = {'Power',25}                  
              }              
 }
 

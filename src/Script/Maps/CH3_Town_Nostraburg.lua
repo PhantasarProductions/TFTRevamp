@@ -32,8 +32,10 @@
   
  **********************************************
  
-version: 17.07.19
+version: 17.07.21
 ]]
+
+-- @USE /Script/Use/Specific/NewGame+.lua
 RAMATA = "&DONE.NOSTRABURG.RAMATA.WELCOME.TEXT"
 
 function MeesterKrandar()
@@ -126,6 +128,8 @@ end
 function MapMusic()
    if RPG.PartyTag(0)=='Nostramantu_Human' then
       Music('Hub/There is Romance')
+   elseif RPG.PartyTag(0)=='Feenalaria' then
+      Music('Scenario/We Got Trouble.ogg')   
    elseif not CVV("&KRANDAR.GONE") then 
       OriMapMusic()
    else
@@ -170,9 +174,34 @@ end
 
 function NPC_Sinasina()
     MapText('SINASINA')
-    WorldMap_Unlock('NGPDANDLETON')
+    WorldMap_Unlock('NGPDANDLETON') 
 end    
 
+function LovingAsshole()
+    MapText('FRENDOR_PREBOSS')
+    ClearCombatData()
+    Var.D("$COMBAT.FOE_1","Boss/Frendor")
+    Var.D("$COMBAT.POSFOE_1","CENTER")
+    Var.D("$COMBAT.MUSIC","Music/Special Boss/Rush.ogg")
+    Var.D("$COMBAT.ARENA","Forest.png")
+    NGP_StartBoss("Loving and caring assho... I mean brother","Frendor",0,25,100)      
+    if     skill==1 then RPG.Points('Feenalaria','AP').Have=123456789
+    elseif skill==2 then RPG.Points('Feenalaria','AP').Have=RPG.Points('Marrilona','AP').Have
+    elseif skill==3 then RPG.Points('Feenalaria','AP').Have=0 end
+    RPG.Points('Feenalaria','VIT').Have=1000
+    RPG.Points('Feenalaria','HP').Have=RPG.Points('Feenalaria','HP').Maximum
+    Schedule('MAP','AssholeDown')
+end
+
+function AssholeDown()
+    Party('Jake_Human;Marrilona;Dandor;HandoStillor')
+    LoadMap('NGP_Dungeon_Dandleton_Part2')
+    GoToLayer('#015','Einde')
+    MapText('FRENDOR_POSTBOSS')
+    RPG.DefStat('Marrilona','EXP',RPG.Stat('Marrilona','EXP')*-2)
+    Award("ZZNGP_ASSHOLE")
+end    
+    
 function GALE_OnLoad()
   Maps.GotoLayer("town") 
   if not CVV(RAMATA) then    
@@ -212,11 +241,14 @@ function GALE_OnLoad()
          end
          for o in each(remove) do o.Remove() end
          Maps.Remap()   
+      elseif RPG.PartyTag(0)=='Feenalaria' then
+         if obj.Kind=="Obstacle" and prefixed(obj.TextureFile,"GFX/ACTORS/SINGLE/BLACK") then obj.Remove() end 
       elseif prefixed(obj.Tag,"ENTER_") then
          ZA_Enter("ZA_"..obj.Tag,Enter_Building,right(obj.Tag,-6))
-         AddClickable(obj.Tag)
+         AddClickable(obj.Tag)        
       end
   end
+  if RPG.PartyTag(0)~='Feenalaria' then Maps.Obj.Kill('Frendor') end
 end
 
 

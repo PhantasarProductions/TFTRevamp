@@ -1,6 +1,6 @@
 --[[
   NGP_Dungeon_Dandleton.lua
-  Version: 17.07.19
+  Version: 17.07.21
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -40,7 +40,14 @@
 
 flashbacks = { ['#005'] = { priomt = nil, map='NGP_Dungeon_KokoBushes', layer='bush', start='Start'},
                ['#007'] = { priomt = "FL007", map = 'CH3_Dungeon_KokonoraForest', layer='forest', start='Start', schedule="WelcomeNos"},
-               ['#010'] = { priomt = "FL010", map = 'CH4_Dungeon_ManaRoad', layer='bos', start='Start', schedule="NosWelcome", party='Nostramantu_Human;Feenalaria_Human2'}
+               ['#010'] = { priomt = "FL010", map = 'CH4_Dungeon_ManaRoad', layer='bos', start='Start', schedule="NosWelcome", party='Nostramantu_Human;Feenalaria_Human2'},
+               ['#015'] = { priomt = "FL015", map = 'CH3_Town_Nostraburg', layer='town', start='FeenaVsFrendor',dcall='LovingAsshole',party='Feenalaria', 
+                               priofunc=function() 
+                                 RPG.ReTag('Feenalaria_Human2','Feenalaria')
+                                 assert(RPG.CharExists('Feenalaria')==1,"Retagging failed") 
+                                 local ch='Feenalaria' 
+                                 RPGStat.SetData(ch,'Face',ch) 
+                                end}
              }
              
 bosses = {['#007']={priomt='BOSS007',boss='Cyndrinana',intro1="Ghost of Nostramantu's mother",intro2='Cyndrinana'},
@@ -64,8 +71,9 @@ function Memory(tag,pop,popwind)
 end
 
 function Flashback()
-    if Done('&DONE.NEWGAMEPLUS.DANDLETON.FLASHBACK['..Maps.LayerCodeName..'].EXPERIENCED') then return end
+    if Done('&DONE.NEWGAMEPLUS.DANDLETON.FLASHBACK['..Maps.LayerCodeName..'].EXPERIENCED') then return end    
     local fb = flashbacks[Maps.LayerCodeName]
+    ;(fb.priofunc or Nothing)()
     if fb.priomt then MapText(fb.priomt) end
     Cls()
     Loading()
@@ -75,6 +83,7 @@ function Flashback()
     LoadMap(fb.map)
     GoToLayer(fb.layer,fb.start)
     if fb.schedule then Schedule(fb.scheduleinstance or 'MAP',fb.schedule) Loading() end
+    if fb.dcall then MS.Run('MAP',fb.dcall) end
 end    
 
 function Boss()

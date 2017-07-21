@@ -634,6 +634,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/Boss/DemonAir.lua
 		1. Script: Script/JINC/Foes/Boss/Dwarf.lua
 		1. Script: Script/JINC/Foes/Boss/Dwarf_J.lua
+		1. Script: Script/JINC/Foes/Boss/Frendor.lua
 		1. Script: Script/JINC/Foes/Boss/Ghost Woman.lua
 		1. Script: Script/JINC/Foes/Boss/GhostPriest.lua
 		1. Script: Script/JINC/Foes/Boss/GiantEagle.lua
@@ -1447,6 +1448,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Game identification data: ID/ID.Vocal.Demo
 		1. Game identification data: ID/ID.Vocal.Full
 	- These are files specific to the story and may not be extracted from this JCR file.
+		1. ???: GFX/Actors/Bundled/Player/Jake_Human.East (Autosaved).piko-png
 		1. ???: GFX/Combat/Fighters/Foe/Sealed/KabiArc.lzh
 		1. Audio: Audio/SFX/Nostramantu/Laugh.ogg
 		1. Font: Fonts/Phantasar.ttf
@@ -1464,6 +1466,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.South.png
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.West.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Dandor.West.png -alias- GFX/Combat/Fighters/Hero/Dandor.Idle.png
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria.East.Frames -alias- GFX/Actors/Bundled/Player/Feenalaria.North.Frames -alias- GFX/Actors/Bundled/Player/Feenalaria.South.Frames -alias- GFX/Actors/Bundled/Player/Feenalaria.West.Frames -alias- GFX/Combat/Fighters/Hero/Feenalaria.Idle.Frames
+		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria.East.png -alias- GFX/Actors/Bundled/Player/Feenalaria.North.png -alias- GFX/Actors/Bundled/Player/Feenalaria.South.png -alias- GFX/Actors/Bundled/Player/Feenalaria.West.png -alias- GFX/Combat/Fighters/Hero/Feenalaria.Idle.png
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.East.Frames
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.East.piko
 		1. Graphics: GFX/Actors/Bundled/Player/Feenalaria_Human.East.png
@@ -1604,6 +1608,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Single/Fairies/Fandalora.piko
 		1. Graphics: GFX/Actors/Single/Fairies/Fandalora.png
 		1. Graphics: GFX/Actors/Single/Fairies/Fandalora_BackSide.png
+		1. Graphics: GFX/Actors/Single/Fairies/Feenalaria (Autosaved).piko
 		1. Graphics: GFX/Actors/Single/Fairies/Feenalaria.piko
 		1. Graphics: GFX/Actors/Single/Fairies/Feenalaria.png
 		1. Graphics: GFX/Actors/Single/Fairies/Freya.piko
@@ -1621,6 +1626,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Single/Humans/Frendor.png
 		1. Graphics: GFX/Actors/Single/Humans/Frendor_Big.piko
 		1. Graphics: GFX/Actors/Single/Humans/Frendor_Big.png
+		1. Graphics: GFX/Actors/Single/Humans/Frendor_Nostraburg.png
 		1. Graphics: GFX/Actors/Single/Humans/Harry.png
 		1. Graphics: GFX/Actors/Single/Humans/Harry_BackSide.png
 		1. Graphics: GFX/Actors/Single/Humans/Master John.png
@@ -1715,8 +1721,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Cards/FOE_Y.png
 		1. Graphics: GFX/Combat/Cards/FOE_Z.png
 		1. Graphics: GFX/Combat/Cards/HERO_DANDOR.png
+		1. Graphics: GFX/Combat/Cards/HERO_FEENALARIA.png -alias- GFX/Combat/Cards/HERO_FEENALARIA_HUMAN2.png
 		1. Graphics: GFX/Combat/Cards/HERO_FEENALARIA_HUMAN.png
-		1. Graphics: GFX/Combat/Cards/HERO_FEENALARIA_HUMAN2.png
 		1. Graphics: GFX/Combat/Cards/HERO_HANDOSTILLOR.png
 		1. Graphics: GFX/Combat/Cards/HERO_JAKE_FAIRY.png
 		1. Graphics: GFX/Combat/Cards/HERO_JAKE_HUMAN.png
@@ -1726,6 +1732,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Cards/HERO_NOSTRAMANTU_HUMAN.png
 		1. Graphics: GFX/Combat/Cards/Joker.piko
 		1. Graphics: GFX/Combat/Cards/Joker.png
+		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Frendor.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/GhostPriest.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Harry.piko
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Harry.png
@@ -1771,6 +1778,11 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Victory.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Victory.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.piko
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria.Attack.1.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria.Attack.2.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria.Cast.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria.Dead.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria.Victory.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.Attack.1.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.Attack.2.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.Cast.png
@@ -3119,6 +3131,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 - mystica
 	- This entry is in the public domain and free of all restrictions.
 		1. Graphics: gfx/combat/fighters/foe/mimic/mystica-Treasure-chest.png
+- opensourcebear
+	- This entry is in the public domain and free of all restrictions.
+		1. Graphics: gfx/combat/fighters/foe/reg/Spider.png
 - snoopingasusual
 	- This entry is in the public domain and free of all restrictions.
 		1. Graphics: gfx/combat/fighters/foe/reg/Leprechaun.png

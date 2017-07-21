@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.07.20
+  Version: 17.07.21
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -226,7 +226,7 @@ function ShowSpellList(pch,psizes)
    -- Set up
    local ch=pch
    if pch=="Nostramantu_Human" then return end
-   if pch=='Nostramantu' then ch='Marrilona' end -- Make sure Nostramantu can use all of Marrilona's spells.
+   if pch=='Nostramantu' or pch=='Feenalaria' then ch='Marrilona' end -- Make sure Nostramantu can use all of Marrilona's spells.
    if pch=='Feenalaria_Human2' then ch='Feenalaria_Human' end
    local sizes = ({['table']=psizes, ['string']=mysplit(psizes,",") })[type(psizes)]
    local c, allowcast

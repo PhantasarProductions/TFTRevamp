@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 17.07.20
+  Version: 17.07.21
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -373,6 +373,7 @@ function CreateChar(ch,name)
   end
   -- Portrait
   RPGStat.SetData(ch,'Face',ch)
+  -- Alt chars
   if ch=="Krandar" then CreateKrandar() return end  
   if ch=='Nostramantu' then CreateNostramantu() return end
   if ch=='Nostramantu_Human' then CreateNostramantuHuman() return end
