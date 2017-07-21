@@ -761,6 +761,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/AAA_GUARD.lua
 		1. Script: Script/JINC/IA/ABL_FOE_BACTERIATUSK.lua
 		1. Script: Script/JINC/IA/ABL_FOE_BEER.lua
+		1. Script: Script/JINC/IA/ABL_FOE_CRACKSLASH.lua
 		1. Script: Script/JINC/IA/ABL_FOE_CRUSH.lua
 		1. Script: Script/JINC/IA/ABL_FOE_CURSEDWIND.lua
 		1. Script: Script/JINC/IA/ABL_FOE_CYNDRINANA_I_MUST_ATONE_FOR_MY_SINS.lua
@@ -1449,7 +1450,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Game identification data: ID/ID.Vocal.Demo
 		1. Game identification data: ID/ID.Vocal.Full
 	- These are files specific to the story and may not be extracted from this JCR file.
-		1. ???: GFX/Actors/Bundled/Player/Jake_Human.East (Autosaved).piko-png
 		1. ???: GFX/Combat/Fighters/Foe/Sealed/KabiArc.lzh
 		1. Audio: Audio/SFX/Nostramantu/Laugh.ogg
 		1. Font: Fonts/Phantasar.ttf
@@ -1743,6 +1743,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/MegaGhost.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Nostramantu.piko
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Nostramantu.png
+		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Salumon.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/SuperZombie.png
 		1. Graphics: GFX/Combat/Fighters/Foe/OverNos/Antenna.piko
 		1. Graphics: GFX/Combat/Fighters/Foe/OverNos/Antenna.png -alias- GFX/Combat/Fighters/Foe/OverNos/Antenna_Mock.png -alias- GFX/Combat/Fighters/Foe/OverNos/Antenna_Nice.png
