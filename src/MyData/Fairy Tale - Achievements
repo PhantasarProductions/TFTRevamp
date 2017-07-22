@@ -677,6 +677,18 @@ Rec: ZZNGP_MANACAVE
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: ZZNGP_NOTNAMED
+	Description = Defeat the final boss of the lost city of Dandleton
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = FALSE
+	Show = Always
+	Title = He who shall not be named
+	Type = Platinum
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: ZZNGP_QUAYARO
 	Description = Complete Quayaro's Caslte
 	Icon = *DEFAULT*
