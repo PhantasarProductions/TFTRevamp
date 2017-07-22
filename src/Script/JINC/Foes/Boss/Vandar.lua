@@ -34,7 +34,7 @@
  
 version: 17.07.22
 ]]
--- File Generated: Sat 22 July 2017; 15:38:36
+-- File Generated: Sat 22 July 2017; 19:13:05
 
 
 local foe = {}
@@ -881,7 +881,7 @@ local foe = {}
 	foe["SR_Sleep"] = 100
 	foe["SR_Undead"] = 0
 	foe["normal_Accuracy"] = 100
-	foe["normal_EXP"] = 2000000000
+	foe["normal_EXP"] = 500000000
 	foe["normal_Endurance"] = 5
 	foe["normal_Evasion"] = 25
 	foe["normal_HP"] = 123456

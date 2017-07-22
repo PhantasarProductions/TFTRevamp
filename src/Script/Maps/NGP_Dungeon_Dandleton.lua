@@ -58,6 +58,8 @@ bosses = {['#007']={priomt='BOSS007',boss='Cyndrinana',intro1="Ghost of Nostrama
           
 NextMapFirst = {}
 
+local hallheroesrep = 'Colportarus'
+
 function NPC_Necrodia()
     local remark
     repeat
@@ -134,7 +136,7 @@ end
 
 -- I kill you, Feena!
 function FightNostramantu()
-    if RPG.Obj.Exists('Nostramantu')==0 then return end
+    if Maps.Obj.Exists('Nostramantu')==0 then return end
   
     PartyPop('Feena','West')
     MapText('FNOS1')
@@ -185,6 +187,11 @@ function PostVandar()
     PartyPop('V','North')
     MapText('Vandar')
     Award('ZZNGP_NOTNAMED')
+end
+
+
+function NPC_Colportarus()
+  ToHallHeroes('Colportarus','DANDLETON')
 end
 
 function GALE_OnLoad()

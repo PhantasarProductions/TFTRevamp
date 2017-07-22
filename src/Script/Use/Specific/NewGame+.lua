@@ -1,6 +1,6 @@
 --[[
   NewGame+.lua
-  Version: 17.07.20
+  Version: 17.07.22
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -49,11 +49,13 @@ function ToHallHeroes(name,achkey,wmap)
    Var.D("$HALLOFHEROES.PEOPLE",serialize('ret',heroes))
    Maps.Obj.Kill("NPC_"..name,1)
    Award('ZZNGP_'..upper(achkey))
+   CSay('Do we got them all?')
    local c = 0
    for k,b in spairs(heroes) do
        CSay('= Achievement check '..k..' > '..sval(b))
        if b then c=c+1 end
    end
+   CSay(c.." representatives found")
    if c==4 then Award('ZZNGP_ALLHEROES') end
    WorldMap(wmap or 'Delisto')
    WorldMap_Unlock('NGPHEROES')

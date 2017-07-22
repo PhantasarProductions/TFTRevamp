@@ -641,6 +641,18 @@ Rec: ZZNGP_CATHEDRAL
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: ZZNGP_DANDLETON
+	Description = Complete the lost city of Dandleton.
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = FALSE
+	Show = Always
+	Title = A city dead for 10,000 years. A city I had to see with my own eyes.
+	Type = Platinum
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: ZZNGP_DEATH
 	Description = Get yourself killed by Nostramantu in Dandleton
 	Icon = *DEFAULT*

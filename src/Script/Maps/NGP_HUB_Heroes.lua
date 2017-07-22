@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.12
+version: 17.07.22
 ]]
 
 function NPC_Zyviola()
@@ -62,7 +62,7 @@ end
 function GALE_OnLoad()
    local gh = loadstring(Var.C('$HALLOFHEROES.PEOPLE').."\n return ret")
    local rep = gh()
-   local be = {'Zyviola','SymphoNica','Wendra','Colportarus'}
+   local be = {'Zyviola','SymphoNica','Wanindra','Colportarus'}
    local pvnw = {'she','he','she','he'}
    for i,c in ipairs(be) do
        if not rep[c] then
