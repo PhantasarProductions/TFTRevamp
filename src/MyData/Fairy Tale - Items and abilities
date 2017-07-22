@@ -248,6 +248,9 @@ bool CauseSleep
 bool CauseConfusion
 bool CauseUndead
 bool CauseDeath
+strike
+bool CauseCharmed
+
 
 
 [allow: Attack_AllowAccuracy]
@@ -369,6 +372,7 @@ Rec: AAA_ATTACK
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -484,6 +488,7 @@ Rec: AAA_GUARD
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -599,6 +604,7 @@ Rec: ABL_FOE_BACTERIATUSK
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -714,6 +720,7 @@ Rec: ABL_FOE_BEER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -829,6 +836,7 @@ Rec: ABL_FOE_CRACKSLASH
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = TRUE
 	CauseDeath = TRUE
@@ -944,6 +952,7 @@ Rec: ABL_FOE_CRUSH
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -1059,6 +1068,7 @@ Rec: ABL_FOE_CURSEDWIND
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = TRUE
 	CauseDeath = FALSE
@@ -1174,6 +1184,7 @@ Rec: ABL_FOE_CYNDRINANA_I_MUST_ATONE_FOR_MY_SINS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -1289,6 +1300,7 @@ Rec: ABL_FOE_DEATHSPELL
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -1404,6 +1416,7 @@ Rec: ABL_FOE_DEMON_SOUL_BREAKER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -1519,6 +1532,7 @@ Rec: ABL_FOE_DESPERATEATTACK
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -1634,6 +1648,7 @@ Rec: ABL_FOE_DEVOUR
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -1749,6 +1764,7 @@ Rec: ABL_FOE_DISINTEGRATE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -1864,6 +1880,7 @@ Rec: ABL_FOE_DISTRACT
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -1979,6 +1996,7 @@ Rec: ABL_FOE_EAT
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -2094,6 +2112,7 @@ Rec: ABL_FOE_ENEMYVITALIZE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -2209,6 +2228,7 @@ Rec: ABL_FOE_ENERGYDRAIN
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -2324,6 +2344,7 @@ Rec: ABL_FOE_EVIL_EYE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -2439,6 +2460,7 @@ Rec: ABL_FOE_EVIL_EYE_PARALYZE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -2554,6 +2576,7 @@ Rec: ABL_FOE_EVIL_EYE_PETRIFY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -2669,6 +2692,7 @@ Rec: ABL_FOE_EXHAUST
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -2784,6 +2808,7 @@ Rec: ABL_FOE_FATALBITE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -2899,6 +2924,7 @@ Rec: ABL_FOE_FATALPOISON
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -3014,6 +3040,7 @@ Rec: ABL_FOE_FLAMEBITE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -3129,6 +3156,7 @@ Rec: ABL_FOE_FLAMEONSELF
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -3244,6 +3272,7 @@ Rec: ABL_FOE_FLAMESTRIKE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -3359,6 +3388,7 @@ Rec: ABL_FOE_FOOLGOLD
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -3474,6 +3504,7 @@ Rec: ABL_FOE_GAIASMASH
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -3589,6 +3620,7 @@ Rec: ABL_FOE_GAZE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -3704,6 +3736,7 @@ Rec: ABL_FOE_GG_DEATHSCREAM
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -3819,6 +3852,7 @@ Rec: ABL_FOE_GG_SCREAM
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -3934,6 +3968,7 @@ Rec: ABL_FOE_GRAVITY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -4049,6 +4084,7 @@ Rec: ABL_FOE_HAP
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -4164,6 +4200,7 @@ Rec: ABL_FOE_HOLDPERSON
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -4279,6 +4316,7 @@ Rec: ABL_FOE_HORROR
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = TRUE
 	CauseDeath = FALSE
@@ -4394,6 +4432,7 @@ Rec: ABL_FOE_LIFEDRAIN
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -4509,6 +4548,7 @@ Rec: ABL_FOE_LIFEFORCE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -4624,6 +4664,7 @@ Rec: ABL_FOE_MASOSADO
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -4739,6 +4780,7 @@ Rec: ABL_FOE_MERMAID_TEMPATION
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -4854,6 +4896,7 @@ Rec: ABL_FOE_MULTISTRIKE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -4969,6 +5012,7 @@ Rec: ABL_FOE_PARADIVE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -5084,6 +5128,7 @@ Rec: ABL_FOE_RANDOMIZER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -5199,6 +5244,7 @@ Rec: ABL_FOE_RANDOMIZERTOTAL
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -5314,6 +5360,7 @@ Rec: ABL_FOE_SETTHESTAGEONFIRE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -5429,6 +5476,7 @@ Rec: ABL_FOE_SHOCKINGSTORIES
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -5544,6 +5592,7 @@ Rec: ABL_FOE_SICKSTORIES
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -5659,6 +5708,7 @@ Rec: ABL_FOE_SLASH
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -5774,6 +5824,7 @@ Rec: ABL_FOE_SMITE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -5889,6 +5940,7 @@ Rec: ABL_FOE_SOULCRUSHINGSTORY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -6004,6 +6056,7 @@ Rec: ABL_FOE_SPORES
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -6119,6 +6172,7 @@ Rec: ABL_FOE_SUICIDE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -6234,6 +6288,7 @@ Rec: ABL_FOE_TAKEOVER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -6349,6 +6404,7 @@ Rec: ABL_FOE_TAKEOVER2
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -6464,6 +6520,7 @@ Rec: ABL_FOE_TAKEOVER_STRIKE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -6579,6 +6636,7 @@ Rec: ABL_FOE_THRILL
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = TRUE
 	CauseDeath = FALSE
@@ -6694,6 +6752,7 @@ Rec: ABL_FOE_TOTALEXHAUSTION
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -6809,6 +6868,7 @@ Rec: ABL_FOE_TUSK
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -6924,6 +6984,7 @@ Rec: ABL_FOE_TWOEDGE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -7039,6 +7100,7 @@ Rec: ABL_FOE_ULTIMATESOULCRUSHER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -7154,6 +7216,7 @@ Rec: ABL_FOE_VENOMBITE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -7269,6 +7332,7 @@ Rec: ABL_FOE_VENOMSTAB
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -7384,6 +7448,7 @@ Rec: ABL_FOE_VIRUSSTAB
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -7499,6 +7564,7 @@ Rec: ABL_FOE_VITALIZE_OPPONENT
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -7587,6 +7653,1050 @@ Rec: ABL_FOE_VITALIZE_OPPONENT
 	rew_GainSkill4 = 0
 	rew_GainSkill5 = 0
 
+Rec: ABL_FOE_V_ACCIO
+	ABL_APCost = 0
+	ABL_HPCost = 0
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 5
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 5
+	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
+	Attack = 0
+	Attack_AccuracyRate = 100
+	Attack_AllowAccuracy = FALSE
+	Attack_AllowCritical = FALSE
+	Attack_AllowDodge = FALSE
+	Attack_AttackStat = Power
+	Attack_DefenseStat = Endurance
+	Attack_Desperate = FALSE
+	Attack_Element = None
+	BUFF_Accuracy = 0
+	BUFF_Endurance = 0
+	BUFF_Evasion = 0
+	BUFF_Intelligence = 0
+	BUFF_Power = 0
+	BUFF_Resistance = 0
+	BUFF_Speed = 0
+	CauseBerserk = FALSE
+	CauseCharmed = FALSE
+	CauseConfusion = FALSE
+	CauseCurse = FALSE
+	CauseDeath = FALSE
+	CauseDisease = FALSE
+	CauseGuarding = FALSE
+	CauseIDDQD = FALSE
+	CauseParalysis = FALSE
+	CausePermanence = FALSE
+	CausePetrification = FALSE
+	CausePoison = FALSE
+	CauseSilence = FALSE
+	CauseSleep = FALSE
+	CauseUndead = FALSE
+	CureCurse = FALSE
+	CureDisease = FALSE
+	CureParalysis = FALSE
+	CurePetrification = FALSE
+	CurePoison = FALSE
+	CureSilence = FALSE
+	CureSleep = FALSE
+	CureUndead = FALSE
+	Desc = 
+	EQP_STAT_AP = 0
+	EQP_STAT_Accuracy = 0
+	EQP_STAT_ER_Darkness = 0
+	EQP_STAT_ER_Earth = 0
+	EQP_STAT_ER_Flame = 0
+	EQP_STAT_ER_Frost = 0
+	EQP_STAT_ER_Light = 0
+	EQP_STAT_ER_Lightning = 0
+	EQP_STAT_ER_Water = 0
+	EQP_STAT_ER_Wind = 0
+	EQP_STAT_Endurance = 0
+	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 0
+	EQP_STAT_Intelligence = 0
+	EQP_STAT_Power = 0
+	EQP_STAT_Resistance = 0
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
+	EffectScript = Takeover
+	EffectScript_Arg = 
+	EffectScript_External = FALSE
+	Heal = 0
+	Heal_StatPercent = Intelligence
+	Heal_Type = Absolute
+	ITM_ACC_Dandor = TRUE
+	ITM_ACC_HandoStillor = TRUE
+	ITM_ACC_Jake = TRUE
+	ITM_ACC_Marrilona = TRUE
+	ITM_BlackMarket = FALSE
+	ITM_Combat = TRUE
+	ITM_EQP_For = Jake
+	ITM_Field = TRUE
+	ITM_Sellable = TRUE
+	ITM_ShopPrice = 0
+	ITM_Type = Consumable
+	ITM_WeaponAbility = FALSE
+	Revive = FALSE
+	Rew_GainAP = 0
+	SpellAni = AllHeal
+	SpellAni_Arg = 
+	SpellAni_External = FALSE
+	Stance = Cast
+	Target = AA
+	Title = Accio
+	Type = Ability
+	USE_Penalty = 0
+	Voice = 
+	rew_CreateSkill1 = FALSE
+	rew_CreateSkill2 = FALSE
+	rew_CreateSkill3 = FALSE
+	rew_CreateSkill4 = FALSE
+	rew_CreateSkill5 = FALSE
+	rew_GainSkill1 = 0
+	rew_GainSkill2 = 0
+	rew_GainSkill3 = 0
+	rew_GainSkill4 = 0
+	rew_GainSkill5 = 0
+
+Rec: ABL_FOE_V_ARRESTOMOMENTUM
+	ABL_APCost = 0
+	ABL_HPCost = 0
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 5
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 5
+	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
+	Attack = 0
+	Attack_AccuracyRate = 100
+	Attack_AllowAccuracy = FALSE
+	Attack_AllowCritical = FALSE
+	Attack_AllowDodge = FALSE
+	Attack_AttackStat = Power
+	Attack_DefenseStat = Endurance
+	Attack_Desperate = FALSE
+	Attack_Element = None
+	BUFF_Accuracy = 0
+	BUFF_Endurance = 0
+	BUFF_Evasion = 0
+	BUFF_Intelligence = 0
+	BUFF_Power = 0
+	BUFF_Resistance = 0
+	BUFF_Speed = 0
+	CauseBerserk = FALSE
+	CauseCharmed = FALSE
+	CauseConfusion = FALSE
+	CauseCurse = FALSE
+	CauseDeath = FALSE
+	CauseDisease = FALSE
+	CauseGuarding = FALSE
+	CauseIDDQD = FALSE
+	CauseParalysis = TRUE
+	CausePermanence = FALSE
+	CausePetrification = FALSE
+	CausePoison = FALSE
+	CauseSilence = FALSE
+	CauseSleep = FALSE
+	CauseUndead = FALSE
+	CureCurse = FALSE
+	CureDisease = FALSE
+	CureParalysis = FALSE
+	CurePetrification = FALSE
+	CurePoison = FALSE
+	CureSilence = FALSE
+	CureSleep = FALSE
+	CureUndead = FALSE
+	Desc = 
+	EQP_STAT_AP = 0
+	EQP_STAT_Accuracy = 0
+	EQP_STAT_ER_Darkness = 0
+	EQP_STAT_ER_Earth = 0
+	EQP_STAT_ER_Flame = 0
+	EQP_STAT_ER_Frost = 0
+	EQP_STAT_ER_Light = 0
+	EQP_STAT_ER_Lightning = 0
+	EQP_STAT_ER_Water = 0
+	EQP_STAT_ER_Wind = 0
+	EQP_STAT_Endurance = 0
+	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 0
+	EQP_STAT_Intelligence = 0
+	EQP_STAT_Power = 0
+	EQP_STAT_Resistance = 0
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
+	EffectScript = 
+	EffectScript_Arg = 
+	EffectScript_External = FALSE
+	Heal = 0
+	Heal_StatPercent = Intelligence
+	Heal_Type = Absolute
+	ITM_ACC_Dandor = TRUE
+	ITM_ACC_HandoStillor = TRUE
+	ITM_ACC_Jake = TRUE
+	ITM_ACC_Marrilona = TRUE
+	ITM_BlackMarket = FALSE
+	ITM_Combat = TRUE
+	ITM_EQP_For = Jake
+	ITM_Field = TRUE
+	ITM_Sellable = TRUE
+	ITM_ShopPrice = 0
+	ITM_Type = Consumable
+	ITM_WeaponAbility = FALSE
+	Revive = FALSE
+	Rew_GainAP = 0
+	SpellAni = 
+	SpellAni_Arg = 
+	SpellAni_External = FALSE
+	Stance = Cast
+	Target = AF
+	Title = Arresto Momentum
+	Type = Item
+	USE_Penalty = 0
+	Voice = 
+	rew_CreateSkill1 = FALSE
+	rew_CreateSkill2 = FALSE
+	rew_CreateSkill3 = FALSE
+	rew_CreateSkill4 = FALSE
+	rew_CreateSkill5 = FALSE
+	rew_GainSkill1 = 0
+	rew_GainSkill2 = 0
+	rew_GainSkill3 = 0
+	rew_GainSkill4 = 0
+	rew_GainSkill5 = 0
+
+Rec: ABL_FOE_V_AVADAKEDAVRA
+	ABL_APCost = 0
+	ABL_HPCost = 0
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 5
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 5
+	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
+	Attack = 1234567
+	Attack_AccuracyRate = 100
+	Attack_AllowAccuracy = FALSE
+	Attack_AllowCritical = FALSE
+	Attack_AllowDodge = FALSE
+	Attack_AttackStat = Power
+	Attack_DefenseStat = None
+	Attack_Desperate = FALSE
+	Attack_Element = None
+	BUFF_Accuracy = 0
+	BUFF_Endurance = 0
+	BUFF_Evasion = 0
+	BUFF_Intelligence = 0
+	BUFF_Power = 0
+	BUFF_Resistance = 0
+	BUFF_Speed = 0
+	CauseBerserk = FALSE
+	CauseCharmed = FALSE
+	CauseConfusion = FALSE
+	CauseCurse = FALSE
+	CauseDeath = TRUE
+	CauseDisease = FALSE
+	CauseGuarding = FALSE
+	CauseIDDQD = FALSE
+	CauseParalysis = FALSE
+	CausePermanence = FALSE
+	CausePetrification = FALSE
+	CausePoison = FALSE
+	CauseSilence = FALSE
+	CauseSleep = FALSE
+	CauseUndead = FALSE
+	CureCurse = FALSE
+	CureDisease = FALSE
+	CureParalysis = FALSE
+	CurePetrification = FALSE
+	CurePoison = FALSE
+	CureSilence = FALSE
+	CureSleep = FALSE
+	CureUndead = FALSE
+	Desc = 
+	EQP_STAT_AP = 0
+	EQP_STAT_Accuracy = 0
+	EQP_STAT_ER_Darkness = 0
+	EQP_STAT_ER_Earth = 0
+	EQP_STAT_ER_Flame = 0
+	EQP_STAT_ER_Frost = 0
+	EQP_STAT_ER_Light = 0
+	EQP_STAT_ER_Lightning = 0
+	EQP_STAT_ER_Water = 0
+	EQP_STAT_ER_Wind = 0
+	EQP_STAT_Endurance = 0
+	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 0
+	EQP_STAT_Intelligence = 0
+	EQP_STAT_Power = 0
+	EQP_STAT_Resistance = 0
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
+	EffectScript = 
+	EffectScript_Arg = 
+	EffectScript_External = FALSE
+	Heal = 0
+	Heal_StatPercent = Intelligence
+	Heal_Type = 
+	ITM_ACC_Dandor = TRUE
+	ITM_ACC_HandoStillor = TRUE
+	ITM_ACC_Jake = TRUE
+	ITM_ACC_Marrilona = TRUE
+	ITM_BlackMarket = FALSE
+	ITM_Combat = TRUE
+	ITM_EQP_For = 
+	ITM_Field = TRUE
+	ITM_Sellable = TRUE
+	ITM_ShopPrice = 0
+	ITM_Type = Consumable
+	ITM_WeaponAbility = FALSE
+	Revive = FALSE
+	Rew_GainAP = 0
+	SpellAni = SingleHeal
+	SpellAni_Arg = 
+	SpellAni_External = FALSE
+	Stance = Cast
+	Target = 1F
+	Title = Avada Kedavra
+	Type = Ability
+	USE_Penalty = 0
+	Voice = 
+	rew_CreateSkill1 = FALSE
+	rew_CreateSkill2 = FALSE
+	rew_CreateSkill3 = FALSE
+	rew_CreateSkill4 = FALSE
+	rew_CreateSkill5 = FALSE
+	rew_GainSkill1 = 0
+	rew_GainSkill2 = 0
+	rew_GainSkill3 = 0
+	rew_GainSkill4 = 0
+	rew_GainSkill5 = 0
+
+Rec: ABL_FOE_V_BRACKIUMEMENDO
+	ABL_APCost = 0
+	ABL_HPCost = 0
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 5
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 5
+	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
+	Attack = 0
+	Attack_AccuracyRate = 100
+	Attack_AllowAccuracy = FALSE
+	Attack_AllowCritical = FALSE
+	Attack_AllowDodge = FALSE
+	Attack_AttackStat = Power
+	Attack_DefenseStat = Endurance
+	Attack_Desperate = FALSE
+	Attack_Element = None
+	BUFF_Accuracy = 0
+	BUFF_Endurance = 0
+	BUFF_Evasion = 0
+	BUFF_Intelligence = 0
+	BUFF_Power = 0
+	BUFF_Resistance = 0
+	BUFF_Speed = 0
+	CauseBerserk = FALSE
+	CauseCharmed = FALSE
+	CauseConfusion = FALSE
+	CauseCurse = FALSE
+	CauseDeath = FALSE
+	CauseDisease = FALSE
+	CauseGuarding = FALSE
+	CauseIDDQD = FALSE
+	CauseParalysis = FALSE
+	CausePermanence = FALSE
+	CausePetrification = FALSE
+	CausePoison = FALSE
+	CauseSilence = FALSE
+	CauseSleep = FALSE
+	CauseUndead = FALSE
+	CureCurse = FALSE
+	CureDisease = FALSE
+	CureParalysis = FALSE
+	CurePetrification = FALSE
+	CurePoison = FALSE
+	CureSilence = FALSE
+	CureSleep = FALSE
+	CureUndead = FALSE
+	Desc = 
+	EQP_STAT_AP = 0
+	EQP_STAT_Accuracy = 0
+	EQP_STAT_ER_Darkness = 0
+	EQP_STAT_ER_Earth = 0
+	EQP_STAT_ER_Flame = 0
+	EQP_STAT_ER_Frost = 0
+	EQP_STAT_ER_Light = 0
+	EQP_STAT_ER_Lightning = 0
+	EQP_STAT_ER_Water = 0
+	EQP_STAT_ER_Wind = 0
+	EQP_STAT_Endurance = 0
+	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 0
+	EQP_STAT_Intelligence = 0
+	EQP_STAT_Power = 0
+	EQP_STAT_Resistance = 0
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
+	EffectScript = AlterPoints
+	EffectScript_Arg = HP 1;AP 1;VIT 0
+	EffectScript_External = FALSE
+	Heal = 0
+	Heal_StatPercent = Intelligence
+	Heal_Type = Absolute
+	ITM_ACC_Dandor = TRUE
+	ITM_ACC_HandoStillor = TRUE
+	ITM_ACC_Jake = TRUE
+	ITM_ACC_Marrilona = TRUE
+	ITM_BlackMarket = FALSE
+	ITM_Combat = TRUE
+	ITM_EQP_For = Jake
+	ITM_Field = TRUE
+	ITM_Sellable = TRUE
+	ITM_ShopPrice = 0
+	ITM_Type = Consumable
+	ITM_WeaponAbility = FALSE
+	Revive = FALSE
+	Rew_GainAP = 0
+	SpellAni = SingleHeal
+	SpellAni_Arg = 
+	SpellAni_External = FALSE
+	Stance = Cast
+	Target = 1F
+	Title = Brackium Emendo
+	Type = Item
+	USE_Penalty = 0
+	Voice = 
+	rew_CreateSkill1 = FALSE
+	rew_CreateSkill2 = FALSE
+	rew_CreateSkill3 = FALSE
+	rew_CreateSkill4 = FALSE
+	rew_CreateSkill5 = FALSE
+	rew_GainSkill1 = 0
+	rew_GainSkill2 = 0
+	rew_GainSkill3 = 0
+	rew_GainSkill4 = 0
+	rew_GainSkill5 = 0
+
+Rec: ABL_FOE_V_CRUCIO
+	ABL_APCost = 0
+	ABL_HPCost = 0
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 5
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 5
+	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
+	Attack = 300
+	Attack_AccuracyRate = 100
+	Attack_AllowAccuracy = FALSE
+	Attack_AllowCritical = FALSE
+	Attack_AllowDodge = FALSE
+	Attack_AttackStat = Power
+	Attack_DefenseStat = Resistance
+	Attack_Desperate = FALSE
+	Attack_Element = None
+	BUFF_Accuracy = 0
+	BUFF_Endurance = 0
+	BUFF_Evasion = 0
+	BUFF_Intelligence = 0
+	BUFF_Power = 0
+	BUFF_Resistance = 0
+	BUFF_Speed = 0
+	CauseBerserk = FALSE
+	CauseCharmed = FALSE
+	CauseConfusion = FALSE
+	CauseCurse = FALSE
+	CauseDeath = FALSE
+	CauseDisease = FALSE
+	CauseGuarding = FALSE
+	CauseIDDQD = FALSE
+	CauseParalysis = FALSE
+	CausePermanence = FALSE
+	CausePetrification = FALSE
+	CausePoison = FALSE
+	CauseSilence = FALSE
+	CauseSleep = FALSE
+	CauseUndead = FALSE
+	CureCurse = FALSE
+	CureDisease = FALSE
+	CureParalysis = FALSE
+	CurePetrification = FALSE
+	CurePoison = FALSE
+	CureSilence = FALSE
+	CureSleep = FALSE
+	CureUndead = FALSE
+	Desc = 
+	EQP_STAT_AP = 0
+	EQP_STAT_Accuracy = 0
+	EQP_STAT_ER_Darkness = 0
+	EQP_STAT_ER_Earth = 0
+	EQP_STAT_ER_Flame = 0
+	EQP_STAT_ER_Frost = 0
+	EQP_STAT_ER_Light = 0
+	EQP_STAT_ER_Lightning = 0
+	EQP_STAT_ER_Water = 0
+	EQP_STAT_ER_Wind = 0
+	EQP_STAT_Endurance = 0
+	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 0
+	EQP_STAT_Intelligence = 0
+	EQP_STAT_Power = 0
+	EQP_STAT_Resistance = 0
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
+	EffectScript = 
+	EffectScript_Arg = 
+	EffectScript_External = FALSE
+	Heal = 0
+	Heal_StatPercent = Intelligence
+	Heal_Type = 
+	ITM_ACC_Dandor = TRUE
+	ITM_ACC_HandoStillor = TRUE
+	ITM_ACC_Jake = TRUE
+	ITM_ACC_Marrilona = TRUE
+	ITM_BlackMarket = FALSE
+	ITM_Combat = TRUE
+	ITM_EQP_For = 
+	ITM_Field = TRUE
+	ITM_Sellable = TRUE
+	ITM_ShopPrice = 0
+	ITM_Type = Consumable
+	ITM_WeaponAbility = FALSE
+	Revive = FALSE
+	Rew_GainAP = 0
+	SpellAni = 
+	SpellAni_Arg = 
+	SpellAni_External = FALSE
+	Stance = Cast
+	Target = 1F
+	Title = 
+	Type = Item
+	USE_Penalty = 0
+	Voice = 
+	rew_CreateSkill1 = FALSE
+	rew_CreateSkill2 = FALSE
+	rew_CreateSkill3 = FALSE
+	rew_CreateSkill4 = FALSE
+	rew_CreateSkill5 = FALSE
+	rew_GainSkill1 = 0
+	rew_GainSkill2 = 0
+	rew_GainSkill3 = 0
+	rew_GainSkill4 = 0
+	rew_GainSkill5 = 0
+
+Rec: ABL_FOE_V_FIREBOLT
+	ABL_APCost = 0
+	ABL_HPCost = 0
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 5
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 1
+	ADDCARD_Char_Number = 4
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
+	Attack = 0
+	Attack_AccuracyRate = 100
+	Attack_AllowAccuracy = FALSE
+	Attack_AllowCritical = FALSE
+	Attack_AllowDodge = FALSE
+	Attack_AttackStat = Power
+	Attack_DefenseStat = Endurance
+	Attack_Desperate = FALSE
+	Attack_Element = None
+	BUFF_Accuracy = 0
+	BUFF_Endurance = 0
+	BUFF_Evasion = 0
+	BUFF_Intelligence = 0
+	BUFF_Power = 0
+	BUFF_Resistance = 0
+	BUFF_Speed = 0
+	CauseBerserk = FALSE
+	CauseCharmed = FALSE
+	CauseConfusion = FALSE
+	CauseCurse = FALSE
+	CauseDeath = FALSE
+	CauseDisease = FALSE
+	CauseGuarding = FALSE
+	CauseIDDQD = FALSE
+	CauseParalysis = FALSE
+	CausePermanence = FALSE
+	CausePetrification = FALSE
+	CausePoison = FALSE
+	CauseSilence = FALSE
+	CauseSleep = FALSE
+	CauseUndead = FALSE
+	CureCurse = FALSE
+	CureDisease = FALSE
+	CureParalysis = FALSE
+	CurePetrification = FALSE
+	CurePoison = FALSE
+	CureSilence = FALSE
+	CureSleep = FALSE
+	CureUndead = FALSE
+	Desc = 
+	EQP_STAT_AP = 0
+	EQP_STAT_Accuracy = 0
+	EQP_STAT_ER_Darkness = 0
+	EQP_STAT_ER_Earth = 0
+	EQP_STAT_ER_Flame = 0
+	EQP_STAT_ER_Frost = 0
+	EQP_STAT_ER_Light = 0
+	EQP_STAT_ER_Lightning = 0
+	EQP_STAT_ER_Water = 0
+	EQP_STAT_ER_Wind = 0
+	EQP_STAT_Endurance = 0
+	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 0
+	EQP_STAT_Intelligence = 0
+	EQP_STAT_Power = 0
+	EQP_STAT_Resistance = 0
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
+	EffectScript = 
+	EffectScript_Arg = 
+	EffectScript_External = FALSE
+	Heal = 0
+	Heal_StatPercent = Intelligence
+	Heal_Type = Absolute
+	ITM_ACC_Dandor = TRUE
+	ITM_ACC_HandoStillor = TRUE
+	ITM_ACC_Jake = TRUE
+	ITM_ACC_Marrilona = TRUE
+	ITM_BlackMarket = FALSE
+	ITM_Combat = TRUE
+	ITM_EQP_For = Jake
+	ITM_Field = TRUE
+	ITM_Sellable = TRUE
+	ITM_ShopPrice = 0
+	ITM_Type = Consumable
+	ITM_WeaponAbility = FALSE
+	Revive = FALSE
+	Rew_GainAP = 0
+	SpellAni = 
+	SpellAni_Arg = 
+	SpellAni_External = FALSE
+	Stance = Cast
+	Target = 1F
+	Title = 
+	Type = Item
+	USE_Penalty = 0
+	Voice = 
+	rew_CreateSkill1 = FALSE
+	rew_CreateSkill2 = FALSE
+	rew_CreateSkill3 = FALSE
+	rew_CreateSkill4 = FALSE
+	rew_CreateSkill5 = FALSE
+	rew_GainSkill1 = 0
+	rew_GainSkill2 = 0
+	rew_GainSkill3 = 0
+	rew_GainSkill4 = 0
+	rew_GainSkill5 = 0
+
+Rec: ABL_FOE_V_IMPERIO
+	ABL_APCost = 0
+	ABL_HPCost = 0
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 5
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 5
+	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
+	Attack = 0
+	Attack_AccuracyRate = 100
+	Attack_AllowAccuracy = FALSE
+	Attack_AllowCritical = FALSE
+	Attack_AllowDodge = FALSE
+	Attack_AttackStat = Power
+	Attack_DefenseStat = Endurance
+	Attack_Desperate = FALSE
+	Attack_Element = None
+	BUFF_Accuracy = 0
+	BUFF_Endurance = 0
+	BUFF_Evasion = 0
+	BUFF_Intelligence = 0
+	BUFF_Power = 0
+	BUFF_Resistance = 0
+	BUFF_Speed = 0
+	CauseBerserk = FALSE
+	CauseCharmed = TRUE
+	CauseConfusion = FALSE
+	CauseCurse = FALSE
+	CauseDeath = FALSE
+	CauseDisease = FALSE
+	CauseGuarding = FALSE
+	CauseIDDQD = FALSE
+	CauseParalysis = FALSE
+	CausePermanence = FALSE
+	CausePetrification = FALSE
+	CausePoison = FALSE
+	CauseSilence = FALSE
+	CauseSleep = FALSE
+	CauseUndead = FALSE
+	CureCurse = FALSE
+	CureDisease = FALSE
+	CureParalysis = FALSE
+	CurePetrification = FALSE
+	CurePoison = FALSE
+	CureSilence = FALSE
+	CureSleep = FALSE
+	CureUndead = FALSE
+	Desc = 
+	EQP_STAT_AP = 0
+	EQP_STAT_Accuracy = 0
+	EQP_STAT_ER_Darkness = 0
+	EQP_STAT_ER_Earth = 0
+	EQP_STAT_ER_Flame = 0
+	EQP_STAT_ER_Frost = 0
+	EQP_STAT_ER_Light = 0
+	EQP_STAT_ER_Lightning = 0
+	EQP_STAT_ER_Water = 0
+	EQP_STAT_ER_Wind = 0
+	EQP_STAT_Endurance = 0
+	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 0
+	EQP_STAT_Intelligence = 0
+	EQP_STAT_Power = 0
+	EQP_STAT_Resistance = 0
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
+	EffectScript = 
+	EffectScript_Arg = 
+	EffectScript_External = FALSE
+	Heal = 0
+	Heal_StatPercent = Intelligence
+	Heal_Type = Absolute
+	ITM_ACC_Dandor = TRUE
+	ITM_ACC_HandoStillor = TRUE
+	ITM_ACC_Jake = TRUE
+	ITM_ACC_Marrilona = TRUE
+	ITM_BlackMarket = FALSE
+	ITM_Combat = TRUE
+	ITM_EQP_For = Jake
+	ITM_Field = TRUE
+	ITM_Sellable = TRUE
+	ITM_ShopPrice = 0
+	ITM_Type = Consumable
+	ITM_WeaponAbility = FALSE
+	Revive = FALSE
+	Rew_GainAP = 0
+	SpellAni = 
+	SpellAni_Arg = 
+	SpellAni_External = FALSE
+	Stance = Cast
+	Target = 1F
+	Title = Imperio
+	Type = Ability
+	USE_Penalty = 0
+	Voice = 
+	rew_CreateSkill1 = FALSE
+	rew_CreateSkill2 = FALSE
+	rew_CreateSkill3 = FALSE
+	rew_CreateSkill4 = FALSE
+	rew_CreateSkill5 = FALSE
+	rew_GainSkill1 = 0
+	rew_GainSkill2 = 0
+	rew_GainSkill3 = 0
+	rew_GainSkill4 = 0
+	rew_GainSkill5 = 0
+
+Rec: ABL_FOE_V_M
+	ABL_APCost = 0
+	ABL_HPCost = 0
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 5
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 5
+	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
+	Attack = 0
+	Attack_AccuracyRate = 100
+	Attack_AllowAccuracy = FALSE
+	Attack_AllowCritical = FALSE
+	Attack_AllowDodge = FALSE
+	Attack_AttackStat = Power
+	Attack_DefenseStat = Endurance
+	Attack_Desperate = FALSE
+	Attack_Element = None
+	BUFF_Accuracy = 0
+	BUFF_Endurance = 0
+	BUFF_Evasion = 0
+	BUFF_Intelligence = 0
+	BUFF_Power = 0
+	BUFF_Resistance = 0
+	BUFF_Speed = 0
+	CauseBerserk = FALSE
+	CauseCharmed = FALSE
+	CauseConfusion = FALSE
+	CauseCurse = FALSE
+	CauseDeath = FALSE
+	CauseDisease = FALSE
+	CauseGuarding = FALSE
+	CauseIDDQD = FALSE
+	CauseParalysis = FALSE
+	CausePermanence = FALSE
+	CausePetrification = FALSE
+	CausePoison = FALSE
+	CauseSilence = FALSE
+	CauseSleep = FALSE
+	CauseUndead = FALSE
+	CureCurse = FALSE
+	CureDisease = FALSE
+	CureParalysis = FALSE
+	CurePetrification = FALSE
+	CurePoison = FALSE
+	CureSilence = FALSE
+	CureSleep = FALSE
+	CureUndead = FALSE
+	Desc = 
+	EQP_STAT_AP = 0
+	EQP_STAT_Accuracy = 0
+	EQP_STAT_ER_Darkness = 0
+	EQP_STAT_ER_Earth = 0
+	EQP_STAT_ER_Flame = 0
+	EQP_STAT_ER_Frost = 0
+	EQP_STAT_ER_Light = 0
+	EQP_STAT_ER_Lightning = 0
+	EQP_STAT_ER_Water = 0
+	EQP_STAT_ER_Wind = 0
+	EQP_STAT_Endurance = 0
+	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 0
+	EQP_STAT_Intelligence = 0
+	EQP_STAT_Power = 0
+	EQP_STAT_Resistance = 0
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
+	EffectScript = MultiPointAlter
+	EffectScript_Arg = HP 1;AP 0;SK_EXP_1 MAX;SK_EXP_2 MAX;SK_EXP_3 MAX;SK_EXP_4 MAX;SK_EXP_5 MAX
+	EffectScript_External = FALSE
+	Heal = 0
+	Heal_StatPercent = Intelligence
+	Heal_Type = Absolute
+	ITM_ACC_Dandor = TRUE
+	ITM_ACC_HandoStillor = TRUE
+	ITM_ACC_Jake = TRUE
+	ITM_ACC_Marrilona = TRUE
+	ITM_BlackMarket = FALSE
+	ITM_Combat = TRUE
+	ITM_EQP_For = Jake
+	ITM_Field = TRUE
+	ITM_Sellable = TRUE
+	ITM_ShopPrice = 0
+	ITM_Type = Consumable
+	ITM_WeaponAbility = FALSE
+	Revive = FALSE
+	Rew_GainAP = 0
+	SpellAni = 
+	SpellAni_Arg = 
+	SpellAni_External = FALSE
+	Stance = Cast
+	Target = AF
+	Title = I solemly swear that I'm up to no good!
+	Type = Item
+	USE_Penalty = 0
+	Voice = DSB
+	rew_CreateSkill1 = FALSE
+	rew_CreateSkill2 = FALSE
+	rew_CreateSkill3 = FALSE
+	rew_CreateSkill4 = FALSE
+	rew_CreateSkill5 = FALSE
+	rew_GainSkill1 = 0
+	rew_GainSkill2 = 0
+	rew_GainSkill3 = 0
+	rew_GainSkill4 = 0
+	rew_GainSkill5 = 0
+
+Rec: ABL_FOE_V_RICTUSEMPRA
+	ABL_APCost = 100
+	ABL_HPCost = 0
+	ADDCARD_Action_Act = Self
+	ADDCARD_Action_Interval = 0
+	ADDCARD_Action_Number = 0
+	ADDCARD_Char_Interval = 0
+	ADDCARD_Char_Number = 0
+	Acc_PreTurn = 
+	Acc_PreTurn_Arg = 
+	Attack = 0
+	Attack_AccuracyRate = 100
+	Attack_AllowAccuracy = FALSE
+	Attack_AllowCritical = FALSE
+	Attack_AllowDodge = FALSE
+	Attack_AttackStat = Power
+	Attack_DefenseStat = Endurance
+	Attack_Desperate = FALSE
+	Attack_Element = None
+	BUFF_Accuracy = 0
+	BUFF_Endurance = 0
+	BUFF_Evasion = 0
+	BUFF_Intelligence = 0
+	BUFF_Power = 0
+	BUFF_Resistance = 0
+	BUFF_Speed = 0
+	CauseBerserk = FALSE
+	CauseCharmed = FALSE
+	CauseConfusion = FALSE
+	CauseCurse = FALSE
+	CauseDeath = FALSE
+	CauseDisease = FALSE
+	CauseGuarding = FALSE
+	CauseIDDQD = FALSE
+	CauseParalysis = FALSE
+	CausePermanence = FALSE
+	CausePetrification = FALSE
+	CausePoison = FALSE
+	CauseSilence = FALSE
+	CauseSleep = FALSE
+	CauseUndead = FALSE
+	CureCurse = FALSE
+	CureDisease = FALSE
+	CureParalysis = FALSE
+	CurePetrification = FALSE
+	CurePoison = FALSE
+	CureSilence = FALSE
+	CureSleep = FALSE
+	CureUndead = FALSE
+	Desc = Removes all cards of a specific foe
+	EQP_STAT_AP = 0
+	EQP_STAT_Accuracy = 0
+	EQP_STAT_ER_Darkness = 0
+	EQP_STAT_ER_Earth = 0
+	EQP_STAT_ER_Flame = 0
+	EQP_STAT_ER_Frost = 0
+	EQP_STAT_ER_Light = 0
+	EQP_STAT_ER_Lightning = 0
+	EQP_STAT_ER_Water = 0
+	EQP_STAT_ER_Wind = 0
+	EQP_STAT_Endurance = 0
+	EQP_STAT_Evasion = 0
+	EQP_STAT_HP = 0
+	EQP_STAT_Intelligence = 0
+	EQP_STAT_Power = 0
+	EQP_STAT_Resistance = 0
+	EQP_STAT_SR_Curse = 0
+	EQP_STAT_SR_Death = 0
+	EQP_STAT_SR_Destruction = 0
+	EQP_STAT_SR_Disease = 0
+	EQP_STAT_SR_Paralysis = 0
+	EQP_STAT_SR_Petrification = 0
+	EQP_STAT_SR_Poison = 0
+	EQP_STAT_SR_Silence = 0
+	EQP_STAT_SR_Sleep = 0
+	EQP_STAT_SR_Undead = 0
+	EffectScript = RemoveAllUserCards
+	EffectScript_Arg = 
+	EffectScript_External = FALSE
+	Heal = 0
+	Heal_StatPercent = Intelligence
+	Heal_Type = Absolute
+	ITM_ACC_Dandor = TRUE
+	ITM_ACC_HandoStillor = TRUE
+	ITM_ACC_Jake = TRUE
+	ITM_ACC_Marrilona = TRUE
+	ITM_BlackMarket = FALSE
+	ITM_Combat = TRUE
+	ITM_EQP_For = Jake
+	ITM_Field = TRUE
+	ITM_Sellable = TRUE
+	ITM_ShopPrice = 0
+	ITM_Type = Consumable
+	ITM_WeaponAbility = FALSE
+	Revive = FALSE
+	Rew_GainAP = 0
+	SpellAni = 
+	SpellAni_Arg = 
+	SpellAni_External = FALSE
+	Stance = Attack
+	Target = 1F
+	Title = Rictus Empra
+	Type = Ability
+	USE_Penalty = 0
+	Voice = attack
+	rew_CreateSkill1 = FALSE
+	rew_CreateSkill2 = FALSE
+	rew_CreateSkill3 = FALSE
+	rew_CreateSkill4 = FALSE
+	rew_CreateSkill5 = FALSE
+	rew_GainSkill1 = 0
+	rew_GainSkill2 = 0
+	rew_GainSkill3 = 0
+	rew_GainSkill4 = 0
+	rew_GainSkill5 = 0
+
 Rec: ABL_FOE_WELCOMEINHELL
 	ABL_APCost = 250
 	ABL_HPCost = 0
@@ -7614,6 +8724,7 @@ Rec: ABL_FOE_WELCOMEINHELL
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -7729,6 +8840,7 @@ Rec: ABL_FOLLOWUP_FIKKIE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -7844,6 +8956,7 @@ Rec: ABL_GG_TERRSCREAM
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -7959,6 +9072,7 @@ Rec: ABL_GG_TOTALBREAKSCREAM
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -8074,6 +9188,7 @@ Rec: ABL_GLOOM
 	BUFF_Resistance = -5
 	BUFF_Speed = -5
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -8189,6 +9304,7 @@ Rec: ABL_HANDOSTILLOR_EVERYBODYKNEELBEFOREME
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -8304,6 +9420,7 @@ Rec: ABL_HERO_DANDOR_AXESMASH
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -8419,6 +9536,7 @@ Rec: ABL_HERO_DANDOR_BARRIER
 	BUFF_Resistance = 150
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -8534,6 +9652,7 @@ Rec: ABL_HERO_DANDOR_SHIELD
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -8649,6 +9768,7 @@ Rec: ABL_HERO_DANDOR_SUPERAXESMASH
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -8764,6 +9884,7 @@ Rec: ABL_HERO_HANDOSTILLOR_CLEANSE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -8879,6 +10000,7 @@ Rec: ABL_HERO_HANDOSTILLOR_CUREDISEASE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -8994,6 +10116,7 @@ Rec: ABL_HERO_HANDOSTILLOR_FIRESTORM
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -9109,6 +10232,7 @@ Rec: ABL_HERO_HANDOSTILLOR_FIRSTAID
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -9224,6 +10348,7 @@ Rec: ABL_HERO_HANDOSTILLOR_GOODMORNING
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -9339,6 +10464,7 @@ Rec: ABL_HERO_HANDOSTILLOR_HASPARONVITALIZATION
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -9454,6 +10580,7 @@ Rec: ABL_HERO_HANDOSTILLOR_HOLYSTRIKE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -9569,6 +10696,7 @@ Rec: ABL_HERO_HANDOSTILLOR_KNEELBEFOREME
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -9684,6 +10812,7 @@ Rec: ABL_HERO_HANDOSTILLOR_NEUTRALIZEPOISON
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -9799,6 +10928,7 @@ Rec: ABL_HERO_HANDOSTILLOR_PRAY
 	BUFF_Resistance = 5
 	BUFF_Speed = -100
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -9914,6 +11044,7 @@ Rec: ABL_HERO_HANDOSTILLOR_PRAYFORALL
 	BUFF_Resistance = 5
 	BUFF_Speed = -100
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -10029,6 +11160,7 @@ Rec: ABL_HERO_HANDOSTILLOR_PURIFY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -10144,6 +11276,7 @@ Rec: ABL_HERO_HANDOSTILLOR_RECOVER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -10259,6 +11392,7 @@ Rec: ABL_HERO_HANDOSTILLOR_REMOVEPARALYSIS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -10374,6 +11508,7 @@ Rec: ABL_HERO_HANDOSTILLOR_RESURRECT
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -10489,6 +11624,7 @@ Rec: ABL_HERO_HANDOSTILLOR_REVIVE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -10604,6 +11740,7 @@ Rec: ABL_HERO_HANDOSTILLOR_SMITE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -10719,6 +11856,7 @@ Rec: ABL_HERO_HANDOSTILLOR_STICKSWING
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -10834,6 +11972,7 @@ Rec: ABL_HERO_HANDOSTILLOR_TREATMENT
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -10949,6 +12088,7 @@ Rec: ABL_HERO_HANDOSTILLOR_TWINKLE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -11064,6 +12204,7 @@ Rec: ABL_HERO_HANDOSTILLOR_VITALIZE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -11179,6 +12320,7 @@ Rec: ABL_HERO_HANDOSTILLOR_WHIZZY
 	BUFF_Resistance = 5
 	BUFF_Speed = 5
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -11294,6 +12436,7 @@ Rec: ABL_HERO_JAKE_2PS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -11409,6 +12552,7 @@ Rec: ABL_HERO_JAKE_3PS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -11524,6 +12668,7 @@ Rec: ABL_HERO_JAKE_4PS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -11639,6 +12784,7 @@ Rec: ABL_HERO_JAKE_BERSERK
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = TRUE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -11754,6 +12900,7 @@ Rec: ABL_HERO_JAKE_DEATHSTRIKE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -11869,6 +13016,7 @@ Rec: ABL_HERO_JAKE_EARTHSLICE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -11984,6 +13132,7 @@ Rec: ABL_HERO_JAKE_FLAMEBLADE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -12099,6 +13248,7 @@ Rec: ABL_HERO_JAKE_HEALBLADE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -12214,6 +13364,7 @@ Rec: ABL_HERO_JAKE_SHIFT_FAIRY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -12329,6 +13480,7 @@ Rec: ABL_HERO_JAKE_SHIFT_HUMAN
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -12444,6 +13596,7 @@ Rec: ABL_HERO_JAKE_WINDSTRIKE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -12559,6 +13712,7 @@ Rec: ABL_HERO_MARRILONA_1953
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -12674,6 +13828,7 @@ Rec: ABL_HERO_MARRILONA_BIO
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -12789,6 +13944,7 @@ Rec: ABL_HERO_MARRILONA_BREEZE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -12904,6 +14060,7 @@ Rec: ABL_HERO_MARRILONA_CHILL
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -13019,6 +14176,7 @@ Rec: ABL_HERO_MARRILONA_CURSEDHEALING
 	BUFF_Resistance = -100
 	BUFF_Speed = -100
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = TRUE
 	CauseCurse = TRUE
 	CauseDeath = FALSE
@@ -13134,6 +14292,7 @@ Rec: ABL_HERO_MARRILONA_ELECTROCUTION
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -13249,6 +14408,7 @@ Rec: ABL_HERO_MARRILONA_EMPOWER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -13364,6 +14524,7 @@ Rec: ABL_HERO_MARRILONA_ETERNALFLAME
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -13479,6 +14640,7 @@ Rec: ABL_HERO_MARRILONA_FIREBLAST
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -13594,6 +14756,7 @@ Rec: ABL_HERO_MARRILONA_FLAME
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -13709,6 +14872,7 @@ Rec: ABL_HERO_MARRILONA_HANDOSTILLOR_VITALITY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -13824,6 +14988,7 @@ Rec: ABL_HERO_MARRILONA_HEAL
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -13939,6 +15104,7 @@ Rec: ABL_HERO_MARRILONA_HURRICANE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -14054,6 +15220,7 @@ Rec: ABL_HERO_MARRILONA_ICEAGE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -14169,6 +15336,7 @@ Rec: ABL_HERO_MARRILONA_ICEBLAST
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -14284,6 +15452,7 @@ Rec: ABL_HERO_MARRILONA_INFERNO
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -14399,6 +15568,7 @@ Rec: ABL_HERO_MARRILONA_LETSHEALEMALL
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -14514,6 +15684,7 @@ Rec: ABL_HERO_MARRILONA_MEDITATION
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -14629,6 +15800,7 @@ Rec: ABL_HERO_MARRILONA_PERMANENCE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -14744,6 +15916,7 @@ Rec: ABL_HERO_MARRILONA_PROTECT
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -14859,6 +16032,7 @@ Rec: ABL_HERO_MARRILONA_QUAKE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -14974,6 +16148,7 @@ Rec: ABL_HERO_MARRILONA_ROCK
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -15089,6 +16264,7 @@ Rec: ABL_HERO_MARRILONA_SPEEDUP
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -15204,6 +16380,7 @@ Rec: ABL_HERO_MARRILONA_SPLASH
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -15319,6 +16496,7 @@ Rec: ABL_HERO_MARRILONA_STONE2FLESH
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -15434,6 +16612,7 @@ Rec: ABL_HERO_MARRILONA_TSUNAMI
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -15549,6 +16728,7 @@ Rec: ABL_HERO_MARRILONA_ZAP
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -15664,6 +16844,7 @@ Rec: ABL_JUGGERNAUT_DONALDTRUMP
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -15779,6 +16960,7 @@ Rec: ABL_JUGGERNAUT_MAY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -15894,6 +17076,7 @@ Rec: ABL_MARRILONA_LIFEFORCE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -16009,6 +17192,7 @@ Rec: ABL_MASTER_FANDALORA_CURSE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = TRUE
 	CauseDeath = FALSE
@@ -16124,6 +17308,7 @@ Rec: ABL_MASTER_FANDALORA_DARKNESS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -16239,6 +17424,7 @@ Rec: ABL_MASTER_FANDALORA_DARKVISION
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -16354,6 +17540,7 @@ Rec: ABL_MASTER_FANDALORA_DEATH
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -16469,6 +17656,7 @@ Rec: ABL_MASTER_FANDALORA_PHANTOM
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -16584,6 +17772,7 @@ Rec: ABL_MASTER_FANDALORA_REMOVECURSE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -16699,6 +17888,7 @@ Rec: ABL_MASTER_FANDALORA_VOID
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -16814,6 +18004,7 @@ Rec: ABL_MASTER_FEENA_CHARIBDIS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -16929,6 +18120,7 @@ Rec: ABL_MASTER_FEENA_COCYTUS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -17044,6 +18236,7 @@ Rec: ABL_MASTER_FEENA_DROWN
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -17159,6 +18352,7 @@ Rec: ABL_MASTER_FEENA_FULLPOWER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -17274,6 +18468,7 @@ Rec: ABL_MASTER_FEENA_KATRINA
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -17389,6 +18584,7 @@ Rec: ABL_MASTER_FEENA_MAGMABLAST
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -17504,6 +18700,7 @@ Rec: ABL_MASTER_FEENA_MEGAQUAKE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -17619,6 +18816,7 @@ Rec: ABL_MASTER_FEENA_SCYLLA
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -17734,6 +18932,7 @@ Rec: ABL_MASTER_FREYA_REJUVENATE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -17849,6 +19048,7 @@ Rec: ABL_MASTER_FREYA_ULTRAHEAL
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -17964,6 +19164,7 @@ Rec: ABL_MASTER_FREYA_VIGOR
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -18079,6 +19280,7 @@ Rec: ABL_MASTER_KRANDAR_5PS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -18194,6 +19396,7 @@ Rec: ABL_MASTER_KRANDAR_6PS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -18309,6 +19512,7 @@ Rec: ABL_MASTER_KRANDAR_7PS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -18424,6 +19628,7 @@ Rec: ABL_MASTER_KRANDAR_CATASTROPHE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = TRUE
 	CauseDeath = FALSE
@@ -18539,6 +19744,7 @@ Rec: ABL_MASTER_KRANDAR_CHARGE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -18654,6 +19860,7 @@ Rec: ABL_MASTER_KRANDAR_HOLYSHIT
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -18769,6 +19976,7 @@ Rec: ABL_MASTER_MIDAS_HARDFORTHEMONEY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -18884,6 +20092,7 @@ Rec: ABL_MASTER_MIDAS_STEALMONEY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -18999,6 +20208,7 @@ Rec: ABL_MASTER_RUBINE_BACKSTAB
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -19114,6 +20324,7 @@ Rec: ABL_MASTER_RUBINE_FASTDRAW
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -19229,6 +20440,7 @@ Rec: ABL_MASTER_RUBINE_FOLLOWME
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -19344,6 +20556,7 @@ Rec: ABL_MASTER_RUBINE_INVADE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -19459,6 +20672,7 @@ Rec: ABL_MASTER_RUBINE_PICKPOCKET
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -19574,6 +20788,7 @@ Rec: ABL_MASTER_RUBINE_POISONSTAB
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -19689,6 +20904,7 @@ Rec: ABL_MASTER_RUSSELL_DECAPITATE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -19804,6 +21020,7 @@ Rec: ABL_MASTER_RUSSELL_GENOCIDE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -19919,6 +21136,7 @@ Rec: ABL_MASTER_RUSSELL_SAFESHOT
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -20034,6 +21252,7 @@ Rec: ABL_NPSH_OVERNAME
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -20149,6 +21368,7 @@ Rec: ABL_NPSR_DOOD
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -20264,6 +21484,7 @@ Rec: ABL_NPSR_GIF
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -20379,6 +21600,7 @@ Rec: ABL_NPSR_RUG
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -20494,6 +21716,7 @@ Rec: ABL_NPSR_VERLAM
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -20609,6 +21832,7 @@ Rec: ABL_NPSR_VLOEK
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = TRUE
 	CauseDeath = FALSE
@@ -20724,6 +21948,7 @@ Rec: ABL_NPSR_ZIEKTE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -20839,6 +22064,7 @@ Rec: ABL_SPECIAL_DRAGONDOWN
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -20954,6 +22180,7 @@ Rec: ABL_SPECIAL_INSTABILITY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -21069,6 +22296,7 @@ Rec: ABL_ZOMBIE_SHOPHOER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -21184,6 +22412,7 @@ Rec: AUTO_NOODHULP
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -21299,6 +22528,7 @@ Rec: BERSERK_ATTACK
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -21414,6 +22644,7 @@ Rec: COCYTUS_ANTENORA
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -21529,6 +22760,7 @@ Rec: COCYTUS_CAINA
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = TRUE
 	CauseDeath = FALSE
@@ -21644,6 +22876,7 @@ Rec: COCYTUS_JUDECCA
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -21759,6 +22992,7 @@ Rec: COCYTUS_PTOLOMEA
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -21874,6 +23108,7 @@ Rec: EQP_ACC_AAA_NOSTRAMANTUS_AMULET
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -21989,6 +23224,7 @@ Rec: EQP_ACC_AMULETLIFE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -22104,6 +23340,7 @@ Rec: EQP_ACC_DRESHKA
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -22219,6 +23456,7 @@ Rec: EQP_ACC_NOTNAMED
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -22334,6 +23572,7 @@ Rec: EQP_ACC_RINGEARTH
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -22449,6 +23688,7 @@ Rec: EQP_ACC_RINGFIRE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -22564,6 +23804,7 @@ Rec: EQP_ACC_RINGSKILL
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -22679,6 +23920,7 @@ Rec: EQP_ACC_RINGTYRANT
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -22794,6 +24036,7 @@ Rec: EQP_ACC_RINGWATER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -22909,6 +24152,7 @@ Rec: EQP_ACC_RINGWENIARIA
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -23024,6 +24268,7 @@ Rec: EQP_ACC_RINGWIND
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -23139,6 +24384,7 @@ Rec: EQP_ACC_THIEFCLOAK
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -23254,6 +24500,7 @@ Rec: EQP_ACC_TITANBELT
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -23369,6 +24616,7 @@ Rec: EQP_ACC_WIZARDRING
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -23484,6 +24732,7 @@ Rec: EQP_DANDOR_CURSEDWP_HUNGERAXE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -23599,6 +24848,7 @@ Rec: EQP_DANDOR_SEALEDAR
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -23714,6 +24964,7 @@ Rec: EQP_DANDOR_SEALEDWEAPON
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -23829,6 +25080,7 @@ Rec: EQP_DANDOR_TRAINAXE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -23944,6 +25196,7 @@ Rec: EQP_DANDOR_WP1
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -24059,6 +25312,7 @@ Rec: EQP_DANDOR_WP10
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -24174,6 +25428,7 @@ Rec: EQP_DANDOR_WP2
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -24289,6 +25544,7 @@ Rec: EQP_DANDOR_WP3
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -24404,6 +25660,7 @@ Rec: EQP_DANDOR_WP4
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -24519,6 +25776,7 @@ Rec: EQP_DANDOR_WP5
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -24634,6 +25892,7 @@ Rec: EQP_DANDOR_WP6
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -24749,6 +26008,7 @@ Rec: EQP_DANDOR_WP7
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -24864,6 +26124,7 @@ Rec: EQP_DANDOR_WP8
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -24979,6 +26240,7 @@ Rec: EQP_DANDOR_WP9
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -25094,6 +26356,7 @@ Rec: EQP_HANDOSTILLOR_AR1
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -25209,6 +26472,7 @@ Rec: EQP_HANDOSTILLOR_AR10
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -25324,6 +26588,7 @@ Rec: EQP_HANDOSTILLOR_AR2
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -25439,6 +26704,7 @@ Rec: EQP_HANDOSTILLOR_AR3
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -25554,6 +26820,7 @@ Rec: EQP_HANDOSTILLOR_AR4
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -25669,6 +26936,7 @@ Rec: EQP_HANDOSTILLOR_AR5
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -25784,6 +27052,7 @@ Rec: EQP_HANDOSTILLOR_AR6
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -25899,6 +27168,7 @@ Rec: EQP_HANDOSTILLOR_AR7
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -26014,6 +27284,7 @@ Rec: EQP_HANDOSTILLOR_AR8
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -26129,6 +27400,7 @@ Rec: EQP_HANDOSTILLOR_AR9
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -26244,6 +27516,7 @@ Rec: EQP_HANDOSTILLOR_CURSEDWP_ZOMBIESTAFF
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -26359,6 +27632,7 @@ Rec: EQP_HANDOSTILLOR_SEALEDARMOR
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -26474,6 +27748,7 @@ Rec: EQP_HANDOSTILLOR_SEALWEAPON
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -26589,6 +27864,7 @@ Rec: EQP_HANDOSTILLOR_TRAINSTAFF
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -26704,6 +27980,7 @@ Rec: EQP_HANDOSTILLOR_WP1
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -26819,6 +28096,7 @@ Rec: EQP_HANDOSTILLOR_WP10
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -26934,6 +28212,7 @@ Rec: EQP_HANDOSTILLOR_WP2
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -27049,6 +28328,7 @@ Rec: EQP_HANDOSTILLOR_WP3
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -27164,6 +28444,7 @@ Rec: EQP_HANDOSTILLOR_WP4
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -27279,6 +28560,7 @@ Rec: EQP_HANDOSTILLOR_WP5
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -27394,6 +28676,7 @@ Rec: EQP_HANDOSTILLOR_WP6
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -27509,6 +28792,7 @@ Rec: EQP_HANDOSTILLOR_WP7
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -27624,6 +28908,7 @@ Rec: EQP_HANDOSTILLOR_WP8
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -27739,6 +29024,7 @@ Rec: EQP_HANDOSTILLOR_WP9
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -27854,6 +29140,7 @@ Rec: EQP_JAKE_AR1
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -27969,6 +29256,7 @@ Rec: EQP_JAKE_AR10
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -28084,6 +29372,7 @@ Rec: EQP_JAKE_AR2
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -28199,6 +29488,7 @@ Rec: EQP_JAKE_AR3
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -28314,6 +29604,7 @@ Rec: EQP_JAKE_AR4
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -28429,6 +29720,7 @@ Rec: EQP_JAKE_AR5
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -28544,6 +29836,7 @@ Rec: EQP_JAKE_AR6
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -28659,6 +29952,7 @@ Rec: EQP_JAKE_AR7
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -28774,6 +30068,7 @@ Rec: EQP_JAKE_AR8
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -28889,6 +30184,7 @@ Rec: EQP_JAKE_AR9
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -29004,6 +30300,7 @@ Rec: EQP_JAKE_CURSEDWP_VENOMBLADE
 	BUFF_Resistance = 0
 	BUFF_Speed = -99
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -29119,6 +30416,7 @@ Rec: EQP_JAKE_SEALARMOR
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -29234,6 +30532,7 @@ Rec: EQP_JAKE_SEALEDWEAPON
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -29349,6 +30648,7 @@ Rec: EQP_JAKE_TRAINSWORD
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -29464,6 +30764,7 @@ Rec: EQP_JAKE_WP1
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -29579,6 +30880,7 @@ Rec: EQP_JAKE_WP10
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -29694,6 +30996,7 @@ Rec: EQP_JAKE_WP2
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -29809,6 +31112,7 @@ Rec: EQP_JAKE_WP3
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -29924,6 +31228,7 @@ Rec: EQP_JAKE_WP4
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -30039,6 +31344,7 @@ Rec: EQP_JAKE_WP5
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -30154,6 +31460,7 @@ Rec: EQP_JAKE_WP6
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -30269,6 +31576,7 @@ Rec: EQP_JAKE_WP7
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -30384,6 +31692,7 @@ Rec: EQP_JAKE_WP8
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -30499,6 +31808,7 @@ Rec: EQP_JAKE_WP9
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -30614,6 +31924,7 @@ Rec: EQP_JEWEL_AMETHYST
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -30729,6 +32040,7 @@ Rec: EQP_JEWEL_AQUAMARINE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -30844,6 +32156,7 @@ Rec: EQP_JEWEL_DIAMOND
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -30959,6 +32272,7 @@ Rec: EQP_JEWEL_EMERALD
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -31074,6 +32388,7 @@ Rec: EQP_JEWEL_GARNET
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -31189,6 +32504,7 @@ Rec: EQP_JEWEL_JADE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -31304,6 +32620,7 @@ Rec: EQP_JEWEL_ONYX
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -31419,6 +32736,7 @@ Rec: EQP_JEWEL_RUBY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -31534,6 +32852,7 @@ Rec: EQP_JEWEL_SAPPHIRE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -31649,6 +32968,7 @@ Rec: EQP_JEWEL_SMALLEMERALD
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -31764,6 +33084,7 @@ Rec: EQP_JEWEL_SMALLGARNET
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -31879,6 +33200,7 @@ Rec: EQP_JEWEL_SMALLRUBY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -31994,6 +33316,7 @@ Rec: EQP_JEWEL_SMALLTOPAZ
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -32109,6 +33432,7 @@ Rec: EQP_JEWEL_TOPAZ
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -32224,6 +33548,7 @@ Rec: EQP_MARRILONA_AR1
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = 
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -32339,6 +33664,7 @@ Rec: EQP_MARRILONA_AR10
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -32454,6 +33780,7 @@ Rec: EQP_MARRILONA_AR2
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -32569,6 +33896,7 @@ Rec: EQP_MARRILONA_AR3
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -32684,6 +34012,7 @@ Rec: EQP_MARRILONA_AR4
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = 
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -32799,6 +34128,7 @@ Rec: EQP_MARRILONA_AR5
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = 
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -32914,6 +34244,7 @@ Rec: EQP_MARRILONA_AR6
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = 
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -33029,6 +34360,7 @@ Rec: EQP_MARRILONA_AR7
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = 
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -33144,6 +34476,7 @@ Rec: EQP_MARRILONA_AR8
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = 
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -33259,6 +34592,7 @@ Rec: EQP_MARRILONA_AR9
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = 
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -33374,6 +34708,7 @@ Rec: EQP_MARRILONA_SEALARMOR
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -33489,6 +34824,7 @@ Rec: EQP_MARRILONA_WPSEALED
 	BUFF_Resistance = -10
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = TRUE
 	CauseDeath = FALSE
@@ -33604,6 +34940,7 @@ Rec: EXE_MARRILONA_MEDITATION
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -33719,6 +35056,7 @@ Rec: FLASHBACK_FEENAARMOR
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -33834,6 +35172,7 @@ Rec: FLASHBACK_FEENAWEAPON
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -33949,6 +35288,7 @@ Rec: FLASHBACK_NOSARMOR
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -34064,6 +35404,7 @@ Rec: FLASHBACK_NOSWEAPON
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -34179,6 +35520,7 @@ Rec: FOE_WATCHMOVE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -34294,6 +35636,7 @@ Rec: FOE_ZOMBIE_PLAYDEATH
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -34409,6 +35752,7 @@ Rec: FOE_ZOMBIE_PLAYUNDEAD
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -34524,6 +35868,7 @@ Rec: HYDRA_ONTHOOFD
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -34639,6 +35984,7 @@ Rec: ICEBLAST
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -34754,6 +36100,7 @@ Rec: ITEM_MEDICINES
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -34869,6 +36216,7 @@ Rec: ITM_AMBROSIA
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -34984,6 +36332,7 @@ Rec: ITM_ANABOLINEA
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -35099,6 +36448,7 @@ Rec: ITM_ANTIDOTE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -35214,6 +36564,7 @@ Rec: ITM_ANTIDOTES
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -35329,6 +36680,7 @@ Rec: ITM_APPLE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -35444,6 +36796,7 @@ Rec: ITM_APPLES
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -35559,6 +36912,7 @@ Rec: ITM_BANANA
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -35674,6 +37028,7 @@ Rec: ITM_BANANAS
 	BUFF_Resistance = 25
 	BUFF_Speed = 25
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -35789,6 +37144,7 @@ Rec: ITM_BELL
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -35904,6 +37260,7 @@ Rec: ITM_CARROT
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -36019,6 +37376,7 @@ Rec: ITM_CARROTPACKFISH
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -36134,6 +37492,7 @@ Rec: ITM_CARROTS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -36249,6 +37608,7 @@ Rec: ITM_CHERRY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -36364,6 +37724,7 @@ Rec: ITM_CURSEDSPORES
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = TRUE
 	CauseDeath = FALSE
@@ -36479,6 +37840,7 @@ Rec: ITM_DAMNEDDUST
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -36594,6 +37956,7 @@ Rec: ITM_DEATHCUBE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -36709,6 +38072,7 @@ Rec: ITM_DRAGONFIRE
 	BUFF_Resistance = -1000
 	BUFF_Speed = -1000
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -36824,6 +38188,7 @@ Rec: ITM_EEL
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -36939,6 +38304,7 @@ Rec: ITM_ELIXIR
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -37054,6 +38420,7 @@ Rec: ITM_FISH
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -37169,6 +38536,7 @@ Rec: ITM_FLAMEORB
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -37284,6 +38652,7 @@ Rec: ITM_FLAMEORBS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -37399,6 +38768,7 @@ Rec: ITM_HEALINGHERB
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -37514,6 +38884,7 @@ Rec: ITM_HEALSHOWER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -37629,6 +39000,7 @@ Rec: ITM_HELLSTONE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -37744,6 +39116,7 @@ Rec: ITM_HOLYHANDGRENATE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -37859,6 +39232,7 @@ Rec: ITM_HOLYORB
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -37974,6 +39348,7 @@ Rec: ITM_HOLYSCROLL
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -38089,6 +39464,7 @@ Rec: ITM_HOLYWATER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -38204,6 +39580,7 @@ Rec: ITM_ICICLE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -38319,6 +39696,7 @@ Rec: ITM_ICICLES
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -38434,6 +39812,7 @@ Rec: ITM_INFERNOORB
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -38549,6 +39928,7 @@ Rec: ITM_JUSDORANGE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -38664,6 +40044,7 @@ Rec: ITM_LEADERFLAG
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -38779,6 +40160,7 @@ Rec: ITM_MAGICDUST
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -38894,6 +40276,7 @@ Rec: ITM_MAGICSPRINKLES
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -39009,6 +40392,7 @@ Rec: ITM_MAGICSTONE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -39124,6 +40508,7 @@ Rec: ITM_MANDRAKE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -39239,6 +40624,7 @@ Rec: ITM_MANDRAKES
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -39354,6 +40740,7 @@ Rec: ITM_MEDICINE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -39469,6 +40856,7 @@ Rec: ITM_MEDICINES
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -39584,6 +40972,7 @@ Rec: ITM_MIRROR
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -39699,6 +41088,7 @@ Rec: ITM_MJOLNIR
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -39814,6 +41204,7 @@ Rec: ITM_MULTIPHOENIX
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -39929,6 +41320,7 @@ Rec: ITM_MUTTON
 	BUFF_Resistance = 25
 	BUFF_Speed = 25
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -40044,6 +41436,7 @@ Rec: ITM_PANACEA
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -40159,6 +41552,7 @@ Rec: ITM_PHOENIX
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -40274,6 +41668,7 @@ Rec: ITM_POCKETTSUNAMI
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -40389,6 +41784,7 @@ Rec: ITM_POISONDART
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -40504,6 +41900,7 @@ Rec: ITM_POTION
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -40619,6 +42016,7 @@ Rec: ITM_POTIONS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -40734,6 +42132,7 @@ Rec: ITM_POTIONVITALITY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -40849,6 +42248,7 @@ Rec: ITM_PURELITERATURE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -40964,6 +42364,7 @@ Rec: ITM_PURIFICATIONSHOWER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -41079,6 +42480,7 @@ Rec: ITM_ROCK
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -41194,6 +42596,7 @@ Rec: ITM_SALVE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -41309,6 +42712,7 @@ Rec: ITM_SALVES
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -41424,6 +42828,7 @@ Rec: ITM_SAUERKRAUT
 	BUFF_Resistance = -100
 	BUFF_Speed = -100
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = TRUE
 	CauseDeath = TRUE
@@ -41539,6 +42944,7 @@ Rec: ITM_SLEEPHERB
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -41654,6 +43060,7 @@ Rec: ITM_SPIKEBOMB
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -41769,6 +43176,7 @@ Rec: ITM_STONE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -41884,6 +43292,7 @@ Rec: ITM_STORMBOTTLE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -41999,6 +43408,7 @@ Rec: ITM_TRUMPCARD
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = TRUE
 	CauseDeath = FALSE
@@ -42114,6 +43524,7 @@ Rec: ITM_UBERPOTION
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -42229,6 +43640,7 @@ Rec: ITM_VIRUSBOMB
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -42344,6 +43756,7 @@ Rec: ITM_VOICEHERB
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -42459,6 +43872,7 @@ Rec: ITM_VOLTABALL
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -42574,6 +43988,7 @@ Rec: ITM_WATERBUBBLE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -42689,6 +44104,7 @@ Rec: ITM_WIZARDDUST
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -42804,6 +44220,7 @@ Rec: ITM_YASHARBERRIES
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -42919,6 +44336,7 @@ Rec: JUG_ATK1
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -43034,6 +44452,7 @@ Rec: JUG_ATK10
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -43149,6 +44568,7 @@ Rec: JUG_ATK11
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -43264,6 +44684,7 @@ Rec: JUG_ATK12
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -43379,6 +44800,7 @@ Rec: JUG_ATK2
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -43494,6 +44916,7 @@ Rec: JUG_ATK3
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -43609,6 +45032,7 @@ Rec: JUG_ATK4
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -43724,6 +45148,7 @@ Rec: JUG_ATK5
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -43839,6 +45264,7 @@ Rec: JUG_ATK6
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -43954,6 +45380,7 @@ Rec: JUG_ATK7
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -44069,6 +45496,7 @@ Rec: JUG_ATK8
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -44184,6 +45612,7 @@ Rec: JUG_ATK9
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -44299,6 +45728,7 @@ Rec: JUG_HEAL1
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -44414,6 +45844,7 @@ Rec: JUG_HEAL2
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -44529,6 +45960,7 @@ Rec: JUG_HEAL3
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -44644,6 +46076,7 @@ Rec: JUG_JUGGERNAUT
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -44759,6 +46192,7 @@ Rec: JUG_TACT1
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -44874,6 +46308,7 @@ Rec: JUG_TACT10
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -44989,6 +46424,7 @@ Rec: JUG_TACT2
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -45104,6 +46540,7 @@ Rec: JUG_TACT3
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -45219,6 +46656,7 @@ Rec: JUG_TACT4
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -45334,6 +46772,7 @@ Rec: JUG_TACT5
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = TRUE
 	CauseDeath = FALSE
@@ -45449,6 +46888,7 @@ Rec: JUG_TACT6
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -45564,6 +47004,7 @@ Rec: JUG_TACT7
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -45679,6 +47120,7 @@ Rec: JUG_TACT8
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -45794,6 +47236,7 @@ Rec: JUG_TACT9
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -45909,6 +47352,7 @@ Rec: NOS_BURN
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -46024,6 +47468,7 @@ Rec: NOS_DROWN
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -46139,6 +47584,7 @@ Rec: NOS_FREEZE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -46254,6 +47700,7 @@ Rec: NOS_FRY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -46369,6 +47816,7 @@ Rec: NOS_GET
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -46484,6 +47932,7 @@ Rec: NOS_HATE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -46599,6 +48048,7 @@ Rec: NOS_HURT
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -46714,6 +48164,7 @@ Rec: NOS_KILL
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -46829,6 +48280,7 @@ Rec: NOS_SHAKE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -46944,6 +48396,7 @@ Rec: NOS_SQUEEZE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -47059,6 +48512,7 @@ Rec: NOS_STOP
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -47174,6 +48628,7 @@ Rec: NOS_TWIST
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -47289,6 +48744,7 @@ Rec: SILLY_ONE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -47404,6 +48860,7 @@ Rec: SILLY_ONES
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -47519,6 +48976,7 @@ Rec: SPECIAL_ARMAGEDDON
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -47634,6 +49092,7 @@ Rec: SPECIAL_AXESMASH
 	BUFF_Resistance = 
 	BUFF_Speed = 
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = 
 	CauseCurse = 
 	CauseDeath = 
@@ -47749,6 +49208,7 @@ Rec: SPECIAL_GENDRABROE_COUNTER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -47864,6 +49324,7 @@ Rec: SPECIAL_NOSTRAMORPH
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -47979,6 +49440,7 @@ Rec: SPECIAL_SPIRATAKILLER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -48094,6 +49556,7 @@ Rec: SPIRATATRANSFORM
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = 
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -48209,6 +49672,7 @@ Rec: SPIRATA_ATTACK_DANDOR
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -48324,6 +49788,7 @@ Rec: SPIRATA_ATTACK_HANDOSTILLOR
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -48439,6 +49904,7 @@ Rec: SPIRATA_ATTACK_JAKE
 	BUFF_Resistance = -15
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -48554,6 +50020,7 @@ Rec: SPIRATA_ATTACK_MARRILONA
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -48669,6 +50136,7 @@ Rec: WAND_BIO
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = 
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -48784,6 +50252,7 @@ Rec: WAND_DARK
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = 
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -48899,6 +50368,7 @@ Rec: WAND_DOOM
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE
@@ -49014,6 +50484,7 @@ Rec: WAND_FLAME
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -49129,6 +50600,7 @@ Rec: WAND_FROST
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -49244,6 +50716,7 @@ Rec: WAND_GAIA
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -49359,6 +50832,7 @@ Rec: WAND_HOLY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = 
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -49474,6 +50948,7 @@ Rec: WAND_II_EVIL
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -49589,6 +51064,7 @@ Rec: WAND_II_GAIA
 	BUFF_Resistance = 0
 	BUFF_Speed = -25
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -49704,6 +51180,7 @@ Rec: WAND_II_HURRICANE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -49819,6 +51296,7 @@ Rec: WAND_II_KELVIN
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -49934,6 +51412,7 @@ Rec: WAND_II_SAINT
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -50049,6 +51528,7 @@ Rec: WAND_II_SPRINGTIJ
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -50164,6 +51644,7 @@ Rec: WAND_II_VOLCANOWAND
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -50279,6 +51760,7 @@ Rec: WAND_II_WATT
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -50394,6 +51876,7 @@ Rec: WAND_SPLASH
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -50509,6 +51992,7 @@ Rec: WAND_THUNDER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -50624,6 +52108,7 @@ Rec: WAND_TRAINING
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = 
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -50739,6 +52224,7 @@ Rec: WAND_WIND
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -50854,6 +52340,7 @@ Rec: ZZKEY_BLUESTAFF
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -50969,6 +52456,7 @@ Rec: ZZKEY_FIRE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -51084,6 +52572,7 @@ Rec: ZZKEY_GAIA
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -51199,6 +52688,7 @@ Rec: ZZKEY_KEYWATER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -51314,6 +52804,7 @@ Rec: ZZKEY_NOSTRACOIN1
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -51429,6 +52920,7 @@ Rec: ZZKEY_NOSTRACOIN2
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -51544,6 +53036,7 @@ Rec: ZZKEY_NOSTRACOIN3
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -51659,6 +53152,7 @@ Rec: ZZKEY_NOSTRACOIN4
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -51774,6 +53268,7 @@ Rec: ZZKEY_NOSTRACOIN5
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -51889,6 +53384,7 @@ Rec: ZZKEY_NOSTRACOIN6
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -52004,6 +53500,7 @@ Rec: ZZKEY_NOSTRACOIN7
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -52119,6 +53616,7 @@ Rec: ZZKEY_NOSTRACOIN8
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -52234,6 +53732,7 @@ Rec: ZZKEY_WIND
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = 
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -52349,6 +53848,7 @@ Rec: ZZZ_KRANDARARMOR
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -52464,6 +53964,7 @@ Rec: ZZZ_KRANDARBLADE
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -52579,6 +54080,7 @@ Rec: ZZ_CRYPTKEY
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
+	CauseCharmed = 
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE

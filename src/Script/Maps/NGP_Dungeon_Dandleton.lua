@@ -132,6 +132,8 @@ end
 
 -- I kill you, Feena!
 function FightNostramantu()
+    if RPG.Obj.Exists('Nostramantu')==0 then return end
+  
     PartyPop('Feena','West')
     MapText('FNOS1')
     local p = {Actors.Actor('PLAYER'),Actors.Actor('PLAYER1'),Actors.Actor('PLAYER2'),Actors.Actor('PLAYER3')}
@@ -143,7 +145,7 @@ function FightNostramantu()
         Flip()
     end
     MapText('FNOS2')
-    Party('Feenarlaria')
+    Party('Feenalaria')
     Schedule('MAP','PostNostramantu')           
     ClearCombatData()
     Var.D("$COMBAT.FOE_1","Boss/NostramantuDandleton")
@@ -160,15 +162,16 @@ function InitNostramantu()
 end
 
 function PostNostramantu()
-    Maps.Obj.Kill('Nostramantu')
-    Maps.Obj.Kill('Feenalaria')
-    Party('Jake_Human;Marrilona;Dandor;Hando_Stillor')
+    Maps.Obj.Kill('Nostramantu',1)
+    Maps.Obj.Kill('Feenalaria',1)
+    Party('Jake_Human;Marrilona;Dandor;HandoStillor')
     Actors.Actor('PLAYER').SetAlpha(1000)
     Actors.Actor('PLAYER2').SetAlpha(1000)
     Actors.Actor('PLAYER3').SetAlpha(1000)
     Maps.Obj.Obj('DeadMarrilona').SetAlpha(1000)
     MapText('FNOS3')
     Actors.Actor('PLAYER1').SetAlpha(1000)
+    Maps.Obj.Kill('DeadMarrilona',1)
     RPG.Points('Marrilona','HP') .Have=1
     RPG.Points('Marrilona','VIT').Have=0
     RPG.SetStat('Marrilona','EXP',0)

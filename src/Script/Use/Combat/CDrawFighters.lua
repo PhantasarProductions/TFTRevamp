@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 17.06.26
+  Version: 17.07.22
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -73,6 +73,13 @@ function DrawFighter(g,i)
      color ( chdata.R or 255, chdata.G or 255, chdata.B or 255)
      if flow=='playerselectsingletarget' and nextact and nextact.group==g and mx>fx-16 and mx<fx+16 and my>fy-64 and my<fy and mx~=dfomx and my~=dfomy then 
         nextact.targetidx=i
+     end
+     if upper(chdata.fidtag)=='BOSS/VANDAR' then
+        local ms = Time.MSecs()/5000
+        local r = math.ceil(math.abs(math.sin(ms+1500)*255))
+        local g = math.ceil(math.abs(math.sin(ms+3000)*255))
+        local b = math.ceil(math.abs(math.cos(ms+4500)*255))
+        color(r,g,b)
      end
      local targetted = flow=='playerselectsingletarget' and nextact and nextact.group==g and nextact.targetidx==i
      if targetted then

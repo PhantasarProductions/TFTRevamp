@@ -213,6 +213,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/combat/fighters/foe/Reg/Hawk.png
 - Hung Kee Chan
 	- Hung Kee Chan once wrote this song and gave me explicit permission to use it in my games. He never set up an open license for this, so if you plan to use this song in your own games or presentations or whatever production you can think of you will have to find a way to contact him yourself!
+		1. Music: Music/Special Boss/Darkcover.ogg
 		1. Music: Music/Special Boss/Juggernaut.ogg
 		1. Music: Music/Special Boss/Rush.ogg
 - J4p4n
@@ -657,6 +658,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/Boss/MountainKing.lua
 		1. Script: Script/JINC/Foes/Boss/Nostramantu1.lua
 		1. Script: Script/JINC/Foes/Boss/Nostramantu2.lua
+		1. Script: Script/JINC/Foes/Boss/NostramantuDandleton.lua
 		1. Script: Script/JINC/Foes/Boss/OceanMaid.lua
 		1. Script: Script/JINC/Foes/Boss/PetitRoi.lua
 		1. Script: Script/JINC/Foes/Boss/Russell.lua
@@ -670,6 +672,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Foes/Boss/Terra.lua
 		1. Script: Script/JINC/Foes/Boss/UberGob.lua
 		1. Script: Script/JINC/Foes/Boss/UltraMonk.lua
+		1. Script: Script/JINC/Foes/Boss/Vandar.lua
 		1. Script: Script/JINC/Foes/Boss/harry2.lua
 		1. Script: Script/JINC/Foes/Boss/superalien.lua
 		1. Script: Script/JINC/Foes/OverNos/Antenna_Mock.lua
@@ -821,6 +824,15 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/ABL_FOE_VENOMSTAB.lua
 		1. Script: Script/JINC/IA/ABL_FOE_VIRUSSTAB.lua
 		1. Script: Script/JINC/IA/ABL_FOE_VITALIZE_OPPONENT.lua
+		1. Script: Script/JINC/IA/ABL_FOE_V_ACCIO.lua
+		1. Script: Script/JINC/IA/ABL_FOE_V_ARRESTOMOMENTUM.lua
+		1. Script: Script/JINC/IA/ABL_FOE_V_AVADAKEDAVRA.lua
+		1. Script: Script/JINC/IA/ABL_FOE_V_BRACKIUMEMENDO.lua
+		1. Script: Script/JINC/IA/ABL_FOE_V_CRUCIO.lua
+		1. Script: Script/JINC/IA/ABL_FOE_V_FIREBOLT.lua
+		1. Script: Script/JINC/IA/ABL_FOE_V_IMPERIO.lua
+		1. Script: Script/JINC/IA/ABL_FOE_V_M.lua
+		1. Script: Script/JINC/IA/ABL_FOE_V_RICTUSEMPRA.lua
 		1. Script: Script/JINC/IA/ABL_FOE_WELCOMEINHELL.lua
 		1. Script: Script/JINC/IA/ABL_FOLLOWUP_FIKKIE.lua
 		1. Script: Script/JINC/IA/ABL_GG_DEATHSCREAM.lua
@@ -1342,6 +1354,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Use/Combat/CPossible.lua
 		1. Script: Script/Use/Combat/CVoice.lua
 		1. Script: Script/Use/Combat/Defeat/AAA_Default.lua
+		1. Script: Script/Use/Combat/Defeat/Nostramantu vs Feenalaria.lua
 		1. Script: Script/Use/Combat/DestroyAllFoes.lua
 		1. Script: Script/Use/Combat/Flow/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.lua
 		1. Script: Script/Use/Combat/Flow/Execution.lua
@@ -1746,6 +1759,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Nostramantu.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Salumon.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/SuperZombie.png
+		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Vandar.png
 		1. Graphics: GFX/Combat/Fighters/Foe/OverNos/Antenna.piko
 		1. Graphics: GFX/Combat/Fighters/Foe/OverNos/Antenna.png -alias- GFX/Combat/Fighters/Foe/OverNos/Antenna_Mock.png -alias- GFX/Combat/Fighters/Foe/OverNos/Antenna_Nice.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Devil Monk From Hell/Female1.piko

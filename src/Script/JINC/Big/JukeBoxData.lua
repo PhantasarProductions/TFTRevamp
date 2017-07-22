@@ -240,4 +240,7 @@ return {
                    Artist = "Kevin McLeod"},
      ["There is Romance"] = {
                    File = "Music/Hub/There is Romance.ogg",
-                   Artist = "Kevin McLeod"}}
+                   Artist = "Kevin McLeod"},
+     ["Darkcover"] = {
+                   File = "Music/Special Boss/Darkcover.ogg",
+                   Artist = "Hung Kee Chan"}}
