@@ -53,6 +53,7 @@ ret = {
 	["ITM_Combat"] = true,
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 2000000,
 	["ITM_Type"] = "Consumable",
 	["Rew_GainAP"] = 5,
 	["SpellAni"] = "SingleHeal",

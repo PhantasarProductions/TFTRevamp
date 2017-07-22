@@ -53,11 +53,12 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 1000000,
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
 	["Target"] = "AA",
 	["Title"] = "Leader's flag",
-	["Type"] = "Ability",
+	["Type"] = "Item",
 	["Voice"] = "Attack"}
 
 return ret

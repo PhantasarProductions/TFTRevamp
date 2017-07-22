@@ -55,6 +55,7 @@ ret = {
 	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
+	["ITM_ShopPrice"] = 65000,
 	["ITM_Type"] = "Consumable",
 	["Rew_GainAP"] = 100,
 	["SpellAni"] = "SingleHeal",
