@@ -641,6 +641,18 @@ Rec: ZZNGP_CATHEDRAL
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: ZZNGP_DEATH
+	Description = Get yourself killed by Nostramantu in Dandleton
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = FALSE
+	Show = Always
+	Title = Death Becomes Her
+	Type = Platinum
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: ZZNGP_LINKPAST
 	Description = See for yourself what happened ten thousand years go!
 	Icon = *DEFAULT*
