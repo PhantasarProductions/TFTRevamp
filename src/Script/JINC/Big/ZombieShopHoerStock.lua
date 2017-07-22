@@ -127,7 +127,7 @@ local ret = {}
 	ret[#ret+1] = { itemtag = "WAND_II_SPRINGTIJ", Title = "Springtij Wand", Price = 123000 }
 	ret[#ret+1] = { itemtag = "ITM_WATERBUBBLE", Title = "Water Bubble", Price = 100 }
 	ret[#ret+1] = { itemtag = "ITM_ANTIDOTE", Title = "Antidote", Price = 50 }
-	ret[#ret+1] = { itemtag = "ITM_EEL", Title = "Eel", Price = 100 }
+	ret[#ret+1] = { itemtag = "ITM_PURIFICATIONSHOWER", Title = "Purification Shower", Price = 2500 }
 	ret[#ret+1] = { itemtag = "EQP_JEWEL_AQUAMARINE", Title = "Aquamarine", Price = 20000 }
 	ret[#ret+1] = { itemtag = "ITM_MIRROR", Title = "Mirror", Price = 50000 }
 	ret[#ret+1] = { itemtag = "ITM_STONE", Title = "Stone", Price = 100 }
@@ -189,7 +189,7 @@ local ret = {}
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR6", Title = "Expensive Dress", Price = 4000 }
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR5", Title = "Fashionable Dress", Price = 2000 }
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR4", Title = "Sexy Dress", Price = 1000 }
-	ret[#ret+1] = { itemtag = "ITM_PURIFICATIONSHOWER", Title = "Purification Shower", Price = 2500 }
+	ret[#ret+1] = { itemtag = "ITM_EEL", Title = "Eel", Price = 100 }
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR2", Title = "Green Dress", Price = 250 }
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR1", Title = "Simple dress", Price = 125 }
 	ret[#ret+1] = { itemtag = "WAND_II_KELVIN", Title = "Kelvin's Wand", Price = 123000 }
