@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.14
+version: 17.07.22
 ]]
 
 -- abl_hero_jake_2ps = {5},abl_hero_jake_3ps={25},abl_hero_jake_4ps={50},abl_hero_jake_berserk={10,5}
@@ -84,7 +84,7 @@ if fullversion then -- That's right Marrilona will not get her level #2 and leve
                                        abl_hero_marrilona_cursedhealing = {13,13,13,13}, -- 5
                                        abl_hero_marrilona_1953 = {[1]=19;[4]=53}, --6
                                        abl_hero_marrilona_LetsHealEmAll = {[4]=({15,30,40})[skill]}, --7
-                                       abl_hero_marrilona_iceaga = {[3]=skill*25,[4]=skill*26} -- 8
+                                       abl_hero_marrilona_iceage = {[3]=skill*25,[4]=skill*26} -- 8
                      }                  
 end
 

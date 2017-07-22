@@ -1,6 +1,6 @@
 --[[
   ManaCave.lua
-  Version: 17.06.28
+  Version: 17.07.22
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -50,8 +50,8 @@ function AltArena.ManaCave.Before()
     --local plasma = ManaCavePlasma
     ManaCavePlasma.initiated = ManaCavePlasma.initiated or (function (plasma)
       --plasma.textures = {'gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png','gfx/Textures/Plasma/TiledPlasma.png'}
-      plasma.colors = { {180,0,0}, {0,180,0}, {0,0,180},{180,0,0}, {0,180,0}, {0,0,180}}
-      plasma.speed = {{1,0},{0,1},{-1,-1},{-1,0},{0,-1},{1,1}}
+      plasma.colors = { {180,0,0}, {0,100,0}, {0,0,180},{180,0,0}, {0,100,0}, {0,0,180}}
+      plasma.speed = {{1,0},{0,1},{-2,0},{-1,0},{0,-1},{0,2}}
       plasma.x = {}
       plasma.y = {}
       for i=1,#plasma.colors do
