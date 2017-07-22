@@ -1249,6 +1249,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/Shops/ITEM_KATINTA.lua
 		1. Script: Script/JINC/Shops/ITEM_NECRODIA.lua
 		1. Script: Script/JINC/Shops/ITEM_WANDA.lua
+		1. Script: Script/JINC/Shops/NGP_COLPORTARUS.lua
 		1. Script: Script/JINC/Shops/NGP_WANINDRA.lua
 		1. Script: Script/JINC/Shops/WAND_MONIQUE.lua
 		1. Script: Script/JINC/Shops/WAND_YLLABONJA.lua

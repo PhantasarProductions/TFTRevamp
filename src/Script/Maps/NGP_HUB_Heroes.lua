@@ -60,7 +60,7 @@ end
     
 function NPC_Colportarus()
     MapText('COLPORTARUS')
-    Shop('NGP_COPORTARUS')
+    Shop('NGP_COLPORTARUS')
 end
 
 function GALE_OnLoad()
