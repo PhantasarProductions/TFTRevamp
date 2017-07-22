@@ -51,12 +51,13 @@ function ToHallHeroes(name,achkey,wmap)
    Award('ZZNGP_'..upper(achkey))
    CSay('Do we got them all?')
    local c = 0
+   local realheroes = {Zyviola=true,SymphoNica=true,Wanindra=true,Colportarus=true}
    for k,b in spairs(heroes) do
-       CSay('= Achievement check '..k..' > '..sval(b))
-       if b then c=c+1 end
+       CSay('= Achievement check '..k..' > '..sval(b).." < real: "..sval(realheroes[k]).." type:"..type(b))
+       if b and realheroes[k] then c=c+1 end
    end
    CSay(c.." representatives found")
-   if c==4 then Award('ZZNGP_ALLHEROES') end
+   if c==4 then Award('ZZNGP_ALL') end
    WorldMap(wmap or 'Delisto')
    WorldMap_Unlock('NGPHEROES')
 end

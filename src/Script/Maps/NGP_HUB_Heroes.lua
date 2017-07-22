@@ -58,6 +58,10 @@ function NPC_Wanindra()
     Shop('NGP_WANINDRA')
 end
     
+function NPC_Colportarus()
+    MapText('COLPORTARUS')
+    Shop('NGP_COPORTARUS')
+end
 
 function GALE_OnLoad()
    local gh = loadstring(Var.C('$HALLOFHEROES.PEOPLE').."\n return ret")
