@@ -395,7 +395,7 @@ Rec: NGPHEROES
 Rec: NGPKOKO
 	Dungeon = TRUE
 	Folder = Kokonora
-	Kthura = 
+	Kthura = NGP_Dungeon_KokoBushes
 	Layer = bush
 	LocationName = Koko Bushes
 	LocationPrefix = 
