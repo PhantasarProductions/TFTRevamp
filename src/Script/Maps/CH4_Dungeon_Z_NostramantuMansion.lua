@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.29
+version: 17.07.22
 ]]
 
 --[[
@@ -149,6 +149,9 @@ function NPC_Nostramantu()
 end   
 
 function PostFinalBoss()
+    Award('SKILL'..skill)
+    Award('CHAPTER4')
+    if newgameplus then Award('CHAPTER4_NGP') end
     LoadMap('CH4_DUNGEON_MANAROAD')
     GoToLayer('bos','Einde')
     PartyPop('Eind','North')
