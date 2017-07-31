@@ -1136,6 +1136,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/ITM_SPIKEBOMB.lua
 		1. Script: Script/JINC/IA/ITM_STONE.lua
 		1. Script: Script/JINC/IA/ITM_STORMBOTTLE.lua
+		1. Script: Script/JINC/IA/ITM_TONSBANANAS.lua
 		1. Script: Script/JINC/IA/ITM_TOTALEXHAUSTION.lua
 		1. Script: Script/JINC/IA/ITM_TRUMPCARD.lua
 		1. Script: Script/JINC/IA/ITM_UBERPOTION.lua

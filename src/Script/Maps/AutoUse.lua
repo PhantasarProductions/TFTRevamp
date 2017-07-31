@@ -1,6 +1,6 @@
 --[[
   AutoUse.lua
-  Version: 17.07.19
+  Version: 17.07.31
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -285,7 +285,7 @@ function JuggernautAward()
 end
 
 function BlackOrb(tag)
-  if PartyTag(0)=='Nostramantu_Human' then return SerialBoxText("ITEM","BLACKORB_NOT_FOR_NOS","FLOW_FIELD") end
+  if RPG.PartyTag(0)=='Nostramantu_Human' then return SerialBoxText("ITEM","BLACKORB_NOT_FOR_NOS","FLOW_FIELD") end
   inc('%ORBS')
   if CVV('%ORBS')==1 then
      MapText('TUTORIAL_BLACKORB')
