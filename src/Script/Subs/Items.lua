@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.07.21
+  Version: 17.07.31
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -422,7 +422,7 @@ function ItemShowList(showfilter,enablefilter,char,psizes)
        c = col[enableditems[showfilter..(char or "")][itm]==true][pos[scrollid]==idx]
        --CSay(itm..">> Enabled:"..sval(enableditems[itm]).." pos:" .. pos[scrollid].. " idx:"..idx)
        SetFont('ItemName') 
-       DarkText(items[itm].Title,25,y,0,0,c[1],c[2],c[3])
+       DarkText(Var.S(items[itm].Title),25,y,0,0,c[1],c[2],c[3])
        SetFont('ItemAmm')
        DarkText(inventory[itm],sizes[3]-25,y,1,0,c[1],c[2],c[3])
        if showfilter=="Sellable" then DarkText(items[itm].ITM_SellPrice.." shilders",Sys.Val(sizes[3])*.75,y,1,0,0,180,255) end

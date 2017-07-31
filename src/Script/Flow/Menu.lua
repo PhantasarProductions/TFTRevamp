@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 17.07.15
+  Version: 17.07.31
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -425,7 +425,7 @@ function features.Buy(x,y,w,h)
              mix=20
              DarkText(item.Desc,w/2,40,2,0,180,255,0) 
           end
-          DarkText(item.Title,mix,iy,0,0,255,255,255)
+          DarkText(Var.S(item.Title),mix,iy,0,0,255,255,255)
           SetFont('ShopNumber')
           DarkText((item.ITM_ShopPrice or "ERROR").." shilders",w-50,iy,1,0,255,180,0)
           DarkText(ItemHave(Shop['Slot'..i]),w/2,iy,1,0,0,180,255)
