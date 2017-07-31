@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.18
+version: 17.07.31
 ]]
 
 function GoNext()
@@ -120,7 +120,7 @@ function MAIN_FLOW()
      end
   else
     story.nexttime = story.nexttime - 1
-    if story.nexttime<0     and VoiceOver() then
+    if (story.nexttime<0     and VoiceOver()) or INP.KeyH(32)==1 or INP.KeyH(13)==1 or INP.MouseH(1)==1 then
        story.id = story.id + 1
        story.char = 1
        story.line = 1
@@ -128,6 +128,7 @@ function MAIN_FLOW()
        if story.id>#story.data then return GoNext() end
        calc(story)  
     end
+    if INP.KeyH(27)==1 or INP.MouseH(2)==1 then return GoNext() end
   end     
   -- Flip
   Flip()
