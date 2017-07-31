@@ -429,12 +429,12 @@ function ItemShowList(showfilter,enablefilter,char,psizes)
        ScrollMax(scrollid,y+50)
    end
    EndScroller(scrollid)
-   if (INP.KeyH(KEY_DOWN)==1 or joyhit(joy_down) or mousehit(1)) and pos[scrollid]<#showitems[showfilter..(char or "")]  then pos[scrollid] = pos[scrollid] + 1 end 
-   if (INP.KeyH(KEY_UP  )==1 or joyhit(joy_up  ) or mousehit(1)) and pos[scrollid]>                                   1  then pos[scrollid] = pos[scrollid] - 1 end 
-   if (INP.KeyH(KEY_SPACE)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_ENTER)==1 or joyhit('CONFIRM')) then 
+   if (INP.KeyH(KEY_SPACE)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_ENTER)==1 or joyhit('CONFIRM') or mousehit(1)) then 
       Var.D("$SELECTEDITEM",showitems[showfilter..(char or "")][pos[scrollid]])
       CSay("Selected: "..Var.C('$SELECTEDITEM')) 
    end
+   if (INP.KeyH(KEY_DOWN)==1 or joyhit(joy_down) ) and pos[scrollid]<#showitems[showfilter..(char or "")]  then pos[scrollid] = pos[scrollid] + 1 end 
+   if (INP.KeyH(KEY_UP  )==1 or joyhit(joy_up  ) ) and pos[scrollid]>                                   1  then pos[scrollid] = pos[scrollid] - 1 end 
 end
 
 function RemoveItem(item,num)
