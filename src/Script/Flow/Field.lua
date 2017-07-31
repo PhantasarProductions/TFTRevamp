@@ -1,6 +1,6 @@
 --[[
   Field.lua
-  Version: 17.07.08
+  Version: 17.07.31
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -160,6 +160,7 @@ function NewGamePlusRemoval()
        CSay("Removing New Game+ objects")
        local layers,orilayer = ({ [0]=function() return {'SL:MAP'},nil end, [1]=function () return mysplit(Maps.Layers(),";"),Maps.LayerCodeName end})[Maps.Multi()]()       
        for layer in each(layers) do
+           Maps.GoToLayer(layer)
            local ri = 0 
            local removal = {}
            CSay("NGP-Cleaning: "..layer)
@@ -175,6 +176,7 @@ function NewGamePlusRemoval()
                CSay("= Removed NewGame+ object: "..k) 
            end
        end    
+       Maps.GoToLayer(orilayer)
     end            
 end
 
