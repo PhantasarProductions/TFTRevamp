@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.07.31
+  Version: 17.08.01
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -379,7 +379,7 @@ function CombatTeach(ch)
 end
 
 function ItemShowList(showfilter,enablefilter,char,psizes)
-   local sizes = ({['table']=psizes, ['string']=mysplit(psizes,",") })[type(psizes)]
+   local sizes = ({['table']=psizes, ['string']=mysplit(psizes,",") })[type(psizes)] for i=1,#sizes do sizes[i]=tonumber(sizes[i]) or 0 end 
    local mx,my = GetMouse(); my=my-sizes[2]-30 -- mx=sizes[1]+mx; 
    local scrollid = "I_"..showfilter.."_"..enablefilter.."_"..char
    local col = {[true] = {[true]={255,180,0},[false]={255,255,255}},
@@ -411,7 +411,7 @@ function ItemShowList(showfilter,enablefilter,char,psizes)
              if y-scrollers[scrollid].down<0 then scrollers[scrollid].down=scrollers[scrollid].down - 2 
              elseif y-scrollers[scrollid].down>scrollers[scrollid].h-50 then scrollers[scrollid].down = scrollers[scrollid].down + 2 end
        end       
-       if moved and mx>Sys.Val(sizes[1]) and mx<Sys.Val(sizes[3])+Sys.Val(sizes[1]) and my+scrollers[scrollid].down>y and my+scrollers[scrollid].down<y+25 then pos[scrollid]=idx end
+       if moved and mx>Sys.Val(sizes[1]) and mx<Sys.Val(sizes[3])+Sys.Val(sizes[1]) and my+scrollers[scrollid].down>y and my+scrollers[scrollid].down<y+25 and my<sizes[4] then pos[scrollid]=idx end
        if mx>0 and mx<tonumber(sizes[3]) and my+scrollers[scrollid].down>=y and my+scrollers[scrollid].down<=y-24 and INP.MouseH(1)==1 then
           if y==pos[scrollid] then
              Var.D("$SELECTEDITEM",itm)
@@ -429,7 +429,7 @@ function ItemShowList(showfilter,enablefilter,char,psizes)
        ScrollMax(scrollid,y+50)
    end
    EndScroller(scrollid)
-   if (INP.KeyH(KEY_SPACE)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_ENTER)==1 or joyhit('CONFIRM') or mousehit(1)) then 
+   if INP.KeyH(KEY_SPACE)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_ENTER)==1 or joyhit('CONFIRM') or (mousehit(1) and mx>sizes[1] and mx<(sizes[1]+sizes[3])-40 and  my<sizes[4]) then 
       Var.D("$SELECTEDITEM",showitems[showfilter..(char or "")][pos[scrollid]])
       CSay("Selected: "..Var.C('$SELECTEDITEM')) 
    end
