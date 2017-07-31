@@ -2,7 +2,7 @@
 **********************************************
   
   EndOfPrologue.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.12.02
+version: 17.07.31
 ]]
 
 chars = {'Jake','Marrilona','Dandor','HandoStillor'}
@@ -58,7 +58,7 @@ function EndOfPrologue(char)
 end
 
 function RandomJakeMarrilona()
-  local choices = {'Jake'} --,'Marrilona'}
+  local choices = {'Jake','Marrilona'}
   local chartag = { Jake = 'Jake_Human',Marrilona='Marrilona' }
   local chosen  = choices[rand(1,#choices)]
   Party(chartag[chosen])

@@ -1,6 +1,6 @@
 --[[
   ITM_LEADERFLAG.lua
-  Version: 17.07.22
+  Version: 17.07.31
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
