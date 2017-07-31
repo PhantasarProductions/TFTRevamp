@@ -2,7 +2,7 @@
 **********************************************
   
   StartGame.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 16.09.12
+version: 17.07.31
 ]]
 
 
@@ -70,6 +70,7 @@ function NextStage()
 end
 
 function MAIN_FLOW()
+  local altsize = 50
   white()
   -- Earth in space  
   Image.Tile(sterretjes)
@@ -98,7 +99,7 @@ function MAIN_FLOW()
      Image.Show(bos)
   end   
   -- Hando Stillor's story
-  Image.Font("Fonts/master_of_break.ttf",45)
+  Image.Font("Fonts/master_of_break.ttf",altsize or 45)
   stillor = stillor or {}
   stillor.fragment = stillor.fragment or 0
   stillor.timer    = stillor.timer or 500
@@ -116,6 +117,7 @@ function MAIN_FLOW()
       stillor.text  = stillorstory[stillor.fragment].Lines
       stillor.textheight = Image.TextHeight('t')
       stillor.height = 0
+      altsize=nil
       for t in each(stillor.text) do 
           stillor.timer = stillor.timer + (25*#t)
           stillor.height = stillor.height + stillor.textheight
@@ -133,6 +135,10 @@ function MAIN_FLOW()
       end    
   end 
   for i,t in ipairs(stillor.text) do
+      while Image.TextWidth(Var.S(t))+50>(tonumber(SW) or 800) do
+            altsize=(altsize or 45)-1 
+            Image.Font("Fonts/master_of_break.ttf",altsize)
+      end
       DarkText(Var.S(t),Center_X,stillor.starty+(i*stillor.textheight),2,2,180,255,0)
   end  
   if INP.KeyH(KEY_ESCAPE)==1 or INP.MouseH(1)==1 then 

@@ -1,6 +1,6 @@
 --[[
   ZombieShopHoerStock.lua
-  Version: 17.07.27
+  Version: 17.07.31
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -68,6 +68,7 @@ local ret = {}
 	ret[#ret+1] = { itemtag = "ITM_HEALSHOWER", Title = "Healing Shower", Price = 1000 }
 	ret[#ret+1] = { itemtag = "EQP_DANDOR_WP10", Title = "Ruining Axe", Price = 1024000 }
 	ret[#ret+1] = { itemtag = "ITM_ICICLE", Title = "Icicle", Price = 250 }
+	ret[#ret+1] = { itemtag = "ITM_PURIFICATIONSHOWER", Title = "Purification Shower", Price = 2500 }
 	ret[#ret+1] = { itemtag = "WAND_GAIA", Title = "Gaia Wand", Price = 250 }
 	ret[#ret+1] = { itemtag = "EQP_HANDOSTILLOR_WP10", Title = "Death Staff", Price = 153600 }
 	ret[#ret+1] = { itemtag = "ITM_SLEEPHERB", Title = "Sleep Herb", Price = 150 }
@@ -125,7 +126,7 @@ local ret = {}
 	ret[#ret+1] = { itemtag = "ITM_WATERBUBBLE", Title = "Water Bubble", Price = 100 }
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR6", Title = "Expensive Dress", Price = 4000 }
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR4", Title = "Sexy Dress", Price = 1000 }
-	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR3", Title = "Cotton Dress", Price = 500 }
+	ret[#ret+1] = { itemtag = "ITM_EEL", Title = "Eel", Price = 100 }
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR2", Title = "Green Dress", Price = 250 }
 	ret[#ret+1] = { itemtag = "EQP_JEWEL_AQUAMARINE", Title = "Aquamarine", Price = 20000 }
 	ret[#ret+1] = { itemtag = "ITM_MIRROR", Title = "Mirror", Price = 50000 }
@@ -177,7 +178,6 @@ local ret = {}
 	ret[#ret+1] = { itemtag = "ITM_ANABOLINEA", Title = "Anabolinia", Price = 1000000 }
 	ret[#ret+1] = { itemtag = "ITM_DAMNEDDUST", Title = "Damned Dust", Price = 125 }
 	ret[#ret+1] = { itemtag = "ITM_MULTIPHOENIX", Title = "Multi Phoenix", Price = 1000 }
-	ret[#ret+1] = { itemtag = "ITM_EEL", Title = "Eel", Price = 100 }
 	ret[#ret+1] = { itemtag = "ITM_VOICEHERB", Title = "Voice Herb", Price = 50 }
 	ret[#ret+1] = { itemtag = "ITM_TRUMPCARD", Title = "Trump Card", Price = 666 }
 	ret[#ret+1] = { itemtag = "EQP_HANDOSTILLOR_WP8", Title = "Diamond staff with mythril coating", Price = 38400 }
@@ -190,7 +190,7 @@ local ret = {}
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR7", Title = "Hiss Dress", Price = 8000 }
 	ret[#ret+1] = { itemtag = "ITM_ANTIDOTE", Title = "Antidote", Price = 50 }
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR5", Title = "Fashionable Dress", Price = 2000 }
-	ret[#ret+1] = { itemtag = "ITM_PURIFICATIONSHOWER", Title = "Purification Shower", Price = 2500 }
+	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR3", Title = "Cotton Dress", Price = 500 }
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR1", Title = "Simple dress", Price = 125 }
 	ret[#ret+1] = { itemtag = "WAND_II_KELVIN", Title = "Kelvin's Wand", Price = 123000 }
 	ret[#ret+1] = { itemtag = "EQP_DANDOR_WP1", Title = "Axe", Price = 2000 }
