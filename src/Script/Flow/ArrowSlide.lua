@@ -46,7 +46,11 @@ APLAY  = nil
 Field  = nil
 Play   = {x=0,y=0}
 
-function DrawScreen() MS.Run("FIELD","DrawScreen") end
+-- function DrawScreen() MS.Run("FIELD","DrawScreen") end
+function DrawScreen()
+  Cls()
+  Maps.Draw()
+end  
 
 
 function GALE_OnLoad()
@@ -54,7 +58,24 @@ function GALE_OnLoad()
   WASDKeys = {Up=KEY_W,Down=KEY_S,Right=KEY_D,Left=KEY_A}
   Joy = {Up=joy_up,Down=joy_down,Right=joy_right,Left=joy_left}
   AWIND = {Up='North',Down='South',Right='East',Left='West'}
+  Buttons = {Up={c={32,0}, p='UP'}, Down={c={32,64}, p='DN'}, Left={c={0,32},p='LF'}, Right={c={64,32}, p='RT'}} 
+  iButtons={}
+  for bk,bt in pairs(Buttons) do iButtons[#iButtons+1]=bt end
+  local ButtOfs= {32,Screen.Height()-200}
+  for b in each(iButtons) do
+      b.img = Image.Load('GFX/Textures/EarthPuzzle/AR_'..b.p..".png")
+      b.x=b.c[1]+ButtOfs[1]
+      b.y=b.c[2]+ButtOfs[2]
+  end
+  CSay(serialize('Buttons',Buttons))
+  CSay(serialize('iButtons',iButtons))      
 end
+
+function DestroyPics()
+  for b in each(Buttons) do
+      Image.Free(b.img)
+  end
+end      
 
 function PlayBlock(x,y)
     -- return Maps.Block(x,y)>0
@@ -121,7 +142,7 @@ function PlayGo(x,y,d)
    ok = ok and (not PlayBlock(tpx,tpy))
    ok = ok and APLAY.Moving==0 and APLAY.Walking==0 
    for block in each(Blocks) do ok = ok and (not block.moving) end
-   ok = ok and (INP.KeyH(ArrowKeys[d])==1 or INP.KeyH(WASDKeys[d])==1 or joyhit(Joy[d]))
+   ok = ok and (INP.KeyH(ArrowKeys[d])==1 or INP.KeyH(WASDKeys[d])==1 or joyhit(Joy[d]) or Buttons[d].clicked)
    if ok then 
       Play.x=tpx
       Play.y=tpy
@@ -238,6 +259,7 @@ function Forfeit()
        Actors.Actor("PLAYER2").SetAlpha(1000)
        Actors.Actor("PLAYER3").SetAlpha(1000)
        LAURA.FLOW("FIELD")
+       DestroyPics()
        MS.Destroy("CRACKPUZ")
        return true
     end
@@ -272,6 +294,7 @@ function Goal()
        Maps.ObjectList.KillByLabel("Puzzle",1)
        Maps.ReMap()
        LAURA.FLOW("FIELD")
+       DestroyPics()
        MS.Destroy("CRACKPUZ")   
        return true                   
 end
@@ -286,8 +309,24 @@ end
 
 function MAIN_FLOW()
    Cls()
-   MS.Run("FIELD","DrawScreen")
+   DrawScreen() --MS.Run("FIELD","DrawScreen")
    MS.Run("MAP","MAP_FLOW")
+   --Box(0,0,160,160)
+   local mx,my = MouseCoords()
+   Image.SetAlphaPC(100)
+   white()
+   local mhit = mousehit(1)
+   local dbgy = 200
+   -- --[[
+   for b in each(iButtons) do
+       -- CSay(serialize('button',b))
+       -- DarkText(serialize(b.p,b),5,dbgy); dbgy=dbgy+25
+       Image.Show(b.img,b.x,b.y)
+       b.clicked = mhit and mx>=b.x and mx<b.x+32 and my>=b.y and my<b.y+32
+   end    
+   -- DarkText(mx..","..my,20,dbgy)
+   --]]
+   ShowMouse()
    local yeahyeah = Forfeit() or Goal() 
    BlockMoveExec()
    AutoScroll()
