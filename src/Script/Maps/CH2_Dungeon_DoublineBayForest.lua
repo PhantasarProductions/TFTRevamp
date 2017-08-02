@@ -58,7 +58,7 @@ function NPC_Russell()
    Master("Russell")
 end   
 
-function NPC_Elisabeth()
+function NPC_Elizabeth()
    MapText('BETH')
 end
 
