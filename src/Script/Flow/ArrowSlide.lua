@@ -1,6 +1,6 @@
 --[[
   ArrowSlide.lua
-  Version: 17.04.04
+  Version: 17.08.02
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -52,6 +52,7 @@ function DrawScreen() MS.Run("FIELD","DrawScreen") end
 function GALE_OnLoad()
   ArrowKeys = {Up=KEY_UP,Down=KEY_DOWN,Right=KEY_RIGHT,Left=KEY_LEFT}
   WASDKeys = {Up=KEY_W,Down=KEY_S,Right=KEY_D,Left=KEY_A}
+  Joy = {Up=joy_up,Down=joy_down,Right=joy_right,Left=joy_left}
   AWIND = {Up='North',Down='South',Right='East',Left='West'}
 end
 
@@ -120,7 +121,7 @@ function PlayGo(x,y,d)
    ok = ok and (not PlayBlock(tpx,tpy))
    ok = ok and APLAY.Moving==0 and APLAY.Walking==0 
    for block in each(Blocks) do ok = ok and (not block.moving) end
-   ok = ok and (INP.KeyH(ArrowKeys[d])==1 or INP.KeyH(WASDKeys[d])==1)
+   ok = ok and (INP.KeyH(ArrowKeys[d])==1 or INP.KeyH(WASDKeys[d])==1 or joyhit(Joy[d]))
    if ok then 
       Play.x=tpx
       Play.y=tpy
