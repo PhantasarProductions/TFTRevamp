@@ -1,5 +1,5 @@
 --[[
-  ABL_FOE_EXHAUST.lua
+  Beaufort.lua
   Version: 17.08.02
   Copyright (C) 2017 Jeroen Petrus Broks
   
@@ -34,35 +34,41 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-ret = {
-	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 5,
-	["ADDCARD_Char_Interval"] = 5,
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["Desc"] = "AP to 0",
-	["EffectScript"] = "APNUL",
-	["EffectScript_Arg"] = "Exhausted",
-	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Absolute",
-	["ITM_ACC_Dandor"] = true,
-	["ITM_ACC_HandoStillor"] = true,
-	["ITM_ACC_Jake"] = true,
-	["ITM_ACC_Marrilona"] = true,
-	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
-	["ITM_Field"] = true,
-	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "SingleHeal",
-	["Stance"] = "Cast",
-	["Target"] = "1F",
-	["Title"] = "Exhaustion",
-	["Type"] = "Ability"}
+-- @IF IGNORE
+local SpellAni = {}
+-- @FI
 
-return ret
 
--- This file is an automatically generated file!
+function SpellAni.Hurricane(actG,actT,tarG,tarT)
+    local wind = Image.Load('GFX/Textures/4 Elements/Wind.png'); Image.HotCenter(wind)
+    local b,e,s
+    if tarG=='Foe' then b=1000 e=-1000 s=-10 else b=-1000 e=1000 s=10 end
+    for i=b,e,s do 
+        local sc = (math.sin(Time.MSecs()/2)*50)+75
+        DrawScreen()
+        Image.ScalePC(sc,sc)
+        Image.Show(wind,i,Screen.Height()/2)
+        Image.ScalePC(100,100)
+        Flip()
+    end
+    Image.Free(wind)
+end  
 
+function SpellAni.Wind(ag,at,tg,tt)
+    local wind = Image.Load('GFX/Textures/4 Elements/Wind.png'); Image.Hot(wind,Image.Width(wind)/2,Image.Height(wind))
+    local x,y = FighterCoords(tg,tt)
+    local b,e,s = 0,250,1
+    for i=b,e,s do 
+        local sc = (math.sin(Time.MSecs()/2)*25)+50
+        DrawScreen()
+        Image.ScalePC(sc,sc)
+        Image.Show(wind,x,y)
+        Image.ScalePC(100,100)
+        Flip()
+    end
+    Image.Free(wind)
+end
+
+-- @IF IGNORE
+return SpellAni
+-- @GI

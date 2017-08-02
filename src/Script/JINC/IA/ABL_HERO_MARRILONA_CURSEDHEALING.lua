@@ -74,6 +74,7 @@ ret = {
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
 	["Rew_GainAP"] = 25,
+	["SpellAni"] = "SingleHeal",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
 	["Title"] = "Cursed Healing",

@@ -870,6 +870,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/ABL_HERO_JAKE_3PS.lua
 		1. Script: Script/JINC/IA/ABL_HERO_JAKE_4PS.lua
 		1. Script: Script/JINC/IA/ABL_HERO_JAKE_BERSERK.lua
+		1. Script: Script/JINC/IA/ABL_HERO_JAKE_CLEAVE.lua
 		1. Script: Script/JINC/IA/ABL_HERO_JAKE_DEATHSTRIKE.lua
 		1. Script: Script/JINC/IA/ABL_HERO_JAKE_EARTHSLICE.lua
 		1. Script: Script/JINC/IA/ABL_HERO_JAKE_FLAMEBLADE.lua
@@ -1385,6 +1386,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Use/Combat/SpellAni/AAAAAA___Algemeen.lua
 		1. Script: Script/Use/Combat/SpellAni/Aqua.lua
 		1. Script: Script/Use/Combat/SpellAni/Audio.lua
+		1. Script: Script/Use/Combat/SpellAni/Beaufort.lua
 		1. Script: Script/Use/Combat/SpellAni/DarkVision.lua
 		1. Script: Script/Use/Combat/SpellAni/Donald Trump.lua
 		1. Script: Script/Use/Combat/SpellAni/Flame.lua

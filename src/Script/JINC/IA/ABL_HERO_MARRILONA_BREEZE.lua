@@ -60,6 +60,7 @@ ret = {
 	["ITM_ShopPrice"] = 250,
 	["ITM_Type"] = "Weapon",
 	["ITM_WeaponAbility"] = true,
+	["SpellAni"] = "Wind",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
 	["Title"] = "Breeze",
