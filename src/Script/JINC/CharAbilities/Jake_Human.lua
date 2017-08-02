@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.10
+version: 17.08.02
 ]]
 
 local fullversion = JCR6.Exists('ID/ID.Data.Full')==1
@@ -41,7 +41,12 @@ local newgameplus = Var.C("&NEWGAMEPLUS")=="TRUE"
 
 
 local r = {
-                 ["1. Sword"]  = {abl_hero_jake_2ps = {5},abl_hero_jake_3ps={20},abl_hero_jake_4ps={40},abl_hero_jake_berserk={10,5},ABL_HERO_JAKE_SHIFT_FAIRY={[2]=99,[3]=99,[4]=99,[5]=99}},
+                 ["1. Sword"]  = {abl_hero_jake_2ps = {5},
+                                  abl_hero_jake_3ps={20},
+                                  abl_hero_jake_4ps={40},
+                                  abl_hero_jake_cleave={9*skill,3,3,3,3},
+                              --  abl_hero_jake_berserk={10,5},
+                                  ABL_HERO_JAKE_SHIFT_FAIRY={[2]=99,[3]=99,[4]=99,[5]=99}},
                  ["2. Hybrid"] = {abl_hero_jake_healblade = {[1]=30,[4]=15,[5]=15},abl_foe_paradive={15,10,10},abl_hero_jake_flameblade={8,2*skill},
                                   abl_hero_jake_earthslice = {[1]=10+(skill^2),[5]=skill*15},abl_hero_jake_windstrike={[1]=27,[3]=23}}
 

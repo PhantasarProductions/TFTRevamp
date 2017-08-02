@@ -1,6 +1,6 @@
 --[[
   COCYTUS_JUDECCA.lua
-  Version: 17.07.31
+  Version: 17.08.02
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

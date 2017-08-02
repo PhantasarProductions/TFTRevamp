@@ -1,6 +1,6 @@
 --[[
   ITM_PURELITERATURE.lua
-  Version: 17.07.31
+  Version: 17.08.02
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
