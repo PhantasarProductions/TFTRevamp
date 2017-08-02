@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.08.01
+version: 17.08.02
 ]]
 Image.GetViewport()
 local mx,my,mw,mh = Image.GVP_X, Image.GVP_Y, Image.GVP_W, Image.GVP_H
@@ -44,103 +44,102 @@ ret = {
         ['00000050'] = { txt = 'Audio', r=255,g=0,b=0, y=mh+80 }, -- Audio
         ['00000064'] = { txt = 'Alexander', r=0,g=180,b=255, y=mh+100 },
         ['00000078'] = { txt = 'Benboncan', r=0,g=180,b=255, y=mh+120 },
-        ['0000008C'] = { txt = 'Donald Trump', r=0,g=180,b=255, y=mh+140 },
-        ['000000A0'] = { txt = 'GR-Sites', r=0,g=180,b=255, y=mh+160 },
-        ['000000B4'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+180 },
-        ['000000C8'] = { txt = 'ProductionNow', r=0,g=180,b=255, y=mh+200 },
-        ['000000DC'] = { txt = 'TFTCREW', r=0,g=180,b=255, y=mh+220 },
-        ['000000F0'] = { txt = 'Varazuvi(TM)', r=0,g=180,b=255, y=mh+240 },
-        ['00000104'] = { txt = 'Widzy', r=0,g=180,b=255, y=mh+260 },
-        ['00000118'] = { txt = 'http://www.freesfx.co.uk', r=0,g=180,b=255, y=mh+280 },
-        ['00000140'] = { txt = 'Development documentation', r=255,g=0,b=0, y=mh+320 }, -- Development documentation
-        ['00000154'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+340 },
-        ['0000017C'] = { txt = 'Font', r=255,g=0,b=0, y=mh+380 }, -- Font
-        ['00000190'] = { txt = 'Benjamin Koehler', r=0,g=180,b=255, y=mh+400 },
-        ['000001A4'] = { txt = 'Dieter Steffmann', r=0,g=180,b=255, y=mh+420 },
-        ['000001B8'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+440 },
-        ['000001CC'] = { txt = 'Ray Larabie', r=0,g=180,b=255, y=mh+460 },
-        ['000001E0'] = { txt = 'SterioType', r=0,g=180,b=255, y=mh+480 },
-        ['000001F4'] = { txt = 'William Boyd', r=0,g=180,b=255, y=mh+500 },
-        ['0000021C'] = { txt = 'Game identification data', r=255,g=0,b=0, y=mh+540 }, -- Game identification data
-        ['00000230'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+560 },
-        ['00000258'] = { txt = 'General Data', r=255,g=0,b=0, y=mh+600 }, -- General Data
-        ['0000026C'] = { txt = '', r=0,g=180,b=255, y=mh+620 },
-        ['00000280'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+640 },
-        ['00000294'] = { txt = 'Man Of Steel', r=0,g=180,b=255, y=mh+660 },
-        ['000002A8'] = { txt = 'TFTCREW', r=0,g=180,b=255, y=mh+680 },
-        ['000002BC'] = { txt = 'Unknown artist from the Public Domain', r=0,g=180,b=255, y=mh+700 },
-        ['000002E4'] = { txt = 'Graphics', r=255,g=0,b=0, y=mh+740 }, -- Graphics
-        ['000002F8'] = { txt = 'Aeris', r=0,g=180,b=255, y=mh+760 },
-        ['0000030C'] = { txt = 'Angela Nagtzaam', r=0,g=180,b=255, y=mh+780 },
-        ['00000320'] = { txt = 'Angela Nagtzaam & Jeroen P. Broks', r=0,g=180,b=255, y=mh+800 },
-        ['00000334'] = { txt = 'Ed Kasap', r=0,g=180,b=255, y=mh+820 },
-        ['00000348'] = { txt = 'Firkin', r=0,g=180,b=255, y=mh+840 },
-        ['0000035C'] = { txt = 'GDJ', r=0,g=180,b=255, y=mh+860 },
-        ['00000370'] = { txt = 'GR-Sites', r=0,g=180,b=255, y=mh+880 },
-        ['00000384'] = { txt = 'Helm42', r=0,g=180,b=255, y=mh+900 },
-        ['00000398'] = { txt = 'Holly', r=0,g=180,b=255, y=mh+920 },
-        ['000003AC'] = { txt = 'J4p4n', r=0,g=180,b=255, y=mh+940 },
-        ['000003C0'] = { txt = 'JWH Broeders', r=0,g=180,b=255, y=mh+960 },
-        ['000003D4'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+980 },
-        ['000003E8'] = { txt = 'Kelly', r=0,g=180,b=255, y=mh+1000 },
-        ['000003FC'] = { txt = 'Kuba', r=0,g=180,b=255, y=mh+1020 },
-        ['00000410'] = { txt = 'Man Of Steel', r=0,g=180,b=255, y=mh+1040 },
-        ['00000424'] = { txt = 'Merlin2525', r=0,g=180,b=255, y=mh+1060 },
-        ['00000438'] = { txt = 'Michael Frank', r=0,g=180,b=255, y=mh+1080 },
-        ['0000044C'] = { txt = 'Papapishu', r=0,g=180,b=255, y=mh+1100 },
-        ['00000460'] = { txt = 'Rambo Tribble', r=0,g=180,b=255, y=mh+1120 },
-        ['00000474'] = { txt = 'Roana', r=0,g=180,b=255, y=mh+1140 },
-        ['00000488'] = { txt = 'Solar Granulation', r=0,g=180,b=255, y=mh+1160 },
-        ['0000049C'] = { txt = 'Unknown artist from the Public Domain', r=0,g=180,b=255, y=mh+1180 },
-        ['000004B0'] = { txt = 'Yannee\'s artist', r=0,g=180,b=255, y=mh+1200 },
-        ['000004C4'] = { txt = 'anarres', r=0,g=180,b=255, y=mh+1220 },
-        ['000004D8'] = { txt = 'bnsonger47', r=0,g=180,b=255, y=mh+1240 },
-        ['000004EC'] = { txt = 'crisg', r=0,g=180,b=255, y=mh+1260 },
-        ['00000500'] = { txt = 'frankes', r=0,g=180,b=255, y=mh+1280 },
-        ['00000514'] = { txt = 'ginkgo', r=0,g=180,b=255, y=mh+1300 },
-        ['00000528'] = { txt = 'mi_brami', r=0,g=180,b=255, y=mh+1320 },
-        ['0000053C'] = { txt = 'mystica', r=0,g=180,b=255, y=mh+1340 },
-        ['00000550'] = { txt = 'opensourcebear', r=0,g=180,b=255, y=mh+1360 },
-        ['00000564'] = { txt = 'snoopingasusual', r=0,g=180,b=255, y=mh+1380 },
-        ['00000578'] = { txt = 'yeKcim', r=0,g=180,b=255, y=mh+1400 },
-        ['000005A0'] = { txt = 'Map Design', r=255,g=0,b=0, y=mh+1440 }, -- Map Design
-        ['000005B4'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+1460 },
-        ['000005DC'] = { txt = 'Music', r=255,g=0,b=0, y=mh+1500 }, -- Music
-        ['000005F0'] = { txt = '', r=0,g=180,b=255, y=mh+1520 },
-        ['00000604'] = { txt = 'Eric Matyas', r=0,g=180,b=255, y=mh+1540 },
-        ['00000618'] = { txt = 'Hung Kee Chan', r=0,g=180,b=255, y=mh+1560 },
-        ['0000062C'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+1580 },
-        ['00000640'] = { txt = 'Kevin McLeod', r=0,g=180,b=255, y=mh+1600 },
-        ['00000654'] = { txt = 'Matt McFarland', r=0,g=180,b=255, y=mh+1620 },
-        ['00000668'] = { txt = 'Nihilore', r=0,g=180,b=255, y=mh+1640 },
-        ['0000067C'] = { txt = 'Spiedkiks', r=0,g=180,b=255, y=mh+1660 },
-        ['00000690'] = { txt = 'W.K. Chan & Wouter Wershkull', r=0,g=180,b=255, y=mh+1680 },
-        ['000006A4'] = { txt = 'Wicky77', r=0,g=180,b=255, y=mh+1700 },
-        ['000006B8'] = { txt = 'Wicky77 & Wout66', r=0,g=180,b=255, y=mh+1720 },
-        ['000006CC'] = { txt = 'Widzy', r=0,g=180,b=255, y=mh+1740 },
-        ['000006F4'] = { txt = 'Scenario', r=255,g=0,b=0, y=mh+1780 }, -- Scenario
-        ['00000708'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+1800 },
-        ['00000730'] = { txt = 'Script', r=255,g=0,b=0, y=mh+1840 }, -- Script
-        ['00000744'] = { txt = '', r=0,g=180,b=255, y=mh+1860 },
-        ['00000758'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+1880 },
-        ['000007BC'] = { txt = 'Voice Actors', r=255,g=0,b=0, y=mh+1980 }, -- Voice Acting
-        ['000007D0'] = { txt = 'Jake - Wicky77', r=255,g=180,b=0, y=mh+2000 }, -- Voice actor
-        ['000007E4'] = { txt = 'Marrilona - Pachelle', r=255,g=180,b=0, y=mh+2020 }, -- Voice actor
-        ['000007F8'] = { txt = 'Dandor - Tricky', r=255,g=180,b=0, y=mh+2040 }, -- Voice actor
-        ['0000080C'] = { txt = 'Hando Stillor - Tricky', r=255,g=180,b=0, y=mh+2060 }, -- Voice actor
-        ['00000820'] = { txt = 'Master John - Wout66', r=255,g=180,b=0, y=mh+2080 }, -- Voice actor
-        ['00000834'] = { txt = 'Chief Werrington - Wout66', r=255,g=180,b=0, y=mh+2100 }, -- Voice actor
-        ['00000848'] = { txt = 'Harry - Tricky', r=255,g=180,b=0, y=mh+2120 }, -- Voice actor
-        ['0000085C'] = { txt = 'Fandalora - Wout66', r=255,g=180,b=0, y=mh+2140 }, -- Voice actor
-        ['00000870'] = { txt = 'Fairy Elder - Tricky', r=255,g=180,b=0, y=mh+2160 }, -- Voice actor
-        ['00000884'] = { txt = 'Sandra - Linvala Kemellon', r=255,g=180,b=0, y=mh+2180 }, -- Voice actor
-        ['00000898'] = { txt = 'Feenalaria - FOM', r=255,g=180,b=0, y=mh+2200 }, -- Voice actor
-        ['000008AC'] = { txt = 'Sasha Funda - FOM', r=255,g=180,b=0, y=mh+2220 }, -- Voice actor
-        ['000008C0'] = { txt = 'Hando Stillor\'s father - HuKe24', r=255,g=180,b=0, y=mh+2240 }, -- Voice actor
-        ['000008D4'] = { txt = 'Krandar - Tricky', r=255,g=180,b=0, y=mh+2260 }, -- Voice actor
-        ['000008E8'] = { txt = 'Yannee - Pachelle', r=255,g=180,b=0, y=mh+2280 }, -- Voice actor
-        ['00000B54'] = { txt = '(c) Copyright 2016-2017', r=255, g=180,b=0,y=mh+2900},
-        ['00000B6D'] = { txt = 'Jeroen Petrus Broks', r=255, g=180,b=0,y=mh+2925}
+        ['0000008C'] = { txt = 'GR-Sites', r=0,g=180,b=255, y=mh+140 },
+        ['000000A0'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+160 },
+        ['000000B4'] = { txt = 'ProductionNow', r=0,g=180,b=255, y=mh+180 },
+        ['000000C8'] = { txt = 'TFTCREW', r=0,g=180,b=255, y=mh+200 },
+        ['000000DC'] = { txt = 'Varazuvi(TM)', r=0,g=180,b=255, y=mh+220 },
+        ['000000F0'] = { txt = 'Widzy', r=0,g=180,b=255, y=mh+240 },
+        ['00000104'] = { txt = 'http://www.freesfx.co.uk', r=0,g=180,b=255, y=mh+260 },
+        ['0000012C'] = { txt = 'Development documentation', r=255,g=0,b=0, y=mh+300 }, -- Development documentation
+        ['00000140'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+320 },
+        ['00000168'] = { txt = 'Font', r=255,g=0,b=0, y=mh+360 }, -- Font
+        ['0000017C'] = { txt = 'Benjamin Koehler', r=0,g=180,b=255, y=mh+380 },
+        ['00000190'] = { txt = 'Dieter Steffmann', r=0,g=180,b=255, y=mh+400 },
+        ['000001A4'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+420 },
+        ['000001B8'] = { txt = 'Ray Larabie', r=0,g=180,b=255, y=mh+440 },
+        ['000001CC'] = { txt = 'SterioType', r=0,g=180,b=255, y=mh+460 },
+        ['000001E0'] = { txt = 'William Boyd', r=0,g=180,b=255, y=mh+480 },
+        ['00000208'] = { txt = 'Game identification data', r=255,g=0,b=0, y=mh+520 }, -- Game identification data
+        ['0000021C'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+540 },
+        ['00000244'] = { txt = 'General Data', r=255,g=0,b=0, y=mh+580 }, -- General Data
+        ['00000258'] = { txt = '', r=0,g=180,b=255, y=mh+600 },
+        ['0000026C'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+620 },
+        ['00000280'] = { txt = 'Man Of Steel', r=0,g=180,b=255, y=mh+640 },
+        ['00000294'] = { txt = 'TFTCREW', r=0,g=180,b=255, y=mh+660 },
+        ['000002A8'] = { txt = 'Unknown artist from the Public Domain', r=0,g=180,b=255, y=mh+680 },
+        ['000002D0'] = { txt = 'Graphics', r=255,g=0,b=0, y=mh+720 }, -- Graphics
+        ['000002E4'] = { txt = 'Aeris', r=0,g=180,b=255, y=mh+740 },
+        ['000002F8'] = { txt = 'Angela Nagtzaam', r=0,g=180,b=255, y=mh+760 },
+        ['0000030C'] = { txt = 'Angela Nagtzaam & Jeroen P. Broks', r=0,g=180,b=255, y=mh+780 },
+        ['00000320'] = { txt = 'Ed Kasap', r=0,g=180,b=255, y=mh+800 },
+        ['00000334'] = { txt = 'Firkin', r=0,g=180,b=255, y=mh+820 },
+        ['00000348'] = { txt = 'GDJ', r=0,g=180,b=255, y=mh+840 },
+        ['0000035C'] = { txt = 'GR-Sites', r=0,g=180,b=255, y=mh+860 },
+        ['00000370'] = { txt = 'Helm42', r=0,g=180,b=255, y=mh+880 },
+        ['00000384'] = { txt = 'Holly', r=0,g=180,b=255, y=mh+900 },
+        ['00000398'] = { txt = 'J4p4n', r=0,g=180,b=255, y=mh+920 },
+        ['000003AC'] = { txt = 'JWH Broeders', r=0,g=180,b=255, y=mh+940 },
+        ['000003C0'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+960 },
+        ['000003D4'] = { txt = 'Kelly', r=0,g=180,b=255, y=mh+980 },
+        ['000003E8'] = { txt = 'Kuba', r=0,g=180,b=255, y=mh+1000 },
+        ['000003FC'] = { txt = 'Man Of Steel', r=0,g=180,b=255, y=mh+1020 },
+        ['00000410'] = { txt = 'Merlin2525', r=0,g=180,b=255, y=mh+1040 },
+        ['00000424'] = { txt = 'Michael Frank', r=0,g=180,b=255, y=mh+1060 },
+        ['00000438'] = { txt = 'Papapishu', r=0,g=180,b=255, y=mh+1080 },
+        ['0000044C'] = { txt = 'Rambo Tribble', r=0,g=180,b=255, y=mh+1100 },
+        ['00000460'] = { txt = 'Roana', r=0,g=180,b=255, y=mh+1120 },
+        ['00000474'] = { txt = 'Solar Granulation', r=0,g=180,b=255, y=mh+1140 },
+        ['00000488'] = { txt = 'Unknown artist from the Public Domain', r=0,g=180,b=255, y=mh+1160 },
+        ['0000049C'] = { txt = 'Yannee\'s artist', r=0,g=180,b=255, y=mh+1180 },
+        ['000004B0'] = { txt = 'anarres', r=0,g=180,b=255, y=mh+1200 },
+        ['000004C4'] = { txt = 'bnsonger47', r=0,g=180,b=255, y=mh+1220 },
+        ['000004D8'] = { txt = 'crisg', r=0,g=180,b=255, y=mh+1240 },
+        ['000004EC'] = { txt = 'frankes', r=0,g=180,b=255, y=mh+1260 },
+        ['00000500'] = { txt = 'ginkgo', r=0,g=180,b=255, y=mh+1280 },
+        ['00000514'] = { txt = 'mi_brami', r=0,g=180,b=255, y=mh+1300 },
+        ['00000528'] = { txt = 'mystica', r=0,g=180,b=255, y=mh+1320 },
+        ['0000053C'] = { txt = 'opensourcebear', r=0,g=180,b=255, y=mh+1340 },
+        ['00000550'] = { txt = 'snoopingasusual', r=0,g=180,b=255, y=mh+1360 },
+        ['00000564'] = { txt = 'yeKcim', r=0,g=180,b=255, y=mh+1380 },
+        ['0000058C'] = { txt = 'Map Design', r=255,g=0,b=0, y=mh+1420 }, -- Map Design
+        ['000005A0'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+1440 },
+        ['000005C8'] = { txt = 'Music', r=255,g=0,b=0, y=mh+1480 }, -- Music
+        ['000005DC'] = { txt = '', r=0,g=180,b=255, y=mh+1500 },
+        ['000005F0'] = { txt = 'Eric Matyas', r=0,g=180,b=255, y=mh+1520 },
+        ['00000604'] = { txt = 'Hung Kee Chan', r=0,g=180,b=255, y=mh+1540 },
+        ['00000618'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+1560 },
+        ['0000062C'] = { txt = 'Kevin McLeod', r=0,g=180,b=255, y=mh+1580 },
+        ['00000640'] = { txt = 'Matt McFarland', r=0,g=180,b=255, y=mh+1600 },
+        ['00000654'] = { txt = 'Nihilore', r=0,g=180,b=255, y=mh+1620 },
+        ['00000668'] = { txt = 'Spiedkiks', r=0,g=180,b=255, y=mh+1640 },
+        ['0000067C'] = { txt = 'W.K. Chan & Wouter Wershkull', r=0,g=180,b=255, y=mh+1660 },
+        ['00000690'] = { txt = 'Wicky77', r=0,g=180,b=255, y=mh+1680 },
+        ['000006A4'] = { txt = 'Wicky77 & Wout66', r=0,g=180,b=255, y=mh+1700 },
+        ['000006B8'] = { txt = 'Widzy', r=0,g=180,b=255, y=mh+1720 },
+        ['000006E0'] = { txt = 'Scenario', r=255,g=0,b=0, y=mh+1760 }, -- Scenario
+        ['000006F4'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+1780 },
+        ['0000071C'] = { txt = 'Script', r=255,g=0,b=0, y=mh+1820 }, -- Script
+        ['00000730'] = { txt = '', r=0,g=180,b=255, y=mh+1840 },
+        ['00000744'] = { txt = 'Jeroen P. Broks', r=0,g=180,b=255, y=mh+1860 },
+        ['000007A8'] = { txt = 'Voice Actors', r=255,g=0,b=0, y=mh+1960 }, -- Voice Acting
+        ['000007BC'] = { txt = 'Jake - Wicky77', r=255,g=180,b=0, y=mh+1980 }, -- Voice actor
+        ['000007D0'] = { txt = 'Marrilona - Pachelle', r=255,g=180,b=0, y=mh+2000 }, -- Voice actor
+        ['000007E4'] = { txt = 'Dandor - Tricky', r=255,g=180,b=0, y=mh+2020 }, -- Voice actor
+        ['000007F8'] = { txt = 'Hando Stillor - Tricky', r=255,g=180,b=0, y=mh+2040 }, -- Voice actor
+        ['0000080C'] = { txt = 'Master John - Wout66', r=255,g=180,b=0, y=mh+2060 }, -- Voice actor
+        ['00000820'] = { txt = 'Chief Werrington - Wout66', r=255,g=180,b=0, y=mh+2080 }, -- Voice actor
+        ['00000834'] = { txt = 'Harry - Tricky', r=255,g=180,b=0, y=mh+2100 }, -- Voice actor
+        ['00000848'] = { txt = 'Fandalora - Wout66', r=255,g=180,b=0, y=mh+2120 }, -- Voice actor
+        ['0000085C'] = { txt = 'Fairy Elder - Tricky', r=255,g=180,b=0, y=mh+2140 }, -- Voice actor
+        ['00000870'] = { txt = 'Sandra - Linvala Kemellon', r=255,g=180,b=0, y=mh+2160 }, -- Voice actor
+        ['00000884'] = { txt = 'Feenalaria - FOM', r=255,g=180,b=0, y=mh+2180 }, -- Voice actor
+        ['00000898'] = { txt = 'Sasha Funda - FOM', r=255,g=180,b=0, y=mh+2200 }, -- Voice actor
+        ['000008AC'] = { txt = 'Hando Stillor\'s father - HuKe24', r=255,g=180,b=0, y=mh+2220 }, -- Voice actor
+        ['000008C0'] = { txt = 'Krandar - Tricky', r=255,g=180,b=0, y=mh+2240 }, -- Voice actor
+        ['000008D4'] = { txt = 'Yannee - Pachelle', r=255,g=180,b=0, y=mh+2260 }, -- Voice actor
+        ['00000B40'] = { txt = '(c) Copyright 2016-2017', r=255, g=180,b=0,y=mh+2880},
+        ['00000B59'] = { txt = 'Jeroen Petrus Broks', r=255, g=180,b=0,y=mh+2905}
 }
 
 return ret

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.02.24
+version: 17.08.02
 ]]
 
 russel = "&DONE.BOSS.RUSSELL"
@@ -47,6 +47,7 @@ function Boss_Russell()
   Var.D("$COMBAT.POSFOE_1","CENTER")
   Var.D("$COMBAT.MUSIC","Music/SpecialBoss/Living Voyage.ogg")
   Var.D("$COMBAT.ARENA","ForestLoof.png")
+  Schedule('MAP','NPC_Russell')
   StartBoss("A pirate's life for him","Russell")
   Maps.Obj.Obj("NPC_Elizabeth").Visible = 1   
   WorldMap_Unlock("CH2DOUBLINE")
@@ -56,6 +57,10 @@ end
 function NPC_Russell()   
    Master("Russell")
 end   
+
+function NPC_Elisabeth()
+   MapText('BETH')
+end
 
 function GoToCorrectStart()
     GoToLayer("forest",({[false]="Start_South",[true]="Start_North"})[CVV(russel)])

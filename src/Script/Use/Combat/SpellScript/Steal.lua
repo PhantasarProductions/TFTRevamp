@@ -1,6 +1,6 @@
 --[[
   Steal.lua
-  Version: 17.01.03
+  Version: 17.08.01
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -35,7 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 -- @IF INGORE
-SpellScript = {}
+local SpellScript = {}
 -- @FI
 
 
