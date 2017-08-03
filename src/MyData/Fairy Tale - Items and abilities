@@ -19396,7 +19396,7 @@ Rec: ABL_MASTER_KRANDAR_5PS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
-	CauseCharmed = 
+	CauseCharmed = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -19512,7 +19512,7 @@ Rec: ABL_MASTER_KRANDAR_6PS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
-	CauseCharmed = 
+	CauseCharmed = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -19611,7 +19611,7 @@ Rec: ABL_MASTER_KRANDAR_7PS
 	ADDCARD_Char_Number = 0
 	Acc_PreTurn = 
 	Acc_PreTurn_Arg = 
-	Attack = 70
+	Attack = 700
 	Attack_AccuracyRate = 100
 	Attack_AllowAccuracy = FALSE
 	Attack_AllowCritical = TRUE
@@ -19628,7 +19628,7 @@ Rec: ABL_MASTER_KRANDAR_7PS
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
-	CauseCharmed = 
+	CauseCharmed = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = TRUE

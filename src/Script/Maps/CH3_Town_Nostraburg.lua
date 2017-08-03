@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.21
+version: 17.08.03
 ]]
 
 -- @USE /Script/Use/Specific/NewGame+.lua

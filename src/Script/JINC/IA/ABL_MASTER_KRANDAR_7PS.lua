@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_KRANDAR_7PS.lua
-  Version: 17.08.02
+  Version: 17.08.03
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -37,7 +37,7 @@
 ret = {
 	["ABL_APCost"] = 350,
 	["ADDCARD_Action_Act"] = "Self",
-	["Attack"] = 70,
+	["Attack"] = 700,
 	["Attack_AccuracyRate"] = 100,
 	["Attack_AllowCritical"] = true,
 	["Attack_AttackStat"] = "Power",
