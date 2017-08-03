@@ -3064,6 +3064,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/EarthElemental.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Hag.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/HidingHag.png
+		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Pyroguin.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/ShadowShroom.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/Shroom.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Reg/StoneGolem.png

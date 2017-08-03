@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.24
+version: 17.08.03
 ]]
 
 
@@ -45,7 +45,11 @@ function MapMusic()
 end
 
 function NPC_MasterJohn()
-  MapText("N_John_Pro")
+  if CVV('&DONE.CH4DISCUSSION') then
+     MapText("JOHN_CH4")
+     return
+  end     
+  MapText("N_JOHN_PRO")
 end  
 
 function John_Exam()
