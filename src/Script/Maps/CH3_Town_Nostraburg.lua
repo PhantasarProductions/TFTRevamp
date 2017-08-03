@@ -153,6 +153,7 @@ function JakeIsACoward()
     if Done('&DONE.NOSTRABURG.MARRILONA.DEADORDRAGON.SPOKEN.KRANDAR.COWARD') then return end 
     PartyPop('M','North')
     MapText('JAKE_IS_A_COWARD')    
+    Var.Clear("$SYS.RESPAWN")
 end
 
 function MAP_FLOW()

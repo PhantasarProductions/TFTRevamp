@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.19
+version: 17.08.03
 ]]
 
 
@@ -77,6 +77,7 @@ function EnterDungeonAndCloseTheDoorBehindYou()
    Maps.Obj.Kill("NPC_Ramata",1)
    GoToLayer("#002","Start")
    Done("&DONE.PYRUS.ENTER")
+   Var.Clear("$SYS.RESPAWN")
 end
 
 function NPC_Ramata()
