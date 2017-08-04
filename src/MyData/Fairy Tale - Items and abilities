@@ -22577,7 +22577,7 @@ Rec: AUTO_NOODHULP
 	EQP_STAT_SR_Silence = 0
 	EQP_STAT_SR_Sleep = 0
 	EQP_STAT_SR_Undead = 0
-	EffectScript = 
+	EffectScript = StillorHelp
 	EffectScript_Arg = 
 	EffectScript_External = FALSE
 	Heal = 100
@@ -22597,7 +22597,7 @@ Rec: AUTO_NOODHULP
 	ITM_WeaponAbility = FALSE
 	Revive = TRUE
 	Rew_GainAP = 0
-	SpellAni = StillorHelp
+	SpellAni = 
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
