@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.07
+version: 17.08.04
 ]]
 
 local RPG = RPGStat
@@ -121,6 +121,13 @@ Freya.stats = {
                }
 
 Freya.Desc = {'Freya is a Fairy Healer','One of the best of her race',"She'll teach you powerful spells if you","practice water magic, or","your powers to healing gods","","Dandor cannot learn new spells here"}
+
+if skill~=3 then
+   Freya.Desc[#Freya.Desc+1]=""
+   Freya.Desc[#Freya.Desc+1]="When studying under Freya"
+   Freya.Desc[#Freya.Desc+1]="You'll recover "..math.abs(300/skill).." HP"
+   Freya.Desc[#Freya.Desc+1]="At the start of each turn"
+end   
 
 function Freya.ShowScore(ch)
    if ch=="Dandor" then return "Cannot Learn" elseif ch=='HandoStillor' then return "Weniaria" else return "Water" end

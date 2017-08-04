@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.19
+version: 17.08.04
 ]]
 local RPG = RPGStat
 
@@ -114,6 +114,13 @@ Krandar.stats = {
                }
 
 Krandar.Desc = {"Krandar is the leader of the Black Winged Fairies","Proove yourself to him by collecting","the most powerful equipment, a character can find.","He has a different spell or skill for each character."}
+
+Krandar.Desc[#Krandar.Desc+1]=""
+Krandar.Desc[#Krandar.Desc+1]="When studying under Krandar"
+Krandar.Desc[#Krandar.Desc+1]="You have a 1 to "..math.abs(4*skill).." chance"
+Krandar.Desc[#Krandar.Desc+1]="To recover 1 VIT point"
+Krandar.Desc[#Krandar.Desc+1]="At the start of each turn"
+
 
 function Krandar.ShowScore(ch)
    local chi=ch

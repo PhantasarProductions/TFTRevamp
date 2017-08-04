@@ -1,6 +1,6 @@
 --[[
   Heal.lua
-  Version: 17.02.23
+  Version: 17.08.04
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -35,7 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 -- @IF IGNORE
-SpellAni = {}
+local SpellAni = {}
 -- @FI
 
 function SpellAni.SingleHeal(ActG,ActT,TarG,TarT)

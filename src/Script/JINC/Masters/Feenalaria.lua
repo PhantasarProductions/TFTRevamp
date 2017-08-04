@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.05.13
+version: 17.08.04
 ]]
 local RPG = RPGStat
 
@@ -115,6 +115,14 @@ Feenalaria.stats = {
                }
 
 Feenalaria.Desc = {"Nostramantu's wife","Despite her merriage, she's on your side","and she knows very powerful spells.","She'll teach you new spells","based on your victories while","apprenticing under her","","Dandor cannot learn spells from her"}
+
+if skill~=3 then
+   Feenalaria.Desc[#Feenalaria.Desc+1]=""
+   Feenalaria.Desc[#Feenalaria.Desc+1]="When studying under Feenalaria"
+   Feenalaria.Desc[#Feenalaria.Desc+1]="You'll recover "..math.abs(25*(3-skill)).." AP"
+   Feenalaria.Desc[#Feenalaria.Desc+1]="At the start of each turn"
+end   
+
 
 function Feenalaria.ShowScore(ch)
      if ch=="Dandor" then return "Can't learn" end

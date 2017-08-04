@@ -1,6 +1,6 @@
 --[[
   Idle.lua
-  Version: 17.06.07
+  Version: 17.08.04
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -93,7 +93,15 @@ function fflow.idle()
        if card.data.nextact then nextact=card.data.nextact  nextact.auto = true flow = 'Execution' CSay('Ability from card')       
        elseif AltMove(card.data.tag) then CSay("Alternate move executed")
        elseif card.data.group == 'Foe'  then if  (not TurnSkip(card.data.tag,true)) then flow = 'foeinput' else RemoveFirstCard() end 
-       elseif card.data.group == 'Hero' then if (not TurnSkip(card.data.tag,true)) then fflow.setplayerinput(card.data.tag) Pre_Turn(card.data.tag) else RemoveFirstCard() end end
+       elseif card.data.group == 'Hero' then 
+          if (not TurnSkip(card.data.tag,true)) then 
+              fflow.setplayerinput(card.data.tag) 
+              Pre_Turn(card.data.tag)
+              if RPG.GetData(card.data.tag,"Master")=="Feenalaria"                  then RPG.Points(card.data.tag,'AP' ).Inc(25*(3-skill)) end 
+              if RPG.GetData(card.data.tag,"Master")=="Freya"   and skill~=3        then RPG.Points(card.data.tag,'HP' ).Inc(300/skill) end
+              if RPG.GetData(card.data.tag,"Master")=="Krandar" and rand(1,skill*4) then RPG.Points(card.data.tag,'VIT').Inc(1) end
+          else RemoveFirstCard() end 
+       end
     -- elseif card.data.extra then -- dropped
     --   Sys.Error('Stuff for extra cards not yet set up.')
     else 
