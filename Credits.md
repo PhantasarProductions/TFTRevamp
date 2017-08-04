@@ -1394,6 +1394,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Use/Combat/SpellAni/Heal.lua
 		1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
 		1. Script: Script/Use/Combat/SpellAni/Quake.lua
+		1. Script: Script/Use/Combat/SpellAni/StillorHelp.lua
 		1. Script: Script/Use/Combat/SpellAni/Temptation.lua
 		1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
 		1. Script: Script/Use/Combat/SpellScript/Alright you silly ones -- I will help you this time.lua
