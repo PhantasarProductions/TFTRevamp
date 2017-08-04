@@ -9413,11 +9413,11 @@ Rec: ABL_HERO_DANDOR_AXESMASH
 	Attack_Desperate = FALSE
 	Attack_Element = None
 	BUFF_Accuracy = 0
-	BUFF_Endurance = 5
+	BUFF_Endurance = -5
 	BUFF_Evasion = 0
 	BUFF_Intelligence = 0
 	BUFF_Power = 0
-	BUFF_Resistance = 0
+	BUFF_Resistance = -6
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
 	CauseCharmed = FALSE
@@ -22528,7 +22528,7 @@ Rec: AUTO_NOODHULP
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
-	CauseCharmed = 
+	CauseCharmed = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -22597,7 +22597,7 @@ Rec: AUTO_NOODHULP
 	ITM_WeaponAbility = FALSE
 	Revive = TRUE
 	Rew_GainAP = 0
-	SpellAni = SingleHeal
+	SpellAni = StillorHelp
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast

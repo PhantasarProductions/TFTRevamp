@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.08.03
+version: 17.08.04
 ]]
 ret = {
 	["ABL_APCost"] = 25,
@@ -44,7 +44,8 @@ ret = {
 	["Attack_AttackStat"] = "Power",
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
-	["BUFF_Endurance"] = 5,
+	["BUFF_Endurance"] = -5,
+	["BUFF_Resistance"] = -6,
 	["Desc"] = "BAM! You're dead!",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",

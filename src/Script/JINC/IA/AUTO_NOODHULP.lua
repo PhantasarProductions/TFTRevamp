@@ -1,6 +1,6 @@
 --[[
   AUTO_NOODHULP.lua
-  Version: 17.08.03
+  Version: 17.08.04
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -64,7 +64,7 @@ ret = {
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
 	["Revive"] = true,
-	["SpellAni"] = "SingleHeal",
+	["SpellAni"] = "StillorHelp",
 	["Stance"] = "Cast",
 	["Target"] = "1A",
 	["Title"] = "Emergency Heal",

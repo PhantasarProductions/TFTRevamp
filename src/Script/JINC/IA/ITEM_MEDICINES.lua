@@ -1,6 +1,6 @@
 --[[
   ITEM_MEDICINES.lua
-  Version: 17.08.03
+  Version: 17.08.04
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

@@ -1,6 +1,6 @@
 --[[
   Death.lua
-  Version: 17.07.01
+  Version: 17.08.04
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -107,7 +107,7 @@ StatusChanges.Death = {
                        if fighterbytag.HandoStillor.Sleep then return end -- Asleep? That won't do!
                        if fighterbytag.HandoStillor.Paralysis then return end -- Paralyzed? That won't do!
                        if rand(1,CVV('%HANDO.NOODHULP'))~=1 then return end
-                       SerialBoxText("COMBATLEARN","AUTO_HANDOSTILLOR","FLOW_COMBAT")
+                       --SerialBoxText("COMBATLEARN","AUTO_HANDOSTILLOR","FLOW_COMBAT")
                        local card2add = { group = 'Hero', tag='HandoStillor', auto=true }
                        card2add.nextact = { executor = { group="Hero",tag="HandoStillor"}, act="AUTO_NOODHULP"}
                        for i=0,3 do

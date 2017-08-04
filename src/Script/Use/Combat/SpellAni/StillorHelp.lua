@@ -1,8 +1,8 @@
 --[[
 **********************************************
   
-  EQP_DANDOR_WP4.lua
-  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
+  StillorHelp.lua
+  (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -34,25 +34,15 @@
  
 version: 17.08.04
 ]]
-ret = {
-	["ADDCARD_Action_Act"] = "Self",
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
-	["Attack_Element"] = "None",
-	["Desc"] = "Yeah... great",
-	["EQP_STAT_Power"] = 16,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_EQP_For"] = "Dandor",
-	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 16000,
-	["ITM_Type"] = "Weapon",
-	["Stance"] = "Attack",
-	["Target"] = "1A",
-	["Title"] = "Great Axe",
-	["Type"] = "Item"}
+local SpellAni = {}
+-- @FI
 
-return ret
+function SpellAni.StillorHelp(ActG,ActT,TarG,TarT)
+    SerialBoxText("COMBATLEARN","AUTO_HANDOSTILLOR","FLOW_COMBAT")
+    SpellAni.SingleHeal(ActG,ActT,TarG,TarT)
+end
 
--- This file is an automatically generated file!
-
+-- @IF IGNORE    
+return SpellAni
+-- @FI
+    
