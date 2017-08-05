@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.08.01
+  Version: 17.08.05
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -259,7 +259,7 @@ function ShowSpellList(pch,psizes)
    -- Show 
    local ck,ca,sk,sa
    local has = SpellList(ch)
-   local cnt
+   local cnt = 0 
    heroabl[ch] = heroabl[ch] or {}
    for i,k,a in iSpell(ch,ablpage[ch][SSLPG]) do
        local y=(i+1)*fonts.Stats[2]
@@ -282,8 +282,9 @@ function ShowSpellList(pch,psizes)
           DarkText('---',10,y,0,2,c[1],c[2],c[3])
           if i==SSLP then DarkText("Hold H to see unlock info",sizes[3]-25,y,1,2,255,180,0) end
        end
-       cnt=i
+       cnt=cnt+1
    end
+   if SSLP>cnt then SSLP=1 end
    -- Help
    if (joydown('XTRA') or INP.KeyD(KEY_H)==1) and ca then
       if not has[ck] then
