@@ -6262,7 +6262,7 @@ Rec: ABL_FOE_SUICIDE
 	rew_GainSkill5 = 0
 
 Rec: ABL_FOE_TAKEOVER
-	ABL_APCost = 125
+	ABL_APCost = 300
 	ABL_HPCost = 0
 	ADDCARD_Action_Act = Self
 	ADDCARD_Action_Interval = 5
@@ -6378,7 +6378,7 @@ Rec: ABL_FOE_TAKEOVER
 	rew_GainSkill5 = 0
 
 Rec: ABL_FOE_TAKEOVER2
-	ABL_APCost = 0
+	ABL_APCost = 650
 	ABL_HPCost = 0
 	ADDCARD_Action_Act = Self
 	ADDCARD_Action_Interval = 5
@@ -6479,7 +6479,7 @@ Rec: ABL_FOE_TAKEOVER2
 	Stance = Cast
 	Target = AF
 	Title = Takeover II
-	Type = Item
+	Type = Ability
 	USE_Penalty = 0
 	Voice = 
 	rew_CreateSkill1 = FALSE
@@ -18468,7 +18468,7 @@ Rec: ABL_MASTER_FEENA_FULLPOWER
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
-	CauseCharmed = 
+	CauseCharmed = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -18584,7 +18584,7 @@ Rec: ABL_MASTER_FEENA_KATRINA
 	BUFF_Resistance = 0
 	BUFF_Speed = 0
 	CauseBerserk = FALSE
-	CauseCharmed = 
+	CauseCharmed = FALSE
 	CauseConfusion = FALSE
 	CauseCurse = FALSE
 	CauseDeath = FALSE
@@ -18653,7 +18653,7 @@ Rec: ABL_MASTER_FEENA_KATRINA
 	ITM_WeaponAbility = TRUE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = 
+	SpellAni = Hurricane
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast

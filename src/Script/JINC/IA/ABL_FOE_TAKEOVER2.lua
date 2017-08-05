@@ -35,6 +35,7 @@
   3. This notice may not be removed or altered from any source distribution.
 ]]
 ret = {
+	["ABL_APCost"] = 650,
 	["ADDCARD_Action_Act"] = "Self",
 	["ADDCARD_Action_Interval"] = 5,
 	["ADDCARD_Char_Interval"] = 5,
@@ -58,7 +59,7 @@ ret = {
 	["Stance"] = "Cast",
 	["Target"] = "AF",
 	["Title"] = "Takeover II",
-	["Type"] = "Item"}
+	["Type"] = "Ability"}
 
 return ret
 
