@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 17.07.31
+  Version: 17.08.05
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -483,7 +483,7 @@ function features.Trade(x,y,w,h)
    local tmx,tmy = MouseCoords()
    local mx,my   = tmx-x,tmy-y
    local siz     = (h-40)/22
-   local moved
+   local moved   = TradeOld_mx~=mx or TradeOld_my~=my
    totalwidth  = SW
    totalheight = SH
    origin = {0,0}
@@ -535,7 +535,11 @@ function features.Trade(x,y,w,h)
          else   
             DarkText(item.Title,mix,iy,0,0,55,55,55)
           end  
-          if moved and my>iy and my<iy+siz then Shop.P = i end
+          if moved and my>iy and my<iy+siz then 
+             Shop.P = i
+             TradeOld_mx=mx
+             TradeOld_my=my 
+          end
        end   
    end
    if INP.KeyH(KEY_DOWN)==1 or joyhit(joy_down) then 
