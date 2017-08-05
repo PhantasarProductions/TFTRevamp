@@ -10,7 +10,7 @@ function SpellAni.DonaldTrump(ag,at,tg,tt)
    local wall = Image.Load('gfx/Combat/SpellAni/Trump/Wall.png')
    Image.HotCenter(sombrero)
    -- Trump Speaks
-   SFX('Audio/Trump/Trump.ogg')
+   -- SFX('Audio/Trump/Trump.ogg')
    Time.Sleep(250)
    -- Drop Sombrero
    local rot = 0

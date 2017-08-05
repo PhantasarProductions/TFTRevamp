@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 17.07.21
+  Version: 17.08.05
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
