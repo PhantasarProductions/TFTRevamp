@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.08.04
+version: 17.08.05
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
@@ -54,6 +54,7 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "Splash",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
 	["Title"] = "Hydr<ocirc>k<acirc>",

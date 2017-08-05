@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.08.04
+version: 17.08.05
 ]]
 -------------------------------------------
 -- This file was automatically generated --
@@ -243,4 +243,7 @@ return {
                    Artist = "Kevin McLeod"},
      ["Darkcover"] = {
                    File = "Music/Special Boss/Darkcover.ogg",
-                   Artist = "Hung Kee Chan"}}
+                   Artist = "Hung Kee Chan"},
+     ["Lilith's Rage"] = {
+                   File = "Music/Special Boss/Lilith's Rage.ogg",
+                   Artist = "Aaron Krogh"}}

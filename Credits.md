@@ -10,6 +10,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 
 
 
+- Aaron Krogh
+	- Free to use. No restrictions. Commericial use encouraged! http://aaronkrogh.tumbler.com
+		1. Music: Music/Special Boss/Lilith's Rage.ogg
 - Aeris
 	- This file was explicitly contributed for the usage in this game and may therefore not be extracted from this game.
 		1. Graphics: GFX/Big_Char/Dandor.png -alias- GFX/OUTTAKES/Dandor.png
@@ -626,6 +629,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/CharAbilities/Marrilona.lua
 		1. Script: Script/JINC/CharAbilities/Nostramantu.lua
 		1. Script: Script/JINC/CharAbilities/Nostramantu_Human.lua
+		1. Script: Script/JINC/Foes/Anna/Dandor.lua
+		1. Script: Script/JINC/Foes/Anna/HandoStillor.lua
+		1. Script: Script/JINC/Foes/Anna/Jake.lua
+		1. Script: Script/JINC/Foes/Anna/Marrilona.lua
 		1. Script: Script/JINC/Foes/Boss/Aer.lua
 		1. Script: Script/JINC/Foes/Boss/Aqua.lua
 		1. Script: Script/JINC/Foes/Boss/Beholder.lua
@@ -966,6 +973,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/EQP_ACC_AMULETLIFE.lua
 		1. Script: Script/JINC/IA/EQP_ACC_DRESHKA.lua
 		1. Script: Script/JINC/IA/EQP_ACC_NOTNAMED.lua
+		1. Script: Script/JINC/IA/EQP_ACC_PRISMDIAMOND.lua
 		1. Script: Script/JINC/IA/EQP_ACC_RINGEARTH.lua
 		1. Script: Script/JINC/IA/EQP_ACC_RINGFIRE.lua
 		1. Script: Script/JINC/IA/EQP_ACC_RINGSKILL.lua
@@ -1469,6 +1477,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Game identification data: ID/ID.Vocal.Demo
 		1. Game identification data: ID/ID.Vocal.Full
 	- These are files specific to the story and may not be extracted from this JCR file.
+		1. ???: GFX/Actors/Bundled/Player/Dandor.East (Autosaved).piko-png
 		1. ???: GFX/Combat/Fighters/Foe/Sealed/KabiArc.lzh
 		1. Audio: Audio/SFX/Nostramantu/Laugh.ogg
 		1. Font: Fonts/Phantasar.ttf
@@ -1752,6 +1761,10 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Cards/HERO_NOSTRAMANTU_HUMAN.png
 		1. Graphics: GFX/Combat/Cards/Joker.piko
 		1. Graphics: GFX/Combat/Cards/Joker.png
+		1. Graphics: GFX/Combat/Fighters/Foe/Anna/Dandor.png
+		1. Graphics: GFX/Combat/Fighters/Foe/Anna/HandoStillor.png
+		1. Graphics: GFX/Combat/Fighters/Foe/Anna/Jake.png
+		1. Graphics: GFX/Combat/Fighters/Foe/Anna/Marrilona.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Frendor.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/GhostPriest.png
 		1. Graphics: GFX/Combat/Fighters/Foe/Boss/Harry.piko

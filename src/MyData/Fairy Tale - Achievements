@@ -77,6 +77,18 @@ Rec: ANNA
 	skill2 = TRUE
 	skill3 = TRUE
 
+Rec: ANNA_BOSS
+	Description = Defeat your mirror images in Anna's Temple
+	Icon = *DEFAULT*
+	NewGamePlus = TRUE
+	NormalGame = TRUE
+	Show = Achieved
+	Title = Mirror, Mirror on the Wall!
+	Type = Platinum
+	skill1 = TRUE
+	skill2 = TRUE
+	skill3 = TRUE
+
 Rec: BOSS_JUGGERNAUT
 	Description = Defeat Juggernaut
 	Icon = *DEFAULT*

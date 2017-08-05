@@ -2,7 +2,7 @@
 **********************************************
   
   Anna.lua
-  (c) Jeroen Broks, 2016, All Rights Reserved.
+  (c) Jeroen Broks, 2016, 2017, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,9 +32,10 @@
   
  **********************************************
  
-version: 16.12.11
+version: 17.08.05
 ]]
  
+local mirror = {'Jake','Marrilona','Dandor','HandoStillor'}
 
 
 function GALE_OnLoad()
@@ -42,3 +43,47 @@ function GALE_OnLoad()
    ZA_Enter('Leave',WorldMap)
    AnnaTemple()
 end
+
+function StartSealed()
+    local stats = {'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion','HP'}
+    for i,c in ipairs(mirror) do
+        local oc = c
+        if c=='Jake' then oc='Jake_Human' end
+        for stat in each(stats) do
+            CSay("Copying stat "..stat.." from "..c.." to foe #"..i)
+            RPG.DefStat('FOE_'..i,'BASE_'..stat,RPG.Stat(oc,'END_'..stat))
+        end     
+        local punt = RPG.Points('FOE_'..i,'HP')
+        punt.Have = punt.Maximum
+    end
+    MS.Run('COMBAT','ResetCards')
+end
+
+function PostBlueSeal()
+  ItemGive('EQP_ACC_PRISMDIAMOND')
+  Award('ANNA_BOSS') 
+end
+
+function BlueSeal()
+    local sw = Screen.Width()
+    local sh = Screen.Height()
+    local cw = sw/2
+    local ch = sh/2
+    local px = math.floor(cw/5)
+    local py = math.floor((ch-100)/5)
+    CSay("Screensize: "..sw.."x"..sh)
+    CSay("Center: ("..cw..","..ch..")")
+    CSay("Precision "..px.."; "..py)
+    ClearCombatData()
+    for i,c in ipairs(mirror) do
+        Var.D('$COMBAT.FOE_'..i,'Anna/'..c)
+        Var.D('$COMBAT.POSFOE_'..i,math.ceil(cw-(px*i))..','..math.ceil(ch+(py*i)))
+        CSay("#"..i..". I'll place "..c.." on position ("..i,math.ceil(cw-(px*i))..','..math.ceil(ch+(py*i))..")")
+    end    
+    Var.D("$COMBAT.MUSIC","Music/Special Boss/Lilith's Rage.ogg")
+    Var.D("$COMBAT.ARENA","nostramantu.png")
+    Var.D("$COMBAT.STARTEVENT","MAP,StartSealed")
+    StartBoss("Mirror Mirror On The Wall","Who's most brutal of them all",0,25,100)
+    Schedule('MAP',"PostBlueSeal")      
+end    
+

@@ -34,6 +34,7 @@
  
 version: 17.08.04
 ]]
+-- @IF IGNORE
 local SpellAni = {}
 -- @FI
 

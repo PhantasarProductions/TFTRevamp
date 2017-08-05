@@ -1,6 +1,6 @@
 --[[
   AUTO_NOODHULP.lua
-  Version: 17.08.04
+  Version: 17.08.05
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -51,7 +51,6 @@ ret = {
 	["CureSleep"] = true,
 	["CureUndead"] = true,
 	["Desc"] = "Heal when needed",
-	["EffectScript"] = "StillorHelp",
 	["Heal"] = 100,
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Percent",
@@ -65,6 +64,7 @@ ret = {
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
 	["Revive"] = true,
+	["SpellAni"] = "StillorHelp",
 	["Stance"] = "Cast",
 	["Target"] = "1A",
 	["Title"] = "Emergency Heal",

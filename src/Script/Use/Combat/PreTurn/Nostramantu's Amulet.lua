@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.06.26
+version: 17.08.05
 ]]
 -- @IF IGNORE
 local Pre_Turn_Array = {}
@@ -49,8 +49,8 @@ function Pre_Turn_Array.NosAmulet(gettag,amount)
         if c~=tag and skill~=1 and rand(12/skill)==1 then NostramantuAmulet[tag] = {} end        
     end
     local CV = NostramantuAmulet[tag]
-    CV.HP = CV.HP or 1
-    CV.AP = CV.AP or 1
+    CV.HP = CV.HP or math.ceil(255 /skill)
+    CV.AP = CV.AP or (100-(skill*25))
     RPG.Points(tag,'HP').Inc(CV.HP); charmsg(tag,     CV.HP       ,0,255,  0)
     RPG.Points(tag,'AP').Inc(CV.AP); charmsg(tag,"+"..CV.AP.." AP",0,180,255)
     if rand(1,skill*4)==1 then CV.HP = CV.HP + 1 end

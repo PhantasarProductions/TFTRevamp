@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 17.07.05
+  Version: 17.08.05
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -155,9 +155,10 @@ function CreateOrder()
      end
 end
 
-function SetupInitialCards()
+function SetupInitialCards(empty)
    CreateOrder()
    Cards = Cards or {}
+   if empty then ClearTable(Cards) end
    local card,cidx
    for i,data in pairs(order.iorder) do
        cidx=i*3
@@ -168,6 +169,9 @@ function SetupInitialCards()
    end
    CSay(serialize('Cards',Cards))
 end
+
+function ResetCards() SetupInitialCards(true) end
+
 
 function CombatMusic()
     --CSay(CVV("$COMBAT.MUSIC"))
