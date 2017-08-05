@@ -344,7 +344,7 @@ function CreateChar(ch,name)
   -- Name
   RPGChar.SetName(ch,name or ch)
   -- Stats  
-  local stats = {'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion',"Counter","Critical",'HP','AP',"SR_Poison","SR_Disease","SR_Silence",'SR_Sleep','SR_Paralysis','SR_Death','SR_Destruction','SR_Curse','ER_None','ER_Flame','ER_Frost','ER_Water','ER_Wind','ER_Earth','ER_Thunder','ER_Darkness','ER_Light'}
+  local stats = {'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion',"Counter","Critical",'HP','AP',"SR_Poison","SR_Disease","SR_Silence",'SR_Sleep','SR_Paralysis','SR_Death','SR_Destruction','SR_Curse','ER_None','ER_Flame','ER_Frost','ER_Water','ER_Wind','ER_Earth','ER_Lightning','ER_Darkness','ER_Light'}
   local works = {'BASE','BUFF','EQP','POWERUP','END'}
   for st in each(stats) do
       for w in each(works) do

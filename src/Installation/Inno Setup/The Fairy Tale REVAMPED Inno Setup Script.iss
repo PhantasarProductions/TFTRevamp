@@ -6,9 +6,9 @@
 
 
 #define MyAppName "The Fairy Tale REVAMPED"
-#define MyAppVersion "0.0.0 pre alpha"
+#define MyAppVersion "Beta"
 #define MyAppPublisher "Phantasar productions"
-#define MyAppURL "http://tricky1975.github.io/tft/About.html"
+#define MyAppURL "http://tricky.gamejolt.io"
 #define MyAppExeName "The Fairy Tale REVAMPED.exe"
 
 [Setup]
@@ -45,11 +45,12 @@ Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescrip
 Source: "Z:\Volumes\Scyndi\Releases\The Fairy Tale REVAMPED\Windows\The Fairy Tale REVAMPED.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Z:\Volumes\Scyndi\Releases\The Fairy Tale REVAMPED\Windows\LAURA2.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Z:\Volumes\Scyndi\Releases\The Fairy Tale REVAMPED\OSX\The Fairy Tale REVAMPED.app\Contents\Resources\TFT_DDem.jcr"; DestDir: "{app}"; Flags: ignoreversion
-Source: "Z:\Volumes\Scyndi\Releases\The Fairy Tale REVAMPED\OSX\The Fairy Tale REVAMPED.app\Contents\Resources\TFT_MDDem.jcr"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Z:\Volumes\Scyndi\Releases\The Fairy Tale REVAMPED\OSX\The Fairy Tale REVAMPED.app\Contents\Resources\TFT_DFul.jcr"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Z:\Volumes\Scyndi\Releases\The Fairy Tale REVAMPED\OSX\The Fairy Tale REVAMPED.app\Contents\Resources\TFT_MFul.jcr"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Z:\Volumes\Scyndi\Releases\The Fairy Tale REVAMPED\OSX\The Fairy Tale REVAMPED.app\Contents\Resources\TFT_MDem.jcr"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Z:\Volumes\Scyndi\Releases\The Fairy Tale REVAMPED\OSX\The Fairy Tale REVAMPED.app\Contents\Resources\TFT_NETW.jcr"; DestDir: "{app}"; Flags: ignoreversion
-Source: "Z:\Volumes\Scyndi\Releases\The Fairy Tale REVAMPED\OSX\The Fairy Tale REVAMPED.app\Contents\Resources\TFT_VDDem.jcr"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Z:\Volumes\Scyndi\Releases\The Fairy Tale REVAMPED\OSX\The Fairy Tale REVAMPED.app\Contents\Resources\TFT_VDem.jcr"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Z:\Volumes\Scyndi\Releases\The Fairy Tale REVAMPED\OSX\The Fairy Tale REVAMPED.app\Contents\Resources\TFT_VFul.jcr"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Z:\Volumes\Scyndi\Releases\The Fairy Tale REVAMPED\OSX\The Fairy Tale REVAMPED.app\Contents\Resources\tft.jcr"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 

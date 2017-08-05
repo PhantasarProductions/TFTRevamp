@@ -1,6 +1,6 @@
 --[[
   Char.lua
-  Version: 17.05.13
+  Version: 17.08.05
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -40,7 +40,9 @@ debug = {}
 
 oldstuff = {}
 
-stats = {'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion','Critical','Counter','HP','AP'}
+stats = {'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion','Critical','Counter','HP','AP',
+         'SR_Poison','SR_Disease','SR_Paralysis','SR_Sleep','SR_Death','SR_Curse','SR_Undead',
+         'ER_Darkness','ER_Light','ER_Flame','ER_Lightning','ER_Wind','ER_Frost','ER_Water','ER_Earth'}
 
 
 function FixSRStat(ch,stat)
