@@ -46,12 +46,14 @@ end
 
 function StartSealed()
     local stats = {'Power','Endurance','Intelligence','Resistance','Speed','Accuracy','Evasion','HP'}
+    local statplus = { Speed=25 }
+    local statmul = { HP = 5 }
     for i,c in ipairs(mirror) do
         local oc = c
         if c=='Jake' then oc='Jake_Human' end
         for stat in each(stats) do
             CSay("Copying stat "..stat.." from "..c.." to foe #"..i)
-            RPG.DefStat('FOE_'..i,'BASE_'..stat,RPG.Stat(oc,'END_'..stat))
+            RPG.DefStat('FOE_'..i,'BASE_'..stat,(RPG.Stat(oc,'END_'..stat)+(statplus[stat] or 0)*((statmul[stat] or 1)*skill)))
         end     
         local punt = RPG.Points('FOE_'..i,'HP')
         punt.Have = punt.Maximum
