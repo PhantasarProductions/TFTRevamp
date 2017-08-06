@@ -1,7 +1,7 @@
 --[[
   MiniMsg.Linker.lua
-  Version: 16.10.08
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 17.08.06
+  Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -48,4 +48,9 @@ end
 ShowMiniMsg = ShowMiniMsg or function    ()
     MS.LoadNew('MINIMSG','Script/Subs/MiniMsg.lua')
     MS.Run("MINIMSG",'ShowMiniMsg')
+end    
+
+ResetMiniMsg = ResetMiniMsg or function ()
+    MS.LoadNew('MINIMSG','Script/Subs/MiniMsg.lua')
+    MS.Run("MINIMSG",'ResetMiniMsg')
 end    

@@ -1,6 +1,6 @@
 --[[
   Combat.lua
-  Version: 17.08.05
+  Version: 17.08.06
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -189,6 +189,7 @@ function CombatStartEvent()
 end
 
 function InitCombat()
+   ResetMiniMsg()   
    Var.Clear("$SELECTEDABILITY") -- Prevent conflicts with looking to the abilities in the field
    combat = Var2Table("COMBAT.",true)
    SetUpCards()

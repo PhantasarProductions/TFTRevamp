@@ -50,6 +50,11 @@ function MiniMsg(msg,x,y,r,g,b)
    CSay("MiniMsg: "..msg)
 end
 
+function ResetMiniMsg()
+    tminimsg = tminimsg or {}
+    ClearTable(tminismg)
+end    
+
 function ShowMiniMsg()
    if oldflow~=LAURA.GetFlow() then tminimsg = {} oldflow=LAURA.GetFlow() end
    Image.Rotate(0)
@@ -57,7 +62,7 @@ function ShowMiniMsg()
    local s = (math.sin(Time.MSecs())/100)+.5
    for i,d in pairs(tminimsg) do
        if d.x<25   then d.x=d.x+1 elseif d.x>25   then d.x=math.floor(d.x-1) end
-       if d.y<i*25 then d.y=d.y+1 elseif d.y>25*i then d.y=math.floor(d.y-2) else d.time=d.time-1 end
+       if d.y<i*25 then d.y=d.y+1 elseif d.y>25*i then d.y=math.floor(d.y-2) elseif d.x<=25 then d.time=d.time-1 end
        DarkText(d.msg,d.x,d.y,0,0,d.r*s,d.g*s,d.b*s)
    end
    if tminimsg[1] and tminimsg[1].time<=0 then table.remove(tminimsg,1) end 
