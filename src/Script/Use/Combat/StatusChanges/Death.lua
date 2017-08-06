@@ -79,7 +79,7 @@ function KillAward(myfoe)
            if ch~="" and RPG.GetData(ch,'Master')=='Midas' then midasmodifier = midasmodifier + ({5,2.5,1.25})[skill] end
        end
        local acash = math.ceil(myfoe.data.Cash * ({2,1,.5})[skill])
-       acash = math.floor(cash * midasmodifier)
+       acash = math.floor(acash * midasmodifier)
        if newgameplus then acash = acash * (4-skill) end
        local shilders = "shilders"; if acash==1 then shilders='shilder' end
        ChMiniMsg(myfoe.tag,"Dropped "..acash.." "..shilders,0,180,255)
