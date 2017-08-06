@@ -52,7 +52,7 @@ end
 
 function ResetMiniMsg()
     tminimsg = tminimsg or {}
-    ClearTable(tminismg)
+    ClearTable(tminimsg)
 end    
 
 function ShowMiniMsg()
