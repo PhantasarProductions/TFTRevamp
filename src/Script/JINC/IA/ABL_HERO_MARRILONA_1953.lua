@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_1953.lua
-  Version: 17.08.05
+  Version: 17.08.06
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
