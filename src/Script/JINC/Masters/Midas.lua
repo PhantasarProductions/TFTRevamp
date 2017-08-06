@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.01.10
+version: 17.08.07
 ]]
 local Midas = {}
 
@@ -100,7 +100,7 @@ function Midas.ShowScore(ch)
     return score.." shilders"
 end
 
-Midas.Desc = {"Midas knows all about making money","Money you make while being his apprentice","may give you new skills","However, money you lose or spend WILL","be subtracted from your score","","Will he make you rich or rip you off?"}
+Midas.Desc = {"Midas knows all about making money","Money you make while being his apprentice","may give you new skills","However, money you lose or spend WILL","be subtracted from your score","","Will he make you rich or rip you off?","","When you study under Midas","The enemies may drop more money","when they die."}
 
 
 return Midas
