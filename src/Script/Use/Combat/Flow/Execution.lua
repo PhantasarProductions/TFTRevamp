@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.07.12
+  Version: 17.08.07
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -267,6 +267,7 @@ function fflow.Execution()
            if act['rew_GainSkill'..i] and act['rew_GainSkill'..i]>0 and (RPG.PointsExists(nextact.executor.tag,'SK_EXP_'..i)==1) then
               local reward = act['rew_GainSkill'..i]
               if newgameplus then reward = reward * (4-skill) end
+              if RPG.GetData(nextact.executor.tag,"Master")=='Fandalora' then reward = math.ceil(reward * ({6.7,3.1,1.25})[skill]) end
               IncSkill(nextact.executor.tag,i, reward )   
            end
       end
@@ -274,6 +275,7 @@ function fflow.Execution()
       if act.Rew_GainAP then
          local rewap = act.Rew_GainAP
          if newgameplus then rewap = rewap * ({2,1.25,1})[skill] end
+         if RPG.GetData(nextact.executor.tag,"Master")=='Fandalora' then rewap = math.ceil(rewap * ({1.25,1.10,1.01})[skill]) end
          RPG.Points(nextact.executor.tag,"AP").Inc(rewap)
       end     
    end     

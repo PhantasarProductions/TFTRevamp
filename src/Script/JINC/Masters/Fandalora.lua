@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.17
+version: 17.08.07
 ]]
 local RPG = RPGStat
 
@@ -132,7 +132,7 @@ Fandalora.stats = {
                       Resistance = 15,
                }
 
-Fandalora.Desc = {"Marrilona's father","Expert on dark magic and defense against it","May teach you some darker spells","Because you may need them"}
+Fandalora.Desc = {"Marrilona's father","Expert on dark magic and defense against it","May teach you some darker spells","Because you may need them","","Studying under Fandalora can increase","the AP recovery some actions cause","And will also increase the","skill experience you'll gain","For executing moves"}
 
 function Fandalora.ShowScore(ch)
      if ch=="Dandor" then return "N/A" end
