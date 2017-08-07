@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.09
+version: 17.08.07
 ]]
 
 -- @USE /Script/Use/Specific/EndOfPrologue.lua
@@ -66,7 +66,7 @@ end
 
 
 function MasterFandalora()
-  local need = 5 * skill
+  local need = math.floor(4.3 * skill)
   local jake = 0
   local marrilona = 0
   for i=1,5 do

@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.08
+version: 17.08.07
 ]]
 
 local RPG = RPGStat
@@ -111,7 +111,7 @@ Rubine.stats = {
                       Evasion = 5
                }
 
-Rubine.Desc = {"Rubine is a female thief","She rewards the ability to find money","You score a point each time you find money","Score enough points to learn new skills"}
+Rubine.Desc = {"Rubine is a female thief","She rewards the ability to find money","You score a point each time you find money","Score enough points to learn new skills","","While you study under Rubine,","there is 1 to "..math.abs((skill*2)^2).." chance","an attack can be completely voided"}
 
 function Rubine.ShowScore(ch)
      return RPGStat.Stat(ch,"RubinePoints")

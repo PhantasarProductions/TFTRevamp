@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.01
+version: 17.08.07
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
@@ -100,6 +100,7 @@ function Attack(act,g,i,na)
     local atag = na.executor.tag
     local atk = RPG.Stat(atag,"END_"..act.Attack_AttackStat) * ((act.Attack or 100)/100)
     local def = 0 
+    local voided
     if act.Attack_DefenseStat~="None" then def = RPG.Stat(ttag,"END_"..act.Attack_DefenseStat) end
     -- Defense modifier based on difficulty settings
     local defmod = { Foe = {.25,.50,.75},Hero={.50,.30,.15}}
@@ -123,8 +124,13 @@ function Attack(act,g,i,na)
        if act.Attack_DefenseStat=="Power" or act.Attack_DefenseStat=="Endurance" and RPG.PointsExists("Dandor","SK_EXP_2")~=0 then RPG.Points("Dandor","SK_EXP_2").inc(damage)
        elseif act.Attack_DefenseStat=="Intelligence" or act.Attack_DefenseStat=="Resistance" and RPG.PointsExists("Dandor","SK_EXP_3")~=0 then RPG.Points("Dandor","SK_EXP_3").inc(damage) end
     end
+    -- Rubine's void
+    if g=='Hero' and RPG.GetData(ttag,'Master')=='Rubine' and rand(1,(skill*2)^2)==1 then
+       charmsg(ttag,'Voided',180,255)
+       RPG.Points(ttag,"AP").Inc(12/skill)
+    end
     -- And let's put it all through now... 
-    lastdamagedone = Hurt(ttag,damage,act.Attack_Element)
+    if not voided then lastdamagedone = Hurt(ttag,damage,act.Attack_Element) end
     local mychar = fighterbytag[ttag]
     if mychar.statuschanges then
        for s,d in pairs(mychar.statuschanges) do
