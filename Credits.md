@@ -127,7 +127,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/BoxText/Portret/Krandar/General.png
 		1. Graphics: GFX/BoxText/Portret/Krandar/VeelTeGroot.png
 		1. Graphics: GFX/BoxText/Portret/Krandar/Worried.png
-		1. Graphics: GFX/BoxText/Portret/Marata/General.png
+		1. Graphics: GFX/BoxText/Portret/Marata/General.png -alias- GFX/BoxText/Portret/Ramata/General.png
 		1. Graphics: GFX/BoxText/Portret/Nostramantu/EvilLaugh.png
 		1. Graphics: GFX/BoxText/Portret/Nostramantu/Human.png -alias- GFX/BoxText/Portret/Nostramantu_Human/General.png
 		1. Graphics: GFX/BoxText/Portret/Nostramantu/Nostramantu.piko

@@ -1,6 +1,6 @@
 --[[
   ITM_MEDICINE.lua
-  Version: 17.08.06
+  Version: 17.08.08
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================

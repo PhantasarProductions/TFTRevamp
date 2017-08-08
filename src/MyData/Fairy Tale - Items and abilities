@@ -14143,7 +14143,7 @@ Rec: ABL_HERO_MARRILONA_BREEZE
 	rew_CreateSkill3 = FALSE
 	rew_CreateSkill4 = FALSE
 	rew_CreateSkill5 = FALSE
-	rew_GainSkill1 = 0
+	rew_GainSkill1 = 1
 	rew_GainSkill2 = 0
 	rew_GainSkill3 = 25
 	rew_GainSkill4 = 0
