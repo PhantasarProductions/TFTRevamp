@@ -105,6 +105,7 @@ function DrawFighter(g,i)
      local chdata = Fighters[g][i]
      local mx,my = MouseCoords()
      local fx,fy = FighterCoords(g,i)
+     local targetted = flow=='playerselectsingletarget' and nextact and nextact.group==g and nextact.targetidx==i
      dfomx,dfomy = dfomx or mx, dfomy or my
      color ( chdata.R or 255, chdata.G or 255, chdata.B or 255)
      if flow=='playerselectsingletarget' and nextact and nextact.group==g and mx>fx-16 and mx<fx+16 and my>fy-64 and my<fy and mx~=dfomx and my~=dfomy then 
@@ -116,8 +117,7 @@ function DrawFighter(g,i)
         local g = math.ceil(math.abs(math.sin(ms+3000)*255))
         local b = math.ceil(math.abs(math.cos(ms+4500)*255))
         color(r,g,b)
-     end
-     
+     end     
      if targetted then
         local c=200+(sin(Time.MSecs()/250)*55)
         color(c,255-c,0)
@@ -169,7 +169,7 @@ function DrawFighters()
       end 
   end
   if flow=='playerselectsingletarget' and nextact then
-     TargetedInfo(nextact.group or 'Foe', nextact.targetindex or 1,70)
+     TargetedInfo(nextact.group or 'Foe', nextact.targetidx or 1,70)
   end   
   if array_charmessages and array_charmessages.CENTER_SCREEN then
       local acma = array_charmessages.CENTER_SCREEN
