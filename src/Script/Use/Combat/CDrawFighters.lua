@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 17.07.22
+  Version: 17.08.09
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -64,6 +64,42 @@ function FighterCoords(g,i)
    return Fighters[g][i].x,Fighters[g][i].y
 end   
 
+function TargetedInfo(g,i,subalpha)
+     -- Targetted information
+     local chdata = Fighters[g][i]
+     local shdata = chdata
+     local targetted = flow=='playerselectsingletarget' and nextact and nextact.group==g and nextact.targetidx==i
+     if targetted then
+        Image.LoadNew("BAT_COLPOINT","GFX/Combat/Sys/Collision.png")
+        SetFont('Target')
+        Image.SetAlphaPC(subalpha or 100)
+        local name = RPG.GetName(chdata.tag)
+        local align = {Foe=0,Hero=1}
+        local col = {Foe = {255,0,0},Hero={180,255,0}}
+        local php = RPG.Points(chdata.tag,"HP")
+        local hp  = php.have
+        local hpm = php.Maximum
+        local bw  = Image.TextWidth(name)
+        local bx  = ({Foe=shdata.x,Hero=shdata.x-bw})[g] 
+        DarkText(name,shdata.x,shdata.y-25,align[g],1,col[g][1],col[g][2],col[g][3])
+        color(50,50,50)
+        if skill~=3 then
+           Image.Rect(bx,shdata.y-25,bw,25)
+           color(180,255,0)
+            if skill==2 and (not bestiary[upper(chdata.fidtag)]) and prefixed(chdata.tag,'FOE_') then
+              DarkText('?',bx+(bw/2),shdata.y-12,2,2,rand(0,255),rand(0,255),rand(0,255))
+            else
+              Image.Rect(bx,shdata.y-25,(hp/hpm)*bw,25)    
+            end
+            local ty = shdata.y
+            for st,_ in spairs(chdata.statuschanges or {}) do
+                if st~="Oversoul" and st~="Hydra" then DarkText(st,bx,ty); ty=ty+25 end
+            end           
+        end  
+     end
+     Image.SetAlphaPC(100)
+end
+
 function DrawFighter(g,i)
      -- Drawing the char itself
      local chdata = Fighters[g][i]
@@ -81,7 +117,7 @@ function DrawFighter(g,i)
         local b = math.ceil(math.abs(math.cos(ms+4500)*255))
         color(r,g,b)
      end
-     local targetted = flow=='playerselectsingletarget' and nextact and nextact.group==g and nextact.targetidx==i
+     
      if targetted then
         local c=200+(sin(Time.MSecs()/250)*55)
         color(c,255-c,0)
@@ -123,35 +159,7 @@ function DrawFighter(g,i)
            acm.time = acm.time - 1       
         end
      end
-     -- Targetted information
-     if targetted then
-        Image.LoadNew("BAT_COLPOINT","GFX/Combat/Sys/Collision.png")
-        SetFont('Target')
-        local name = RPG.GetName(chdata.tag)
-        local align = {Foe=0,Hero=1}
-        local col = {Foe = {255,0,0},Hero={180,255,0}}
-        local php = RPG.Points(chdata.tag,"HP")
-        local hp  = php.have
-        local hpm = php.Maximum
-        local bw  = Image.TextWidth(name)
-        local bx  = ({Foe=shdata.x,Hero=shdata.x-bw})[g] 
-        DarkText(name,shdata.x,shdata.y-25,align[g],1,col[g][1],col[g][2],col[g][3])
-        color(50,50,50)
-        if skill~=3 then
-           Image.Rect(bx,shdata.y-25,bw,25)
-           color(180,255,0)
-            if skill==2 and (not bestiary[upper(chdata.fidtag)]) and prefixed(chdata.tag,'FOE_') then
-              DarkText('?',bx+(bw/2),shdata.y-12,2,2,rand(0,255),rand(0,255),rand(0,255))
-            else
-              Image.Rect(bx,shdata.y-25,(hp/hpm)*bw,25)    
-            end
-            local ty = shdata.y
-            for st,_ in spairs(chdata.statuschanges or {}) do
-                if st~="Oversoul" then DarkText(st,bx,ty); ty=ty+25 end
-            end           
-        end  
-     end
-     Image.SetAlphaPC(100)
+     TargetedInfo(g,i)
 end
 
 function DrawFighters()
@@ -160,6 +168,9 @@ function DrawFighters()
           DrawFighter(group,idx)
       end 
   end
+  if flow=='playerselectsingletarget' and nextact then
+     TargetedInfo(nextact.group or 'Foe', nextact.targetindex or 1,70)
+  end   
   if array_charmessages and array_charmessages.CENTER_SCREEN then
       local acma = array_charmessages.CENTER_SCREEN
       local acm=acma[1]
