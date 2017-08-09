@@ -1,6 +1,6 @@
 --[[
   ABL_HANDOSTILLOR_EVERYBODYKNEELBEFOREME.lua
-  Version: 17.08.08
+  Version: 17.08.09
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -57,6 +57,7 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "AllHeal",
 	["Stance"] = "Cast",
 	["Target"] = "AF",
 	["Title"] = "Everybody! Kneel Before Me!",

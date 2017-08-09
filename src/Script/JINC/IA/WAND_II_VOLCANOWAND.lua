@@ -1,6 +1,6 @@
 --[[
   WAND_II_VOLCANOWAND.lua
-  Version: 17.08.08
+  Version: 17.08.09
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -50,6 +50,7 @@ ret = {
 	["Desc"] = "Destroy the enemy, and let them taste the fires of hell!",
 	["EQP_STAT_Intelligence"] = 25,
 	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,

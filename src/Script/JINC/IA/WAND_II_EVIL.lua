@@ -1,6 +1,6 @@
 --[[
   WAND_II_EVIL.lua
-  Version: 17.08.08
+  Version: 17.08.09
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -63,6 +63,7 @@ ret = {
 	["ITM_Type"] = "Weapon",
 	["ITM_WeaponAbility"] = true,
 	["Rew_GainAP"] = 10,
+	["SpellAni"] = "AllDarkness",
 	["Stance"] = "Attack",
 	["Target"] = "AF",
 	["Title"] = "Evil Wand",

@@ -1,7 +1,7 @@
 --[[
-  ITM_APPLES.lua
+  Darkness.lua
   Version: 17.08.09
-  Copyright (C) 2017 Jeroen Petrus Broks
+  Copyright (C) 2014, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,29 +34,57 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-ret = {
-	["ADDCARD_Action_Act"] = "Self",
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Power",
-	["Attack_Element"] = "None",
-	["Desc"] = "An apple a day keeps the doctor away",
-	["Heal"] = 65,
-	["Heal_StatPercent"] = "Power",
-	["Heal_Type"] = "Absolute",
-	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
-	["ITM_Field"] = true,
-	["ITM_Sellable"] = true,
-	["ITM_ShopPrice"] = 250,
-	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "AllHeal",
-	["Stance"] = "Cast",
-	["Target"] = "AA",
-	["Title"] = "Apples",
-	["Type"] = "Item",
-	["Voice"] = "Heal"}
 
-return ret
+-- Dark, dark, dark
+function SpellAniDarkness(x,y,ak)
+  SpellAniExplosion = SpellAniExplosion or Image.LoadAnim('GFX/Combat/SpellAni/Explosion.png',64,64,0,16)           
+  Image.Hot(SpellAniExplosion,32,64)
+  Image.Color(0,0,0)
+  Image.Draw(SpellAniExplosion,x,y,ak)
+  Image.Color(255,255,255)
+end
 
--- This file is an automatically generated file!
 
+function SpellAni.Darkness(AG,AT,TG,TT)
+ local ak
+ local x,y = FighterCoords(TG,TT)
+ for ak=0,15 do
+     DrawScreen()
+     SpellAniDarkness(x,y,ak)
+     Flip()
+ end
+ Image.Free(SpellAniExplosion)
+ SpellAniExplosion=nil
+end
+
+function SpellAni.AllDarkness(AG,AT,TG,TT)
+local x,y
+local tlist = {}
+local t
+--- @SELECT StN[TA.TargetGroup]
+--- @CASE 1
+   for ak,poep in pairs(Fighters[TG])  do
+       x,y = FighterCoords(TG,ak)   
+       --if party[ak] and char[party[ak]].HP[1]>0 then 
+       table.insert(tlist,{x=x,y=y}) --end
+       end
+--[[       
+-- @CASE 2
+   for ak=1,9 do
+       x,y = Combat_EnemySpot(ak)
+       if FoeData[ak] and FoeData[ak].HP>0 then table.insert(tlist,{x=x,y=y}) end 
+       end       
+-- @ENDSELECT   
+]]    
+for ak=0,15 do
+    DrawScreen()
+    for _,t in ipairs(tlist) do
+        --Image.Draw(SAP_Flame,t.x,t.y,ak)
+        SpellAniDarkness(t.x,t.y,ak)
+        end
+    Flip()
+    --Time.Sleep(75)
+    end 
+Image.Free(SpellAniExplosion)    
+SpellAniExplosion=nil
+end

@@ -1396,6 +1396,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Use/Combat/SpellAni/Audio.lua
 		1. Script: Script/Use/Combat/SpellAni/Beaufort.lua
 		1. Script: Script/Use/Combat/SpellAni/DarkVision.lua
+		1. Script: Script/Use/Combat/SpellAni/Darkness.lua
 		1. Script: Script/Use/Combat/SpellAni/Donald Trump.lua
 		1. Script: Script/Use/Combat/SpellAni/Flame.lua
 		1. Script: Script/Use/Combat/SpellAni/Frost.lua
@@ -3085,6 +3086,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Foe/Sealed/MountainEmperor.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Spirata.Action.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Dandor.Spirata.png
+		1. Graphics: GFX/Combat/SpellAni/Explosion.png
 		1. Graphics: GFX/Combat/Spellani/Temptation/Heart.png
 		1. Graphics: GFX/MapSpots/Travel.png
 		1. Graphics: GFX/Textures/4 Elements/Aarde.png

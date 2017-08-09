@@ -1,6 +1,6 @@
 --[[
   EQP_HANDOSTILLOR_WP10.lua
-  Version: 17.08.08
+  Version: 17.08.09
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

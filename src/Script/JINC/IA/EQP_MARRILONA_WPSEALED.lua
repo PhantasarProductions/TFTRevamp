@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.08.08
+version: 17.08.09
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
@@ -76,6 +76,7 @@ ret = {
 	["EQP_STAT_SR_Sleep"] = 5,
 	["EQP_STAT_SR_Undead"] = 5,
 	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
@@ -87,7 +88,7 @@ ret = {
 	["ITM_WeaponAbility"] = true,
 	["Rew_GainAP"] = 25,
 	["SpellAni"] = "AllHeal",
-	["Stance"] = "Cast",
+	["Stance"] = "Attack",
 	["Target"] = "AF",
 	["Title"] = "Catastrophe",
 	["Type"] = "Item",
