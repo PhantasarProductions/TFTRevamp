@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.08.07
+  Version: 17.08.09
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -147,8 +147,12 @@ function PerformAction(act,group,i)
      -- Target Card Addition
      local card2add = { group = group, tag=myfighter.tag, letter=myfighter.letter }
      if act.ADDCARD_Char_Number then
+        local maxmove = ({ Foe = {100,1000,5000}, Hero={5000,1000,95} })[group][skill]
+        local moved = 0
         for ak=1,act.ADDCARD_Char_Number do
-            AddCard(card2add,ak*(act.ADDCARD_Char_Interval or 2))
+            if moved<maxmove then 
+               if AddCard(card2add,ak*(act.ADDCARD_Char_Interval or 2)) then moved=moved+1 end
+            end   
             effect=true
         end
      end
@@ -305,12 +309,16 @@ function fflow.Execution()
         --end
    end
    if act.ADDCARD_Action_Number and (not nextact.auto) then
+        local maxmove = ({ Foe = {25,2500,7000}, Hero={8000,2500,60} })[nextact.group][skill]
+        local moved = 0
         local card2add = { group = nextact.group, tag=nextact.tag, letter=nextact.letter, auto=true }
         card2add.nextact = {}
         for f,i in pairs(nextact) do card2add.nextact[f]=i; CSay("Added to new card: "..f) end
         if act.ADDCARD_Action_Act~="Self" then card2add.nextact.act=act.ADDCARD_Action_Act end
         for ak=1,act.ADDCARD_Action_Number do
-            AddCard(card2add,ak*(act.ADDCARD_Action_Interval or 2))            
+            if moved<maxmove then 
+               if AddCard(card2add,ak*(act.ADDCARD_Action_Interval or 2)) then moved = moved + 1 end
+            end             
         end
    end
    -- Is there a message? (Should only be used for learning new spells).

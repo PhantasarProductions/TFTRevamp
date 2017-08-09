@@ -1,6 +1,6 @@
 --[[
   Idle.lua
-  Version: 17.08.04
+  Version: 17.08.09
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -39,10 +39,11 @@ fflow = {}
 -- @FI
 
 function AddCard(data,aspot)
+    local hadtomove 
     local card = { data=data }
     local ch   = data.tag    
     local spot = aspot or ( 25 + (order.tagorder[ch] * 2)+ (math.floor(rand(1,order.tagorder[ch])/2)) )
-    while cards[spot] and cards[spot].data do spot=spot+1 end -- If the spot is taken, move to the next one, and keep doing this until an empty spot has been found.
+    while cards[spot] and cards[spot].data do spot=spot+1 hadtomove=true end -- If the spot is taken, move to the next one, and keep doing this until an empty spot has been found.
     cards[spot] = card
     if card.data.nextact and card.data.nextact.executor then card.data.tag = card.data.nextact.executor.tag end
 end
