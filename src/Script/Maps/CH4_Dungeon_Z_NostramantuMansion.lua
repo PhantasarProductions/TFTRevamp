@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.22
+version: 17.08.08
 ]]
 
 --[[
@@ -44,7 +44,7 @@ version: 17.07.22
 ]]
 
 
--- @DEFINE DEUR_NUMMERS
+-- @UNDEF DEUR_NUMMERS
 
 local function InitRandomDoors()
    local r
