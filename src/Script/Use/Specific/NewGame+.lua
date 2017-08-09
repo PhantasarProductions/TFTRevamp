@@ -1,6 +1,6 @@
 --[[
   NewGame+.lua
-  Version: 17.07.22
+  Version: 17.08.09
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -58,8 +58,8 @@ function ToHallHeroes(name,achkey,wmap)
    end
    CSay(c.." representatives found")
    if c==4 then Award('ZZNGP_ALL') end
-   WorldMap(wmap or 'Delisto')
    WorldMap_Unlock('NGPHEROES')
+   WorldMap(wmap or 'Delisto')
 end
 
 -- --[[
