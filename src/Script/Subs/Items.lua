@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.08.05
+  Version: 17.08.10
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -248,13 +248,20 @@ function ShowSpellList(pch,psizes)
       Image.Show('PREV',5,sizes[4]-20)
       Image.Show('NEXT',sizes[3]-20,sizes[4]-20)
    end   
-   if (INP.KeyH(KEY_PAGEDOWN)==1 or joyhit('R2') or (mousehit(1) and mx<10 and my>sizes[4]-20)) then 
+   --[[
+   if mousehit(1) then
+      CSay("mouse ("..mx..","..my..")  -> ("..math.abs(mx-sizes[1])..","..math.abs(my-sizes[4])..")")
+      for k in each(mysplit(serialize("AblSizes",sizes),"\n")) do CSay(k) end
+   end
+   -- ]]
+
+   if (INP.KeyH(KEY_PAGEDOWN)==1 or joyhit('R2') or (mousehit(1) and mx-sizes[1]>(sizes[3])-20 and my>sizes[4]-20))  then 
       SSLPG = SSLPG + 1
       if #ablpage[ch]<SSLPG then SSLPG=1 end -- Go on
    end 
-   if (INP.KeyH(KEY_PAGEUP)==1 or joyhit('L2') or (mousehit(1) and mx>sizes[3]-20 and my>sizes[4]-20)) then 
+   if (INP.KeyH(KEY_PAGEUP)==1 or joyhit('L2') or (mousehit(1) and mx-sizes[1]<10 and my>sizes[4]-20)) then 
       SSLPG = SSLPG - 1
-      if SSLPG<1 then SSLPG=#ablpage[ch] end -- Go on
+      if SSLPG<1 then SSLPG=#ablpage[ch] end -- Go back
    end 
    -- Show 
    local ck,ca,sk,sa
