@@ -101,7 +101,7 @@ function ShowParty(schar)
    local bsx 
    local imgtag
    local salph = 255
-   if schar and schar~="" then salph = math.abs(math.sin(Time.MSecs()/250)*100) end
+   if schar and schar~="" then salph = math.abs(math.sin(Time.MSecs()/350)*100) end
    p_sc = p_sc or {}
    black()
    Image.Rect(0,sy,SW,SH-sy)
