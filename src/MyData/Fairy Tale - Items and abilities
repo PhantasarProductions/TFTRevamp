@@ -18053,7 +18053,7 @@ Rec: ABL_MASTER_FANDALORA_VOID
 	EQP_STAT_SR_Silence = 0
 	EQP_STAT_SR_Sleep = 0
 	EQP_STAT_SR_Undead = 0
-	EffectScript = 
+	EffectScript = RemoveEnemy
 	EffectScript_Arg = 
 	EffectScript_External = FALSE
 	Heal = 0
@@ -18073,7 +18073,7 @@ Rec: ABL_MASTER_FANDALORA_VOID
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = 
+	SpellAni = DARKVISION
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast

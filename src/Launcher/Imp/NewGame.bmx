@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 17.06.30
+Version: 17.08.10
 End Rem
 Strict
 
@@ -31,7 +31,7 @@ Import "FrameWork.bmx"
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - NewGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","17.06.30"
+MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","17.08.10"
 
 Const ngpk$ = "aefaefb42e2d12163c52475d8eec4703"
 Const ngpf$ = "$AppSupport$/Phantasar Productions/LAURA2/TFTREVAMP/Saved Games/ODETOJOY"
