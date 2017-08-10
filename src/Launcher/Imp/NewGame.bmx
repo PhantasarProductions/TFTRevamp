@@ -158,7 +158,7 @@ Function F_GJToken(G:TGadget)
 	startgame.d "GameJoltToken",TextFieldText(G)
 End Function
 
-
+HideGadget GameJoltPanel ' And it will remain that way unless a solution for the http debacle has been found.
 
 gadgets.cr gamejoltuser,  CGUIN,F_GJUser
 gadgets.cr gamejolttoken, CGUIN,F_GJToken
