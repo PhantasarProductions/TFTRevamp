@@ -1419,6 +1419,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Use/Combat/SpellScript/Nostramantu Goes Oversoul.lua
 		1. Script: Script/Use/Combat/SpellScript/PlayWithPoints.lua
 		1. Script: Script/Use/Combat/SpellScript/PunishUser.lua
+		1. Script: Script/Use/Combat/SpellScript/RemoveEnemy.lua
 		1. Script: Script/Use/Combat/SpellScript/Rule of Vengeance.lua
 		1. Script: Script/Use/Combat/SpellScript/SafeShot.lua
 		1. Script: Script/Use/Combat/SpellScript/Spirata.lua

@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_FANDALORA_VOID.lua
-  Version: 17.08.09
+  Version: 17.08.10
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -43,6 +43,7 @@ ret = {
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
 	["Desc"] = "Remove all enemies (no effect on bosses).",
+	["EffectScript"] = "RemoveEnemy",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -54,6 +55,7 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "DARKVISION",
 	["Stance"] = "Cast",
 	["Target"] = "AF",
 	["Title"] = "Void",

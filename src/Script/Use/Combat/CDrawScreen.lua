@@ -1,6 +1,6 @@
 --[[
   CDrawScreen.lua
-  Version: 17.06.12
+  Version: 17.08.10
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -47,7 +47,7 @@ function ShowCard(i,myx,myy)
           elseif data.group=="Foe"   then
              if RPG.Points(data.tag,'HP').Have>0 then 
                 show="FOE_"..(data.letter or 'UNKNOWN')                
-                if data.boss or fighterbytag[data.tag].boss then show="BOSS_"..(data.letter or 'UNKNOWN') end
+                if data.boss or (fighterbytag[data.tag] and fighterbytag[data.tag].boss) then show="BOSS_"..(data.letter or 'UNKNOWN') end
              end   
           end
        end   
