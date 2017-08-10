@@ -1,6 +1,6 @@
 --[[
   Party.lua
-  Version: 17.08.05
+  Version: 17.08.10
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -94,12 +94,14 @@ function CheckEXP(ch)
   end
 end
 
-function ShowParty()
+function ShowParty(schar)
    local sy=(totalheight-100)+origin[2]
    local sx=origin[1]
    local ch
    local bsx 
    local imgtag
+   local salph = 255
+   if schar and schar~="" then salph = math.abs(math.sin(Time.MSecs()/250)*100) end
    p_sc = p_sc or {}
    black()
    Image.Rect(0,sy,SW,SH-sy)
@@ -118,7 +120,9 @@ function ShowParty()
        Image.LoadNew("CL_FACE_"..ch,"GFX/Boxtext/Portret/"..imgtag.."/General.png")
        p_sc[ch] = p_sc[ch] or math.ceil(120/(Image.Height("CL_FACE_"..ch))*100)
        Image.ScalePC(p_sc[ch],p_sc[ch]) 
+       if schar==ch then Image.SetAlphaPC(salph) end
        Image.Show("CL_FACE_"..ch,bsx,(totalheight+origin[2])-120) --(totalheight+origin[2])-Image.Height("CL_FACE_"..ch))
+       Image.SetAlphaPC(100)
        Image.ScalePC(100,100)
    end end
    -- Draw the statbars and numbers

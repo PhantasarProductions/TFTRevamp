@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 17.08.05
+  Version: 17.08.10
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -685,7 +685,7 @@ function Menu_DrawScreen()
    end
    -- Party pointer
    -- Party browsing if applicable
-   ShowParty()
+   ShowParty( RPG.PartyTag(menu.chn) )
    -- Mouse pointer
    ShowMouse()
 end

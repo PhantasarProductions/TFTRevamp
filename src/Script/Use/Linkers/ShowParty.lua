@@ -32,11 +32,15 @@
   
  **********************************************
  
-version: 17.01.03
+version: 17.08.10
 ]]
 
-ShowParty = ShowParty or function() 
-  MS.LN_Run('PARTY','Script/Subs/Party.lua','ShowParty')
+ShowParty = ShowParty or function(schar)
+  if schar then
+     MS.LN_Run('PARTY','Script/Subs/Party.lua','ShowParty',schar)
+  else 
+     MS.LN_Run('PARTY','Script/Subs/Party.lua','ShowParty')
+  end
 end  
 
 Party = Party or function(p)

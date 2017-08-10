@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.08.07
+version: 17.08.10
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
@@ -128,6 +128,7 @@ function Attack(act,g,i,na)
     if g=='Hero' and RPG.GetData(ttag,'Master')=='Rubine' and rand(1,(skill*2)^2)==1 then
        charmsg(ttag,'Voided',180,255)
        RPG.Points(ttag,"AP").Inc(12/skill)
+       voided=true
     end
     -- And let's put it all through now... 
     if not voided then lastdamagedone = Hurt(ttag,damage,act.Attack_Element) end
