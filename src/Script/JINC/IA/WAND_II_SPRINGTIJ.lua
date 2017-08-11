@@ -1,6 +1,6 @@
 --[[
   WAND_II_SPRINGTIJ.lua
-  Version: 17.08.10
+  Version: 17.08.12
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

@@ -1,6 +1,6 @@
 --[[
   ITM_POTIONVITALITY.lua
-  Version: 17.08.10
+  Version: 17.08.12
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -43,12 +43,16 @@ ret = {
 	["Attack_DefenseStat"] = "Endurance",
 	["Attack_Element"] = "None",
 	["Desc"] = "Use in combat to restore VIT",
+	["EffectScript"] = "AlterPoints",
+	["EffectScript_Arg"] = "VIT 10000",
 	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Sellable"] = true,
 	["ITM_ShopPrice"] = 1200,
 	["ITM_Type"] = "Consumable",

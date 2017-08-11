@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_HANDOSTILLOR_VITALITY.lua
-  Version: 17.08.10
+  Version: 17.08.12
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -49,11 +49,13 @@ ret = {
 	["EffectScript"] = "AlterPoints",
 	["EffectScript_Arg"] = "VIT 200",
 	["Heal_StatPercent"] = "Intelligence",
+	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
 	["ITM_ACC_HandoStillor"] = true,
 	["ITM_ACC_Jake"] = true,
 	["ITM_ACC_Marrilona"] = true,
 	["ITM_Combat"] = true,
+	["ITM_EQP_For"] = "Jake",
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",

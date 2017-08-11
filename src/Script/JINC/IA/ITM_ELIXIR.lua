@@ -1,6 +1,6 @@
 --[[
   ITM_ELIXIR.lua
-  Version: 17.08.10
+  Version: 17.08.12
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -62,7 +62,7 @@ ret = {
 	["ITM_Type"] = "Consumable",
 	["Revive"] = true,
 	["Stance"] = "Cast",
-	["Target"] = "1F",
+	["Target"] = "1A",
 	["Title"] = "Elixir",
 	["Type"] = "Item"}
 

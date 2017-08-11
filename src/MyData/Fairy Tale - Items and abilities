@@ -38609,7 +38609,7 @@ Rec: ITM_ELIXIR
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
-	Target = 1F
+	Target = 1A
 	Title = Elixir
 	Type = Item
 	USE_Penalty = 0
