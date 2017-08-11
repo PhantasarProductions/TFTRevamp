@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.08.10
+  Version: 17.08.11
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -388,12 +388,14 @@ end
 
 function ItemShowList(showfilter,enablefilter,char,psizes)
    local sizes = ({['table']=psizes, ['string']=mysplit(psizes,",") })[type(psizes)] for i=1,#sizes do sizes[i]=tonumber(sizes[i]) or 0 end 
-   local mx,my = GetMouse(); my=my-sizes[2]-30 -- mx=sizes[1]+mx; 
+   local mx,my = GetMouse(); 
+   local tmy = my ; my=my-sizes[2]-30 -- mx=sizes[1]+mx; 
    local scrollid = "I_"..showfilter.."_"..enablefilter.."_"..char
    local col = {[true] = {[true]={255,180,0},[false]={255,255,255}},
                          [false]={[true]={100,100,100},[false]={70,70,70}}}
    local titm
    local moved = oldsslmx~=mx or oldsslmy~=my
+   local sh = Sys.Val(SH)
    oldsslmx = mx
    oldsslmy = my
    pos[scrollid] = pos[scrollid] or 1
@@ -419,8 +421,8 @@ function ItemShowList(showfilter,enablefilter,char,psizes)
              if y-scrollers[scrollid].down<0 then scrollers[scrollid].down=scrollers[scrollid].down - 2 
              elseif y-scrollers[scrollid].down>scrollers[scrollid].h-50 then scrollers[scrollid].down = scrollers[scrollid].down + 2 end
        end       
-       if moved and mx>Sys.Val(sizes[1]) and mx<Sys.Val(sizes[3])+Sys.Val(sizes[1]) and my+scrollers[scrollid].down>y and my+scrollers[scrollid].down<y+25 and my<sizes[4] then pos[scrollid]=idx end
-       if mx>0 and mx<tonumber(sizes[3]) and my+scrollers[scrollid].down>=y and my+scrollers[scrollid].down<=y-24 and INP.MouseH(1)==1 then
+       if moved and mx>Sys.Val(sizes[1]) and mx<Sys.Val(sizes[3])+Sys.Val(sizes[1]) and my+scrollers[scrollid].down>y and my+scrollers[scrollid].down<y+25 and my<sizes[4] and tmy<sh-100 then pos[scrollid]=idx end
+       if mx>0 and mx<tonumber(sizes[3]) and my+scrollers[scrollid].down>=y and my+scrollers[scrollid].down<=y-24 and INP.MouseH(1)==1 and tmy<sh-100 then
           if y==pos[scrollid] then
              Var.D("$SELECTEDITEM",itm)
           else
