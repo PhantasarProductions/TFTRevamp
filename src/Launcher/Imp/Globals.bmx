@@ -20,19 +20,19 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 17.07.09
+Version: 17.08.17
 End Rem
 Strict
 
 Import jcr6.zlibdriver
 Import brl.pngloader
-Import tricky_units.initfile2
+Import tricky_units.gini
 Import tricky_units.Dirry
 Import tricky_units.Listfile
 Import maxgui.maxgui
 
 
-MKL_Version "The Fairy Tale - REVAMP - Globals.bmx","17.07.09"
+MKL_Version "The Fairy Tale - REVAMP - Globals.bmx","17.08.17"
 MKL_Lic     "The Fairy Tale - REVAMP - Globals.bmx","GNU General Public License 3"
 
 AppTitle = StripAll(AppFile)

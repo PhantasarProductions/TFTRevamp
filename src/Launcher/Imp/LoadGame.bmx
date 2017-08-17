@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 17.07.09
+Version: 17.08.17
 End Rem
 
 
@@ -35,7 +35,7 @@ Import tricky_Units.ListDir
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - LoadGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","17.07.09"
+MKL_Version "The Fairy Tale - REVAMP - LoadGame.bmx","17.08.17"
 
 afr_InpCol 0,27,0,0,155,0
 afr_WinCol 0,255,0,0,25,0
@@ -430,7 +430,7 @@ Function Check()
 	Local d$,tg:TGadget
 	Local su:TGadget,sf:TGadget
 	If Not CountList(dirs) Return ShowCheck(False)	
-	If CountList(dirs)=1 
+	If CountList(dirs)=1 	
 		sf = ListSg(savedir+"/"+String(dirs.valueatindex(0)),root,String(dirs.valueatindex(0)))
 	Else
 		For d=EachIn(dirs)
@@ -454,6 +454,7 @@ Function Check()
 	Else 
 		nogame
 	EndIf	
+	ShowCheck True
 End Function
 
 Function QG_Check()
