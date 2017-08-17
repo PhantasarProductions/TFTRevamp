@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 17.08.10
+Version: 17.08.14
 End Rem
 Strict
 
@@ -31,7 +31,7 @@ Import "FrameWork.bmx"
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - NewGame.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","17.08.10"
+MKL_Version "The Fairy Tale - REVAMP - NewGame.bmx","17.08.14"
 
 Const ngpk$ = "aefaefb42e2d12163c52475d8eec4703"
 Const ngpf$ = "$AppSupport$/Phantasar Productions/LAURA2/TFTREVAMP/Saved Games/ODETOJOY"
@@ -158,7 +158,7 @@ Function F_GJToken(G:TGadget)
 	startgame.d "GameJoltToken",TextFieldText(G)
 End Function
 
-HideGadget GameJoltPanel ' And it will remain that way unless a solution for the http debacle has been found.
+'HideGadget GameJoltPanel
 
 gadgets.cr gamejoltuser,  CGUIN,F_GJUser
 gadgets.cr gamejolttoken, CGUIN,F_GJToken

@@ -1479,7 +1479,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Game identification data: ID/ID.Vocal.Demo
 		1. Game identification data: ID/ID.Vocal.Full
 	- These are files specific to the story and may not be extracted from this JCR file.
-		1. ???: GFX/Actors/Bundled/Player/Dandor.East (Autosaved).piko-png
 		1. ???: GFX/Combat/Fighters/Foe/Sealed/KabiArc.lzh
 		1. Audio: Audio/SFX/Nostramantu/Laugh.ogg
 		1. Font: Fonts/Phantasar.ttf
@@ -1639,7 +1638,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Actors/Single/Fairies/Fandalora.piko
 		1. Graphics: GFX/Actors/Single/Fairies/Fandalora.png
 		1. Graphics: GFX/Actors/Single/Fairies/Fandalora_BackSide.png
-		1. Graphics: GFX/Actors/Single/Fairies/Feenalaria (Autosaved).piko
 		1. Graphics: GFX/Actors/Single/Fairies/Feenalaria.piko
 		1. Graphics: GFX/Actors/Single/Fairies/Feenalaria.png
 		1. Graphics: GFX/Actors/Single/Fairies/Freya.piko

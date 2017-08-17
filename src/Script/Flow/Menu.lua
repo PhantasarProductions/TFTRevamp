@@ -1,6 +1,6 @@
 --[[
   Menu.lua
-  Version: 17.08.10
+  Version: 17.08.17
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -256,13 +256,17 @@ function initquit()
  -- @FI
  quitcount = 0
  for k,v in pairs(quit) do quitcount = quitcount + 1 end
+ -- @IF ALLOW_QUITSAVE
  qsaveroomdata.map = Maps.CodeName
  qsaveroomdata.layer = Maps.LayerCodeName
+ -- @FI
  return quit
 end    
 
 function features.Quit(x,y,w,h)
+  -- @IF ALLOW_QUITSAVE
   if qsaveroomdata.map ~= Maps.CodeName or qsaveroomdata.layer ~= Maps.LayerCodeName then quit=nil end
+  -- @FI
   quit = quit or initquit()
   local cx = x + (w/2)
   local cy = y + (h/2)
