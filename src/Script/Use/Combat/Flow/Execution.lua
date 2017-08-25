@@ -313,7 +313,9 @@ function fflow.Execution()
         local moved = 0
         local card2add = { group = nextact.group, tag=nextact.tag, letter=nextact.letter, auto=true }
         card2add.nextact = {}
-        for f,i in pairs(nextact) do card2add.nextact[f]=i; CSay("Added to new card: "..f) end
+        for f,i in pairs(nextact) do 
+            if f~="aftermsg" then card2add.nextact[f]=i; CSay("Added to new card: "..f) end 
+        end
         if act.ADDCARD_Action_Act~="Self" then card2add.nextact.act=act.ADDCARD_Action_Act end
         for ak=1,act.ADDCARD_Action_Number do
             if moved<maxmove then 
