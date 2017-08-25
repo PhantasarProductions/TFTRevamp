@@ -1,6 +1,6 @@
 --[[
   PlayerInput.lua
-  Version: 17.07.18
+  Version: 17.08.25
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -140,7 +140,7 @@ function fflow.playerinput()
          Image.LoadNew("COMBAT_ICON_"..key,"GFX/Combat/Menu/"..key..".png")
          -- dy = (dy or 0) + 20; Image.NoFont() DarkText('data.key='..sval(data.key)..' KeyDown('..sval(data.key)..')='..INP.KeyD(data.key).." ("..key..")",0,dy)
          if (INP.KeyD(data.key)==1 or (INP.JoyX()==(data.joyx or INP.JoyX()) and INP.JoyY()==(data.joyy or INP.JoyY()))) and data.allow() then citem=key end 
-         if (INP.MouseH(1)==1 and mousex>data.x+menux and mousex<data.x+menux+50 and mousey>data.y+menuy and mousey<data.y+menuy+50) then citem=key end
+         if (INP.MouseH(1)==1 and mousex>data.x+menux and mousex<data.x+menux+50 and mousey>data.y+menuy and mousey<data.y+menuy+50) and data.allow() then citem=key end
          if key==citem and (INP.KeyH(KEY_ENTER)==1 or INP.KeyH(KEY_SPACE)==1 or joyhit('CONFIRM') or (INP.MouseH(1)==1 and mousex>data.x+menux and mousex<data.x+menux+50 and mousey>data.y+menuy and mousey<data.y+menuy+50)) then
             nextact = {}
             data.selected(inputchar.tag)
