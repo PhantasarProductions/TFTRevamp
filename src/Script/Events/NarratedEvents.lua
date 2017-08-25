@@ -128,7 +128,10 @@ function MAIN_FLOW()
        if story.id>#story.data then return GoNext() end
        calc(story)  
     end
-    if INP.KeyH(27)==1 or INP.MouseH(2)==1 then return GoNext() end
+    if INP.KeyH(27)==1 or INP.MouseH(2)==1 then
+       Audio.Stop("PROLOGUECHANNEL") 
+       return GoNext() 
+    end
   end     
   -- Flip
   Flip()
