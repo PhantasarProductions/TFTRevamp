@@ -1,7 +1,7 @@
 --[[
-  AUTO_NOODHULP.lua
+  Rock.lua
   Version: 17.09.06
-  Copyright (C) 2017 Jeroen Petrus Broks
+  Copyright (C) 2015, 2017 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -34,43 +34,40 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
-ret = {
-	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 5,
-	["ADDCARD_Char_Interval"] = 5,
-	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
-	["CureCurse"] = true,
-	["CureDisease"] = true,
-	["CureParalysis"] = true,
-	["CurePetrification"] = true,
-	["CurePoison"] = true,
-	["CureSilence"] = true,
-	["CureSleep"] = true,
-	["CureUndead"] = true,
-	["Desc"] = "Heal when needed",
-	["Heal"] = 100,
-	["Heal_StatPercent"] = "Intelligence",
-	["Heal_Type"] = "Percent",
-	["ITM_ACC_Dandor"] = true,
-	["ITM_ACC_HandoStillor"] = true,
-	["ITM_ACC_Jake"] = true,
-	["ITM_ACC_Marrilona"] = true,
-	["ITM_Combat"] = true,
-	["ITM_EQP_For"] = "Jake",
-	["ITM_Field"] = true,
-	["ITM_Sellable"] = true,
-	["ITM_Type"] = "Consumable",
-	["Revive"] = true,
-	["SpellAni"] = "StillorHelp",
-	["Stance"] = "Cast",
-	["Target"] = "1A",
-	["Title"] = "Emergency Heal",
-	["Type"] = "Item"}
 
-return ret
+-- @IF IGNOREME
+local SpellAni = {}
+-- @FI
 
--- This file is an automatically generated file!
 
+
+-- Rock
+function SpellAni.Rock(ActG,ActT,TarG,TarT)
+local ax,ay = FighterCoords(ActG,ActT)
+local tx,ty = FighterCoords(TarG,TarT)
+local gx = (tx-ax)/30
+local gy = (ty-ay)/30
+local x,y=ax,ay
+local rot = 0
+local rotspd=rand(30,40)
+Image.LoadNew("PROJECTILE_Rock","GFX/Combat/SpellAni/Rock.png")
+Image.HotCenter("PROJECTILE_Rock")
+--SFX("Audio/SFX/Photon.ogg")
+for ak=1,30 do
+   --repeat
+   x = x + gx
+   y = y + gy
+   rot = rot + rotspd
+   DrawScreen()
+   White()
+   Image.Rotate(rot)
+   Image.Show("PROJECTILE_Rock",x,y)
+   Image.Rotate(0)
+   Flip()
+   --until x<-50 or x>850 or y<-50 or y>650
+   end
+end
+
+-- @IF IGNOREME
+return SpellAni
+-- @FI

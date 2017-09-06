@@ -1,6 +1,6 @@
 --[[
   ITM_ROCK.lua
-  Version: 17.08.12
+  Version: 17.09.06
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -56,6 +56,7 @@ ret = {
 	["ITM_Sellable"] = true,
 	["ITM_ShopPrice"] = 500,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "Rock",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
 	["Title"] = "Rock",

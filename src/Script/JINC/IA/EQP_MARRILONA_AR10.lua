@@ -1,6 +1,6 @@
 --[[
   EQP_MARRILONA_AR10.lua
-  Version: 17.08.12
+  Version: 17.09.06
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

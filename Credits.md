@@ -1403,6 +1403,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/Use/Combat/SpellAni/Heal.lua
 		1. Script: Script/Use/Combat/SpellAni/Het dondert en het bliksemt en het regent liters bier.lua
 		1. Script: Script/Use/Combat/SpellAni/Quake.lua
+		1. Script: Script/Use/Combat/SpellAni/Rock.lua
 		1. Script: Script/Use/Combat/SpellAni/StillorHelp.lua
 		1. Script: Script/Use/Combat/SpellAni/Temptation.lua
 		1. Script: Script/Use/Combat/SpellScript/AAAAAA_Alg.lua
@@ -3158,6 +3159,9 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 	- This entry is in the public domain and free of all restrictions.
 		1. Graphics: GFX/CoMbAt/Fighters/Foe/Reg/FireElemental.png
 		1. Graphics: GFX/CoMbAt/Fighters/Foe/Reg/WaterElemental.png
+- glitch
+	- This entry is in the public domain and free of all restrictions.
+		1. Graphics: GFX/Combat/SpElLaNi/Rock.png
 - http://www.freesfx.co.uk
 	- The full text is on http://www.freesfx.co.uk/info/eula - You may only download these files from the original website under the terms described there!
 		1. Audio: Audio/SpellAni/Thunder/Spark.ogg

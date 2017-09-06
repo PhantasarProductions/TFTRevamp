@@ -1,6 +1,6 @@
 --[[
   WAND_GAIA.lua
-  Version: 17.08.12
+  Version: 17.09.06
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -60,6 +60,7 @@ ret = {
 	["ITM_Type"] = "Weapon",
 	["ITM_WeaponAbility"] = true,
 	["Rew_GainAP"] = 5,
+	["SpellAni"] = "Rock",
 	["Stance"] = "Attack",
 	["Target"] = "1F",
 	["Title"] = "Gaia Wand",

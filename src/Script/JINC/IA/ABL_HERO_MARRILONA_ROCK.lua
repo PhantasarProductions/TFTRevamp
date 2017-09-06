@@ -19,6 +19,7 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "Rock",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
 	["Title"] = "Rock",

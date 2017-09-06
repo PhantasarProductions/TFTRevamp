@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_FEENA_CHARIBDIS.lua
-  Version: 17.08.12
+  Version: 17.09.06
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================

@@ -1,6 +1,6 @@
 --[[
   ABL_HERO_MARRILONA_BIO.lua
-  Version: 17.08.12
+  Version: 17.09.06
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -56,6 +56,7 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "SingleHeal",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
 	["Title"] = "Bio",

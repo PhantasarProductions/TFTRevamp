@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.08.12
+version: 17.09.06
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
@@ -54,6 +54,7 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
+	["SpellAni"] = "Rock",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
 	["Title"] = "Pet",
