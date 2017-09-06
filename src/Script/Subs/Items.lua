@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.08.11
+  Version: 17.09.06
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -267,15 +267,17 @@ function ShowSpellList(pch,psizes)
    local ck,ca,sk,sa
    local has = SpellList(ch)
    local cnt = 0 
+   local carryover
    heroabl[ch] = heroabl[ch] or {}
    for i,k,a in iSpell(ch,ablpage[ch][SSLPG]) do
        local y=(i+1)*fonts.Stats[2]
        sa=a; sk=k
        if moved and my-sizes[2]>y and my-sizes[2]<y+fonts.Stats[2] then SSLP=i end
-       if i==SSLP then        ck=k       ca=a        c = {255,180,0} else c = {255,255,255} end
+       if i==SSLP then        ck=k       ca=a        c = {255,180,0}  else c = {255,255,255} end
        if heroabl[ch][k] then
           -- show spell
-          local abl = ItemGet(k)
+          local abl = ItemGet(k)          
+          if i==SSLP then carryover=abl end
           DarkText(abl.Title,10,y,0,2,c[1],c[2],c[3])
           if ch=="Marrilona" and MarrilonaLow() then -- Marrilona's auto ability makes all her spell free when her HP is below a certain percentage based on the chosen skill.
              DarkText("Free due to low HP",sizes[3]-10,y,1,2,180,0,255)
@@ -293,26 +295,35 @@ function ShowSpellList(pch,psizes)
    end
    if SSLP>cnt then SSLP=1 end
    -- Help
-   if (joydown('XTRA') or INP.KeyD(KEY_H)==1) and ca then
-      if not has[ck] then
-         local b = fonts.SpellUnlockBox[2]
-         local sy = (SSLP+1)*fonts.Stats[2]
-         local cy = sy
-         Image.SetAlphaPC(50) black() Image.Rect(0,sy,sizes[3],b*7) Image.SetAlphaPC(100)
-         SetFont('SpellUnlockBox')
-         DarkText("To unlock you need:",5,cy,0,0,180,255,0)
-         for i=1,5 do
-             cy = cy + b
-             if ca[i] then 
-                if RPG.PointsExists(ch,"SK_LVL_"..i)==1 then
-                   DarkText(CharacterMeta[ch]['skill'..i],5,cy,0,0,255,255,255)
-                   DarkText(ca[i],sizes[3]-25,cy,1,0,255,180,0)
-                else   
-                   DarkText('???',5,cy,0,0,255,255,255)
-                   DarkText('??',sizes[3]-25,cy,1,0,255,180,0)
-                end
-             end
-         end
+   if (joydown('XTRA') or INP.KeyD(KEY_H)==1) then 
+      if ca then
+         if not has[ck] then
+            local b = fonts.SpellUnlockBox[2]
+            local sy = (SSLP+1)*fonts.Stats[2]
+            local cy = sy
+            Image.SetAlphaPC(50) black() Image.Rect(0,sy,sizes[3],b*7) Image.SetAlphaPC(100)
+            SetFont('SpellUnlockBox')
+            DarkText("To unlock you need:",5,cy,0,0,180,255,0)
+            for i=1,5 do
+                cy = cy + b
+                if ca[i] then 
+                   if RPG.PointsExists(ch,"SK_LVL_"..i)==1 then
+                      DarkText(CharacterMeta[ch]['skill'..i],5,cy,0,0,255,255,255)
+                      DarkText(ca[i],sizes[3]-25,cy,1,0,255,180,0)
+                   else   
+                      DarkText('???',5,cy,0,0,255,255,255)
+                      DarkText('??',sizes[3]-25,cy,1,0,255,180,0)
+                   end -- if RPGPointsExists
+                end -- if ca[i]
+            end  -- for i
+         elseif carryover then      
+           SetFont('SpellUnlockBox')
+           local a = carryover
+           local b = Image.TextHeight(a.Desc)+4
+           local sy = (SSLP+1)*fonts.Stats[2]
+           Image.SetAlphaPC(50) black() Image.Rect(0,sy,sizes[3],b) Image.SetAlphaPC(100)
+           DarkText(a.Desc,5,sy,0,0,180,255,0)
+         end -- if not has
       end   
    end 
    -- Restore origin
