@@ -450,7 +450,7 @@ function ItemShowList(showfilter,enablefilter,char,psizes)
        ScrollMax(scrollid,y+50)
    end
    EndScroller(scrollid)
-   if INP.KeyH(KEY_SPACE)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_ENTER)==1 or joyhit('CONFIRM') or (mousehit(1) and mx>sizes[1] and mx<(sizes[1]+sizes[3])-40 and  my<sizes[4]) then 
+   if INP.KeyH(KEY_SPACE)==1 or INP.KeyH(KEY_RETURN)==1 or INP.KeyH(KEY_ENTER)==1 or joyhit('CONFIRM') or (mousehit(1) and mx>sizes[1] and mx<(sizes[1]+sizes[3])-40 and my>0 and my<sizes[4]) then 
       Var.D("$SELECTEDITEM",showitems[showfilter..(char or "")][pos[scrollid]])
       CSay("Selected: "..Var.C('$SELECTEDITEM')) 
    end
