@@ -222,6 +222,16 @@ function TeachSkill(pch,pskill)
     return true
 end
 
+local function MClickPic(i,x,y,ori,knipper)
+      local rmx,rmy = MouseCoords()
+      --local ori = {} ori.x,ori.y,ori.w,ori.h = GetViewPort()
+      local mx,my = rmx-ori.x,rmy-ori.y 
+      if knipper then Image.Show(i,x,y) end
+      --DarkText(x.."/"..mx.."/"..math.abs(x+Image.Width(i)).."   "..y.."/"..my.."/"..math.abs(y+Image.Width(i)),x,y,2,2,255,180,0)
+      local ret = mousehit(1) and mx>x and mx<x+Image.Width(i) and my>y and my<y+Image.Height(i)
+      return ret
+end
+
 function ShowSpellList(pch,psizes)
    -- Set up
    local ch=pch
@@ -232,6 +242,7 @@ function ShowSpellList(pch,psizes)
    local c, allowcast
    local mx,my = MouseCoords()
    local moved = oldsslmx~=mx or oldsslmy~=my
+   local ori={x=sizes[1],y=sizes[2]}
    oldsslmx = mx
    oldsslmy = my
    for i=1,#sizes do sizes[i] = Sys.Val(sizes[i]) end
@@ -244,10 +255,12 @@ function ShowSpellList(pch,psizes)
    DarkText(sval(ablpage[ch][SSLPG]),sizes[3]/2,sizes[4]-10,2,1,255,180,0)
    Image.LoadNew('NEXT','gfx/Algemeen/Next.png')
    Image.LoadNew('PREV','gfx/Algemeen/Prev.png')
+   --[[
    if knipper then 
       Image.Show('PREV',5,sizes[4]-20)
       Image.Show('NEXT',sizes[3]-20,sizes[4]-20)
-   end   
+   end 
+   ]]  
    --[[
    if mousehit(1) then
       CSay("mouse ("..mx..","..my..")  -> ("..math.abs(mx-sizes[1])..","..math.abs(my-sizes[4])..")")
@@ -255,11 +268,11 @@ function ShowSpellList(pch,psizes)
    end
    -- ]]
 
-   if (INP.KeyH(KEY_PAGEDOWN)==1 or joyhit('R2') or (mousehit(1) and mx-sizes[1]>(sizes[3])-20 and my>sizes[4]-20))  then 
+   if (INP.KeyH(KEY_PAGEDOWN)==1 or joyhit('R2') or MClickPic('PREV',5,sizes[4]-20,ori,knipper)) --[[or (mousehit(1) and mx-sizes[1]>(sizes[3])-20 and my>sizes[4]-20)) ]] then 
       SSLPG = SSLPG + 1
       if #ablpage[ch]<SSLPG then SSLPG=1 end -- Go on
    end 
-   if (INP.KeyH(KEY_PAGEUP)==1 or joyhit('L2') or (mousehit(1) and mx-sizes[1]<10 and my>sizes[4]-20)) then 
+   if (INP.KeyH(KEY_PAGEUP)==1 or joyhit('L2') or MClickPic('NEXT',sizes[3]-20,sizes[4]-20,ori,knipper)) --[[or (mousehit(1) and mx-sizes[1]<20 and my>sizes[4]-20))]] then 
       SSLPG = SSLPG - 1
       if SSLPG<1 then SSLPG=#ablpage[ch] end -- Go back
    end 
