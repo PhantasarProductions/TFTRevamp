@@ -1,6 +1,6 @@
 --[[
   Master.lua
-  Version: 17.05.13
+  Version: 17.09.23
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -143,7 +143,7 @@ function Master_Dismiss(ch,master,nomorejake)
    RPG.SetData(ch,"Master","")
    if not nomorejake then
       if ch=="Jake_Human" and RPG.CharExists('Jake_Fairy')==1 then Master_Dismiss('Jake_Fairy',master,true) end
-      if ch=='Jake_Fairy' then Master_Dismiss('Jake_Human',master,true) end
+      if ch=='Jake_Fairy'                                     then Master_Dismiss('Jake_Human',master,true) end
    end 
 end
 
@@ -161,7 +161,11 @@ function Master_Appoint(ch,master)
         Master_DefStat(ch,"MASTER_"..key,value)        
     end
     (tmaster.appoint or Nothing)(ch)
-   RPG.SetData(ch,"Master",master)
+    RPG.SetData(ch,"Master",master)
+    -- --[[ Brute fix attempt. I hope this fixes the issues.
+    if ch=='Jake_Human' and RPG.CharExists('Jake_Fairy')==1 then RPG.LinkData('Jake_Human','Jake_Fairy','Master') end
+    if ch=='Jake_Fairy'                                     then RPG.LinkData('Jake_Fairy','Jake_Human','Master') end
+    -- ]]   
 end
 
 function Master_EndSession()
