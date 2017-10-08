@@ -79,12 +79,13 @@ function Rubine.teach(ch) -- Should return true if master actually decides to te
     local rabl = false
     for truereq,abl in pairs(Rubine.abl) do -- DEFINITELY NOT ipairs!!!!!
         local req = truereq*(skill-1)
+        if skill==1 then req=truereq/2 end
         if maylearn and RPG.Stat(ch,"RubinePoints")>=req and (not Done('&MASTER.RUBINE.'..ch.."."..abl)) then
            Console.Write(RPG.Stat(ch,"RubinePoints")..">="..req.." so let's teach!",180,255,0)
            maylearn=false
            rabl=abl
         else
-           all = all and CVV('&MASTER.RUBINE.'..abl)   
+           all = all and CVV('&MASTER.RUBINE.'..ch.."."..abl)   
         end   
     end
     return rabl,all
@@ -111,7 +112,9 @@ Rubine.stats = {
                       Evasion = 5
                }
 
-Rubine.Desc = {"Rubine is a female thief","She rewards the ability to find money","You score a point each time you find money","Score enough points to learn new skills","","While you study under Rubine,","there is 1 to "..math.abs((skill*2)^2).." chance","an attack can be completely voided"}
+Rubine.Desc = {"Rubine is a female thief","She rewards the ability to find money","You score a point each time you find money","Score enough points to learn new skills","","While you study under Rubine,","there is 1 to "..math.abs((skill*2)^2).." chance","an attack can be completely voided",""}
+
+Rubine.Desc[#Rubine.Desc+1]=({"In easy mode you only need half the points, normally required for a new skill","","In hard mode you need twice the points to learn a new skill"})[skill]
 
 function Rubine.ShowScore(ch)
      return RPGStat.Stat(ch,"RubinePoints")
