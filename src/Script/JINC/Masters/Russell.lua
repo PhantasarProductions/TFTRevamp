@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.04.05
+version: 17.10.09
 ]]
 local RPG = RPGStat
 
@@ -76,7 +76,7 @@ function Russell.teach(ch) -- Should return true if master actually decides to t
     local maylearn = true
     local rabl = false
     for truereq,abl in pairs(Russell.abl) do -- DEFINITELY NOT ipairs!!!!!
-        local req = truereq*(skill-1)
+        local req = truereq*({.5,1,2})[skill]--(skill-1)
         if maylearn and RPG.Stat(ch,"RussellKills")>=req and (not Done('&MASTER.Russell.'..ch.."."..abl)) then
            Console.Write(RPG.Stat(ch,"RussellKills")..">="..req.." so let's teach!",180,255,0)
            maylearn=false
@@ -107,6 +107,8 @@ Russell.stats = {
                }
 
 Russell.Desc = {"A pirate's life for Russell","Although nobody on Phantasar knows what a 'pirate' is.","","Russell teaches moves based on how many kills you did"}
+
+Russell.Desc[#Russell.Desc+1]=({"In easy mode you only need half the points, normally required for a new skill","","In hard mode you need twice the points to learn a new skill"})[skill]
 
 function Russell.ShowScore(ch)
      local r = RPGStat.Stat(ch,"RussellKills")
