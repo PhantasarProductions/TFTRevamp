@@ -1,6 +1,6 @@
 --[[
   UltraMonk.lua
-  Version: 17.07.22
+  Version: 17.10.10
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -34,7 +34,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 ]]
--- File Generated: Sat 22 July 2017; 19:13:08
+-- File Generated: Tue 10 October 2017; 09:24:17
 
 
 local foe = {}
@@ -235,6 +235,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\52PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_BERSERK"] = 0
+	foe["RATE_ABL_HERO_JAKE_CLEAVE"] = 0
 	foe["RATE_ABL_HERO_JAKE_DEATHSTRIKE"] = 0
 	foe["RATE_ABL_HERO_JAKE_EARTHSLICE"] = 0
 	foe["RATE_ABL_HERO_JAKE_FLAMEBLADE"] = 0
@@ -399,6 +400,7 @@ local foe = {}
 	foe["RATE_ITM_SPIKEBOMB"] = 0
 	foe["RATE_ITM_STONE"] = 0
 	foe["RATE_ITM_STORMBOTTLE"] = 0
+	foe["RATE_ITM_TONSBANANAS"] = 0
 	foe["RATE_ITM_TOTALEXHAUSTION"] = 0
 	foe["RATE_ITM_TRUMPCARD"] = 0
 	foe["RATE_ITM_UBERPOTION"] = 0
@@ -602,6 +604,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_JAKE_\51PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\52PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_BERSERK"] = "Random"
+	foe["TARGET_ABL_HERO_JAKE_CLEAVE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_DEATHSTRIKE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_EARTHSLICE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_FLAMEBLADE"] = "Random"
@@ -766,6 +769,7 @@ local foe = {}
 	foe["TARGET_ITM_SPIKEBOMB"] = "Random"
 	foe["TARGET_ITM_STONE"] = "Random"
 	foe["TARGET_ITM_STORMBOTTLE"] = "Random"
+	foe["TARGET_ITM_TONSBANANAS"] = "Random"
 	foe["TARGET_ITM_TOTALEXHAUSTION"] = "Random"
 	foe["TARGET_ITM_TRUMPCARD"] = "Random"
 	foe["TARGET_ITM_UBERPOTION"] = "Random"
@@ -882,16 +886,16 @@ local foe = {}
 	foe["Rate Steal \49"] = 25
 	foe["Rate Steal \50"] = 15
 	foe["Rate Steal \51"] = 30
-	foe["SR_Confusion"] = 100
-	foe["SR_Curse"] = 100
-	foe["SR_Death"] = 100
+	foe["SR_Confusion"] = 1000
+	foe["SR_Curse"] = 1000
+	foe["SR_Death"] = 1000
 	foe["SR_Disease"] = 85
 	foe["SR_Paralysis"] = 70
-	foe["SR_Petrification"] = 100
+	foe["SR_Petrification"] = 1000
 	foe["SR_Poison"] = 95
-	foe["SR_Silence"] = 100
-	foe["SR_Sleep"] = 100
-	foe["SR_Undead"] = 100
+	foe["SR_Silence"] = 1000
+	foe["SR_Sleep"] = 1000
+	foe["SR_Undead"] = 1000
 	foe["normal_Accuracy"] = 100
 	foe["normal_EXP"] = 100000
 	foe["normal_Endurance"] = 550
