@@ -238,7 +238,7 @@ ElseIf Month()=10 And Day()>23
 	SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona_Halloween.png") ),PANELPIXMAP_CENTER	
 ElseIf Month()=1 And Day()<=6 	
 	SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona_NewYear.png") ),PANELPIXMAP_CENTER
-ElseIf Month()=4 And ((DayOfTheWeek()="Sun" And Day()=26) Or (DayOfTheWeek()<>"Sun" And Day()=27))
+ElseIf Month()=4 And ((DayOfTheWeek()="Sat" And Day()=26) Or (DayOfTheWeek()<>"Sun" And Day()=27))
 	SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona_King.png") ),PANELPIXMAP_CENTER
 ElseIf Month()=2 And Day()<=18 And Day()>=10 	
 	SetGadgetPixmap gadgets.gadget("Marrilona"),LoadPixmap ( JCR_B(JCR,"GFX/Big_Char/Marrilona_Valentine.png") ),PANELPIXMAP_CENTER
