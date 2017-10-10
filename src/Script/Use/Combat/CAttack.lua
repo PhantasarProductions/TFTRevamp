@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.08.10
+version: 17.09.26
 ]]
 function Hurt(tag,damage,element)
       local eleprot = RPG.SafeStat(tag,"END_ER_"..(element or 'None'))
@@ -121,8 +121,12 @@ function Attack(act,g,i,na)
     end
     -- Dandor skills
     if ttag=="Dandor" and prefixed(atag,"FOE") then -- Attacks from confused allies won't count!
+       --[[ Fout, Jeroentje! Fout!    
        if act.Attack_DefenseStat=="Power" or act.Attack_DefenseStat=="Endurance" and RPG.PointsExists("Dandor","SK_EXP_2")~=0 then RPG.Points("Dandor","SK_EXP_2").inc(damage)
        elseif act.Attack_DefenseStat=="Intelligence" or act.Attack_DefenseStat=="Resistance" and RPG.PointsExists("Dandor","SK_EXP_3")~=0 then RPG.Points("Dandor","SK_EXP_3").inc(damage) end
+       ]]
+       if act.Attack_DefenseStat=="Power" or act.Attack_DefenseStat=="Endurance" and RPG.PointsExists("Dandor","SK_EXP_2")~=0 then IncSkill("Dandor","2",damage)
+       elseif act.Attack_DefenseStat=="Intelligence" or act.Attack_DefenseStat=="Resistance" and RPG.PointsExists("Dandor","SK_EXP_3")~=0 then IncSkill("Dandor","3",damage) end
     end
     -- Rubine's void
     if g=='Hero' and RPG.GetData(ttag,'Master')=='Rubine' and rand(1,(skill*2)^2)==1 then

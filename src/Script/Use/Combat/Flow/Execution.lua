@@ -1,6 +1,6 @@
 --[[
   Execution.lua
-  Version: 17.08.25
+  Version: 17.10.09
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -194,7 +194,11 @@ function fflow.Execution()
    if nextact.executor.group=="Hero" and nextact.mayteach and (not nextact.auto) then
       LoadItemModule() -- Loads the items module if this wasn't done before. 
       MS.Run('ITEMS','CombatTeach',nextact.executor.tag)
-   end      
+   end        
+   -- Jake's streak message
+   if nextact.xstreakmessage then
+            SerialBoxText('COMBATLEARN',"AUTO_JAKE",'FLOW_COMBAT')
+   end          
    -- Init
    e_act = e_act or ItemGet(nextact.act); local act=e_act
    local acttag = upper(nextact.act)
@@ -294,7 +298,8 @@ function fflow.Execution()
       if not nextact.auto then myactor.stace='idle' end
    end
    -- Ability Card Addition
-   local streak=nextact.streak and rand(1,nextact.streak)==1
+   --local et = (Fighters[nextact.targetidx] or {}).Tag
+   local streak=nextact.streak and rand(1,nextact.streak)==1 --and nextact.executor.group=='Foe' and act.Target=='1F' and et and RPG.CharExists(et)==1 and RPG.Points(et,"HP").Have>0
    if streak then
         local card2add = { group = nextact.group, tag=nextact.tag, letter=nextact.letter, auto=true }
         card2add.nextact = {}
@@ -305,7 +310,8 @@ function fflow.Execution()
             --chmsg(nextact.executor.tag,'Move Streaked') 
             card2add.nextact.streak = nextact.streak + skill
             card2add.streak = card2add.nextact.streak
-            SerialBoxText('COMBATLEARN',"AUTO_JAKE",'FLOW_COMBAT')            
+            card2add.nextact.xstreakmessage = true
+            --SerialBoxText('COMBATLEARN',"AUTO_JAKE",'FLOW_COMBAT')            
         --end
    end
    if act.ADDCARD_Action_Number and (not nextact.auto) then

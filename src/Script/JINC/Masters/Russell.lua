@@ -106,7 +106,7 @@ Russell.stats = {
                           Accuracy = 100,
                }
 
-Russell.Desc = {"A pirate's life for Russell","Although nobody on Phantasar knows what a 'pirate' is.","","Russell teaches moves based on how many kills you did"}
+Russell.Desc = {"A pirate's life for Russell","Although nobody on Phantasar knows what a 'pirate' is.","","Russell teaches moves based on how many kills you did","",""}
 
 Russell.Desc[#Russell.Desc+1]=({"In easy mode you only need half the points, normally required for a new skill","","In hard mode you need twice the points to learn a new skill"})[skill]
 
