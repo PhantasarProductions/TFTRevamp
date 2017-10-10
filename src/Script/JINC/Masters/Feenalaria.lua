@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.08.04
+version: 17.10.10
 ]]
 local RPG = RPGStat
 
@@ -80,7 +80,7 @@ function Feenalaria.teach(ch) -- Should return true if master actually decides t
     local maylearn = true
     local rabl = false
     for truereq,abl in pairs(Feenalaria.abl) do -- DEFINITELY NOT ipairs!!!!!
-        local req = truereq*(skill-1)
+        local req = truereq*({.25,1,3})[skill]
         if maylearn and RPG.Stat(ch,"FeenalariaPoints")>=req and (not Done('&MASTER.FEENALARIA.'..ch.."."..abl)) then
            Console.Write(RPG.Stat(ch,"FeenalariaPoints")..">="..req.." so let's teach!",180,255,0)
            maylearn=false
@@ -122,6 +122,10 @@ if skill~=3 then
    Feenalaria.Desc[#Feenalaria.Desc+1]="You'll recover "..math.abs(25*(3-skill)).." AP"
    Feenalaria.Desc[#Feenalaria.Desc+1]="At the start of each turn"
 end   
+
+Feenalaria.Desc[#Feenalaria.Desc+1]=""
+Feenalaria.Desc[#RFeenalaria.Desc+1]=({"In easy mode you only need 25% of the required victories","","In hard mode you need thrice the points to learn a new skill"})[skill]
+
 
 
 function Feenalaria.ShowScore(ch)
