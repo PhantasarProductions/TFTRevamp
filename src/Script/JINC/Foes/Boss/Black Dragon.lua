@@ -1,40 +1,4 @@
---[[
-**********************************************
-  
-  Black Dragon.lua
-  (c) Jeroen Broks, 2017, All Rights Reserved.
-  
-  This file contains material that is related 
-  to a storyline that is which is strictly
-  copyrighted to Jeroen Broks.
-  
-  This file may only be used in an unmodified
-  form with an unmodified version of the 
-  software this file belongs to.
-  
-  You may use this file for your study to see
-  how I solved certain things in the creation
-  of this project to see if you find valuable
-  leads for the creation of your own.
-  
-  Mostly this file comes along with a project
-  that is for most part released under an
-  open source license and that means that if
-  you use that code with this file removed
-  from it, you can use it under that license.
-  Please check out the other files to find out
-  which license applies.
-  This file comes 'as-is' and in no possible
-  way the author can be held responsible of
-  any form of damages that may occur due to 
-  the usage of this file
-  
-  
- **********************************************
- 
-version: 17.07.19
-]]
--- File Generated: Wed 19 July 2017; 10:35:04
+-- File Generated: Tue 10 October 2017; 09:22:46
 
 
 local foe = {}
@@ -238,6 +202,7 @@ local foe = {}
 	foe["RATE_AAA_GUARD"] = 25
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
 	foe["RATE_ABL_FOE_BEER"] = 0
+	foe["RATE_ABL_FOE_CRACKSLASH"] = 0
 	foe["RATE_ABL_FOE_CRUSH"] = 5
 	foe["RATE_ABL_FOE_CURSEDWIND"] = 0
 	foe["RATE_ABL_FOE_CYNDRINANA_I_MUST_ATONE_FOR_MY_SINS"] = 0
@@ -254,6 +219,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_EVIL_EYE_PARALYZE"] = 0
 	foe["RATE_ABL_FOE_EVIL_EYE_PETRIFY"] = 0
 	foe["RATE_ABL_FOE_EXHAUST"] = 10
+	foe["RATE_ABL_FOE_FATALBITE"] = 0
 	foe["RATE_ABL_FOE_FATALPOISON"] = 0
 	foe["RATE_ABL_FOE_FLAMEBITE"] = 0
 	foe["RATE_ABL_FOE_FLAMEONSELF"] = 0
@@ -295,6 +261,15 @@ local foe = {}
 	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
 	foe["RATE_ABL_FOE_VIRUSSTAB"] = 0
 	foe["RATE_ABL_FOE_VITALIZE_OPPONENT"] = 0
+	foe["RATE_ABL_FOE_V_ACCIO"] = 0
+	foe["RATE_ABL_FOE_V_ARRESTOMOMENTUM"] = 0
+	foe["RATE_ABL_FOE_V_AVADAKEDAVRA"] = 0
+	foe["RATE_ABL_FOE_V_BRACKIUMEMENDO"] = 0
+	foe["RATE_ABL_FOE_V_CRUCIO"] = 0
+	foe["RATE_ABL_FOE_V_FIREBOLT"] = 0
+	foe["RATE_ABL_FOE_V_IMPERIO"] = 0
+	foe["RATE_ABL_FOE_V_M"] = 0
+	foe["RATE_ABL_FOE_V_RICTUSEMPRA"] = 0
 	foe["RATE_ABL_FOE_WELCOMEINHELL"] = 3
 	foe["RATE_ABL_FOLLOWUP_FIKKIE"] = 0
 	foe["RATE_ABL_GG_DEATHSCREAM"] = 0
@@ -332,6 +307,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\52PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_BERSERK"] = 0
+	foe["RATE_ABL_HERO_JAKE_CLEAVE"] = 0
 	foe["RATE_ABL_HERO_JAKE_DEATHSTRIKE"] = 0
 	foe["RATE_ABL_HERO_JAKE_EARTHSLICE"] = 0
 	foe["RATE_ABL_HERO_JAKE_FLAMEBLADE"] = 0
@@ -493,8 +469,10 @@ local foe = {}
 	foe["RATE_ITM_SALVES"] = 0
 	foe["RATE_ITM_SAUERKRAUT"] = 0
 	foe["RATE_ITM_SLEEPHERB"] = 0
+	foe["RATE_ITM_SPIKEBOMB"] = 0
 	foe["RATE_ITM_STONE"] = 0
 	foe["RATE_ITM_STORMBOTTLE"] = 0
+	foe["RATE_ITM_TONSBANANAS"] = 0
 	foe["RATE_ITM_TOTALEXHAUSTION"] = 0
 	foe["RATE_ITM_TRUMPCARD"] = 0
 	foe["RATE_ITM_UBERPOTION"] = 0
@@ -593,6 +571,7 @@ local foe = {}
 	foe["TARGET_AAA_GUARD"] = "Random"
 	foe["TARGET_ABL_FOE_BACTERIATUSK"] = "Random"
 	foe["TARGET_ABL_FOE_BEER"] = "Random"
+	foe["TARGET_ABL_FOE_CRACKSLASH"] = "Random"
 	foe["TARGET_ABL_FOE_CRUSH"] = "Random"
 	foe["TARGET_ABL_FOE_CURSEDWIND"] = "Random"
 	foe["TARGET_ABL_FOE_CYNDRINANA_I_MUST_ATONE_FOR_MY_SINS"] = "Random"
@@ -609,6 +588,7 @@ local foe = {}
 	foe["TARGET_ABL_FOE_EVIL_EYE_PARALYZE"] = "Random"
 	foe["TARGET_ABL_FOE_EVIL_EYE_PETRIFY"] = "Random"
 	foe["TARGET_ABL_FOE_EXHAUST"] = "Random"
+	foe["TARGET_ABL_FOE_FATALBITE"] = "Random"
 	foe["TARGET_ABL_FOE_FATALPOISON"] = "Random"
 	foe["TARGET_ABL_FOE_FLAMEBITE"] = "Random"
 	foe["TARGET_ABL_FOE_FLAMEONSELF"] = "Random"
@@ -650,6 +630,15 @@ local foe = {}
 	foe["TARGET_ABL_FOE_VENOMSTAB"] = "Random"
 	foe["TARGET_ABL_FOE_VIRUSSTAB"] = "Random"
 	foe["TARGET_ABL_FOE_VITALIZE_OPPONENT"] = "Random"
+	foe["TARGET_ABL_FOE_V_ACCIO"] = "Random"
+	foe["TARGET_ABL_FOE_V_ARRESTOMOMENTUM"] = "Random"
+	foe["TARGET_ABL_FOE_V_AVADAKEDAVRA"] = "Random"
+	foe["TARGET_ABL_FOE_V_BRACKIUMEMENDO"] = "Random"
+	foe["TARGET_ABL_FOE_V_CRUCIO"] = "Random"
+	foe["TARGET_ABL_FOE_V_FIREBOLT"] = "Random"
+	foe["TARGET_ABL_FOE_V_IMPERIO"] = "Random"
+	foe["TARGET_ABL_FOE_V_M"] = "Random"
+	foe["TARGET_ABL_FOE_V_RICTUSEMPRA"] = "Random"
 	foe["TARGET_ABL_FOE_WELCOMEINHELL"] = "Random"
 	foe["TARGET_ABL_FOLLOWUP_FIKKIE"] = "Random"
 	foe["TARGET_ABL_GG_DEATHSCREAM"] = "Random"
@@ -687,6 +676,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_JAKE_\51PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\52PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_BERSERK"] = "Random"
+	foe["TARGET_ABL_HERO_JAKE_CLEAVE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_DEATHSTRIKE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_EARTHSLICE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_FLAMEBLADE"] = "Random"
@@ -848,8 +838,10 @@ local foe = {}
 	foe["TARGET_ITM_SALVES"] = "Random"
 	foe["TARGET_ITM_SAUERKRAUT"] = "Random"
 	foe["TARGET_ITM_SLEEPHERB"] = "Random"
+	foe["TARGET_ITM_SPIKEBOMB"] = "Random"
 	foe["TARGET_ITM_STONE"] = "Random"
 	foe["TARGET_ITM_STORMBOTTLE"] = "Random"
+	foe["TARGET_ITM_TONSBANANAS"] = "Random"
 	foe["TARGET_ITM_TOTALEXHAUSTION"] = "Random"
 	foe["TARGET_ITM_TRUMPCARD"] = "Random"
 	foe["TARGET_ITM_UBERPOTION"] = "Random"
@@ -966,16 +958,16 @@ local foe = {}
 	foe["Rate Steal \49"] = 5
 	foe["Rate Steal \50"] = 10
 	foe["Rate Steal \51"] = 20
-	foe["SR_Confusion"] = 100
-	foe["SR_Curse"] = 100
-	foe["SR_Death"] = 100
-	foe["SR_Disease"] = 100
-	foe["SR_Paralysis"] = 100
-	foe["SR_Petrification"] = 100
-	foe["SR_Poison"] = 100
-	foe["SR_Silence"] = 100
-	foe["SR_Sleep"] = 100
-	foe["SR_Undead"] = 100
+	foe["SR_Confusion"] = 200
+	foe["SR_Curse"] = 300
+	foe["SR_Death"] = 2000
+	foe["SR_Disease"] = 400
+	foe["SR_Paralysis"] = 500
+	foe["SR_Petrification"] = 600
+	foe["SR_Poison"] = 700
+	foe["SR_Silence"] = 800
+	foe["SR_Sleep"] = 900
+	foe["SR_Undead"] = 1000
 	foe["normal_Accuracy"] = 100
 	foe["normal_EXP"] = 150000
 	foe["normal_Endurance"] = 567

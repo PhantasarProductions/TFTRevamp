@@ -1,40 +1,4 @@
---[[
-**********************************************
-  
-  Nostramantu2.lua
-  (c) Jeroen Broks, 2017, All Rights Reserved.
-  
-  This file contains material that is related 
-  to a storyline that is which is strictly
-  copyrighted to Jeroen Broks.
-  
-  This file may only be used in an unmodified
-  form with an unmodified version of the 
-  software this file belongs to.
-  
-  You may use this file for your study to see
-  how I solved certain things in the creation
-  of this project to see if you find valuable
-  leads for the creation of your own.
-  
-  Mostly this file comes along with a project
-  that is for most part released under an
-  open source license and that means that if
-  you use that code with this file removed
-  from it, you can use it under that license.
-  Please check out the other files to find out
-  which license applies.
-  This file comes 'as-is' and in no possible
-  way the author can be held responsible of
-  any form of damages that may occur due to 
-  the usage of this file
-  
-  
- **********************************************
- 
-version: 17.07.22
-]]
--- File Generated: Sat 22 July 2017; 13:27:18
+-- File Generated: Tue 10 October 2017; 09:22:51
 
 
 local foe = {}
@@ -273,6 +237,15 @@ local foe = {}
 	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
 	foe["RATE_ABL_FOE_VIRUSSTAB"] = 0
 	foe["RATE_ABL_FOE_VITALIZE_OPPONENT"] = 0
+	foe["RATE_ABL_FOE_V_ACCIO"] = 0
+	foe["RATE_ABL_FOE_V_ARRESTOMOMENTUM"] = 0
+	foe["RATE_ABL_FOE_V_AVADAKEDAVRA"] = 0
+	foe["RATE_ABL_FOE_V_BRACKIUMEMENDO"] = 0
+	foe["RATE_ABL_FOE_V_CRUCIO"] = 0
+	foe["RATE_ABL_FOE_V_FIREBOLT"] = 0
+	foe["RATE_ABL_FOE_V_IMPERIO"] = 0
+	foe["RATE_ABL_FOE_V_M"] = 0
+	foe["RATE_ABL_FOE_V_RICTUSEMPRA"] = 0
 	foe["RATE_ABL_FOE_WELCOMEINHELL"] = 0
 	foe["RATE_ABL_FOLLOWUP_FIKKIE"] = 0
 	foe["RATE_ABL_GG_DEATHSCREAM"] = 0
@@ -310,6 +283,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\52PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_BERSERK"] = 0
+	foe["RATE_ABL_HERO_JAKE_CLEAVE"] = 0
 	foe["RATE_ABL_HERO_JAKE_DEATHSTRIKE"] = 0
 	foe["RATE_ABL_HERO_JAKE_EARTHSLICE"] = 0
 	foe["RATE_ABL_HERO_JAKE_FLAMEBLADE"] = 0
@@ -474,6 +448,7 @@ local foe = {}
 	foe["RATE_ITM_SPIKEBOMB"] = 0
 	foe["RATE_ITM_STONE"] = 0
 	foe["RATE_ITM_STORMBOTTLE"] = 0
+	foe["RATE_ITM_TONSBANANAS"] = 0
 	foe["RATE_ITM_TOTALEXHAUSTION"] = 0
 	foe["RATE_ITM_TRUMPCARD"] = 0
 	foe["RATE_ITM_UBERPOTION"] = 0
@@ -631,6 +606,15 @@ local foe = {}
 	foe["TARGET_ABL_FOE_VENOMSTAB"] = "Random"
 	foe["TARGET_ABL_FOE_VIRUSSTAB"] = "Random"
 	foe["TARGET_ABL_FOE_VITALIZE_OPPONENT"] = "Random"
+	foe["TARGET_ABL_FOE_V_ACCIO"] = "Random"
+	foe["TARGET_ABL_FOE_V_ARRESTOMOMENTUM"] = "Random"
+	foe["TARGET_ABL_FOE_V_AVADAKEDAVRA"] = "Random"
+	foe["TARGET_ABL_FOE_V_BRACKIUMEMENDO"] = "Random"
+	foe["TARGET_ABL_FOE_V_CRUCIO"] = "Random"
+	foe["TARGET_ABL_FOE_V_FIREBOLT"] = "Random"
+	foe["TARGET_ABL_FOE_V_IMPERIO"] = "Random"
+	foe["TARGET_ABL_FOE_V_M"] = "Random"
+	foe["TARGET_ABL_FOE_V_RICTUSEMPRA"] = "Random"
 	foe["TARGET_ABL_FOE_WELCOMEINHELL"] = "Random"
 	foe["TARGET_ABL_FOLLOWUP_FIKKIE"] = "Random"
 	foe["TARGET_ABL_GG_DEATHSCREAM"] = "Random"
@@ -668,6 +652,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_JAKE_\51PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\52PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_BERSERK"] = "Random"
+	foe["TARGET_ABL_HERO_JAKE_CLEAVE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_DEATHSTRIKE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_EARTHSLICE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_FLAMEBLADE"] = "Random"
@@ -832,6 +817,7 @@ local foe = {}
 	foe["TARGET_ITM_SPIKEBOMB"] = "Random"
 	foe["TARGET_ITM_STONE"] = "Random"
 	foe["TARGET_ITM_STORMBOTTLE"] = "Random"
+	foe["TARGET_ITM_TONSBANANAS"] = "Random"
 	foe["TARGET_ITM_TOTALEXHAUSTION"] = "Random"
 	foe["TARGET_ITM_TRUMPCARD"] = "Random"
 	foe["TARGET_ITM_UBERPOTION"] = "Random"

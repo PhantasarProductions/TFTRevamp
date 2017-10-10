@@ -1,6 +1,6 @@
 --[[
   MountPyrus.lua
-  Version: 17.06.21
+  Version: 17.10.10
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -44,7 +44,7 @@ AltArena.pyrus = {
                                   Color(100+(math.sin(ms/50)*50),25+(math.cos(ms/23)*12),0)
                                   Image.Rect(0,0,SW,SH)
                                   BlopPlasma.DrawCol(100,60,0)
-                                  if c_dragon then
+                                  if c_dragon and foe then
                                      local foe = fighterbytag['FOE_1']
                                      if foe.x<c_dragon.w and foe.x<c_dragon.maxx and foe.x<0 then foe.x = foe.x + 1 end
                                      if foe.y<c_dragon.h and foe.y<c_dragon.maxy and foe.y<0 then foe.y = foe.y + 1 end
