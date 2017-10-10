@@ -1,6 +1,6 @@
 --[[
   Char.lua
-  Version: 17.08.05
+  Version: 17.10.10
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -93,7 +93,8 @@ function NStat(ch,stat,max,pmin)
    -- Foe correction
    if prefixed(ch,"FOE_") then 
       w = {'BASE','BUFF'}; 
-      rate = .75 + (.25*(skill-1)) 
+      rate = .75 + (.25*(skill-1))
+      if prefixed(stat,"SR") and RPGChar.Stat(ch,"BASE_"..stat)>=90 and rate<1 then rate=1 end 
    end
    -- Calc Regular stat
    for wi in each(w) do
