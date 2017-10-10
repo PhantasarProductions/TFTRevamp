@@ -124,7 +124,7 @@ if skill~=3 then
 end   
 
 Feenalaria.Desc[#Feenalaria.Desc+1]=""
-Feenalaria.Desc[#RFeenalaria.Desc+1]=({"In easy mode you only need 25% of the required victories","","In hard mode you need thrice the points to learn a new skill"})[skill]
+Feenalaria.Desc[#Feenalaria.Desc+1]=({"In easy mode you only need 25% of the required victories","","In hard mode you need thrice the points to learn a new skill"})[skill]
 
 
 
