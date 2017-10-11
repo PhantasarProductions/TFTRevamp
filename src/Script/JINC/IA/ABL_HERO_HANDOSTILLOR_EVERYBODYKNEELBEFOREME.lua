@@ -1,7 +1,7 @@
 --[[
 **********************************************
   
-  NOS_FREEZE.lua
+  ABL_HERO_HANDOSTILLOR_EVERYBODYKNEELBEFOREME.lua
   (c) Jeroen Broks, 2017, All Rights Reserved.
   
   This file contains material that is related 
@@ -35,14 +35,19 @@
 version: 17.10.11
 ]]
 ret = {
+	["ABL_APCost"] = 674,
 	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 5,
-	["ADDCARD_Char_Interval"] = 5,
-	["Attack"] = 100,
+	["ADDCARD_Action_Interval"] = 500,
+	["ADDCARD_Action_Number"] = 2,
+	["ADDCARD_Char_Interval"] = 125,
+	["ADDCARD_Char_Number"] = 1,
+	["Attack"] = 2,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Intelligence",
-	["Attack_DefenseStat"] = "Resistance",
-	["Attack_Element"] = "Frost",
+	["Attack_AttackStat"] = "Power",
+	["Attack_DefenseStat"] = "Endurance",
+	["Attack_Element"] = "Light",
+	["Desc"] = "Remove all cards of an enemy",
+	["EffectScript"] = "RemoveAllUserCards",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,
@@ -54,11 +59,12 @@ ret = {
 	["ITM_Field"] = true,
 	["ITM_Sellable"] = true,
 	["ITM_Type"] = "Consumable",
-	["SpellAni"] = "MultiFrost",
 	["Stance"] = "Cast",
 	["Target"] = "AF",
-	["Title"] = "I'll freeze you",
-	["Type"] = "Item"}
+	["Title"] = "Kneel Before Me!",
+	["Type"] = "Ability",
+	["Voice"] = "Critical",
+	["rew_GainSkill2"] = 100}
 
 return ret
 

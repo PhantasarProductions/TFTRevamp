@@ -1,6 +1,6 @@
 --[[
   EQP_JEWEL_AMETHYST.lua
-  Version: 17.09.06
+  Version: 17.10.11
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
