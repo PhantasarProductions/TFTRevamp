@@ -20,6 +20,7 @@ ret = {
 	["ITM_Type"] = "Consumable",
 	["Stance"] = "Cast",
 	["Target"] = "1F",
+	["Title"] = "Crucio",
 	["Type"] = "Item"}
 
 return ret

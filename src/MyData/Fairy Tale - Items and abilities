@@ -8218,7 +8218,7 @@ Rec: ABL_FOE_V_CRUCIO
 	SpellAni_External = FALSE
 	Stance = Cast
 	Target = 1F
-	Title = 
+	Title = Crucio
 	Type = Item
 	USE_Penalty = 0
 	Voice = 
@@ -8334,7 +8334,7 @@ Rec: ABL_FOE_V_FIREBOLT
 	SpellAni_External = FALSE
 	Stance = Cast
 	Target = 1F
-	Title = 
+	Title = Firebolt
 	Type = Item
 	USE_Penalty = 0
 	Voice = 
