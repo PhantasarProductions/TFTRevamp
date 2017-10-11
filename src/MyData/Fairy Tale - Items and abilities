@@ -8329,11 +8329,11 @@ Rec: ABL_FOE_V_FIREBOLT
 	ITM_WeaponAbility = FALSE
 	Revive = FALSE
 	Rew_GainAP = 0
-	SpellAni = 
+	SpellAni = Heal
 	SpellAni_Arg = 
 	SpellAni_External = FALSE
 	Stance = Cast
-	Target = 1F
+	Target = 1A
 	Title = Firebolt
 	Type = Item
 	USE_Penalty = 0
