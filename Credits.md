@@ -853,6 +853,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Script: Script/JINC/IA/ABL_HERO_DANDOR_SUPERAXESMASH.lua
 		1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CLEANSE.lua
 		1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_CUREDISEASE.lua
+		1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_EVERYBODYKNEELBEFOREME.lua
 		1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_FIRESTORM.lua
 		1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_FIRSTAID.lua
 		1. Script: Script/JINC/IA/ABL_HERO_HANDOSTILLOR_GOODMORNING.lua

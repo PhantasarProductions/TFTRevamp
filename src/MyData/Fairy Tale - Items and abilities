@@ -10190,7 +10190,7 @@ Rec: ABL_HERO_HANDOSTILLOR_EVERYBODYKNEELBEFOREME
 	SpellAni_External = FALSE
 	Stance = Cast
 	Target = AF
-	Title = Kneel Before Me!
+	Title = Everybody! Kneel Before Me!
 	Type = Ability
 	USE_Penalty = 0
 	Voice = Critical
@@ -14018,7 +14018,7 @@ Rec: ABL_HERO_MARRILONA_1953
 	SpellAni_External = FALSE
 	Stance = Cast
 	Target = AF
-	Title = Tsunami
+	Title = 1953
 	Type = Ability
 	USE_Penalty = 0
 	Voice = Water
