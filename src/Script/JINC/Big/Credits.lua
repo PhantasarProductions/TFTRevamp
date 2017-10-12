@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.10.11
+version: 17.10.12
 ]]
 Image.GetViewport()
 local mx,my,mw,mh = Image.GVP_X, Image.GVP_Y, Image.GVP_W, Image.GVP_H

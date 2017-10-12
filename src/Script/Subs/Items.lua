@@ -1,6 +1,6 @@
 --[[
   Items.lua
-  Version: 17.09.06
+  Version: 17.10.12
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -524,7 +524,7 @@ function TreasureChest(tag)
        MasterAllInc('Rubine','RubinePoints')
        local wc = mysplit(icode,":")
        local getcash = tonumber(wc[2])
-       if skill==1 then getcash = getcash * 2 elseif skill==3 then getcash = getcash * .25 end
+       if skill==1 then getcash = getcash * 2 elseif skill==3 then getcash = math.ceil(getcash * .25) end
        Var.D("$ITEMNAME",getcash.." shilders")
        if CVV("%CASH") >= cashmax then 
           SerialBoxText("ITEM","FULL","FLOW_FIELD")
