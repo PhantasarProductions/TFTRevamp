@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 17.07.14
+  Version: 17.10.20
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -304,6 +304,8 @@ function GIVESTATUS(ch,status)
      Console.Write("? Character does not exist",255,0,0)
      return
   end
+  if not status then Console.Write("? Give what?",255,0,0) end
+  if status=="" then Console.Write("? Give what?",255,0,0) end
   if upper(LAURA.GetFlow())~="COMBAT" then     
      Console.Write("? This routine can only be used in combat",255,0,0)
      return
