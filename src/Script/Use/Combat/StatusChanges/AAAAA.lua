@@ -1,6 +1,6 @@
 --[[
   AAAAA.lua
-  Version: 17.04.25
+  Version: 17.10.23
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -56,6 +56,12 @@ StatusChanges = {}
 
 
 function SetStatus(ch,st,dontannounce)
+    if not fighterbytag[ch] then
+       CSay("!! WARNING !! Status given to non-existent character",180,60,0)
+       CSay("= Char: "..sval(ch),180,60,0)
+       CSay("= Status: "..sval(st))
+       return
+    end   
     fighterbytag[ch].StatusChanges = fighterbytag[ch].StatusChanges or {}
     fighterbytag[ch].statuschanges = fighterbytag[ch].StatusChanges
     local sc = fighterbytag[ch].StatusChanges
@@ -70,6 +76,7 @@ function SetStatus(ch,st,dontannounce)
     if ch=="Marrilona" and CVVN("%HANDICAP.MARRILONA") and st~="Death" then inc('%HANDICAP.MARRILONA',12/skill) end
 end
 GiveStatus = SetStatus
+
 
 function expireroll(ch,st)
    return rand(1,fighterbytag[ch].StatusChanges.ExpireRoll)==1 

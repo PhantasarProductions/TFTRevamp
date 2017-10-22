@@ -1,6 +1,6 @@
 --[[
   Console.lua
-  Version: 17.10.20
+  Version: 17.10.23
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -75,7 +75,8 @@ function MASSACRE()
   for foeid in ICHARS() do
       if prefixed(foeid,"FOE") then
          CSay(foeid..' is dead!!!!!')
-         RPG.Points(foeid,'HP').Have=0
+         --RPG.Points(foeid,'HP').Have=0
+         GIVESTATUS(foeid,"Death")
       end
   end
 end  
@@ -304,6 +305,7 @@ function GIVESTATUS(ch,status)
      Console.Write("? Character does not exist",255,0,0)
      return
   end
+  
   if not status then Console.Write("? Give what?",255,0,0) end
   if status=="" then Console.Write("? Give what?",255,0,0) end
   if upper(LAURA.GetFlow())~="COMBAT" then     
