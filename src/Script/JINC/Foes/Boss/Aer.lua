@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 17.08.05
+version: 17.10.23
 ]]
--- File Generated: Sat 05 August 2017; 12:46:20
+-- File Generated: Mon 23 October 2017; 17:35:40
 
 
 local foe = {}
@@ -126,7 +126,7 @@ local foe = {}
 	foe["Item Steal \50"] = "ITM_ANABOLINEA"
 	foe["Item Steal \51"] = "ITM_ANABOLINEA"
 	foe["Name"] = "Aer"
-	foe["RATE_AAA_ATTACK"] = 100
+	foe["RATE_AAA_ATTACK"] = 200
 	foe["RATE_AAA_GUARD"] = 25
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
 	foe["RATE_ABL_FOE_BEER"] = 0
@@ -211,6 +211,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_DANDOR_SUPERAXESMASH"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_CLEANSE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_EVERYBODYKNEELBEFOREME"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRESTORM"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = 10
 	foe["RATE_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = 0
@@ -580,6 +581,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_DANDOR_SUPERAXESMASH"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_CLEANSE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_EVERYBODYKNEELBEFOREME"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_FIRESTORM"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = "Random"

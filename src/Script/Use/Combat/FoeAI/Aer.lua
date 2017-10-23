@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.07.10
+version: 17.10.23
 ]]
 -- @IF IGNORE
 FoeAI = {}
@@ -45,7 +45,7 @@ function FoeAI.Aer(tag)
     for _,c in pairs(cards) do if c.tag==tag then countcards=countcards+1 end end
     if countcards>2 then return FoeAI.default(tag) end
     -- if RPG.Points(tag,'HP').Have>1 then return FoeAI.default(tag) end
-    if rand(1,9)>skill^2 then return FoeAI.default(tag) end
+    if rand(1,20)>skill^2 then return FoeAI.default(tag) end
     nextact =   {
                            executor = { group = 'Foe', tag=foe.tag },
                            act = 'ITM_ANABOLINEA', 
