@@ -1,6 +1,6 @@
 --[[
   CDrawFighters.lua
-  Version: 17.08.09
+  Version: 17.10.23
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -60,6 +60,10 @@ function FighterCoords(g,i)
          return -100,-100
       end 
       return fighterbytag[g].x,fighterbytag[g].y 
+   end
+   if not Fighters[g][i] then
+      CSay("WARNING! FighterCooords('"..sval(g).."',"..sval(i).."): Non-Existent Character")
+      return -1000,-1000
    end
    return Fighters[g][i].x,Fighters[g][i].y
 end   

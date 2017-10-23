@@ -54,6 +54,20 @@ end
 function GOD() 
    IDDQD() 
 end 
+
+function DUMBLEDORE(ch)
+    if (not ch) or ch=="" then
+       for i=0,3 do
+           local chi = RPG.PartyTag(i)
+           if chi~="" then DUMBLEDORE(chi) end
+       end
+       return
+    end
+    local AP = RPG.Points(ch,"AP")
+    AP.Have = AP.Maximum
+    CSay("Maxed out: "..ch)
+end    
+    
    
 function MONSTERTABLE()
    MS.Run("FIELD","cons_monstertable")
