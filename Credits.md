@@ -2571,6 +2571,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Audio: Vocals/Combat/Hero/Nostramantu_Human/Victory/General.ogg
 		1. Audio: Vocals/Combat/Hero/Nostramantu_Human/Victory/Perfect.ogg
 		1. Audio: Vocals/Combat/Learn/Dandor_1.ogg
+		1. Audio: Vocals/Combat/Learn/HandoStillor_1.ogg
 		1. Audio: Vocals/Combat/Learn/Jake_1.ogg
 		1. Audio: Vocals/Combat/Learn/Marrilona_1.ogg
 		1. Audio: Vocals/General/Introduction/STILLOR_1.ogg
