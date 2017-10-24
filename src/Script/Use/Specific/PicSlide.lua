@@ -1,6 +1,6 @@
 --[[
   PicSlide.lua
-  Version: 17.04.21
+  Version: 17.10.24
   Copyright (C) 2017 Jeroen Petrus Broks
   
   ===========================
@@ -163,3 +163,16 @@ slide = {
 
 
 }
+
+
+function AchStikErTochIn() -- Cheat
+  if not slide.PuzTiles then return CSay("Stik er toch lekker zelf in!") end
+  local count=0
+  for y=1,5 do for x=1,5 do
+      slide.PuzTiles[y][x].Frame=count
+      CSay("Repositioned tile #"..count) 
+      count=count+1
+  end end
+  CSay("Puzzle solved?")    
+  slide.CheckSolved()
+end

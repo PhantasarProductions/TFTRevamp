@@ -1,6 +1,6 @@
 --[[
   Char.lua
-  Version: 17.10.23
+  Version: 17.10.24
   Copyright (C) 2016, 2017 Jeroen Petrus Broks
   
   ===========================
@@ -96,6 +96,7 @@ function NStat(ch,stat,max,pmin)
       rate = .75 + (.25*(skill-1))
       if prefixed(stat,"SR") and RPGChar.Stat(ch,"BASE_"..stat)>=90 and rate<1 then rate=1 end 
       if prefixed(stat,"ER") then rate=1 end
+      if skill==3 and stat=="HP" and RPGChar.Stat(ch,"BASE_HP")>1000000 then rate=1 end
    end
    -- Calc Regular stat
    for wi in each(w) do
