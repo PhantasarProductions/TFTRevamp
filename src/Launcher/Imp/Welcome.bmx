@@ -20,7 +20,7 @@ Rem
 		
 	Exceptions to the standard GNU license are available with Jeroen's written permission given prior 
 	to the project the exceptions are needed for.
-Version: 17.01.01
+Version: 17.10.31
 End Rem
 Strict
 
@@ -29,7 +29,7 @@ Import "FrameWork.bmx"
 Private
 
 MKL_Lic     "The Fairy Tale - REVAMP - Welcome.bmx","GNU General Public License 3"
-MKL_Version "The Fairy Tale - REVAMP - Welcome.bmx","17.01.01"
+MKL_Version "The Fairy Tale - REVAMP - Welcome.bmx","17.10.31"
 
 Global mypan:mygadget = newtab("Welcome")
 Global Panel:TGadget = mypan.G
@@ -44,6 +44,17 @@ gadgets.cr CreateLabel("A game by: Jeroen P. Broks",0,400,PW,25,panel,Label_cent
 
 gadgets.cr CreateLabel("This game is part of ~qThe Phantasar Chronicles~q, written and copyrighted by Jeroen P. Broks.~nNothing from this game's story line, characters and all other parts of the Phantasar universe may be used for your own purposes without prior written permission from the copyright holder.",0,450,PW,100,panel,label_center)
 
+
+Global midx = PW/2
+Global butx = midx - 100
+Function JoinDiscord(G:TGadget) OpenURL("https://discord.gg/RU3V6YU") EndFunction
+gadgets.cr CreateButton("Join the discord server",butx,500,200,25,panel),Null,JoinDiscord
+
+Function VisitSite(G:tgadget) OpenURL "https://tricky.gamejolt.io/tft" EndFunction
+gadgets.cr CreateButton("Visit website",butx,525,200,25,panel),Null,VisitSite
+
+Function Reportbugs(G:tgadget) OpenURL "https://github.com/PhantasarProductions/TFTRevamp/issues" EndFunction
+gadgets.cr CreateButton("Report bugs",butx,550,200,25,panel),Null,reportbugs
 
 
 Global copyrightdone
