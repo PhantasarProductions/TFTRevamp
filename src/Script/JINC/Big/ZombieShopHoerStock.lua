@@ -1,39 +1,3 @@
---[[
-  ZombieShopHoerStock.lua
-  Version: 17.10.31
-  Copyright (C) 2017 Jeroen Petrus Broks
-  
-  ===========================
-  This file is part of a project related to the Phantasar Chronicles or another
-  series or saga which is property of Jeroen P. Broks.
-  This means that it may contain references to a story-line plus characters
-  which are property of Jeroen Broks. These references may only be distributed
-  along with an unmodified version of the game. 
-  
-  As soon as you remove or replace ALL references to the storyline or character
-  references, or any termology specifically set up for the Phantasar universe,
-  or any other univers a story of Jeroen P. Broks is set up for,
-  the restrictions of this file are removed and will automatically become
-  zLib licensed (see below).
-  
-  Please note that doing so counts as a modification and must be marked as such
-  in accordance to the zLib license.
-  ===========================
-  zLib license terms:
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
-]]
 local ret = {}
 	ret[#ret+1] = { itemtag = "WAND_WIND", Title = "Wind Wand", Price = 250 }
 	ret[#ret+1] = { itemtag = "EQP_ACC_RINGWIND", Title = "Ring \"Elf\"", Price = 125000 }
@@ -85,6 +49,7 @@ local ret = {}
 	ret[#ret+1] = { itemtag = "ITM_POTION", Title = "Potion", Price = 3000 }
 	ret[#ret+1] = { itemtag = "ITM_POCKETTSUNAMI", Title = "Pocket Tsunami", Price = 8000 }
 	ret[#ret+1] = { itemtag = "ITM_HEALINGHERB", Title = "Healing Herb", Price = 1750 }
+	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR3", Title = "Cotton Dress", Price = 500 }
 	ret[#ret+1] = { itemtag = "EQP_ACC_RINGFIRE", Title = "Ring \"Hum\"", Price = 125000 }
 	ret[#ret+1] = { itemtag = "EQP_HANDOSTILLOR_WP9", Title = "Killer Staff", Price = 76800 }
 	ret[#ret+1] = { itemtag = "EQP_JEWEL_SMALLEMERALD", Title = "Small Emerald", Price = 2500 }
@@ -125,7 +90,7 @@ local ret = {}
 	ret[#ret+1] = { itemtag = "ITM_WATERBUBBLE", Title = "Water Bubble", Price = 100 }
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR6", Title = "Expensive Dress", Price = 4000 }
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR4", Title = "Sexy Dress", Price = 1000 }
-	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR3", Title = "Cotton Dress", Price = 500 }
+	ret[#ret+1] = { itemtag = "ITM_PURIFICATIONSHOWER", Title = "Purification Shower", Price = 2500 }
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR2", Title = "Green Dress", Price = 250 }
 	ret[#ret+1] = { itemtag = "EQP_JEWEL_AQUAMARINE", Title = "Aquamarine", Price = 20000 }
 	ret[#ret+1] = { itemtag = "ITM_MIRROR", Title = "Mirror", Price = 50000 }
@@ -177,7 +142,6 @@ local ret = {}
 	ret[#ret+1] = { itemtag = "ITM_ANABOLINEA", Title = "Anabolinia", Price = 1000000 }
 	ret[#ret+1] = { itemtag = "ITM_DAMNEDDUST", Title = "Damned Dust", Price = 125 }
 	ret[#ret+1] = { itemtag = "ITM_MULTIPHOENIX", Title = "Multi Phoenix", Price = 1000 }
-	ret[#ret+1] = { itemtag = "ITM_EEL", Title = "Eel", Price = 100 }
 	ret[#ret+1] = { itemtag = "ITM_VOICEHERB", Title = "Voice Herb", Price = 50 }
 	ret[#ret+1] = { itemtag = "ITM_TRUMPCARD", Title = "Trump Card", Price = 666 }
 	ret[#ret+1] = { itemtag = "EQP_HANDOSTILLOR_WP8", Title = "Diamond staff with mythril coating", Price = 38400 }
@@ -190,7 +154,7 @@ local ret = {}
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR7", Title = "Hiss Dress", Price = 8000 }
 	ret[#ret+1] = { itemtag = "ITM_ANTIDOTE", Title = "Antidote", Price = 50 }
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR5", Title = "Fashionable Dress", Price = 2000 }
-	ret[#ret+1] = { itemtag = "ITM_PURIFICATIONSHOWER", Title = "Purification Shower", Price = 2500 }
+	ret[#ret+1] = { itemtag = "ITM_EEL", Title = "Eel", Price = 100 }
 	ret[#ret+1] = { itemtag = "EQP_MARRILONA_AR1", Title = "Simple dress", Price = 125 }
 	ret[#ret+1] = { itemtag = "WAND_II_KELVIN", Title = "Kelvin's Wand", Price = 123000 }
 	ret[#ret+1] = { itemtag = "EQP_DANDOR_WP1", Title = "Axe", Price = 2000 }
