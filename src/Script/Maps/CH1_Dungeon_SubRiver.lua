@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.03.20
+version: 17.12.19
 ]]
 
 RiverWidth = nil
@@ -110,6 +110,8 @@ function NPC_Brug()
           Flip()
       end
       brug.ForcePassible =1
+      Maps.PermaWrite("\tMaps.Obj.Obj('Brug').SetAlpha(1000)")
+      Maps.PermaWrite("\tMaps.Obj.Obj('Brug').ForcePassible=1")
       Maps.Remap()    
    end 
 end
