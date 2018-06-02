@@ -1,7 +1,7 @@
 --[[
   ITM_ROCK.lua
-  Version: 17.10.11
-  Copyright (C) 2017 Jeroen Petrus Broks
+  Version: 18.06.02
+  Copyright (C) 2017, 2018 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another

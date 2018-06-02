@@ -2,7 +2,7 @@
 **********************************************
   
   ABL_HERO_HANDOSTILLOR_TREATMENT.lua
-  (c) Jeroen Broks, 2017, All Rights Reserved.
+  (c) Jeroen Broks, 2017, 2018, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 17.10.11
+version: 18.06.02
 ]]
 ret = {
 	["ABL_APCost"] = 30,

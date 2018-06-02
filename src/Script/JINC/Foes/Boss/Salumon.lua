@@ -2,7 +2,7 @@
 **********************************************
   
   Salumon.lua
-  (c) Jeroen Broks, 2017, All Rights Reserved.
+  (c) Jeroen Broks, 2017, 2018, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 17.10.10
+version: 18.06.02
 ]]
--- File Generated: Tue 10 October 2017; 09:23:55
+-- File Generated: Sat 07 April 2018; 00:38:03
 
 
 local foe = {}
@@ -193,6 +193,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_DANDOR_SUPERAXESMASH"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_CLEANSE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_EVERYBODYKNEELBEFOREME"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRESTORM"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = 0
@@ -562,6 +563,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_DANDOR_SUPERAXESMASH"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_CLEANSE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_EVERYBODYKNEELBEFOREME"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_FIRESTORM"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = "Random"

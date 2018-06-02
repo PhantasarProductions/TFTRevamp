@@ -278,6 +278,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Menu Icons/Trade.png
 		1. Graphics: GFX/Party/Level Up.png
 	- Licensed under a Creative Commons - Attribute - Non-Commercial - Share-Alike license.
+		1. ???: GFX/Textures/Objects/temp.zip
 		1. Audio: Audio/Combat/CardSlide.ogg
 		1. Audio: Audio/Party/Level Up.ogg
 		1. Audio: Audio/Party/Level Up.wav
@@ -1824,6 +1825,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.Attack.2.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.Cast.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.Dead.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.Petrified.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.Victory.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human.piko
 		1. Graphics: GFX/Combat/Fighters/Hero/Feenalaria_Human2.Attack.1.png
@@ -1897,6 +1899,7 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu.Victory.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu_Human.Attack.1.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu_Human.Cast.png
+		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu_Human.Pettrified.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu_Human.Victory.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu_Human.attack.2.png
 		1. Graphics: GFX/Combat/Fighters/Hero/Nostramantu_Human.dead.png
@@ -1951,33 +1954,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Graphics: GFX/Treasure/Chest.Frames
 		1. Graphics: GFX/Treasure/Chest.png
 		1. Graphics: GFX/Treasure/ManaOrb.png
-		1. Map Design: Kthura/Anna/Data
-		1. Map Design: Kthura/Anna/Objects
-		1. Map Design: Kthura/Anna/Settings
-		1. Map Design: Kthura/CH1_Dungeon_FrendorBushes/Data
-		1. Map Design: Kthura/CH1_Dungeon_FrendorBushes/Objects
-		1. Map Design: Kthura/CH1_Dungeon_FrendorBushes/Settings
-		1. Map Design: Kthura/CH1_Dungeon_Hell/Data
-		1. Map Design: Kthura/CH1_Dungeon_Hell/Objects
-		1. Map Design: Kthura/CH1_Dungeon_Hell/Settings
-		1. Map Design: Kthura/CH1_Dungeon_HolyPath/Data
-		1. Map Design: Kthura/CH1_Dungeon_HolyPath/Objects
-		1. Map Design: Kthura/CH1_Dungeon_HolyPath/Settings
-		1. Map Design: Kthura/CH1_Dungeon_Library/Data
-		1. Map Design: Kthura/CH1_Dungeon_Library/Objects
-		1. Map Design: Kthura/CH1_Dungeon_Library/Settings
-		1. Map Design: Kthura/CH1_Dungeon_SubRiver/Data
-		1. Map Design: Kthura/CH1_Dungeon_SubRiver/Objects
-		1. Map Design: Kthura/CH1_Dungeon_SubRiver/Settings
-		1. Map Design: Kthura/CH1_HUB_ALTAR/Data
-		1. Map Design: Kthura/CH1_HUB_ALTAR/Objects
-		1. Map Design: Kthura/CH1_HUB_ALTAR/Settings
-		1. Map Design: Kthura/CH1_HUB_JakeHut/Data
-		1. Map Design: Kthura/CH1_HUB_JakeHut/Objects
-		1. Map Design: Kthura/CH1_HUB_JakeHut/Settings
-		1. Map Design: Kthura/CH2_DUNGEON_ElfRoad/Data
-		1. Map Design: Kthura/CH2_DUNGEON_ElfRoad/Objects
-		1. Map Design: Kthura/CH2_DUNGEON_ElfRoad/Settings
 		1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/DATA
 		1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/OBJECTS
 		1. Map Design: Kthura/CH2_Dungeon_DoublineBayForest/SETTINGS
@@ -2053,9 +2029,6 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Map Design: Kthura/CH4_Town_NostraburgNight/Data
 		1. Map Design: Kthura/CH4_Town_NostraburgNight/Objects
 		1. Map Design: Kthura/CH4_Town_NostraburgNight/Settings
-		1. Map Design: Kthura/Egg_Walda/Data
-		1. Map Design: Kthura/Egg_Walda/Objects
-		1. Map Design: Kthura/Egg_Walda/Settings
 		1. Map Design: Kthura/NGP_Dungeon_AquaAntrum/Data
 		1. Map Design: Kthura/NGP_Dungeon_AquaAntrum/Objects
 		1. Map Design: Kthura/NGP_Dungeon_AquaAntrum/Settings
@@ -2077,145 +2050,8 @@ Please note all 3rd party contributions remain copyrighted and licensed by their
 		1. Map Design: Kthura/NGP_HUB_HEROES/Data
 		1. Map Design: Kthura/NGP_HUB_HEROES/Objects
 		1. Map Design: Kthura/NGP_HUB_HEROES/Settings
-		1. Map Design: Kthura/PRO_Dungeon_Crypt/Data
-		1. Map Design: Kthura/PRO_Dungeon_Crypt/Objects
-		1. Map Design: Kthura/PRO_Dungeon_Crypt/Settings
-		1. Map Design: Kthura/PRO_Dungeon_DragonCave/Data
-		1. Map Design: Kthura/PRO_Dungeon_DragonCave/Objects
-		1. Map Design: Kthura/PRO_Dungeon_DragonCave/Settings
-		1. Map Design: Kthura/PRO_Dungeon_Magic/Data
-		1. Map Design: Kthura/PRO_Dungeon_Magic/Objects
-		1. Map Design: Kthura/PRO_Dungeon_Magic/Settings
-		1. Map Design: Kthura/PRO_Dungeon_Tomb/Data
-		1. Map Design: Kthura/PRO_Dungeon_Tomb/Objects
-		1. Map Design: Kthura/PRO_Dungeon_Tomb/Settings
-		1. Map Design: Kthura/PRO_Hub_Weniaria/Data
-		1. Map Design: Kthura/PRO_Hub_Weniaria/Objects
-		1. Map Design: Kthura/PRO_Hub_Weniaria/Settings
-		1. Map Design: Kthura/PRO_TheEnd/Data
-		1. Map Design: Kthura/PRO_TheEnd/Objects
-		1. Map Design: Kthura/PRO_TheEnd/Settings
-		1. Map Design: Kthura/PRO_Town_Frendor/Data
-		1. Map Design: Kthura/PRO_Town_Frendor/Objects
-		1. Map Design: Kthura/PRO_Town_Frendor/Settings
-		1. Map Design: Kthura/PRO_Town_Vandar/Data
-		1. Map Design: Kthura/PRO_Town_Vandar/Objects
-		1. Map Design: Kthura/PRO_Town_Vandar/Settings
-		1. Map Design: Kthura/ZZZ_Test/Data
-		1. Map Design: Kthura/ZZZ_Test/Objects
-		1. Map Design: Kthura/ZZZ_Test/Settings
 		1. Scenario: Languages/Dutch/Scenario.$$TEMP$$0$$
-		1. Scenario: Languages/Dutch/Scenario/COMBAT/LEARN
-		1. Scenario: Languages/Dutch/Scenario/GENERAL/BLUESEAL
-		1. Scenario: Languages/Dutch/Scenario/GENERAL/INN
-		1. Scenario: Languages/Dutch/Scenario/GENERAL/INTRODUCTION
-		1. Scenario: Languages/Dutch/Scenario/GENERAL/ITEMS
-		1. Scenario: Languages/Dutch/Scenario/GENERAL/MANAORB
-		1. Scenario: Languages/Dutch/Scenario/GENERAL/PROLOGUES
-		1. Scenario: Languages/Dutch/Scenario/GENERAL/TRAVELEMBLEM
-		1. Scenario: Languages/Dutch/Scenario/MAPS/ANNA
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_FRENDORBUSHES
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_HELL
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_HOLYPATH
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_LIBRARY
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_DUNGEON_SUBRIVER
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_ALTAR
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH1_HUB_JAKEHUT
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_DOUBLINEBAYFOREST
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_ELFROAD
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_SPIRATAFIRE
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_SPIRATAWATER
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_SPIRATAWIND
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_DUNGEON_VANDARROAD
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_DOUBLINE
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_DRESHKA
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH2_TOWN_ISKARDERIU
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_GARDEN
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_KOKONORAFOREST
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_MINE
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_MTPYRUS
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_DUNGEON_SPIRATAEARTH
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_HUB_FRENDORGRAVE
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_STORY_DRAGON_FOREST
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_GROMBO
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH3_TOWN_NOSTRABURG
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_MANACAVE
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_MANAROAD
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_PYRUSPASS
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_STARDOME
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_DUNGEON_Z_NOSTRAMANTUMANSION
-		1. Scenario: Languages/Dutch/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
-		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_AQUAANTRUM
-		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_CATHEDRAL
-		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_DANDLETON -alias- Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_DANDLETON_PART2
-		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_KOKOBUSHES
-		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_DUNGEON_QUAYARO
-		1. Scenario: Languages/Dutch/Scenario/MAPS/NGP_HUB_HEROES
-		1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_CRYPT
-		1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
-		1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_MAGIC
-		1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_DUNGEON_TOMB
-		1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_HUB_WENIARIA
-		1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_THEEND
-		1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_TOWN_FRENDOR
-		1. Scenario: Languages/Dutch/Scenario/MAPS/PRO_TOWN_VANDAR
-		1. Scenario: Languages/Dutch/Scenario/WORLDMAP
 		1. Scenario: Languages/English/Scenario.$$TEMP$$0$$
-		1. Scenario: Languages/English/Scenario/COMBAT/LEARN
-		1. Scenario: Languages/English/Scenario/GENERAL/BLUESEAL
-		1. Scenario: Languages/English/Scenario/GENERAL/INN
-		1. Scenario: Languages/English/Scenario/GENERAL/INTRODUCTION
-		1. Scenario: Languages/English/Scenario/GENERAL/ITEMS
-		1. Scenario: Languages/English/Scenario/GENERAL/MANAORB
-		1. Scenario: Languages/English/Scenario/GENERAL/PROLOGUES
-		1. Scenario: Languages/English/Scenario/GENERAL/TRAVELEMBLEM
-		1. Scenario: Languages/English/Scenario/MAPS/ANNA
-		1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_FRENDORBUSHES
-		1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_HELL
-		1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_HOLYPATH
-		1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_LIBRARY
-		1. Scenario: Languages/English/Scenario/MAPS/CH1_DUNGEON_SUBRIVER
-		1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_ALTAR
-		1. Scenario: Languages/English/Scenario/MAPS/CH1_HUB_JAKEHUT
-		1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_DOUBLINEBAYFOREST
-		1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_ELFROAD
-		1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_SPIRATAFIRE
-		1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_SPIRATAWATER
-		1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_SPIRATAWIND
-		1. Scenario: Languages/English/Scenario/MAPS/CH2_DUNGEON_VANDARROAD
-		1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_DOUBLINE
-		1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_DRESHKA
-		1. Scenario: Languages/English/Scenario/MAPS/CH2_TOWN_ISKARDERIU
-		1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_GARDEN
-		1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_KOKONORAFOREST
-		1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_MINE
-		1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_MTPYRUS
-		1. Scenario: Languages/English/Scenario/MAPS/CH3_DUNGEON_SPIRATAEARTH
-		1. Scenario: Languages/English/Scenario/MAPS/CH3_HUB_FRENDORGRAVE
-		1. Scenario: Languages/English/Scenario/MAPS/CH3_STORY_DRAGON_FOREST
-		1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_GROMBO
-		1. Scenario: Languages/English/Scenario/MAPS/CH3_TOWN_NOSTRABURG
-		1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_MANACAVE
-		1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_MANAROAD
-		1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_PYRUSPASS
-		1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_STARDOME
-		1. Scenario: Languages/English/Scenario/MAPS/CH4_DUNGEON_Z_NOSTRAMANTUMANSION
-		1. Scenario: Languages/English/Scenario/MAPS/CH4_TOWN_NOSTRABURGNIGHT
-		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_AQUAANTRUM
-		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_CATHEDRAL
-		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_DANDLETON -alias- Languages/English/Scenario/MAPS/NGP_DUNGEON_DANDLETON_PART2
-		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_KOKOBUSHES
-		1. Scenario: Languages/English/Scenario/MAPS/NGP_DUNGEON_QUAYARO
-		1. Scenario: Languages/English/Scenario/MAPS/NGP_HUB_HEROES
-		1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_CRYPT
-		1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_DRAGONCAVE
-		1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_MAGIC
-		1. Scenario: Languages/English/Scenario/MAPS/PRO_DUNGEON_TOMB
-		1. Scenario: Languages/English/Scenario/MAPS/PRO_HUB_WENIARIA
-		1. Scenario: Languages/English/Scenario/MAPS/PRO_THEEND
-		1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_FRENDOR
-		1. Scenario: Languages/English/Scenario/MAPS/PRO_TOWN_VANDAR
-		1. Scenario: Languages/English/Scenario/WORLDMAP
 	- This piece of music is now dedicated to the Creative Commons. This is a CCBYNCSA license.    You may use this piece of music freely, as long as you credit me (Jeroen P. Broks) as the original artist, if you don't use this music for commercial purposes, and share the music and works based upon it on a similar license. If you need this piece for a different kind of license contact me first, and I might be willing to negotiate.
 		1. Music: Music/Boss/BossIntro.ogg
 		1. Music: Music/Dungeon/Alien.ogg

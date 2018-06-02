@@ -2,7 +2,7 @@
 **********************************************
   
   Cyndrinana.lua
-  (c) Jeroen Broks, 2017, All Rights Reserved.
+  (c) Jeroen Broks, 2017, 2018, All Rights Reserved.
   
   This file contains material that is related 
   to a storyline that is which is strictly
@@ -32,9 +32,9 @@
   
  **********************************************
  
-version: 17.07.19
+version: 18.06.02
 ]]
--- File Generated: Wed 19 July 2017; 10:35:09
+-- File Generated: Thu 05 April 2018; 13:15:48
 
 
 local foe = {}
@@ -136,6 +136,7 @@ local foe = {}
 	foe["RATE_AAA_GUARD"] = 5
 	foe["RATE_ABL_FOE_BACTERIATUSK"] = 0
 	foe["RATE_ABL_FOE_BEER"] = 0
+	foe["RATE_ABL_FOE_CRACKSLASH"] = 0
 	foe["RATE_ABL_FOE_CRUSH"] = 4
 	foe["RATE_ABL_FOE_CURSEDWIND"] = 0
 	foe["RATE_ABL_FOE_CYNDRINANA_I_MUST_ATONE_FOR_MY_SINS"] = 30
@@ -152,6 +153,7 @@ local foe = {}
 	foe["RATE_ABL_FOE_EVIL_EYE_PARALYZE"] = 0
 	foe["RATE_ABL_FOE_EVIL_EYE_PETRIFY"] = 0
 	foe["RATE_ABL_FOE_EXHAUST"] = 0
+	foe["RATE_ABL_FOE_FATALBITE"] = 0
 	foe["RATE_ABL_FOE_FATALPOISON"] = 0
 	foe["RATE_ABL_FOE_FLAMEBITE"] = 0
 	foe["RATE_ABL_FOE_FLAMEONSELF"] = 0
@@ -193,6 +195,15 @@ local foe = {}
 	foe["RATE_ABL_FOE_VENOMSTAB"] = 0
 	foe["RATE_ABL_FOE_VIRUSSTAB"] = 0
 	foe["RATE_ABL_FOE_VITALIZE_OPPONENT"] = 0
+	foe["RATE_ABL_FOE_V_ACCIO"] = 0
+	foe["RATE_ABL_FOE_V_ARRESTOMOMENTUM"] = 0
+	foe["RATE_ABL_FOE_V_AVADAKEDAVRA"] = 0
+	foe["RATE_ABL_FOE_V_BRACKIUMEMENDO"] = 0
+	foe["RATE_ABL_FOE_V_CRUCIO"] = 0
+	foe["RATE_ABL_FOE_V_FIREBOLT"] = 0
+	foe["RATE_ABL_FOE_V_IMPERIO"] = 0
+	foe["RATE_ABL_FOE_V_M"] = 0
+	foe["RATE_ABL_FOE_V_RICTUSEMPRA"] = 0
 	foe["RATE_ABL_FOE_WELCOMEINHELL"] = 0
 	foe["RATE_ABL_FOLLOWUP_FIKKIE"] = 0
 	foe["RATE_ABL_GG_DEATHSCREAM"] = 0
@@ -206,6 +217,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_DANDOR_SUPERAXESMASH"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_CLEANSE"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = 0
+	foe["RATE_ABL_HERO_HANDOSTILLOR_EVERYBODYKNEELBEFOREME"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRESTORM"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = 0
 	foe["RATE_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = 0
@@ -230,6 +242,7 @@ local foe = {}
 	foe["RATE_ABL_HERO_JAKE_\51PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_\52PS"] = 0
 	foe["RATE_ABL_HERO_JAKE_BERSERK"] = 0
+	foe["RATE_ABL_HERO_JAKE_CLEAVE"] = 0
 	foe["RATE_ABL_HERO_JAKE_DEATHSTRIKE"] = 0
 	foe["RATE_ABL_HERO_JAKE_EARTHSLICE"] = 0
 	foe["RATE_ABL_HERO_JAKE_FLAMEBLADE"] = 0
@@ -391,8 +404,10 @@ local foe = {}
 	foe["RATE_ITM_SALVES"] = 0
 	foe["RATE_ITM_SAUERKRAUT"] = 0
 	foe["RATE_ITM_SLEEPHERB"] = 0
+	foe["RATE_ITM_SPIKEBOMB"] = 0
 	foe["RATE_ITM_STONE"] = 0
 	foe["RATE_ITM_STORMBOTTLE"] = 0
+	foe["RATE_ITM_TONSBANANAS"] = 0
 	foe["RATE_ITM_TOTALEXHAUSTION"] = 0
 	foe["RATE_ITM_TRUMPCARD"] = 0
 	foe["RATE_ITM_UBERPOTION"] = 0
@@ -491,6 +506,7 @@ local foe = {}
 	foe["TARGET_AAA_GUARD"] = "Random"
 	foe["TARGET_ABL_FOE_BACTERIATUSK"] = "Random"
 	foe["TARGET_ABL_FOE_BEER"] = "Random"
+	foe["TARGET_ABL_FOE_CRACKSLASH"] = "Random"
 	foe["TARGET_ABL_FOE_CRUSH"] = "Random"
 	foe["TARGET_ABL_FOE_CURSEDWIND"] = "Random"
 	foe["TARGET_ABL_FOE_CYNDRINANA_I_MUST_ATONE_FOR_MY_SINS"] = "Random"
@@ -507,6 +523,7 @@ local foe = {}
 	foe["TARGET_ABL_FOE_EVIL_EYE_PARALYZE"] = "Random"
 	foe["TARGET_ABL_FOE_EVIL_EYE_PETRIFY"] = "Random"
 	foe["TARGET_ABL_FOE_EXHAUST"] = "Random"
+	foe["TARGET_ABL_FOE_FATALBITE"] = "Random"
 	foe["TARGET_ABL_FOE_FATALPOISON"] = "Random"
 	foe["TARGET_ABL_FOE_FLAMEBITE"] = "Random"
 	foe["TARGET_ABL_FOE_FLAMEONSELF"] = "Random"
@@ -548,6 +565,15 @@ local foe = {}
 	foe["TARGET_ABL_FOE_VENOMSTAB"] = "Random"
 	foe["TARGET_ABL_FOE_VIRUSSTAB"] = "Random"
 	foe["TARGET_ABL_FOE_VITALIZE_OPPONENT"] = "Random"
+	foe["TARGET_ABL_FOE_V_ACCIO"] = "Random"
+	foe["TARGET_ABL_FOE_V_ARRESTOMOMENTUM"] = "Random"
+	foe["TARGET_ABL_FOE_V_AVADAKEDAVRA"] = "Random"
+	foe["TARGET_ABL_FOE_V_BRACKIUMEMENDO"] = "Random"
+	foe["TARGET_ABL_FOE_V_CRUCIO"] = "Random"
+	foe["TARGET_ABL_FOE_V_FIREBOLT"] = "Random"
+	foe["TARGET_ABL_FOE_V_IMPERIO"] = "Random"
+	foe["TARGET_ABL_FOE_V_M"] = "Random"
+	foe["TARGET_ABL_FOE_V_RICTUSEMPRA"] = "Random"
 	foe["TARGET_ABL_FOE_WELCOMEINHELL"] = "Random"
 	foe["TARGET_ABL_FOLLOWUP_FIKKIE"] = "Random"
 	foe["TARGET_ABL_GG_DEATHSCREAM"] = "Random"
@@ -561,6 +587,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_DANDOR_SUPERAXESMASH"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_CLEANSE"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_CUREDISEASE"] = "Random"
+	foe["TARGET_ABL_HERO_HANDOSTILLOR_EVERYBODYKNEELBEFOREME"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_FIRESTORM"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_FIRSTAID"] = "Random"
 	foe["TARGET_ABL_HERO_HANDOSTILLOR_GOODMORNING"] = "Random"
@@ -585,6 +612,7 @@ local foe = {}
 	foe["TARGET_ABL_HERO_JAKE_\51PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_\52PS"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_BERSERK"] = "Random"
+	foe["TARGET_ABL_HERO_JAKE_CLEAVE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_DEATHSTRIKE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_EARTHSLICE"] = "Random"
 	foe["TARGET_ABL_HERO_JAKE_FLAMEBLADE"] = "Random"
@@ -746,8 +774,10 @@ local foe = {}
 	foe["TARGET_ITM_SALVES"] = "Random"
 	foe["TARGET_ITM_SAUERKRAUT"] = "Random"
 	foe["TARGET_ITM_SLEEPHERB"] = "Random"
+	foe["TARGET_ITM_SPIKEBOMB"] = "Random"
 	foe["TARGET_ITM_STONE"] = "Random"
 	foe["TARGET_ITM_STORMBOTTLE"] = "Random"
+	foe["TARGET_ITM_TONSBANANAS"] = "Random"
 	foe["TARGET_ITM_TOTALEXHAUSTION"] = "Random"
 	foe["TARGET_ITM_TRUMPCARD"] = "Random"
 	foe["TARGET_ITM_UBERPOTION"] = "Random"

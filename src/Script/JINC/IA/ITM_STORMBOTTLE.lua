@@ -1,7 +1,7 @@
 --[[
   ITM_STORMBOTTLE.lua
-  Version: 17.10.11
-  Copyright (C) 2017 Jeroen Petrus Broks
+  Version: 18.06.02
+  Copyright (C) 2017, 2018 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -36,12 +36,17 @@
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
-	["ADDCARD_Action_Interval"] = 5,
+	["ADDCARD_Action_Interval"] = 10,
+	["ADDCARD_Action_Number"] = 5,
 	["ADDCARD_Char_Interval"] = 5,
+	["Attack"] = 300,
 	["Attack_AccuracyRate"] = 100,
-	["Attack_AttackStat"] = "Power",
-	["Attack_DefenseStat"] = "Endurance",
-	["Attack_Element"] = "None",
+	["Attack_AttackStat"] = "Intelligence",
+	["Attack_DefenseStat"] = "Resistance",
+	["Attack_Element"] = "Wind",
+	["CauseConfusion"] = true,
+	["CauseSilence"] = true,
+	["CurePetrification"] = true,
 	["Desc"] = "Uncork it and blow the enemy away",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
@@ -57,7 +62,7 @@ ret = {
 	["ITM_Type"] = "Consumable",
 	["SpellAni"] = "Hurricane",
 	["Stance"] = "Cast",
-	["Target"] = "1F",
+	["Target"] = "AF",
 	["Title"] = "Storm in a bottle",
 	["Type"] = "Item",
 	["Voice"] = "Wind"}
