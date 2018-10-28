@@ -1,7 +1,7 @@
 --[[
   BoxText.lua
-  Version: 16.12.21
-  Copyright (C) 2016 Jeroen Petrus Broks
+  Version: 18.10.28
+  Copyright (C) 2016, 2018 Jeroen Petrus Broks
   
   ===========================
   This file is part of a project related to the Phantasar Chronicles or another
@@ -136,7 +136,7 @@ DarkText (Var.S(data.Header),startx,starty-20,0,0,255,180,0)-- Image.DText(Var.S
 --print(serialize("boxtext",data))
 -- Text itself
 local ax,ay,y
-if data.AltTxtFont then
+if data.AltTxtFont and data.AltTxtFont~="" then
    -- @IF BOXTEXTDEBUG
    CSay("Setting font: "..data.AltTxtFont,fonts.BoxText[2])
    -- @FI
