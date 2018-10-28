@@ -32,7 +32,7 @@
   
  **********************************************
  
-version: 18.06.02
+version: 18.10.28
 ]]
 ret = {
 	["ADDCARD_Action_Act"] = "Self",
@@ -44,7 +44,7 @@ ret = {
 	["Attack_AllowDodge"] = true,
 	["Attack_AttackStat"] = "Intelligence",
 	["Attack_DefenseStat"] = "Resistance",
-	["Attack_Element"] = "None",
+	["Attack_Element"] = "Flame",
 	["Heal_StatPercent"] = "Intelligence",
 	["Heal_Type"] = "Absolute",
 	["ITM_ACC_Dandor"] = true,

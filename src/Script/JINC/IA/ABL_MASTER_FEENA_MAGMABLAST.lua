@@ -1,6 +1,6 @@
 --[[
   ABL_MASTER_FEENA_MAGMABLAST.lua
-  Version: 18.06.02
+  Version: 18.10.28
   Copyright (C) 2017, 2018 Jeroen Petrus Broks
   
   ===========================
