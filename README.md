@@ -16,8 +16,9 @@ The Launcher is a program on its own, the game itself is written in [LAURA II](h
 
 # Project renew for preservation
 
-The LAURA II engine planned to be rewritten in C++
-Changes to the script will be minimal but done. This can lead to either this repository being updated for these adaptions, or a completely new repo to be set up. (Now this repository was never my work dir, but only a copy of it... (Git and Github were pretty new to me at the time so I was unsure how to use it and I didn't want to get my workspace messed up due to me making mistakes. If a copy gets messed up, no trouble, right?)
+LAURA II is dead. The game will be entirely redone in Apollo, with assets as much the same as possible, and new scripts for more efficient workout in Neil. The gameplay will be left in tact as much as possible, though, and the story won't change either except maybe for some typos and grammar errors that slipped through before.
+
+Bugs in the issue tracker will NO LONGER be addressed.
 
 To see live what I am doing you can follow my [Live DevLog](http://tricky1975.github.io/tft/tft_Devlog_page1.html) here.
 You can also follow this project on [Game Jolt](http://gamejolt.com/games/the-fairy-tale-revamped/174735).
