@@ -23,3 +23,5 @@ Bugs in the issue tracker will NO LONGER be addressed.
 To see live what I am doing you can follow my [Live DevLog](http://tricky1975.github.io/tft/tft_Devlog_page1.html) here.
 You can also follow this project on [Game Jolt](http://gamejolt.com/games/the-fairy-tale-revamped/174735).
 Or visit the [game's site](http://tricky.gamejolt.io/tft)
+
+The new repository can be found [here](https://github.com/PhantasarProductions/The-Fairy-Tale-REVAMPED-for-Apollo)
